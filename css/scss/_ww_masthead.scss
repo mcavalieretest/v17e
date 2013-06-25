@@ -37,7 +37,7 @@
 	position:absolute;
 	height: 25px;
 	width: 25px;
-	background: url(/i/v17/buttons/www_closebtn_sprites.png) no-repeat 7px -795px;
+	background: url("#{$fontsDirPath}/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px;
 }
 #ibm-masthead .ibm-dlg-close span:hover, #ibm-masthead .ibm-dlg-close span:focus{
 	height: 23px;
