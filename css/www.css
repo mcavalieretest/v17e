@@ -53,264 +53,241 @@ Lubalin-Medium
 
 /* Reset */
 /* masthead styles begin ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\000032}}
+/* line 2, scss/_ww_masthead.scss */
 #ibm-masthead { width: 100%; min-width: 980px; left: 0px; top: 0px; position: fixed; z-index: 900; border-top: 1px solid #666; border-bottom: 2px solid rgba(255, 255, 255, 0.8); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000312}}
+/* line 12, scss/_ww_masthead.scss */
 .dijit_a11y #ibm-masthead { border: 0; }
 
 /* in case of a special class the masthead does not scroll */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000317}}
+/* line 17, scss/_ww_masthead.scss */
 #ibm-top.ibm-no-scroll #ibm-masthead { position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000320}}
+/* line 20, scss/_ww_masthead.scss */
 #ibm-top.ibm-no-scroll, #ibm-top.ibm-no-scroll #ibm-leadspace-head { margin-top: 0px; }
 
 /* masthead close button style --------begin-----*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000326}}
+/* line 26, scss/_ww_masthead.scss */
 #ibm-masthead .ibm-dlg-close { position: absolute; float: right; height: 25px; width: 25px; margin-left: 98%; margin-top: 7px; overflow: hidden; z-index: 9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000336}}
-#ibm-masthead .ibm-dlg-close span { position: absolute; height: 25px; width: 25px; background: url("/css/fonts/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px; }
+/* line 36, scss/_ww_masthead.scss */
+#ibm-masthead .ibm-dlg-close span { position: absolute; height: 25px; width: 25px; background: url("http://1.www.s81c.com/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000342}}
+/* line 42, scss/_ww_masthead.scss */
 #ibm-masthead .ibm-dlg-close span:hover, #ibm-masthead .ibm-dlg-close span:focus { height: 23px; width: 23px; border: 1px dotted gray; background-position: 6px -996px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000348}}
+/* line 48, scss/_ww_masthead.scss */
 #ibm-masthead .ibm-mm-close { height: 25px; width: 940px; overflow: hidden; z-index: 9; position: relative; margin: -25px auto 0; cursor: pointer; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000357}}
-#ibm-masthead .ibm-mm-close span { position: absolute; display: block; height: 25px; width: 940px; background: url(/i/v17/buttons/mm-sprite.png) no-repeat 0px 0px; /* ie6 fix*/ _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/v17/buttons/mm-sprite.png'); /* accessibility: HC MODE fix */ text-align: center; text-indent: -9999em; }
+/* line 57, scss/_ww_masthead.scss */
+#ibm-masthead .ibm-mm-close span { position: absolute; display: block; height: 25px; width: 940px; background: url("http://1.www.s81c.com/i/v17/buttons/mm-sprite.png") no-repeat 0px 0px; /* ie6 fix*/ _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://1.www.s81c.com/i/v17/buttons/mm-sprite.png'); /* accessibility: HC MODE fix */ text-align: center; text-indent: -9999em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000370}}
+/* line 70, scss/_ww_masthead.scss */
 #ibm-masthead .ibm-mm-close span:hover { background-position: 0px -25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000374}}
+/* line 74, scss/_ww_masthead.scss */
 #ibm-masthead .ibm-mm-close span:active, #ibm-masthead .ibm-mm-close span:focus { background-position: 0px -49px; }
 
 /* masthead close button style --------end-----*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000381}}
+/* line 81, scss/_ww_masthead.scss */
 #ibm-mast-options { background: #131623; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131623', endColorstr='#1A1C27'); background: -webkit-linear-gradient(top, #131623, #1a1c27); background: -moz-linear-gradient(top, #131623, #1a1c27); background: -o-linear-gradient(top, #131623, #1a1c27); height: 1%; float: left; width: 100%; color: #A1A2A7; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\0000392}}
+/* line 92, scss/_ww_masthead.scss */
 #ibm-mast-options:hover { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131623', endColorstr='#1A1C27'); background: -webkit-linear-gradient(top, #131623, #1a1c27); background: -moz-linear-gradient(top, #131623, #1a1c27); background: -o-linear-gradient(top, #131623, #1a1c27); color: #D0D0D3; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003100}}
+/* line 100, scss/_ww_masthead.scss */
 #ibm-mast-options ul { background-color: #131623; float: right; margin-right: 5%; border-left: 1px solid #2b2d39; border-right: 1px solid #02050E; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003108}}
+/* line 108, scss/_ww_masthead.scss */
 #ibm-mast-options li { border-left: 1px solid #02050E; border-right: 1px solid #2b2d39; float: left; padding: 4px 20px; height: 13px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003116}}
+/* line 116, scss/_ww_masthead.scss */
 #ibm-mast-options:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003123}}
+/* line 123, scss/_ww_masthead.scss */
 #ibm-mast-options p { display: inline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003126}}
+/* line 126, scss/_ww_masthead.scss */
 #ibm-related-links, #ibm-esite-link { display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003130}}
+/* line 130, scss/_ww_masthead.scss */
 #ibm-mast-options a { color: #A1A2A7; /*	color: rgba(255, 255, 255, 0.4); /*71737B*/ /*font-weight:normal;*/ padding: 3px 2px; text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003139}}
+/* line 139, scss/_ww_masthead.scss */
 .dijit_a11y #ibm-mast-options { border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003142}}
+/* line 142, scss/_ww_masthead.scss */
 .dijit_a11y #ibm-masthead #ibm-common-menu ul, .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li { font-size: 0.9em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003145}}
+/* line 145, scss/_ww_masthead.scss */
 .dijit_a11y #ibm-masthead #ibm-common-menu ul li a { font-size: 1.2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003149}}
+/* line 149, scss/_ww_masthead.scss */
 #ibm-mast-options li:hover { color: #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003153}}
+/* line 153, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-geo { padding: 4px 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003156}}
+/* line 156, scss/_ww_masthead.scss */
 .dijit_a11y #ibm-mast-options li#ibm-geo { padding: 4px 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003160}}
-#ibm-mast-options li#ibm-geo a { background: url("/i/v17/icons/country-icons-sprite.png") no-repeat scroll 10px 0px transparent; padding: 3px 20px 3px 40px; _background: none; /* ie6 tweak*/ }
+/* line 160, scss/_ww_masthead.scss */
+#ibm-mast-options li#ibm-geo a { background: url("http://1.www.s81c.com/i/v17/icons/country-icons-sprite.png") no-repeat scroll 10px 0px transparent; padding: 3px 20px 3px 40px; _background: none; /* ie6 tweak*/ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003168}}
-#ibm-mast-options li#ibm-geo a.ibm-back-country, #ibm-mast-options li#ibm-geo a.ibm-back-country:focus, #ibm-mast-options li#ibm-geo:hover a.ibm-back-country { background: url("/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat scroll 4px 4px transparent; padding-left: 20px; padding-top: 4px; _background: none; /* ie6 tweak*/ }
+/* line 168, scss/_ww_masthead.scss */
+#ibm-mast-options li#ibm-geo a.ibm-back-country, #ibm-mast-options li#ibm-geo a.ibm-back-country:focus, #ibm-mast-options li#ibm-geo:hover a.ibm-back-country { background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat scroll 4px 4px transparent; padding-left: 20px; padding-top: 4px; _background: none; /* ie6 tweak*/ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003175}}
+/* line 175, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-geo a.ibm-back-country:hover { background-position: 4px -212px; }
 
 /* on hover whole masthead bar changes the font color */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003180}}
+/* line 180, scss/_ww_masthead.scss */
 #ibm-mast-options:hover a { color: #D0D0D3; }
 
 /* highlight individual link on hover */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003184}}
+/* line 184, scss/_ww_masthead.scss */
 #ibm-mast-options:hover li#ibm-geo a { color: #D0D0D3; background-position: 10px -20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003188}}
+/* line 188, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-geo:hover a, #ibm-mast-options li#ibm-geo a:focus { background-position: 10px -40px; color: #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003192}}
+/* line 192, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-sso span span { color: #666; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003195}}
+/* line 195, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-sso a { color: #929395; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003198}}
+/* line 198, scss/_ww_masthead.scss */
 #ibm-mast-options:hover li#ibm-sso a { color: #A1A2A7; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003201}}
+/* line 201, scss/_ww_masthead.scss */
 #ibm-mast-options li#ibm-sso:hover a { color: #BABBBD; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003204}}
+/* line 204, scss/_ww_masthead.scss */
 #ibm-mast-options a:hover, #ibm-mast-options a:focus, #ibm-mast-options li#ibm-sso a:focus { color: #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003209}}
+/* line 209, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links, #ibm-universal-nav #ibm-menu-links { margin: 0 260px 0 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003213}}
+/* line 213, scss/_ww_masthead.scss */
 #ibm-universal-nav { width: 100%; float: left; min-width: 1024px; background: #000; overflow: hidden; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C'); background: -webkit-linear-gradient(top, #595c64, #1b1b1c); background: -moz-linear-gradient(top, #595c64, #1b1b1c); background: -o-linear-gradient(top, #595c64, #1b1b1c); height: 50px; border-top: 1px solid #999; border-bottom: 1px solid #666; }
 
-/*#ibm-universal-nav {
-	width: 100%;
-	float: left;
-	min-width: 1024px;
-	background:#000;
-	overflow: hidden;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
-	background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-webkit-gradient(linear, left top, left bottom, from(#595C64), to(#1B1B1C));
-	background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-moz-linear-gradient(top, #595C64, #1B1B1C);
-	background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-o-linear-gradient(top, #595C64, #1B1B1C);
-	height: 50px;
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #666;
-}*/
-/*#ibm-universal-nav:hover {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
-	background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-webkit-gradient(linear, left top, left bottom, from(#595C64), to(#1B1B1C));
-	background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-moz-linear-gradient(top, #595C64, #1B1B1C); background: url(/i/v17/t/v17_min_mast_anim_que.gif) 50% 0 no-repeat,-o-linear-gradient(top, #595C64, #1B1B1C);
-}*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003248}}
+/* line 228, scss/_ww_masthead.scss */
 #ibm-universal-nav:hover { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C'); background: -webkit-linear-gradient(top, #595c64, #1b1b1c); background: -moz-linear-gradient(top, #595c64, #1b1b1c); background: -o-linear-gradient(top, #595c64, #1b1b1c); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003255}}
+/* line 235, scss/_ww_masthead.scss */
 #ibm-universal-nav span.ibm-masthead-indicator { position: absolute; left: 50%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003261}}
+/* line 241, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links, #ibm-universal-nav #ibm-menu-links { margin: 0px 20px; float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003265}}
+/* line 245, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links { margin-left: 130px; *margin-left: 90px; _margin-left: 75px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003272}}
+/* line 252, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links li, #ibm-universal-nav #ibm-menu-links li { float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003275}}
+/* line 255, scss/_ww_masthead.scss */
 #ibm-universal-nav li a { color: #CCC; display: block; text-decoration: none; letter-spacing: 0px; text-shadow: 0px -1px 0 #000; padding: 17px 12px; _height: 1%; _float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003287}}
+/* line 267, scss/_ww_masthead.scss */
 #ibm-universal-nav li#ibm-home { display: block; overflow: hidden; height: 50px; position: absolute; width: 100px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003294}}
-#ibm-universal-nav li#ibm-home a { position: absolute; display: block; top: 0px; left: 0px; background: url(/i/v17/t/ibm-logo.png) 0px 0px no-repeat; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/v17/t/ibm-logo.png'); _cursor: pointer; width: 100px; float: left; height: 50px; text-indent: -999em; padding: 0px; }
+/* line 274, scss/_ww_masthead.scss */
+#ibm-universal-nav li#ibm-home a { position: absolute; display: block; top: 0px; left: 0px; background: url("http://1.www.s81c.com/i/v17/t/ibm-logo.png") 0px 0px no-repeat; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://1.www.s81c.com/i/v17/t/ibm-logo.png'); _cursor: pointer; width: 100px; float: left; height: 50px; text-indent: -999em; padding: 0px; }
 
-/**html #ibm-universal-nav li#ibm-home a{
-	background: url(/i/v17/t/ibm-logo.png) no-repeat scroll 0px 0px;
-	}
-*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003314}}
-#ibm-universal-nav li#ibm-home.ibm-sm-logo a { background: url(/i/v17/t/ibm-logo.png) no-repeat scroll 0px -100px; height: 30px; }
+/* line 290, scss/_ww_masthead.scss */
+#ibm-universal-nav li#ibm-home.ibm-sm-logo a { background: url("http://1.www.s81c.com/i/v17/t/ibm-logo.png") no-repeat scroll 0px -100px; height: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003319}}
+/* line 295, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li:hover { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334'); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003324}}
+/* line 300, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li a:hover, #ibm-universal-nav #ibm-menu-links li a:focus { background: -webkit-linear-gradient(top, #696c72, #333334); background: -moz-linear-gradient(top, #696c72, #333334); background: -o-linear-gradient(top, #696c72, #333334); _background: none transparent no-scroll repeat; text-shadow: 0px 0px 3px #FFF; color: #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003333}}
+/* line 309, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li a:active { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1B1B1C', endColorstr='#595C64'); background: -webkit-linear-gradient(top, #1b1b1c, #595c64); background: -moz-linear-gradient(top, #1b1b1c, #595c64); background: -o-linear-gradient(top, #1b1b1c, #595c64); text-shadow: 0 0 3px #FFF; color: #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003341}}
+/* line 317, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li.ibm-active { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334'); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003345}}
+/* line 321, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li a.ibm-active { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334'); background: -webkit-linear-gradient(top, #696c72, #333334); background: -moz-linear-gradient(top, #696c72, #333334); background: -o-linear-gradient(top, #696c72, #333334); text-shadow: 0 0 3px #FFF; color: #FFF; }
 
 /* added for IE to mimic behaviour in mozilla FF -- http://domino.webmaster.ibm.com/tools/problem_management/tracker.nsf/all/BD19532F09F792C1852578AA0054A94C */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003355}}
+/* line 331, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-menu-links li.ibm-inactive { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334'); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003360}}
+/* line 336, scss/_ww_masthead.scss */
 #ibm-universal-nav li#ibm-home.ibm-sm-logo a:hover, #ibm-universal-nav li#ibm-home.ibm-sm-logo a:focus { background-position: 0px -100px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003364}}
+/* line 340, scss/_ww_masthead.scss */
 #ibm-universal-nav li#ibm-home a:hover, #ibm-universal-nav li#ibm-home a:focus { background-position: 0px -50px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003367}}
+/* line 343, scss/_ww_masthead.scss */
 #ibm-universal-nav li.ibm-active { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C'); background: -webkit-linear-gradient(top, #595c64, #1b1b1c); background: -moz-linear-gradient(top, #595c64, #1b1b1c); background: -o-linear-gradient(top, #595c64, #1b1b1c); color: #FFF; text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003376}}
+/* line 352, scss/_ww_masthead.scss */
 #ibm-my-menu { width: 100%; background: #D2D2D0; height: 160px; display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003382}}
+/* line 358, scss/_ww_masthead.scss */
 #ibm-common-menu { width: 100%; background: #02416B; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02416B', endColorstr='#5582BC'); background: -webkit-linear-gradient(top, #02416b, #5582bc); background: -moz-linear-gradient(top, #02416b, #5582bc); background: -o-linear-gradient(top, #02416b, #5582bc); border-top: 1px solid #4978B1; border-bottom: 2px solid #4978B1; height: 160px; display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003394}}
+/* line 370, scss/_ww_masthead.scss */
 #ibm-common-menu h2 { color: rgba(255, 255, 255, 0.75); color: #00b0da \9; height: 16px; width: 140px; padding-left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003401}}
+/* line 377, scss/_ww_masthead.scss */
 #ibm-common-menu h2 a { color: #FFE14F; text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003405}}
+/* line 381, scss/_ww_masthead.scss */
 #ibm-common-menu h2 a:hover { color: #FFC14F; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003409}}
+/* line 385, scss/_ww_masthead.scss */
 #ibm-common-menu h3 { color: rgba(255, 255, 255, 0.75); color: #00b0da \9; /*	height: 16px; */ /* removed to stop overlaping long header text on first menuitem - Hemang P*/ width: 140px; padding-left: 0; font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003417}}
+/* line 393, scss/_ww_masthead.scss */
 #ibm-common-menu h3 a { color: #FFE14F; text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003421}}
+/* line 397, scss/_ww_masthead.scss */
 #ibm-common-menu h3 a:hover { color: #FFC14F; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003425}}
+/* line 401, scss/_ww_masthead.scss */
 #ibm-common-menu ul { list-style: none; padding: 0 0 18px 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003430}}
-#ibm-common-menu li { background: url(/i/v17/bullets.gif) no-repeat -2px -198px; padding-left: 10px; margin-top: 10px; }
+/* line 406, scss/_ww_masthead.scss */
+#ibm-common-menu li { background: url("http://1.www.s81c.com/i/v17/bullets.gif") no-repeat -2px -198px; padding-left: 10px; margin-top: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003436}}
+/* line 412, scss/_ww_masthead.scss */
 #ibm-common-menu li:hover, #ibm-common-menu li.ibm-active { background-position: -2px -98px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003439}}
+/* line 415, scss/_ww_masthead.scss */
 #ibm-common-menu li:active { opacity: .6; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003442}}
+/* line 418, scss/_ww_masthead.scss */
 #ibm-common-menu a { color: rgba(255, 255, 255, 0.75); color: #d0d0d3 \9; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003449}}
+/* line 425, scss/_ww_masthead.scss */
 #ibm-common-menu a:focus, #ibm-common-menu a:hover { color: #FFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8); }
 
 /* minimized masthead icons */
 /* requires width:100% on #ibm-unav-links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003458}}
+/* line 434, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links #ibm-search-logo, #ibm-universal-nav #ibm-unav-links #ibm-links-logo { text-indent: -9999px; height: 20px; width: 20px; position: absolute; top: 12px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003466}}
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo { background: url(/i/v17/minm_icons.png) no-repeat 3px -201px; right: 79px; }
+/* line 442, scss/_ww_masthead.scss */
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo { background: url("http://1.www.s81c.com/i/v17/minm_icons.png") no-repeat 3px -201px; right: 79px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003470}}
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo { background: url(/i/v17/minm_icons.png) no-repeat 3px -600px; right: 47px; }
+/* line 446, scss/_ww_masthead.scss */
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo { background: url("http://1.www.s81c.com/i/v17/minm_icons.png") no-repeat 3px -600px; right: 47px; }
 
 /* if text needs to be visible */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003477}}
+/* line 453, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text, #ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text { text-indent: 23px; width: 80px; color: #fff; font-size: 0.8em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003484}}
+/* line 460, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text { right: 112px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003488}}
+/* line 464, scss/_ww_masthead.scss */
 #ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text { right: 22px; }
 
 /* since :hover works only on A in IE6, JS needs to be used to display hover state  disabled for now
@@ -326,90 +303,90 @@ background-position: 3px -400px;
 */
 /* masthead A/B testing styles begin ============================== */
 /* modified mega menu for A/B testing of masthead */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003513}}
+/* line 489, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead { *overflow: hidden; _position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003518}}
+/* line 494, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu { background-color: #ddd; *background: none; background: -webkit-linear-gradient(#dddddd, #f1f1f1); background: -moz-linear-gradient(#dddddd, #f1f1f1); background: -o-linear-gradient(#dddddd, #f1f1f1); _background: none; /* IE6 fix */ filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1')"; border-top: 0; border-bottom-color: #fff; box-shadow: 0px -9px 7px -9px #bbb inset; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003535}}
+/* line 508, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead .ibm-ribbon-pane .ibm-columns { padding-top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003540}}
+/* line 513, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3, #ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3 a { color: #333; text-shadow: 0 1px 0 #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003546}}
+/* line 519, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu a { color: #555; text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003551}}
+/* line 524, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu a:hover { text-decoration: underline; color: #222; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003557}}
+/* line 529, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu a:active { text-decoration: underline; color: #555; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003562}}
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu li { background: url(/i/v17/bullets-alt.gif) -2px 2px no-repeat transparent; }
+/* line 534, scss/_ww_masthead.scss */
+#ibm-masthead.ibm-alternate-masthead #ibm-common-menu li { background: url("http://1.www.s81c.com/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003568}}
+/* line 539, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu li:hover, #ibm-masthead.ibm-alternate-masthead #ibm-common-menu li.ibm-active { background-position: -2px -98px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003572}}
-#ibm-masthead.ibm-alternate-masthead .ibm-mm-close span { background: url(/i/v17/buttons/mm-sprite-alt.gif) 0 2px no-repeat transparent; }
+/* line 543, scss/_ww_masthead.scss */
+#ibm-masthead.ibm-alternate-masthead .ibm-mm-close span { background: url("http://1.www.s81c.com/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003576}}
+/* line 547, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead .ibm-mm-close span:hover { background-position: 0px -23px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003582}}
+/* line 553, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs { background-color: #ccc; *background: none; background: -webkit-linear-gradient(#cccccc, #eaeaea); background: -moz-linear-gradient(#cccccc, #eaeaea); background: -o-linear-gradient(#cccccc, #eaeaea); filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA'); border-bottom: 1px solid #bbb; box-shadow: 0 1px 7px #c5c5c5; height: 39px; margin-top: -39px; margin-bottom: 20px; opacity: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003602}}
+/* line 572, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs ul { width: 940px; margin: 0 auto; padding: 14px 10px 0; margin-bottom: -1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003609}}
+/* line 579, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li { margin: 0 20px 0 0; background-image: none; float: left; padding: 0 10px 11px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003616}}
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active { background: url(/i/v17/buttons/mm-submenu-notch.gif) center 21px no-repeat transparent; }
+/* line 586, scss/_ww_masthead.scss */
+#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active { background: url("http://1.www.s81c.com/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003620}}
+/* line 590, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a { text-shadow: 0 1px 0 #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003624}}
+/* line 594, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a:hover { text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003628}}
+/* line 598, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a { font-weight: bold; color: #222; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003633}}
+/* line 603, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-static { border-left: 1px solid #C8C8C8; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset; width: 170px; height: 282px; *height: 232px; padding-left: 20px; padding-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003644}}
+/* line 614, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-static, #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic { padding-top: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003648}}
+/* line 618, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic { padding-right: 0; width: 758px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003653}}
+/* line 623, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 { width: 172px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003657}}
+/* line 627, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last { width: 162px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003661}}
+/* line 631, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child { margin-top: 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003665}}
+/* line 635, scss/_ww_masthead.scss */
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child { margin-top: 10px; }
 
 /* masthead A/B testing styles end ============================== */
 /* masthead styles end ============================================ */
 /* media queries for masthead on ipad */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003678}}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* line 648, scss/_ww_masthead.scss */
   #ibm-top, #ibm-masthead, #ibm-universal-nav, #ibm-common-menu { min-width: 980px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003682}}
+  /* line 652, scss/_ww_masthead.scss */
   #ibm-search-form { height: 24px; margin: 13px 20px -36px 1px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003687}}
+  /* line 657, scss/_ww_masthead.scss */
   #ibm-search-form input#q { width: 140px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/v17_enhanced\/trunk\/css\/scss\/_ww_masthead\.scss}line{font-family:\00003691}}
+  /* line 661, scss/_ww_masthead.scss */
   #ibm-universal-nav #ibm-menu-links { margin-left: 120px; }
   /* commented out till clarified, causes issues  #ibm-universal-nav #ibm-unav-links, #ibm-universal-nav #ibm-menu-links { 	margin: 0px 10px; }  */ }
