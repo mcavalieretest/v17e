@@ -1,0 +1,116 @@
+/* footer styles begin ============================================ */
+
+#ibm-footer-module {
+    border-top: 1px solid #666;
+    clear: both;
+    width: 100%;
+    float: left;
+    *float: none; /* IE7 hack */
+    background: #0F161A;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474A50', endColorstr='#0F161A');
+    background: url(/i/v17/footermod-bg.png) no-repeat center top, -webkit-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+    background: url(/i/v17/footermod-bg.png) no-repeat center top, -moz-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+	background: url(/i/v17/footermod-bg.png) no-repeat center top, -o-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+    margin-bottom: -1px;
+}
+#ibm-footer-module h2, #ibm-footer-module h3 {
+    color: #FCB712;
+    margin: 0px;
+    padding: 16px 0 0;
+}
+
+
+#ibm-footer-module .ibm-col-6-1:hover h2 {
+    color: #FFE14F;
+}
+#ibm-footer-module ul {
+    list-style: none;
+    padding: 0 0 2px 0;
+    margin: 0;
+}
+#ibm-footer-module li {
+    background: url(/i/v17/bullets.gif) no-repeat -2px 2px;
+    color: #666;
+    margin: 4px 0;
+    padding: 0 0 0 10px;
+}
+
+*:first-child+html #ibm-footer-module li{
+    display:inline-block;
+}
+
+#ibm-footer-module li:hover,
+#ibm-footer-module li.ibm-active {
+    background-position: -2px -98px;
+    color: #FFCF01;
+}
+
+* html #ibm-footer-module li {
+    vertical-align: text-top;
+    width: 100%;
+}
+#ibm-footer-module a {
+    color: #a8a8a8;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 0 2px #000;
+}
+* html #ibm-footer-module a {
+    margin-top: -4px;
+}
+
+#ibm-footer-module .ibm-stock-module h2, #ibm-footer-module a:hover {
+    color: #FFF;
+}
+#ibm-footer-module a.ibm-active, #ibm-footer-module a:focus {
+    color: #FFF;
+	text-decoration: underline;
+}
+
+
+#ibm-footer {
+    background-color: #0F161A;
+    border-top: 1px solid #0F161A;
+    border-bottom: 1px solid #404040;
+    clear: both;
+    color: #CCC;
+    height: auto;
+    margin: 0;
+    padding-top: 15px;
+    position: relative;
+}
+#ibm-footer ul {
+    margin: 0 auto;
+	width: 960px; /*higher value needs to be testet as it breaks layout for small screens*/
+    height: 1%;
+    list-style-type: none;
+    padding: 0 0 0 20px;
+}
+#ibm-footer li {
+    float: left;
+    padding: 0 10px 16px 14px;
+    overflow: inherit;
+    white-space: nowrap;
+}
+#ibm-footer li.ibm-first {
+    padding-left: 5px;
+    background-image: none;
+}
+#ibm-footer li a:link, #ibm-footer li a:visited {
+    color: #7f7f7f;
+	text-decoration: none;
+}
+#ibm-footer li a:hover {
+    color: #A1A2A7;
+}
+#ibm-footer li a:focus {
+    color: #D0D0D3;
+}
+#ibm-footer:after {
+    clear: both;
+    content: " ";
+    display: block;
+    /*font-size: 0;*/
+    height: 0;
+    visibility: hidden;
+}

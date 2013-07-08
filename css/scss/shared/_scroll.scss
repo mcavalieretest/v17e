@@ -1,0 +1,158 @@
+/* scroll styles begin ============================================ */
+
+.ibm-scroll {
+	/* this is mainly for non-JS users */
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+
+div.ibm-scroll-wrapper {
+	position: relative; 
+	overflow: hidden; 
+	z-index: 1;
+	padding-bottom:15px;
+	*padding-bottom:0px;
+	_padding-bottom:0px;
+	padding-bottom:20px\9;
+}
+
+div.ibm-scroll-container {
+	height: auto;
+	overflow: visible;
+	padding-right: 5px;
+	position: absolute;
+	top: 0px;
+}
+/* Added to work fine on IE6 */
+*html div.ibm-scroll-slider-outer
+{
+background: #e6e6e6;
+width: 6px;
+
+}
+
+*html div.ibm-scroll-slider-inner {
+background: #888;
+width: 6px; 
+height: 68px;
+}
+
+/* Added to work fine on IE7 */
+html>body div.ibm-scroll-slider-outer
+{
+background: #e6e6e6;
+width: 6px;
+
+}
+
+*div.ibm-scroll-slider-inner {
+background: #888;
+width: 6px; 
+height: 68px;
+}
+
+
+div.ibm-scroll-slider-outer {
+	height: 100%;
+	position: absolute; 
+	top: 0px; 
+	cursor: pointer; 
+	right: 0px; 
+	top: 0; 
+	background: #e6e6e6;
+}
+div.ibm-scroll-slider-outer-active{
+	background: #ddd;
+}
+
+
+div.ibm-scroll-slider-inner {
+	position: absolute;	
+	background: #888; 
+	cursor: pointer; 
+	overflow: hidden;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	/* height of the arrows + 1px space */
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+div.ibm-scroll-slider-inner-active{
+	background: #666; 
+}
+
+div.ibm-scroll-slider-up, div.ibm-scroll-slider-down {
+	position: absolute;
+	height: 5px;
+	background: #FFF url(/i/v17/icons/scrollbar_arrows_sprite.png) no-repeat;
+	width: 100%;
+}
+
+div.ibm-scroll-slider-up {
+	top: 0px;
+	background-position: 0 0;
+}
+
+div.ibm-scroll-slider-outer-active div.ibm-scroll-slider-up {
+	background-position: 0 -106px;
+}
+
+div.ibm-scroll-slider-down {
+	bottom: 0px;
+	background-position: 0 -318px;
+}
+
+div.ibm-scroll-slider-outer-active div.ibm-scroll-slider-down {
+	background-position: 0 -424px;
+}
+
+
+/* Element shown at the bottom of the scroll container making a nice fade out */
+div.ibm-scroll-gradient{
+	position: absolute;
+	bottom: 0px;
+	height: 15px;
+
+	/* created using http://www.colorzilla.com/gradient-editor/ - blame them if it does not work :) */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+}
+
+/* dojo scroll code */
+/*
+div.ibm-scroll-slider-inner {
+	position: absolute;	
+	background: #CCC; 
+	cursor: pointer; 
+	overflow: hidden;
+}
+div.ibm-scroll-slider-inner-active{
+	background: #666; 
+}
+
+.dojoxScrollWindow {
+    overflow: hidden;
+    position: relative;
+}
+.dojoxScrollHelper .helperInner {
+    visibility: hidden;
+}
+.dojoxScrollHelper {
+    background: none repeat scroll 0 0 #EDEDED;
+    border: 1px solid #B7B7B7;
+    border-radius: 3px 3px 3px 3px;
+    height: 4px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 4px;
+}
+.dojoxScrollWrapper {
+}
+*/

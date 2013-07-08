@@ -1,0 +1,199 @@
+/* print styles begin ============================================ */
+
+@media screen {
+	#ibm-print-masthead, 
+	#ibm-content-main p.ibm-terms {
+	    display: none !important;
+	}
+}
+
+@media print {
+
+	#ibm-content a,
+	#ibm-content-main a{
+	opacity:1 !important;
+	}
+
+
+	.ibm-mobile {
+		display: none !important;
+	}
+
+	#ibm-print-masthead {
+	    display : block !important;
+		clear: both !important;
+		position: absolute !important;
+		top: 0px !important;
+	}
+	#ibm-masthead {
+		border: 0px none !important;
+	}
+
+	.ibm-home-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1,
+	#ibm-content,
+	#ibm-content-main,
+	#ibm-pcon,
+	#ibm-leadspace-head #ibm-leadspace-body {
+		float: none;
+		clear: both;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+		
+	}
+	#ibm-top {
+		float: none;
+		clear: both;
+		width: 100%;	
+		padding: 40px 0px 0px 0px;	
+		margin: 0px;
+		font-size:1.125em;
+	}
+	
+	#ibm-content-sidebar {
+	float: none;
+	clear: both;
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+	.ibm-columns .ibm-col-6-4, 
+	.ibm-columns .ibm-col-6-2 {
+		font-size:1.05em;
+	}
+	
+	#ibm-content-nav {
+		margin-top: 0px;
+	}
+	.ibm-twisty-body,
+	.ibm-hideable,
+	.ibm-container.ibm-show-hide .ibm-container-body {
+		display: block !important;
+		height: auto !important;
+	}
+
+	.ibm-two-column .ibm-column.ibm-first,
+	.ibm-two-column .ibm-column.ibm-second {
+		width: 48% !important;
+	}
+
+	.ibm-columns .ibm-col-2-1 {
+		width: 47.5% !important;
+	}
+
+
+
+	#ibm-content-nav #ibm-primary-tabs {
+    background: none;
+   border-bottom: 1px solid #000000;
+}
+	.ibm-landing-page #ibm-leadspace-head {
+    background: none;
+    border-bottom: none;
+	}
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+    background: none;}
+
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+    border-left: none;
+    border-right: none;
+    border-top: none;}
+    
+    #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
+     border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;}
+
+	.ibm-three-column .ibm-column.ibm-first,
+	.ibm-three-column .ibm-column.ibm-second,
+	.ibm-three-column .ibm-column.ibm-third {
+		width: 31.5% !important;
+	}
+
+	table.ibm-data-table caption, 
+	table.ibm-results-table caption {
+		border-top: 2px solid #333;
+	}
+
+	#ibm-related-content {
+		margin-top: 20px !important;
+		border-top: 2px solid #333;
+	}
+	table.ibm-data-table td, 
+	table.ibm-data-table th {
+		border-top: 1px solid #EEE;
+	}
+	#ibm-lead-2,
+	#ibm-lead-3,
+	.ibm-ribbon-nav,
+	#ibm-mast-options,
+	#ibm-universal-nav,
+	#ibm-navigation,
+	#ibm-common-menu,
+	#ibm-social-tools,
+	#ibm-page-tools-inner,
+	#ibm-footer-module,
+	#ibm-footer,
+	.ibm-no-print {
+		display: none !important;
+	}
+	#ibm-leadspace-body #ibm-navigation-trail li a
+	{
+	display: block !important;	
+	color: #000000 !important;
+	opacity : 1 !important;
+	}
+	
+	html, body{ 
+	 background:#ffffff !important;
+	}
+	
+	#ibm-content .ibm-columns {
+    overflow: visible;
+    }
+
+    .v17 .dijitCheckBoxInput {
+    	opacity: 1;
+    }
+
+    .dj_ie .v17 .dijitCheckBoxInput {
+    	filter: alpha(opacity=100);
+	}
+
+    .v17 .dijitCheckBox, 
+    .v17 .dijitCheckBoxIcon, 
+    .v17 .dijitCheckBox, 
+    .v17 .dijitCheckBoxIcon, 
+    .v17 .dijitRadio, 
+    .v17 .dijitRadioIcon {
+    	background-image: none;
+    }
+
+    .v17 #ibm-content input.ibm-disabled, 
+    .v17 #ibm-content input.ibm-disabled:hover, 
+    .v17 #ibm-content input.ibm-disabled:focus, 
+    .v17 #ibm-content input.ibm-disabled:active, 
+    .v17 #ibm-content input[disabled], 
+    .v17 #ibm-content input[disabled]:hover, 
+    .v17 #ibm-content input[disabled]:focus, 
+    .v17 #ibm-content input[disabled]:active, 
+    .v17 #ibm-content input[disabled="disabled"], 
+    .v17 #ibm-content input[disabled="disabled"]:hover, 
+    .v17 #ibm-content input[disabled="disabled"]:focus, 
+    .v17 #ibm-content input[disabled="disabled"]:active,
+    .v17 .dijitDialog input.ibm-disabled, 
+    .v17 .dijitDialog input.ibm-disabled:hover, 
+    .v17 .dijitDialog input.ibm-disabled:focus, 
+    .v17 .dijitDialog input.ibm-disabled:active, 
+    .v17 .dijitDialog input[disabled], 
+    .v17 .dijitDialog input[disabled]:hover, 
+    .v17 .dijitDialog input[disabled]:focus, 
+    .v17 .dijitDialog input[disabled]:active, 
+    .v17 .dijitDialog input[disabled="disabled"], 
+    .v17 .dijitDialog input[disabled="disabled"]:hover, 
+    .v17 .dijitDialog input[disabled="disabled"]:focus, 
+    .v17 .dijitDialog input[disabled="disabled"]:active  {
+    	box-shadow: none;
+    }
+}

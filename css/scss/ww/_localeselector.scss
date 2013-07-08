@@ -1,0 +1,552 @@
+/* localeselector styles begin ============================================ */
+
+/* hide country list by default; is shown through JavaScript */
+
+
+#ibm-country-selector{
+	overflow:visible;
+	display:block;
+	background-color:#EEEEEE;
+	height:auto;
+	width: 100%;
+}
+
+#ibm-loader{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    display: block;
+   /* font-size: 0.8em;*/
+    height: 35px;
+    overflow: hidden;
+    width: 45px;
+    padding: 168px 50%;
+    position: fixed;
+	top: 23px;
+    z-index: 999;
+}
+
+.ibm-loading{
+    -moz-border-radius: 5px 5px 5px 5px;
+    background: url("/i/v17/loading.gif") no-repeat scroll center center #A3A3A3;
+    height: 35px;
+    width: 45px;
+}
+
+#ibm-country-selector .ibm-columns .ibm-col-5-1 {
+	height: auto;
+	width:192px;
+}
+
+#ibm-country-selector .ibm-columns .ibm-col-5-2 {
+	width:393px;
+}
+
+#ibm-mapv-country-list .ibm-col-5-1.ibm-active .col-1 { margin-left: 0px; width:192px;}
+#ibm-mapv-country-list .ibm-col-5-1.ibm-active .col-2 { margin-left: 215px; width:192px;}
+#ibm-mapv-country-list .ibm-col-5-1.ibm-active .col-3 { margin-left: 430px; width:192px;}
+
+/*Code For Sort Map+List View Tab =========START==============*/
+
+#ibm-country-selector #ibm-country-sort{
+	display: inline-block;
+	margin:0px;
+	background-color: #EEEEEE;
+	float: right;
+	/*font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.7em;*/
+	padding: 10px 100px 10px 10px;
+}
+#ibm-country-selector #ibm-country-sort h2{
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    padding: 0px;	
+ 	/*font-size: 1.2em; */	 	
+}
+#ibm-country-selector #ibm-country-sort ul{
+	float: left;
+	padding: 0px;
+}
+#ibm-country-selector #ibm-country-sort ul li{
+ 	float: left;
+ 	padding: 0px;
+}
+#ibm-country-selector #ibm-country-sort  #ibm-map-view-tab.ibm-active{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px 0px;
+	
+}
+
+#ibm-country-selector #ibm-country-sort #ibm-list-view-tab.ibm-active{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -27px -200px;
+}
+
+#ibm-country-selector .ibm-dlg-close{
+	position: relative;
+	margin-left: 0;
+}
+
+#ibm-map-view-tab{
+	
+	display:block;
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px -200px;
+	background-repeat:no-repeat;
+	position:relative;
+	width:27px;
+	height:20px;	
+	text-indent:-9999px;
+}
+
+#ibm-map-view-tab:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px 0px;
+	background-repeat:no-repeat;
+	position:relative;
+
+}
+
+#ibm-map-view-tab:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px 0px;
+	background-repeat:no-repeat;
+	position:relative;
+
+}
+
+#ibm-list-view-tab{
+	
+	display:block;
+	background:url(/i/v17/ibm_country_select_sprites.gif) -27px 0px;
+	background-repeat:no-repeat;
+	position:relative;
+	width:26px;
+	height:20px;
+	text-indent:-9999px;
+	
+}
+
+#ibm-list-view-tab:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -27px -200px;
+	background-repeat:no-repeat;
+	position:relative;
+	
+}
+
+#ibm-list-view-tab:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -27px -200px;
+	background-repeat:no-repeat;
+	position:relative;
+	
+}
+/*Code For Sort Map+List View Tab =========END==============*/
+
+/*Code for country/region body */
+
+#ibm-country-selector .ibm-columns{
+	width:99%;
+	padding: 0 12px 10px;
+	height:100%;
+}
+
+/* Code for country/region Map View + Navigation ============= Start==== */
+
+#ibm-country-map-view {
+	display:block;
+	padding-left:10px;
+	padding-right:10px;
+	min-width: 1265px;
+}
+
+#ibm-country-selector  #ibm-country-map{
+	
+	float:left;
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px -400px;
+    background-repeat:no-repeat;
+    position:relative;
+    width:360px;
+    height:179px;
+	margin: 20px;
+}
+
+#ibm-country-selector  #ibm-country-map li {
+	width: 0;
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	display: block; 
+	position: absolute;
+}
+
+#ibm-country-selector  #ibm-country-map a {
+	
+	display: block; 
+	text-indent: -9999px; 
+	text-decoration: none;
+}
+
+#ibm-country-map-view .ibm-col-list{
+	margin-left: 45%;
+	width:50%;
+}
+#ibm-mapv-country-list{
+	padding-top:32px;
+	width:100%;
+}
+
+#ibm-mapv-country-list .ibm-col-5-1 {
+	display:none;
+}
+
+#ibm-mapv-country-list .ibm-col-5-1.ibm-active{
+	display:block;
+	position:relative;
+}
+#ibm-mapv-country-list .ibm-col-5-1.ibm-active li{
+	height:14px;
+}
+#ibm-mapv-country-list .ibm-col-5-1 h2{
+	display:none;
+}
+
+
+/* Map For Asia Start...................*/
+
+#ibm-country-selector  #ibm-country-map #ibm-country-ap {
+	z-index: 80;
+	margin-top:53px;
+    margin-left:215px;
+    width:146px;
+    height: 121px;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-ap:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -215px -1253px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-ap:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -215px -1253px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-ap.ibm-active {
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -215px -1253px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+/* Map For Asia End...................*/
+
+
+/* Map For Europe...................*/
+
+#ibm-country-selector  #ibm-country-map #ibm-country-eu {
+	z-index: 60;
+	margin-top:0px;
+    margin-left:152px;
+    width:	210px;
+    height: 78px;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-eu:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -152px -1000px;
+    background-repeat:no-repeat;
+    position:relative;
+   
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-eu:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -152px -1000px;
+    background-repeat:no-repeat;
+    position:relative;
+   
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-eu.ibm-active{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -152px -1000px;
+    background-repeat:no-repeat;
+    position:relative;
+   
+}
+/* Map For Europe.End..................*/
+
+/* Map For Latin America Start...................*/
+
+#ibm-country-selector  #ibm-country-map #ibm-country-la {
+	z-index: 70;
+	margin-top:80px;
+    margin-left:40px;
+    width:105px;
+    height:110px;
+    
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-la:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -40px -880px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-la:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -40px -880px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-la.ibm-active{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -40px -880px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+/* Map For Latin America End...................*/
+
+
+/* Map For Africa Start...................*/
+
+#ibm-country-selector  #ibm-country-map #ibm-country-mea {
+	z-index: 40;
+	margin-top:60px;
+    margin-left:150px;
+    width:80px;
+    height: 100px;    
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-mea:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -150px -1460px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-mea:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -150px -1460px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-mea.ibm-active{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) -150px -1460px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+/* Map For Africa End...................*/
+
+/* Map For North America Start...................*/
+
+#ibm-country-selector  #ibm-country-map #ibm-country-na {
+	z-index: 70;
+	margin-top:0px;
+    margin-left:0px;
+    width:160px;
+    height:88px;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-na:focus{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px -600px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-na:hover{
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px -600px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+#ibm-country-selector  #ibm-country-map #ibm-country-na.ibm-active {
+	
+	background:url(/i/v17/ibm_country_select_sprites.gif) 0px -600px;
+    background-repeat:no-repeat;
+    position:relative;
+}
+/* Map For North America End...................*/
+
+
+
+
+/* code for Center navigation country/region*/
+#ibm-country-selector  #ibm-country-nav {
+	 margin-left: 20px;
+	 width:167px;
+}
+
+#ibm-country-selector  #ibm-country-nav ul {
+	width: 165px;
+}
+
+#ibm-country-selector  #ibm-country-nav ul li {
+    margin:5px 0px 0px;
+	padding: 1px 0px;
+    _padding:1px 0px 1px 0px;
+}
+
+#ibm-country-selector #ibm-country-nav ul li a.ibm-inactive, 
+#ibm-country-selector #ibm-country-nav ul li a:hover{
+	
+	color: #fff;
+    background: #555;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#454545');
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-webkit-linear-gradient(center top,  #656565,  #454545);
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-moz-linear-gradient(center top,  #656565,  #454545);
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-o-linear-gradient(center top,  #656565,  #454545);
+	background-repeat:no-repeat;
+}
+
+#ibm-country-selector  #ibm-country-nav ul li  a:focus{
+    
+ 	color: #000;
+
+}
+
+#ibm-country-selector  #ibm-country-nav ul li  a.ibm-active{
+    
+ 	color: #fff;
+	background: #555;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#151515');
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-webkit-linear-gradient(center top,  #656565,  #151515);
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-moz-linear-gradient(center top,  #656565,  #151515);
+	background: url(/i/v17/ibm_icon_sprites.gif) 148px -1397px,-o-linear-gradient(center top,  #656565,  #151515);
+	background-repeat:no-repeat;
+}
+
+#ibm-country-selector  #ibm-country-nav ul li a{
+	
+	display:block;
+	color: #6B6B6B;
+	/*font-size: 1.1em;
+	font-weight:bold;*/
+	text-decoration: none;
+	padding:5px 5px 5px 5px;
+	font-family:Arial,sans-serif;
+	background:url(/i/v17/ibm_icon_sprites.gif) 148px -1197px;
+	background-repeat:no-repeat;
+	width:154px;
+}
+
+
+/* Code for country/region Map View + Navigation ============= Start==== */
+
+    
+/* Code for List View Country Language Name */
+
+#ibm-country-list-view {
+	display: none;
+	padding-left:10px;
+	padding-right:10px;	
+	height:410px;
+	overflow:scroll;
+	overflow:-moz-scrollbars-vertical;
+	_overflow:scroll;
+	*overflow:scroll;
+	width: 96%;
+	min-width:1067px;
+}
+
+#ibm-country-list-view .ibm-columns{
+	min-width:1067px;
+}
+
+#ibm-country-selector  h2{
+
+	font-size:0.9em;
+  	padding: 10px 0 5px;
+	
+}
+
+#ibm-country-selector  ul{
+	   list-style: none;
+        padding: 0 0 10px 0;
+}
+
+#ibm-country-selector  ul li{
+	padding:5px 0;
+	margin:0px;
+	color: #6B6B6B;
+	/*font-size: .7em;
+	font-weight:bold;
+	font-family:Arial,sans-serif;*/
+}
+
+#ibm-country-selector  ul li a{
+
+	color: #6B6B6B;
+	text-decoration:none;
+
+}
+
+#ibm-country-selector ul li a:focus {
+	color:#000;
+	text-decoration:underline;
+
+}    
+
+#ibm-country-selector ul li a.ibm-active {
+	color:#000;
+	text-decoration:underline;
+
+}    
+
+#ibm-country-selector  ul li a:hover{
+
+	color: #000;
+	text-decoration:underline;
+}
+
+/* Code for List View Country Language Name========= End====== */
+
+
+/* For IE 7 Start */
+
+*:first-child+html #ibm-country-selector  #ibm-country-nav li a:hover{
+	
+	background-color: #555;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#383838');
+}
+	
+/* For IE 7 End */
+
+
+
+/* For IE 6 Start */
+
+* html #ibm-country-selector  #ibm-country-nav li a:hover{
+
+	background-color: #555;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#383838');
+}    
+
+/* For IE 6 End */
+
+
+/*Code for ibm rule  ====> */
+
+#ibm-country-selector div.ibm-rule{
+
+	background:none;
+	margin:0px;
+	height:0px;
+	border-top:1px solid #CCCCCC;
+	border-bottom:0px solid #CCCCCC;
+
+}
+/*Code ibm rule End ===== */
+
+/* Css Code For Country Selector Page Start Here ============================================== */
+

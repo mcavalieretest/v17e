@@ -1,0 +1,103 @@
+/* tooltip styles begin ============================================ */
+
+/*
+ * Tooltip JS code
+ */
+ 
+.v17 .dijitTooltip { 
+    position: absolute; 
+    z-index: 3100;  
+    left: 50%;  
+    top: -10000px;  
+    overflow: visible;
+    max-width:250px;
+}
+
+.v17 .dijitTooltipContainer {
+    background-color: #EEE; 
+    border:1px solid #ffffff;   
+	padding:10px;   
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px;
+    -moz-box-shadow: 0 0 3px 3px #D6D6D6;
+	-webkit-box-shadow: 0 0 3px 3px #D6D6D6;
+	 box-shadow: 0 0 3px 3px #D6D6D6;
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#D6D6D6,direction=125,strength=5)"; /* IE8+ */  
+     filter: progid:DXImageTransform.Microsoft.Shadow(color=#D6D6D6,direction=125,strength=5); /* IE7 and lower */  
+ 	 color:#000;
+    /* disabled for Support portal */
+    /*width:130px;*/
+     font-size:12px;
+   /* margin-top:20px;*/
+   
+}
+
+#ibm-com .dijitTooltipContainer { 
+    font-size:12px;
+}
+.v17 .dijitTooltip h3 {
+    margin: 0px;
+}
+.v17 .dijitTooltip h3 {
+    margin: 0px;
+}
+
+.v17 .dijitTooltipAbove.dijitTooltipABLeft .dijitTooltipConnector,
+.v17 .dijitTooltipAbove.dijitTooltipABRight .dijitTooltipConnector,
+.v17 .dijitTooltipBelow.dijitTooltipABLeft .dijitTooltipConnector,
+.v17 .dijitTooltipBelow.dijitTooltipABRight .dijitTooltipConnector {
+    height: 23px;
+    width: 24px;
+    position: absolute;
+    z-index: 2;
+ }
+ 
+.v17 .dijitTooltipAbove.dijitTooltipABLeft .dijitTooltipConnector,
+.v17 .dijitTooltipAbove.dijitTooltipABRight .dijitTooltipConnector {
+    background:url(/i/v17/tooltip/tooltip_up_arrow.png) no-repeat 0px 0px; 
+  	bottom:2px;
+}
+ 
+ .v17 .dijitTooltipAbove.dijitTooltipABLeft .dijitTooltipContainer,
+.v17 .dijitTooltipAbove.dijitTooltipABRight .dijitTooltipContainer {
+ 	margin-bottom:20px;
+ }
+ 
+ .v17 .dijitTooltipBelow.dijitTooltipABLeft .dijitTooltipContainer,
+.v17 .dijitTooltipBelow.dijitTooltipABRight .dijitTooltipContainer {
+ margin-top:20px;
+ }
+ 
+.v17 .dijitTooltipBelow.dijitTooltipABLeft .dijitTooltipConnector,
+.v17 .dijitTooltipBelow.dijitTooltipABRight .dijitTooltipConnector{
+   background:url(/i/v17/tooltip/tooltip_down_arrow.png) no-repeat 0px 0px;     
+   top:0px ; 
+}
+ 
+.v17 .dijitTooltipAbove.dijitTooltipABLeft .dijitTooltipConnector,
+.v17 .dijitTooltipBelow.dijitTooltipABLeft .dijitTooltipConnector {
+   	left:10px;
+}
+
+.v17 .dijitTooltipAbove.dijitTooltipABRight .dijitTooltipConnector,
+.v17 .dijitTooltipBelow.dijitTooltipABRight .dijitTooltipConnector {
+	right: 10px;
+}
+
+
+*html .v17 .dijitTooltipRight .dijitTooltipConnector {  
+    background:url(/i/v17/tooltip/tooltipConnectorLeft-IE.gif) no-repeat top left;
+}
+
+/* Controlling Iframe width height Here */    
+.v17 .dijitBackgroundIframe{
+ width:0px !important;
+ height:0px !important;
+}
+
+/* tool tip within the span */
+span.ibm-tooltip {
+    text-decoration: none;
+	border-bottom: 1px dotted #17af4b;
+}

@@ -1,0 +1,177 @@
+/* liquid styles begin ============================================ */
+
+.ibm-liquid {
+	width: 100%;
+}
+
+
+.ibm-liquid #ibm-pcon {
+	width: auto;
+	max-width: 1360px;
+	_height: 1%;
+	_float: left;
+	_padding-left: 200px;
+}
+
+.ibm-liquid #ibm-content-main {
+	width: 100%;
+}
+.ibm-liquid #ibm-content-body {
+	padding-right: 200px;
+}
+.ibm-liquid #ibm-content-head,
+.ibm-liquid #ibm-content #ibm-leadspace-head {
+    background: transparent;
+	width: 66%;
+}
+
+.ibm-liquid #ibm-content #ibm-leadspace-head,
+.ibm-content-expand.ibm-liquid #ibm-content #ibm-leadspace-head {
+	width: 100%;
+} 
+
+.ibm-content-expand.ibm-liquid #ibm-content #ibm-leadspace-head.ibm-alternate h1 {
+	width: auto;
+}
+
+.ibm-liquid #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+    width: 75%;
+}
+
+.ibm-content-expand.ibm-liquid #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+    width: 100%;
+}
+
+
+.ibm-liquid #ibm-content-main .ibm-columns p > img {
+    display: block;
+    margin: 0px auto;
+}
+
+.ibm-liquid #ibm-content-main .ibm-columns p img + em {
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* Code for Default liquid design */
+
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-2-1,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-3-1,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-3-2,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-1,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-2,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-3,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-1,
+.ibm-liquid #ibm-content .ibm-container .ibm-col-5-1,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-2, 
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-3,
+.ibm-liquid.ibm-content-expand #ibm-content .ibm-columns .ibm-col-5-1,
+.ibm-liquid.ibm-content-expand #ibm-content .ibm-container .ibm-col-5-1,
+.ibm-liquid #ibm-content .ibm-two-column .ibm-column.ibm-first,
+.ibm-liquid #ibm-content .ibm-two-column .ibm-column.ibm-second,
+.ibm-liquid #ibm-content .ibm-three-column .ibm-column
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-2-1,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-2,
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-6-3 {
+	width:50% !important;
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-2 {
+	width:66.3% !important;
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-3{
+	width:100% !important;
+}
+
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-5-1,
+.ibm-liquid #ibm-content .ibm-container .ibm-col-5-1 {
+	width: 33.33% !important;
+}
+
+.ibm-liquid.ibm-content-expand #ibm-content .ibm-columns .ibm-col-5-1,
+.ibm-liquid.ibm-content-expand #ibm-content .ibm-container .ibm-col-5-1 {
+    width: 25% !important;
+}
+
+
+/* experimental liquid grid support - begin */
+
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-3-1
+{
+	width:33.3% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-3-2
+{
+	width:66.6% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-1
+{
+	width:25% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-4-3
+{
+	width:75% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-6-1
+{
+	width:16.6% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-6-2
+{
+	width:33.2% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-6-4
+{
+	width:66.4% !important;
+
+}
+
+.ibm-liquid #ibm-content .ibm-columns .ibm-col-6-5
+{
+	width:83% !important;
+
+}
+
+/* experimental liquid grid support - end */
+
+
+
+
+/*Code for Container Subhead ======================*/
+.ibm-liquid #ibm-content .ibm-two-column .ibm-column.ibm-first,
+.ibm-liquid #ibm-content .ibm-two-column .ibm-column.ibm-second {
+	width:50% !important;
+}
+
+.ibm-liquid #ibm-content .ibm-three-column .ibm-column {
+	width: 33.33% !important;
+}
+
+/*Code for Container Subhead  End======================*/
+
+
+/* liquid definition styles end ============================================ */

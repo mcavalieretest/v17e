@@ -1,0 +1,80 @@
+/* rating styles begin ============================================ */
+
+/*
+
+Star rating styles
+
+5 star,4 and half,4 stars,3 and half,3 stars,2 and half,2 stars,1 star and half,1 star,half star,zero star
+
+Interactive and static version
+
+markup:
+<div class="ibm-rating-module">
+	<ul class="ibm-rating-list">
+		<li class="ibm-rating-full-star"><a href="#" title="1 star"></a></li>
+		<li class="ibm-rating-full-star"><a href="#" title="2 star"></a></li>
+		<li class="ibm-rating-full-star"><a href="#" title="3 star"></a></li>
+		<li class="ibm-rating-half-star"><a href="#" title="4 star"></a></li>
+		<li class="ibm-rating-no-star"><a href="#" title="5 star"></a></li>
+	</ul>
+</div>
+*/
+
+#ibm-com #ibm-top .ibm-rating-module,
+#ibm-com .ibm-common-overlay .ibm-rating-module {
+	display: block;
+	clear: both;
+	padding-bottom: 25px;
+}
+	#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list,
+	#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list {
+		list-style-type: none;
+	}
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-no-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-no-star,
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-half-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-half-star,
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-full-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-full-star {
+			float: left;
+			width: 13px;
+			height:13px;
+			background: url("/i/v17/icons/ibm_sprite_ratings_blue_ON.png") no-repeat;
+			display: block;
+			clear: none;
+			margin:0;
+			padding: 0 2px 0 0;
+		}
+
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-no-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-no-star {
+			background-position: 0 -601px;
+		}
+
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-half-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-half-star {
+			background-position: 0 -401px;
+		}
+
+		#ibm-com #ibm-top .ibm-rating-module .ibm-rating-list .ibm-rating-full-star,
+		#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-list .ibm-rating-full-star {
+			background-position: 0 -201px;
+		}
+
+#ibm-com #ibm-top .ibm-rating-module h2,
+#ibm-com .ibm-common-overlay .ibm-rating-module h2 {
+	clear: both;
+}
+
+#ibm-com #ibm-top .ibm-rating-module .ibm-rating-label,
+#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-label {
+	padding-bottom: 5px;
+	clear: both;
+}
+#ibm-com #ibm-top .ibm-rating-module .ibm-rating-inline-label,
+#ibm-com .ibm-common-overlay .ibm-rating-module .ibm-rating-inline-label {
+	float: left;
+	clear: left;
+	padding-top: 0px;
+	width: 120px;
+}

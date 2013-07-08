@@ -1,0 +1,244 @@
+/* related styles begin ============================================ */
+
+#ibm-related-content {
+	background: #F0F0F0 url(/i/v17/t/related-bg.png) repeat-x 50% 0px;
+	box-shadow: inset 0 1px 0 #E5E5E5;
+	-moz-box-shadow: inset 0 1px 0 #E5E5E5;
+	-webkit-box-shadow: inset 0 1px 0 #E5E5E5;
+	border-bottom: 2px solid #FFF;
+	min-height: 0px;
+	*min-height: auto;
+	_height: 0px;
+}
+#ibm-related-content .ibm-columns {
+	width: 960px;
+	padding: 0 10px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#ibm-related-content .ibm-columns .ibm-col-1-1,
+#ibm-related-content .ibm-columns .ibm-col-2-1,
+#ibm-related-content .ibm-columns .ibm-col-4-1,
+#ibm-related-content .ibm-columns .ibm-col-4-2,
+#ibm-related-content .ibm-columns .ibm-col-4-3,
+#ibm-related-content .ibm-columns .ibm-col-5-1,
+#ibm-related-content .ibm-columns .ibm-col-5-2,
+#ibm-related-content .ibm-columns .ibm-col-5-3,
+#ibm-related-content .ibm-columns .ibm-col-5-4,
+#ibm-related-content .ibm-columns .ibm-col-6-1,
+#ibm-related-content .ibm-columns .ibm-col-6-2,
+#ibm-related-content .ibm-columns .ibm-col-6-3,
+#ibm-related-content .ibm-columns .ibm-col-6-4,
+#ibm-related-content .ibm-columns .ibm-col-6-5 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* min-height: 210px; */
+}
+
+#ibm-related-content .ibm-thumbnail {
+	margin-top: 8px;
+	*margin-top: 18px;
+	outline: 0 none;
+	border: 0 none;
+	outline-offset: 0;
+}
+
+
+#ibm-related-content #ibm-merchandising-module .ibm-container:nth-child(7),
+#ibm-related-content #ibm-merchandising-module .ibm-container:nth-child(8),
+#ibm-related-content #ibm-merchandising-module .ibm-container:nth-child(9),
+#ibm-related-content #ibm-merchandising-module .ibm-container:nth-child(10) {
+	display: none;
+}
+#ibm-related-content .ibm-mte-crop img {
+	margin-left: -14px;
+}
+#ibm-related-content .ibm-columns h2 {
+     color: #4C4C4C;
+    margin-bottom: -10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#ibm-related-content #ibm-merchandising-module h2{
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-top: 0;
+}
+
+#ibm-related-content .ibm-columns .ibm-col-1-1 h2,
+#ibm-related-content .ibm-columns .ibm-col-2-1 h2,
+#ibm-related-content .ibm-columns .ibm-col-4-1 h2,
+#ibm-related-content .ibm-columns .ibm-col-4-2 h2,
+#ibm-related-content .ibm-columns .ibm-col-4-3 h2,
+#ibm-related-content .ibm-columns .ibm-col-5-1 h2,
+#ibm-related-content .ibm-columns .ibm-col-5-2 h2,
+#ibm-related-content .ibm-columns .ibm-col-5-3 h2,
+#ibm-related-content .ibm-columns .ibm-col-5-4 h2,
+#ibm-related-content .ibm-columns .ibm-col-6-1 h2,
+#ibm-related-content .ibm-columns .ibm-col-6-2 h2,
+#ibm-related-content .ibm-columns .ibm-col-6-3 h2,
+#ibm-related-content .ibm-columns .ibm-col-6-4 h2,
+#ibm-related-content .ibm-columns .ibm-col-6-5 h2,
+#ibm-related-content .ibm-columns .ibm-col-1-1 h3,
+#ibm-related-content .ibm-columns .ibm-col-2-1 h3,
+#ibm-related-content .ibm-columns .ibm-col-4-1 h3,
+#ibm-related-content .ibm-columns .ibm-col-4-2 h3,
+#ibm-related-content .ibm-columns .ibm-col-4-3 h3,
+#ibm-related-content .ibm-columns .ibm-col-5-1 h3,
+#ibm-related-content .ibm-columns .ibm-col-5-2 h3,
+#ibm-related-content .ibm-columns .ibm-col-5-3 h3,
+#ibm-related-content .ibm-columns .ibm-col-5-4 h3,
+#ibm-related-content .ibm-columns .ibm-col-6-1 h3,
+#ibm-related-content .ibm-columns .ibm-col-6-2 h3,
+#ibm-related-content .ibm-columns .ibm-col-6-3 h3,
+#ibm-related-content .ibm-columns .ibm-col-6-4 h3,
+#ibm-related-content .ibm-columns .ibm-col-6-5 h3{
+    color: #4C4C4C;
+    margin: 0;
+    padding: 4px 0 0;
+}
+
+/*#ibm-related-content h2 {
+    color: #4C4C4C;
+    margin: 0px;
+    padding: 4px 0px 0px;
+}*/
+#ibm-related-content h2 + ul,#ibm-related-content h3 + ul {
+	padding-top: 4px;
+}
+#ibm-related-content .ibm-columns p {
+	padding: 4px 0 10px;
+}
+#ibm-related-content p {
+	color: #666;
+}
+
+#ibm-related-content p a {
+	display: block;
+	margin: 4px 0;
+}
+
+#ibm-related-content .ibm-col-6-1:hover h2 {
+    color: #000;
+}
+#ibm-related-content .ibm-col-6-1:hover p {
+	color: #333;
+}
+
+
+#ibm-related-content p.ibm-ind-link {
+	padding: 0;
+}
+#ibm-related-content p.ibm-ind-link a {
+	 /* display: inline;*/
+	*display: inline-block;
+	padding-top: 1px;  
+}
+
+/* #ibm-related-content p.ibm-ind-link a.ibm-forward-link {
+	 background-position: 100% 0px;   
+}*/
+ /*#ibm-related-content p.ibm-ind-link a.ibm-pdf-link {
+	 background-position: 100% -1202px;  
+} */
+/*#ibm-related-content p.ibm-ind-link a.ibm-external-link {
+	 /* background-position: 100% -2px;   
+}*/
+ /* 
+#ibm-related-content p.ibm-ind-link a.ibm-forward-link,
+#ibm-related-content p.ibm-ind-link a.ibm-pdf-link,
+#ibm-related-content p.ibm-ind-link a.ibm-external-link {
+  padding-left: 0px !important;  
+}
+*/
+#ibm-related-content #ibm-merchandising-module {
+	float: left;
+    _margin-left: -10px; /* ie6 hack to avoid 6 MTE moudles break layout*/
+}
+
+
+
+#ibm-related-content #ibm-merchandising-module .ibm-container {
+	width: 140px;
+	float: left;
+	overflow: hidden;
+	min-height: 140px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	margin: 0 10px !important;
+}
+
+#ibm-related-content .ibm-ribbon-pane .ibm-col-6-1 .ibm-container-body {
+	overflow: hidden;
+}
+#ibm-related-content .ibm-ribbon-pane .ibm-col-6-1 .ibm-container-body a:first-child {
+	display: block;
+	margin-top: 8px;	
+}
+
+#ibm-related-content #ibm-merchandising-module .ibm-container img {
+	padding-top: 8px;
+}
+#ibm-related-content #ibm-merchandising-module .ibm-container p,
+#ibm-related-content .ibm-ribbon-pane .ibm-col-6-1 .ibm-container-body p {
+	color: #7F7F7F;
+	padding-bottom: 0;
+}
+
+#ibm-related-content #ibm-merchandising-module .ibm-container p.ibm-ind-link,
+#ibm-related-content .ibm-ribbon-pane .ibm-col-6-1 .ibm-container-body p.ibm-ind-link {
+	color: #7F7F7F;
+	padding-top: 0;	
+}
+
+#ibm-related-content #ibm-merchandising-module .ibm-container div.ibm-rule,
+#ibm-related-content .ibm-ribbon-pane .ibm-col-6-1 .ibm-container-body div.ibm-rule {
+	display: none;
+}
+#ibm-related-content #ibm-merchandising-module .ibm-container:hover h2 {
+	color: #000;
+}
+#ibm-related-content #ibm-merchandising-module .ibm-container:hover p {
+	color: #333;
+}
+
+
+#ibm-related-content .ibm-columns:first-child {
+	position: relative;	
+}
+#ibm-related-content .ibm-ribbon-pane {
+	height: 230px;
+	width: 960px;
+}
+
+#ibm-related-content .ibm-ribbon-pane .ibm-columns {
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: none;
+}
+
+#ibm-related-content .ibm-columns .ibm-columns {
+	padding: 0;
+}
+	
+
+#ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-5-1, 
+#ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-6-1, 
+#ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-6-2 {
+	cursor: default;
+}
+
+#ibm-related-content .ibm-ribbon-pane .ibm-columns .ibm-col-6-1 {
+	overflow: hidden;
+}
+
+#ibm-related-content a.ibm-ribbon-prev {
+	left: -10px;
+}
+#ibm-related-content a.ibm-ribbon-next {
+	right: -10px;
+	margin-top: -140px;
+}

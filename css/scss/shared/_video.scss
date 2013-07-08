@@ -1,0 +1,295 @@
+/* video styles begin ============================================ */
+
+#ibm-content .ibm-media .ibm-container.ibm-ribbon h2,
+#ibm-content .ibm-media .ibm-container.ibm-video h2,
+#ibm-content .ibm-media .ibm-container.ibm-portrait h2 {
+	display: inline-block;
+	padding: 7px 0px 2px;
+	margin-right: -10px;
+}
+
+
+#ibm-content .ibm-media .ibm-container ul.ibm-container-controls li {
+	background: none;
+	clear: none;
+}
+
+
+
+.ibm-video .ibm-video-container {
+	background-color: #333;
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	
+	position: relative;
+}
+.ibm-video .ibm-video-container a {
+	/* position: relative; breaks on http://webdev.webmaster.ibm.com/smartercomputing/us/en/ */
+}
+
+.ibm-video-play {
+	background: url(/i/v17/video-play-sprite.png) no-repeat -6px -600px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+}
+
+.ibm-video-background {
+	cursor: pointer;
+	/* TODO: vertically align this! */	
+}
+
+.ibm-col-1-1 .ibm-video-play,
+.ibm-col-6-4 .ibm-video-play {
+	position: relative;
+	width: 140px;
+	height: 140px;
+	top: -225px;
+	*position: absolute;
+	_top: 0px;
+	_margin-top: 100px;
+	left: 230px;
+	*left:400px;
+	_left: 0px;
+}
+
+.ibm-col-6-4 .ibm-video-play {
+	*left: 250px;
+	_left:0px;
+}
+
+.ibm-col-1-1 .ibm-video .ibm-video-container div:hover .ibm-video-play,
+.ibm-col-1-1 .ibm-video .ibm-video-container a:hover .ibm-video-play,
+.ibm-col-6-4 .ibm-video .ibm-video-container div:hover .ibm-video-play,
+.ibm-col-6-4 .ibm-video .ibm-video-container a:hover .ibm-video-play,
+.ibm-col-6-2 .ibm-video .ibm-video-container div:hover .ibm-video-play,
+.ibm-col-6-2 .ibm-video .ibm-video-container a:hover .ibm-video-play,
+.ibm-col-5-2 .ibm-video .ibm-video-container div:hover .ibm-video-play,
+.ibm-col-5-2 .ibm-video .ibm-video-container a:hover .ibm-video-play {
+	background-position: -9px -900px;
+}
+
+.ibm-col-6-2 .ibm-video-play {
+	width: 132px;
+	height: 132px;
+	top: 20px;
+	_top: 0px;
+	_margin-top: 35px;
+	left: 84px;
+    position: absolute;
+}
+
+
+*:first-child+html .ibm-col-6-2 .ibm-video-play {
+	top: 0px;
+	margin-top: 35px;
+}
+
+*:first-child+html .ibm-col-1-1 .ibm-video-play,
+*:first-child+html .ibm-col-6-4 .ibm-video-play {
+	top: 0px;
+	margin-top: 100px;
+}
+
+
+.ibm-col-6-2 .ibm-thumbnail .ibm-video-play,
+.ibm-col-6-3 .ibm-thumbnail .ibm-video-play {
+	background-color: transparent;
+	background-position: -14px -10px;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	margin-top: 23px;
+	left: 15px;
+        top: -15px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail:hover .ibm-video-play,
+.ibm-col-6-3 .ibm-thumbnail:hover .ibm-video-play {
+	background-position: -14px -110px;
+}
+
+*:first-child+html .ibm-col-6-2 .ibm-thumbnail .ibm-video-play {
+	margin-top: -36px;
+}
+.ibm-col-6-2 .ibm-media-thumb.ibm-media-active .ibm-thumbnail img {
+	opacity: 0.4;
+}
+.ibm-col-6-2 .ibm-media-thumb.ibm-media-active .ibm-thumbnail span {
+	display: none;
+}
+
+
+.ibm-media-list .ibm-media-thumb p .show_more {
+	display: none;
+}
+
+.ibm-col-5-1 .ibm-thumbnail .ibm-video-play {
+	background-color: transparent;
+	background-position: -14px -210px;
+	width: 65px;
+	height: 65px;
+	margin-top: -73px;
+	left: -30px;
+}
+.ibm-col-5-2 .ibm-video-play {
+    height: 132px;
+    left: 112px;
+    top: 35px;
+    width: 132px;
+}
+.ibm-col-6-1 .ibm-thumbnail .ibm-video-play {
+	background-color: transparent;
+	background-position: -14px -210px;
+	width: 65px;
+	height: 65px;
+	margin-top: -63px;
+	left: -14px;
+}
+.ibm-col-5-1 .ibm-thumbnail:hover .ibm-video-play,
+.ibm-col-6-1 .ibm-thumbnail:hover .ibm-video-play {
+
+	background-position: -14px -360px;
+}
+
+
+
+.ibm-col-5-1 .ibm-media .ibm-thumbnail-widget span.ibm-thumbnail {
+	width: 172px;
+	width: 170px\9;
+	height: 108px;
+	margin-top: 10px;	
+}
+.ibm-col-5-1 .ibm-media .ibm-thumbnail-widget .ibm-thumbnail img {
+	width: 172px;
+	height: 108px;
+}
+
+
+#ibm-content .ibm-columns .ibm-col-1-1 .ibm-media-beneath h3,
+#ibm-content .ibm-columns .ibm-col-6-4 .ibm-media-beneath h3 {
+	margin: 0px;
+}
+#ibm-content .ibm-columns .ibm-col-1-1 .ibm-media-beneath p,
+#ibm-content .ibm-columns .ibm-col-6-4 .ibm-media-beneath p {
+	padding: 2px 0px;
+}
+
+/* container-controls for video section */
+#ibm-content .ibm-container-controls,
+#ibm-media .ibm-container-controls {
+	float: right;
+	display: block;
+	padding-bottom: 0;
+	padding-right: 0;
+	_margin-top: -25px;
+}
+*:first-child+html #ibm-content .ibm-container-controls,
+*:first-child+html #ibm-media .ibm-container-controls {
+	margin-top: -25px;
+}
+#ibm-content .ibm-container-controls li,
+#ibm-media .ibm-container-controls li {
+	float: left;
+}
+#ibm-content .ibm-container-controls a,
+#ibm-media .ibm-container-controls a {
+	display: block;
+	width: 20px;
+	height: 14px;
+	text-indent: -999em;
+	overflow:hidden;
+	/*opacity: 1;
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
+}
+
+.ibm-container-controls a {
+	background: url(/i/v17/icons/scroll_nav_sprite.gif) no-repeat;
+}
+.ibm-container-controls a.ibm-show-hide {
+	background-position: 9px -245px;
+}
+.ibm-container-controls a.ibm-show-hide:hover {
+	background-position: 9px -295px;
+}
+.ibm-container-controls a.ibm-show-hide.ibm-active {
+	background-position: 9px -349px;
+}
+.ibm-container-controls a.ibm-show-hide.ibm-active:hover {
+	background-position: 9px -399px;
+}
+.ibm-container-controls a.ibm-gallery-view {
+	background-position: 9px -445px;
+}
+.ibm-container-controls a.ibm-gallery-view:hover {
+	background-position: 9px -495px;
+}
+.ibm-container-controls a.ibm-gallery-view.ibm-active {
+	cursor: auto;
+	background-position: 9px -495px;
+}
+.ibm-container-controls a.ibm-view-all {
+	background-position: 9px -547px;
+}
+.ibm-container-controls a.ibm-view-all:hover {
+	background-position: 9px -597px;
+}
+.ibm-container-controls a.ibm-view-all.ibm-active {
+	cursor: auto;
+	background-position: 9px -597px;
+}
+/* container-controls for video section */
+
+.ibm-video-object {
+	z-index: 1000;
+}
+
+#ibm-content .ibm-media .ibm-col-6-2 ul.ibm-portrait-module-list li {
+	*height: auto;
+}
+
+#ibm-content .ibm-playlist .ibm-container-body {
+	*width: 300px;
+}
+
+
+
+.ibm-play-button-small,
+.ibm-play-button-medium,
+.ibm-play-button-large {
+	position: absolute;
+	top:0;
+	left:0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+	
+.ibm-play-button-small {	
+	background-image: url(/i/v17/video-play-button-small.png);
+}
+	.ibm-play-button-small:hover {	
+		background-image: url(/i/v17/video-play-button-small-hover.png);
+	}
+
+.ibm-play-button-medium {	
+	background-image: url(/i/v17/video-play-button-medium.png);
+}
+	.ibm-play-button-medium:hover {	
+		background-image: url(/i/v17/video-play-button-medium-hover.png);
+	}
+
+.ibm-play-button-large {	
+	background-image: url(/i/v17/video-play-button-large.png)
+}
+	.ibm-play-button-large:hover {	
+		background-image: url(/i/v17/video-play-button-large-hover.png)
+	}
+
+
+/* CSS For Video End Here ===================================================== */
