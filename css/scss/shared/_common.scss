@@ -474,7 +474,7 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
     margin: 0px 20px;
     padding: 15px 0px 0px 0px;
     text-shadow: 0px 1px 0px #FFF;
-    position: relative\0/; /*ie8 fix*/
+    position: relative#{$ie9Hack}; /*ie8 fix*/
     *position: relative;  /*ie6/7 fix*/
 }
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
@@ -865,11 +865,11 @@ enabled by Saling V - megamenu and localselector update applied*/
     margin-right: -6px;
 }
 
-*html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
-*html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
-*html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
-*html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
-*html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover{
+* html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
+* html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
+* html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
+* html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
+* html #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover{
 	margin-left: 0px;
     margin-right: 0px;
     padding:2px;
@@ -2317,11 +2317,11 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 
 
 
-*html .ibm-show-hide h2 a{
+* html .ibm-show-hide h2 a{
 width:98%;
 }
 
- *html #ibm-content-sidebar .ibm-show-hide h2{
+ * html #ibm-content-sidebar .ibm-show-hide h2{
 	width:90%;
 
 }
@@ -2520,8 +2520,8 @@ div.ibm-pull-quote.ibm-inset blockquote p em,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
 	display:block;
 }
-*html #ibm-top .ibm-alternate-font BLOCKQUOTE P,
-*html #ibm-top BLOCKQUOTE P{
+* html #ibm-top .ibm-alternate-font BLOCKQUOTE P,
+* html #ibm-top BLOCKQUOTE P{
  padding:0px !important;
 }
 
@@ -2549,7 +2549,7 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
     margin-left:2px;
     margin-top:7px;
 }
-*html .ibm-pullquote-open{
+* html .ibm-pullquote-open{
 	
   margin-left:-18px;
   margin-top:-5px;
@@ -2558,7 +2558,7 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
  }
  
  
-*html .ibm-pullquote-close{
+* html .ibm-pullquote-close{
 	 
 padding-top:4px;
 padding-bottom:2px;

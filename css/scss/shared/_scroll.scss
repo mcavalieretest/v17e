@@ -25,14 +25,14 @@ div.ibm-scroll-container {
 	top: 0px;
 }
 /* Added to work fine on IE6 */
-*html div.ibm-scroll-slider-outer
+* html div.ibm-scroll-slider-outer
 {
 background: #e6e6e6;
 width: 6px;
 
 }
 
-*html div.ibm-scroll-slider-inner {
+* html div.ibm-scroll-slider-inner {
 background: #888;
 width: 6px; 
 height: 68px;
@@ -46,7 +46,7 @@ width: 6px;
 
 }
 
-*div.ibm-scroll-slider-inner {
+* html div.ibm-scroll-slider-inner {
 background: #888;
 width: 6px; 
 height: 68px;

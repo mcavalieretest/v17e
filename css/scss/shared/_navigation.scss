@@ -10,11 +10,11 @@
 	padding: 1.1em 0 30px;
 	width: 172px;
 }
-*html #ibm-navigation {
+* html #ibm-navigation {
 	margin-left:-980px;
 }
 
-*html .ibm-liquid #ibm-navigation {
+* html .ibm-liquid #ibm-navigation {
 	height: 1%;
 	position: fixed;
 	margin-left: -100%;
@@ -23,28 +23,6 @@
 *:first-child+html .ibm-liquid #ibm-navigation {
 	margin-left: -100%;
 }
-
-
-
-/*#ibm-primary-links {
-	background-color: #CCC;
-	padding:0px 0px 19px;
-	_zoom:1;
-}*/
-/*#ibm-primary-links a {
-	padding: 5px 15px;
-	display: block;
-	color: #FFF;
-	text-decoration: none;
-	_height: 1%;
-
-	
-}*/
-/*#ibm-primary-links a:hover {
-	text-decoration: underline;
-}
-*/
-
 
 
 #ibm-navigation #ibm-primary-links li#ibm-parent-link a {
@@ -129,12 +107,7 @@ filter: none;
 #ibm-navigation #ibm-primary-links li.ibm-is-active, #ibm-navigation #ibm-primary-links li.ibm-active   {
     border-bottom: 1px solid #e0e0e0;
     background-color: #fff;
-   /* background:-moz-linear-gradient(50% 0%, #e8e9e9, #fff 40px) repeat scroll 0 0 transparent;
-    background:-o-linear-gradient(top, #e8e9e9, #fff 40px) repeat scroll 0 0 transparent;
-    background:-webkit-gradient(linear, 0% 0%, 0% 15%, from(#e8e9e9), to(#fff)) repeat scroll 0 0 transparent;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e8e9e9', endColorstr='#ffffff')";*/
-_zoom:1;
-
+	_zoom:1;
 }
 
 #ibm-navigation #ibm-primary-links a {
@@ -143,12 +116,6 @@ _zoom:1;
     display: block;
     text-decoration: none;
     *zoom: 1;
-
-   /* background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right 6px;
-    *background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right 9px;
-    _background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right 6px;*/
-    
-
     border-top: 1px solid #f4f4f5;
     border-bottom: 1px solid #d7d7d8;
       _height: 1%;
@@ -158,9 +125,6 @@ _zoom:1;
 #ibm-navigation #ibm-primary-links a:hover {
     text-decoration: none;
     background-color: #9c9c9c;
-   /* background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -210px;
-    *background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -207px;
-    _background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -210px;*/
     background:-moz-linear-gradient(top, #DFE2E4, #C7C9CC) repeat scroll 0 0 transparent;
       background:-o-linear-gradient(top, #DFE2E4, #C7C9CC) repeat scroll 0 0 transparent;
 
