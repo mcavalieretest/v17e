@@ -82,9 +82,9 @@
 }
 
 #ibm-search {
-	background: url(/i/v17/icons/search.png) 0px 3px no-repeat;
+	background: url("#{$imagesPath}/i/v17/icons/search.png") 0px 3px no-repeat;
     _background:none;
-    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/i/v17/icons/search.png', sizingMethod='crop');
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagesPath}/i/v17/icons/search.png', sizingMethod='crop');
 	width: 24px;
 	height: 21px;
 	margin-left: -30px;
@@ -130,31 +130,31 @@
 	margin-top: 24px;
 }
 *:first-child+html #ibm-scoped-search li {
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px 7px;
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px 7px;
 }
 *:first-child+html #ibm-scoped-search li a.ibm-active {
 	background-color:#535353;
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px -12px #535353;
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px -12px #535353;
 }
 *:first-child+html #ibm-scoped-search li a:hover {
 	background-color:#535353;
 }
 
 #ibm-universal-nav #ibm-scoped-search li a {
-    background: url(/i/v17/search_scope_sprite.png) no-repeat  190px -14px;
+    background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px -14px;
 	padding: 5px 10px;
 	text-shadow: none;
 }
 
 #ibm-universal-nav #ibm-scoped-search li a.ibm-selected {
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px 4px;
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px 4px;
 }
 
 
 #ibm-universal-nav #ibm-scoped-search li a.ibm-selected.ibm-active {
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px 3px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px 3px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px 3px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px 3px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px 3px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px 3px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
 }
 
 #ibm-universal-nav #ibm-scoped-search li a.ibm-active {
@@ -163,9 +163,9 @@
 	border-top: 1px solid rgba(255,255,255,0.8);
 	border-bottom: 1px solid rgba(255,255,255,0.8);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0E0E0E', endColorstr='#323232');
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px -16px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px -16px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
-	background: url(/i/v17/search_scope_sprite.png) no-repeat  190px -16px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px -16px ,-webkit-gradient(linear, left top, left bottom, from(#535353), to(#0D0D0D));
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px -16px ,-moz-linear-gradient(top,  #535353,  #0D0D0D);
+	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat  190px -16px ,-o-linear-gradient(top,  #535353,  #0D0D0D);
 }
 
 #ibm-search.ibm-with-scoped-search {

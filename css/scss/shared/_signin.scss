@@ -40,7 +40,7 @@
 
 /*error message  by pure red color and with error image*/
 #ibm-signin p.ibm-error {
-	background:transparent url(/i/v17/ibm_icon_sprites.png) no-repeat scroll 10px -4990px;
+	background:transparent url("#{$imagesPath}/i/v17/ibm_icon_sprites.png") no-repeat 10px -4990px;
 	color:#F00;
 	margin:0px;
 	padding:10px 10px 0px 30px;
@@ -146,12 +146,6 @@
 	margin-left:20px;
 	vertical-align: text-top;
 	_padding-top:5px;
-	
-	/*"Register" link with arraw image.*/
-	
-	background:url("/i/v17/ibm_icon_sprites.png") no-repeat scroll 0px 0px transparent;
-	/*font-weight:bold;*/
-    padding: 0 20px;
 }
 
 

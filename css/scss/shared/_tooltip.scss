@@ -55,7 +55,7 @@
  
 .v17 .dijitTooltipAbove.dijitTooltipABLeft .dijitTooltipConnector,
 .v17 .dijitTooltipAbove.dijitTooltipABRight .dijitTooltipConnector {
-    background:url(/i/v17/tooltip/tooltip_up_arrow.png) no-repeat 0px 0px; 
+    background:url("#{$imagesPath}/i/v17/tooltip/tooltip_up_arrow.png") no-repeat 0px 0px; 
   	bottom:2px;
 }
  
@@ -71,7 +71,7 @@
  
 .v17 .dijitTooltipBelow.dijitTooltipABLeft .dijitTooltipConnector,
 .v17 .dijitTooltipBelow.dijitTooltipABRight .dijitTooltipConnector{
-   background:url(/i/v17/tooltip/tooltip_down_arrow.png) no-repeat 0px 0px;     
+   background:url("#{$imagesPath}/i/v17/tooltip/tooltip_down_arrow.png") no-repeat 0px 0px;     
    top:0px ; 
 }
  
@@ -87,7 +87,7 @@
 
 
 * html .v17 .dijitTooltipRight .dijitTooltipConnector {  
-    background:url(/i/v17/tooltip/tooltipConnectorLeft-IE.gif) no-repeat top left;
+    background:url("#{$imagesPath}/i/v17/tooltip/tooltipConnectorLeft-IE.gif") no-repeat top left;
 }
 
 /* Controlling Iframe width height Here */    

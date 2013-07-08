@@ -558,12 +558,9 @@ background-position: 3px -400px;
 	background:-moz-linear-gradient(#ccc, #EAEAEA);
 	background:-o-linear-gradient(#ccc, #EAEAEA);
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA'); 
-
 	border-bottom: 1px solid #bbb;
 	box-shadow: 0 1px 7px #c5c5c5;
-
 	height: 39px;
-
 	margin-top: -39px;
 	margin-bottom: 20px;
 	opacity: 0;
@@ -646,29 +643,21 @@ background-position: 3px -400px;
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-#ibm-top, #ibm-masthead, #ibm-universal-nav, #ibm-common-menu {
-	min-width: 980px;
-}
+	#ibm-top, #ibm-masthead, #ibm-universal-nav, #ibm-common-menu {
+		min-width: 980px;
+	}
 
-#ibm-search-form {
-	height: 24px; 
-	margin: 13px 20px -36px 1px;
-}
+	#ibm-search-form {
+		height: 24px; 
+		margin: 13px 20px -36px 1px;
+	}
 
-#ibm-search-form input#q {
-	width: 140px;
-} 
+	#ibm-search-form input#q {
+		width: 140px;
+	} 
 
-#ibm-universal-nav #ibm-menu-links {
-	margin-left: 120px;
-}
-
-/* commented out till clarified, causes issues
-
-#ibm-universal-nav #ibm-unav-links, #ibm-universal-nav #ibm-menu-links {
-	margin: 0px 10px;
-}
-
-*/
+	#ibm-universal-nav #ibm-menu-links {
+		margin-left: 120px;
+	}
 
 }

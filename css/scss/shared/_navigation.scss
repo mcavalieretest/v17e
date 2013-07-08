@@ -26,8 +26,8 @@
 
 
 #ibm-navigation #ibm-primary-links li#ibm-parent-link a {
-	background:url(/i/v17/t/t-bk-gray.gif) no-repeat -4px 0.33em;
-	_background:url(/i/v17/t/t-bk-gray.gif) no-repeat -4px 3px;
+	background:url("#{$imagesPath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 0.33em;
+	_background:url("#{$imagesPath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 3px;
 	border-top:none;
 	border-bottom:1px solid #FFF;
 	display:block;
@@ -42,7 +42,7 @@
 }
 
 #ibm-secondary-navigation ul li a {
-     background: url(/i/v17/t/left_nav_bullet.png) no-repeat 0px 8px;
+     background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 8px;
 	display: block;
     *zoom:1;
 	_height: 1%;
@@ -78,12 +78,12 @@ filter: none;
 
 
 #ibm-navigation #ibm-primary-links {
-    background: url('/i/v17/t/left_nav_base_solid.png') no-repeat bottom right #eee;
-    background: url('/i/v17/t/left_nav_base_solid.png') no-repeat scroll bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-     background: url('/i/v17/t/left_nav_base_solid.png') no-repeat scroll bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-    background: url('/i/v17/t/left_nav_base_solid.png') no-repeat scroll bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
+    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+     background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
     padding-bottom: 30px;
-    _background: url('/i/v17/t/left_nav_base_solid.png') no-repeat bottom right #eee;
+    _background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
 }
 
 
@@ -149,12 +149,12 @@ filter: none;
     margin-right: -1px; /* needed for A to span over side borders of LI*/
     /*font-weight: normal;*/
     color: #fff;
-    background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
-    *background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 154px -423px #485159;
-    _background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 154px -424px #485159;
-    background:url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 155px -424px, -moz-linear-gradient(top, #485159, #A2A9B2) repeat scroll 0 0 transparent;
-     background:url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 155px -424px, -o-linear-gradient(top, #485159, #A2A9B2);
-    background:url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat 154px -424px, -webkit-linear-gradient(top, #485159, #A2A9B2);
+    background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
+    *background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -423px #485159;
+    _background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159;
+    background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -moz-linear-gradient(top, #485159, #A2A9B2) repeat scroll 0 0 transparent;
+     background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -o-linear-gradient(top, #485159, #A2A9B2);
+    background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px, -webkit-linear-gradient(top, #485159, #A2A9B2);
    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#485159', endColorstr='#A2A9B2')";
     text-shadow: none;
     border: 0px;
@@ -224,7 +224,7 @@ filter: none;
     background:none;
     border: 0;
     padding-left: 7px;
-    background: url('/i/v17/t/left_nav_bullet.png') no-repeat 0px 11px;
+    background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
 }
 
 #ibm-navigation #ibm-primary-links li li.ibm-is-active, 
@@ -256,14 +256,9 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links li ul li a.ibm-is-active, 
 #ibm-navigation #ibm-primary-links li ul li a.ibm-active {
-    /* background: url("/i/v17/t/left_nav_bullet.png") no-repeat 0 11px;*/
     -ms-filter: none;
     filter: none;
-    /*background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -644px;
-    *background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -640px;
-    _background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -644px;*/
     color: #000;
-    /*font-weight: bold;*/
     padding-left: 0px;
     margin-left: 0;
     margin-right: 0;
@@ -275,38 +270,20 @@ filter: none;
 #ibm-navigation #ibm-primary-links li ul li a.ibm-active:hover {
     _background-color: #eee;
     _color: #000;
-   /* _background: url('/i/v17/t/left_nav_chevron_sprite.png') no-repeat right -644px;*/
 }
 
 #ibm-navigation #ibm-primary-links li ul li ul {
     padding-left: 3px;
-
-
 }
-
-/*
-#ibm-navigation #ibm-primary-links li ul li ul li a {
-    font-size: 0.75em;
-*/
 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-is-active, 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-active {
-     background: url('/i/v17/t/left_nav_bullet.png') no-repeat 0px 11px;
+     background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
     -ms-filter: none;
     filter: none;
    list-style: none;
    border: 0px;
 }
-
-#ibm-navigation #ibm-primary-links #ibm-parent-link a {
-  /*  background: url('/i/v17/t/icon_parent_link.png') no-repeat scroll -2px 0px transparent;
-    *background: url('/i/v17/t/icon_parent_link.png') no-repeat scroll -2px 8px transparent; /* ie7 fix*/
-   /* _background: url('/i/v17/t/icon_parent_link.png') no-repeat scroll -3px 3px transparent; /* ie6 fix*/
-  /*  padding-left: 14px;
-    padding: 3px 6px 3px 14px;*/
-
-}
-
 
 #ibm-navigation #ibm-primary-links #ibm-parent-link a:hover, 
 #ibm-navigation #ibm-primary-links #ibm-parent-link a:active {

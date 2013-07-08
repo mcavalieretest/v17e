@@ -8,9 +8,9 @@
     *float: none; /* IE7 hack */
     background: #0F161A;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474A50', endColorstr='#0F161A');
-    background: url(/i/v17/footermod-bg.png) no-repeat center top, -webkit-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
-    background: url(/i/v17/footermod-bg.png) no-repeat center top, -moz-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
-	background: url(/i/v17/footermod-bg.png) no-repeat center top, -o-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+    background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -webkit-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+    background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -moz-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+	background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -o-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
     margin-bottom: -1px;
 }
 #ibm-footer-module h2, #ibm-footer-module h3 {
@@ -29,7 +29,7 @@
     margin: 0;
 }
 #ibm-footer-module li {
-    background: url(/i/v17/bullets.gif) no-repeat -2px 2px;
+    background: url("#{$imagesPath}/i/v17/bullets.gif") no-repeat -2px 2px;
     color: #666;
     margin: 4px 0;
     padding: 0 0 0 10px;
