@@ -1,7 +1,7 @@
 /* CSS variables */
-$fontsDirPath : "/css/fonts";
-$imagesDirPath : "http://1.www.s81c.com";
+$fontsPath : "/css/fonts";
+$imagesPath : "http://1.www.s81c.com";
 
-@import "scss/fonts";
-@import "scss/reset";
-@import "scss/ww_masthead";
+@import "scss/shared/fonts";
+@import "scss/shared/reset";
+@import "scss/ww/masthead";
