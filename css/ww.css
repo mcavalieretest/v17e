@@ -711,7 +711,7 @@ filter: none;
 /* IBM NAVIGATION RELATED LINKS */
 #ibm-secondary-navigation { color: #666; padding-left: 0; padding-top: 30px; }
 
-#ibm-search-module { float: right; margin-left: -100%; /*width: 270px;*/ _position: absolute; _right: 0; }
+#ibm-search-module { float: right; margin-left: -100%; _position: absolute; _right: 0; }
 
 *:first-child + html #ibm-search-module { position: absolute; right: 0; }
 
