@@ -1,4 +1,4 @@
-/* accessibility styles begin ============================================ */
+// accessibility styles begin ============================================
 
 .flashtext, .ibm-access, 
 #ibm-content-main form.ibm-column-form p span a span {
@@ -340,7 +340,6 @@
 	margin: 3px -1px;
 }
 .dijit_a11y #ibm-footer-module a:hover, .dijit_a11y #ibm-footer-module a:focus, .dijit_a11y #ibm-footer-module a.ibm-active{
-	/*border: 1px dotted;*/
 	outline: thin dotted;
 }
 .dijit_a11y #ibm-footer {
