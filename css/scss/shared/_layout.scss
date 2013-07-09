@@ -430,28 +430,22 @@ display: block ;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
     background-image: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30);
-   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-   -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-    border: 2px solid rgba(205, 205, 205, 0.95);
+	border: 2px solid rgba(205, 205, 205, 0.95);
     border: 2px solid #EEE\9;
     display: inline-block;
     height: 30px;
+	@include border-radius(2px);
+	@include box-shadow(0 1px 3px rgba(0,0,0,0.3));
     width: 45px;
     z-index: 899;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
     margin-right: 8px;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a:hover, 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.6);
-    border: 2px solid rgba(182, 182, 182, 0.95);
+    border: 2px solid rgba(182,182,182,0.95);
     border: 2px solid #EEE\9;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+	@include border-radius(2px);
+	@include box-shadow(0 1px 3px rgba(0,0,0,0.6));
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a .ibm-ribbon-view {
     height: 30px;

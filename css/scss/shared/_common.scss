@@ -1657,12 +1657,8 @@ input.ibm-btn-view-sec {
 	color: #000;
 	padding: 7px 20px;
 	margin-bottom:20px;
-	-webkit-border-radius: 5px; 
-	-moz-border-radius: 5px; 
-	border-radius: 5px;
-	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
-	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
-	box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+	@include border-radius(5px);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
 	text-shadow: #FFF 0px 1px 0px;
 	min-width: 120px;
 	min-width: 90px\9;
@@ -1701,9 +1697,7 @@ input.ibm-btn-view-sec:hover {
 	background: -webkit-linear-gradient(top,  #FFFFFF,  #CBCBCB);
 	background: -moz-linear-gradient(top,  #FFFFFF,  #CBCBCB);
     background: -o-linear-gradient(top,  #FFFFFF,  #CBCBCB);
-	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
 }
 
 a.ibm-btn-pri:focus,
@@ -1737,10 +1731,7 @@ input.ibm-btn-view-sec:focus {
 	background: -webkit-linear-gradient(top,  #FFFFFF,  #ABABAB);
 	background: -moz-linear-gradient(top,  #FFFFFF,  #ABABAB);
     background: -o-linear-gradient(top,  #FFFFFF,  #ABABAB);
-	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
-	
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
 }
 
 a.ibm-btn-pri:active,
@@ -1775,10 +1766,8 @@ input.ibm-btn-view-sec:active {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
 	background: -webkit-linear-gradient(top,  #CBCBCB,  #F5F5F5);
 	background: -moz-linear-gradient(top,  #CBCBCB,  #F5F5F5);
-        background: -o-linear-gradient(top,  #CBCBCB,  #F5F5F5);
-	box-shadow: inset 0px 1px 3px #C1C1C1;
-	-webkit-box-shadow: inset 0px 1px 3px #C1C1C1;
-	-moz-box-shadow: inset 0px 1px 3px #C1C1C1;
+	background: -o-linear-gradient(top,  #CBCBCB,  #F5F5F5);
+	@include box-shadow(inset 0px 1px 3px #C1C1C1);
 }
 a.ibm-btn-pri:active,
 a.ibm-btn-arrow-pri:active,
@@ -1819,19 +1808,15 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
 }
 
 /* Small button style */
-#ibm-top a.ibm-btn-small, #ibm-top input.ibm-btn-small{
- min-width: 96px;
- min-width: 90px\9;
- *min-width: auto;
- font-size:.9em;
- -webkit-border-radius: 4px; 
- -moz-border-radius: 4px; 
- border-radius: 4px;
- -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
- -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
- box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
- padding:5px;
- text-align:center;
+#ibm-top a.ibm-btn-small, #ibm-top input.ibm-btn-small {
+	min-width: 96px;
+	min-width: 90px\9;
+	*min-width: auto;
+	font-size:.9em;
+ 	@include border-radius(4px); 
+ 	@include box-shadow(0px 1px 2px rgba(0,0,0,0.4));
+ 	padding:5px;
+ 	text-align:center;
 }
 
 .ibm-col-1-1 .ibm-btn-small {
@@ -2517,12 +2502,8 @@ p.ibm-button-link-alternate a {
 	background: -webkit-linear-gradient(top , #f5f5f5, #dbdbdb);
 	background: linear-gradient(top , #f5f5f5, #dbdbdb);
 	border: 1px solid #dbdbdb;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+ 	@include border-radius(5px); 
+ 	@include box-shadow(0 2px 3px rgba(0,0,0,0.4));
 	color: #000;
 	display: inline-block;
 	font-weight: bold;
@@ -2541,9 +2522,7 @@ p.ibm-button-link a:hover {
 	background: -o-linear-gradient(top, #ffffff, #cbcbcb);
 	background: -webkit-linear-gradient(top, #ffffff, #cbcbcb);
 	background: linear-gradient(top, #ffffff, #cbcbcb);
-	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+ 	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
 }
 p.ibm-button-link a:active {
 	background: #f5f5f5;
@@ -2553,9 +2532,7 @@ p.ibm-button-link a:active {
 	background: -webkit-linear-gradient(top, #cbcbcb, #f5f5f5);
 	background: linear-gradient(top, #cbcbcb, #f5f5f5);
 	color: #515151;
-	-moz-box-shadow: 0 1px 3px #c1c1c1 inset;
-	-webkit-box-shadow: 0 1px 3px #c1c1c1 inset;
-	box-shadow: 0 1px 3px #c1c1c1 inset;
+ 	@include box-shadow(0 1px 3px #c1c1c1 inset);
 }
 
 p.ibm-button-link-alternate a {
@@ -2585,9 +2562,7 @@ p.ibm-button-link-alternate a:active {
 	background: -webkit-linear-gradient(top, #052a41, #0d83b1);
 	background: linear-gradient(top, #052a41, #0d83b1);
 	color: #fff;
-	-moz-box-shadow: 0 1px 3px #14405a inset;
-	-webkit-box-shadow: 0 1px 3px #14405a inset;
-	box-shadow: 0 1px 3px #14405a inset;
+ 	@include box-shadow(0 1px 3px #14405a inset);
 }
 .dj_ie6 #ibm-top p.ibm-button-link a {
 	color: #000;

@@ -362,24 +362,14 @@ There are three areas of styling for the Menu:
 /* fixing font size issues -end ************/
 
 .v17 .dijitMenu {
-
     _width: 250px !important;
-    
-/*  min-width: 300px; */
     max-width: 600px;
-    
     list-style-type: none;
-    padding: 0;
-/*  margin: 6px 0 0px 20px; */
-    
+    padding: 0;    
     border: 5px solid rgba(255,255,255,0.4);
     border: 5px solid #FFF\9;
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+	@include border-radius(5px);
+	@include box-shadow(0 1px 5px rgba(0,0,0,0.4));
     *border-width: 0px;
 }
 /* FF only */
@@ -1289,12 +1279,8 @@ form .ibm-checkbox-layout input {
 .v17 .dijitCalendarPopup {
     height: 210px;
 	border: 5px solid #666;
-    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+	@include border-radius(5px);
+	@include box-shadow(0px 1px 5px rgba(0,0,0,0.4));
 }
 
 .v17 .dijitCalendar {
@@ -1471,13 +1457,7 @@ border-collapse: separate;
 	_border: 0;
 	/* intentionally matches background-color, no visible border until hover/selection */
 	background-color: rgba(171, 212, 251, 0);
-	/* transparent causes black-flash animation problem on webkit */
-	-webkit-transition-property: background-color, border;
-	-moz-transition-property: background-color, border;
-	transition-property: background-color, border;
-	-webkit-transition-duration: 0.35s;
-	-moz-transition-duration: 0.35s;
-	transition-duration: 0.35s;
+	@include transition(background-color, border 0.35s);
 	color: #00649D;
 }
 
@@ -1637,12 +1617,8 @@ border-collapse: separate;
 	background: -moz-linear-gradient(top, #FCFCFC, #F5F5F5);
 	background: -o-linear-gradient(top, #FCFCFC, #F5F5F5);
 	padding: 0 3px 0 2px;
-	border: solid 1px #dddddd;
-	/*-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-	-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-	box-shadow: 0 0 0 rgba(0, 0, 0, 0);*/
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	border: solid 1px #ddd;
+	@include border-radius(4px);
 }
 .v17.dijit_a11y .dijitCalendar .dijitDropDownButton .dijitButtonNode {
 	filter: none;
@@ -1834,9 +1810,7 @@ border-collapse: separate;
     background: -webkit-linear-gradient(top , #F5F5F5, #DBDBDB);
     background: -moz-linear-gradient(top , #F5F5F5, #DBDBDB);
     background: -o-linear-gradient(top, #F5F5F5, #DBDBDB);
-    -moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
 }
 
 .v17 #ibm-content textarea.ibm-disabled:hover,
@@ -1859,9 +1833,7 @@ border-collapse: separate;
 input[disabled="disabled"],
 input[disabled="disabled"]:hover, 
 input[disabled="disabled"]:focus, 
-input[disabled="disabled"]:active 
-{
-    
+input[disabled="disabled"]:active {
    filter: none; 
    color: #888;
     

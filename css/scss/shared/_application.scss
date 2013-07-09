@@ -34,25 +34,18 @@
 	height: 30px;
 	position: absolute;
 	width: 75px;	
-  margin-top: 3px;
-  background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat scroll 60px 13px transparent;
-   border-radius: 3px 3px 0 0;
-  -webkit-transition: background-color .3s;
-  -moz-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  -ms-transition: background-color .3s;
-  transition: background-color .3s;
-
+	margin-top: 3px;
+	background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat scroll 60px 13px transparent;
+	@include border-radius(3px 3px 0 0);
+	@include transition(background-color .3s);
 }
 
 
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home.ibm-active {
-  box-shadow: 0 0 3px #000;
-  background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat scroll 60px -183px #000;
-  filter: none;
- 
-
+	@include box-shadow(0 0 3px #000);
+	background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat scroll 60px -183px #000;
+	filter: none;
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home a {
@@ -83,24 +76,19 @@
 
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home .ibm-logo-subnav {
-  visibility:hidden;
-  opacity: 0;
-  position: absolute;
-  top: 30px;
-  background:#000;
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282828', endColorstr='#000000');*/
-  background: -webkit-linear-gradient(top, #282828, #000000);
-  background: -moz-linear-gradient(top, #282828, #000000);
-  background: -o-linear-gradient(top, #282828, #000000);
-  border-radius: 0 3px 3px 3px;
-  border: 1px solid #404040;
-  box-shadow: 2px 2px 4px -2px rgba(0,0,0,.8), -2px 2px 4px -2px rgba(0,0,0,.8);
-  -webkit-transition: opacity .3s;
-  -moz-transition: opacity .3s;
-  -o-transition: opacity .3s;
-  -ms-transition: opacity .3s;
-  transition: opacity .3s;
-
+	visibility:hidden;
+	opacity: 0;
+	position: absolute;
+	top: 30px;
+	background:#000;
+	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282828', endColorstr='#000000');
+	background: -webkit-linear-gradient(top, #282828, #000000);
+	background: -moz-linear-gradient(top, #282828, #000000);
+	background: -o-linear-gradient(top, #282828, #000000);
+	border-radius: 0 3px 3px 3px;
+	border: 1px solid #404040;
+  	@include box-shadow(2px 2px 4px -2px rgba(0,0,0,.8), -2px 2px 4px -2px rgba(0,0,0,.8));
+  	@include transition(opacity .3s);
 }
 
 
@@ -282,21 +270,19 @@ right: 22px;
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu {
-  background-color: #ddd;
-  *background:none;
-  background:-webkit-linear-gradient(#dddddd, #f1f1f1);
-  background:-moz-linear-gradient(#dddddd, #f1f1f1);
-  background:-o-linear-gradient(#dddddd, #f1f1f1);
-  _background:none; /* IE6 fix */  
-  filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#dddddd',EndColorStr='#f1f1f1');   
-  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#dddddd',EndColorStr='#f1f1f1')";  
-
-  border-top: 0;
-  border-bottom-color: #d9d9d9;
-
-  box-shadow: 0px 1px 3px #EEEEEE, 0px -9px 7px -9px #BBBBBB inset, 0px 9px 7px -8px #C5C5C5 inset;
-  height: auto;
-  overflow: hidden;
+	background-color: #ddd;
+	*background:none;
+	background:-webkit-linear-gradient(#dddddd, #f1f1f1);
+	background:-moz-linear-gradient(#dddddd, #f1f1f1);
+	background:-o-linear-gradient(#dddddd, #f1f1f1);
+	_background:none; /* IE6 fix */  
+	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#dddddd',EndColorStr='#f1f1f1');   
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#dddddd',EndColorStr='#f1f1f1')";  
+	border-top: 0;
+	border-bottom-color: #d9d9d9;
+	@include box-shadow(0px 1px 3px #EEE, 0px -9px 7px -9px #BBB inset, 0px 9px 7px -8px #C5C5C5 inset);
+	height: auto;
+	overflow: hidden;
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu .ibm-columns {

@@ -1,4 +1,4 @@
-/* fonts styles ============================================ */
+// fonts styles ============================================ 
 
 /*!
 This CSS resource incorporates links to font software which is
@@ -8,18 +8,18 @@ modify or reverse engineer this font software. Please contact Monotype Imaging
 with any questions regarding Web Fonts:  http://webfonts.fonts.com
 */
 
-/*
-SIMPLER NAMES
 
-Helvetica-Light
-Helvetica-Roman
-Helvetica-Medium
-Helvetica-Bold
-Janson-Roman
-Janson-Italic
-Lubalin-Book
-Lubalin-Medium
-*/
+// SIMPLER NAMES
+
+// Helvetica-Light
+// Helvetica-Roman
+// Helvetica-Medium
+// Helvetica-Bold
+// Janson-Roman
+// Janson-Italic
+// Lubalin-Book
+// Lubalin-Medium
+
 @import url("//fast.fonts.com/t/1.css?apiType=css&projectid=4ade0897-739b-4f43-b54a-0fb60e8cfcb2");
 @font-face{
 font-family:"Helvetica-Light";
@@ -87,13 +87,13 @@ src:url("#{$fontsPath}/6e86dc78-6a2a-44b2-a48e-267dd190bc17.woff") format("woff"
 }
 
 
- /* v17 font styles begin ============================================ */
+// v17 font styles begin ============================================
 
 div, p, span, a, li, strong {
 	font-family: Arial, sans-serif
 }
 
-/* Masthead Fonts ======================*/
+// Masthead Fonts ======================
 #ibm-mast-options a {
 	font-weight:normal;
 	}
@@ -105,12 +105,12 @@ div, p, span, a, li, strong {
 #ibm-common-menu h2,#ibm-common-menu h3 {
 	font-weight: bold;
 }
-/* End of Masthead Fonts =================*/
+// End of Masthead Fonts =================
 
 
 
 
-/* Search Section ==================*/
+// Search Section ==================
 #ibm-scoped-search li a {
 	font-size: 0.8em !important;	
 	}
@@ -128,10 +128,10 @@ div, p, span, a, li, strong {
 #ibm-search-results	.ibm-thumbnail-list p {
 	line-height: 1.4em;
 }
-/* End of Search Section =============*/
+// End of Search Section =============
 
 
-/* Sign in section ================*/
+// Sign in section ================
 #ibm-signin {
 	font-size:0.8em;
 	}
@@ -142,11 +142,11 @@ div, p, span, a, li, strong {
 #ibm-signin .ibm-reg-link {
 	font-weight:bold;
    }
-/* End of Sign in section =========*/
+// End of Sign in section =========
 
 
 
-/* Navigation Trail and Navigation=====================*/
+// Navigation Trail and Navigation=====================
 #ibm-navigation-trail {
  	font-size: 0.7em !important;
  	line-height: 1em;
@@ -183,17 +183,17 @@ div, p, span, a, li, strong {
      font-size: 0.8em;
 	}
 
-/* End of Navigation Trail ================*/
+// End of Navigation Trail ================
 
 
-/* Related content =======================*/
+// Related content =======================
 #ibm-related-content {
 	font-size: 0.7em;
 	}
 #ibm-related-content h2 {
     font-size: 1em; 
 	}
-/* End of Related content ==================*/
+// End of Related content ==================
 
 
 #ibm-menu-links a,
@@ -206,12 +206,6 @@ div, p, span, a, li, strong {
 #ibm-content h4 {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 }
-
-/*#ibm-content h2,
-#ibm-content h3,
-#ibm-content h4 {
-	font-size: 1.025em;
-}*/
 
 #ibm-content h2{
 	font-size:1.3em;
@@ -229,8 +223,6 @@ div, p, span, a, li, strong {
 #ibm-content .ibm-columns .ibm-container h2{
 	font-size:1.166em;
 }
-
-
 
 
 #ibm-content .ibm-container h3{
@@ -268,7 +260,6 @@ p.ibm-alternate-code-sample code, .ibm-code-sample pre {
 	font-size: 14px;
 }
 
-/* mast-options fonts fixed */
 #ibm-mast-options{
 	font-size: 0.7em;
 	color: #A1A2A7;
@@ -277,8 +268,8 @@ p.ibm-alternate-code-sample code, .ibm-code-sample pre {
 	letter-spacing: 1px;
 	font-size: 16px;
  	line-height: 16px;
-
 }
+
 #ibm-my-menu,
 #ibm-common-menu,
 #ibm-primary-links a,
@@ -314,7 +305,6 @@ p.ibm-alternate-code-sample code, .ibm-code-sample pre {
 
 #ibm-content .ibm-video .ibm-container-body p,
 #ibm-content .ibm-media .ibm-ribbon .ibm-container-body p {
-	
 	font-style: normal;
 }
 
@@ -397,7 +387,6 @@ h1.ibm-small {
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1,
 #ibm-content #ibm-leadspace-head.ibm-alternate h1 {
     font-size: 2.25em;
-	/*padding: 15px 20px 10px;*/
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-small,
 #ibm-content #ibm-leadspace-head.ibm-alternate h1.ibm-small,
@@ -407,16 +396,13 @@ h1.ibm-small {
 }
 .ibm-landing-page #ibm-leadspace-head p a {
 	font-size: 0.85em;
-	}
+}
 
 .ibm-landing-page #ibm-leadspace-head p em{
 	font-style:	normal;
-	
 }
 .ibm-landing-page #ibm-leadspace-head p em span{
-	
 	font-weight: bold;
-	
 }
 
 #ibm-content-head p {
@@ -434,17 +420,17 @@ small {
    font-size: smaller;
 }
 
-/* font styles end ============================================ */
+// font styles end ============================================
 
 
-/* Thumbnail styles =========================================== */
+// Thumbnail styles ===========================================
 .ibm-thumbnail span {
 	font-size: 0.9em;
 }
-/* End of Thumbnail style  ==================================== */
+// End of Thumbnail style  ====================================
 
 
-/* Data table style ========================== */
+// Data table style ==========================
 #ibm-content-main table.ibm-data-table caption em {
 	font-weight:bold;
 	font-style:normal;
@@ -457,11 +443,11 @@ small {
 font-size:1em;
 }
 
-/* End of Data table style =================== */
+// End of Data table style ===================
 
 
 
-/* Tabs style ================*/
+// Tabs style ================
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
 	font-weight: bold;
 	font-size: 0.875em;
@@ -490,11 +476,8 @@ div.ibm-tab-section ul li {
 #ibm-content-main .ibm-col-6-4 ul.ibm-tabs {
 	font-size:1em !important;
 }
-/* End of Tabs style ===========*/
+// End of Tabs style ===========
 
-
-
-/* New Font style */
 
 #ibm-content-head ul#ibm-navigation-trail li {
 	font-family: arial,sans-serif;
@@ -521,7 +504,6 @@ div.ibm-tab-section ul li {
 #ibm-content #ibm-content-main h2.ibm-alternate,
 #ibm-related-content h2.ibm-alternate {
 	font-style: normal;
-	/*font-weight: 200; this causes helvetica to render extremely thin on firefox */
 }
 #ibm-related-content h2.ibm-alternate {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -541,21 +523,10 @@ div.ibm-tab-section ul li {
 }
 
 
-
-/*.ibm-landing-page #ibm-content-main .ibm-col-1-1 h2,
-.ibm-landing-page #ibm-content-main .ibm-col-1-1 h3,*/
 #ibm-content-main .ibm-col-4-3 p,
-/*#ibm-content-main .ibm-col-4-3 h2,
-#ibm-content-main .ibm-col-4-3 h3,*/
 #ibm-content-main .ibm-col-5-4 p,
-/*#ibm-content-main .ibm-col-5-4 h2,
-#ibm-content-main .ibm-col-5-4 h3,*/
 #ibm-content-main .ibm-col-6-4 p,
-/*#ibm-content-main .ibm-col-6-4 h2,
-#ibm-content-main .ibm-col-6-4 h3,*/
 #ibm-content-main .ibm-col-6-5 p,
-/*#ibm-content-main .ibm-col-6-5 h2,
-#ibm-content-main .ibm-col-6-5 h3,*/
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ol,
 #ibm-content-main .ibm-col-4-3 ul,
@@ -575,7 +546,7 @@ div.ibm-tab-section ul li {
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul ol,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li p,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ol li p,
-/* reseting the font size in RMS */
+// reseting the font size in RMS
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-1-1 ul,
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-6-1 ul,
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-6-2 ul,
@@ -585,7 +556,7 @@ div.ibm-tab-section ul li {
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-5-1 ul,
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-5-2 ul,
 #ibm-content-main .ibm-columns .ibm-media .ibm-col-5-3 ul,
-#ibm-content-main .ibm-columns .ibm-media .ibm-col-5-4 ul{
+#ibm-content-main .ibm-columns .ibm-media .ibm-col-5-4 ul {
 	font-size:1em;
 	line-height:1.5em;
 }
@@ -597,17 +568,16 @@ div.ibm-tab-section ul li {
 #ibm-content-main .ibm-col-6-4 ol li p,
 #ibm-content-main .ibm-col-6-4 ol ol, 
 #ibm-content-main .ibm-col-6-5 ol li p,
-#ibm-content-main .ibm-col-6-5 ol ol
- {
+#ibm-content-main .ibm-col-6-5 ol ol {
     font-size: 1em;
     line-height: 1em;
 }
 #ibm-content-main .ibm-col-4-3 ul ul,
 #ibm-content-main .ibm-col-5-4 ul ul,
 #ibm-content-main .ibm-col-6-4 ul ul,
-#ibm-content-main .ibm-col-6-5 ul ul{
+#ibm-content-main .ibm-col-6-5 ul ul {
 	font-size:1em;
-line-height: 1.3em;
+	line-height: 1.3em;
 }
 #ibm-content-main .ibm-col-4-3 ul ol, 
 #ibm-content-main .ibm-col-4-3 ol ul,
@@ -617,8 +587,8 @@ line-height: 1.3em;
 #ibm-content-main .ibm-col-6-4 ol ul,
 #ibm-content-main .ibm-col-6-5 ul ol, 
 #ibm-content-main .ibm-col-6-5 ol ul {
-     font-size: 1em;
-    line-height: 1.1em;
+	font-size: 1em;
+	line-height: 1.1em;
 }
 
 #ibm-content-main .ibm-col-4-3 ul.ibm-portrait-module-list,
@@ -641,11 +611,7 @@ line-height: 1.3em;
 }
 
 #ibm-content-main .ibm-col-6-5 .ibm-col-6-1 p,
-/*#ibm-content-main .ibm-col-6-5 .ibm-col-6-1 h2,
-#ibm-content-main .ibm-col-6-5 .ibm-col-6-1 h3,*/
 #ibm-content-main .ibm-col-6-4 .ibm-col-6-1 p,
-/*#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 h2,
-#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 h3,*/
 #ibm-content-main .ibm-col-6-4 .ibm-col-6-1 ul,
 #ibm-content-main .ibm-col-6-1 p,
 #ibm-content-main .ibm-col-6-1 h2,
@@ -653,9 +619,7 @@ line-height: 1.3em;
 #ibm-content-main .ibm-col-5-1 h2,
 #ibm-content-main .ibm-col-5-1 h3,
 #ibm-content-main .ibm-col-4-1 h2,
-#ibm-content-main .ibm-col-4-1 h3
-
-{
+#ibm-content-main .ibm-col-4-1 h3 {
 	font-size: 1em !important;
 	font-family: arial,sans-serif;
 	line-height: 1.3em;
@@ -677,10 +641,9 @@ line-height: 1.3em;
 #ibm-content-main .ibm-media .ibm-portrait.ibm-container.ibm-ribbon p,
 #ibm-content-main .ibm-media .ibm-container.ibm-playlist .ibm-col-6-2 p,
 #ibm-content-main .ibm-media .ibm-container.ibm-playlist .ibm-col-6-3 p,
-#ibm-content-main .ibm-media .ibm-col-6-2 .ibm-portrait-module-list p
- {
- 	line-height: 1.2em;
-  font-size: 1.11em;
+#ibm-content-main .ibm-media .ibm-col-6-2 .ibm-portrait-module-list p {
+	line-height: 1.2em;
+	font-size: 1.11em;
 }
 
 
@@ -738,7 +701,7 @@ span.ibm-table-navigation-links a,
 }
  
 
-/* button styles begin ============================================== */
+// button styles begin ==============================================
 a.ibm-btn-pri,
 input.ibm-btn-pri,
 input.ibm-btn-arrow-pri,
@@ -788,7 +751,7 @@ input.ibm-btn-view-sec,
 	font-size: 1em;
 }
 table div.ibm-buttons-row p {font-size:1em !important;}
-/* button styles end ============================================== */
+// button styles end ==============================================
 
 #ibm-parent-link a,
 #ibm-secondary-navigation ul {font-weight:normal;}
@@ -799,7 +762,7 @@ table div.ibm-buttons-row p {font-size:1em !important;}
 #ibm-secondary-navigation li a:visited {color:#666;}
 
 
-/*Font-style for A-Z link ==================================================== */
+// Font-style for A-Z link ====================================================
 
 div.ibm-link-list-az ul.ibm-link-list li{
 	font-size:1.3em;
@@ -818,26 +781,20 @@ div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor{
 .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover{
 	line-height: 0.98em;
 }
-/*End of A-Z link ================================ */
+// End of A-Z link ================================
 
-/* Font size for directory link list ============= */
+// Font size for directory link list =============
 #ibm-content-main ul.ibm-directory-link-list a {
     font-size: 1.1em;
 }
-/* end of Directory link list  ================ */
+// end of Directory link list  ================
 
-
-/*p.ibm-ind-link a,
-ul.ibm-link-list a {
-	line-height: 1.065em;
-}*/
-
-/* commenting this code as it is creating lot of issue with the alignment of icons and adding separately line height for p.ibm-ind-link */
 
 p.ibm-ind-link a,
 #ibm-related-content .ibm-container .ibm-col-6-1  p.ibm-ind-link a {
 	line-height:1.065em;
-	}
+}
+
 .ibm-col-6-2 p.ibm-ind-link a,
 .ibm-container p.ibm-ind-link a {line-height:normal;}
 #ibm-related-content ul.ibm-link-list a,
@@ -882,22 +839,22 @@ div#ibm-reg-number {
 	font-size: 1.4em;
 	line-height: 10px;
 }
-/* sub-entries in the left navigation =========*/
+// sub-entries in the left navigation =========
 #ibm-primary-links li li {
 	font-size: 0.95em;
 }
 
 
-/* Tool tip fonts =================*/
+// Tool tip fonts =================
 .dijitTooltip { 
 	font-size:0.1em;
 	font-family:Arial,sans-serif;
 	}
-/* End fo Tool Tip fonts   ========*/
+// End fo Tool Tip fonts   ========
 
 
 
-/* Expertise locator for www =================== */
+// Expertise locator for www ===================
 .ibm-expertise-header{
 	font-size:0.7em;
 	font-weight:bold;
@@ -933,47 +890,45 @@ div#ibm-reg-number {
 .ibm-expertise-blog-title{
 	font-weight: bold;
 }
-/* End of Expertise Locator ============= */
+// End of Expertise Locator =============
 
 
-/* OVERLAY / DIALOG  ==================== */
+// OVERLAY / DIALOG  ====================
 .dijitDialogPaneContent {
-		font-family:arial,sans-serif;
-		font-size: 0.7em;
-	}
+	font-family:arial,sans-serif;
+	font-size: 0.7em;
+}
 div.dijitDialog .ibm-container h2, 
 div.dijitDialog .ibm-container h3, 
 div.dijitDialog .ibm-container p,
 div.dijitDialog .ibm-columns h2, 
 div.dijitDialog .ibm-columns h3{
-		font-size: 1.1em;
-		line-height:18px;
-	}
+	font-size: 1.1em;
+	line-height:18px;
+}
 
 div.dijitDialog .ibm-columns p,
 div.dijitDialog .ibm-common-overlay.ibm-overlay-alt-three table.ibm-data-table{
-		font-size:1.1em;
+	font-size:1.1em;
 }
 div.dijitDialog .ibm-head p {
-		
-		font-size:0.71em;
-	}
+	font-size:0.71em;
+}
 div.dijitDialog .ibm-title h1,
 div.dijitDialog .ibm-title h2 {
 	font-size: 2.1em;
     font-weight: normal;
     line-height: normal;
-    }		
+}		
 div.dijitDialog .ibm-title.ibm-subtitle p em{
 	font-size: 1.1em;
     font-style: normal;
-    font-weight: bold; 
-
+    font-weight: bold;
 }
 div.dijitDialog ul li ul li, 
-	#ibm-com div.dijitDialog ul li ul.ibm-no-links li:hover {
+#ibm-com div.dijitDialog ul li ul.ibm-no-links li:hover {
 	font-size:1em;
-	}
+}
 
 .ibm-common-overlay form.ibm-row-form label, 
 .ibm-common-overlay form.ibm-row-form label span.ibm-additional-info, 
@@ -982,19 +937,17 @@ div.dijitDialog ul li ul li,
     font-size: 1.0em;
 }
 	
-	#dialog_overlay-leaving-ibm .ibm-title h1{
-	 
+#dialog_overlay-leaving-ibm .ibm-title h1 {
     font-size: 2.3em;
     font-weight: normal;
     line-height: normal;
-    }	
-    #dialog_overlay-leaving-ibm .ibm-container p {
-  
+}	
+#dialog_overlay-leaving-ibm .ibm-container p {  
     font-size: 1.1em !important;
     line-height: 18px;
 }
-/* End of OVERLAY / DIALOG  ==================== */
-/* Validation overlay  ===============*/
+// End of OVERLAY / DIALOG  ====================
+// Validation overlay  ===============
 div#ibm-overlay-top form label {
 		font-weight:bold;
 	}
@@ -1011,9 +964,9 @@ div#ibm-overlay-top h2 {
 	font-family: arial,sans-serif;
 	font-weight: normal;
 	}
-/* End of Validation overlay ===========*/
+// End of Validation overlay ===========
 
-/* dijit layout fonts ===============*/
+// dijit layout fonts ===============
 .v17 .dijitMenuItem {	
 	font-family:arial,sans-serif;
 	font-size:0.7em;
@@ -1023,50 +976,49 @@ div#ibm-overlay-top h2 {
 	font-size: 1px;
 }
 
-/* End of dijit layout fonts ===============*/
+// End of dijit layout fonts ===============
 
 
-/* Carousel font style  =========*/
+// Carousel font style  =========
 
 .ibm-img-resize span {
 	line-height: 12px;
 	font-size: 0.9em;
 	}
-/* End of Carousel font style =========*/
+// End of Carousel font style =========
 
 ul.ibm-newsletter span.ibm-newsletter-header {
 	font-weight:bold;
-	}
+}
 
-/* Locale Selector ============================ */
+// Locale Selector ============================
 #ibm-loader{
     font-size: 0.8em;
 }
 #ibm-country-selector #ibm-country-sort{
-	
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-size: 0.7em;
-	}
+}
 	
-#ibm-country-selector #ibm-country-sort h2{
+#ibm-country-selector #ibm-country-sort h2 {
    font-size: 1.2em; 	 	
-	}
-#ibm-country-selector  #ibm-country-nav ul li a{
+}
+#ibm-country-selector  #ibm-country-nav ul li a {
 	font-size: 1.1em;
 	font-weight:bold;
-	}
+}
 #ibm-country-selector  h2{
 	font-size:0.9em;
-  	}
+}
 #ibm-country-selector  ul li{
 	font-size: .7em;
 	font-weight:bold;
 	font-family:Arial,sans-serif;
-	}
-/* End of Locale Selctor */
+}
+// End of Locale Selctor
 
-/* Form Font ==================*/
+// Form Font ==================
 #ibm-content input[type="text"],#ibm-content input[type="password"],
 #ibm-content textarea {
 	font-family: Arial,sans-serif;
@@ -1084,11 +1036,8 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 	font-size: 0.8em;
 }
 
-/*form.ibm-column-form label {
-		line-height: 14px;
-}*/
 form.ibm-column-form label,
-form.ibm-row-form label{
+form.ibm-row-form label {
 	font-weight: bold;
 }
 
@@ -1136,29 +1085,29 @@ form.ibm-row-form label{
 #ibm-content .ibm-columns .ibm-col-4-1 form ol,
 #ibm-content .ibm-columns .ibm-col-2-1 form ol,
 #ibm-content form .ibm-columns .ibm-col-2-1 ol,
-#ibm-content .ibm-columns .ibm-col-1-1 form ol{
+#ibm-content .ibm-columns .ibm-col-1-1 form ol {
 	font-size: 1em;
 }
 
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 form p.ibm-ind-error{
+.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 form p.ibm-ind-error {
 	font-size :1.166em;
 }
 
 form.ibm-column-form span.ibm-input-group label,
-form.ibm-row-form span.ibm-input-group label{
+form.ibm-row-form span.ibm-input-group label {
 	font-weight: normal;
 	line-height: 25px;
-	}
+}
 form.ibm-row-form label span.ibm-additional-info,
 form.ibm-column-form label span.ibm-additional-info,
 #ibm-content-main form .ibm-checkbox-layout label {
 	font-weight: normal;
 	
 	}
-/* End for form font ====================== */
+// End for form font ======================
 
 
-/* Content side bar ======================*/
+// Content side bar ======================
 #ibm-content-sidebar {
 	font-size: 0.9em;
 }
@@ -1195,57 +1144,57 @@ li.ibm-anchor-down-em-link,
 #ibm-content-sidebar a.ibm-anchor-up-link:hover, 
 #ibm-content-sidebar a.ibm-forward-em-link:hover,
 li.ibm-highlight-link {
-	/*color: #222;*/
 	font-weight:bold;
 	}
 
-/* End of Content side bar ===============*/
+// End of Content side bar ===============
 
 
-/* Footer font============================= */
+// Footer font=============================
 #ibm-footer-module h2,
 #ibm-footer-module h3 {
     font-size: 1em;
-    }
+}
 #ibm-footer-module ul {
     line-height: 14px;
-	}
+}
 
 #ibm-footer-module {
     font-size: 0.7em;
-	}
+}
 * html #ibm-footer-module a {
     line-height: 20px;
-    }
+}
 #ibm-footer ul {
     font-weight: normal;
     font-size: 0.85em;
-    }
+}
 #ibm-footer:after {
     font-size: 0;
-    }
-/* End of Footer font============================= */
+}
+// End of Footer font=============================
 
 
-/* Legal Text font ==================*/
+// Legal Text font ==================
 #ibm-content-main .ibm-legal-text,
-#ibm-content-main .ibm-legal{
+#ibm-content-main .ibm-legal {
   	font-family: "Georgia","Times","Times New Roman",serif;
     font-size: 0.85em !important;
-  }
+}
 .ibm-legal-text .ibm-required,
-.ibm-legal .ibm-required{
+.ibm-legal .ibm-required {
 	font-size: 1.4em;
-	}
+}
 
-.ibm-legal-text,.ibm-legal{
+.ibm-legal-text,
+.ibm-legal {
 	font-family: "Georgia","Times","Times New Roman",serif;
     font-size: 0.66em !important;
     line-height: 18px;
 }
-/* End of Legal Text font============================= */
+// End of Legal Text font=============================
 
-/* Superscript and subscript text font ==================*/
+// Superscript and subscript text font ==================
 
 /* 
 implementation of <SUP> and <SUB> element support
@@ -1271,13 +1220,14 @@ sub {
 	font-size: 0.8em;
 }
 
-/* End of Superscript and subscript text font ==================*/
+// End of Superscript and subscript text font ==================
 
-/* ibm-inset img caption font ==================*/
+// ibm-inset img caption font ==================
 .ibm-inset-img-caption {
     font-size: 0.75em;
 }
-/* End of the img caption font ==================*/
+
+// End of the img caption font ==================
 #ibm-content ul.ibm-live-assistance-list li,
 #ibm-content #ibm-contact-module ul.ibm-alternate li span,
 #ibm-content #ibm-contact-module ul.ibm-alternate li p span {
@@ -1287,17 +1237,17 @@ sub {
 #ibm-content #ibm-contact-module ul.ibm-alternate li p {
    font-weight: normal;
 }
-/* Live chat module */
+// Live chat module
 
-/* End of live chat Module */
+// End of live chat Module
 
-/* Pull quote font style ====*/
-.ibm-pullquote-source{
+// Pull quote font style ====
+.ibm-pullquote-source {
   font-family: arial !important;
   font-size: 1.2em !important;
   font-style:normal;
 }
-.ibm-pullquote-source-alternate{
+.ibm-pullquote-source-alternate {
   font-family: Georgia !important;
   font-size: 1.2em !important;
   font-style:normal;
@@ -1305,43 +1255,43 @@ sub {
 
 
 .ibm-pullquote-open,
-.ibm-pullquote-close{
+.ibm-pullquote-close {
     font-family: georgia;
     font-size: 1.9em;
 }
  div.ibm-pull-quote blockquote p,
 div.ibm-pull-quote.ibm-inset blockquote p,
-div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p{
+div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p {
     line-height:1.3em !important;
     font-size: 1.8em !important;
     font-style: normal;
     font-family:Georgia;
-     }
+}
 
 .ibm-pull-quote.ibm-alternate-font blockquote p,
 .ibm-pull-quote.ibm-inset.ibm-alternate-font blockquote p,
 .ibm-pull-quote.ibm-inset.ibm-alternate.ibm-alternate-font blockquote p,
 .ibm-pullquote-open.ibm-alternate-font,
 .ibm-pullquote-close.ibm-alternate-font {
-font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;
-    
+	font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;
 }
-/* end of pullquote font style ========*/
-/* Step indicator font style  =====*/
-.ibm-landing-page ul#ibm-step-indicator li a{font-size:.9em;}
-/* End of of step indicator style */
+
+// end of pullquote font style ========
+// Step indicator font style  =====
+.ibm-landing-page ul#ibm-step-indicator li a {font-size:.9em;}
+// End of of step indicator style
 
 
-/*----  RSS link list styles  ----*/
+// ----  RSS link list styles  ----
 .ibm-col-5-1 .ibm-rss-module p.ibm-ind-link a,
 .ibm-col-5-2 .ibm-rss-module p.ibm-ind-link a,
 .ibm-col-5-3 .ibm-rss-module p.ibm-ind-link a,
 .ibm-col-6-1 .ibm-rss-module p.ibm-ind-link a,
 .ibm-col-6-2 .ibm-rss-module p.ibm-ind-link a,
-.ibm-col-6-3 .ibm-rss-module p.ibm-ind-link a{
+.ibm-col-6-3 .ibm-rss-module p.ibm-ind-link a {
 	line-height:16px;
 }
-.ibm-col-1-1 .ibm-rss-module p.ibm-ind-link a{
+.ibm-col-1-1 .ibm-rss-module p.ibm-ind-link a {
 	line-height:17px;
 }
 .ibm-rss-module .ibm-container .ibm-container-body p.ibm-ind-link a {
@@ -1356,5 +1306,5 @@ font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial
 	line-height: 15px;
 	font-weight: normal;
 }
-/* End of RSS module font styles and line height */
+// End of RSS module font styles and line height
 

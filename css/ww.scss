@@ -3,49 +3,69 @@
  * Copyright (c) 2011 IBM Corporation
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  */
-/*
- * The contents are auto-created from individual files
- * listed below. Use the ant script in the same folder
- * to create the file.
- */
+ 
+// The contents are auto-created from individual files
+// listed below. Use the ant script in the same folder
+// to create the file.
 
-/* variables ============================================ */
+// variables ============================================
 
 $fontsPath : "/css/fonts";
 $imagesPath : "http://1.www.s81c.com";
 $ie9Hack : "\0/";
 
-/* imports ============================================ */
+// mixins ============================================
 
-@import "scss/shared/fonts";
-@import "scss/shared/reset";
-@import "scss/shared/accessibility";
-@import "scss/shared/navigation";
-@import "scss/shared/search";
-@import "scss/shared/related";
-@import "scss/shared/footer";
-@import "scss/shared/common";
-@import "scss/shared/ribbon";
-@import "scss/shared/sidebar";
-@import "scss/shared/layout";
-@import "scss/shared/liquid";
-@import "scss/shared/grid";
-@import "scss/shared/icons";
-@import "scss/shared/dialog";
-@import "scss/shared/form";
-@import "scss/shared/signin";
-@import "scss/shared/tabs";
-@import "scss/shared/scroll";
-@import "scss/shared/video";
-@import "scss/shared/rightnav";
-@import "scss/shared/table";
-@import "scss/shared/landing";
-@import "scss/shared/tooltip";
-@import "scss/shared/popup";
-@import "scss/shared/print";
-@import "scss/shared/social-toolbar";
-@import "scss/shared/rating";
-@import "scss/ww/localeselector";
-@import "scss/ww/masthead";
-@import "scss/shared/application";
-@import "scss/ww/merchandising";
+@mixin border-radius($borders...) {
+	-webkit-border-radius: $borders;
+	-moz-border-radius: $borders;
+	border-radius: $borders;
+}
+@mixin box-shadow($shadows...) {
+	-webkit-box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+@mixin transition($transitions...) {
+  	-webkit-transition: $transitions;
+  	-moz-transition: $transitions;
+  	-o-transition: $transitions;
+  	-ms-transition: $transitions;
+  	transition: $transitions;
+}
+
+
+// imports ============================================
+
+@import "scss/shared/fonts",
+		"scss/shared/reset",
+		"scss/shared/accessibility",
+		"scss/shared/navigation",
+		"scss/shared/search",
+		"scss/shared/related",
+		"scss/shared/footer",
+		"scss/shared/common",
+		"scss/shared/ribbon",
+		"scss/shared/sidebar",
+		"scss/shared/layout",
+		"scss/shared/liquid",
+		"scss/shared/grid",
+		"scss/shared/icons",
+		"scss/shared/dialog",
+		"scss/shared/form",
+		"scss/shared/signin",
+		"scss/shared/tabs",
+		"scss/shared/scroll",
+		"scss/shared/video",
+		"scss/shared/rightnav",
+		"scss/shared/table",
+		"scss/shared/landing",
+		"scss/shared/tooltip",
+		"scss/shared/popup",
+		"scss/shared/print",
+		"scss/shared/social-toolbar",
+		"scss/shared/rating",
+		"scss/ww/localeselector",
+		"scss/ww/masthead",
+		"scss/shared/application",
+		"scss/ww/merchandising";

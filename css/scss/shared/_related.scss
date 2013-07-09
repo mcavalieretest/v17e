@@ -2,9 +2,7 @@
 
 #ibm-related-content {
 	background: #F0F0F0 url("#{$imagesPath}/i/v17/t/related-bg.png") repeat-x 50% 0px;
-	box-shadow: inset 0 1px 0 #E5E5E5;
-	-moz-box-shadow: inset 0 1px 0 #E5E5E5;
-	-webkit-box-shadow: inset 0 1px 0 #E5E5E5;
+	@include box-shadow(inset 0 1px 0 #E5E5E5);
 	border-bottom: 2px solid #FFF;
 	min-height: 0px;
 	*min-height: auto;
@@ -33,7 +31,6 @@
 #ibm-related-content .ibm-columns .ibm-col-6-5 {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	/* min-height: 210px; */
 }
 
 #ibm-related-content .ibm-thumbnail {

@@ -50,63 +50,58 @@
 
 @media screen {
 
-/* TODO: clean the code below up!!! */
+	// TODO: clean the code below up!!! */
 
-    #ibm-content {position:inherit;}
+	#ibm-content {position:inherit;}
     
-    * html #ibm-content {position:static;}
+	* html #ibm-content {position:static;}
     
-    *:first-child+html #ibm-content {position:static;}
+	*:first-child+html #ibm-content {position:static;}
     
-    #ibm-sp-outer-lead {position:relative;}
+	#ibm-sp-outer-lead {position:relative;}
     
-    * html #ibm-sp-menu {left:100px;}
+	* html #ibm-sp-menu {left:100px;}
 
-    #ibm-com .dijitDialog {
+	#ibm-com .dijitDialog {
 		background: none;
-        /*cursor:move;*/
-        position:absolute;
-        border:8px solid rgba(255, 255, 255, 0.2);
-        -moz-border-radius:8px;
-        -webkit-border-radius:8px;
-        border-radius:8px;
-        -webkit-box-shadow:0 0 20px #333; 
-        -moz-box-shadow:0 0 20px #333; 
-        box-shadow:0 0 20px #333;
-        overflow: visible;
-        border:8px solid #999\9;
+		position:absolute;
+		border:8px solid rgba(255, 255, 255, 0.2);
+		@include border-radius(8px);
+		@include box-shadow(0 0 20px #333);
+		overflow: visible;
+		border:8px solid #999\9;
 	}
-	 .dijitDialog{
-        width:auto; /*changed 410px to auto by Tapan */
-    }
+	.dijitDialog{
+		width:auto; /*changed 410px to auto by Tapan */
+	}
 	
-    * html #ibm-com .dijitDialog {width:390px;}
-    /*.ibm-overlay-alt {width:590px;}*/
-    * html .ibm-overlay-alt {width:570px;}
-    /*.ibm-overlay-alt-two {width:770px;}*/
-    * html .ibm-overlay-alt-two {width:750px;}
+	* html #ibm-com .dijitDialog {width:390px;}
+
+	* html .ibm-overlay-alt {width:570px;}
+
+	* html .ibm-overlay-alt-two {width:750px;}
     
-    .ibm-common-overlay-mask {
-        background:transparent;
-        border:none;
-        margin:0;
-        overflow:hidden;
-        padding:0;
-        position:absolute;
-        z-index:8;
-    }
+	.ibm-common-overlay-mask {
+		background:transparent;
+		border:none;
+		margin:0;
+		overflow:hidden;
+		padding:0;
+		position:absolute;
+		z-index:8;
+	}
 
-    #ibm-com div.dijitDialog .ibm-head {
-        background:none;
-        margin:0;
-        padding:0;
-        height:0;
-}
+	#ibm-com div.dijitDialog .ibm-head {
+		background:none;
+		margin:0;
+		padding:0;
+		height:0;
+	}
 
-    #ibm-com div.dijitDialog .ibm-head p {
-        margin:0;
-        padding:0;
-}
+	#ibm-com div.dijitDialog .ibm-head p {
+		margin:0;
+		padding:0;
+	}
     
     
 #ibm-com div.dijitDialog img.ibm-inset {
