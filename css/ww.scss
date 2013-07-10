@@ -5,47 +5,62 @@
  */
  
 // The contents are auto-created from individual files
-// listed below. Use the ant script in the same folder
-// to create the file.
+// listed below. Use a SASS compiler to create the CSS file.
 
-// variables ============================================
 
-$fontsPath : "/css/fonts";
-$imagesPath : "http://1.www.s81c.com";
-$ie6Selector : ".dj_ie6";
-$ie7Selector : ".dj_ie7";
-$ie9Hack : "\0/";
+/*  Adjust these references as v17e gets built...
+css/
+|
+|-- scss/
+|   |-- shared/					# shared modules
+|   |   |-- _base.scss			# project variables and mixins
+|   |   |-- _fonts.scss			# fonts
+|   |   |-- _reset.scss			# reset
+|   |   |-- _accessibility.scss	# accessibility
+|   |   |-- _navigation.scss	# navigation
+|   |   |-- _search.scss		# search
+|   |   |-- _related.scss		# related
+|   |   |-- _footer.scss		# footer
+|   |   |-- _common.scss		# common
+|   |   |-- _ribbon.scss		# ribbon
+|   |   |-- _sidebar.scss		# sidebar
+|   |   |-- _layout.scss		# layout
+|   |   |-- _liquid.scss		# liquid
+|   |   |-- _grid.scss			# grid
+|   |   |-- _icons.scss			# icons
+|   |   |-- _dialog.scss		# dialog
+|   |   |-- _form.scss			# form
+|   |   |-- _signin.scss		# signin
+|   |   |-- _tabs.scss			# tabs
+|   |   |-- _scroll.scss		# scroll
+|   |   |-- _video.scss			# video
+|   |   |-- _rightnav.scss		# rightnav
+|   |   |-- _table.scss			# table
+|   |   |-- _landing.scss		# landing
+|   |   |-- _tooltip.scss		# tooltip
+|   |   |-- _popup.scss			# popup
+|   |   |-- _print.scss			# print
+|   |   |-- _social-toolbar.scss# social-toolbar
+|   |   |-- _rating.scss		# rating
+|   |   |-- _application.scss	# application
+|   |   ...
+|   |-- ww/						# ww modules
+|   |   |-- _localeselector.scss# localselector
+|   |   |-- _masthead.scss		# masthead
+|   |   |-- _merchandising.scss	# merchandising
+|   |   ...
+|   ...
+|
+`-- ww.scss						# primary Sass file
+*/
 
-// mixins ============================================
 
-@mixin border-radius($borders...) {
-	-webkit-border-radius: $borders;
-	-moz-border-radius: $borders;
-	border-radius: $borders;
-}
-@mixin box-shadow($shadows...) {
-	-webkit-box-shadow: $shadows;
-	-moz-box-shadow: $shadows;
-	box-shadow: $shadows;
-}
-@mixin transition($transitions...) {
-  	-webkit-transition: $transitions;
-  	-moz-transition: $transitions;
-  	-o-transition: $transitions;
-  	-ms-transition: $transitions;
-  	transition: $transitions;
-}
-@mixin aslett-clearing {
-    clear: both;
-    content: " ";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
+
 
 // imports ============================================
 
-@import "scss/shared/fonts",
+@import "scss/shared/base",
+		"scss/shared/fonts",
 		"scss/shared/reset",
 		"scss/shared/accessibility",
 		"scss/shared/navigation",
