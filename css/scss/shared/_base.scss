@@ -1,0 +1,34 @@
+// variables ============================================
+
+$fontsPath : "/css/fonts";
+$imagesPath : "http://1.www.s81c.com";
+$ie6Selector : ".dj_ie6";
+$ie7Selector : ".dj_ie7";
+$ie9Hack : "\0/";
+
+// mixins ============================================
+
+@mixin border-radius($borders...) {
+	-webkit-border-radius: $borders;
+	-moz-border-radius: $borders;
+	border-radius: $borders;
+}
+@mixin box-shadow($shadows...) {
+	-webkit-box-shadow: $shadows;
+	-moz-box-shadow: $shadows;
+	box-shadow: $shadows;
+}
+@mixin transition($transitions...) {
+	-webkit-transition: $transitions;
+	-moz-transition: $transitions;
+	-o-transition: $transitions;
+	-ms-transition: $transitions;
+	transition: $transitions;
+}
+@mixin aslett-clearing {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
