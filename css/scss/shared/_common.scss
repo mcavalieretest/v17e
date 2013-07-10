@@ -2577,17 +2577,16 @@ p.ibm-button-link-alternate a:active {
 .dj_ie6 #ibm-top h2.ibm-alternate, 
 .dj_ie6 #ibm-top h3.ibm-alternate,  
 .dj_ie6 #ibm-top ul.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-1 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-6-2 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-6-3 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-6-4 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-6-5 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-5-1 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-5-2 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-5-3 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-5-4 div.ibm-alternate ,
-.dj_ie6 #ibm-top div.ibm-col-1-1 div.ibm-alternate 
-{
+.dj_ie6 #ibm-top div.ibm-col-6-1 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-6-2 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-6-3 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-6-4 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-6-5 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-5-1 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-5-2 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-5-3 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-5-4 div.ibm-alternate,
+.dj_ie6 #ibm-top div.ibm-col-1-1 div.ibm-alternate {
     _float:none;
     _width: auto;
     _margin: 0px;
@@ -2599,8 +2598,7 @@ p.ibm-button-link-alternate a:active {
 }
 
 .dj_ie6 #ibm-top h2.ibm-alternate, 
-.dj_ie6 #ibm-top h3.ibm-alternate  
-{
+.dj_ie6 #ibm-top h3.ibm-alternate {
     border: 0;
 }
 
@@ -2626,11 +2624,11 @@ p.ibm-button-link-alternate a:active {
 	text-decoration: none !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{
-#ibm-content .ibm-columns h2 + p
-{margin-top: 5px !important;}
-} 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#ibm-content .ibm-columns h2 + p {
+		margin-top: 5px !important;
+	}
+}
 
 
 /*----  RSS link list styles  ----*/
@@ -2641,7 +2639,7 @@ p.ibm-button-link-alternate a:active {
 }
 
 #ibm-content-main .ibm-columns .ibm-rss-module .ibm-container .ibm-container-body p {
-	color: #aaa;
+	color: #AAA;
 }
 
 
@@ -2743,7 +2741,6 @@ p.ibm-button-link-alternate a:active {
 	position: absolute;
 	top: 6px;
 	right: 0;
-	/*line-height: 15px;*/
 	*diplay: block;
 	*zoom: 1;
 }
@@ -2751,17 +2748,6 @@ p.ibm-button-link-alternate a:active {
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link:hover{
 background-position: 104% -1px;
 }
-
-
-/*.ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a {
-	padding-top: 2px;
-}*/
-
-/*.ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-back-link:hover {
-	background-position: 1px -200px;
-}
-*/
-
 
 /* universal background dim for just about anything BEGIN */
 
@@ -2788,8 +2774,8 @@ in order to work correcly (taking into account fixed masthead) it has to be plac
 /* universal background dim for just about anything END */
 /* Style for step-indicator */
 .ibm-container > div.ibm-tab-section.ibm-step-indicator {
-    border-bottom: 1px solid #CCCCCC;
-    border-top: 4px solid #666666;
+    border-bottom: 1px solid #CCC;
+    border-top: 4px solid #666;
     margin-top: -2px;
     padding-top: 4px;
 }
@@ -2799,7 +2785,7 @@ div.ibm-tab-section.ibm-step-indicator {
 }
 
 #ibm-com div.ibm-step-indicator ul.ibm-tabs {
-    color: #000000;
+    color: #000;
     width:100%;
 }
  
@@ -2836,28 +2822,25 @@ div.ibm-tab-section.ibm-step-indicator {
 
 }
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a.ibm-active-current{
-    color: #000000;
+    color: #000;
     font-weight: bold;
 }
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li.ibm-last {
     background-image: none !important;
 }
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a.ibm-disabled {
-    color: #666666 !important;
+    color: #666 !important;
     visibility: visible;
     cursor:default;
 }
 
-/*#ibm-com div.ibm-step-indicator ul.ibm-tabs li:first-child {
-    padding-left: 10px;
-}*/
+
 .ibm-col-6-3 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-6-2 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-5-3 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-5-2 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-4-2 .ibm-container > div.ibm-tab-section.ibm-step-indicator{
-   	border-top: 2px solid #666666;
-   /*	padding-bottom: 2px;*/
+   	border-top: 2px solid #666;
    	padding-top: 2px;
 }
 #ibm-com .ibm-col-6-3 div.ibm-step-indicator ul.ibm-tabs li,
@@ -2878,7 +2861,6 @@ div.ibm-tab-section.ibm-step-indicator {
 #ibm-com .ibm-col-5-2 div.ibm-step-indicator ul.ibm-tabs li a,
 #ibm-com .ibm-col-4-2 div.ibm-step-indicator ul.ibm-tabs li a{
 	font-size:.9em;
-	/*margin: 0 0 0 -14px;*/
 	*margin:0 0 0 10px;
 }
 div.ibm-step-container .ibm-buttons-row{
@@ -2886,32 +2868,32 @@ div.ibm-step-container .ibm-buttons-row{
 }
 
 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri,
-div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec{
+div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec {
 	min-width:80px;
 	display:inline;
-   float:right;
+	float:right;
 }
 
 
-div.ibm-step-container .ibm-buttons-row span.ibm-sep{
-float:right;
+div.ibm-step-container .ibm-buttons-row span.ibm-sep {
+	float:right;
 }
 
 
 #ibm-top div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri.ibm-btn-small,
-#ibm-top div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec.ibm-btn-small{
-	  font-size: 1em;
-    min-width: 75px;
-    padding-top: 6px;
-    float:right;
+#ibm-top div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec.ibm-btn-small {
+	font-size: 1em;
+	min-width: 75px;
+	padding-top: 6px;
+	float:right;
 }
 
 .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri,
-.ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec{
-padding: 5px 20px;
+.ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec {
+	padding: 5px 20px;
 }
 
-#ibm-content-main .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p{
+#ibm-content-main .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p {
 	font-size:1em;
 }
 
@@ -2923,9 +2905,6 @@ div.ibm-step-container .ibm-hidden-content {
   display: none;
 }
 
-/*#ibm-content-main .ibm-columns .ibm-col-6-2 ul li p {
-	padding:0px 0px 0px 0px !important;
-}*/
 #ibm-content .ibm-columns ul li p {
 	padding: 0 0 5px !important;
 }
