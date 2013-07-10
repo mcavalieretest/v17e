@@ -19,10 +19,10 @@
 	position: relative;
 	_height: 1%;
 }
-.dj_ie7 #ibm-content .ibm-video .ibm-container-body,
-.dj_ie7 #ibm-content .ibm-playlist .ibm-container-body,
-.dj_ie7 #ibm-content .ibm-ribbon .ibm-container-body,
-.dj_ie7 #ibm-media .ibm-ribbon .ibm-container-body {
+#{$ie7Selector} #ibm-content .ibm-video .ibm-container-body,
+#{$ie7Selector} #ibm-content .ibm-playlist .ibm-container-body,
+#{$ie7Selector} #ibm-content .ibm-ribbon .ibm-container-body,
+#{$ie7Selector} #ibm-media .ibm-ribbon .ibm-container-body {
 	height: 1%;
 }
 .ibm-ribbon-pane {
@@ -34,18 +34,18 @@
 }
 
 /* Code added for IE 6 fix of ribbon-pane of col-6-2 right column*/
-.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
+#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
 {
 width: 300px;
 }
 
-.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-section
+#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-section
 {
 margin: 0px;
 position: absolute;
 }
 
-.dj_ie6 .ibm-alternate .ibm-container-body .ibm-ribbon-nav
+#{$ie6Selector} .ibm-alternate .ibm-container-body .ibm-ribbon-nav
 {
 margin-top: -20px;
 position: absolute;
@@ -56,7 +56,7 @@ top: 0px;
 
 
 
-.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-prev, 
+#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-prev, 
 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-next
 {
 	background: none;
@@ -67,7 +67,7 @@ top: 0px;
 
 /*Code added for added IE 7 width fix of right-column ribbon pane */ 
 
-.dj_ie7 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
+#{$ie7Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
 {
 width: 300px;
 }

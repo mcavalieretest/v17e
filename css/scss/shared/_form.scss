@@ -211,8 +211,8 @@ form.ibm-column-form .dijitTextBox INPUT{
     float: left;
 }
 
-.dj_ie6 .v17 .dijitSelect,
-.dj_ie6 .v17 .dijitSelect .dijitButtonNode {
+#{$ie6Selector} .v17 .dijitSelect,
+#{$ie6Selector} .v17 .dijitSelect .dijitButtonNode {
     background-image: none;
 }
 
@@ -418,8 +418,8 @@ There are three areas of styling for the Menu:
     background-position: 0px -177px;
 }
 
-.dj_ie6 .v17  .dijitMenuItem,
-.dj_ie6 .v17  .dijitMenuPassive .dijitMenuItem {
+#{$ie6Selector} .v17  .dijitMenuItem,
+#{$ie6Selector} .v17  .dijitMenuPassive .dijitMenuItem {
     background-image: none;
 }
 
@@ -571,8 +571,8 @@ There are three areas of styling for the Menu:
     padding: 0;
 }
 
-.dj_ie6 .v17 .dijitCheckBox,
-.dj_ie6 .v17 .dijitCheckBoxIcon     /* inside a toggle button */    {
+#{$ie6Selector} .v17 .dijitCheckBox,
+#{$ie6Selector} .v17 .dijitCheckBoxIcon     /* inside a toggle button */    {
     background-image: url("#{$imagesPath}/i/v17/icons/form_sprites.png"); /* checkbox sprite image */
 }
 
@@ -1363,7 +1363,7 @@ border-collapse: separate;
   background-position: 0px 3px;
 }
 
-.dj_ie6 .v17 .dijitCalendarIncrementControl {
+#{$ie6Selector} .v17 .dijitCalendarIncrementControl {
   background-image: url("#{$imagesPath}/i/v17/calendar/callendar_arrows_sprite.png");
 }
 
@@ -1439,7 +1439,7 @@ border-collapse: separate;
     font-size: 1em;
 }
 
-.dj_ie6 .v17 .dijitCalendarDateTemplate {
+#{$ie6Selector} .v17 .dijitCalendarDateTemplate {
   background-image: none;
   border: none;
 }
@@ -1919,11 +1919,11 @@ form.ibm-row-form span a.ibm-help-link{
  
 
  /*
- .dj_ie7 .v17 form.ibm-column-form p span span.ibm-mandate-select .dijitSelect{
+ #{$ie7Selector} .v17 form.ibm-column-form p span span.ibm-mandate-select .dijitSelect{
  margin-top:0px !important;
  }
 
-.dj_ie7 .v17 form.ibm-column-form p span span.ibm-mandate-select table.dijitSelect span.dijitSelectLabel {
+#{$ie7Selector} .v17 form.ibm-column-form p span span.ibm-mandate-select table.dijitSelect span.dijitSelectLabel {
     margin: 0 !important;
 }
 

@@ -250,7 +250,7 @@ background-color: #eeeeee;
 	font-weight:bold;
 }
 
-.dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li.ibm-highlight-tab{
+#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li.ibm-highlight-tab{
  	border-left: 0 none !important;
   	border-top: 0 none !important;
 }
@@ -313,24 +313,24 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	display:block;
 }
  
- .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
+ #{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
 	padding-bottom:10px !important;
  }
- .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
+ #{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
 	padding-bottom:10px !important;
  }
 
 
  
    
-.dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
- .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
- .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column  {
+#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
+ #{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
+ #{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column  {
     padding-top:20px;
 	}
-.dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
- .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
- .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column{
+#{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
+ #{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
+ #{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column{
     padding-top:20px;
 	}
 
@@ -428,13 +428,13 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
     *margin-bottom: 7px;
 }
 /*
-.dj_ie7 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li{
+#{$ie7Selector} #ibm-com .ibm-graphic-tabs ul.ibm-tabs li{
 	height:27px;
 }*/
 
-.dj_ie6 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
-.dj_ie6 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab,
-.dj_ie6 #ibm-com div.ibm-text ul.ibm-tabs li:first-child.ibm-active{
+#{$ie6Selector} #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
+#{$ie6Selector} #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab,
+#{$ie6Selector} #ibm-com div.ibm-text ul.ibm-tabs li:first-child.ibm-active{
 	height:28px;
 	border-bottom:0px none !important
 }
@@ -479,8 +479,8 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	margin-bottom:22px;
 	padding-bottom:5px;
 }
-.dj_ie6 #ibm-com div.ibm-tab-section.ibm-text,
-.dj_ie7 #ibm-com div.ibm-tab-section.ibm-text{
+#{$ie6Selector} #ibm-com div.ibm-tab-section.ibm-text,
+#{$ie7Selector} #ibm-com div.ibm-tab-section.ibm-text{
 	padding-bottom:10px;
 }
 
@@ -777,7 +777,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	margin-top: 29px;
 	border: 5px solid #666;
 }
-.dj_ie7 #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
+#{$ie7Selector} #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
 	margin-left: -400px;
 }
 #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content.ibm-columns .ibm-tab-overlay ul {

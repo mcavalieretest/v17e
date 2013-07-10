@@ -144,18 +144,18 @@
     padding-bottom: 5px;
     margin-bottom: 1px;
 }
-.dj_ie6 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
+#{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
     height:115px !important;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
  padding-top:25px;
  padding-bottom: 20px;
    }
-  .dj_ie6 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
+  #{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
 
  padding-bottom: 10px;
    }
- .dj_ie6 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p span {
+ #{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate p span {
     margin-top: 0px;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-35-space{
@@ -560,10 +560,10 @@ display: block ;
 .ibm-landing-page #ibm-leadspace-head a.ibm-disabled {
     visibility: hidden;
 }
-.dj_ie7 div#interceptDiv {
+#{$ie7Selector} div#interceptDiv {
     height: 1%;
 }
-.dj_ie6 div#interceptDiv {
+#{$ie6Selector} div#interceptDiv {
     height: 1%;
 }
 .ibm-embed-video {

@@ -10,17 +10,17 @@
 	padding: 1.1em 0 30px;
 	width: 172px;
 }
-.dj_ie6 #ibm-navigation {
+#{$ie6Selector} #ibm-navigation {
 	margin-left:-980px;
 }
 
-.dj_ie6 .ibm-liquid #ibm-navigation {
+#{$ie6Selector} .ibm-liquid #ibm-navigation {
 	height: 1%;
 	position: fixed;
 	margin-left: -100%;
 	padding-left: 20px;
 }
-.dj_ie7 .ibm-liquid #ibm-navigation {
+#{$ie7Selector} .ibm-liquid #ibm-navigation {
 	margin-left: -100%;
 }
 
@@ -184,8 +184,8 @@ filter: none;
 }
 
 
-.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active, .dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active,
-.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover, .dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active:hover{
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active, #{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active,
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover, #{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active:hover{
     border-bottom: 0;
     background: #fff;
     /*font-weight: bold;*/

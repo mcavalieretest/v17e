@@ -84,7 +84,7 @@
 }
 
 
-.dj_ie6 .v17 .dijitTooltipRight .dijitTooltipConnector {  
+#{$ie6Selector} .v17 .dijitTooltipRight .dijitTooltipConnector {  
     background:url("#{$imagesPath}/i/v17/tooltip/tooltipConnectorLeft-IE.gif") no-repeat top left;
 }
 

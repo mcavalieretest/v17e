@@ -35,7 +35,7 @@
     padding: 0 0 0 10px;
 }
 
-.dj_ie7 #ibm-footer-module li{
+#{$ie7Selector} #ibm-footer-module li{
     display:inline-block;
 }
 
@@ -45,7 +45,7 @@
     color: #FFCF01;
 }
 
-.dj_ie6 #ibm-footer-module li {
+#{$ie6Selector} #ibm-footer-module li {
     vertical-align: text-top;
     width: 100%;
 }
@@ -55,7 +55,7 @@
     text-decoration: none;
     text-shadow: 0 0 2px #000;
 }
-.dj_ie6 #ibm-footer-module a {
+#{$ie6Selector} #ibm-footer-module a {
     margin-top: -4px;
 }
 

@@ -6,7 +6,7 @@
 	_position: absolute;
 	_right: 0;
 }
-.dj_ie7 #ibm-search-module {
+#{$ie7Selector} #ibm-search-module {
 	position: absolute;
 	right: 0;
 }
@@ -111,18 +111,18 @@
 	margin-top: 24px;
 	width: 215px;
 }
-.dj_ie7 #ibm-scoped-search {
+#{$ie7Selector} #ibm-scoped-search {
 	margin-left: -222px;
 	margin-top: 24px;
 }
-.dj_ie7 #ibm-scoped-search li {
+#{$ie7Selector} #ibm-scoped-search li {
 	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px 7px;
 }
-.dj_ie7 #ibm-scoped-search li a.ibm-active {
+#{$ie7Selector} #ibm-scoped-search li a.ibm-active {
 	background-color:#535353;
 	background: url("#{$imagesPath}/i/v17/search_scope_sprite.png") no-repeat 190px -12px #535353;
 }
-.dj_ie7 #ibm-scoped-search li a:hover {
+#{$ie7Selector} #ibm-scoped-search li a:hover {
 	background-color:#535353;
 }
 
