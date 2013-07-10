@@ -470,7 +470,7 @@
 
 /* For IE 7 Start */
 
-*:first-child+html #ibm-country-selector #ibm-country-nav li a:hover {
+#{$ie7Selector} #ibm-country-selector #ibm-country-nav li a:hover {
 	background-color: #555;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#383838');
 }
@@ -481,7 +481,7 @@
 
 /* For IE 6 Start */
 
-.dj_ie6 #ibm-country-selector #ibm-country-nav li a:hover {
+#{$ie6Selector} #ibm-country-selector #ibm-country-nav li a:hover {
 	background-color: #555;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#383838');
 }    

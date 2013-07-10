@@ -1053,11 +1053,7 @@ form .ibm-checkbox-layout input {
     width: 100%;
 }
 .ibm-buttons-row:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	@include aslett-clearing;
 }
 .ibm-buttons-row p {
     padding-left: 157px;

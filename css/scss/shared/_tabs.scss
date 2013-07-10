@@ -575,11 +575,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 }
 
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs:after {
-    content: " ";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	@include aslett-clearing;
 }
 
 #ibm-content-nav #ibm-secondary-tabs.ibm-list-view,

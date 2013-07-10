@@ -35,7 +35,13 @@ $ie9Hack : "\0/";
   	-ms-transition: $transitions;
   	transition: $transitions;
 }
-
+@mixin aslett-clearing {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 
 // imports ============================================
 

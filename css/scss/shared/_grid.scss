@@ -8,11 +8,7 @@
     clear: both;
 }
 .ibm-columns:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	@include aslett-clearing;
     overflow: hidden;
 }
 .ibm-columns .ibm-col-1-1,

@@ -14,11 +14,7 @@
     background: #FFF;
 }
 #ibm-pcon:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	@include aslett-clearing;
 }
 #ibm-content {
     float: left;

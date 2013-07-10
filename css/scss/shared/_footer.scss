@@ -107,10 +107,5 @@
     color: #D0D0D3;
 }
 #ibm-footer:after {
-    clear: both;
-    content: " ";
-    display: block;
-    /*font-size: 0;*/
-    height: 0;
-    visibility: hidden;
+	@include aslett-clearing;
 }

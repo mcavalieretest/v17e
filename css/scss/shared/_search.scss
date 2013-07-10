@@ -204,11 +204,7 @@
 }
 #ibm-search-results	.ibm-portrait-module-list:after,
 #ibm-search-results	.ibm-thumbnail-list:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+	@include aslett-clearing;
 }
 #ibm-search-results	.ibm-portrait-module-list li,
 #ibm-search-results	.ibm-thumbnail-list li {

@@ -115,11 +115,7 @@
 }
 
 #ibm-mast-options:after {
-	content: ".";
-	display: block;
-	height: 0;
-	clear: both;
-	visibility: hidden;
+	@include aslett-clearing;
 }
 #ibm-mast-options p {
 	display: inline;
@@ -130,8 +126,6 @@
 
 #ibm-mast-options a {
 	color: #A1A2A7;
-/*	color: rgba(255, 255, 255, 0.4); /*71737B*/
-	/*font-weight:normal;*/
 	padding: 3px 2px;
 	text-decoration: none;
 	
