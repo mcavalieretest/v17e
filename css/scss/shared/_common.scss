@@ -681,7 +681,7 @@ margin-top:8px !important;
 	margin: 0 10px;
 	width: auto;
 }
-.dj_ie6 #ibm-top #ibm-content .ibm-container.ibm-alternate {
+#{$ie6Selector} #ibm-top #ibm-content .ibm-container.ibm-alternate {
 	border-top: 2px solid #CCC;
 }
 /*
@@ -864,11 +864,11 @@ enabled by Saling V - megamenu and localselector update applied*/
     margin-right: -6px;
 }
 
-.dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
-.dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
-.dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
-.dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
-.dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover{
+#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
+#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
+#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
+#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
+#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover{
 	margin-left: 0px;
     margin-right: 0px;
     padding:2px;
@@ -879,7 +879,7 @@ enabled by Saling V - megamenu and localselector update applied*/
 	color:#969;
 }
 
-.dj_ie7 #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor{
+#{$ie7Selector} #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor{
 	position: relative;
 	top: -5px;
 }
@@ -1347,7 +1347,7 @@ div.ibm-list-next {
 #ibm-content ul.ibm-portrait-module-list p,
 #ibm-content ul.ibm-thumbnail-list p {
 	padding: 0 !important;
-	margin-left: 70px; /* former 80px caused missaligning text in lists with thumbnails*/
+	margin-left: 70px;
 }
 
 
@@ -1371,7 +1371,6 @@ div.ibm-list-next {
 #ibm-content .ibm-columns ul.ibm-thumbnail-list h3 {
 	display: block;
 	margin: 0 0 4px 70px;
-	/**margin-top:-80px;*/
 }
 
 
@@ -1482,26 +1481,21 @@ div.ibm-column.ibm-list-container .ibm-rule { margin:5px 0; }
 }
 
 .ibm-landing-page #ibm-content .ibm-col-6-4 ol.ibm-article-list h3,
- .ibm-landing-page #ibm-content .ibm-col-6-5 ol.ibm-article-list h3{
+.ibm-landing-page #ibm-content .ibm-col-6-5 ol.ibm-article-list h3 {
 	margin-top:-2px;
-	
 }
 
 #ibm-content .ibm-col-5-4 ol.ibm-article-list h3,
-  .ibm-landing-page #ibm-content .ibm-col-4-3 ol.ibm-article-list h3
- {
+.ibm-landing-page #ibm-content .ibm-col-4-3 ol.ibm-article-list h3 {
 	margin-top:-1px;
-	
 }
 
-  .ibm-landing-page #ibm-content .ibm-col-4-2 ol.ibm-article-list h3,
-    .ibm-landing-page #ibm-content .ibm-col-5-2 ol.ibm-article-list h3,
-    .ibm-landing-page #ibm-content .ibm-col-5-3 ol.ibm-article-list h3,
-    .ibm-landing-page #ibm-content .ibm-col-6-2 ol.ibm-article-list h3,
-    .ibm-landing-page #ibm-content .ibm-col-6-3 ol.ibm-article-list h3
-  {
+.ibm-landing-page #ibm-content .ibm-col-4-2 ol.ibm-article-list h3,
+.ibm-landing-page #ibm-content .ibm-col-5-2 ol.ibm-article-list h3,
+.ibm-landing-page #ibm-content .ibm-col-5-3 ol.ibm-article-list h3,
+.ibm-landing-page #ibm-content .ibm-col-6-2 ol.ibm-article-list h3,
+.ibm-landing-page #ibm-content .ibm-col-6-3 ol.ibm-article-list h3 {
 	margin-top:2px;
-	
 }
 
 #ibm-content ol.ibm-article-list h4 {
@@ -1775,8 +1769,8 @@ a.ibm-btn-sec:active {
 	padding: 6px 20px 5px;
 }
 
-input::-moz-focus-inner { 
-  border: 0;
+input::-moz-focus-inner {
+	border: 0;
 }
 
 
@@ -1820,7 +1814,7 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
 }
 
 .ibm-col-1-1 .ibm-btn-small {
-font-size:.8em;
+	font-size:.8em;
 }
 
 p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
@@ -1994,7 +1988,7 @@ ul.ibm-twisty {
 ul.ibm-twisty li {
 	padding: 5px 0px !important;
 }
-ul.ibm-twisty ul.ibm-bullet-list li{
+ul.ibm-twisty ul.ibm-bullet-list li {
 	padding-left:11px !important;
 	
 }
@@ -2106,42 +2100,37 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 
 
 #ibm-content ul.ibm-twisty.ibm-alternate li a:link, 
-#ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head
-{
+#ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head {
 	color: #0C323C;
 	cursor: pointer;
 }
 
 #ibm-content ul.ibm-twisty.ibm-alternate li a:hover,
-#ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head:hover
-{
+#ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head:hover {
 	color: #003546;
 }
 
-#ibm-content .ibm-container-body ul.ibm-twisty
-{
+#ibm-content .ibm-container-body ul.ibm-twisty {
 	 padding: 3px 0 0 3px;
 }
 
-#ibm-content ul.ibm-twisty.ibm-alternate li
-{
+#ibm-content ul.ibm-twisty.ibm-alternate li {
 	padding:4px 0;
 }
 
 /* Alternate twisty styles for show/hide style end================================================ */
 
 /* Show/hide styles begin =========================================== */
-.ibm-simple-show-hide .ibm-container-body {padding-bottom:4px;}
+.ibm-simple-show-hide .ibm-container-body {
+	padding-bottom:4px;
+}
 .ibm-simple-show-hide p.ibm-show-hide-controls {
 	color:#666;
 	display:none;
 }
 .ibm-simple-show-hide p.ibm-show-hide-controls a,
 .ibm-simple-show-hide h3 a.ibm-show-hide-link {
-	/*font-weight:bold;*/
 	text-decoration:none;
-	  /* opacity: 1;
-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 }
 
 .ibm-simple-show-hide h3 a.ibm-show-hide-link:hover {
@@ -2165,45 +2154,45 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 
 
 /* showhide fix for twitter module when it is inside accordion */
-.ibm-show-hide .ibm-twitter-module h2{
+.ibm-show-hide .ibm-twitter-module h2 {
 	border-top:0 !important;
 	font-weight:normal;
 	
 }
 
-.ibm-show-hide .ibm-twitter-module h2 a{
+.ibm-show-hide .ibm-twitter-module h2 a {
 	background:none !important;
 	color:#666;
 }
 
-.ibm-show-hide .ibm-twitter-module{
+.ibm-show-hide .ibm-twitter-module {
 	margin-bottom:0 !important;
 }
 
-.ibm-show-hide .ibm-video .ibm-container{
+.ibm-show-hide .ibm-video .ibm-container {
 	border-top:0 !important;
 	margin:0 !important;
 }
 
 
 /* showhide fix for video module when it is inside accordion */
-.ibm-show-hide .ibm-video h2{
+.ibm-show-hide .ibm-video h2 {
 	border-top:0 !important;
 	font-weight:normal;
 	
 }
 
-.ibm-show-hide .ibm-video h2 a{
+.ibm-show-hide .ibm-video h2 a {
 	background:none !important;
 	color:#666;
 }
 
-.ibm-show-hide .ibm-video{
+.ibm-show-hide .ibm-video {
 	margin-top:0 !important;
 	border-top:0 !important;
 }
 
-.ibm-show-hide .ibm-video .ibm-container{
+.ibm-show-hide .ibm-video .ibm-container {
 	border-top:0 !important;
 	margin:0 !important;
 }
@@ -2228,13 +2217,12 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 
 
 
-.dj_ie6 .ibm-show-hide h2 a{
-width:98%;
+#{$ie6Selector} .ibm-show-hide h2 a {
+	width:98%;
 }
 
- .dj_ie6 #ibm-content-sidebar .ibm-show-hide h2{
+#{$ie6Selector} #ibm-content-sidebar .ibm-show-hide h2 {
 	width:90%;
-
 }
 .ibm-landing-page .ibm-show-hide h2 a {
 	background-position: 100% -1602px;
@@ -2303,9 +2291,9 @@ div#ibm-reg-number a:hover {
     
 }
 #ibm-content-main .ibm-legal-text .ibm-required,
-#ibm-content-main .ibm-legal .ibm-required{
+#ibm-content-main .ibm-legal .ibm-required {
 	color: #D9182D;
-  }
+}
 .ibm-legal-text .ibm-required,
 .ibm-legal .ibm-required {
 	color: #999;
@@ -2315,7 +2303,7 @@ div#ibm-reg-number a:hover {
     padding-left: 10px;
 }
 
-.ibm-legal-text,.ibm-legal{
+.ibm-legal-text,.ibm-legal {
 	background: none repeat 0 0 #333;
     color: #999;
     margin: 0 auto;
@@ -2346,7 +2334,7 @@ div.ibm-anchor-pointer {
     visibility: visible;
     display: block;
     position: absolute;
-_position: relative;
+	_position: relative;
 }
 
                        
@@ -2359,25 +2347,6 @@ top: -80px;
 display: block;
 }
 
-
-
-/**/
-
-
-/*
-div.ibm-anchor-pointer {
-visibility: visible;
-display: block;
-position: absolute;
-}
-                       
-div.ibm-anchor-pointer a {
-position: absolute;
-top:auto;
-margin-top: -10px;
-display: block;
-border: 1px solid #f00;
-}*/
 
 
 /* End of Anchor links fix */
@@ -2410,30 +2379,30 @@ div.ibm-pull-quote.ibm-inset{
 }
 
 
-.dj_ie6 #ibm-top div.ibm-pull-quote.ibm-inset.ibm-alternate{
+#{$ie6Selector} #ibm-top div.ibm-pull-quote.ibm-inset.ibm-alternate {
 	_float: left;
 	_margin: 5px 20px 0px 0px;
     _padding: 0px;
     _width: 295px;
     border-top:0px none;
-	}
+}
 	
 
 div.ibm-pull-quote blockquote p,
 div.ibm-pull-quote.ibm-inset blockquote p,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p{
-    color:#555555 !important;
+    color:#555 !important;
     display:block;
 }
 
 div.ibm-pull-quote blockquote p em,
 div.ibm-pull-quote.ibm-inset blockquote p em,
-div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
+div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 	display:block;
 }
-.dj_ie6 #ibm-top .ibm-alternate-font BLOCKQUOTE P,
-.dj_ie6 #ibm-top BLOCKQUOTE P{
- padding:0px !important;
+#{$ie6Selector} #ibm-top .ibm-alternate-font blockquote p,
+#{$ie6Selector} #ibm-top blockquote p {
+	padding:0px !important;
 }
 
 /* w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles */
@@ -2443,24 +2412,24 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
 
 
 #ibm-top .ibm-pullquote-source,#ibm-top .ibm-pullquote-source-alternate{
-    color: #777777;
+    color: #777;
  	margin-top:-10px;
 }
 
 .ibm-pullquote-open {
-	color:#bbbbbb;
+	color:#BBB;
 	margin-left: -18px;
 	float:left;
 	position:absolute;
 	margin-top:5px;
  }
-.ibm-pullquote-close{
-    color:#bbbbbb;
+.ibm-pullquote-close {
+    color:#BBB;
     position: absolute;   
     margin-left:2px;
     margin-top:7px;
 }
-.dj_ie6 .ibm-pullquote-open{
+#{$ie6Selector} .ibm-pullquote-open{
 	
   margin-left:-18px;
   margin-top:-5px;
@@ -2469,23 +2438,21 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em{
  }
  
  
-.dj_ie6 .ibm-pullquote-close{
-	 
-padding-top:4px;
-padding-bottom:2px;
-margin-top:4px;
+#{$ie6Selector} .ibm-pullquote-close {
+	padding-top:4px;
+	padding-bottom:2px;
+	margin-top:4px;
 }
-.dj_ie7 .ibm-pullquote-open{
-	 
-  margin-top:-2px;
-  padding-top:2px;
- }
-.dj_ie7  .ibm-pullquote-close{
-	 
-padding-top:4px;
-padding-bottom:2px;
-margin-top:-1px;
-margin-left:1px;
+#{$ie7Selector} .ibm-pullquote-open { 
+	margin-top:-2px;
+	padding-top:2px;
+}
+
+#{$ie7Selector} .ibm-pullquote-close {
+	padding-top:4px;
+	padding-bottom:2px;
+	margin-top:-1px;
+	margin-left:1px;
 }
 /* End of styles for pull-quote ==============================  */
 
@@ -2564,41 +2531,41 @@ p.ibm-button-link-alternate a:active {
 	color: #fff;
  	@include box-shadow(0 1px 3px #14405a inset);
 }
-.dj_ie6 #ibm-top p.ibm-button-link a {
+#{$ie6Selector} #ibm-top p.ibm-button-link a {
 	color: #000;
 }
-.dj_ie6 #ibm-top p.ibm-button-link-alternate a {
+#{$ie6Selector} #ibm-top p.ibm-button-link-alternate a {
 	color: #fff;
 }
 
 /* .ibm-alternate chained class fixes for ie6  */
 
-.dj_ie6 #ibm-top #ibm-leadspace-head.ibm-alternate, 
-.dj_ie6 #ibm-top h2.ibm-alternate, 
-.dj_ie6 #ibm-top h3.ibm-alternate,  
-.dj_ie6 #ibm-top ul.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-1 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-2 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-3 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-4 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-6-5 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-5-1 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-5-2 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-5-3 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-5-4 div.ibm-alternate,
-.dj_ie6 #ibm-top div.ibm-col-1-1 div.ibm-alternate {
+#{$ie6Selector} #ibm-top #ibm-leadspace-head.ibm-alternate, 
+#{$ie6Selector} #ibm-top h2.ibm-alternate, 
+#{$ie6Selector} #ibm-top h3.ibm-alternate,  
+#{$ie6Selector} #ibm-top ul.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-6-1 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-6-2 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-6-3 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-6-4 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-6-5 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-5-1 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-5-2 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-5-3 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-5-4 div.ibm-alternate,
+#{$ie6Selector} #ibm-top div.ibm-col-1-1 div.ibm-alternate {
     _float:none;
     _width: auto;
     _margin: 0px;
 }
 
 
-.dj_ie6 #ibm-top #ibm-leadspace-head.ibm-alternate {
+#{$ie6Selector} #ibm-top #ibm-leadspace-head.ibm-alternate {
 	border-top: 0;
 }
 
-.dj_ie6 #ibm-top h2.ibm-alternate, 
-.dj_ie6 #ibm-top h3.ibm-alternate {
+#{$ie6Selector} #ibm-top h2.ibm-alternate, 
+#{$ie6Selector} #ibm-top h3.ibm-alternate {
     border: 0;
 }
 
@@ -2703,17 +2670,12 @@ p.ibm-button-link-alternate a:active {
 
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list li a {
 	display: block;
-	/*line-height: 15px;*/
 	color: #195568;
-	/*font-weight: normal;*/
 	text-decoration: none;
 }
 
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list li p.ibm-item-note {
 	padding: 12px 0 0 16px;
-	/*font-style: italic;
-	line-height: 1.3em;
-	font-size: .95em;*/
 	color: #AAA !important;
 }
 
@@ -2759,16 +2721,16 @@ in order to work correcly (taking into account fixed masthead) it has to be plac
 */
 
 .ibm-background-dim {
-  background: #000;
-  opacity: .5;
-  filter:alpha(opacity=50);
-  height: 100%;
-  left: 0px;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 901;
-  display:none;
+	background: #000;
+	opacity: .5;
+	filter:alpha(opacity=50);
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 901;
+	display:none;
 }
 
 /* universal background dim for just about anything END */
@@ -2795,13 +2757,10 @@ div.ibm-tab-section.ibm-step-indicator {
     background-position: 100% 0;
     background-repeat: no-repeat;
     cursor: pointer;
-    /*text-align: center;*/
     line-height:1.8em;
   	 padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 40px;
-     /**float:left;
-	*clear:none !important;*/
 	cursor:default;
 }
 
@@ -2896,9 +2855,6 @@ div.ibm-step-container .ibm-buttons-row span.ibm-sep {
 #ibm-content-main .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p {
 	font-size:1em;
 }
-
-
-
 
 div.ibm-step-container .ibm-hide-if-no-js,
 div.ibm-step-container .ibm-hidden-content {
