@@ -316,7 +316,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
  .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
 	padding-bottom:10px !important;
  }
- *:first-child+html #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
+ .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a{
 	padding-bottom:10px !important;
  }
 
@@ -328,9 +328,9 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
  .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column  {
     padding-top:20px;
 	}
-*:first-child+html #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
- *:first-child+html #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
- *:first-child+html #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column{
+.dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
+ .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
+ .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column{
     padding-top:20px;
 	}
 
@@ -428,7 +428,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
     *margin-bottom: 7px;
 }
 /*
-*:first-child+html #ibm-com .ibm-graphic-tabs ul.ibm-tabs li{
+.dj_ie7 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li{
 	height:27px;
 }*/
 
@@ -480,7 +480,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	padding-bottom:5px;
 }
 .dj_ie6 #ibm-com div.ibm-tab-section.ibm-text,
-*:first-child+html #ibm-com div.ibm-tab-section.ibm-text{
+.dj_ie7 #ibm-com div.ibm-tab-section.ibm-text{
 	padding-bottom:10px;
 }
 
@@ -777,7 +777,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	margin-top: 29px;
 	border: 5px solid #666;
 }
-*:first-child+html #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
+.dj_ie7 #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
 	margin-left: -400px;
 }
 #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content.ibm-columns .ibm-tab-overlay ul {

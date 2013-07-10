@@ -560,7 +560,7 @@ display: block ;
 .ibm-landing-page #ibm-leadspace-head a.ibm-disabled {
     visibility: hidden;
 }
-*:first-child+html div#interceptDiv {
+.dj_ie7 div#interceptDiv {
     height: 1%;
 }
 .dj_ie6 div#interceptDiv {

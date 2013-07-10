@@ -879,7 +879,7 @@ enabled by Saling V - megamenu and localselector update applied*/
 	color:#969;
 }
 
-*:first-child+html #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor{
+.dj_ie7 #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor{
 	position: relative;
 	top: -5px;
 }
@@ -2475,12 +2475,12 @@ padding-top:4px;
 padding-bottom:2px;
 margin-top:4px;
 }
-*:first-child+html .ibm-pullquote-open{
+.dj_ie7 .ibm-pullquote-open{
 	 
   margin-top:-2px;
   padding-top:2px;
  }
-*:first-child+html  .ibm-pullquote-close{
+.dj_ie7  .ibm-pullquote-close{
 	 
 padding-top:4px;
 padding-bottom:2px;

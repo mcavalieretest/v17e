@@ -420,8 +420,8 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 	border-left:0px !important;
 	border-right:0px !important;
 }
-*:first-child+html table.ibm-data-table.ibm-alternate,
-*:first-child+html table.ibm-data-table.ibm-alternate caption{
+.dj_ie7 table.ibm-data-table.ibm-alternate,
+.dj_ie7 table.ibm-data-table.ibm-alternate caption{
 	width:96% !important;
 	margin-left:10px !important;
 }
@@ -434,9 +434,9 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 	border-left:0px !important;
 	border-right:0px !important;
 }
-*:first-child+html .ibm-container table.ibm-data-table.ibm-alternate,
-*:first-child+html .ibm-columns table.ibm-data-table.ibm-alternate,
-*:first-child+html .ibm-columns table.ibm-data-table.ibm-alternate caption{
+.dj_ie7 .ibm-container table.ibm-data-table.ibm-alternate,
+.dj_ie7 .ibm-columns table.ibm-data-table.ibm-alternate,
+.dj_ie7 .ibm-columns table.ibm-data-table.ibm-alternate caption{
 	width:100% !important;
 	margin-left:0px !important;
 }
@@ -453,9 +453,9 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 	width:100%\9;
 }*/
 
-*:first-child+html .ibm-landing-page table.ibm-data-table.ibm-alternate,
+.dj_ie7 .ibm-landing-page table.ibm-data-table.ibm-alternate,
 
-*:first-child+html .ibm-landing-page table.ibm-data-table.ibm-alternate caption{
+.dj_ie7 .ibm-landing-page table.ibm-data-table.ibm-alternate caption{
 	margin-left:20px !important;
 }
 
@@ -466,9 +466,9 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
     width: 100% !important;
 }
 
-*:first-child+html .ibm-landing-page .ibm-columns table.ibm-data-table.ibm-alternate,
-*:first-child+html .ibm-landing-page .ibm-container table.ibm-data-table.ibm-alternate,
-*:first-child+html .ibm-landing-page .ibm-columns table.ibm-data-table.ibm-alternate caption{
+.dj_ie7 .ibm-landing-page .ibm-columns table.ibm-data-table.ibm-alternate,
+.dj_ie7 .ibm-landing-page .ibm-container table.ibm-data-table.ibm-alternate,
+.dj_ie7 .ibm-landing-page .ibm-columns table.ibm-data-table.ibm-alternate caption{
 	margin-left:0px !important;
 }
 

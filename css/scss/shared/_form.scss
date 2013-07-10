@@ -1919,11 +1919,11 @@ form.ibm-row-form span a.ibm-help-link{
  
 
  /*
- *:first-child+html .v17 form.ibm-column-form p span span.ibm-mandate-select .dijitSelect{
+ .dj_ie7 .v17 form.ibm-column-form p span span.ibm-mandate-select .dijitSelect{
  margin-top:0px !important;
  }
 
-*:first-child+html .v17 form.ibm-column-form p span span.ibm-mandate-select table.dijitSelect span.dijitSelectLabel {
+.dj_ie7 .v17 form.ibm-column-form p span span.ibm-mandate-select table.dijitSelect span.dijitSelectLabel {
     margin: 0 !important;
 }
 
