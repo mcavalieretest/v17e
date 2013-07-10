@@ -34,18 +34,18 @@
 }
 
 /* Code added for IE 6 fix of ribbon-pane of col-6-2 right column*/
-* html .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
+.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane
 {
 width: 300px;
 }
 
-* html .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-section
+.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-section
 {
 margin: 0px;
 position: absolute;
 }
 
-* html .ibm-alternate .ibm-container-body .ibm-ribbon-nav
+.dj_ie6 .ibm-alternate .ibm-container-body .ibm-ribbon-nav
 {
 margin-top: -20px;
 position: absolute;
@@ -56,7 +56,7 @@ top: 0px;
 
 
 
-* html .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-prev, 
+.dj_ie6 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-prev, 
 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-next
 {
 	background: none;

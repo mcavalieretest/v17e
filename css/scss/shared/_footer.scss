@@ -45,7 +45,7 @@
     color: #FFCF01;
 }
 
-* html #ibm-footer-module li {
+.dj_ie6 #ibm-footer-module li {
     vertical-align: text-top;
     width: 100%;
 }
@@ -55,7 +55,7 @@
     text-decoration: none;
     text-shadow: 0 0 2px #000;
 }
-* html #ibm-footer-module a {
+.dj_ie6 #ibm-footer-module a {
     margin-top: -4px;
 }
 
