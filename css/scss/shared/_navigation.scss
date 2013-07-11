@@ -123,23 +123,19 @@ filter: none;
 }
 
 #ibm-navigation #ibm-primary-links a:hover {
-    text-decoration: none;
-    background-color: #9c9c9c;
-    background:-moz-linear-gradient(top, #DFE2E4, #C7C9CC) repeat scroll 0 0 transparent;
-      background:-o-linear-gradient(top, #DFE2E4, #C7C9CC) repeat scroll 0 0 transparent;
-
-    background:-webkit-linear-gradient(top, #DFE2E4, #C7C9CC);
-   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC')";
-    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC');
-    color: #000;
-    text-shadow: 0px 1px 0px #fff;
-    border-top-color: #e5e7e9;
+	text-decoration: none;
+	background-color: #9c9c9c;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC')";
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC');
+	@include background-gradient(top, #DFE2E4, #C7C9CC);
+	color: #000;
+	text-shadow: 0px 1px 0px #fff;
+	border-top-color: #e5e7e9;
 }
 
 #ibm-navigation #ibm-primary-links a:focus {
      background: none;
     background-color: #fff;
-    /*font-weight: bold;*/
     color: #111;
 }
 
@@ -147,18 +143,11 @@ filter: none;
     padding: 8px 14px 7px 8px;
     margin-left: -1px; /* needed for A to span over side borders of LI*/
     margin-right: -1px; /* needed for A to span over side borders of LI*/
-    /*font-weight: normal;*/
     color: #fff;
     background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
-    *background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -423px #485159;
-    _background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159;
-    background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -moz-linear-gradient(top, #485159, #A2A9B2) repeat scroll 0 0 transparent;
-     background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -o-linear-gradient(top, #485159, #A2A9B2);
-    background:url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px, -webkit-linear-gradient(top, #485159, #A2A9B2);
-   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#485159', endColorstr='#A2A9B2')";
+	@include background-image-gradient(url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png"), no-repeat 155px -424px, top, #485159, #A2A9B2);
     text-shadow: none;
     border: 0px;
-
 }
 
 
@@ -177,15 +166,15 @@ filter: none;
 #ibm-navigation #ibm-primary-links > li > a.ibm-active,
 #ibm-navigation #ibm-primary-links li a.ibm-is-active + ul,
 #ibm-navigation #ibm-primary-links li a.ibm-active + ul {
-    /*border-bottom: 0;*/
     background: #fff;
-    /*font-weight: bold;*/
     color: #000;
 }
 
 
-#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active, #{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active,
-#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover, #{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active:hover{
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active, 
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active,
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover, 
+#{$ie6Selector} #ibm-navigation #ibm-primary-links li a.ibm-active:hover {
     border-bottom: 0;
     background: #fff;
     /*font-weight: bold;*/
@@ -278,11 +267,11 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-is-active, 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-active {
-     background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
-    -ms-filter: none;
-    filter: none;
-   list-style: none;
-   border: 0px;
+	background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
+	-ms-filter: none;
+	filter: none;
+	list-style: none;
+	border: 0px;
 }
 
 #ibm-navigation #ibm-primary-links #ibm-parent-link a:hover, 
@@ -312,19 +301,15 @@ filter: none;
 #ibm-navigation #ibm-primary-links #ibm-overview a:hover, 
 #ibm-navigation #ibm-primary-links #ibm-overview a:active {
     background-color: #9c9c9c;
-    background:-moz-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
-     background:-o-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
-    background:-webkit-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#b9bdc3', endColorstr='#62676b')";
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9bdc3', endColorstr='#62676b');
-   /* font-weight: bold;*/
+	@include background-gradient(top, #b9bdc3, #62676b);
     text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     border: 0px;
     color: #fff;
     margin-left: 0;
     margin-right: 0;
     padding: 7px 6px 6px 7px;
-
 }
 
 

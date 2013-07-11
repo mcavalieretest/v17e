@@ -113,46 +113,5 @@ div.ibm-scroll-gradient{
 	position: absolute;
 	bottom: 0px;
 	height: 15px;
-
-	/* created using http://www.colorzilla.com/gradient-editor/ - blame them if it does not work :) */
-	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	@include background-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
-
-/* dojo scroll code */
-/*
-div.ibm-scroll-slider-inner {
-	position: absolute;	
-	background: #CCC; 
-	cursor: pointer; 
-	overflow: hidden;
-}
-div.ibm-scroll-slider-inner-active{
-	background: #666; 
-}
-
-.dojoxScrollWindow {
-    overflow: hidden;
-    position: relative;
-}
-.dojoxScrollHelper .helperInner {
-    visibility: hidden;
-}
-.dojoxScrollHelper {
-    background: none repeat scroll 0 0 #EDEDED;
-    border: 1px solid #B7B7B7;
-    border-radius: 3px 3px 3px 3px;
-    height: 4px;
-    left: 4px;
-    position: absolute;
-    top: 4px;
-    width: 4px;
-}
-.dojoxScrollWrapper {
-}
-*/

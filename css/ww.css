@@ -1,4 +1,4 @@
-@import url('ww-blessed1.css?z=1373501761534');
+@import url('ww-blessed1.css?z=1373506605655');
 
 
 /* End of v16 Code*/
@@ -665,7 +665,8 @@ form.ibm-column-form .dijitTextBox INPUT {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#FFFFFF');
   background: -webkit-linear-gradient(top, #e5e5e5, white);
   background: -moz-linear-gradient(top, #e5e5e5, white);
-  background: -o-linear-gradient(top, #e5e5e5, white); }
+  background: -o-linear-gradient(top, #e5e5e5, white);
+  background: linear-gradient(top, #e5e5e5, white); }
 
 .v17 #ibm-content input[type="text"].ibm-alt-inputsize-medium,
 .v17 .dijitDialog input[type="text"].ibm-alt-inputsize-medium {
@@ -684,8 +685,9 @@ form.ibm-column-form .dijitTextBox INPUT {
   /* IE9 and below gradient fix */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#FFFFFF');
   background: -webkit-linear-gradient(top, #e5e5e5, white);
-  /*** background: -moz-linear-gradient(top, #E5E5E5, #FFFFFF);***/
-  background: -o-linear-gradient(top, #e5e5e5, white); }
+  background: -moz-linear-gradient(top, #e5e5e5, white);
+  background: -o-linear-gradient(top, #e5e5e5, white);
+  background: linear-gradient(top, #e5e5e5, white); }
 
 .v17.dijit_a11y #ibm-content input[type="text"]:focus, .v17.dijit_a11y #ibm-content input[type="password"]:focus, .v17.dijit_a11y #ibm-content textarea:focus, .v17.dijit_a11y #ibm-content select:focus,
 .v17.dijit_a11y .dijitDialog input[type="text"]:focus, .v17.dijit_a11y .dijitDialog input[type="password"]:focus, .v17.dijit_a11y .dijitDialog textarea:focus, .v17.dijit_a11y .dijitDialog select:focus {
@@ -707,11 +709,12 @@ form.ibm-column-form .dijitTextBox INPUT {
   background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.2), rgba(216, 216, 216, 0.5));
   background: -moz-linear-gradient(top, rgba(242, 242, 242, 0.2), rgba(216, 216, 216, 0.5));
   background: -o-linear-gradient(top, rgba(242, 242, 242, 0.2), rgba(216, 216, 216, 0.5));
+  background: linear-gradient(top, rgba(242, 242, 242, 0.2), rgba(216, 216, 216, 0.5));
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   color: #333;
   text-decoration: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   border-collapse: separate; }
 
 .v17 table.dijitSelect .dijitButtonContents,
@@ -799,6 +802,7 @@ form.ibm-column-form .dijitTextBox INPUT {
   background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   background: -moz-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   background: -o-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
+  background: linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   color: #000;
   text-shadow: 0 1px 0 #FFF; }
 
@@ -819,6 +823,7 @@ form.ibm-column-form .dijitTextBox INPUT {
   background: -webkit-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   background: -moz-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   background: -o-linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
+  background: linear-gradient(top, rgba(242, 242, 242, 0.8), rgba(216, 216, 216, 0.8));
   color: #000;
   text-shadow: 0 1px 0 #FFF; }
 
@@ -937,7 +942,8 @@ There are three areas of styling for the Menu:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63686E', endColorstr='#1B2125');
   background: -webkit-linear-gradient(top, #63686e 0px, #1b2125 56px);
   background: -moz-linear-gradient(top, #63686e 0px, #1b2125 56px);
-  background: -o-linear-gradient(top, #63686e, #1b2125); }
+  background: -o-linear-gradient(top, #63686e 0px, #1b2125 56px);
+  background: linear-gradient(top, #63686e 0px, #1b2125 56px); }
 
 /* hover over a MenuBarItem */
 .v17 .dijitMenuPassive .dijitMenuItemHover,
@@ -965,7 +971,8 @@ There are three areas of styling for the Menu:
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535353', endColorstr='#0D0D0D');
   background: -webkit-linear-gradient(top, #535353, #0d0d0d);
   background: -moz-linear-gradient(top, #535353, #0d0d0d);
-  background: -o-linear-gradient(top, #535353, #0d0d0d); }
+  background: -o-linear-gradient(top, #535353, #0d0d0d);
+  background: linear-gradient(top, #535353, #0d0d0d); }
 
 .v17 .dijitMenuActive td.dijitMenuItemLabel {
   padding: 5px 10px\9; }
@@ -1662,9 +1669,10 @@ form .ibm-checkbox-layout input {
   background-color: transparent\0/;
   /* IE8 gradient fix */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
-  background: -webkit-linear-gradient(white, #f1f1f1);
-  background: -moz-linear-gradient(white, #f1f1f1);
-  background: -o-linear-gradient(white, #f1f1f1);
+  background: -webkit-linear-gradient(top, white, #f1f1f1);
+  background: -moz-linear-gradient(top, white, #f1f1f1);
+  background: -o-linear-gradient(top, white, #f1f1f1);
+  background: linear-gradient(top, white, #f1f1f1);
   _background-color: #F1F1F1;
   height: 100%; }
 
@@ -1934,6 +1942,7 @@ form .ibm-checkbox-layout input {
   background: -webkit-linear-gradient(top, #fcfcfc, whitesmoke);
   background: -moz-linear-gradient(top, #fcfcfc, whitesmoke);
   background: -o-linear-gradient(top, #fcfcfc, whitesmoke);
+  background: linear-gradient(top, #fcfcfc, whitesmoke);
   padding: 0 3px 0 2px;
   border: solid 1px #ddd;
   -webkit-border-radius: 4px;
@@ -1954,8 +1963,9 @@ form .ibm-checkbox-layout input {
   /* IE8 gradient fix */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F3F3', endColorstr='#E1E1E1');
   background: -webkit-linear-gradient(top, #f3f3f3, #e1e1e1);
-  background: -moz-linear-gradient(center top, #f3f3f3, #e1e1e1);
+  background: -moz-linear-gradient(top, #f3f3f3, #e1e1e1);
   background: -o-linear-gradient(top, #f3f3f3, #e1e1e1);
+  background: linear-gradient(top, #f3f3f3, #e1e1e1);
   padding: 0 3px 0 2px;
   border: solid 1px #cccccc;
   _width: 100px; }
@@ -1970,8 +1980,9 @@ form .ibm-checkbox-layout input {
   /* IE8 gradient fix */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62676d', endColorstr='#383d42');
   background: -webkit-linear-gradient(top, #62676d, #383d42);
-  background: -moz-linear-gradient(top, #62676d, #383d42) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(top, #62676d, #383d42);
   background: -o-linear-gradient(top, #62676d, #383d42);
+  background: linear-gradient(top, #62676d, #383d42);
   padding: 5px 0;
   border: 5px solid rgba(255, 255, 255, 0.95);
   _width: 100px !important; }
@@ -2000,7 +2011,8 @@ form .ibm-checkbox-layout input {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#515151', endColorstr='#121212');
   background: -webkit-linear-gradient(top, #515151, #121212);
   background: -moz-linear-gradient(top, #515151, #121212);
-  background: -o-linear-gradient(top, #515151, #121212); }
+  background: -o-linear-gradient(top, #515151, #121212);
+  background: linear-gradient(top, #515151, #121212); }
 
 .v17 .dijitCalendar .dijitOffScreen {
   position: absolute;
@@ -2096,6 +2108,7 @@ form .ibm-checkbox-layout input {
   background: -webkit-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -moz-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -o-linear-gradient(top, whitesmoke, #dbdbdb);
+  background: linear-gradient(top, whitesmoke, #dbdbdb);
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4); }
@@ -2374,7 +2387,6 @@ form.ibm-single-colum-alternate span table {
   height: 38px;
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05)); }
 
@@ -2401,10 +2413,15 @@ form.ibm-single-colum-alternate span table {
   border-right: 1px solid #E5E5E5;
   border-left: 1px solid #E5E5E5;
   margin-right: 5px;
-  -o-transition: opacity 0.3s;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s; }
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
 
 #ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li {
   opacity: .80; }
@@ -2414,10 +2431,11 @@ form.ibm-single-colum-alternate span table {
 
 #ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li:hover,
 #ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li:hover {
-  -o-transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s; }
+  -o-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
   opacity: 1;
@@ -2670,8 +2688,7 @@ form.ibm-single-colum-alternate span table {
 #ibm-com .ibm-container > div.ibm-tab-section.ibm-text {
   border-top: 2px solid #CCCCCC;
   margin-top: -2px;
-  padding-top: 6px;
-  /* border-bottom:1px solid #CCCCCC;*/ }
+  padding-top: 6px; }
 
 #ibm-com ul.ibm-tabs a,
 #ibm-com .ibm-dyntabs ul.ibm-tabs li a {
@@ -2681,7 +2698,6 @@ form.ibm-single-colum-alternate span table {
   text-decoration: none; }
 
 #ibm-com .ibm-graphic-tabs div.ibm-tab-section {
-  /*border-top: 2px solid #666;*/
   margin-bottom: 22px; }
 
 #ibm-com ul.ibm-tabs {
@@ -2702,10 +2718,10 @@ form.ibm-single-colum-alternate span table {
 
 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li {
   background: #DEDEDE;
-  background-image: -moz-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-  background-image: -webkit-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-  background-image: -o-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-  background-image: linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
+  background: -webkit-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
+  background: -moz-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
+  background: -o-linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
+  background: linear-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
   margin-right: 1px;
   margin-bottom: 1px;
   color: #000;
@@ -2721,7 +2737,6 @@ form.ibm-single-colum-alternate span table {
 
 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li.ibm-active,
 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li.ibm-highlight-tab {
-  /*border-bottom: 1px solid #000000;*/
   background: none repeat 0 0 #FFFFFF;
   border-left: 1px solid #ccc !important;
   border-right: 1px solid #ccc !important;
@@ -2836,13 +2851,12 @@ form.ibm-single-colum-alternate span table {
 /* CONTENT TABS END */
 /* Secondary Tabs */
 #ibm-content-nav #ibm-secondary-tabs {
-  background-image: -o-linear-gradient(bottom, #f3f3f3 0px, white 15%);
-  background-image: -moz-linear-gradient(bottom, #f3f3f3 0px, white 15%);
-  background-image: -webkit-linear-gradient(bottom, #f3f3f3 0px, white 15%);
-  background-image: -ms-linear-gradient(bottom, #f3f3f3 0px, white 15%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f3f3f3), color-stop(0.15, white));
   background-image: linear-gradient(bottom, #f3f3f3 0px, white 15xp);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F3F3F3',GradientType=0 );
+  background: -webkit-linear-gradient(bottom, #f3f3f3 0px, white 15%);
+  background: -moz-linear-gradient(bottom, #f3f3f3 0px, white 15%);
+  background: -o-linear-gradient(bottom, #f3f3f3 0px, white 15%);
+  background: linear-gradient(bottom, #f3f3f3 0px, white 15%);
   margin-top: 1px;
   padding: 8px 20px 2px;
   *padding: 8px 20px 8px;
@@ -2992,8 +3006,9 @@ form.ibm-single-colum-alternate span table {
   background: -webkit-linear-gradient(top, #fcfcfc, #ececec);
   background: -moz-linear-gradient(top, #fcfcfc, #ececec);
   background: -o-linear-gradient(top, #fcfcfc, #ececec);
-  -moz-border-radius: 2px;
+  background: linear-gradient(top, #fcfcfc, #ececec);
   -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   border: 1px solid #DDD;
   color: #000;
@@ -3018,15 +3033,16 @@ form.ibm-single-colum-alternate span table {
   position: absolute;
   background-color: #FFF;
   z-index: 800;
-  background: -webkit-gradient(linear, 100% 30%, 100% 100%, from(white), to(#cccccc));
+  background: -webkit-linear-gradient(top, white 30%, #cccccc 100%);
   background: -moz-linear-gradient(top, white 30%, #cccccc 100%);
   background: -o-linear-gradient(top, white 30%, #cccccc 100%);
-  -moz-border-radius: 8px;
+  background: linear-gradient(top, white 30%, #cccccc 100%);
   -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   border-radius: 8px;
-  box-shadow: 0px 1px 5px #333;
-  -moz-box-shadow: 0px 1px 5px #333;
-  -webkit-box-shadow: 0px 1px 5px #333;
+  -webkit-box-shadow: 0px 1px 5px #333333;
+  -moz-box-shadow: 0px 1px 5px #333333;
+  box-shadow: 0px 1px 5px #333333;
   padding: 4px 1px;
   margin-left: -5px;
   margin-top: 29px;
@@ -3050,7 +3066,8 @@ form.ibm-single-colum-alternate span table {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
   background: -webkit-linear-gradient(top, #595c64, #1b1b1c);
   background: -moz-linear-gradient(top, #595c64, #1b1b1c);
-  background: -o-linear-gradient(top, #595c64, #1b1b1c); }
+  background: -o-linear-gradient(top, #595c64, #1b1b1c);
+  background: linear-gradient(top, #595c64, #1b1b1c); }
 
 #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content.ibm-columns .ibm-tab-overlay ul li a {
   padding: 6px 10px; }
@@ -3151,54 +3168,11 @@ div.ibm-scroll-gradient {
   position: absolute;
   bottom: 0px;
   height: 15px;
-  /* created using http://www.colorzilla.com/gradient-editor/ - blame them if it does not work :) */
-  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, white));
-  /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-  /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-  /* Opera11.10+ */
-  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-  /* IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-  /* IE6-9 */
-  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
-  /* W3C */ }
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%); }
 
-/* dojo scroll code */
-/*
-div.ibm-scroll-slider-inner {
-	position: absolute;	
-	background: #CCC; 
-	cursor: pointer; 
-	overflow: hidden;
-}
-div.ibm-scroll-slider-inner-active{
-	background: #666; 
-}
-
-.dojoxScrollWindow {
-    overflow: hidden;
-    position: relative;
-}
-.dojoxScrollHelper .helperInner {
-    visibility: hidden;
-}
-.dojoxScrollHelper {
-    background: none repeat scroll 0 0 #EDEDED;
-    border: 1px solid #B7B7B7;
-    border-radius: 3px 3px 3px 3px;
-    height: 4px;
-    left: 4px;
-    position: absolute;
-    top: 4px;
-    width: 4px;
-}
-.dojoxScrollWrapper {
-}
-*/
 #ibm-content .ibm-media .ibm-container.ibm-ribbon h2,
 #ibm-content .ibm-media .ibm-container.ibm-video h2,
 #ibm-content .ibm-media .ibm-container.ibm-portrait h2 {
@@ -4439,6 +4413,8 @@ span.ibm-tooltip {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64',endColorstr='#1B1B1C');
   background: -webkit-linear-gradient(top, #595c64, #1b1b1c);
   background: -moz-linear-gradient(top, #595c64, #1b1b1c);
+  background: -o-linear-gradient(top, #595c64, #1b1b1c);
+  background: linear-gradient(top, #595c64, #1b1b1c);
   border-bottom: medium none;
   height: 32px;
   min-width: 390px; }
@@ -6119,9 +6095,12 @@ markup:
   color: #fff;
   background: #555;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#454545');
+  background: #454545;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#454545');
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -webkit-linear-gradient(center top, #656565, #454545);
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -moz-linear-gradient(center top, #656565, #454545);
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -o-linear-gradient(center top, #656565, #454545);
+  background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, linear-gradient(center top, #656565, #454545);
   background-repeat: no-repeat; }
 
 #ibm-country-selector #ibm-country-nav ul li a:focus {
@@ -6131,9 +6110,12 @@ markup:
   color: #fff;
   background: #555;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#151515');
+  background: #151515;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#151515');
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -webkit-linear-gradient(center top, #656565, #151515);
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -moz-linear-gradient(center top, #656565, #151515);
   background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, -o-linear-gradient(center top, #656565, #151515);
+  background: url("http://1.www.s81c.com/i/v17/ibm_icon_sprites.gif") 148px -1397px, linear-gradient(center top, #656565, #151515);
   background-repeat: no-repeat; }
 
 #ibm-country-selector #ibm-country-nav ul li a {
@@ -6296,16 +6278,13 @@ markup:
   background: -webkit-linear-gradient(top, #131623, #1a1c27);
   background: -moz-linear-gradient(top, #131623, #1a1c27);
   background: -o-linear-gradient(top, #131623, #1a1c27);
+  background: linear-gradient(top, #131623, #1a1c27);
   height: 1%;
   float: left;
   width: 100%;
   color: #A1A2A7; }
 
 #ibm-mast-options:hover {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131623', endColorstr='#1A1C27');
-  background: -webkit-linear-gradient(top, #131623, #1a1c27);
-  background: -moz-linear-gradient(top, #131623, #1a1c27);
-  background: -o-linear-gradient(top, #131623, #1a1c27);
   color: #D0D0D3; }
 
 #ibm-mast-options ul {
@@ -6418,15 +6397,10 @@ markup:
   background: -webkit-linear-gradient(top, #595c64, #1b1b1c);
   background: -moz-linear-gradient(top, #595c64, #1b1b1c);
   background: -o-linear-gradient(top, #595c64, #1b1b1c);
+  background: linear-gradient(top, #595c64, #1b1b1c);
   height: 50px;
   border-top: 1px solid #999;
   border-bottom: 1px solid #666; }
-
-#ibm-universal-nav:hover {
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
-  background: -webkit-linear-gradient(top, #595c64, #1b1b1c);
-  background: -moz-linear-gradient(top, #595c64, #1b1b1c);
-  background: -o-linear-gradient(top, #595c64, #1b1b1c); }
 
 #ibm-universal-nav span.ibm-masthead-indicator {
   position: absolute;
@@ -6490,6 +6464,7 @@ markup:
   background: -webkit-linear-gradient(top, #696c72, #333334);
   background: -moz-linear-gradient(top, #696c72, #333334);
   background: -o-linear-gradient(top, #696c72, #333334);
+  background: linear-gradient(top, #696c72, #333334);
   _background: none transparent no-scroll repeat;
   text-shadow: 0px 0px 3px #FFF;
   color: #FFF; }
@@ -6499,6 +6474,7 @@ markup:
   background: -webkit-linear-gradient(top, #1b1b1c, #595c64);
   background: -moz-linear-gradient(top, #1b1b1c, #595c64);
   background: -o-linear-gradient(top, #1b1b1c, #595c64);
+  background: linear-gradient(top, #1b1b1c, #595c64);
   text-shadow: 0 0 3px #FFF;
   color: #FFF; }
 
@@ -6510,6 +6486,7 @@ markup:
   background: -webkit-linear-gradient(top, #696c72, #333334);
   background: -moz-linear-gradient(top, #696c72, #333334);
   background: -o-linear-gradient(top, #696c72, #333334);
+  background: linear-gradient(top, #696c72, #333334);
   text-shadow: 0 0 3px #FFF;
   color: #FFF; }
 
@@ -6530,6 +6507,7 @@ markup:
   background: -webkit-linear-gradient(top, #595c64, #1b1b1c);
   background: -moz-linear-gradient(top, #595c64, #1b1b1c);
   background: -o-linear-gradient(top, #595c64, #1b1b1c);
+  background: linear-gradient(top, #595c64, #1b1b1c);
   color: #FFF;
   text-shadow: none; }
 
@@ -6546,6 +6524,7 @@ markup:
   background: -webkit-linear-gradient(top, #02416b, #5582bc);
   background: -moz-linear-gradient(top, #02416b, #5582bc);
   background: -o-linear-gradient(top, #02416b, #5582bc);
+  background: linear-gradient(top, #02416b, #5582bc);
   border-top: 1px solid #4978B1;
   border-bottom: 2px solid #4978B1;
   height: 160px;
@@ -6659,13 +6638,14 @@ background-position: 3px -400px;
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu {
   background-color: #ddd;
   *background: none;
-  background: -webkit-linear-gradient(#dddddd, #f1f1f1);
-  background: -moz-linear-gradient(#dddddd, #f1f1f1);
-  background: -o-linear-gradient(#dddddd, #f1f1f1);
   _background: none;
   /* IE6 fix */
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1');
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1')";
+  background: -webkit-linear-gradient(top, #dddddd, #f1f1f1);
+  background: -moz-linear-gradient(top, #dddddd, #f1f1f1);
+  background: -o-linear-gradient(top, #dddddd, #f1f1f1);
+  background: linear-gradient(top, #dddddd, #f1f1f1);
   border-top: 0;
   border-bottom-color: #fff;
   box-shadow: 0px -9px 7px -9px #bbb inset; }
@@ -6706,10 +6686,11 @@ background-position: 3px -400px;
 #ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs {
   background-color: #ccc;
   *background: none;
-  background: -webkit-linear-gradient(#cccccc, #eaeaea);
-  background: -moz-linear-gradient(#cccccc, #eaeaea);
-  background: -o-linear-gradient(#cccccc, #eaeaea);
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
+  background: -webkit-linear-gradient(top, #cccccc, #eaeaea);
+  background: -moz-linear-gradient(top, #cccccc, #eaeaea);
+  background: -o-linear-gradient(top, #cccccc, #eaeaea);
+  background: linear-gradient(top, #cccccc, #eaeaea);
   border-bottom: 1px solid #bbb;
   box-shadow: 0 1px 7px #c5c5c5;
   height: 39px;
@@ -6807,6 +6788,7 @@ background-position: 3px -400px;
   background: -webkit-linear-gradient(top, #585b62, #1e1e20);
   background: -moz-linear-gradient(top, #585b62, #1e1e20);
   background: -o-linear-gradient(top, #585b62, #1e1e20);
+  background: linear-gradient(top, #585b62, #1e1e20);
   height: 35px;
   border-top: 1px solid #9699a2;
   border-bottom: 1px solid #0b0b0b; }
@@ -6862,6 +6844,7 @@ background-position: 3px -400px;
   background: -webkit-linear-gradient(top, #282828, black);
   background: -moz-linear-gradient(top, #282828, black);
   background: -o-linear-gradient(top, #282828, black);
+  background: linear-gradient(top, #282828, black);
   border-radius: 0 3px 3px 3px;
   border: 1px solid #404040;
   -webkit-box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.8), -2px 2px 4px -2px rgba(0, 0, 0, 0.8);
@@ -6900,7 +6883,8 @@ background-position: 3px -400px;
   /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3B3B3B', endColorstr='#2A2A2A');*/
   background: -webkit-linear-gradient(top, #3b3b3b, #2a2a2a);
   background: -moz-linear-gradient(top, #3b3b3b, #2a2a2a);
-  background: -o-linear-gradient(top, #3b3b3b, #2a2a2a); }
+  background: -o-linear-gradient(top, #3b3b3b, #2a2a2a);
+  background: linear-gradient(top, #3b3b3b, #2a2a2a); }
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home .ibm-logo-subnav li.ibm-first a {
   border-radius: 0 3px 0 0; }
@@ -7024,6 +7008,7 @@ background-position: 3px -400px;
   background: -webkit-linear-gradient(#dddddd, #f1f1f1);
   background: -moz-linear-gradient(#dddddd, #f1f1f1);
   background: -o-linear-gradient(#dddddd, #f1f1f1);
+  background: linear-gradient(#dddddd, #f1f1f1);
   _background: none;
   /* IE6 fix */
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#dddddd',EndColorStr='#f1f1f1');
@@ -7076,6 +7061,7 @@ background-position: 3px -400px;
   background: -webkit-linear-gradient(#cccccc, #ededed);
   background: -moz-linear-gradient(#cccccc, #ededed);
   background: -o-linear-gradient(#cccccc, #ededed);
+  background: linear-gradient(#cccccc, #ededed);
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#ededed');
   border-bottom: 1px solid #b2b2b2;
   height: 39px;
@@ -7157,6 +7143,7 @@ background-position: 3px -400px;
   background: -webkit-linear-gradient(#585b62, #1e1e20);
   background: -moz-linear-gradient(#585b62, #1e1e20);
   background: -o-linear-gradient(#585b62, #1e1e20);
+  background: linear-gradient(#585b62, #1e1e20);
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#585B62',EndColorStr='#1E1E20');
   padding-top: 0;
   line-height: 27px; }

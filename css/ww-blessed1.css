@@ -1625,11 +1625,12 @@ filter: none;
 #ibm-navigation #ibm-primary-links a:hover {
   text-decoration: none;
   background-color: #9c9c9c;
-  background: -moz-linear-gradient(top, #dfe2e4, #c7c9cc) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(top, #dfe2e4, #c7c9cc) repeat scroll 0 0 transparent;
-  background: -webkit-linear-gradient(top, #dfe2e4, #c7c9cc);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC')";
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC');
+  background: -webkit-linear-gradient(top, #dfe2e4, #c7c9cc);
+  background: -moz-linear-gradient(top, #dfe2e4, #c7c9cc);
+  background: -o-linear-gradient(top, #dfe2e4, #c7c9cc);
+  background: linear-gradient(top, #dfe2e4, #c7c9cc);
   color: #000;
   text-shadow: 0px 1px 0px #fff;
   border-top-color: #e5e7e9; }
@@ -1637,7 +1638,6 @@ filter: none;
 #ibm-navigation #ibm-primary-links a:focus {
   background: none;
   background-color: #fff;
-  /*font-weight: bold;*/
   color: #111; }
 
 #ibm-navigation #ibm-primary-links > li > a:active {
@@ -1646,16 +1646,15 @@ filter: none;
   /* needed for A to span over side borders of LI*/
   margin-right: -1px;
   /* needed for A to span over side borders of LI*/
-  /*font-weight: normal;*/
   color: #fff;
   background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159;
   /* absolution position of BG image needs to be set because of negative margin offset */
-  *background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -423px #485159;
-  _background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159;
-  background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -moz-linear-gradient(top, #485159, #a2a9b2) repeat scroll 0 0 transparent;
+  background: #a2a9b2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#485159', endColorstr='#a2a9b2');
+  background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -webkit-linear-gradient(top, #485159, #a2a9b2);
+  background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -moz-linear-gradient(top, #485159, #a2a9b2);
   background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, -o-linear-gradient(top, #485159, #a2a9b2);
-  background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px, -webkit-linear-gradient(top, #485159, #a2a9b2);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#485159', endColorstr='#A2A9B2')";
+  background: url("http://1.www.s81c.com/i/v17/t/left_nav_chevron_sprite.png") no-repeat 155px -424px, linear-gradient(top, #485159, #a2a9b2);
   text-shadow: none;
   border: 0px; }
 
@@ -1668,13 +1667,13 @@ filter: none;
 #ibm-navigation #ibm-primary-links > li > a.ibm-active,
 #ibm-navigation #ibm-primary-links li a.ibm-is-active + ul,
 #ibm-navigation #ibm-primary-links li a.ibm-active + ul {
-  /*border-bottom: 0;*/
   background: #fff;
-  /*font-weight: bold;*/
   color: #000; }
 
-.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active, .dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active,
-.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover, .dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active:hover {
+.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active,
+.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active,
+.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-is-active:hover,
+.dj_ie6 #ibm-navigation #ibm-primary-links li a.ibm-active:hover {
   border-bottom: 0;
   background: #fff;
   /*font-weight: bold;*/
@@ -1775,12 +1774,12 @@ filter: none;
 #ibm-navigation #ibm-primary-links #ibm-overview a:hover,
 #ibm-navigation #ibm-primary-links #ibm-overview a:active {
   background-color: #9c9c9c;
-  background: -moz-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
-  background: -webkit-linear-gradient(top, #b9bdc3, #62676b) repeat scroll 0 0 transparent;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#b9bdc3', endColorstr='#62676b')";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9bdc3', endColorstr='#62676b');
-  /* font-weight: bold;*/
+  background: -webkit-linear-gradient(top, #b9bdc3, #62676b);
+  background: -moz-linear-gradient(top, #b9bdc3, #62676b);
+  background: -o-linear-gradient(top, #b9bdc3, #62676b);
+  background: linear-gradient(top, #b9bdc3, #62676b);
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
   border: 0px;
   color: #fff;
@@ -1830,17 +1829,10 @@ filter: none;
   border: 1px solid #000;
   padding: 3px 30px 2px 10px;
   background: #0E0E0E;
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0E0E0E', endColorstr='#323232'); - removed because it breaks border radius in ie9 - */
-  background: -moz-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px) no-repeat left top transparent;
-  /* FF3.6+ */
-  background: -webkit-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px) repeat left top transparent;
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px) no-repeat left top transparent;
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px) no-repeat left top transparent;
-  /* IE10+ */
-  background: linear-gradient(to bottom, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px) no-repeat left top transparent;
-  /* W3C */
+  background: -webkit-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: -moz-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: -o-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
   background-size: 222px 124px;
   float: left;
   color: #888;
@@ -2298,6 +2290,7 @@ filter: none;
   background: url("http://1.www.s81c.com/i/v17/footermod-bg.png") no-repeat center top, -webkit-linear-gradient(top, #474a50, #0f161a);
   background: url("http://1.www.s81c.com/i/v17/footermod-bg.png") no-repeat center top, -moz-linear-gradient(top, #474a50, #0f161a);
   background: url("http://1.www.s81c.com/i/v17/footermod-bg.png") no-repeat center top, -o-linear-gradient(top, #474a50, #0f161a);
+  background: url("http://1.www.s81c.com/i/v17/footermod-bg.png") no-repeat center top, linear-gradient(top, #474a50, #0f161a);
   margin-bottom: -1px; }
 
 #ibm-footer-module h2, #ibm-footer-module h3 {
@@ -3805,6 +3798,7 @@ input.ibm-btn-view-sec {
   background: -webkit-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -moz-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -o-linear-gradient(top, whitesmoke, #dbdbdb);
+  background: linear-gradient(top, whitesmoke, #dbdbdb);
   border: 1px solid #DBDBDB;
   color: #000;
   padding: 7px 20px;
@@ -3853,6 +3847,7 @@ input.ibm-btn-view-sec:hover {
   background: -webkit-linear-gradient(top, white, #cbcbcb);
   background: -moz-linear-gradient(top, white, #cbcbcb);
   background: -o-linear-gradient(top, white, #cbcbcb);
+  background: linear-gradient(top, white, #cbcbcb);
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
@@ -3888,6 +3883,7 @@ input.ibm-btn-view-sec:focus {
   background: -webkit-linear-gradient(top, white, #ababab);
   background: -moz-linear-gradient(top, white, #ababab);
   background: -o-linear-gradient(top, white, #ababab);
+  background: linear-gradient(top, white, #ababab);
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
@@ -3925,6 +3921,7 @@ input.ibm-btn-view-sec:active {
   background: -webkit-linear-gradient(top, #cbcbcb, whitesmoke);
   background: -moz-linear-gradient(top, #cbcbcb, whitesmoke);
   background: -o-linear-gradient(top, #cbcbcb, whitesmoke);
+  background: linear-gradient(top, #cbcbcb, whitesmoke);
   -webkit-box-shadow: inset 0px 1px 3px #c1c1c1;
   -moz-box-shadow: inset 0px 1px 3px #c1c1c1;
   box-shadow: inset 0px 1px 3px #c1c1c1; }
@@ -4536,12 +4533,12 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 p.ibm-button-link a,
 p.ibm-button-link-alternate a {
   background: #dbdbdb;
+  border: 1px solid #dbdbdb;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dbdbdb');
+  background: -webkit-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -moz-linear-gradient(top, whitesmoke, #dbdbdb);
   background: -o-linear-gradient(top, whitesmoke, #dbdbdb);
-  background: -webkit-linear-gradient(top, whitesmoke, #dbdbdb);
   background: linear-gradient(top, whitesmoke, #dbdbdb);
-  border: 1px solid #dbdbdb;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -4562,9 +4559,9 @@ p.ibm-button-link-alternate a {
 p.ibm-button-link a:hover {
   background: #cbcbcb;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb');
+  background: -webkit-linear-gradient(top, white, #cbcbcb);
   background: -moz-linear-gradient(top, white, #cbcbcb);
   background: -o-linear-gradient(top, white, #cbcbcb);
-  background: -webkit-linear-gradient(top, white, #cbcbcb);
   background: linear-gradient(top, white, #cbcbcb);
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
@@ -4573,9 +4570,9 @@ p.ibm-button-link a:hover {
 p.ibm-button-link a:active {
   background: #f5f5f5;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcbcb', endColorstr='#f5f5f5');
+  background: -webkit-linear-gradient(top, #cbcbcb, whitesmoke);
   background: -moz-linear-gradient(top, #cbcbcb, whitesmoke);
   background: -o-linear-gradient(top, #cbcbcb, whitesmoke);
-  background: -webkit-linear-gradient(top, #cbcbcb, whitesmoke);
   background: linear-gradient(top, #cbcbcb, whitesmoke);
   color: #515151;
   -webkit-box-shadow: 0 1px 3px #c1c1c1 inset;
@@ -4585,9 +4582,9 @@ p.ibm-button-link a:active {
 p.ibm-button-link-alternate a {
   background: #1b587b;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d83b1', endColorstr='#1b587b');
+  background: -webkit-linear-gradient(top, #0d83b1, #1b587b);
   background: -moz-linear-gradient(top, #0d83b1, #1b587b);
   background: -o-linear-gradient(top, #0d83b1, #1b587b);
-  background: -webkit-linear-gradient(top, #0d83b1, #1b587b);
   background: linear-gradient(top, #0d83b1, #1b587b);
   border: 1px solid #1b587b;
   color: #fff;
@@ -4596,17 +4593,17 @@ p.ibm-button-link-alternate a {
 p.ibm-button-link-alternate a:hover {
   background: #052a41;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32bdf0', endColorstr='#052a41');
+  background: -webkit-linear-gradient(top, #32bdf0, #052a41);
   background: -moz-linear-gradient(top, #32bdf0, #052a41);
   background: -o-linear-gradient(top, #32bdf0, #052a41);
-  background: -webkit-linear-gradient(top, #32bdf0, #052a41);
   background: linear-gradient(top, #32bdf0, #052a41); }
 
 p.ibm-button-link-alternate a:active {
   background: #0d83b1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#052a41', endColorstr='#0d83b1');
+  background: -webkit-linear-gradient(top, #052a41, #0d83b1);
   background: -moz-linear-gradient(top, #052a41, #0d83b1);
   background: -o-linear-gradient(top, #052a41, #0d83b1);
-  background: -webkit-linear-gradient(top, #052a41, #0d83b1);
   background: linear-gradient(top, #052a41, #0d83b1);
   color: #fff;
   -webkit-box-shadow: 0 1px 3px #14405a inset;

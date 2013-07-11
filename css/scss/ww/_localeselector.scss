@@ -371,9 +371,7 @@
 	color: #fff;
     background: #555;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#454545');
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-webkit-linear-gradient(center top,  #656565,  #454545);
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-moz-linear-gradient(center top,  #656565,  #454545);
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-o-linear-gradient(center top,  #656565,  #454545);
+   	@include background-image-gradient(url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #454545);
 	background-repeat:no-repeat;
 }
 
@@ -385,14 +383,11 @@
  	color: #fff;
 	background: #555;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#151515');
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-webkit-linear-gradient(center top,  #656565,  #151515);
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-moz-linear-gradient(center top,  #656565,  #151515);
-	background: url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1397px,-o-linear-gradient(center top,  #656565,  #151515);
+   	@include background-image-gradient(url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #151515);
 	background-repeat:no-repeat;
 }
 
 #ibm-country-selector  #ibm-country-nav ul li a {
-	
 	display:block;
 	color: #6B6B6B;
 	/*font-size: 1.1em;

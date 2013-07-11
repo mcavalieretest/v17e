@@ -11,11 +11,7 @@
 }
 #ibm-content-nav #ibm-primary-tabs {
 	height: 38px;
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0), rgba(0,0,0,0.05));
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0), rgba(0,0,0,0.05));
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0), rgba(0,0,0,0.05));
-	background: -o-linear-gradient(top,  rgba(0,0,0,0), rgba(0,0,0,0.05));
-	background: linear-gradient(top,  rgba(0,0,0,0), rgba(0,0,0,0.05));
+	@include background-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.05));
 }
 #ibm-content-nav #ibm-secondary-tabs {
 	padding: 20px 0px;
@@ -41,10 +37,8 @@
 	border-right: 1px solid #E5E5E5;
 	border-left: 1px solid #E5E5E5;
 	margin-right: 5px;
-	-o-transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-    -ms-transition: opacity 0.3s;
+	@include background-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.05));
+	@include transition(opacity 0.3s);
 }
 
 
@@ -58,10 +52,7 @@
 
 #ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li:hover,
 #ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li:hover{
-	-o-transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-    -ms-transition: opacity 0.3s;
+	@include transition(opacity 0.3s);
 }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
@@ -346,8 +337,9 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 {color: #454545 !important;}
 
 #ibm-com .ibm-dyntabs div.ibm-text ul.ibm-tabs li:hover, #ibm-com div.ibm-text ul.ibm-tabs li a:hover,
-#ibm-com .ibm-dyntabs div.ibm-text ul.ibm-tabs li:focus, #ibm-com div.ibm-text ul.ibm-tabs li a:focus 
-{ color: #000 !important; }
+#ibm-com .ibm-dyntabs div.ibm-text ul.ibm-tabs li:focus, #ibm-com div.ibm-text ul.ibm-tabs li a:focus { 
+	color: #000 !important; 
+}
 
 #ibm-com .ibm-columns.ibm-graphic-tabs .ibm-col-1-1 {
 	margin: 0px -10px;
@@ -361,7 +353,6 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
     border-top: 2px solid #CCCCCC;
     margin-top: -2px;
     padding-top: 6px;
-   /* border-bottom:1px solid #CCCCCC;*/
 }
 
 #ibm-com ul.ibm-tabs a,
@@ -373,7 +364,6 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 }
 
 #ibm-com .ibm-graphic-tabs div.ibm-tab-section {
-	/*border-top: 2px solid #666;*/
 	margin-bottom:22px;
 }
 
@@ -395,10 +385,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 }
 #ibm-com .ibm-graphic-tabs ul.ibm-tabs li {
 	background: #DEDEDE;
-	background-image: -moz-linear-gradient(bottom , #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-	background-image: -webkit-linear-gradient(bottom , #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-	background-image: -o-linear-gradient(bottom , #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
-	background-image: linear-gradient(bottom , #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
+	@include background-gradient(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%);
 	margin-right:1px;
 	margin-bottom: 1px;
 	color: #000;
@@ -413,10 +400,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
     height:26px;
 }
 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
-#ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab
-/*#ibm-com div.ibm-text ul.ibm-tabs li:first-child.ibm-active */
-{
-    /*border-bottom: 1px solid #000000;*/
+#ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab {
     background: none repeat 0 0 #FFFFFF;
     border-left: 1px solid #ccc !important;
     border-right:1px solid #ccc !important;
@@ -531,7 +515,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 
 #ibm-com div.ibm-text ul.ibm-tabs li,
 #ibm-com .ibm-text ul.ibm-tabs li.ibm-active,
-#ibm-com .ibm-text ul.ibm-tabs li.ibm-highlight-tab{
+#ibm-com .ibm-text ul.ibm-tabs li.ibm-highlight-tab {
 	border-bottom: 0px none;
 }
 
@@ -540,8 +524,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 #ibm-com div.ibm-text ul.ibm-tabs li.ibm-active:visited, 
 #ibm-com div.ibm-text ul.ibm-tabs li.ibm-active:hover,
 #ibm-com div.ibm-text ul.ibm-tabs li.ibm-highlight-tab:visited, 
-#ibm-com div.ibm-text ul.ibm-tabs li.ibm-highlight-tab:hover
-{
+#ibm-com div.ibm-text ul.ibm-tabs li.ibm-highlight-tab:hover {
 	background:#fff;
 	color: #000;
 }
@@ -555,19 +538,9 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 
 /* Secondary Tabs */
 #ibm-content-nav #ibm-secondary-tabs {
-	background-image: -o-linear-gradient(bottom, #F3F3F3 0px, #FFF 15%);
-	background-image: -moz-linear-gradient(bottom, #F3F3F3 0px, #FFF 15%);
-	background-image: -webkit-linear-gradient(bottom, #F3F3F3 0px, #FFF 15%);
-	background-image: -ms-linear-gradient(bottom, #F3F3F3 0px, #FFF 15%);
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0, #F3F3F3),
-		color-stop(0.15, #FFF)
-	);
 	background-image: linear-gradient(bottom, #F3F3F3 0px, #FFF 15xp);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F3F3F3',GradientType=0 );
+	@include background-gradient(bottom, #F3F3F3 0px, #FFF 15%);
 	margin-top: 1px;
 	padding: 8px 20px 2px;
 	*padding: 8px 20px 8px;
@@ -725,12 +698,8 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	width: 300px;
 	padding: 3px 3px 5px 9px;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#ECECEC');
-	background: -webkit-linear-gradient(top,  #FCFCFC,  #ECECEC);
-	background: -moz-linear-gradient(top,  #FCFCFC,  #ECECEC);
-	background: -o-linear-gradient(top,  #FCFCFC,  #ECECEC);
-	-moz-border-radius: 2px; 
-	-webkit-border-radius: 2px; 
-	border-radius: 2px; 
+	@include background-gradient(top,  #FCFCFC,  #ECECEC);
+	@include border-radius(2px);
 	border: 1px solid #DDD;
 	color: #000;
 	text-decoration: none;	
@@ -759,15 +728,9 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 	position: absolute;
 	background-color: #FFF;
 	z-index: 800;
-	background: -webkit-gradient(linear, 100% 30%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
-	background: -moz-linear-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
-        background: -o-linear-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
-	-moz-border-radius: 8px; 
-	-webkit-border-radius: 8px; 
-	border-radius: 8px; 
-	box-shadow: 0px 1px 5px #333;
-	-moz-box-shadow: 0px 1px 5px #333;
-	-webkit-box-shadow:	0px 1px 5px #333;
+	@include background-gradient(top, #FFFFFF 30%, #CCCCCC 100%);
+	@include border-radius(8px);
+	@include box-shadow(0px 1px 5px #333);
 	padding: 4px 1px;
 	margin-left: -5px;
 	margin-top: 29px;
@@ -790,9 +753,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 }
 #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content.ibm-columns .ibm-tab-overlay ul li:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
-	background: -webkit-linear-gradient(top,  #595C64,  #1B1B1C);
-	background: -moz-linear-gradient(top,  #595C64,  #1B1B1C);
-	background: -o-linear-gradient(top,  #595C64,  #1B1B1C);
+	@include background-gradient(top, #595C64,  #1B1B1C);
 }
 #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content.ibm-columns .ibm-tab-overlay ul li a {
 	padding: 6px 10px;
