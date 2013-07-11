@@ -5,12 +5,8 @@
     clear: both;
     width: 100%;
     float: left;
-    *float: none; /* IE7 hack */
-    background: #0F161A;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474A50', endColorstr='#0F161A');
-    background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -webkit-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
-    background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -moz-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
-	background: url("#{$imagesPath}/i/v17/footermod-bg.png") no-repeat center top, -o-linear-gradient(top, #474A50, #0F161A) repeat-x 0 0;
+    *float: none; /* IE7 hack */   
+	@include background-image-gradient(url("#{$imagesPath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
     margin-bottom: -1px;
 }
 #ibm-footer-module h2, #ibm-footer-module h3 {

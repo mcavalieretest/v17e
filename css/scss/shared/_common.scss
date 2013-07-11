@@ -1637,9 +1637,7 @@ input.ibm-btn-view-sec {
 	font-family: Arial, Helvetica;
 	background: #DBDBDB;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
-	background: -webkit-linear-gradient(top,  #F5F5F5,  #DBDBDB);
-	background: -moz-linear-gradient(top,  #F5F5F5,  #DBDBDB);
-    background: -o-linear-gradient(top,  #F5F5F5,  #DBDBDB);
+	@include background-gradient(top, #F5F5F5, #DBDBDB);
 	border: 1px solid #DBDBDB;
 	color: #000;
 	padding: 7px 20px;
@@ -1681,9 +1679,7 @@ input.ibm-btn-undo-sec:hover,
 input.ibm-btn-video-sec:hover,
 input.ibm-btn-view-sec:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
-	background: -webkit-linear-gradient(top,  #FFFFFF,  #CBCBCB);
-	background: -moz-linear-gradient(top,  #FFFFFF,  #CBCBCB);
-    background: -o-linear-gradient(top,  #FFFFFF,  #CBCBCB);
+	@include background-gradient(top, #FFFFFF, #CBCBCB);
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
 }
 
@@ -1715,9 +1711,7 @@ input.ibm-btn-undo-sec:focus,
 input.ibm-btn-video-sec:focus,
 input.ibm-btn-view-sec:focus {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
-	background: -webkit-linear-gradient(top,  #FFFFFF,  #ABABAB);
-	background: -moz-linear-gradient(top,  #FFFFFF,  #ABABAB);
-    background: -o-linear-gradient(top,  #FFFFFF,  #ABABAB);
+	@include background-gradient(top, #FFFFFF, #ABABAB);
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
 }
 
@@ -1751,9 +1745,7 @@ input.ibm-btn-view-sec:active {
 	color: #515151;
 	padding: 7px 20px;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
-	background: -webkit-linear-gradient(top,  #CBCBCB,  #F5F5F5);
-	background: -moz-linear-gradient(top,  #CBCBCB,  #F5F5F5);
-	background: -o-linear-gradient(top,  #CBCBCB,  #F5F5F5);
+	@include background-gradient(top, #CBCBCB, #F5F5F5);
 	@include box-shadow(inset 0px 1px 3px #C1C1C1);
 }
 a.ibm-btn-pri:active,
