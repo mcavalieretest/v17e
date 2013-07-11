@@ -50,6 +50,9 @@ css/
 |   |   |-- _masthead.scss		# masthead
 |   |   |-- _merchandising.scss	# merchandising
 |   |   ...
+|   |-- v17e/					# v17e modules (this is where all the v17e styles will be placed.  after review we can move these styles into the shared folder.)
+|   |   |-- _banded.scss		# banded (new banded template styles to match home page leadspace solution within content space)
+|   |   ...
 |   ...
 |
 `-- ww.scss						# main SASS file
@@ -72,7 +75,7 @@ css/
 		"scss/shared/ribbon",
 		"scss/shared/sidebar",
 		"scss/shared/layout",
-		"scss/shared/liquid",
+//		"scss/shared/liquid",
 		"scss/shared/grid",
 		"scss/shared/icons",
 		"scss/shared/dialog",
@@ -92,4 +95,5 @@ css/
 		"scss/ww/localeselector",
 		"scss/ww/masthead",
 		"scss/shared/application",
-		"scss/ww/merchandising";
+		"scss/ww/merchandising",
+		"scss/ww/banded";
