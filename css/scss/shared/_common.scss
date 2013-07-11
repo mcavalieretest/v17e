@@ -1,63 +1,67 @@
 // common content styles begin ============================================
 
 .ibm-clear {
-	clear:both;
-	content:" ";
-	display:block;
-	height:0;
-	visibility:hidden
+	@include aslett-clearing;
 }
 
 /* a, a:link{ */
 a {
-  color: #00649d;
+	color: #00649D;
+	&:hover,
+	&:focus {
+		color: #05386B;
+	}
+	&:visited {
+		color: #745285;
+	}
 } 
 
-
-a:hover,  a:focus {
-    color: #05386b;
-}
-
-a:visited {
-	color:#745285;
-}
-
 /* LIST STYLES - v17 ol & ul */
-#ibm-masthead ol, #ibm-masthead ul,
-#ibm-leadspace-head ol, #ibm-leadspace-head ul,
-#ibm-pcon ol, #ibm-pcon ul,
-#ibm-related-content ol, #ibm-related-content ul{
+#ibm-masthead ol, 
+#ibm-masthead ul,
+#ibm-leadspace-head ol, 
+#ibm-leadspace-head ul,
+#ibm-pcon ol, 
+#ibm-pcon ul,
+#ibm-related-content ol, 
+#ibm-related-content ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
 }
 
 /* fix for broken fonts in ff3.6 */
-.dj_ff3 #ibm-content a, .dj_ff3 #ibm-content li{
+.dj_ff3 #ibm-content a, 
+.dj_ff3 #ibm-content li {
     opacity: 1 !important;
 }
 
-
 /* alternative linke color - gray */
 
-ul.ibm-alternate li a:link, p.ibm-alternate a:link {
+ul.ibm-alternate li a:link, 
+p.ibm-alternate a:link {
     /* color: #171717; --- color needed to use together with opacity */
     color: #454545;
 }
 
 /* color tweak for gray links with icons */
-ul.ibm-alternate li a[class^="ibm-"]:link, p.ibm-alternate a[class^="ibm-"]:link {
+ul.ibm-alternate li a[class^="ibm-"]:link, 
+p.ibm-alternate a[class^="ibm-"]:link {
     color: #171717;
 }
 
-ul.ibm-alternate li a:hover, p.ibm-alternate a:hover {
+ul.ibm-alternate li a:hover, 
+p.ibm-alternate a:hover {
     color: #000;
 }
 
 /* alternative linke color - white */
 
-ul.ibm-alternate-two li, p.ibm-alternate-two, ul.ibm-alternate-two li a, p.ibm-alternate-two a  {
-    color: #ccc;  
+ul.ibm-alternate-two li, 
+p.ibm-alternate-two, 
+ul.ibm-alternate-two li a, 
+p.ibm-alternate-two a {
+    color: #CCC;  
 }
 
 ul.ibm-alternate-two li a:hover, 
@@ -66,11 +70,11 @@ ul.ibm-alternate-two li a:focus,
 p.ibm-alternate-two a:focus,
 ul.ibm-alternate-two li a:visited, 
 p.ibm-alternate-two a:visited  {
-    color: #fff;
+    color: #FFF;
 }
 
-
-.ibm-error, .ibm-confidential {
+.ibm-error, 
+.ibm-confidential {
 	color: #D9182D !important;
 }
 
@@ -78,24 +82,29 @@ p.ibm-alternate-two a:visited  {
 	padding: 10px;
 }
 
-#ibm-access-cntr a:focus, #ibm-related-content a:focus, #ibm-content a:focus {
+#ibm-access-cntr a:focus, 
+#ibm-related-content a:focus, 
+#ibm-content a:focus {
 	outline:thin dotted;
 }
 
 #ibm-content h2,
 #ibm-content h3,
 #ibm-content .ibm-columns h2,
-#ibm-content .ibm-columns h3  {
+#ibm-content .ibm-columns h3 {
 	margin: 5px 10px;
 }
 
 #ibm-content h4,
-#ibm-content .ibm-columns h4{padding-bottom:5px;}
+#ibm-content .ibm-columns h4 {
+	padding-bottom:5px;
+}
 
 .ibm-landing-page #ibm-content h2,
 .ibm-landing-page #ibm-content h3 {
 	margin: 10px 20px;
 }
+
 #ibm-content .ibm-container h2,
 #ibm-content .ibm-container h3,
 .ibm-landing-page #ibm-content .ibm-container h2,
@@ -168,7 +177,7 @@ padding: 0;
 #ibm-content .ibm-show-hide .ibm-container-body ol {
     padding: 0px 0px 0px 35px;
 }
-#ibm-content ol{
+#ibm-content ol {
 	list-style-type: decimal !important;
  	padding: 0px 0px 0px 30px;
 }
@@ -190,15 +199,16 @@ padding: 0;
 }
 
 #ibm-content ul li.ibm-link-description p,
-#ibm-content .ibm-columns ul li.ibm-link-description p{
+#ibm-content .ibm-columns ul li.ibm-link-description p {
 	padding-left: 16px !important;
 }
-#ibm-content ul li.ibm-link-description p a{
-	display:inline;
+
+#ibm-content ul li.ibm-link-description p a {
+	display: inline;
 }
+
 #ibm-content ul li {
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
-   /* _background: none;*/ /* IE6 fix*/    
+	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px; 
 	padding: 5px 0px 5px 8px;
 	height: 1%;
 	clear: left;
@@ -206,22 +216,23 @@ padding: 0;
 
 #ibm-related-content ul li {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 7px;
-      /*  _background: none;*/  /* IE6 fix*/
 	padding: 3px 0px 3px 8px;
 	height: 1%;
 	clear: left;
 }
 
-#ibm-content ul li:hover{
+#ibm-content ul li:hover {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
 }
 
 #ibm-related-content ul li:hover {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 7px;
 }
+
 #ibm-content ul li:active {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_green.png") no-repeat 0px 10px;
 }
+
 #ibm-related-content ul li:active {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_green.png") no-repeat 0px 7px;
 }
@@ -241,24 +252,23 @@ padding: 0;
 #ibm-related-content ul li.ibm-no-links {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
 }
+
 #ibm-content ul.ibm-twisty ul.ibm-bullet-list li,
 #ibm-content ul.ibm-twisty ul.ibm-bullet-list.ibm-no-links li,
 #ibm-content ul.ibm-twisty ul.ibm-bullet-list.ibm-no-links li:hover,
 #ibm-content ul.ibm-twisty ul.ibm-no-links li,
-#ibm-content ul.ibm-twisty ul.ibm-no-links li:hover{
+#ibm-content ul.ibm-twisty ul.ibm-no-links li:hover {
 	padding-left: 8px; 
 }
 
 #ibm-content ul.ibm-link-list li a,
-#ibm-related-content ul.ibm-link-list li a
- {
-	/*display: block;*/
+#ibm-related-content ul.ibm-link-list li a {
 	text-decoration: none;
 }
 
 #ibm-related-content ul li a {
     display: block;
-    }
+}
 
 #ibm-content ul li a:hover,
 #ibm-related-content ul li a:hover {
@@ -275,7 +285,7 @@ padding: 0;
 #ibm-related-content ul.ibm-bullet-list li a {
     background-image: none !important;
     display: inline;
-    padding-left:0px;
+    padding-left: 0px;
     text-decoration: none;
 }
 
@@ -290,8 +300,6 @@ padding: 0;
 #ibm-related-content ul.ibm-bullet-list.ibm-no-links li a {
 	text-decoration: underline;
 }
-
-
 
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ol ul li,
@@ -331,9 +339,9 @@ padding: 0;
 #ibm-content-main .ibm-col-4-3 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li,
 #ibm-content-main .ibm-col-5-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li,
 #ibm-content-main .ibm-col-6-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li,
-#ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li{
+#ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_lg_bullet_grey_on.gif") no-repeat 0px 13px;
-	padding:5px 0px 5px 11px;
+	padding: 5px 0px 5px 11px;
 }
 
 #ibm-content-main .ibm-col-4-3 ul.ibm-link-list li,
@@ -341,8 +349,7 @@ padding: 0;
 #ibm-content-main .ibm-col-6-4 ul.ibm-link-list li,
 #ibm-content-main .ibm-col-6-5 ul.ibm-link-list li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li {
-    /*padding-top: 4px;*/
-    line-height:1em;
+    line-height: 1em;
 }
 
 #ibm-content-main .ibm-col-4-3 ul.ibm-error li,
@@ -365,11 +372,13 @@ padding: 0;
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_lg_bullet_grey_on.gif") no-repeat 0px 13px;
 	padding-left:11px;
 }
-#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 ul li{
+
+#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 ul li {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 11px;
 	padding-left:8px;
 }
-#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 ul li:hover{
+
+#ibm-content-main .ibm-col-6-4 .ibm-col-6-1 ul li:hover {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 11px;
 	padding-left:8px;
 }
@@ -383,21 +392,23 @@ padding: 0;
 	background-image: none !important;
 	padding-left:0px;
 }
+
 /* Default page bullet style for col-1-1 and col 5-3 */
 #ibm-content-main .ibm-col-1-1 ul li,
 #ibm-content-main .ibm-col-1-1 ul.ibm-no-links li:hover,
-#ibm-content-main .ibm-col-1-1 ul li.ibm-no-links:hover{
-background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
+#ibm-content-main .ibm-col-1-1 ul li.ibm-no-links:hover {
+	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
 }
+
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-no-links li:hover,
-.ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li.ibm-no-links:hover{
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_lg_bullet_grey_on.gif") no-repeat scroll 0 13px !important;
+.ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li.ibm-no-links:hover {
+	background: url("#{$imagesPath}/i/v17/bullets/ibm_lg_bullet_grey_on.gif") no-repeat 0 13px !important;
 }
 
 #ibm-content-main .ibm-col-5-3 ul li,
 #ibm-content-main .ibm-col-5-3 ul.ibm-no-links li:hover,
-#ibm-content-main .ibm-col-5-3 ul li.ibm-no-links:hover{
-    background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
+#ibm-content-main .ibm-col-5-3 ul li.ibm-no-links:hover {
+	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
 }
 
 #ibm-content-main .ibm-col-1-1 ul li:hover,
@@ -406,8 +417,9 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repea
 }
 
 #ibm-content-main .ibm-col-5-3 ul li:hover {
-    background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
+	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
 }
+
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li li:hover,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ol ul li:hover
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul li:hover,
@@ -420,15 +432,14 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repea
 #ibm-content-main .ibm-col-4-3 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover,
 #ibm-content-main .ibm-col-5-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover,
 #ibm-content-main .ibm-col-6-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover,
-#ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover{
+#ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 13px;
 }
-
 
 #ibm-content-main .ibm-col-4-3 ul li li:hover,
 #ibm-content-main .ibm-col-5-4 ul li li:hover,
 #ibm-content-main .ibm-col-6-4 ul li li:hover,
-#ibm-content-main .ibm-col-6-5 ul li li:hover{
+#ibm-content-main .ibm-col-6-5 ul li li:hover {
 	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 11px;
 }
 
@@ -449,7 +460,7 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
 #ibm-related-content ul.ibm-link-list li, #ibm-related-content ul.ibm-link-list li:hover,
 #ibm-content ul.ibm-twisty li ul li, #ibm-content ul.ibm-twisty li ul li:hover,
 #ibm-content table.ibm-data-table td ul.ibm-link-list li,
-#ibm-content table.ibm-data-table td ul.ibm-link-list li:hover  {
+#ibm-content table.ibm-data-table td ul.ibm-link-list li:hover {
 	background-image: none;
 }
 
@@ -465,6 +476,7 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
 #ibm-content-head {
 	min-height: 70px;
 }
+
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
