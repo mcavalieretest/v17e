@@ -1242,23 +1242,57 @@ caption, th {
 .dj_ie .dijit_a11y.v17 .dijitSelect .dijitButtonNode span.dijitButtonText {
   float: left; }
 
-.dijit_a11y.v17 #ibm-content input[type="text"], .dijit_a11y.v17 #ibm-content input[type="password"], .dijit_a11y.v17 #ibm-content textarea,
-.dijit_a11y.v17 .dijitDialog input[type="text"], .dijit_a11y.v17 .dijitDialog input[type="password"], .dijit_a11y.v17 .dijitDialog textarea {
+.dijit_a11y.v17 #ibm-content input[type="text"],
+.dijit_a11y.v17 #ibm-content input[type="password"],
+.dijit_a11y.v17 #ibm-content textarea,
+.dijit_a11y.v17 .dijitDialog input[type="text"],
+.dijit_a11y.v17 .dijitDialog input[type="password"],
+.dijit_a11y.v17 .dijitDialog textarea {
   border: 1px inset #DDD;
   border-radius: 3px; }
 
-.dijit_a11y.v17 #ibm-content input[type="text"]:hover, .dijit_a11y.v17 #ibm-content input[type="password"]:hover, .dijit_a11y.v17 #ibm-content textarea:hover, .dijit_a11y.v17 #ibm-content select:hover,
-.dijit_a11y.v17 .dijitDialog input[type="text"]:hover, .dijit_a11y.v17 .dijitDialog input[type="password"]:hover, .dijit_a11y.v17 .dijitDialog textarea:hover, .dijit_a11y.v17 .dijitDialog select:hover,
-.dijit_a11y.v17 #ibm-content input[type="text"]:focus, .dijit_a11y.v17 #ibm-content input[type="password"]:focus, .dijit_a11y.v17 #ibm-content textarea:focus, .dijit_a11y.v17 #ibm-content select:focus,
-.dijit_a11y.v17 .dijitDialog input[type="text"]:focus, .dijit_a11y.v17 .dijitDialog input[type="password"]:focus, .dijit_a11y.v17 .dijitDialog textarea:focus, .dijit_a11y.v17 .dijitDialog select:focus {
+.dijit_a11y.v17 #ibm-content input[type="text"]:hover,
+.dijit_a11y.v17 #ibm-content input[type="password"]:hover,
+.dijit_a11y.v17 #ibm-content textarea:hover,
+.dijit_a11y.v17 #ibm-content select:hover,
+.dijit_a11y.v17 .dijitDialog input[type="text"]:hover,
+.dijit_a11y.v17 .dijitDialog input[type="password"]:hover,
+.dijit_a11y.v17 .dijitDialog textarea:hover,
+.dijit_a11y.v17 .dijitDialog select:hover,
+.dijit_a11y.v17 #ibm-content input[type="text"]:focus,
+.dijit_a11y.v17 #ibm-content input[type="password"]:focus,
+.dijit_a11y.v17 #ibm-content textarea:focus,
+.dijit_a11y.v17 #ibm-content select:focus,
+.dijit_a11y.v17 .dijitDialog input[type="text"]:focus,
+.dijit_a11y.v17 .dijitDialog input[type="password"]:focus,
+.dijit_a11y.v17 .dijitDialog textarea:focus,
+.dijit_a11y.v17 .dijitDialog select:focus {
   border: 1px inset #CCC; }
 
-.dijit_a11y.v17 #ibm-content input.ibm-disabled, .dijit_a11y.v17 #ibm-content input.ibm-disabled:hover, .dijit_a11y.v17 #ibm-content input.ibm-disabled:focus, .dijit_a11y.v17 #ibm-content input.ibm-disabled:active,
-.dijit_a11y.v17 #ibm-content input[disabled], .dijit_a11y.v17 #ibm-content input[disabled]:hover, .dijit_a11y.v17 #ibm-content input[disabled]:focus, .dijit_a11y.v17 #ibm-content input[disabled]:active,
-.dijit_a11y.v17 #ibm-content input[disabled="disabled"], .dijit_a11y.v17 #ibm-content input[disabled="disabled"]:hover, .dijit_a11y.v17 #ibm-content input[disabled="disabled"]:focus, .dijit_a11y.v17 #ibm-content input[disabled="disabled"]:active,
-.dijit_a11y.v17 .dijitDialog input.ibm-disabled, .dijit_a11y.v17 .dijitDialog input.ibm-disabled:hover, .dijit_a11y.v17 .dijitDialog input.ibm-disabled:focus, .dijit_a11y.v17 .dijitDialog input.ibm-disabled:active,
-.dijit_a11y.v17 .dijitDialog input[disabled], .dijit_a11y.v17 .dijitDialog input[disabled]:hover, .dijit_a11y.v17 .dijitDialog input[disabled]:focus, .dijit_a11y.v17 .dijitDialog input[disabled]:active,
-.dijit_a11y.v17 .dijitDialog input[disabled="disabled"], .dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:hover, .dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:focus, .dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:active {
+.dijit_a11y.v17 #ibm-content input.ibm-disabled,
+.dijit_a11y.v17 #ibm-content input.ibm-disabled:hover,
+.dijit_a11y.v17 #ibm-content input.ibm-disabled:focus,
+.dijit_a11y.v17 #ibm-content input.ibm-disabled:active,
+.dijit_a11y.v17 #ibm-content input[disabled],
+.dijit_a11y.v17 #ibm-content input[disabled]:hover,
+.dijit_a11y.v17 #ibm-content input[disabled]:focus,
+.dijit_a11y.v17 #ibm-content input[disabled]:active,
+.dijit_a11y.v17 #ibm-content input[disabled="disabled"],
+.dijit_a11y.v17 #ibm-content input[disabled="disabled"]:hover,
+.dijit_a11y.v17 #ibm-content input[disabled="disabled"]:focus,
+.dijit_a11y.v17 #ibm-content input[disabled="disabled"]:active,
+.dijit_a11y.v17 .dijitDialog input.ibm-disabled,
+.dijit_a11y.v17 .dijitDialog input.ibm-disabled:hover,
+.dijit_a11y.v17 .dijitDialog input.ibm-disabled:focus,
+.dijit_a11y.v17 .dijitDialog input.ibm-disabled:active,
+.dijit_a11y.v17 .dijitDialog input[disabled],
+.dijit_a11y.v17 .dijitDialog input[disabled]:hover,
+.dijit_a11y.v17 .dijitDialog input[disabled]:focus,
+.dijit_a11y.v17 .dijitDialog input[disabled]:active,
+.dijit_a11y.v17 .dijitDialog input[disabled="disabled"],
+.dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:hover,
+.dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:focus,
+.dijit_a11y.v17 .dijitDialog input[disabled="disabled"]:active {
   border: 1px inset #CBCBCB;
   filter: none; }
 
@@ -1273,19 +1307,75 @@ caption, th {
   filter: none; }
 
 /* accessibility styles end ============================================ */
-.dijit_a11y html, .dijit_a11y body, .dijit_a11y div, .dijit_a11y span, .dijit_a11y applet, .dijit_a11y object, .dijit_a11y iframe,
-.dijit_a11y h1, .dijit_a11y h2, .dijit_a11y h3, .dijit_a11y h4, .dijit_a11y h5, .dijit_a11y h6, .dijit_a11y p, .dijit_a11y blockquote, .dijit_a11y pre, .dijit_a11y a,
-.dijit_a11y abbr, .dijit_a11y acronym, .dijit_a11y address, .dijit_a11y big, .dijit_a11y cite, .dijit_a11y code, .dijit_a11y del, .dijit_a11y dfn, .dijit_a11y em,
-.dijit_a11y font, .dijit_a11y img, .dijit_a11y ins, .dijit_a11y kbd, .dijit_a11y q, .dijit_a11y s, .dijit_a11y samp, .dijit_a11y small, .dijit_a11y strike, .dijit_a11y strong,
-.dijit_a11y sub, .dijit_a11y sup, .dijit_a11y tt, .dijit_a11y var, .dijit_a11y b, .dijit_a11y u, .dijit_a11y i, .dijit_a11y center, .dijit_a11y dl, .dijit_a11y dt,
-.dijit_a11y dd, .dijit_a11y ol, .dijit_a11y ul, .dijit_a11y li, .dijit_a11y fieldset, .dijit_a11y form, .dijit_a11y label, .dijit_a11y legend, .dijit_a11y table,
-.dijit_a11y caption, .dijit_a11y tbody, .dijit_a11y tfoot, .dijit_a11y thead, .dijit_a11y tr, .dijit_a11y th, .dijit_a11y td {
+.dijit_a11y html,
+.dijit_a11y body,
+.dijit_a11y div,
+.dijit_a11y span,
+.dijit_a11y applet,
+.dijit_a11y object,
+.dijit_a11y iframe,
+.dijit_a11y h1,
+.dijit_a11y h2,
+.dijit_a11y h3,
+.dijit_a11y h4,
+.dijit_a11y h5,
+.dijit_a11y h6,
+.dijit_a11y p,
+.dijit_a11y blockquote,
+.dijit_a11y pre,
+.dijit_a11y a,
+.dijit_a11y abbr,
+.dijit_a11y acronym,
+.dijit_a11y address,
+.dijit_a11y big,
+.dijit_a11y cite,
+.dijit_a11y code,
+.dijit_a11y del,
+.dijit_a11y dfn,
+.dijit_a11y em,
+.dijit_a11y font,
+.dijit_a11y img,
+.dijit_a11y ins,
+.dijit_a11y kbd,
+.dijit_a11y q,
+.dijit_a11y s,
+.dijit_a11y samp,
+.dijit_a11y small,
+.dijit_a11y strike,
+.dijit_a11y strong,
+.dijit_a11y sub,
+.dijit_a11y sup,
+.dijit_a11y tt,
+.dijit_a11y var,
+.dijit_a11y b,
+.dijit_a11y u,
+.dijit_a11y i,
+.dijit_a11y center,
+.dijit_a11y dl,
+.dijit_a11y dt,
+.dijit_a11y dd,
+.dijit_a11y ol,
+.dijit_a11y ul,
+.dijit_a11y li,
+.dijit_a11y fieldset,
+.dijit_a11y form,
+.dijit_a11y label,
+.dijit_a11y legend,
+.dijit_a11y table,
+.dijit_a11y caption,
+.dijit_a11y tbody,
+.dijit_a11y tfoot,
+.dijit_a11y thead,
+.dijit_a11y tr,
+.dijit_a11y th,
+.dijit_a11y td {
   _font-size: 71%; }
 
 .dijit_a11y .ibm-landing-page#ibm-top,
 .dijit_a11y .ibm-portal-page#ibm-top,
 .dijit_a11y #ibm-mast-options,
-.dijit_a11y .dijitSelect, .dijit_a11y .dijitMenuTable,
+.dijit_a11y .dijitSelect,
+.dijit_a11y .dijitMenuTable,
 .dijit_a11y .ibm-leading-page #ibm-leadspace-head ul.ibm-tabs,
 .dijit_a11y .ibm-leading-page #ibm-leadspace-head ul.ibm-tabs li,
 .dijit_a11y .ibm-leading-page #ibm-leadspace-head ul.ibm-tabs li a,
@@ -1305,8 +1395,7 @@ caption, th {
 .dijit_a11y #ibm-access-cntr a:focus,
 .dijit_a11y #ibm-related-content a:focus,
 .dijit_a11y #ibm-content a:focus {
-  text-decoration: underline;
-  /*	outline:thin dotted; */ }
+  text-decoration: underline; }
 
 .dijit_a11y #ibm-common-menu a:hover,
 .dijit_a11y #ibm-footer a:hover {
@@ -1323,10 +1412,14 @@ caption, th {
 .dijit_a11y #ibm-mast-options li#ibm-geo a {
   padding: 0px 4px !important; }
 
-.dijit_a11y #ibm-mast-options a:hover, .dijit_a11y #ibm-mast-options a:focus,
-.dijit_a11y #ibm-mast-options li#ibm-sso a:hover, .dijit_a11y #ibm-mast-options li#ibm-sso a:focus,
-.dijit_a11y #ibm-mast-options #ibm-create-share a:hover, .dijit_a11y #ibm-mast-options #ibm-create-share a:focus,
-.dijit_a11y #ibm-mast-options li#ibm-geo a:hover, .dijit_a11y #ibm-mast-options li#ibm-geo a:focus {
+.dijit_a11y #ibm-mast-options a:hover,
+.dijit_a11y #ibm-mast-options a:focus,
+.dijit_a11y #ibm-mast-options li#ibm-sso a:hover,
+.dijit_a11y #ibm-mast-options li#ibm-sso a:focus,
+.dijit_a11y #ibm-mast-options #ibm-create-share a:hover,
+.dijit_a11y #ibm-mast-options #ibm-create-share a:focus,
+.dijit_a11y #ibm-mast-options li#ibm-geo a:hover,
+.dijit_a11y #ibm-mast-options li#ibm-geo a:focus {
   border: 1px solid;
   font-weight: bold;
   padding: 0px 3px !important;
@@ -1355,7 +1448,8 @@ caption, th {
 .dijit_a11y #ibm-universal-nav li a {
   font-weight: bold; }
 
-.dijit_a11y #ibm-universal-nav li a:hover, .dijit_a11y #ibm-universal-nav li a:focus {
+.dijit_a11y #ibm-universal-nav li a:hover,
+.dijit_a11y #ibm-universal-nav li a:focus {
   outline: thin dotted; }
 
 .dijit_a11y li#ibm-home a {
@@ -1369,7 +1463,8 @@ caption, th {
   top: -100px;
   left: 0; }
 
-.dijit_a11y li#ibm-home.ibm-sm-logo a:hover img#ibm-hcontrast-home, .dijit_a11y li#ibm-home.ibm-sm-logo a:focus img#ibm-hcontrast-home {
+.dijit_a11y li#ibm-home.ibm-sm-logo a:hover img#ibm-hcontrast-home,
+.dijit_a11y li#ibm-home.ibm-sm-logo a:focus img#ibm-hcontrast-home {
   top: -130px;
   left: 0; }
 
@@ -1383,18 +1478,23 @@ caption, th {
 .dijit_a11y #ibm-mast-options li#ibm-home a img#ibm-hcontrast-home {
   top: 5px; }
 
-.dijit_a11y li#ibm-home a:hover, .dijit_a11y li#ibm-home a:focus {
+.dijit_a11y li#ibm-home a:hover,
+.dijit_a11y li#ibm-home a:focus {
   outline: thin dotted; }
 
-.dijit_a11y li#ibm-home a:hover img#ibm-hcontrast-home, .dijit_a11y li#ibm-home a:focus img#ibm-hcontrast-home {
+.dijit_a11y li#ibm-home a:hover img#ibm-hcontrast-home,
+.dijit_a11y li#ibm-home a:focus img#ibm-hcontrast-home {
   top: -51px;
   left: -1px; }
 
-.dijit_a11y #ibm-mast-options li#ibm-home a:hover img#ibm-hcontrast-home, .dijit_a11y #ibm-mast-options li#ibm-home a:focus img#ibm-hcontrast-home {
+.dijit_a11y #ibm-mast-options li#ibm-home a:hover img#ibm-hcontrast-home,
+.dijit_a11y #ibm-mast-options li#ibm-home a:focus img#ibm-hcontrast-home {
   top: -39px;
   left: -1px; }
 
-.dijit_a11y #ibm-universal-nav li a.ibm-active, .dijit_a11y #ibm-universal-nav li a:focus, .dijit_a11y #ibm-universal-nav li a:hover {
+.dijit_a11y #ibm-universal-nav li a.ibm-active,
+.dijit_a11y #ibm-universal-nav li a:focus,
+.dijit_a11y #ibm-universal-nav li a:hover {
   border: 1px dotted;
   padding: 15px; }
 
@@ -1402,7 +1502,8 @@ caption, th {
   border-bottom: 1px solid;
   filter: none; }
 
-.dijit_a11y #ibm-masthead #ibm-common-menu ul, .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li {
+.dijit_a11y #ibm-masthead #ibm-common-menu ul,
+.dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li {
   list-style-type: square; }
 
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-mm-close span {
@@ -1412,19 +1513,21 @@ caption, th {
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-mm-close span:hover {
   border: 1px dotted #FFF; }
 
-.dijit_a11y #ibm-search, .dijit_a11y #ibm-search.ibm-with-scoped-search {
+.dijit_a11y #ibm-search,
+.dijit_a11y #ibm-search.ibm-with-scoped-search {
   height: 25px;
   width: 63px;
   font-size: small;
   *text-align: center;
-  /* ie6 & 7 */
   margin: 0;
-  background: none repeat scroll 0 0 #FFF; }
+  background: none repeat 0 0 #FFF; }
 
 .dijit_a11y #ibm-search-form {
   width: 295px; }
 
-.dijit_a11y #ibm-search-form input#q, .dijit_a11y #ibm-search-form input#q:hover, .dijit_a11y #ibm-search-form input#q:focus {
+.dijit_a11y #ibm-search-form input#q,
+.dijit_a11y #ibm-search-form input#q:hover,
+.dijit_a11y #ibm-search-form input#q:focus {
   background: none repeat scroll 0 0 #FFF;
   width: 120px;
   border: 2px ridge #FFF; }
@@ -1433,14 +1536,15 @@ caption, th {
   border: 1px outset #FFF; }
 
 .dijit_a11y #ibm-scoped-search {
-  background: none repeat scroll 0 0 #FFF; }
+  background: none repeat 0 0 #FFF; }
 
 .dijit_a11y #ibm-universal-nav #ibm-scoped-search a {
   font-weight: normal;
   border: 0;
   padding: 6px; }
 
-.dijit_a11y #ibm-universal-nav #ibm-scoped-search a:focus, .dijit_a11y #ibm-universal-nav #ibm-scoped-search a.ibm-active {
+.dijit_a11y #ibm-universal-nav #ibm-scoped-search a:focus,
+.dijit_a11y #ibm-universal-nav #ibm-scoped-search a.ibm-active {
   font-weight: bold;
   border: 1px solid;
   padding: 5px; }
@@ -1450,7 +1554,8 @@ caption, th {
   width: auto;
   position: absolute; }
 
-.dijit_a11y #ibm-search-module .icon, .dijit_a11y #ibm-search-module .arrow {
+.dijit_a11y #ibm-search-module .icon,
+.dijit_a11y #ibm-search-module .arrow {
   display: inline; }
 
 .dijit_a11y .scopeButton {
@@ -1469,7 +1574,8 @@ caption, th {
   overflow: hidden;
   text-indent: 0em; }
 
-.dijit_a11y #ibm-social-tools a:hover, .dijit_a11y #ibm-social-tools a:focus {
+.dijit_a11y #ibm-social-tools a:hover,
+.dijit_a11y #ibm-social-tools a:focus {
   border: 1px dotted #FFF;
   width: 14px;
   height: 14px; }
@@ -1482,14 +1588,17 @@ caption, th {
 .dijit_a11y #ibm-page-tools a:focus {
   text-decoration: underline; }
 
-.dijit_a11y #ibm-leadspace-head #ibm-leadspace-body, .dijit_a11y #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
+.dijit_a11y #ibm-leadspace-head #ibm-leadspace-body,
+.dijit_a11y #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
   min-height: 70px;
   padding-bottom: 20px; }
 
-.dijit_a11y .ibm-home-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-ribbon-view, .dijit_a11y #ibm-promotion-module .ibm-expand-overlay {
-  background: none repeat scroll 0 0 #000; }
+.dijit_a11y .ibm-home-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-ribbon-view,
+.dijit_a11y #ibm-promotion-module .ibm-expand-overlay {
+  background: none repeat 0 0 #000; }
 
-.dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-next, .dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-prev {
+.dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-next,
+.dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-prev {
   border: 1px outset #FFF; }
 
 .dijit_a11y #ibm-navigation #ibm-primary-links li.ibm-is-active,
@@ -1516,7 +1625,9 @@ caption, th {
 .dijit_a11y #ibm-footer-module li.ibm-active {
   margin: 3px -1px; }
 
-.dijit_a11y #ibm-footer-module a:hover, .dijit_a11y #ibm-footer-module a:focus, .dijit_a11y #ibm-footer-module a.ibm-active {
+.dijit_a11y #ibm-footer-module a:hover,
+.dijit_a11y #ibm-footer-module a:focus,
+.dijit_a11y #ibm-footer-module a.ibm-active {
   outline: thin dotted; }
 
 .dijit_a11y #ibm-footer {
@@ -2027,7 +2138,8 @@ filter: none;
   background: url("http://1.www.s81c.com/i/v17/footermod-bg.png") no-repeat center top, linear-gradient(top, #474a50, #0f161a);
   margin-bottom: -1px; }
 
-#ibm-footer-module h2, #ibm-footer-module h3 {
+#ibm-footer-module h2,
+#ibm-footer-module h3 {
   color: #FCB712;
   margin: 0px;
   padding: 16px 0 0; }
@@ -2059,7 +2171,7 @@ filter: none;
   width: 100%; }
 
 #ibm-footer-module a {
-  color: #a8a8a8;
+  color: #A8A8A8;
   display: block;
   text-decoration: none;
   text-shadow: 0 0 2px #000; }
@@ -2088,7 +2200,6 @@ filter: none;
 #ibm-footer ul {
   margin: 0 auto;
   width: 960px;
-  /*higher value needs to be testet as it breaks layout for small screens*/
   height: 1%;
   list-style-type: none;
   padding: 0 0 0 20px; }
@@ -2103,8 +2214,9 @@ filter: none;
   padding-left: 5px;
   background-image: none; }
 
-#ibm-footer li a:link, #ibm-footer li a:visited {
-  color: #7f7f7f;
+#ibm-footer li a:link,
+#ibm-footer li a:visited {
+  color: #7F7F7F;
   text-decoration: none; }
 
 #ibm-footer li a:hover {

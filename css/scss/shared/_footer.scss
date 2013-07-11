@@ -9,21 +9,24 @@
 	@include background-image-gradient(url("#{$imagesPath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
     margin-bottom: -1px;
 }
-#ibm-footer-module h2, #ibm-footer-module h3 {
+
+#ibm-footer-module h2, 
+#ibm-footer-module h3 {
     color: #FCB712;
     margin: 0px;
     padding: 16px 0 0;
 }
 
-
 #ibm-footer-module .ibm-col-6-1:hover h2 {
     color: #FFE14F;
 }
+
 #ibm-footer-module ul {
     list-style: none;
     padding: 0 0 2px 0;
     margin: 0;
 }
+
 #ibm-footer-module li {
     background: url("#{$imagesPath}/i/v17/bullets.gif") no-repeat -2px 2px;
     color: #666;
@@ -45,12 +48,14 @@
     vertical-align: text-top;
     width: 100%;
 }
+
 #ibm-footer-module a {
-    color: #a8a8a8;
+    color: #A8A8A8;
     display: block;
     text-decoration: none;
     text-shadow: 0 0 2px #000;
 }
+
 #{$ie6Selector} #ibm-footer-module a {
     margin-top: -4px;
 }
@@ -58,11 +63,11 @@
 #ibm-footer-module .ibm-stock-module h2, #ibm-footer-module a:hover {
     color: #FFF;
 }
+
 #ibm-footer-module a.ibm-active, #ibm-footer-module a:focus {
     color: #FFF;
 	text-decoration: underline;
 }
-
 
 #ibm-footer {
     background-color: #0F161A;
@@ -75,33 +80,41 @@
     padding-top: 15px;
     position: relative;
 }
+
 #ibm-footer ul {
     margin: 0 auto;
-	width: 960px; /*higher value needs to be testet as it breaks layout for small screens*/
+	width: 960px;
     height: 1%;
     list-style-type: none;
     padding: 0 0 0 20px;
 }
+
 #ibm-footer li {
     float: left;
     padding: 0 10px 16px 14px;
     overflow: inherit;
     white-space: nowrap;
 }
+
 #ibm-footer li.ibm-first {
     padding-left: 5px;
     background-image: none;
 }
-#ibm-footer li a:link, #ibm-footer li a:visited {
-    color: #7f7f7f;
+
+#ibm-footer li a:link, 
+#ibm-footer li a:visited {
+    color: #7F7F7F;
 	text-decoration: none;
 }
+
 #ibm-footer li a:hover {
     color: #A1A2A7;
 }
+
 #ibm-footer li a:focus {
     color: #D0D0D3;
 }
+
 #ibm-footer:after {
 	@include aslett-clearing;
 }
