@@ -1,45 +1,5 @@
-@import url('ww-blessed1.css?z=1373506605655');
+@import url('ww-blessed1.css?z=1373581037956');
 
-
-/* End of v16 Code*/
-/* OVERLAY / DIALOG CODE   */
-@media all {
-  .ibm-common-overlay,
-  .ibm-common-overlay-mask {
-    display: none; }
-
-  #ibm-com .dijitDialogUnderlay {
-    background: none repeat scroll 0 0 #000;
-    filter: alpha(opacity=50);
-    opacity: 0.6; }
-
-  #ibm-com .dijitDialogUnderlayWrapper {
-    position: absolute; }
-
-  /* The dijitDialogTitle is used for moving the dialog around on screen;
-   * by showing it in the proper position (without text) the user can move 
-   * the overlay now.
-   */
-  .dijitDialogTitle {
-    cursor: move;
-    display: block;
-    height: 28px;
-    position: absolute;
-    text-indent: -9999px;
-    top: -20px;
-    width: 100%;
-    border: none;
-    background: none; }
-
-  /* old close text */
-  .ibm-common-overlay-close {
-    display: none; }
-
-  #ibm-com .dijitDialogTitleBar {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0; } }
 @media screen {
   #ibm-content {
     position: inherit; }
@@ -6216,7 +6176,8 @@ markup:
 #ibm-top.ibm-no-scroll #ibm-masthead {
   position: relative; }
 
-#ibm-top.ibm-no-scroll, #ibm-top.ibm-no-scroll #ibm-leadspace-head {
+#ibm-top.ibm-no-scroll,
+#ibm-top.ibm-no-scroll #ibm-leadspace-head {
   margin-top: 0px; }
 
 /* masthead close button style --------begin-----*/
@@ -6236,7 +6197,8 @@ markup:
   width: 25px;
   background: url("http://1.www.s81c.com/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px; }
 
-#ibm-masthead .ibm-dlg-close span:hover, #ibm-masthead .ibm-dlg-close span:focus {
+#ibm-masthead .ibm-dlg-close span:hover,
+#ibm-masthead .ibm-dlg-close span:focus {
   height: 23px;
   width: 23px;
   border: 1px dotted gray;
@@ -6322,7 +6284,8 @@ markup:
 .dijit_a11y #ibm-mast-options {
   border: 0; }
 
-.dijit_a11y #ibm-masthead #ibm-common-menu ul, .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li {
+.dijit_a11y #ibm-masthead #ibm-common-menu ul,
+.dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li {
   font-size: 0.9em; }
 
 .dijit_a11y #ibm-masthead #ibm-common-menu ul li a {
@@ -6338,7 +6301,7 @@ markup:
   padding: 4px 20px; }
 
 #ibm-mast-options li#ibm-geo a {
-  background: url("http://1.www.s81c.com/i/v17/icons/country-icons-sprite.png") no-repeat scroll 10px 0px transparent;
+  background: url("http://1.www.s81c.com/i/v17/icons/country-icons-sprite.png") no-repeat 10px 0px transparent;
   padding: 3px 20px 3px 40px;
   _background: none;
   /* ie6 tweak*/ }
@@ -6346,7 +6309,7 @@ markup:
 #ibm-mast-options li#ibm-geo a.ibm-back-country,
 #ibm-mast-options li#ibm-geo a.ibm-back-country:focus,
 #ibm-mast-options li#ibm-geo:hover a.ibm-back-country {
-  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat scroll 4px 4px transparent;
+  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat 4px 4px transparent;
   padding-left: 20px;
   padding-top: 4px;
   _background: none;
@@ -6547,8 +6510,6 @@ markup:
 #ibm-common-menu h3 {
   color: rgba(255, 255, 255, 0.75);
   color: #00b0da \9;
-  /*	height: 16px; */
-  /* removed to stop overlaping long header text on first menuitem - Hemang P*/
   width: 140px;
   padding-left: 0;
   font-weight: bold; }
@@ -6589,7 +6550,8 @@ markup:
 
 /* minimized masthead icons */
 /* requires width:100% on #ibm-unav-links */
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo, #ibm-universal-nav #ibm-unav-links #ibm-links-logo {
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo,
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
   text-indent: -9999px;
   height: 20px;
   width: 20px;
@@ -6605,10 +6567,11 @@ markup:
   right: 47px; }
 
 /* if text needs to be visible */
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text, #ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text {
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text,
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text {
   text-indent: 23px;
   width: 80px;
-  color: #fff;
+  color: #FFF;
   font-size: 0.8em; }
 
 #ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text {
@@ -6636,7 +6599,7 @@ background-position: 3px -400px;
   _position: relative; }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu {
-  background-color: #ddd;
+  background-color: #DDD;
   *background: none;
   _background: none;
   /* IE6 fix */
@@ -6647,7 +6610,7 @@ background-position: 3px -400px;
   background: -o-linear-gradient(top, #dddddd, #f1f1f1);
   background: linear-gradient(top, #dddddd, #f1f1f1);
   border-top: 0;
-  border-bottom-color: #fff;
+  border-bottom-color: #FFF;
   box-shadow: 0px -9px 7px -9px #bbb inset; }
 
 #ibm-masthead.ibm-alternate-masthead .ibm-ribbon-pane .ibm-columns {
@@ -6656,7 +6619,7 @@ background-position: 3px -400px;
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3,
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3 a {
   color: #333;
-  text-shadow: 0 1px 0 #fff; }
+  text-shadow: 0 1px 0 #FFF; }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu a {
   color: #555;
@@ -6684,15 +6647,15 @@ background-position: 3px -400px;
   background-position: 0px -23px; }
 
 #ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs {
-  background-color: #ccc;
+  background-color: #CCC;
   *background: none;
   filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
   background: -webkit-linear-gradient(top, #cccccc, #eaeaea);
   background: -moz-linear-gradient(top, #cccccc, #eaeaea);
   background: -o-linear-gradient(top, #cccccc, #eaeaea);
   background: linear-gradient(top, #cccccc, #eaeaea);
-  border-bottom: 1px solid #bbb;
-  box-shadow: 0 1px 7px #c5c5c5;
+  border-bottom: 1px solid #BBB;
+  box-shadow: 0 1px 7px #C5C5C5;
   height: 39px;
   margin-top: -39px;
   margin-bottom: 20px;
@@ -6714,7 +6677,7 @@ background-position: 3px -400px;
   background: url("http://1.www.s81c.com/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent; }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a {
-  text-shadow: 0 1px 0 #fff; }
+  text-shadow: 0 1px 0 #FFF; }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a:hover {
   text-decoration: none; }
@@ -6753,6 +6716,93 @@ background-position: 3px -400px;
   margin-top: 10px; }
 
 /* masthead A/B testing styles end ============================== */
+/* search field begin ============================== */
+#ibm-search-module {
+  float: right;
+  margin-left: -100%;
+  _position: absolute;
+  _right: 0; }
+
+.dj_ie7 #ibm-search-module {
+  position: absolute;
+  right: 0; }
+
+#ibm-search-form {
+  float: right;
+  height: 24px;
+  margin: 13px 40px -36px 1px;
+  display: inline-block;
+  border: 0px solid transparent;
+  _float: none;
+  _position: absolute;
+  _right: 0; }
+
+#ibm-search-form select {
+  float: left;
+  margin: 0 4px 4px 0; }
+
+#ibm-search-form input#q {
+  font-family: Arial, Helvetica;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 1px 0 #555555;
+  -moz-box-shadow: 0 1px 0 #555555;
+  box-shadow: 0 1px 0 #555555;
+  border: 1px solid #000;
+  padding: 3px 30px 2px 10px;
+  background: #0E0E0E;
+  background: -webkit-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: -moz-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: -o-linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background: linear-gradient(top, #0e0e0e 0px, #323232 24px, #e1e1e1 100px, #eeeeee 124px);
+  background-size: 222px 124px;
+  float: left;
+  color: #888;
+  width: 180px;
+  height: 17px;
+  font-style: italic;
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  -ms-transition: background 0.2s linear;
+  transition: background 0.2s linear; }
+
+#ibm-search-form:hover input#q,
+#ibm-search-form:focus input#q,
+#ibm-search-form input#q.ibm-active,
+#ibm-search-form input#q:focus {
+  color: #CCC;
+  background: #EEE;
+  background-size: 222px 124px;
+  background-position: left bottom;
+  color: #000;
+  text-shadow: 0 1px 0 #FFF; }
+
+#ibm-search-form input#q.ibm-active,
+#ibm-search-form input#q:focus {
+  font-style: normal; }
+
+#ibm-search {
+  background: url("http://1.www.s81c.com/i/v17/icons/search.png") 0px 3px no-repeat;
+  _background: none;
+  _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://1.www.s81c.com/i/v17/icons/search.png', sizingMethod='crop');
+  width: 24px;
+  height: 21px;
+  margin-left: -30px;
+  position: relative;
+  float: left;
+  color: transparent;
+  border: 0px none;
+  text-align: right;
+  text-indent: -999em;
+  cursor: pointer; }
+
+#ibm-search-form:hover #ibm-search,
+#ibm-search-form #q:focus ~ #ibm-search {
+  background-position: 0px -114px; }
+
+/* search field end ============================== */
 /* masthead styles end ============================================ */
 /* media queries for masthead on ipad */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

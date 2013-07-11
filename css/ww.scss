@@ -19,7 +19,7 @@ css/
 |   |   |-- _reset.scss			# reset
 |   |   |-- _accessibility.scss	# accessibility
 |   |   |-- _navigation.scss	# navigation
-|   |   |-- _search.scss		# search
+|   |   |-- _scoped-search.scss	# scoped-search
 |   |   |-- _related.scss		# related
 |   |   |-- _footer.scss		# footer
 |   |   |-- _common.scss		# common
@@ -68,7 +68,7 @@ css/
 		"scss/shared/reset",
 		"scss/shared/accessibility",
 		"scss/shared/navigation",
-		"scss/shared/search",
+//		"scss/shared/scoped-search",
 		"scss/shared/related",
 		"scss/shared/footer",
 		"scss/shared/common",
