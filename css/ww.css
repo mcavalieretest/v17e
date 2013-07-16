@@ -2242,11 +2242,11 @@ filter: none;
 
 /* a, a:link{ */
 a {
-  color: "#00649D"; }
+  color: #00649d; }
   a:hover, a:focus {
-    color: "#05386B"; }
+    color: #05386b; }
   a:visited {
-    color: "#745285"; }
+    color: #745285; }
 
 /* LIST STYLES - v17 ol & ul */
 #ibm-masthead ol,
