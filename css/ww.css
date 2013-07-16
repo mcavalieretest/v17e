@@ -11392,13 +11392,6 @@ ul.ibm-link-list li.ibm-first {
 #ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-signin-link {
   -ms-filter: "none" !important; }
 
-/*#ibm-content ul.ibm-live-assistance-list a span,
-#ibm-content ul.ibm-live-assistance-list li p span,
-#ibm-content ul.ibm-live-assistance-list li span,
-#ibm-content .ibm-live-assistance span {
-	font-weight:bold;
-	color: #444;
-}*/
 ul.ibm-live-assistance-list li.ibm-phone-link a:link,
 ul.ibm-live-assistance-list li.ibm-generic-link a:link {
   display: inline !important;

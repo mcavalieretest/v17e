@@ -25,7 +25,9 @@
 	margin: 0em;
 }
 
-#ibm-content-sidebar h2 {color:#333;}
+#ibm-content-sidebar h2 {
+	color:#333;
+}
 
 #ibm-content-sidebar .ibm-container .ibm-container-body img {
 	display: block;
@@ -34,7 +36,9 @@
 	text-align: center;
 }
 
-#ibm-content-sidebar .ibm-container.ibm-alternate .ibm-container-body {border-width:0px;}
+#ibm-content-sidebar .ibm-container.ibm-alternate .ibm-container-body {
+	border-width:0px;
+}
 
 #ibm-content #ibm-content-sidebar p.ibm-ind-link {padding: 0 ;}
 
@@ -43,9 +47,14 @@
 	padding: 0 ;
 }
 
-#ibm-twitter-list li {padding-top:7px !important; padding-bottom:5px !important;}
+#ibm-twitter-list li {
+	padding-top:7px !important; 
+	padding-bottom:5px !important;
+}
 
-ul.ibm-link-list li a {height:1%;}
+ul.ibm-link-list li a {
+	height:1%;
+}
 
 #ibm-content-sidebar ul.ibm-link-list li.ibm-first,
 #ibm-content-sidebar ul.ibm-link-list.ibm-alternate li {
@@ -202,20 +211,8 @@ padding-top:0px !important;
 #ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-video-link,
 #ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-demoplay-link,
 #ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-signin-link {
-
   -ms-filter: "none" !important;
 }
-
-
-
-
-/*#ibm-content ul.ibm-live-assistance-list a span,
-#ibm-content ul.ibm-live-assistance-list li p span,
-#ibm-content ul.ibm-live-assistance-list li span,
-#ibm-content .ibm-live-assistance span {
-	font-weight:bold;
-	color: #444;
-}*/
 
 ul.ibm-live-assistance-list li.ibm-phone-link a:link,
 ul.ibm-live-assistance-list li.ibm-generic-link a:link {
@@ -238,12 +235,9 @@ ul.ibm-live-assistance-list li.ibm-generic-link a:link {
 	height: 1%;
 }
 
-.ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait.ibm-alternate p
-
-{
+.ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait.ibm-alternate p {
 	margin-left: 46px !important;
 }
-
 
 
 /* LEGACY.  MIGHT BE ABLE TO DELETE FOR V17 */
