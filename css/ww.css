@@ -749,7 +749,8 @@ p.ibm-ind-link a,
 .ibm-footnote p, .ibm-footnote p a {
   font-family: Georgia; }
 
-.ibm-twitter-list li a, .ibm-twitter-list .ibm-item-note {
+.ibm-twitter-list li a,
+.ibm-twitter-list .ibm-item-note {
   font-family: Georgia;
   font-style: italic; }
 
