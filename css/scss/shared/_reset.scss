@@ -9,7 +9,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 	background: no-scroll transparent; /*ie7 fix - no-scroll */
 }
-html,body {
+
+html, body {
 	background: #333 url("#{$imagePath}/i/v17/t/bg-loader.gif") no-repeat 50% 200px;
 }
 
@@ -29,20 +30,25 @@ ol, ul{
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: "";
 	content: none;
 }
+
 :focus {
 	outline: 0px;
 }
+
 ins {
 	text-decoration: none;
 }
+
 del {
 	text-decoration: line-through;
 }
+
 table, caption, tbody, tfoot, thead, tr, th, td, textarea {
 	margin: 0px;
 	padding: 0px;
@@ -51,6 +57,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, textarea {
 	vertical-align: baseline;
 	background: no-scroll transparent; /*ie7 fix - no-scroll */
 }
+
 table {
 	border-collapse: collapse;
 }

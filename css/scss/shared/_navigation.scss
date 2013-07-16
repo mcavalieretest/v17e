@@ -78,12 +78,12 @@ filter: none;
 
 
 #ibm-navigation #ibm-primary-links {
-    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
-    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-     background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-    padding-bottom: 30px;
-    _background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
+	background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #EEE;
+	background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+	background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+	background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+	_background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #EEE;
+	padding-bottom: 30px;
 }
 
 

@@ -4,17 +4,16 @@
 	/* this is mainly for non-JS users */
 	overflow-y: scroll;
 	overflow-x: hidden;
-
 }
 
 div.ibm-scroll-wrapper {
 	position: relative; 
 	overflow: hidden; 
 	z-index: 1;
-	padding-bottom:15px;
-	*padding-bottom:0px;
-	_padding-bottom:0px;
-	padding-bottom:20px\9;
+	padding-bottom: 15px;
+	*padding-bottom: 0px;
+	_padding-bottom: 0px;
+	padding-bottom: 20px\9;
 }
 
 div.ibm-scroll-container {
@@ -24,34 +23,30 @@ div.ibm-scroll-container {
 	position: absolute;
 	top: 0px;
 }
-/* Added to work fine on IE6 */
-#{$ie6Selector} div.ibm-scroll-slider-outer
-{
-background: #e6e6e6;
-width: 6px;
 
+/* Added to work fine on IE6 */
+#{$ie6Selector} div.ibm-scroll-slider-outer {
+	background: #E6E6E6;
+	width: 6px;
 }
 
 #{$ie6Selector} div.ibm-scroll-slider-inner {
-background: #888;
-width: 6px; 
-height: 68px;
+	background: #888;
+	width: 6px; 
+	height: 68px;
 }
 
 /* Added to work fine on IE7 */
-html>body div.ibm-scroll-slider-outer
-{
-background: #e6e6e6;
-width: 6px;
-
+html>body div.ibm-scroll-slider-outer {
+	background: #e6e6e6;
+	width: 6px;
 }
 
 #{$ie6Selector} div.ibm-scroll-slider-inner {
-background: #888;
-width: 6px; 
-height: 68px;
+	background: #888;
+	width: 6px; 
+	height: 68px;
 }
-
 
 div.ibm-scroll-slider-outer {
 	height: 100%;
@@ -60,12 +55,12 @@ div.ibm-scroll-slider-outer {
 	cursor: pointer; 
 	right: 0px; 
 	top: 0; 
-	background: #e6e6e6;
-}
-div.ibm-scroll-slider-outer-active{
-	background: #ddd;
+	background: #E6E6E6;
 }
 
+div.ibm-scroll-slider-outer-active{
+	background: #DDD;
+}
 
 div.ibm-scroll-slider-inner {
 	position: absolute;	
@@ -78,6 +73,7 @@ div.ibm-scroll-slider-inner {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
 div.ibm-scroll-slider-inner-active{
 	background: #666; 
 }
@@ -106,7 +102,6 @@ div.ibm-scroll-slider-down {
 div.ibm-scroll-slider-outer-active div.ibm-scroll-slider-down {
 	background-position: 0 -424px;
 }
-
 
 /* Element shown at the bottom of the scroll container making a nice fade out */
 div.ibm-scroll-gradient{
