@@ -1,1 +1,1 @@
-RewriteRule ^ww_template_tabs.html index.html [R=301,L]
+Redirect /v17e/ww_template_tabs.html /v17e/index.html
