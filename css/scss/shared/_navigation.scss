@@ -26,8 +26,8 @@
 
 
 #ibm-navigation #ibm-primary-links li#ibm-parent-link a {
-	background:url("#{$imagesPath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 0.33em;
-	_background:url("#{$imagesPath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 3px;
+	background:url("#{$imagePath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 0.33em;
+	_background:url("#{$imagePath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 3px;
 	border-top:none;
 	border-bottom:1px solid #FFF;
 	display:block;
@@ -42,7 +42,7 @@
 }
 
 #ibm-secondary-navigation ul li a {
-     background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 8px;
+     background: url("#{$imagePath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 8px;
 	display: block;
     *zoom:1;
 	_height: 1%;
@@ -78,12 +78,12 @@ filter: none;
 
 
 #ibm-navigation #ibm-primary-links {
-    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
-    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-     background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
-    background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
+    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -moz-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+     background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -o-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
+    background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat scroll bottom right, -webkit-radial-gradient(40px 200px, circle closest-corner, #f2f2f2 50%, #e8e9e9 100%);
     padding-bottom: 30px;
-    _background: url("#{$imagesPath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
+    _background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #eee;
 }
 
 
@@ -144,8 +144,8 @@ filter: none;
     margin-left: -1px; /* needed for A to span over side borders of LI*/
     margin-right: -1px; /* needed for A to span over side borders of LI*/
     color: #fff;
-    background: url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
-	@include background-image-gradient(url("#{$imagesPath}/i/v17/t/left_nav_chevron_sprite.png"), no-repeat 155px -424px, top, #485159, #A2A9B2);
+    background: url("#{$imagePath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
+	@include background-image-gradient(url("#{$imagePath}/i/v17/t/left_nav_chevron_sprite.png"), no-repeat 155px -424px, top, #485159, #A2A9B2);
     text-shadow: none;
     border: 0px;
 }
@@ -213,7 +213,7 @@ filter: none;
     background:none;
     border: 0;
     padding-left: 7px;
-    background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
+    background: url("#{$imagePath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
 }
 
 #ibm-navigation #ibm-primary-links li li.ibm-is-active, 
@@ -267,7 +267,7 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-is-active, 
 #ibm-navigation #ibm-primary-links li ul li ul li.ibm-active {
-	background: url("#{$imagesPath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
+	background: url("#{$imagePath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
 	-ms-filter: none;
 	filter: none;
 	list-style: none;

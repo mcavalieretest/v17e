@@ -25,7 +25,7 @@ table.ibm-results-table a,table.ibm-results-table a:visited,
 
 table.ibm-data-table caption, 
 table.ibm-results-table caption {
-	background: #FFF url("#{$imagesPath}/i/v17/table-border-caption.gif") repeat-x 0px 0px;
+	background: #FFF url("#{$imagePath}/i/v17/table-border-caption.gif") repeat-x 0px 0px;
 	margin: 0px;
 	padding: 10px 0px;
 	clear: both;
@@ -58,20 +58,20 @@ table.ibm-data-table th {
 
 
  #ibm-content table.ibm-data-table td ul li {
-    background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 12px transparent;
+    background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 12px transparent;
     padding-left: 10px;
 }
 
 table.ibm-data-table thead th.ibm-sort-down a span.ibm-icon {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -201px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -201px;
     }
 
 table.ibm-data-table thead th.ibm-sort-up a span.ibm-icon {
-    background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -1px;
+    background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -1px;
 }
 
 table.ibm-data-table th.ibm-sort span.ibm-icon {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -601px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -601px;
 	display: inline-block;
 	width: 12px;
 	height: 14px;
@@ -173,7 +173,7 @@ table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row th,
 table.ibm-data-table.ibm-alternating-col tbody tr:hover th,
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td{
-	background: #E1E1E1 url("#{$imagesPath}/i/v17/table_alt_row_hover1_new.gif") repeat-x 0px 0px;	
+	background: #E1E1E1 url("#{$imagePath}/i/v17/table_alt_row_hover1_new.gif") repeat-x 0px 0px;	
 }
 
 /* ====This style will be used when the ROW is SELECTED */
@@ -187,7 +187,7 @@ table.ibm-data-table tbody tr:hover.ibm-alt-row-checked th,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover th,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td{
 	background:#e4eff2;
-	background:url("#{$imagesPath}/i/v17/table_alt_row_hover_checked1_new.gif") repeat-x 0px 0px;
+	background:url("#{$imagePath}/i/v17/table_alt_row_hover_checked1_new.gif") repeat-x 0px 0px;
 }
 
 /* ===End of ROW SELECTED style */
@@ -195,29 +195,29 @@ table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td{
 
 /* ALTERNATE COLUMN COLOR style */
 table.ibm-data-table tbody tr td.ibm-alt-col{
-	background: url("#{$imagesPath}/i/v17/table_col_background1.gif") repeat -3px 0;
+	background: url("#{$imagePath}/i/v17/table_col_background1.gif") repeat -3px 0;
 }
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col, 
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col{
-	background: url("#{$imagesPath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
+	background: url("#{$imagePath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
 }
 
 table.ibm-data-table tbody tr.ibm-alt-row td.ibm-alt-col{
-	background: url("#{$imagesPath}/i/v17/table_col_background2.gif") repeat -3px 0;
+	background: url("#{$imagePath}/i/v17/table_col_background2.gif") repeat -3px 0;
 }
 
 table.ibm-data-table tbody tr.ibm-alt-row:hover td.ibm-alt-col{
 	background:#eeeeee;
-	background: url("#{$imagesPath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
+	background: url("#{$imagePath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
 }
 
 /* ====style for COLUMN when the ROW is CHECKED */
 table.ibm-data-table tbody tr.ibm-alt-row-checked td.ibm-alt-col{
-	background: url("#{$imagesPath}/i/v17/table_col_background3.gif") repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/table_col_background3.gif") repeat 0 0 !important;
 }
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td.ibm-alt-col{
-	background: url("#{$imagesPath}/i/v17/table_col_hover_chk_background11_new.gif") repeat-x 0 0 !important;
+	background: url("#{$imagePath}/i/v17/table_col_hover_chk_background11_new.gif") repeat-x 0 0 !important;
 }
 
 /* ====End of style for the COLUMN when the ROW is CHECKED */
@@ -238,7 +238,7 @@ table.ibm-data-table.ibm-sortable-table td.ibm-accent{
 }
 
 table.ibm-data-table td.ibm-sort-column{
-	background:url("#{$imagesPath}/i/v17/table_sort_col_background.gif") repeat-x 0px 0px ;
+	background:url("#{$imagePath}/i/v17/table_sort_col_background.gif") repeat-x 0px 0px ;
 }
 
 
@@ -264,12 +264,12 @@ table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row:hover td.ibm-alt-c
 table.ibm-data-table tbody tr:hover.ibm-alt-row-checked td.ibm-sort-column, 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td.ibm-sort-column,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td.ibm-alt-col.ibm-sort-column{
-	background: url("#{$imagesPath}/i/v17/table_col_hover_chk_background11_new.gif") repeat-x 0px 0px !important;
+	background: url("#{$imagePath}/i/v17/table_col_hover_chk_background11_new.gif") repeat-x 0px 0px !important;
 }
 
 table.ibm-data-table tbody tr.ibm-alt-row-checked td.ibm-sort-column,
 table.ibm-data-table tbody tr.ibm-alt-row-checked td.ibm-alt-col.ibm-sort-column {
-    background: url("#{$imagesPath}/i/v17/table_col_background3.gif") repeat 0px 0px transparent !important;
+    background: url("#{$imagePath}/i/v17/table_col_background3.gif") repeat 0px 0px transparent !important;
 }
 
 /* End of sort-column color */
@@ -518,7 +518,7 @@ table.ibm-data-table.ibm-alternate-two tbody tr:first-child:hover td.ibm-sort-co
 
 table.ibm-data-table tbody tr td.ibm-highlight-green,
 table.ibm-data-table tbody tr th.ibm-highlight-green{
-background: #e2f1cf url("#{$imagesPath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
+background: #e2f1cf url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 
 }
 
@@ -527,14 +527,14 @@ table.ibm-data-table tbody tr:hover td.ibm-highlight-green,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-green,
 table.ibm-data-table tbody tr:hover th.ibm-highlight-green
 {
-background: #D8E5CB  url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #D8E5CB  url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 border-right:3px solid #fff;
 }
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-green, 
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-green
 {
-background: #D8E5CB url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #D8E5CB url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 
@@ -547,21 +547,21 @@ table.ibm-data-table tbody tr:hover th.ibm-highlight-green td{
 }
 table.ibm-data-table tbody tr td.ibm-highlight-red,
 table.ibm-data-table tbody tr th.ibm-highlight-red{
-background: #fae3e5 url("#{$imagesPath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
+background: #fae3e5 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 }
 
 table.ibm-data-table tbody tr td:hover.ibm-highlight-red,
 table.ibm-data-table tbody tr:hover td.ibm-highlight-red,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-red,
 table.ibm-data-table tbody tr:hover th.ibm-highlight-red{
-background: #efd9db url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #efd9db url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 border-right:3px solid #fff;
 }
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-red, 
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-red
 {
-background: #efd9db url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #efd9db url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 table.ibm-data-table tbody tr th.ibm-highlight-red,
@@ -573,7 +573,7 @@ table.ibm-data-table tbody tr:hover th.ibm-highlight-red td{
 
 table.ibm-data-table tbody tr td.ibm-highlight-yellow,
 table.ibm-data-table tbody tr th.ibm-highlight-yellow{
-background: #fff3b9 url("#{$imagesPath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
+background: #fff3b9 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 }
 
 table.ibm-data-table tbody tr td:hover.ibm-highlight-yellow,
@@ -581,7 +581,7 @@ table.ibm-data-table tbody tr:hover td.ibm-highlight-yellow,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-yellow,
 table.ibm-data-table tbody tr:hover th.ibm-highlight-yellow
 {
-background: #f5eab2 url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #f5eab2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 border-right:3px solid #fff;
 }
 
@@ -589,7 +589,7 @@ border-right:3px solid #fff;
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-yellow, 
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-yellow
 {
-background: #f5eab2 url("#{$imagesPath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+background: #f5eab2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 
@@ -723,13 +723,13 @@ border-right:3px solid #fff;
 
 .ibm-table-leftshadow {
 	width: 20px;
-	background: url("#{$imagesPath}/i/v17/table_scroll_gradient.png");
+	background: url("#{$imagePath}/i/v17/table_scroll_gradient.png");
 	position: absolute;
 	left: 0;
 }
 
 .ibm-table-rightshadow{
-	background: url("#{$imagesPath}/i/v17/table_scroll_gradient_invert.png");
+	background: url("#{$imagePath}/i/v17/table_scroll_gradient_invert.png");
 	width: 20px;	
 	position: absolute;
 	right: 0;

@@ -278,10 +278,10 @@ background-color: #eeeeee;
 	
  }
  #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li{
- background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
+ background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
  }
  #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li:hover{
-background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
+background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
  }
  
  #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li a{
@@ -611,21 +611,21 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 }
 
 #ibm-content-nav #ibm-secondary-tabs .ibm-columns ul li {
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 9px;  
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 9px;  
 	padding: 4px 0px 4px 8px;
 	height: 1%;
 	clear: left;
 }
 #ibm-content-nav #ibm-secondary-tabs .ibm-columns ul li.ibm-active {
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_black_on.png") no-repeat 0px 9px;
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_black_on.png") no-repeat 0px 9px;
 }
 
 #ibm-content-nav #ibm-secondary-tabs .ibm-columns ul li:hover {
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 9px;
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 9px;
 	
 }
 #ibm-content-nav #ibm-secondary-tabs .ibm-columns ul li:active {
-	background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_green.png") no-repeat 0px 9px;
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_green.png") no-repeat 0px 9px;
 }
 
 #ibm-content-nav #ibm-secondary-tabs .ibm-columns ul li a {
@@ -685,7 +685,7 @@ background: url("#{$imagesPath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat
 #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content input {
 	cursor: pointer;
 	width: 300px;
-	background: url("#{$imagesPath}/i/v17/icons/dropdown_sprite.png") no-repeat 100% -3px;
+	background: url("#{$imagePath}/i/v17/icons/dropdown_sprite.png") no-repeat 100% -3px;
 	border: 0px none;
 	font-size: 0.8em;
 	font-weight: bold;

@@ -1422,49 +1422,50 @@ caption, th {
   /* line 69, scss/shared/_reset.scss */
   body {
     color: #000; } }
-/* line 4, scss/shared/_accessibility.scss */
-.flashtext, .ibm-access,
+/* line 5, scss/shared/_accessibility.scss */
+.flashtext,
+.ibm-access,
 #ibm-content-main form.ibm-column-form p span a span {
   position: absolute;
   left: -3000px;
   width: 500px; }
 
-/* line 10, scss/shared/_accessibility.scss */
+/* line 11, scss/shared/_accessibility.scss */
 #ibm-mast-options .ibm-access {
   width: auto; }
 
-/* line 14, scss/shared/_accessibility.scss */
+/* line 15, scss/shared/_accessibility.scss */
 #ibm-social-tools h2.ibm-access {
   left: -9999em; }
 
 /* make text invisible for this icons -accessibility fix */
-/* line 19, scss/shared/_accessibility.scss */
+/* line 20, scss/shared/_accessibility.scss */
 .ibm-text-hide {
   position: absolute;
   text-indent: -999em; }
 
 /* accessibility fix for the all the icons */
-/* line 25, scss/shared/_accessibility.scss */
+/* line 26, scss/shared/_accessibility.scss */
 .ibm-acc-icon-text {
   visibility: hidden; }
 
 /* end of the fix */
-/* line 32, scss/shared/_accessibility.scss */
+/* line 35, scss/shared/_accessibility.scss */
 .dijit_a11y .dijitSelectHover,
 .dijit_a11y .dijitSelectFocused {
   outline: thin dotted;
   filter: none; }
 
-/* line 37, scss/shared/_accessibility.scss */
+/* line 40, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 .dijitSelect .dijitArrowButton .dijitArrowButtonChar {
   display: block;
   *font-size: 11px; }
 
-/* line 42, scss/shared/_accessibility.scss */
+/* line 45, scss/shared/_accessibility.scss */
 .dj_ie .dijit_a11y.v17 .dijitSelect .dijitButtonNode span.dijitButtonText {
   float: left; }
 
-/* line 51, scss/shared/_accessibility.scss */
+/* line 54, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 #ibm-content input[type="text"],
 .dijit_a11y.v17 #ibm-content input[type="password"],
 .dijit_a11y.v17 #ibm-content textarea,
@@ -1474,7 +1475,7 @@ caption, th {
   border: 1px inset #DDD;
   border-radius: 3px; }
 
-/* line 71, scss/shared/_accessibility.scss */
+/* line 74, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 #ibm-content input[type="text"]:hover,
 .dijit_a11y.v17 #ibm-content input[type="password"]:hover,
 .dijit_a11y.v17 #ibm-content textarea:hover,
@@ -1493,7 +1494,7 @@ caption, th {
 .dijit_a11y.v17 .dijitDialog select:focus {
   border: 1px inset #CCC; }
 
-/* line 98, scss/shared/_accessibility.scss */
+/* line 101, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 #ibm-content input.ibm-disabled,
 .dijit_a11y.v17 #ibm-content input.ibm-disabled:hover,
 .dijit_a11y.v17 #ibm-content input.ibm-disabled:focus,
@@ -1521,21 +1522,21 @@ caption, th {
   border: 1px inset #CBCBCB;
   filter: none; }
 
-/* line 103, scss/shared/_accessibility.scss */
+/* line 106, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 .dijitSelect {
   filter: none;
   background-color: #777; }
 
-/* line 108, scss/shared/_accessibility.scss */
+/* line 111, scss/shared/_accessibility.scss */
 .dijit_a11y.v17 .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
   filter: none; }
 
-/* line 112, scss/shared/_accessibility.scss */
+/* line 115, scss/shared/_accessibility.scss */
 .dj_ie .dijit_a11y.v17 .dijitCheckBoxInput {
   filter: none; }
 
 /* accessibility styles end ============================================ */
-/* line 179, scss/shared/_accessibility.scss */
+/* line 182, scss/shared/_accessibility.scss */
 .dijit_a11y html,
 .dijit_a11y body,
 .dijit_a11y div,
@@ -1600,7 +1601,7 @@ caption, th {
 .dijit_a11y td {
   _font-size: 71%; }
 
-/* line 193, scss/shared/_accessibility.scss */
+/* line 196, scss/shared/_accessibility.scss */
 .dijit_a11y .ibm-landing-page#ibm-top,
 .dijit_a11y .ibm-portal-page#ibm-top,
 .dijit_a11y #ibm-mast-options,
@@ -1614,14 +1615,14 @@ caption, th {
 .dijit_a11y .ibm-portal-page #ibm-leadspace-head ul.ibm-tabs li a {
   filter: none; }
 
-/* line 200, scss/shared/_accessibility.scss */
+/* line 203, scss/shared/_accessibility.scss */
 .dijit_a11y .ibm-leading-page #ibm-leadspace-head ul.ibm-tabs li a:focus,
 .dijit_a11y .ibm-leading-page #ibm-leadspace-head ul.ibm-tabs li a:hover,
 .dijit_a11y .ibm-portal-page #ibm-leadspace-head ul.ibm-tabs li a:focus,
 .dijit_a11y .ibm-portal-page #ibm-leadspace-head ul.ibm-tabs li a:hover {
   text-decoration: underline; }
 
-/* line 208, scss/shared/_accessibility.scss */
+/* line 211, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-common-menu a:focus,
 .dijit_a11y #ibm-footer a:focus,
 .dijit_a11y #ibm-access-cntr a:focus,
@@ -1629,25 +1630,25 @@ caption, th {
 .dijit_a11y #ibm-content a:focus {
   text-decoration: underline; }
 
-/* line 213, scss/shared/_accessibility.scss */
+/* line 216, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-common-menu a:hover,
 .dijit_a11y #ibm-footer a:hover {
   text-decoration: underline; }
 
-/* line 217, scss/shared/_accessibility.scss */
+/* line 220, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-masthead img#ibm-hcontrast-head {
   display: block;
   position: absolute;
   z-index: -999; }
 
-/* line 226, scss/shared/_accessibility.scss */
+/* line 229, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-mast-options li a,
 .dijit_a11y #ibm-mast-options li#ibm-sso a,
 .dijit_a11y #ibm-mast-options #ibm-create-share a,
 .dijit_a11y #ibm-mast-options li#ibm-geo a {
   padding: 0px 4px !important; }
 
-/* line 237, scss/shared/_accessibility.scss */
+/* line 240, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-mast-options a:hover,
 .dijit_a11y #ibm-mast-options a:focus,
 .dijit_a11y #ibm-mast-options li#ibm-sso a:hover,
@@ -1661,7 +1662,7 @@ caption, th {
   padding: 0px 3px !important;
   text-decoration: none; }
 
-/* line 244, scss/shared/_accessibility.scss */
+/* line 247, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav {
   border-bottom: 2px solid;
   border-top: 2px outset;
@@ -1669,12 +1670,12 @@ caption, th {
   filter: none;
   /* accessibility: HC mode IE fix */ }
 
-/* line 251, scss/shared/_accessibility.scss */
+/* line 254, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav:hover {
   border-bottom: 2px solid;
   border-top: 2px outset; }
 
-/* line 261, scss/shared/_accessibility.scss */
+/* line 264, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav:hover,
 .dijit_a11y #ibm-universal-nav #ibm-menu-links a:focus,
 .dijit_a11y #ibm-universal-nav #ibm-menu-links a:hover,
@@ -1684,36 +1685,36 @@ caption, th {
   filter: none;
   /* accessibility: HC mode IE fix */ }
 
-/* line 265, scss/shared/_accessibility.scss */
+/* line 268, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav li a {
   font-weight: bold; }
 
-/* line 270, scss/shared/_accessibility.scss */
+/* line 273, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav li a:hover,
 .dijit_a11y #ibm-universal-nav li a:focus {
   outline: thin dotted; }
 
-/* line 274, scss/shared/_accessibility.scss */
+/* line 277, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home a {
   overflow: hidden;
   left: -1px; }
 
-/* line 279, scss/shared/_accessibility.scss */
+/* line 282, scss/shared/_accessibility.scss */
 .dijit_a11y .ibm-home-page #ibm-universal-nav li#ibm-home a {
   top: 0; }
 
-/* line 283, scss/shared/_accessibility.scss */
+/* line 286, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home.ibm-sm-logo a img#ibm-hcontrast-home {
   top: -100px;
   left: 0; }
 
-/* line 289, scss/shared/_accessibility.scss */
+/* line 292, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home.ibm-sm-logo a:hover img#ibm-hcontrast-home,
 .dijit_a11y li#ibm-home.ibm-sm-logo a:focus img#ibm-hcontrast-home {
   top: -130px;
   left: 0; }
 
-/* line 294, scss/shared/_accessibility.scss */
+/* line 297, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home a img#ibm-hcontrast-home {
   top: 0;
   left: 0;
@@ -1721,54 +1722,54 @@ caption, th {
   position: absolute;
   z-index: 1; }
 
-/* line 302, scss/shared/_accessibility.scss */
+/* line 305, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-mast-options li#ibm-home a img#ibm-hcontrast-home {
   top: 5px; }
 
-/* line 307, scss/shared/_accessibility.scss */
+/* line 310, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home a:hover,
 .dijit_a11y li#ibm-home a:focus {
   outline: thin dotted; }
 
-/* line 312, scss/shared/_accessibility.scss */
+/* line 315, scss/shared/_accessibility.scss */
 .dijit_a11y li#ibm-home a:hover img#ibm-hcontrast-home,
 .dijit_a11y li#ibm-home a:focus img#ibm-hcontrast-home {
   top: -51px;
   left: -1px; }
 
-/* line 318, scss/shared/_accessibility.scss */
+/* line 321, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-mast-options li#ibm-home a:hover img#ibm-hcontrast-home,
 .dijit_a11y #ibm-mast-options li#ibm-home a:focus img#ibm-hcontrast-home {
   top: -39px;
   left: -1px; }
 
-/* line 325, scss/shared/_accessibility.scss */
+/* line 328, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav li a.ibm-active,
 .dijit_a11y #ibm-universal-nav li a:focus,
 .dijit_a11y #ibm-universal-nav li a:hover {
   border: 1px dotted;
   padding: 15px; }
 
-/* line 330, scss/shared/_accessibility.scss */
+/* line 333, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-common-menu {
   border-bottom: 1px solid;
   filter: none; }
 
-/* line 336, scss/shared/_accessibility.scss */
+/* line 339, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-masthead #ibm-common-menu ul,
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-columns li {
   list-style-type: square; }
 
-/* line 340, scss/shared/_accessibility.scss */
+/* line 343, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-mm-close span {
   text-indent: 0em; }
 
-/* line 345, scss/shared/_accessibility.scss */
+/* line 348, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-mm-close span:focus,
 .dijit_a11y #ibm-masthead #ibm-common-menu .ibm-mm-close span:hover {
   border: 1px dotted #FFF; }
 
-/* line 350, scss/shared/_accessibility.scss */
+/* line 353, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-search,
 .dijit_a11y #ibm-search.ibm-with-scoped-search {
   height: 25px;
@@ -1778,11 +1779,11 @@ caption, th {
   margin: 0;
   background: none repeat 0 0 #FFF; }
 
-/* line 359, scss/shared/_accessibility.scss */
+/* line 362, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-search-form {
   width: 295px; }
 
-/* line 365, scss/shared/_accessibility.scss */
+/* line 368, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-search-form input#q,
 .dijit_a11y #ibm-search-form input#q:hover,
 .dijit_a11y #ibm-search-form input#q:focus {
@@ -1790,39 +1791,39 @@ caption, th {
   width: 120px;
   border: 2px ridge #FFF; }
 
-/* line 371, scss/shared/_accessibility.scss */
+/* line 374, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-search {
   border: 1px outset #FFF; }
 
-/* line 375, scss/shared/_accessibility.scss */
+/* line 378, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-scoped-search {
   background: none repeat 0 0 #FFF; }
 
-/* line 379, scss/shared/_accessibility.scss */
+/* line 382, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav #ibm-scoped-search a {
   font-weight: normal;
   border: 0;
   padding: 6px; }
 
-/* line 386, scss/shared/_accessibility.scss */
+/* line 389, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-universal-nav #ibm-scoped-search a:focus,
 .dijit_a11y #ibm-universal-nav #ibm-scoped-search a.ibm-active {
   font-weight: bold;
   border: 1px solid;
   padding: 5px; }
 
-/* line 392, scss/shared/_accessibility.scss */
+/* line 395, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-scope-button .ibm-access {
   left: 0;
   width: auto;
   position: absolute; }
 
-/* line 399, scss/shared/_accessibility.scss */
+/* line 402, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-search-module .icon,
 .dijit_a11y #ibm-search-module .arrow {
   display: inline; }
 
-/* line 403, scss/shared/_accessibility.scss */
+/* line 406, scss/shared/_accessibility.scss */
 .dijit_a11y .scopeButton {
   border: 1px outset #FFF;
   left: 25px;
@@ -1830,51 +1831,51 @@ caption, th {
   margin: 3px -5px 0;
   padding: 0 1px; }
 
-/* line 411, scss/shared/_accessibility.scss */
+/* line 414, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-content .ibm-share-this ul li a {
   position: relative;
   overflow: hidden; }
 
-/* line 416, scss/shared/_accessibility.scss */
+/* line 419, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-social-tools a {
   position: relative;
   overflow: hidden;
   text-indent: 0em; }
 
-/* line 423, scss/shared/_accessibility.scss */
+/* line 426, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-social-tools a:hover,
 .dijit_a11y #ibm-social-tools a:focus {
   border: 1px dotted #FFF;
   width: 14px;
   height: 14px; }
 
-/* line 429, scss/shared/_accessibility.scss */
+/* line 432, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-social-tools a img.ibm-access {
   position: relative;
   z-index: 9999;
   width: auto; }
 
-/* line 435, scss/shared/_accessibility.scss */
+/* line 438, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-page-tools a:focus {
   text-decoration: underline; }
 
-/* line 440, scss/shared/_accessibility.scss */
+/* line 443, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-leadspace-head #ibm-leadspace-body,
 .dijit_a11y #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
   min-height: 70px;
   padding-bottom: 20px; }
 
-/* line 446, scss/shared/_accessibility.scss */
+/* line 449, scss/shared/_accessibility.scss */
 .dijit_a11y .ibm-home-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-ribbon-view,
 .dijit_a11y #ibm-promotion-module .ibm-expand-overlay {
   background: none repeat 0 0 #000; }
 
-/* line 451, scss/shared/_accessibility.scss */
+/* line 454, scss/shared/_accessibility.scss */
 .dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-next,
 .dijit_a11y .ibm-home-page #ibm-promotion-module a.ibm-ribbon-prev {
   border: 1px outset #FFF; }
 
-/* line 459, scss/shared/_accessibility.scss */
+/* line 462, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-navigation #ibm-primary-links li.ibm-is-active,
 .dijit_a11y #ibm-navigation #ibm-primary-links li.ibm-active,
 .dijit_a11y #ibm-navigation #ibm-primary-links #ibm-overview a,
@@ -1883,34 +1884,34 @@ caption, th {
   -ms-filter: none;
   filter: none; }
 
-/* line 464, scss/shared/_accessibility.scss */
+/* line 467, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-navigation #ibm-primary-links #ibm-overview {
   border-width: 2px; }
 
-/* line 468, scss/shared/_accessibility.scss */
+/* line 471, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer-module {
   filter: none;
   border-top: 2px solid #212224; }
 
-/* line 473, scss/shared/_accessibility.scss */
+/* line 476, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer-module .ibm-columns ul {
   list-stye: square outside none; }
 
-/* line 477, scss/shared/_accessibility.scss */
+/* line 480, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer-module li {
   padding: 0; }
 
-/* line 481, scss/shared/_accessibility.scss */
+/* line 484, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer-module li.ibm-active {
   margin: 3px -1px; }
 
-/* line 487, scss/shared/_accessibility.scss */
+/* line 490, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer-module a:hover,
 .dijit_a11y #ibm-footer-module a:focus,
 .dijit_a11y #ibm-footer-module a.ibm-active {
   outline: thin dotted; }
 
-/* line 491, scss/shared/_accessibility.scss */
+/* line 494, scss/shared/_accessibility.scss */
 .dijit_a11y #ibm-footer {
   border-bottom: 1px solid #404040;
   border-top: 1px inset #0F161A; }
@@ -2614,13 +2615,13 @@ filter: none;
 /* a, a:link{ */
 /* line 8, scss/shared/_common.scss */
 a {
-  color: #00649D; }
+  color: "#00649D"; }
   /* line 11, scss/shared/_common.scss */
   a:hover, a:focus {
-    color: #05386B; }
+    color: "#05386B"; }
   /* line 14, scss/shared/_common.scss */
   a:visited {
-    color: #745285; }
+    color: "#745285"; }
 
 /* LIST STYLES - v17 ol & ul */
 /* line 27, scss/shared/_common.scss */

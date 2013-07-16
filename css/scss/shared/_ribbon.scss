@@ -166,7 +166,7 @@ width: 300px;
 	text-align: center;
 }
 .ibm-ribbon-nav a {
-	background: url("#{$imagesPath}/i/v17/icons/scroll_nav_sprite.gif") 0px -200px no-repeat;
+	background: url("#{$imagePath}/i/v17/icons/scroll_nav_sprite.gif") 0px -200px no-repeat;
 	display: inline-block;
 	width: 8px;
 	height: 8px;
@@ -219,7 +219,7 @@ width: 300px;
 
 a.ibm-ribbon-next,
 a.ibm-ribbon-prev {
-	background: url("#{$imagesPath}/i/v17/icons/scroll_nav_sprite.gif") no-repeat;
+	background: url("#{$imagePath}/i/v17/icons/scroll_nav_sprite.gif") no-repeat;
 	display: block;
 	width: 16px;
 	height: 24px;

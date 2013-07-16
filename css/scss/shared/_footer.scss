@@ -6,7 +6,7 @@
     width: 100%;
     float: left;
     *float: none; /* IE7 hack */   
-	@include background-image-gradient(url("#{$imagesPath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
+	@include background-image-gradient(url("#{$imagePath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
     margin-bottom: -1px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 #ibm-footer-module li {
-    background: url("#{$imagesPath}/i/v17/bullets.gif") no-repeat -2px 2px;
+    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
     color: #666;
     margin: 4px 0;
     padding: 0 0 0 10px;

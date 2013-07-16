@@ -25,7 +25,7 @@
 
 .ibm-loading {
     -moz-border-radius: 5px 5px 5px 5px;
-    background: #A3A3A3 url("#{$imagesPath}/i/v17/loading.gif") no-repeat center center;
+    background: #A3A3A3 url("#{$imagePath}/i/v17/loading.gif") no-repeat center center;
     height: 35px;
     width: 45px;
 }
@@ -67,11 +67,11 @@
  	padding: 0px;
 }
 #ibm-country-selector #ibm-country-sort  #ibm-map-view-tab.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
 }
 
 #ibm-country-selector #ibm-country-sort #ibm-list-view-tab.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
 }
 
 #ibm-country-selector .ibm-dlg-close{
@@ -81,7 +81,7 @@
 
 #ibm-map-view-tab {
 	display:block;
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px -200px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px -200px;
 	background-repeat:no-repeat;
 	position:relative;
 	width:27px;
@@ -90,14 +90,14 @@
 }
 
 #ibm-map-view-tab:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
 	background-repeat:no-repeat;
 	position:relative;
 
 }
 
 #ibm-map-view-tab:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px 0px;
 	background-repeat:no-repeat;
 	position:relative;
 
@@ -105,7 +105,7 @@
 
 #ibm-list-view-tab {
 	display:block;
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -27px 0px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -27px 0px;
 	background-repeat:no-repeat;
 	position:relative;
 	width:26px;
@@ -115,14 +115,14 @@
 }
 
 #ibm-list-view-tab:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
 	background-repeat:no-repeat;
 	position:relative;
 	
 }
 
 #ibm-list-view-tab:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -27px -200px;
 	background-repeat:no-repeat;
 	position:relative;
 	
@@ -148,7 +148,7 @@
 
 #ibm-country-selector  #ibm-country-map {
 	float:left;
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px -400px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px -400px;
     background-repeat:no-repeat;
     position:relative;
     width:360px;
@@ -207,19 +207,19 @@
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-ap:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-ap:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-ap.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -215px -1253px;
     background-repeat:no-repeat;
     position:relative;
 }
@@ -237,21 +237,21 @@
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-eu:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
     background-repeat:no-repeat;
     position:relative;
    
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-eu:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
     background-repeat:no-repeat;
     position:relative;
    
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-eu.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -152px -1000px;
     background-repeat:no-repeat;
     position:relative;
    
@@ -270,19 +270,19 @@
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-la:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-la:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-la.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -40px -880px;
     background-repeat:no-repeat;
     position:relative;
 }
@@ -300,19 +300,19 @@
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-mea:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-mea:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-mea.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") -150px -1460px;
     background-repeat:no-repeat;
     position:relative;
 }
@@ -329,19 +329,19 @@
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-na:focus {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-na:hover {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
     background-repeat:no-repeat;
     position:relative;
 }
 
 #ibm-country-selector  #ibm-country-map #ibm-country-na.ibm-active {
-	background:url("#{$imagesPath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
+	background:url("#{$imagePath}/i/v17/ibm_country_select_sprites.gif") 0px -600px;
     background-repeat:no-repeat;
     position:relative;
 }
@@ -371,7 +371,7 @@
 	color: #fff;
     background: #555;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#454545');
-   	@include background-image-gradient(url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #454545);
+   	@include background-image-gradient(url("#{$imagePath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #454545);
 	background-repeat:no-repeat;
 }
 
@@ -383,7 +383,7 @@
  	color: #fff;
 	background: #555;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656565', endColorstr='#151515');
-   	@include background-image-gradient(url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #151515);
+   	@include background-image-gradient(url("#{$imagePath}/i/v17/ibm_icon_sprites.gif"), 148px -1397px, center top, #656565, #151515);
 	background-repeat:no-repeat;
 }
 
@@ -395,7 +395,7 @@
 	text-decoration: none;
 	padding:5px 5px 5px 5px;
 	font-family:Arial,sans-serif;
-	background:url("#{$imagesPath}/i/v17/ibm_icon_sprites.gif") 148px -1197px;
+	background:url("#{$imagePath}/i/v17/ibm_icon_sprites.gif") 148px -1197px;
 	background-repeat:no-repeat;
 	width:154px;
 }

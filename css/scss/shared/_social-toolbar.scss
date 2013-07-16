@@ -232,57 +232,57 @@
 /* no active state */
 
 a[class^="ibm-share"][class$="email"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -52px;
 	
 }
 a[class^="ibm-share"][class$="print"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -130px;
 }
 a[class^="ibm-share"][class$="delicious"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px 0;
 }
 a[class^="ibm-share"][class$="digg"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -26px;
 }
 a[class^="ibm-share"][class$="facebook"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -78px;
 }
 a[class^="ibm-share"][class$="linkedin"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -104px;
 }
 a[class^="ibm-share"][class$="twitter"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -156px;
 }
 a[class^="ibm-share"][class$="dogear"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -182px;
 }
 a[class^="ibm-share"][class$="stumble"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -52px -208px;
 }
 a[class^="ibm-share"][class$="yahoo-japan"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px 0;
 }
 a[class^="ibm-share"][class$="hatena"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px -26px;
 }
 a[class^="ibm-share"][class$="livedoor"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -52px -52px;
 }
 a[class^="ibm-share"][class$="blip"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -52px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -52px 0;
 }
 a[class^="ibm-share"][class$="wykop"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -52px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -52px -26px;
 }
 a[class^="ibm-share"][class$="viadeo"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -52px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -52px 0;
 }
 
 a.ibm-share-kaixn,
 a.ibm-share-renren,
 a.ibm-share-baidu,
 a.ibm-share-weibo {
-    background: url("#{$imagesPath}/i/v17/icons/sprites-pt-cn.png") no-repeat -52px 0;
+    background: url("#{$imagePath}/i/v17/icons/sprites-pt-cn.png") no-repeat -52px 0;
 }
 
 a.ibm-share-renren {background-position: -52px -26px;}
@@ -300,7 +300,7 @@ a.ibm-share-weibo {background-position: -52px -78px;}
 #{$ie6Selector} #ibm-social-tools a.ibm-share-twitter,
 #{$ie6Selector} #ibm-social-tools a.ibm-share-dogear,
 #{$ie6Selector} #ibm-social-tools a.ibm-share-stumble {
-    background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;   
+    background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;   
 }
 
 #{$ie6Selector} #ibm-social-tools a.ibm-share-print {background-position: -26px -130px}
@@ -315,7 +315,7 @@ a.ibm-share-weibo {background-position: -52px -78px;}
 #{$ie6Selector} #ibm-social-tools a.ibm-share-yahoo-japan,
 #{$ie6Selector} #ibm-social-tools a.ibm-share-hatena,
 #{$ie6Selector} #ibm-social-tools a.ibm-share-livedoor {
-    background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
+    background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
 }
 
 #{$ie6Selector} #ibm-social-tools a.ibm-share-hatena {background-position: -26px -26px}
@@ -323,13 +323,13 @@ a.ibm-share-weibo {background-position: -52px -78px;}
 
 #{$ie6Selector} #ibm-social-tools a.ibm-share-blip,
 #{$ie6Selector} #ibm-social-tools a.ibm-share-wykop {   
-     background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
+     background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
 }
 
 #{$ie6Selector} #ibm-social-tools a.ibm-share-wykop {background-position: -26px -26px}
 
 #{$ie6Selector} #ibm-social-tools a.ibm-share-viadeo {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
 }
 
 
@@ -337,7 +337,7 @@ a.ibm-share-weibo {background-position: -52px -78px;}
 #{$ie6Selector} a.ibm-share-renren,
 #{$ie6Selector} a.ibm-share-baidu,
 #{$ie6Selector} a.ibm-share-weibo {
-    background: url("#{$imagesPath}/i/v17/icons/sprites-pt-cn.gif") no-repeat -26px 0;
+    background: url("#{$imagePath}/i/v17/icons/sprites-pt-cn.gif") no-repeat -26px 0;
 }
 
 #{$ie6Selector} a.ibm-share-renren {background-position: -26px -26px;}
@@ -353,49 +353,49 @@ a.ibm-share-weibo {background-position: -52px -78px;}
 
 
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="email"]{
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="print"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -130px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="delicious"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="digg"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="facebook"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -78px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="linkedin"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -104px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="twitter"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -156px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="dogear"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -182px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="stumble"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -208px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="yahoo-japan"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="hatena"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="livedoor"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -52px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="blip"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="wykop"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="viadeo"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
 }
 
 ul:hover a.ibm-share-kaixn {background-position: -26px 0px;}
@@ -407,110 +407,110 @@ ul:hover a.ibm-share-weibo {background-position: -26px -78px;}
 
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="email"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="email"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -52px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="print"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="print"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -130px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="delicious"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="delicious"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="digg"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="digg"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="facebook"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="facebook"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -78px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="linkedin"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="linkedin"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -104px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="twitter"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="twitter"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -156px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="dogear"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="dogear"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -182px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="stumble"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="stumble"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -208px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="yahoo-japan"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="yahoo-japan"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="hatena"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="hatena"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="livedoor"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="livedoor"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -52px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="blip"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="blip"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px 0;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="wykop"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="wykop"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px -26px;
 }
 #ibm-social-tools ul:hover a[class^="ibm-share"][class$="viadeo"]:hover, 
 #ibm-social-tools ul a[class^="ibm-share"][class$="viadeo"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -78px 0;
 }
 
 
 #ibm-social-tools ul:hover a[class$="active-email"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -52px;
 }
 #ibm-social-tools ul:hover a[class$="active-print"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -130px;
 }
 #ibm-social-tools ul:hover a[class$="active-delicious"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 0;
 }
 #ibm-social-tools ul:hover a[class$="active-digg"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -26px;
 }
 #ibm-social-tools ul:hover a[class$="active-facebook"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -78px;
 }
 #ibm-social-tools ul:hover a[class$="active-linkedin"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -104px;
 }
 #ibm-social-tools ul:hover a[class$="active-twitter"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -156px;
 }
 #ibm-social-tools ul:hover a[class$="active-ibm-dogear"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -182px;
 }
 #ibm-social-tools ul:hover a[class$="active-stumble"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -208px;
 }
 #ibm-social-tools ul:hover a[class$="active-yahoo-japan"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 0;
 }
 #ibm-social-tools ul:hover a[class$="active-hatena"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -26px;
 }
 #ibm-social-tools ul:hover a[class$="active-livedoor"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -52px;
 }
 #ibm-social-tools ul:hover a[class$="active-blip"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 0;
 }
 #ibm-social-tools ul:hover a[class$="active-wykop"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 -26px;
 }
 #ibm-social-tools ul:hover a[class$="active-viadeo"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat 0 0;
 }
 
 
@@ -530,49 +530,49 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="email"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="print"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -130px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="delicious"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="digg"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="facebook"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -78px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="linkedin"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -104px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="twitter"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -156px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="dogear"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -182px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="stumble"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -208px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="yahoo-japan"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="hatena"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="livedoor"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -26px -52px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="blip"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="wykop"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -26px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="viadeo"] {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -26px 0;
 }
 
 
@@ -580,110 +580,110 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="email"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="email"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -52px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="print"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="print"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -130px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="delicious"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="delicious"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="digg"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="digg"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="facebook"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="facebook"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -78px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="linkedin"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="linkedin"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -104px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="twitter"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="twitter"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -156px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="dogear"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="dogear"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -182px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="stumble"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="stumble"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -78px -208px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="yahoo-japan"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="yahoo-japan"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="hatena"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="hatena"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="livedoor"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="livedoor"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat -78px -52px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="blip"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="blip"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px 0;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="wykop"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="wykop"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat -78px -26px;
 }
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="viadeo"]:hover, 
 .ibm-share-this ul a[class^="ibm-share"][class$="viadeo"]:focus {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat -78px 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat -78px 0;
 }
 
 
 .ibm-share-this ul:hover a[class$="active-email"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -52px;
 }
 .ibm-share-this ul:hover a[class$="active-print"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -130px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -130px;
 }
 .ibm-share-this ul:hover a[class$="active-delicious"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 0;
 }
 .ibm-share-this ul:hover a[class$="active-digg"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -26px;
 }
 .ibm-share-this ul:hover a[class$="active-facebook"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -78px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -78px;
 }
 .ibm-share-this ul:hover a[class$="active-linkedin"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -104px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -104px;
 }
 .ibm-share-this ul:hover a[class$="active-twitter"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -156px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -156px;
 }
 .ibm-share-this ul:hover a[class$="active-ibm-dogear"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -182px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -182px;
 }
 .ibm-share-this ul:hover a[class$="active-stumble"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -208px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat 0 -208px;
 }
 .ibm-share-this ul:hover a[class$="active-yahoo-japan"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 0;
 }
 .ibm-share-this ul:hover a[class$="active-hatena"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -26px;
 }
 .ibm-share-this ul:hover a[class$="active-livedoor"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -52px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-jp.png") no-repeat 0 -52px;
 }
 .ibm-share-this ul:hover a[class$="active-blip"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 0;
 }
 .ibm-share-this ul:hover a[class$="active-wykop"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 -26px;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-pl.png") no-repeat 0 -26px;
 }
 .ibm-share-this ul:hover a[class$="active-viadeo"]:hover {
-	background: url("#{$imagesPath}/i/v17/icons/sprites-pt-fr.png") no-repeat 0 0;
+	background: url("#{$imagePath}/i/v17/icons/sprites-pt-fr.png") no-repeat 0 0;
 }
 
 /* Share tool- Module Icon */
@@ -742,88 +742,88 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-digg,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-digg {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 0 !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-delicious,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-delicious {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -200px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-facebook,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-facebook {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-linkedin,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-linkedin {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -600px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-twitter,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-twitter {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -800px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-stumble,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-stumble {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1000px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-connection,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-connection {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1200px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-youtube,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-youtube {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1400px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1400px;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-wordpress,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-wordpress {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1600px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1600px;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-googleplus,
 .ibm-share-this.ibm-alternate ul:hover li a.ibm-share-googleplus {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1800px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_OFF.png") no-repeat 0 -1800px;
 }
 
 
 
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-digg:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 0 !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-delicious:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -200px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-facebook:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-linkedin:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -600px !important;
 }
 
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-twitter:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -800px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-stumble:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1000px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-connection:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1200px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-youtube:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1400px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1400px;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-wordpress:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1600px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1600px;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-googleplus:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1800px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_HOVER.png") no-repeat 0 -1800px;
 }
 
 
@@ -831,36 +831,36 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 /*active state */
 .ibm-share-this.ibm-alternate ul li a.ibm-share-digg:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 0 !important;
 	
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-delicious:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -200px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-facebook:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate ul li a.ibm-share-linkedin:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -600px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-twitter:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -800px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-stumble:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1000px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-connection:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1200px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-youtube:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1400px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-wordpress:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1600px !important;
 }
 .ibm-share-this.ibm-alternate ul li a.ibm-share-googleplus:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_16x16_CLICK.png") no-repeat 0 -1800px !important;
 }
 
 /* End of 16x16 */
@@ -869,44 +869,44 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-digg,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-digg {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 0 !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-delicious,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-delicious {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -200px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-facebook,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-facebook {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-linkedin,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-linkedin {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -600px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-twitter,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-twitter {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -800px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-stumble,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-stumble {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1000px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-connection,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-connection {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1200px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-youtube,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-youtube {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1400px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1400px;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-wordpress,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-wordpress {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1600px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1600px;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-googleplus,
 .ibm-share-this.ibm-alternate-medium ul:hover li a.ibm-share-googleplus {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1800px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_OFF.png") no-repeat 0 -1800px;
 }
 
 
@@ -914,78 +914,78 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-digg:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 0 !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-delicious:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -200px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-facebook:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-linkedin:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -600px !important;
 }
 
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-twitter:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -800px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-stumble:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1000px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-connection:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1200px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-youtube:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1400px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1400px;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-wordpress:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1600px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1600px;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-googleplus:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1800px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_HOVER.png") no-repeat 0 -1800px;
 }
 
 
 /*active state */
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-digg:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 0 !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-delicious:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -200px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -200px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-facebook:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -400px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -400px !important;
 }
 
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-linkedin:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -600px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -600px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-twitter:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -800px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -800px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-stumble:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1000px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1000px !important;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-connection:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1200px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1200px;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-youtube:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1400px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1400px;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-wordpress:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1600px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1600px;
 }
 .ibm-share-this.ibm-alternate-medium ul li a.ibm-share-googleplus:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1800px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_24x24_CLICK.png") no-repeat 0 -1800px;
 }
 
 
@@ -998,44 +998,44 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-digg,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-digg {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 0 !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-delicious,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-delicious {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -210px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -210px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-facebook,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-facebook {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -420px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -420px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-linkedin,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-linkedin {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -630px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -630px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-twitter,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-twitter {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -840px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -840px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-stumble,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-stumble {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1050px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1050px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-connection,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-connection {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1260px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1260px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-youtube,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-youtube {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1470px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1470px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-wordpress,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-wordpress {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1680px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1680px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-googleplus,
 .ibm-share-this.ibm-alternate-large ul:hover li a.ibm-share-googleplus {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1890px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_OFF.png") no-repeat 0 -1890px;
 }
 
 
@@ -1043,80 +1043,80 @@ ul:hover a.ibm-share-weibo:hover {background-position: 0 -79px;}
 
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-digg:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 0 !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-delicious:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -210px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -210px !important;
 }
 
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-facebook:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -420px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -420px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-linkedin:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -630px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -630px !important;
 }
 
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-twitter:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -840px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -840px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-stumble:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1050px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1050px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-connection:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1260px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1260px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-youtube:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1470px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1470px;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-wordpress:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1680px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1680px;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-googleplus:hover {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1890px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_HOVER.png") no-repeat 0 -1890px;
 }
 
 /*active state */
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-digg:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 0 !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 0 !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-delicious:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -210px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -210px !important;
 }
 
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-facebook:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -420px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -420px !important;
 }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-linkedin:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -630px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -630px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-twitter:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -840px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -840px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-stumble:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1050px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1050px !important;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-connection:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1260px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1260px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-youtube:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1470px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1470px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-wordpress:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1680px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1680px;
 }
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-googleplus:active {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1890px;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1890px;
 }
 
 /* end of 34x34 */

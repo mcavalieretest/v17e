@@ -31,20 +31,20 @@
 	position: absolute;
 	width: 75px;	
 	margin-top: 3px;
-	background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat 60px 13px transparent;
+	background: url("#{$imagePath}/i/v17/buttons/appm-logo-menu.gif") no-repeat 60px 13px transparent;
 	@include border-radius(3px 3px 0 0);
 	@include transition(background-color .3s);
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home.ibm-active {
 	@include box-shadow(0 0 3px #000);
-	background: url("#{$imagesPath}/i/v17/buttons/appm-logo-menu.gif") no-repeat 60px -183px #000;
+	background: url("#{$imagePath}/i/v17/buttons/appm-logo-menu.gif") no-repeat 60px -183px #000;
 	filter: none;
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home a {
 	display: block;
-	background: url("#{$imagesPath}/i/v17/t/ibm-logo.png") no-repeat 0 -100px transparent;
+	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") no-repeat 0 -100px transparent;
 	_filter:none;
 	_cursor: pointer;
 	width: 74px;
@@ -139,12 +139,12 @@
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav #ibm-unav-links #ibm-search-logo {
-	background: url("#{$imagesPath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
 	right: 79px;
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav #ibm-unav-links #ibm-links-logo {
-	background: url("#{$imagesPath}/i/v17/minm_icons.png") no-repeat 3px -600px;
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -600px;
 	right: 47px;
 }
 
@@ -289,7 +289,7 @@
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu li {
-	background: url("#{$imagesPath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu li:hover,
@@ -298,7 +298,7 @@
 }
 
 .ibm-application #ibm-masthead .ibm-mm-close span {
-	background: url("#{$imagesPath}/i/v17/buttons/mm-sprite-alt.gif") 0 4px no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 4px no-repeat transparent;
 }
 
 .ibm-application #ibm-masthead .ibm-mm-close span:hover {
@@ -373,7 +373,7 @@
 /* selected state - closed submenu */
 .ibm-application #ibm-masthead .ibm-menu-subtabs ul li.ibm-active,
 .ibm-application #ibm-masthead .ibm-menu-subtabs ul li.ibm-active a {
-	background: url("#{$imagesPath}/i/v17/buttons/mm-submenu-notch.gif") center -174px  no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/buttons/mm-submenu-notch.gif") center -174px  no-repeat transparent;
 	font-weight: bold;
 	color: #222;
 }

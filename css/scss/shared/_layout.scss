@@ -55,7 +55,7 @@
 .ibm-landing-page #ibm-leadspace-head {
     clear: both;
     margin-top: -2px !important;
-    background: #EEE url("#{$imagesPath}/i/v17/lead/leadspace-tall-bg.png") repeat 50% 100%;
+    background: #EEE url("#{$imagePath}/i/v17/lead/leadspace-tall-bg.png") repeat 50% 100%;
     border-bottom: 1px solid #E5E5E5;
 }
 #ibm-content #ibm-leadspace-head {
@@ -81,7 +81,7 @@
 /*=Start========== Dark background definition ============*/
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon .ibm-container-body  {
-    background: #090909 url("#{$imagesPath}/i/v17/lead/leadspace-tall-bg-dark.jpg") repeat-x left top;
+    background: #090909 url("#{$imagePath}/i/v17/lead/leadspace-tall-bg-dark.jpg") repeat-x left top;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body h1 {
@@ -386,7 +386,7 @@ display: block ;
 
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a{
-     background: url("#{$imagesPath}/i/v17/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
+     background: url("#{$imagePath}/i/v17/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
      position: relative;
      text-decoration: none; /* IE7 fix */
 }
@@ -441,7 +441,7 @@ display: block ;
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next, 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev {
-    background: url("#{$imagesPath}/i/v17/lead/leafed_lead_space_navigation_sprite.png") no-repeat 0px 0px transparent;
+    background: url("#{$imagePath}/i/v17/lead/leafed_lead_space_navigation_sprite.png") no-repeat 0px 0px transparent;
     cursor: pointer;
     display: block;
     height: 24px;
@@ -493,9 +493,9 @@ display: block ;
 }
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay {
     display: none;
-    background:url("#{$imagesPath}/i/v17/lead/lead_pagination_overlay.png") no-repeat 0px 0px;
+    background:url("#{$imagePath}/i/v17/lead/lead_pagination_overlay.png") no-repeat 0px 0px;
     _background: none;
-    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagesPath}/i/v17/lead/lead_pagination_overlay.png');
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/lead/lead_pagination_overlay.png');
     cursor: pointer;
     position: absolute;
     text-align: left;

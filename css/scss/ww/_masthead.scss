@@ -41,7 +41,7 @@
 	position: absolute;
 	height: 25px;
 	width: 25px;
-	background: url("#{$imagesPath}/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px;
+	background: url("#{$imagePath}/i/v17/buttons/www_closebtn_sprites.png") no-repeat 7px -795px;
 }
 
 #ibm-masthead .ibm-dlg-close span:hover, 
@@ -65,10 +65,10 @@
 	display: block;
 	height: 25px;
 	width: 940px;
-	background: url("#{$imagesPath}/i/v17/buttons/mm-sprite.png") no-repeat 0px 0px;
+	background: url("#{$imagePath}/i/v17/buttons/mm-sprite.png") no-repeat 0px 0px;
         /* ie6 fix*/
         _background: none; 
-        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagesPath}/i/v17/buttons/mm-sprite.png');
+        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/buttons/mm-sprite.png');
 		/* accessibility: HC MODE fix */	
 		text-align: center;
 		text-indent: -9999em; 
@@ -157,7 +157,7 @@
 }
 
 #ibm-mast-options li#ibm-geo a{
-	background: url("#{$imagesPath}/i/v17/icons/country-icons-sprite.png") no-repeat 10px 0px transparent;
+	background: url("#{$imagePath}/i/v17/icons/country-icons-sprite.png") no-repeat 10px 0px transparent;
 	padding: 3px 20px 3px 40px;
 	_background:none; /* ie6 tweak*/
 }
@@ -165,7 +165,7 @@
 #ibm-mast-options li#ibm-geo a.ibm-back-country,
 #ibm-mast-options li#ibm-geo a.ibm-back-country:focus,
 #ibm-mast-options li#ibm-geo:hover a.ibm-back-country {
-	background: url("#{$imagesPath}/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat 4px 4px transparent;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat 4px 4px transparent;
 	padding-left: 20px;
     padding-top: 4px;
     _background:none; /* ie6 tweak*/
@@ -273,9 +273,9 @@
 	display: block;
 	top: 0px;
 	left: 0px;
-	background: url("#{$imagesPath}/i/v17/t/ibm-logo.png") 0px 0px no-repeat;
+	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") 0px 0px no-repeat;
 	_background: none;  
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagesPath}/i/v17/t/ibm-logo.png');
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/t/ibm-logo.png');
 	_cursor: pointer;
 	width: 100px;
 	float: left;
@@ -285,7 +285,7 @@
 }
 
 #ibm-universal-nav li#ibm-home.ibm-sm-logo a {
-	background: url("#{$imagesPath}/i/v17/t/ibm-logo.png") no-repeat scroll 0px -100px;
+	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") no-repeat scroll 0px -100px;
 	height: 30px;
 }
 
@@ -399,7 +399,7 @@
 }
 
 #ibm-common-menu li {
-	background: url("#{$imagesPath}/i/v17/bullets.gif") no-repeat -2px -198px;
+	background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px -198px;
 	padding-left: 10px;
 	margin-top: 10px;
 }
@@ -440,12 +440,12 @@
 }
 
 #ibm-universal-nav #ibm-unav-links #ibm-search-logo {
-	background: url("#{$imagesPath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
 	right: 79px;
 }
 
 #ibm-universal-nav #ibm-unav-links #ibm-links-logo {
-	background: url("#{$imagesPath}/i/v17/minm_icons.png") no-repeat 3px -600px;
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -600px;
 	right: 47px;
 }
 
@@ -531,7 +531,7 @@ background-position: 3px -400px;
 }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu li {
-	background: url("#{$imagesPath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
 }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu li:hover,
@@ -540,7 +540,7 @@ background-position: 3px -400px;
 }
 
 #ibm-masthead.ibm-alternate-masthead .ibm-mm-close span {
-	background: url("#{$imagesPath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
 }
 
 #ibm-masthead.ibm-alternate-masthead .ibm-mm-close span:hover {
@@ -575,7 +575,7 @@ background-position: 3px -400px;
 }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
-	background: url("#{$imagesPath}/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent;
+	background: url("#{$imagePath}/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent;
 }
 
 #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a {
@@ -694,9 +694,9 @@ background-position: 3px -400px;
 }
 
 #ibm-search {
-	background: url("#{$imagesPath}/i/v17/icons/search.png") 0px 3px no-repeat;
+	background: url("#{$imagePath}/i/v17/icons/search.png") 0px 3px no-repeat;
     _background:none;
-    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagesPath}/i/v17/icons/search.png', sizingMethod='crop');
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/icons/search.png', sizingMethod='crop');
 	width: 24px;
 	height: 21px;
 	margin-left: -30px;
