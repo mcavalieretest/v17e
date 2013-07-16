@@ -6218,188 +6218,188 @@ span.ibm-thumbnail span.ibm-video-play {
 .dj_ie6 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p span {
   margin-top: 0px; }
 
-/* line 157, scss/shared/_layout.scss */
+/* line 158, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-35-space {
   padding-top: 35px; }
 
-/* line 160, scss/shared/_layout.scss */
+/* line 162, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-navigation-trail + h1 {
   padding-bottom: 10px;
   padding-top: 9px; }
 
-/* line 164, scss/shared/_layout.scss */
+/* line 167, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
   width: 480px;
   padding-bottom: 0px; }
 
 /* End of styles for short leadsapce */
-/* line 169, scss/shared/_layout.scss */
+/* line 173, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs {
   min-height: 300px;
   _height: 300px; }
 
-/* line 173, scss/shared/_layout.scss */
+/* line 177, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
   min-height: 290px;
   _height: 290px;
   padding-bottom: 10px;
   _padding-bottom: 0; }
 
-/* line 180, scss/shared/_layout.scss */
+/* line 184, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head h1 {
   padding: 30px 20px;
   width: 540px;
   _background-color: transparent; }
 
-/* line 186, scss/shared/_layout.scss */
+/* line 190, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-5col h1 {
   width: 740px; }
 
-/* line 190, scss/shared/_layout.scss */
+/* line 194, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-4col h1 {
   width: 580px; }
 
-/* line 195, scss/shared/_layout.scss */
+/* line 199, scss/shared/_layout.scss */
 #ibm-content #ibm-leadspace-head.ibm-alternate h1 {
   width: 100%; }
 
-/* line 200, scss/shared/_layout.scss */
+/* line 204, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head p {
   padding: 0 0 10px 20px;
   width: 480px; }
 
-/* line 204, scss/shared/_layout.scss */
+/* line 208, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-image p {
   width: 940px; }
 
-/* line 208, scss/shared/_layout.scss */
+/* line 212, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p,
 .ibm-landing-page #ibm-leadspace-head.ibm-content-extend p {
   width: 620px; }
 
-/* line 212, scss/shared/_layout.scss */
+/* line 216, scss/shared/_layout.scss */
 #ibm-content #ibm-leadspace-head.ibm-no-image p,
 #ibm-content #ibm-leadspace-head.ibm-content-extend p {
   width: 100%; }
 
-/* line 215, scss/shared/_layout.scss */
+/* line 219, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head p em span {
   color: #A91024;
   font-weight: bold;
   display: block; }
 
-/* line 220, scss/shared/_layout.scss */
+/* line 224, scss/shared/_layout.scss */
 #ibm-content #ibm-leadspace-head #ibm-leadspace-body p em span {
   display: block; }
 
-/* line 225, scss/shared/_layout.scss */
+/* line 229, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head p a {
   display: block;
   padding: 0px;
   margin-top: 15px;
   text-decoration: none; }
 
-/* line 232, scss/shared/_layout.scss */
+/* line 236, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head p.ibm-ind-link a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p.ibm-ind-link a {
   padding: 0 0 0 18px; }
 
-/* line 235, scss/shared/_layout.scss */
+/* line 239, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p a {
   padding: 0;
   margin-top: 0; }
 
-/* line 239, scss/shared/_layout.scss */
+/* line 243, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p.ibm-ind-link {
   padding: 6px 20px; }
 
-/* line 242, scss/shared/_layout.scss */
+/* line 246, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head p em {
   color: #666; }
 
-/* line 245, scss/shared/_layout.scss */
+/* line 249, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head #ibm-navigation-trail + h1 {
   padding-top: 5px; }
 
-/* line 248, scss/shared/_layout.scss */
+/* line 252, scss/shared/_layout.scss */
 #ibm-content #ibm-leadspace-head p {
   width: auto;
   padding: 0 0 10px 10px; }
 
-/* line 252, scss/shared/_layout.scss */
+/* line 256, scss/shared/_layout.scss */
 #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
   width: 556px;
   margin: 0; }
 
-/* line 256, scss/shared/_layout.scss */
+/* line 260, scss/shared/_layout.scss */
 .ibm-content-expand #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
   width: 748px; }
 
-/* line 260, scss/shared/_layout.scss */
+/* line 264, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body.ibm-alternate h1 {
   color: #FFF; }
 
-/* line 265, scss/shared/_layout.scss */
+/* line 269, scss/shared/_layout.scss */
 #ibm-content-main #ibm-leadspace-head #ibm-leadspace-body h1,
 #ibm-content-main #ibm-leadspace-head #ibm-leadspace-body ul#ibm-navigation-trail {
   margin-left: 0;
   padding-left: 10px; }
 
 /* active link(s) */
-/* line 270, scss/shared/_layout.scss */
+/* line 274, scss/shared/_layout.scss */
 #ibm-primary-links a.ibm-is-active {
   color: #333;
   background-color: #FFF; }
 
 /* sub-entries in the left navigation */
-/* line 275, scss/shared/_layout.scss */
+/* line 279, scss/shared/_layout.scss */
 #ibm-primary-links li li {
   /*font-size: 0.95em;*/
   padding-left: 10px; }
 
-/* line 279, scss/shared/_layout.scss */
+/* line 283, scss/shared/_layout.scss */
 #ibm-parent-link a {
   color: #000; }
 
 /* related links - secondary navigation */
-/* line 283, scss/shared/_layout.scss */
+/* line 287, scss/shared/_layout.scss */
 #ibm-secondary-navigation {
   padding: 10px 0 0 0; }
 
-/* line 286, scss/shared/_layout.scss */
+/* line 290, scss/shared/_layout.scss */
 #ibm-secondary-navigation li {
   padding-left: 0px;
   /*TODO: add background used as bullet  */ }
 
 /* high definition styles - remove left and right nav to allow wider template */
-/* line 294, scss/shared/_layout.scss */
+/* line 298, scss/shared/_layout.scss */
 .ibm-content-expand #ibm-content-sidebar,
 .ibm-landing-page #ibm-content-sidebar,
 .ibm-landing-page #ibm-navigation,
 .ibm-landing-page #ibm-media {
   display: none; }
 
-/* line 297, scss/shared/_layout.scss */
+/* line 301, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-pcon {
   padding-left: 0;
   width: 980px; }
 
-/* line 301, scss/shared/_layout.scss */
+/* line 305, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace {
   padding: 0px; }
 
 /* high definition styles - remove left and right nav to allow wider template */
 /* Multileaf Ledaspace style */
 /* the black background leadspace now work with ibm-alternate-bg and ibm-alternate-background class. Plan is to sunset ibm-alternate-bg class */
-/* line 308, scss/shared/_layout.scss */
+/* line 312, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon #ibm-leadspace-body {
   width: 100%; }
 
-/* line 311, scss/shared/_layout.scss */
+/* line 315, scss/shared/_layout.scss */
 #ibm-leadspace-head.ibm-container {
   margin: 0; }
 
-/* line 314, scss/shared/_layout.scss */
+/* line 318, scss/shared/_layout.scss */
 #ibm-leadspace-head.ibm-ribbon .ibm-container-body {
   background: none repeat 0 0 transparent;
   border: 0 none;
@@ -6407,7 +6407,7 @@ span.ibm-thumbnail span.ibm-video-play {
   height: 250px;
   position: relative; }
 
-/* line 323, scss/shared/_layout.scss */
+/* line 327, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h2 {
   position: relative;
@@ -6416,27 +6416,27 @@ span.ibm-thumbnail span.ibm-video-play {
   clear: both;
   font-size: 2.6em;
   line-height: 1em;
-  text-shadow: 0 1px 0 #FFFFFF;
+  text-shadow: 0 1px 0 #FFF;
   height: auto; }
 
-/* line 336, scss/shared/_layout.scss */
+/* line 340, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h2,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h2 {
   color: #e4e4e4;
-  text-shadow: 0 1px 0 #e4e4e4; }
+  text-shadow: 0 1px 0 #E4E4E4; }
 
-/* line 341, scss/shared/_layout.scss */
+/* line 345, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon p em span,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-backgroud.ibm-ribbon p em span {
   color: #ffcf01; }
 
-/* line 344, scss/shared/_layout.scss */
+/* line 348, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-pane {
   height: 300px; }
 
-/* line 348, scss/shared/_layout.scss */
+/* line 352, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns {
   clear: none;
   height: 300px;
@@ -6446,7 +6446,7 @@ span.ibm-thumbnail span.ibm-video-play {
   float: left;
   padding: 0; }
 
-/* line 357, scss/shared/_layout.scss */
+/* line 361, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
   width: 998px;
   padding: 0;
@@ -6454,7 +6454,7 @@ span.ibm-thumbnail span.ibm-video-play {
   float: none;
   position: relative; }
 
-/* line 364, scss/shared/_layout.scss */
+/* line 368, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav {
   height: 45px;
   margin: -63px auto 0px;
@@ -6462,11 +6462,11 @@ span.ibm-thumbnail span.ibm-video-play {
   text-align: center;
   z-index: 899; }
 
-/* line 371, scss/shared/_layout.scss */
+/* line 375, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav {
   margin: -70px auto 0; }
 
-/* line 374, scss/shared/_layout.scss */
+/* line 378, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
   outline: none !important;
   position: relative;
@@ -6474,45 +6474,45 @@ span.ibm-thumbnail span.ibm-video-play {
   /* IE7 fix */
   padding: 0; }
 
-/* line 382, scss/shared/_layout.scss */
+/* line 386, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
   overflow: visible;
   text-indent: 0px; }
 
-/* line 388, scss/shared/_layout.scss */
+/* line 392, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
   background: url("http://1.www.s81c.com/i/v17/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
   position: relative;
   text-decoration: none;
   /* IE7 fix */ }
 
-/* line 394, scss/shared/_layout.scss */
+/* line 398, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a {
   background-position: 0px -504px !important; }
 
-/* line 400, scss/shared/_layout.scss */
+/* line 404, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a:focus,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a:focus {
   background-position: 0px -415px !important; }
 
-/* line 404, scss/shared/_layout.scss */
+/* line 408, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a.ibm-active,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a.ibm-active {
   background-position: 0px -316px !important; }
 
-/* line 407, scss/shared/_layout.scss */
+/* line 411, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a:hover, .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a:focus {
   outline: none;
   background-position: 0px -110px; }
 
-/* line 411, scss/shared/_layout.scss */
+/* line 415, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a.ibm-active {
   background-position: 0px -1px; }
 
-/* line 414, scss/shared/_layout.scss */
+/* line 418, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
   background-image: none;
   border: 2px solid rgba(205, 205, 205, 0.95);
@@ -6529,7 +6529,7 @@ span.ibm-thumbnail span.ibm-video-play {
   z-index: 899;
   margin-right: 8px; }
 
-/* line 427, scss/shared/_layout.scss */
+/* line 431, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
   border: 2px solid rgba(182, 182, 182, 0.95);
@@ -6541,16 +6541,16 @@ span.ibm-thumbnail span.ibm-video-play {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
 
-/* line 433, scss/shared/_layout.scss */
+/* line 437, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a .ibm-ribbon-view {
   height: 30px;
   width: 45px; }
 
-/* line 437, scss/shared/_layout.scss */
+/* line 441, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-ribbon-view {
   cursor: pointer; }
 
-/* line 443, scss/shared/_layout.scss */
+/* line 447, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next,
@@ -6563,57 +6563,57 @@ span.ibm-thumbnail span.ibm-video-play {
   text-indent: -9999em;
   width: 16px; }
 
-/* line 453, scss/shared/_layout.scss */
+/* line 457, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next {
   background-position: 0 -590px !important; }
 
-/* line 458, scss/shared/_layout.scss */
+/* line 462, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next:hover {
   background-position: 0 -830px !important; }
 
-/* line 463, scss/shared/_layout.scss */
+/* line 467, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev {
   background-position: 0 -470px !important; }
 
-/* line 467, scss/shared/_layout.scss */
+/* line 471, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev:hover {
   background-position: 0 -710px !important; }
 
-/* line 470, scss/shared/_layout.scss */
+/* line 474, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev {
   background-position: 0 -100px;
   left: 200px;
   margin-top: 140px;
   z-index: 1; }
 
-/* line 476, scss/shared/_layout.scss */
+/* line 480, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next {
   background-position: 100% 0;
   margin-top: -160px;
   right: 200px;
   display: none; }
 
-/* line 482, scss/shared/_layout.scss */
+/* line 486, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev:hover {
   background-position: 0px -150px; }
 
-/* line 485, scss/shared/_layout.scss */
+/* line 489, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next:hover {
   background-position: 100% -50px; }
 
-/* line 488, scss/shared/_layout.scss */
+/* line 492, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
   top: -5px; }
 
-/* line 491, scss/shared/_layout.scss */
+/* line 495, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active .ibm-pagination-overlay {
   top: -110px; }
 
-/* line 494, scss/shared/_layout.scss */
+/* line 498, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay {
   display: none;
   background: url("http://1.www.s81c.com/i/v17/lead/lead_pagination_overlay.png") no-repeat 0px 0px;
@@ -6627,11 +6627,11 @@ span.ibm-thumbnail span.ibm-video-play {
   top: -115px;
   left: -255px; }
 
-/* line 507, scss/shared/_layout.scss */
+/* line 511, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a .ibm-pagination-overlay {
   left: -235px; }
 
-/* line 512, scss/shared/_layout.scss */
+/* line 516, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-1,
 #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-2,
 #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-3, #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-4 {
@@ -6643,7 +6643,7 @@ span.ibm-thumbnail span.ibm-video-play {
   width: 60px;
   _margin-left: 10px; }
 
-/* line 521, scss/shared/_layout.scss */
+/* line 525, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay h2 {
   color: #FFDF4E;
   font-size: 12px;
@@ -6657,7 +6657,7 @@ span.ibm-thumbnail span.ibm-video-play {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   width: auto; }
 
-/* line 533, scss/shared/_layout.scss */
+/* line 537, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay p {
   color: #999999;
   font-size: 11.5px;
@@ -6669,75 +6669,75 @@ span.ibm-thumbnail span.ibm-video-play {
   top: 35px;
   width: auto; }
 
-/* line 545, scss/shared/_layout.scss */
+/* line 549, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay.ibm-alternate h2,
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay.ibm-alternate p {
   left: 20px; }
 
-/* line 548, scss/shared/_layout.scss */
+/* line 552, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay:hover h2 {
   color: #FFC; }
 
-/* line 551, scss/shared/_layout.scss */
+/* line 555, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay:hover p {
   color: #CCC; }
 
-/* line 556, scss/shared/_layout.scss */
+/* line 560, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head a.ibm-disabled {
   visibility: hidden; }
 
-/* line 559, scss/shared/_layout.scss */
+/* line 563, scss/shared/_layout.scss */
 .dj_ie7 div#interceptDiv {
   height: 1%; }
 
-/* line 562, scss/shared/_layout.scss */
+/* line 566, scss/shared/_layout.scss */
 .dj_ie6 div#interceptDiv {
   height: 1%; }
 
-/* line 565, scss/shared/_layout.scss */
+/* line 569, scss/shared/_layout.scss */
 .ibm-embed-video {
   height: 355px; }
 
 /* overide homepage logo */
 /*  by default 2nd and 3rd leadspace should not be visible */
-/* line 575, scss/shared/_layout.scss */
+/* line 579, scss/shared/_layout.scss */
 #ibm-lead-2,
 #ibm-lead-3,
 #ibm-leadspace-head.ibm-ribbon div.ibm-columns div.ibm-ribbon-view {
   display: none; }
 
-/* line 578, scss/shared/_layout.scss */
+/* line 582, scss/shared/_layout.scss */
 #ibm-lead-1 div.ibm-col-1-1 {
   width: 990px;
   float: none;
   margin: 0 auto; }
 
 /* non js leadspace */
-/* line 584, scss/shared/_layout.scss */
+/* line 588, scss/shared/_layout.scss */
 #ibm-leadspace-body #ibm-lead-1 {
   height: 300px;
   width: 100%; }
 
 /*End of Multileaf Leadspace */
 /* no leadspace style */
-/* line 591, scss/shared/_layout.scss */
+/* line 595, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace {
   background: none;
   border-bottom: none; }
 
-/* line 595, scss/shared/_layout.scss */
+/* line 599, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace #ibm-leadspace-body {
   padding-bottom: 0px; }
 
-/* line 599, scss/shared/_layout.scss */
+/* line 603, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace-tabs {
   height: 70px; }
 
-/* line 603, scss/shared/_layout.scss */
+/* line 607, scss/shared/_layout.scss */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace + #ibm-pcon {
   margin: 0px auto 20px; }
 
-/* line 607, scss/shared/_layout.scss */
+/* line 611, scss/shared/_layout.scss */
 .ibm-landing-page.ibm-application #ibm-leadspace-head.ibm-no-leadspace + #ibm-pcon {
   margin: -15px auto 20px; }
 

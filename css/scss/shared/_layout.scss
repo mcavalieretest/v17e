@@ -144,27 +144,31 @@
     height:115px !important;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
- padding-top:25px;
- padding-bottom: 20px;
-   }
-  #{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
+	padding-top:25px;
+	padding-bottom: 20px;
+}
+#{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1 {
+	padding-bottom: 10px;
+}
 
- padding-bottom: 10px;
-   }
- #{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate p span {
+#{$ie6Selector} .ibm-landing-page #ibm-leadspace-head.ibm-alternate p span {
     margin-top: 0px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-35-space{
     padding-top:35px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-navigation-trail + h1{
     padding-bottom: 10px;
     padding-top: 9px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-    width: 480px;
-    padding-bottom:0px;
+	width: 480px;
+	padding-bottom:0px;
 }
+
 /* End of styles for short leadsapce */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs {
     min-height: 300px;
@@ -218,7 +222,7 @@
     display: block;
 }
 #ibm-content  #ibm-leadspace-head #ibm-leadspace-body p em span {
-display: block ;
+	display: block ;
 }
 
 
@@ -327,7 +331,7 @@ display: block ;
     clear: both;
     font-size: 2.6em;
     line-height: 1em;
-    text-shadow: 0 1px 0 #FFFFFF;
+    text-shadow: 0 1px 0 #FFF;
 	height: auto;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h1,
@@ -335,7 +339,7 @@ display: block ;
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h2,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h2{
  color: #e4e4e4;
- text-shadow: 0 1px 0 #e4e4e4;
+ text-shadow: 0 1px 0 #E4E4E4;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon p em span,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-backgroud.ibm-ribbon p em span {
