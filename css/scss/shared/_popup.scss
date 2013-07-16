@@ -1,7 +1,7 @@
 // popup styles begin ============================================
 
 .ibm-popup#ibm-top {
-	min-width:390px;
+	min-width: 390px;
 }
 
 .ibm-popup #ibm-content-sidebar,
@@ -13,40 +13,44 @@
 .ibm-popup #ibm-footer,
 .ibm-popup #ibm-related-content,
 .ibm-popup #ibm-footer-module,
-.ibm-popup #ibm-social-tools{
+.ibm-popup #ibm-social-tools {
 	display: none;
 }
+
 .ibm-popup#ibm-top {
 	margin-top: 34px;
 }
-.ibm-popup #ibm-pcon{
- 	background:#fff;
+
+.ibm-popup #ibm-pcon {
+	background: #FFF;
  	margin: 20px auto;
-     padding: 0 0 10px 20px;
-    width:auto;
-    
-}
-.ibm-popup #ibm-masthead {
- 	background:#000;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64',endColorstr='#1B1B1C');
-	@include background-gradient(top, #595C64, #1B1B1C);
-	border-bottom: medium none;
-    height: 32px;
-	min-width:390px;
+ 	padding: 0 0 10px 20px;
+ 	width: auto;
 }
 
-.ibm-popup #ibm-universal-nav #ibm-unav-links{
+.ibm-popup #ibm-masthead {
+	background: #000;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64',endColorstr='#1B1B1C');
+	@include background-gradient(top, #595C64, #1B1B1C);
+	border-bottom: medium none;
+	height: 32px;
+	min-width: 390px;
+}
+
+.ibm-popup #ibm-universal-nav #ibm-unav-links {
 	float: none !important;
 }
 
 .ibm-popup #ibm-universal-nav{
-	height:32px;
-	min-width:390px;
-	 border-bottom: medium none;
-    border-top: medium none;
+	height: 32px;
+	min-width: 390px;
+	border-bottom: medium none;
+	border-top: medium none;
 }
+
 .ibm-popup  #ibm-universal-nav li#ibm-home {
 	width: 160px;
 }
+
 .ibm-popup #ibm-universal-nav li#ibm-home a {
 	background-position: 0px -100px;
 	display: block;
@@ -57,17 +61,19 @@
 	_height: 1%;
 	width: 50px;
 }
+
 .ibm-popup #ibm-universal-nav li#ibm-home a:hover {
 	background-position: 0px -130px;
 }
-.ibm-popup #ibm-universal-nav li#ibm-title{
+
+.ibm-popup #ibm-universal-nav li#ibm-title {
 	color: #CCC;
-    float: right !important;
-    font-size: 0.85em;
-    font-weight: bold;
-    margin: 8px 10px 0;
-    text-align: right;
-    text-shadow: 0 1px 0 #000;
+	float: right !important;
+	font-size: 0.85em;
+	font-weight: bold;
+	margin: 8px 10px 0;
+	text-align: right;
+	text-shadow: 0 1px 0 #000;
 }
 
 .ibm-popup #ibm-leadspace-head #ibm-leadspace-body {
@@ -75,13 +81,13 @@
 	margin: 0;
 }
 
-
 .ibm-popup #ibm-content-main {
-	padding-right:20px;
-	width:95%;
+	padding-right: 20px;
+	width: 95%;
 }
-.ibm-popup #ibm-content #ibm-content-main p.ibm-intro{
-	color:#222;
+
+.ibm-popup #ibm-content #ibm-content-main p.ibm-intro {
+	color: #222;
 	padding-left: 10px;
 }
 
@@ -89,12 +95,14 @@
     padding: 10px 0 10px 10px;
     width: 95%;
 }
+
 .ibm-popup .ibm-buttons-row{
 	padding-bottom: 20px;
     padding-top: 10px;
     text-align: right;
 }
-.ibm-popup iframe{
+
+.ibm-popup iframe {
 	margin: -5px 0 10px 10px; 
 	border:2px solid #CCC; 
 	padding: 0pt;
@@ -110,6 +118,7 @@
     max-width: 480px;
     min-width: 95%;
 }
+
 .ibm-popup .ibm-buttons-row span.ibm-sep {
     clear: none;
     display: inline !important;
