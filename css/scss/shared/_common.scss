@@ -444,21 +444,30 @@ padding: 0;
 }
 
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul ol li.ibm-no-links:hover,
-#ibm-content ul.ibm-no-links li ol li,#ibm-content ul.ibm-no-links li ol li:hover,
-#ibm-com ul.ibm-tabs li, #ibm-com ul.ibm-tabs li:hover,
-#ibm-content ul.ibm-link-list li, #ibm-content ul.ibm-link-list li:hover,
-div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover, 
-#ibm-content ul.ibm-twisty li, #ibm-content ul.ibm-twisty li:hover,
-#ibm-content ul.ibm-live-assistance-list li, #ibm-content ul.ibm-live-assistance-list li:hover,
-#ibm-content ul.ibm-portlet-controls li, #ibm-content ul.ibm-portlet-controls li:hover,
-#ibm-content ul.ibm-directory-link-list li, #ibm-content ul.ibm-directory-link-list li:hover,
-#ibm-content ul.ibm-portrait-module-list li,#ibm-content ul.ibm-portrait-module-list li:hover,
+#ibm-content ul.ibm-no-links li ol li,
+#ibm-content ul.ibm-no-links li ol li:hover,
+#ibm-com ul.ibm-tabs li, 
+#ibm-com ul.ibm-tabs li:hover,
+#ibm-content ul.ibm-link-list li, 
+#ibm-content ul.ibm-link-list li:hover,
+div.dijitDialog ul.ibm-link-list li, 
+div.dijitDialog ul.ibm-link-list li:hover, 
+#ibm-content ul.ibm-twisty li, 
+#ibm-content ul.ibm-twisty li:hover,
+#ibm-content ul.ibm-live-assistance-list li, 
+#ibm-content ul.ibm-live-assistance-list li:hover,
+#ibm-content ul.ibm-directory-link-list li, 
+#ibm-content ul.ibm-directory-link-list li:hover,
+#ibm-content ul.ibm-portrait-module-list li,
+#ibm-content ul.ibm-portrait-module-list li:hover,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-twisty li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li:hover,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-twisty li:hover,
-#ibm-related-content ul.ibm-link-list li, #ibm-related-content ul.ibm-link-list li:hover,
-#ibm-content ul.ibm-twisty li ul li, #ibm-content ul.ibm-twisty li ul li:hover,
+#ibm-related-content ul.ibm-link-list li, 
+#ibm-related-content ul.ibm-link-list li:hover,
+#ibm-content ul.ibm-twisty li ul li, 
+#ibm-content ul.ibm-twisty li ul li:hover,
 #ibm-content table.ibm-data-table td ul.ibm-link-list li,
 #ibm-content table.ibm-data-table td ul.ibm-link-list li:hover {
 	background-image: none;
@@ -1939,44 +1948,7 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
 
 /* Common Code By Tapan============ END */
 
-
-/* portlet styles begin ================================================= */
-
-.ibm-container-head h2,
-.ibm-container-head-first h2,
-.ibm-container-head-second h2,
-.ibm-container-head-third h2 {
-	background: none;
-	border: 0px;
-	float: left;
-}
-#ibm-content ul.ibm-portlet-controls,
-#ibm-content #ibm-content-sidebar ul.ibm-portlet-controls {
-	float: right;
-	padding: 8px 0px 0px 5px;
-	height: 1%;
-}
-#ibm-content ul.ibm-portlet-controls li {
-	float: left;
-	clear: none;
-	margin: 0px;
-	padding: 0px;
-}
-#ibm-content ul.ibm-portlet-controls a {
-	display: block;
-	width: 18px;
-	height: 12px;
-}
-.ibm-portlet-minimize {background:url("#{$imagePath}/i/v17/icons/portlets/minimize_2.gif") no-repeat 2px 0px;}
-.ibm-portlet-maximize {background:url("#{$imagePath}/i/v17/icons/portlets/maximize_2.gif") no-repeat 0px 0px;}
-.ibm-portlet-restore {background:url("#{$imagePath}/i/v17/icons/portlets/restore_2.gif") no-repeat 0px 0px;}
-/* portlet styles end ================================================= */
-
-
 /* Twisty styles begin ============================================== */
-
-
-
 ul.ibm-twisty {
 	display: block;
 	padding:4px 0px;
