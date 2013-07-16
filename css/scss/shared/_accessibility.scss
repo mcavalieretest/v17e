@@ -1,6 +1,7 @@
 // accessibility styles begin ============================================
 
-.flashtext, .ibm-access, 
+.flashtext, 
+.ibm-access, 
 #ibm-content-main form.ibm-column-form p span a span {
 	position: absolute;
 	left: -3000px;
@@ -27,6 +28,8 @@
 }
 
 /* end of the fix */
+
+// .dijit_a11y is used only on high contrast mode
 
 .dijit_a11y .dijitSelectHover,
 .dijit_a11y .dijitSelectFocused {
