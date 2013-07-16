@@ -94,7 +94,15 @@
     padding-top: 10px;
     text-align: right;
 }
-.ibm-popup iframe{margin: -5px 0 10px 10px; border:2px solid #ccc; padding: 0pt; font-family: arial,sans-serif; font-weight: normal; font-size: 0.8em; color: rgb(0, 0, 0);}
+.ibm-popup iframe{
+	margin: -5px 0 10px 10px; 
+	border:2px solid #CCC; 
+	padding: 0pt;
+	font-weight: normal; 
+	font-size: 0.8em; 
+	color: rgb(0, 0, 0);
+}
+
 #ibm-mytext {
     font-size: 0.8em !important;
     font-weight: normal;

@@ -449,7 +449,6 @@ div.ibm-tab-section ul li {
   font-size: 1em !important; }
 
 #ibm-content-head ul#ibm-navigation-trail li {
-  font-family: arial,sans-serif;
   font-size: 0.85em; }
 
 #ibm-content-main p {
@@ -580,7 +579,6 @@ div.ibm-tab-section ul li {
 #ibm-content-main .ibm-col-4-1 h2,
 #ibm-content-main .ibm-col-4-1 h3 {
   font-size: 1em !important;
-  font-family: arial,sans-serif;
   line-height: 1.3em; }
 
 #ibm-content-main .ibm-media .ibm-container.ibm-ribbon h2,
@@ -771,13 +769,11 @@ div#ibm-reg-number {
 
 .ibm-expertise-header {
   font-size: 0.7em;
-  font-weight: bold;
-  font-family: arial,sans-serif; }
+  font-weight: bold; }
 
 .ibm-expertise-namerole {
   line-height: 10px;
-  *line-height: 13px;
-  font-family: arial,sans-serif; }
+  *line-height: 13px; }
 
 .ibm-expertise-expertname {
   font-weight: bold;
@@ -785,9 +781,6 @@ div#ibm-reg-number {
 
 .ibm-expertise-expertrole {
   font-size: 0.6em; }
-
-.ibm-expertise-tooltip {
-  font-family: arial,sans-serif; }
 
 .ibm-expertise-tooltip-expertname {
   font-size: 0.8em;
@@ -798,7 +791,6 @@ div#ibm-reg-number {
   line-height: 11px; }
 
 .ibm-expertise-desc {
-  font-family: arial,sans-serif;
   font-size: 0.7em; }
 
 .ibm-expertise-blog-title {
@@ -860,12 +852,10 @@ div#ibm-overlay-top form.ibm-column-form label {
   font-weight: bold; }
 
 div#ibm-overlay-top p {
-  font-family: arial,sans-serif;
   font-size: 1.2em; }
 
 div#ibm-overlay-top h2 {
   font-size: 1.4em;
-  font-family: arial,sans-serif;
   font-weight: normal; }
 
 .v17 .dijitMenuItem {
@@ -887,7 +877,6 @@ ul.ibm-newsletter span.ibm-newsletter-header {
   font-size: 0.8em; }
 
 #ibm-country-selector #ibm-country-sort {
-  font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 0.7em; }
 
@@ -903,12 +892,11 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 
 #ibm-country-selector ul li {
   font-size: .7em;
-  font-weight: bold;
-  font-family: Arial,sans-serif; }
+  font-weight: bold; }
 
-#ibm-content input[type="text"], #ibm-content input[type="password"],
+#ibm-content input[type="text"],
+#ibm-content input[type="password"],
 #ibm-content textarea {
-  font-family: Arial,sans-serif;
   font-size: 0.95em; }
 
 .dijitSelect .dijitArrowButton .dijitArrowButtonChar {
@@ -8353,23 +8341,10 @@ div#ibm-overlay-top .ibm-buttons-row p.ibm-second {
   clear: none; }
 
 div#ibm-overlay-top p {
-  /*font-family: arial,sans-serif;
-  font-size: 1.2em;*/
   clear: left;
-  background-color: #fff;
-  /*margin-top: 0pt;
-  margin-right: 0px;
-  margin-bottom: 0pt;
-  margin-left: 30px;
-  padding-top: 5px;
-  padding-right: 0pt;
-  padding-bottom: 5px;
-  padding-left: 0pt;*/ }
+  background-color: #fff; }
 
 div#ibm-overlay-top h2 {
-  /*font-size: 1.4em;
-  font-family: arial,sans-serif;
-  font-weight: normal;*/
   background-color: #fff;
   margin: 0 28px;
   padding: 10px 0 0 0; }
@@ -10804,8 +10779,7 @@ form.ibm-single-colum-alternate span table {
   background: url("http://1.www.s81c.com/i/v17/icons/dropdown_sprite.png") no-repeat 100% -3px;
   border: 0px none;
   font-size: 0.8em;
-  font-weight: bold;
-  font-family: Arial,sans-serif; }
+  font-weight: bold; }
 
 #ibm-secondary-tabs.ibm-dropdown-view #ibm-dropdown-content span {
   display: block;
@@ -11462,9 +11436,6 @@ ul.ibm-live-assistance-list li.ibm-generic-link a:link {
   padding-bottom: 0 !important; }
 
 /* features styles end ============================================== */
-/*#ibm-content-sidebar ul.ibm-link-list a {
-	font-family:arial,sans-serif;
-}*/
 table.ibm-data-table {
   border-bottom: 1px solid #CCC;
   width: 100%;
@@ -12286,9 +12257,8 @@ span.ibm-tooltip {
 
 .ibm-popup iframe {
   margin: -5px 0 10px 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #CCC;
   padding: 0pt;
-  font-family: arial,sans-serif;
   font-weight: normal;
   font-size: 0.8em;
   color: black; }

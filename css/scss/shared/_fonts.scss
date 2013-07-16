@@ -90,7 +90,7 @@ src:url("#{$fontPath}/6e86dc78-6a2a-44b2-a48e-267dd190bc17.woff") format("woff")
 // v17 font styles begin ============================================
 
 div, p, span, a, li, strong {
-	font-family: Arial, sans-serif
+	font-family: $defaultFont;
 }
 
 // Masthead Fonts ======================
@@ -480,7 +480,6 @@ div.ibm-tab-section ul li {
 
 
 #ibm-content-head ul#ibm-navigation-trail li {
-	font-family: arial,sans-serif;
 	font-size: 0.85em;
 }
 
@@ -621,7 +620,6 @@ div.ibm-tab-section ul li {
 #ibm-content-main .ibm-col-4-1 h2,
 #ibm-content-main .ibm-col-4-1 h3 {
 	font-size: 1em !important;
-	font-family: arial,sans-serif;
 	line-height: 1.3em;
 }
 
@@ -855,25 +853,20 @@ div#ibm-reg-number {
 
 
 // Expertise locator for www ===================
-.ibm-expertise-header{
+.ibm-expertise-header {
 	font-size:0.7em;
 	font-weight:bold;
-	font-family:arial,sans-serif;
 }
-.ibm-expertise-namerole{
+.ibm-expertise-namerole {
 	line-height: 10px;
 	*line-height: 13px;
-	font-family: arial,sans-serif;
-	}
+}
 .ibm-expertise-expertname{
 	font-weight: bold;
 	font-size:0.7em;
 	}
 .ibm-expertise-expertrole{
 	font-size:0.6em;
-}
-.ibm-expertise-tooltip{
-	font-family: arial,sans-serif;
 }
 .ibm-expertise-tooltip-expertname{
 	font-size:0.8em;
@@ -884,7 +877,6 @@ div#ibm-reg-number {
 	line-height:11px
 }
 .ibm-expertise-desc{
-	font-family:arial,sans-serif;
 	font-size: 0.7em;
 }
 .ibm-expertise-blog-title{
@@ -949,21 +941,19 @@ div.dijitDialog ul li ul li,
 // End of OVERLAY / DIALOG  ====================
 // Validation overlay  ===============
 div#ibm-overlay-top form label {
-		font-weight:bold;
+	font-weight:bold;
 	}
 div#ibm-overlay-top form.ibm-column-form label {
-font-weight:bold;
+	font-weight:bold;
 }
 div#ibm-overlay-top p {
-	font-family: arial,sans-serif;
 	font-size: 1.2em;
-	}
+}
 	
 div#ibm-overlay-top h2 {
 	font-size: 1.4em;
-	font-family: arial,sans-serif;
 	font-weight: normal;
-	}
+}
 // End of Validation overlay ===========
 
 // dijit layout fonts ===============
@@ -995,8 +985,7 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 #ibm-loader{
     font-size: 0.8em;
 }
-#ibm-country-selector #ibm-country-sort{
-	font-family: Arial, sans-serif;
+#ibm-country-selector #ibm-country-sort {
 	font-weight: bold;
 	font-size: 0.7em;
 }
@@ -1008,20 +997,21 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 	font-size: 1.1em;
 	font-weight:bold;
 }
+
 #ibm-country-selector  h2{
 	font-size:0.9em;
 }
-#ibm-country-selector  ul li{
+
+#ibm-country-selector  ul li {
 	font-size: .7em;
 	font-weight:bold;
-	font-family:Arial,sans-serif;
 }
 // End of Locale Selctor
 
 // Form Font ==================
-#ibm-content input[type="text"],#ibm-content input[type="password"],
+#ibm-content input[type="text"],
+#ibm-content input[type="password"],
 #ibm-content textarea {
-	font-family: Arial,sans-serif;
 	font-size: 0.95em;
 }
 .dijitSelect .dijitArrowButton .dijitArrowButtonChar {
@@ -1112,9 +1102,9 @@ form.ibm-column-form label span.ibm-additional-info,
 	font-size: 0.9em;
 }
 #ibm-content-sidebar .ibm-ms-statement .ibm-container-body p {
-	font-family:verdana,arial,sans-serif;
-	font-size:13px;
-	font-weight:bold;
+	font-family: verdana,arial,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
 }
 
 
