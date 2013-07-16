@@ -3046,42 +3046,51 @@ padding: 0;
 #ibm-content-main .ibm-col-6-5 ul li li:hover {
   background: url("http://1.www.s81c.com/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 11px; }
 
-/* line 463, scss/shared/_common.scss */
+/* line 472, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul ol li.ibm-no-links:hover,
-#ibm-content ul.ibm-no-links li ol li, #ibm-content ul.ibm-no-links li ol li:hover,
-#ibm-com ul.ibm-tabs li, #ibm-com ul.ibm-tabs li:hover,
-#ibm-content ul.ibm-link-list li, #ibm-content ul.ibm-link-list li:hover,
-div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
-#ibm-content ul.ibm-twisty li, #ibm-content ul.ibm-twisty li:hover,
-#ibm-content ul.ibm-live-assistance-list li, #ibm-content ul.ibm-live-assistance-list li:hover,
-#ibm-content ul.ibm-portlet-controls li, #ibm-content ul.ibm-portlet-controls li:hover,
-#ibm-content ul.ibm-directory-link-list li, #ibm-content ul.ibm-directory-link-list li:hover,
-#ibm-content ul.ibm-portrait-module-list li, #ibm-content ul.ibm-portrait-module-list li:hover,
+#ibm-content ul.ibm-no-links li ol li,
+#ibm-content ul.ibm-no-links li ol li:hover,
+#ibm-com ul.ibm-tabs li,
+#ibm-com ul.ibm-tabs li:hover,
+#ibm-content ul.ibm-link-list li,
+#ibm-content ul.ibm-link-list li:hover,
+div.dijitDialog ul.ibm-link-list li,
+div.dijitDialog ul.ibm-link-list li:hover,
+#ibm-content ul.ibm-twisty li,
+#ibm-content ul.ibm-twisty li:hover,
+#ibm-content ul.ibm-live-assistance-list li,
+#ibm-content ul.ibm-live-assistance-list li:hover,
+#ibm-content ul.ibm-directory-link-list li,
+#ibm-content ul.ibm-directory-link-list li:hover,
+#ibm-content ul.ibm-portrait-module-list li,
+#ibm-content ul.ibm-portrait-module-list li:hover,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-twisty li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li:hover,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-twisty li:hover,
-#ibm-related-content ul.ibm-link-list li, #ibm-related-content ul.ibm-link-list li:hover,
-#ibm-content ul.ibm-twisty li ul li, #ibm-content ul.ibm-twisty li ul li:hover,
+#ibm-related-content ul.ibm-link-list li,
+#ibm-related-content ul.ibm-link-list li:hover,
+#ibm-content ul.ibm-twisty li ul li,
+#ibm-content ul.ibm-twisty li ul li:hover,
 #ibm-content table.ibm-data-table td ul.ibm-link-list li,
 #ibm-content table.ibm-data-table td ul.ibm-link-list li:hover {
   background-image: none; }
 
-/* line 469, scss/shared/_common.scss */
+/* line 478, scss/shared/_common.scss */
 #ibm-content ul.ibm-link-list li,
 #ibm-related-content ul.ibm-link-list li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li {
   padding-left: 0px; }
 
-/* line 472, scss/shared/_common.scss */
+/* line 481, scss/shared/_common.scss */
 #ibm-com ul.ibm-tabs li {
   clear: none; }
 
-/* line 476, scss/shared/_common.scss */
+/* line 485, scss/shared/_common.scss */
 #ibm-content-head {
   min-height: 70px; }
 
-/* line 482, scss/shared/_common.scss */
+/* line 491, scss/shared/_common.scss */
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
@@ -3095,17 +3104,17 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   *position: relative;
   /*ie6/7 fix*/ }
 
-/* line 492, scss/shared/_common.scss */
+/* line 501, scss/shared/_common.scss */
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
   margin: 0px 10px; }
 
-/* line 496, scss/shared/_common.scss */
+/* line 505, scss/shared/_common.scss */
 #ibm-content-head ul#ibm-navigation-trail li.ibm-first,
 #ibm-content-head ul#ibm-navigation-trail li:first-child {
   padding-left: 0px; }
 
-/* line 501, scss/shared/_common.scss */
+/* line 510, scss/shared/_common.scss */
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li,
 #ibm-content-head ul#ibm-navigation-trail li {
@@ -3116,7 +3125,7 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   margin: 0px;
   padding: 0px 16px 0px 2px; }
 
-/* line 514, scss/shared/_common.scss */
+/* line 523, scss/shared/_common.scss */
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
@@ -3127,56 +3136,56 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   text-decoration: none; }
 
 /*Ordered list definition + ibm-alpha-list + ibm-roman-list*/
-/* line 520, scss/shared/_common.scss */
+/* line 529, scss/shared/_common.scss */
 #ibm-content ol {
   *margin-left: 3px !important; }
 
-/* line 523, scss/shared/_common.scss */
+/* line 532, scss/shared/_common.scss */
 #ibm-content ul li ol li {
   margin-left: 20px;
   padding: 5px 0; }
 
-/* line 528, scss/shared/_common.scss */
+/* line 537, scss/shared/_common.scss */
 #ibm-content ol li ul li {
   padding: 5px 0 5px 8px; }
 
-/* line 533, scss/shared/_common.scss */
+/* line 542, scss/shared/_common.scss */
 #ibm-top #ibm-content li ol,
 #ibm-top #ibm-content li ul {
   padding: 0;
   margin: 0; }
 
-/* line 538, scss/shared/_common.scss */
+/* line 547, scss/shared/_common.scss */
 #ibm-top #ibm-content ol li ol li {
   margin-left: 20px; }
 
-/* line 543, scss/shared/_common.scss */
+/* line 552, scss/shared/_common.scss */
 #ibm-top #ibm-content ul li ol li ul li,
 #ibm-top #ibm-content ul li ol li ul.ibm-no-links li:hover {
   margin: 0;
   padding: 5px 0 5px 8px;
   background: url("http://1.www.s81c.com/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0 10px transparent !important; }
 
-/* line 548, scss/shared/_common.scss */
+/* line 557, scss/shared/_common.scss */
 #ibm-top #ibm-content ul li ol li ul li:hover {
   margin: 0;
   padding: 5px 0 5px 8px;
   background: url("http://1.www.s81c.com/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0 10px transparent !important; }
 
-/* line 554, scss/shared/_common.scss */
+/* line 563, scss/shared/_common.scss */
 #ibm-content ol.ibm-alpha-list {
   list-style-type: lower-alpha !important; }
 
-/* line 558, scss/shared/_common.scss */
+/* line 567, scss/shared/_common.scss */
 #ibm-content ol ol.ibm-alpha-list,
 #ibm-content ol ol.ibm-roman-list {
   *margin-left: 3px; }
 
-/* line 561, scss/shared/_common.scss */
+/* line 570, scss/shared/_common.scss */
 #ibm-content ol.ibm-roman-list {
   list-style-type: lower-roman !important; }
 
-/* line 566, scss/shared/_common.scss */
+/* line 575, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty li ol,
 #ibm-content ul.ibm-portrait-module-list li ol,
 #ibm-content ul.ibm-thumbnail-list li ol {
@@ -3184,13 +3193,13 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   color: #4C4C4C;
   height: auto; }
 
-/* line 573, scss/shared/_common.scss */
+/* line 582, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty li ol li ol,
 #ibm-content ul.ibm-portrait-module-list li ol li ol,
 #ibm-content ul.ibm-thumbnail-list li ol li ol {
   color: #4C4C4C; }
 
-/* line 578, scss/shared/_common.scss */
+/* line 587, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty li div.ibm-twisty-body ol li,
 #ibm-content ul.ibm-portrait-module-list li ol li,
 #ibm-content ul.ibm-thumbnail-list li ol li {
@@ -3200,44 +3209,44 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   min-height: 10px;
   *min-height: auto; }
 
-/* line 586, scss/shared/_common.scss */
+/* line 595, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li ol,
 #ibm-content ul.ibm-thumbnail-list li ol {
   margin-left: 70px !important;
   *margin-left: 73px !important; }
 
-/* line 591, scss/shared/_common.scss */
+/* line 600, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li ol li ol,
 #ibm-content ul.ibm-thumbnail-list li ol li ol {
   margin-left: 0 !important;
   *margin-left: 3px !important; }
 
 /*End of OL definition*/
-/* line 600, scss/shared/_common.scss */
+/* line 609, scss/shared/_common.scss */
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:hover,
 #ibm-content-head ul#ibm-navigation-trail li a:hover {
   text-decoration: underline; }
 
-/* line 604, scss/shared/_common.scss */
+/* line 613, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-columns .ibm-container h2 {
   display: block; }
 
-/* line 608, scss/shared/_common.scss */
+/* line 617, scss/shared/_common.scss */
 #ibm-content .ibm-share-this {
   border-top: 2px solid #666; }
 
-/* line 612, scss/shared/_common.scss */
+/* line 621, scss/shared/_common.scss */
 #ibm-content .ibm-share-this ul {
   padding: 10px 0px 16px; }
 
-/* line 615, scss/shared/_common.scss */
+/* line 624, scss/shared/_common.scss */
 #ibm-content .ibm-share-this ul li {
   background-image: none !important;
   float: left;
   clear: none;
   padding: 0 10px 0px 0px; }
 
-/* line 621, scss/shared/_common.scss */
+/* line 630, scss/shared/_common.scss */
 #ibm-content .ibm-share-this ul li a {
   display: block;
   height: 15px;
@@ -3246,22 +3255,22 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   text-indent: -9999px;
   overflow: hidden; }
 
-/* line 629, scss/shared/_common.scss */
+/* line 638, scss/shared/_common.scss */
 #ibm-content .ibm-share-this ul li a:focus {
   outline: none; }
 
-/* line 632, scss/shared/_common.scss */
+/* line 641, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module ul li {
   clear: none; }
 
-/* line 637, scss/shared/_common.scss */
+/* line 646, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list,
 #ibm-content-main .ibm-columns ul.ibm-stock-list {
   list-style-type: none;
   margin: 0;
   padding: 10px 0; }
 
-/* line 643, scss/shared/_common.scss */
+/* line 652, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list li,
 #ibm-content-main .ibm-columns ul.ibm-stock-list li {
   clear: both;
@@ -3270,14 +3279,14 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
   display: block;
   height: 1%; }
 
-/* line 651, scss/shared/_common.scss */
+/* line 660, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list h3,
 #ibm-content-main .ibm-columns ul.ibm-stock-list h3 {
   margin: 0;
   padding: 0 0 3px 0;
   float: left; }
 
-/* line 657, scss/shared/_common.scss */
+/* line 666, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-container-body ul.ibm-stock-list p,
 #ibm-content-main .ibm-columns ul.ibm-stock-list p {
   padding: 0 0 3px 0 !important;
@@ -3286,70 +3295,70 @@ div.dijitDialog ul.ibm-link-list li, div.dijitDialog ul.ibm-link-list li:hover,
 
 /* ORDER / LIST STYLES END */
 /*#ibm-content .ibm-container, Blocked by Tapan for snippet code*/
-/* line 671, scss/shared/_common.scss */
+/* line 680, scss/shared/_common.scss */
 #ibm-media .ibm-container {
   margin: 10px 0;
   width: auto;
   border-top: 2px solid #333; }
 
-/* line 677, scss/shared/_common.scss */
+/* line 686, scss/shared/_common.scss */
 #ibm-content .ibm-container {
   clear: both;
   width: auto;
   border-top: 2px solid #666;
   margin: 0 10px 10px; }
 
-/* line 684, scss/shared/_common.scss */
+/* line 693, scss/shared/_common.scss */
 ul li div.ibm-container {
   margin-top: 8px !important; }
 
-/* line 687, scss/shared/_common.scss */
+/* line 696, scss/shared/_common.scss */
 #ibm-content .ibm-container:first-child {
   border-top: 2px solid #666; }
 
-/* line 690, scss/shared/_common.scss */
+/* line 699, scss/shared/_common.scss */
 #ibm-content .ibm-container.ibm-alternate {
   border-top: 2px solid #CCC;
   padding-bottom: 10px;
   margin: 0 10px;
   width: auto; }
 
-/* line 696, scss/shared/_common.scss */
+/* line 705, scss/shared/_common.scss */
 .dj_ie6 #ibm-top #ibm-content .ibm-container.ibm-alternate {
   border-top: 2px solid #CCC; }
 
-/* line 701, scss/shared/_common.scss */
+/* line 710, scss/shared/_common.scss */
 #ibm-content .ibm-three-column .ibm-container,
 #ibm-content .ibm-columns .ibm-container {
   margin: 0 0 10px; }
 
-/* line 706, scss/shared/_common.scss */
+/* line 715, scss/shared/_common.scss */
 #ibm-content #ibm-content-main img.ibm-intro {
   margin-top: 10px; }
 
-/* line 710, scss/shared/_common.scss */
+/* line 719, scss/shared/_common.scss */
 #ibm-content #ibm-content-main p.ibm-intro,
 #ibm-content #ibm-content-main h2.ibm-intro {
   margin: 0;
   padding: 6px 0;
   color: #444; }
 
-/* line 717, scss/shared/_common.scss */
+/* line 726, scss/shared/_common.scss */
 #ibm-content #ibm-content-main p.ibm-intro + p,
 #ibm-content #ibm-content-main h2.ibm-intro + p {
   margin-top: 6px !important; }
 
-/* line 721, scss/shared/_common.scss */
+/* line 730, scss/shared/_common.scss */
 #ibm-content #ibm-content-main h2.ibm-alternate {
   margin: 0;
   padding: 12px 0 0;
   color: #444; }
 
-/* line 726, scss/shared/_common.scss */
+/* line 735, scss/shared/_common.scss */
 #ibm-content #ibm-content-main .ibm-columns h2.ibm-alternate {
   margin: 5px 10px; }
 
-/* line 742, scss/shared/_common.scss */
+/* line 751, scss/shared/_common.scss */
 #ibm-content #ibm-content-main .ibm-columns .ibm-col-1-1 h2.ibm-alternate,
 #ibm-content #ibm-content-main .ibm-columns .ibm-col-2-1 h2.ibm-alternate,
 #ibm-content #ibm-content-main .ibm-columns .ibm-col-4-1 h2.ibm-alternate,
@@ -3366,40 +3375,40 @@ ul li div.ibm-container {
 #ibm-content #ibm-content-main .ibm-columns .ibm-col-6-5 h2.ibm-alternate {
   margin: 0; }
 
-/* line 746, scss/shared/_common.scss */
+/* line 755, scss/shared/_common.scss */
 #ibm-content #ibm-content-sidebar .ibm-container {
   border-top: 2px solid #666;
   margin: 0 0 20px; }
 
-/* line 752, scss/shared/_common.scss */
+/* line 761, scss/shared/_common.scss */
 #ibm-content .ibm-container.ibm-secondary,
 #ibm-media .ibm-container.ibm-secondary {
   border-top: 2px solid #CCC; }
 
-/* line 755, scss/shared/_common.scss */
+/* line 764, scss/shared/_common.scss */
 #ibm-content .ibm-container.ibm-container-hide {
   overflow: hidden; }
 
-/* line 760, scss/shared/_common.scss */
+/* line 769, scss/shared/_common.scss */
 #ibm-media .ibm-container h2,
 #ibm-media .ibm-container h3 {
   display: inline-block;
   padding: 7px 0 2px; }
 
-/* line 765, scss/shared/_common.scss */
+/* line 774, scss/shared/_common.scss */
 #ibm-content .ibm-container h3 + p {
   padding-top: 0 !important; }
 
-/* line 769, scss/shared/_common.scss */
+/* line 778, scss/shared/_common.scss */
 .ibm-container-body {
   clear: both; }
 
-/* line 773, scss/shared/_common.scss */
+/* line 782, scss/shared/_common.scss */
 #ibm-content .ibm-container-body p,
 #ibm-content .ibm-columns p {
   padding: 6px 0; }
 
-/* line 778, scss/shared/_common.scss */
+/* line 787, scss/shared/_common.scss */
 #ibm-content .ibm-container-body ul.ibm-link-list p,
 #ibm-content .ibm-columns ul.ibm-link-list p {
   padding: 0 0 0 16px !important; }
@@ -3407,28 +3416,28 @@ ul li div.ibm-container {
 /* Commented as it was conflicting v17 page lists--HEMANG P
 enabled by Saling V - megamenu and localselector update applied*/
 /* Added anchor link A-Z style */
-/* line 786, scss/shared/_common.scss */
+/* line 795, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az {
   padding-bottom: 40px; }
 
-/* line 789, scss/shared/_common.scss */
+/* line 798, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az + ul.ibm-rule {
   margin-bottom: 35px; }
 
-/* line 792, scss/shared/_common.scss */
+/* line 801, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list {
   padding-top: 10px; }
 
-/* line 797, scss/shared/_common.scss */
+/* line 806, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list span,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a {
   padding: 5px 0; }
 
-/* line 800, scss/shared/_common.scss */
+/* line 809, scss/shared/_common.scss */
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list span {
   padding-left: 10px; }
 
-/* line 803, scss/shared/_common.scss */
+/* line 812, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li {
   display: inline-block;
   *display: inline;
@@ -3436,23 +3445,23 @@ enabled by Saling V - megamenu and localselector update applied*/
   padding: 0px;
   text-align: center; }
 
-/* line 811, scss/shared/_common.scss */
+/* line 820, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a,
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list a {
   color: #333;
   text-decoration: none !important;
   filter: none; }
 
-/* line 818, scss/shared/_common.scss */
+/* line 827, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor {
   padding-left: 10px; }
 
-/* line 822, scss/shared/_common.scss */
+/* line 831, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor {
   color: #777; }
 
-/* line 831, scss/shared/_common.scss */
+/* line 840, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:hover,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
@@ -3461,7 +3470,7 @@ enabled by Saling V - megamenu and localselector update applied*/
   padding-bottom: 1px;
   padding-top: 3px; }
 
-/* line 841, scss/shared/_common.scss */
+/* line 850, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list a,
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list a:hover,
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
@@ -3472,7 +3481,7 @@ enabled by Saling V - megamenu and localselector update applied*/
   padding-bottom: 3px;
   padding-top: 3px; }
 
-/* line 854, scss/shared/_common.scss */
+/* line 863, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:hover,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
@@ -3485,7 +3494,7 @@ enabled by Saling V - megamenu and localselector update applied*/
   color: #FFF;
   text-decoration: none; }
 
-/* line 867, scss/shared/_common.scss */
+/* line 876, scss/shared/_common.scss */
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
@@ -3494,7 +3503,7 @@ enabled by Saling V - megamenu and localselector update applied*/
   margin-left: 6px;
   margin-right: -6px; }
 
-/* line 876, scss/shared/_common.scss */
+/* line 885, scss/shared/_common.scss */
 .dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
 .dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
 .dj_ie6 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
@@ -3504,79 +3513,79 @@ enabled by Saling V - megamenu and localselector update applied*/
   margin-right: 0px;
   padding: 2px; }
 
-/* line 883, scss/shared/_common.scss */
+/* line 892, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:visited {
   color: #969; }
 
-/* line 887, scss/shared/_common.scss */
+/* line 896, scss/shared/_common.scss */
 .dj_ie7 #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor {
   position: relative;
   top: -5px; }
 
-/* line 891, scss/shared/_common.scss */
+/* line 900, scss/shared/_common.scss */
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li {
   width: 21.39px; }
 
-/* line 894, scss/shared/_common.scss */
+/* line 903, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list li {
   width: 36.153px; }
 
-/* line 897, scss/shared/_common.scss */
+/* line 906, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li {
   width: 23.84px; }
 
 /* End of anchor link A-Z style */
 /* Style for directory link list */
-/* line 904, scss/shared/_common.scss */
+/* line 913, scss/shared/_common.scss */
 #ibm-content-main ul.ibm-directory-link-list {
   list-style-type: none;
   margin: 0px;
   padding: 0 0 30px; }
 
-/* line 909, scss/shared/_common.scss */
+/* line 918, scss/shared/_common.scss */
 #ibm-content-main ul.ibm-directory-link-list li {
   padding-left: 0px;
   line-height: 1.8em; }
 
-/* line 913, scss/shared/_common.scss */
+/* line 922, scss/shared/_common.scss */
 #ibm-content-main ul.ibm-directory-link-list a:link {
   text-decoration: none;
   color: #333; }
 
-/* line 917, scss/shared/_common.scss */
+/* line 926, scss/shared/_common.scss */
 #ibm-content-main ul.ibm-directory-link-list a:hover {
   text-decoration: underline;
   color: #222; }
 
-/* line 921, scss/shared/_common.scss */
+/* line 930, scss/shared/_common.scss */
 #ibm-content-main ul.ibm-directory-link-list a:visited {
   text-decoration: none;
   color: #969; }
 
 /* End of directory link list style */
 /* Spacing for anchor name */
-/* line 928, scss/shared/_common.scss */
+/* line 937, scss/shared/_common.scss */
 .ibm-anchor {
   margin-top: 20px !important; }
 
 /* End of spacing for anchor name */
 /* Right side icon style */
-/* line 935, scss/shared/_common.scss */
+/* line 944, scss/shared/_common.scss */
 a.ibm-anchor-down-link-alternate {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_icon_sprites_v2.png") no-repeat 100% -3998px !important;
   padding: 0 20px 3px 0; }
 
-/* line 940, scss/shared/_common.scss */
+/* line 949, scss/shared/_common.scss */
 #ibm-content ul.ibm-no-links a.ibm-anchor-down-link-alternate {
   text-decoration: none;
   color: #666; }
 
-/* line 944, scss/shared/_common.scss */
+/* line 953, scss/shared/_common.scss */
 #ibm-content ul.ibm-no-links a.ibm-anchor-down-link-alternate:hover {
   color: #222; }
 
 /* #ibm-content ul.ibm-bullet-list li a, #ibm-related-content ul.ibm-bullet-list li a */
-/* line 951, scss/shared/_common.scss */
+/* line 960, scss/shared/_common.scss */
 a.ibm-external-link-alternate,
 #ibm-content ul.ibm-bullet-list li a.ibm-external-link-alternate,
 #ibm-related-content ul.ibm-bullet-list li a.ibm-external-link-alternate {
@@ -3585,19 +3594,19 @@ a.ibm-external-link-alternate,
 
 /* End of right side Icon Style */
 /*#ibm-content li, Blocked by Tapan */
-/* line 959, scss/shared/_common.scss */
+/* line 968, scss/shared/_common.scss */
 #ibm-media li {
   padding-top: 10px; }
 
 /* Rule style =======*/
-/* line 964, scss/shared/_common.scss */
+/* line 973, scss/shared/_common.scss */
 div.ibm-rule {
   border-top: 1px dotted #CCC;
   height: 1px;
   clear: both;
   margin: 10px; }
 
-/* line 971, scss/shared/_common.scss */
+/* line 980, scss/shared/_common.scss */
 div.ibm-alternate-rule,
 div.ibm-rule-alternate {
   background-color: #CCC;
@@ -3605,17 +3614,17 @@ div.ibm-rule-alternate {
   clear: both;
   margin: 10px; }
 
-/* line 978, scss/shared/_common.scss */
+/* line 987, scss/shared/_common.scss */
 div.ibm-alternate-rule-1 {
   background-color: #666;
   height: 2px; }
 
-/* line 984, scss/shared/_common.scss */
+/* line 993, scss/shared/_common.scss */
 div.ibm-alternate-rule-2 {
   background-color: #CCC;
   height: 2px; }
 
-/* line 999, scss/shared/_common.scss */
+/* line 1008, scss/shared/_common.scss */
 .ibm-container-body div.ibm-rule,
 .ibm-container-body div.ibm-alternate-rule,
 .ibm-container-body div.ibm-rule-alternate,
@@ -3628,13 +3637,13 @@ div.ibm-alternate-rule-2 {
 .ibm-columns div.ibm-alternate-rule-2 {
   margin: 10px 0px; }
 
-/* line 1006, scss/shared/_common.scss */
+/* line 1015, scss/shared/_common.scss */
 .ibm-container-body .ibm-column + div.ibm-rule,
 .ibm-container-body .ibm-column + div.ibm-alternate-rule,
 .ibm-container-body .ibm-column + div.ibm-rule-alternate {
   margin-top: 45px !important; }
 
-/* line 1015, scss/shared/_common.scss */
+/* line 1024, scss/shared/_common.scss */
 div.ibm-rule h2,
 div.ibm-rule h3,
 div.ibm-alternate-rule h2,
@@ -3644,7 +3653,7 @@ div.ibm-rule-alternate h3 {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 1022, scss/shared/_common.scss */
+/* line 1031, scss/shared/_common.scss */
 h2.ibm-rule,
 h3.ibm-rule,
 ul.ibm-rule,
@@ -3653,7 +3662,7 @@ ol.ibm-rule {
   padding-top: 6px;
   margin-top: 10px !important; }
 
-/* line 1034, scss/shared/_common.scss */
+/* line 1043, scss/shared/_common.scss */
 h2.ibm-alternate-rule,
 h3.ibm-alternate-rule,
 ul.ibm-alternate-rule,
@@ -3666,12 +3675,12 @@ ol.ibm-rule-alternate {
   padding-top: 6px;
   margin-top: 10px !important; }
 
-/* line 1041, scss/shared/_common.scss */
+/* line 1050, scss/shared/_common.scss */
 p + h2.ibm-alternate-rule,
 p + h2.ibm-rule-alternate {
   margin-top: 20px; }
 
-/* line 1050, scss/shared/_common.scss */
+/* line 1059, scss/shared/_common.scss */
 div.ibm-rule hr,
 div.ibm-alternate-rule hr,
 div.ibm-rule-alternate hr,
@@ -3679,13 +3688,13 @@ div.ibm-alternate-rule-1 hr,
 div.ibm-alternate-rule-2 hr {
   display: none; }
 
-/* line 1056, scss/shared/_common.scss */
+/* line 1065, scss/shared/_common.scss */
 .ibm-landing-page div.ibm-rule,
 .ibm-landing-page div.ibm-alternate-rule,
 .ibm-landing-page div.ibm-rule-alternate {
   margin: 10px 20px; }
 
-/* line 1064, scss/shared/_common.scss */
+/* line 1073, scss/shared/_common.scss */
 .ibm-landing-page .ibm-container-body div.ibm-rule,
 .ibm-landing-page .ibm-container-body div.ibm-alternate-rule,
 .ibm-landing-page .ibm-container-body div.ibm-rule-alternate,
@@ -3695,25 +3704,25 @@ div.ibm-alternate-rule-2 hr {
   margin: 10px 0; }
 
 /* End of Rule Style */
-/* line 1070, scss/shared/_common.scss */
+/* line 1079, scss/shared/_common.scss */
 #ibm-media {
   width: 980px;
   margin: 0px auto; }
 
 /* common content styles end ============================================ */
-/* line 1077, scss/shared/_common.scss */
+/* line 1086, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content p {
   padding: 10px 20px; }
 
-/* line 1080, scss/shared/_common.scss */
+/* line 1089, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content #ibm-content-head p {
   padding: 10px; }
 
-/* line 1084, scss/shared/_common.scss */
+/* line 1093, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-columns p {
   padding: 6px 10px; }
 
-/* line 1106, scss/shared/_common.scss */
+/* line 1115, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-container p,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 p,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-2-1 p,
@@ -3736,17 +3745,17 @@ div.ibm-alternate-rule-2 hr {
 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 p {
   padding: 6px 0; }
 
-/* line 1112, scss/shared/_common.scss */
+/* line 1121, scss/shared/_common.scss */
 #ibm-content .ibm-columns h2 + p,
 #ibm-content .ibm-columns h3 + p {
   padding-top: 0 !important;
   margin-top: -2px !important; }
 
-/* line 1116, scss/shared/_common.scss */
+/* line 1125, scss/shared/_common.scss */
 #ibm-content .ibm-columns h2.ibm-alternate + p {
   margin-top: 4px !important; }
 
-/* line 1124, scss/shared/_common.scss */
+/* line 1133, scss/shared/_common.scss */
 #ibm-content .ibm-columns h2.ibm-rule + p,
 #ibm-content .ibm-columns h3.ibm-rule + p,
 #ibm-content .ibm-columns h2.ibm-rule-alternate + p,
@@ -3755,89 +3764,89 @@ div.ibm-alternate-rule-2 hr {
 #ibm-content .ibm-columns h3.ibm-alternate-rule + p {
   margin-top: 0 !important; }
 
-/* line 1129, scss/shared/_common.scss */
+/* line 1138, scss/shared/_common.scss */
 #ibm-content .ibm-columns p + h2,
 #ibm-content .ibm-columns p + h3 {
   margin-top: 6px; }
 
-/* line 1133, scss/shared/_common.scss */
+/* line 1142, scss/shared/_common.scss */
 #ibm-content .ibm-columns ul + h2,
 #ibm-content .ibm-columns ul + h3 {
   padding-top: 8px; }
 
-/* line 1139, scss/shared/_common.scss */
+/* line 1148, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-container,
 #ibm-media .ibm-container {
   margin: 10px 20px; }
 
-/* line 1144, scss/shared/_common.scss */
+/* line 1153, scss/shared/_common.scss */
 .ibm-liquid #ibm-content .ibm-columns .ibm-container,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-container {
   margin: 10px 0; }
 
-/* line 1149, scss/shared/_common.scss */
+/* line 1158, scss/shared/_common.scss */
 #ibm-content-head h1 {
   clear: both;
   margin: 0;
   padding: 15px 10px 5px 8px; }
 
-/* line 1155, scss/shared/_common.scss */
+/* line 1164, scss/shared/_common.scss */
 #ibm-content #ibm-leadspace-head h1 {
   padding: 10px 10px 0 !important; }
 
-/* line 1162, scss/shared/_common.scss */
+/* line 1171, scss/shared/_common.scss */
 #ibm-content #ibm-leadspace-head img {
   padding-left: 10px;
   padding-top: 20px; }
 
 /* for smaller leadspace image */
-/* line 1168, scss/shared/_common.scss */
+/* line 1177, scss/shared/_common.scss */
 #ibm-leadspace-small {
   padding: 0 10px; }
 
-/* line 1171, scss/shared/_common.scss */
+/* line 1180, scss/shared/_common.scss */
 #ibm-leadspace-small.ibm-intro img {
   margin-bottom: 14px; }
 
-/* line 1174, scss/shared/_common.scss */
+/* line 1183, scss/shared/_common.scss */
 #ibm-leadspace-small.ibm-intro p {
   margin-bottom: 5px;
   padding-left: 0; }
 
 /* end of small leadspace image */
-/* line 1181, scss/shared/_common.scss */
+/* line 1190, scss/shared/_common.scss */
 #ibm-content-head #ibm-navigation-trail + h1 {
   padding-top: 0; }
 
-/* line 1184, scss/shared/_common.scss */
+/* line 1193, scss/shared/_common.scss */
 #ibm-content-head p {
   padding: 0 10px;
   clear: both; }
 
-/* line 1190, scss/shared/_common.scss */
+/* line 1199, scss/shared/_common.scss */
 #ibm-content-head img {
   margin: 10px 10px 0; }
 
-/* line 1196, scss/shared/_common.scss */
+/* line 1205, scss/shared/_common.scss */
 #ibm-leadspace.ibm-intro img {
   margin-bottom: 14px; }
 
-/* line 1200, scss/shared/_common.scss */
+/* line 1209, scss/shared/_common.scss */
 #ibm-leadspace.ibm-intro p {
   margin-bottom: 5px;
   padding-left: 0; }
 
-/* line 1209, scss/shared/_common.scss */
+/* line 1218, scss/shared/_common.scss */
 #ibm-leadspace ul.ibm-error li,
 #ibm-content .ibm-container .ibm-container-body ul.ibm-error li,
 #ibm-content .ibm-columns ul.ibm-error li {
   background: url("http://1.www.s81c.com/i/v17/bullets/ibm_bullet_red_on.gif") no-repeat 1px 11px; }
 
-/* line 1213, scss/shared/_common.scss */
+/* line 1222, scss/shared/_common.scss */
 .ibm-price {
   color: #00834e !important; }
 
-/* line 1218, scss/shared/_common.scss */
+/* line 1227, scss/shared/_common.scss */
 #ibm-content-main p.ibm-ind-link.ibm-next-page,
 #ibm-content-main p.ibm-ind-link.ibm-back-to-top {
   clear: both;
@@ -3845,13 +3854,13 @@ div.ibm-alternate-rule-2 hr {
   height: 1%;
   padding-bottom: 0; }
 
-/* line 1227, scss/shared/_common.scss */
+/* line 1236, scss/shared/_common.scss */
 #ibm-content-main p.ibm-ind-link.ibm-back-to-top a.ibm-anchor-up-link,
 #ibm-content-main p.ibm-ind-link.ibm-next-page a.ibm-forward-link,
 #ibm-content-main p.ibm-ind-link.ibm-next-page a.ibm-forward-em-link {
   display: inline; }
 
-/* line 1232, scss/shared/_common.scss */
+/* line 1241, scss/shared/_common.scss */
 p.ibm-ind-link a,
 ul.ibm-link-list a {
   display: block;
@@ -3859,59 +3868,59 @@ ul.ibm-link-list a {
   padding: 0 0 0 16px;
   text-decoration: none; }
 
-/* line 1239, scss/shared/_common.scss */
+/* line 1248, scss/shared/_common.scss */
 p.ibm-ind-link.ibm-next-page a {
   padding: 0 16px 0 0; }
 
-/* line 1245, scss/shared/_common.scss */
+/* line 1254, scss/shared/_common.scss */
 a.ibm-feature-link,
 p.ibm-ind-link a:visited,
 ul.ibm-link-list a:visited {
   text-decoration: none; }
 
-/* line 1249, scss/shared/_common.scss */
+/* line 1258, scss/shared/_common.scss */
 p.ibm-ind-link a:hover, ul.ibm-link-list a:hover,
 a.ibm-feature-link:hover {
   text-decoration: underline !important; }
 
-/* line 1253, scss/shared/_common.scss */
+/* line 1262, scss/shared/_common.scss */
 .ibm-container-body.ibm-two-column p.ibm-ind-link {
   clear: both; }
 
-/* line 1257, scss/shared/_common.scss */
+/* line 1266, scss/shared/_common.scss */
 div.ibm-list-next {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-/* line 1262, scss/shared/_common.scss */
+/* line 1271, scss/shared/_common.scss */
 .ibm-indent {
   margin-left: 16px; }
 
-/* line 1266, scss/shared/_common.scss */
+/* line 1275, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module img {
   margin: 5px 10px 5px 0;
   float: left; }
 
-/* line 1271, scss/shared/_common.scss */
+/* line 1280, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module ul {
   clear: right;
   margin-left: 70px; }
 
-/* line 1276, scss/shared/_common.scss */
+/* line 1285, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module ul.ibm-link-list li p {
   padding-left: 16px; }
 
-/* line 1279, scss/shared/_common.scss */
+/* line 1288, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module .ibm-container-body {
   min-height: 55px; }
 
 /* PORTRAIT-MODULE-LIST STYLES START */
-/* line 1286, scss/shared/_common.scss */
+/* line 1295, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list,
 #ibm-content ul.ibm-thumbnail-list {
   padding: 0 0 5px; }
 
-/* line 1290, scss/shared/_common.scss */
+/* line 1299, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list > li,
 #ibm-content ul.ibm-thumbnail-list > li {
   background: none !important;
@@ -3921,36 +3930,36 @@ div.ibm-list-next {
   height: 1%;
   min-height: 45px; }
 
-/* line 1299, scss/shared/_common.scss */
+/* line 1308, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li ul.ibm-twisty {
   margin-left: 0 !important; }
 
-/* line 1304, scss/shared/_common.scss */
+/* line 1313, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li ul.ibm-twisty > li,
 #ibm-content ul.ibm-portrait-module-list li:hover ul.ibm-twisty > li:hover {
   background: none; }
 
-/* line 1309, scss/shared/_common.scss */
+/* line 1318, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list ul,
 #ibm-content ul.ibm-thumbnail-list ul {
   margin-left: 62px !important;
   margin-top: 0 !important; }
 
-/* line 1315, scss/shared/_common.scss */
+/* line 1324, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list ul.ibm-bullet-list,
 #ibm-content ul.ibm-thumbnail-list ul.ibm-bullet-list {
   padding-left: 8px !important; }
 
-/* line 1321, scss/shared/_common.scss */
+/* line 1330, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list.ibm-thumbnail ul,
 #ibm-content ul.ibm-thumbnail-list.ibm-thumbnail ul {
   margin-left: 60px; }
 
-/* line 1327, scss/shared/_common.scss */
+/* line 1336, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li:hover ul li:hover {
   background: url("http://1.www.s81c.com/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0 10px; }
 
-/* line 1333, scss/shared/_common.scss */
+/* line 1342, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list li ul.ibm-no-links li:hover,
 #ibm-content ul.ibm-portrait-module-list li ul li.ibm-no-links:hover,
 #ibm-content ul.ibm-portrait-module-list ul li,
@@ -3961,35 +3970,35 @@ div.ibm-list-next {
   height: 1%;
   min-height: 0; }
 
-/* line 1342, scss/shared/_common.scss */
+/* line 1351, scss/shared/_common.scss */
 #ibm-content .ibm-portrait-module-list ul.ibm-link-list li,
 #ibm-content .ibm-portrait-module-list ul.ibm-link-list li:hover {
   background-image: none !important; }
 
-/* line 1347, scss/shared/_common.scss */
+/* line 1356, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list img,
 #ibm-content ul.ibm-thumbnail-list img {
   float: left;
   padding-bottom: 10px;
   padding-right: 10px; }
 
-/* line 1353, scss/shared/_common.scss */
+/* line 1362, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list p,
 #ibm-content ul.ibm-thumbnail-list p {
   padding: 0 !important;
   margin-left: 70px; }
 
-/* line 1361, scss/shared/_common.scss */
+/* line 1370, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list p a,
 #ibm-content ul.ibm-thumbnail-list p a {
   display: inline-block; }
 
-/* line 1365, scss/shared/_common.scss */
+/* line 1374, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list.ibm-thumbnail p,
 #ibm-content ul.ibm-thumbnail-list.ibm-thumbnail p {
   margin-left: 60px; }
 
-/* line 1376, scss/shared/_common.scss */
+/* line 1385, scss/shared/_common.scss */
 #ibm-content .ibm-container-body ul.ibm-portrait-module-list h2,
 #ibm-content .ibm-container-body ul.ibm-portrait-module-list h3,
 #ibm-content .ibm-container-body ul.ibm-thumbnail-list h2,
@@ -4001,7 +4010,7 @@ div.ibm-list-next {
   display: block;
   margin: 0 0 4px 70px; }
 
-/* line 1390, scss/shared/_common.scss */
+/* line 1399, scss/shared/_common.scss */
 #ibm-content .ibm-container-body ul.ibm-portrait-module-list.ibm-thumbnail h2,
 #ibm-content .ibm-container-body ul.ibm-portrait-module-list.ibm-thumbnail h3,
 #ibm-content .ibm-container-body ul.ibm-thumbnail-list.ibm-thumbnail h2,
@@ -4012,12 +4021,12 @@ div.ibm-list-next {
 #ibm-content .ibm-columns ul.ibm-thumbnail-list.ibm-thumbnail h3 {
   margin-left: 60px; }
 
-/* line 1395, scss/shared/_common.scss */
+/* line 1404, scss/shared/_common.scss */
 .ibm-landing-page .ibm-container.ibm-playlist.ibm-portrait ul.ibm-portrait-module-list h3,
 .ibm-landing-page .ibm-container.ibm-playlist.ibm-portrait ul.ibm-thumbnail-list h3 {
   padding-top: 6px; }
 
-/* line 1404, scss/shared/_common.scss */
+/* line 1413, scss/shared/_common.scss */
 #ibm-content h3 a,
 #ibm-content ul.ibm-portrait-module-list h2 a,
 #ibm-content ul.ibm-portrait-module-list h3 a,
@@ -4025,7 +4034,7 @@ div.ibm-list-next {
 #ibm-content ul.ibm-thumbnail-list h3 a {
   text-decoration: none; }
 
-/* line 1411, scss/shared/_common.scss */
+/* line 1420, scss/shared/_common.scss */
 #ibm-content ul.ibm-portrait-module-list h2 a:hover,
 #ibm-content ul.ibm-portrait-module-list h3 a:hover,
 #ibm-content ul.ibm-thumbnail-list h2 a:hover,
@@ -4033,25 +4042,25 @@ div.ibm-list-next {
   text-decoration: underline; }
 
 /* PORTRAIT-MODULE-LIST STYLES END */
-/* line 1419, scss/shared/_common.scss */
+/* line 1428, scss/shared/_common.scss */
 #ibm-content-main .ibm-three-column .ibm-column,
 #ibm-content-main .ibm-four-column .ibm-column {
   float: left;
   padding-right: 20px;
   width: 172px; }
 
-/* line 1425, scss/shared/_common.scss */
+/* line 1434, scss/shared/_common.scss */
 #ibm-content-main .ibm-three-column,
 #ibm-content-main .ibm-four-column {
   clear: both; }
 
-/* line 1430, scss/shared/_common.scss */
+/* line 1439, scss/shared/_common.scss */
 .ibm-content-expand #ibm-content-main .ibm-three-column .ibm-column,
 .ibm-content-expand #ibm-content-main .ibm-four-column .ibm-column {
   width: 232px; }
 
 /*style for partial sidebar */
-/* line 1435, scss/shared/_common.scss */
+/* line 1444, scss/shared/_common.scss */
 .ibm-content-expand .ibm-columns .ibm-inset {
   border: 0;
   float: right;
@@ -4059,33 +4068,33 @@ div.ibm-list-next {
   padding: 0; }
 
 /* End of style */
-/* line 1443, scss/shared/_common.scss */
+/* line 1452, scss/shared/_common.scss */
 #ibm-content-main .ibm-three-column .ibm-column.ibm-first {
   padding-left: 10px; }
 
-/* line 1450, scss/shared/_common.scss */
+/* line 1459, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-three-column .ibm-column.ibm-first,
 #ibm-content-main .ibm-columns .ibm-three-column .ibm-column.ibm-first {
   padding-left: 0; }
 
-/* line 1454, scss/shared/_common.scss */
+/* line 1463, scss/shared/_common.scss */
 #ibm-content-main .ibm-three-column .ibm-column.ibm-third {
   padding-right: 0; }
 
-/* line 1458, scss/shared/_common.scss */
+/* line 1467, scss/shared/_common.scss */
 div.ibm-column.ibm-list-container {
   padding: 5px 0; }
 
-/* line 1460, scss/shared/_common.scss */
+/* line 1469, scss/shared/_common.scss */
 div.ibm-column.ibm-list-container h3,
 div.ibm-column.ibm-list-container .ibm-rule {
   margin: 5px 0; }
 
-/* line 1463, scss/shared/_common.scss */
+/* line 1472, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list {
   padding: 8px 0; }
 
-/* line 1466, scss/shared/_common.scss */
+/* line 1475, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list li {
   clear: both;
   padding: 0;
@@ -4093,7 +4102,7 @@ div.ibm-column.ibm-list-container .ibm-rule {
   display: block;
   height: 1%; }
 
-/* line 1473, scss/shared/_common.scss */
+/* line 1482, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list h3 {
   margin: 0;
   margin-top: -1px;
@@ -4104,22 +4113,22 @@ div.ibm-column.ibm-list-container .ibm-rule {
   font-weight: bold;
   line-height: 1.5em; }
 
-/* line 1483, scss/shared/_common.scss */
+/* line 1492, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content ol.ibm-article-list h3 {
   margin-top: 0px;
   line-height: 1.2em; }
 
-/* line 1489, scss/shared/_common.scss */
+/* line 1498, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-6-4 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-6-5 ol.ibm-article-list h3 {
   margin-top: -2px; }
 
-/* line 1494, scss/shared/_common.scss */
+/* line 1503, scss/shared/_common.scss */
 #ibm-content .ibm-col-5-4 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-4-3 ol.ibm-article-list h3 {
   margin-top: -1px; }
 
-/* line 1502, scss/shared/_common.scss */
+/* line 1511, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-4-2 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-5-2 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-5-3 ol.ibm-article-list h3,
@@ -4127,32 +4136,32 @@ div.ibm-column.ibm-list-container .ibm-rule {
 .ibm-landing-page #ibm-content .ibm-col-6-3 ol.ibm-article-list h3 {
   margin-top: 2px; }
 
-/* line 1506, scss/shared/_common.scss */
+/* line 1515, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list h4 {
   margin: 0 0 -5px 105px;
   padding: 0; }
 
-/* line 1510, scss/shared/_common.scss */
+/* line 1519, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list p {
   margin-left: 105px;
   padding: 4px 0; }
 
-/* line 1515, scss/shared/_common.scss */
+/* line 1524, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list a,
 #ibm-content ol.ibm-article-list a:hover {
   text-decoration: underline; }
 
-/* line 1519, scss/shared/_common.scss */
+/* line 1528, scss/shared/_common.scss */
 #ibm-content ol.ibm-article-list p.ibm-ind-link a,
 #ibm-content ol.ibm-article-list ul.ibm-link-list a {
   text-decoration: none; }
 
-/* line 1524, scss/shared/_common.scss */
+/* line 1533, scss/shared/_common.scss */
 #ibm-content-main .ibm-container .ibm-container-body dl {
   margin: 0;
   padding: 5px; }
 
-/* line 1529, scss/shared/_common.scss */
+/* line 1538, scss/shared/_common.scss */
 .ibm-container h2 {
   padding: 5px 0;
   height: auto;
@@ -4160,27 +4169,27 @@ div.ibm-column.ibm-list-container .ibm-rule {
 
 /* twitter changes required in screen.source.css */
 /* style moved from _dijit.source.css */
-/* line 1537, scss/shared/_common.scss */
+/* line 1546, scss/shared/_common.scss */
 .ibm-twitter-list {
   padding-top: 0; }
 
-/* line 1540, scss/shared/_common.scss */
+/* line 1549, scss/shared/_common.scss */
 #ibm-content-sidebar ul.ibm-link-list li {
   border-top: 1px dotted #CCC; }
 
-/* line 1543, scss/shared/_common.scss */
+/* line 1552, scss/shared/_common.scss */
 .ibm-twitter-list li {
   border-bottom: 1px solid #eee;
   margin-bottom: 5px; }
 
-/* line 1547, scss/shared/_common.scss */
+/* line 1556, scss/shared/_common.scss */
 .ibm-twitter-list li a {
   padding-left: 18px;
   color: #00649D !important; }
 
 /* End of twitter style */
 /* code sample containers */
-/* line 1558, scss/shared/_common.scss */
+/* line 1567, scss/shared/_common.scss */
 div.ibm-code-sample {
   background-color: #F7F7F7;
   color: #666;
@@ -4190,7 +4199,7 @@ div.ibm-code-sample {
   padding: 0 10px;
   border: 1px solid #CCC; }
 
-/* line 1567, scss/shared/_common.scss */
+/* line 1576, scss/shared/_common.scss */
 div.ibm-alternate-code-sample {
   background-color: #F7F7F7;
   border: 1px solid #ccc;
@@ -4200,7 +4209,7 @@ div.ibm-alternate-code-sample {
 /*div.ibm-columns div.ibm-code-sample {
 	 margin: 10px;	
 }*/
-/* line 1579, scss/shared/_common.scss */
+/* line 1588, scss/shared/_common.scss */
 .ibm-landing-page div.ibm-columns div.ibm-code-sample,
 .ibm-landing-page div.ibm-columns div.ibm-alternate-code-sample,
 div.ibm-columns div.ibm-code-sample {
@@ -4208,26 +4217,26 @@ div.ibm-columns div.ibm-code-sample {
 
 /* end of code sample  section */
 /* inset styles */
-/* line 1587, scss/shared/_common.scss */
+/* line 1596, scss/shared/_common.scss */
 #ibm-content-main p img.ibm-inset {
   float: left;
   margin: 5px 20px 12px 0px;
   padding: 0px; }
 
-/* line 1592, scss/shared/_common.scss */
+/* line 1601, scss/shared/_common.scss */
 #ibm-content-main p img.ibm-inset.ibm-alternate {
   float: right;
   border: 0px none;
   margin: 5px 0px 12px 20px;
   padding: 0px; }
 
-/* line 1599, scss/shared/_common.scss */
+/* line 1608, scss/shared/_common.scss */
 .ibm-inset-img-caption.ibm-alternate {
   clear: right;
   float: right;
   padding: 0 0 0 10px; }
 
-/* line 1605, scss/shared/_common.scss */
+/* line 1614, scss/shared/_common.scss */
 .ibm-inset-img-caption {
   color: #666;
   float: left;
@@ -4236,13 +4245,13 @@ div.ibm-columns div.ibm-code-sample {
 
 /* inset styles */
 /* button styles begin ============================================== */
-/* line 1617, scss/shared/_common.scss */
+/* line 1626, scss/shared/_common.scss */
 a.ibm-btn-pri,
 a.ibm-btn-sec {
   display: inline-block;
   text-decoration: none; }
 
-/* line 1648, scss/shared/_common.scss */
+/* line 1657, scss/shared/_common.scss */
 a.ibm-btn-pri,
 a.ibm-btn-sec,
 input.ibm-btn-pri,
@@ -4294,7 +4303,7 @@ input.ibm-btn-view-sec {
   text-align: center;
   cursor: pointer; }
 
-/* line 1692, scss/shared/_common.scss */
+/* line 1701, scss/shared/_common.scss */
 a.ibm-btn-pri:hover,
 a.ibm-btn-arrow-pri:hover,
 input.ibm-btn-pri:hover,
@@ -4331,7 +4340,7 @@ input.ibm-btn-view-sec:hover {
   -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
 
-/* line 1724, scss/shared/_common.scss */
+/* line 1733, scss/shared/_common.scss */
 a.ibm-btn-pri:focus,
 a.ibm-btn-arrow-pri:focus,
 input.ibm-btn-pri:focus,
@@ -4368,7 +4377,7 @@ input.ibm-btn-view-sec:focus {
   -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
 
-/* line 1756, scss/shared/_common.scss */
+/* line 1765, scss/shared/_common.scss */
 a.ibm-btn-pri:active,
 a.ibm-btn-arrow-pri:active,
 input.ibm-btn-pri:active,
@@ -4407,17 +4416,17 @@ input.ibm-btn-view-sec:active {
   -moz-box-shadow: inset 0px 1px 3px #c1c1c1;
   box-shadow: inset 0px 1px 3px #c1c1c1; }
 
-/* line 1765, scss/shared/_common.scss */
+/* line 1774, scss/shared/_common.scss */
 a.ibm-btn-pri:active,
 a.ibm-btn-arrow-pri:active,
 a.ibm-btn-sec:active {
   padding: 6px 20px 5px; }
 
-/* line 1769, scss/shared/_common.scss */
+/* line 1778, scss/shared/_common.scss */
 input::-moz-focus-inner {
   border: 0; }
 
-/* line 1775, scss/shared/_common.scss */
+/* line 1784, scss/shared/_common.scss */
 input.ibm-btn-go,
 input.ibm-btn-view {
   border: 0;
@@ -4426,32 +4435,32 @@ input.ibm-btn-view {
   height: 30px;
   margin-bottom: -13px; }
 
-/* line 1782, scss/shared/_common.scss */
+/* line 1791, scss/shared/_common.scss */
 input.ibm-btn-go {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px 0px; }
 
-/* line 1785, scss/shared/_common.scss */
+/* line 1794, scss/shared/_common.scss */
 input.ibm-btn-go:hover {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px -40px; }
 
-/* line 1788, scss/shared/_common.scss */
+/* line 1797, scss/shared/_common.scss */
 input.ibm-btn-go:active, input.ibm-btn-go:focus {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px -80px; }
 
-/* line 1791, scss/shared/_common.scss */
+/* line 1800, scss/shared/_common.scss */
 input.ibm-btn-view {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px -120px; }
 
-/* line 1794, scss/shared/_common.scss */
+/* line 1803, scss/shared/_common.scss */
 input.ibm-btn-view:hover {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px -160px; }
 
-/* line 1797, scss/shared/_common.scss */
+/* line 1806, scss/shared/_common.scss */
 input.ibm-btn-view:active, input.ibm-btn-view:focus {
   background: url("http://1.www.s81c.com/i/v17/buttons/btn-sprite.png") no-repeat 0px -200px; }
 
 /* Small button style */
-/* line 1802, scss/shared/_common.scss */
+/* line 1811, scss/shared/_common.scss */
 #ibm-top a.ibm-btn-small, #ibm-top input.ibm-btn-small {
   min-width: 96px;
   min-width: 90px\9;
@@ -4466,18 +4475,18 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
   padding: 5px;
   text-align: center; }
 
-/* line 1813, scss/shared/_common.scss */
+/* line 1822, scss/shared/_common.scss */
 .ibm-col-1-1 .ibm-btn-small {
   font-size: .8em; }
 
-/* line 1817, scss/shared/_common.scss */
+/* line 1826, scss/shared/_common.scss */
 p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small {
   min-width: 75px !important;
   padding: 4px 10px !important; }
 
 /* End of small button style*/
 /* HC Mode styles for buttons*/
-/* line 1850, scss/shared/_common.scss */
+/* line 1859, scss/shared/_common.scss */
 .dijit_a11y input.ibm-btn-pri,
 .dijit_a11y input.ibm-btn-sec,
 .dijit_a11y input.ibm-btn-arrow-pri,
@@ -4507,7 +4516,7 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small {
   border: 1px outset #FFF;
   filter: none; }
 
-/* line 1927, scss/shared/_common.scss */
+/* line 1936, scss/shared/_common.scss */
 .dijit_a11y input.ibm-btn-pri:hover,
 .dijit_a11y input.ibm-btn-arrow-pri:hover,
 .dijit_a11y input.ibm-btn-cancel-pri:hover,
@@ -4582,7 +4591,7 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small {
 .dijit_a11y input.ibm-btn-view-sec:active {
   border: 1px inset #FFF; }
 
-/* line 1932, scss/shared/_common.scss */
+/* line 1941, scss/shared/_common.scss */
 .dijit_a11y input.ibm-btn-go,
 .dijit_a11y input.ibm-btn-view {
   background: #FFF;
@@ -4590,66 +4599,23 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small {
 
 /* button styles end ============================================== */
 /* Common Code By Tapan============ END */
-/* portlet styles begin ================================================= */
-/* line 1948, scss/shared/_common.scss */
-.ibm-container-head h2,
-.ibm-container-head-first h2,
-.ibm-container-head-second h2,
-.ibm-container-head-third h2 {
-  background: none;
-  border: 0px;
-  float: left; }
-
-/* line 1954, scss/shared/_common.scss */
-#ibm-content ul.ibm-portlet-controls,
-#ibm-content #ibm-content-sidebar ul.ibm-portlet-controls {
-  float: right;
-  padding: 8px 0px 0px 5px;
-  height: 1%; }
-
-/* line 1959, scss/shared/_common.scss */
-#ibm-content ul.ibm-portlet-controls li {
-  float: left;
-  clear: none;
-  margin: 0px;
-  padding: 0px; }
-
-/* line 1965, scss/shared/_common.scss */
-#ibm-content ul.ibm-portlet-controls a {
-  display: block;
-  width: 18px;
-  height: 12px; }
-
-/* line 1970, scss/shared/_common.scss */
-.ibm-portlet-minimize {
-  background: url("http://1.www.s81c.com/i/v17/icons/portlets/minimize_2.gif") no-repeat 2px 0px; }
-
-/* line 1971, scss/shared/_common.scss */
-.ibm-portlet-maximize {
-  background: url("http://1.www.s81c.com/i/v17/icons/portlets/maximize_2.gif") no-repeat 0px 0px; }
-
-/* line 1972, scss/shared/_common.scss */
-.ibm-portlet-restore {
-  background: url("http://1.www.s81c.com/i/v17/icons/portlets/restore_2.gif") no-repeat 0px 0px; }
-
-/* portlet styles end ================================================= */
 /* Twisty styles begin ============================================== */
-/* line 1980, scss/shared/_common.scss */
+/* line 1952, scss/shared/_common.scss */
 ul.ibm-twisty {
   display: block;
   padding: 4px 0px;
   height: 1%;
   /* fix an issue with Webkit */ }
 
-/* line 1985, scss/shared/_common.scss */
+/* line 1957, scss/shared/_common.scss */
 ul.ibm-twisty li {
   padding: 5px 0px !important; }
 
-/* line 1988, scss/shared/_common.scss */
+/* line 1960, scss/shared/_common.scss */
 ul.ibm-twisty ul.ibm-bullet-list li {
   padding-left: 11px !important; }
 
-/* line 1993, scss/shared/_common.scss */
+/* line 1965, scss/shared/_common.scss */
 ul.ibm-twisty li a.ibm-twisty-trigger {
   display: block;
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_ON.png") no-repeat 0px -1201px;
@@ -4658,11 +4624,11 @@ ul.ibm-twisty li a.ibm-twisty-trigger {
   overflow: hidden;
   width: 16px; }
 
-/* line 2001, scss/shared/_common.scss */
+/* line 1973, scss/shared/_common.scss */
 ul.ibm-twisty li a.ibm-twisty-trigger-closed {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_ON.png") no-repeat -2px -1001px !important; }
 
-/* line 2008, scss/shared/_common.scss */
+/* line 1980, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty li a.ibm-twisty-trigger-closed,
@@ -4670,7 +4636,7 @@ ul.ibm-twisty li a.ibm-twisty-trigger-closed {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty li a.ibm-twisty-trigger-closed {
   background-position: -2px -997px !important; }
 
-/* line 2015, scss/shared/_common.scss */
+/* line 1987, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty li a.ibm-twisty-trigger,
@@ -4678,7 +4644,7 @@ ul.ibm-twisty li a.ibm-twisty-trigger-closed {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty li a.ibm-twisty-trigger {
   background-position: 0px -1198px; }
 
-/* line 2022, scss/shared/_common.scss */
+/* line 1994, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul ul.ibm-twisty,
 #ibm-content-main .ibm-col-4-3 ul ul.ibm-twisty,
 #ibm-content-main .ibm-col-5-4 ul ul.ibm-twisty,
@@ -4686,37 +4652,37 @@ ul.ibm-twisty li a.ibm-twisty-trigger-closed {
 #ibm-content-main .ibm-col-6-5 ul ul.ibm-twisty {
   line-height: 1.375em; }
 
-/* line 2028, scss/shared/_common.scss */
+/* line 2000, scss/shared/_common.scss */
 ul.ibm-twisty li a.ibm-twisty-trigger img {
   height: 16px;
   width: 16px; }
 
-/* line 2032, scss/shared/_common.scss */
+/* line 2004, scss/shared/_common.scss */
 ul.ibm-twisty li .ibm-twisty-head {
   display: block;
   margin-left: 16px;
   cursor: pointer; }
 
-/* line 2037, scss/shared/_common.scss */
+/* line 2009, scss/shared/_common.scss */
 ul.ibm-twisty li div.ibm-twisty-body {
   clear: left;
   margin-left: 16px; }
 
-/* line 2041, scss/shared/_common.scss */
+/* line 2013, scss/shared/_common.scss */
 ul.ibm-twisty ul.ibm-form-element-list {
   margin-left: 0px;
   padding-left: 16px; }
 
 /* Alternate twisty styles for +/- icon begin ================================================ */
-/* line 2048, scss/shared/_common.scss */
+/* line 2020, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat -1px -601px; }
 
-/* line 2051, scss/shared/_common.scss */
+/* line 2023, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") repeat 0px -801px !important; }
 
-/* line 2058, scss/shared/_common.scss */
+/* line 2030, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed,
@@ -4724,7 +4690,7 @@ ul.ibm-twisty ul.ibm-form-element-list {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed {
   background-position: 0px -798px !important; }
 
-/* line 2065, scss/shared/_common.scss */
+/* line 2037, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger,
@@ -4734,15 +4700,15 @@ ul.ibm-twisty ul.ibm-form-element-list {
 
 /* End of Alternate twisty styles for +/- icon==================  */
 /* Blue Version of twisty =============================  */
-/* line 2072, scss/shared/_common.scss */
+/* line 2044, scss/shared/_common.scss */
 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat -2px -1001px transparent !important; }
 
-/* line 2075, scss/shared/_common.scss */
+/* line 2047, scss/shared/_common.scss */
 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat 0 -1201px transparent; }
 
-/* line 2082, scss/shared/_common.scss */
+/* line 2054, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed,
@@ -4750,7 +4716,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed {
   background-position: -2px -997px !important; }
 
-/* line 2089, scss/shared/_common.scss */
+/* line 2061, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-4 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger,
 #ibm-content .ibm-col-6-5 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger,
@@ -4758,115 +4724,115 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
   background-position: 0px -1198px; }
 
-/* line 2093, scss/shared/_common.scss */
+/* line 2065, scss/shared/_common.scss */
 ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
   color: #00649D; }
 
 /* End of Blue version of twisty ==================== */
-/* line 2100, scss/shared/_common.scss */
+/* line 2072, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty.ibm-alternate li a:link,
 #ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head {
   color: #0C323C;
   cursor: pointer; }
 
-/* line 2106, scss/shared/_common.scss */
+/* line 2078, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty.ibm-alternate li a:hover,
 #ibm-content ul.ibm-twisty.ibm-alternate span.ibm-twisty-head:hover {
   color: #003546; }
 
-/* line 2110, scss/shared/_common.scss */
+/* line 2082, scss/shared/_common.scss */
 #ibm-content .ibm-container-body ul.ibm-twisty {
   padding: 3px 0 0 3px; }
 
-/* line 2114, scss/shared/_common.scss */
+/* line 2086, scss/shared/_common.scss */
 #ibm-content ul.ibm-twisty.ibm-alternate li {
   padding: 4px 0; }
 
 /* Alternate twisty styles for show/hide style end================================================ */
 /* Show/hide styles begin =========================================== */
-/* line 2121, scss/shared/_common.scss */
+/* line 2093, scss/shared/_common.scss */
 .ibm-simple-show-hide .ibm-container-body {
   padding-bottom: 4px; }
 
-/* line 2124, scss/shared/_common.scss */
+/* line 2096, scss/shared/_common.scss */
 .ibm-simple-show-hide p.ibm-show-hide-controls {
   color: #666;
   display: none; }
 
-/* line 2129, scss/shared/_common.scss */
+/* line 2101, scss/shared/_common.scss */
 .ibm-simple-show-hide p.ibm-show-hide-controls a,
 .ibm-simple-show-hide h3 a.ibm-show-hide-link {
   text-decoration: none; }
 
-/* line 2133, scss/shared/_common.scss */
+/* line 2105, scss/shared/_common.scss */
 .ibm-simple-show-hide h3 a.ibm-show-hide-link:hover {
   color: #222 !important; }
 
-/* line 2136, scss/shared/_common.scss */
+/* line 2108, scss/shared/_common.scss */
 .ibm-simple-show-hide p.ibm-show-hide-controls a.ibm-active {
   color: #666; }
 
-/* line 2141, scss/shared/_common.scss */
+/* line 2113, scss/shared/_common.scss */
 #ibm-content .ibm-container.ibm-show-hide,
 #ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide {
   border-top: 0px none;
   margin-bottom: 0px; }
 
-/* line 2145, scss/shared/_common.scss */
+/* line 2117, scss/shared/_common.scss */
 .ibm-landing-page #ibm-content .ibm-container.ibm-show-hide {
   margin-bottom: 5px !important; }
 
-/* line 2148, scss/shared/_common.scss */
+/* line 2120, scss/shared/_common.scss */
 #ibm-content .ibm-container.ibm-show-hide .ibm-container-body {
   margin-bottom: 10px; }
 
 /* showhide fix for twitter module when it is inside accordion */
-/* line 2154, scss/shared/_common.scss */
+/* line 2126, scss/shared/_common.scss */
 .ibm-show-hide .ibm-twitter-module h2 {
   border-top: 0 !important;
   font-weight: normal; }
 
-/* line 2160, scss/shared/_common.scss */
+/* line 2132, scss/shared/_common.scss */
 .ibm-show-hide .ibm-twitter-module h2 a {
   background: none !important;
   color: #666; }
 
-/* line 2165, scss/shared/_common.scss */
+/* line 2137, scss/shared/_common.scss */
 .ibm-show-hide .ibm-twitter-module {
   margin-bottom: 0 !important; }
 
-/* line 2169, scss/shared/_common.scss */
+/* line 2141, scss/shared/_common.scss */
 .ibm-show-hide .ibm-video .ibm-container {
   border-top: 0 !important;
   margin: 0 !important; }
 
 /* showhide fix for video module when it is inside accordion */
-/* line 2176, scss/shared/_common.scss */
+/* line 2148, scss/shared/_common.scss */
 .ibm-show-hide .ibm-video h2 {
   border-top: 0 !important;
   font-weight: normal; }
 
-/* line 2182, scss/shared/_common.scss */
+/* line 2154, scss/shared/_common.scss */
 .ibm-show-hide .ibm-video h2 a {
   background: none !important;
   color: #666; }
 
-/* line 2187, scss/shared/_common.scss */
+/* line 2159, scss/shared/_common.scss */
 .ibm-show-hide .ibm-video {
   margin-top: 0 !important;
   border-top: 0 !important; }
 
-/* line 2192, scss/shared/_common.scss */
+/* line 2164, scss/shared/_common.scss */
 .ibm-show-hide .ibm-video .ibm-container {
   border-top: 0 !important;
   margin: 0 !important; }
 
-/* line 2202, scss/shared/_common.scss */
+/* line 2174, scss/shared/_common.scss */
 .ibm-show-hide h2 {
   border-top: 2px solid #666 !important;
   width: 100%; }
 
-/* line 2207, scss/shared/_common.scss */
+/* line 2179, scss/shared/_common.scss */
 .ibm-show-hide h2 a {
   display: block;
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_OFF.png") no-repeat 100% -1602px;
@@ -4874,52 +4840,52 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
   text-decoration: none;
   color: #000; }
 
-/* line 2217, scss/shared/_common.scss */
+/* line 2189, scss/shared/_common.scss */
 .dj_ie6 .ibm-show-hide h2 a {
   width: 98%; }
 
-/* line 2221, scss/shared/_common.scss */
+/* line 2193, scss/shared/_common.scss */
 .dj_ie6 #ibm-content-sidebar .ibm-show-hide h2 {
   width: 90%; }
 
-/* line 2224, scss/shared/_common.scss */
+/* line 2196, scss/shared/_common.scss */
 .ibm-landing-page .ibm-show-hide h2 a {
   background-position: 100% -1602px; }
 
-/* line 2230, scss/shared/_common.scss */
+/* line 2202, scss/shared/_common.scss */
 #ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide h2 a {
   color: #333; }
 
-/* line 2234, scss/shared/_common.scss */
+/* line 2206, scss/shared/_common.scss */
 .ibm-show-hide h2 a:hover,
 .ibm-landing-page .ibm-show-hide h2 a:hover {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat 100% -1602px; }
 
-/* line 2238, scss/shared/_common.scss */
+/* line 2210, scss/shared/_common.scss */
 .ibm-show-hide h2 a.ibm-show-active,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active {
   background-position: 100% -1402px;
   /*background-image: none;*/ }
 
-/* line 2243, scss/shared/_common.scss */
+/* line 2215, scss/shared/_common.scss */
 .ibm-show-hide h2 a.ibm-show-active:hover,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:hover {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat 100% -1402px; }
 
-/* line 2247, scss/shared/_common.scss */
+/* line 2219, scss/shared/_common.scss */
 .ibm-show-hide h2 a.ibm-show-active:visited,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:visited {
   color: #000; }
 
 /* Show/hide styles end ============================================= */
-/* line 2254, scss/shared/_common.scss */
+/* line 2226, scss/shared/_common.scss */
 .ibm-form-note,
 .ibm-item-note,
 .ibm-item-note-alternate, .ibm-footnote p {
   color: #767676 !important; }
 
 /* IBM reg number for Venzuala and china */
-/* line 2259, scss/shared/_common.scss */
+/* line 2231, scss/shared/_common.scss */
 div#ibm-reg-number {
   background: #333;
   color: #999;
@@ -4927,23 +4893,23 @@ div#ibm-reg-number {
   padding: 20px 0;
   text-align: center; }
 
-/* line 2269, scss/shared/_common.scss */
+/* line 2241, scss/shared/_common.scss */
 div#ibm-reg-number a:link,
 div#ibm-reg-number a:visited,
 div#ibm-reg-number a:hover {
   color: #999; }
 
 /* End of the style */
-/* line 2273, scss/shared/_common.scss */
+/* line 2245, scss/shared/_common.scss */
 .ibm-required {
   color: #D9182D; }
 
-/* line 2276, scss/shared/_common.scss */
+/* line 2248, scss/shared/_common.scss */
 .ibm-important, .ibm-important p {
   color: #B8471B !important; }
 
 /* IBM Legal text Style */
-/* line 2281, scss/shared/_common.scss */
+/* line 2253, scss/shared/_common.scss */
 #ibm-content-main .ibm-legal-text,
 #ibm-content-main .ibm-legal {
   background: none;
@@ -4953,12 +4919,12 @@ div#ibm-reg-number a:hover {
   text-align: left;
   width: 620px; }
 
-/* line 2291, scss/shared/_common.scss */
+/* line 2263, scss/shared/_common.scss */
 #ibm-content-main .ibm-legal-text .ibm-required,
 #ibm-content-main .ibm-legal .ibm-required {
   color: #D9182D; }
 
-/* line 2295, scss/shared/_common.scss */
+/* line 2267, scss/shared/_common.scss */
 .ibm-legal-text .ibm-required,
 .ibm-legal .ibm-required {
   color: #999;
@@ -4967,7 +4933,7 @@ div#ibm-reg-number a:hover {
   margin: 0 5px 12px 0;
   padding-left: 10px; }
 
-/* line 2303, scss/shared/_common.scss */
+/* line 2275, scss/shared/_common.scss */
 .ibm-legal-text, .ibm-legal {
   background: none repeat 0 0 #333;
   color: #999;
@@ -4979,7 +4945,7 @@ div#ibm-reg-number a:hover {
 
 /* End of the Legal text */
 /* Cross links style */
-/* line 2317, scss/shared/_common.scss */
+/* line 2289, scss/shared/_common.scss */
 .ibm-cross-links {
   clear: right;
   float: right;
@@ -4990,14 +4956,14 @@ div#ibm-reg-number a:hover {
 /* End of cross link style */
 /* Anchor links fix */
 /* both element has to be placed near desired anchor and "div.ibm-anchor-pointer a" should contain this anchor's ID' */
-/* line 2330, scss/shared/_common.scss */
+/* line 2302, scss/shared/_common.scss */
 div.ibm-anchor-pointer {
   visibility: visible;
   display: block;
   position: absolute;
   _position: relative; }
 
-/* line 2338, scss/shared/_common.scss */
+/* line 2310, scss/shared/_common.scss */
 div.ibm-anchor-pointer a {
   position: absolute;
   *position: relative;
@@ -5008,33 +4974,33 @@ div.ibm-anchor-pointer a {
 
 /* End of Anchor links fix */
 /* IE7 Buttons Extra Padding Bug fix - ad more classes here if needed */
-/* line 2353, scss/shared/_common.scss */
+/* line 2325, scss/shared/_common.scss */
 input.ibm-btn-arrow-sec {
   *overflow: visible; }
 
 /* Specific for Mobile styles */
 /* mobile styles begin ============================================ */
-/* line 2360, scss/shared/_common.scss */
+/* line 2332, scss/shared/_common.scss */
 .ibm-mobile {
   display: none !important; }
 
 /* mobile styles end ============================================ */
 /* Styles for pull-quote ==============================  */
-/* line 2365, scss/shared/_common.scss */
+/* line 2337, scss/shared/_common.scss */
 div.ibm-pull-quote.ibm-inset {
   float: right;
   margin: 5px 15px 0px 0;
   padding: 0 0 0 18px;
   width: 295px; }
 
-/* line 2371, scss/shared/_common.scss */
+/* line 2343, scss/shared/_common.scss */
 div.ibm-pull-quote.ibm-inset.ibm-alternate {
   float: left;
   margin: 5px 20px 0px 0px;
   padding: 0px;
   width: 295px; }
 
-/* line 2379, scss/shared/_common.scss */
+/* line 2351, scss/shared/_common.scss */
 .dj_ie6 #ibm-top div.ibm-pull-quote.ibm-inset.ibm-alternate {
   _float: left;
   _margin: 5px 20px 0px 0px;
@@ -5042,35 +5008,35 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate {
   _width: 295px;
   border-top: 0px none; }
 
-/* line 2390, scss/shared/_common.scss */
+/* line 2362, scss/shared/_common.scss */
 div.ibm-pull-quote blockquote p,
 div.ibm-pull-quote.ibm-inset blockquote p,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p {
   color: #555 !important;
   display: block; }
 
-/* line 2397, scss/shared/_common.scss */
+/* line 2369, scss/shared/_common.scss */
 div.ibm-pull-quote blockquote p em,
 div.ibm-pull-quote.ibm-inset blockquote p em,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
   display: block; }
 
-/* line 2401, scss/shared/_common.scss */
+/* line 2373, scss/shared/_common.scss */
 .dj_ie6 #ibm-top .ibm-alternate-font blockquote p,
 .dj_ie6 #ibm-top blockquote p {
   padding: 0px !important; }
 
 /* w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles */
-/* line 2406, scss/shared/_common.scss */
+/* line 2378, scss/shared/_common.scss */
 #ibm-top blockquote {
   margin: 0; }
 
-/* line 2411, scss/shared/_common.scss */
+/* line 2383, scss/shared/_common.scss */
 #ibm-top .ibm-pullquote-source, #ibm-top .ibm-pullquote-source-alternate {
   color: #777;
   margin-top: -10px; }
 
-/* line 2416, scss/shared/_common.scss */
+/* line 2388, scss/shared/_common.scss */
 .ibm-pullquote-open {
   color: #BBB;
   margin-left: -18px;
@@ -5078,32 +5044,32 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
   position: absolute;
   margin-top: 5px; }
 
-/* line 2423, scss/shared/_common.scss */
+/* line 2395, scss/shared/_common.scss */
 .ibm-pullquote-close {
   color: #BBB;
   position: absolute;
   margin-left: 2px;
   margin-top: 7px; }
 
-/* line 2429, scss/shared/_common.scss */
+/* line 2401, scss/shared/_common.scss */
 .dj_ie6 .ibm-pullquote-open {
   margin-left: -18px;
   margin-top: -5px;
   padding-top: 2px;
   height: 0px; }
 
-/* line 2438, scss/shared/_common.scss */
+/* line 2410, scss/shared/_common.scss */
 .dj_ie6 .ibm-pullquote-close {
   padding-top: 4px;
   padding-bottom: 2px;
   margin-top: 4px; }
 
-/* line 2443, scss/shared/_common.scss */
+/* line 2415, scss/shared/_common.scss */
 .dj_ie7 .ibm-pullquote-open {
   margin-top: -2px;
   padding-top: 2px; }
 
-/* line 2448, scss/shared/_common.scss */
+/* line 2420, scss/shared/_common.scss */
 .dj_ie7 .ibm-pullquote-close {
   padding-top: 4px;
   padding-bottom: 2px;
@@ -5112,7 +5078,7 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 
 /* End of styles for pull-quote ==============================  */
 /* Button links declaration */
-/* line 2461, scss/shared/_common.scss */
+/* line 2433, scss/shared/_common.scss */
 p.ibm-button-link a,
 p.ibm-button-link-alternate a {
   background: #dbdbdb;
@@ -5139,7 +5105,7 @@ p.ibm-button-link-alternate a {
   white-space: nowrap;
   margin-bottom: 20px; }
 
-/* line 2479, scss/shared/_common.scss */
+/* line 2451, scss/shared/_common.scss */
 p.ibm-button-link a:hover {
   background: #cbcbcb;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb');
@@ -5151,7 +5117,7 @@ p.ibm-button-link a:hover {
   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
 
-/* line 2485, scss/shared/_common.scss */
+/* line 2457, scss/shared/_common.scss */
 p.ibm-button-link a:active {
   background: #f5f5f5;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcbcb', endColorstr='#f5f5f5');
@@ -5164,7 +5130,7 @@ p.ibm-button-link a:active {
   -moz-box-shadow: 0 1px 3px #c1c1c1 inset;
   box-shadow: 0 1px 3px #c1c1c1 inset; }
 
-/* line 2493, scss/shared/_common.scss */
+/* line 2465, scss/shared/_common.scss */
 p.ibm-button-link-alternate a {
   background: #1b587b;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d83b1', endColorstr='#1b587b');
@@ -5176,7 +5142,7 @@ p.ibm-button-link-alternate a {
   color: #fff;
   text-shadow: 0 1px 0 #000; }
 
-/* line 2501, scss/shared/_common.scss */
+/* line 2473, scss/shared/_common.scss */
 p.ibm-button-link-alternate a:hover {
   background: #052a41;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#32bdf0', endColorstr='#052a41');
@@ -5185,7 +5151,7 @@ p.ibm-button-link-alternate a:hover {
   background: -o-linear-gradient(top, #32bdf0, #052a41);
   background: linear-gradient(top, #32bdf0, #052a41); }
 
-/* line 2506, scss/shared/_common.scss */
+/* line 2478, scss/shared/_common.scss */
 p.ibm-button-link-alternate a:active {
   background: #0d83b1;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#052a41', endColorstr='#0d83b1');
@@ -5198,16 +5164,16 @@ p.ibm-button-link-alternate a:active {
   -moz-box-shadow: 0 1px 3px #14405a inset;
   box-shadow: 0 1px 3px #14405a inset; }
 
-/* line 2513, scss/shared/_common.scss */
+/* line 2485, scss/shared/_common.scss */
 .dj_ie6 #ibm-top p.ibm-button-link a {
   color: #000; }
 
-/* line 2516, scss/shared/_common.scss */
+/* line 2488, scss/shared/_common.scss */
 .dj_ie6 #ibm-top p.ibm-button-link-alternate a {
   color: #fff; }
 
 /* .ibm-alternate chained class fixes for ie6  */
-/* line 2535, scss/shared/_common.scss */
+/* line 2507, scss/shared/_common.scss */
 .dj_ie6 #ibm-top #ibm-leadspace-head.ibm-alternate,
 .dj_ie6 #ibm-top h2.ibm-alternate,
 .dj_ie6 #ibm-top h3.ibm-alternate,
@@ -5226,16 +5192,16 @@ p.ibm-button-link-alternate a:active {
   _width: auto;
   _margin: 0px; }
 
-/* line 2542, scss/shared/_common.scss */
+/* line 2514, scss/shared/_common.scss */
 .dj_ie6 #ibm-top #ibm-leadspace-head.ibm-alternate {
   border-top: 0; }
 
-/* line 2547, scss/shared/_common.scss */
+/* line 2519, scss/shared/_common.scss */
 .dj_ie6 #ibm-top h2.ibm-alternate,
 .dj_ie6 #ibm-top h3.ibm-alternate {
   border: 0; }
 
-/* line 2551, scss/shared/_common.scss */
+/* line 2523, scss/shared/_common.scss */
 .ibm-spinner-small {
   display: block;
   width: inherit;
@@ -5244,7 +5210,7 @@ p.ibm-button-link-alternate a:active {
   background: url("http://1.www.s81c.com/i/v17/animated-progress-20x20b.gif") no-repeat center center transparent;
   text-decoration: none; }
 
-/* line 2560, scss/shared/_common.scss */
+/* line 2532, scss/shared/_common.scss */
 .ibm-spinner-large {
   display: block;
   width: inherit;
@@ -5253,120 +5219,120 @@ p.ibm-button-link-alternate a:active {
   background: url("http://1.www.s81c.com/i/v17/animated-progress-38x38c.gif") no-repeat center center transparent;
   text-decoration: none; }
 
-/* line 2569, scss/shared/_common.scss */
+/* line 2541, scss/shared/_common.scss */
 #ibm-content .ibm-spinner-large:hover, #ibm-content .ibm-spinner-small:hover {
   text-decoration: none !important; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 2574, scss/shared/_common.scss */
+  /* line 2546, scss/shared/_common.scss */
   #ibm-content .ibm-columns h2 + p {
     margin-top: 5px !important; } }
 /*----  RSS link list styles  ----*/
 /* BEGIN rss element in ibm-col-6-x */
-/* line 2583, scss/shared/_common.scss */
+/* line 2555, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-rss-module .ibm-container h2 {
   _width: 99%; }
 
-/* line 2587, scss/shared/_common.scss */
+/* line 2559, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-rss-module .ibm-container .ibm-container-body p {
   color: #AAA; }
 
-/* line 2592, scss/shared/_common.scss */
+/* line 2564, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-rss-module h2 a {
   _width: 95%;
   _padding-right: 5%;
   color: #777; }
 
-/* line 2598, scss/shared/_common.scss */
+/* line 2570, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-6-5 .ibm-rss-module #ibm-rss-container {
   width: 780px; }
 
-/* line 2601, scss/shared/_common.scss */
+/* line 2573, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-6-4 .ibm-rss-module #ibm-rss-container {
   width: 620px; }
 
-/* line 2604, scss/shared/_common.scss */
+/* line 2576, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-6-3 .ibm-rss-module #ibm-rss-container {
   width: 460px; }
 
-/* line 2607, scss/shared/_common.scss */
+/* line 2579, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-6-2 .ibm-rss-module #ibm-rss-container {
   width: 300px; }
 
 /* second selector is for ie6 */
-/* line 2611, scss/shared/_common.scss */
+/* line 2583, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-6-1 .ibm-rss-module #ibm-rss-container {
   width: 140px; }
 
 /* BEGIN rss element in ibm-col-5-x */
-/* line 2615, scss/shared/_common.scss */
+/* line 2587, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-5-4 .ibm-rss-module #ibm-rss-container {
   width: 748px; }
 
-/* line 2618, scss/shared/_common.scss */
+/* line 2590, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-5-3 .ibm-rss-module #ibm-rss-container {
   width: 556px; }
 
-/* line 2621, scss/shared/_common.scss */
+/* line 2593, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-5-2 .ibm-rss-module #ibm-rss-container {
   width: 364px; }
 
-/* line 2624, scss/shared/_common.scss */
+/* line 2596, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-5-1 .ibm-rss-module #ibm-rss-container {
   width: 172px; }
 
 /* BEGIN rss element in ibm-col-1-1, 5-5, 6-6 */
-/* line 2630, scss/shared/_common.scss */
+/* line 2602, scss/shared/_common.scss */
 #ibm-content-main .ibm-columns .ibm-col-1-1 .ibm-rss-module #ibm-rss-container,
 #ibm-content-main .ibm-columns .ibm-col-5-5 .ibm-rss-module #ibm-rss-container,
 #ibm-content-main .ibm-columns .ibm-col-6-6 .ibm-rss-module #ibm-rss-container {
   width: 960px; }
 
-/* line 2634, scss/shared/_common.scss */
+/* line 2606, scss/shared/_common.scss */
 .ibm-rss-module #ibm-rss-container {
   position: relative;
   overflow: hidden;
   _float: left; }
 
-/* line 2640, scss/shared/_common.scss */
+/* line 2612, scss/shared/_common.scss */
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list {
   position: relative; }
 
-/* line 2644, scss/shared/_common.scss */
+/* line 2616, scss/shared/_common.scss */
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list li {
   background: none;
   padding: 5px 0;
   position: relative; }
 
-/* line 2650, scss/shared/_common.scss */
+/* line 2622, scss/shared/_common.scss */
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list li a {
   display: block;
   color: #195568;
   text-decoration: none; }
 
-/* line 2656, scss/shared/_common.scss */
+/* line 2628, scss/shared/_common.scss */
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list li p.ibm-item-note {
   padding: 12px 0 0 16px;
   color: #AAA !important; }
 
-/* line 2661, scss/shared/_common.scss */
+/* line 2633, scss/shared/_common.scss */
 .ibm-rss-module .ibm-container .ibm-container-body div {
   position: relative;
   *zoom: 1; }
 
 /* less space around horizontal lines */
-/* line 2669, scss/shared/_common.scss */
+/* line 2641, scss/shared/_common.scss */
 .ibm-rss-module .ibm-container .ibm-container-body div.ibm-rule,
 .ibm-rss-module .ibm-container .ibm-container-body div.ibm-rule-alternate {
   margin: 5px 0; }
 
 /* put links to one row */
-/* line 2674, scss/shared/_common.scss */
+/* line 2646, scss/shared/_common.scss */
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link {
   display: inline-block; }
 
 /* adjusting position and background */
-/* line 2679, scss/shared/_common.scss */
+/* line 2651, scss/shared/_common.scss */
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link {
   padding: 0 20px 0 0;
   background-position: 100% -1px;
@@ -5376,7 +5342,7 @@ p.ibm-button-link-alternate a:active {
   *diplay: block;
   *zoom: 1; }
 
-/* line 2689, scss/shared/_common.scss */
+/* line 2661, scss/shared/_common.scss */
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link:hover {
   background-position: 104% -1px; }
 
@@ -5387,7 +5353,7 @@ in order to work correcly (taking into account fixed masthead) it has to be plac
 <div id="ibm-masthead">
 
 */
-/* line 2702, scss/shared/_common.scss */
+/* line 2674, scss/shared/_common.scss */
 .ibm-background-dim {
   background: #000;
   opacity: .5;
@@ -5402,23 +5368,23 @@ in order to work correcly (taking into account fixed masthead) it has to be plac
 
 /* universal background dim for just about anything END */
 /* Style for step-indicator */
-/* line 2717, scss/shared/_common.scss */
+/* line 2689, scss/shared/_common.scss */
 .ibm-container > div.ibm-tab-section.ibm-step-indicator {
   border-bottom: 1px solid #CCC;
   border-top: 4px solid #666;
   margin-top: -2px;
   padding-top: 4px; }
 
-/* line 2724, scss/shared/_common.scss */
+/* line 2696, scss/shared/_common.scss */
 div.ibm-tab-section.ibm-step-indicator {
   margin-bottom: 22px; }
 
-/* line 2728, scss/shared/_common.scss */
+/* line 2700, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs {
   color: #000;
   width: 100%; }
 
-/* line 2733, scss/shared/_common.scss */
+/* line 2705, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li {
   border-bottom: 0 none !important;
   background-image: url("http://1.www.s81c.com/i/v17/ibm-si-chevron-29x22.png");
@@ -5431,38 +5397,38 @@ div.ibm-tab-section.ibm-step-indicator {
   padding-right: 40px;
   cursor: default; }
 
-/* line 2746, scss/shared/_common.scss */
+/* line 2718, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a {
   padding: 0px;
   position: relative;
   top: -1px;
   font-size: 1.06em; }
 
-/* line 2754, scss/shared/_common.scss */
+/* line 2726, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a.ibm-active-completed {
   color: #00649D; }
 
-/* line 2757, scss/shared/_common.scss */
+/* line 2729, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a:hover.ibm-active-completed {
   text-decoration: underline !important;
   color: #05386B; }
 
-/* line 2762, scss/shared/_common.scss */
+/* line 2734, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a.ibm-active-current {
   color: #000;
   font-weight: bold; }
 
-/* line 2766, scss/shared/_common.scss */
+/* line 2738, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li.ibm-last {
   background-image: none !important; }
 
-/* line 2769, scss/shared/_common.scss */
+/* line 2741, scss/shared/_common.scss */
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li a.ibm-disabled {
   color: #666 !important;
   visibility: visible;
   cursor: default; }
 
-/* line 2780, scss/shared/_common.scss */
+/* line 2752, scss/shared/_common.scss */
 .ibm-col-6-3 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-6-2 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
 .ibm-col-5-3 .ibm-container > div.ibm-tab-section.ibm-step-indicator,
@@ -5471,7 +5437,7 @@ div.ibm-tab-section.ibm-step-indicator {
   border-top: 2px solid #666;
   padding-top: 2px; }
 
-/* line 2788, scss/shared/_common.scss */
+/* line 2760, scss/shared/_common.scss */
 #ibm-com .ibm-col-6-3 div.ibm-step-indicator ul.ibm-tabs li,
 #ibm-com .ibm-col-6-2 div.ibm-step-indicator ul.ibm-tabs li,
 #ibm-com .ibm-col-5-3 div.ibm-step-indicator ul.ibm-tabs li,
@@ -5483,7 +5449,7 @@ div.ibm-tab-section.ibm-step-indicator {
   padding-left: 6px;
   padding-right: 26px; }
 
-/* line 2800, scss/shared/_common.scss */
+/* line 2772, scss/shared/_common.scss */
 #ibm-com .ibm-col-6-3 div.ibm-step-indicator ul.ibm-tabs li a,
 #ibm-com .ibm-col-6-2 div.ibm-step-indicator ul.ibm-tabs li a,
 #ibm-com .ibm-col-5-3 div.ibm-step-indicator ul.ibm-tabs li a,
@@ -5492,22 +5458,22 @@ div.ibm-tab-section.ibm-step-indicator {
   font-size: .9em;
   *margin: 0 0 0 10px; }
 
-/* line 2804, scss/shared/_common.scss */
+/* line 2776, scss/shared/_common.scss */
 div.ibm-step-container .ibm-buttons-row {
   padding-top: 20px; }
 
-/* line 2809, scss/shared/_common.scss */
+/* line 2781, scss/shared/_common.scss */
 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri,
 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec {
   min-width: 80px;
   display: inline;
   float: right; }
 
-/* line 2816, scss/shared/_common.scss */
+/* line 2788, scss/shared/_common.scss */
 div.ibm-step-container .ibm-buttons-row span.ibm-sep {
   float: right; }
 
-/* line 2822, scss/shared/_common.scss */
+/* line 2794, scss/shared/_common.scss */
 #ibm-top div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri.ibm-btn-small,
 #ibm-top div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec.ibm-btn-small {
   font-size: 1em;
@@ -5515,21 +5481,21 @@ div.ibm-step-container .ibm-buttons-row span.ibm-sep {
   padding-top: 6px;
   float: right; }
 
-/* line 2830, scss/shared/_common.scss */
+/* line 2802, scss/shared/_common.scss */
 .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri,
 .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-sec {
   padding: 5px 20px; }
 
-/* line 2834, scss/shared/_common.scss */
+/* line 2806, scss/shared/_common.scss */
 #ibm-content-main .ibm-col-6-4 div.ibm-step-container .ibm-buttons-row p {
   font-size: 1em; }
 
-/* line 2839, scss/shared/_common.scss */
+/* line 2811, scss/shared/_common.scss */
 div.ibm-step-container .ibm-hide-if-no-js,
 div.ibm-step-container .ibm-hidden-content {
   display: none; }
 
-/* line 2843, scss/shared/_common.scss */
+/* line 2815, scss/shared/_common.scss */
 #ibm-content .ibm-columns ul li p {
   padding: 0 0 5px !important; }
 
@@ -17543,3 +17509,277 @@ background-position: 3px -400px;
 /* line 159, scss/ww/_merchandising.scss */
 #ibm-top #ibm-content-body #ibm-merchandising-module .ibm-container {
   margin-bottom: 30px; }
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  /* line 4, scss/v17e/_responsive.scss */
+  output {
+    content: "min-width: 768px | max-width: 980px"; }
+
+  /* line 8, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-1 {
+    width: 23.0% !important; }
+
+  /* line 12, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-2 {
+    width: 48.0% !important; }
+
+  /* line 16, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-3 {
+    width: 73.0% !important; }
+
+  /* line 20, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-1 {
+    width: 18.0% !important; }
+
+  /* line 24, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-2 {
+    width: 38.0% !important; }
+
+  /* line 28, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-3 {
+    width: 58.0% !important; }
+
+  /* line 32, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-4 {
+    width: 78.0% !important; }
+
+  /* line 36, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-1 {
+    width: 14.667% !important; }
+
+  /* line 40, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2 {
+    width: 31.333% !important; }
+
+  /* line 44, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-3 {
+    width: 48.0% !important; }
+
+  /* line 48, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-4 {
+    width: 64.667% !important; }
+
+  /* line 52, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-5 {
+    width: 81.333% !important; }
+
+  /* line 57, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2 .ibm-col-6-1,
+  .ibm-columns .ibm-col-6-4 .ibm-col-6-2 {
+    width: 48.0% !important; }
+
+  /* line 61, scss/v17e/_responsive.scss */
+  .ibm-grid-show-all .ibm-col-5-1 {
+    width: 18.0%; }
+
+  /* line 66, scss/v17e/_responsive.scss */
+  .ibm-grid-show-all .ibm-col-6-1:nth-child(-n+4),
+  .ibm-grid-show-all .ibm-col-4-1:nth-child(-n+2) {
+    margin-bottom: 20px; } }
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+  /* line 72, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-1 {
+    width: 23.0% !important; }
+
+  /* line 76, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-2 {
+    width: 48.0% !important; }
+
+  /* line 80, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-3 {
+    width: 73.0% !important; }
+
+  /* line 84, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-1 {
+    width: 18.0% !important; }
+
+  /* line 88, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-2 {
+    width: 38.0% !important; }
+
+  /* line 92, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-3 {
+    width: 58.0% !important; }
+
+  /* line 96, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-4 {
+    width: 78.0% !important; }
+
+  /* line 100, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-1 {
+    width: 48.0% !important; }
+
+  /* line 104, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2 {
+    width: 48.0% !important; }
+
+  /* line 108, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-3 {
+    width: 48.0% !important; }
+
+  /* line 112, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-4 {
+    width: 48.0% !important; }
+
+  /* line 116, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-5 {
+    width: 48.0% !important; }
+
+  /* line 120, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2.ibm-span-3 {
+    width: 31.333% !important; }
+
+  /* line 124, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2.ibm-span-3 {
+    width: 31.333% !important; } }
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  /* line 130, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-1 {
+    width: 23.0% !important; }
+
+  /* line 134, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-2 {
+    width: 48.0% !important; }
+
+  /* line 138, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-3 {
+    width: 73.0% !important; }
+
+  /* line 142, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-1 {
+    width: 18.0% !important; }
+
+  /* line 146, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-2 {
+    width: 38.0% !important; }
+
+  /* line 150, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-3 {
+    width: 58.0% !important; }
+
+  /* line 154, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-5-4 {
+    width: 78.0% !important; }
+
+  /* line 158, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-1 {
+    width: 48.0% !important; }
+
+  /* line 162, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2 {
+    width: 48.0% !important; }
+
+  /* line 166, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-3 {
+    width: 48.0% !important; }
+
+  /* line 170, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-4 {
+    width: 48.0% !important; }
+
+  /* line 174, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-5 {
+    width: 48.0% !important; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 191, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-4-1,
+  .ibm-columns .ibm-col-4-2,
+  .ibm-columns .ibm-col-4-3,
+  .ibm-columns .ibm-col-5-1,
+  .ibm-columns .ibm-col-5-2,
+  .ibm-columns .ibm-col-5-3,
+  .ibm-columns .ibm-col-5-4,
+  .ibm-columns .ibm-col-6-1,
+  .ibm-columns .ibm-col-6-2,
+  .ibm-columns .ibm-col-6-3,
+  .ibm-columns .ibm-col-6-4,
+  .ibm-columns .ibm-col-6-5 {
+    width: 98.0% !important; }
+
+  /* line 195, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-6-2.ibm-span-2 {
+    width: 48.0% !important;
+    margin-top: 0; }
+
+  /* line 200, scss/v17e/_responsive.scss */
+  .ibm-no-mobile-chip {
+    display: none; }
+
+  /* line 204, scss/v17e/_responsive.scss */
+  .ibm-phone-call-bttn {
+    display: block !important; } }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* line 210, scss/v17e/_responsive.scss */
+  .ibm-columns {
+    margin-top: 0; }
+
+  /* line 214, scss/v17e/_responsive.scss */
+  #ibm-content-container .ibm-columns:first-child div:first-child {
+    margin-top: 0; }
+
+  /* line 230, scss/v17e/_responsive.scss */
+  .ibm-col-1-1,
+  .ibm-col-4-1,
+  .ibm-col-4-2,
+  .ibm-col-4-3,
+  .ibm-col-5-1,
+  .ibm-col-5-2,
+  .ibm-col-5-3,
+  .ibm-col-5-4,
+  .ibm-col-6-1,
+  .ibm-col-6-2,
+  .ibm-col-6-3,
+  .ibm-col-6-4,
+  .ibm-col-6-5 {
+    margin-top: 1%; }
+
+  /* line 234, scss/v17e/_responsive.scss */
+  .ibm-columns div:first-of-type {
+    margin-top: 0; }
+
+  /* line 238, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-go-full-col {
+    width: 98% !important;
+    margin-top: 0; } }
+@media only screen and (min-width: 0px) and (max-width: 980px) {
+  /* line 245, scss/v17e/_responsive.scss */
+  .ibm-columns {
+    width: 98% !important;
+    padding: 0px 1% 1% !important; }
+
+  /* line 250, scss/v17e/_responsive.scss */
+  .ibm-columns .ibm-col-1-1 {
+    width: 98.0% !important; }
+
+  /* line 266, scss/v17e/_responsive.scss */
+  .ibm-col-1-1,
+  .ibm-col-4-1,
+  .ibm-col-4-2,
+  .ibm-col-4-3,
+  .ibm-col-5-1,
+  .ibm-col-5-2,
+  .ibm-col-5-3,
+  .ibm-col-5-4,
+  .ibm-col-6-1,
+  .ibm-col-6-2,
+  .ibm-col-6-3,
+  .ibm-col-6-4,
+  .ibm-col-6-5 {
+    padding-right: 1% !important;
+    padding-left: 1% !important; } }
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: device-width; } }
+/*
+@media only screen and (min-width: 768px) and (max-width: 960px){
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+}
+
+@media only screen and (min-width: 0px) and (max-width: 980px){
+}
+*/
