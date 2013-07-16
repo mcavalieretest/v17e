@@ -748,17 +748,23 @@ input.ibm-btn-view-sec,
 #ibm-content-sidebar input.ibm-btn-view-sec {
 	font-size: 1em;
 }
-table div.ibm-buttons-row p {font-size:1em !important;}
+
+table div.ibm-buttons-row p {
+	font-size:1em !important;
+}
 // button styles end ==============================================
 
 #ibm-parent-link a,
-#ibm-secondary-navigation ul {font-weight:normal;}
+#ibm-secondary-navigation ul {
+	font-weight:normal;
+}
 
 #ibm-navigation li#ibm-parent-link a:link,
 #ibm-navigation li#ibm-parent-link a:visited,
 #ibm-secondary-navigation li a:link,
-#ibm-secondary-navigation li a:visited {color:#666;}
-
+#ibm-secondary-navigation li a:visited {
+	color:#666;
+}
 
 // Font-style for A-Z link ====================================================
 
@@ -794,25 +800,25 @@ p.ibm-ind-link a,
 }
 
 .ibm-col-6-2 p.ibm-ind-link a,
-.ibm-container p.ibm-ind-link a {line-height:normal;}
+.ibm-container p.ibm-ind-link a {
+	line-height:normal;
+}
+
 #ibm-related-content ul.ibm-link-list a,
 #ibm-content-sidebar p.ibm-ind-link a,
 #ibm-content-sidebar ul.ibm-link-list a {
 	line-height: 1.22em;
 }
 
-
 #ibm-content-head #ibm-navigation-trail {
     font-size: 1.0em !important;
     line-height: 1em;
 }
 
-
 .ibm-simple-show-hide p.ibm-show-hide-controls a{
 	font-weight: normal;
 	color:#333333;
 }
-
 
 .ibm-simple-show-hide h3 a.ibm-show-hide-link {
 	font-weight:bold;
@@ -824,16 +830,17 @@ p.ibm-ind-link a,
 .ibm-footnote p,.ibm-footnote p a {
     font-family: Georgia;
 }
-.ibm-twitter-list li a,.ibm-twitter-list .ibm-item-note {
+.ibm-twitter-list li a,
+.ibm-twitter-list .ibm-item-note {
 	font-family: Georgia;
 	font-style: italic;
 }
+
 div#ibm-reg-number {
    	font-size: 0.8em;
 }
 
 .ibm-required {
-	
 	font-size: 1.4em;
 	line-height: 10px;
 }
@@ -841,7 +848,6 @@ div#ibm-reg-number {
 #ibm-primary-links li li {
 	font-size: 0.95em;
 }
-
 
 // Tool tip fonts =================
 .dijitTooltip { 
@@ -940,12 +946,15 @@ div.dijitDialog ul li ul li,
 }
 // End of OVERLAY / DIALOG  ====================
 // Validation overlay  ===============
+
 div#ibm-overlay-top form label {
 	font-weight:bold;
-	}
+}
+
 div#ibm-overlay-top form.ibm-column-form label {
 	font-weight:bold;
 }
+
 div#ibm-overlay-top p {
 	font-size: 1.2em;
 }
@@ -962,6 +971,7 @@ div#ibm-overlay-top h2 {
 	font-size:0.7em;
 	font-weight:bold;
 }
+
 .v17 .dijitMenuSeparatorTop, .v17 .dijitMenuSeparatorBottom {
 	font-size: 1px;
 }
@@ -974,7 +984,7 @@ div#ibm-overlay-top h2 {
 .ibm-img-resize span {
 	line-height: 12px;
 	font-size: 0.9em;
-	}
+}
 // End of Carousel font style =========
 
 ul.ibm-newsletter span.ibm-newsletter-header {
@@ -985,6 +995,7 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 #ibm-loader{
     font-size: 0.8em;
 }
+
 #ibm-country-selector #ibm-country-sort {
 	font-weight: bold;
 	font-size: 0.7em;
@@ -993,6 +1004,7 @@ ul.ibm-newsletter span.ibm-newsletter-header {
 #ibm-country-selector #ibm-country-sort h2 {
    font-size: 1.2em; 	 	
 }
+
 #ibm-country-selector  #ibm-country-nav ul li a {
 	font-size: 1.1em;
 	font-weight:bold;
@@ -1088,12 +1100,12 @@ form.ibm-row-form span.ibm-input-group label {
 	font-weight: normal;
 	line-height: 25px;
 }
+
 form.ibm-row-form label span.ibm-additional-info,
 form.ibm-column-form label span.ibm-additional-info,
 #ibm-content-main form .ibm-checkbox-layout label {
 	font-weight: normal;
-	
-	}
+}
 // End for form font ======================
 
 
