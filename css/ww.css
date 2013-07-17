@@ -14737,6 +14737,9 @@ background-position: 3px -400px;
 #ibm-top #ibm-content-body #ibm-merchandising-module .ibm-container {
   margin-bottom: 30px; }
 
+body {
+  background-image: url('data:image/svg+xml;utf8,data:image/svg+xml;utf8,<svg class="shadow" xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="f1"><feGaussianBlur in="SourceGraphic" stdDeviation="5" /></filter></defs><polygon points="200,0 200,200 0,200" filter="url(%23f1)"/></svg>'); }
+
 @media only screen and (min-width: 768px) and (max-width: 980px) {
   output {
     content: "min-width: 768px | max-width: 980px"; }
