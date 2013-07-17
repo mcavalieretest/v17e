@@ -14737,11 +14737,6 @@ background-position: 3px -400px;
 #ibm-top #ibm-content-body #ibm-merchandising-module .ibm-container {
   margin-bottom: 30px; }
 
-body {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='%23F00'/><stop offset='90%' stop-color='%23fcc'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
-  color: white;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
-
 @media only screen and (min-width: 768px) and (max-width: 980px) {
   output {
     content: "min-width: 768px | max-width: 980px"; }
