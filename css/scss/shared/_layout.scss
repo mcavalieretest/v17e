@@ -68,7 +68,7 @@
     
 }
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
-    width: 980px;
+    width: $landingGrid;
     margin: 0 auto;
     padding-bottom: 50px;
     position: relative;
@@ -85,31 +85,31 @@
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body h1 {
-    color: #ffffff;
-    text-shadow: #000000 0px 1px 0px;
+    color: #FFF;
+    text-shadow: #000 0px 1px 0px;
     filter: Shadow(Color=#000000,   
             Direction=180, 
             Strength=1);
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p em,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body p em {
-    color: #cccccc;
+    color: #CCC;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p em span,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body em span {
-    color:#ffcf01;
+    color:#FFCF01;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body p a {
-    color:#82d1f5;
+    color:#82D1F5;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body p a:hover {
-    color:#b2e2f8;
+    color:#B2E2F8;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body ul#ibm-navigation-trail li a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body ul#ibm-navigation-trail li a {
-    color:#bbbbbb;
+    color:#BBB;
     text-shadow: 0 1px 0 #000000;
     filter: Shadow(Color=#000000,   
             Direction=180, 
@@ -174,13 +174,14 @@
     min-height: 300px;
     _height: 300px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
     min-height:290px;
     _height:290px;
     padding-bottom: 10px;  
     _padding-bottom: 0; 
-    
 }
+
 .ibm-landing-page #ibm-leadspace-head h1 {
     padding: 30px 20px;
     width: 540px;
@@ -195,19 +196,19 @@
     width: 580px;
 }
 
-
 #ibm-content #ibm-leadspace-head.ibm-alternate h1 {
     width: 100%;
 }
-
 
 .ibm-landing-page #ibm-leadspace-head p {
     padding: 0 0 10px 20px;
     width: 480px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-image p {
     width: 940px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p,
 .ibm-landing-page #ibm-leadspace-head.ibm-content-extend p {
     width: 620px;
@@ -216,15 +217,16 @@
 #ibm-content #ibm-leadspace-head.ibm-content-extend p {
     width: 100%;
 }
+
 .ibm-landing-page #ibm-leadspace-head p em span{
     color: #A91024;
     font-weight: bold;
     display: block;
 }
+
 #ibm-content  #ibm-leadspace-head #ibm-leadspace-body p em span {
 	display: block ;
 }
-
 
 .ibm-landing-page #ibm-leadspace-head p a {
     display: block;
@@ -232,31 +234,39 @@
     margin-top:15px;
     text-decoration: none;
 }
+
 .ibm-landing-page #ibm-leadspace-head p.ibm-ind-link a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p.ibm-ind-link a {
     padding: 0 0 0 18px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p a {
     padding: 0;
     margin-top:0;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p.ibm-ind-link {
     padding: 6px 20px;
 }
+
 .ibm-landing-page #ibm-leadspace-head p em{
     color: #666;
 }
+
 .ibm-landing-page #ibm-leadspace-head #ibm-navigation-trail + h1 {
     padding-top: 5px;
 }
+
 #ibm-content #ibm-leadspace-head p {
     width: auto;
     padding: 0 0 10px 10px;
 }
+
 #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
     width: 556px;
     margin: 0;
 }
+
 .ibm-content-expand #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
     width: 748px;
 }
@@ -270,6 +280,7 @@
     margin-left: 0;
     padding-left: 10px;
 }
+
 /* active link(s) */
 #ibm-primary-links a.ibm-is-active {
     color: #333;
@@ -277,20 +288,22 @@
 }
 /* sub-entries in the left navigation */
 #ibm-primary-links li li {
-    /*font-size: 0.95em;*/
     padding-left: 10px;
 }
+
 #ibm-parent-link a {
     color: #000;    
 }
 /* related links - secondary navigation */
 #ibm-secondary-navigation {
-	padding:	10px 0 0 0;	
+	padding: 10px 0 0 0;	
 }
+
 #ibm-secondary-navigation li {
 	padding-left:	0px;
 	/*TODO: add background used as bullet  */
 }
+
 /* high definition styles - remove left and right nav to allow wider template */
 .ibm-content-expand #ibm-content-sidebar,
 .ibm-landing-page #ibm-content-sidebar,
@@ -300,11 +313,13 @@
 }
 .ibm-landing-page #ibm-pcon {
     padding-left: 0;
-    width: 980px;
+    width: $landingGrid;
 }
+
 .ibm-landing-page #ibm-leadspace {
     padding: 0px;
 }
+
 /* high definition styles - remove left and right nav to allow wider template */
 /* Multileaf Ledaspace style */
 /* the black background leadspace now work with ibm-alternate-bg and ibm-alternate-background class. Plan is to sunset ibm-alternate-bg class */
@@ -312,9 +327,11 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon #ibm-leadspace-body {
     width: 100%;
 }
+
 #ibm-leadspace-head.ibm-container {
     margin: 0;
 }
+
 #ibm-leadspace-head.ibm-ribbon .ibm-container-body {
     background: none repeat 0 0 transparent;
     border: 0 none;
@@ -334,20 +351,23 @@
     text-shadow: 0 1px 0 #FFF;
 	height: auto;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon h2,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h2{
- color: #e4e4e4;
- text-shadow: 0 1px 0 #E4E4E4;
+	color: #e4e4e4;
+	text-shadow: 0 1px 0 #E4E4E4;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon p em span,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-backgroud.ibm-ribbon p em span {
-    color: #ffcf01;
+    color: #FFCF01;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-pane {
-    height: 300px;
-    }
+	height: 300px;
+}
     
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns {
     clear: none;
@@ -356,65 +376,73 @@
     width: 100%;
     margin: 0;
     float: left;
-     padding: 0;
+	padding: 0;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
-    width: 998px;
+    width: $landingGrid + 18px;
     padding: 0;
     margin: 0 auto;
     float: none;
     position: relative;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav {
     height: 45px;
     margin: -63px auto 0px;
-    width: 980px;
+    width: $landingGrid;
     text-align: center;
     z-index: 899;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav {
     margin: -70px auto 0;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
-    outline: none !important;
-     position: relative;
-     text-decoration: none; /* IE7 fix */
-     padding:0;
+	outline: none !important;
+	position: relative;
+	text-decoration: none; /* IE7 fix */
+	padding:0;
+}
 
- }
-
- .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
-    overflow: visible;
-    text-indent: 0px;
- }
-
+.ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
+	overflow: visible;
+	text-indent: 0px;
+}
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a{
      background: url("#{$imagePath}/i/v17/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
      position: relative;
      text-decoration: none; /* IE7 fix */
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a{
      background-position: 0px -504px !important;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a:hover, 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a:focus,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a:focus {
     background-position: 0px -415px !important;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg .ibm-ribbon-nav a.ibm-active,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background .ibm-ribbon-nav a.ibm-active{
     background-position: 0px -316px !important;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a:hover, .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a:focus  {
     outline: none;
     background-position: 0px -110px;      
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a.ibm-active {
     background-position: 0px -1px;     
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
     background-image: none;
 	border: 2px solid rgba(205, 205, 205, 0.95);
@@ -427,6 +455,7 @@
     z-index: 899;
     margin-right: 8px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a:hover, 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
     border: 2px solid rgba(182,182,182,0.95);
@@ -434,13 +463,16 @@
 	@include border-radius(2px);
 	@include box-shadow(0 1px 3px rgba(0,0,0,0.6));
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a .ibm-ribbon-view {
     height: 30px;
     width: 45px;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-ribbon-view {
     cursor: pointer;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next, 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next, 
@@ -453,48 +485,57 @@
     text-indent: -9999em;
     width: 16px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next{
      background-position: 0 -590px !important;
-
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next:hover{
      background-position: 0 -830px !important;
-
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev{
     background-position: 0 -470px !important;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev:hover{
     background-position: 0 -710px !important;
 }
+
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev {
     background-position: 0 -100px;
     left: 200px;
     margin-top: 140px;
     z-index: 1;
 }
+
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next {
     background-position: 100% 0;
     margin-top: -160px;
     right: 200px;
     display: none;
 }
+
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev:hover {
     background-position: 0px -150px;
 }
+
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next:hover {
     background-position: 100% -50px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
     top: -5px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active .ibm-pagination-overlay {
     top: -110px;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay {
     display: none;
     background:url("#{$imagePath}/i/v17/lead/lead_pagination_overlay.png") no-repeat 0px 0px;
@@ -508,13 +549,16 @@
     top: -115px;
     left: -255px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a .ibm-pagination-overlay {
     left: -235px;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-1, 
- #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-2, 
- #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-3,  #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-4 {
-    border: 1px solid #FFFFFF;
+#ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-2, 
+#ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-3,
+#ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay span.ibm-lead-thumb-4 {
+    border: 1px solid #FFF;
     display: block;
     float: left;
     height: 60px;
@@ -522,6 +566,7 @@
     width: 60px;
     _margin-left: 10px;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay h2 {
     color: #FFDF4E;
     font-size: 12px;
@@ -534,8 +579,9 @@
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     width: auto;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay p {
-    color: #999999;
+    color: #999;
     font-size: 11.5px;
     left: 90px;
     margin: 0;
@@ -545,27 +591,32 @@
     top: 35px;
     width: auto;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay.ibm-alternate h2,
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay.ibm-alternate p {
     left: 20px;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay:hover h2 {
     color: #FFC;
 }
+
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay:hover p {
     color: #CCC;
 }
 
-
 .ibm-landing-page #ibm-leadspace-head a.ibm-disabled {
     visibility: hidden;
 }
+
 #{$ie7Selector} div#interceptDiv {
     height: 1%;
 }
+
 #{$ie6Selector} div#interceptDiv {
     height: 1%;
 }
+
 .ibm-embed-video {
     height: 355px;
 }
@@ -579,11 +630,13 @@
 #ibm-leadspace-head.ibm-ribbon div.ibm-columns div.ibm-ribbon-view {
     display: none;
 }
+
 #ibm-lead-1 div.ibm-col-1-1 {
     width: 990px;
     float: none;
     margin: 0 auto;
 }
+
 /* non js leadspace */
 #ibm-leadspace-body #ibm-lead-1 {
     height: 300px;
@@ -596,14 +649,15 @@
 	background:none;
 	border-bottom:none;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace #ibm-leadspace-body {
   padding-bottom: 0px;
 }
 
-.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace-tabs{
-height:70px;
-
+.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace-tabs {
+	height:70px;
 }
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace + #ibm-pcon {
       margin: 0px auto 20px;
 }

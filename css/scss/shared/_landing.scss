@@ -8,7 +8,7 @@
 }
 .ibm-landing-page #ibm-pcon {
 	padding-left: 0;
-	width: 980px;
+	width: $landingGrid;
 	padding: 0 0 10px 0;
 }
 .ibm-landing-page #ibm-content-head {
@@ -21,7 +21,7 @@
 	margin-top: 0;
     padding-left: 0;
     padding-right: 0;
-    width: 980px;
+    width: $landingGrid;
 }
 .ibm-landing-page #ibm-leadspace {
 	padding: 0;
