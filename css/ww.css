@@ -5201,7 +5201,7 @@ span.ibm-thumbnail span.ibm-video-play {
   padding-bottom: 0; }
 
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
-  width: 1000px;
+  width: 980px;
   margin: 0 auto;
   padding-bottom: 50px;
   position: relative;
@@ -5407,7 +5407,7 @@ span.ibm-thumbnail span.ibm-video-play {
 
 .ibm-landing-page #ibm-pcon {
   padding-left: 0;
-  width: 1000px; }
+  width: 980px; }
 
 .ibm-landing-page #ibm-leadspace {
   padding: 0px; }
@@ -5463,7 +5463,7 @@ span.ibm-thumbnail span.ibm-video-play {
   padding: 0; }
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
-  width: 1018px;
+  width: 998px;
   padding: 0;
   margin: 0 auto;
   float: none;
@@ -5472,7 +5472,7 @@ span.ibm-thumbnail span.ibm-video-play {
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav {
   height: 45px;
   margin: -63px auto 0px;
-  width: 1000px;
+  width: 980px;
   text-align: center;
   z-index: 899; }
 
@@ -5730,16 +5730,16 @@ span.ibm-thumbnail span.ibm-video-play {
 #ibm-leadspace-body .ibm-columns,
 #ibm-media .ibm-columns {
   width: 960px;
-  padding: 0px 20px; }
+  padding: 0px 10px; }
 
 .ibm-landing-page #ibm-content .ibm-columns {
   width: 960px;
-  padding: 0px 20px 20px; }
+  padding: 0px 10px 10px; }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-columns,
 .ibm-content-expand #ibm-content .ibm-columns .ibm-columns {
   padding: 0px;
-  margin: 0px -20px;
+  margin: 0px -10px;
   width: auto; }
 
 .ibm-content-expand #ibm-content .ibm-columns .ibm-columns {
@@ -5784,7 +5784,7 @@ span.ibm-thumbnail span.ibm-video-play {
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-4,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 {
   float: left;
-  padding: 0px 20px;
+  padding: 0px 10px;
   min-height: 1px; }
 
 /* 
@@ -5804,7 +5804,7 @@ span.ibm-thumbnail span.ibm-video-play {
 */
 .ibm-columns .ibm-col-4-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 {
-  width: 200px; }
+  width: 220px; }
 
 #ibm-masthead .ibm-columns .ibm-col-4-1,
 #ibm-footer-module .ibm-columns .ibm-col-4-1 {
@@ -5816,26 +5816,26 @@ span.ibm-thumbnail span.ibm-video-play {
 .ibm-columns .ibm-col-6-3,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-3 {
-  width: 440px; }
+  width: 460px; }
 
 .ibm-columns .ibm-col-4-3 {
-  width: 680px; }
+  width: 700px; }
 
 .ibm-columns .ibm-col-5-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1 {
-  width: 152px; }
+  width: 172px; }
 
 .ibm-columns .ibm-col-5-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2 {
-  width: 344px; }
+  width: 364px; }
 
 .ibm-columns .ibm-col-5-3,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3 {
-  width: 536px; }
+  width: 556px; }
 
 .ibm-columns .ibm-col-5-4,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4 {
-  width: 728px; }
+  width: 748px; }
 
 #ibm-masthead .ibm-columns .ibm-col-5-4,
 #ibm-footer-module .ibm-columns .ibm-col-5-4 {
@@ -5845,8 +5845,8 @@ span.ibm-thumbnail span.ibm-video-play {
 .ibm-columns .ibm-col-6-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-1 {
-  width: 120px;
-  _width: 110px; }
+  width: 140px;
+  _width: 130px; }
 
 #ibm-masthead .ibm-columns .ibm-col-6-1,
 #ibm-footer-module .ibm-columns .ibm-col-6-1 {
@@ -5856,21 +5856,21 @@ span.ibm-thumbnail span.ibm-video-play {
 
 .ibm-columns .ibm-col-6-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2 {
-  width: 280px; }
+  width: 300px; }
 
 .ibm-columns .ibm-col-6-4,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 {
-  width: 600px; }
+  width: 620px; }
 
 .ibm-columns .ibm-col-6-5,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 {
-  width: 760px; }
+  width: 780px; }
 
 .ibm-columns .ibm-col-1-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1,
 .v17 .dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-three .ibm-columns .ibm-col-1-1 {
-  width: 920px; }
+  width: 940px; }
 
 #ibm-content .ibm-columns .ibm-col-1-1,
 #ibm-content .ibm-columns .ibm-col-6-2,
@@ -12070,7 +12070,7 @@ table.ibm-vertical-dividers-color-labels thead th {
 
 .ibm-landing-page #ibm-pcon {
   padding-left: 0;
-  width: 1000px;
+  width: 980px;
   padding: 0 0 10px 0; }
 
 .ibm-landing-page #ibm-content-head {
@@ -12083,7 +12083,7 @@ table.ibm-vertical-dividers-color-labels thead th {
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
-  width: 1000px; }
+  width: 980px; }
 
 .ibm-landing-page #ibm-leadspace {
   padding: 0;
