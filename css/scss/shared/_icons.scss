@@ -1088,10 +1088,8 @@ ul.ibm-alternate-two .ibm-anchor-down-link, p.ibm-alternate-two .ibm-anchor-down
 .ibm-setting-link,
 .ibm-minimize-link,
 .ibm-maximize-link {
-	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") !important;}
-
-
-
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") !important;
+}
 
 .ibm-contrast-link {background-position: 0px -1px;}
 .ibm-fontsize-link {background-position: 0px -201px;}
@@ -1111,11 +1109,9 @@ ul.ibm-alternate .ibm-contrast-link, p.ibm-alternate .ibm-contrast-link,
 ul.ibm-alternate .ibm-fontsize-link, p.ibm-alternate .ibm-fontsize-link,
 ul.ibm-alternate .ibm-setting-link, p.ibm-alternate .ibm-setting-link,
 ul.ibm-alternate .ibm-minimize-link, p.ibm-alternate .ibm-minimize-link,
-ul.ibm-alternate .ibm-maximize-link, p.ibm-alternate .ibm-maximize-link
- {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_ON.png") !important}
-
-
-
+ul.ibm-alternate .ibm-maximize-link, p.ibm-alternate .ibm-maximize-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_ON.png") !important
+}
 
 /* Alternate white */
 
@@ -1123,9 +1119,9 @@ ul.ibm-alternate-two .ibm-contrast-link, p.ibm-alternate-two .ibm-contrast-link,
 ul.ibm-alternate-two .ibm-fontsize-link, p.ibm-alternate-two .ibm-fontsize-link,
 ul.ibm-alternate-two .ibm-setting-link, p.ibm-alternate-two .ibm-setting-link,
 ul.ibm-alternate-two .ibm-minimize-link, p.ibm-alternate-two .ibm-minimize-link,
-ul.ibm-alternate-two .ibm-maximize-link, p.ibm-alternate-two .ibm-maximize-link
- {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_white_ON.png") !important}
-
+ul.ibm-alternate-two .ibm-maximize-link, p.ibm-alternate-two .ibm-maximize-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_white_ON.png") !important
+}
 
 
 /* ==== End of Contrast Icon */
@@ -1135,8 +1131,9 @@ ul.ibm-alternate-two .ibm-maximize-link, p.ibm-alternate-two .ibm-maximize-link
 .ibm-recommend-link,
 .ibm-fullstar-link,
 .ibm-halfstar-link,
-.ibm-nostar-link
-{background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_blue_ON.png") !important; }
+.ibm-nostar-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_blue_ON.png") !important; 
+}
 
 
 
@@ -1158,8 +1155,9 @@ li.ibm-nostar-link {background-position: 0px -596px !important}
 ul.ibm-alternate .ibm-recommend-link, p.ibm-alternate .ibm-recommend-link,
 ul.ibm-alternate .ibm-fullstar-link, p.ibm-alternate .ibm-fullstar-link,
 ul.ibm-alternate .ibm-halfstar-link, p.ibm-alternate .ibm-halfstar-link,
-ul.ibm-alternate .ibm-nostar-link, p.ibm-alternate .ibm-nostar-link
- {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_ON.png") !important}
+ul.ibm-alternate .ibm-nostar-link, p.ibm-alternate .ibm-nostar-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_ON.png") !important
+}
 
 
 
@@ -1168,8 +1166,9 @@ ul.ibm-alternate .ibm-nostar-link, p.ibm-alternate .ibm-nostar-link
 ul.ibm-alternate-two .ibm-recommend-link, p.ibm-alternate-two .ibm-recommend-link,
 ul.ibm-alternate-two .ibm-fullstar-link, p.ibm-alternate-two .ibm-fullstar-link,
 ul.ibm-alternate-two .ibm-halfstar-link, p.ibm-alternate-two .ibm-halfstar-link,
-ul.ibm-alternate-two .ibm-nostar-link, p.ibm-alternate-two .ibm-nostar-link
- {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_white_ON.png") !important}
+ul.ibm-alternate-two .ibm-nostar-link, p.ibm-alternate-two .ibm-nostar-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_ratings_white_ON.png") !important
+}
 
 
 
@@ -1192,8 +1191,9 @@ ul.ibm-alternate-two .ibm-nostar-link, p.ibm-alternate-two .ibm-nostar-link
 .ibm-forum-link,
 .ibm-usergroup,
 .ibm-usergroup-link,
-.ibm-tag-link
-{background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tools_blue_ON.png") !important; }
+.ibm-tag-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tools_blue_ON.png") !important;
+}
 
 
 
@@ -1255,8 +1255,9 @@ ul.ibm-alternate-two .ibm-blog-link, p.ibm-alternate-two .ibm-blog-link,
 ul.ibm-alternate-two .ibm-forum-link, p.ibm-alternate-two .ibm-forum-link,
 ul.ibm-alternate-two .ibm-usergroup, p.ibm-alternate-two .ibm-usergroup,
 ul.ibm-alternate-two .ibm-usergroup-link, p.ibm-alternate-two .ibm-usergroup-link,
-ul.ibm-alternate-two .ibm-tag-link, p.ibm-alternate-two .ibm-tag-link
- {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tools_white_ON.png") !important}
+ul.ibm-alternate-two .ibm-tag-link, p.ibm-alternate-two .ibm-tag-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tools_white_ON.png") !important
+}
 
 
 
@@ -1270,8 +1271,9 @@ ul.ibm-alternate-two .ibm-tag-link, p.ibm-alternate-two .ibm-tag-link
 .ibm-sort-down-link,
 .ibm-sort-up-link,
 .ibm-menu-link,
-.ibm-sort-link
-{background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") !important; }
+.ibm-sort-link {
+	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") !important;
+}
 
 
 .ibm-sort-link {background-position: 0px -601px;}
