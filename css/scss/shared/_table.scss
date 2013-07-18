@@ -47,7 +47,7 @@ table.ibm-results-table caption.ibm-access {
 }
 
 table.ibm-data-table thead tr{
-	border-top: 1px solid #DDDDDD;
+	border-top: 1px solid #DDD;
 }
 
 table.ibm-data-table td,
@@ -56,15 +56,14 @@ table.ibm-data-table th {
 	vertical-align: top;
 }
 
-
- #ibm-content table.ibm-data-table td ul li {
+#ibm-content table.ibm-data-table td ul li {
     background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 12px transparent;
     padding-left: 10px;
 }
 
 table.ibm-data-table thead th.ibm-sort-down a span.ibm-icon {
 	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -201px;
-    }
+}
 
 table.ibm-data-table thead th.ibm-sort-up a span.ibm-icon {
     background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -1px;
@@ -80,14 +79,14 @@ table.ibm-data-table th.ibm-sort span.ibm-icon {
 
 table.ibm-data-table th.ibm-sort a{text-decoration:none;}
 
-
 table.ibm-data-table tbody th,
 table.ibm-data-table tbody td {
 	color: #666;
 	padding: 8px 5px 5px 3px;
 	border-right: 3px solid white;
-	border-top: 1px solid #DDDDDD;
+	border-top: 1px solid #DDD;
 }
+
 table.ibm-data-table tbody tr:hover th,
 table.ibm-data-table tbody tr:hover td {
 	border-right: 3px solid transparent;
@@ -122,7 +121,7 @@ table.ibm-data-table tbody tr:first-child td,
 table.ibm-data-table tbody tr:first-child th,
 table.ibm-data-table.ibm-alternating tbody tr:first-child td,
 table.ibm-data-table.ibm-alternating tbody tr:first-child th {
-	border-top: 2px solid #999999;
+	border-top: 2px solid #999;
 
 }
 
@@ -159,7 +158,7 @@ table.ibm-data-table tbody tr.ibm-alt-row td .ibm-footnote p {
 
 table.ibm-data-table tbody tr.ibm-alt-row td, 
 table.ibm-data-table tbody tr.ibm-alt-row th{
-	background:#f7f7f7;
+	background:#F7F7F7;
 }
 
 
@@ -179,14 +178,14 @@ table.ibm-data-table.ibm-alternating-col tbody tr:hover td{
 /* ====This style will be used when the ROW is SELECTED */
 table.ibm-data-table tbody tr.ibm-alt-row-checked td, 
 table.ibm-data-table tbody tr.ibm-alt-row-checked th{
-	background:#ecf7fa;
+	background:#ECF7FA;
 }
 
 table.ibm-data-table tbody tr:hover.ibm-alt-row-checked td, 
 table.ibm-data-table tbody tr:hover.ibm-alt-row-checked th,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover th,
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td{
-	background:#e4eff2;
+	background:#E4EFF2;
 	background:url("#{$imagePath}/i/v17/table_alt_row_hover_checked1_new.gif") repeat-x 0px 0px;
 }
 
@@ -197,6 +196,7 @@ table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td{
 table.ibm-data-table tbody tr td.ibm-alt-col{
 	background: url("#{$imagePath}/i/v17/table_col_background1.gif") repeat -3px 0;
 }
+
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col, 
 table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col{
 	background: url("#{$imagePath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
@@ -207,7 +207,7 @@ table.ibm-data-table tbody tr.ibm-alt-row td.ibm-alt-col{
 }
 
 table.ibm-data-table tbody tr.ibm-alt-row:hover td.ibm-alt-col{
-	background:#eeeeee;
+	background:#EEE;
 	background: url("#{$imagePath}/i/v17/table_col_hover_background1_new.gif") repeat-x -3px 0;
 }
 
@@ -234,13 +234,12 @@ table.ibm-data-table.ibm-alternating-col tbody tr.ibm-alt-row-checked:hover td.i
 }
 /* Sort column color */
 table.ibm-data-table.ibm-sortable-table td.ibm-accent{
-	background-color: #eeeeee;
+	background-color: #EEE;
 }
 
 table.ibm-data-table td.ibm-sort-column{
 	background:url("#{$imagePath}/i/v17/table_sort_col_background.gif") repeat-x 0px 0px ;
 }
-
 
 table.ibm-data-table tbody tr td.ibm-sort-column,
 table.ibm-data-table tbody tr.ibm-alt-row td.ibm-sort-column,
@@ -275,19 +274,20 @@ table.ibm-data-table tbody tr.ibm-alt-row-checked td.ibm-alt-col.ibm-sort-column
 /* End of sort-column color */
 table.ibm-data-table td a.ibm-tooltip {
 	text-decoration: none;
-	border-bottom: 1px dotted #17af4b;
+	border-bottom: 1px dotted #17AF4B;
 	color:#666;
 }
-
 
 table.ibm-results-table {
 	width: 100%;
 }
+
 table.ibm-results-table td,
 table.ibm-results-table th {
 	padding: 5px 0px;
 	vertical-align: top;
 }
+
 table.ibm-results-table td.ibm-table-row,
 table.ibm-results-table th.ibm-table-row {
 	width: 25px;
@@ -297,38 +297,40 @@ table.ibm-results-table td.ibm-numeric,
 table.ibm-results-table th.ibm-numeric {
 	width: 100px;
 	padding-left: 15px;
-	
 }
+
 table.ibm-results-table h2 {
 	margin: 0px !important;
 	padding: 0px 0px 3px 0px;
 }
+
 p.ibm-table-navigation {
 	clear: both;
-   
 }
 
 .ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-back-em-link,
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link
-{background-position:1px -200px}
+.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link {
+	background-position:1px -200px
+}
 
 .ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link:hover,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-back-em-link:hover,
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link:hover,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link:hover{
-background-position:0px -200px;
+.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link:hover {
+	background-position:0px -200px;
 }
 
 p.ibm-table-navigation a.ibm-back-em-link {padding: 0px 0px 0px 16px;}
 
 p.ibm-table-navigation a.ibm-forward-em-link, 
 span.ibm-table-navigation a.ibm-forward-em-link,
-span.ibm-table-navigation-links span.ibm-forward-em-link{
+span.ibm-table-navigation-links span.ibm-forward-em-link {
 	background-position: 100% -1px;
-	 padding: 0 20px 0 0 !important; 
+	padding: 0 20px 0 0 !important; 
 }
+
 .ibm-col-4-3 p.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-4-3 span.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-forward-em-link,
@@ -336,35 +338,34 @@ span.ibm-table-navigation-links span.ibm-forward-em-link{
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-6-5 span.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-5-4 p.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-5-4 span.ibm-table-navigation a.ibm-forward-em-link{
-background-position: 100% 0px;
+.ibm-col-5-4 span.ibm-table-navigation a.ibm-forward-em-link {
+	background-position: 100% 0px;
 }
 
 .ibm-col-4-3 p.ibm-table-navigation a.ibm-forward-em-link:hover,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-forward-em-link:hover,
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-forward-em-link:hover,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-forward-em-link:hover{
-background-position: 104% 0px;
+.ibm-col-5-4 p.ibm-table-navigation a.ibm-forward-em-link:hover {
+	background-position: 104% 0px;
 }
 
-
-
 p.ibm-table-navigation a.ibm-forward-em-link:hover {
- background-position: 104% -1px;
+	background-position: 104% -1px;
 } 
 
 p.ibm-table-navigation span.ibm-forward-em-link{
-background-position: 3px -1px;
+	background-position: 3px -1px;
 }
 
 p.ibm-table-navigation span.ibm-forward-em-link:hover{
-background-position: 4px -1px;
+	background-position: 4px -1px;
 }
 
 p.ibm-table-navigation .ibm-primary-navigation {
 	*float: left;
 	*height: 1%;
 }
+
 p.ibm-table-navigation .ibm-secondary-navigation {
 	float: right;
 }
@@ -372,19 +373,17 @@ p.ibm-table-navigation .ibm-secondary-navigation {
 table.ibm-data-table.ibm-alternate{
     background: none;
      border-collapse:collapse !important;
-     border:1px solid #e6e6e6;
+     border:1px solid #E6E6E6;
      margin-left: 10px;
-    /* width: 96.8%;*/
-    
 }
+
 table.ibm-data-table.ibm-alternate caption{
-    background: none;
-    border-top:2px solid #666;
-   border-left:0px none;
-   border-right:0px none;
-    /*width: 96.8%;
-    width:100%\9;*/
+	background: none;
+	border-top:2px solid #666;
+	border-left:0px none;
+	border-right:0px none;
 }
+
 table.ibm-data-table.ibm-alternate tbody tr:first-child:hover td,
 table.ibm-data-table.ibm-alternate tbody tr:first-child:hover th {
 	background: #D7EDF8;
@@ -440,18 +439,8 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 	width:100% !important;
 	margin-left:0px !important;
 }
+
 /* Liquid and landing page vertical line implementation */
-
-
-/*.ibm-landing-page table.ibm-data-table.ibm-alternate{
-	width:96.0% !important;
-	margin-left:20px !important;
-}*/
-
-/*.ibm-landing-page table.ibm-data-table.ibm-alternate caption{
-	width:96.0%;
-	width:100%\9;
-}*/
 
 #{$ie7Selector} .ibm-landing-page table.ibm-data-table.ibm-alternate,
 
@@ -489,15 +478,15 @@ table.ibm-data-table.ibm-alternate tbody th,
 table.ibm-data-table.ibm-alternate tbody tr:first-child td, 
 table.ibm-data-table.ibm-alternate tbody tr:first-child th {
     background: none;
-    border-right:1px solid #e6e6e6;
-    border-top:2px solid #666666;
+    border-right:1px solid #E6E6E6;
+    border-top:2px solid #666;
 }
 
 table.ibm-data-table.ibm-alternate thead tr {
     background: none;
 }
 table.ibm-data-table.ibm-alternate thead th {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #E6E6E6;
 }
 
 
@@ -510,31 +499,28 @@ table.ibm-data-table.ibm-alternate-two td.ibm-sort-column {
 }
 table.ibm-data-table.ibm-alternate-two tbody tr:hover td.ibm-sort-column {
 	background: #D7EDF8 !important; 
-	}
+}
 table.ibm-data-table.ibm-alternate-two tbody tr:first-child:hover td.ibm-sort-column {
 	background: #D7EDF8 !important;
-	}
+}
 
 
 table.ibm-data-table tbody tr td.ibm-highlight-green,
-table.ibm-data-table tbody tr th.ibm-highlight-green{
-background: #e2f1cf url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
-
+table.ibm-data-table tbody tr th.ibm-highlight-green {
+	background: #E2F1CF url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 }
 
 table.ibm-data-table tbody tr td:hover.ibm-highlight-green,
 table.ibm-data-table tbody tr:hover td.ibm-highlight-green,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-green,
-table.ibm-data-table tbody tr:hover th.ibm-highlight-green
-{
-background: #D8E5CB  url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
-border-right:3px solid #fff;
+table.ibm-data-table tbody tr:hover th.ibm-highlight-green {
+	background: #D8E5CB  url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+	border-right:3px solid #FFF;
 }
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-green, 
-table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-green
-{
-background: #D8E5CB url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-green {
+	background: #D8E5CB url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 
@@ -542,68 +528,65 @@ table.ibm-data-table tbody tr th.ibm-highlight-green,
 /* table.ibm-data-table tbody tr:hover th.ibm-highlight-green, */
 table.ibm-data-table .ibm-alternating tbody tr.ibm-alt-row:hover th.ibm-highlight-green,
 table.ibm-data-table tbody tr:hover th.ibm-highlight-green td{
-	background-color: #e2f1cf;
-	
+	background-color: #E2F1CF;
 }
+
 table.ibm-data-table tbody tr td.ibm-highlight-red,
-table.ibm-data-table tbody tr th.ibm-highlight-red{
-background: #fae3e5 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
+table.ibm-data-table tbody tr th.ibm-highlight-red {
+	background: #FAE3E5 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 }
 
 table.ibm-data-table tbody tr td:hover.ibm-highlight-red,
 table.ibm-data-table tbody tr:hover td.ibm-highlight-red,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-red,
 table.ibm-data-table tbody tr:hover th.ibm-highlight-red{
-background: #efd9db url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
-border-right:3px solid #fff;
+	background: #EFD9DB url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+	border-right:3px solid #FFF;
 }
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-red, 
-table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-red
-{
-background: #efd9db url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-red {
+	background: #EFD9DB url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 table.ibm-data-table tbody tr th.ibm-highlight-red,
 /* table.ibm-data-table tbody tr:hover th.ibm-highlight-red, */
 table.ibm-data-table .ibm-alternating tbody tr.ibm-alt-row:hover th.ibm-highlight-red,
-table.ibm-data-table tbody tr:hover th.ibm-highlight-red td{
- background-color: #fae3e5;
+table.ibm-data-table tbody tr:hover th.ibm-highlight-red td {
+	background-color: #FAE3E5;
 }
 
 table.ibm-data-table tbody tr td.ibm-highlight-yellow,
-table.ibm-data-table tbody tr th.ibm-highlight-yellow{
-background: #fff3b9 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
+table.ibm-data-table tbody tr th.ibm-highlight-yellow {
+	background: #FFF3B9 url("#{$imagePath}/i/v17/table_highlight_color.png") no-repeat -2px 0;
 }
 
 table.ibm-data-table tbody tr td:hover.ibm-highlight-yellow,
 table.ibm-data-table tbody tr:hover td.ibm-highlight-yellow,
 table.ibm-data-table tbody tr th:hover.ibm-highlight-yellow,
-table.ibm-data-table tbody tr:hover th.ibm-highlight-yellow
-{
-background: #f5eab2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
-border-right:3px solid #fff;
+table.ibm-data-table tbody tr:hover th.ibm-highlight-yellow {
+	background: #F5EAB2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+	border-right:3px solid #FFF;
 }
 
 
 table.ibm-data-table.ibm-alternating-col tbody tr.ibm-highlight-row td.ibm-alt-col.ibm-highlight-yellow, 
-table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-yellow
-{
-background: #f5eab2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
+table.ibm-data-table.ibm-alternating-col tbody tr:hover td.ibm-alt-col.ibm-highlight-yellow {
+	background: #F5EAB2 url("#{$imagePath}/i/v17/table_highlight_color_hover.jpg") no-repeat -3px 0;
 }
 
 
 table.ibm-data-table tbody tr th.ibm-highlight-yellow,
 table.ibm-data-table .ibm-alternating tbody tr.ibm-alt-row:hover th.ibm-highlight-yellow,
-table.ibm-data-table tbody tr:hover th.ibm-highlight-yellow td{ 
- background-color: #fff3b9;
+table.ibm-data-table tbody tr:hover th.ibm-highlight-yellow td { 
+	background-color: #FFF3B9;
 }
 
 
 table.ibm-data-table tbody tr th.ibm-highlight-yellow,
 table.ibm-data-table tbody tr th.ibm-highlight-red,
-table.ibm-data-table tbody tr th.ibm-highlight-green{
-color:#333;
+table.ibm-data-table tbody tr th.ibm-highlight-green {
+	color:#333;
 }
 
 /* 	END */
@@ -616,7 +599,7 @@ table.ibm-vertical-dividers-labels th,
 table.ibm-vertical-dividers-labels td,
 table.ibm-vertical-dividers-color-labels tr th,
 table.ibm-vertical-dividers-color-labels tr td {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #DDD;
 }
 
 /*divided last child selectors - if merget with regular selectors, it won't get processed by IE8 and below and kills of entire declaration*/
@@ -624,14 +607,14 @@ table.ibm-vertical-dividers tbody tr th:last-child,
 table.ibm-vertical-dividers tbody tr td:last-child,
 table.ibm-data-table.ibm-vertical-dividers tbody tr:hover th:last-child,
 table.ibm-data-table.ibm-vertical-dividers tbody tr:hover td:last-child {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #DDD;
 }
 
 table.ibm-data-table.ibm-vertical-dividers-labels tbody th, 
 table.ibm-data-table.ibm-vertical-dividers-labels tbody td,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody th, 
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody td {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #DDD;
 }
 
 /*divided last child selectors - if merget with regular selectors, it won't get processed by IE8 and below and kills of entire declaration*/
@@ -643,7 +626,7 @@ table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr th:last-child,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr td:last-child,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr:hover th:last-child,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr:hover td:last-child {
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #DDD;
 }
 
 table.ibm-vertical-dividers tbody tr td:first-child,
@@ -656,7 +639,7 @@ table.ibm-vertical-dividers-color-labels tbody th,
 table.ibm-vertical-dividers-color-labels tbody td,
 table.ibm-vertical-dividers-color-labels tr th:first-child,
 table.ibm-vertical-dividers-color-labels tr td:first-child {
-	border-left: 1px solid #ddd;
+	border-left: 1px solid #DDD;
 }
 
 table.ibm-data-table.ibm-vertical-dividers tbody tr:hover th,
@@ -666,35 +649,35 @@ table.ibm-data-table.ibm-vertical-dividers-labels tbody tr:hover td,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr:hover th,
 table.ibm-data-table.ibm-vertical-dividers-color-labels tbody tr:hover td {
 	border-right: 0;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid #DDD;
 }
 
 table.ibm-vertical-dividers-labels th, 
 table.ibm-vertical-dividers-labels td {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #DDD;
 }
 
 table.ibm-vertical-dividers-color-labels thead th {
-	background-color: #eee;
+	background-color: #EEE;
 }
 
 .dj_ie8 table th,
 .dj_ie8 table td {
-	border: 1px solid #ddd;
+	border: 1px solid #DDD;
 	padding: 5px;
 }
 
 .dj_ie8 table.ibm-data-table th,
 .dj_ie8 table.ibm-data-table td {
 	border-left: 0 none;
-	border-top: 1px solid #ddd;
-	border-right: 3px solid #fff;
+	border-top: 1px solid #DDD;
+	border-right: 3px solid #FFF;
 }
 .dj_ie8 table.ibm-data-table th:hover,
 .dj_ie8 table.ibm-data-table td:hover,
 .dj_ie8 table.ibm-data-table thead th:hover,
 .dj_ie8 table.ibm-data-table thead td:hover{
-border-right:3px solid #fff;
+	border-right:3px solid #FFF;
 }
 
 .dj_ie8 table.ibm-data-table.ibm-vertical-dividers tbody th, 
@@ -709,7 +692,7 @@ border-right:3px solid #fff;
 .dj_ie8 table.ibm-data-table.ibm-vertical-dividers-labels td:hover,
 .dj_ie8 table.ibm-data-table.ibm-vertical-dividers-color-labels tr th:hover,
 .dj_ie8 table.ibm-data-table.ibm-vertical-dividers-color-labels tr td:hover {
-	border-right: 1px solid #ddd;
+	border-right: 1px solid #DDD;
 }
 
 
@@ -742,7 +725,8 @@ border-right:3px solid #fff;
 }
 
 #ibm-content .ibm-columns p.ibm-table-scroll-caption {
-color: #666666;
+	color: #666;
     margin: 0;
     padding: 0 10px 0 0;
-    font-size: 0.75em;}
+    font-size: 0.75em;
+}
