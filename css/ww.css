@@ -5201,7 +5201,7 @@ span.ibm-thumbnail span.ibm-video-play {
   padding-bottom: 0; }
 
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
-  width: 980px;
+  width: 1200px;
   margin: 0 auto;
   padding-bottom: 50px;
   position: relative;
@@ -5407,7 +5407,7 @@ span.ibm-thumbnail span.ibm-video-play {
 
 .ibm-landing-page #ibm-pcon {
   padding-left: 0;
-  width: 980px; }
+  width: 1200px; }
 
 .ibm-landing-page #ibm-leadspace {
   padding: 0px; }
@@ -5463,7 +5463,7 @@ span.ibm-thumbnail span.ibm-video-play {
   padding: 0; }
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
-  width: 998px;
+  width: 1218px;
   padding: 0;
   margin: 0 auto;
   float: none;
@@ -5472,7 +5472,7 @@ span.ibm-thumbnail span.ibm-video-play {
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav {
   height: 45px;
   margin: -63px auto 0px;
-  width: 980px;
+  width: 1200px;
   text-align: center;
   z-index: 899; }
 
@@ -5729,11 +5729,11 @@ span.ibm-thumbnail span.ibm-video-play {
 
 #ibm-leadspace-body .ibm-columns,
 #ibm-media .ibm-columns {
-  width: 960px;
+  width: 1180px;
   padding: 0px 10px; }
 
 .ibm-landing-page #ibm-content .ibm-columns {
-  width: 960px;
+  width: 1180px;
   padding: 0px 10px 10px; }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-columns,
@@ -5747,13 +5747,13 @@ span.ibm-thumbnail span.ibm-video-play {
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-media .ibm-columns {
   overflow: visible;
-  width: 960px; }
+  width: 1180px; }
 
 #ibm-content .ibm-container .ibm-columns {
   margin: 0px -10px; }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 .ibm-video .ibm-ribbon .ibm-columns {
-  width: 960px; }
+  width: 1180px; }
 
 .ibm-columns:after {
   clear: both;
@@ -5804,57 +5804,57 @@ span.ibm-thumbnail span.ibm-video-play {
 */
 .ibm-columns .ibm-col-4-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 {
-  width: 220px; }
+  width: 275px; }
 
 .ibm-columns .ibm-col-4-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2,
 .ibm-columns .ibm-col-6-3,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-3 {
-  width: 460px; }
+  width: 570px; }
 
 .ibm-columns .ibm-col-4-3 {
-  width: 700px; }
+  width: 865px; }
 
 .ibm-columns .ibm-col-5-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1 {
-  width: 172px; }
+  width: 216px; }
 
 .ibm-columns .ibm-col-5-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2 {
-  width: 364px; }
+  width: 452px; }
 
 .ibm-columns .ibm-col-5-3,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3 {
-  width: 556px; }
+  width: 688px; }
 
 .ibm-columns .ibm-col-5-4,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4 {
-  width: 748px; }
+  width: 924px; }
 
 .ibm-columns .ibm-col-6-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-1 {
-  width: 140px;
-  _width: 130px; }
+  width: 176.66667px;
+  _width: 166.66667px; }
 
 .ibm-columns .ibm-col-6-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2 {
-  width: 300px; }
+  width: 373.33333px; }
 
 .ibm-columns .ibm-col-6-4,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 {
-  width: 620px; }
+  width: 766.66667px; }
 
 .ibm-columns .ibm-col-6-5,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5,
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 {
-  width: 780px; }
+  width: 963.33333px; }
 
 .ibm-columns .ibm-col-1-1,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1,
 .v17 .dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-three .ibm-columns .ibm-col-1-1 {
-  width: 940px; }
+  width: 1160px; }
 
 #ibm-content .ibm-columns .ibm-col-1-1,
 #ibm-content .ibm-columns .ibm-col-6-2,
@@ -12054,7 +12054,7 @@ table.ibm-vertical-dividers-color-labels thead th {
 
 .ibm-landing-page #ibm-pcon {
   padding-left: 0;
-  width: 980px;
+  width: 1200px;
   padding: 0 0 10px 0; }
 
 .ibm-landing-page #ibm-content-head {
@@ -12067,7 +12067,7 @@ table.ibm-vertical-dividers-color-labels thead th {
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
-  width: 980px; }
+  width: 1200px; }
 
 .ibm-landing-page #ibm-leadspace {
   padding: 0;
