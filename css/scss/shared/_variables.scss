@@ -1,22 +1,26 @@
 // variables ============================================
 
-// 2 do - Need to add colors, fonts and grid specs to this page...
 
+// Paths
 $fontPath : "/css/fonts";
 $imagePath : "http://1.www.s81c.com";
 
+// Fonts
 $defaultFont : Arial,sans-serif;
 
+// Colors
 $linkColor : #00649D;
 $linkColorHover : #05386B;
 $linkColorVisited : #745285;
 
+// Grid
+$landingGrid : 980px;
+$landingSpace : 20px;
+
+// Hacks
 $ie6Selector : ".dj_ie6";
 $ie7Selector : ".dj_ie7";
 $ie9Hack : "\0/";
-
-$landingGrid : 980px;
-$landingSpace : 20px;
 
 
 // mixins ============================================
