@@ -7290,22 +7290,6 @@ li.ibm-upward-link a {
   *zoom: 1;
 }
 
-/* exception --- this code was moved to definitions for that particular icons set
-
-.ibm-caution-link,
-.ibm-error-link,
-.ibm-information-link,
-.ibm-help-link {
-  
-
-  opacity: 1;
-}
- opera brouser Opera (9.5 +) only hack - removed as from fix is not needed after opera > 11.60 base
-@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
-	a[class^="ibm-"]:link, p.ibm-alternate a[class^="ibm-"]:link {
-	   opacity: 1;
-	}     
-}*/
 .ibm-reset-link:hover,
 .ibm-livedoor-link:hover,
 .ibm-hatena-link:hover,
@@ -7511,14 +7495,22 @@ li.ibm-upload-link {
 }
 
 /* alternate gray */
-ul.ibm-alternate .ibm-cancel-link, p.ibm-alternate .ibm-cancel-link,
-ul.ibm-alternate .ibm-confirm-link, p.ibm-alternate .ibm-confirm-link,
-ul.ibm-alternate .ibm-delete-link, p.ibm-alternate .ibm-delete-link,
-ul.ibm-alternate .ibm-download-link, p.ibm-alternate .ibm-download-link,
-ul.ibm-alternate .ibm-signin-link, p.ibm-alternate .ibm-signin-link,
-ul.ibm-alternate .ibm-reset-link, p.ibm-alternate .ibm-reset-link,
-ul.ibm-alternate .ibm-add1-link, p.ibm-alternate .ibm-add1-link,
-ul.ibm-alternate .ibm-upload-link, p.ibm-alternate .ibm-upload-link {
+ul.ibm-alternate .ibm-cancel-link,
+p.ibm-alternate .ibm-cancel-link,
+ul.ibm-alternate .ibm-confirm-link,
+p.ibm-alternate .ibm-confirm-link,
+ul.ibm-alternate .ibm-delete-link,
+p.ibm-alternate .ibm-delete-link,
+ul.ibm-alternate .ibm-download-link,
+p.ibm-alternate .ibm-download-link,
+ul.ibm-alternate .ibm-signin-link,
+p.ibm-alternate .ibm-signin-link,
+ul.ibm-alternate .ibm-reset-link,
+p.ibm-alternate .ibm-reset-link,
+ul.ibm-alternate .ibm-add1-link,
+p.ibm-alternate .ibm-add1-link,
+ul.ibm-alternate .ibm-upload-link,
+p.ibm-alternate .ibm-upload-link {
   background-image: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_transactional_ON.png") !important;
 }
 
@@ -7548,11 +7540,13 @@ p.ibm-ind-link.ibm-next-page .ibm-forward-pg-link,
   /*-ms-filter:"none" !important; */
 }
 
-.ibm-forward-em-link, .ibm-forward-pg-link {
+.ibm-forward-em-link,
+.ibm-forward-pg-link {
   background-position: 0px -1px;
 }
 
-.ibm-forward-em-link:hover, .ibm-forward-pg-link:hover {
+.ibm-forward-em-link:hover,
+.ibm-forward-pg-link:hover {
   background-position: 1px -1px;
 }
 
@@ -7609,14 +7603,20 @@ li.ibm-lastpage-link {
 }
 
 /* alternate gray */
-ul.ibm-alternate .ibm-firstpage-link, ul.ibm-alternate li.ibm-firstpage.link,
-ul.ibm-alternate .ibm-lastpage-link, ul.ibm-alternate li.ibm-lastpage.link,
-ul.ibm-alternate .ibm-forward-em-link, p.ibm-alternate .ibm-forward-em-link,
-ul.ibm-alternate .ibm-forward-pg-link, p.ibm-alternate .ibm-forward-pg-link,
-ul.ibm-alternate li.ibm-forward-em-link, ul.ibm-alternate li.ibm-forward-pg-link,
+ul.ibm-alternate .ibm-firstpage-link,
+ul.ibm-alternate li.ibm-firstpage.link,
+ul.ibm-alternate .ibm-lastpage-link,
+ul.ibm-alternate li.ibm-lastpage.link,
+ul.ibm-alternate .ibm-forward-em-link,
+p.ibm-alternate .ibm-forward-em-link,
+ul.ibm-alternate .ibm-forward-pg-link,
+p.ibm-alternate .ibm-forward-pg-link,
+ul.ibm-alternate li.ibm-forward-em-link,
+ul.ibm-alternate li.ibm-forward-pg-link,
 p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
 p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-pg-link,
-ul.ibm-alternate .ibm-back-em-link, p.ibm-alternate .ibm-back-em-link,
+ul.ibm-alternate .ibm-back-em-link,
+p.ibm-alternate .ibm-back-em-link,
 ul.ibm-alternate li.ibm-back-em-link {
   background-image: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_pagination_ON.png") !important;
 }
@@ -7746,30 +7746,50 @@ li.ibm-symp-spreadsheet {
 }
 
 /* alternate gray */
-ul.ibm-alternate .ibm-pdf-link, p.ibm-alternate .ibm-pdf-link,
-ul.ibm-alternate .ibm-audio-link, p.ibm-alternate .ibm-audio-link,
-ul.ibm-alternate .ibm-demo-link, p.ibm-alternate .ibm-demo-link,
-ul.ibm-alternate .ibm-demoplay-link, p.ibm-alternate .ibm-demoplay-link,
-ul.ibm-alternate .ibm-document-link, p.ibm-alternate .ibm-document-link,
-ul.ibm-alternate .ibm-rss-link, p.ibm-alternate .ibm-rss-link,
-ul.ibm-alternate .ibm-video-link, p.ibm-alternate .ibm-video-link,
-ul.ibm-alternate .ibm-symp-doc, p.ibm-alternate .ibm-symp-doc,
-ul.ibm-alternate .ibm-symp-presentation, p.ibm-alternate .ibm-symp-presentation,
-ul.ibm-alternate .ibm-symp-spreadsheet, p.ibm-alternate .ibm-symp-spreadsheet {
+ul.ibm-alternate .ibm-pdf-link,
+p.ibm-alternate .ibm-pdf-link,
+ul.ibm-alternate .ibm-audio-link,
+p.ibm-alternate .ibm-audio-link,
+ul.ibm-alternate .ibm-demo-link,
+p.ibm-alternate .ibm-demo-link,
+ul.ibm-alternate .ibm-demoplay-link,
+p.ibm-alternate .ibm-demoplay-link,
+ul.ibm-alternate .ibm-document-link,
+p.ibm-alternate .ibm-document-link,
+ul.ibm-alternate .ibm-rss-link,
+p.ibm-alternate .ibm-rss-link,
+ul.ibm-alternate .ibm-video-link,
+p.ibm-alternate .ibm-video-link,
+ul.ibm-alternate .ibm-symp-doc,
+p.ibm-alternate .ibm-symp-doc,
+ul.ibm-alternate .ibm-symp-presentation,
+p.ibm-alternate .ibm-symp-presentation,
+ul.ibm-alternate .ibm-symp-spreadsheet,
+p.ibm-alternate .ibm-symp-spreadsheet {
   background-image: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_media_ON.png") !important;
 }
 
 /* alternate white */
-ul.ibm-alternate-two .ibm-pdf-link, p.ibm-alternate-two .ibm-pdf-link,
-ul.ibm-alternate-two .ibm-audio-link, p.ibm-alternate-two .ibm-audio-link,
-ul.ibm-alternate-two .ibm-demo-link, p.ibm-alternate-two .ibm-demo-link,
-ul.ibm-alternate-two .ibm-demoplay-link, p.ibm-alternate-two .ibm-demoplay-link,
-ul.ibm-alternate-two .ibm-document-link, p.ibm-alternate-two .ibm-document-link,
-ul.ibm-alternate-two .ibm-rss-link, p.ibm-alternate-two .ibm-rss-link,
-ul.ibm-alternate-two .ibm-video-link, p.ibm-alternate-two .ibm-video-link,
-ul.ibm-alternate-two .ibm-symp-doc, p.ibm-alternate-two .ibm-symp-doc,
-ul.ibm-alternate-two .ibm-symp-presentation, p.ibm-alternate-two .ibm-symp-presentation,
-ul.ibm-alternate-two .ibm-symp-spreadsheet, p.ibm-alternate-two .ibm-symp-spreadsheet {
+ul.ibm-alternate-two .ibm-pdf-link,
+p.ibm-alternate-two .ibm-pdf-link,
+ul.ibm-alternate-two .ibm-audio-link,
+p.ibm-alternate-two .ibm-audio-link,
+ul.ibm-alternate-two .ibm-demo-link,
+p.ibm-alternate-two .ibm-demo-link,
+ul.ibm-alternate-two .ibm-demoplay-link,
+p.ibm-alternate-two .ibm-demoplay-link,
+ul.ibm-alternate-two .ibm-document-link,
+p.ibm-alternate-two .ibm-document-link,
+ul.ibm-alternate-two .ibm-rss-link,
+p.ibm-alternate-two .ibm-rss-link,
+ul.ibm-alternate-two .ibm-video-link,
+p.ibm-alternate-two .ibm-video-link,
+ul.ibm-alternate-two .ibm-symp-doc,
+p.ibm-alternate-two .ibm-symp-doc,
+ul.ibm-alternate-two .ibm-symp-presentation,
+p.ibm-alternate-two .ibm-symp-presentation,
+ul.ibm-alternate-two .ibm-symp-spreadsheet,
+p.ibm-alternate-two .ibm-symp-spreadsheet {
   background-image: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_media_white_ON.png") !important;
 }
 
