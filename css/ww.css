@@ -5841,7 +5841,8 @@ span.ibm-thumbnail span.ibm-video-play {
 #ibm-masthead .ibm-columns .ibm-col-6-1,
 #ibm-footer-module .ibm-columns .ibm-col-6-1 {
   width: 140px;
-  _width: 130px; }
+  _width: 130px;
+  padding: 0px 10px; }
 
 .ibm-columns .ibm-col-6-2,
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2 {
