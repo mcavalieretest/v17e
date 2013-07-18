@@ -52,10 +52,8 @@ li.ibm-community-link a,
 li.ibm-blog-link a,
 li.ibm-fontsize-link a,
 li.ibm-contrast-link a,
-li.ibm-backup-link a,
 li.ibm-halfstar-link a,
 li.ibm-document-link a,
-li.ibm-forward-pg-link a,
 li.ibm-demoplay-link a,
 li.ibm-reset-link a,
 li.ibm-livedoor-link a,
@@ -79,14 +77,12 @@ li.ibm-maximize-link a,
 li.ibm-non-secure-link a,
 li.ibm-callaction-link a,
 li.ibm-chevron-link a,
-li.ibm-chevron-alternate-link a,
 li.ibm-generic-link a,
 li.ibm-callme-link a,
 li.ibm-requestquote-link a,
 li.ibm-phone-link a,
 li.ibm-demo-link a,
 li.ibm-demoplay-link a,
-li.ibm-forward-pg-link a,
 li.ibm-signin-link a,
 li.ibm-delete-link a,
 li.ibm-add1-link a,
@@ -120,8 +116,7 @@ li.ibm-incorrect-link a,
 li.ibm-secure-link a,
 li.ibm-pdf-link a,
 li.ibm-call-link a,
-li.ibm-call-info a,
-li.ibm-video-podcast-link a,
+
 li.ibm-popup-link a,
 li.ibm-print-link a,
 li.ibm-rss-link a,
@@ -211,7 +206,6 @@ li.ibm-upward-link a {
 .ibm-phone-link,
 .ibm-demo-link,
 .ibm-demoplay-link,
-.ibm-forward-pg-link,
 .ibm-signin-link,
 .ibm-delete-link,
 .ibm-add1-link,
@@ -245,8 +239,7 @@ li.ibm-upward-link a {
 .ibm-secure-link,
 .ibm-pdf-link,
 .ibm-call-link,
-.ibm-call-info,
-.ibm-video-podcast-link,
+
 .ibm-popup-link,
 .ibm-print-link,
 .ibm-rss-link,
@@ -290,16 +283,13 @@ li.ibm-upward-link a {
 .ibm-blog-link,
 .ibm-fontsize-link,
 .ibm-contrast-link,
-.ibm-backup-link,
 .ibm-halfstar-link,
 .ibm-document-link,
-.ibm-forward-pg-link,
 .ibm-demoplay-link,
 .ibm-livestream-link,
 .ibm-weibo-link,
 .ibm-tag-link,
 .ibm-chevron-link,
-.ibm-chevron-alternate-link,
 .ibm-upward-link {
 	padding-left: 16px !important;
 	background-repeat:no-repeat;
@@ -346,7 +336,6 @@ li.ibm-upward-link a {
 .ibm-phone-link:hover,
 .ibm-demo-link:hover,
 .ibm-demoplay-link:hover,
-.ibm-forward-pg-link:hover,
 .ibm-signin-link:hover,
 .ibm-delete-link:hover,
 .ibm-add-link:hover,
@@ -380,8 +369,7 @@ li.ibm-upward-link a {
 .ibm-secure-link:hover,
 .ibm-pdf-link:hover,
 .ibm-call-link:hover,
-.ibm-call-info:hover,
-.ibm-video-podcast-link:hover,
+
 .ibm-popup-link:hover,
 .ibm-print-link:hover,
 .ibm-rss-link:hover,
@@ -425,10 +413,8 @@ li.ibm-upward-link a {
 .ibm-blog-link:hover,
 .ibm-fontsize-link:hover,
 .ibm-contrast-link:hover,
-.ibm-backup-link:hover,
 .ibm-halfstar-link:hover,
 .ibm-document-link:hover,
-.ibm-forward-pg-link:hover,
 .ibm-demoplay-link:hover,
 .ibm-livestream-link:hover,
 .ibm-weibo-link:hover,
@@ -512,35 +498,27 @@ ul.ibm-alternate-two .ibm-upload-link, p.ibm-alternate-two .ibm-upload-link{
 .ibm-firstpage-link,
 .ibm-lastpage-link,
 .ibm-forward-em-link,
-.ibm-forward-pg-link,
 p.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-ind-link.ibm-next-page .ibm-forward-pg-link,
 .ibm-back-em-link {
 	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_pagination_blue_ON.png") !important;
 	/*-ms-filter:"none" !important; */
 }
 
-.ibm-forward-em-link, 
-.ibm-forward-pg-link {background-position: 0px -1px}
-.ibm-forward-em-link:hover, 
-.ibm-forward-pg-link:hover {background-position: 1px -1px}
+.ibm-forward-em-link {background-position: 0px -1px}
+.ibm-forward-em-link:hover{background-position: 1px -1px}
 .ibm-back-em-link {background-position: 1px -201px;}
 .ibm-back-em-link:hover {background-position:0px -201px;}
 .ibm-firstpage-link {background-position: 0px -801px;}
 .ibm-lastpage-link {background-position: 0 -1001px;}
-
-p.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-ind-link.ibm-next-page .ibm-forward-pg-link {
+p.ibm-ind-link.ibm-next-page .ibm-forward-em-link{
     background-position: 100% -1px !important; 
     display: block !important;
    /* -ms-filter:"none" !important;*/
 }
 
-p.ibm-ind-link.ibm-next-page .ibm-forward-em-link:hover,
-p.ibm-ind-link.ibm-next-page .ibm-forward-pg-link:hover {background-position: 100.5% -1px !important}
-
-li.ibm-forward-em-link, li.ibm-forward-pg-link {background-position: 0px 4px !important}
-li.ibm-forward-em-link:hover, li.ibm-forward-pg-link:hover {background-position: 1px 4px !important}
+p.ibm-ind-link.ibm-next-page .ibm-forward-em-link:hover {background-position: 100.5% -1px !important}
+li.ibm-forward-em-link{background-position: 0px 4px !important}
+li.ibm-forward-em-link:hover{background-position: 1px 4px !important}
 li.ibm-back-em-link {background-position: 1px -196px !important;}
 li.ibm-back-em-link:hover {background-position: 0px -196px !important;}
 li.ibm-firstpage-link {background-position: 0px -796px !important;}
@@ -554,18 +532,12 @@ ul.ibm-alternate .ibm-lastpage-link,
 ul.ibm-alternate li.ibm-lastpage.link, 
 ul.ibm-alternate .ibm-forward-em-link, 
 p.ibm-alternate .ibm-forward-em-link,
-ul.ibm-alternate .ibm-forward-pg-link, 
-p.ibm-alternate .ibm-forward-pg-link,
 ul.ibm-alternate li.ibm-forward-em-link, 
-ul.ibm-alternate li.ibm-forward-pg-link,
 p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-pg-link,
 ul.ibm-alternate .ibm-back-em-link, 
 p.ibm-alternate .ibm-back-em-link,
 ul.ibm-alternate li.ibm-back-em-link {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_pagination_ON.png") !important}
-
-p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-pg-link {
+p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-em-link{
     display: block !important;
 }
 
@@ -573,23 +545,13 @@ p.ibm-alternate.ibm-ind-link.ibm-next-page .ibm-forward-pg-link {
 ul.ibm-alternate-two .ibm-firstpage-link, ul.ibm-alternate-two li.ibm-firstpage-link,
 ul.ibm-alternate-two .ibm-lastpage-link, ul.ibm-alternate-two li.ibm-lastpage.link, 
 ul.ibm-alternate-two .ibm-forward-em-link, p.ibm-alternate-two .ibm-forward-em-link,
-ul.ibm-alternate-two .ibm-forward-pg-link, p.ibm-alternate-two .ibm-forward-pg-link,
-ul.ibm-alternate-two li.ibm-forward-em-link, ul.ibm-alternate-two li.ibm-forward-pg-link,
+ul.ibm-alternate-two li.ibm-forward-em-link,
 p.ibm-alternate-two.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-alternate-two.ibm-ind-link.ibm-next-page .ibm-forward-pg-link,
 ul.ibm-alternate-two .ibm-back-em-link, p.ibm-alternate-two .ibm-back-em-link,
 ul.ibm-alternate-two li.ibm-back-em-link {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_pagination_white_ON.png") !important}
-
-
-p.ibm-alternate-two.ibm-ind-link.ibm-next-page .ibm-forward-em-link,
-p.ibm-alternate-two.ibm-ind-link.ibm-next-page .ibm-forward-pg-link {
+p.ibm-alternate-two.ibm-ind-link.ibm-next-page .ibm-forward-em-link {
     display: block !important;
 }
-
-
-
-
-
 /* ==== End of Pagination Icons */
 
 /* ==== Media Icons */
@@ -698,7 +660,6 @@ p.ibm-alternate-two .ibm-symp-spreadsheet {
 .ibm-email-link,
 .ibm-chat-link,
 .ibm-call-link,
-.ibm-call-info,
 .ibm-phone-link,
 .ibm-callme-link,
 .ibm-requestquote-link {
@@ -707,14 +668,14 @@ p.ibm-alternate-two .ibm-symp-spreadsheet {
 
 
 .ibm-phone-link {background-position: 0px -1px}
-.ibm-call-link,.ibm-call-info {background-position: 0px -201px}
+.ibm-call-link {background-position: 0px -201px}
 .ibm-email-link {background-position: 0px -401px}
 .ibm-chat-link {background-position: 0px -601px}
 .ibm-callme-link {background-position: 0px -801px}
 .ibm-requestquote-link {background-position: 0px -1001px}
 
 li.ibm-phone-link {background-position: 0px 4px !important}
-li.ibm-call-link,li.ibm-call-info {background-position: 0px -196px !important}
+li.ibm-call-link{background-position: 0px -196px !important}
 li.ibm-email-link {background-position: 0px -396px !important;}
 li.ibm-chat-link {background-position: 0px -596px !important}
 li.ibm-callme-link {background-position: 0px -796px !important}
@@ -726,7 +687,6 @@ li.ibm-requestquote-link {background-position: 0px -996px !important}
 ul.ibm-alternate .ibm-email-link, p.ibm-alternate .ibm-email-link,
 ul.ibm-alternate .ibm-chat-link, p.ibm-alternate .ibm-chat-link,
 ul.ibm-alternate .ibm-call-link, p.ibm-alternate .ibm-call-link,
-ul.ibm-alternate .ibm-call-info, p.ibm-alternate .ibm-call-info,
 ul.ibm-alternate .ibm-phone-link, p.ibm-alternate .ibm-phone-link,
 ul.ibm-alternate .ibm-callme-link, p.ibm-alternate .ibm-callme-link,
 ul.ibm-alternate .ibm-requestquote-link, p.ibm-alternate .ibm-requestquote-link {
@@ -741,7 +701,6 @@ ul.ibm-alternate .ibm-requestquote-link, p.ibm-alternate .ibm-requestquote-link 
 ul.ibm-alternate-two .ibm-email-link, p.ibm-alternate-two .ibm-email-link,
 ul.ibm-alternate-two .ibm-chat-link, p.ibm-alternate-two .ibm-chat-link,
 ul.ibm-alternate-two .ibm-call-link, p.ibm-alternate-two .ibm-call-link,
-ul.ibm-alternate-two .ibm-call-info, p.ibm-alternate-two .ibm-call-info,
 ul.ibm-alternate-two .ibm-phone-link, p.ibm-alternate-two .ibm-phone-link,
 ul.ibm-alternate-two .ibm-callme-link, p.ibm-alternate-two .ibm-callme-link,
 ul.ibm-alternate-two .ibm-requestquote-link, p.ibm-alternate-two .ibm-requestquote-link {
@@ -759,12 +718,11 @@ ul.ibm-alternate-two .ibm-requestquote-link, p.ibm-alternate-two .ibm-requestquo
 /* Default blue */
 
 .ibm-external-link,
-
 .ibm-popup-link,
 .ibm-generic-link,
 .ibm-callaction-link,
-.ibm-chevron-link,
-.ibm-chevron-alternate-link {background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_links_blue_ON.png") !important; }
+.ibm-chevron-link
+{background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_links_blue_ON.png") !important; }
 
 
 
@@ -783,24 +741,14 @@ li.ibm-callaction-link {background-position:0px -796px !important}
 .ibm-chevron-link {
 	background-position:100% -1001px;
 }
-
-.ibm-chevron-alternate-link {
-    background-position:100% -1201px;
-   	color: #00649D !important;
-}
-
-.ibm-chevron-link,
-.ibm-chevron-alternate-link{
+.ibm-chevron-link{
 	display: inline-block !important;
     padding:0px !important;
 }
 a.ibm-chevron-link,
-a.ibm-chevron-alternate-link,
-li.ibm-chevron-link a,
-li.ibm-chevron-alternate-link a {
+li.ibm-chevron-link a{
 padding-right:18px !important;
 }
-
 
 
 
@@ -808,17 +756,12 @@ li.ibm-chevron-link {
 	background-position:100% -995px !important;
 }
 
-li.ibm-chevron-alternate-link {
-	background-position:100% -1195px !important;
-	color: #00649D !important;
-}
 
-li.ibm-chevron-link,
-li.ibm-chevron-alternate-link{
+
+li.ibm-chevron-link{
 	padding: 6px 0px !important;
 }
-li.ibm-chevron-link a,
-li.ibm-chevron-alternate-link a{
+li.ibm-chevron-link a{
 	
 	width:auto;
 	_width:0;
@@ -826,7 +769,6 @@ li.ibm-chevron-alternate-link a{
 /* Alternate gray */
 
 ul.ibm-alternate .ibm-external-link, p.ibm-alternate .ibm-external-link,
-
 ul.ibm-alternate .ibm-popup-link, p.ibm-alternate .ibm-popup-link,
 ul.ibm-alternate .ibm-generic-link, p.ibm-alternate .ibm-generic-link,
 ul.ibm-alternate .ibm-callaction-link, p.ibm-alternate .ibm-callaction-link,
@@ -839,7 +781,6 @@ ul.ibm-alternate .ibm-chevron-link, p.ibm-alternate .ibm-chevron-link
 /* Alternate white */
 
 ul.ibm-alternate-two .ibm-external-link, p.ibm-alternate-two .ibm-external-link,
-
 ul.ibm-alternate-two .ibm-popup-link, p.ibm-alternate-two .ibm-popup-link,
 ul.ibm-alternate-two .ibm-generic-link, p.ibm-alternate-two .ibm-generic-link,
 ul.ibm-alternate-two .ibm-callaction-link, p.ibm-alternate-two .ibm-callaction-link,
@@ -852,16 +793,6 @@ ul.ibm-alternate-two .ibm-chevron-link, p.ibm-alternate-two .ibm-chevron-link
 #ibm-content p a.ibm-external-link {
     padding-left: 16px;
 }
-
-
-.ibm-chevron-alternate-link:hover {
-    color:#05386b;
-    text-decoration:underline;
-}
-.ibm-chevron-alternate-link:visited {
-    color:#53049c;
-}
-
 /* ==== End of Link Icons */
 
 
@@ -1006,7 +937,6 @@ p.ibm-question-lg-link,p.ibm-newLarge-link{
 .ibm-back-link,
 .ibm-anchor-down-em-link,
 .ibm-anchor-up-link,
-.ibm-backup-link,
 .ibm-upward-link,
 .ibm-anchor-down-link{
 	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_arrow_blue_ON.png") !important; 
@@ -1023,13 +953,10 @@ p.ibm-question-lg-link,p.ibm-newLarge-link{
 .ibm-forward-link:hover {background-position: 1px -1px; _background-position: 1px -1px !important;}
 .ibm-back-link {background-position: 0px -201px;}
 .ibm-back-link:hover {background-position: 1px -201px;_background-position: 1px -201px;}
-
 .ibm-anchor-up-link {background-position: 0px -401px;}
-.ibm-backup-link {background-position: 0px -801px;}
 .ibm-upward-link {background-position: 0px -1001px;}
 /*.ibm-upward-link:hover {background-position: 0px -1002px;}*/
 /* updward link should not have the jump on hover */
-
 .ibm-anchor-down-em-link {background-position: 0 -601px;}
 .ibm-anchor-down-link {background-position:0px -1201px;}
 
@@ -1040,7 +967,6 @@ li.ibm-back-link {background-position: 1px -196px !important;}
 li.ibm-back-link:hover {background-position: 0px -196px !important; _background-position: 1px -195px;} 
 li.ibm-anchor-up-link {background-position: 0px -396px !important;}
 li.ibm-anchor-down-em-link {background-position: 0px -596px !important;}
-li.ibm-backup-link {background-position: 0px -796px !important;}
 li.ibm-upward-link{background-position: 0 -996px !important;}
 li.ibm-anchor-down-link {background-position:0px -1196px !important;}
 
@@ -1053,7 +979,6 @@ ul.ibm-alternate .ibm-forward-link, p.ibm-alternate .ibm-forward-link,
 ul.ibm-alternate .ibm-back-link, p.ibm-alternate .ibm-back-link, 
 ul.ibm-alternate .ibm-anchor-down-em-link, p.ibm-alternate .ibm-anchor-down-em-link, 
 ul.ibm-alternate .ibm-anchor-up-link, p.ibm-alternate .ibm-anchor-up-link, 
-ul.ibm-alternate .ibm-backup-link, p.ibm-alternate .ibm-backup-link,
 ul.ibm-alternate .ibm-upward-link, p.ibm-alternate .ibm-upward-link,
 ul.ibm-alternate .ibm-anchor-down-link, p.ibm-alternate .ibm-anchor-down-link {
 	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_arrow_ON.png") !important;
@@ -1068,7 +993,6 @@ ul.ibm-alternate-two .ibm-forward-link, p.ibm-alternate-two .ibm-forward-link,
 ul.ibm-alternate-two .ibm-back-link, p.ibm-alternate-two .ibm-back-link, 
 ul.ibm-alternate-two .ibm-anchor-down-em-link, p.ibm-alternate-two .ibm-anchor-down-em-link, 
 ul.ibm-alternate-two .ibm-anchor-up-link, p.ibm-alternate-two .ibm-anchor-up-link, 
-ul.ibm-alternate-two .ibm-backup-link, p.ibm-alternate-two .ibm-backup-link,
 ul.ibm-alternate-two .ibm-upward-link, p.ibm-alternate-two .ibm-upward-link,
 ul.ibm-alternate-two .ibm-anchor-down-link, p.ibm-alternate-two .ibm-anchor-down-link {
 	background-image:url("#{$imagePath}/i/v17/icons/ibm_sprite_arrow_white_ON.png") !important;
@@ -1459,6 +1383,7 @@ ul.ibm-alternate-two li.ibm-yahoojapan-link:hover {background-position: 1px -220
 
 
 /* ==== End of Social Icons */
+/* ==== Inline Icon Styles */
 
 a.ibm-video-link.ibm-inline,#ibm-content ul li a.ibm-video-link.ibm-inline {background-position: 0px 0px;}
 a.ibm-audio-link.ibm-inline,#ibm-content ul li a.ibm-audio-link.ibm-inline{background-position: 0px -200px;}
@@ -1467,8 +1392,6 @@ a.ibm-demoplay-link.ibm-inline,#ibm-content ul li a.ibm-demoplay-link.ibm-inline
 a.ibm-rss-link.ibm-inline,#ibm-content ul li a.ibm-rss-link.ibm-inline {background-position: 0px -800px;}
 a.ibm-document-link.ibm-inline,#ibm-content ul li a.ibm-document-link.ibm-inline {background-position: 0 -1000px;}
 a.ibm-pdf-link.ibm-inline,#ibm-content ul li a.ibm-pdf-link.ibm-inline{background-position: 0px -1200px;}
-
-
 
 a.ibm-external-link.ibm-inline,#ibm-content ul li a.ibm-external-link.ibm-inline {background-position:0px 0px;}
 a.ibm-generic-link.ibm-inline,#ibm-content ul li a.ibm-generic-link.ibm-inline {background-position:0px -400px;}
@@ -1575,14 +1498,7 @@ form p span .ibm-standalone-acc{
 	display: inline-block;
 }
 
-/*Images are missing in sprite */
-.ibm-add-link {background:url("#{$imagePath}/i/v17/icons/add.gif") no-repeat 2px 4px;}
 
-.ibm-video-podcast-link {background:url("#{$imagePath}/i/v17/icons/podvideo.gif") no-repeat -1px -1px;}
-
-.ibm-enlarge-link {background:url("#{$imagePath}/i/v17/icons/enlarge.gif") no-repeat 2px 4px;}
-
-/*Images END */
 
 
 /* v16 code for Icons */
