@@ -14,7 +14,7 @@ css/
 |
 |-- scss/
 |   |-- shared/					# shared modules
-|   |   |-- _variables.scss		# project variables and mixins
+|   |   |-- _vars.scss			# project variables and mixins
 |   |   |-- _fonts.scss			# fonts
 |   |   |-- _reset.scss			# reset
 |   |   |-- _accessibility.scss	# accessibility
@@ -64,7 +64,7 @@ css/
 
 // imports ============================================
 
-@import "scss/shared/variables",
+@import "scss/shared/vars",
 		"scss/shared/fonts",
 		"scss/shared/reset",
 		"scss/shared/accessibility",

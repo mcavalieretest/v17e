@@ -1,7 +1,9 @@
 // responsive styles begin ============================================
 
 @media only screen and (min-width: 768px) and (max-width: 980px) {
-	output {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
 		content: "min-width: 768px | max-width: 980px"; 
 	}
 	
@@ -69,6 +71,12 @@
 }
 
 @media only screen and (min-width: 640px) and (max-width: 768px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 640px | max-width: 768px"; 
+	}
+	
 	.ibm-columns .ibm-col-4-1 {
 		width: 23.0% !important;
 	}
@@ -127,6 +135,12 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 640px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 480px | max-width: 640px"; 
+	}
+	
 	.ibm-columns .ibm-col-4-1 {
 		width: 23.0% !important;
 	}
@@ -177,6 +191,12 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 320px | max-width: 480px"; 
+	}
+	
 	.ibm-columns .ibm-col-4-1, 
 	.ibm-columns .ibm-col-4-2, 
 	.ibm-columns .ibm-col-4-3,
@@ -207,6 +227,12 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 320px | max-width: 768px"; 
+	}
+	
 	.ibm-columns {
 		margin-top: 0;
 	}
@@ -242,6 +268,12 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 980px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 0px | max-width: 980px"; 
+	}
+	
 	.ibm-columns {
 		width: 98% !important; 
 		padding: 0px 1% 1% !important;
