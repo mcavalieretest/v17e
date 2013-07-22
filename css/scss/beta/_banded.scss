@@ -1,2 +1,40 @@
-// new grid styles begin ============================================
+// banded grid styles begin ============================================
 
+.ibm-landing-page.ibm-banded #ibm-pcon,
+.ibm-landing-page.ibm-banded #ibm-content-main {
+	width: 100%;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content-head {
+	margin: 0px auto;
+	width: 980px;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content-main > p {
+	margin: 0px auto;
+	width: 940px;	
+}
+
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
+	margin: 0px auto;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-columns {
+	margin: 0px -10px;
+}
+
+.ibm-banded .ibm-band {
+	background-color: #EEE;
+	min-height: 185px;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content-main > div.ibm-rule, 
+.ibm-landing-page.ibm-banded #ibm-content-main > div.ibm-alternate-rule, 
+.ibm-landing-page.ibm-banded #ibm-content-main > div.ibm-rule-alternate {
+	margin: 10px 0px;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+	margin: 10px auto;
+	width: 940px;
+}

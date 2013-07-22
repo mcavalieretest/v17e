@@ -64,6 +64,55 @@
 		content: "min-width: 481 | max-width: 768px";
 	}
 	
+	.ibm-landing-page #ibm-masthead {
+		min-width: 100%;
+	}
+	
+	.ibm-landing-page #ibm-masthead .ibm-columns, 
+	.ibm-landing-page #ibm-footer-module .ibm-columns {
+		display: none;
+	}
+
+	.ibm-landing-page#ibm-top {
+		min-width: 100%;
+	}
+	.ibm-landing-page #ibm-footer ul {
+		width: 728px;
+	}
+	.ibm-landing-page #ibm-universal-nav {
+		min-width: 100%;
+	}
+	.ibm-landing-page #ibm-universal-nav #ibm-menu-links {
+		display: none;
+	}
+		
+	.ibm-landing-page #ibm-content-head,
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		width: 728px;
+	}
+	
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
+		width: 728px;
+	}
+	
+	.ibm-landing-page #ibm-content-main > p,
+	.ibm-landing-page.ibm-banded #ibm-content-main > p {
+		width: auto;
+	}
+	
+	.ibm-landing-page #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+		width: 728px;
+	}
+	
+	.ibm-landing-page #ibm-content .ibm-columns {
+		width: 728px;
+	}
+	
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 {
+		width: 728px;
+	}
+	
 	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 {
 		width: 165px;
 	}
