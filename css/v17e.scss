@@ -66,6 +66,9 @@ css/
 // imports ============================================
 
 @import "scss/shared/vars",
+
+		"scss/beta/colors",
+		
 		"scss/shared/fonts",
 		"scss/shared/reset",
 		"scss/shared/accessibility",
@@ -101,5 +104,4 @@ css/
 		"scss/ww/merchandising",
 
 		"scss/beta/banded",
-		"scss/beta/responsive",
-		"scss/beta/colors";
+		"scss/beta/responsive";
