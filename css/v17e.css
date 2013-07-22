@@ -1,21 +1,5 @@
-@import url('v17e-blessed1.css?z=1374520683466');
+@import url('v17e-blessed1.css?z=1374527113146');
 
-
-.v17 .ibm-col-5-1 .ibm-short-btn .dijitSelect { width: 142px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-4-1 .ibm-short-btn .dijitSelect { width: 190px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-4-2 .ibm-short-btn .dijitSelect { width: 430px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-5-2 .ibm-short-btn .dijitSelect { width: 334px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-5-3 .ibm-short-btn .dijitSelect { width: 526px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-6-2 .ibm-short-btn .dijitSelect { width: 270px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-6-3 .ibm-short-btn .dijitSelect { width: 430px; float: left; }
-
-.v17 .ibm-landing-page .ibm-col-6-4 .ibm-short-btn .dijitSelect { width: 590px; float: left; }
 
 .dj_ie6 .v17 .dijitSelect, .dj_ie6 .v17 .dijitSelect .dijitButtonNode { background-image: none; }
 

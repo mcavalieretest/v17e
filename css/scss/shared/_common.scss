@@ -4,7 +4,7 @@
 	@include aslett-clearing;
 }
 
-/* a, a:link{ */
+// a, a:link{
 a {
 	color: $linkColor;
 	&:hover,
@@ -16,7 +16,7 @@ a {
 	}
 } 
 
-/* LIST STYLES - v17 ol & ul */
+// LIST STYLES - v17 ol & ul
 #ibm-masthead ol, 
 #ibm-masthead ul,
 #ibm-leadspace-head ol, 
@@ -30,21 +30,20 @@ a {
 	padding: 0px;
 }
 
-/* fix for broken fonts in ff3.6 */
+// fix for broken fonts in ff3.6
 .dj_ff3 #ibm-content a, 
 .dj_ff3 #ibm-content li {
     opacity: 1 !important;
 }
 
-/* alternative linke color - gray */
+// alternative linke color - gray
 
 ul.ibm-alternate li a:link, 
 p.ibm-alternate a:link {
-    /* color: #171717; --- color needed to use together with opacity */
     color: #454545;
 }
 
-/* color tweak for gray links with icons */
+// color tweak for gray links with icons
 ul.ibm-alternate li a[class^="ibm-"]:link, 
 p.ibm-alternate a[class^="ibm-"]:link {
     color: #171717;
@@ -55,7 +54,7 @@ p.ibm-alternate a:hover {
     color: #000;
 }
 
-/* alternative linke color - white */
+// alternative linke color - white
 
 ul.ibm-alternate-two li, 
 p.ibm-alternate-two, 
@@ -154,15 +153,7 @@ p.ibm-alternate-two a:visited  {
 	margin: 0px;
 }
 
-/* CONTENT: ORDER / LIST STYLES START */
-
-/* IMPORTANT: this is breaking styles on ODW pages - removed and added "#ibm-related-content ul" with "#ibm-masthead ul" at begining in this file - Hemang
-#ibm-top ol, #ibm-top ul {    
-list-style: none outside none;    
-margin: 0;    
-padding: 0;
-}
-*/
+// CONTENT: ORDER / LIST STYLES START
 
 #ibm-content ul {
 	padding: 0px 10px;
@@ -393,7 +384,7 @@ padding: 0;
 	padding-left: 0px;
 }
 
-/* Default page bullet style for col-1-1 and col 5-3 */
+// Default page bullet style for col-1-1 and col 5-3
 #ibm-content-main .ibm-col-1-1 ul li,
 #ibm-content-main .ibm-col-1-1 ul.ibm-no-links li:hover,
 #ibm-content-main .ibm-col-1-1 ul li.ibm-no-links:hover {
@@ -494,8 +485,8 @@ div.dijitDialog ul.ibm-link-list li:hover,
     margin: 0px 20px;
     padding: 15px 0px 0px 0px;
     text-shadow: 0px 1px 0px #FFF;
-    position: relative#{$ie9Hack}; /*ie8 fix*/
-    *position: relative;  /*ie6/7 fix*/
+    position: relative#{$ie9Hack};
+    *position: relative;
 }
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
@@ -525,7 +516,7 @@ div.dijitDialog ul.ibm-link-list li:hover,
     text-decoration: none;
 }
 
-/*Ordered list definition + ibm-alpha-list + ibm-roman-list*/
+// Ordered list definition + ibm-alpha-list + ibm-roman-list
 #ibm-content ol {
 	*margin-left: 3px !important;
 }
@@ -603,7 +594,7 @@ padding :5px 0 5px 8px;
 }
 
 
-/*End of OL definition*/
+//End of OL definition
 
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:hover,
 #ibm-content-head ul#ibm-navigation-trail li a:hover {
@@ -631,7 +622,6 @@ padding :5px 0 5px 8px;
 	display: block;
 	height: 15px;
 	width: 16px;
-    /* we have now a text that we do not want to show */
     text-indent: -9999px;
 	overflow:hidden;
 }
@@ -669,14 +659,9 @@ padding :5px 0 5px 8px;
 	float: right;
 }
 
-/* ORDER / LIST STYLES END */
+// ORDER / LIST STYLES END
 
 
-
-
-
-
-/*#ibm-content .ibm-container, Blocked by Tapan for snippet code*/
 #ibm-media .ibm-container {
 	margin: 10px 0;
 	width: auto;
@@ -788,10 +773,8 @@ margin-top:8px !important;
 	padding: 0 0 0 16px !important;
 }
 
-/* Commented as it was conflicting v17 page lists--HEMANG P
-enabled by Saling V - megamenu and localselector update applied*/
+// Added anchor link A-Z style
 
-/* Added anchor link A-Z style */
 #ibm-content div.ibm-link-list-az {
 	padding-bottom: 40px;
 }
@@ -908,8 +891,9 @@ enabled by Saling V - megamenu and localselector update applied*/
 }
 
 
-/* End of anchor link A-Z style */
-/* Style for directory link list */
+// End of anchor link A-Z style
+
+// Style for directory link list
 #ibm-content-main ul.ibm-directory-link-list {
 	list-style-type:none;
 	margin:0px;
@@ -931,16 +915,16 @@ enabled by Saling V - megamenu and localselector update applied*/
 	text-decoration: none;
 	color: #969;
 }
-/* End of directory link list style */
+// End of directory link list style
 
-/* Spacing for anchor name */
+// Spacing for anchor name
 .ibm-anchor {
 	margin-top: 20px !important;
 }
-/* End of spacing for anchor name */
+// End of spacing for anchor name
 
 
-/* Right side icon style */
+// Right side icon style
 a.ibm-anchor-down-link-alternate {
     background: url("#{$imagePath}/i/v17/icons/ibm_icon_sprites_v2.png") no-repeat 100% -3998px !important;
     padding: 0 20px 3px 0;
@@ -954,7 +938,7 @@ a.ibm-anchor-down-link-alternate {
 	color: #222;
 }
 
-/* #ibm-content ul.ibm-bullet-list li a, #ibm-related-content ul.ibm-bullet-list li a */
+// #ibm-content ul.ibm-bullet-list li a, #ibm-related-content ul.ibm-bullet-list li a
 a.ibm-external-link-alternate, 
 #ibm-content ul.ibm-bullet-list li a.ibm-external-link-alternate, 
 #ibm-related-content ul.ibm-bullet-list li a.ibm-external-link-alternate {
@@ -963,13 +947,13 @@ a.ibm-external-link-alternate,
 }
 
 
-/* End of right side Icon Style */
-/*#ibm-content li, Blocked by Tapan */
+// End of right side Icon Style
+
 #ibm-media li {
 	padding-top: 10px;
 }
 
-/* Rule style =======*/
+// Rule style =======
 div.ibm-rule {
 	border-top: 1px dotted #CCC;
     height: 1px;
@@ -1073,7 +1057,7 @@ div.ibm-alternate-rule-2 hr {
 .ibm-landing-page .ibm-columns div.ibm-rule-alternate {
 	margin: 10px 0;
 }
-/* End of Rule Style */
+// End of Rule Style
 
 
 #ibm-media {
@@ -1081,7 +1065,7 @@ div.ibm-alternate-rule-2 hr {
 	margin: 0px auto;
 }
 
-/* common content styles end ============================================ */
+// common content styles end ============================================
 
 .ibm-landing-page #ibm-content p {
 	padding: 10px 20px;
@@ -1173,7 +1157,7 @@ div.ibm-alternate-rule-2 hr {
 	padding-top: 20px;
 }
 
-/* for smaller leadspace image */
+// for smaller leadspace image
 #ibm-leadspace-small {
     padding: 0 10px;
 }
@@ -1185,7 +1169,7 @@ div.ibm-alternate-rule-2 hr {
     padding-left: 0;
 }
 
-/* end of small leadspace image */
+// end of small leadspace image
 
 #ibm-content-head #ibm-navigation-trail + h1 {
 	padding-top: 0;
@@ -1290,7 +1274,7 @@ div.ibm-list-next {
 
 
 
-/* PORTRAIT-MODULE-LIST STYLES START */
+// PORTRAIT-MODULE-LIST STYLES START
 #ibm-content ul.ibm-portrait-module-list,
 #ibm-content ul.ibm-thumbnail-list {
 	padding: 0 0 5px;
@@ -1420,7 +1404,7 @@ div.ibm-list-next {
 #ibm-content ul.ibm-thumbnail-list h3 a:hover {
 	text-decoration: underline;
 }
-/* PORTRAIT-MODULE-LIST STYLES END */
+// PORTRAIT-MODULE-LIST STYLES END
 
 
 
@@ -1440,14 +1424,14 @@ div.ibm-list-next {
 	width: 232px;
 }
 
-/*style for partial sidebar */
+// style for partial sidebar
 .ibm-content-expand .ibm-columns .ibm-inset {
     border: 0;
     float: right;
     margin: 0;
     padding: 0;
 }
-/* End of style */
+// End of style
 
 #ibm-content-main .ibm-three-column .ibm-column.ibm-first {
 	padding-left: 10px;
@@ -1541,8 +1525,9 @@ div.ibm-column.ibm-list-container .ibm-rule { margin:5px 0; }
 	_height:1%;
 }
 
-/* twitter changes required in screen.source.css */
-/* style moved from _dijit.source.css */
+// twitter changes required in screen.source.css
+// style moved from _dijit.source.css
+
 .ibm-twitter-list {
 	padding-top: 0;
 } 
@@ -1558,11 +1543,10 @@ div.ibm-column.ibm-list-container .ibm-rule { margin:5px 0; }
 	color: #00649D !important;
 }
 
-/* End of twitter style */
+// End of twitter style
 
 
-
-/* code sample containers */
+// code sample containers
 
 div.ibm-code-sample {
     background-color: #F7F7F7;
@@ -1580,19 +1564,16 @@ div.ibm-alternate-code-sample {
     padding:0 10px;
 }
 
-/*div.ibm-columns div.ibm-code-sample {
-	 margin: 10px;	
-}*/
 .ibm-landing-page div.ibm-columns div.ibm-code-sample,
 .ibm-landing-page div.ibm-columns div.ibm-alternate-code-sample,
 div.ibm-columns div.ibm-code-sample {
 	margin: 10px 0px;
 }
 
-/* end of code sample  section */
+// end of code sample  section
 
 
-/* inset styles */
+// inset styles
 #ibm-content-main p img.ibm-inset {
 	float: left;
     margin: 5px 20px 12px 0px;
@@ -1618,9 +1599,9 @@ div.ibm-columns div.ibm-code-sample {
     padding: 0 10px 0 0;
 }
 
-/* inset styles */
+// inset styles
 
-/* button styles begin ============================================== */
+// button styles begin ==============================================
 
 a.ibm-btn-pri,
 a.ibm-btn-sec {
@@ -1807,7 +1788,7 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
 	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -200px;
 }
 
-/* Small button style */
+// Small button style
 #ibm-top a.ibm-btn-small, #ibm-top input.ibm-btn-small {
 	min-width: 96px;
 	min-width: 90px\9;
@@ -1828,10 +1809,10 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
      padding: 4px 10px!important;
 }
 
-/* End of small button style*/
+// End of small button style
 
 
-/* HC Mode styles for buttons*/
+// HC Mode styles for buttons
 .dijit_a11y input.ibm-btn-pri,
 .dijit_a11y input.ibm-btn-sec,
 .dijit_a11y input.ibm-btn-arrow-pri,
@@ -1943,16 +1924,16 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
 	filter: none;
 }
 
-/* button styles end ============================================== */
+// button styles end ==============================================
 
 
-/* Common Code By Tapan============ END */
+// Common Code By Tapan============ END 
 
-/* Twisty styles begin ============================================== */
+// Twisty styles begin ==============================================
 ul.ibm-twisty {
 	display: block;
 	padding:4px 0px;
-	height:1%; /* fix an issue with Webkit */
+	height:1%;
 }
 ul.ibm-twisty li {
 	padding: 5px 0px !important;
@@ -2016,7 +1997,7 @@ ul.ibm-twisty ul.ibm-form-element-list {
 }
 
 
-/* Alternate twisty styles for +/- icon begin ================================================ */
+// Alternate twisty styles for +/- icon begin ================================================
 #ibm-content ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger{
 	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat -1px -601px;
 }
@@ -2037,9 +2018,9 @@ ul.ibm-twisty ul.ibm-form-element-list {
 #ibm-content .ibm-col-4-3 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger {
     background-position: -1px -599px; 
 }
-/* End of Alternate twisty styles for +/- icon==================  */
+// End of Alternate twisty styles for +/- icon==================
 
-/* Blue Version of twisty =============================  */
+// Blue Version of twisty =============================
 
 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed {
 	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat -2px -1001px transparent !important;
@@ -2065,7 +2046,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
 ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	color: #00649D;
 }
-/* End of Blue version of twisty ==================== */
+// End of Blue version of twisty ====================
 
 
 #ibm-content ul.ibm-twisty.ibm-alternate li a:link, 
@@ -2087,9 +2068,9 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	padding:4px 0;
 }
 
-/* Alternate twisty styles for show/hide style end================================================ */
+// Alternate twisty styles for show/hide style end================================================
 
-/* Show/hide styles begin =========================================== */
+// Show/hide styles begin ===========================================
 .ibm-simple-show-hide .ibm-container-body {
 	padding-bottom:4px;
 }
@@ -2122,7 +2103,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 }
 
 
-/* showhide fix for twitter module when it is inside accordion */
+// showhide fix for twitter module when it is inside accordion
 .ibm-show-hide .ibm-twitter-module h2 {
 	border-top:0 !important;
 	font-weight:normal;
@@ -2144,7 +2125,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 }
 
 
-/* showhide fix for video module when it is inside accordion */
+// showhide fix for video module when it is inside accordion
 .ibm-show-hide .ibm-video h2 {
 	border-top:0 !important;
 	font-weight:normal;
@@ -2166,11 +2147,6 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	margin:0 !important;
 }
 
-
-
-
-
-
 .ibm-show-hide h2 {
 	border-top: 2px solid #666 !important;
 	width: 100%;
@@ -2184,8 +2160,6 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	color: #000;        
 }
 
-
-
 #{$ie6Selector} .ibm-show-hide h2 a {
 	width:98%;
 }
@@ -2197,8 +2171,6 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	background-position: 100% -1602px;
 }
 
-
-
 #ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide h2 a {
 	color: #333;
 }
@@ -2209,7 +2181,6 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 .ibm-show-hide h2 a.ibm-show-active,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active {
 	background-position: 100% -1402px;
-	/*background-image: none;*/
 }
 .ibm-show-hide h2 a.ibm-show-active:hover,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:hover {
@@ -2219,7 +2190,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:visited {
 	color: #000;
 }
-/* Show/hide styles end ============================================= */
+// Show/hide styles end =============================================
 
 .ibm-form-note, 
 .ibm-item-note, 
@@ -2227,7 +2198,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
     color: #767676 !important;
 }
 
-/* IBM reg number for Venzuala and china */
+// IBM reg number for Venzuala and china
 div#ibm-reg-number {
    	background: #333;
    	color: #999;
@@ -2241,14 +2212,16 @@ div#ibm-reg-number a:visited,
 div#ibm-reg-number a:hover {
 	color: #999;
 }
-/* End of the style */
+
+// End of the style
 .ibm-required {
 	color: #D9182D;
 }
 .ibm-important,.ibm-important p {
 	color: #B8471B !important;
 }
-/* IBM Legal text Style */
+
+// IBM Legal text Style
 #ibm-content-main .ibm-legal-text,
 #ibm-content-main .ibm-legal{
   	background: none;
@@ -2283,9 +2256,9 @@ div#ibm-reg-number a:hover {
 }
 
 
-/* End of the Legal text */
+// End of the Legal text
 
-/* Cross links style */
+// Cross links style
 .ibm-cross-links {
     clear: right;
     float: right;
@@ -2293,11 +2266,11 @@ div#ibm-reg-number a:hover {
     padding-right: 5px;
     width: 170px;
 }
-/* End of cross link style */
+// End of cross link style
 
-/* Anchor links fix */
+// Anchor links fix
 
-/* both element has to be placed near desired anchor and "div.ibm-anchor-pointer a" should contain this anchor's ID' */
+// both element has to be placed near desired anchor and "div.ibm-anchor-pointer a" should contain this anchor's ID'
 
 div.ibm-anchor-pointer {
     visibility: visible;
@@ -2318,22 +2291,22 @@ display: block;
 
 
 
-/* End of Anchor links fix */
+// End of Anchor links fix
 
-/* IE7 Buttons Extra Padding Bug fix - ad more classes here if needed */
+// IE7 Buttons Extra Padding Bug fix - ad more classes here if needed
 
 input.ibm-btn-arrow-sec {
     *overflow:visible;
 }
 
 
-/* Specific for Mobile styles */
-/* mobile styles begin ============================================ */
+// Specific for Mobile styles
+// mobile styles begin ============================================
 .ibm-mobile {
 	display: none !important;
 }
-/* mobile styles end ============================================ */
-/* Styles for pull-quote ==============================  */
+// mobile styles end ============================================
+// Styles for pull-quote ==============================
 div.ibm-pull-quote.ibm-inset{
 	float: right;
 	margin: 5px 15px 0px 0;
@@ -2374,7 +2347,7 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 	padding:0px !important;
 }
 
-/* w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles */
+// w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles
 #ibm-top blockquote {
 	margin: 0;
 }
@@ -2423,10 +2396,10 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 	margin-top:-1px;
 	margin-left:1px;
 }
-/* End of styles for pull-quote ==============================  */
+// End of styles for pull-quote ==============================
 
 
-/* Button links declaration */
+// Button links declaration
 
 
 p.ibm-button-link a,
@@ -2489,7 +2462,7 @@ p.ibm-button-link-alternate a:active {
 	color: #fff;
 }
 
-/* .ibm-alternate chained class fixes for ie6  */
+// .ibm-alternate chained class fixes for ie6
 
 #{$ie6Selector} #ibm-top #ibm-leadspace-head.ibm-alternate, 
 #{$ie6Selector} #ibm-top h2.ibm-alternate, 
@@ -2549,8 +2522,8 @@ p.ibm-button-link-alternate a:active {
 }
 
 
-/*----  RSS link list styles  ----*/
-/* BEGIN rss element in ibm-col-6-x */
+// ----  RSS link list styles  ----
+// BEGIN rss element in ibm-col-6-x
 
 #ibm-content-main .ibm-columns .ibm-rss-module .ibm-container h2 {
 	_width:99%;
@@ -2579,11 +2552,11 @@ p.ibm-button-link-alternate a:active {
 #ibm-content-main .ibm-columns .ibm-col-6-2 .ibm-rss-module #ibm-rss-container {
 	width: 300px;
 }
-/* second selector is for ie6 */
+// second selector is for ie6
 #ibm-content-main .ibm-columns .ibm-col-6-1 .ibm-rss-module #ibm-rss-container {
 	width: 140px;
 }
-/* BEGIN rss element in ibm-col-5-x */
+// BEGIN rss element in ibm-col-5-x
 #ibm-content-main .ibm-columns .ibm-col-5-4 .ibm-rss-module #ibm-rss-container {
 	width: 748px;
 }
@@ -2596,7 +2569,7 @@ p.ibm-button-link-alternate a:active {
 #ibm-content-main .ibm-columns .ibm-col-5-1 .ibm-rss-module #ibm-rss-container {
 	width: 172px;
 }
-/* BEGIN rss element in ibm-col-1-1, 5-5, 6-6 */
+// BEGIN rss element in ibm-col-1-1, 5-5, 6-6
 #ibm-content-main .ibm-columns .ibm-col-1-1 .ibm-rss-module #ibm-rss-container,
 #ibm-content-main .ibm-columns .ibm-col-5-5 .ibm-rss-module #ibm-rss-container,
 #ibm-content-main .ibm-columns .ibm-col-6-6 .ibm-rss-module #ibm-rss-container {
@@ -2636,18 +2609,18 @@ p.ibm-button-link-alternate a:active {
 }
 
 
-/* less space around horizontal lines */
+// less space around horizontal lines
 .ibm-rss-module .ibm-container .ibm-container-body div.ibm-rule,
 .ibm-rss-module .ibm-container .ibm-container-body div.ibm-rule-alternate {
 	margin: 5px 0;
 }
 
-/* put links to one row */
+// put links to one row
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link {
 	display: inline-block;
 }
 
-/* adjusting position and background */
+// adjusting position and background
 .ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link {
 	padding: 0 20px 0 0;
 	background-position: 100% -1px;
@@ -2658,18 +2631,13 @@ p.ibm-button-link-alternate a:active {
 	*zoom: 1;
 }
 
-.ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link:hover{
-background-position: 104% -1px;
+.ibm-rss-module .ibm-container .ibm-container-body div p.ibm-ind-link a.ibm-forward-link:hover {
+	background-position: 104% -1px;
 }
 
-/* universal background dim for just about anything BEGIN */
+// universal background dim for just about anything BEGIN
 
-/*
-
-in order to work correcly (taking into account fixed masthead) it has to be placed below
-<div id="ibm-masthead">
-
-*/
+// in order to work correcly (taking into account fixed masthead) it has to be placed below <div id="ibm-masthead">
 
 .ibm-background-dim {
 	background: #000;
@@ -2684,8 +2652,8 @@ in order to work correcly (taking into account fixed masthead) it has to be plac
 	display:none;
 }
 
-/* universal background dim for just about anything END */
-/* Style for step-indicator */
+// universal background dim for just about anything END
+// Style for step-indicator
 .ibm-container > div.ibm-tab-section.ibm-step-indicator {
     border-bottom: 1px solid #CCC;
     border-top: 4px solid #666;
