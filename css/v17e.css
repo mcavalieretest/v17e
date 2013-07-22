@@ -1,5 +1,68 @@
 @import url('v17e-blessed1.css?z=1374499128958');
 
+<<<<<<< .mine
+css/
+|
+|-- scss/
+|   |-- shared/					# shared modules
+|   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _fonts.scss			# fonts
+|   |   |-- _reset.scss			# reset
+|   |   |-- _accessibility.scss	# accessibility
+|   |   |-- _navigation.scss	# navigation
+|   |   |-- _scoped-search.scss	# scoped-search
+|   |   |-- _related.scss		# related
+|   |   |-- _footer.scss		# footer
+|   |   |-- _common.scss		# common
+|   |   |-- _ribbon.scss		# ribbon
+|   |   |-- _sidebar.scss		# sidebar
+|   |   |-- _layout.scss		# layout
+|   |   |-- _liquid.scss		# liquid
+|   |   |-- _grid.scss			# grid
+|   |   |-- _icons.scss			# icons
+|   |   |-- _dialog.scss		# dialog
+|   |   |-- _form.scss			# form
+|   |   |-- _signin.scss		# signin
+|   |   |-- _tabs.scss			# tabs
+|   |   |-- _scroll.scss		# scroll
+|   |   |-- _video.scss			# video
+|   |   |-- _rightnav.scss		# rightnav
+|   |   |-- _table.scss			# table
+|   |   |-- _landing.scss		# landing
+|   |   |-- _tooltip.scss		# tooltip
+|   |   |-- _popup.scss			# popup
+|   |   |-- _print.scss			# print
+|   |   |-- _social-toolbar.scss# social-toolbar
+|   |   |-- _rating.scss		# rating
+|   |   |-- _application.scss	# application
+|   |   ...
+|   |-- ww/						# ww modules
+|   |   |-- _localeselector.scss# localselector
+|   |   |-- _masthead.scss		# masthead
+|   |   |-- _merchandising.scss	# merchandising
+|   |   ...
+|   |-- beta/					# v17e modules (this is where all the v17e styles will be placed.  after review we can move these styles into the shared or ww folder.)
+|   |   |-- _banded.scss		# banded (new banded template styles to match home page leadspace solution within content space)
+|   |   |-- _responsive.scss	# responsive styles
+|   |   |-- _colors.scss		# colors and gradient styles
+|   |   ...
+|   ...
+|
+`-- ww.scss						# main SASS file
+*/
+/*
+This CSS resource incorporates links to font software which is
+the valuable copyrighted property of Monotype Imaging and/or
+its suppliers. You may not attempt to copy, install, redistribute, convert,
+modify or reverse engineer this font software. Please contact Monotype Imaging
+with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("/css/fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?iefix") format("eot");
+}
+=======
+>>>>>>> .r130
 
 .v17.dijit_a11y #ibm-content input[type="text"]:focus, .v17.dijit_a11y #ibm-content input[type="password"]:focus, .v17.dijit_a11y #ibm-content textarea:focus, .v17.dijit_a11y #ibm-content select:focus, .v17.dijit_a11y .dijitDialog input[type="text"]:focus, .v17.dijit_a11y .dijitDialog input[type="password"]:focus, .v17.dijit_a11y .dijitDialog textarea:focus, .v17.dijit_a11y .dijitDialog select:focus { filter: none; }
 
