@@ -53,6 +53,7 @@ css/
 |   |-- beta/					# v17e modules (this is where all the v17e styles will be placed.  after review we can move these styles into the shared or ww folder.)
 |   |   |-- _banded.scss		# banded (new banded template styles to match home page leadspace solution within content space)
 |   |   |-- _responsive.scss	# responsive styles
+|   |   |-- _colors.scss		# colors and gradient styles
 |   |   ...
 |   ...
 |
@@ -100,4 +101,5 @@ css/
 		"scss/ww/merchandising",
 
 		"scss/beta/banded",
-		"scss/beta/responsive";
+		"scss/beta/responsive",
+		"scss/beta/colors";
