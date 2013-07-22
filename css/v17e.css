@@ -17412,6 +17412,10 @@ background-position: 3px -400px;
   width: 940px;
 }
 
+.ibm-resize {
+  width: 100%;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   #ibm-leadspace-body p:after {
     content: "min-width: 0px | max-width: 480px";
