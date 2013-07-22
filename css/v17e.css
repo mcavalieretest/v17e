@@ -17497,7 +17497,7 @@ background-position: 3px -400px;
 
   .ibm-landing-page #ibm-content-head,
   .ibm-landing-page.ibm-banded #ibm-content-head {
-    width: 728px;
+    width: 100%;
   }
 
   .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
