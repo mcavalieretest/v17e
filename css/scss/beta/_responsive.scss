@@ -81,13 +81,16 @@
 	.ibm-landing-page.ibm-banded#ibm-top {
 		min-width: 100%;
 	}
+	
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
 		width: 732px;
 		padding: 0px;
 	}
+	
 	.ibm-landing-page.ibm-banded #ibm-universal-nav {
 		min-width: 100%;
 	}
+	
 	.ibm-landing-page.ibm-banded #ibm-universal-nav #ibm-menu-links {
 		display: none;
 	}
@@ -99,8 +102,8 @@
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
 		width: auto;
-		padding-left: 57px;
-		padding-right: 57px;
+		padding-left: 65px;
+		padding-right: 65px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head #ibm-leadspace-body {
@@ -108,18 +111,24 @@
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
-		width: 640px;
-		margin: 0px 38px;
+		width: 620px;
+		margin: 0px 45px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
-		width: 640px;
-		margin: 10px 57px;
+		width: 620px;
+		margin: 10px 67px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
 		width: 660px;
-		margin: 0px 38px;
+		padding: 0px 46px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-columns {
+		width: auto;
+		padding: 0px;
+		margin: 0px -20px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1 {
@@ -127,51 +136,124 @@
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1 {
-		width: 145px;
+		width: 125px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2 {
-		width: 310px;
+		width: 290px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3 {
-		width: 475px;
+		width: 455px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1 {
-		width: 112px;
+		width: 92px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2 {
-		width: 244px;
+		width: 224px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3 {
-		width: 376px;
+		width: 356px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4 {
-		width: 508px;
+		width: 488px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1 {
-		width: 90px;
+		width: 70px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2 {
-		width: 200px;
+		width: 180px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3 {
-		width: 310px;
+		width: 270px;
+	}
+
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-4-2,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-6-3 {
+		width: 280px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4 {
-		width: 420px;
+		width: 400px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 {
-		width: 530px;
+		width: 510px;
+	}
+
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 {
+		margin: 0px 10px;
+	}
+			
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-4-2:first-child,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-6-3:first-child {
+		margin-right: 30px;
 	}
 	
+	.ibm-no-padding {
+		padding: 0px !important;
+	}
+	.ibm-no-padding.ibm-col-1-1 {
+		width: 640px !important;
+	}
+	.ibm-no-padding.ibm-col-4-1 {
+		width: 145px !important;
+	}
+	.ibm-no-padding.ibm-col-4-2 {
+		width: 310px !important;
+	}
+	.ibm-no-padding.ibm-col-4-3 {
+		width: 475px !important;
+	}
+	.ibm-no-padding.ibm-col-5-1 {
+		width: 112px !important;
+	}
+	.ibm-no-padding.ibm-col-5-2 {
+		width: 244px !important;
+	}
+	.ibm-no-padding.ibm-col-5-3 {
+		width: 376px !important;
+	}
+	.ibm-no-padding.ibm-col-5-4 {
+		width: 508px !important;
+	}
+	.ibm-no-padding.ibm-col-6-1 {
+		width: 90px !important;
+	}
+	.ibm-no-padding.ibm-col-6-2 {
+		width: 200px !important;
+	}
+	.ibm-no-padding.ibm-col-6-3 {
+		width: 290px !important;
+	}
+	.ibm-columns.ibm-alt-margin .ibm-no-padding.ibm-col-4-2,
+	.ibm-columns.ibm-alt-margin .ibm-no-padding.ibm-col-6-3 {
+		width: 300px !important;
+	}
+	.ibm-no-padding.ibm-col-6-4 {
+		width: 420px !important;
+	}
+	.ibm-no-padding.ibm-col-6-5 {
+		width: 530px !important;
+	}
+
 }
