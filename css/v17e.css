@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374622059340');
+@import url('v17e-blessed1.css?z=1374628154880');
 
 
 /* Menu 
@@ -2525,6 +2525,8 @@ background-position: 3px -400px;
 
 .ibm-resize { max-width: 100%; height: auto; }
 
+#ibm-content { background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px; }
+
 @media only screen and (min-width: 0px) and (max-width: 480px) { #ibm-leadspace-body p:after { content: "min-width: 0px | max-width: 480px"; }
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 { width: 165px; }
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2 { width: 330px; }
@@ -2539,6 +2541,7 @@ background-position: 3px -400px;
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 { width: 396px; }
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 { width: 495px; } }
 @media only screen and (min-width: 481px) and (max-width: 768px) { #ibm-leadspace-body p:after { content: "min-width: 481 | max-width: 768px"; }
+  #ibm-content { width: 768px; background: url("../i/fpo/bg-grid-768.gif") repeat-y 50% 0px; }
   .ibm-landing-page.ibm-banded#ibm-top { min-width: 100%; margin-top: 0px !important; }
   .ibm-landing-page.ibm-banded #ibm-masthead { min-width: 100%; position: relative; }
   .ibm-landing-page.ibm-banded #ibm-masthead .ibm-columns, .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { display: none; }
