@@ -68,16 +68,15 @@
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 481 | max-width: 768px";
+		content: "min-width: 481 | max-width: 1024px";
 	}
 	#ibm-content {
 		background: url("../i/fpo/bg-grid-768.png") repeat-y center 0px;
-		width: 100%;
-	}	
+	}
 	// to be removed.  only for testing
 
 	.ibm-landing-page.ibm-banded#ibm-top {
@@ -126,8 +125,8 @@
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
 		width: auto;
-		padding-left: 55px;
-		padding-right: 55px;
+		padding-left: 65px;
+		padding-right: 65px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head #ibm-leadspace-body {
@@ -136,17 +135,17 @@
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
 		width: auto;
-		margin: 0px 35px;
+		margin: 0px 44px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
 		width: 640px;
-		margin: 10px 55px;
+		margin: 10px 64px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
 		width: 660px;
-		padding: 0px 45px;
+		padding: 0px 54px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-columns {
