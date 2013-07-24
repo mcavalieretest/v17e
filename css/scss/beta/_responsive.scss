@@ -229,7 +229,9 @@
 	}
 			
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-4-2:first-child,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-6-3:first-child {
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-6-3:first-child,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin p + .ibm-col-4-2,
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin p + .ibm-col-6-3 {
 		margin-right: 30px;
 	}
 	
