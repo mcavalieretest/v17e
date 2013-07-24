@@ -77,7 +77,7 @@
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-4, 
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 {
     float: left;
-    padding: 0px ($landingSpace / 2);
+    margin: 0px ($landingSpace / 2);
     min-height: 1px;
 }
 
@@ -89,12 +89,12 @@
 */
 
 .ibm-columns .ibm-col-5-3 .ibm-columns .ibm-col-2-1 {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .ibm-columns .ibm-col-5-3 .ibm-columns .ibm-col-2-1 + .ibm-col-2-1 {
-    padding-right: 0;
-    padding-left: 10px;
+    margin-right: 0;
+    margin-left: 10px;
 }
 
 /*
@@ -110,7 +110,7 @@
 #ibm-masthead .ibm-columns .ibm-col-4-1,
 #ibm-footer-module .ibm-columns .ibm-col-4-1 {
 	width: 220px;
-	padding: 0px 10px;
+	margin: 0px 10px;
 }
 
 .ibm-columns .ibm-col-4-2,
@@ -154,7 +154,7 @@
 #ibm-masthead .ibm-columns .ibm-col-5-4,
 #ibm-footer-module .ibm-columns .ibm-col-5-4 {
 	width: 748px;
-	padding: 0px 10px;
+	margin: 0px 10px;
 }
 
 .ibm-columns .ibm-col-6-1,
@@ -170,7 +170,7 @@
 #ibm-footer-module .ibm-columns .ibm-col-6-1 {
 	width: 140px;
 	_width: 130px;
-	padding: 0px 10px;
+	margin: 0px 10px;
 }
 
 .ibm-columns .ibm-col-6-2,
@@ -254,8 +254,8 @@
 
 .v17 .dijitDialogPaneContent .ibm-container-body .ibm-columns,
 .v17 .dijitDialogPaneContent .ibm-container-body .ibm-columns .ibm-col-1-1 {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .v17 .dijitDialogPaneContent .ibm-container-body .ibm-columns .ibm-col-1-1 {
