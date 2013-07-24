@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374695604296');
+@import url('v17e-blessed1.css?z=1374700061127');
 
 
 /* Menu 
@@ -2541,10 +2541,9 @@ background-position: 3px -400px;
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 { width: 396px; }
   .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 { width: 495px; } }
 @media only screen and (min-width: 481px) and (max-width: 1024px) { #ibm-leadspace-body p:after { content: "min-width: 481 | max-width: 1024px"; }
-  #ibm-content { background: url("../i/fpo/bg-grid-768.png") repeat-y center 0px; }
+  #ibm-content { background: url("../i/fpo/bg-grid-768.png") repeat-y center 0px; min-width: 768px; }
   .ibm-landing-page.ibm-banded#ibm-top { min-width: 100%; margin-top: 0px !important; }
   .ibm-landing-page.ibm-banded #ibm-masthead { min-width: 100%; position: relative; }
-  .ibm-landing-page.ibm-banded #ibm-masthead .ibm-columns, .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { display: none; }
   .ibm-landing-page.ibm-banded #ibm-universal-nav { min-width: 100%; height: 35px !important; }
   .ibm-landing-page.ibm-banded #ibm-universal-nav li#ibm-home { height: 30px !important; }
   .ibm-landing-page.ibm-banded #ibm-universal-nav li#ibm-home a { background-position: 0px -98px; height: 30px !important; }
@@ -2587,4 +2586,6 @@ background-position: 3px -400px;
   .ibm-columns.ibm-alt-margin .ibm-add-padding.ibm-col-4-2, .ibm-columns.ibm-alt-margin .ibm-add-padding.ibm-col-6-3 { width: 280px !important; }
   .ibm-add-padding.ibm-col-6-4 { width: 400px !important; }
   .ibm-add-padding.ibm-col-6-5 { width: 510px !important; }
+  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 660px; padding: 0px 54px; }
+  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 200px; }
   .ibm-landing-page.ibm-banded #ibm-footer ul { width: 732px; padding: 0px; } }

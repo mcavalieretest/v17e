@@ -76,6 +76,7 @@
 	}
 	#ibm-content {
 		background: url("../i/fpo/bg-grid-768.png") repeat-y center 0px;
+		min-width: 768px;
 	}
 	// to be removed.  only for testing
 
@@ -88,11 +89,6 @@
 	.ibm-landing-page.ibm-banded #ibm-masthead {
 		min-width: 100%;
 		position: relative;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-masthead .ibm-columns, 
-	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
-		display: none;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-universal-nav {
@@ -263,6 +259,15 @@
 	}
 	
 	// Begin footer test updates
+	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
+		width: 660px;
+		padding: 0px 54px;
+	}
+
+	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
+		width: 200px;
+	}
+
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
 		width: 732px;
 		padding: 0px;
