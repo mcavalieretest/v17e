@@ -5,10 +5,12 @@
     height: auto;
 }
 
+// to be removed.  only for testing
 #ibm-content {
 	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
 }
-
+// to be removed.  only for testing
+	
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
 	// to be removed.  only for testing
@@ -72,7 +74,6 @@
 	#ibm-leadspace-body p:after {
 		content: "min-width: 481 | max-width: 768px";
 	}
-	
 	#ibm-content {
 		width: 768px;
 		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
