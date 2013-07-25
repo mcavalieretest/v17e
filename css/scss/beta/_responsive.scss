@@ -140,6 +140,22 @@
 		width: 260px !important;
 	}
 
+
+	// active image testing
+	.ibm-col-6-2 .ibm-active-image {
+		height: 60px;
+		width: 60px;
+		background-size: 200px 532px;
+	}
+	.ibm-col-6-2:hover .ibm-active-image {
+		background-position: 0px -200px;
+	}
+	.ibm-col-6-2:active .ibm-active-image {
+		background-position: 0px -399px;
+	}
+	// active image testing
+	
+	
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 300px;
@@ -301,6 +317,21 @@
 	.ibm-add-padding.ibm-col-6-5 {
 		width: 510px !important;
 	}
+	
+
+	// active image testing
+	.ibm-col-6-2 .ibm-active-image {
+		height: 133px;
+		background-size: 200px 532px;
+	}
+	.ibm-col-6-2:hover .ibm-active-image {
+		background-position: 0px -200px;
+	}
+	.ibm-col-6-2:active .ibm-active-image {
+		background-position: 0px -399px;
+	}
+	// active image testing
+		
 	
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
