@@ -38,3 +38,16 @@
 	margin: 10px auto;
 	width: 940px;
 }
+
+.ibm-col-6-2 .ibm-active-image {
+	height: 200px;
+	background: url("../i/fpo/thm-sprite-test.png") no-repeat 0px 0px;
+	
+}
+
+.ibm-col-6-2:hover .ibm-active-image {
+	background-position: 0px -300px;
+}
+.ibm-col-6-2:active .ibm-active-image {
+	background-position: 0px -600px;
+}

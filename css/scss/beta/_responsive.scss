@@ -6,11 +6,26 @@
 }
 
 // to be removed.  only for testing
-#ibm-content {
-	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-1-1,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-1,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-2,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-3,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-1,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-2,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-3,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-4,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-1,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-2,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-3,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-4,
+.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-5 {
+	background-color: rgba(0,0,0,0.2)
 }
 // to be removed.  only for testing
 
+
+
+// media query to be shared between ipad and iphone viewport
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
 
 	.ibm-landing-page.ibm-banded#ibm-top {
@@ -60,15 +75,29 @@
 		padding: 0px;
 	}
 
+	.ibm-add-padding {
+		padding: 0px 10px !important;
+	}
+
 }
-	
+// media query to be shared between ipad and iphone viewport
+
+
+// media query to be used on iphone viewport
 @media only screen and (min-width: 0px) and (max-width: 480px) {
+
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
 		content: "min-width: 0px | max-width: 480px"; 
 	}
-	
+	#ibm-content {
+		background: url("../i/fpo/bg-grid-320.gif") repeat-y 50% 0px;
+		min-width: 320px;
+	}
+	// to be removed.  only for testing
+
+
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
 		width: auto;
@@ -77,101 +106,85 @@
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
-		width: auto;
-		margin: 0px;
+		width: 280px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
-		width: 440px;
+		width: 320px;
 		margin: 0px 10px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
-		width: 440px;
+		width: 300px;
 		padding: 0px 10px;
 	}
 	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1 {
-		width: 440px;
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-3,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4,
+	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 {
+		width: 280px;
+	}
+	
+	.ibm-add-padding.ibm-col-1-1,
+	.ibm-add-padding.ibm-col-4-1,
+	.ibm-add-padding.ibm-col-4-2,
+	.ibm-add-padding.ibm-col-4-3,
+	.ibm-add-padding.ibm-col-5-1,
+	.ibm-add-padding.ibm-col-5-2,
+	.ibm-add-padding.ibm-col-5-3,
+	.ibm-add-padding.ibm-col-5-4,
+	.ibm-add-padding.ibm-col-6-1,
+	.ibm-add-padding.ibm-col-6-2,
+	.ibm-add-padding.ibm-col-6-3,
+	.ibm-add-padding.ibm-col-6-4,
+	.ibm-add-padding.ibm-col-6-5 {
+		width: 260px !important;
 	}
 
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-3 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 {
-		width: 440px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 {
-		width: 440px;
-	}
-	
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
-		width: 440px;
+		width: 300px;
 		padding: 0px 10px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 440px;
+		width: 280px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
-		width: 440px;
+		width: 280px;
 		padding: 0px;
 	}
 	// End footer test updates
 
 }
+// media query to be used on iphone viewport
 
+
+// media query to be used on ipad viewport
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
+
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
 		content: "min-width: 481 | max-width: 1024px";
 	}
 	#ibm-content {
-		background: url("../i/fpo/bg-grid-768.png") repeat-y center 0px;
+		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
 		min-width: 768px;
 	}
 	// to be removed.  only for testing
+	
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
@@ -255,10 +268,7 @@
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-alt-margin .ibm-col-6-3 + .ibm-col-6-3 {
 		margin-left: 30px;
 	}
-		
-	.ibm-add-padding {
-		padding: 0px 10px !important;
-	}
+
 	.ibm-add-padding.ibm-col-1-1 {
 		width: 620px !important;
 	}
@@ -320,3 +330,5 @@
 	// End footer test updates
 	
 }
+// media query to be used on ipad viewport
+
