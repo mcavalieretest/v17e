@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374787524283');
+@import url('v17e-blessed1.css?z=1374788744023');
 
 
 /* Menu 
@@ -2552,9 +2552,12 @@ background-position: 3px -400px;
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns { width: 300px; padding: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; }
   .ibm-add-padding.ibm-col-1-1, .ibm-add-padding.ibm-col-4-1, .ibm-add-padding.ibm-col-4-2, .ibm-add-padding.ibm-col-4-3, .ibm-add-padding.ibm-col-5-1, .ibm-add-padding.ibm-col-5-2, .ibm-add-padding.ibm-col-5-3, .ibm-add-padding.ibm-col-5-4, .ibm-add-padding.ibm-col-6-1, .ibm-add-padding.ibm-col-6-2, .ibm-add-padding.ibm-col-6-3, .ibm-add-padding.ibm-col-6-4, .ibm-add-padding.ibm-col-6-5 { width: 260px !important; }
-  .ibm-col-6-2 .ibm-active-image { height: 60px; width: 60px; background-size: 200px 532px; }
-  .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -200px; }
-  .ibm-col-6-2:active .ibm-active-image { background-position: 0px -399px; }
+  .ibm-active-image { float: left; }
+  .ibm-active-image + .ibm-mobile-layout { margin-left: 70px; }
+  .ibm-mobile-layout h2, .ibm-mobile-layout h3 { margin-top: -4px !important; }
+  .ibm-col-6-2 .ibm-active-image { height: 60px; width: 60px; background-size: 60px 260px; }
+  .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -98px; }
+  .ibm-col-6-2:active .ibm-active-image { background-position: 0px -195px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 300px; padding: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 280px; }
   .ibm-landing-page.ibm-banded #ibm-footer ul { width: 280px; padding: 0px; } }
