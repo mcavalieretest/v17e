@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374779607190');
+@import url('v17e-blessed1.css?z=1374782687385');
 
 
 /* Menu 
@@ -2530,8 +2530,6 @@ background-position: 3px -400px;
 .ibm-col-6-2:active .ibm-active-image { background-position: 0px -600px; }
 
 .ibm-resize { max-width: 100%; height: auto; }
-
-.ibm-landing-page.ibm-banded .ibm-columns .ibm-col-1-1, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-1, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-2, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-4-3, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-1, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-2, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-3, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-5-4, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-1, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-2, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-3, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-4, .ibm-landing-page.ibm-banded .ibm-columns .ibm-col-6-5 { background-color: rgba(0, 0, 0, 0.2); }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) { .ibm-landing-page.ibm-banded#ibm-top { min-width: 100%; margin-top: 0px !important; }
   .ibm-landing-page.ibm-banded #ibm-masthead { min-width: 100%; position: relative; }
