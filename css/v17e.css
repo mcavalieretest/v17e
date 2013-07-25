@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374788919121');
+@import url('v17e-blessed1.css?z=1374789034320');
 
 
 /* Menu 
@@ -2554,7 +2554,7 @@ background-position: 3px -400px;
   .ibm-add-padding.ibm-col-1-1, .ibm-add-padding.ibm-col-4-1, .ibm-add-padding.ibm-col-4-2, .ibm-add-padding.ibm-col-4-3, .ibm-add-padding.ibm-col-5-1, .ibm-add-padding.ibm-col-5-2, .ibm-add-padding.ibm-col-5-3, .ibm-add-padding.ibm-col-5-4, .ibm-add-padding.ibm-col-6-1, .ibm-add-padding.ibm-col-6-2, .ibm-add-padding.ibm-col-6-3, .ibm-add-padding.ibm-col-6-4, .ibm-add-padding.ibm-col-6-5 { width: 260px !important; }
   .ibm-active-image { float: left; }
   .ibm-active-image + .ibm-mobile-thumbnail { margin-left: 70px; }
-  .ibm-mobile-layout h2, .ibm-mobile-layout h3 { margin-top: -4px !important; }
+  .ibm-mobile-thumbnail h2, .ibm-mobile-thumbnail h3 { margin-top: -4px !important; }
   .ibm-col-6-2 .ibm-active-image { height: 60px; width: 60px; background-size: 60px 260px; }
   .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -98px; }
   .ibm-col-6-2:active .ibm-active-image { background-position: 0px -195px; }
