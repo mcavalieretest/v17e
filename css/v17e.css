@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374782687385');
+@import url('v17e-blessed1.css?z=1374782962860');
 
 
 /* Menu 
@@ -2530,6 +2530,8 @@ background-position: 3px -400px;
 .ibm-col-6-2:active .ibm-active-image { background-position: 0px -600px; }
 
 .ibm-resize { max-width: 100%; height: auto; }
+
+#ibm-content { background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px; min-width: 1024px; }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) { .ibm-landing-page.ibm-banded#ibm-top { min-width: 100%; margin-top: 0px !important; }
   .ibm-landing-page.ibm-banded #ibm-masthead { min-width: 100%; position: relative; }
