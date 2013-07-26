@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374789034320');
+@import url('v17e-blessed1.css?z=1374806867479');
 
 
 /* Menu 
@@ -2559,8 +2559,8 @@ background-position: 3px -400px;
   .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -98px; }
   .ibm-col-6-2:active .ibm-active-image { background-position: 0px -195px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 300px; padding: 0px 10px; }
-  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 280px; }
-  .ibm-landing-page.ibm-banded #ibm-footer ul { width: 280px; padding: 0px; } }
+  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 120px; min-height: 225px; }
+  .ibm-landing-page.ibm-banded #ibm-footer ul { width: 300px; margin: 0px; padding: 0px; } }
 @media only screen and (min-width: 481px) and (max-width: 1024px) { #ibm-leadspace-body p:after { content: "min-width: 481 | max-width: 1024px"; }
   #ibm-content { background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px; min-width: 768px; }
   .ibm-landing-page.ibm-banded #ibm-leadspace-head h1, .ibm-landing-page.ibm-banded #ibm-leadspace-head p { width: auto; padding-left: 65px; padding-right: 65px; }

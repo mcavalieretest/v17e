@@ -173,11 +173,13 @@
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 280px;
+		width: 120px;
+		min-height: 225px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
-		width: 280px;
+		width: 300px;
+		margin: 0px;
 		padding: 0px;
 	}
 	// End footer test updates
