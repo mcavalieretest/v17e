@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374807804976');
+@import url('v17e-blessed1.css?z=1374811789769');
 
 
 /* Menu 
@@ -2550,7 +2550,7 @@ background-position: 3px -400px;
   .ibm-landing-page.ibm-banded #ibm-content-main > p { width: 280px; }
   .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container { width: 320px; margin: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns { width: 300px; padding: 0px 10px; }
-  .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; }
   .ibm-add-padding.ibm-col-1-1, .ibm-add-padding.ibm-col-4-1, .ibm-add-padding.ibm-col-4-2, .ibm-add-padding.ibm-col-4-3, .ibm-add-padding.ibm-col-5-1, .ibm-add-padding.ibm-col-5-2, .ibm-add-padding.ibm-col-5-3, .ibm-add-padding.ibm-col-5-4, .ibm-add-padding.ibm-col-6-1, .ibm-add-padding.ibm-col-6-2, .ibm-add-padding.ibm-col-6-3, .ibm-add-padding.ibm-col-6-4, .ibm-add-padding.ibm-col-6-5 { width: 260px !important; }
   .ibm-active-image { float: left; }
   .ibm-active-image + .ibm-mobile-thumbnail { margin-left: 70px; }
