@@ -5,6 +5,14 @@
     height: auto;
 }
 
+a.ibm-thumbnail-adapt {
+	text-decoration: none;		
+}
+
+a.ibm-thumbnail-adapt h2,
+a.ibm-thumbnail-adapt h3 {
+	color: #000;
+}
 
 // Begin masthead test updates
 #ibm-content {
@@ -144,7 +152,6 @@
 	.ibm-add-padding.ibm-col-6-5 {
 		width: 260px !important;
 	}
-
 
 	// active image testing
 	.ibm-thumbnail-adapt {

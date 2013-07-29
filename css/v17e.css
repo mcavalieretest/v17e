@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1375133095874');
+@import url('v17e-blessed1.css?z=1375133689614');
 
 
 /* Menu 
@@ -2530,6 +2530,10 @@ background-position: 3px -400px;
 .ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container { background-position: 0px -600px; }
 
 .ibm-resize { max-width: 100%; height: auto; }
+
+a.ibm-thumbnail-adapt { text-decoration: none; }
+
+a.ibm-thumbnail-adapt h2, a.ibm-thumbnail-adapt h3 { color: #000; }
 
 #ibm-content { background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px; }
 
