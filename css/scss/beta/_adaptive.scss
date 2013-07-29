@@ -9,6 +9,8 @@
 // Begin masthead test updates
 #ibm-content {
 	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
+}
+.ibm-landing-page #ibm-content {
 	min-width: 1024px;
 }
 // Begin masthead test updates
@@ -145,25 +147,31 @@
 
 
 	// active image testing
-	.ibm-active-image {
+	.ibm-thumbnail-adapt {
+		display: block;
+	}
+	.ibm-image-container {
 		float: left;
 	}
-	.ibm-active-image + .ibm-mobile-thumbnail {
-		margin-left: 70px;
+	.ibm-thumbnail-adapt h2,
+	.ibm-thumbnail-adapt h3,
+	.ibm-thumbnail-adapt p,
+	.ibm-thumbnail-adapt ul {
+		margin-left: 70px !important;
 	}
-	.ibm-mobile-thumbnail h2,
-	.ibm-mobile-thumbnail h3 {
+	.ibm-thumbnail-adapt h2,
+	.ibm-thumbnail-adapt h3 {
 		margin-top: -4px !important;
 	}
-	.ibm-col-6-2 .ibm-active-image {
-		height: 60px;
+	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container {
+		height: 40px;
 		width: 60px;
 		background-size: 60px 260px;
 	}
-	.ibm-col-6-2:hover .ibm-active-image {
+	.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container {
 		background-position: 0px -98px;
 	}
-	.ibm-col-6-2:active .ibm-active-image {
+	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container {
 		background-position: 0px -195px;
 	}
 	// active image testing
@@ -335,14 +343,14 @@
 	
 
 	// active image testing
-	.ibm-col-6-2 .ibm-active-image {
+	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container {
 		height: 133px;
 		background-size: auto 532px;
 	}
-	.ibm-col-6-2:hover .ibm-active-image {
+	.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container {
 		background-position: 0px -200px;
 	}
-	.ibm-col-6-2:active .ibm-active-image {
+	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container {
 		background-position: 0px -399px;
 	}
 	// active image testing

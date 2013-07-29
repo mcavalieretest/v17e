@@ -1,4 +1,4 @@
-@import url('v17e-blessed1.css?z=1374845306790');
+@import url('v17e-blessed1.css?z=1375133095874');
 
 
 /* Menu 
@@ -2523,15 +2523,17 @@ background-position: 3px -400px;
 
 .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container { margin: 10px auto; width: 940px; }
 
-.ibm-col-6-2 .ibm-active-image { height: 200px; background: url("../i/fpo/thm-sprite-test.png") no-repeat 0px 0px; }
+.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container { height: 200px; background: url("../i/fpo/thm-sprite-test.png") no-repeat 0px 0px; }
 
-.ibm-col-6-2:hover .ibm-active-image { background-position: 0px -300px; }
+.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container { background-position: 0px -300px; }
 
-.ibm-col-6-2:active .ibm-active-image { background-position: 0px -600px; }
+.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container { background-position: 0px -600px; }
 
 .ibm-resize { max-width: 100%; height: auto; }
 
-#ibm-content { background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px; min-width: 1024px; }
+#ibm-content { background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px; }
+
+.ibm-landing-page #ibm-content { min-width: 1024px; }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) { .ibm-landing-page.ibm-banded#ibm-top { min-width: 100%; margin-top: 0px !important; }
   .ibm-landing-page.ibm-banded #ibm-masthead { min-width: 100%; position: relative; }
@@ -2553,12 +2555,13 @@ background-position: 3px -400px;
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns { width: 300px; padding: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; }
   .ibm-add-padding.ibm-col-1-1, .ibm-add-padding.ibm-col-4-1, .ibm-add-padding.ibm-col-4-2, .ibm-add-padding.ibm-col-4-3, .ibm-add-padding.ibm-col-5-1, .ibm-add-padding.ibm-col-5-2, .ibm-add-padding.ibm-col-5-3, .ibm-add-padding.ibm-col-5-4, .ibm-add-padding.ibm-col-6-1, .ibm-add-padding.ibm-col-6-2, .ibm-add-padding.ibm-col-6-3, .ibm-add-padding.ibm-col-6-4, .ibm-add-padding.ibm-col-6-5 { width: 260px !important; }
-  .ibm-active-image { float: left; }
-  .ibm-active-image + .ibm-mobile-thumbnail { margin-left: 70px; }
-  .ibm-mobile-thumbnail h2, .ibm-mobile-thumbnail h3 { margin-top: -4px !important; }
-  .ibm-col-6-2 .ibm-active-image { height: 60px; width: 60px; background-size: 60px 260px; }
-  .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -98px; }
-  .ibm-col-6-2:active .ibm-active-image { background-position: 0px -195px; }
+  .ibm-thumbnail-adapt { display: block; }
+  .ibm-image-container { float: left; }
+  .ibm-thumbnail-adapt h2, .ibm-thumbnail-adapt h3, .ibm-thumbnail-adapt p, .ibm-thumbnail-adapt ul { margin-left: 70px !important; }
+  .ibm-thumbnail-adapt h2, .ibm-thumbnail-adapt h3 { margin-top: -4px !important; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container { height: 40px; width: 60px; background-size: 60px 260px; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container { background-position: 0px -98px; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container { background-position: 0px -195px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 300px; padding: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 120px; min-height: 225px; }
   .ibm-landing-page.ibm-banded #ibm-footer ul { width: 300px; margin: 0px; padding: 0px; } }
@@ -2597,9 +2600,9 @@ background-position: 3px -400px;
   .ibm-columns.ibm-alt-margin .ibm-add-padding.ibm-col-4-2, .ibm-columns.ibm-alt-margin .ibm-add-padding.ibm-col-6-3 { width: 280px !important; }
   .ibm-add-padding.ibm-col-6-4 { width: 400px !important; }
   .ibm-add-padding.ibm-col-6-5 { width: 510px !important; }
-  .ibm-col-6-2 .ibm-active-image { height: 133px; background-size: auto 532px; }
-  .ibm-col-6-2:hover .ibm-active-image { background-position: 0px -200px; }
-  .ibm-col-6-2:active .ibm-active-image { background-position: 0px -399px; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container { height: 133px; background-size: auto 532px; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container { background-position: 0px -200px; }
+  .ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container { background-position: 0px -399px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 660px; padding: 0px 54px; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 200px; }
   .ibm-landing-page.ibm-banded #ibm-footer ul { width: 732px; padding: 0px; } }
