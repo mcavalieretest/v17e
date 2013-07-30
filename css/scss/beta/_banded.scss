@@ -40,17 +40,21 @@
 }
 
 // sample image highlight section
-.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-image-container {
+.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
 	height: 200px;
-	background: url("../i/fpo/thm-sprite-test.png") no-repeat 0px 0px;
-	
+	overflow: hidden;
 }
 
-.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-image-container {
-	background-position: 0px -300px;
+.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite img {
+	position: relative;
+	max-width: 100%;
 }
 
-.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-image-container {
-	background-position: 0px -600px;
+.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+	top: -300px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
+	top: -600px;
 }
 // sample image highlight section

@@ -89,6 +89,10 @@
 <div id="ibm-content-body">
 <div id="ibm-content-main">
 
+
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+
 <h2>Official v17 templates</h2>
 <ul>
 <li><a href="templates/_masthead_multilanguage.html">_masthead_multilanguage.html</a></li>
@@ -154,8 +158,42 @@
 <ul>
 <li><a href="templates/beta/banded.html">banded.html</a></li>
 </ul>
+<br /><br />
 
+<h2>Template updates to enable v17e</h2>
 
+<ol>
+<li>Add viewport meta tag</li>
+<li>Point to v17e.css file</li>
+<li>Add .ibm-branded class to the landing page template</li>
+</ol>
+<br /><br />
+
+<h2>New v17e containers / modules</h2>
+
+<ul>
+<li>.ibm-banded - 100% content space trigger</li>
+<li>.ibm-band - Band container around .ibm-columns</li>
+<li>.ibm-resize - Applied to images to allow resize based on parent container width</li>
+<li>.ibm-col-adapt - Applied to 6-3 and 4-2 containers for additional 30px margin between columns.  Enabled in 768 grid</li>
+<li>.ibm-thumbnail-adapt - Applied within columns to allow hover / click states on sprites.  This container also changes the layout under the 480 grid
+	<ul>
+		<li>- .ibm-sprite - Container to add image sprites for mouse states</li>
+	</ul>
+</li>
+<li>.ibm-col-space - Applied to columns to provide extra 10px padding.</li>
+</ul>
+<br /><br />
+
+<h2>v17e rules</h2>
+
+<ul>
+<li>Add "-adapt" suffix to elements that change under different grids</li>
+<li>Use "ibm_cc-" prefix for site specific custom code</li>
+</ul>
+
+</div>
+</div>
 
 </div>
 <!-- FEATURES_BEGIN -->
