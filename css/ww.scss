@@ -1,12 +1,12 @@
 /*! 
- * Name: ibm.com v17e master CSS file
+ * Name: ibm.com v17e CSS file
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
  
 // URI: www.ibm.com/common/v17e/css/ww.css
-// Description: CSS Stylesheets for v17e project
+// Description: Official SASS files for v17e project
 // Date: July 30, 2013
 //
 // Notes:
@@ -17,7 +17,7 @@
 // listed below. Use a SASS compiler to create the ww.css file.
 
 
-/*  Adjust these references as v17e gets built...
+/*  v17e SASS structure map...
 
 css/
 |
@@ -71,7 +71,7 @@ css/
 
 
 
-
+// The v17e output build (ww.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "scss/shared/vars",
