@@ -249,7 +249,8 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content {
-		min-width: 600px;
+
+		min-width: inherit;
 	}
 
 
@@ -262,11 +263,11 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
-		width: 100%;
+		width: auto;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
-		width: 100%;
+		width: auto;
 		margin: 10px 0px;
 	}
 	
