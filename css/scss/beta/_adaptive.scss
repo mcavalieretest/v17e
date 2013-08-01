@@ -247,12 +247,13 @@ a.ibm-thumbnail-adapt h3 {
 	#ibm-leadspace-body p:after {
 		content: "min-width: 481 | max-width: 600px";
 	}
-	
+	#ibm-top.ibm-landing-page.ibm-banded {
+		width: auto;
+	}
 	#ibm-leadspace-head,
 	#ibm-footer-module,
 	#ibm-footer,
-	#ibm-universal-nav,
-	#ibm-mast-options {
+	#ibm-masthead {
 		display: none !important;
 	}
 	
