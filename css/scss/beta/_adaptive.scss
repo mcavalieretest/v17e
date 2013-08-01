@@ -15,6 +15,43 @@ a.ibm-thumbnail-adapt h3 {
 	color: #000;
 }
 
+
+// sample image highlight section
+.ibm-thumbnail-adapt .ibm-sprite {
+	overflow: hidden;
+}
+
+.ibm-thumbnail-adapt .ibm-sprite img {
+	position: relative;
+	max-width: 100%;
+}
+
+.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite {
+	height: 146px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
+	height: 200px;
+}
+
+.ibm-col-4-1 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+	top: -220px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+	top: -300px;
+}
+
+.ibm-col-4-1 .ibm-thumbnail-adapt:active .ibm-sprite img {
+	top: -440px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
+	top: -600px;
+}
+// sample image highlight section
+
+
 // Begin masthead test updates
 #ibm-content {
 	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
@@ -169,15 +206,15 @@ a.ibm-thumbnail-adapt h3 {
 		position: relative;
 		top: -2px;
 	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
-		height: 40px;
-		width: 60px;
+	.ibm-thumbnail-adapt .ibm-sprite {
+		height: 40px !important;
+		width: 60px !important;
 	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
-		top: -60px;
+	.ibm-thumbnail-adapt:hover .ibm-sprite img {
+		top: -60px !important;
 	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
-		top: -120px;
+	.ibm-thumbnail-adapt:active .ibm-sprite img {
+		top: -120px !important;
 	}
 	// active image testing
 	
@@ -347,7 +384,41 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	
 
-	// active image testing
+	// active image testing 4-1
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1 {
+		width: 310px
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt {
+		padding-bottom: 10px;
+	}
+	.ibm-col-4-1 .ibm-sprite {
+		float: left;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt h2,
+	.ibm-col-4-1 .ibm-thumbnail-adapt h3,
+	.ibm-col-4-1 .ibm-thumbnail-adapt p,
+	.ibm-col-4-1 .ibm-thumbnail-adapt ul {
+		margin-left: 70px !important;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h2,
+	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h3 {
+		position: relative;
+		top: -2px;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite {
+		height: 40px;
+		width: 60px;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+		top: -60px;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-adapt:active .ibm-sprite img {
+		top: -120px;
+	}
+	// active image testing 4-1
+	
+
+	// active image testing 6-2
 	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
 		height: 133px;
 	}
@@ -357,9 +428,9 @@ a.ibm-thumbnail-adapt h3 {
 	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
 		top: -400px;
 	}
-	// active image testing
+	// active image testing 6-2
 		
-	
+
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 660px;
