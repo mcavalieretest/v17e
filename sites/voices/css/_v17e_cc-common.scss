@@ -16,10 +16,12 @@ $min-height 			: 127px;
 $float-left 			: left;
 $sprite-url 			: "../i/ibm-voices-sprite.png";
 $white-color 			: #fff;
-$leadspace--logo 		: ".ibm-cc-leadspace-logo";
-$leadspace--search 		: ".ibm-cc-leadspace-search";
-$leadspace--toggle 		: ".ibm-cc-leadspace-toggle";
-$leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
+$leadspace--logo 		: ".ibm-cc--leadspace--logo";
+$leadspace--search 		: ".ibm-cc--leadspace--search";
+$leadspace--toggle 		: ".ibm-cc--leadspace--toggle";
+$leadspace__modfyier 	: ".ibm-cc--h1__modifyer";
+$font-family 			: "sans-serif", helvetica, serif;
+$search--field--shadow 	: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
 
 
 /* Leadspace overides (begin) */
@@ -54,20 +56,20 @@ $leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
 		padding:0 0 0 20px;
 	}
 
-	/* Load sprite image (begin) */
+	/* Load sprite image default (begin) */
 	.mysprite {
 			background: url($sprite-url) no-repeat;
 			line-height: 0;
 			overflow: hidden;
 			border: 0;
 			display:block;
+			width: 600px;
+			height:200px;
 		}
 
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1{
 		@extend .mysprite;
 		font-size: 0;
-		width: 600px;
-		height:200px;
 		color: $white-color;
 	}
 			
@@ -99,15 +101,17 @@ $leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
 			form input.ibm-cc-search--field {
 				width:395px; 
 				height:28px;
-				-webkit-box-shadow: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-				-moz-box-shadow: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-				box-shadow: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
+				-webkit-box-shadow: $search--field--shadow;
+				-moz-box-shadow: $search--field--shadow;
+				box-shadow: $search--field--shadow;
 				font-size:1.0em;
+				font-family:$font-family;
 				font-weight: normal;
 				padding-left: 10px;
 				color:#666;
 				padding-right:30px;
 				border: 1px solid #DDD;
+				margin-top: 10px;
 			}
 
 			form input.ibm-cc-search--icon{
@@ -125,12 +129,38 @@ $leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
 
 		}
 
-	/* Leadspace search block (begin) */	
+	/* Leadspace toggle block (begin) */	
 		#{$leadspace--toggle} {
 			@extend .leadspace--defaults;
-			width:140px;	
+			width:140px;
+			font-size:0;	
+				ul.ibm-cc--leadspace--toggle--ul {
+					float:right;
+				li {
+					display: inline-block;
+					list-style:none; 
+					margin:0;
+					padding:0;	
+						a {
+							@extend .mysprite;
+							width:42px;
+							height:43px;
+						}	 
+					}
+				li.ibm-cc--leadspace--toggle--li--grid-icon a {
+					background-position: -87px -50px;
+					&:hover {
+					background-position: -129px -50px;
+					}
+				}
+				li.ibm-cc--leadspace--toggle--li--list-icon a {
+					background-position: 0 -50px;
+					&:hover {
+					background-position: -43px -50px;
+					}
+				}				
+			}
 		}	
-
 
 
 /* Modifyers for Mobile (begin) */
@@ -150,6 +180,7 @@ $leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
 
 	#{$leadspace--search} form input.ibm-cc-search--field {
 		width:300px; 
+		margin-top:0;
 	}
 
 	#{$leadspace--toggle} {
@@ -195,7 +226,8 @@ $leadspace__modfyier 	: ".ibm-cc__h1-modifyer";
 	}
 
 	#{$leadspace--search} form input.ibm-cc-search--field {
-				width:227px; 
+		width:227px; 
+		margin-top:5px;
 	}
 
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modfyier} {
