@@ -400,29 +400,3 @@ a.ibm-thumbnail-adapt h3 {
 }
 // media query to be used on ipad viewport
 
-
-
-
-
-@media only screen and (device-width : 800px) and (orientation: portrait) {
-    #ibm-leadspace-body h1:after {
-        content: "Nexus 7 - portrait - firefox";
-    }
-}
-@media only screen and (width : 603px) and (orientation: portrait) {
-    #ibm-leadspace-body h1:after {
-        content: "Nexus 7 - portrait - chrome";
-    }
-}
-@media only screen and (device-width : 1280px) and (orientation: landscape) {
-    #ibm-leadspace-body h1:after {
-        content: "Nexus 7 - landscape - firefox";
-    }
-}
-@media only screen and (width : 966px) and (orientation: landscape) {
-    #ibm-leadspace-body h1:after {
-        content: "Nexus 7 - landscape - chrome";
-    }
-}
-
-
