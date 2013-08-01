@@ -240,14 +240,23 @@ a.ibm-thumbnail-adapt h3 {
 }
 // media query to be used on iphone viewport
 
-
-// media query to be used on ipad viewport
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
 
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 481 | max-width: 768px";
+		content: "min-width: 481 | max-width: 600px";
+	}
+
+}
+
+// media query to be used on ipad viewport
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 601 | max-width: 768px";
 	}
 	.ibm-landing-page.ibm-banded #ibm-content {
 		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
