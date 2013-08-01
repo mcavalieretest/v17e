@@ -248,6 +248,10 @@ a.ibm-thumbnail-adapt h3 {
 		content: "min-width: 481 | max-width: 600px";
 	}
 	
+	#ibm-leadspace-head {
+		display: none !important;
+	}
+	
 	.ibm-landing-page.ibm-banded #ibm-content {
 
 		min-width: 600px;
