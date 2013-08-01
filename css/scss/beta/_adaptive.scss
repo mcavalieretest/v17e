@@ -383,6 +383,9 @@ a.ibm-thumbnail-adapt h3 {
 		
 
 	// Begin footer test updates
+	.ibm-landing-page.ibm-banded #ibm-footer-module {
+		display: none;
+	}
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 660px;
 		padding: 0px 54px;
