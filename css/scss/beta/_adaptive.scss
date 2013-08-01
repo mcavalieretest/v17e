@@ -73,7 +73,7 @@ a.ibm-thumbnail-adapt h3 {
 
 
 // media query to be shared between ipad and iphone viewport
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
 
 	.ibm-landing-page.ibm-banded#ibm-top {
 		min-width: 100%;
@@ -242,12 +242,12 @@ a.ibm-thumbnail-adapt h3 {
 
 
 // media query to be used on ipad viewport
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 481 | max-width: 1024px";
+		content: "min-width: 481 | max-width: 768px";
 	}
 	.ibm-landing-page.ibm-banded #ibm-content {
 		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
