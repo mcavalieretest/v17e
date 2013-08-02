@@ -22,59 +22,8 @@ $leadspace--toggle 				: ".ibm-cc--leadspace--toggle";
 $leadspace__modfyier 			: ".ibm-cc--h1__modifyer";
 $default-font-family 			: Arial, "serif", sans-serif, Helvetica;
 $search--field--shadow 			: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-// $custom-font-path 			: "../../css/fonts";
 $ibm-content__modifyer 			: ".ibm-cc__ibm-content";
 $ibm-band__modifyer				: ".ibm-cc__ibm-band";
-
-/* CUSTOM FONT LIST FOR VOICES (BEGIN) */
-// SIMPLER NAMES
-
-// HelveticaNeueW01-Thin
-// HelveticaNeueW01-45Ligh
-// HelveticaNeueW01-55Roma
-// HelveticaNeueW01-65Medi
-// HelveticaNeueW01-75Bold
-
-// @font-face{
-// font-family:"HelveticaNeueW01-Thin";
-// src:url("#{$custom-font-path}/56be84de-9d60-4089-8df0-0ea6ec786b84.eot?#iefix");
-// src:url("#{$custom-font-path}/56be84de-9d60-4089-8df0-0ea6ec786b84.eot?#iefix") format("eot"),
-// 	url("#{$custom-font-path}/50d35bbc-dfd4-48f1-af16-cf058f69421d.woff") format("woff"),
-// 	url("#{$custom-font-path}/278bef59-6be1-4800-b5ac-1f769ab47430.ttf") format("truetype"),
-// 	url("#{$custom-font-path}/2e309b1b-08b8-477f-bc9e-7067cf0af0b3.svg#2e309b1b-08b8-477f-bc9e-7067cf0af0b3") format("svg");
-// }
-// @font-face{
-// font-family:"HelveticaNeueW01-45Ligh";
-// src:url("#{$custom-font-path}/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
-// src:url("#{$custom-font-path}/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"),
-// 	url("#{$custom-font-path}/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"),
-// 	url("#{$custom-font-path}/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"),
-// 	url("#{$custom-font-path}/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg");
-// }
-// @font-face{
-// font-family:"HelveticaNeueW01-55Roma";
-// src:url("#{$custom-font-path}/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix");
-// src:url("#{$custom-font-path}/b7693a83-b861-4aa6-85e0-9ecf676bc4d6.eot?#iefix") format("eot"),
-// 	url("#{$custom-font-path}/bcf54343-d033-41ee-bbd7-2b77df3fe7ba.woff") format("woff"),
-// 	url("#{$custom-font-path}/b0ffdcf0-26da-47fd-8485-20e4a40d4b7d.ttf") format("truetype"),
-// 	url("#{$custom-font-path}/da09f1f1-062a-45af-86e1-2bbdb3dd94f9.svg#da09f1f1-062a-45af-86e1-2bbdb3dd94f9") format("svg");
-// }
-// @font-face{
-// font-family:"HelveticaNeueW01-65Medi";
-// src:url("#{$custom-font-path}/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix");
-// src:url("#{$custom-font-path}/07fe0fec-b63f-4963-8ee1-535528b67fdb.eot?#iefix") format("eot"),
-// 	url("#{$custom-font-path}/60be5c39-863e-40cb-9434-6ebafb62ab2b.woff") format("woff"),
-// 	url("#{$custom-font-path}/4c6503c9-859b-4d3b-a1d5-2d42e1222415.ttf") format("truetype"),
-// 	url("#{$custom-font-path}/36c182c6-ef98-4021-9b0d-d63122c2bbf5.svg#36c182c6-ef98-4021-9b0d-d63122c2bbf5") format("svg");
-// }
-// @font-face{
-// font-family:"HelveticaNeueW01-75Bold";
-// src:url("#{$custom-font-path}/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix");
-// src:url("#{$custom-font-path}/c07fef9e-a934-42d7-92ad-69205f2b8a00.eot?#iefix") format("eot"),
-// 	url("#{$custom-font-path}/14ff6081-326d-4dae-b778-d7afa66166fc.woff") format("woff"),
-// 	url("#{$custom-font-path}/8fda1e47-19be-46c7-8d83-8d4fb35572f0.ttf") format("truetype"),
-// 	url("#{$custom-font-path}/f751c8ae-1057-46d9-8d74-62592e002568.svg#f751c8ae-1057-46d9-8d74-62592e002568") format("svg");
-// }
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
