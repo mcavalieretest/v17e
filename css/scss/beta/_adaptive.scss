@@ -1,4 +1,4 @@
-// responsive styles begin ============================================
+// adaptive styles begin ============================================
 
 .ibm-resize {
 	max-width: 100%;
@@ -74,11 +74,10 @@ a.ibm-thumbnail-adapt h3 {
 
 
 
-// -------------------------------------------------------------- media query to be shared between ipad and iphone viewport --------------------------------------------------------------
+// -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 @media only screen and (min-width: 0px) and (max-width: 768px) {
 
 	.ibm-landing-page.ibm-banded#ibm-top {
-		min-width: 100%;
 		margin-top: 0px !important;
 	}
 	
@@ -125,10 +124,11 @@ a.ibm-thumbnail-adapt h3 {
 	}
 
 }
-// media query to be shared between ipad and iphone viewport
+// -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 
 
-// media query to be used on iphone viewport
+
+// -------------------------------------------------------------- media query to be used on iPhone viewport --------------------------------------------------------------
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 
 
@@ -141,6 +141,10 @@ a.ibm-thumbnail-adapt h3 {
 		min-width: 320px;
 	}
 	// to be removed.  only for testing
+	
+	.ibm-landing-page.ibm-banded#ibm-top {
+		min-width: 320px;
+	}
 
 	.ibm-landing-page.ibm-banded #ibm-search-form {
 		margin: 4px 20px 0px 1px;
@@ -240,7 +244,7 @@ a.ibm-thumbnail-adapt h3 {
 	// End footer test updates
 
 }
-// --------------------------------------------------------------  media query to be used on iphone viewport -------------------------------------------------------------- 
+// --------------------------------------------------------------  media query to be used on iPhone viewport -------------------------------------------------------------- 
 
 
 // -------------------------------------------------------------- media query to be used on 600px (Nexus / Android) viewport -------------------------------------------------------------- 
@@ -251,7 +255,11 @@ a.ibm-thumbnail-adapt h3 {
 	#ibm-leadspace-body p:after {
 		content: "min-width: 481 | max-width: 600px";
 	}
-
+	
+	.ibm-landing-page.ibm-banded#ibm-top {
+		min-width: 600px;
+	}
+	
 	.ibm-landing-page.ibm-banded #ibm-content {
 		width: 600px;
 	}
@@ -273,7 +281,7 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
-		width: auto;
+		width: 540px;
 		padding: 0px 30px;
 	}
 	
@@ -380,15 +388,16 @@ a.ibm-thumbnail-adapt h3 {
 		
 
 	// Begin footer test updates
+	
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
-		width: auto;
-		padding: 0px;
+		width: 540px;
+		padding: 0px 30px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 50px;
+		width: 160px;
 	}
-
+	
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
 		width: auto;
 		padding: 0px;
@@ -413,6 +422,9 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	// to be removed.  only for testing
 	
+	.ibm-landing-page.ibm-banded#ibm-top {
+		min-width: 768px;
+	}
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
