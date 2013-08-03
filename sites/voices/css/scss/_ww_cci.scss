@@ -1,33 +1,32 @@
 /*! 
- * Name: [Project name]
+ * Name: IBM Voices
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
 
 // URI: [File location on live site]
-// Description: [CSS Customization Stylesheet for "Project name"]
-// Author: [Name and Lotus Notes address of CSS author]
-// Date: [Date of file edits] (e.g. July 30, 2013)
+// Description: [CSS Customization Stylesheet for "IBM Voices"]
+// Author: [Vishwas Chouhan | vchouhan@us.ibm.com]
+// Date: [August 3, 2013] (e.g. July 30, 2013)
 //
 // Notes:
 //   Add "-adapt" class suffix to elements that change under different grids
 //   Use ".ibm_cci-" class prefix for site specific custom code
-
 
 // Default variables
 $min-height 					: 127px;
 $float-left 					: left;
 $sprite-url 					: "../i/ibm-voices-sprite.png";
 $white-color 					: #fff;
-$leadspace--logo 				: ".ibm-cc--leadspace--logo";
-$leadspace--search 				: ".ibm-cc--leadspace--search";
-$leadspace--toggle 				: ".ibm-cc--leadspace--toggle";
-$leadspace__modfyier 			: ".ibm-cc--h1__modifyer";
+$leadspace--logo 				: ".ibm_cci--leadspace--logo";
+$leadspace--search 				: ".ibm_cci--leadspace--search";
+$leadspace--toggle 				: ".ibm_cci--leadspace--toggle";
+$leadspace__modfyier 			: ".ibm_cci--h1__modifyer";
 $default-font-family 			: Arial, "serif", sans-serif, Helvetica;
 $search--field--shadow 			: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-$ibm-content__modifyer 			: ".ibm-cc__ibm-content";
-$ibm-band__modifyer				: ".ibm-cc__ibm-band";
+$ibm-content__modifyer 			: ".ibm_cci__ibm-content";
+$ibm-band__modifyer				: ".ibm_cci__ibm-band";
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
@@ -183,9 +182,16 @@ $ibm-band__modifyer				: ".ibm-cc__ibm-band";
 			& #ibm-content-main{
 			// h1: 1.0em;
 				& .ibm-band#{$ibm-band__modifyer} {
-					
-					min-height:0;	
-					max-height: 10px;
+					background: #f2f2f2;
+					background: -moz-linear-gradient(top,  #f2f2f2 0%, #ffffff 100%);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#ffffff));
+					background: -webkit-linear-gradient(top,  #f2f2f2 0%,#ffffff 100%);
+					background: -o-linear-gradient(top,  #f2f2f2 0%,#ffffff 100%);
+					background: -ms-linear-gradient(top,  #f2f2f2 0%,#ffffff 100%);
+					background: linear-gradient(to bottom,  #f2f2f2 0%,#ffffff 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 );
+					min-height:10px;	
+					//max-height: 50px;
 				}
 			}
 		}
@@ -270,3 +276,4 @@ $ibm-band__modifyer				: ".ibm-cc__ibm-band";
 	}
 	
 }
+
