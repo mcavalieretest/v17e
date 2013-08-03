@@ -169,30 +169,31 @@ a.ibm-thumbnail-adapt h3 {
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
 		width: 300px;
 		padding: 0px 10px;
+		
+		.ibm-col-1-1,
+		.ibm-col-4-1,
+		.ibm-col-4-2,
+		&.ibm-w-gutter .ibm-col-4-2,
+		.ibm-col-4-3,
+		.ibm-col-5-1,
+		.ibm-col-5-2,
+		.ibm-col-5-3,
+		.ibm-col-5-4,
+		.ibm-col-6-1,
+		.ibm-col-6-2,
+		.ibm-col-6-3,
+		&.ibm-w-gutter .ibm-col-6-3,
+		.ibm-col-6-4,
+		.ibm-col-6-5 {
+			width: 280px;
+		}
+		&.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
+		&.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3 {
+			margin-left: 10px;
+		}
+		
 	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 {
-		width: 280px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3 {
-		margin-left: 10px;
-	}
+
 
 	// active image testing
 	.ibm-thumbnail-adapt {
@@ -279,110 +280,102 @@ a.ibm-thumbnail-adapt h3 {
 		width: auto;
 		margin: 10px 0px;
 	}
-	
+		
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
 		width: 540px;
 		padding: 0px 30px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1 {
-		width: 520px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1 {
-		width: 115px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2 {
-		width: 250px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3 {
-		width: 385px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1 {
-		width: 88px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2 {
-		width: 196px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3 {
-		width: 304px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4 {
-		width: 412px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1 {
-		width: 70px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2 {
-		width: 160px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3 {
-		width: 250px;
-	}
-
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 {
-		width: 240px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4 {
-		width: 340px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 {
-		width: 430px;
+		
+		.ibm-col-1-1 {
+			width: 520px;
+		}
+		.ibm-col-4-1 {
+			width: 115px;
+		}
+		.ibm-col-4-2 {
+			width: 250px;
+		}
+		.ibm-col-4-3 {
+			width: 385px;
+		}
+		.ibm-col-5-1 {
+			width: 88px;
+		}
+		.ibm-col-5-2 {
+			width: 196px;
+		}
+		.ibm-col-5-3 {
+			width: 304px;
+		}
+		.ibm-col-5-4 {
+			width: 412px;
+		}
+		.ibm-col-6-1 {
+			width: 70px;
+		}
+		.ibm-col-6-2 {
+			width: 160px;
+		}
+		.ibm-col-6-3 {
+			width: 250px;
+		}
+		&.ibm-w-gutter .ibm-col-4-2,
+		&.ibm-w-gutter .ibm-col-6-3 {
+			width: 240px;
+		}
+		.ibm-col-6-4 {
+			width: 340px;
+		}
+		.ibm-col-6-5 {
+			width: 430px;
+		}
+		
 	}
 
 	// active image testing 4-1
 
-	.ibm-col-4-1 .ibm-thumbnail-adapt {
-		padding-bottom: 10px;
-	}
 	.ibm-col-4-1 .ibm-sprite {
 		float: left;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt h2,
-	.ibm-col-4-1 .ibm-thumbnail-adapt h3,
-	.ibm-col-4-1 .ibm-thumbnail-adapt p,
-	.ibm-col-4-1 .ibm-thumbnail-adapt ul {
-		margin-left: 70px !important;
+
+	.ibm-col-4-1 .ibm-thumbnail-adapt {
+		padding-bottom: 10px;
+		h2,
+		h3,
+		p,
+		ul {
+			margin-left: 70px !important;
+		}
+		.ibm-sprite {
+			height: 40px;
+			width: 60px;
+		}
+		&:hover .ibm-sprite img {
+			top: -60px;
+		}
+		&:active .ibm-sprite img {
+			top: -120px;
+		}
+		.ibm-sprite + h2,
+		.ibm-sprite + h3 {
+			position: relative;
+			top: -2px;
+		}
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h2,
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h3 {
-		position: relative;
-		top: -2px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite {
-		height: 40px;
-		width: 60px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt:hover .ibm-sprite img {
-		top: -60px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt:active .ibm-sprite img {
-		top: -120px;
-	}
+
 	// active image testing 4-1
 	
 
 	// active image testing 6-2
-	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
-		height: 107px;
-	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
-		top: -160px;
-	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
-		top: -320px;
+	.ibm-col-6-2 .ibm-thumbnail-adapt {
+		.ibm-sprite {
+			height: 107px;
+		}
+		&:hover .ibm-sprite img {
+			top: -160px;
+		}
+		&:active .ibm-sprite img {
+			top: -320px;
+		}
 	}
 	// active image testing 6-2
 		
@@ -392,11 +385,13 @@ a.ibm-thumbnail-adapt h3 {
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 540px;
 		padding: 0px 30px;
+		
+		.ibm-col-6-1 {
+			width: 160px;
+		}
+		
 	}
 
-	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 160px;
-	}
 	
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
 		width: auto;
@@ -445,64 +440,53 @@ a.ibm-thumbnail-adapt h3 {
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns {
 		width: auto;
 		padding: 0px 54px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1 {
-		width: 640px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1 {
-		width: 145px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2 {
-		width: 310px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3 {
-		width: 475px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1 {
-		width: 112px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2 {
-		width: 244px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3 {
-		width: 376px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4 {
-		width: 508px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1 {
-		width: 90px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2 {
-		width: 200px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3 {
-		width: 290px;
-	}
+		
+		.ibm-col-1-1 {
+			width: 640px;
+		}
+		.ibm-col-4-1 {
+			width: 145px;
+		}
+		.ibm-col-4-2 {
+			width: 310px;
+		}
+		.ibm-col-4-3 {
+			width: 475px;
+		}
+		.ibm-col-5-1 {
+			width: 112px;
+		}
+		.ibm-col-5-2 {
+			width: 244px;
+		}
+		.ibm-col-5-3 {
+			width: 376px;
+		}
+		.ibm-col-5-4 {
+			width: 508px;
+		}
+		.ibm-col-6-1 {
+			width: 90px;
+		}
+		.ibm-col-6-2 {
+			width: 200px;
+		}
+		.ibm-col-6-3 {
+			width: 290px;
+		}
+		&.ibm-w-gutter .ibm-col-4-2,
+		&.ibm-w-gutter .ibm-col-6-3 {
+			width: 300px;
+		}
+		.ibm-col-6-4 {
+			width: 420px;
+		}
+		.ibm-col-6-5 {
+			width: 530px;
+		}
 
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2,
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 {
-		width: 300px;
 	}
 	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4 {
-		width: 420px;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 {
-		width: 530px;
-	}
 
 	// active image testing 4-1
 
