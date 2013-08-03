@@ -25,6 +25,9 @@
   width: auto;
   padding: 0; }
 
+#ibm-pcon.ibm_cci__ibm-pcon {
+  margin-top: 0px; }
+
 /* LEADSPACE OVERIDES (END) */
 /* LEADSPACE DEFAULTS (BEGIN) */
 .leadspace--defaults, .ibm_cci--leadspace--logo, .ibm_cci--leadspace--search, .ibm_cci--leadspace--toggle {
@@ -33,14 +36,12 @@
   padding: 0 0 0 20px; }
 
 /* LOAD SPRITE IMAGE DEFAULT (BEGIN) */
-.mysprite, .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1, .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li a {
+.mysprite, .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1, .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li a, #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color a img {
   background: url("../i/ibm-voices-sprite.png") no-repeat;
   line-height: 0;
   overflow: hidden;
   border: 0;
-  display: block;
-  width: 600px;
-  height: 200px; }
+  display: block; }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1 {
   font-size: 0;
@@ -120,15 +121,45 @@
 #ibm-content.ibm_cci__ibm-content {
   background: none; }
   #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band {
-    background: #f2f2f2;
+    background: #fff;
     background: -moz-linear-gradient(top, #f2f2f2 0%, white 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f2f2), color-stop(100%, white));
     background: -webkit-linear-gradient(top, #f2f2f2 0%, white 100%);
     background: -o-linear-gradient(top, #f2f2f2 0%, white 100%);
     background: -ms-linear-gradient(top, #f2f2f2 0%, white 100%);
     background: linear-gradient(to bottom, #f2f2f2 0%, #ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#ffffff',GradientType=0 );
-    min-height: 10px; }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#fff',GradientType=0 );
+    min-height: 15px; }
+    #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top {
+      margin-top: 10px; }
+      #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li {
+        background: none;
+        list-style: none;
+        display: inline;
+        padding: 2px 10px 2px 0px; }
+        #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color {
+          background-color: #dedede; }
+          #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color span p {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: 000;
+            display: inline; }
+          #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color.ibm_cci__margin-left {
+            margin-left: 10px; }
+          #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color a img {
+            width: 17px;
+            height: 17px;
+            background-position: -205px -50px;
+            display: inline;
+            vertical-align: text-bottom;
+            margin-left: 5px;
+            font-size: 0;
+            line-height: 0;
+            overflow: hidden; }
+      #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li:hover.ibm_cci__background-color {
+        background-color: #cecece; }
+        #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li:hover.ibm_cci__background-color span img {
+          opacity: 0.5; }
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
 @media only screen and (min-width: 0) and (max-width: 481px) {
