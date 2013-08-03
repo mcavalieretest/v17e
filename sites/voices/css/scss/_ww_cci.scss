@@ -149,7 +149,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 			li {
 				display: inline-block;
 				list-style:none; 
-				margin:0;
+				margin:0 1px;
 				padding:0;	
 					a {
 						@extend .mysprite;
@@ -219,7 +219,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 								-ms-webkit-border-radius: 5px;
 								-o-webkit-border-radius: 5px;
 								&.ibm_cci__margin-left{
-									margin-left:2px;
+									margin:0 0 5px 2px;
 								}								
 								& p {
 									display:inline;
