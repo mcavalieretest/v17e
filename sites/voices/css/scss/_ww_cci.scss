@@ -139,7 +139,7 @@ $ibm-band__modifyer				: ".ibm_cci__ibm-band";
 		@extend .leadspace--defaults;
 		width:140px;
 		font-size:0;	
-			ul.ibm-cc--leadspace--toggle--ul {
+			ul.ibm_cci--leadspace--toggle--ul {
 				float:right;
 			li {
 				display: inline-block;
@@ -152,7 +152,7 @@ $ibm-band__modifyer				: ".ibm_cci__ibm-band";
 						height:43px;
 					}	 
 				}
-			li.ibm-cc--leadspace--toggle--li--grid-icon a {
+			li.ibm_cci--leadspace--toggle--li--grid-icon a {
 				background-position: -87px -50px;
 				&.selected {
 					background-position: -129px -50px;
@@ -161,7 +161,7 @@ $ibm-band__modifyer				: ".ibm_cci__ibm-band";
 					background-position: -129px -50px;
 				}
 			}
-			li.ibm-cc--leadspace--toggle--li--list-icon a {
+			li.ibm_cci--leadspace--toggle--li--list-icon a {
 				background-position: 0 -50px;
 				&.selected {
 					background-position: -43px -50px;

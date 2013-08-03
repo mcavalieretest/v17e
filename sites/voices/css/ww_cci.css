@@ -33,7 +33,7 @@
   padding: 0 0 0 20px; }
 
 /* LOAD SPRITE IMAGE DEFAULT (BEGIN) */
-.mysprite, .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1, .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li a {
+.mysprite, .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1, .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li a {
   background: url("../i/ibm-voices-sprite.png") no-repeat;
   line-height: 0;
   overflow: hidden;
@@ -93,27 +93,27 @@
 .ibm_cci--leadspace--toggle {
   width: 140px;
   font-size: 0; }
-  .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul {
+  .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul {
     float: right; }
-    .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li {
+    .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li {
       display: inline-block;
       list-style: none;
       margin: 0;
       padding: 0; }
-      .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li a {
+      .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li a {
         width: 42px;
         height: 43px; }
-    .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--grid-icon a {
+    .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--grid-icon a {
       background-position: -87px -50px; }
-      .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--grid-icon a.selected {
+      .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--grid-icon a.selected {
         background-position: -129px -50px; }
-      .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--grid-icon a:hover {
+      .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--grid-icon a:hover {
         background-position: -129px -50px; }
-    .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--list-icon a {
+    .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--list-icon a {
       background-position: 0 -50px; }
-      .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--list-icon a.selected {
+      .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--list-icon a.selected {
         background-position: -43px -50px; }
-      .ibm_cci--leadspace--toggle ul.ibm-cc--leadspace--toggle--ul li.ibm-cc--leadspace--toggle--li--list-icon a:hover {
+      .ibm_cci--leadspace--toggle ul.ibm_cci--leadspace--toggle--ul li.ibm_cci--leadspace--toggle--li--list-icon a:hover {
         background-position: -43px -50px; }
 
 /* IBM CONTENT BLOCK OVERIDES (BEGIN) */
