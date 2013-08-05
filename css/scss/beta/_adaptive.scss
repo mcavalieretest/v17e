@@ -41,7 +41,7 @@ a.ibm-thumbnail-module h3 {
 }
 
 .ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
-	height: 146px;
+	height: 150px;
 }
 .ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -220px;
@@ -51,12 +51,22 @@ a.ibm-thumbnail-module h3 {
 }
 
 .ibm-col-5-1 .ibm-thumbnail-module .ibm-sprite {
-	height: 115px;
+	height: 117px;
 }
 .ibm-col-5-1 .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -172px;
 }
 .ibm-col-5-1 .ibm-thumbnail-module:active .ibm-sprite img {
+	top: -344px;
+}
+
+.ibm-col-6-1 .ibm-thumbnail-module .ibm-sprite {
+	height: 97px;
+}
+.ibm-col-6-1 .ibm-thumbnail-module:hover .ibm-sprite img {
+	top: -172px;
+}
+.ibm-col-6-1 .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -344px;
 }
 
