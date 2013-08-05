@@ -180,7 +180,7 @@
 /* MODIFYERS FOR MOBILE (BEGIN) */
 @media only screen and (min-width: 0) and (max-width: 480px) {
   .leadspace--defaults, .ibm_cci--leadspace--logo, .ibm_cci--leadspace--search, .ibm_cci--leadspace--toggle {
-    margin: 10px 10px; }
+    margin: 10px 0; }
 
   .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
     min-height: 100px; }
@@ -189,15 +189,15 @@
       min-height: 100px; }
 
   .ibm_cci--leadspace--logo {
-    width: 300px;
-    padding: 0 40px; }
+    width: 280px;
+    padding: 0 20px; }
 
   .ibm_cci--leadspace--search {
-    width: 300px;
-    padding: 0 40px; }
+    width: 280px;
+    padding: 0 20px; }
 
   .ibm_cci--leadspace--search form input.ibm-cc-search--field {
-    width: 245px;
+    width: 215px;
     margin-top: 0;
     padding: 0 28px 0 5px; }
 

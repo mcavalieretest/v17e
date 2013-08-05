@@ -272,7 +272,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 @media only screen and (min-width:0) and (max-width:480px) {
 
 	.leadspace--defaults {
-		margin:10px 10px;
+		margin:10px 0;
 	}
 	
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
@@ -285,18 +285,18 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 
 	#{$leadspace--logo} {
 		// @extend .leadspace--defaults;
-		width:300px;
-		padding: 0 40px;
+		width:280px;
+		padding: 0 20px;
 	}
 
 	#{$leadspace--search} {
 		// @extend .leadspace--defaults;
-		width:300px;
-		padding:0 40px;
+		width:280px;
+		padding:0 20px;
 	}	
 
 	#{$leadspace--search} form input.ibm-cc-search--field {
-		width:245px; 
+		width:215px; 
 		margin-top:0;
 		padding: 0 28px 0 5px;
 	}
