@@ -90,19 +90,18 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-universal-nav {
 		min-width: 100%;
 		height: 35px !important;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-universal-nav li#ibm-home {
-		height: 30px !important;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-universal-nav li#ibm-home a {
-		background-position: 0px -98px;
-		height: 30px !important;
-	}
-	
-	.ibm-landing-page.ibm-banded #ibm-universal-nav #ibm-menu-links {
-		display: none;
+		
+		li#ibm-home {
+			height: 30px !important;
+		}
+		li#ibm-home a {
+			background-position: 0px -98px;
+			height: 30px !important;
+		}
+		#ibm-menu-links {
+			display: none;
+		}
+
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-search-form {
@@ -230,11 +229,12 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 300px;
 		padding: 0px 10px;
-	}
+		
+		.ibm-col-6-1 {
+			width: 120px;
+			min-height: 225px;
+		}
 
-	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 120px;
-		min-height: 225px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
@@ -533,10 +533,11 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 660px;
 		padding: 0px 54px;
-	}
+		
+		.ibm-col-6-1 {
+			width: 200px;
+		}
 
-	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 {
-		width: 200px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-footer ul {
