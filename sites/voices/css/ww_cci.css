@@ -178,19 +178,28 @@
       font-style: italic; }
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
-@media only screen and (min-width: 0) and (max-width: 481px) {
+@media only screen and (min-width: 0) and (max-width: 480px) {
   .leadspace--defaults, .ibm_cci--leadspace--logo, .ibm_cci--leadspace--search, .ibm_cci--leadspace--toggle {
-    margin: 10px 0; }
+    margin: 10px 10px; }
 
   .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
     min-height: 100px; }
     .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body {
-      width: 480px;
+      width: 100%;
       min-height: 100px; }
 
-  .ibm_cci--leadspace--search form input.ibm-cc-search--field {
+  .ibm_cci--leadspace--logo {
     width: 300px;
-    margin-top: 0; }
+    padding: 0 40px; }
+
+  .ibm_cci--leadspace--search {
+    width: 300px;
+    padding: 0 40px; }
+
+  .ibm_cci--leadspace--search form input.ibm-cc-search--field {
+    width: 245px;
+    margin-top: 0;
+    padding: 0 28px 0 5px; }
 
   .ibm_cci--leadspace--toggle {
     display: none; }
@@ -201,7 +210,10 @@
     height: 28px; }
     .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer a {
       width: 125px;
-      line-height: 28px; } }
+      line-height: 28px; }
+
+  .ibm-band.ibm_cci__ibm-band {
+    width: 100%; } }
 /* MODIFYERS FOR TABLETS (BEGIN) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {

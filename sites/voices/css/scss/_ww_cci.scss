@@ -269,23 +269,36 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
-@media only screen and (min-width:0) and (max-width:481px) {
+@media only screen and (min-width:0) and (max-width:480px) {
 
 	.leadspace--defaults {
-		margin:10px 0;
+		margin:10px 10px;
 	}
 	
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 		min-height:100px;
 		& #ibm-leadspace-body {
-			width:480px;
+			width:100%;
 			min-height:100px;
 		}
 	}
 
+	#{$leadspace--logo} {
+		@extend .leadspace--defaults;
+		width:300px;
+		padding: 0 40px;
+	}
+
+	#{$leadspace--search} {
+		@extend .leadspace--defaults;
+		width:300px;
+		padding:0 40px;
+	}	
+
 	#{$leadspace--search} form input.ibm-cc-search--field {
-		width:300px; 
+		width:245px; 
 		margin-top:0;
+		padding: 0 28px 0 5px;
 	}
 
 	#{$leadspace--toggle} {
@@ -300,6 +313,10 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 			width:125px;
 			line-height: 28px;
 		}		
+	}
+
+	.ibm-band#{$ibm-band__modifyer} {
+		width:100%;
 	}
 }
 
