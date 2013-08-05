@@ -42,23 +42,29 @@ a.ibm-thumbnail-module h3 {
 .ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
 	height: 146px;
 }
-
-.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
-	height: 200px;
-}
-
 .ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -220px;
 }
-
-.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
-	top: -300px;
-}
-
 .ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -440px;
 }
 
+.ibm-col-5-1 .ibm-thumbnail-module .ibm-sprite {
+	height: 115px;
+}
+.ibm-col-5-1 .ibm-thumbnail-module:hover .ibm-sprite img {
+	top: -172px;
+}
+.ibm-col-5-1 .ibm-thumbnail-module:active .ibm-sprite img {
+	top: -344px;
+}
+
+.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
+	height: 200px;
+}
+.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
+	top: -300px;
+}
 .ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -600px;
 }
@@ -332,6 +338,7 @@ a.ibm-thumbnail-module h3 {
 	}
 
 	// thumbnail module section 4-1
+	/*
 	.ibm-col-4-1 .ibm-sprite {
 		float: left;
 	}
@@ -362,6 +369,7 @@ a.ibm-thumbnail-module h3 {
 		}
 		
 	}
+	*/
 	// thumbnail module section 4-1
 	
 
@@ -490,6 +498,7 @@ a.ibm-thumbnail-module h3 {
 	
 
 	// thumbnail module section 4-1
+	/*
 	.ibm-col-4-1 .ibm-thumbnail-module {
 		padding-bottom: 10px;
 	}
@@ -517,7 +526,34 @@ a.ibm-thumbnail-module h3 {
 	.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
 		top: -120px;
 	}
+	*/
 	// thumbnail module section 4-1
+	
+
+	// thumbnail module section 4-1
+	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
+		height: 96px;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
+		top: -146px;
+	}
+	.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
+		top: -290px;
+	}
+	// thumbnail module section 4-1
+	
+	
+	// thumbnail module section 5-1
+	.ibm-col-5-1 .ibm-thumbnail-module .ibm-sprite {
+		height: 75px;
+	}
+	.ibm-col-5-1 .ibm-thumbnail-module:hover .ibm-sprite img {
+		top: -112px;
+	}
+	.ibm-col-5-1 .ibm-thumbnail-module:active .ibm-sprite img {
+		top: -224px;
+	}
+	// thumbnail module section 5-1
 	
 
 	// thumbnail module section 6-2
