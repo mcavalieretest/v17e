@@ -40,46 +40,73 @@ a.ibm-thumbnail-module h3 {
 	max-width: 100%;
 }
 
-.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
-	height: 150px;
-}
-.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-	top: -220px;
-}
-.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
-	top: -440px;
-}
 
-.ibm-col-5-1 .ibm-thumbnail-module .ibm-sprite {
-	height: 117px;
+// thumbnail module section 4-1
+.ibm-col-4-1 .ibm-thumbnail-module {
+	
+	.ibm-sprite {
+		height: 150px;
+	}
+	&:hover .ibm-sprite img {
+		top: -220px;
+	}
+	&:active .ibm-sprite img {
+		top: -440px;
+	}
+		
 }
-.ibm-col-5-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-	top: -172px;
-}
-.ibm-col-5-1 .ibm-thumbnail-module:active .ibm-sprite img {
-	top: -344px;
-}
+// thumbnail module section 4-1
 
-.ibm-col-6-1 .ibm-thumbnail-module .ibm-sprite {
-	height: 97px;
-}
-.ibm-col-6-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-	top: -140px;
-}
-.ibm-col-6-1 .ibm-thumbnail-module:active .ibm-sprite img {
-	top: -280px;
-}
 
-.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
-	height: 200px;
+// thumbnail module section 5-1
+.ibm-col-5-1 .ibm-thumbnail-module {
+	
+	.ibm-sprite {
+		height: 117px;
+	}
+	&:hover .ibm-sprite img {
+		top: -172px;
+	}
+	&:active .ibm-sprite img {
+		top: -344px;
+	}
+		
 }
-.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
-	top: -300px;
+// thumbnail module section 5-1
+
+
+// thumbnail module section 6-1
+.ibm-col-6-1 .ibm-thumbnail-module {
+	
+	.ibm-sprite {
+		height: 97px;
+	}
+	&:hover .ibm-sprite img {
+		top: -140px;
+	}
+	&:active .ibm-sprite img {
+		top: -280px;
+	}
+		
 }
-.ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img {
-	top: -600px;
+// thumbnail module section 6-1
+
+
+// thumbnail module section 6-2
+.ibm-col-6-2 .ibm-thumbnail-module {
+	
+	.ibm-sprite {
+		height: 200px;
+	}
+	&:hover .ibm-sprite img {
+		top: -300px;
+	}
+	&:active .ibm-sprite img {
+		top: -600px;
+	}
+		
 }
-// thumbnail module section
+// thumbnail module section 6-2
 
 
 // Begin masthead test updates
@@ -383,6 +410,57 @@ a.ibm-thumbnail-module h3 {
 	*/
 	// thumbnail module section 4-1
 	
+	
+	// thumbnail module section 4-1
+	.ibm-col-4-1 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 80px;
+		}
+		&:hover .ibm-sprite img {
+			top: -115px;
+		}
+		&:active .ibm-sprite img {
+			top: -230px;
+		}
+		
+	}
+	// thumbnail module section 4-1
+	
+	
+	// thumbnail module section 5-1
+	.ibm-col-5-1 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 62px;
+		}
+		&:hover .ibm-sprite img {
+			top: -88px;
+		}
+		&:active .ibm-sprite img {
+			top: -176px;
+		}
+		
+	}
+	// thumbnail module section 5-1
+	
+	
+	// thumbnail module section 6-1
+	.ibm-col-6-1 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 50px;
+		}
+		&:hover .ibm-sprite img {
+			top: -70px;
+		}
+		&:active .ibm-sprite img {
+			top: -140px;
+		}
+		
+	}
+	// thumbnail module section 6-1
+	
 
 	// thumbnail module section 6-2
 	.ibm-col-6-2 .ibm-thumbnail-module {
@@ -542,43 +620,72 @@ a.ibm-thumbnail-module h3 {
 	
 
 	// thumbnail module section 4-1
-	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
-		height: 96px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-		top: -146px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
-		top: -290px;
+	.ibm-col-4-1 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 96px;
+		}
+		&:hover .ibm-sprite img {
+			top: -146px;
+		}
+		&:active .ibm-sprite img {
+			top: -290px;
+		}
+		
 	}
 	// thumbnail module section 4-1
-	
-	
+
+
 	// thumbnail module section 5-1
-	.ibm-col-5-1 .ibm-thumbnail-module .ibm-sprite {
-		height: 75px;
-	}
-	.ibm-col-5-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-		top: -112px;
-	}
-	.ibm-col-5-1 .ibm-thumbnail-module:active .ibm-sprite img {
-		top: -224px;
+	.ibm-col-5-1 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 75px;
+		}
+		&:hover .ibm-sprite img {
+			top: -112px;
+		}
+		&:active .ibm-sprite img {
+			top: -224px;
+		}
+		
 	}
 	// thumbnail module section 5-1
+		
+
+	// thumbnail module section 6-1
+	.ibm-col-6-1 .ibm-thumbnail-module {
 	
+		.ibm-sprite {
+			height: 64px;
+		}
+		&:hover .ibm-sprite img {
+			top: -90px;
+		}
+		&:active .ibm-sprite img {
+			top: -180px;
+		}
+		
+	}
+	// thumbnail module section 6-1
+
 
 	// thumbnail module section 6-2
-	.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
-		height: 133px;
-	}
-	.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
-		top: -200px;
-	}
-	.ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img {
-		top: -400px;
+	.ibm-col-6-2 .ibm-thumbnail-module {
+	
+		.ibm-sprite {
+			height: 133px;
+		}
+		&:hover .ibm-sprite img {
+			top: -200px;
+		}
+		&:active .ibm-sprite img {
+			top: -400px;
+		}
+		
 	}
 	// thumbnail module section 6-2
-		
+
 
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
