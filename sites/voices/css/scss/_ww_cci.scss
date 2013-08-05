@@ -284,13 +284,13 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 	}
 
 	#{$leadspace--logo} {
-		@extend .leadspace--defaults;
+		// @extend .leadspace--defaults;
 		width:300px;
 		padding: 0 40px;
 	}
 
 	#{$leadspace--search} {
-		@extend .leadspace--defaults;
+		// @extend .leadspace--defaults;
 		width:300px;
 		padding:0 40px;
 	}	
