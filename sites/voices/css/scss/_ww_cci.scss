@@ -26,8 +26,8 @@ $leadspace__modfyier 			: ".ibm_cci--h1__modifyer";
 $default-font-family 			: Arial, "serif", sans-serif, Helvetica;
 $search--field--shadow 			: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
 $ibm-content__modifyer 			: ".ibm_cci__ibm-content";
-$ibm-band__modifyer				: ".ibm_cci__ibm-band";
-$ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
+$ibm-band__modifier				: ".ibm_cci__ibm-band";
+$ibm-pcon__modifier				: ".ibm_cci__ibm-pcon";
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
@@ -175,7 +175,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 	}
 
 /* IBM CONTENT BLOCK OVERIDES (BEGIN) */
-#ibm-pcon#{$ibm-pcon__modifyer} {
+#ibm-pcon#{$ibm-pcon__modifier} {
 	margin-top:0px;
 }
 	#ibm-content#{$ibm-content__modifyer}{
@@ -185,7 +185,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 			// h1: 1.0em;
 			& #ibm-content-main{
 			// h1: 1.0em;
-				& .ibm-band#{$ibm-band__modifyer} {
+				& .ibm-band#{$ibm-band__modifier} {
 					background: #fff;
 					background: -moz-linear-gradient(top,  #f2f2f2 0%, #fff 100%);
 					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#fff));
@@ -315,7 +315,7 @@ $ibm-pcon__modifyer				: ".ibm_cci__ibm-pcon";
 		}		
 	}
 
-	.ibm-band#{$ibm-band__modifyer} {
+	.ibm-band#{$ibm-band__modifier} {
 		width:100%;
 	}
 }
