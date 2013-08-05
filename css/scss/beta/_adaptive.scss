@@ -242,7 +242,8 @@ a.ibm-thumbnail-module h3 {
 	.ibm-thumbnail-module {
 		padding-bottom: 10px;
 	}
-	.ibm-sprite {
+	.ibm-thumbnail-module .ibm-sprite,
+	.ibm-thumbnail-module .ibm-resize {
 		float: left;
 	}
 	.ibm-thumbnail-module h2,
@@ -256,7 +257,8 @@ a.ibm-thumbnail-module h3 {
 		position: relative;
 		top: -2px;
 	}
-	.ibm-thumbnail-module .ibm-sprite {
+	.ibm-thumbnail-module .ibm-sprite,
+	.ibm-thumbnail-module .ibm-resize {
 		height: 40px !important;
 		width: 60px !important;
 	}
