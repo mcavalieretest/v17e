@@ -5,13 +5,13 @@
     height: auto;
 }
 
-a.ibm-thumbnail-adapt {
+a.ibm-thumbnail-module {
 	text-decoration: none;
 	display: block;	
 }
 
-a.ibm-thumbnail-adapt h2,
-a.ibm-thumbnail-adapt h3 {
+a.ibm-thumbnail-module h2,
+a.ibm-thumbnail-module h3 {
 	color: #000;
 }
 
@@ -29,40 +29,40 @@ a.ibm-thumbnail-adapt h3 {
 	margin-left: 30px;
 }
 
-// sample image highlight section
-.ibm-thumbnail-adapt .ibm-sprite {
+// thumbnail module section
+.ibm-thumbnail-module .ibm-sprite {
 	overflow: hidden;
 }
 
-.ibm-thumbnail-adapt .ibm-sprite img {
+.ibm-thumbnail-module .ibm-sprite img {
 	position: relative;
 	max-width: 100%;
 }
 
-.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite {
+.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
 	height: 146px;
 }
 
-.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
+.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
 	height: 200px;
 }
 
-.ibm-col-4-1 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -220px;
 }
 
-.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -300px;
 }
 
-.ibm-col-4-1 .ibm-thumbnail-adapt:active .ibm-sprite img {
+.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -440px;
 }
 
-.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
+.ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -600px;
 }
-// sample image highlight section
+// thumbnail module section
 
 
 // Begin masthead test updates
@@ -75,7 +75,7 @@ a.ibm-thumbnail-adapt h3 {
 
 
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 800px) {
 
 	.ibm-landing-page.ibm-banded#ibm-top {
 		margin-top: 0px !important;
@@ -195,35 +195,35 @@ a.ibm-thumbnail-adapt h3 {
 	}
 
 
-	// active image testing
-	.ibm-thumbnail-adapt {
+	// thumbnail module section
+	.ibm-thumbnail-module {
 		padding-bottom: 10px;
 	}
 	.ibm-sprite {
 		float: left;
 	}
-	.ibm-thumbnail-adapt h2,
-	.ibm-thumbnail-adapt h3,
-	.ibm-thumbnail-adapt p,
-	.ibm-thumbnail-adapt ul {
+	.ibm-thumbnail-module h2,
+	.ibm-thumbnail-module h3,
+	.ibm-thumbnail-module p,
+	.ibm-thumbnail-module ul {
 		margin-left: 70px !important;
 	}
-	.ibm-thumbnail-adapt .ibm-sprite + h2,
-	.ibm-thumbnail-adapt .ibm-sprite + h3 {
+	.ibm-thumbnail-module .ibm-sprite + h2,
+	.ibm-thumbnail-module .ibm-sprite + h3 {
 		position: relative;
 		top: -2px;
 	}
-	.ibm-thumbnail-adapt .ibm-sprite {
+	.ibm-thumbnail-module .ibm-sprite {
 		height: 40px !important;
 		width: 60px !important;
 	}
-	.ibm-thumbnail-adapt:hover .ibm-sprite img {
+	.ibm-thumbnail-module:hover .ibm-sprite img {
 		top: -60px !important;
 	}
-	.ibm-thumbnail-adapt:active .ibm-sprite img {
+	.ibm-thumbnail-module:active .ibm-sprite img {
 		top: -120px !important;
 	}
-	// active image testing
+	// thumbnail module section
 	
 	
 	// Begin footer test updates
@@ -248,7 +248,7 @@ a.ibm-thumbnail-adapt h3 {
 // --------------------------------------------------------------  media query to be used on iPhone viewport -------------------------------------------------------------- 
 
 
-// -------------------------------------------------------------- media query to be used on 600px (Nexus / Android) viewport -------------------------------------------------------------- 
+// -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
 @media only screen and (min-width: 481px) and (max-width: 600px) {
 
 
@@ -331,13 +331,12 @@ a.ibm-thumbnail-adapt h3 {
 		
 	}
 
-	// active image testing 4-1
-
+	// thumbnail module section 4-1
 	.ibm-col-4-1 .ibm-sprite {
 		float: left;
 	}
 
-	.ibm-col-4-1 .ibm-thumbnail-adapt {
+	.ibm-col-4-1 .ibm-thumbnail-module {
 		padding-bottom: 10px;
 		h2,
 		h3,
@@ -361,12 +360,11 @@ a.ibm-thumbnail-adapt h3 {
 			top: -2px;
 		}
 	}
-
-	// active image testing 4-1
+	// thumbnail module section 4-1
 	
 
-	// active image testing 6-2
-	.ibm-col-6-2 .ibm-thumbnail-adapt {
+	// thumbnail module section 6-2
+	.ibm-col-6-2 .ibm-thumbnail-module {
 		.ibm-sprite {
 			height: 107px;
 		}
@@ -377,11 +375,10 @@ a.ibm-thumbnail-adapt h3 {
 			top: -320px;
 		}
 	}
-	// active image testing 6-2
+	// thumbnail module section 6-2
 		
 
 	// Begin footer test updates
-	
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 540px;
 		padding: 0px 30px;
@@ -400,11 +397,11 @@ a.ibm-thumbnail-adapt h3 {
 	// End footer test updates
 
 }
-// -------------------------------------------------------------- media query to be used on 600px (Nexus / Android) viewport -------------------------------------------------------------- 
+// -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
 
 
-// -------------------------------------------------------------- media query to be used on iPad viewport -------------------------------------------------------------- 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+// -------------------------------------------------------------- media query to be used on iPad / Android viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 601px) and (max-width: 800px) {
 
 
 	// to be removed.  only for testing
@@ -488,49 +485,48 @@ a.ibm-thumbnail-adapt h3 {
 	}
 	
 
-	// active image testing 4-1
-
-	.ibm-col-4-1 .ibm-thumbnail-adapt {
+	// thumbnail module section 4-1
+	.ibm-col-4-1 .ibm-thumbnail-module {
 		padding-bottom: 10px;
 	}
 	.ibm-col-4-1 .ibm-sprite {
 		float: left;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt h2,
-	.ibm-col-4-1 .ibm-thumbnail-adapt h3,
-	.ibm-col-4-1 .ibm-thumbnail-adapt p,
-	.ibm-col-4-1 .ibm-thumbnail-adapt ul {
+	.ibm-col-4-1 .ibm-thumbnail-module h2,
+	.ibm-col-4-1 .ibm-thumbnail-module h3,
+	.ibm-col-4-1 .ibm-thumbnail-module p,
+	.ibm-col-4-1 .ibm-thumbnail-module ul {
 		margin-left: 70px !important;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h2,
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite + h3 {
+	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite + h2,
+	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite + h3 {
 		position: relative;
 		top: -2px;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt .ibm-sprite {
+	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
 		height: 40px;
 		width: 60px;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+	.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
 		top: -60px;
 	}
-	.ibm-col-4-1 .ibm-thumbnail-adapt:active .ibm-sprite img {
+	.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
 		top: -120px;
 	}
-	// active image testing 4-1
+	// thumbnail module section 4-1
 	
 
-	// active image testing 6-2
-	.ibm-col-6-2 .ibm-thumbnail-adapt .ibm-sprite {
+	// thumbnail module section 6-2
+	.ibm-col-6-2 .ibm-thumbnail-module .ibm-sprite {
 		height: 133px;
 	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:hover .ibm-sprite img {
+	.ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img {
 		top: -200px;
 	}
-	.ibm-col-6-2 .ibm-thumbnail-adapt:active .ibm-sprite img {
+	.ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img {
 		top: -400px;
 	}
-	// active image testing 6-2
+	// thumbnail module section 6-2
 		
 
 	// Begin footer test updates
@@ -550,5 +546,25 @@ a.ibm-thumbnail-adapt h3 {
 	// End footer test updates
 	
 }
-// -------------------------------------------------------------- media query to be used on iPad viewport -------------------------------------------------------------- 
+// -------------------------------------------------------------- media query to be used on iPad / Android viewport -------------------------------------------------------------- 
 
+
+// -------------------------------------------------------------- media query to be used on 800px Android viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 769px | max-width: 800px";
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content {
+		width: 800px;
+	}
+	// to be removed.  only for testing
+	
+	.ibm-landing-page.ibm-banded#ibm-top {
+		min-width: 800px;
+	}
+	
+}
+// -------------------------------------------------------------- media query to be used on 800px Android viewport -------------------------------------------------------------- 
