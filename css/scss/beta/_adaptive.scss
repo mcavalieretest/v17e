@@ -22,11 +22,13 @@ a.ibm-thumbnail-module h3 {
 
 
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2,
-.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 {
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3,
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] {
 	width: 450px;
 }
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3 {
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
 	margin-left: 30px;
 }
 
@@ -107,6 +109,51 @@ a.ibm-thumbnail-module h3 {
 		
 }
 // thumbnail module section 6-2
+
+
+// thumbnail-small applied to ibm-columns to change to smaller thumb option
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite,
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize {
+	float: left;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module h2,
+.ibm-thumbnail-small .ibm-thumbnail-module h3,
+.ibm-thumbnail-small .ibm-thumbnail-module p,
+.ibm-thumbnail-small .ibm-thumbnail-module ul {
+	margin-left: 70px !important;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h2,
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3 {
+	position: relative;
+	top: -2px;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite,
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize {
+	height: 40px !important;
+	width: 60px !important;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img {
+	top: -60px !important;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module:active .ibm-sprite img {
+	top: -120px !important;
+}
+// thumbnail-small applied to ibm-columns to change to smaller thumb option
+
+
+// thumbnail swap to move image to right side on mobile view
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite,
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
+	float: right;
+}
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h2,
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h3,
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap p,
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap ul {
+	margin-left: 0px !important;
+	margin-right: 70px !important;
+}
+// thumbnail swap to move image to right side on mobile view
 
 
 // Begin masthead test updates
@@ -226,12 +273,14 @@ a.ibm-thumbnail-module h3 {
 		.ibm-col-6-2,
 		.ibm-col-6-3,
 		&.ibm-w-gutter .ibm-col-6-3,
+		&.ibm-thumbnail-small > div[class^="ibm-col-"],
 		.ibm-col-6-4,
 		.ibm-col-6-5 {
 			width: 280px;
 		}
 		&.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-		&.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3 {
+		&.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
+		&.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
 			margin-left: 10px;
 		}
 		
@@ -380,7 +429,8 @@ a.ibm-thumbnail-module h3 {
 			width: 250px;
 		}
 		&.ibm-w-gutter .ibm-col-4-2,
-		&.ibm-w-gutter .ibm-col-6-3 {
+		&.ibm-w-gutter .ibm-col-6-3,
+		&.ibm-thumbnail-small > div[class^="ibm-col-"] {
 			width: 240px;
 		}
 		.ibm-col-6-4 {
@@ -391,41 +441,6 @@ a.ibm-thumbnail-module h3 {
 		}
 		
 	}
-
-	// thumbnail module section 4-1
-	/*
-	.ibm-col-4-1 .ibm-sprite {
-		float: left;
-	}
-
-	.ibm-col-4-1 .ibm-thumbnail-module {
-		padding-bottom: 10px;
-		
-		h2,
-		h3,
-		p,
-		ul {
-			margin-left: 70px !important;
-		}
-		.ibm-sprite {
-			height: 40px;
-			width: 60px;
-		}
-		&:hover .ibm-sprite img {
-			top: -60px;
-		}
-		&:active .ibm-sprite img {
-			top: -120px;
-		}
-		.ibm-sprite + h2,
-		.ibm-sprite + h3 {
-			position: relative;
-			top: -2px;
-		}
-		
-	}
-	*/
-	// thumbnail module section 4-1
 	
 	
 	// thumbnail module section 4-1
@@ -590,7 +605,8 @@ a.ibm-thumbnail-module h3 {
 			width: 290px;
 		}
 		&.ibm-w-gutter .ibm-col-4-2,
-		&.ibm-w-gutter .ibm-col-6-3 {
+		&.ibm-w-gutter .ibm-col-6-3,
+		&.ibm-thumbnail-small > div[class^="ibm-col-"] {
 			width: 300px;
 		}
 		.ibm-col-6-4 {
@@ -601,39 +617,6 @@ a.ibm-thumbnail-module h3 {
 		}
 
 	}
-	
-
-	// thumbnail module section 4-1
-	/*
-	.ibm-col-4-1 .ibm-thumbnail-module {
-		padding-bottom: 10px;
-	}
-	.ibm-col-4-1 .ibm-sprite {
-		float: left;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module h2,
-	.ibm-col-4-1 .ibm-thumbnail-module h3,
-	.ibm-col-4-1 .ibm-thumbnail-module p,
-	.ibm-col-4-1 .ibm-thumbnail-module ul {
-		margin-left: 70px !important;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite + h2,
-	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite + h3 {
-		position: relative;
-		top: -2px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite {
-		height: 40px;
-		width: 60px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module:hover .ibm-sprite img {
-		top: -60px;
-	}
-	.ibm-col-4-1 .ibm-thumbnail-module:active .ibm-sprite img {
-		top: -120px;
-	}
-	*/
-	// thumbnail module section 4-1
 	
 
 	// thumbnail module section 4-1
