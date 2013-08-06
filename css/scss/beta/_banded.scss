@@ -25,7 +25,11 @@
 
 .ibm-banded .ibm-band {
 	background-color: rgba(0,0,0,0.05);
-	min-height: 185px;
+	min-height: 280px;
+}
+
+.ibm-banded .ibm-band:nth-child(2n) {
+	background-color: rgba(0,0,0,0.02);
 }
 
 .ibm-landing-page.ibm-banded #ibm-content-main > div.ibm-rule, 
@@ -34,7 +38,8 @@
 	margin: 10px 0px;
 }
 
-.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
 	margin: 10px auto;
 	width: 940px;
 }
