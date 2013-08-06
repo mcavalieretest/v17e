@@ -269,8 +269,23 @@ a.ibm-thumbnail-module h3 {
 		top: -120px !important;
 	}
 	// thumbnail module section
-	
-	
+
+
+	// thumbnail swap to move image to right side on mobile view
+	.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite,
+	.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
+		float: right;
+	}
+	.ibm-thumbnail-module.ibm-thumbnail-swap h2,
+	.ibm-thumbnail-module.ibm-thumbnail-swap h3,
+	.ibm-thumbnail-module.ibm-thumbnail-swap p,
+	.ibm-thumbnail-module.ibm-thumbnail-swap ul {
+		margin-left: 0px !important;
+		margin-right: 70px !important;
+	}
+	// thumbnail swap to move image to right side on mobile view
+		
+		
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 300px;
