@@ -69,14 +69,14 @@
     -webkit-box-shadow: 2px 2px 8px 2px #f6f6f6 inset;
     -moz-box-shadow: 2px 2px 8px 2px #f6f6f6 inset;
     box-shadow: 2px 2px 8px 2px #f6f6f6 inset;
-    font-size: 1.0em;
+    font-size: 0.8em;
     font-family: Arial, "serif", sans-serif, Helvetica;
     font-weight: normal;
-    padding-left: 10px;
     color: #666;
     padding-right: 30px;
     border: 1px solid #DDD;
-    margin-top: 5px; }
+    margin-top: 5px;
+    text-indent: 10px; }
   .ibm_cci--leadspace--search form input.ibm-cc-search--icon {
     width: 16px;
     height: 16px;
@@ -120,6 +120,9 @@
 
 #ibm-content.ibm_cci__ibm-content {
   background: none; }
+  #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-columns {
+    /* ibm-column override to display outline for list rows */
+    padding-top: 1px; }
   #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band {
     background: #fff;
     background: -moz-linear-gradient(top, #f2f2f2 0%, white 100%);
@@ -177,6 +180,27 @@
       color: #9a9a9a;
       font-style: italic; }
 
+/* LIST VIEW (BEGIN) */
+#ibm-pcon .ibm-columns .ibm_cci--list-view-left-block {
+  float: left;
+  width: 620px;
+  margin: 0;
+  padding: 30px 0;
+  outline: 1px solid #ccc; }
+  #ibm-pcon .ibm-columns .ibm_cci--list-view-left-block .ibm_cci--rea-score {
+    width: 70px;
+    margin: 0 10px 0 0; }
+    #ibm-pcon .ibm-columns .ibm_cci--list-view-left-block .ibm_cci--rea-score p {
+      font: normal 3.6em/50px "Helvetica-Light";
+      color: #dfdfdf; }
+
+#ibm-pcon .ibm-columns .ibm_cci--list-view-right-block {
+  float: left;
+  width: 300px;
+  margin: 0 0 0 20px;
+  padding: 30px 0;
+  outline: 1px solid #ccc; }
+
 /* MODIFYERS FOR MOBILE (BEGIN) */
 @media only screen and (min-width: 0) and (max-width: 480px) {
   .leadspace--defaults, .ibm_cci--leadspace--logo, .ibm_cci--leadspace--search, .ibm_cci--leadspace--toggle {
@@ -197,9 +221,9 @@
     padding: 0 20px; }
 
   .ibm_cci--leadspace--search form input.ibm-cc-search--field {
-    width: 215px;
+    width: 225px;
     margin-top: 0;
-    padding: 0 28px 0 5px; }
+    padding: 0 28px 0 0; }
 
   .ibm_cci--leadspace--toggle {
     display: none; }
