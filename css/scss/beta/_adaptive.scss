@@ -156,6 +156,11 @@ a.ibm-thumbnail-module h3 {
 // thumbnail swap to move image to right side on mobile view
 
 
+.ibm-landing-page.ibm-banded .ibm-ribbon-section {
+	margin-left: -20px;
+}
+
+
 // Begin masthead test updates
 #ibm-content {
 	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
@@ -251,7 +256,8 @@ a.ibm-thumbnail-module h3 {
 		width: 280px;
 	}
 	
-	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
 		width: 320px;
 		margin: 0px 10px;
 	}
@@ -386,7 +392,8 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 	}
 	
-	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
 		width: auto;
 		margin: 10px 0px;
 	}
@@ -562,7 +569,8 @@ a.ibm-thumbnail-module h3 {
 		width: 640px;
 	}
 	
-	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
 		width: 640px;
 		margin: 10px 64px;
 	}
