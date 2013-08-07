@@ -156,9 +156,11 @@ a.ibm-thumbnail-module h3 {
 // thumbnail swap to move image to right side on mobile view
 
 
+// ribbon style adjust
 .ibm-landing-page.ibm-banded .ibm-ribbon-section {
 	margin-left: -20px;
 }
+// ribbon style adjust
 
 
 // Begin masthead test updates
@@ -293,6 +295,26 @@ a.ibm-thumbnail-module h3 {
 	}
 
 
+	// ribbon column adjust
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+		margin: 10px auto;
+		width: 280px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns {
+		padding: 0px 10px;
+	}
+	
+	.ibm-landing-page.ibm-banded .ibm-ribbon-pane {
+		width: 280px;
+	}
+	// ribbon column adjust jeff
+	
+	
+	
+	
+	
 	// thumbnail module section
 	.ibm-thumbnail-module {
 		padding-bottom: 10px;
@@ -448,6 +470,22 @@ a.ibm-thumbnail-module h3 {
 		}
 		
 	}
+
+
+	// ribbon column adjust
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+		margin: 10px 40px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns {
+		padding: 0px 10px;
+	}
+	
+	.ibm-landing-page.ibm-banded .ibm-ribbon-pane {
+		width: 520px;
+	}
+	// ribbon column adjust jeff
 	
 	
 	// thumbnail module section 4-1
@@ -626,7 +664,17 @@ a.ibm-thumbnail-module h3 {
 
 	}
 	
-
+	
+	// ribbon column adjust
+	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns {
+		padding: 0px 10px;
+	}
+	.ibm-landing-page.ibm-banded .ibm-ribbon-pane {
+		width: 640px;
+	}
+	// ribbon column adjust jeff
+	
+	
 	// thumbnail module section 4-1
 	.ibm-col-4-1 .ibm-thumbnail-module {
 	
