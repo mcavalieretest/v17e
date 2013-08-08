@@ -2284,12 +2284,12 @@ div.ibm-anchor-pointer {
 
                        
 div.ibm-anchor-pointer a {
-position: absolute;
-*position: relative;
-*margin-top: -80px;
-_margin-top: 0px;
-top: -80px;
-display: block;
+	position: absolute;
+	*position: relative;
+	*margin-top: -80px;
+	_margin-top: 0px;
+	top: -80px;
+	display: block;
 }
 
 
@@ -2303,12 +2303,6 @@ input.ibm-btn-arrow-sec {
 }
 
 
-// Specific for Mobile styles
-// mobile styles begin ============================================
-.ibm-mobile {
-	display: none !important;
-}
-// mobile styles end ============================================
 // Styles for pull-quote ==============================
 div.ibm-pull-quote.ibm-inset{
 	float: right;

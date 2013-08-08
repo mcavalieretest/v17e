@@ -1,5 +1,9 @@
 // adaptive styles begin ============================================
 
+.ibm-mobile {
+	display: none !important;
+}
+
 .ibm-resize {
 	max-width: 100%;
     width: 100%;
@@ -238,7 +242,27 @@ a.ibm-thumbnail-module h3 {
 		min-width: 320px;
 	}
 	// to be removed.  only for testing
+
+
+	// mobile specific styles
+	.ibm-mobile {
+		display: block !important;
+	}
+	.ibm-no-mobile {
+		display: none !important;
+	}
 	
+	#ibm-mobile-tabs {
+		padding: 10px 20px;
+	}
+	#ibm-mobile-tabs select {
+		min-width: 100%;
+		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
+		padding: 10px 0px;
+	}
+	// mobile specific styles
+		
+		
 	.ibm-landing-page.ibm-banded#ibm-top {
 		min-width: 320px;
 	}
