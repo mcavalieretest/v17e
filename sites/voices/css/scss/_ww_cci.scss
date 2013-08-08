@@ -361,16 +361,17 @@ $hover-color 							: #f04e37;
 
 		& .ibm_cci--resolved-content-block{
 			float:$float-left;
-			width:540px;
+			width:520px;
 			margin:0;
-			padding:0;
+			padding:0 20px 0 0;
 
 			& .ibm_cci-favicon-handler-block {
 				@extend .ibm_cci--resolved-content-block;
 				width:400px;
 				clear:both;
+				padding:0;
 
-				p {
+				p.ibm_cci--feed-icon {
 					float:left;
 					font: normal 0.9em/16px "Helvetica"; // Change Font to Helvetica Neue
 					color:#000;
@@ -389,10 +390,26 @@ $hover-color 							: #f04e37;
 					}					
 				}
 
-				p:last-child {
+				p.ibm_cci--feed-title {
 					text-indent: 0;
 					line-height: 1.4em;
 					vertical-align: top;
+				}
+			}
+
+			& .ibm_cci-social-icon-block {
+				float:left;
+				width:120px;
+
+				& ul.ibm_cci-social-icon-elements{
+					@include ibm_cci-ul__modifier;
+						float:right;
+					& li {
+						@include ibm_cci-ul--li-modifier;
+						display:inline-block;
+						line-height:0;
+						padding:0; //need to fix padding
+					}
 				}
 			}
 		}

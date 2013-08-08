@@ -235,13 +235,14 @@
             padding-bottom: 0 !important; }
     #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
       float: left;
-      width: 540px;
+      width: 520px;
       margin: 0;
-      padding: 0; }
+      padding: 0 20px 0 0; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
         width: 400px;
-        clear: both; }
-        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p {
+        clear: both;
+        padding: 0; }
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-icon {
           float: left;
           font: normal 0.9em/16px "Helvetica";
           color: #000;
@@ -249,17 +250,31 @@
           margin: 0;
           line-height: 0;
           text-indent: -99999; }
-          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p img {
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-icon img {
             border: 0;
             outline: 0;
             margin: 0 10px 0 0;
             padding: 0;
             width: 16px;
             height: 16px; }
-        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p:last-child {
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-title {
           text-indent: 0;
           line-height: 1.4em;
           vertical-align: top; }
+      #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
+        float: left;
+        width: 120px; }
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements {
+          float: left;
+          margin: 0;
+          padding: 0;
+          float: right; }
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements li {
+            background: none;
+            list-style: none;
+            display: inline-block;
+            line-height: 0;
+            padding: 0; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
   background-color: #f04e37; }
