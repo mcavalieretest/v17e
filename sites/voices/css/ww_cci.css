@@ -136,9 +136,9 @@
     #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top {
       margin-top: 30px; }
       #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul {
+        float: left;
         margin: 0;
-        padding: 0;
-        list-style: none; }
+        padding: 0; }
       #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li {
         background: none;
         list-style: none;
@@ -181,25 +181,97 @@
       font-style: italic; }
 
 /* LIST VIEW (BEGIN) */
-#ibm-pcon .ibm-columns .ibm_cci--list-view-left-block {
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier {
   float: left;
-  width: 620px;
-  margin: 0;
-  padding: 30px 0;
-  outline: 1px solid #ccc; }
-  #ibm-pcon .ibm-columns .ibm_cci--list-view-left-block .ibm_cci--rea-score {
-    width: 70px;
-    margin: 0 10px 0 0; }
-    #ibm-pcon .ibm-columns .ibm_cci--list-view-left-block .ibm_cci--rea-score p {
-      font: normal 3.6em/50px "Helvetica-Light";
-      color: #dfdfdf; }
+  border-bottom: 1px solid #cccccc; }
+  #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block {
+    float: left;
+    padding: 30px 0;
+    width: 620px;
+    margin: 0; }
+    #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block {
+      float: left;
+      width: 70px;
+      margin: 0 10px 0 0; }
+      #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul {
+        float: left;
+        margin: 0;
+        padding: 0; }
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li {
+          background: none;
+          list-style: none;
+          padding: 5px 0;
+          float: left;
+          clear: both; }
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li .ibm_cci--rea-bar {
+            float: left;
+            width: 30px;
+            margin: 0;
+            padding: 0;
+            height: 8px;
+            margin-left: 2px; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
+              float: left;
+              width: 30px;
+              margin: 0;
+              padding: 0;
+              height: 2px;
+              background-color: #dfdfdf;
+              text-indent: -999999px;
+              border-bottom: 1px solid #fff; }
+              #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
+                width: 20px;
+                background-color: #afafaf;
+                border-bottom: 0; }
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
+            display: block;
+            font: normal 3.6em/40px "Helvetica-Light";
+            color: #dfdfdf;
+            /* 
+            	The ww-blessed css has a 5px bottom padding
+            	with !important. To overwrite the important 
+            	we are adding important to our <p>.
+             */
+            padding-bottom: 0 !important; }
+    #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
+      float: left;
+      width: 540px;
+      margin: 0;
+      padding: 0; }
+      #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
+        width: 400px;
+        clear: both; }
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p {
+          float: left;
+          font: normal 0.9em/16px "Helvetica";
+          color: #000;
+          padding: 5px 0;
+          margin: 0;
+          line-height: 0;
+          text-indent: -99999; }
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p img {
+            border: 0;
+            outline: 0;
+            margin: 0 10px 0 0;
+            padding: 0;
+            width: 16px;
+            height: 16px; }
+        #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p:last-child {
+          text-indent: 0;
+          line-height: 1.4em;
+          vertical-align: top; }
+
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
+  background-color: #f04e37; }
+
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
+  color: #f04e37; }
 
 #ibm-pcon .ibm-columns .ibm_cci--list-view-right-block {
   float: left;
-  width: 300px;
-  margin: 0 0 0 20px;
   padding: 30px 0;
-  outline: 1px solid #ccc; }
+  width: 300px;
+  margin: 0 0 0 20px; }
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
 @media only screen and (min-width: 0) and (max-width: 480px) {
@@ -216,6 +288,14 @@
     width: 280px;
     padding: 0 20px; }
 
+  .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer {
+    background-position: -224px -38px;
+    width: 125px;
+    height: 28px; }
+    .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer a {
+      width: 125px;
+      line-height: 28px; }
+
   .ibm_cci--leadspace--search {
     width: 280px;
     padding: 0 20px; }
@@ -227,14 +307,6 @@
 
   .ibm_cci--leadspace--toggle {
     display: none; }
-
-  .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer {
-    background-position: -224px -38px;
-    width: 125px;
-    height: 28px; }
-    .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer a {
-      width: 125px;
-      line-height: 28px; }
 
   .ibm-band.ibm_cci__ibm-band {
     width: 100%; } }
@@ -252,6 +324,14 @@
   .ibm_cci--leadspace--logo {
     width: 200px; }
 
+  .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer {
+    background-position: -224px 0;
+    width: 167px;
+    height: 37px; }
+    .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer a {
+      width: 167px;
+      line-height: 37px; }
+
   .ibm_cci--leadspace--toggle {
     width: 90px; }
 
@@ -260,12 +340,4 @@
 
   .ibm_cci--leadspace--search form input.ibm-cc-search--field {
     width: 227px;
-    margin-top: 5px; }
-
-  .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer {
-    background-position: -224px 0;
-    width: 167px;
-    height: 37px; }
-    .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body .ibm_cci--leadspace--logo h1.ibm_cci--h1__modifyer a {
-      width: 167px;
-      line-height: 37px; } }
+    margin-top: 5px; } }

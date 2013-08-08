@@ -15,21 +15,22 @@
 //   Use ".ibm_cci-" class prefix for site specific custom code
 
 // Default variables
-$min-height 					: 127px;
-$float-left 					: left;
-$sprite-url 					: "../i/ibm-voices-sprite.png";
-$white-color 					: #fff;
-$leadspace--logo 				: ".ibm_cci--leadspace--logo";
-$leadspace--search 				: ".ibm_cci--leadspace--search";
-$leadspace--toggle 				: ".ibm_cci--leadspace--toggle";
-$leadspace__modfyier 			: ".ibm_cci--h1__modifyer";
-$default-font-family 			: Arial, "serif", sans-serif, Helvetica;
-$search--field--shadow 			: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-$ibm-content__modifyer 			: ".ibm_cci__ibm-content";
-$ibm-band__modifier				: ".ibm_cci__ibm-band";
-$ibm-pcon__modifier				: ".ibm_cci__ibm-pcon";
-$ibm-listview-left 				: ".ibm_cci--list-view-left-block";
-$ibm-listview-right 			: ".ibm_cci--list-view-right-block";
+$min-height 							: 127px;
+$float-left 							: left;
+$sprite-url 							: "../i/ibm-voices-sprite.png";
+$white-color 							: #fff;
+$leadspace--logo 						: ".ibm_cci--leadspace--logo";
+$leadspace--search 						: ".ibm_cci--leadspace--search";
+$leadspace--toggle 						: ".ibm_cci--leadspace--toggle";
+$leadspace__modifier 					: ".ibm_cci--h1__modifyer";
+$default-font-family 					: Arial, "serif", sans-serif, Helvetica;
+$search--field--shadow 					: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
+$ibm-content__modifier 					: ".ibm_cci__ibm-content";
+$ibm-band__modifier						: ".ibm_cci__ibm-band";
+$ibm-pcon__modifier						: ".ibm_cci__ibm-pcon";
+$ibm-listview-left 						: ".ibm_cci--list-view-left-block";
+$ibm-listview-right 					: ".ibm_cci--list-view-right-block";
+$hover-color 							: #f04e37;
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
@@ -88,7 +89,7 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 	}
 
 		/* LEADSPACE LOGO BLOCK H1 (BEGIN) */	
-		.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modfyier} {
+		.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
 			background-position: 0 0;
 			width:223px;
 			height:49px;
@@ -181,7 +182,19 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 #ibm-pcon#{$ibm-pcon__modifier} {
 	margin-top:0px;
 }
-	#ibm-content#{$ibm-content__modifyer}{
+
+@mixin ibm_cci-ul__modifier{
+	float:$float-left;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin ibm_cci-ul--li-modifier{
+	background:none;
+	list-style: none;
+}
+
+	#ibm-content#{$ibm-content__modifier}{
 		background:none;
 
 		& #ibm-content-body{
@@ -208,13 +221,10 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 						margin-top: 30px;
 						
 						ul {
-							margin: 0;
-							padding: 0;
-							list-style: none;
+							@include ibm_cci-ul__modifier;
 						}
 						ul li {
-							background:none;
-							list-style: none;
+							@include ibm_cci-ul--li-modifier;
 							display: inline-block;
 							padding: 3px 10px 3px 0px;							
 							&.ibm_cci__background-color{
@@ -275,32 +285,140 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 	}
 
 /* LIST VIEW (BEGIN) */
-#ibm-pcon .ibm-columns #{$ibm-listview-left}{
+@mixin ibm-listview-commons {
 	float:left;
-	width:620px;
-	margin: 0;
 	padding: 30px 0;
-	outline:1px solid #ccc;
+	// outline:1px solid #ccc;
+}
 
-	& .ibm_cci--rea-score {
-		width:70px;
-		margin:0 10px 0 0;
+@mixin ibm_cci--rea-rank-common {
+	float:left;
+	width:30px;
+	margin:0;
+	padding:0;
+}
 
-		& p {
-			font: normal 3.6em/50px "Helvetica-Light";
-			color:#dfdfdf;
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier {
+	float:left;
+	border-bottom:1px solid #cccccc;
+
+	& #{$ibm-listview-left}{
+		@include ibm-listview-commons;
+		width:620px;
+		margin:0;
+
+		& .ibm_cci--rea-block {
+			float:$float-left;
+			width:70px;
+			margin:0 10px 0 0;
+
+			& ul {
+				@include ibm_cci-ul__modifier;
+
+				& li {
+					@include ibm_cci-ul--li-modifier;
+					padding:5px 0;
+					float:$float-left;
+					clear:both;
+
+					& .ibm_cci--rea-bar {
+						@include ibm_cci--rea-rank-common;
+						height:8px;
+						margin-left:2px;
+						// background-color:#ccc;
+
+						& .ibm_cci--rea-bar-element {
+							@include ibm_cci--rea-rank-common;
+							height:2px;
+							background-color:#dfdfdf;
+							text-indent: -999999px;
+							border-bottom:1px solid #fff;
+
+							& .ibm_cci--rea-bar {
+								@extend .ibm_cci--rea-bar-element;
+								width:20px;
+								background-color:#afafaf;
+								border-bottom:0;
+							}
+						}
+					}
+
+					& p.ibm_cci--rea-rank {
+						display:block;
+						font: normal 3.6em/40px "Helvetica-Light";
+						color:#dfdfdf;
+						/* 
+							The ww-blessed css has a 5px bottom padding
+							with !important. To overwrite the important 
+							we are adding important to our <p>.
+						 */
+						padding-bottom:0 !important;
+					}
+				}
+			}
+
 		}
 
+		& .ibm_cci--resolved-content-block{
+			float:$float-left;
+			width:540px;
+			margin:0;
+			padding:0;
+
+			& .ibm_cci-favicon-handler-block {
+				@extend .ibm_cci--resolved-content-block;
+				width:400px;
+				clear:both;
+
+				p {
+					float:left;
+					font: normal 0.9em/16px "Helvetica"; // Change Font to Helvetica Neue
+					color:#000;
+					padding:5px 0;
+					margin:0;
+					line-height:0;
+					text-indent:-99999;
+
+					img {
+						border:0;
+						outline:0;
+						margin:0 10px 0 0;
+						padding:0;
+						width:16px;
+						height:16px;
+					}					
+				}
+
+				p:last-child {
+					text-indent: 0;
+					line-height: 1.4em;
+					vertical-align: top;
+				}
+			}
+		}
 	}
 }
 
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar{
+		background-color:$hover-color;
+	}
+
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
+		color:$hover-color;
+	}
+
+
+
+
 #ibm-pcon .ibm-columns #{$ibm-listview-right}{
-	float:left;
+	@include ibm-listview-commons;
 	width:300px;
 	margin: 0 0 0 20px;
-	padding: 30px 0;
-	outline:1px solid #ccc;
 }
+
+
+
+
 
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
@@ -324,30 +442,30 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 		padding: 0 20px;
 	}
 
+		.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
+			background-position: -224px -38px;
+			width:125px;
+			height:28px;
+			& a {
+				width:125px;
+				line-height: 28px;
+			}		
+		}	
+
 	#{$leadspace--search} {
 		// @extend .leadspace--defaults;
 		width:280px;
 		padding:0 20px;
 	}	
 
-	#{$leadspace--search} form input.ibm-cc-search--field {
-		width:225px; 
-		margin-top:0;
-		padding: 0 28px 0 0;
-	}
+		#{$leadspace--search} form input.ibm-cc-search--field {
+			width:225px; 
+			margin-top:0;
+			padding: 0 28px 0 0;
+		}
 
 	#{$leadspace--toggle} {
 		display: none;
-	}
-
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modfyier} {
-		background-position: -224px -38px;
-		width:125px;
-		height:28px;
-		& a {
-			width:125px;
-			line-height: 28px;
-		}		
 	}
 
 	.ibm-band#{$ibm-band__modifier} {
@@ -374,6 +492,16 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 		width:200px;
 	}
 
+		.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
+			background-position: -224px 0;
+			width:167px;
+			height:37px;
+			& a {
+				width:167px;
+				line-height: 37px;
+			}
+		}
+
 	#{$leadspace--toggle} {
 		width: 90px; 
 	}
@@ -382,20 +510,10 @@ $ibm-listview-right 			: ".ibm_cci--list-view-right-block";
 		width: 290px;
 	}
 
-	#{$leadspace--search} form input.ibm-cc-search--field {
-		width:227px; 
-		margin-top:5px;
-	}
-
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modfyier} {
-		background-position: -224px 0;
-		width:167px;
-		height:37px;
-		& a {
-			width:167px;
-			line-height: 37px;
+		#{$leadspace--search} form input.ibm-cc-search--field {
+			width:227px; 
+			margin-top:5px;
 		}
-	}
 	
 }
 
