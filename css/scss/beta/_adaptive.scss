@@ -256,7 +256,11 @@ a.ibm-thumbnail-module h3 {
 		padding: 10px 20px;
 	}
 	#ibm-mobile-tabs select {
-	-webkit-appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: 1px solid #000;
+		border-radius: 0px;
 		min-width: 100%;
 		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
 		padding: 10px 0px;
@@ -270,6 +274,10 @@ a.ibm-thumbnail-module h3 {
 
 	.ibm-landing-page.ibm-banded #ibm-search-form {
 		margin: 4px 20px 0px 1px;
+	}
+	
+	#ibm-social-tools {
+		display: none !important;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
