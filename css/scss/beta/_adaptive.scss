@@ -256,6 +256,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 10px 20px;
 	}
 	#ibm-mobile-tabs select {
+	-webkit-appearance: none;
 		min-width: 100%;
 		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
 		padding: 10px 0px;
