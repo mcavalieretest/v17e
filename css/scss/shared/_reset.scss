@@ -15,8 +15,8 @@ html, body {
 }
 
 body {
-	font-size: 1em;
-	line-height: 1.2;
+	font-size: $rootFontSize;
+	line-height: $rootLineHeight;
 }
 
 /* ol and ul list style applied only for v17 html code */
