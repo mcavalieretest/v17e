@@ -10,7 +10,7 @@ these fonts. */
 // Lubalin-Book
 
 // Helvetica-Light
-// Helvetica-Medium
+// Helvetica-Regular
 // Helvetica-Bold
 
 @font-face {
@@ -47,7 +47,7 @@ these fonts. */
 }
 
 @font-face {
-    font-family: 'Helvetica-Medium';
+    font-family: 'Helvetica-Regular';
     src: url('#{$fontPath}/helveticaneue-webfont.eot');
     src: local('☺'),
          url('#{$fontPath}/helveticaneue-webfont.woff') format('woff'),
@@ -94,10 +94,10 @@ div, p, span, a, li, strong {
 }
 #ibm-universal-nav {
 	font-size: 1em;
-	line-height: 1.1em;
 }
 #ibm-common-menu {
 	font-size: 0.8em;
+	line-height: 15px;
 }
 #ibm-common-menu h2,
 #ibm-common-menu h3 {
@@ -115,31 +115,34 @@ div, p, span, a, li, strong {
 
 // Content grid font size =======================
 #ibm-content .ibm-col-1-1 {
-	font-size: 1.313em;
+	font-size: 21px;
+	line-height: 29.4px;
 }
 
 #ibm-content .ibm-col-4-1 {
-	font-size: 0.875em;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 #ibm-content .ibm-col-4-2,
 #ibm-content .ibm-col-4-3,
+#ibm-content .ibm-col-5-2,
 #ibm-content .ibm-col-5-3,
 #ibm-content .ibm-col-5-4,
 #ibm-content .ibm-col-6-3,
 #ibm-content .ibm-col-6-4,
 #ibm-content .ibm-col-6-5 {
-	font-size: 1.125em;
-}
-
-#ibm-content .ibm-col-1-1 {
-	line-height: 2em;
+	font-size: 18px;
+	line-height: 26px;
 }
 
 #ibm-content .ibm-col-5-1,
 #ibm-content .ibm-col-6-1 {
-	font-size: 0.75em;
+	font-size: 12px;
+	line-height: 15px;
 }
+
+// line-height is .7 of font-size
 
 #ibm-content .ibm-section-title {
 	font-size: $sectionFontSize;
