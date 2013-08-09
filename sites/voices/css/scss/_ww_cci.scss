@@ -412,6 +412,20 @@ $hover-color 							: #f04e37;
 					}
 				}
 			}
+
+			& .ibm_cci--tweet-title-block{
+				@extend .ibm_cci--resolved-content-block;
+				clear:both;
+
+				& h2.ibm_cci--tweet-title{
+					font: 2em/36px "Helvetica-Medium";
+					color: #000;
+				}
+
+				& p.ibm_cci--tweet-description {
+					font: italic 1.2em/20px "Helvetica-Light";
+				}
+			}
 		}
 	}
 }
@@ -420,7 +434,9 @@ $hover-color 							: #f04e37;
 		background-color:$hover-color;
 	}
 
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title
+	{
 		color:$hover-color;
 	}
 
