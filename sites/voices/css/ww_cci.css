@@ -239,12 +239,11 @@
       margin: 0;
       padding: 0 20px 0 0; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
-        width: 400px;
+        width: 464px;
         clear: both;
         padding: 0; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-icon {
           float: left;
-          font: normal 0.9em/16px "Helvetica";
           color: #000;
           padding: 5px 0;
           margin: 0;
@@ -259,11 +258,11 @@
             height: 16px; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-title {
           text-indent: 0;
-          line-height: 1.4em;
           vertical-align: top; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
         float: left;
-        width: 120px; }
+        width: 56px;
+        display: none; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements {
           float: left;
           margin: 0;
@@ -274,13 +273,16 @@
             list-style: none;
             display: inline-block;
             line-height: 0;
-            padding: 0; }
+            padding: 5px 0; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
   background-color: #f04e37; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
   color: #f04e37; }
+
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
+  display: block; }
 
 #ibm-pcon .ibm-columns .ibm_cci--list-view-right-block {
   float: left;
