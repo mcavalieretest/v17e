@@ -7,10 +7,7 @@ $imagePath : "http://1.www.s81c.com";
 
 // fonts
 $defaultFont : "Helvetica-Light", Arial, sans-serif;
-$rootFontSize : 16px;
-$rootLineHeight : 20px;
-
-$sectionFontSize : 18px;
+$defaultHeaderFont : "Helvetica-Bold", Arial, sans-serif;
 
 // grid
 $landingGrid : 980px;
@@ -23,6 +20,11 @@ $ie9Hack : "\0/";
 
 
 // mixins ============================================
+
+@mixin px-to-rem($style,$px) {
+	#{$style}: $px;
+	#{$style}: $px/(10px / 1rem);
+}
 
 @mixin border-radius($borders...) {
 	-webkit-border-radius: $borders;

@@ -10,13 +10,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background: no-scroll transparent; /*ie7 fix - no-scroll */
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
 	background: #333 url("#{$imagePath}/i/v17/t/bg-loader.gif") no-repeat 50% 200px;
 }
 
 body {
-	font-size: $rootFontSize;
-	line-height: $rootLineHeight;
+	@include px-to-rem(font-size,16px);
+	line-height: 20px;
 }
 
 /* ol and ul list style applied only for v17 html code */

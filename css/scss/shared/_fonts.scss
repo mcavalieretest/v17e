@@ -90,11 +90,11 @@ div, p, span, a, li, strong {
 
 // Masthead Fonts ======================
 #ibm-mast-options {
-	font-size: 0.65em;
+	@include px-to-rem(font-size,10.4px);
 }
 
 #ibm-common-menu {
-	font-size: 0.8em;
+	@include px-to-rem(font-size,12.8px);
 	line-height: 15px;
 }
 #ibm-common-menu h2,
@@ -106,20 +106,15 @@ div, p, span, a, li, strong {
 
 // Related content =======================
 #ibm-related-content {
-	font-size: 0.7em;
+	@include px-to-rem(font-size,11.2px);
 }
 // End of Related content ==================
 
 
 // Content grid font size =======================
 #ibm-content .ibm-col-1-1 {
-	font-size: 21px;
+	@include px-to-rem(font-size,21px);
 	line-height: 29px;
-}
-
-#ibm-content .ibm-col-4-1 {
-	font-size: 14px;
-	line-height: 18px;
 }
 
 #ibm-content .ibm-col-4-2,
@@ -130,18 +125,24 @@ div, p, span, a, li, strong {
 #ibm-content .ibm-col-6-3,
 #ibm-content .ibm-col-6-4,
 #ibm-content .ibm-col-6-5 {
-	font-size: 18px;
+	@include px-to-rem(font-size,18px);
 	line-height: 24px;
+}
+
+#ibm-content .ibm-col-4-1 {
+	@include px-to-rem(font-size,14px);
+	line-height: 18px;
 }
 
 #ibm-content .ibm-col-5-1,
 #ibm-content .ibm-col-6-1 {
-	font-size: 13px;
+	@include px-to-rem(font-size,13px);
 	line-height: 15px;
 }
 
 // line-height is .7 of font-size
 
+/*
 #ibm-content .ibm-section-title {
 	font-size: $sectionFontSize;
 }
@@ -153,15 +154,19 @@ div, p, span, a, li, strong {
 #ibm-content .ibm-large {
 	font-size: $sectionFontSize * 2;
 }
+*/
 
-h1 {
-	font-family: 'Helvetica-Bold';
-	font-size: 36px;
-	font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-family: $defaultHeaderFont;
 }
 
-h2,h3,h4,strong {
-	font-family: 'Helvetica-Bold';
+#ibm-top h1 {
+	@include px-to-rem(font-size,36px);
+	font-weight: normal;
 }
 
 
@@ -175,7 +180,7 @@ h2,h3,h4,strong {
 
 #ibm-footer-module,
 #ibm-footer {
-    font-size: 0.7em;
+	@include px-to-rem(font-size,11.2px);
 }
 
 // End of Footer font=============================
