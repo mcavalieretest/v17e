@@ -3,14 +3,15 @@
 /* LEADSPACE TABS START */
 #ibm-content-nav {
 	position: relative;
-	margin-top: -33px;
+	margin-top: -40px;
 	padding-bottom: 0px;
-	min-height: 33px;
+	min-height: 40px;
     _zoom: 1; /* ie6 fix for disappearing tabs */
 }
 
 #ibm-content-nav #ibm-primary-tabs {
-	height: 33px;
+	height: 40px;
+	overflow: hidden;
 	@include background-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.05));
 }
 
@@ -22,7 +23,6 @@
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 	margin: 0px auto;
 	padding: 0px 20px;
-	height: 33px;
     width: 940px;
 }
 
@@ -41,6 +41,7 @@
 	border-right: 1px solid rgba(255,255,255,0.2);
 	border-left: 1px solid rgba(255,255,255,0.2);
 	margin-right: 3px;
+	margin-top: 6px;
 	@include background-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.05));
 	@include transition(opacity 0.3s);
 }
@@ -73,6 +74,11 @@
 	margin-bottom: 7px;
 }
 
+.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li.ibm-active {
+	padding-top: 5px;
+	padding-bottom: 0px;
+}
+
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:first-child {
 	border-left: 0px none;
 	margin-left:0px;
@@ -93,7 +99,7 @@
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
 	display: block;
 	color: #FFF;
-	padding: 10px 16px 9px;
+	padding: 10px 16px 8px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
 	text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
@@ -138,6 +144,8 @@
 	color: #000;
 	text-shadow: none;
 	padding-bottom: 9px;
+	position: relative;
+	top: 1px;
 }
 
 /* added focus for static-tab links -Hemang P*/
@@ -252,8 +260,6 @@
     border-top: 0 none !important;
     float: none;
     margin-left: 0;
-  	line-height: 1.2em; 
-	height: 17px;
     display: inline;
     font-weight: normal;
 }
@@ -355,6 +361,10 @@
 	padding-bottom: 40px;
 }
 
+#ibm-com .ibm-container.ibm-graphic-tabs ul.ibm-tabs {
+	top: 2px;
+}
+
 #ibm-com .ibm-container > div.ibm-tab-section.ibm-text {
     border-top: 2px solid #CCC;
     margin-top: -2px;
@@ -364,13 +374,13 @@
 #ibm-com ul.ibm-tabs a,
 #ibm-com .ibm-dyntabs ul.ibm-tabs li a {
 	display: block;
-	padding: 6px 8px;
+	padding: 6px 12px 4px;
 	color: #454545;
 	text-decoration: none;
 }
 
 #ibm-com .ibm-graphic-tabs div.ibm-tab-section {
-	margin-bottom:22px;
+	margin-bottom: 22px;
 }
 
 #ibm-com ul.ibm-tabs {
@@ -404,8 +414,6 @@
 	border-left: 1px solid #E8E8E8;
     border-right:1px solid #E8E8E8;
     border-top:1px solid #E8E8E8;
-    font-weight:bold;
-    height:26px;
 }
 
 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
@@ -415,10 +423,6 @@
     border-right:1px solid #CCC !important;
     border-top:1px solid #CCC !important;
     color: #000;
-    height: 27px;
-    height: 28px\9;
-    margin-bottom: -2px;
-    *margin-bottom: 7px;
 }
 
 #{$ie6Selector} #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,

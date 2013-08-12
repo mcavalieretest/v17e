@@ -185,7 +185,7 @@ strong {
 
 #ibm-top h1 {
 	@include px-to-rem(font-size,36px);
-	line-height: 30px;
+	line-height: 40px;
 }
 
 #ibm-navigation-trail {
@@ -208,21 +208,39 @@ strong {
 	font-family: $defaultHeaderFont;
 }
 
-#ibm-content-nav #ibm-primary-tabs a {
+#ibm-content-nav #ibm-primary-tabs a,
+#ibm-content-nav #ibm-secondary-tabs a {
 	font-family: "Helvetica-Regular",Arial,sans-serif;
-	line-height: 13px;
+	line-height: 14px;
 	@include px-to-rem(font-size,13px);
 }
 
+#ibm-content-nav #ibm-secondary-tabs .ibm-active a {
+	font-family: $defaultHeaderFont;
+} 
 
+// Buttons size
 [class*="ibm-btn-"] {
-	@include px-to-rem(font-size,13px);
+	@include px-to-rem(font-size,16px);
 }
 
+// Bold primary buttons
 [class*="ibm-btn-"][class$="pri"] {
 	font-family: $defaultHeaderFont;
 }
 
+// Intro style
+#ibm-content .ibm-intro {
+	@include px-to-rem(font-size,23px);
+	line-height: 27px;
+
+}
+
+#ibm-content .ibm-intro em {
+	font-style: normal;
+}
+
+// Table styles
 table caption em,
 table th {
 	font-family: $defaultHeaderFont;
