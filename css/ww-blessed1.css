@@ -74,25 +74,25 @@ h1, h2, h3, h4, strong { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
 #ibm-mast-options { font-size: 10.4px; font-size: 1.04rem; }
 
-#ibm-common-menu { font-size: 12.8px; font-size: 1.28rem; line-height: 15px; }
+#ibm-common-menu { font-size: 12.8px; font-size: 1.28rem; line-height: 15px; line-height: 1.5rem; }
 
 #ibm-related-content { font-size: 11.2px; font-size: 1.12rem; }
 
 #ibm-content .ibm-col-1-1, #ibm-content .ibm-col-5-2, #ibm-content .ibm-col-5-3 { font-size: 16px; font-size: 1.6rem; }
 
-.ibm-landing-page #ibm-content .ibm-col-1-1 { font-size: 21px; font-size: 2.1rem; line-height: 29px; }
+.ibm-landing-page #ibm-content .ibm-col-1-1 { font-size: 21px; font-size: 2.1rem; line-height: 29px; line-height: 2.9rem; }
 
-#ibm-content .ibm-col-4-2, #ibm-content .ibm-col-4-3, .ibm-landing-page #ibm-content .ibm-col-5-2, .ibm-landing-page #ibm-content .ibm-col-5-3, #ibm-content .ibm-col-5-4, #ibm-content .ibm-col-6-3, #ibm-content .ibm-col-6-4, #ibm-content .ibm-col-6-5 { font-size: 18px; font-size: 1.8rem; line-height: 24px; }
+#ibm-content .ibm-col-4-2, #ibm-content .ibm-col-4-3, .ibm-landing-page #ibm-content .ibm-col-5-2, .ibm-landing-page #ibm-content .ibm-col-5-3, #ibm-content .ibm-col-5-4, #ibm-content .ibm-col-6-3, #ibm-content .ibm-col-6-4, #ibm-content .ibm-col-6-5 { font-size: 18px; font-size: 1.8rem; line-height: 24px; line-height: 2.4rem; }
 
-#ibm-content .ibm-col-4-1 { font-size: 15px; font-size: 1.5rem; line-height: 18px; }
+#ibm-content .ibm-col-4-1 { font-size: 15px; font-size: 1.5rem; line-height: 18px; line-height: 1.8rem; }
 
-#ibm-content .ibm-col-5-1, #ibm-content .ibm-col-6-1 { font-size: 13px; font-size: 1.3rem; line-height: 15px; }
+#ibm-content .ibm-col-5-1, #ibm-content .ibm-col-6-1 { font-size: 13px; font-size: 1.3rem; line-height: 15px; line-height: 1.5rem; }
 
 #ibm-navigation { font-size: 11.2px; font-size: 1.12rem; }
 
 #ibm-navigation #ibm-overview a, #ibm-navigation .ibm-active { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
-#ibm-content-sidebar { font-size: 13px; font-size: 1.3rem; line-height: 15px; }
+#ibm-content-sidebar { font-size: 13px; font-size: 1.3rem; line-height: 15px; line-height: 1.5rem; }
 
 /*
 #ibm-content .ibm-section-title {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, strong { font-family: "Helvetica-Bold", Arial, sans-serif; }
 	font-size: $sectionFontSize * 2;
 }
 */
-#ibm-top h1 { font-size: 36px; font-size: 3.6rem; line-height: 40px; }
+#ibm-top h1 { font-size: 36px; font-size: 3.6rem; line-height: 40px; line-height: 4rem; }
 
 #ibm-navigation-trail { font-size: 11.2px; font-size: 1.12rem; }
 
@@ -117,7 +117,7 @@ h1, h2, h3, h4, strong { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
 .ibm-landing-page #ibm-leadspace-head p em span { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
-#ibm-content-nav #ibm-primary-tabs a, #ibm-content-nav #ibm-secondary-tabs a { font-family: "Helvetica-Regular",Arial,sans-serif; line-height: 14px; font-size: 13px; font-size: 1.3rem; }
+#ibm-content-nav #ibm-primary-tabs a, #ibm-content-nav #ibm-secondary-tabs a { font-family: "Helvetica-Regular",Arial,sans-serif; font-size: 13px; font-size: 1.3rem; line-height: 14px; line-height: 1.4rem; }
 
 #ibm-content-nav #ibm-secondary-tabs .ibm-active a { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
@@ -125,7 +125,7 @@ h1, h2, h3, h4, strong { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
 [class*="ibm-btn-"][class$="pri"] { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
-#ibm-content .ibm-intro { font-size: 23px; font-size: 2.3rem; line-height: 27px; }
+#ibm-content .ibm-intro { font-size: 23px; font-size: 2.3rem; line-height: 27px; line-height: 2.7rem; }
 
 #ibm-content .ibm-intro em { font-style: normal; }
 
@@ -133,9 +133,9 @@ table caption em, table th { font-family: "Helvetica-Bold", Arial, sans-serif; f
 
 #ibm-content p, #ibm-content ul, #ibm-content ol { color: #333; }
 
-#ibm-footer-module ul { line-height: 14px; }
+#ibm-footer-module ul { line-height: 14px; line-height: 1.4rem; }
 
-#ibm-footer-module a { font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial; line-height: 14px; }
+#ibm-footer-module a { font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial; }
 
 #ibm-footer-module, #ibm-footer { font-size: 11.2px; font-size: 1.12rem; }
 
@@ -145,7 +145,7 @@ html { font-size: 62.5%; }
 
 html, body { background: #333333 url("http://1.www.s81c.com/i/v17/t/bg-loader.gif") no-repeat 50% 200px; }
 
-body { font-size: 16px; font-size: 1.6rem; line-height: 20px; }
+body { font-size: 16px; font-size: 1.6rem; line-height: 20px; line-height: 2rem; }
 
 /* ol and ul list style applied only for v17 html code */
 ol, ul { border: 0px; outline: 0px; font-size: inherit; vertical-align: baseline; background: no-scroll transparent; /*ie7 fix - no-scroll */ }

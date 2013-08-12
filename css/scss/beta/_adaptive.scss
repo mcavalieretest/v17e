@@ -54,11 +54,14 @@ a.ibm-thumbnail-module h3 {
 	overflow: hidden;
 }
 
+#{$ie7Selector} .ibm-thumbnail-module .ibm-sprite {
+	position: relative;
+}
+
 .ibm-thumbnail-module .ibm-sprite img {
 	position: relative;
 	max-width: 100%;
 }
-
 
 // thumbnail module section 4-1
 .ibm-col-4-1 .ibm-thumbnail-module {

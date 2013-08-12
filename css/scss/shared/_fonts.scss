@@ -94,7 +94,7 @@ strong {
 
 #ibm-common-menu {
 	@include px-to-rem(font-size,12.8px);
-	line-height: 15px;
+	@include px-to-rem(line-height,15px);
 }
 
 // End of Masthead Fonts =================
@@ -117,7 +117,7 @@ strong {
 
 .ibm-landing-page #ibm-content .ibm-col-1-1 {
 	@include px-to-rem(font-size,21px);
-	line-height: 29px;
+	@include px-to-rem(line-height,29px);
 }
 
 #ibm-content .ibm-col-4-2,
@@ -129,18 +129,18 @@ strong {
 #ibm-content .ibm-col-6-4,
 #ibm-content .ibm-col-6-5 {
 	@include px-to-rem(font-size,18px);
-	line-height: 24px;
+	@include px-to-rem(line-height,24px);
 }
 
 #ibm-content .ibm-col-4-1 {
 	@include px-to-rem(font-size,15px);
-	line-height: 18px;
+	@include px-to-rem(line-height,18px);
 }
 
 #ibm-content .ibm-col-5-1,
 #ibm-content .ibm-col-6-1 {
 	@include px-to-rem(font-size,13px);
-	line-height: 15px;
+	@include px-to-rem(line-height,15px);
 }
 // End of Content grid font size =======================
 
@@ -158,7 +158,7 @@ strong {
 
 #ibm-content-sidebar {
 	@include px-to-rem(font-size,13px);
-	line-height: 15px;
+	@include px-to-rem(line-height,15px);
 }
 // End of Default template styles =======================
 
@@ -187,7 +187,7 @@ strong {
 
 #ibm-top h1 {
 	@include px-to-rem(font-size,36px);
-	line-height: 40px;
+	@include px-to-rem(line-height,40px);
 }
 
 #ibm-navigation-trail {
@@ -213,8 +213,8 @@ strong {
 #ibm-content-nav #ibm-primary-tabs a,
 #ibm-content-nav #ibm-secondary-tabs a {
 	font-family: "Helvetica-Regular",Arial,sans-serif;
-	line-height: 14px;
 	@include px-to-rem(font-size,13px);
+	@include px-to-rem(line-height,14px);
 }
 
 #ibm-content-nav #ibm-secondary-tabs .ibm-active a {
@@ -234,7 +234,7 @@ strong {
 // Intro style
 #ibm-content .ibm-intro {
 	@include px-to-rem(font-size,23px);
-	line-height: 27px;
+	@include px-to-rem(line-height,27px);
 }
 
 #ibm-content .ibm-intro em {
@@ -266,12 +266,11 @@ table th {
 // Footer font=============================
 
 #ibm-footer-module ul {
-	line-height: 14px;
+	@include px-to-rem(line-height,14px);
 }
 
 #ibm-footer-module a {
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
-    line-height: 14px;
 }
 
 #ibm-footer-module,

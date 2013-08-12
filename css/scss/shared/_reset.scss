@@ -20,7 +20,7 @@ html, body {
 
 body {
 	@include px-to-rem(font-size,16px);
-	line-height: 20px;
+	@include px-to-rem(line-height,20px);
 }
 
 /* ol and ul list style applied only for v17 html code */
