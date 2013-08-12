@@ -144,7 +144,6 @@
       #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li {
         background: none;
         list-style: none;
-        line-height: 22px;
         display: inline-block;
         padding: 0 10px 0 0; }
         #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color {
@@ -205,7 +204,6 @@
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li {
           background: none;
           list-style: none;
-          line-height: 22px;
           padding: 5px 0;
           float: left;
           clear: both; }
@@ -279,14 +277,13 @@
           #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements li {
             background: none;
             list-style: none;
-            line-height: 22px;
             display: inline-block;
             line-height: 0;
             padding: 5px 0; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block {
         clear: both; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title {
-          font: 2.8rem/36px "Helvetica-Light";
+          font: bold 2.8rem/36px "Helvetica-Light";
           color: #000; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block p.ibm_cci--tweet-description {
           font: italic 1.4rem/20px "Helvetica-Light"; }

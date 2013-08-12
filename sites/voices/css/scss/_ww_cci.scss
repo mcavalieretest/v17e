@@ -193,7 +193,6 @@ $hover-color 							: #f04e37;
 @mixin ibm_cci-ul--li-modifier{
 	background:none;
 	list-style: none;
-	line-height: 22px;
 }
 
 	#ibm-content#{$ibm-content__modifier}{
@@ -424,7 +423,7 @@ $hover-color 							: #f04e37;
 				clear:both;
 
 				& h2.ibm_cci--tweet-title{
-					font: 2.8rem/36px "Helvetica-Light";
+					font: bold 2.8rem/36px "Helvetica-Light";
 					color: #000;
 				}
 
