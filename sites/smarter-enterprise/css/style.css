@@ -1,0 +1,697 @@
+@font-face {
+	font-family: 'JansonURW-RegIta';
+	src: url('../fonts/27A8E2_7_0.eot');
+	src: url('../fonts/27A8E2_7_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27A8E2_7_0.woff') format('woff'),
+		url('../fonts/27A8E2_7_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'JansonURW-BolIta';
+	src: url('../fonts/27A8E2_2_0.eot');
+	src: url('../fonts/27A8E2_2_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27A8E2_2_0.woff') format('woff'),
+		url('../fonts/27A8E2_2_0.ttf') format('truetype');
+}
+
+@font-face {font-family: 'JansonURW-Lig';
+	src: url('../fonts/27A8E2_3_0.eot');
+	src: url('../fonts/27A8E2_3_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27A8E2_3_0.woff') format('woff'),
+		url('../fonts/27A8E2_3_0.ttf') format('truetype');
+}
+
+
+@font-face {font-family: 'JansonURW-LigIta';
+	src: url('../fonts/27A8E2_8_0.eot');
+	src: url('../fonts/27A8E2_8_0.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/27A8E2_8_0.woff') format('woff'),
+		url('../fonts/27A8E2_8_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LubalinForIbm-Demi';
+	src: url('../fonts/lubalinforibm-demi-webfont.eot');
+	src: url('../fonts/lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/lubalinforibm-demi-webfont.woff') format('woff'),
+		 url('../fonts/lubalinforibm-demi-webfont.ttf') format('truetype'),
+		 url('../fonts/lubalinforibm-demi-webfont.svg#LubalinforIBMDemi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelvBoldIBM';
+	src: url('../fonts/helvneueforibm-bold-webfont.eot');
+	src: local('☺'),
+		 url('../fonts/helvneueforibm-bold-webfont.woff') format('woff'),
+		 url('../fonts/helvneueforibm-bold-webfont.ttf') format('truetype'),
+		 url('../fonts/helvneueforibm-bold-webfont.svg#HelvBoldIBM') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelvRegular';
+	src: url('../fonts/helveticaneue-webfont.eot');
+	src: local('☺'),
+		 url('../fonts/helveticaneue-webfont.woff') format('woff'),
+		 url('../fonts/helveticaneue-webfont.ttf') format('truetype'),
+		 url('../fonts/helveticaneue-webfont.svg#HelvRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelvLightIBM';
+	src: url('../fonts/helvneueforibm-light-webfont.eot');
+	src: local('☺'),
+		 url('../fonts/helvneueforibm-light-webfont.woff') format('woff'),
+		 url('../fonts/helvneueforibm-light-webfont.ttf') format('truetype'),
+		 url('../fonts/helvneueforibm-light-webfont.svg#HelvLightIBM') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+.IBMSE-container * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body.bg-eee {
+	/*background: #eee;*/
+	background:#fff;
+}
+
+a {
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.IBMSE-container {
+	/*position: relative;*/
+	width: 100%;
+	max-width: 980px;
+	min-height: 500px;
+	margin: 0 auto;
+	font-family: 'HelvLightIBM', 'Helvetica Neue', helvetica, sans-serif;
+	font-weight: normal;
+	background: #fff;
+	font-size: 26px;
+	line-height: 1.3em;
+	color: #2b2b2b;
+	/*box-shadow: 0px 0px 20px 2px rgba(0,0,0,.2);*/
+	overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+
+	.IBMSE-container {
+		font-size: 1.4em;
+	}
+
+}
+
+.IBMSE-container a {
+	color: #65c6e1;
+	text-decoration: none;
+	/*text-transform:uppercase;*/
+}
+
+.IBMSE-container b,
+.IBMSE-container strong {
+	font-family: 'HelvBoldIBM', 'Helvetica Neue', helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.IBMSE-container img {
+	display: block;
+}
+
+.IBMSE-container figure img {
+	display: inline-block;
+}
+
+.IBMSE-container figcaption.headline-style {
+	margin: .5em 0 .5em 25.12%;
+	font-family: 'LubalinForIbm-Demi';
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+
+	.IBMSE-container figcaption.headline-style {
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+
+}
+
+.in-page-nav {
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	max-width: 980px;
+	height: 62px;
+	padding: 0 100px;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 -2px 2px 0 rgba(0,0,0,.3);
+	background: #535353 url(../img/nav-gradient.png);
+	background: rgb(52,52,52); /* Old browsers */
+	background: -moz-linear-gradient(left, rgba(52,52,52,1) 0%, rgba(83,83,83,1) 19%, rgba(83,83,83,1) 80%, rgba(52,52,52,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(52,52,52,1)), color-stop(19%,rgba(83,83,83,1)), color-stop(80%,rgba(83,83,83,1)), color-stop(100%,rgba(52,52,52,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(52,52,52,1) 0%,rgba(83,83,83,1) 19%,rgba(83,83,83,1) 80%,rgba(52,52,52,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(52,52,52,1) 0%,rgba(83,83,83,1) 19%,rgba(83,83,83,1) 80%,rgba(52,52,52,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(52,52,52,1) 0%,rgba(83,83,83,1) 19%,rgba(83,83,83,1) 80%,rgba(52,52,52,1) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(52,52,52,1) 0%,rgba(83,83,83,1) 19%,rgba(83,83,83,1) 80%,rgba(52,52,52,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#343434',GradientType=1 ); /* IE6-9 */
+}
+
+@media screen and (max-width: 768px) {
+
+	.in-page-nav {
+		height: 71px;
+		padding: 0 50px;
+	}
+
+}
+
+.in-page-nav ul {
+	padding-bottom: 12px;
+	overflow: hidden;
+}
+
+.IBMSE-container .in-page-nav + *,
+.IBMSE-container .sticky-wrapper + * {
+	margin-top: -12px;
+}
+
+.no-js .in-page-nav ul {
+	overflow: auto;
+	height: auto;
+}
+
+.in-page-nav li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+
+	.in-page-nav li {
+		width: 150px;
+		padding: 1em 0;
+	}
+
+}
+
+.in-page-nav li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	border-right: 1px solid #ccc;
+	border-right: 1px solid rgba(255,255,255,.3);
+}
+
+.in-page-nav li:first-child {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.in-page-nav li:first-child a {
+	border-left: 1px solid #eee;
+	border-left: 1px solid rgba(255,255,255,.2);
+}
+
+.in-page-nav li:last-child a {
+	border-right: 1px solid #eee;
+	border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.in-page-nav li a b {
+	display: block;
+	/*font-family: 'LubalinForIbm-Demi';*/
+	font-family: 'HelvBoldIBM';
+	font-weight: normal;
+	/*letter-spacing: .1em;*/
+}
+
+@media screen and (max-width: 768px) {
+
+	.in-page-nav li a b{
+		font-size: 1em;
+	}
+
+}
+
+.in-page-nav li.active:after {
+	content: url('../img/pointer.png');
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	margin-left: -6px;
+	z-index: 1;
+	margin-top: -1px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.in-page-nav li.active:after {
+		top: 99%;
+		margin-top: 1px;
+	}
+
+}
+
+.in-page-nav .left-side,
+.in-page-nav .right-side {
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 8px;
+	width: 100px;
+	height: 45px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+	.in-page-nav .left-side,
+	.in-page-nav .right-side {
+		width: 50px;
+	}
+
+}
+
+.in-page-nav .left-side:before,
+.in-page-nav .right-side:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	line-height: 2.25em;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+	.in-page-nav .left-side:before,
+	.in-page-nav .right-side:before {
+		font-size: 1.25em;
+		line-height: 1.95em;
+	}
+}
+
+.in-page-nav .right-side {
+	left: auto;
+	right: 0;
+	border-right: 0;
+}
+
+.thumb-nav.right-side:before {
+	content: "▶";
+}
+
+.thumb-nav.left-side:before {
+	content: "◀";
+	border-right: 1px solid #eee;
+	border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.inactive .thumb-nav,
+.beginning .thumb-nav.left-side,
+.end .thumb-nav.right-side {
+	opacity: 0;
+	cursor: none;
+	pointer-events: none;
+}
+
+.IBMSE-container section {
+	position: relative;
+	max-width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hero-photo {
+	position: relative;
+	color: #fff;
+}
+
+.hero-photo .text-block {
+	position: absolute;
+	left: 0;
+	top: 80px;
+	min-width: 48.6%;
+	height:307px;
+	padding: 95px 6.12% 80px 10.12%;
+	font-family: 'HelvRegular';
+	font-size: 20px;
+	line-height: 1.3em;
+}
+
+@media screen and (max-width : 768px) {
+
+	.hero-photo .text-block{
+		position: static;
+		width: 100%;
+		min-width:100%;
+		padding: 60px 8.33% 30px;
+		height: 227px;
+	}
+
+}
+@media screen and (max-width: 640px) {
+	.hero-photo .text-block {
+		position: static;
+		min-width: 100%;
+		padding: 60px 6% 30px;
+		height: 237px;
+		font-size:19px;
+	}
+}
+.hero-photo .text-block h1 {
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	font-size: 3em;
+	line-height: 1.1em;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 640px) {
+	.hero-photo .text-block h1 {
+		font-size: 2.3em;
+	}
+}
+
+.flowing-text {
+	position: relative;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.flowing-text {
+		margin-bottom: 1em;
+	}
+
+}
+
+.flowing-text h1 {
+	margin-top: 1.4em;
+	margin-bottom: 0;
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	font-size: 1.6em;
+	line-height: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+
+	.flowing-text h1 {
+		font-size: 1.2em;
+		line-height: 1.3em;
+		margin-top:.9em;
+	}
+
+}
+
+.flowing-text h2 {
+	margin-bottom: 12px;
+	margin-top:30px;
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	font-size: 1.6em;
+	line-height: 1em;
+}
+
+@media screen and (max-width : 768px) {
+	.flowing-text h2 {
+		font-size: 1.2em;
+		line-height: 1em;
+		margin-bottom: 12px;
+		margin-top:30px;
+		font-family: 'LubalinForIbm-Demi';
+		font-weight: normal;
+	}
+}
+
+.flowing-text p {
+	margin-bottom: 20px;
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+.flowing-text p:last-child:not(.button-link):not(.quote) {
+	margin-bottom: 0px;
+}
+
+.flowing-text p.quote {
+	font-family: 'JansonURW-Lig';
+	margin-bottom:50px;
+	margin-left:14.12%;
+}
+
+.inner-text p.quote {
+	font-family: 'JansonURW-Lig';
+	margin-bottom:20px;
+	margin-left:0;
+	font-size: 1em;
+}
+
+.inner-text p.quote.solo {
+	margin-left:14.12%;
+}
+@media screen and (max-device-width : 768px) {
+	.inner-text p.quote.solo {
+	margin-left:8.33%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.inner-text p.quote.solo {
+	margin-left:0;
+	}
+}
+
+.flowing-text p.quote q {
+	font-family: 'JansonURW-LigIta';
+
+	line-height: 1.5em;
+}
+
+.in-content-image {
+	margin-bottom: 1em;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.in-content-image img {
+	margin: 0 auto;
+}
+
+.arrow-link {
+	font-family: 'HelvBoldIBM';
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.arrow-link a {
+	white-space: nowrap;
+}
+
+.arrow-link a:after {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 19px;
+	height: 21px;
+	margin-top: 3px;
+	margin-left: 6px;
+}
+
+@media all and (max-width : 768px) {
+	height:13px;
+	margin-top:5px;
+	margin-left:0px;
+	width:17px;
+}
+.ibmcol-7.float-left .arrow-link {
+	margin-left:14.2%;
+}
+
+@media all and (min-width : 641px)
+and (max-width : 768px) {
+	.ibmcol-7.float-left .arrow-link {
+	margin-left:5.33%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.ibmcol-7.float-left .arrow-link {
+	margin-left:0;
+	}
+}
+
+p.button-link {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.button-link a {
+	padding: 4px 12px;
+	color: #fff;
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	border-radius: 5px;
+	margin-bottom:10px;
+}
+
+.pullquote {
+	position: relative;
+	min-height: 162px;
+	margin-bottom: 110px;
+	padding: 50px 10.12% 66px 10.12%;
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: 1.1em;
+	color: #fff;
+}
+
+.blockquote{
+	padding:55px 8.12% 70px 8.12%;
+	line-height: 1.3em;
+}
+
+.endwaypoint {
+	margin-bottom:20px;
+}
+
+@media all and (min-width : 641px)
+and (max-width : 768px) {
+
+	.pullquote {
+		padding: 24px 8.33%;
+		font-size: 1.2em;
+		line-height:1.3em;
+	}
+
+}
+@media all and (max-width: 640px) {
+	.pullquote {
+		padding: 24px 6%;
+		font-size: 1em;
+		margin-bottom:70px;
+	}
+}
+
+.pullquote strong {
+	font-family: 'LubalinForIbm-Demi';
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+
+	.pullquote {
+		line-height: 1.2em;
+	}
+
+}
+
+.pullquote-final{
+	margin-bottom: 50px;
+}
+
+/*.noShowMobile, .noShowTablet{display:none},*/
+@media screen and (max-width: 640px) {
+	.noShowMobile{display:none};
+}
+@media screen and (max-width: 768px) {
+	.noShowTablet{display:none}
+}
+
+.fpo-header,
+.fpo-footer {
+	width: 100%;
+	background: #000;
+	color: #ccc;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.mobile-break {
+		display:none;
+}
+
+@media screen and (max-width: 640px) {
+	.mobile-break {
+		display:inline;
+	}
+}
+
+
+/* custom grid modifications */
+
+.custom-layout-1,
+.custom-layout-2 {
+	overflow: hidden;
+}
+
+.custom-layout-1 img {
+	margin-left: -3em;
+}
+
+.custom-layout-2 {
+	height: 600px;
+}
+
+.custom-layout-2 img {
+	max-width: 120%;
+	margin-left: -3.7em;
+}
+
+.custom-layout-3 {
+	margin-top: -75px;
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+
+}

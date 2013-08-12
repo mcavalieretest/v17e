@@ -1,0 +1,126 @@
+
+.IBMSE-container {
+	position: relative;
+}
+
+#intro {
+		background: #1d90cf; 
+}
+
+#intro-end {
+	margin-bottom:0px;
+}
+.gradient-vertical-1{
+	min-height: 400px;
+	padding-top:0px;
+	margin-bottom:0;
+	background: #1d90cf; /* Old browsers */
+	background: -moz-linear-gradient(top, #1d90cf 0%, #62b2ed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d90cf), color-stop(100%,#62b2ed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1d90cf 0%,#62b2ed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1d90cf 0%,#62b2ed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1d90cf 0%,#62b2ed 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1d90cf 0%,#62b2ed 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d90cf', endColorstr='#62b2ed',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-vertical-1 h1 {
+	margin-top:0em;
+	padding-top:1.3em;
+}
+
+@media screen and (max-width: 640px) {
+	.gradient-vertical-1{
+		min-height: 400px;
+		padding-top:1px;
+		margin-bottom:0;
+		background: #1c7fb4; /* Old browsers */
+		background: -moz-linear-gradient(top, #1c7bae 0%, #50a7eb 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c7bae), color-stop(100%,#50a7eb)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #1c7bae 0%,#50a7eb 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #1c7bae 0%,#50a7eb 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #1c7bae 0%,#50a7eb 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #1c7bae 0%,#50a7eb 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c7bae', endColorstr='#50a7eb',GradientType=0 ); /* IE6-9 */
+	}
+
+}
+
+
+.gradient-vertical-2{
+	padding-top:1px;
+	padding-bottom: 50px;
+	margin-bottom: 90px;
+	background: #1e8ecb; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e8ecb 0%, #0e79b5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e8ecb), color-stop(100%,#0e79b5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e8ecb 0%,#0e79b5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e8ecb 0%,#0e79b5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1e8ecb 0%,#0e79b5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1e8ecb 0%,#0e79b5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e8ecb', endColorstr='#0e79b5d',GradientType=0 ); /* IE6-9 */
+}
+
+
+.color-us-open.flowing-text h1,
+.color-us-open.flowing-text h2,
+.color-us-open.flowing-text p,
+.color-us-open.flowing-text figcaption.headline-style {
+	color: #fff;
+}
+
+.color-us-open.flowing-text h1 {
+	margin-bottom: .5em;
+	letter-spacing: 1px;
+}
+
+.color-us-open.flowing-text p.large-text {
+	font-size: .95em;
+}
+
+.gamechanger .quote {
+	color: #0b74af;
+	width: 75%;
+	float: right;
+	margin-top: 20px;
+}
+
+.dotted-rule {
+	background: url('../img/dotted-rule.png') 0 repeat-x;
+	height: 5px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.white-background {
+	background: white;
+	color: #28a9e0;
+}
+
+.ibm-perspective p {
+	color: #15c0e4;
+	text-align: right;
+	clear: both;
+}
+
+.ibm-perspective .button-link a {
+	background: #ee5239;
+	float: right;
+}
+
+.ibm-perspective-cloud {
+	float: right;
+	padding-bottom: 20px;
+}
+
+.dotted-pull-quote {
+	padding: 50px 0;
+}
+
+.pullquote-small {
+	padding: 12px 8.12% 30px 10.12%;
+}

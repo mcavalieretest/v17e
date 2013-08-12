@@ -1,0 +1,137 @@
+@import compass/css3
+
+$lt_ie9: false !default
+
+// Colors
+$white      : #dadada
+$black      : #212020
+$grey       : #262626
+$grey-lt    : #928c85
+$grey-dk    : #646464
+$brown-lt   : #e0a345
+$brown-dk   : #5d4b2b
+$yellow     : #e0a345
+
+// Media query mixins
+=tablet
+  @media (min-width: 580px) and (max-width: 800px)
+    @content
+
+=desktop
+  @media (min-width: 800px)
+    @content
+
+=retina
+  @media  (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 2)
+    @content
+
+// FA inline-block
+=fa-inline-block
+  display: inline-block
+  position: relative
+  vertical-align: middle
+
+  .lt-ie8 &
+    display: inline
+    vertical-align: top
+    zoom: 1
+
+=reset
+  margin: 0
+  padding: 0
+
+=font-shadow-top($color: black)
+  +text-shadow(rgba($color, .4) 0px -1px 0px)
+
+=font-shadow-bottom($color: white)
+  +text-shadow(rgba($color, .5) 0px 1px 0px)
+
+=shadow($color: black, $distance: 6px)
+  +box-shadow(rgba($color, .4) 0 0 $distance)
+
+// CSS animations and easings
+$custom_ease: cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+=animate($prop, $time:"", $delay:"", $ease: "")
+  @if $time == ""
+    $time: 0.5s
+
+  @if $delay == ""
+    $delay: 0s
+
+  @if $ease == ""
+    $ease: cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+  +transition-property($prop)
+  +transition-duration($time)
+  +transition-timing-function($ease)
+  +transition-delay($delay)
+
+
+// Absolutely centered
+=absolutely-centered
+  left: 0
+  right: 0
+  margin: 0 auto
+  position: absolute
+
+
+// Responsive spacing helpers
+$mobile_vertical_spacing  : 30px
+$tablet_vertical_spacing  : 40px
+$desktop_vertical_spacing : 60px
+
+=vertical-padding($multiple: 1)
+  padding: $mobile_vertical_spacing * $multiple 0
+
+  +tablet
+    padding: $tablet_vertical_spacing * $multiple 0
+
+  +desktop
+    padding: $desktop_vertical_spacing * $multiple 0
+
+
+=margin-top($multiple: 1)
+  margin-top: $mobile_vertical_spacing * $multiple
+
+  +tablet
+    margin-top: $tablet_vertical_spacing * $multiple
+
+  +desktop
+    margin-top: $desktop_vertical_spacing * $multiple
+
+
+=margin-bottom($multiple: 1)
+  margin-bottom: $mobile_vertical_spacing * $multiple
+
+  +tablet
+    margin-bottom: $tablet_vertical_spacing * $multiple
+
+  +desktop
+    margin-bottom: $desktop_vertical_spacing * $multiple
+
+
+=padding-bottom($multiple: 1)
+  padding-bottom: $mobile_vertical_spacing * $multiple
+
+  +tablet
+    padding-bottom: $tablet_vertical_spacing * $multiple
+
+  +desktop
+    padding-bottom: $desktop_vertical_spacing * $multiple
+
+
+=padding-top($multiple: 1)
+  padding-top: $mobile_vertical_spacing * $multiple
+
+  +tablet
+    padding-top: $tablet_vertical_spacing * $multiple
+
+  +desktop
+    padding-top: $desktop_vertical_spacing * $multiple
+
+
+=image-2x($image, $width, $height)
+  @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)
+    background-image: url($image)
+    background-size: $width $height
