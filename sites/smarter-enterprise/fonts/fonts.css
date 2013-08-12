@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'LubalinForIbm-Demi';
+    src: url('lubalinforibm-demi-webfont.eot');
+    src: url('lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lubalinforibm-demi-webfont.woff') format('woff'),
+         url('lubalinforibm-demi-webfont.ttf') format('truetype'),
+         url('lubalinforibm-demi-webfont.svg#LubalinforIBMDemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ITCLubalinGraphStdBook';
+    src: url('lubalingraphstd-book-webfont.eot');
+    src: local('☺'),
+         url('lubalingraphstd-book-webfont.woff') format('woff'),
+         url('lubalingraphstd-book-webfont.ttf') format('truetype'),
+         url('lubalingraphstd-book-webfont.svg#ITCLubalinGraphStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvBoldIBM';
+    src: url('helvneueforibm-bold-webfont.eot');
+    src: local('☺'),
+         url('helvneueforibm-bold-webfont.woff') format('woff'),
+         url('helvneueforibm-bold-webfont.ttf') format('truetype'),
+         url('helvneueforibm-bold-webfont.svg#HelvBoldIBM') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvLightIBM';
+    src: url('helvneueforibm-light-webfont.eot');
+    src: local('☺'),
+         url('helvneueforibm-light-webfont.woff') format('woff'),
+         url('helvneueforibm-light-webfont.ttf') format('truetype'),
+         url('helvneueforibm-light-webfont.svg#HelvLightIBM') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvRegular';
+    src: url('helveticaneue-webfont.eot');
+    src: local('☺'),
+         url('helveticaneue-webfont.woff') format('woff'),
+         url('helveticaneue-webfont.ttf') format('truetype'),
+         url('helveticaneue-webfont.svg#HelvRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
