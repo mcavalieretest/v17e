@@ -1,4 +1,4 @@
-@import url('ww-blessed1.css?z=1376334921808');
+@import url('ww-blessed1.css?z=1376336912691');
 
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column ul.ibm-bullet-list li, #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul.ibm-bullet-list li { display: block; }
@@ -1827,11 +1827,11 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
 
 .ibm-col-space { padding: 0px 10px !important; }
 
-.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] { width: 450px; }
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] { width: 450px; }
 
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] { clear: left; }
 
-.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) { margin-left: 30px; }
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) { margin-left: 30px; }
 
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) { clear: right; }
 
