@@ -45,6 +45,7 @@ $hover-color 							: #f04e37;
 	& #ibm-leadspace-body {
 			padding: 0;
 			min-height:$min-height;
+			line-height:0;
 		}
 }
 
@@ -192,6 +193,7 @@ $hover-color 							: #f04e37;
 @mixin ibm_cci-ul--li-modifier{
 	background:none;
 	list-style: none;
+	line-height: 22px;
 }
 
 	#ibm-content#{$ibm-content__modifier}{
@@ -218,6 +220,7 @@ $hover-color 							: #f04e37;
 					//max-height: 50px;
 
 					& .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top{
+						float:left;
 						margin-top: 30px;
 						
 						ul {
@@ -226,7 +229,7 @@ $hover-color 							: #f04e37;
 						ul li {
 							@include ibm_cci-ul--li-modifier;
 							display: inline-block;
-							padding: 3px 10px 3px 0px;							
+							padding: 0 10px 0 0;							
 							&.ibm_cci__background-color{
 								background-color:#f0f0f0;
 								outline:1px solid #e7e6e6;
@@ -236,7 +239,7 @@ $hover-color 							: #f04e37;
 								}								
 								& p {
 									display:inline;
-									font-size:0.9em;
+									font-size:1.2rem;
 								}
 								& span p{
 									color:#ccc;
@@ -277,7 +280,9 @@ $hover-color 							: #f04e37;
 					}
 					& .ibm-columns .ibm-col-1-1.ibm_cci--search-results p{
 						color:#9a9a9a;
+						font-size:1.2rem;
 						font-style: italic;
+						line-height:22px;
 					}
 				}
 			}
@@ -345,7 +350,7 @@ $hover-color 							: #f04e37;
 
 					& p.ibm_cci--rea-rank {
 						display:block;
-						font: normal 3.6em/40px "Helvetica-Light";
+						font: normal 5.2rem/40px "Helvetica-Light";
 						color:#dfdfdf;
 						/* 
 							The ww-blessed css has a 5px bottom padding
@@ -367,7 +372,7 @@ $hover-color 							: #f04e37;
 
 			& .ibm_cci-favicon-handler-block {
 				@extend .ibm_cci--resolved-content-block;
-				width:464px;
+				width:460px;
 				clear:both;
 				padding:0;
 
@@ -391,14 +396,15 @@ $hover-color 							: #f04e37;
 
 				p.ibm_cci--feed-title {
 					text-indent: 0;
-					// line-height: 1.4em;
+					font-size:1.2rem;
+					line-height: 17px;
 					vertical-align: top;
 				}
 			}
 
 			& .ibm_cci-social-icon-block {
 				float:left;
-				width:56px;
+				width:60px;
 				display:none;
 
 				& ul.ibm_cci-social-icon-elements{
@@ -418,12 +424,12 @@ $hover-color 							: #f04e37;
 				clear:both;
 
 				& h2.ibm_cci--tweet-title{
-					font: 2em/36px "Helvetica-Medium";
+					font: 2.8rem/36px "Helvetica-Light";
 					color: #000;
 				}
 
 				& p.ibm_cci--tweet-description {
-					font: italic 1.2em/20px "Helvetica-Light";
+					font: italic 1.4rem/20px "Helvetica-Light";
 				}
 			}
 		}

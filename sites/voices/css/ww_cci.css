@@ -14,7 +14,8 @@
   _height: 127px; }
   .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body {
     padding: 0;
-    min-height: 127px; }
+    min-height: 127px;
+    line-height: 0; }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body h1 {
   float: left;
@@ -134,6 +135,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#fff',GradientType=0 );
     min-height: 15px; }
     #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top {
+      float: left;
       margin-top: 30px; }
       #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul {
         float: left;
@@ -142,8 +144,9 @@
       #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li {
         background: none;
         list-style: none;
+        line-height: 22px;
         display: inline-block;
-        padding: 3px 10px 3px 0px; }
+        padding: 0 10px 0 0; }
         #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color {
           background-color: #f0f0f0;
           outline: 1px solid #e7e6e6;
@@ -152,7 +155,7 @@
             margin: 0 0 5px 2px; }
           #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color p {
             display: inline;
-            font-size: 0.9em; }
+            font-size: 1.2rem; }
           #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top ul li.ibm_cci__background-color span p {
             color: #ccc;
             font-size: 0.9em; }
@@ -178,7 +181,9 @@
           background-position: -205px -67px; }
     #ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band .ibm-columns .ibm-col-1-1.ibm_cci--search-results p {
       color: #9a9a9a;
-      font-style: italic; }
+      font-size: 1.2rem;
+      font-style: italic;
+      line-height: 22px; }
 
 /* LIST VIEW (BEGIN) */
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier {
@@ -200,6 +205,7 @@
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li {
           background: none;
           list-style: none;
+          line-height: 22px;
           padding: 5px 0;
           float: left;
           clear: both; }
@@ -225,7 +231,7 @@
                 border-bottom: 0; }
           #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--rea-block ul li p.ibm_cci--rea-rank {
             display: block;
-            font: normal 3.6em/40px "Helvetica-Light";
+            font: normal 5.2rem/40px "Helvetica-Light";
             color: #dfdfdf;
             /* 
             	The ww-blessed css has a 5px bottom padding
@@ -239,7 +245,7 @@
       margin: 0;
       padding: 0 20px 0 0; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block {
-        width: 464px;
+        width: 460px;
         clear: both;
         padding: 0; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-icon {
@@ -258,10 +264,12 @@
             height: 16px; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-favicon-handler-block p.ibm_cci--feed-title {
           text-indent: 0;
+          font-size: 1.2rem;
+          line-height: 17px;
           vertical-align: top; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
         float: left;
-        width: 56px;
+        width: 60px;
         display: none; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements {
           float: left;
@@ -271,16 +279,17 @@
           #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements li {
             background: none;
             list-style: none;
+            line-height: 22px;
             display: inline-block;
             line-height: 0;
             padding: 5px 0; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block {
         clear: both; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title {
-          font: 2em/36px "Helvetica-Medium";
+          font: 2.8rem/36px "Helvetica-Light";
           color: #000; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block p.ibm_cci--tweet-description {
-          font: italic 1.2em/20px "Helvetica-Light"; }
+          font: italic 1.4rem/20px "Helvetica-Light"; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
   background-color: #f04e37; }
