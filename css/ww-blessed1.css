@@ -131,6 +131,8 @@ h1, h2, h3, h4, strong { font-family: "Helvetica-Bold", Arial, sans-serif; }
 
 table caption em, table th { font-family: "Helvetica-Bold", Arial, sans-serif; font-style: normal; }
 
+#ibm-content p, #ibm-content ul, #ibm-content ol { color: #333; }
+
 #ibm-footer-module ul { line-height: 14px; }
 
 #ibm-footer-module, #ibm-footer { font-size: 11.2px; font-size: 1.12rem; }
@@ -3579,5 +3581,3 @@ form.ibm-single-colum-alternate span table {
 .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a { padding-bottom: 10px !important; }
 
 .dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a { padding-bottom: 10px !important; }
-
-.dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first, .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second, .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column { padding-top: 20px; }
