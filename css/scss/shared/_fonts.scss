@@ -109,7 +109,9 @@ strong {
 
 // Content grid font size =======================
 
-#ibm-content .ibm-col-1-1 {
+#ibm-content .ibm-col-1-1,
+#ibm-content .ibm-col-5-2,
+#ibm-content .ibm-col-5-3 {
 	@include px-to-rem(font-size,16px);
 }
 
@@ -120,8 +122,8 @@ strong {
 
 #ibm-content .ibm-col-4-2,
 #ibm-content .ibm-col-4-3,
-#ibm-content .ibm-col-5-2,
-#ibm-content .ibm-col-5-3,
+.ibm-landing-page #ibm-content .ibm-col-5-2,
+.ibm-landing-page #ibm-content .ibm-col-5-3,
 #ibm-content .ibm-col-5-4,
 #ibm-content .ibm-col-6-3,
 #ibm-content .ibm-col-6-4,

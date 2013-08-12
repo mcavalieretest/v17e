@@ -1,5 +1,9 @@
-@import url('ww-blessed1.css?z=1376322493344');
+@import url('ww-blessed1.css?z=1376326973486');
 
+
+.dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a { padding-bottom: 10px !important; }
+
+.dj_ie7 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a { padding-bottom: 10px !important; }
 
 .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first, .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second, .dj_ie6 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column { padding-top: 20px; }
 

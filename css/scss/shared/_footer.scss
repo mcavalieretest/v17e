@@ -28,20 +28,37 @@
 }
 
 #ibm-footer-module li {
-    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
+//    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
     color: #666;
     margin: 4px 0;
-    padding: 0 0 0 10px;
+    padding: 0px;
 }
 
-#{$ie7Selector} #ibm-footer-module li{
-    display:inline-block;
+#ibm-footer-module li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #A8A8A8;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+#ibm-footer-module li:hover:before,
+#ibm-footer-module li.ibm-active {
+	background: #FFD600;
+	color: #FFD600;
+}
+
+#{$ie7Selector} #ibm-footer-module li {
+    display: inline-block;
 }
 
 #ibm-footer-module li:hover,
 #ibm-footer-module li.ibm-active {
-    background-position: -2px -98px;
-    color: #FFCF01;
+//    background-position: -2px -98px;
+//    color: #FFD600;
 }
 
 #{$ie6Selector} #ibm-footer-module li {
@@ -51,7 +68,7 @@
 
 #ibm-footer-module a {
     color: #A8A8A8;
-    display: block;
+    display: table;
     text-decoration: none;
     text-shadow: 0 0 2px #000;
 }
@@ -60,7 +77,8 @@
     margin-top: -4px;
 }
 
-#ibm-footer-module .ibm-stock-module h2, #ibm-footer-module a:hover {
+#ibm-footer-module .ibm-stock-module h2, 
+#ibm-footer-module a:hover {
     color: #FFF;
 }
 
