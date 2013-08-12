@@ -113,7 +113,7 @@ strong {
 	@include px-to-rem(font-size,16px);
 }
 
-.ibm-landing #ibm-content .ibm-col-1-1 {
+.ibm-landing-page #ibm-content .ibm-col-1-1 {
 	@include px-to-rem(font-size,21px);
 	line-height: 29px;
 }
