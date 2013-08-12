@@ -89,11 +89,9 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links #ibm-parent-link {
 	position: relative;
-	margin-top: -23px;
-	*margin-top: -30px;
+	margin-top: -20px;
     border: 0px;
     background: #FFF;
-
 }
 
 #ibm-navigation #ibm-primary-links li {
@@ -257,7 +255,7 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links li ul li a.ibm-is-active:hover, 
 #ibm-navigation #ibm-primary-links li ul li a.ibm-active:hover {
-    _background-color: #eee;
+    _background-color: #EEE;
     _color: #000;
 }
 
@@ -283,8 +281,7 @@ filter: none;
     color: #666;
     margin-left: 0;
     margin-right: 0;
-    border-bottom: 1px solid #fff;
-
+    border-bottom: 1px solid #FFF;
 }
 
 #ibm-navigation #ibm-primary-links #ibm-overview {

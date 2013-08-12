@@ -483,11 +483,16 @@ div.dijitDialog ul.ibm-link-list li:hover,
     height: 1%;
     list-style-type: none;
     margin: 0px 20px;
-    padding: 15px 0px 0px 0px;
+    padding: 10px 0px;
     text-shadow: 0px 1px 0px #FFF;
     position: relative#{$ie9Hack};
     *position: relative;
 }
+
+#ibm-navigation-trail:after {
+	@include aslett-clearing;
+}
+
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
 	margin: 0px 10px;
@@ -1639,7 +1644,6 @@ input.ibm-btn-remove-sec,
 input.ibm-btn-undo-sec,
 input.ibm-btn-video-sec,
 input.ibm-btn-view-sec {
-	font-family: Arial, Helvetica;
 	background: #DBDBDB;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
 	@include background-gradient(top, #F5F5F5, #DBDBDB);
@@ -1656,6 +1660,7 @@ input.ibm-btn-view-sec {
 	text-align: center;
 	cursor: pointer;
 }
+
 a.ibm-btn-pri:hover,
 a.ibm-btn-arrow-pri:hover,
 input.ibm-btn-pri:hover,
@@ -1753,6 +1758,7 @@ input.ibm-btn-view-sec:active {
 	@include background-gradient(top, #CBCBCB, #F5F5F5);
 	@include box-shadow(inset 0px 1px 3px #C1C1C1);
 }
+
 a.ibm-btn-pri:active,
 a.ibm-btn-arrow-pri:active,
 a.ibm-btn-sec:active {
@@ -1792,7 +1798,8 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
 }
 
 // Small button style
-#ibm-top a.ibm-btn-small, #ibm-top input.ibm-btn-small {
+#ibm-top a.ibm-btn-small, 
+#ibm-top input.ibm-btn-small {
 	min-width: 96px;
 	min-width: 90px\9;
 	*min-width: auto;

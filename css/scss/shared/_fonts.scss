@@ -68,25 +68,24 @@ these fonts. */
     font-style: normal;
 }
 
-// v17 font styles begin ============================================
+// v17e font styles begin ============================================
 
-div, p, span, a, li, strong {
+div, 
+p, 
+span, 
+a, 
+li, 
+strong {
 	font-family: $defaultFont;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-family: $defaultHeaderFont;
+}
 
 // Masthead Fonts ======================
 #ibm-mast-options {
@@ -97,10 +96,7 @@ div, p, span, a, li, strong {
 	@include px-to-rem(font-size,12.8px);
 	line-height: 15px;
 }
-#ibm-common-menu h2,
-#ibm-common-menu h3 {
-	font-weight: bold;
-}
+
 // End of Masthead Fonts =================
 
 
@@ -112,7 +108,12 @@ div, p, span, a, li, strong {
 
 
 // Content grid font size =======================
+
 #ibm-content .ibm-col-1-1 {
+	@include px-to-rem(font-size,16px);
+}
+
+.ibm-landing #ibm-content .ibm-col-1-1 {
 	@include px-to-rem(font-size,21px);
 	line-height: 29px;
 }
@@ -139,7 +140,33 @@ div, p, span, a, li, strong {
 	@include px-to-rem(font-size,13px);
 	line-height: 15px;
 }
+// End of Content grid font size =======================
 
+
+
+// Default template styles =======================
+#ibm-navigation {
+	@include px-to-rem(font-size,11.2px);	
+}
+
+#ibm-navigation #ibm-overview a,
+#ibm-navigation .ibm-active {
+	font-family: $defaultHeaderFont;
+}
+
+#ibm-content-sidebar {
+	@include px-to-rem(font-size,13px);
+	line-height: 15px;
+}
+// End of Default template styles =======================
+
+
+
+
+
+
+
+// Content styles =======================
 // line-height is .7 of font-size
 
 /*
@@ -156,21 +183,59 @@ div, p, span, a, li, strong {
 }
 */
 
-h1,
-h2,
-h3,
-h4,
-strong {
+#ibm-top h1 {
+	@include px-to-rem(font-size,36px);
+	line-height: 30px;
+}
+
+#ibm-navigation-trail {
+	@include px-to-rem(font-size,11px);
+}
+
+#ibm-content code {
+    font-family: monospace,sans-serif;
+	@include px-to-rem(font-size,14px);	
+}
+
+#ibm-content-head em, 
+#ibm-content #ibm-leadspace-head em {
+	font-family: $defaultHeaderFont;
+	font-style: normal;
+	color: #666;
+}
+
+.ibm-landing-page #ibm-leadspace-head p em span {
 	font-family: $defaultHeaderFont;
 }
 
-#ibm-top h1 {
-	@include px-to-rem(font-size,36px);
-	font-weight: normal;
+#ibm-content-nav #ibm-primary-tabs a {
+	font-family: "Helvetica-Regular",Arial,sans-serif;
+	line-height: 20px;
+	@include px-to-rem(font-size,13px);
 }
 
 
-// End of Content grid font size =======================
+[class*="ibm-btn-"] {
+	@include px-to-rem(font-size,13px);
+}
+
+[class*="ibm-btn-"][class$="pri"] {
+	font-family: $defaultHeaderFont;
+}
+
+table caption em,
+table th {
+	font-family: $defaultHeaderFont;
+	font-style: normal;
+}
+
+// Content styles =======================
+
+
+
+
+
+
 
 
 // Footer font=============================
@@ -184,12 +249,6 @@ strong {
 }
 
 // End of Footer font=============================
-
-
-
-
-
-
 
 
 
