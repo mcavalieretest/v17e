@@ -30,10 +30,19 @@ a.ibm-thumbnail-module h3 {
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] {
 	width: 450px;
 }
+
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] {
+	clear: left;
+}
+
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
 .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
 	margin-left: 30px;
+}
+
+.ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
+	clear: right;
 }
 
 // thumbnail module section
