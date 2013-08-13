@@ -437,6 +437,11 @@ $hover-color 							: #f04e37;
 
 				& p.ibm_cci--tweet-description {
 					font: italic 1.4rem/20px "Helvetica-Light";
+
+					& span.ibm_cci--tweet-description-readmore a {
+						color: #F04E37;
+						text-decoration: none;
+					}
 				}
 			}
 		}
@@ -470,12 +475,12 @@ $hover-color 							: #f04e37;
 					padding:0;
 					margin:10px 0 0 0;
 
-					& .ibm_cci--list-view-right-conversation-avatar {
-						float:left;
-						width:25px;
-						height:25px;
-						position:absolute;
-					}
+					// & .ibm_cci--list-view-right-conversation-avatar {
+					// 	float:left;
+					// 	width:25px;
+					// 	height:25px;
+					// 	position:absolute;
+					// }
 					
 						//To hide the Avatar image for multiple conversation
 						& .ibm_cci--list-view-right-conversation-avatar.ibm_cci--list-view-right-conversation-avatar__hidden {
@@ -486,7 +491,7 @@ $hover-color 							: #f04e37;
 						float:left;
 						font: bold 12px/16px "Helvetica-Light";
 						padding:0;
-						margin: 0 0 0 35px;
+						margin: 0;
 						clear:both;
 						position:relative;
 
@@ -522,7 +527,11 @@ $hover-color 							: #f04e37;
 						float: left;
 						font-family: Helvetica-Light;
 						font-size: 14px;
-						line-height: 16px;
+						line-height: 18px;
+
+						& a {
+							text-decoration:none;
+						}
 					}
 				}
 			}
@@ -551,6 +560,13 @@ $hover-color 							: #f04e37;
 	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-left} .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
 		display:block;
 	}
+
+	
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-right} .ibm_cci--list-view-right-conversation-description p span a {
+		text-decoration:none;
+		color: $hover-color;
+	}
+
 
 
 
