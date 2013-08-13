@@ -45,8 +45,10 @@
 	margin-top: 5px;
 }
 
-#{$ie7Selector} #ibm-footer-module li {
+#{$ie7Selector} #ibm-footer-module li,
+#{$ie8Selector} #ibm-footer-module li {
     display:inline-block;
+    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
 }
 
 #ibm-footer-module li:hover:before,
