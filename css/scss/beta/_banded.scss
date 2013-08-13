@@ -39,7 +39,9 @@
 }
 
 .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 	margin: 10px auto;
 	width: 940px;
 }

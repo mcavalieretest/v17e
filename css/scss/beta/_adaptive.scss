@@ -149,7 +149,7 @@ a.ibm-thumbnail-module h3 {
 }
 .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite,
 .ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize {
-	height: 40px !important;
+	height: 60px !important;
 	width: 60px !important;
 }
 .ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img {
@@ -308,7 +308,9 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+		.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+		.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		width: 320px;
 		margin: 0px 10px;
 	}
@@ -346,7 +348,9 @@ a.ibm-thumbnail-module h3 {
 
 	// ribbon column adjust
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+		.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+		.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		margin: 10px auto;
 		width: 280px;
 	}
@@ -382,7 +386,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	.ibm-thumbnail-module .ibm-sprite,
 	.ibm-thumbnail-module .ibm-resize {
-		height: 40px !important;
+		height: 60px !important;
 		width: 60px !important;
 	}
 	.ibm-thumbnail-module:hover .ibm-sprite img {
@@ -466,7 +470,9 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		width: auto;
 		margin: 10px 0px;
 	}
@@ -525,7 +531,9 @@ a.ibm-thumbnail-module h3 {
 
 	// ribbon column adjust
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		margin: 10px 40px;
 	}
 	
@@ -664,7 +672,9 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container {
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		width: 640px;
 		margin: 10px 64px;
 	}
