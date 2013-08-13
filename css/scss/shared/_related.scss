@@ -15,20 +15,7 @@
 	clear: both;
 }
 
-#ibm-related-content .ibm-columns .ibm-col-1-1,
-#ibm-related-content .ibm-columns .ibm-col-2-1,
-#ibm-related-content .ibm-columns .ibm-col-4-1,
-#ibm-related-content .ibm-columns .ibm-col-4-2,
-#ibm-related-content .ibm-columns .ibm-col-4-3,
-#ibm-related-content .ibm-columns .ibm-col-5-1,
-#ibm-related-content .ibm-columns .ibm-col-5-2,
-#ibm-related-content .ibm-columns .ibm-col-5-3,
-#ibm-related-content .ibm-columns .ibm-col-5-4,
-#ibm-related-content .ibm-columns .ibm-col-6-1,
-#ibm-related-content .ibm-columns .ibm-col-6-2,
-#ibm-related-content .ibm-columns .ibm-col-6-3,
-#ibm-related-content .ibm-columns .ibm-col-6-4,
-#ibm-related-content .ibm-columns .ibm-col-6-5 {
+#ibm-related-content .ibm-columns div[class^="ibm-col-"] {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -63,34 +50,8 @@
 	padding-top: 0;
 }
 
-#ibm-related-content .ibm-columns .ibm-col-1-1 h2,
-#ibm-related-content .ibm-columns .ibm-col-2-1 h2,
-#ibm-related-content .ibm-columns .ibm-col-4-1 h2,
-#ibm-related-content .ibm-columns .ibm-col-4-2 h2,
-#ibm-related-content .ibm-columns .ibm-col-4-3 h2,
-#ibm-related-content .ibm-columns .ibm-col-5-1 h2,
-#ibm-related-content .ibm-columns .ibm-col-5-2 h2,
-#ibm-related-content .ibm-columns .ibm-col-5-3 h2,
-#ibm-related-content .ibm-columns .ibm-col-5-4 h2,
-#ibm-related-content .ibm-columns .ibm-col-6-1 h2,
-#ibm-related-content .ibm-columns .ibm-col-6-2 h2,
-#ibm-related-content .ibm-columns .ibm-col-6-3 h2,
-#ibm-related-content .ibm-columns .ibm-col-6-4 h2,
-#ibm-related-content .ibm-columns .ibm-col-6-5 h2,
-#ibm-related-content .ibm-columns .ibm-col-1-1 h3,
-#ibm-related-content .ibm-columns .ibm-col-2-1 h3,
-#ibm-related-content .ibm-columns .ibm-col-4-1 h3,
-#ibm-related-content .ibm-columns .ibm-col-4-2 h3,
-#ibm-related-content .ibm-columns .ibm-col-4-3 h3,
-#ibm-related-content .ibm-columns .ibm-col-5-1 h3,
-#ibm-related-content .ibm-columns .ibm-col-5-2 h3,
-#ibm-related-content .ibm-columns .ibm-col-5-3 h3,
-#ibm-related-content .ibm-columns .ibm-col-5-4 h3,
-#ibm-related-content .ibm-columns .ibm-col-6-1 h3,
-#ibm-related-content .ibm-columns .ibm-col-6-2 h3,
-#ibm-related-content .ibm-columns .ibm-col-6-3 h3,
-#ibm-related-content .ibm-columns .ibm-col-6-4 h3,
-#ibm-related-content .ibm-columns .ibm-col-6-5 h3{
+#ibm-related-content .ibm-columns h2,
+#ibm-related-content .ibm-columns h3 {
     color: #4C4C4C;
     margin: 0;
     padding: 4px 0 0;
