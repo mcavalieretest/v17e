@@ -1,12 +1,12 @@
 // footer styles begin ============================================
 
 #ibm-footer-module {
+	@include background-image-gradient(url("#{$imagePath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
     border-top: 1px solid #666;
     clear: both;
     width: 100%;
     float: left;
-    *float: none; /* IE7 hack */   
-	@include background-image-gradient(url("#{$imagePath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
+    *float: none; /* IE7 hack */
     margin-bottom: -1px;
 }
 

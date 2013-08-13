@@ -42,16 +42,18 @@ $ie9Hack : "\0/";
 	background: -webkit-linear-gradient($gradients);
 	background: -moz-linear-gradient($gradients);
 	background: -o-linear-gradient($gradients);
+	background: -ms-linear-gradient($gradients);
 	background: linear-gradient($gradients);
 }
 
 @mixin background-image-gradient($image-url, $image-position, $gradient-position, $gradient-color1, $gradient-color2) {
 	background: $gradient-color2;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$gradient-color1}', endColorstr='#{$gradient-color2}');
 	background: $image-url $image-position, -webkit-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
 	background: $image-url $image-position, -moz-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
 	background: $image-url $image-position, -o-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	background: $image-url $image-position, -ms-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
 	background: $image-url $image-position, linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$gradient-color1}', endColorstr='#{$gradient-color2}');	
 }
 
 @mixin transition($transitions...) {
