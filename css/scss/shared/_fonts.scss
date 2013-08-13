@@ -111,21 +111,11 @@ strong {
 
 #ibm-content .ibm-col-1-1,
 #ibm-content .ibm-col-5-2,
-#ibm-content .ibm-col-5-3,
-#{$ie7Selector} #ibm-content .ibm-col-1-1 h2,
-#{$ie7Selector} #ibm-content .ibm-col-1-1 h3,
-#{$ie7Selector} #ibm-content .ibm-col-2-1 h2,
-#{$ie7Selector} #ibm-content .ibm-col-2-1 h3,
-#{$ie7Selector} #ibm-content .ibm-col-5-2 h2,
-#{$ie7Selector} #ibm-content .ibm-col-5-2 h3,
-#{$ie7Selector} #ibm-content .ibm-col-5-3 h2,
-#{$ie7Selector} #ibm-content .ibm-col-5-3 h3 {
+#ibm-content .ibm-col-5-3 {
 	@include px-to-rem(font-size,16px);
 }
 
-.ibm-landing-page #ibm-content .ibm-col-1-1,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-1-1 h2,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-1-1 h3 {
+.ibm-landing-page #ibm-content .ibm-col-1-1 {
 	@include px-to-rem(font-size,21px);
 	@include px-to-rem(line-height,29px);
 }
@@ -137,46 +127,27 @@ strong {
 #ibm-content .ibm-col-5-4,
 #ibm-content .ibm-col-6-3,
 #ibm-content .ibm-col-6-4,
-#ibm-content .ibm-col-6-5,
-#{$ie7Selector} #ibm-content .ibm-col-4-2 h2,
-#{$ie7Selector} #ibm-content .ibm-col-4-2 h3,
-#{$ie7Selector} #ibm-content .ibm-col-4-3 h2,
-#{$ie7Selector} #ibm-content .ibm-col-4-3 h3,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-5-2 h2,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-5-2 h3,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-5-3 h2,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-5-3 h3,
-#{$ie7Selector} #ibm-content .ibm-col-5-4 h2,
-#{$ie7Selector} #ibm-content .ibm-col-5-4 h3,
-#{$ie7Selector} #ibm-content .ibm-col-6-2 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-2 h3,
-#{$ie7Selector} #ibm-content .ibm-col-6-3 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-3 h3,
-#{$ie7Selector} #ibm-content .ibm-col-6-4 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-4 h3,
-#{$ie7Selector} #ibm-content .ibm-col-6-5 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-5 h3 {
+#ibm-content .ibm-col-6-5 {
 	@include px-to-rem(font-size,18px);
 	@include px-to-rem(line-height,24px);
 }
 
-#ibm-content .ibm-col-4-1,
-#{$ie7Selector} #ibm-content .ibm-col-4-1 h2,
-#{$ie7Selector} #ibm-content .ibm-col-4-1 h3 {
+#ibm-content .ibm-col-4-1 {
 	@include px-to-rem(font-size,15px);
 	@include px-to-rem(line-height,18px);
 }
 
 
 #ibm-content .ibm-col-5-1,
-#ibm-content .ibm-col-6-1,
-#{$ie7Selector} #ibm-content .ibm-col-5-1 h2,
-#{$ie7Selector} #ibm-content .ibm-col-5-1 h3,
-#{$ie7Selector} #ibm-content .ibm-col-6-1 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-1 h3 {
+#ibm-content .ibm-col-6-1 {
 	@include px-to-rem(font-size,13px);
 	@include px-to-rem(line-height,15px);
 }
+
+#{$ie7Selector} #ibm-content #ibm-content-main * {
+	font-size: 15px;
+}
+
 // End of Content grid font size =======================
 
 
