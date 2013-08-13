@@ -364,7 +364,7 @@
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
   display: block; }
 
-#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-right-conversations-block .ibm_cci--list-view-right-conversation-description p span a {
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-right-conversations-block .ibm_cci--list-view-right-conversation-description p a {
   text-decoration: none;
   color: #f04e37; }
 

@@ -562,7 +562,7 @@ $hover-color 							: #f04e37;
 	}
 
 	
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-right} .ibm_cci--list-view-right-conversation-description p span a {
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-right} .ibm_cci--list-view-right-conversation-description p a {
 		text-decoration:none;
 		color: $hover-color;
 	}
