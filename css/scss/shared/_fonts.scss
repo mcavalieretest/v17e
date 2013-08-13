@@ -224,10 +224,6 @@ strong {
 	@include px-to-rem(line-height,14px);
 }
 
-#ibm-content-nav #ibm-secondary-tabs .ibm-active a {
-	font-family: $defaultHeaderFont;
-} 
-
 // Buttons size
 [class*="ibm-btn-"] {
 	@include px-to-rem(font-size,16px);
