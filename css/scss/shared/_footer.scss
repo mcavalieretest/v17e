@@ -47,7 +47,7 @@
 
 #{$ie7Selector} #ibm-footer-module li,
 #{$ie8Selector} #ibm-footer-module li {
-    display:inline-block;
+    //display:inline-block;
     background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
 }
 
