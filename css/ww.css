@@ -1,4 +1,4 @@
-@import url('ww-blessed1.css?z=1376357197490');
+@import url('ww-blessed1.css?z=1376364837412');
 
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column ul.ibm-link-list li a, #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul.ibm-link-list li a { padding-bottom: 10px; }
@@ -1859,21 +1859,21 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
 .ibm-col-6-2 .ibm-thumbnail-module:hover .ibm-sprite img { top: -300px; }
 .ibm-col-6-2 .ibm-thumbnail-module:active .ibm-sprite img { top: -600px; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite, .ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize { float: left; }
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite, .ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite { float: left; height: 60px !important; width: 60px !important; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module h2, .ibm-thumbnail-small .ibm-thumbnail-module h3, .ibm-thumbnail-small .ibm-thumbnail-module p, .ibm-thumbnail-small .ibm-thumbnail-module ul { margin-left: 70px !important; }
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize, .ibm-thumbnail-small.ibm-thumbnail-module .ibm-resize { float: left; height: auto !important; width: 60px !important; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h2, .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3 { position: relative; top: -2px; }
+.ibm-thumbnail-small .ibm-thumbnail-module h2, .ibm-thumbnail-small .ibm-thumbnail-module h3, .ibm-thumbnail-small .ibm-thumbnail-module p, .ibm-thumbnail-small .ibm-thumbnail-module ul, .ibm-thumbnail-small.ibm-thumbnail-module h2, .ibm-thumbnail-small.ibm-thumbnail-module h3, .ibm-thumbnail-small.ibm-thumbnail-module p, .ibm-thumbnail-small.ibm-thumbnail-module ul { margin-left: 70px !important; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite, .ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize { height: 60px !important; width: 60px !important; }
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h2, .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3, .ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite + h2, .ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite + h3 { position: relative; top: -2px; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img { top: -60px !important; }
+.ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img, .ibm-thumbnail-small.ibm-thumbnail-module:hover .ibm-sprite img { top: -60px !important; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module:active .ibm-sprite img { top: -120px !important; }
+.ibm-thumbnail-small .ibm-thumbnail-module:active .ibm-sprite img, .ibm-thumbnail-small.ibm-thumbnail-module:active .ibm-sprite img { top: -120px !important; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize { float: right; }
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize { float: right; }
 
-.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h2, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h3, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap p, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap ul { margin-left: 0px !important; margin-right: 70px !important; }
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h2, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h3, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap p, .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap ul, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap h2, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap h3, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap p, .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap ul { margin-left: 0px !important; margin-right: 70px !important; }
 
 .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon-section { margin-left: -20px; }
 
@@ -1902,8 +1902,10 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
   .ibm-landing-page.ibm-banded #ibm-content-main > p { width: 280px; }
   .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon { width: 320px; margin: 0px 10px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns { width: 300px; padding: 0px 10px; }
-  .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"], .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-1-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-4-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-5-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-1, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"], .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 280px; font-size: 18px; font-size: 1.8rem; line-height: 24px; line-height: 2.4rem; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) { margin-left: 10px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 { width: 280px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3 { margin-left: 10px; }
   .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon { margin: 10px auto; width: 280px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns { padding: 0px 10px; }
   .ibm-landing-page.ibm-banded .ibm-ribbon-pane { width: 280px; }
@@ -1917,7 +1919,7 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
   .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite, .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize { float: right; }
   .ibm-thumbnail-module.ibm-thumbnail-swap h2, .ibm-thumbnail-module.ibm-thumbnail-swap h3, .ibm-thumbnail-module.ibm-thumbnail-swap p, .ibm-thumbnail-module.ibm-thumbnail-swap ul { margin-left: 0px !important; margin-right: 70px !important; }
   .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns { width: 300px; padding: 0px 10px; }
-  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 120px; min-height: 225px; }
+  .ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns .ibm-col-6-1 { width: 120px; min-height: 230px; }
   .ibm-landing-page.ibm-banded #ibm-footer ul { width: 300px; margin: 0px; padding: 0px; } }
 @media only screen and (min-width: 481px) and (max-width: 600px) { #ibm-leadspace-body p:after { content: "min-width: 481 | max-width: 600px"; }
   .ibm-landing-page.ibm-banded#ibm-top { min-width: 600px; }
@@ -1941,6 +1943,7 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] { width: 240px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4 { width: 340px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 430px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 { width: 240px; }
   .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container, .ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon { margin: 10px 40px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns { padding: 0px 10px; }
   .ibm-landing-page.ibm-banded .ibm-ribbon-pane { width: 520px; }
@@ -1981,6 +1984,7 @@ a.ibm-thumbnail-module h2, a.ibm-thumbnail-module h3 { color: #000; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-w-gutter .ibm-col-6-3, .ibm-landing-page.ibm-banded #ibm-content .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] { width: 300px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-4 { width: 420px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-col-6-5 { width: 530px; }
+  .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-4-2, .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 { width: 300px; }
   .ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns { padding: 0px 10px; }
   .ibm-landing-page.ibm-banded .ibm-ribbon-pane { width: 640px; }
   .ibm-col-4-1 .ibm-thumbnail-module .ibm-sprite { height: 96px; }
