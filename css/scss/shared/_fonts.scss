@@ -125,7 +125,7 @@ strong {
 
 .ibm-landing-page #ibm-content .ibm-col-1-1,
 #{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-1-1 h2,
-#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-1-1 h3, {
+#{$ie7Selector} .ibm-landing-page #ibm-content .ibm-col-1-1 h3 {
 	@include px-to-rem(font-size,21px);
 	@include px-to-rem(line-height,29px);
 }
@@ -155,8 +155,7 @@ strong {
 #{$ie7Selector} #ibm-content .ibm-col-6-4 h2,
 #{$ie7Selector} #ibm-content .ibm-col-6-4 h3,
 #{$ie7Selector} #ibm-content .ibm-col-6-5 h2,
-#{$ie7Selector} #ibm-content .ibm-col-6-5 h3
-{
+#{$ie7Selector} #ibm-content .ibm-col-6-5 h3 {
 	@include px-to-rem(font-size,18px);
 	@include px-to-rem(line-height,24px);
 }
@@ -311,8 +310,7 @@ table th {
 
 #ibm-footer-module,
 #ibm-footer,
-#{$ie7Selector} #ibm-footer-module h3
-{
+#{$ie7Selector} #ibm-footer-module h3 {
 	@include px-to-rem(font-size,11.2px);
 }
 
