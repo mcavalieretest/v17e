@@ -694,9 +694,6 @@ margin-top:8px !important;
 	margin: 0 10px;
 	width: auto;
 }
-#{$ie6Selector} #ibm-top #ibm-content .ibm-container.ibm-alternate {
-	border-top: 2px solid #CCC;
-}
 
 #ibm-content .ibm-three-column .ibm-container,
 #ibm-content .ibm-columns .ibm-container {
@@ -843,6 +840,7 @@ margin-top:8px !important;
     padding-bottom: 3px;
     padding-top: 3px;
 }
+
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:hover,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
 #ibm-content div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
@@ -856,9 +854,6 @@ margin-top:8px !important;
   	text-decoration: none;
 }
 
-
-
-
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
@@ -867,17 +862,6 @@ margin-top:8px !important;
 	margin-left: 6px;
     margin-right: -6px;
 }
-
-#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a,
-#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list a:hover,
-#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:link,
-#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:visited,
-#{$ie6Selector} #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list li.ibm-highlight-link a:hover {
-	margin-left: 0px;
-    margin-right: 0px;
-    padding:2px;
-}
-
 
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:visited {
 	color:#969;
@@ -2172,13 +2156,6 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	color: #000;        
 }
 
-#{$ie6Selector} .ibm-show-hide h2 a {
-	width:98%;
-}
-
-#{$ie6Selector} #ibm-content-sidebar .ibm-show-hide h2 {
-	width:90%;
-}
 .ibm-landing-page .ibm-show-hide h2 a {
 	background-position: 100% -1602px;
 }
@@ -2326,16 +2303,6 @@ div.ibm-pull-quote.ibm-inset{
     width: 295px;
 }
 
-
-#{$ie6Selector} #ibm-top div.ibm-pull-quote.ibm-inset.ibm-alternate {
-	_float: left;
-	_margin: 5px 20px 0px 0px;
-    _padding: 0px;
-    _width: 295px;
-    border-top:0px none;
-}
-	
-
 div.ibm-pull-quote blockquote p,
 div.ibm-pull-quote.ibm-inset blockquote p,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p{
@@ -2347,10 +2314,6 @@ div.ibm-pull-quote blockquote p em,
 div.ibm-pull-quote.ibm-inset blockquote p em,
 div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
 	display:block;
-}
-#{$ie6Selector} #ibm-top .ibm-alternate-font blockquote p,
-#{$ie6Selector} #ibm-top blockquote p {
-	padding:0px !important;
 }
 
 // w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles
@@ -2377,20 +2340,7 @@ div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
     margin-left:2px;
     margin-top:7px;
 }
-#{$ie6Selector} .ibm-pullquote-open{
-	
-  margin-left:-18px;
-  margin-top:-5px;
-  padding-top:2px;
-  height:0px;
- }
- 
- 
-#{$ie6Selector} .ibm-pullquote-close {
-	padding-top:4px;
-	padding-bottom:2px;
-	margin-top:4px;
-}
+
 #{$ie7Selector} .ibm-pullquote-open { 
 	margin-top:-2px;
 	padding-top:2px;
@@ -2460,43 +2410,6 @@ p.ibm-button-link-alternate a:active {
 	@include background-gradient(top, #052a41, #0d83b1);
 	color: #fff;
  	@include box-shadow(0 1px 3px #14405a inset);
-}
-#{$ie6Selector} #ibm-top p.ibm-button-link a {
-	color: #000;
-}
-#{$ie6Selector} #ibm-top p.ibm-button-link-alternate a {
-	color: #fff;
-}
-
-// .ibm-alternate chained class fixes for ie6
-
-#{$ie6Selector} #ibm-top #ibm-leadspace-head.ibm-alternate, 
-#{$ie6Selector} #ibm-top h2.ibm-alternate, 
-#{$ie6Selector} #ibm-top h3.ibm-alternate,  
-#{$ie6Selector} #ibm-top ul.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-6-1 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-6-2 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-6-3 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-6-4 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-6-5 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-5-1 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-5-2 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-5-3 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-5-4 div.ibm-alternate,
-#{$ie6Selector} #ibm-top div.ibm-col-1-1 div.ibm-alternate {
-    _float:none;
-    _width: auto;
-    _margin: 0px;
-}
-
-
-#{$ie6Selector} #ibm-top #ibm-leadspace-head.ibm-alternate {
-	border-top: 0;
-}
-
-#{$ie6Selector} #ibm-top h2.ibm-alternate, 
-#{$ie6Selector} #ibm-top h3.ibm-alternate {
-    border: 0;
 }
 
 .ibm-spinner-small {

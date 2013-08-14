@@ -412,27 +412,12 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 	border-top:0 none;
 }
 
-#{$ie6Selector} table.ibm-data-table.ibm-alternate,
-#{$ie6Selector} table.ibm-data-table.ibm-alternate caption{
-	width:96.8% !important;
-	margin-left:10px !important;
-	border-left:0px !important;
-	border-right:0px !important;
-}
 #{$ie7Selector} table.ibm-data-table.ibm-alternate,
 #{$ie7Selector} table.ibm-data-table.ibm-alternate caption{
 	width:96% !important;
 	margin-left:10px !important;
 }
 
-#{$ie6Selector} .ibm-columns table.ibm-data-table.ibm-alternate,
-#{$ie6Selector} .ibm-container table.ibm-data-table.ibm-alternate,
-#{$ie6Selector} .ibm-columns table.ibm-data-table.ibm-alternate caption{
-	width:100% !important;
-	margin-left:10px !important;
-	border-left:0px !important;
-	border-right:0px !important;
-}
 #{$ie7Selector} .ibm-container table.ibm-data-table.ibm-alternate,
 #{$ie7Selector} .ibm-columns table.ibm-data-table.ibm-alternate,
 #{$ie7Selector} .ibm-columns table.ibm-data-table.ibm-alternate caption{
@@ -459,11 +444,6 @@ table.ibm-data-table.ibm-alternate.ibm-alternating tbody tr:first-child:hover th
 #{$ie7Selector} .ibm-landing-page .ibm-container table.ibm-data-table.ibm-alternate,
 #{$ie7Selector} .ibm-landing-page .ibm-columns table.ibm-data-table.ibm-alternate caption{
 	margin-left:0px !important;
-}
-
-
-#{$ie6Selector} .ibm-landing-page .ibm-container table.ibm-data-table.ibm-alternate{
-	margin-left:20px !important;
 }
 
 table.ibm-data-table.ibm-alternate tbody td, 

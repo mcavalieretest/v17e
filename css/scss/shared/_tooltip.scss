@@ -83,11 +83,6 @@
 	right: 10px;
 }
 
-
-#{$ie6Selector} .v17 .dijitTooltipRight .dijitTooltipConnector {  
-    background:url("#{$imagePath}/i/v17/tooltip/tooltipConnectorLeft-IE.gif") no-repeat top left;
-}
-
 /* Controlling Iframe width height Here */    
 .v17 .dijitBackgroundIframe{
  width:0px !important;

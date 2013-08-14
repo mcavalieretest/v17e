@@ -242,12 +242,6 @@
 	font-weight:bold;
 }
 
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li.ibm-highlight-tab {
- 	border-left: 0 none !important;
-  	border-top: 0 none !important;
-}
-
-
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li {
 	background: none repeat 0 0 transparent;
     border-left: 0 none !important;
@@ -305,19 +299,9 @@
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul.ibm-bullet-list li {
 	display:block;
 }
- 
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a {
-	padding-bottom:10px !important;
-}
 
 #{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a {
 	padding-bottom:10px !important;
-}
-
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column {
-	padding-top:20px;
 }
 
 #{$ie7Selector} #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
@@ -420,13 +404,6 @@
     color: #000;
 }
 
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
-#{$ie6Selector} #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab,
-#{$ie6Selector} #ibm-com div.ibm-text ul.ibm-tabs li:first-child.ibm-active {
-	height:28px;
-	border-bottom:0px none !important
-}
-
 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-active:hover,
 #ibm-com .ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab:hover,
 #ibm-com div.ibm-text ul.ibm-tabs li:first-child.ibm-active:hover {
@@ -466,7 +443,6 @@
 	padding-bottom:5px;
 }
 
-#{$ie6Selector} #ibm-com div.ibm-tab-section.ibm-text,
 #{$ie7Selector} #ibm-com div.ibm-tab-section.ibm-text {
 	padding-bottom:10px;
 }

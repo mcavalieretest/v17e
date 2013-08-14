@@ -24,28 +24,10 @@ div.ibm-scroll-container {
 	top: 0px;
 }
 
-/* Added to work fine on IE6 */
-#{$ie6Selector} div.ibm-scroll-slider-outer {
-	background: #E6E6E6;
-	width: 6px;
-}
-
-#{$ie6Selector} div.ibm-scroll-slider-inner {
-	background: #888;
-	width: 6px; 
-	height: 68px;
-}
-
 /* Added to work fine on IE7 */
 html>body div.ibm-scroll-slider-outer {
 	background: #e6e6e6;
 	width: 6px;
-}
-
-#{$ie6Selector} div.ibm-scroll-slider-inner {
-	background: #888;
-	width: 6px; 
-	height: 68px;
 }
 
 div.ibm-scroll-slider-outer {

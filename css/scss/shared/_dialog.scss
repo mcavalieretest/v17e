@@ -54,13 +54,9 @@
 
 	#ibm-content {position:inherit;}
     
-	#{$ie6Selector} #ibm-content {position:static;}
-    
 	#{$ie7Selector} #ibm-content {position:static;}
     
 	#ibm-sp-outer-lead {position:relative;}
-    
-	#{$ie6Selector} #ibm-sp-menu {left:100px;}
 
 
 
@@ -166,11 +162,7 @@
 	.dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-three{
     width: 980px;
 	}
-
-#{$ie6Selector} #ibm-com .dijitDialog {width:390px;}
-#{$ie6Selector} .ibm-overlay-alt {width:570px;}
-#{$ie6Selector} .ibm-overlay-alt-two {width:750px;}
-    
+   
  	.dijitDialogPaneContent .ibm-body {
         padding:0;
         cursor:default;
@@ -370,10 +362,6 @@
 /* ===== End of main overlay code ====*/
 
 /* Stard of overlay code  to work with v16 column split code ===== */
-    #{$ie6Selector} #ibm-com .dijitDialog .ibm-two-column,
-    #{$ie6Selector} #ibm-com .dijitDialog .ibm-three-column,
-    #{$ie6Selector} #ibm-com div.ibm-landing-page .dijitDialog .ibm-two-column,
-    #{$ie6Selector} #ibm-com div.ibm-landing-page .dijitDialog .ibm-three-column {width:auto;}
     
     .ibm-overlay-alt .ibm-two-column .ibm-column.ibm-first,
     .ibm-overlay-alt .ibm-two-column .ibm-column.ibm-second {width:270px;}
@@ -381,17 +369,10 @@
     .ibm-overlay-alt-two .ibm-two-column .ibm-column.ibm-first,
     .ibm-overlay-alt-two .ibm-two-column .ibm-column.ibm-second {width:360px;}
     
-    #{$ie6Selector} .ibm-overlay-alt .ibm-two-column .ibm-column.ibm-first,
-    #{$ie6Selector} .ibm-overlay-alt .ibm-two-column .ibm-column.ibm-second {width:270px;}
-    
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-two-column .ibm-column.ibm-first,
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-two-column .ibm-column.ibm-second {width:360px;}
-    
     .ibm-overlay-alt .ibm-three-column .ibm-column,
     .ibm-overlay-alt .ibm-container-body.ibm-three-column .ibm-column {width:176px;}
     
     .ibm-overlay-alt .ibm-three-column .ibm-column.ibm-third {width:177px;}
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-container-body.ibm-three-column .ibm-column {width:175px;}
     
     #{$ie7Selector} .ibm-overlay-alt .ibm-three-column .ibm-column {width:176px;}
     
@@ -401,59 +382,21 @@
     
     .ibm-overlay-alt-two .ibm-three-column .ibm-column.ibm-third {width:238px;}
     
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-three-column .ibm-column,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-three-column .ibm-column {width:236px;}
-    
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-three-column .ibm-column.ibm-third,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-three-column .ibm-column.ibm-third {width:238px;}
-    
-    #{$ie6Selector} .ibm-overlay-alt .ibm-three-column .ibm-column.ibm-first,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-three-column .ibm-column.ibm-first {margin-right:10px;}
-    
     .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-first {width:364px;}
     
     .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-first {width:482px;}
-    
-    #{$ie6Selector} .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-first,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-first {width:364px !important;}
-    
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-first,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-first {width:482px !important;}
     
     .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-second {width:176px;}
     
     .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-second {width:239px;}
     
-    #{$ie6Selector} .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-second,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-alternate-four .ibm-column.ibm-second {width:176px !important;}
-    
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-second,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-alternate-four .ibm-column.ibm-second {width:239px !important;}
-    
     .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-first {width:176px;}
     
     .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-first {width:238px;}
     
-    #{$ie6Selector} .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-first,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-first {width:176px !important;}
-    
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-first,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-first {width:237px !important;}
-    
     .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-second {width:364px;}
     .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-second {width:483px;}
-    #{$ie6Selector} .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-second,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt .ibm-alternate-five .ibm-column.ibm-second {width:364px !important;}
-    #{$ie6Selector} .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-second,
-    #{$ie6Selector} div.ibm-landing-page .ibm-overlay-alt-two .ibm-alternate-five .ibm-column.ibm-second {width:483px !important;}
-    
-    
-    
-    
-    
-    
-    
-	
+    	
     }
     
     /*

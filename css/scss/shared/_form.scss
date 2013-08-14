@@ -203,11 +203,6 @@ form.ibm-column-form .dijitTextBox INPUT{
     float: left;
 }
 
-#{$ie6Selector} .v17 .dijitSelect,
-#{$ie6Selector} .v17 .dijitSelect .dijitButtonNode {
-    background-image: none;
-}
-
 .v17 .dijitSelect .dijitArrowButton {
     background: url("#{$imagePath}/i/v17/icons/dropdown_sprite.png") no-repeat 100% -4px;
     *background-position: 100% 0px;
@@ -404,11 +399,6 @@ There are three areas of styling for the Menu:
     background-position: 0px -177px;
 }
 
-#{$ie6Selector} .v17  .dijitMenuItem,
-#{$ie6Selector} .v17  .dijitMenuPassive .dijitMenuItem {
-    background-image: none;
-}
-
 /* MenuBarItem that has been selected and menu drops down from it */
 
 .v17 .dijitMenuActive .dijitMenuItemHover,
@@ -554,12 +544,6 @@ There are three areas of styling for the Menu:
     margin: 0 2px 0 0;
     padding: 0;
 }
-
-#{$ie6Selector} .v17 .dijitCheckBox,
-#{$ie6Selector} .v17 .dijitCheckBoxIcon     /* inside a toggle button */    {
-    background-image: url("#{$imagePath}/i/v17/icons/form_sprites.png"); /* checkbox sprite image */
-}
-
 
 .v17 .dijitCheckBox,
 .v17 .dijitToggleButton .dijitCheckBoxIcon {
@@ -1341,10 +1325,6 @@ border-collapse: separate;
   background-position: 0px 3px;
 }
 
-#{$ie6Selector} .v17 .dijitCalendarIncrementControl {
-  background-image: url("#{$imagePath}/i/v17/calendar/callendar_arrows_sprite.png");
-}
-
 .v17 .dijitCalendarIncrease {
   background-position: 0px -377px;
 }
@@ -1415,11 +1395,6 @@ border-collapse: separate;
 
 .dijitCalendarDateTemplate {
     font-size: 1em;
-}
-
-#{$ie6Selector} .v17 .dijitCalendarDateTemplate {
-  background-image: none;
-  border: none;
 }
 
 .v17 .dijitCalendarPreviousMonth, .v17 .dijitCalendarNextMonth {

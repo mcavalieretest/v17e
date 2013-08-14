@@ -13,7 +13,7 @@
 #ibm-content #ibm-merchandising-module .ibm-col-6-2 .ibm-container,  
 #ibm-content #ibm-merchandising-module .ibm-container.alternate,
 #ibm-content #ibm-merchandising-module .ibm-container.ibm-alternate  {
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #CCC;
 }
 
 
@@ -68,17 +68,8 @@
     
 }
 
-
-
 #ibm-merchandising-module .ibm-container p {
   	color: #666;
-}
-
-
-#{$ie6Selector} #ibm-content #ibm-merchandising-module .ibm-container.ibm-alternate{
-	margin-left:0px;
-	width: 172px;
-	padding-left:0px;
 }
 
 #ibm-merchandising-module .ibm-container.ibm-alternate img{
@@ -102,13 +93,13 @@ line-height: 1.3em;
 #ibm-merchandising-module .ibm-container p a, 
 #ibm-former-merchandising.ibm-container p a,
 #ibm-former-merchandising.ibm-container-body p a  {
-   color: #666666;
+   color: #666;
    text-decoration: none;
 }
 #ibm-merchandising-module .ibm-container p a:hover, 
 #ibm-former-merchandising.ibm-container p a:hover,
 #ibm-former-merchandising.ibm-container-body p a:hover {
-   color: #222222;
+   color: #222;
 }
 
 #ibm-merchandising-module p.ibm-ind-link a,
@@ -134,7 +125,7 @@ line-height: 1.3em;
 #ibm-former-merchandising p.ibm-ind-link a:active .ibm-item-note,
 #ibm-merchandising-module ul.ibm-link-list a:active .ibm-item-note,
 #ibm-former-merchandising ul.ibm-link-list a:active .ibm-item-note{
-    color: #666666;
+    color: #666;
 }
 
 #ibm-merchandising-module ul.ibm-link-list li {
