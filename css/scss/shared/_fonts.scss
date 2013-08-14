@@ -266,6 +266,7 @@ table th {
 	font-style: normal;
 }
 
+p.ibm-table-navigation,
 p.ibm-table-scroll-caption {
 	@include px-to-rem(font-size,13px);
 }
