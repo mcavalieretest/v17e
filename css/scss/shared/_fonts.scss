@@ -256,12 +256,21 @@ strong {
 }
 
 // Table styles
+#ibm-content table {
+	@include px-to-rem(font-size,13px);
+}
+
 table caption em,
 table th {
 	font-family: $defaultHeaderFont;
 	font-style: normal;
 }
 
+p.ibm-table-scroll-caption {
+	@include px-to-rem(font-size,13px);
+}
+
+// Common elements
 #ibm-content p,
 #ibm-content ul,
 #ibm-content ol {
