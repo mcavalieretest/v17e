@@ -6,39 +6,39 @@ these fonts. */
 
 // SIMPLER NAMES
 
-// Lubalin-Medium
-// Lubalin-Book
+// LubalinDemiIBM = Lubalin-Medium
+// LubalinGraphStdBookIBM = Lubalin-Book
 
-// Helvetica-Light
-// Helvetica-Regular
-// Helvetica-Bold
+// HelvLightIBM = Helvetica-Light
+// HelvRegularIBM = Helvetica-Regular
+// HelvBoldIBM = Helvetica-Bold
 
 @font-face {
-    font-family: 'Lubalin-Medium';
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot');
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/lubalinforibm-demi-webfont.woff') format('woff'),
-         url('#{$fontPath}/lubalinforibm-demi-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/lubalinforibm-demi-webfont.svg#LubalinforIBMDemi') format('svg');
+    font-family: 'LubalinDemiIBM';
+    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot'); /* IE9 Compat Modes */
+    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('#{$fontPath}/lubalinforibm-demi-webfont.woff') format('woff'), /* Modern Browsers */
+         url('#{$fontPath}/lubalinforibm-demi-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('#{$fontPath}/lubalinforibm-demi-webfont.svg#LubalinDemiIBM') format('svg'); /* Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lubalin-Book';
+    font-family: 'LubalinGraphStdBookIBM';
     src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot');
-    src: local('☺'),
+    src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{$fontPath}/lubalingraphstd-book-webfont.woff') format('woff'),
          url('#{$fontPath}/lubalingraphstd-book-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.svg#ITCLubalinGraphStdBook') format('svg');
+         url('#{$fontPath}/lubalingraphstd-book-webfont.svg#LubalinGraphStdBookIBM') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica-Light';
+    font-family: 'HelvLightIBM';
     src: url('#{$fontPath}/helvneueforibm-light-webfont.eot');
-    src: local('☺'),
+    src: url('#{$fontPath}/helvneueforibm-light-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{$fontPath}/helvneueforibm-light-webfont.woff') format('woff'),
          url('#{$fontPath}/helvneueforibm-light-webfont.ttf') format('truetype'),
          url('#{$fontPath}/helvneueforibm-light-webfont.svg#HelvLightIBM') format('svg');
@@ -47,20 +47,20 @@ these fonts. */
 }
 
 @font-face {
-    font-family: 'Helvetica-Regular';
+    font-family: 'HelvRegularIBM';
     src: url('#{$fontPath}/helveticaneue-webfont.eot');
-    src: local('☺'),
+    src: url('#{$fontPath}/helveticaneue-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{$fontPath}/helveticaneue-webfont.woff') format('woff'),
          url('#{$fontPath}/helveticaneue-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helveticaneue-webfont.svg#HelvRegular') format('svg');
+         url('#{$fontPath}/helveticaneue-webfont.svg#HelvRegularIBM') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica-Bold';
+    font-family: 'HelvBoldIBM';
     src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot');
-    src: local('☺'),
+    src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('#{$fontPath}/helvneueforibm-bold-webfont.woff') format('woff'),
          url('#{$fontPath}/helvneueforibm-bold-webfont.ttf') format('truetype'),
          url('#{$fontPath}/helvneueforibm-bold-webfont.svg#HelvBoldIBM') format('svg');
@@ -230,7 +230,7 @@ strong {
 
 #ibm-content-nav #ibm-primary-tabs a,
 #ibm-content-nav #ibm-secondary-tabs a {
-	font-family: "Helvetica-Regular",Arial,sans-serif;
+	font-family: "HelvRegularIBM",Arial,sans-serif;
 	@include px-to-rem(font-size,13px);
 	@include px-to-rem(line-height,14px);
 }
