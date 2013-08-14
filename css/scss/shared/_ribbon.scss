@@ -29,30 +29,11 @@
 .ibm-ribbon-pane {
 	position: relative;
 	overflow: hidden;
-	width: 940px;
+	width: auto;
 	margin: 0 auto;
 	clear: both;
 }
 
-/* Code added for IE 6 fix of ribbon-pane of col-6-2 right column*/
-#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane {
-	width: 300px;
-}
-
-#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-section {
-	margin: 0px;
-	position: absolute;
-}
-
-#{$ie6Selector} .ibm-alternate .ibm-container-body .ibm-ribbon-nav {
-	margin-top: -20px;
-	position: absolute;
-	right: 0px;
-	text-align: right;
-	top: 0px;
-}
-
-#{$ie6Selector} .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-prev, 
 .ibm-col-6-2 .ibm-ribbon.ibm-alternate .ibm-ribbon-pane.ibm-ribbon-next {
 	background: none;
 	display: none;
@@ -443,51 +424,6 @@ span.ibm-thumbnail span.ibm-video-play {
 	color: #B3B3B3;
 }
 
-/* BEGIN ribbon element in ibm-col-6-x */
-
-.ibm-col-6-5 .ibm-ribbon-pane {
-	width: 780px;
-}
-
-.ibm-col-6-4 .ibm-ribbon-pane {
-	width: 620px;
-}
-
-.ibm-col-6-3 .ibm-ribbon-pane {
-	width: 460px;
-}
-
-.ibm-col-6-2 .ibm-ribbon-pane {
-	width: 300px;
-}
-
-/* second selector is for ie6 */
-.ibm-col-6-1 .ibm-ribbon-pane,
-.ibm-col-6-1 .ibm-ribbon .ibm-container-body .ibm-ribbon-pane {
-	width: 140px;
-}
-
-/* BEGIN ribbon element in ibm-col-5-x */
-.ibm-col-5-4 .ibm-ribbon-pane {
-	width: 748px;
-}
-
-.ibm-col-5-3 .ibm-ribbon-pane {
-	width: 556px;
-}
-
-.ibm-col-5-2 .ibm-ribbon-pane {
-	width: 364px;
-}
-
-.ibm-col-5-1 .ibm-ribbon-pane {
-	width: 172px;
-}
-
-/* BEGIN ribbon element in ibm-col-1-1, 5-5, 6-6 */
-.ibm-col-1-1 .ibm-ribbon-pane{
-	width: 960px;
-}
 /* END ribbon element */
 
 #ibm-pcon #ibm-content #ibm-content-body #ibm-content-main .ibm-ribbon .ibm-ribbon-container .ibm-columns p {

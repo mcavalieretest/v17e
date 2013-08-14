@@ -154,6 +154,12 @@ strong {
 	line-height: 18px;
 }
 
+#{$ie7Selector} #ibm-common-menu *,
+#{$ie7Selector} #ibm-related-content * {
+	font-size: 13px;
+	line-height: 15px;
+}
+
 // End of Content grid font size =======================
 
 
