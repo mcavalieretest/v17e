@@ -284,6 +284,10 @@
             display: inline-block;
             line-height: 0;
             padding: 5px 0; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements li a {
+              opacity: 1; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements li a:hover {
+              opacity: 0.3; }
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block {
         clear: both;
         border: 0; }
@@ -349,7 +353,7 @@
             #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-description p a {
               text-decoration: none; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li .ibm_cci--list-view-right-conversation-sharing {
-          margin: 15px 0 0 0; }
+          margin: 10px 0 0 0; }
           #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li .ibm_cci--list-view-right-conversation-sharing ul {
             float: left;
             margin: 0;
@@ -359,6 +363,17 @@
               height: 16px; }
             #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li:hover {
               outline: 0 !important; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li:not(:nth-child(1)) {
+              padding: 0 0 0 15px; }
+          #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing p, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li .ibm_cci--list-view-right-conversation-sharing p {
+            float: right;
+            font: normal 12px/16px "Helvetica-Light";
+            vertical-align: top; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing p a img {
+              opacity: 0.4;
+              padding: 0 5px 0 0; }
+            #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing p a img:hover {
+              opacity: 1; }
     #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block li.ibm_cci--list-view-right-conversation:not(:nth-child(1)), #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li:not(:nth-child(1)) {
       margin-left: 5px; }
     #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block li.ibm_cci--list-view-right-conversation a img:hover, #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-right-conversations-block ul li.ibm_cci--list-view-right-conversation .ibm_cci--list-view-right-conversation-sharing ul li a img:hover {
@@ -366,8 +381,7 @@
 
 /* HOVER EFFECTS BEGIN */
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover {
-  border-top: 2px solid #F04E37;
-  border-bottom: 2px solid #F04E37; }
+  border-bottom: 1px solid #F04E37; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-bar .ibm_cci--rea-bar-element .ibm_cci--rea-bar {
   background-color: #f04e37; }
