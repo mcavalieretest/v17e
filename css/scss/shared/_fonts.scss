@@ -256,7 +256,9 @@ strong {
 }
 
 // Table styles
-#ibm-content table {
+#ibm-content table,
+#ibm-content .ibm-inner-data-table-last,
+#ibm-content .ibm-inner-data-table {
 	@include px-to-rem(font-size,13px);
 }
 
