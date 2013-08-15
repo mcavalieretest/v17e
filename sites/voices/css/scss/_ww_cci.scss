@@ -31,6 +31,7 @@ $ibm-pcon__modifier						: ".ibm_cci__ibm-pcon";
 $ibm-listview-left 						: ".ibm_cci--list-view-left-block";
 $ibm-listview-right 					: ".ibm_cci--list-view-right-conversations-block";
 $hover-color 							: #f04e37;
+$ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
@@ -49,7 +50,7 @@ $hover-color 							: #f04e37;
 		}
 }
 
-		@mixin h1-p-overrides {
+		@mixin h1-p-overrides() {
 			h1 { float:$float-left; width:auto; padding:0; }
 			p { float:$float-left; width:auto; padding:0; }
 		}
@@ -184,13 +185,13 @@ $hover-color 							: #f04e37;
 	margin-top:0px;
 }
 
-@mixin ibm_cci-ul__modifier{
+@mixin ibm_cci-ul__modifier(){
 	float:$float-left;
 	margin: 0;
 	padding: 0;
 }
 
-@mixin ibm_cci-ul--li__modifier{
+@mixin ibm_cci-ul--li__modifier(){
 	background:none;
 	list-style: none;
 }
@@ -291,79 +292,202 @@ $hover-color 							: #f04e37;
 	}
 
 /* LIST VIEW (BEGIN) */
-@mixin ibm-listview-commons {
+@mixin ibm-listview-commons() {
 	float:left;
 	padding: 30px 0;
 	// outline:1px solid #ccc;
 }
 
-@mixin ibm_cci--rea-rank-common {
+@mixin ibm_cci--rea-rank-common() {
 	float:left;
 	width:30px;
 	margin:0;
 	padding:0;
 }
 
+@mixin ibm_cci--rea-block() {
+	float:$float-left;
+	width:70px;
+	margin:0 10px 0 0;
+
+	& ul {
+		@include ibm_cci-ul__modifier;
+
+		& li {
+			@include ibm_cci-ul--li__modifier;
+			padding:5px 0;
+			float:$float-left;
+			clear:both;
+
+			& .ibm_cci--rea-bar {
+				@include ibm_cci--rea-rank-common;
+				height:8px;
+				margin-left:2px;
+				// background-color:#ccc;
+
+				& .ibm_cci--rea-bar-element {
+					@include ibm_cci--rea-rank-common;
+					height:2px;
+					background-color:#dfdfdf;
+					text-indent: -999999px;
+					border-bottom:1px solid #fff;
+
+					& .ibm_cci--rea-bar {
+						@extend .ibm_cci--rea-bar-element;
+						width:20px;
+						background-color:#afafaf;
+						border-bottom:0;
+					}
+				}
+			}
+
+			& p.ibm_cci--rea-rank {
+				display:block;
+				font: normal 5.2rem/40px "Helvetica-Light";
+				color:#dfdfdf;
+				/* 
+					The ww-blessed css has a 5px bottom padding
+					with !important. To overwrite the important 
+					we are adding important to our <p>.
+				 */
+				padding-bottom:0 !important;
+			}
+		}
+	}
+}
+
+@mixin ibm_cci--list-view-right-conversation-title-handle() {
+	float:left;
+	width:300px;
+	position:relative;
+	padding:0;
+	margin:10px 0 0 0;
+
+	& .ibm_cci--list-view-right-conversation-avatar {
+		float:left;
+		width:25px;
+		height:25px;
+		position:absolute;
+	}
+
+		//To hide the Avatar image for multiple conversation
+		& .ibm_cci--list-view-right-conversation-avatar.ibm_cci--list-view-right-conversation-avatar__hidden {
+			display:none;
+		}
+
+	& .ibm_cci--list-view-right-conversation-title {
+		float:left;
+		font: bold 12px/16px "Helvetica-Light";
+		padding:0;
+		margin: 0;
+		clear:both;
+		position:relative;
+
+		& a {
+			text-decoration:none;
+			color:#000;
+		}
+
+		& a:hover {
+			text-decoration:none !important
+		}	
+	}
+
+	& .ibm_cci--list-view-right-wconversation-title{
+		@extend .ibm_cci--list-view-right-conversation-title;
+		margin-left:35px;
+	}
+
+	& .ibm_cci--list-view-right-conversation-handle {
+		@extend .ibm_cci--list-view-right-conversation-title;
+		font-weight:normal;
+	}
+
+	& .ibm_cci--list-view-right-wconversation-handle {
+		@extend .ibm_cci--list-view-right-conversation-title;
+		font-weight:normal;
+		margin-left:35px;
+	}						
+
+		//To remove the margin from multiple conversation Title and Handle.
+		// if there is only one conversation
+		& .ibm_cci--list-view-right-conversation-title.ibm_cci--list-view-right-conversation-title-handle__remove-margin, 
+		& .ibm_cci--list-view-right-conversation-handle.ibm_cci--list-view-right-conversation-title-handle__remove-margin
+		{
+			margin:0;
+		}										
+}
+
+
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier {
 	float:left;
 	border-bottom:1px solid #cccccc;
+	
+	// UNRESOLVED TWEETS (BEGIN)
+	& #{$ibm-listview-unresolved} {
+		@include ibm-listview-commons;
+		width:940px;
+		margin:0;
 
+		& .ibm_cci--rea-block {
+			@include ibm_cci--rea-block;
+		}
+
+		& .ibm_cci--unresolved-content-block {
+			width:860px;
+			float:left;
+
+			& .ibm_cci--tweet-title-block {
+				clear:both;
+				margin-top:10px;
+				float:left;
+
+				& h2.ibm_cci--tweet-title{
+					font: normal 2.4rem/24px "Helvetica-Light";
+					color: #000;
+					margin:0;
+					padding:0;				}
+			}
+	
+			& .ibm_cci--list-view-right-conversation-title-handle{ 
+				@include ibm_cci--list-view-right-conversation-title-handle;
+				width:800px;
+				margin:0;
+			} 
+		}
+		& .ibm_cci--list-view-time-stamp-block{
+			float:right;
+			width:60px;
+			clear:right;
+
+			& p.ibm_cci-tweet-time-stamp {
+				float: right;
+				font: normal 12px/16px "Helvetica-Light";
+				vertical-align: top;
+				padding:0;
+
+				& a img {
+					opacity:0.4;
+					padding: 0 5px 0 0;
+				}
+					& a img:hover {
+						opacity:1;
+					}						
+			}			
+		}
+	}
+	// UNRESOLVED TWEETS (END)
+
+
+	// RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (BEGIN)
 	& #{$ibm-listview-left}{
 		@include ibm-listview-commons;
 		width:620px;
 		margin:0;
 		// outline:1px solid #ccc; *FOR TESTING ONLY
-
+	
 		& .ibm_cci--rea-block {
-			float:$float-left;
-			width:70px;
-			margin:0 10px 0 0;
-
-			& ul {
-				@include ibm_cci-ul__modifier;
-
-				& li {
-					@include ibm_cci-ul--li__modifier;
-					padding:5px 0;
-					float:$float-left;
-					clear:both;
-
-					& .ibm_cci--rea-bar {
-						@include ibm_cci--rea-rank-common;
-						height:8px;
-						margin-left:2px;
-						// background-color:#ccc;
-
-						& .ibm_cci--rea-bar-element {
-							@include ibm_cci--rea-rank-common;
-							height:2px;
-							background-color:#dfdfdf;
-							text-indent: -999999px;
-							border-bottom:1px solid #fff;
-
-							& .ibm_cci--rea-bar {
-								@extend .ibm_cci--rea-bar-element;
-								width:20px;
-								background-color:#afafaf;
-								border-bottom:0;
-							}
-						}
-					}
-
-					& p.ibm_cci--rea-rank {
-						display:block;
-						font: normal 5.2rem/40px "Helvetica-Light";
-						color:#dfdfdf;
-						/* 
-							The ww-blessed css has a 5px bottom padding
-							with !important. To overwrite the important 
-							we are adding important to our <p>.
-						 */
-						padding-bottom:0 !important;
-					}
-				}
-			}
-
+			@include ibm_cci--rea-block;
 		}
 
 		& .ibm_cci--resolved-content-block{
@@ -481,59 +605,12 @@ $hover-color 							: #f04e37;
 				}
 
 				& .ibm_cci--list-view-right-conversation-title-handle {
-					float:left;
-					width:300px;
-					position:relative;
-					padding:0;
-					margin:10px 0 0 0;
-
-					// & .ibm_cci--list-view-right-conversation-avatar {
-					// 	float:left;
-					// 	width:25px;
-					// 	height:25px;
-					// 	position:absolute;
-					// }
-					
-						//To hide the Avatar image for multiple conversation
-						& .ibm_cci--list-view-right-conversation-avatar.ibm_cci--list-view-right-conversation-avatar__hidden {
-							display:none;
-						}
-
-					& .ibm_cci--list-view-right-conversation-title {
-						float:left;
-						font: bold 12px/16px "Helvetica-Light";
-						padding:0;
-						margin: 0;
-						clear:both;
-						position:relative;
-
-						& a {
-							text-decoration:none;
-							color:#000;
-						}
-
-						& a:hover {
-							text-decoration:none !important
-						}	
-					}
-
-					& .ibm_cci--list-view-right-conversation-handle {
-						@extend .ibm_cci--list-view-right-conversation-title;
-						font-weight:normal;
-					}						
-					
-						//To remove the margin from multiple conversation Title and Handle.
-						// if there is only one conversation
-						& .ibm_cci--list-view-right-conversation-title.ibm_cci--list-view-right-conversation-title-handle__remove-margin, 
-						& .ibm_cci--list-view-right-conversation-handle.ibm_cci--list-view-right-conversation-title-handle__remove-margin
-						{
-							margin:0;
-						}										
+					@include ibm_cci--list-view-right-conversation-title-handle; 										
 				}
 
 				& .ibm_cci--list-view-right-conversation-description {
 					@extend .ibm_cci--list-view-right-conversation-title-handle;
-					margin: 0 0 0 0;
+					margin: 0;
 
 					& p {
 						float: left;
@@ -554,7 +631,6 @@ $hover-color 							: #f04e37;
 					& ul {
 						@include ibm_cci-ul__modifier;
 
-
 						& li{
 							@extend li.ibm_cci--list-view-right-conversation;
 							width:16px;
@@ -568,7 +644,7 @@ $hover-color 							: #f04e37;
 						}													
 					}
 
-					& p {
+					& p.ibm_cci-tweet-time-stamp {
 						float: right;
 						font: normal 12px/16px "Helvetica-Light";
 						vertical-align: top;
@@ -592,7 +668,8 @@ $hover-color 							: #f04e37;
 				// outline:1px solid #000;
 				opacity:1;
 			}		
-	}	
+	}
+	// RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (END)	
 }
 	
 	/* HOVER EFFECTS BEGIN */
