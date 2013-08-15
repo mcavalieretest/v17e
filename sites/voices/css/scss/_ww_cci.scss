@@ -260,7 +260,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 								}
 							}	
 						}
-						ul li:hover {
+						ul li:hover, ul li:focus  {
 							&.ibm_cci__background-color{
 								background-color:#f1f1f1;
 								-webkit-box-shadow: 1px 1px 1px 1px #dedede;
