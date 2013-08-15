@@ -245,7 +245,7 @@
         margin-top: 10px;
         float: left; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-unresolved-block .ibm_cci--unresolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title {
-          font: normal 2.4rem/24px "Helvetica-Light";
+          font: normal 2.4rem/30px "Helvetica-Light";
           color: #000;
           margin: 0;
           padding: 0; }
@@ -381,7 +381,7 @@
       #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
         float: left;
         width: 60px;
-        display: none;
+        visibility: hidden;
         border: 0;
         overflow: hidden; }
         #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block ul.ibm_cci-social-icon-elements {
@@ -508,11 +508,12 @@
   background-color: #f04e37; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
-#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title {
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title,
+#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-unresolved-block .ibm_cci--unresolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title {
   color: #f04e37; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-left-block .ibm_cci--resolved-content-block .ibm_cci-social-icon-block {
-  display: block; }
+  visibility: visible; }
 
 #ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--list-view-right-conversations-block .ibm_cci--list-view-right-conversation-description p a {
   text-decoration: none;
