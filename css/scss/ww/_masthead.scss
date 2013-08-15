@@ -256,7 +256,7 @@
 	text-decoration: none;
 	letter-spacing: 0px; 
 	text-shadow: 0px -1px 0 #000;
-	padding: 17px 12px;
+	padding: 15px 12px;
 	_height: 1%;
 	_float: left;
 }
@@ -268,6 +268,7 @@
 	position: absolute;
 	width: 100px;	
 }
+
 #ibm-universal-nav li#ibm-home a {
 	position: absolute;
 	display: block;
@@ -716,26 +717,3 @@ background-position: 3px -400px;
 /* search field end ============================== */
 
 /* masthead styles end ============================================ */
-
-/* media queries for masthead on ipad */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-	#ibm-top, #ibm-masthead, #ibm-universal-nav, #ibm-common-menu {
-		min-width: 980px;
-	}
-
-	#ibm-search-form {
-		height: 24px; 
-		margin: 13px 20px -36px 1px;
-	}
-
-	#ibm-search-form input#q {
-		width: 140px;
-	} 
-
-	#ibm-universal-nav #ibm-menu-links {
-		margin-left: 120px;
-	}
-
-}
