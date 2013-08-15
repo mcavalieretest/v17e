@@ -279,6 +279,42 @@ p.ibm-table-scroll-caption {
 	color: #333;
 }
 
+// Pullquotes
+.ibm-pull-quote blockquote p {
+	font-family: Georgia;
+	font-style: normal;
+	@include px-to-rem(font-size,24px);
+	@include px-to-rem(line-height,30px);
+}
+
+.ibm-pullquote-open,
+.ibm-pullquote-close {
+	font-family: Georgia;
+	@include px-to-rem(font-size,44px);
+	@include px-to-rem(line-height,30px);
+}
+
+.ibm-pullquote-source,
+.ibm-pullquote-source-alternate {
+	@include px-to-rem(font-size,15px);
+	@include px-to-rem(line-height,23px);
+}
+.ibm-pullquote-source-alternate {
+	font-family: Georgia;
+}
+
+.ibm-pull-quote.ibm-alternate-font blockquote p,
+.ibm-pullquote-open.ibm-alternate-font, 
+.ibm-pullquote-close.ibm-alternate-font {
+	font-family: $defaultFont;
+}
+
+#{$ie7Selector} #ibm-content #ibm-content-main .ibm-pull-quote blockquote p,
+#{$ie7Selector} #ibm-content #ibm-content-main .ibm-pull-quote blockquote p em {
+	font-size: 24px;
+	line-height: 30px;
+}
+
 // Content styles =======================
 
 
