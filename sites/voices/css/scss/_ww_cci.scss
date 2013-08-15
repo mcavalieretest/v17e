@@ -32,7 +32,7 @@ $ibm-listview-left 						: ".ibm_cci--list-view-left-block";
 $ibm-listview-right 					: ".ibm_cci--list-view-right-conversations-block";
 $hover-color 							: #f04e37;
 $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
-
+$ibm_cci--youtube-block 				: ".ibm_cci--list-view-youtube-block";
 
 /* LEADSPACE OVERIDES (BEGIN) */
 .ibm-landing-page #ibm-leadspace-head  {
@@ -43,7 +43,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 	min-height: $min-height;
 	_height: $min-height;
-	& #ibm-leadspace-body {
+	#ibm-leadspace-body {
 			padding: 0;
 			min-height:$min-height;
 			line-height:0;
@@ -96,7 +96,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 			width:223px;
 			height:49px;
 			/* LEADSPACE LOGO BLOCK H1 A (BEGIN) */	
-			& a {				
+			a {				
 				display:block;
 				width:223px;
 				line-height: 49px;
@@ -134,7 +134,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 			left:-30px;
 			opacity:0.5;
 
-			&:hover {
+			hover {
 				opacity:1;
 			}
 		}
@@ -161,19 +161,19 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 				}
 			li.ibm_cci--leadspace--toggle--li--grid-icon a {
 				background-position: -87px -50px;
-				&.selected {
+				selected {
 					background-position: -129px -50px;
 				}
-				&:hover {
+				hover {
 					background-position: -129px -50px;
 				}
 			}
 			li.ibm_cci--leadspace--toggle--li--list-icon a {
 				background-position: 0 -50px;
-				&.selected {
+				selected {
 					background-position: -43px -50px;
 				}
-				&:hover {
+				hover {
 					background-position: -43px -50px;
 				}
 			}				
@@ -199,15 +199,15 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	#ibm-content#{$ibm-content__modifier}{
 		background:none;
 
-		& #ibm-content-body{
+		#ibm-content-body{
 			// h1: 1.0em;
-			& #ibm-content-main{
+			#ibm-content-main{
 			// h1: 1.0em;
-				& .ibm-columns { 
+				.ibm-columns { 
 					/* ibm-column override to display outline for list rows */
 					padding-top:1px;
 				}
-				& .ibm-band#{$ibm-band__modifier} {
+				.ibm-band#{$ibm-band__modifier} {
 					background: #fff;
 					background: -moz-linear-gradient(top,  #f2f2f2 0%, #fff 100%);
 					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#fff));
@@ -219,7 +219,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 					min-height:15px;	
 					//max-height: 50px;
 
-					& .ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top{
+					.ibm-columns .ibm-col-1-1.ibm_cci--search-keywords.ibm_cci--search-keywords__margin-top{
 						float:left;
 						margin-top: 30px;
 						
@@ -230,22 +230,22 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 							@include ibm_cci-ul--li__modifier;
 							display: inline-block;
 							padding: 0 10px 0 0;							
-							&.ibm_cci__background-color{
+							ibm_cci__background-color{
 								// background-color:#f0f0f0;
 								// outline:1px solid #e7e6e6;
 								margin: 0 0 5px 2px;								
-								&.ibm_cci__margin-left{
+								ibm_cci__margin-left{
 									margin:0 0 5px 2px;
 								}								
-								& p {
+								p {
 									display:inline;
 									font-size:1.2rem;
 								}
-								& span p{
+								span p{
 									color:#ccc;
 									font-size:0.9em;
 								}										
-								& a{
+								a{
 									@extend .mysprite;
 									width:16px;
 									height:16px;
@@ -261,7 +261,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 							}	
 						}
 						ul li:hover, ul li:focus  {
-							&.ibm_cci__background-color{
+							ibm_cci__background-color{
 								background-color:#f1f1f1;
 								-webkit-box-shadow: 1px 1px 1px 1px #dedede;
 								-moz-webkit-box-shadow: 1px 1px 1px 1px #dedede;
@@ -271,14 +271,14 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 								// -webkit-border-radius: 5px;
 								// -khtml-border-radius: 5px;
 								// border-radius: 5px;
-								& a {
+								a {
 									opacity: 1;
 									background-position: -205px -67px;
 								}
 							}
 						}	
 					}
-					& .ibm-columns .ibm-col-1-1.ibm_cci--search-results p{
+					.ibm-columns .ibm-col-1-1.ibm_cci--search-results p{
 						color:#9a9a9a;
 						font-size:1.2rem;
 						font-style: italic;
@@ -310,29 +310,29 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	width:70px;
 	margin:0 10px 0 0;
 
-	& ul {
+	ul {
 		@include ibm_cci-ul__modifier;
 
-		& li {
+		li {
 			@include ibm_cci-ul--li__modifier;
 			padding:5px 0;
 			float:$float-left;
 			clear:both;
 
-			& .ibm_cci--rea-bar {
+			.ibm_cci--rea-bar {
 				@include ibm_cci--rea-rank-common;
 				height:8px;
 				margin-left:2px;
 				// background-color:#ccc;
 
-				& .ibm_cci--rea-bar-element {
+				.ibm_cci--rea-bar-element {
 					@include ibm_cci--rea-rank-common;
 					height:2px;
 					background-color:#dfdfdf;
 					text-indent: -999999px;
 					border-bottom:1px solid #fff;
 
-					& .ibm_cci--rea-bar {
+					.ibm_cci--rea-bar {
 						@extend .ibm_cci--rea-bar-element;
 						width:20px;
 						background-color:#afafaf;
@@ -341,7 +341,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 				}
 			}
 
-			& p.ibm_cci--rea-rank {
+			p.ibm_cci--rea-rank {
 				display:block;
 				font: normal 5.2rem/40px "Helvetica-Light";
 				color:#dfdfdf;
@@ -358,12 +358,12 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 
 @mixin ibm_cci--list-view-right-conversation-title-handle() {
 	float:left;
-	width:300px;
+	width:100%;
 	position:relative;
 	padding:0;
 	margin:10px 0 0 0;
 
-	& .ibm_cci--list-view-right-conversation-avatar {
+	.ibm_cci--list-view-right-conversation-avatar {
 		float:left;
 		width:25px;
 		height:25px;
@@ -371,48 +371,48 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	}
 
 		//To hide the Avatar image for multiple conversation
-		& .ibm_cci--list-view-right-conversation-avatar.ibm_cci--list-view-right-conversation-avatar__hidden {
+		.ibm_cci--list-view-right-conversation-avatar.ibm_cci--list-view-right-conversation-avatar__hidden {
 			display:none;
 		}
 
-	& .ibm_cci--list-view-right-conversation-title {
+	.ibm_cci--list-view-right-conversation-title {
 		float:left;
-		font: bold 12px/16px "Helvetica-Light";
+		font: bold 12px/15px "Helvetica-Light";
 		padding:0;
 		margin: 0;
 		clear:both;
 		position:relative;
 
-		& a {
+		a {
 			text-decoration:none;
 			color:#000;
 		}
 
-		& a:hover {
+		a:hover {
 			text-decoration:none !important
 		}	
 	}
 
-	& .ibm_cci--list-view-right-wconversation-title{
-		@extend .ibm_cci--list-view-right-conversation-title;
-		margin-left:35px;
-	}
-
-	& .ibm_cci--list-view-right-conversation-handle {
+	.ibm_cci--list-view-right-conversation-handle {
 		@extend .ibm_cci--list-view-right-conversation-title;
 		font-weight:normal;
 	}
 
-	& .ibm_cci--list-view-right-wconversation-handle {
+	.ibm_cci--list-view-right-wconversation-title{
+		@extend .ibm_cci--list-view-right-conversation-title;
+		margin-left:35px;
+	}
+
+	.ibm_cci--list-view-right-wconversation-handle {
 		@extend .ibm_cci--list-view-right-conversation-title;
 		font-weight:normal;
 		margin-left:35px;
-	}						
-
+	}
+						
 		//To remove the margin from multiple conversation Title and Handle.
 		// if there is only one conversation
-		& .ibm_cci--list-view-right-conversation-title.ibm_cci--list-view-right-conversation-title-handle__remove-margin, 
-		& .ibm_cci--list-view-right-conversation-handle.ibm_cci--list-view-right-conversation-title-handle__remove-margin
+		.ibm_cci--list-view-right-conversation-title.ibm_cci--list-view-right-conversation-title-handle__remove-margin, 
+		.ibm_cci--list-view-right-conversation-handle.ibm_cci--list-view-right-conversation-title-handle__remove-margin
 		{
 			margin:0;
 		}										
@@ -424,80 +424,173 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	border-bottom:1px solid #cccccc;
 	
 	// UNRESOLVED TWEETS (BEGIN)
-	& #{$ibm-listview-unresolved} {
+	#{$ibm-listview-unresolved} {
 		@include ibm-listview-commons;
 		width:940px;
 		margin:0;
 
-		& .ibm_cci--rea-block {
+		.ibm_cci--rea-block {
 			@include ibm_cci--rea-block;
 		}
 
-		& .ibm_cci--unresolved-content-block {
+		.ibm_cci--unresolved-content-block {
 			width:860px;
 			float:left;
 
-			& .ibm_cci--tweet-title-block {
+			.ibm_cci--tweet-title-block {
 				clear:both;
-				margin-top:10px;
+				// margin-top:10px;
 				float:left;
 
-				& h2.ibm_cci--tweet-title{
+				h2.ibm_cci--tweet-title{
 					font: normal 2.4rem/30px "Helvetica-Light";
 					color: #000;
-					margin:0;
-					padding:0;				}
+					margin:10px 0 0 0;
+					padding:0;				
+				}
 			}
 	
-			& .ibm_cci--list-view-right-conversation-title-handle{ 
+			.ibm_cci--list-view-right-conversation-title-handle{ 
 				@include ibm_cci--list-view-right-conversation-title-handle;
 				width:800px;
 				margin:0;
-			} 
+			}
 		}
-		& .ibm_cci--list-view-time-stamp-block{
+		
+		.ibm_cci--list-view-time-stamp-block{
 			float:right;
 			width:60px;
 			clear:right;
 
-			& p.ibm_cci-tweet-time-stamp {
+			p.ibm_cci-tweet-time-stamp {
 				float: right;
 				font: normal 12px/16px "Helvetica-Light";
 				vertical-align: top;
 				padding:0;
 
-				& a img {
+				a img {
 					opacity:0.4;
 					padding: 0 5px 0 0;
 				}
-					& a img:hover {
+					a img:hover {
 						opacity:1;
 					}						
 			}			
 		}
 	}
 	// UNRESOLVED TWEETS (END)
+	
+
+	// YOUTUBE BLOCK (BEGIN)
+	
+		#{$ibm_cci--youtube-block} {
+			@include ibm-listview-commons;
+			width:940px;
+			margin:0;
+
+			.ibm_cci--rea-block {
+				@include ibm_cci--rea-block;
+			}
+
+			.ibm_cci--youtube-content-block {
+				width:860px;
+				float:left;
+
+				.ibm_cci-favicon-handler-block {
+					width:800px;
+					padding:0;
+					border:0;
+					float:left;
+
+					p.ibm_cci--feed-icon {
+						float:left;
+						color:#000;
+						padding:5px 0;
+						margin:0;
+						line-height:0;
+						text-indent:-99999;
+
+						img {
+							border:0;
+							outline:0;
+							margin:0 10px 0 0;
+							padding:0;
+							width:16px;
+							height:16px;
+						}					
+					}
+
+					p.ibm_cci--feed-title {
+						text-indent: 0;
+						font-size:1.2rem;
+						line-height: 17px;
+						vertical-align: top;
+					}
+				}
+				.ibm_cci--tweet-title-block {
+					clear:both;
+					// margin-top:10px;
+					float:left;
+
+					h2.ibm_cci--tweet-title{
+						font: normal 2.4rem/30px "Helvetica-Light";
+						color: #000;
+						margin:0;
+						padding:0;				
+					}
+				}
+		
+				.ibm_cci--list-view-right-conversation-title-handle{ 
+					@include ibm_cci--list-view-right-conversation-title-handle;
+					width:800px;
+					margin:0;
+				}					
+			}
+					
+			.ibm_cci--list-view-time-stamp-block{
+				float:right;
+				width:60px;
+				clear:right;
+
+				p.ibm_cci-tweet-time-stamp {
+					float: right;
+					font: normal 12px/16px "Helvetica-Light";
+					vertical-align: top;
+					padding:0;
+
+					a img {
+						opacity:0.4;
+						padding: 0 5px 0 0;
+					}
+					a img:hover {
+						opacity:1;
+					}						
+				}			
+			}
+		}
+
+	// YOUTUBE BLOCK (END)
 
 
 	// RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (BEGIN)
-	& #{$ibm-listview-left}{
+	#{$ibm-listview-left}{
 		@include ibm-listview-commons;
 		width:620px;
 		margin:0;
 		// outline:1px solid #ccc; *FOR TESTING ONLY
 	
-		& .ibm_cci--rea-block {
+		.ibm_cci--rea-block {
 			@include ibm_cci--rea-block;
 		}
 
-		& .ibm_cci--resolved-content-block{
+		.ibm_cci--resolved-content-block{
 			float:$float-left;
 			width:520px;
 			margin:0;
 			padding:0 19px 0 0;
 			border-right:1px dotted #ccc;
 
-			& .ibm_cci-favicon-handler-block {
+			.ibm_cci-favicon-handler-block {
 				@extend .ibm_cci--resolved-content-block;
 				width:460px;
 				clear:both;
@@ -530,47 +623,47 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 				}
 			}
 
-			& .ibm_cci-social-icon-block {
+			.ibm_cci-social-icon-block {
 				float:left;
 				width:60px;
 				visibility:hidden;
 				border:0;
 				overflow: hidden;
 
-				& ul.ibm_cci-social-icon-elements{
+				ul.ibm_cci-social-icon-elements{
 					@include ibm_cci-ul__modifier;
 						float:right;
-					& li {
+					li {
 						@include ibm_cci-ul--li__modifier;
 						display:inline-block;
 						line-height:0;
 						padding:5px 0;
 
-						& a {
+						a {
 							opacity:1;
 						}
 
-						& a:hover {
+						a:hover {
 							opacity:0.3;
 						}
 					}
 				}
 			}
 
-			& .ibm_cci--tweet-title-block{
+			.ibm_cci--tweet-title-block{
 				@extend .ibm_cci--resolved-content-block;
 				clear:both;
 				border:0;
 
-				& h2.ibm_cci--tweet-title{
+				h2.ibm_cci--tweet-title{
 					font: bold 2.4rem/30px "Helvetica-Light";
 					color: #000;
 				}
 
-				& p.ibm_cci--tweet-description {
+				p.ibm_cci--tweet-description {
 					font: italic 1.4rem/20px "Helvetica-Light";
 
-					& span.ibm_cci--tweet-description-readmore a {
+					span.ibm_cci--tweet-description-readmore a {
 						color: #F04E37;
 						text-decoration: none;
 					}
@@ -579,16 +672,16 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 		}
 	}
 
-	& #{$ibm-listview-right}{
+	#{$ibm-listview-right}{
 		@include ibm-listview-commons;
 		width:300px;
 		margin:0 0 0 20px;
 		// outline:1px solid #ccc; *FOR TESTING ONLY
 		
-		& ul {
+		ul {
 			@include ibm_cci-ul__modifier;
 
-			& li.ibm_cci--list-view-right-conversation {
+			li.ibm_cci--list-view-right-conversation {
 				@include ibm_cci-ul--li__modifier;
 				// height:25px;
 				// width:25px;
@@ -600,38 +693,38 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 				// float:$float-left;
 				clear:none;
 
-				& > a img {
+				> a img {
 					opacity:0.4;
 				}
 
-				& .ibm_cci--list-view-right-conversation-title-handle {
+				.ibm_cci--list-view-right-conversation-title-handle {
 					@include ibm_cci--list-view-right-conversation-title-handle; 										
 				}
 
-				& .ibm_cci--list-view-right-conversation-description {
+				.ibm_cci--list-view-right-conversation-description {
 					@extend .ibm_cci--list-view-right-conversation-title-handle;
 					margin: 0;
 
-					& p {
+					p {
 						float: left;
 						font-family: Helvetica-Light;
 						font-size: 14px;
 						line-height: 18px;
 
-						& a {
+						a {
 							text-decoration:none;
 						}
 					}
 				}
 
-				& .ibm_cci--list-view-right-conversation-sharing {
+				.ibm_cci--list-view-right-conversation-sharing {
 					@extend .ibm_cci--list-view-right-conversation-title-handle;
 					margin:10px 0 0 0;
 
-					& ul {
+					ul {
 						@include ibm_cci-ul__modifier;
 
-						& li{
+						li{
 							@extend li.ibm_cci--list-view-right-conversation;
 							width:16px;
 							height:16px;
@@ -644,27 +737,27 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 						}													
 					}
 
-					& p.ibm_cci-tweet-time-stamp {
+					p.ibm_cci-tweet-time-stamp {
 						float: right;
 						font: normal 12px/16px "Helvetica-Light";
 						vertical-align: top;
 
-						& a img {
+						a img {
 							opacity:0.4;
 							padding: 0 5px 0 0;
 						}
-							& a img:hover {
+							a img:hover {
 								opacity:1;
 							}						
 					}
 				}	
 			}			
 		}
-			& li.ibm_cci--list-view-right-conversation:not(:nth-child(1)){
+			li.ibm_cci--list-view-right-conversation:not(:nth-child(1)){
 				margin-left:5px;
 			}
 
-			& li.ibm_cci--list-view-right-conversation a img:hover{
+			li.ibm_cci--list-view-right-conversation a img:hover{
 				// outline:1px solid #000;
 				opacity:1;
 			}		
@@ -683,7 +776,8 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 
 	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
 	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-left} .ibm_cci--resolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title,
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-unresolved} .ibm_cci--unresolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-unresolved} .ibm_cci--unresolved-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title,
+	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm_cci--youtube-block} .ibm_cci--youtube-content-block .ibm_cci--tweet-title-block h2.ibm_cci--tweet-title
 	{
 		color:$hover-color;
 	}
@@ -709,7 +803,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 		min-height:100px;
-		& #ibm-leadspace-body {
+		#ibm-leadspace-body {
 			width:100%;
 			min-height:100px;
 		}
@@ -725,7 +819,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 			background-position: -224px -38px;
 			width:125px;
 			height:28px;
-			& a {
+			a {
 				width:125px;
 				line-height: 28px;
 			}		
@@ -757,7 +851,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 	
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 		min-height:100px;
-		& #ibm-leadspace-body {
+		#ibm-leadspace-body {
 			width:660px;
 			min-height:100px;
 		}
@@ -775,7 +869,7 @@ $ibm-listview-unresolved 				: ".ibm_cci--list-view-unresolved-block";
 			background-position: -224px 0;
 			width:167px;
 			height:37px;
-			& a {
+			a {
 				width:167px;
 				line-height: 37px;
 			}
