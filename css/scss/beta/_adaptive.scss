@@ -248,7 +248,7 @@ a.ibm-thumbnail-module h3 {
 	// End masthead test updates
 	
 	.ibm-landing-page.ibm-banded #ibm-content-head {
-		width: 100%;
+		width: auto;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-leadspace-head #ibm-leadspace-body {
@@ -321,6 +321,10 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		padding: 0px 10px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
@@ -494,6 +498,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
 		padding: 0px 40px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		padding: 0px 30px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
@@ -676,7 +684,6 @@ a.ibm-thumbnail-module h3 {
 // -------------------------------------------------------------- media query to be used on iPad / Android viewport -------------------------------------------------------------- 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
 
-
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
 		content: "min-width: 601 | max-width: 768px";
@@ -701,6 +708,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
 		padding: 0px 64px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		padding: 0px 54px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
