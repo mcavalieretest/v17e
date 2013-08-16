@@ -1,0 +1,74 @@
+/* 
+ * Font Custom: bare CSS
+ */
+
+@font-face {
+  font-family: "icons-ibm-v1";
+  src: url("icons-ibm-v1.eot");
+  src: url("icons-ibm-v1.eot?#iefix") format("embedded-opentype"),
+       url("icons-ibm-v1.woff") format("woff"),
+       url("icons-ibm-v1.ttf") format("truetype"),
+       url("icons-ibm-v1.svg#icons-ibm-v1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ibm-back:before,
+.ibm-chat:before,
+.ibm-checkmark-circle:before,
+.ibm-checkmark:before,
+.ibm-close:before,
+.ibm-delicious:before,
+.ibm-down:before,
+.ibm-download:before,
+.ibm-facebook:before,
+.ibm-file:before,
+.ibm-forward:before,
+.ibm-info:before,
+.ibm-key:before,
+.ibm-mail:before,
+.ibm-mobile:before,
+.ibm-pdf:before,
+.ibm-phone:before,
+.ibm-rss:before,
+.ibm-settings:before,
+.ibm-tumblr:before,
+.ibm-up:before,
+.ibm-volume:before,
+.ibm-warning:before,
+.ibm-youtube:before {
+  font-family: "icons-ibm-v1";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.ibm-back:before { content: "\f100"; }
+.ibm-chat:before { content: "\f101"; }
+.ibm-checkmark-circle:before { content: "\f102"; }
+.ibm-checkmark:before { content: "\f103"; }
+.ibm-close:before { content: "\f104"; }
+.ibm-delicious:before { content: "\f105"; }
+.ibm-down:before { content: "\f106"; }
+.ibm-download:before { content: "\f107"; }
+.ibm-facebook:before { content: "\f108"; }
+.ibm-file:before { content: "\f109"; }
+.ibm-forward:before { content: "\f10a"; }
+.ibm-info:before { content: "\f10b"; }
+.ibm-key:before { content: "\f10c"; }
+.ibm-mail:before { content: "\f10d"; }
+.ibm-mobile:before { content: "\f10e"; }
+.ibm-pdf:before { content: "\f10f"; }
+.ibm-phone:before { content: "\f110"; }
+.ibm-rss:before { content: "\f111"; }
+.ibm-settings:before { content: "\f112"; }
+.ibm-tumblr:before { content: "\f113"; }
+.ibm-up:before { content: "\f114"; }
+.ibm-volume:before { content: "\f115"; }
+.ibm-warning:before { content: "\f116"; }
+.ibm-youtube:before { content: "\f117"; }

@@ -1,0 +1,39 @@
+{
+  "file_name": "icons-ibm-v1",
+  "fonts": [
+    "icons-ibm-v1.ttf",
+    "icons-ibm-v1.woff",
+    "icons-ibm-v1.eot",
+    "icons-ibm-v1.svg"
+  ],
+  "glyphs": [
+    "back",
+    "chat",
+    "checkmark-circle",
+    "checkmark",
+    "close",
+    "delicious",
+    "down",
+    "download",
+    "facebook",
+    "file",
+    "forward",
+    "info",
+    "key",
+    "mail",
+    "mobile",
+    "pdf",
+    "phone",
+    "rss",
+    "settings",
+    "tumblr",
+    "up",
+    "volume",
+    "warning",
+    "youtube"
+  ],
+  "templates": [
+    "fontcustom.css",
+    "fontcustom-preview.html"
+  ]
+}
