@@ -26,7 +26,8 @@
 .ibm-setting-link:before,
 .ibm-twitter-link:before,
 .ibm-upward-link:before,
-.ibm-wireless-link:before {
+.ibm-wireless-link:before,
+#ibm-footer-module li:before {
 	font-family: 'iconsIBM';
 	font-variant: normal;
 	text-transform: none;
@@ -73,7 +74,8 @@ a.ibm-inline {
 .ibm-anchor-down-link:before { content: "\f100"; }
 .ibm-audio-link:before { content: "\f101"; }
 .ibm-back-link:before { content: "\f102"; }
-.ibm-bullet:before { content: "\f103"; }
+.ibm-bullet:before,
+#ibm-footer-module li:before { content: "\f103"; }
 .ibm-cancel-link:before { content: "\f104"; }
 .ibm-chat-link:before { content: "\f105"; }
 .ibm-check-link:before { content: "\f106"; }

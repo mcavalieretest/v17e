@@ -13,7 +13,7 @@
 #ibm-footer-module h2, 
 #ibm-footer-module h3 {
     color: #FCB712;
-    margin: 0px;
+    margin: 0;
     padding: 16px 0 0;
 }
 
@@ -28,21 +28,14 @@
 }
 
 #ibm-footer-module li {
-//    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
     color: #666;
     margin: 4px 0;
     padding: 0 0 0 10px;
 }
 
 #ibm-footer-module li:before {
-	display: block;
-	content: "";
-	background-color: #797979;
-	position: absolute;
-	width: 5px;
-	height: 5px;
-	margin-left: -10px;
-	margin-top: 5px;
+	color: #797979;
+	@include px-to-rem(margin-left,-10px);
 }
 
 #{$ie7Selector} #ibm-footer-module li,
@@ -52,8 +45,6 @@
 
 #ibm-footer-module li:hover:before,
 #ibm-footer-module li.ibm-active:before {
-//    background-position: -2px -98px;
-	background-color: #FFD600;
     color: #FFCF01;
 }
 
