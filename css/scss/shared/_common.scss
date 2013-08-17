@@ -2191,7 +2191,7 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 div#ibm-reg-number {
    	background: #333;
    	color: #999;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 20px 0;
     text-align: center;
 }
@@ -2215,33 +2215,29 @@ div#ibm-reg-number a:hover {
 #ibm-content-main .ibm-legal{
   	background: none;
     color: #666;
-    margin-left: 0;
-    padding: 30px 10px 80px !important;
+    margin: 0 10px;
+    padding: 30px 10px 80px;
     text-align: left;
-    width: 620px;
-    
+    width: auto;
 }
+
 #ibm-content-main .ibm-legal-text .ibm-required,
 #ibm-content-main .ibm-legal .ibm-required {
 	color: #D9182D;
 }
 .ibm-legal-text .ibm-required,
 .ibm-legal .ibm-required {
-	color: #999;
-    float: left;
-    height: 60px;
-    margin: 0 5px 12px 0;
-    padding-left: 10px;
+	position: absolute;
+    margin: 0 0 0 -10px;
 }
 
-.ibm-legal-text,.ibm-legal {
-	background: none repeat 0 0 #333;
+.ibm-legal-text,
+.ibm-legal {
+	background-color: #333;
     color: #999;
     margin: 0 auto;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-top: 30px;
-    width: 980px;
+    padding: 30px 10px 50px;
+    width: 960px;
 }
 
 
