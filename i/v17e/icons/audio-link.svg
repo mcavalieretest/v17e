@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?> <!-- Generator: IcoMoon.io --> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="metadata" data-author="Keyamoon" data-authorlink="http://keyamoon.com/" data-license="CC BY 3.0" data-licenselink="http://creativecommons.org/licenses/by/3.0/" width="512" height="512" viewBox="0 0 512 512" data-tags="volume-mute, speaker, media control, audio, mute" style="margin-left: 8px; margin-top: 8px;"><path d="M 200.666,39.334 C 213.50,26.50 224.00,30.85 224.00,49.00 L 224.00,463.00 C 224.00,481.15 213.50,485.499 200.666,472.665 L 80.00,352.00 L 0.00,352.00 L 0.00,160.00 L 80.00,160.00 L 200.666,39.334 Z" ></path></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M350.666,39.334C363.5,26.5,374,30.85,374,49v414c0,18.15-10.5,22.499-23.334,9.665L230,352h-80V160h80L350.666,39.334z"/>
+</svg>
