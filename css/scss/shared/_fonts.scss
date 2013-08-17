@@ -70,11 +70,11 @@ these fonts. */
 
 @font-face {
     font-family: 'iconsIBM';
-    src: url('#{$fontPath}/icons-ibm-v1.eot');
-    src: url('#{$fontPath}/icons-ibm-v1.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/icons-ibm-v1.woff') format('woff'),
-         url('#{$fontPath}/icons-ibm-v1.ttf') format('truetype'),
-         url('#{$fontPath}/icons-ibm-v1.svg#iconsIBM') format('svg');
+    src: url('fonts/icons-ibm-v1.eot');
+    src: url('fonts/icons-ibm-v1.eot?#iefix') format('embedded-opentype'),
+         url('fonts/icons-ibm-v1.woff') format('woff'),
+         url('fonts/icons-ibm-v1.ttf') format('truetype'),
+         url('fonts/icons-ibm-v1.svg#iconsIBM') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -326,6 +326,10 @@ p.ibm-table-scroll-caption {
 	line-height: 30px;
 }
 
+.ibm-legal-text,
+.ibm-legal {
+	@include px-to-rem(font-size,11px);
+}
 // Content styles =======================
 
 
