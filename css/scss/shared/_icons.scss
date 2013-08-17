@@ -63,12 +63,12 @@ a.ibm-setting-link:before,
 a.ibm-twitter-link:before,
 a.ibm-upward-link:before,
 a.ibm-wireless-link:before {
-	@include px-to-rem(margin-left,-20px);
-	text-decoration: none;	
+	@include px-to-rem(margin-left,-25px);
+	text-decoration: none;
 }
 
 a.ibm-inline {
-	@include px-to-rem(padding-left,20px);
+	@include px-to-rem(padding-left,25px);
 }
 
 .ibm-anchor-down-link:before { content: "\f100"; }
