@@ -1,0 +1,40 @@
+{
+  "file_name": "icons-ibm-v1",
+  "fonts": [
+    "icons-ibm-v1.ttf",
+    "icons-ibm-v1.woff",
+    "icons-ibm-v1.eot",
+    "icons-ibm-v1.svg"
+  ],
+  "glyphs": [
+    "anchor-down-link",
+    "audio-link",
+    "back-link",
+    "bullet",
+    "cancel-link",
+    "chat-link",
+    "check-link",
+    "confirm-link",
+    "delicious-link",
+    "demo-link",
+    "document-link",
+    "download-link",
+    "email-link",
+    "error-link",
+    "facebook-link",
+    "forward-link",
+    "information-link",
+    "password-link",
+    "pdf-link",
+    "phone-link",
+    "rss-link",
+    "setting-link",
+    "twitter-link",
+    "upward-link",
+    "wireless-link"
+  ],
+  "templates": [
+    "fontcustom.css",
+    "fontcustom-preview.html"
+  ]
+}

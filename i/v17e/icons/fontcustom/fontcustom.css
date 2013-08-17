@@ -1,0 +1,76 @@
+/* 
+ * Font Custom: bare CSS
+ */
+
+@font-face {
+  font-family: "icons-ibm-v1";
+  src: url("icons-ibm-v1.eot");
+  src: url("icons-ibm-v1.eot?#iefix") format("embedded-opentype"),
+       url("icons-ibm-v1.woff") format("woff"),
+       url("icons-ibm-v1.ttf") format("truetype"),
+       url("icons-ibm-v1.svg#icons-ibm-v1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ibm-anchor-down-link:before,
+.ibm-audio-link:before,
+.ibm-back-link:before,
+.ibm-bullet:before,
+.ibm-cancel-link:before,
+.ibm-chat-link:before,
+.ibm-check-link:before,
+.ibm-confirm-link:before,
+.ibm-delicious-link:before,
+.ibm-demo-link:before,
+.ibm-document-link:before,
+.ibm-download-link:before,
+.ibm-email-link:before,
+.ibm-error-link:before,
+.ibm-facebook-link:before,
+.ibm-forward-link:before,
+.ibm-information-link:before,
+.ibm-password-link:before,
+.ibm-pdf-link:before,
+.ibm-phone-link:before,
+.ibm-rss-link:before,
+.ibm-setting-link:before,
+.ibm-twitter-link:before,
+.ibm-upward-link:before,
+.ibm-wireless-link:before {
+  font-family: "icons-ibm-v1";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.ibm-anchor-down-link:before { content: "\f100"; }
+.ibm-audio-link:before { content: "\f101"; }
+.ibm-back-link:before { content: "\f102"; }
+.ibm-bullet:before { content: "\f103"; }
+.ibm-cancel-link:before { content: "\f104"; }
+.ibm-chat-link:before { content: "\f105"; }
+.ibm-check-link:before { content: "\f106"; }
+.ibm-confirm-link:before { content: "\f107"; }
+.ibm-delicious-link:before { content: "\f108"; }
+.ibm-demo-link:before { content: "\f109"; }
+.ibm-document-link:before { content: "\f10a"; }
+.ibm-download-link:before { content: "\f10b"; }
+.ibm-email-link:before { content: "\f10c"; }
+.ibm-error-link:before { content: "\f10d"; }
+.ibm-facebook-link:before { content: "\f10e"; }
+.ibm-forward-link:before { content: "\f10f"; }
+.ibm-information-link:before { content: "\f110"; }
+.ibm-password-link:before { content: "\f111"; }
+.ibm-pdf-link:before { content: "\f112"; }
+.ibm-phone-link:before { content: "\f113"; }
+.ibm-rss-link:before { content: "\f114"; }
+.ibm-setting-link:before { content: "\f115"; }
+.ibm-twitter-link:before { content: "\f116"; }
+.ibm-upward-link:before { content: "\f117"; }
+.ibm-wireless-link:before { content: "\f118"; }
