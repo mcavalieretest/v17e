@@ -20,6 +20,7 @@
 .ibm-cancel-link:before,
 .ibm-chat-link:before,
 .ibm-check-link:before,
+.ibm-chevron-link:before,
 .ibm-confirm-link:before,
 .ibm-delicious-link:before,
 .ibm-demo-link:before,
@@ -56,21 +57,22 @@
 .ibm-cancel-link:before { content: "\f104"; }
 .ibm-chat-link:before { content: "\f105"; }
 .ibm-check-link:before { content: "\f106"; }
-.ibm-confirm-link:before { content: "\f107"; }
-.ibm-delicious-link:before { content: "\f108"; }
-.ibm-demo-link:before { content: "\f109"; }
-.ibm-document-link:before { content: "\f10a"; }
-.ibm-download-link:before { content: "\f10b"; }
-.ibm-email-link:before { content: "\f10c"; }
-.ibm-error-link:before { content: "\f10d"; }
-.ibm-facebook-link:before { content: "\f10e"; }
-.ibm-forward-link:before { content: "\f10f"; }
-.ibm-information-link:before { content: "\f110"; }
-.ibm-password-link:before { content: "\f111"; }
-.ibm-pdf-link:before { content: "\f112"; }
-.ibm-phone-link:before { content: "\f113"; }
-.ibm-rss-link:before { content: "\f114"; }
-.ibm-setting-link:before { content: "\f115"; }
-.ibm-twitter-link:before { content: "\f116"; }
-.ibm-upward-link:before { content: "\f117"; }
-.ibm-wireless-link:before { content: "\f118"; }
+.ibm-chevron-link:before { content: "\f107"; }
+.ibm-confirm-link:before { content: "\f108"; }
+.ibm-delicious-link:before { content: "\f109"; }
+.ibm-demo-link:before { content: "\f10a"; }
+.ibm-document-link:before { content: "\f10b"; }
+.ibm-download-link:before { content: "\f10c"; }
+.ibm-email-link:before { content: "\f10d"; }
+.ibm-error-link:before { content: "\f10e"; }
+.ibm-facebook-link:before { content: "\f10f"; }
+.ibm-forward-link:before { content: "\f110"; }
+.ibm-information-link:before { content: "\f111"; }
+.ibm-password-link:before { content: "\f112"; }
+.ibm-pdf-link:before { content: "\f113"; }
+.ibm-phone-link:before { content: "\f114"; }
+.ibm-rss-link:before { content: "\f115"; }
+.ibm-setting-link:before { content: "\f116"; }
+.ibm-twitter-link:before { content: "\f117"; }
+.ibm-upward-link:before { content: "\f118"; }
+.ibm-wireless-link:before { content: "\f119"; }
