@@ -73,14 +73,6 @@ a.ibm-chevron-link:after {
 	text-decoration: none;
 }
 
-a.ibm-inline,
-a.ibm-inline:before,
-a.ibm-inline:after {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	position: relative !important;
-}
-
 .ibm-anchor-down-link:before { content: "\00a0\f100\00a0"; }
 .ibm-audio-link:before { content: "\00a0\f101\00a0"; }
 .ibm-back-link:before { content: "\00a0\f102\00a0"; }
@@ -109,6 +101,13 @@ a.ibm-inline:after {
 .ibm-upward-link:before { content: "\00a0\f118\00a0"; }
 .ibm-wireless-link:before { content: "\00a0\f119\00a0"; }
 
+a.ibm-inline,
+a.ibm-inline:before,
+a.ibm-inline:after {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	position: relative !important;
+}
 
 .ibm-standalone-acc,
 .ibm-standalone-acc:hover,
