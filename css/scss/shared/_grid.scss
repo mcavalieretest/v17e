@@ -3,14 +3,14 @@
 #ibm-masthead .ibm-columns,
 #ibm-footer-module .ibm-columns {
     width: 960px;
-    padding: 0px 10px;
-    margin: 0px auto;
+    padding: 0 10px;
+    margin: 0 auto;
     clear: both;
 }
 
 #ibm-content .ibm-columns {
     clear: both;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
     width: auto;
     padding-bottom: 10px;
@@ -19,27 +19,27 @@
 #ibm-leadspace-body .ibm-columns,
 #ibm-media .ibm-columns {
     width: $landingGrid - $landingSpace;
-    padding: 0px ($landingSpace / 2);
+    padding: 0 ($landingSpace / 2);
 }
 
 .ibm-landing-page #ibm-content .ibm-columns {
     width: $landingGrid - $landingSpace;
-    padding: 0px ($landingSpace / 2) ($landingSpace / 2);
+    padding: 0 ($landingSpace / 2) ($landingSpace / 2);
 }
 
 .ibm-landing-page #ibm-content .ibm-container .ibm-columns {
 	width: auto;
-	margin: 0px -20px;
+	margin: 0 -20px;
 }
 
 .ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
-	margin:0px -10px;
+	margin: 0 -10px;
 }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-columns,
 .ibm-content-expand #ibm-content .ibm-columns .ibm-columns {
-    padding: 0px;
-    margin: 0px (-($landingSpace / 2));
+    padding: 0;
+    margin: 0 (-($landingSpace / 2));
     width: auto; 
 }
 
@@ -53,7 +53,7 @@
 }
 
 #ibm-content .ibm-container .ibm-columns {
-    margin: 0px -10px;
+    margin: 0 -10px;
 }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 .ibm-video .ibm-ribbon .ibm-columns {
@@ -86,7 +86,7 @@
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-4, 
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 {
     float: left;
-    margin: 0px ($landingSpace / 2);
+    margin: 0 ($landingSpace / 2);
     min-height: 1px;
 }
 
@@ -221,7 +221,7 @@
 
 #ibm-content .ibm-columns .ibm-video, 
 #ibm-content .ibm-columns .ibm-playlist {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2,
@@ -256,12 +256,12 @@
 
 #ibm-gc-column-one .ibm-columns .ibm-col-2-1 {
     width: 195px;
-    padding: 0px;
+    padding: 0;
 }
 
 #ibm-content #ibm-content-sidebar .ibm-columns .ibm-col-5-1  {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	
 }
 #ibm-content #ibm-content-sidebar .ibm-columns .ibm-col-5-1 .dijitSelect {
