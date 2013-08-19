@@ -43,10 +43,6 @@
     width: auto; 
 }
 
-.ibm-content-expand #ibm-content .ibm-columns .ibm-columns {
-    width: auto;
-}
-
 .ibm-landing-page #ibm-content .ibm-columns .ibm-media .ibm-columns {
     overflow: visible;
     width: $landingGrid - $landingSpace;
@@ -65,20 +61,7 @@
     overflow: hidden;
 }
 
-.ibm-columns .ibm-col-1-1,
-.ibm-columns .ibm-col-2-1,
-.ibm-columns .ibm-col-4-1,
-.ibm-columns .ibm-col-4-2,
-.ibm-columns .ibm-col-4-3,
-.ibm-columns .ibm-col-5-1,
-.ibm-columns .ibm-col-5-2,
-.ibm-columns .ibm-col-5-3,
-.ibm-columns .ibm-col-5-4,
-.ibm-columns .ibm-col-6-1,
-.ibm-columns .ibm-col-6-2,
-.ibm-columns .ibm-col-6-3,
-.ibm-columns .ibm-col-6-4,
-.ibm-columns .ibm-col-6-5,
+.ibm-columns [class*="ibm-col-"],
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-1-1, 
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-1, 
 .v17 .dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-2, 

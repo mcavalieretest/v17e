@@ -116,38 +116,9 @@ p.ibm-alternate-two a:visited  {
 #ibm-content .ibm-container-body p ~ h2,
 #ibm-content .ibm-container-body p ~ h3,
 .ibm-landing-page #ibm-content .ibm-container-body p ~ h2,
-.ibm-landing-page #ibm-content .ibm-container-body p ~ h3 {
-	margin: 5px 0px;
-}
-
-#ibm-content .ibm-columns .ibm-col-1-1 h2,
-#ibm-content .ibm-columns .ibm-col-2-1 h2,
-#ibm-content .ibm-columns .ibm-col-4-1 h2,
-#ibm-content .ibm-columns .ibm-col-4-2 h2,
-#ibm-content .ibm-columns .ibm-col-4-3 h2,
-#ibm-content .ibm-columns .ibm-col-5-1 h2,
-#ibm-content .ibm-columns .ibm-col-5-2 h2,
-#ibm-content .ibm-columns .ibm-col-5-3 h2,
-#ibm-content .ibm-columns .ibm-col-5-4 h2,
-#ibm-content .ibm-columns .ibm-col-6-1 h2,
-#ibm-content .ibm-columns .ibm-col-6-2 h2,
-#ibm-content .ibm-columns .ibm-col-6-3 h2,
-#ibm-content .ibm-columns .ibm-col-6-4 h2,
-#ibm-content .ibm-columns .ibm-col-6-5 h2,
-#ibm-content .ibm-columns .ibm-col-1-1 h3,
-#ibm-content .ibm-columns .ibm-col-2-1 h3,
-#ibm-content .ibm-columns .ibm-col-4-1 h3,
-#ibm-content .ibm-columns .ibm-col-4-2 h3,
-#ibm-content .ibm-columns .ibm-col-4-3 h3,
-#ibm-content .ibm-columns .ibm-col-5-1 h3,
-#ibm-content .ibm-columns .ibm-col-5-2 h3,
-#ibm-content .ibm-columns .ibm-col-5-3 h3,
-#ibm-content .ibm-columns .ibm-col-5-4 h3,
-#ibm-content .ibm-columns .ibm-col-6-1 h3,
-#ibm-content .ibm-columns .ibm-col-6-2 h3,
-#ibm-content .ibm-columns .ibm-col-6-3 h3,
-#ibm-content .ibm-columns .ibm-col-6-4 h3,
-#ibm-content .ibm-columns .ibm-col-6-5 h3 {
+.ibm-landing-page #ibm-content .ibm-container-body p ~ h3,
+#ibm-content .ibm-columns [class*="ibm-col-"] h2,
+#ibm-content .ibm-columns [class*="ibm-col-"] h3 {
 	margin: 5px 0px;
 }
 
@@ -721,23 +692,12 @@ margin-top:8px !important;
 	padding: 12px 0 0;
 	color: #444;
 }
+
 #ibm-content #ibm-content-main .ibm-columns h2.ibm-alternate {
 	margin: 5px 10px;
 }
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-1-1 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-2-1 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-4-1 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-4-2 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-4-3 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-5-1 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-5-2 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-5-3 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-5-4 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-6-1 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-6-2 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-6-3 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-6-4 h2.ibm-alternate,
-#ibm-content #ibm-content-main .ibm-columns .ibm-col-6-5 h2.ibm-alternate {
+
+#ibm-content #ibm-content-main .ibm-columns [class*="ibm-col-"] h2.ibm-alternate {
 	margin: 0;
 }
 
@@ -1069,25 +1029,8 @@ div.ibm-alternate-rule-2 hr {
 	padding: 6px 10px;
 }
 .ibm-landing-page #ibm-content .ibm-container p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-2-1 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-1 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-2 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-4-3 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-1 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-2 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-3 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-5-4 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-1 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-2 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-3 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-4 p,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-6-5 p,
-.dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-1 p,
-.dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-2 p, 
-.dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-3 p, 
-.dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-4 p, 
-.dijitDialogPaneContent .ibm-common-overlay .ibm-columns .ibm-col-6-5 p {
+.ibm-landing-page #ibm-content .ibm-columns [class*="ibm-col-"] p,
+.dijitDialogPaneContent .ibm-common-overlay .ibm-columns [class*="ibm-col-6-"] p {
 	padding: 6px 0;
 }
 
@@ -2268,7 +2211,7 @@ div.ibm-anchor-pointer a {
 	position: absolute;
 	*position: relative;
 	*margin-top: -80px;
-	_margin-top: 0px;
+	_margin-top: 0;
 	top: -80px;
 	display: block;
 }
@@ -2285,30 +2228,29 @@ input.ibm-btn-arrow-sec {
 
 
 // Styles for pull-quote ==============================
-div.ibm-pull-quote.ibm-inset{
+.ibm-pull-quote.ibm-inset {
 	float: right;
-	margin: 5px 0px 0px 20px;
-    padding: 0px;
+	margin: 5px 0 0 20px;
+    padding: 0;
     width: 280px;
 }
- div.ibm-pull-quote.ibm-inset.ibm-alternate{
+
+.ibm-pull-quote.ibm-inset.ibm-alternate {
 	float: left;
-	margin: 5px 20px 0px 0px;
-    padding: 0px;
-    width: 280px;
+	margin: 5px 20px 0 0;
 }
 
-div.ibm-pull-quote blockquote p,
-div.ibm-pull-quote.ibm-inset blockquote p,
-div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p{
-    color:#555 !important;
-    display:block;
+.ibm-pull-quote blockquote p,
+.ibm-pull-quote.ibm-inset blockquote p,
+.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p{
+    color: #555 !important;
+    display :block;
 }
 
-div.ibm-pull-quote blockquote p em,
-div.ibm-pull-quote.ibm-inset blockquote p em,
-div.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
-	display:block;
+.ibm-pull-quote blockquote p em,
+.ibm-pull-quote.ibm-inset blockquote p em,
+.ibm-pull-quote.ibm-inset.ibm-alternate blockquote p em {
+	display: block;
 }
 
 // w3 default style fix - bug: w3LC GSJR-8RXHYG: updated blockquote, q _reset styles

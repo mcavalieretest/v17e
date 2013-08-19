@@ -35,6 +35,7 @@
 #ibm-related-content #ibm-merchandising-module .ibm-container:nth-child(10) {
 	display: none;
 }
+
 #ibm-related-content .ibm-mte-crop img {
 	margin-left: -14px;
 }
@@ -52,11 +53,6 @@
     padding: 4px 0 0;
 }
 
-/*#ibm-related-content h2 {
-    color: #4C4C4C;
-    margin: 0px;
-    padding: 4px 0px 0px;
-}*/
 #ibm-related-content h2 + ul,#ibm-related-content h3 + ul {
 	padding-top: 4px;
 }
@@ -79,7 +75,6 @@
 	color: #333;
 }
 
-
 #ibm-related-content p.ibm-ind-link {
 	padding: 0;
 }
@@ -89,22 +84,6 @@
 	padding-top: 1px;  
 }
 
-/* #ibm-related-content p.ibm-ind-link a.ibm-forward-link {
-	 background-position: 100% 0px;   
-}*/
- /*#ibm-related-content p.ibm-ind-link a.ibm-pdf-link {
-	 background-position: 100% -1202px;  
-} */
-/*#ibm-related-content p.ibm-ind-link a.ibm-external-link {
-	 /* background-position: 100% -2px;   
-}*/
- /* 
-#ibm-related-content p.ibm-ind-link a.ibm-forward-link,
-#ibm-related-content p.ibm-ind-link a.ibm-pdf-link,
-#ibm-related-content p.ibm-ind-link a.ibm-external-link {
-  padding-left: 0px !important;  
-}
-*/
 #ibm-related-content #ibm-merchandising-module {
 	float: left;
     _margin-left: -10px; /* ie6 hack to avoid 6 MTE moudles break layout*/
@@ -157,13 +136,8 @@
 	color: #333;
 }
 
-
 #ibm-related-content .ibm-columns:first-child {
 	position: relative;	
-}
-#ibm-related-content .ibm-ribbon-pane {
-	height: 230px;
-	width: 960px;
 }
 
 #ibm-related-content .ibm-ribbon-pane .ibm-columns {
@@ -176,7 +150,6 @@
 #ibm-related-content .ibm-columns .ibm-columns {
 	padding: 0;
 }
-	
 
 #ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-5-1, 
 #ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-6-1, 
@@ -191,6 +164,7 @@
 #ibm-related-content a.ibm-ribbon-prev {
 	left: -10px;
 }
+
 #ibm-related-content a.ibm-ribbon-next {
 	right: -10px;
 	margin-top: -140px;
