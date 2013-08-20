@@ -25,13 +25,15 @@ $search--field--shadow 					: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
 $ibm-content__modifier 					: ".ibm_cci__ibm-content";
 $ibm-band__modifier						: ".ibm_cci__ibm-band";
 $ibm-pcon__modifier						: ".ibm_cci__ibm-pcon";
-$ibm-listview-left 						: ".ibm_cci--lv-lb"; //List view left block
-$ibm-listview-right 					: ".ibm_cci--lv-rcb"; //List view right conversation block
+// $ibm-listview-left 						: ".ibm_cci--lv-lb"; //List view left block
+// $ibm-listview-right 					: ".ibm_cci--lv-rcb"; //List view right conversation block
 $hover-color 							: #f04e37;
 $ibm-listview-unresolved 				: ".ibm_cci--lv-unr-b"; //List view unresolved block
 $ibm_cci--youtube-block 				: ".ibm_cci--lv-yt-b"; //List view youtube block
-
 $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved block
+
+$ibm-mobile-listview-left 				: ".ibm_cci--mlv-lb"; //List view left block
+$ibm-mobile-listview-right 				: ".ibm_cci--mlv-rcb"; //List view right conversation block
 
 /* LEADSPACE OVERIDES (BEGIN) */
 .ibm-landing-page #ibm-leadspace-head  {
@@ -372,11 +374,6 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		position:absolute;
 	}
 
-		//To hide the Avatar image for multiple conversation
-		.ibm_cci--lv-rc-avatar.ibm_cci--lv-rc-avatar__hidden {
-			display:none;
-		}
-
 	.ibm_cci--lv-rc-title {
 		float:left;
 		font: bold 12px/15px "Helvetica-Light";
@@ -410,14 +407,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		font-weight:normal;
 		margin-left:35px;
 	}
-						
-		//To remove the margin from multiple conversation Title and Handle.
-		// if there is only one conversation
-		.ibm_cci--lv-rc-title.ibm_cci--lv-rc-th__remove-margin, 
-		.ibm_cci--lv-rc-h.ibm_cci--lv-rc-th__remove-margin
-		{
-			margin:0;
-		}										
+																
 }
 
 //LIST SHARING (BEGIN)
@@ -429,7 +419,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		@include ibm_cci-ul__modifier;
 
 		li{
-			@extend li.ibm_cci--lv-rc;
+			@extend li;
 			width:16px;
 			height:16px;
 		}
@@ -497,7 +487,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 }
 
 /*GRID VIEW UNRESOLVED TWEETS (BEGIN) */
-#ibm-pcon .ibm-columns .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier {
+.ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier {
 	#{$ibm-gridview-unresolved} {
 		outline:1px solid #ccc;
 		float:left;
@@ -554,172 +544,12 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 /*GRID VIEW UNRESOLVED TWEETS (END)*/
 
 //LIST VIEW UNRESOLVED AND RESOLVED (BEGIN)
-#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier{
+#ibm-content .ibm-columns .ibm-col-1-1.ibm_cci__modifier{
 	float:left;
 	border-bottom:1px solid #cccccc;
-		
-	// LIST VIEW UNRESOLVED TWEETS (BEGIN)
-	#{$ibm-listview-unresolved} {
-		@include ibm-listview-commons;
-		width:940px;
-		margin:0;
-
-		.ibm_cci--rea-block {
-			@include ibm_cci--rea-block;
-			margin-left:0;
-		}
-
-		.ibm_cci--unr-cb {
-			width:860px;
-			float:left;
-
-			.ibm_cci--ttb {
-				clear:both;
-				// margin-top:10px;
-				float:left;
-
-				h2.ibm_cci--tweet-title{
-					font: normal 2.4rem/30px "Helvetica-Light";
-					color: #000;
-					margin:10px 0 0 0;
-					padding:0;				
-				}
-			}
-	
-			.ibm_cci--lv-rc-th{ 
-				@include ibm_cci--lv-rc-th;
-				width:800px;
-				margin:0;
-			}
-		}
-		
-		.ibm_cci--lv-tsb{
-			float:right;
-			width:60px;
-			clear:right;
-
-			p.ibm_cci-tts {
-				float: right;
-				font: normal 12px/16px "Helvetica-Light";
-				vertical-align: top;
-				padding:0;
-
-				a img {
-					opacity:0.4;
-					padding: 0 5px 0 0;
-				}
-					a img:hover {
-						opacity:1;
-					}						
-			}			
-		}
-	}
-	// LIST VIEW UNRESOLVED TWEETS (END)
-	
-
-	// LIST VIEW YOUTUBE BLOCK (BEGIN)
-	
-		#{$ibm_cci--youtube-block} {
-			@include ibm-listview-commons;
-			width:940px;
-			margin:0;
-
-			.ibm_cci--rea-block {
-				@include ibm_cci--rea-block;
-			}
-
-			.ibm_cci--yt-cb {
-				width:860px;
-				float:left;
-
-				.ibm_cci-fav-ihb {
-					width:800px;
-					padding:0;
-					border:0;
-					float:left;
-
-					p.ibm_cci--feed-icon {
-						float:left;
-						color:#000;
-						padding:5px 0;
-						margin:0;
-						line-height:0;
-						text-indent:-99999;
-
-						img {
-							border:0;
-							outline:0;
-							margin:0 10px 0 0;
-							padding:0;
-							width:16px;
-							height:16px;
-						}					
-					}
-
-					p.ibm_cci--feed-title {
-						text-indent: 0;
-						font-size:1.2rem;
-						line-height: 17px;
-						vertical-align: top;
-					}
-				}
-				.ibm_cci--ttb {
-					clear:both;
-					// margin-top:10px;
-					float:left;
-
-					h2.ibm_cci--tweet-title{
-						font: normal 2.4rem/30px "Helvetica-Light";
-						color: #000;
-						margin:0;
-						padding:0;				
-					}
-
-					p.ibm_cci--tweet-description {
-						font: italic 1.4rem/20px "Helvetica-Light";
-						display:none;
-
-						span.ibm_cci--tweet-description-readmore a {
-							color: #F04E37;
-							text-decoration: none;
-						}
-					}
-				}
-		
-				.ibm_cci--lv-rc-th{ 
-					@include ibm_cci--lv-rc-th;
-					width:800px;
-					margin:0;
-				}					
-			}
-					
-			.ibm_cci--lv-tsb{
-				float:right;
-				width:60px;
-				clear:right;
-
-				p.ibm_cci-tts {
-					float: right;
-					font: normal 12px/16px "Helvetica-Light";
-					vertical-align: top;
-					padding:0;
-
-					a img {
-						opacity:0.4;
-						padding: 0 5px 0 0;
-					}
-					a img:hover {
-						opacity:1;
-					}						
-				}			
-			}
-		}
-
-	// LIST VIEW YOUTUBE BLOCK (END)
-
 
 	// LIST VIEW RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (BEGIN)
-	#{$ibm-listview-left}{
+	.ibm-col-6-4{
 		@include ibm-listview-commons;
 		margin:0;
 		// outline:1px solid #ccc; *FOR TESTING ONLY
@@ -817,7 +647,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		}
 	}
 
-	#{$ibm-listview-right}{
+	.ibm-col-6-2{
 		@include ibm-listview-commons;
 		margin:0 0 0 20px;
 		// outline:1px solid #ccc; *FOR TESTING ONLY
@@ -825,7 +655,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		ul {
 			@include ibm_cci-ul__modifier;
 
-			li.ibm_cci--lv-rc {
+			li {
 				@include ibm_cci-ul--li__modifier;
 				// height:25px;
 				// width:25px;
@@ -840,79 +670,282 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				> a img {
 					opacity:0.4;
 				}
-
-				.ibm_cci--lv-rc-th {
-					@include ibm_cci--lv-rc-th; 										
-				}
-
-				.ibm_cci--lv-rc-description {
-					@extend .ibm_cci--lv-rc-th;
-					margin: 0;
-
-					p {
-						float: left;
-						font-family: Helvetica-Light;
-						font-size: 14px;
-						line-height: 18px;
-
-						a {
-							text-decoration:none;
-						}
-					}
-				}
-
-				.ibm_cci--lv-rc-sharing {
-					@include ibm_cci--lv-sharing;
-					
-					> ul {
-						display:none;
-					}
-				}	
 			}			
 		}
-			li.ibm_cci--lv-rc:not(:nth-child(1)){
+
+		.ibm_cci--lv-rc-th {
+			@include ibm_cci--lv-rc-th; 
+			width:240px;
+		}
+		//To remove the margin from single conversation Title and Handle.
+		// if there is only one conversation
+		.ibm_cci--lv-rc-th.ibm_cci--lv-rc-th__rm
+		{
+			margin:0;
+		}
+
+		.ibm_cci--lv-rc-description {
+			@extend .ibm_cci--lv-rc-th;
+			margin: 0;
+
+			p {
+				float: left;
+				font-family: Helvetica-Light;
+				font-size: 14px;
+				line-height: 18px;
+
+				a {
+					text-decoration:none;
+				}
+			}
+		}
+
+		.ibm_cci--lv-rc-sharing {
+			@include ibm_cci--lv-sharing;
+			
+			> ul {
+				display:none;
+			}
+		}	
+
+			li:not(:nth-child(1)){
 				margin-left:5px;
 			}
 
-			li.ibm_cci--lv-rc a img:hover{
+			li a img:hover{
 				// outline:1px solid #000;
 				opacity:1;
 			}		
 	}
-	// LIST VIEW RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (END)	
-}
+	// LIST VIEW RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (END)
 	
+	// LIST VIEW UNRESOLVED TWEETS (BEGIN)
+	#{$ibm-listview-unresolved} {
+		@include ibm-listview-commons;
+		width:940px;
+		margin:0;
+
+		.ibm_cci--rea-block {
+			@include ibm_cci--rea-block;
+			margin-left:0;
+		}
+
+		.ibm_cci--unr-cb {
+			width:860px;
+			float:left;
+
+			.ibm_cci--ttb {
+				clear:both;
+				// margin-top:10px;
+				float:left;
+
+				h2.ibm_cci--tweet-title{
+					font: normal 2.4rem/30px "Helvetica-Light";
+					color: #000;
+					margin:10px 0 0 0;
+					padding:0;				
+				}
+			}
+	
+			.ibm_cci--lv-rc-th{ 
+				@include ibm_cci--lv-rc-th;
+				width:800px;
+				margin:0;
+			}
+		}
+		
+		.ibm_cci--lv-tsb{
+			float:right;
+			width:60px;
+			clear:right;
+
+			p.ibm_cci-tts {
+				float: right;
+				font: normal 12px/16px "Helvetica-Light";
+				vertical-align: top;
+				padding:0;
+
+				a img {
+					opacity:0.4;
+					padding: 0 5px 0 0;
+				}
+					a img:hover {
+						opacity:1;
+					}						
+			}			
+		}
+	}
+	// LIST VIEW UNRESOLVED TWEETS (END) 
+
+	// LIST VIEW YOUTUBE BLOCK (BEGIN)
+		#{$ibm_cci--youtube-block} {
+			@include ibm-listview-commons;
+			width:940px;
+			margin:0;
+
+			.ibm_cci--rea-block {
+				@include ibm_cci--rea-block;
+			}
+
+			.ibm_cci--yt-cb {
+				width:860px;
+				float:left;
+
+				.ibm_cci-fav-ihb {
+					width:800px;
+					padding:0;
+					border:0;
+					float:left;
+
+					p.ibm_cci--feed-icon {
+						float:left;
+						color:#000;
+						padding:5px 0;
+						margin:0;
+						line-height:0;
+						text-indent:-99999;
+
+						img {
+							border:0;
+							outline:0;
+							margin:0 10px 0 0;
+							padding:0;
+							width:16px;
+							height:16px;
+						}					
+					}
+
+					p.ibm_cci--feed-title {
+						text-indent: 0;
+						font-size:1.2rem;
+						line-height: 17px;
+						vertical-align: top;
+					}
+				}
+				.ibm_cci--ttb {
+					clear:both;
+					// margin-top:10px;
+					float:left;
+
+					h2.ibm_cci--tweet-title{
+						font: normal 2.4rem/30px "Helvetica-Light";
+						color: #000;
+						margin:0;
+						padding:0;				
+					}
+
+					p.ibm_cci--tweet-description {
+						font: italic 1.4rem/20px "Helvetica-Light";
+						display:none;
+
+						span.ibm_cci--tweet-description-readmore a {
+							color: #F04E37;
+							text-decoration: none;
+						}
+					}
+				}
+		
+				.ibm_cci--lv-rc-th{ 
+					@include ibm_cci--lv-rc-th;
+					width:800px;
+					margin:0;
+				}					
+			}
+					
+			.ibm_cci--lv-tsb{
+				float:right;
+				width:60px;
+				clear:right;
+
+				p.ibm_cci-tts {
+					float: right;
+					font: normal 12px/16px "Helvetica-Light";
+					vertical-align: top;
+					padding:0;
+
+					a img {
+						opacity:0.4;
+						padding: 0 5px 0 0;
+					}
+					a img:hover {
+						opacity:1;
+					}						
+				}			
+			}
+		}
+
+	// LIST VIEW YOUTUBE BLOCK (END)	
+}
+
+
+// MOBILE STARTS HERE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	/* HOVER EFFECTS BEGIN */
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover {
+#ibm-content .ibm-columns .ibm-col-1-1.ibm_cci__modifier:hover {
 		// border-top:1px solid #F04E37;
 		border-bottom:1px solid $hover-color;
 	}
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
-	#ibm-pcon .ibm-columns .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
+#ibm-content .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
 	{
 		background-color:$hover-color;
 	}
 
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-left} .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-unresolved} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm_cci--youtube-block} .ibm_cci--yt-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	#ibm-pcon .ibm-columns .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	.ibm-col-1-1.ibm_cci__modifier:hover #{$ibm-listview-unresolved} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	.ibm-col-1-1.ibm_cci__modifier:hover #{$ibm_cci--youtube-block} .ibm_cci--yt-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	.ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a
 	{
 		color:$hover-color;
 	}
 	
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-left} .ibm_cci--rcb .ibm_cci-sib {
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib {
 		visibility:visible;
 	}
 
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover .ibm-col-6-2#{$ibm-listview-right} ul li .ibm_cci--lv-rc-sharing ul,
-	#ibm-pcon .ibm-columns .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--gv-rc-sharing ul,
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm_cci--youtube-block} .ibm_cci--yt-cb .ibm_cci--ttb p.ibm_cci--tweet-description {
+#ibm-content .ibm-columns .ibm-col-1-1.ibm_cci__modifier:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
+#ibm-content .ibm-col-6-2.ibm_cci-ibm-col-6-2_modifier:hover #{$ibm-gridview-unresolved} .ibm_cci--unr-cb .ibm_cci--gv-rc-sharing ul,
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover #{$ibm_cci--youtube-block} .ibm_cci--yt-cb .ibm_cci--ttb p.ibm_cci--tweet-description {
 		display:block;
 	}
 	
-	#ibm-pcon .ibm-columns .ibm-col-1-1.ibm_cci-ibm-col-1-1_modifier:hover #{$ibm-listview-right} .ibm_cci--lv-rc-description p a {
+#ibm-content .ibm-col-1-1.ibm_cci__modifier:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a {
 		text-decoration:none;
 		color: $hover-color;
 	}
