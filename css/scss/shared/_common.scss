@@ -1159,7 +1159,7 @@ div.ibm-alternate-rule-2 hr {
 
 p.ibm-ind-link a,
 ul.ibm-link-list a {
-	display: block;
+	display: inline-block;
 	margin: 0;
 	@include px-to-rem(padding-left,25px);
 	text-decoration: none;
