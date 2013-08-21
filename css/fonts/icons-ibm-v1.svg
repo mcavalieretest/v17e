@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2013-8-18: Created.
+2013-8-21: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Sun Aug 18 00:44:24 2013
+Created by FontForge 20120731 at Wed Aug 21 18:57:53 2013
  By Jefferson Florentino
 Created by Jefferson Florentino with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by Jefferson Florentino with FontForge 2.0 (http://fontforge.sf.net)
     bbox="0 -64 512 448"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F100-F119"
+    unicode-range="U+F100-F11A"
   />
     <missing-glyph />
     <glyph glyph-name="uniF100" unicode="&#xf100;" horiz-adv-x="320" 
@@ -86,5 +86,7 @@ c155 0 239 131 239 244v11z" />
 d="M128 9v320h64v-320h-64zM0 137v78l160 160v-78zM320 137l-160 160v78l160 -160v-78z" />
     <glyph glyph-name="uniF119" unicode="&#xf119;" horiz-adv-x="320" 
 d="M272 448c26 0 48 -22 48 -48v-416c0 -26 -22 -48 -48 -48h-224c-26 0 -48 22 -48 48v416c0 26 22 48 48 48h224zM96 424v-16h128v16h-128zM160 -32c18 0 32 14 32 32s-14 32 -32 32s-32 -14 -32 -32s14 -32 32 -32zM288 64v320h-256v-320h256z" />
+    <glyph glyph-name="uniF11A" unicode="&#xf11a;" horiz-adv-x="0" 
+ />
   </font>
 </defs></svg>
