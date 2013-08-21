@@ -68,7 +68,8 @@ a.ibm-wireless-link:before {
 	text-decoration: none;
 }
 
-a.ibm-chevron-link:after {
+a.ibm-chevron-link:after,
+li.ibm-chevron-link a:after {
 	@include px-to-rem(margin-right,25px);
 	text-decoration: none;
 }
