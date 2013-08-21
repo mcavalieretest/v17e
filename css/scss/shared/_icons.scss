@@ -70,7 +70,6 @@ a.ibm-wireless-link:before {
 
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after {
-	@include px-to-rem(margin-right,25px);
 	text-decoration: none;
 }
 
@@ -82,7 +81,8 @@ li.ibm-chevron-link a:after {
 .ibm-cancel-link:before { content: "\00a0\f104\00a0"; }
 .ibm-chat-link:before { content: "\00a0\f105\00a0"; }
 .ibm-check-link:before { content: "\00a0\f106\00a0"; }
-.ibm-chevron-link:after { content: "\00a0\f107\00a0"; }
+.ibm-chevron-link:after,
+li.ibm-chevron-link a:after { content: "\00a0\f107\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f108\00a0"; }
 .ibm-delicious-link:before { content: "\00a0\f109\00a0"; }
 .ibm-demo-link:before { content: "\00a0\f10a\00a0"; }
