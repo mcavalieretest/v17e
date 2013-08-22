@@ -484,16 +484,14 @@ background-position: 3px -400px;
 */
 
 
-/* masthead A/B testing styles begin ============================== */
+// masthead styles begin ==============================
 
-/* modified mega menu for A/B testing of masthead */
-
-#ibm-masthead.ibm-alternate-masthead {
+#ibm-masthead {
 	*overflow: hidden;
 	_position: relative;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu {
+#ibm-masthead #ibm-common-menu {
 	background-color: #DDD;
 	*background: none;
 	_background: none; /* IE6 fix */  
@@ -505,54 +503,54 @@ background-position: 3px -400px;
 	box-shadow: 0px -9px 7px -9px #bbb inset;
 }
 
-#ibm-masthead.ibm-alternate-masthead .ibm-ribbon-pane .ibm-columns {
+#ibm-masthead .ibm-ribbon-pane .ibm-columns {
 	padding-top: 0;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3,
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu h3 a {
+#ibm-masthead #ibm-common-menu h3,
+#ibm-masthead #ibm-common-menu h3 a {
 	color: #333;
 	text-shadow: 0 1px 0 #FFF;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu a {
+#ibm-masthead #ibm-common-menu a {
 	color: #555;
 	text-shadow: none;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu a:hover {
+#ibm-masthead #ibm-common-menu a:hover {
 	text-decoration: underline;
 	color: #222;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu a:active {
+#ibm-masthead #ibm-common-menu a:active {
 	text-decoration: underline;
 	color: #555;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li:before {
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before {
 	color: #999;
 	@include px-to-rem(margin-left,-10px);
 }
 
-#{$ie7Selector} #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li {
+#{$ie7Selector} #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li {
     background: url("#{$imagePath}/i/v17/bullets-alt.gif") no-repeat -2px 2px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li:hover:before,
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:hover:before,
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
     color: #F08F26;
 }
 
-#ibm-masthead.ibm-alternate-masthead .ibm-mm-close span {
+#ibm-masthead .ibm-mm-close span {
 	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
 }
 
-#ibm-masthead.ibm-alternate-masthead .ibm-mm-close span:hover {
+#ibm-masthead .ibm-mm-close span:hover {
 	background-position: 0px -23px;
 }
 
-#ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs {
+#ibm-masthead .ibm-menu-subtabs {
 	background-color: #CCC;
 	*background: none;
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
@@ -565,38 +563,38 @@ background-position: 3px -400px;
 	opacity: 0;
 }
 
-#ibm-masthead.ibm-alternate-masthead .ibm-menu-subtabs ul {
+#ibm-masthead .ibm-menu-subtabs ul {
 	width: 940px;
 	margin: 0 auto;
 	padding: 14px 10px 0;
 	margin-bottom: -1px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li {
+#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li {
 	margin: 0 20px 0 0;
 	background-image: none;
 	float: left;
 	padding: 0 10px 11px 10px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
+#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
 	background: url("#{$imagePath}/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a {
+#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li a {
 	text-shadow: 0 1px 0 #FFF;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li a:hover {
+#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li a:hover {
 	text-decoration: none;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a {
+#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a {
 	font-weight: bold;
 	color: #222;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-static {
+#ibm-masthead #ibm-common-menu .ibm-menu-static {
 	border-left: 1px solid #C8C8C8;
 	box-shadow: 1px 0 0 rgba(255,255,255,.5) inset;
 	width: 170px;
@@ -606,33 +604,33 @@ background-position: 3px -400px;
 	margin: 0px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-static, 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic {
+#ibm-masthead #ibm-common-menu .ibm-menu-static, 
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic {
 	padding-top: 20px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic {
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic {
 	margin-right: 0;
 	width: 758px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 {
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 {
 	width: 172px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last {
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last {
 	width: 162px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
 	margin-top: 0px;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
+#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
 	margin-top: 10px;
 }
 
-/* masthead A/B testing styles end ============================== */
+// masthead styles end ==============================
 
 /* search field begin ============================== */
 
