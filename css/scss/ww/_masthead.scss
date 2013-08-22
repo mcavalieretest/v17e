@@ -3,8 +3,8 @@
 #ibm-masthead {
 	width: 100%;
 	min-width: 980px;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	position: fixed;
 	z-index: 900;
 	border-top: 1px solid #666;
@@ -22,7 +22,7 @@
 
 #ibm-top.ibm-no-scroll, 
 #ibm-top.ibm-no-scroll #ibm-leadspace-head {	
-	margin-top: 0px;	
+	margin-top: 0;	
 }
 
 /* masthead close button style --------begin-----*/
@@ -75,12 +75,12 @@
 }
 
 #ibm-masthead .ibm-mm-close span:hover {
-	background-position: 0px -25px;
+	background-position: 0 -25px;
 }
 
 #ibm-masthead .ibm-mm-close span:active,
 #ibm-masthead .ibm-mm-close span:focus {
-	background-position: 0px -49px;
+	background-position: 0 -49px;
 }
 
 /* masthead close button style --------end-----*/
@@ -150,7 +150,7 @@
 }
 
 #ibm-mast-options li#ibm-geo {
-	padding: 4px 0px;
+	padding: 4px 0;
 }
 .dijit_a11y #ibm-mast-options li#ibm-geo{
 	padding: 4px 20px;
@@ -235,7 +235,7 @@
 
 #ibm-universal-nav #ibm-unav-links,
 #ibm-universal-nav #ibm-menu-links {
-	margin: 0px 20px;
+	margin: 0 20px;
 	float: left;
 }
 
@@ -254,8 +254,8 @@
 	color: #CCC;
 	display: block;
 	text-decoration: none;
-	letter-spacing: 0px; 
-	text-shadow: 0px -1px 0 #000;
+	letter-spacing: 0; 
+	text-shadow: 0 -1px 0 #000;
 	padding: 15px 12px;
 	_height: 1%;
 	_float: left;
@@ -272,8 +272,8 @@
 #ibm-universal-nav li#ibm-home a {
 	position: absolute;
 	display: block;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") 0px 0px no-repeat;
 	_background: none;  
 	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/t/ibm-logo.png');
@@ -282,11 +282,11 @@
 	float: left;
 	height: 50px;
 	text-indent: -999em;
-	padding: 0px;
+	padding: 0;
 }
 
 #ibm-universal-nav li#ibm-home.ibm-sm-logo a {
-	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") no-repeat 0px -100px;
+	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") no-repeat 0 -100px;
 	height: 30px;
 }
 
@@ -298,7 +298,7 @@
 #ibm-universal-nav #ibm-menu-links li a:focus {
    	@include background-gradient(top, #696c72, #333334);
 	_background: none transparent no-scroll repeat; 
-	text-shadow: 0px 0px 3px #FFF;
+	text-shadow: 0 0 3px #FFF;
 	color: #FFF;
 }
 
@@ -327,12 +327,12 @@
 
 #ibm-universal-nav li#ibm-home.ibm-sm-logo a:hover, 
 #ibm-universal-nav li#ibm-home.ibm-sm-logo a:focus {
-	background-position: 0px -100px;
+	background-position: 0 -100px;
 }
 
 #ibm-universal-nav li#ibm-home a:hover, 
 #ibm-universal-nav li#ibm-home a:focus {
-	background-position: 0px -50px;
+	background-position: 0 -50px;
 }
 
 #ibm-universal-nav li.ibm-active {
@@ -500,7 +500,7 @@ background-position: 3px -400px;
    	@include background-gradient(top, #dddddd, #f1f1f1);
 	border-top: 0;
 	border-bottom-color: #FFF;
-	box-shadow: 0px -9px 7px -9px #bbb inset;
+	box-shadow: 0 -9px 7px -9px #bbb inset;
 }
 
 #ibm-masthead #ibm-common-menu h3,
@@ -543,7 +543,7 @@ background-position: 3px -400px;
 }
 
 #ibm-masthead .ibm-mm-close span:hover {
-	background-position: 0px -23px;
+	background-position: 0 -23px;
 }
 
 #ibm-masthead .ibm-menu-subtabs {
@@ -597,7 +597,7 @@ background-position: 3px -400px;
 	height: 282px;
 	*height: 232px;
 	padding-left: 20px;
-	margin: 0px;
+	margin: 0;
 }
 
 #ibm-masthead #ibm-common-menu .ibm-menu-static, 
@@ -619,7 +619,7 @@ background-position: 3px -400px;
 }
 
 #ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 #ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
@@ -647,7 +647,7 @@ background-position: 3px -400px;
 	height: 24px; 
 	margin: 13px 40px -36px 1px;
 	display: inline-block;
-	border: 0px solid transparent;
+	border: 0 solid transparent;
 	_float: none;
 	_position: absolute;
 	_right: 0;
@@ -702,7 +702,7 @@ background-position: 3px -400px;
 	position: relative;
 	float: left;
 	color: transparent;
-	border: 0px none;
+	border: 0 none;
 	text-align: right;
 	text-indent: -999em;
 	cursor: pointer;
