@@ -159,17 +159,12 @@ strong {
 	@include px-to-rem(line-height,15px);
 }
 
-#{$ie7Selector} #ibm-content #ibm-content-main * {
-	font-size: 15px;
-	line-height: 18px;
-}
-
+#{$ie7Selector} #ibm-content #ibm-content-main *,
 #{$ie7Selector} #ibm-common-menu *,
 #{$ie7Selector} #ibm-related-content * {
 	font-size: 13px;
 	line-height: 15px;
 }
-
 // End of Content grid font size =======================
 
 
