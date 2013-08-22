@@ -14,19 +14,14 @@
     width: auto;
     padding: 0 0 10px;
 }
-#ibm-content .ibm-container .ibm-columns {
-    margin: 0 -10px;
-}
 
-/*#ibm-leadspace-body .ibm-columns,
-#ibm-media .ibm-columns {
-    width: $landingGrid - $landingSpace;
-    padding: 0 ($landingSpace / 2);
-}
-*/
 .ibm-landing-page #ibm-content .ibm-columns {
     width: $landingGrid - $landingSpace;
     padding: 0 ($landingSpace / 2) ($landingSpace / 2);
+}
+
+#ibm-content .ibm-container .ibm-columns {
+    margin: 0 -10px;
 }
 
 .ibm-landing-page #ibm-content .ibm-container .ibm-columns {
@@ -34,26 +29,10 @@
 	margin: 0 -20px;
 }
 
-.ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
-	margin: 0 -10px;
-}
-
-.ibm-landing-page #ibm-content .ibm-columns .ibm-columns,
-.ibm-content-expand #ibm-content .ibm-columns .ibm-columns {
+#ibm-top .ibm-columns .ibm-columns {
     padding: 0;
     margin: 0 (-($landingSpace / 2));
     width: auto; 
-}
-
-.ibm-landing-page #ibm-content .ibm-columns .ibm-media .ibm-columns {
-    overflow: visible;
-    width: $landingGrid - $landingSpace;
-}
-
-
-
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 .ibm-video .ibm-ribbon .ibm-columns {
-    width: $landingGrid - $landingSpace;
 }
 
 .ibm-columns:after {
@@ -61,10 +40,23 @@
     overflow: hidden;
 }
 
-.ibm-columns [class*="ibm-col-"]{
+.ibm-columns [class*="ibm-col-"] {
     float: left;
     margin: 0 ($landingSpace / 2);
     min-height: 1px;
+}
+
+.ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
+	margin: 0 -10px;
+}
+
+.ibm-landing-page #ibm-content .ibm-columns .ibm-media .ibm-columns {
+    overflow: visible;
+    width: $landingGrid - $landingSpace;
+}
+
+.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 .ibm-video .ibm-ribbon .ibm-columns {
+    width: $landingGrid - $landingSpace;
 }
 
 
@@ -87,14 +79,14 @@
 ==== Enabling nesting on LN pages END
 */
 
-.ibm-columns .ibm-col-4-1{
+.ibm-columns .ibm-col-4-1 {
 //    width: 220px;
 	width: (($landingGrid - $landingSpace) / 4) - $landingSpace;
 }
 
 .ibm-columns .ibm-col-4-2,
 .ibm-columns .ibm-col-2-1,
-.ibm-columns .ibm-col-6-3{
+.ibm-columns .ibm-col-6-3 {
 //    width: 460px;
 	width: (($landingGrid - $landingSpace) / 2) - $landingSpace;
 }
@@ -104,7 +96,7 @@
 	width: ((($landingGrid - $landingSpace) / 4) * 3) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-1{
+.ibm-columns .ibm-col-5-1 {
 //    width: 172px;
    	width: (($landingGrid - $landingSpace) / 5) - $landingSpace;
 }
@@ -114,29 +106,29 @@
    	width: ((($landingGrid - $landingSpace) / 5) * 2) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-3{
+.ibm-columns .ibm-col-5-3 {
 //    width: 556px;
    	width: ((($landingGrid - $landingSpace) / 5) * 3) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-4{
+.ibm-columns .ibm-col-5-4 {
 //    width: 748px;
    	width: ((($landingGrid - $landingSpace) / 5) * 4) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-1{
+.ibm-columns .ibm-col-6-1 {
 //    width: 140px;
 //    _width: 130px;
 	width: (($landingGrid - $landingSpace) / 6) - $landingSpace;
 	_width: ((($landingGrid - $landingSpace) / 6) - $landingSpace) - 10px;   	
 }
 
-.ibm-columns .ibm-col-6-2{
+.ibm-columns .ibm-col-6-2 {
 //    width: 300px;
    	width: ((($landingGrid - $landingSpace) / 6) * 2) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-4{
+.ibm-columns .ibm-col-6-4 {
 //    width: 620px;
    	width: ((($landingGrid - $landingSpace) / 6) * 4) - $landingSpace;
 }
@@ -147,50 +139,36 @@
 }
 
 .ibm-columns .ibm-col-1-1,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1{
+.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 {
 //    width: 940px;
    width: ($landingGrid - ($landingSpace * 2));
   
 }
 
-.ibm-columns .ibm-col-1-1{
-   // float: none;
-  	//clear: both;
+#ibm-content .ibm-columns .ibm-col-1-1 {
+	width: auto;
 }
 
-#ibm-content .ibm-columns .ibm-col-2-1{
+#ibm-content .ibm-columns .ibm-col-2-1 {
     width: 268px;
 }
-
-
 
 #ibm-content .ibm-columns .ibm-video, 
 #ibm-content .ibm-columns .ibm-playlist {
     margin-bottom: 0;
 }
 
-/*.ibm-columns .ibm-col-6-2,
-.ibm-columns .ibm-col-6-4{
-    float: left;
-    clear: none;
-}
-*/
-
-.v17 .dijitDialogPaneContent .ibm-columns{
+.v17 .dijitDialogPaneContent .ibm-columns {
     padding-left: 0;
 }
+
 .v17 .dijitDialogPaneContent .ibm-container .ibm-columns .ibm-col-1-1 {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
 }
 
-#ibm-content .ibm-columns .ibm-col-1-1 {
-	width:auto;
-}
 //================content-expand for 5 column layout============
-
-
 
 .ibm-content-expand #ibm-content .ibm-columns .ibm-col-5-1 {
     width: 169px;
@@ -204,6 +182,7 @@
 .ibm-content-expand #ibm-content .ibm-columns .ibm-col-5-3 {
     width: 549px;
 }
+
 //=============End of content-exapnd style================
 
 
@@ -214,8 +193,7 @@
     padding: 0;
 }
 
-#ibm-content #ibm-content-sidebar .ibm-columns .ibm-col-5-1  {
+#ibm-content-sidebar .ibm-columns .ibm-col-5-1  {
 	padding: 0;
 	margin: 0;
-	
 }
