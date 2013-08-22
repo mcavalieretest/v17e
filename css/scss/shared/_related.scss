@@ -134,15 +134,11 @@
 	position: relative;	
 }
 
-#ibm-related-content .ibm-ribbon-pane .ibm-columns {
-	margin: 0;
+#ibm-related-content .ibm-columns .ibm-ribbon-pane .ibm-columns {
+	margin: 0 10px;
 	padding: 0;
 	float: left;
 	clear: none;
-}
-
-#ibm-related-content .ibm-columns .ibm-columns {
-	padding: 0;
 }
 
 #ibm-related-content .ibm-ribbon-pane .ibm-ribbon-section .ibm-col-5-1, 
