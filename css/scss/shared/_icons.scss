@@ -29,6 +29,7 @@ li.ibm-chevron-link a:after,
 .ibm-twitter-link:before,
 .ibm-upward-link:before,
 .ibm-wireless-link:before,
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before {
 	font-family: 'iconsIBM';
 	font-variant: normal;
@@ -78,6 +79,7 @@ li.ibm-chevron-link a:after {
 .ibm-audio-link:before { content: "\00a0\f101\00a0"; }
 .ibm-back-link:before { content: "\00a0\f102\00a0"; }
 .ibm-bullet:before,
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before { content: "\f103"; }
 .ibm-cancel-link:before { content: "\00a0\f104\00a0"; }
 .ibm-chat-link:before { content: "\00a0\f105\00a0"; }

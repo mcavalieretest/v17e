@@ -38,8 +38,7 @@
 	@include px-to-rem(margin-left,-10px);
 }
 
-#{$ie7Selector} #ibm-footer-module li,
-#{$ie8Selector} #ibm-footer-module li {
+#{$ie7Selector} #ibm-footer-module li {
     background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
 }
 

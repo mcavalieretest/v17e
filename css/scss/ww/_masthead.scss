@@ -530,13 +530,18 @@ background-position: 3px -400px;
 	color: #555;
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu li {
-	background: url("#{$imagePath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
+#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li:before {
+	color: #999;
+	@include px-to-rem(margin-left,-10px);
 }
 
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu li:hover,
-#ibm-masthead.ibm-alternate-masthead #ibm-common-menu li.ibm-active {
-	background-position: -2px -98px;
+#{$ie7Selector} #ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li {
+    background: url("#{$imagePath}/i/v17/bullets-alt.gif") no-repeat -2px 2px;
+}
+
+#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li:hover:before,
+#ibm-masthead.ibm-alternate-masthead #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
+    color: #F08F26;
 }
 
 #ibm-masthead.ibm-alternate-masthead .ibm-mm-close span {
