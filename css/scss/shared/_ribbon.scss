@@ -69,13 +69,12 @@
 }
 
 #ibm-masthead .ibm-ribbon-pane {
-	width: 980px;
+	width: 960px;
 }
 
 /* *end* - WorkItem 278022 - reverted to rev.10176: to show flash/ oblject which loads after ribbon height calculated - adding .ibm-ribbon-fixed for dynamic objects - Hemang P */
 
 #ibm-masthead .ibm-ribbon-pane .ibm-columns  {
-	padding-top: 10px;
 	clear: none;
 	float: left;
 }
