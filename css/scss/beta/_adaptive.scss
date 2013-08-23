@@ -26,7 +26,7 @@ a.ibm-thumbnail-module h3 {
 }
 
 .ibm-col-space {
-	padding: 0px 10px !important;
+	padding: 0 10px !important;
 }
 
 
@@ -195,7 +195,7 @@ a.ibm-thumbnail-module h3 {
 .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap h3,
 .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap p,
 .ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap ul {
-	margin-left: 0px !important;
+	margin-left: 0 !important;
 	margin-right: 70px !important;
 }
 // thumbnail swap to move image to right side on mobile view
@@ -215,7 +215,7 @@ a.ibm-thumbnail-module h3 {
 
 // Begin masthead test updates
 #ibm-content {
-	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0px;
+	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0;
 }
 // Begin masthead test updates
 
@@ -226,7 +226,7 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 0px) and (max-width: 800px) {
 
 	.ibm-landing-page.ibm-banded#ibm-top {
-		margin-top: 0px !important;
+		margin-top: 0 !important;
 	}
 	
 	// Begin masthead test updates
@@ -243,7 +243,7 @@ a.ibm-thumbnail-module h3 {
 			height: 30px !important;
 		}
 		li#ibm-home a {
-			background-position: 0px -98px;
+			background-position: 0 -98px;
 			height: 30px !important;
 		}
 		#ibm-menu-links {
@@ -253,7 +253,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-search-form {
-		margin: 4px 40px 0px 1px;
+		margin: 4px 40px 0 1px;
 	}
 	// End masthead test updates
 	
@@ -267,11 +267,16 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-columns .ibm-columns {
 		width: auto;
-		padding: 0px;
+		padding: 0;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-related-content .ibm-ribbon-section {
 		margin-left: -10px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-footer ul {
+		width: auto;
+		padding: 0;
 	}
 	
 }
@@ -288,7 +293,7 @@ a.ibm-thumbnail-module h3 {
 		content: "min-width: 0px | max-width: 480px"; 
 	}
 	.ibm-landing-page.ibm-banded #ibm-content {
-		background: url("../i/fpo/bg-grid-320.gif") repeat-y 50% 0px;
+		background: url("../i/fpo/bg-grid-320.gif") repeat-y 50% 0;
 		min-width: 320px;
 	}
 	// to be removed.  only for testing
@@ -310,10 +315,10 @@ a.ibm-thumbnail-module h3 {
 		-moz-appearance: none;
 		appearance: none;
 		border: 1px solid #000;
-		border-radius: 0px;
+		border-radius: 0;
 		min-width: 100%;
 		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-		padding: 10px 0px;
+		padding: 10px 0;
 	}
 	// mobile specific styles
 		
@@ -323,7 +328,7 @@ a.ibm-thumbnail-module h3 {
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-search-form {
-		margin: 4px 20px 0px 1px;
+		margin: 4px 20px 0 1px;
 	}
 	
 	#ibm-social-tools {
@@ -338,7 +343,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-head {
-		padding: 0px 10px;
+		padding: 0 10px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
@@ -346,11 +351,11 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-		.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
-		.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		width: 320px;
-		margin: 0px 10px;
+		margin: 0 10px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-related-content,
@@ -358,7 +363,7 @@ a.ibm-thumbnail-module h3 {
 	
 		.ibm-columns {
 			width: 300px;
-			padding: 0px 10px;
+			padding: 0 10px;
 		
 			.ibm-col-1-1,
 			.ibm-col-4-1,
@@ -401,15 +406,15 @@ a.ibm-thumbnail-module h3 {
 
 	// ribbon column adjust
 	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-		.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
-		.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		margin: 10px auto;
 		width: 280px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns {
-		padding: 0px 10px;
+		padding: 0 10px;
 	}
 	
 	// ribbon column adjust jeff
@@ -457,7 +462,7 @@ a.ibm-thumbnail-module h3 {
 	.ibm-thumbnail-module.ibm-thumbnail-swap h3,
 	.ibm-thumbnail-module.ibm-thumbnail-swap p,
 	.ibm-thumbnail-module.ibm-thumbnail-swap ul {
-		margin-left: 0px !important;
+		margin-left: 0 !important;
 		margin-right: 70px !important;
 	}
 	// thumbnail swap to move image to right side on mobile view
@@ -469,19 +474,13 @@ a.ibm-thumbnail-module h3 {
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 300px;
-		padding: 0px 10px;
+		padding: 0 10px;
 		
 		.ibm-col-6-1 {
 			width: 120px;
 			min-height: 230px;
 		}
 
-	}
-
-	.ibm-landing-page.ibm-banded #ibm-footer ul {
-		width: 300px;
-		margin: 0px;
-		padding: 0px;
 	}
 	// End footer test updates
 
@@ -490,12 +489,12 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
-@media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 640px) {
 
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 481 | max-width: 600px";
+		content: "min-width: 481 | max-width: 640px";
 	}
 	
 	.ibm-landing-page.ibm-banded#ibm-top {
@@ -515,11 +514,11 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
-		padding: 0px 40px;
+		padding: 0 40px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-head {
-		padding: 0px 30px;
+		padding: 0 30px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
@@ -531,7 +530,7 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
 	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
 		width: auto;
-		margin: 10px 0px;
+		margin: 10px 40px;
 	}
 
 	.ibm-landing-page.ibm-banded #ibm-related-content,
@@ -539,7 +538,7 @@ a.ibm-thumbnail-module h3 {
 	
 		.ibm-columns {
 			width: 540px;
-			padding: 0px 30px;
+			padding: 0 30px;
 		
 			.ibm-col-1-1 {
 				width: 520px;
@@ -594,17 +593,9 @@ a.ibm-thumbnail-module h3 {
 
 
 	// ribbon column adjust
-	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
-		margin: 10px 40px;
-	}
-	
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns {
-		padding: 0px 10px;
+		padding: 0 10px;
 	}
-	
 	// ribbon column adjust jeff
 
 	.ibm-landing-page.ibm-banded #ibm-related-content .ibm-ribbon-section {
@@ -685,18 +676,12 @@ a.ibm-thumbnail-module h3 {
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 540px;
-		padding: 0px 30px;
+		padding: 0 30px;
 		
 		.ibm-col-6-1 {
 			width: 160px;
 		}
 		
-	}
-
-	
-	.ibm-landing-page.ibm-banded #ibm-footer ul {
-		width: auto;
-		padding: 0px;
 	}
 	// End footer test updates
 
@@ -704,12 +689,65 @@ a.ibm-thumbnail-module h3 {
 // -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
 
 
-// -------------------------------------------------------------- media query to be used on iPad / Android viewport -------------------------------------------------------------- 
-@media only screen and (min-width: 601px) and (max-width: 800px) {
+// -------------------------------------------------------------- media query to be used on 640px Android viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 601px) and (max-width: 640px) {
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 601 | max-width: 768px";
+		content: "min-width: 601px | max-width: 640px";
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content,
+	.ibm-landing-page.ibm-banded #ibm-related-content {
+		width: 640px;
+	}
+	// to be removed.  only for testing
+	
+	.ibm-landing-page.ibm-banded#ibm-top {
+		min-width: 640px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
+	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
+		padding-left: 61px;
+		padding-right: 61px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
+		padding: 0 60px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		padding: 0 50px;
+	}
+		
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
+		margin: 10px 60px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-related-content,
+	.ibm-landing-page.ibm-banded #ibm-content {
+	
+		.ibm-columns {
+			padding: 0 50px;
+		}
+			
+	}
+
+}
+// -------------------------------------------------------------- media query to be used on 640px Android viewport -------------------------------------------------------------- 
+
+
+
+// -------------------------------------------------------------- media query to be used on iPad / Android viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 641 | max-width: 800px";
 	}
 	.ibm-landing-page.ibm-banded #ibm-content {
 		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
@@ -730,11 +768,11 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
-		padding: 0px 64px;
+		padding: 0 64px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-head {
-		padding: 0px 54px;
+		padding: 0 54px;
 	}
 	
 	.ibm-landing-page.ibm-banded #ibm-content-main > p {
@@ -754,7 +792,7 @@ a.ibm-thumbnail-module h3 {
 	
 		.ibm-columns {
 			width: auto;
-			padding: 0px 54px;
+			padding: 0 54px;
 		
 			.ibm-col-1-1 {
 				width: 640px;
@@ -811,14 +849,14 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page.ibm-banded #ibm-related-content .ibm-columns {
 		width: 660px;
-		margin: 0px;
+		margin: 0;
 	}
 	
 	
 	// ribbon column adjust
 	.ibm-landing-page.ibm-banded #ibm-content .ibm-ribbon .ibm-columns,
 	.ibm-landing-page.ibm-banded #ibm-related-content .ibm-ribbon .ibm-columns {
-		padding: 0px 10px;
+		padding: 0 10px;
 	}
 
 	// ribbon column adjust jeff
@@ -895,17 +933,12 @@ a.ibm-thumbnail-module h3 {
 	// Begin footer test updates
 	.ibm-landing-page.ibm-banded #ibm-footer-module .ibm-columns {
 		width: 660px;
-		padding: 0px 54px;
+		padding: 0 54px;
 		
 		.ibm-col-6-1 {
 			width: 200px;
 		}
 
-	}
-
-	.ibm-landing-page.ibm-banded #ibm-footer ul {
-		width: 732px;
-		padding: 0px;
 	}
 	// End footer test updates
 	
@@ -931,5 +964,35 @@ a.ibm-thumbnail-module h3 {
 		min-width: 800px;
 	}
 	
+	.ibm-landing-page.ibm-banded #ibm-leadspace-head h1,
+	.ibm-landing-page.ibm-banded #ibm-leadspace-head p {
+		padding-left: 81px;
+		padding-right: 81px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
+		padding: 0 80px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-content-head {
+		padding: 0 70px;
+	}
+		
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main > .ibm-ribbon,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-container,
+	.ibm-landing-page.ibm-banded #ibm-content-main .ibm-band > .ibm-ribbon {
+		margin: 10px 80px;
+	}
+	
+	.ibm-landing-page.ibm-banded #ibm-related-content,
+	.ibm-landing-page.ibm-banded #ibm-content {
+	
+		.ibm-columns {
+			padding: 0 70px;
+		}
+			
+	}
+
 }
 // -------------------------------------------------------------- media query to be used on 800px Android viewport -------------------------------------------------------------- 
