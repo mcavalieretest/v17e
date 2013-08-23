@@ -270,6 +270,11 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 	}
 	
+	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs,
+	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs ul.ibm-tabs {
+		padding: 0px;
+	}
+	
 	.ibm-landing-page #ibm-content table {
 		width: 100%;
 	}
