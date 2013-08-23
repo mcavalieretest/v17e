@@ -15,6 +15,11 @@ a.ibm-thumbnail-module {
 	display: block;	
 }
 
+#{$ie7Selector} a.ibm-thumbnail-module {
+	display: inline-block;
+	min-height:70px;
+}
+
 a.ibm-thumbnail-module h2,
 a.ibm-thumbnail-module h3 {
 	color: #000;
