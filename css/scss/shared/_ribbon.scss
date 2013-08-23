@@ -133,43 +133,43 @@
 .ibm-ribbon-section {
 	position: absolute;
 	width: 20000em;
-	margin: 0px -10px;
+	margin: 0 -10px;
 }
 
 .ibm-ribbon-container.ibm-media-list .ibm-ribbon-section {
-	margin: 0px;
+	margin: 0;
 }
 
 .ibm-ribbon-nav {
-	margin: 0px auto;
+	margin: 0 auto;
 	width: 100px;
 	height: 20px;
 	text-align: center;
 }
 
 .ibm-ribbon-nav a {
-	background: url("#{$imagePath}/i/v17/icons/scroll_nav_sprite.gif") 0px -200px no-repeat;
+	background: url("#{$imagePath}/i/v17/icons/scroll_nav_sprite.gif") 0 -200px no-repeat;
 	display: inline-block;
 	width: 8px;
 	height: 8px;
 	margin: 3px;
 	*margin-top: 10px;
-	_margin-top: 0px;
+	_margin-top: 0;
 	text-decoration: none;
 }
 
 .ibm-ribbon-nav a:hover {
-	background-position: 0px -208px;      
+	background-position: 0 -208px;      
 }
 
 .ibm-ribbon-nav a.ibm-active {
-	background-position: 0px -216px;     
+	background-position: 0 -216px;     
 }
 
 .ibm-ribbon-nav a, a.ibm-ribbon-next,a.ibm-ribbon-prev {
-	font-size: 0px;
+	font-size: 0;
 	text-indent: -100%;
-	*text-indent: 0px;
+	*text-indent: 0;
 	_text-indent: -9999px;
 	overflow:hidden;
 	margin-top: 10px;
@@ -183,8 +183,8 @@
 /* move the nav (the dots) up to the h2 */
 .ibm-alternate .ibm-container-body .ibm-ribbon-nav {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 0;
+	right: 0;
 	margin-top: -30px;
 	text-align: right;
 }
@@ -216,7 +216,7 @@ a.ibm-disabled {
 }
 
 a.ibm-ribbon-next {
-	background-position: 100% 0px; 
+	background-position: 100% 0; 
 	right: -20px;
 }
 
@@ -233,7 +233,7 @@ a.ibm-ribbon-next:active {
 }
 
 a.ibm-ribbon-prev {
-	background-position: 0px -100px;
+	background-position: 0 -100px;
 	left: -20px;
 }
 
@@ -242,7 +242,7 @@ a.ibm-ribbon-prev {
 }
 
 a.ibm-ribbon-prev:hover, a.ibm-ribbon-prev:active {
-	background-position: 0px -150px;
+	background-position: 0 -150px;
 }
 /* ibm-ribbon styles end */
 

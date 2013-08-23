@@ -1,12 +1,12 @@
 // related styles begin ============================================
 
 #ibm-related-content {
-	background: #F0F0F0 url("#{$imagePath}/i/v17/t/related-bg.png") repeat-x 50% 0px;
+	background: #F0F0F0 url("#{$imagePath}/i/v17/t/related-bg.png") repeat-x 50% 0;
 	@include box-shadow(inset 0 1px 0 #E5E5E5);
 	border-bottom: 2px solid #FFF;
-	min-height: 0px;
+	min-height: 0;
 	*min-height: auto;
-	_height: 0px;
+	_height: 0;
 }
 
 #ibm-related-content .ibm-columns div[class^="ibm-col-"] {
