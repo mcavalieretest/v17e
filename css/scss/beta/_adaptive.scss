@@ -29,28 +29,28 @@ a.ibm-thumbnail-module h3 {
 	padding: 0 10px !important;
 }
 
-
-.ibm-landing-page .ibm-columns.ibm-w-gutter .ibm-col-4-2,
-.ibm-landing-page .ibm-columns.ibm-w-gutter .ibm-col-6-3,
-.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-4-2,
-.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3,
-.ibm-landing-page .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] {
-	width: 450px;
+.ibm-landing-page .ibm-columns > .ibm-thumbnail-small,
+.ibm-landing-page .ibm-w-gutter {
+	margin: 0px -10px;
 }
 
-.ibm-landing-page .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"] {
+.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
+	width: 450px;
+	margin: 0px 20px;
+}
+
+.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
 	clear: left;
 }
 
-.ibm-landing-page .ibm-columns.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-.ibm-landing-page .ibm-columns.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
-.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
-.ibm-landing-page .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
-	margin-left: 30px;
+#{$ie7Selector} .ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"],
+#{$ie8Selector} .ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
+	clear: none;
 }
 
-.ibm-landing-page .ibm-columns.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
+.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
 	clear: right;
 }
 
@@ -137,15 +137,13 @@ a.ibm-thumbnail-module h3 {
 
 
 // thumbnail-small applied to ibm-columns to change to smaller thumb option
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite,
-.ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite {
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite {
 	float: left;
 	height: 60px !important;
 	width: 60px !important;
 }
 
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize,
-.ibm-thumbnail-small.ibm-thumbnail-module .ibm-resize {
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-resize {
 	float: left;
 	height: auto !important;
 	width: 60px !important;
@@ -154,27 +152,19 @@ a.ibm-thumbnail-module h3 {
 .ibm-thumbnail-small .ibm-thumbnail-module h2,
 .ibm-thumbnail-small .ibm-thumbnail-module h3,
 .ibm-thumbnail-small .ibm-thumbnail-module p,
-.ibm-thumbnail-small .ibm-thumbnail-module ul,
-.ibm-thumbnail-small.ibm-thumbnail-module h2,
-.ibm-thumbnail-small.ibm-thumbnail-module h3,
-.ibm-thumbnail-small.ibm-thumbnail-module p,
-.ibm-thumbnail-small.ibm-thumbnail-module ul {
+.ibm-thumbnail-small .ibm-thumbnail-module ul {
 	margin-left: 70px !important;
 }
 .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h2,
-.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3,
-.ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite + h2,
-.ibm-thumbnail-small.ibm-thumbnail-module .ibm-sprite + h3 {
+.ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3 {
 	position: relative;
 	top: -2px;
 }
 
-.ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img,
-.ibm-thumbnail-small.ibm-thumbnail-module:hover .ibm-sprite img {
+.ibm-thumbnail-small .ibm-thumbnail-module:hover .ibm-sprite img {
 	top: -75px !important;
 }
-.ibm-thumbnail-small .ibm-thumbnail-module:active .ibm-sprite img,
-.ibm-thumbnail-small.ibm-thumbnail-module:active .ibm-sprite img {
+.ibm-thumbnail-small .ibm-thumbnail-module:active .ibm-sprite img {
 	top: -150px !important;
 }
 // thumbnail-small applied to ibm-columns to change to smaller thumb option
@@ -182,19 +172,13 @@ a.ibm-thumbnail-module h3 {
 
 // thumbnail swap to move image to right side on mobile view
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite,
-.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-sprite,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
 	float: right;
 }
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h2,
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h3,
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap p,
-.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap ul,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap h2,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap h3,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap p,
-.ibm-thumbnail-small.ibm-thumbnail-module.ibm-thumbnail-swap ul {
+.ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap ul {
 	margin-left: 0 !important;
 	margin-right: 70px !important;
 }
@@ -383,7 +367,7 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-1-1,
 			.ibm-col-4-1,
 			.ibm-col-4-2,
-			&.ibm-w-gutter .ibm-col-4-2,
+			.ibm-w-gutter .ibm-col-4-2,
 			.ibm-col-4-3,
 			.ibm-col-5-1,
 			.ibm-col-5-2,
@@ -392,18 +376,13 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-1,
 			.ibm-col-6-2,
 			.ibm-col-6-3,
-			&.ibm-w-gutter .ibm-col-6-3,
-			&.ibm-thumbnail-small > div[class^="ibm-col-"],
+			.ibm-w-gutter .ibm-col-6-3,
+			.ibm-thumbnail-small > div[class^="ibm-col-"],
 			.ibm-col-6-4,
 			.ibm-col-6-5 {
 				width: 280px;
 				@include px-to-rem(font-size,18px);
 				@include px-to-rem(line-height,24px);
-			}
-			&.ibm-w-gutter .ibm-col-4-2 + .ibm-col-4-2,
-			&.ibm-w-gutter .ibm-col-6-3 + .ibm-col-6-3,
-			&.ibm-thumbnail-small > div[class^="ibm-col-"]:nth-of-type(2n) {
-				margin-left: 10px;
 			}
 		}
 		.ibm-ribbon .ibm-w-gutter {
@@ -582,9 +561,9 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-2 {
 				width: 160px;
 			}
-			&.ibm-w-gutter .ibm-col-4-2,
-			&.ibm-w-gutter .ibm-col-6-3,
-			&.ibm-thumbnail-small > div[class^="ibm-col-"] {
+			.ibm-w-gutter .ibm-col-4-2,
+			.ibm-w-gutter .ibm-col-6-3,
+			.ibm-thumbnail-small > div[class^="ibm-col-"] {
 				width: 240px;
 			}
 			.ibm-col-6-4 {
@@ -854,9 +833,9 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-2 {
 				width: 200px;
 			}
-			&.ibm-w-gutter .ibm-col-4-2,
-			&.ibm-w-gutter .ibm-col-6-3,
-			&.ibm-thumbnail-small > div[class^="ibm-col-"] {
+			.ibm-w-gutter .ibm-col-4-2,
+			.ibm-w-gutter .ibm-col-6-3,
+			.ibm-thumbnail-small > div[class^="ibm-col-"] {
 				width: 300px;
 			}
 			.ibm-col-6-4 {
