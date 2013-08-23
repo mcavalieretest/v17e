@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?> <!-- Generator: IcoMoon.io --> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="metadata" data-author="Keyamoon" data-authorlink="http://keyamoon.com/" data-license="CC BY 3.0" data-licenselink="http://creativecommons.org/licenses/by/3.0/" width="512" height="512" viewBox="0 0 512 512" data-tags="mail, contact, support, newsletter, letter, email, envelop, social" style="margin-left: 8px; margin-top: 8px;"><path d="M 426.671,0.00L 85.343,0.00 C 38.406,0.00,0.00,38.405,0.00,85.345l0.00,341.311 C0.00,473.625, 38.406,512.00, 85.343,512.00l 341.328,0.00 C 473.609,512.00, 512.00,473.625, 512.00,426.655L 512.00,85.345 C 512.00,38.405, 473.609,0.00, 426.671,0.00z M 91.314,443.313l-38.628-38.627l 128.00-128.00 l 14.628,14.627L 91.314,443.313z M 76.686,99.314l 14.628-14.628L 256.00,217.373L 420.687,84.686l 14.627,14.628L 256.00,310.627L 76.686,99.314z M 420.687,443.313l-104.00-152.00l 14.627-14.627l 128.00,128.00L 420.687,443.313z" ></path></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path d="M381.338,51.2H108.274C70.725,51.2,40,81.924,40,119.476v273.05C40,430.1,70.725,460.8,108.274,460.8h273.063
+	c37.551,0,68.262-30.7,68.262-68.276V119.476C449.6,81.924,418.889,51.2,381.338,51.2z M113.051,405.85l-30.902-30.901
+	l102.4-102.399l11.703,11.701L113.051,405.85z M101.349,130.651l11.702-11.702L244.8,225.098l131.75-106.149l11.701,11.702
+	L244.8,299.701L101.349,130.651z M376.551,405.85l-83.201-121.6l11.703-11.701l102.398,102.399L376.551,405.85z"/>
+</svg>
