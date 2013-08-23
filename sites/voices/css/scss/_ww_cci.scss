@@ -57,14 +57,14 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 /* LEADSPACE OVERIDES (END) */
 
 /* LEADSPACE DEFAULTS (BEGIN) */
-.leadspace--defaults { 
+@mixin leadspace--defaults{
 	float:left; 
 	margin:40px 0; 
 	padding:0 0 0 20px;
 }
 
 /* LOAD SPRITE IMAGE DEFAULT (BEGIN) */
-.mysprite {
+@mixin mysprite {
 	background: url($sprite-url) no-repeat;
 	line-height: 0;
 	overflow: hidden;
@@ -75,14 +75,14 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 }
 
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1{
-		@extend .mysprite;
+		@include mysprite;
 		font-size: 0;
 		color: #fff;
 	}
 
 /* LEADSPACE LOGO BLOCK (BEGIN) */	
 #{$leadspace--logo} {
-	@extend .leadspace--defaults;
+	@include leadspace--defaults;
 	width:300px;
 }
 
@@ -103,7 +103,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 /* LEADSPACE SEARCH BLOCK (BEGIN) */	
 #{$leadspace--search} {
-	@extend .leadspace--defaults;
+	@include leadspace--defaults;
 	width:460px;
 
 	form input.ibm-cc-search--field {
@@ -131,7 +131,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		left:-30px;
 		opacity:0.5;
 
-		:hover {
+		&:hover {
 			opacity:1;
 		}
 	}
@@ -140,7 +140,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 /* LEADSPACE TOGGLE BLOCK (BEGIN) */	
 #{$leadspace--toggle} {
-	@extend .leadspace--defaults;
+	@include leadspace--defaults;
 	width:140px;
 	font-size:0;	
 	ul.ibm_cci--ls--toggle--ul {
@@ -151,7 +151,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			margin:0 1px;
 			padding:0;	
 			a {
-				@extend .mysprite;
+				@include mysprite;
 				width:42px;
 				height:43px;
 			}	 
@@ -240,7 +240,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 								font-size:1.2rem;
 							}
 							& a{
-								@extend .mysprite;
+								@include mysprite;
 								width:16px;
 								height:16px;
 								background-position: -205px -50px;
@@ -345,7 +345,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 			p.ibm_cci--rea-rank {
 				display:block;
-				font: normal 5.2rem/40px "Helvetica-Light";
+				font: normal 5.2rem/40px "HelvLightIBM";
 				color:#dfdfdf;
 				/* 
 					The ww-blessed css has a 5px bottom padding
@@ -357,7 +357,23 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		}
 	}
 }
+@mixin ibm_cci--lv-rc-title{
+		float:left;
+		font: bold 12px/15px "HelvLightIBM";
+		padding:0;
+		margin: 0;
+		clear:both;
+		position:relative;
 
+		// a {
+		// 	// text-decoration:none;
+		// 	color:#000;
+		// }
+
+		// a:hover {
+		// 	// text-decoration:none !important;
+		// }
+	}
 @mixin ibm_cci--lv-rc-th{
 	float:left;
 	//width:100%;
@@ -371,37 +387,11 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		position:absolute;
 	}
 
-	.ibm_cci--lv-rc-title {
-		float:left;
-		font: bold 12px/15px "Helvetica-Light";
-		padding:0;
-		margin: 0;
-		clear:both;
-		position:relative;
-
-		a {
-			text-decoration:none;
-			color:#000;
-		}
-
-		a:hover {
-			text-decoration:none !important
-		}	
+	.ibm_cci--lv-rc-title, .ibm_cci--lv-rc-h, .ibm_cci--lv-r-wct, .ibm_cci--lv-r-wch {
+		@include ibm_cci--lv-rc-title;
 	}
 
-	.ibm_cci--lv-rc-h {
-		@extend .ibm_cci--lv-rc-title;
-		font-weight:normal;
-	}
-
-	.ibm_cci--lv-r-wct{
-		@extend .ibm_cci--lv-rc-title;
-		margin-left:35px;
-	}
-
-	.ibm_cci--lv-r-wch {
-		@extend .ibm_cci--lv-rc-title;
-		font-weight:normal;
+	.ibm_cci--lv-r-wct, .ibm_cci--lv-r-wch{
 		margin-left:35px;
 	}
 
@@ -431,7 +421,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 	p.ibm_cci-tts {
 		float:right;
-		font: normal 12px/16px "Helvetica-Light";
+		font: normal 12px/16px "HelvLightIBM";
 		vertical-align: top;
 		padding:0;
 
@@ -444,6 +434,12 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		}						
 	}
 }
+
+#ibm-content .ibm-columns.ibm_cci-gv__modifier > * a,
+#ibm-content .ibm-columns.ibm_cci-lv__modifier > * a {
+	text-decoration:none !important;
+	color:#000;
+} 
 
 //LIST VIEW UNRESOLVED AND RESOLVED (BEGIN)
 #ibm-content .ibm-columns.ibm_cci-lv__modifier{
@@ -502,6 +498,9 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						vertical-align: top;
 					}
 				}
+				.ibm_cci-gv-sib {
+					display:none;
+				}
 
 				.ibm_cci-sib {
 					float:left;
@@ -536,16 +535,16 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					border:0;
 
 					h2.ibm_cci--tweet-title{
-						font: bold 2.4rem/30px "Helvetica-Light";
+						font: bold 2.4rem/30px "HelvBoldIBM";
 						color: #000;
 					}
 
 					p.ibm_cci--tweet-description {
-						font: italic 1.4rem/20px "Helvetica-Light";
+						font: italic 1.4rem/20px "HelvLightIBM";
 
 						span.ibm_cci--tweet-description-readmore a {
 							color: #F04E37;
-							text-decoration: none;
+							// text-decoration: none;
 						}
 						img.ibm_cci--tweet-image {
 							display:none;
@@ -590,6 +589,10 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				@include ibm_cci--lv-rc-th; 
 				width:240px;
 				margin:10px 0 0 0;
+
+				.ibm_cci--lv-rc-h, .ibm_cci--lv-r-wch{
+					font-weight:normal;
+				}
 			}
 			//To remove the margin from single conversation Title and Handle.
 			// if there is only one conversation
@@ -599,17 +602,17 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			}
 
 			.ibm_cci--lv-rc-description {
-				@extend .ibm_cci--lv-rc-th;
+				@include ibm_cci--lv-rc-th;
 				margin: 0;
 
 				p {
 					float: left;
-					font-family: Helvetica-Light;
+					font-family: HelvLightIBM;
 					font-size: 14px;
 					line-height: 18px;
 
 					a {
-						text-decoration:none;
+						// text-decoration:none;
 					}
 				}
 			}
@@ -697,19 +700,19 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						float:left;
 
 						h2.ibm_cci--tweet-title{
-							font: normal 2.4rem/30px "Helvetica-Light";
+							font: normal 2.4rem/30px "HelvLightIBM";
 							color: #000;
 							margin:0;
 							padding:0;				
 						}
 
 						p.ibm_cci--tweet-description {
-							font: italic 1.4rem/20px "Helvetica-Light";
+							font: italic 1.4rem/20px "HelvLightIBM";
 							display:none;
 
 							span.ibm_cci--tweet-description-readmore a {
 								color: #F04E37;
-								text-decoration: none;
+								// text-decoration: none;
 							}
 
 							img.ibm_cci--tweet-image {
@@ -730,7 +733,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					float:left;
 
 					h2.ibm_cci--tweet-title{
-						font: normal 2.4rem/30px "Helvetica-Light";
+						font: normal 2.4rem/30px "HelvLightIBM";
 						color: #000;
 						margin:10px 0 0 0;
 						padding:0;				
@@ -779,6 +782,10 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					@include ibm_cci--lv-rc-th;
 					width:800px;
 					margin:0;
+
+					.ibm_cci--lv-r-wch{
+						font-weight:normal;
+					}
 				}
 			}
 			
@@ -789,7 +796,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 				p.ibm_cci-tts {
 					float:right;
-					font: normal 12px/16px "Helvetica-Light";
+					font: normal 12px/16px "HelvLightIBM";
 					vertical-align: top;
 					padding:0;
 
@@ -962,12 +969,12 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						border:0;
 
 						h2.ibm_cci--tweet-title{
-							font: bold 2.4rem/30px "Helvetica-Light";
+							font: bold 2.4rem/30px "HelvBoldIBM";
 							color: #000;
 						}
 
 						p.ibm_cci--tweet-description {
-							// font: italic 1.4rem/20px "Helvetica-Light";
+							// font: italic 1.4rem/20px "HelvLightIBM";
 							display:block;
 							font-size:0;
 							margin:15px 0 !important;
@@ -1036,17 +1043,17 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				}
 
 				.ibm_cci--lv-rc-description {
-					@extend .ibm_cci--lv-rc-th;
+					@include ibm_cci--lv-rc-th;
 					margin: 0;
 
 					p {
 						float: left;
-						font-family: Helvetica-Light;
+						font-family: HelvLightIBM;
 						font-size: 14px;
 						line-height: 18px;
 
 						a {
-							text-decoration:none;
+							// text-decoration:none;
 						}
 					}
 				}
@@ -1155,14 +1162,14 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						float:left;
 
 						h2.ibm_cci--tweet-title{
-							font: normal 2.4rem/30px "Helvetica-Light";
+							font: normal 2.4rem/30px "HelvLightIBM";
 							color: #000;
 							margin:0;
 							padding:0;				
 						}
 
 						p.ibm_cci--tweet-description {
-							// font: italic 1.4rem/20px "Helvetica-Light";
+							// font: italic 1.4rem/20px "HelvLightIBM";
 							display:block;
 							font-size:0;
 							margin:15px 0 !important;
@@ -1196,7 +1203,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					float:left;
 
 						h2.ibm_cci--tweet-title{
-							font: normal 2.4rem/30px "Helvetica-Light";
+							font: normal 2.4rem/30px "HelvLightIBM";
 							color: #000;
 							margin:10px 0 0 0;
 							padding:0;				
@@ -1242,7 +1249,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 						p.ibm_cci-tts {
 							float:right;
-							font: normal 12px/16px "Helvetica-Light";
+							font: normal 12px/16px "HelvLightIBM";
 							vertical-align: top;
 							padding:0;
 
@@ -1266,7 +1273,6 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			// GRID VIEW UNRESOLVED TWEETS + YOUTUBE (END)
 		}	
 	}
-
 
 
 
