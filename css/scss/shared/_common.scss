@@ -654,11 +654,13 @@ padding :5px 0 5px 8px;
 }
 
 ul li div.ibm-container{
-margin-top:8px !important;
+	margin-top:8px !important;
 }
+
 #ibm-content .ibm-container:first-child {
 	border-top: 2px solid #666;
 }
+
 #ibm-content .ibm-container.ibm-alternate {
 	border-top: 2px solid #CCC;
 	padding-bottom: 10px;
@@ -671,6 +673,9 @@ margin-top:8px !important;
 	margin: 0 0 10px;
 }
 
+#ibm-content .ibm-container.ibm-no-rule {
+	border: 0 none;
+}
 
 #ibm-content #ibm-content-main img.ibm-intro {
 	margin-top: 10px;
