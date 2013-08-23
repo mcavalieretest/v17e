@@ -270,6 +270,10 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 	}
 	
+	.ibm-landing-page #ibm-content table {
+		width: 100%;
+	}
+	
 	.ibm-landing-page #ibm-content .ibm-columns .ibm-columns {
 		width: auto;
 		padding: 0;
@@ -283,7 +287,7 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 		padding: 0;
 	}
-	
+
 }
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 
@@ -354,8 +358,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-head {
 		padding: 0 10px;
 	}
-	
-	.ibm-landing-page #ibm-content-main > p {
+
+	.ibm-landing-page #ibm-content-main > p,
+	.ibm-landing-page #ibm-content-main > h2,
+	.ibm-landing-page #ibm-content-main > h3 {
 		width: 280px;
 	}
 
@@ -517,6 +523,9 @@ a.ibm-thumbnail-module h3 {
 		padding-right: 40px;
 	}
 	
+	.ibm-landing-page #ibm-content-main > p,
+	.ibm-landing-page #ibm-content-main > h2,
+	.ibm-landing-page #ibm-content-main > h3,
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
 		padding: 0 40px;
@@ -529,10 +538,6 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page #ibm-content-head {
 		padding: 0 30px;
-	}
-	
-	.ibm-landing-page #ibm-content-main > p {
-		width: auto;
 	}
 
 	.ibm-landing-page#ibm-top {
@@ -727,6 +732,9 @@ a.ibm-thumbnail-module h3 {
 		padding-right: 61px;
 	}
 	
+	.ibm-landing-page #ibm-content-main > p,
+	.ibm-landing-page #ibm-content-main > h2,
+	.ibm-landing-page #ibm-content-main > h3,
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		padding: 0 60px;
 	}
@@ -802,7 +810,9 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 54px;
 	}
 	
-	.ibm-landing-page #ibm-content-main > p {
+	.ibm-landing-page #ibm-content-main > p,
+	.ibm-landing-page #ibm-content-main > h2,
+	.ibm-landing-page #ibm-content-main > h3 {
 		width: 640px;
 	}
 	
