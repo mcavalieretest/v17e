@@ -1369,8 +1369,8 @@ div.ibm-list-next {
 .ibm-content-expand .ibm-columns .ibm-inset {
     border: 0;
     float: right;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 0 0 10px !important;
 }
 // End of style
 
