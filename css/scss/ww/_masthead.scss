@@ -89,7 +89,7 @@
 	background: #131623;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#131623', endColorstr='#1A1C27');
    	@include background-gradient(top, #131623, #1A1C27);
-	height: 1%;
+	@include px-to-rem(line-height,13px);
     float:left;
     width: 100%;
 	color: #A1A2A7;
@@ -112,7 +112,6 @@
 	border-right: 1px solid #2b2d39;
 	float: left;
 	padding: 4px 20px;
-	height: 13px;
 }
 
 #ibm-mast-options:after {
@@ -660,6 +659,7 @@ background-position: 3px -400px;
 
 #ibm-search-form input#q {
 	font-family: Arial, Helvetica;
+	@include px-to-rem(font-size,13px);
 	@include border-radius(13px);
 	@include box-shadow(0 1px 0 #555);
 	border: 1px solid #000;
