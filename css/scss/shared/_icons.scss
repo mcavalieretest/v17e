@@ -2,6 +2,85 @@
 
 // run 'fontcustom compile icons' from i/v17e directory to generate new font file
 
+
+
+
+.ibm-anchor-down-em-link	>	.ibm-a-anchor
+.ibm-a-arrow:before,
+.ibm-a-back-link:before,
+.ibm-a-external-link:before,
+.ibm-a-forward-bd:before,
+.ibm-a-top:before,
+.ibm-bullet-check:before,
+.ibm-bullet-square:before,
+.ibm-check-bold:before,
+.ibm-cta-arrow-sm:before,
+.ibm-cta-arrow:before,
+.ibm-cta-chevron-link:before,
+.ibm-cta-chevron:before,
+.ibm-cta-download:before,
+.ibm-cta-generic:before,
+.ibm-demo-link:before,
+.ibm-doc-folder:before,
+.ibm-doc-pdf:before,
+.ibm-document-link:before,
+.ibm-download-link:before,
+.ibm-download-whitepaper:before,
+.ibm-download:before,
+.ibm-email-link:before,
+.ibm-form-alert:before,
+.ibm-form-cancel:before,
+.ibm-form-confirm-link:before,
+.ibm-form-error-link:before,
+.ibm-form-reset:before,
+.ibm-forward-link:before,
+.ibm-help-lg:before,
+.ibm-help:before,
+.ibm-ibmer:before,
+.ibm-ldr-email:before,
+.ibm-ldr-phone:before,
+.ibm-ldr-quote:before,
+.ibm-ldr-register:before,
+.ibm-ldr-repcall:before,
+.ibm-link-down:before,
+.ibm-logo-sp-na:before,
+.ibm-media-audio:before,
+.ibm-media-play:before,
+.ibm-nav-dropdown:before,
+.ibm-nav-menu:before,
+.ibm-nav-search:before,
+.ibm-password-link:before,
+.ibm-popup:before,
+.ibm-rate-star:before,
+.ibm-rss:before,
+.ibm-setting-link:before,
+.ibm-soc-blog:before,
+.ibm-soc-expert:before,
+.ibm-soc-facebook:before,
+.ibm-soc-flickr:before,
+.ibm-soc-linkedin:before,
+.ibm-soc-pinterest:before,
+.ibm-soc-profile:before,
+.ibm-soc-rssfeed:before,
+.ibm-soc-tumbler:before,
+.ibm-soc-twitter:before,
+.ibm-soc-youtube:before,
+.ibm-status-alert:before,
+.ibm-status-caution:before,
+.ibm-tog-list:before,
+.ibm-tog-minus:before,
+.ibm-tog-plus:before,
+.ibm-tog-tile:before,
+.ibm-tool-info:before,
+.ibm-tool-print:before,
+.ibm-tool-settings:before,
+.ibm-tool-share:before,
+.ibm-x:before
+
+
+
+
+
 .ibm-anchor-down-link:before,
 .ibm-audio-link:before,
 .ibm-back-link:before,
@@ -85,7 +164,7 @@ li.ibm-chevron-link a:after {
 .ibm-chat-link:before { content: "\00a0\f105\00a0"; }
 .ibm-check-link:before { content: "\00a0\f106\00a0"; }
 a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after { content: "\00a0\f107\00a0"; }
+li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f108\00a0"; }
 .ibm-delicious-link:before { content: "\00a0\f109\00a0"; }
 .ibm-demo-link:before { content: "\00a0\f10a\00a0"; }

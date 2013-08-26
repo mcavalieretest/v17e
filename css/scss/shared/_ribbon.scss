@@ -166,9 +166,7 @@
 	background-position: 0 -216px;     
 }
 
-.ibm-ribbon-nav a, 
-a.ibm-ribbon-next,
-a.ibm-ribbon-prev {
+.ibm-ribbon-nav a {
 	font-size: 0;
 	text-indent: -100%;
 	*text-indent: 0;
@@ -205,14 +203,36 @@ a.ibm-ribbon-prev {
 
 a.ibm-ribbon-next,
 a.ibm-ribbon-prev {
-	background: url("../i/v17e/mod/chev.png") no-repeat;
-	background-image: url("../i/v17e/mod/chev.svg"), none;	
+//	background: url("../i/v17e/mod/chev.png") no-repeat;
+//	background-image: url("../i/v17e/mod/chev.svg"), none;	
 	display: block;
-	width: 32px;
+	font-size: 0;
+	color: transparent;
+	overflow: hidden;
+	width: 20px;
 	height: 60px;
 	position: absolute;
 	cursor: pointer;
 }
+a.ibm-ribbon-next:before,
+a.ibm-ribbon-prev:before {
+	font-family: 'iconsIBM';
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	position: absolute;
+	text-decoration: none;
+	
+	overflow: visible !important;
+	color: #000;
+	font-size: 50px;
+	line-height: 30px;
+	text-indent: 0%;
+	content: "\f10b";
+	
+}
+
 
 a.ibm-disabled {
 	visibility: hidden;
@@ -220,7 +240,7 @@ a.ibm-disabled {
 
 a.ibm-ribbon-next {
 	background-position: 0 -120px; 
-	right: -35px;
+	right: -20px;
 }
 
 .ibm-portrait a.ibm-ribbon-next {
@@ -237,7 +257,7 @@ a.ibm-ribbon-next:active {
 
 a.ibm-ribbon-prev {
 	background-position: 0 -300px;
-	left: -35px;
+	left: -20px;
 }
 
 .ibm-portrait a.ibm-ribbon-prev {
