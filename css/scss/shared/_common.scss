@@ -1229,6 +1229,11 @@ div.ibm-list-next {
 	height: 1%;
 	min-height: 45px;
 }
+#{$ie7Selector} #ibm-content .ibm-scroll ul.ibm-portrait-module-list > li,
+#{$ie7Selector} #ibm-content .ibm-scroll ul.ibm-thumbnail-list > li {
+	min-height: 65px;
+}
+
 
 #ibm-content ul.ibm-portrait-module-list li ul.ibm-twisty {
 	margin-left: 0 !important;
