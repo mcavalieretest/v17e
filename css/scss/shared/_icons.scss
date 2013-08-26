@@ -3,82 +3,87 @@
 // run 'fontcustom compile icons' from i/v17e directory to generate new font file
 
 
-
+/*
 
 .ibm-anchor-down-em-link	>	.ibm-a-anchor
-.ibm-a-arrow:before,
-.ibm-a-back-link:before,
-.ibm-a-external-link:before,
-.ibm-a-forward-bd:before,
-.ibm-a-top:before,
-.ibm-bullet-check:before,
-.ibm-bullet-square:before,
-.ibm-check-bold:before,
-.ibm-cta-arrow-sm:before,
-.ibm-cta-arrow:before,
-.ibm-cta-chevron-link:before,
-.ibm-cta-chevron:before,
-.ibm-cta-download:before,
-.ibm-cta-generic:before,
-.ibm-demo-link:before,
-.ibm-doc-folder:before,
-.ibm-doc-pdf:before,
-.ibm-document-link:before,
-.ibm-download-link:before,
-.ibm-download-whitepaper:before,
-.ibm-download:before,
-.ibm-email-link:before,
-.ibm-form-alert:before,
-.ibm-form-cancel:before,
-.ibm-form-confirm-link:before,
-.ibm-form-error-link:before,
-.ibm-form-reset:before,
-.ibm-forward-link:before,
-.ibm-help-lg:before,
-.ibm-help:before,
-.ibm-ibmer:before,
-.ibm-ldr-email:before,
-.ibm-ldr-phone:before,
-.ibm-ldr-quote:before,
-.ibm-ldr-register:before,
-.ibm-ldr-repcall:before,
-.ibm-link-down:before,
-.ibm-logo-sp-na:before,
-.ibm-media-audio:before,
-.ibm-media-play:before,
-.ibm-nav-dropdown:before,
-.ibm-nav-menu:before,
-.ibm-nav-search:before,
-.ibm-password-link:before,
-.ibm-popup:before,
-.ibm-rate-star:before,
-.ibm-rss:before,
-.ibm-setting-link:before,
-.ibm-soc-blog:before,
-.ibm-soc-expert:before,
-.ibm-soc-facebook:before,
-.ibm-soc-flickr:before,
-.ibm-soc-linkedin:before,
-.ibm-soc-pinterest:before,
-.ibm-soc-profile:before,
-.ibm-soc-rssfeed:before,
-.ibm-soc-tumbler:before,
-.ibm-soc-twitter:before,
-.ibm-soc-youtube:before,
-.ibm-status-alert:before,
-.ibm-status-caution:before,
-.ibm-tog-list:before,
-.ibm-tog-minus:before,
-.ibm-tog-plus:before,
-.ibm-tog-tile:before,
-.ibm-tool-info:before,
-.ibm-tool-print:before,
-.ibm-tool-settings:before,
-.ibm-tool-share:before,
+.ibm-a-arrow
+.ibm-a-back-link
+.ibm-a-external-link
+.ibm-a-forward-bd
+.ibm-a-top
+.ibm-bullet-check
+.ibm-bullet-square
+.ibm-check-bold
+.ibm-cta-arrow-sm
+.ibm-cta-arrow
+.ibm-cta-chevron-link
+.ibm-cta-chevron
+.ibm-cta-download
+.ibm-cta-generic
+.ibm-demo-link
+.ibm-doc-folder
+.ibm-doc-pdf
+.ibm-document-link
+.ibm-download-link
+.ibm-download-whitepaper
+.ibm-download
+.ibm-email-link
+.ibm-form-alert
+.ibm-form-cancel
+.ibm-form-confirm-link
+.ibm-form-error-link
+.ibm-form-reset
+.ibm-forward-link
+.ibm-help-lg
+.ibm-help
+.ibm-ibmer
+.ibm-ldr-email
+.ibm-ldr-phone
+.ibm-ldr-quote
+.ibm-ldr-register
+.ibm-ldr-repcall
+.ibm-link-down
+.ibm-logo-sp-na
+.ibm-media-audio
+.ibm-media-play
+.ibm-nav-dropdown
+.ibm-nav-menu
+.ibm-nav-search
+.ibm-pag-chev-l-bd
+.ibm-pag-chev-l-lt
+.ibm-pag-chev-l-md
+.ibm-pag-chev-r-bd
+.ibm-pag-chev-r-lt
+.ibm-pag-chev-r-md
+.ibm-password-link
+.ibm-popup
+.ibm-rate-star
+.ibm-rss
+.ibm-setting-link
+.ibm-soc-blog
+.ibm-soc-expert
+.ibm-soc-facebook
+.ibm-soc-flickr
+.ibm-soc-linkedin
+.ibm-soc-pinterest
+.ibm-soc-profile
+.ibm-soc-rssfeed
+.ibm-soc-tumbler
+.ibm-soc-twitter
+.ibm-soc-youtube
+.ibm-status-alert
+.ibm-status-caution
+.ibm-tog-list
+.ibm-tog-minus
+.ibm-tog-plus
+.ibm-tog-tile
+.ibm-tool-info
+.ibm-tool-print
+.ibm-tool-settings
+.ibm-tool-share
 .ibm-x:before
 
-
-
+*/
 
 
 .ibm-anchor-down-link:before,
@@ -109,7 +114,9 @@ li.ibm-chevron-link a:after,
 .ibm-upward-link:before,
 .ibm-wireless-link:before,
 #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
-#ibm-footer-module li:before {
+#ibm-footer-module li:before,
+a.ibm-ribbon-next:before,
+a.ibm-ribbon-prev:before {
 	font-family: 'iconsIBM';
 	font-variant: normal;
 	text-transform: none;
@@ -159,7 +166,7 @@ li.ibm-chevron-link a:after {
 .ibm-back-link:before { content: "\00a0\f102\00a0"; }
 .ibm-bullet:before,
 #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
-#ibm-footer-module li:before { content: "\f103"; }
+#ibm-footer-module li:before { content: "\f107"; }
 .ibm-cancel-link:before { content: "\00a0\f104\00a0"; }
 .ibm-chat-link:before { content: "\00a0\f105\00a0"; }
 .ibm-check-link:before { content: "\00a0\f106\00a0"; }
@@ -206,3 +213,92 @@ a.ibm-inline:after {
 	margin-right: 0 !important;
 	position: relative !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ibm-ribbon start
+a.ibm-ribbon-next,
+a.ibm-ribbon-prev {
+//	background: url("../i/v17e/mod/chev.png") no-repeat;
+//	background-image: url("../i/v17e/mod/chev.svg"), none;	
+	display: block;
+	font-size: 0;
+	color: transparent;
+	overflow: hidden;
+	width: 20px;
+	height: 60px;
+	position: absolute;
+	cursor: pointer;
+}
+a.ibm-ribbon-next:before,
+a.ibm-ribbon-prev:before {
+	overflow: visible;
+	color: #000;
+	font-size: 30px;
+	letter-spacing: -5px;
+	line-height: 45px;
+	text-indent: 0%;
+}
+
+a.ibm-ribbon-next:before {
+	content: "\00a0\f130\00a0";
+}
+a.ibm-ribbon-next:hover:before {
+	content: "\00a0\f131\00a0";
+}
+a.ibm-ribbon-next:active:before,
+a.ibm-ribbon-next:focus:before {
+	content: "\00a0\f12f\00a0";
+}
+a.ibm-ribbon-prev:before {
+	content: "\00a0\f12d\00a0";
+}
+a.ibm-ribbon-prev:hover:before {
+	content: "\00a0\f12e\00a0";
+}
+a.ibm-ribbon-prev:active:before,
+a.ibm-ribbon-prev:focus:before {
+	content: "\00a0\f12c\00a0";
+}
+
+
+
+a.ibm-ribbon-next {
+	background-position: 0 -120px; 
+	right: -20px;
+}
+.ibm-portrait a.ibm-ribbon-next {
+	margin-top: -65px;
+}
+a.ibm-ribbon-prev {
+	background-position: 0 -300px;
+	left: -20px;
+}
+.ibm-portrait a.ibm-ribbon-prev {
+	margin-top: 25px;
+}
+
+// ibm-ribbon end

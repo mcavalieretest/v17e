@@ -201,75 +201,8 @@
 	display: none;	
 }
 
-a.ibm-ribbon-next,
-a.ibm-ribbon-prev {
-//	background: url("../i/v17e/mod/chev.png") no-repeat;
-//	background-image: url("../i/v17e/mod/chev.svg"), none;	
-	display: block;
-	font-size: 0;
-	color: transparent;
-	overflow: hidden;
-	width: 20px;
-	height: 60px;
-	position: absolute;
-	cursor: pointer;
-}
-a.ibm-ribbon-next:before,
-a.ibm-ribbon-prev:before {
-	font-family: 'iconsIBM';
-	font-variant: normal;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	position: absolute;
-	text-decoration: none;
-	
-	overflow: visible !important;
-	color: #000;
-	font-size: 50px;
-	line-height: 30px;
-	text-indent: 0%;
-	content: "\f10b";
-	
-}
-
-
 a.ibm-disabled {
 	visibility: hidden;
-}
-
-a.ibm-ribbon-next {
-	background-position: 0 -120px; 
-	right: -20px;
-}
-
-.ibm-portrait a.ibm-ribbon-next {
-	margin-top: -65px;
-}
-
-a.ibm-ribbon-next:hover {
-	background-position: 0 -60px;
-}
-
-a.ibm-ribbon-next:active {
-	background-position: 0 0;
-}
-
-a.ibm-ribbon-prev {
-	background-position: 0 -300px;
-	left: -20px;
-}
-
-.ibm-portrait a.ibm-ribbon-prev {
-	margin-top: 25px;
-}
-
-a.ibm-ribbon-prev:hover {
-	background-position: 0 -240px;	
-}
-
-a.ibm-ribbon-prev:active {
-	background-position: 0 -180px;
 }
 /* ibm-ribbon styles end */
 
