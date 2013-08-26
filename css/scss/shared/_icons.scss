@@ -4,86 +4,88 @@
 
 
 /*
+.ibm-a-anchor					ibm-anchor-down-link
+.ibm-a-arrow					?
+.ibm-a-back-link				ibm-back-link
+.ibm-a-external-link		 	ibm-external-link
+.ibm-a-forward-bd		 		ibm-forward-em-link,ibm-generic-link
+.ibm-a-top						ibm-upward-link
+.ibm-bullet-check				?
+.ibm-bullet-square				?may be for bullet 
+.ibm-check-bold					ibm-check-link
+.ibm-cta-arrow-sm				?
+.ibm-cta-arrow					?
+.ibm-cta-chevron-link			ibm-chevron-link
+.ibm-cta-chevron				? Looks to be used for ribbon
+.ibm-cta-download				?
+.ibm-cta-generic				?
+.ibm-demo-link					ibm-demo-link
+.ibm-doc-folder					?
+.ibm-doc-pdf					ibm-pdf-link
+.ibm-document-link				ibm-document-link
+.ibm-download-link				ibm-download-link
+.ibm-download-whitepaper		?
+.ibm-download					?
+.ibm-email-link					ibm-email-link
+.ibm-form-alert					?
+.ibm-form-cancel				ibm-cancel-link
+.ibm-form-confirm-link			ibm-confirm-link
+.ibm-form-error-link			ibm-error-link
+.ibm-form-reset					ibm-reset-link
+.ibm-forward-link				ibm-forward-link
+.ibm-help-lg					ibm-questionLarge-link
+.ibm-help						ibm-question-link,ibm-help-link
+.ibm-ibmer						? Not sure where this is used, not in v17 icons list
+.ibm-ldr-email					ibm-email-link
+.ibm-ldr-phone					ibm-phone-link
+.ibm-ldr-quote					ibm-requestaquote-link
+.ibm-ldr-register				?
+.ibm-ldr-repcall				ibm-callme-link
+.ibm-link-down					ibm-anchor-down-link
+.ibm-logo-sp-na					--smarter planet logo
+.ibm-media-audio				ibm-audio-link
+.ibm-media-play					ibm-demoplay-link
+.ibm-nav-dropdown				?If it is for sorting then corresponding icons are missing
+.ibm-nav-menu					?
+.ibm-nav-search					?-looks to be used for search Icon
+.ibm-password-link				ibm-password-link
+.ibm-popup						ibm-popup-link
+.ibm-rate-star					ibm-fullstar-link 
+.ibm-rss						ibm-rss-link
+.ibm-setting-link				ibm-setting-link
+.ibm-soc-blog					ibm-blog-link
+.ibm-soc-expert					?
+.ibm-soc-facebook				ibm-facebook-link
+.ibm-soc-flickr					ibm-flickr-link
+.ibm-soc-linkedin				ibm-linkedin-link
+.ibm-soc-pinterest				?
+.ibm-soc-profile				?
+.ibm-soc-rssfeed				? Already we have ibm-rss		
+.ibm-soc-tumbler				?
+.ibm-soc-twitter				ibm-twitter-link
+.ibm-soc-youtube				ibm-youtube-link
+.ibm-status-alert				ibm-error-link,ibm-errorLarge-link
+.ibm-status-caution				ibm-caution-link,ibm-cautionLarge-link
+.ibm-tog-list					? Seen using with alternate masthead
+.ibm-tog-minus					?ibm-show-hide ibm-show-active(confirm)
+.ibm-tog-plus					?ibm-show-hide-link(confirm)
+.ibm-tog-tile					?
+.ibm-tool-info					ibm-information-link
+.ibm-tool-print					ibm-print-link
+.ibm-tool-settings				ibm-setting-link
+.ibm-tool-share					?
+.ibm-x							? ibm-cancel-link(confirm)
 
-.ibm-anchor-down-em-link	>	.ibm-a-anchor
-.ibm-a-arrow
-.ibm-a-back-link
-.ibm-a-external-link
-.ibm-a-forward-bd
-.ibm-a-top
-.ibm-bullet-check
-.ibm-bullet-square
-.ibm-check-bold
-.ibm-cta-arrow-sm
-.ibm-cta-arrow
-.ibm-cta-chevron-link
-.ibm-cta-chevron
-.ibm-cta-download
-.ibm-cta-generic
-.ibm-demo-link
-.ibm-doc-folder
-.ibm-doc-pdf
-.ibm-document-link
-.ibm-download-link
-.ibm-download-whitepaper
-.ibm-download
-.ibm-email-link
-.ibm-form-alert
-.ibm-form-cancel
-.ibm-form-confirm-link
-.ibm-form-error-link
-.ibm-form-reset
-.ibm-forward-link
-.ibm-help-lg
-.ibm-help
-.ibm-ibmer
-.ibm-ldr-email
-.ibm-ldr-phone
-.ibm-ldr-quote
-.ibm-ldr-register
-.ibm-ldr-repcall
-.ibm-link-down
-.ibm-logo-sp-na
-.ibm-media-audio
-.ibm-media-play
-.ibm-nav-dropdown
-.ibm-nav-menu
-.ibm-nav-search
-.ibm-pag-chev-l-bd
-.ibm-pag-chev-l-lt
-.ibm-pag-chev-l-md
-.ibm-pag-chev-r-bd
-.ibm-pag-chev-r-lt
-.ibm-pag-chev-r-md
-.ibm-password-link
-.ibm-popup
-.ibm-rate-star
-.ibm-rss
-.ibm-setting-link
-.ibm-soc-blog
-.ibm-soc-expert
-.ibm-soc-facebook
-.ibm-soc-flickr
-.ibm-soc-linkedin
-.ibm-soc-pinterest
-.ibm-soc-profile
-.ibm-soc-rssfeed
-.ibm-soc-tumbler
-.ibm-soc-twitter
-.ibm-soc-youtube
-.ibm-status-alert
-.ibm-status-caution
-.ibm-tog-list
-.ibm-tog-minus
-.ibm-tog-plus
-.ibm-tog-tile
-.ibm-tool-info
-.ibm-tool-print
-.ibm-tool-settings
-.ibm-tool-share
-.ibm-x:before
+Notes:
+--ibm-information-link and ibm-help-link was shared same for v17 . you can use ibm-help-link and ibm-question-link together
+--ibm-status-alert and ibm-form-error-link looks similar (common class : ibm-error-link)
+--ibm-cta-generic, ibm-forward-link, ibm-a-arrow looks similar 
+--ibm-back-bd is not available
+--ibm-bullet-check: not sure what it is for
+
 
 */
+
 
 
 .ibm-anchor-down-link:before,
