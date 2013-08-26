@@ -402,13 +402,6 @@
     margin: -70px auto 0;
 }
 
-.ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
-	outline: none !important;
-	position: relative;
-	text-decoration: none; /* IE7 fix */
-	padding:0;
-}
-
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
 	overflow: visible;
 	text-indent: 0;
@@ -447,6 +440,9 @@
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a {
+	outline: none !important;
+	position: relative;
+	text-decoration: none; /* IE7 fix */
     background-image: none;
 	border: 2px solid rgba(205, 205, 205, 0.95);
     border: 2px solid #EEE\9;
@@ -456,7 +452,9 @@
 	@include box-shadow(0 1px 3px rgba(0,0,0,0.3));
     width: 45px;
     z-index: 899;
+	padding: 0;
     margin-right: 8px;
+    line-height: 0;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a:hover, 
