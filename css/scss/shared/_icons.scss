@@ -27,7 +27,7 @@
 .ibm-download-whitepaper		?
 .ibm-download					?
 .ibm-email-link					ibm-email-link
-.ibm-form-alert					?
+.ibm-form-alert					ibm-error-link,ibm-errorLarge-link
 .ibm-form-cancel				ibm-cancel-link
 .ibm-form-confirm-link			ibm-confirm-link
 .ibm-form-error-link			ibm-error-link
@@ -66,7 +66,7 @@
 .ibm-soc-youtube				ibm-youtube-link
 .ibm-status-alert				ibm-error-link,ibm-errorLarge-link
 .ibm-status-caution				ibm-caution-link,ibm-cautionLarge-link
-.ibm-tog-list					? Seen using with alternate masthead
+.ibm-tog-list					dropdown icon for alternate masthead
 .ibm-tog-minus					?ibm-show-hide ibm-show-active(confirm)
 .ibm-tog-plus					?ibm-show-hide-link(confirm)
 .ibm-tog-tile					?
@@ -74,7 +74,7 @@
 .ibm-tool-print					ibm-print-link
 .ibm-tool-settings				ibm-setting-link
 .ibm-tool-share					?
-.ibm-x							? ibm-cancel-link(confirm)
+.ibm-x							ibm-cancel-link
 
 Notes:
 --ibm-information-link and ibm-help-link was shared same for v17 . you can use ibm-help-link and ibm-question-link together
