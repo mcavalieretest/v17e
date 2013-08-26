@@ -39,7 +39,7 @@
 .ibm-ldr-email					ibm-email-link
 .ibm-ldr-phone					ibm-phone-link
 .ibm-ldr-quote					ibm-requestaquote-link
-.ibm-ldr-register				v17e - (new icon TBD)
+.ibm-ldr-register				ibm-signin-link
 .ibm-ldr-repcall				ibm-callme-link
 .ibm-link-down					ibm-anchor-down-link
 .ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo
@@ -107,6 +107,7 @@ li.ibm-chevron-link a:after,
 .ibm-email-link:before,
 .ibm-phone-link:before,
 .ibm-requestaquote-link:before,
+.ibm-signin-link:before,
 .ibm-callme-link:before,
 .ibm-anchor-down-link:before,
 .ibm-audio-link:before,
@@ -175,6 +176,7 @@ a.ibm-help-link:before,
 a.ibm-email-link:before,
 a.ibm-phone-link:before,
 a.ibm-requestaquote-link:before,
+a.ibm-signin-link:before,
 a.ibm-callme-link:before,
 a.ibm-anchor-down-link:before,
 a.ibm-audio-link:before,
@@ -250,7 +252,7 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-email-link:before { content: "\00a0\f120\00a0"; }
 .ibm-phone-link:before { content: "\00a0\f121\00a0"; }
 .ibm-requestaquote-link:before { content: "\00a0\f122\00a0"; }
-.ibm-ldr-register:before { content: "\00a0\f123\00a0"; }
+.ibm-signin-link:before { content: "\00a0\f123\00a0"; }
 .ibm-callme-link:before { content: "\00a0\f124\00a0"; }
 .ibm-anchor-down-link:before { content: "\00a0\f125\00a0"; }
 .ibm-logo-sp-na:before { content: "\00a0\f126\00a0"; }
