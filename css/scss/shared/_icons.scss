@@ -67,8 +67,8 @@
 .ibm-status-alert				ibm-error-link,ibm-errorLarge-link
 .ibm-status-caution				ibm-caution-link,ibm-cautionLarge-link
 .ibm-tog-list					dropdown icon for alternate masthead
-.ibm-tog-minus					ibm-minimize-link,.ibm-show-hide h2 a.ibm-show-active
-.ibm-tog-plus					ibm-maximize-link,.ibm-show-hide h2 a
+.ibm-tog-minus					ibm-delete-link,ibm-minimize-link,.ibm-show-hide h2 a.ibm-show-active
+.ibm-tog-plus					ibm-add1-link,ibm-maximize-link,.ibm-show-hide h2 a
 .ibm-tog-tile					v17e - (new icon for list view)
 .ibm-tool-info					ibm-information-link
 .ibm-tool-print					ibm-print-link
@@ -128,8 +128,10 @@ li.ibm-chevron-link a:after,
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before,
 .ibm-minimize-link:before,
+.ibm-delete-link:before,
 .ibm-show-hide h2 a.ibm-show-active:before,
 .ibm-maximize-link:before,
+.ibm-add1-link:before,
 .ibm-show-hide h2 a:before,
 .ibm-information-link:before,
 .ibm-print-link:before,
@@ -197,7 +199,9 @@ a.ibm-errorLarge-link:before,
 a.ibm-caution-link:before,
 a.ibm-cautionLarge-link:before,
 a.ibm-minimize-link:before,
+a.ibm-delete-link:before,
 a.ibm-maximize-link:before,
+a.ibm-add1-link:before,
 a.ibm-information-link:before,
 a.ibm-print-link:before,
 a.ibm-setting-link:before,
@@ -282,8 +286,10 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-caution-link,
 .ibm-cautionLarge-link:before { content: "\00a0\f143\00a0"; }
 .ibm-tog-list:before { content: "\00a0\f144\00a0"; }
+.ibm-delete-link:before,
 .ibm-minimize-link:before,
 .ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f145\00a0"; }
+.ibm-add1-link:before,
 .ibm-maximize-link:before,
 .ibm-show-hide h2 a:before { content: "\00a0\f146\00a0"; }
 .ibm-tog-tile:before { content: "\00a0\f147\00a0"; }
