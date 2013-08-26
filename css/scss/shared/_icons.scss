@@ -6,7 +6,7 @@
 /*
 .ibm-a-anchor					ibm-anchor-down-link
 .ibm-a-arrow					ibm-forward-link
-.ibm-a-back-link				ibm-back-link
+.ibm-a-back-link				ibm-back-link,ibm-back-em-link
 .ibm-a-external-link		 	ibm-external-link
 .ibm-a-forward-bd		 		ibm-forward-em-link,ibm-generic-link
 .ibm-a-top						ibm-upward-link
@@ -82,6 +82,7 @@
 .ibm-bullet:before,
 .ibm-forward-link:before,
 .ibm-back-link:before,
+.ibm-back-em-link:before,
 .ibm-external-link:before,
 .ibm-forward-em-link:before,
 .ibm-generic-link:before,
@@ -154,6 +155,7 @@ a.ibm-anchor-down-link:before,
 a.ibm-bullet:before,
 a.ibm-forward-link:before,
 a.ibm-back-link:before,
+a.ibm-back-em-link:before,
 a.ibm-external-link:before,
 a.ibm-forward-em-link:before,
 a.ibm-generic-link:before,
@@ -217,7 +219,8 @@ li.ibm-chevron-link a:after {
 
 .ibm-anchor-down-link:before { content: "\00a0\f100\00a0"; }
 .ibm-forward-link:before { content: "\00a0\f101\00a0"; }
-.ibm-back-link:before { content: "\00a0\f102\00a0"; }
+.ibm-back-link:before,
+.ibm-back-em-link:before { content: "\00a0\f102\00a0"; }
 .ibm-external-link:before { content: "\00a0\f103\00a0"; }
 .ibm-forward-em-link:before,
 .ibm-generic-link:before { content: "\00a0\f104\00a0"; }
