@@ -341,16 +341,6 @@
 
 /* common menu area start */
 #ibm-common-menu {
-	width: 100%;
-	background: #02416B;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02416B', endColorstr='#5582BC');
-   	@include background-gradient(top, #02416B, #5582BC);
-	border-top: 1px solid #4978B1;
-	border-bottom: 2px solid #4978B1;
-	height: 160px;
-	display: none;
-}
-#ibm-masthead #ibm-common-menu {
 	background-color: #DDD;
 	*background: none;
 	_background: none; /* IE6 fix */  
@@ -360,70 +350,63 @@
 	border-top: 0;
 	border-bottom-color: #FFF;
 	box-shadow: 0 -9px 7px -9px #bbb inset;
+	width: 100%;
+	height: 160px;
+	display: none;
 }
 
-
-#ibm-common-menu h2 {
-	color: rgba(255,255,255,.75);
-	color: #00B0DA\9;
-	height: 16px;
-    width: 140px;
-	padding-left: 0;
-}
-
-#ibm-common-menu h2 a {
-    color: #FFE14F;
-    text-decoration: none;
-}
-
-#ibm-common-menu h2 a:hover {
-	color: #FFC14F;
-}
-
-#ibm-common-menu h3 {
-	color: rgba(255,255,255,.75);
-	color: #00B0DA\9;
-    width: 140px;
-	padding-left: 0;
-}
-
+#ibm-common-menu h3,
 #ibm-common-menu h3 a {
-    color: #FFE14F;
-    text-decoration: none;
+	color: #333;
+	text-shadow: 0 1px 0 #FFF;
 }
 
-#ibm-common-menu h3 a:hover {
-	color: #FFC14F;
+#ibm-common-menu a {
+	color: #555;
+	text-shadow: none;
+	text-decoration:none;
 }
 
+#ibm-common-menu a:hover {
+	text-decoration: underline;
+	color: #222;
+}
+
+#ibm-common-menu a:active {
+	text-decoration: underline;
+	color: #555;
+}
 #ibm-common-menu ul {
     list-style: none;
     padding: 0 0 18px 0;
 }
-
 #ibm-common-menu li {
-	/*background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px -198px;*/
 	padding-left: 10px;
 	margin-top: 10px;
 }
-
 #ibm-common-menu li:active {
 	opacity: .6;
 }
 
-#ibm-common-menu a {
-	color: rgba(255,255,255,0.75);
-	color: #D0D0D3\9;
-	text-shadow: 0 1px 0 rgba(0,0,0,.4);
-	text-decoration: none;
+#ibm-common-menu .ibm-ribbon-pane li:before {
+	color: #999;
+	@include px-to-rem(margin-left,-10px);
+	position:relative;
+	top:-2px;
 }
 
-#ibm-common-menu a:focus,
-#ibm-common-menu a:hover {
-	color: #FFF;
-	text-shadow: 0 1px 0 rgba(0,0,0,.8);
+#{$ie7Selector} #ibm-common-menu .ibm-ribbon-pane li {
+    background: url("#{$imagePath}/i/v17/bullets-alt.gif") no-repeat -2px 2px;
 }
-/* common menu area start */
+
+#ibm-common-menu .ibm-ribbon-pane li:hover:before,
+#ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
+    color: #F08F26;
+}
+
+
+/* common menu area ends========================== */
+
 /* minimized masthead icons */
 
 /* requires width:100% on #ibm-unav-links */
@@ -487,55 +470,6 @@ background-position: 3px -400px;
 #ibm-masthead {
 	*overflow: hidden;
 	_position: relative;
-}
-
-#ibm-masthead #ibm-common-menu {
-	background-color: #DDD;
-	*background: none;
-	_background: none; /* IE6 fix */  
-	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1');   
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1')";
-   	@include background-gradient(top, #dddddd, #f1f1f1);
-	border-top: 0;
-	border-bottom-color: #FFF;
-	box-shadow: 0 -9px 7px -9px #bbb inset;
-}
-
-#ibm-masthead #ibm-common-menu h3,
-#ibm-masthead #ibm-common-menu h3 a {
-	color: #333;
-	text-shadow: 0 1px 0 #FFF;
-}
-
-#ibm-masthead #ibm-common-menu a {
-	color: #555;
-	text-shadow: none;
-}
-
-#ibm-masthead #ibm-common-menu a:hover {
-	text-decoration: underline;
-	color: #222;
-}
-
-#ibm-masthead #ibm-common-menu a:active {
-	text-decoration: underline;
-	color: #555;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before {
-	color: #999;
-	@include px-to-rem(margin-left,-15px);
-	position:relative;
-	top:-2px;
-}
-
-#{$ie7Selector} #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li {
-    background: url("#{$imagePath}/i/v17/bullets-alt.gif") no-repeat -2px 2px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:hover:before,
-#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
-    color: #F08F26;
 }
 
 #ibm-masthead .ibm-mm-close span {
