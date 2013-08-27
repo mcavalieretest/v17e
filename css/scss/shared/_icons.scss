@@ -53,7 +53,7 @@
 .ibm-rate-star					ibm-fullstar-link 
 .ibm-rss						ibm-rss-link
 .ibm-setting-link				ibm-setting-link
-.ibm-soc-blog					ibm-blog-link
+.ibm-soc-blog					ibm-blog-link,ibm-chat-link
 .ibm-soc-expert					v17e - (new icon TBD)
 .ibm-soc-facebook				ibm-facebook-link
 .ibm-soc-flickr					ibm-flickr-link
@@ -121,6 +121,7 @@ li.ibm-chevron-link a:after,
 .ibm-rss-link:before,
 .ibm-setting-link:before,
 .ibm-blog-link:before,
+.ibm-chat-link:before,
 .ibm-facebook-link:before,
 .ibm-flickr-link:before,
 .ibm-linkedin-link:before,
@@ -195,6 +196,7 @@ a.ibm-fullstar-link:before,
 a.ibm-rss-link:before,
 a.ibm-setting-link:before,
 a.ibm-blog-link:before,
+a.ibm-chat-link:before,
 a.ibm-facebook-link:before,
 a.ibm-flickr-link:before,
 a.ibm-linkedin-link:before,
@@ -279,7 +281,8 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-fullstar-link:before { content: "\00a0\f134\00a0"; }
 .ibm-rss-link:before { content: "\00a0\f135\00a0"; }
 .ibm-setting-link:before { content: "\00a0\f136\00a0"; }
-.ibm-blog-link:before { content: "\00a0\f137\00a0"; }
+.ibm-blog-link:before,
+.ibm-chat-link:before { content: "\00a0\f137\00a0"; }
 .ibm-soc-expert:before { content: "\00a0\f138\00a0"; }
 .ibm-facebook-link:before { content: "\00a0\f139\00a0"; }
 .ibm-flickr-link:before { content: "\00a0\f13a\00a0"; }
