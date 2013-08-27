@@ -178,6 +178,7 @@ a.ibm-ribbon-next:before,
 .ibm-calendar-link:before,
 .ibm-upload-link:before,
 .ibm-close:before {
+	color: $linkColor;
 	font-family: 'iconsIBM';
 	font-variant: normal;
 	text-transform: none;
@@ -185,6 +186,10 @@ a.ibm-ribbon-next:before,
 	display: inline-block;
 	position: absolute;
 	text-decoration: none;
+}
+
+ul.ibm-alternate-two a:before {
+	color: #FFF !important;
 }
 
 li a.ibm-anchor-down-link:before,
