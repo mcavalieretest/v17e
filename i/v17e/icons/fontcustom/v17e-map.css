@@ -1,0 +1,211 @@
+/* 
+ * Font Custom: bare CSS
+ */
+
+@font-face {
+  font-family: "icons-ibm-v1_1";
+  src: url("icons-ibm-v1_1.eot");
+  src: url("icons-ibm-v1_1.eot?#iefix") format("embedded-opentype"),
+       url("icons-ibm-v1_1.woff") format("woff"),
+       url("icons-ibm-v1_1.ttf") format("truetype"),
+       url("icons-ibm-v1_1.svg#icons-ibm-v1_1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ibm-a-anchor:before,
+.ibm-a-arrow:before,
+.ibm-a-back-link:before,
+.ibm-a-external-link:before,
+.ibm-a-forward-bd:before,
+.ibm-a-top:before,
+.ibm-bullet-check:before,
+.ibm-bullet-square:before,
+.ibm-check-bold:before,
+.ibm-cta-arrow-sm:before,
+.ibm-cta-arrow:before,
+.ibm-cta-chevron-link:before,
+.ibm-cta-chevron:before,
+.ibm-cta-download:before,
+.ibm-cta-generic:before,
+.ibm-demo-link:before,
+.ibm-doc-folder:before,
+.ibm-doc-pdf:before,
+.ibm-document-link:before,
+.ibm-download-link:before,
+.ibm-download-whitepaper:before,
+.ibm-download:before,
+.ibm-email-link:before,
+.ibm-form-alert:before,
+.ibm-form-cancel:before,
+.ibm-form-confirm-link:before,
+.ibm-form-error-link:before,
+.ibm-form-reset:before,
+.ibm-forward-link:before,
+.ibm-help-lg:before,
+.ibm-help:before,
+.ibm-ibmer:before,
+.ibm-ldr-email:before,
+.ibm-ldr-phone:before,
+.ibm-ldr-quote:before,
+.ibm-ldr-register:before,
+.ibm-ldr-repcall:before,
+.ibm-link-down:before,
+.ibm-logo-sp-na:before,
+.ibm-media-audio:before,
+.ibm-media-play:before,
+.ibm-nav-dropdown:before,
+.ibm-nav-menu:before,
+.ibm-nav-search:before,
+.ibm-pag-chev-l-bd:before,
+.ibm-pag-chev-l-lt:before,
+.ibm-pag-chev-l-md:before,
+.ibm-pag-chev-r-bd:before,
+.ibm-pag-chev-r-lt:before,
+.ibm-pag-chev-r-md:before,
+.ibm-password-link:before,
+.ibm-popup:before,
+.ibm-rate-star:before,
+.ibm-rss:before,
+.ibm-setting-link:before,
+.ibm-soc-blog:before,
+.ibm-soc-expert:before,
+.ibm-soc-facebook:before,
+.ibm-soc-flickr:before,
+.ibm-soc-linkedin:before,
+.ibm-soc-pinterest:before,
+.ibm-soc-profile:before,
+.ibm-soc-rssfeed:before,
+.ibm-soc-tumbler:before,
+.ibm-soc-twitter:before,
+.ibm-soc-youtube:before,
+.ibm-sort-down:before,
+.ibm-sort-up:before,
+.ibm-status-alert:before,
+.ibm-status-caution:before,
+.ibm-tog-list:before,
+.ibm-tog-minus:before,
+.ibm-tog-plus:before,
+.ibm-tog-tile:before,
+.ibm-tool-info:before,
+.ibm-tool-print:before,
+.ibm-tool-settings:before,
+.ibm-tool-share:before,
+.ibm-twistie-closed:before,
+.ibm-twistie-open:before,
+.ibm-v17-calender:before,
+.ibm-v17-upload:before,
+.ibm-cancel-link:before {
+  font-family: "icons-ibm-v1_1";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.ibm-anchor-down-link:before,
+.ibm-anchor-down-em-link:before { content: "\00a0\f100\00a0"; }
+.ibm-forward-link:before { content: "\00a0\f101\00a0"; }
+.ibm-back-link:before,
+.ibm-back-em-link:before,
+.ibm-backup-link:before { content: "\00a0\f102\00a0"; }
+.ibm-external-link:before { content: "\00a0\f103\00a0"; }
+.ibm-forward-em-link:before,
+.ibm-generic-link:before { content: "\00a0\f104\00a0"; }
+.ibm-upward-link:before { content: "\00a0\f105\00a0"; }
+.ibm-bullet-check:before { content: "\00a0\f106\00a0"; }
+.ibm-bullet:before,
+#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
+#ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
+.ibm-check-link:before { content: "\00a0\f108\00a0"; }
+.ibm-cta-arrow-sm:before { content: "\00a0\f109\00a0"; }
+.ibm-cta-arrow:before { content: "\00a0\f10a\00a0"; }
+a.ibm-chevron-link:after,
+li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
+.ibm-cta-chevron:before { content: "\00a0\f10c\00a0"; }
+.ibm-cta-download:before { content: "\00a0\f10d\00a0"; }
+.ibm-cta-generic:before { content: "\00a0\f10e\00a0"; }
+.ibm-demo-link:before { content: "\00a0\f10f\00a0"; }
+.ibm-doc-folder:before { content: "\00a0\f110\00a0"; }
+.ibm-pdf-link:before { content: "\00a0\f111\00a0"; }
+.ibm-document-link:before { content: "\00a0\f112\00a0"; }
+.ibm-download-link:before { content: "\00a0\f113\00a0"; }
+.ibm-download-whitepaper:before { content: "\00a0\f114\00a0"; }
+.ibm-download:before { content: "\00a0\f115\00a0"; }
+.ibm-email-link:before { content: "\00a0\f116\00a0"; }
+.ibm-error-link:before,
+.ibm-errorLarge-link:before { content: "\00a0\f117\00a0"; }
+.ibm-cancel-link:before { content: "\00a0\f118\00a0"; }
+.ibm-confirm-link:before { content: "\00a0\f119\00a0"; }
+.ibm-error-link:before { content: "\00a0\f11a\00a0"; }
+.ibm-reset-link:before { content: "\00a0\f11b\00a0"; }
+.ibm-forward-link:before { content: "\00a0\f11c\00a0"; }
+.ibm-questionLarge-link:before { content: "\00a0\f11d\00a0"; }
+.ibm-question-link:before,
+.ibm-help-link:before { content: "\00a0\f11e\00a0"; }
+.ibm-ibmer:before { content: "\00a0\f11f\00a0"; }
+.ibm-email-link:before { content: "\00a0\f120\00a0"; }
+.ibm-phone-link:before,
+.ibm-call-link:before { content: "\00a0\f121\00a0"; }
+.ibm-requestaquote-link:before { content: "\00a0\f122\00a0"; }
+.ibm-signin-link:before { content: "\00a0\f123\00a0"; }
+.ibm-callme-link:before { content: "\00a0\f124\00a0"; }
+.ibm-anchor-down-link:before { content: "\00a0\f125\00a0"; }
+.ibm-logo-sp-na:before { content: "\00a0\f126\00a0"; }
+.ibm-audio-link:before { content: "\00a0\f127\00a0"; }
+.ibm-demoplay-link:before { content: "\00a0\f128\00a0"; }
+.ibm-nav-dropdown:before { content: "\00a0\f129\00a0"; }
+.ibm-nav-menu:before { content: "\00a0\f12a\00a0"; }
+.ibm-nav-search:before { content: "\00a0\f12b\00a0"; }
+a.ibm-ribbon-prev:active:before,
+a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
+a.ibm-ribbon-prev:before { content: "\00a0\f12d\00a0"; }
+a.ibm-ribbon-prev:hover:before { content: "\00a0\f12e\00a0"; }
+a.ibm-ribbon-next:active:before,
+a.ibm-ribbon-next:focus:before { content: "\00a0\f12f\00a0"; }
+a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
+a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
+.ibm-password-link:before { content: "\00a0\f132\00a0"; }
+.ibm-popup-link:before { content: "\00a0\f133\00a0"; }
+.ibm-fullstar-link:before { content: "\00a0\f134\00a0"; }
+.ibm-rss-link:before { content: "\00a0\f135\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f136\00a0"; }
+.ibm-blog-link:before,
+.ibm-chat-link:before { content: "\00a0\f137\00a0"; }
+.ibm-soc-expert:before { content: "\00a0\f138\00a0"; }
+.ibm-facebook-link:before { content: "\00a0\f139\00a0"; }
+.ibm-flickr-link:before { content: "\00a0\f13a\00a0"; }
+.ibm-linkedin-link:before { content: "\00a0\f13b\00a0"; }
+.ibm-soc-pinterest:before { content: "\00a0\f13c\00a0"; }
+.ibm-soc-profile:before { content: "\00a0\f13d\00a0"; }
+.ibm-soc-rssfeed:before { content: "\00a0\f13e\00a0"; }
+.ibm-soc-tumbler:before { content: "\00a0\f13f\00a0"; }
+.ibm-twitter-link:before { content: "\00a0\f140\00a0"; }
+.ibm-youtube-link:before { content: "\00a0\f141\00a0"; }
+.ibm-sort-down:before { content: "\00a0\f142\00a0"; }
+.ibm-sort-up:before { content: "\00a0\f143\00a0"; }
+.ibm-error-link:before,
+.ibm-errorLarge-link:before { content: "\00a0\f144\00a0"; }
+.ibm-caution-link:before,
+.ibm-cautionLarge-link:before { content: "\00a0\f145\00a0"; }
+.ibm-tog-list:before { content: "\00a0\f146\00a0"; }
+.ibm-delete-link:before,
+.ibm-minimize-link:before,
+.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f147\00a0"; }
+.ibm-add1-link:before,
+.ibm-maximize-link:before,
+.ibm-show-hide h2 a:before { content: "\00a0\f148\00a0"; }
+.ibm-tog-tile:before { content: "\00a0\f149\00a0"; }
+.ibm-information-link:before { content: "\00a0\f14a\00a0"; }
+.ibm-print-link:before { content: "\00a0\f14b\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
+.ibm-twistie-closed:before { content: "\00a0\f14e\00a0"; }
+.ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
+.ibm-v17-calender:before { content: "\00a0\f150\00a0"; }
+.ibm-v17-upload:before { content: "\00a0\f151\00a0"; }
+.ibm-cancel-link:before { content: "\00a0\f152\00a0"; }
