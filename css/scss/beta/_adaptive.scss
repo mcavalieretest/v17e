@@ -283,11 +283,11 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be used on iPhone viewport --------------------------------------------------------------
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 568px) {
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 0px | max-width: 480px"; 
+		content: "min-width: 0px | max-width: 568px"; 
 	}
 	// to be removed.  only for testing
 	
@@ -483,12 +483,46 @@ a.ibm-thumbnail-module h3 {
 // --------------------------------------------------------------  media query to be used on iPhone viewport -------------------------------------------------------------- 
 
 
-// -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
-@media only screen and (min-width: 481px) and (max-width: 640px) {
+// -------------------------------------------------------------- media query to be used on iPhone landscape viewport --------------------------------------------------------------
+@media only screen and (min-width: 481px) and (max-width: 568px) {
 
 	// to be removed.  only for testing
 	#ibm-leadspace-body p:after {
-		content: "min-width: 481 | max-width: 640px";
+		content: "min-width: 481 | max-width: 568px";
+	}
+
+	a.ibm-ribbon-next:before,
+	a.ibm-ribbon-prev:before {
+		font-size: 30px;
+		letter-spacing: -4px;
+	}
+	
+	a.ibm-ribbon-next {
+		right: -40px;
+	}
+	
+	a.ibm-ribbon-prev {
+		left: -40px;
+	}
+	
+	#ibm-related-content a.ibm-ribbon-prev {
+		left: -20px;
+	}
+
+	#ibm-related-content a.ibm-ribbon-next {
+		right: -20px;
+	}
+
+}
+// -------------------------------------------------------------- media query to be used on iPhone landspace viewport --------------------------------------------------------------
+
+
+// -------------------------------------------------------------- media query to be used on 600px Nexus viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 569px) and (max-width: 640px) {
+
+	// to be removed.  only for testing
+	#ibm-leadspace-body p:after {
+		content: "min-width: 569 | max-width: 640px";
 	}
 	// to be removed.  only for testing
 		
@@ -603,19 +637,19 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	a.ibm-ribbon-next {
-		right: -40px;
+		right: -20px;
 	}
 	
 	a.ibm-ribbon-prev {
-		left: -40px;
+		left: -20px;
 	}
 	
 	#ibm-related-content a.ibm-ribbon-prev {
-		left: -20px;
+		left: -10px;
 	}
 
 	#ibm-related-content a.ibm-ribbon-next {
-		right: -20px;
+		right: -10px;
 	}
 	// ribbon column adjust jeff
 	
