@@ -93,6 +93,8 @@
 .ibm-tool-share:before,
 .ibm-twistie-closed:before,
 .ibm-twistie-open:before,
+.ibm-v17-calender:before,
+.ibm-v17-upload:before,
 .ibm-x:before {
   font-family: "icons-ibm-v1_1";
   font-style: normal;
@@ -185,4 +187,6 @@
 .ibm-tool-share:before { content: "\f14d"; }
 .ibm-twistie-closed:before { content: "\f14e"; }
 .ibm-twistie-open:before { content: "\f14f"; }
-.ibm-x:before { content: "\f150"; }
+.ibm-v17-calender:before { content: "\f150"; }
+.ibm-v17-upload:before { content: "\f151"; }
+.ibm-x:before { content: "\f152"; }
