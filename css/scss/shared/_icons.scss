@@ -4,6 +4,8 @@
 
 
 /*
+switch cancel icons...
+
 .ibm-a-anchor					ibm-anchor-down-link,ibm-anchor-down-em-link
 .ibm-a-arrow					ibm-forward-link
 .ibm-a-back-link				ibm-back-link,ibm-back-em-link,ibm-backup-link
@@ -15,7 +17,7 @@
 .ibm-check-bold					ibm-check-link
 .ibm-cta-arrow-sm				v17e - (new alternative to the arrow)
 .ibm-cta-arrow					v17e - (new alternative to the arrow bold)
-.ibm-cta-chevron-link			ibm-chevron-link
+.ibm-cta-chevron-link			ibm-chevron-link,ibm-chevron-alternate-link
 .ibm-cta-chevron				v17e - (new alternative to chevron link)
 .ibm-cta-download				duplicate with ibm-download-link
 .ibm-cta-generic				deuplicate with ibm-forward-link
@@ -38,7 +40,7 @@
 .ibm-ibmer						v17e - (new icon TBD)
 .ibm-ldr-email					ibm-email-link
 .ibm-ldr-phone					ibm-phone-link,ibm-call-link
-.ibm-ldr-quote					ibm-requestaquote-link
+.ibm-ldr-quote					ibm-requestquote-link
 .ibm-ldr-register				ibm-signin-link
 .ibm-ldr-repcall				ibm-callme-link
 .ibm-link-down					ibm-anchor-down-link
@@ -74,6 +76,8 @@
 .ibm-tool-print					ibm-print-link
 .ibm-tool-settings				ibm-setting-link
 .ibm-tool-share					v17e - (new icon TBD)
+.ibm-v17-calendar				ibm-calendar-link
+.ibm-v17-upload					ibm-upload-link
 .ibm-x							ibm-cancel-link
 
 */
@@ -113,7 +117,7 @@ li.ibm-chevron-link a:after,
 .ibm-email-link:before,
 .ibm-phone-link:before,
 .ibm-call-link:before,
-.ibm-requestaquote-link:before,
+.ibm-requestquote-link:before,
 .ibm-signin-link:before,
 .ibm-callme-link:before,
 .ibm-anchor-down-link:before,
@@ -200,7 +204,7 @@ a.ibm-help-link:before,
 a.ibm-email-link:before,
 a.ibm-phone-link:before,
 a.ibm-call-link:before,
-a.ibm-requestaquote-link:before,
+a.ibm-requestquote-link:before,
 a.ibm-signin-link:before,
 a.ibm-callme-link:before,
 a.ibm-anchor-down-link:before,
@@ -290,7 +294,7 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-email-link:before { content: "\00a0\f120\00a0"; }
 .ibm-phone-link:before,
 .ibm-call-link:before { content: "\00a0\f121\00a0"; }
-.ibm-requestaquote-link:before { content: "\00a0\f122\00a0"; }
+.ibm-requestquote-link:before { content: "\00a0\f122\00a0"; }
 .ibm-signin-link:before { content: "\00a0\f123\00a0"; }
 .ibm-callme-link:before { content: "\00a0\f124\00a0"; }
 .ibm-anchor-down-link:before { content: "\00a0\f125\00a0"; }
