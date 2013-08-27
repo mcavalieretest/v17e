@@ -398,14 +398,14 @@
 }
 
 #ibm-common-menu li {
-	background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px -198px;
+	/*background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px -198px;*/
 	padding-left: 10px;
 	margin-top: 10px;
 }
 
 #ibm-common-menu li:hover, 
 #ibm-common-menu li.ibm-active {
-	background-position: -2px -98px;
+	/*background-position: -2px -98px;*/
 }
 
 #ibm-common-menu li:active {
@@ -525,7 +525,9 @@ background-position: 3px -400px;
 
 #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before {
 	color: #999;
-	@include px-to-rem(margin-left,-10px);
+	@include px-to-rem(margin-left,-15px);
+	position:relative;
+	top:-2px;
 }
 
 #{$ie7Selector} #ibm-masthead #ibm-common-menu .ibm-ribbon-pane li {
