@@ -4,7 +4,7 @@
 
 
 /*
-.ibm-a-anchor					ibm-anchor-down-link
+.ibm-a-anchor					ibm-anchor-down-link,ibm-anchor-down-em-link
 .ibm-a-arrow					ibm-forward-link
 .ibm-a-back-link				ibm-back-link,ibm-back-em-link
 .ibm-a-external-link		 	ibm-external-link
@@ -79,6 +79,7 @@
 */
 
 .ibm-anchor-down-link:before,
+.ibm-anchor-down-em-link:before,
 .ibm-bullet:before,
 .ibm-forward-link:before,
 .ibm-back-link:before,
@@ -152,6 +153,7 @@ a.ibm-ribbon-prev:before {
 }
 
 a.ibm-anchor-down-link:before,
+a.ibm-anchor-down-em-link:before,
 a.ibm-bullet:before,
 a.ibm-forward-link:before,
 a.ibm-back-link:before,
@@ -217,7 +219,8 @@ li.ibm-chevron-link a:after {
 	text-decoration: none;
 }
 
-.ibm-anchor-down-link:before { content: "\00a0\f100\00a0"; }
+.ibm-anchor-down-link:before,
+.ibm-anchor-down-em-link:before { content: "\00a0\f100\00a0"; }
 .ibm-forward-link:before { content: "\00a0\f101\00a0"; }
 .ibm-back-link:before,
 .ibm-back-em-link:before { content: "\00a0\f102\00a0"; }
