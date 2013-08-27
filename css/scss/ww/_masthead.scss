@@ -403,7 +403,92 @@
 #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
     color: #F08F26;
 }
+#ibm-common-menu .ibm-mm-close span {
+	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
+}
 
+#ibm-common-menu .ibm-mm-close span:hover {
+	background-position: 0 -23px;
+}
+
+#ibm-common-menu .ibm-menu-subtabs {
+	background-color: #CCC;
+	*background: none;
+	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
+   	@include background-gradient(top, #CCC, #EAEAEA);
+	border-bottom: 1px solid #BBB;
+	box-shadow: 0 1px 7px #C5C5C5;
+	height: 39px;
+	margin-top: -39px;
+	margin-bottom: 20px;
+	opacity: 0;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul {
+	width: 940px;
+	margin: 0 auto;
+	padding: 14px 10px 0;
+	margin-bottom: -1px;
+}
+#ibm-common-menu .ibm-menu-subtabs ul li {
+	margin: 0 20px 0 0;
+	background-image: none;
+	float: left;
+	padding: 0 10px 11px 10px;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
+	background: url("#{$imagePath}/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent;
+}
+#ibm-common-menu .ibm-menu-subtabs ul li a {
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li a:hover {
+	text-decoration: none;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a {
+	font-weight: bold;
+	color: #222;
+}
+
+
+#ibm-common-menu .ibm-menu-static {
+	border-left: 1px solid #C8C8C8;
+	box-shadow: 1px 0 0 rgba(255,255,255,.5) inset;
+	width: 170px;
+	height: 282px;
+	*height: 232px;
+	padding-left: 20px;
+	margin: 0;
+}
+
+#ibm-common-menu .ibm-menu-static, 
+#ibm-common-menu .ibm-menu-dynamic {
+	padding-top: 20px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic {
+	margin-right: 0;
+	width: 758px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 {
+	width: 172px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last {
+	width: 162px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
+	margin-top: 0;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
+	margin-top: 10px;
+}
 
 /* common menu area ends========================== */
 
@@ -472,93 +557,6 @@ background-position: 3px -400px;
 	_position: relative;
 }
 
-#ibm-masthead .ibm-mm-close span {
-	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
-}
-
-#ibm-masthead .ibm-mm-close span:hover {
-	background-position: 0 -23px;
-}
-
-#ibm-masthead .ibm-menu-subtabs {
-	background-color: #CCC;
-	*background: none;
-	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
-   	@include background-gradient(top, #CCC, #EAEAEA);
-	border-bottom: 1px solid #BBB;
-	box-shadow: 0 1px 7px #C5C5C5;
-	height: 39px;
-	margin-top: -39px;
-	margin-bottom: 20px;
-	opacity: 0;
-}
-
-#ibm-masthead .ibm-menu-subtabs ul {
-	width: 940px;
-	margin: 0 auto;
-	padding: 14px 10px 0;
-	margin-bottom: -1px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li {
-	margin: 0 20px 0 0;
-	background-image: none;
-	float: left;
-	padding: 0 10px 11px 10px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
-	background: url("#{$imagePath}/i/v17/buttons/mm-submenu-notch.gif") center 21px no-repeat transparent;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li a {
-	text-shadow: 0 1px 0 #FFF;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li a:hover {
-	text-decoration: none;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a {
-	font-weight: bold;
-	color: #222;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-static {
-	border-left: 1px solid #C8C8C8;
-	box-shadow: 1px 0 0 rgba(255,255,255,.5) inset;
-	width: 170px;
-	height: 282px;
-	*height: 232px;
-	padding-left: 20px;
-	margin: 0;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-static, 
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic {
-	padding-top: 20px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic {
-	margin-right: 0;
-	width: 758px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 {
-	width: 172px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last {
-	width: 162px;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
-	margin-top: 0;
-}
-
-#ibm-masthead #ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
-	margin-top: 10px;
-}
 
 // masthead styles end ==============================
 
