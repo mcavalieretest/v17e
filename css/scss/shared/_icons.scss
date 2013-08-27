@@ -90,14 +90,17 @@
 .ibm-generic-link:before,
 .ibm-upward-link:before,
 .ibm-check-link:before,
+
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
+
 .ibm-demo-link:before,
 .ibm-pdf-link:before,
 .ibm-document-link:before,
 .ibm-download-link:before,
 .ibm-email-link:before,
 .ibm-error-link:before,
+
 .ibm-errorLarge-link:before,
 .ibm-cancel-link:before,
 .ibm-confirm-link:before,
@@ -167,6 +170,10 @@ a.ibm-forward-em-link:before,
 a.ibm-generic-link:before,
 a.ibm-upward-link:before,
 a.ibm-check-link:before,
+
+
+
+
 a.ibm-demo-link:before,
 a.ibm-pdf-link:before,
 a.ibm-document-link:before,
@@ -279,6 +286,14 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-nav-dropdown:before { content: "\00a0\f129\00a0"; }
 .ibm-nav-menu:before { content: "\00a0\f12a\00a0"; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0"; }
+a.ibm-ribbon-prev:active:before,
+a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
+a.ibm-ribbon-prev:before { content: "\00a0\f12d\00a0"; }
+a.ibm-ribbon-prev:hover:before { content: "\00a0\f12e\00a0"; }
+a.ibm-ribbon-next:active:before,
+a.ibm-ribbon-next:focus:before { content: "\00a0\f12f\00a0"; }
+a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
+a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-password-link:before { content: "\00a0\f132\00a0"; }
 .ibm-popup-link:before { content: "\00a0\f133\00a0"; }
 .ibm-fullstar-link:before { content: "\00a0\f134\00a0"; }
@@ -296,23 +311,29 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-soc-tumbler:before { content: "\00a0\f13f\00a0"; }
 .ibm-twitter-link:before { content: "\00a0\f140\00a0"; }
 .ibm-youtube-link:before { content: "\00a0\f141\00a0"; }
+.ibm-sort-down:before { content: "\00a0\f142\00a0"; }
+.ibm-sort-up:before { content: "\00a0\f143\00a0"; }
 .ibm-error-link:before,
-.ibm-errorLarge-link:before { content: "\00a0\f142\00a0"; }
+.ibm-errorLarge-link:before { content: "\00a0\f144\00a0"; }
 .ibm-caution-link:before,
-.ibm-cautionLarge-link:before { content: "\00a0\f143\00a0"; }
-.ibm-tog-list:before { content: "\00a0\f144\00a0"; }
+.ibm-cautionLarge-link:before { content: "\00a0\f145\00a0"; }
+.ibm-tog-list:before { content: "\00a0\f146\00a0"; }
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
-.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f145\00a0"; }
+.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f147\00a0"; }
 .ibm-add1-link:before,
 .ibm-maximize-link:before,
-.ibm-show-hide h2 a:before { content: "\00a0\f146\00a0"; }
-.ibm-tog-tile:before { content: "\00a0\f147\00a0"; }
-.ibm-information-link:before { content: "\00a0\f148\00a0"; }
-.ibm-print-link:before { content: "\00a0\f149\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f14a\00a0"; }
-.ibm-tool-share:before { content: "\00a0\f14b\00a0"; }
-.ibm-cancel-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-show-hide h2 a:before { content: "\00a0\f148\00a0"; }
+.ibm-tog-tile:before { content: "\00a0\f149\00a0"; }
+.ibm-information-link:before { content: "\00a0\f14a\00a0"; }
+.ibm-print-link:before { content: "\00a0\f14b\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
+.ibm-twistie-closed:before { content: "\00a0\f14e\00a0"; }
+.ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
+.ibm-v17-calender:before { content: "\00a0\f150\00a0"; }
+.ibm-v17-upload:before { content: "\00a0\f151\00a0"; }
+.ibm-cancel-link:before { content: "\00a0\f152\00a0"; }
 
 a.ibm-inline,
 a.ibm-inline:before,
@@ -360,27 +381,6 @@ a.ibm-ribbon-prev:before {
 	letter-spacing: -5px;
 	line-height: 45px;
 	text-indent: 0%;
-}
-
-a.ibm-ribbon-next:before {
-	content: "\00a0\f130\00a0";
-}
-a.ibm-ribbon-next:hover:before {
-	content: "\00a0\f131\00a0";
-}
-a.ibm-ribbon-next:active:before,
-a.ibm-ribbon-next:focus:before {
-	content: "\00a0\f12f\00a0";
-}
-a.ibm-ribbon-prev:before {
-	content: "\00a0\f12d\00a0";
-}
-a.ibm-ribbon-prev:hover:before {
-	content: "\00a0\f12e\00a0";
-}
-a.ibm-ribbon-prev:active:before,
-a.ibm-ribbon-prev:focus:before {
-	content: "\00a0\f12c\00a0";
 }
 
 a.ibm-ribbon-next {
