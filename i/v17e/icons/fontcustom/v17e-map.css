@@ -95,7 +95,7 @@
 .ibm-twistie-open:before,
 .ibm-v17-calender:before,
 .ibm-v17-upload:before,
-.ibm-cancel-link:before {
+.ibm-close:before {
   font-family: "icons-ibm-v1_1";
   font-style: normal;
   font-weight: normal;
@@ -119,13 +119,15 @@
 .ibm-upward-link:before { content: "\00a0\f105\00a0"; }
 .ibm-bullet-check:before { content: "\00a0\f106\00a0"; }
 .ibm-bullet:before,
-#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
+#ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
 .ibm-check-link:before { content: "\00a0\f108\00a0"; }
 .ibm-cta-arrow-sm:before { content: "\00a0\f109\00a0"; }
 .ibm-cta-arrow:before { content: "\00a0\f10a\00a0"; }
 a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
+li.ibm-chevron-link a:after,
+a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-cta-chevron:before { content: "\00a0\f10c\00a0"; }
 .ibm-cta-download:before { content: "\00a0\f10d\00a0"; }
 .ibm-cta-generic:before { content: "\00a0\f10e\00a0"; }
@@ -151,7 +153,7 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-email-link:before { content: "\00a0\f120\00a0"; }
 .ibm-phone-link:before,
 .ibm-call-link:before { content: "\00a0\f121\00a0"; }
-.ibm-requestaquote-link:before { content: "\00a0\f122\00a0"; }
+.ibm-requestquote-link:before { content: "\00a0\f122\00a0"; }
 .ibm-signin-link:before { content: "\00a0\f123\00a0"; }
 .ibm-callme-link:before { content: "\00a0\f124\00a0"; }
 .ibm-anchor-down-link:before { content: "\00a0\f125\00a0"; }
@@ -208,4 +210,4 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
 .ibm-calendar-link:before { content: "\00a0\f150\00a0"; }
 .ibm-upload-link:before { content: "\00a0\f151\00a0"; }
-.ibm-cancel-link:before { content: "\00a0\f152\00a0"; }
+.ibm-close:before { content: "\00a0\f152\00a0"; }

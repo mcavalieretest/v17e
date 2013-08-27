@@ -4,7 +4,6 @@
 
 
 /*
-switch cancel icons...
 
 .ibm-a-anchor					ibm-anchor-down-link,ibm-anchor-down-em-link
 .ibm-a-arrow					ibm-forward-link
@@ -32,7 +31,7 @@ switch cancel icons...
 .ibm-form-alert					ibm-error-link,ibm-errorLarge-link
 .ibm-form-cancel				ibm-cancel-link
 .ibm-form-confirm-link			ibm-confirm-link
-.ibm-form-error-link			ibm-error-link
+.ibm-form-error-link			duplicate: ibm-error-link
 .ibm-form-reset					ibm-reset-link
 .ibm-forward-link				ibm-forward-link
 .ibm-help-lg					ibm-questionLarge-link
@@ -66,7 +65,7 @@ switch cancel icons...
 .ibm-soc-tumbler				v17e - (new tumblr icon)
 .ibm-soc-twitter				ibm-twitter-link
 .ibm-soc-youtube				ibm-youtube-link
-.ibm-status-alert				ibm-error-link,ibm-errorLarge-link
+.ibm-status-alert				duplicate: ibm-error-link,ibm-errorLarge-link
 .ibm-status-caution				ibm-caution-link,ibm-cautionLarge-link
 .ibm-tog-list					dropdown icon for alternate masthead
 .ibm-tog-minus					ibm-delete-link,ibm-minimize-link,.ibm-show-hide h2 a.ibm-show-active
@@ -78,13 +77,13 @@ switch cancel icons...
 .ibm-tool-share					v17e - (new icon TBD)
 .ibm-v17-calendar				ibm-calendar-link
 .ibm-v17-upload					ibm-upload-link
-.ibm-x							ibm-cancel-link
+.ibm-x							ibm-close
 
 */
 
+
 .ibm-anchor-down-link:before,
 .ibm-anchor-down-em-link:before,
-.ibm-bullet:before,
 .ibm-forward-link:before,
 .ibm-back-link:before,
 .ibm-back-em-link:before,
@@ -93,27 +92,38 @@ switch cancel icons...
 .ibm-forward-em-link:before,
 .ibm-generic-link:before,
 .ibm-upward-link:before,
+.ibm-bullet-check:before,
+.ibm-bullet:before,
+#ibm-common-menu .ibm-ribbon-pane li:before,
+#ibm-footer-module li:before,
 .ibm-check-link:before,
-
+.ibm-cta-arrow-sm:before,
+.ibm-cta-arrow:before,
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
-
+a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after,
+.ibm-cta-chevron:before,
+.ibm-cta-download:before,
+.ibm-cta-generic:before,
 .ibm-demo-link:before,
+.ibm-doc-folder:before,
 .ibm-pdf-link:before,
 .ibm-document-link:before,
 .ibm-download-link:before,
+.ibm-download-whitepaper:before,
+.ibm-download:before,
 .ibm-email-link:before,
 .ibm-error-link:before,
-
 .ibm-errorLarge-link:before,
 .ibm-cancel-link:before,
 .ibm-confirm-link:before,
-.ibm-error-link:before,
 .ibm-reset-link:before,
 .ibm-forward-link:before,
 .ibm-questionLarge-link:before,
 .ibm-question-link:before,
 .ibm-help-link:before,
+.ibm-ibmer:before,
 .ibm-email-link:before,
 .ibm-phone-link:before,
 .ibm-call-link:before,
@@ -121,8 +131,14 @@ li.ibm-chevron-link a:after,
 .ibm-signin-link:before,
 .ibm-callme-link:before,
 .ibm-anchor-down-link:before,
+.ibm-logo-sp-na:before,
 .ibm-audio-link:before,
 .ibm-demoplay-link:before,
+.ibm-nav-dropdown:before,
+.ibm-nav-menu:before,
+.ibm-nav-search:before,
+a.ibm-ribbon-prev:before,
+a.ibm-ribbon-next:before,
 .ibm-password-link:before,
 .ibm-popup-link:before,
 .ibm-fullstar-link:before,
@@ -130,21 +146,27 @@ li.ibm-chevron-link a:after,
 .ibm-setting-link:before,
 .ibm-blog-link:before,
 .ibm-chat-link:before,
+.ibm-soc-expert:before,
 .ibm-facebook-link:before,
 .ibm-flickr-link:before,
 .ibm-linkedin-link:before,
+.ibm-soc-pinterest:before,
+.ibm-soc-profile:before,
+.ibm-soc-rssfeed:before,
+.ibm-soc-tumbler:before,
 .ibm-twitter-link:before,
 .ibm-youtube-link:before,
-.ibm-error-link:before,
+.ibm-sort-down:before,
+.ibm-sort-up:before,
 .ibm-errorLarge-link:before,
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before,
 .ibm-tog-list:before,
-.ibm-minimize-link:before,
 .ibm-delete-link:before,
+.ibm-minimize-link:before,
 .ibm-show-hide h2 a.ibm-show-active:before,
-.ibm-maximize-link:before,
 .ibm-add1-link:before,
+.ibm-maximize-link:before,
 .ibm-show-hide h2 a:before,
 .ibm-tog-tile:before,
 .ibm-information-link:before,
@@ -153,13 +175,9 @@ li.ibm-chevron-link a:after,
 .ibm-tool-share:before,
 .ibm-twistie-closed:before,
 .ibm-twistie-open:before,
-.ibm-v17-calender:before,
-.ibm-v17-upload:before,
-.ibm-cancel-link:before,
-#ibm-common-menu .ibm-ribbon-pane li:before,
-#ibm-footer-module li:before,
-a.ibm-ribbon-next:before,
-a.ibm-ribbon-prev:before {
+.ibm-calendar-link:before,
+.ibm-upload-link:before,
+.ibm-close:before {
 	font-family: 'iconsIBM';
 	font-variant: normal;
 	text-transform: none;
@@ -169,84 +187,100 @@ a.ibm-ribbon-prev:before {
 	text-decoration: none;
 }
 
-a.ibm-anchor-down-link:before,
-a.ibm-anchor-down-em-link:before,
-a.ibm-bullet:before,
-a.ibm-forward-link:before,
-a.ibm-back-link:before,
-a.ibm-back-em-link:before,
-a.ibm-backup-link:before,
-a.ibm-external-link:before,
-a.ibm-forward-em-link:before,
-a.ibm-generic-link:before,
-a.ibm-upward-link:before,
-a.ibm-check-link:before,
-
-
-
-
-a.ibm-demo-link:before,
-a.ibm-pdf-link:before,
-a.ibm-document-link:before,
-a.ibm-download-link:before,
-a.ibm-email-link:before,
-a.ibm-error-link:before,
+li a.ibm-anchor-down-link:before,
+li a.ibm-anchor-down-em-link:before,
+li a.ibm-forward-link:before,
+li a.ibm-back-link:before,
+li a.ibm-back-em-link:before,
+li a.ibm-backup-link:before,
+li a.ibm-external-link:before,
+li a.ibm-forward-em-link:before,
+li a.ibm-generic-link:before,
+li a.ibm-upward-link:before,
+li a.ibm-bullet-check:before,
+li a.ibm-check-link:before,
+li a.ibm-cta-arrow-sm:before,
+li a.ibm-cta-arrow:before,
+li a.ibm-cta-chevron:before,
+li a.ibm-cta-download:before,
+li a.ibm-cta-generic:before,
+li a.ibm-demo-link:before,
+li a.ibm-doc-folder:before,
+li a.ibm-pdf-link:before,
+li a.ibm-document-link:before,
+li a.ibm-download-link:before,
+li a.ibm-download-whitepaper:before,
+li a.ibm-download:before,
+li a.ibm-email-link:before,
+li a.ibm-error-link:before,
 span.ibm-error-link:before,
-a.ibm-errorLarge-link:before,
-a.ibm-cancel-link:before,
-a.ibm-confirm-link:before,
-a.ibm-error-link:before,
-a.ibm-reset-link:before,
-a.ibm-forward-link:before,
-a.ibm-questionLarge-link:before,
-a.ibm-question-link:before,
-a.ibm-help-link:before,
-a.ibm-email-link:before,
-a.ibm-phone-link:before,
-a.ibm-call-link:before,
-a.ibm-requestquote-link:before,
-a.ibm-signin-link:before,
-a.ibm-callme-link:before,
-a.ibm-anchor-down-link:before,
-a.ibm-audio-link:before,
-a.ibm-demoplay-link:before,
-a.ibm-password-link:before,
-a.ibm-popup-link:before,
-a.ibm-fullstar-link:before,
-a.ibm-rss-link:before,
-a.ibm-setting-link:before,
-a.ibm-blog-link:before,
-a.ibm-chat-link:before,
-a.ibm-facebook-link:before,
-a.ibm-flickr-link:before,
-a.ibm-linkedin-link:before,
-a.ibm-twitter-link:before,
-a.ibm-youtube-link:before,
-a.ibm-error-link:before,
-a.ibm-errorLarge-link:before,
-a.ibm-caution-link:before,
-a.ibm-cautionLarge-link:before,
-a.ibm-tog-list:before,
-a.ibm-minimize-link:before,
-a.ibm-delete-link:before,
-a.ibm-maximize-link:before,
-a.ibm-add1-link:before,
-a.ibm-tog-tile:before,
-a.ibm-information-link:before,
-a.ibm-print-link:before,
-a.ibm-setting-link:before,
-a.ibm-tool-share:before,
-a.ibm-twistie-closed:before,
-a.ibm-twistie-open:before,
-a.ibm-v17-calender:before,
-a.ibm-v17-upload:before,
-a.ibm-cancel-link:before {
+li a.ibm-errorLarge-link:before,
+li a.ibm-cancel-link:before,
+li a.ibm-confirm-link:before,
+li a.ibm-reset-link:before,
+li a.ibm-forward-link:before,
+li a.ibm-questionLarge-link:before,
+li a.ibm-question-link:before,
+li a.ibm-help-link:before,
+li a.ibm-ibmer:before,
+li a.ibm-email-link:before,
+li a.ibm-phone-link:before,
+li a.ibm-call-link:before,
+li a.ibm-requestquote-link:before,
+li a.ibm-signin-link:before,
+li a.ibm-callme-link:before,
+li a.ibm-anchor-down-link:before,
+li a.ibm-logo-sp-na:before,
+li a.ibm-audio-link:before,
+li a.ibm-demoplay-link:before,
+li a.ibm-nav-dropdown:before,
+li a.ibm-nav-menu:before,
+li a.ibm-nav-search:before,
+li a.ibm-password-link:before,
+li a.ibm-popup-link:before,
+li a.ibm-fullstar-link:before,
+li a.ibm-rss-link:before,
+li a.ibm-setting-link:before,
+li a.ibm-blog-link:before,
+li a.ibm-chat-link:before,
+li a.ibm-soc-expert:before,
+li a.ibm-facebook-link:before,
+li a.ibm-flickr-link:before,
+li a.ibm-linkedin-link:before,
+li a.ibm-soc-pinterest:before,
+li a.ibm-soc-profile:before,
+li a.ibm-soc-rssfeed:before,
+li a.ibm-soc-tumbler:before,
+li a.ibm-twitter-link:before,
+li a.ibm-youtube-link:before,
+li a.ibm-sort-down:before,
+li a.ibm-sort-up:before,
+li a.ibm-errorLarge-link:before,
+li a.ibm-caution-link:before,
+li a.ibm-cautionLarge-link:before,
+li a.ibm-tog-list:before,
+li a.ibm-delete-link:before,
+li a.ibm-minimize-link:before,
+li a.ibm-add1-link:before,
+li a.ibm-maximize-link:before,
+li a.ibm-tog-tile:before,
+li a.ibm-information-link:before,
+li a.ibm-print-link:before,
+li a.ibm-setting-link:before,
+li a.ibm-tool-share:before,
+li a.ibm-twistie-closed:before,
+li a.ibm-twistie-open:before,
+li a.ibm-calendar-link:before,
+li a.ibm-upload-link:before,
+li a.ibm-close:before {
 	@include px-to-rem(margin-left,-25px);
 	text-decoration: none;
 }
 
-a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after {
+li a.ibm-chevron-link:after,
+li.ibm-chevron-link a:after,
+li a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after {
 	text-decoration: none;
 }
 
@@ -268,7 +302,9 @@ li.ibm-chevron-link a:after {
 .ibm-cta-arrow-sm:before { content: "\00a0\f109\00a0"; }
 .ibm-cta-arrow:before { content: "\00a0\f10a\00a0"; }
 a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
+li.ibm-chevron-link a:after,
+a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-cta-chevron:before { content: "\00a0\f10c\00a0"; }
 .ibm-cta-download:before { content: "\00a0\f10d\00a0"; }
 .ibm-cta-generic:before { content: "\00a0\f10e\00a0"; }
@@ -284,7 +320,6 @@ li.ibm-chevron-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-errorLarge-link:before { content: "\00a0\f117\00a0"; }
 .ibm-cancel-link:before { content: "\00a0\f118\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0"; }
-.ibm-error-link:before { content: "\00a0\f11a\00a0"; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0"; }
 .ibm-forward-link:before { content: "\00a0\f11c\00a0"; }
 .ibm-questionLarge-link:before { content: "\00a0\f11d\00a0"; }
@@ -331,8 +366,6 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-youtube-link:before { content: "\00a0\f141\00a0"; }
 .ibm-sort-down:before { content: "\00a0\f142\00a0"; }
 .ibm-sort-up:before { content: "\00a0\f143\00a0"; }
-.ibm-error-link:before,
-.ibm-errorLarge-link:before { content: "\00a0\f144\00a0"; }
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before { content: "\00a0\f145\00a0"; }
 .ibm-tog-list:before { content: "\00a0\f146\00a0"; }
@@ -349,9 +382,10 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
 .ibm-twistie-closed:before { content: "\00a0\f14e\00a0"; }
 .ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
-.ibm-v17-calender:before { content: "\00a0\f150\00a0"; }
-.ibm-v17-upload:before { content: "\00a0\f151\00a0"; }
-.ibm-cancel-link:before { content: "\00a0\f152\00a0"; }
+.ibm-calendar-link:before { content: "\00a0\f150\00a0"; }
+.ibm-upload-link:before { content: "\00a0\f151\00a0"; }
+.ibm-close:before { content: "\00a0\f152\00a0"; }
+
 
 a.ibm-inline,
 a.ibm-inline:before,

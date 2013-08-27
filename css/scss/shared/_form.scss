@@ -720,13 +720,11 @@ form.ibm-column-form p span.ibm-form-note {
 }
 
 form.ibm-column-form span.ibm-error-link {
-    color: #D9182D;
     margin-bottom: 5px;
     margin-left: 200px;
     margin-top: 5px;
 }
 form.ibm-row-form span.ibm-error-link {
-	 color: #D9182D;
 	display:block;
 	margin-top:10px;
 }
@@ -789,28 +787,40 @@ form p span a.ibm-calendar-link,
 form p span a.ibm-information-link,
 form p span a.ibm-error-link,
 form p span a.ibm-help-link {
+	@include px-to-rem(font-size,22px);
     display: inline-block;
-    text-indent: -999em;
-    width: 16px;
-    height: 16px;
+    width: 24px;
     text-decoration: none;
+    color: transparent;
     margin: 0px 0px 0px 5px;
     padding: 0px !important;
     overflow:hidden;
-	position:relative;
-	/*top:6px;*/
-	*top:-7px;
-	_top:0px;
+}
+form p span a.ibm-calculator-link:before,
+form p span a.ibm-calendar-link:before,
+form p span a.ibm-information-link:before,
+form p span a.ibm-help-link:before {
+	color: $linkColor;
+}
+.ibm-error-link,
+.ibm-error-link:before,
+form p span a.ibm-error-link:before {
+	color: #D9182D;
+}
+
+.ibm-error-link.ibm-standalone-acc {
+	color: transparent;
+}
+
+table .ibm-standalone-acc {
+	@include px-to-rem(font-size,22px);
+}
+
+form p span.ibm-error-link:before {
+	@include px-to-rem(font-size,22px);	
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    /* Webkit-specific CSS here */
-	form p span a.ibm-calculator-link,
-	form p span a.ibm-calendar-link,
-	form p span a.ibm-information-link,
-	form p span a.ibm-error-link,
-	form p span a.ibm-help-link {
-		top: -4px;
-	}
+
 	select[disabled] {
 		background-color: #eee;
   		border: 1px solid #DDDDDD;
@@ -821,25 +831,6 @@ form p span a.ibm-help-link {
 	}	
 }
 
-form span a.ibm-calculator-link{background-position: 0 -201px;}
-form span a.ibm-calender-link{background-position: 0 -1px;}
-form span a.ibm-help-link,
-form span a.ibm-information-link{background-position: 0 -1px;}
-form span a.ibm-error-link{background-position: 0 -201px;}
-
-form .ibm-form-elem-grp span a.ibm-calculator-link{background-position: 0 -198px;}
-form .ibm-form-elem-grp span a.ibm-calendar-link{background-position: 0 2px;}
-form .ibm-form-elem-grp span a.ibm-help-link,
-form .ibm-form-elem-grp span a.ibm-information-link{ background-position: 0 2px;}
-form .ibm-form-elem-grp span a.ibm-error-link{background-position: 0 -198px;}
-
-form ul.ibm-alternate a.ibm-calendar-link, form p.ibm-alternate a.ibm-calendar-link {
-    background-position: 1px -2px;
-}
-
-form ul.ibm-alternate-two a.ibm-calendar-link, form p.ibm-alternate-two a.ibm-calendar-link {
-    background-position: 1px -2px;
-}
 
 
 /* FORM ICONS */
@@ -1833,31 +1824,6 @@ form.ibm-column-form span .dijitSelect + a.ibm-calendar-link,
 form.ibm-column-form span .dijitSelect + a.ibm-help-link{
 	position:relative;
 	top:3px;
-}
-
-form.ibm-column-form span .dijitTextBox + a.ibm-information-link,
-form.ibm-column-form span .dijitTextBox + a.ibm-calculator-link,
-form.ibm-column-form span .dijitTextBox + a.ibm-calendar-link,
-form.ibm-column-form span .dijitTextBox + a.ibm-help-link,
-form.ibm-column-form span .dijitSelect + a.ibm-error-link,
-form.ibm-column-form span .dijitTextBox + a.ibm-error-link,
-form.ibm-row-form span .dijitSelect + a.ibm-information-link,
-form.ibm-row-form span .dijitTextBox + a.ibm-information-link,
-form.ibm-row-form span a.ibm-information-link,
-form.ibm-row-form span .dijitSelect + a.ibm-calculator-link,
-form.ibm-row-form span .dijitTextBox + a.ibm-calculator-link,
-form.ibm-row-form span a.ibm-calculator-link,
-form.ibm-row-form span .dijitSelect + a.ibm-calendar-link,
-form.ibm-row-form span .dijitTextBox + a.ibm-calendar-link,
-form.ibm-row-form span a.ibm-calendar-link,
-form.ibm-row-form span .dijitSelect + a.ibm-error-link,
-form.ibm-row-form span .dijitTextBox + a.ibm-error-link,
-form.ibm-row-form span a.ibm-error-link,
-form.ibm-row-form span .dijitSelect + a.ibm-help-link,
-form.ibm-row-form span .dijitTextBox + a.ibm-help-link,
-form.ibm-row-form span a.ibm-help-link{
-	position:relative;
-	top:6px;
 }
  
 

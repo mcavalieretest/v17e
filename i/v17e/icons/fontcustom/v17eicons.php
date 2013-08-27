@@ -34,7 +34,7 @@ $file_contents = str_replace(".ibm-bullet-check:before {",".ibm-bullet-check:bef
 
 #bullets
 $file_contents = str_replace(".ibm-bullet-square:before {",".ibm-bullet:before,
-#ibm-masthead #ibm-common-menu .ibm-ribbon-pane li:before,
+#ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before {",$file_contents);
 
 #check bold
@@ -58,9 +58,6 @@ $file_contents = str_replace(".ibm-form-cancel:before {",".ibm-cancel-link:befor
 
 #form confirm link
 $file_contents = str_replace(".ibm-form-confirm-link:before {",".ibm-confirm-link:before {",$file_contents);
-
-#form error link
-$file_contents = str_replace(".ibm-form-error-link:before {",".ibm-error-link:before {",$file_contents);
 
 #form reset link
 $file_contents = str_replace(".ibm-form-reset:before {",".ibm-reset-link:before {",$file_contents);
@@ -149,10 +146,6 @@ $file_contents = str_replace(".ibm-soc-twitter:before {",".ibm-twitter-link:befo
 #youtube
 $file_contents = str_replace(".ibm-soc-youtube:before {",".ibm-youtube-link:before {",$file_contents);
 
-#alert / error
-$file_contents = str_replace(".ibm-status-alert:before {",".ibm-error-link:before,
-.ibm-errorLarge-link:before {",$file_contents);
-
 #caution
 $file_contents = str_replace(".ibm-status-caution:before {",".ibm-caution-link:before,
 .ibm-cautionLarge-link:before {",$file_contents);
@@ -176,8 +169,8 @@ $file_contents = str_replace(".ibm-tool-print:before {",".ibm-print-link:before 
 #setting
 $file_contents = str_replace(".ibm-tool-settings:before {",".ibm-setting-link:before {",$file_contents);
 
-#cancel link
-$file_contents = str_replace(".ibm-x:before {",".ibm-cancel-link:before {",$file_contents);
+#close link
+$file_contents = str_replace(".ibm-x:before {",".ibm-close:before {",$file_contents);
 
 #upload
 $file_contents = str_replace(".ibm-v17-upload:before {",".ibm-upload-link:before {",$file_contents);
