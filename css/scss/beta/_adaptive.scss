@@ -1096,10 +1096,7 @@ a.ibm-thumbnail-module h3 {
 // -------------------------------------------------------------- media query to be used on 800px Android viewport -------------------------------------------------------------- 
 
 
-
-
-
-// -------------------------------------------------------------- media query to be used on desktop > 1100 viewport -------------------------------------------------------------- 
+// -------------------------------------------------------------- media query to be used on desktop > 1024 viewport -------------------------------------------------------------- 
 @media only screen and (min-width: 1024px) {
 
 	// ribbon column adjust
@@ -1126,6 +1123,40 @@ a.ibm-thumbnail-module h3 {
 
 	#ibm-related-content a.ibm-ribbon-next {
 		right: -38px;
+	}
+	// ribbon column adjust jeff
+
+}
+// -------------------------------------------------------------- media query to be used on desktop > 1024 viewport -------------------------------------------------------------- 
+
+
+// -------------------------------------------------------------- media query to be used on desktop > 1100 viewport -------------------------------------------------------------- 
+@media only screen and (min-width: 1100px) {
+
+	// ribbon column adjust
+	a.ibm-ribbon-next:before,
+	a.ibm-ribbon-prev:before {
+		font-size: 50px;
+		letter-spacing: -9px;
+		line-height: 60px;
+	}
+	
+	a.ibm-ribbon-next {
+		right: -60px;
+		width: 30px;
+	}
+	
+	a.ibm-ribbon-prev {
+		left: -60px;
+		width: 30px;
+	}
+	
+	#ibm-related-content a.ibm-ribbon-prev {
+		left: -50px;
+	}
+
+	#ibm-related-content a.ibm-ribbon-next {
+		right: -50px;
 	}
 	// ribbon column adjust jeff
 
