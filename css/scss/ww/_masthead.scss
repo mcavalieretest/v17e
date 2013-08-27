@@ -53,37 +53,6 @@
 	border: 1px dotted gray;
 	background-position: 6px -996px;
 }
-#ibm-masthead .ibm-mm-close {
-	height: 25px;
-	width: 940px;
-	overflow:hidden;
-	z-index: 9;
-	position: relative;
-    margin: -25px auto 0;
-	cursor: pointer;
-}
-#ibm-masthead .ibm-mm-close span {
-	position:absolute;
-	display: block;
-	height: 25px;
-	width: 940px;
-	background: url("#{$imagePath}/i/v17/buttons/mm-sprite.png") no-repeat 0px 0px;
-        /* ie6 fix*/
-        _background: none; 
-        _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/buttons/mm-sprite.png');
-		/* accessibility: HC MODE fix */	
-		text-align: center;
-		text-indent: -9999em; 
-}
-
-#ibm-masthead .ibm-mm-close span:hover {
-	background-position: 0 -25px;
-}
-
-#ibm-masthead .ibm-mm-close span:active,
-#ibm-masthead .ibm-mm-close span:focus {
-	background-position: 0 -49px;
-}
 
 /* masthead close button style --------end-----*/
 
@@ -446,12 +415,35 @@
 #ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
     color: #F08F26;
 }
+
+#ibm-common-menu .ibm-mm-close {
+	height: 25px;
+	width: 940px;
+	overflow:hidden;
+	z-index: 9;
+	position: relative;
+    margin: -25px auto 0;
+	cursor: pointer;
+}
 #ibm-common-menu .ibm-mm-close span {
-	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat transparent;
+	position:absolute;
+	display: block;
+	height: 25px;
+	width: 940px;
+	background: url("#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif") 0 2px no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/buttons/mm-sprite-alt.gif');
+	/* accessibility: HC MODE fix */	
+	text-align: center;
+	text-indent: -9999em; 
 }
 
 #ibm-common-menu .ibm-mm-close span:hover {
 	background-position: 0 -23px;
+}
+
+#ibm-common-menu .ibm-mm-close span:active,
+#ibm-common-menu .ibm-mm-close span:focus {
+	background-position: 0 -49px;
 }
 
 #ibm-common-menu .ibm-menu-subtabs {
