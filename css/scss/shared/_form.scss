@@ -805,9 +805,13 @@ form p span a.ibm-help-link:before {
 }
 .ibm-error-link,
 .ibm-error-link:before,
+li.ibm-error-link,
+li.ibm-error-link a,
 form p span a.ibm-error-link:before,
 .ibm-errorLarge-link,
 .ibm-errorLarge-link:before,
+li.ibm-errorLarge-link,
+li.ibm-errorLarge-link a,
 form p span a.ibm-errorLarge-link:before {
 	color: #D9182D;
 }
