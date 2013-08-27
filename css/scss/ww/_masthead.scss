@@ -9,6 +9,8 @@
 	z-index: 900;
 	border-top: 1px solid #666;
 	border-bottom: 2px solid rgba(255,255,255,0.8);
+	*overflow: hidden;
+	_position: relative;
 }
 
 .dijit_a11y #ibm-masthead {
@@ -121,6 +123,7 @@
 #ibm-mast-options p {
 	display: inline;
 }
+
 #ibm-related-links, #ibm-esite-link {
 	display: block;
 }
@@ -142,11 +145,11 @@
 #ibm-mast-options li#ibm-geo {
 	padding: 4px 0;
 }
-.dijit_a11y #ibm-mast-options li#ibm-geo{
+.dijit_a11y #ibm-mast-options li#ibm-geo {
 	padding: 4px 20px;
 }
 
-#ibm-mast-options li#ibm-geo a{
+#ibm-mast-options li#ibm-geo a {
 	background: url("#{$imagePath}/i/v17/icons/country-icons-sprite.png") no-repeat 10px 0px transparent;
 	padding: 3px 20px 3px 40px;
 	_background:none; /* ie6 tweak*/
@@ -161,7 +164,7 @@
     _background:none; /* ie6 tweak*/
 }
 
-#ibm-mast-options li#ibm-geo a.ibm-back-country:hover{
+#ibm-mast-options li#ibm-geo a.ibm-back-country:hover {
 	background-position: 4px -212px;
 }
 
@@ -175,7 +178,9 @@
 	color: #D0D0D3;
 	background-position: 10px -20px;
 }
-#ibm-mast-options li#ibm-geo:hover a, #ibm-mast-options  li#ibm-geo a:focus {
+
+#ibm-mast-options li#ibm-geo:hover a, 
+#ibm-mast-options li#ibm-geo a:focus {
 	background-position: 10px -40px;
 	color: #FFF;
 }
@@ -196,13 +201,10 @@
 	color: #BABBBD;
 }
 
-#ibm-mast-options a:hover, #ibm-mast-options a:focus, #ibm-mast-options  li#ibm-sso a:focus {
+#ibm-mast-options a:hover, 
+#ibm-mast-options a:focus, 
+#ibm-mast-options li#ibm-sso a:focus {
 	color: #FFF;
-}
-
-#ibm-universal-nav #ibm-unav-links, 
-#ibm-universal-nav #ibm-menu-links {
-    margin: 0 260px 0 20px;
 }
 
 #ibm-universal-nav {
@@ -330,6 +332,47 @@
    	@include background-gradient(top, #595C64, #1B1B1C);
 	color: #FFF;
 	text-shadow: none;
+}
+
+/* minimized masthead icons */
+
+/* requires width:100% on #ibm-unav-links */
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo, 
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
+    text-indent: -9999px;
+    height: 20px;
+    width: 20px;  
+    position: absolute;
+    top: 12px; 
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo {
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
+	right: 79px;
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
+	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -600px;
+	right: 47px;
+}
+
+/* if text needs to be visible */
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text, 
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text {
+	text-indent: 23px;  
+	width: 80px;
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text { 
+	right: 112px;    
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text { 
+	right: 22px;    
 }
 
 #ibm-my-menu {
@@ -492,73 +535,6 @@
 
 /* common menu area ends========================== */
 
-/* minimized masthead icons */
-
-/* requires width:100% on #ibm-unav-links */
-
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo, 
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
-    text-indent: -9999px;
-    height: 20px;
-    width: 20px;  
-    position: absolute;
-    top: 12px; 
-}
-
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo {
-	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -201px; 
-	right: 79px;
-}
-
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
-	background: url("#{$imagePath}/i/v17/minm_icons.png") no-repeat 3px -600px;
-	right: 47px;
-}
-
-/* if text needs to be visible */
-
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text, 
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text {
-	text-indent: 23px;  
-	width: 80px;
-	color: #FFF;
-	font-size: 0.8em;
-}
-
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text { 
-	right: 112px;    
-}
-
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text { 
-	right: 22px;    
-}
-
-
-
-
-/* since :hover works only on A in IE6, JS needs to be used to display hover state 
-   disabled for now
-*/
-/*
-
-#ibm-universal-nav #ibm-unav-links #ibm-search-logo:hover {
-background-position: 3px -1px;
-} 
-#ibm-universal-nav #ibm-unav-links #ibm-links-logo:hover {
-background-position: 3px -400px;
-}
-*/
-
-
-// masthead styles begin ==============================
-
-#ibm-masthead {
-	*overflow: hidden;
-	_position: relative;
-}
-
-
-// masthead styles end ==============================
 
 /* search field begin ============================== */
 

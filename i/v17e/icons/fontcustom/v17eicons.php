@@ -42,7 +42,9 @@ $file_contents = str_replace(".ibm-check-bold:before {",".ibm-check-link:before 
 
 #chevron link
 $file_contents = str_replace(".ibm-cta-chevron-link:before {","a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after {",$file_contents);
+li.ibm-chevron-link a:after,
+a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after {",$file_contents);
 
 #pdf link
 $file_contents = str_replace(".ibm-doc-pdf:before {",".ibm-pdf-link:before {",$file_contents);
@@ -78,7 +80,7 @@ $file_contents = str_replace(".ibm-ldr-phone:before {",".ibm-phone-link:before,
 .ibm-call-link:before {",$file_contents);
 
 #quote
-$file_contents = str_replace(".ibm-ldr-quote:before {",".ibm-requestaquote-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-ldr-quote:before {",".ibm-requestquote-link:before {",$file_contents);
 
 #register / signin
 $file_contents = str_replace(".ibm-ldr-register:before {",".ibm-signin-link:before {",$file_contents);
@@ -176,6 +178,13 @@ $file_contents = str_replace(".ibm-tool-settings:before {",".ibm-setting-link:be
 
 #cancel link
 $file_contents = str_replace(".ibm-x:before {",".ibm-cancel-link:before {",$file_contents);
+
+#upload
+$file_contents = str_replace(".ibm-v17-upload:before {",".ibm-upload-link:before {",$file_contents);
+
+#calendar
+$file_contents = str_replace(".ibm-v17-calender:before {",".ibm-calendar-link:before {",$file_contents);
+
 
 
 

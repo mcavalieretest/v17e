@@ -206,6 +206,6 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
 .ibm-twistie-closed:before { content: "\00a0\f14e\00a0"; }
 .ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
-.ibm-v17-calender:before { content: "\00a0\f150\00a0"; }
-.ibm-v17-upload:before { content: "\00a0\f151\00a0"; }
+.ibm-calendar-link:before { content: "\00a0\f150\00a0"; }
+.ibm-upload-link:before { content: "\00a0\f151\00a0"; }
 .ibm-cancel-link:before { content: "\00a0\f152\00a0"; }
