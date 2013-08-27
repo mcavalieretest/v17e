@@ -1,6 +1,9 @@
 {
   "fonts": [
-
+    "icons-ibm-v1_1.ttf",
+    "icons-ibm-v1_1.woff",
+    "icons-ibm-v1_1.eot",
+    "icons-ibm-v1_1.svg"
   ],
   "file_name": "icons-ibm-v1_1",
   "glyphs": [
