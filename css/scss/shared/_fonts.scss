@@ -333,6 +333,13 @@ p.ibm-table-scroll-caption {
 	font-size: 24px;
 	line-height: 30px;
 }
+.ibm-additional-info,.ibm-item-note {
+	@include px-to-rem(font-size,12px);
+}
+.ibm-item-note {
+	font-family: Georgia;
+	font-style:bold;
+}
 
 .ibm-legal-text,
 .ibm-legal {
