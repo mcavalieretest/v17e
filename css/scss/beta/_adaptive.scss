@@ -1100,7 +1100,7 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be used on desktop > 1100 viewport -------------------------------------------------------------- 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
 
 	// ribbon column adjust
 	a.ibm-ribbon-next:before,
@@ -1111,21 +1111,21 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	a.ibm-ribbon-next {
-		right: -60px;
+		right: -38px;
 		width: 30px;
 	}
 	
 	a.ibm-ribbon-prev {
-		left: -60px;
+		left: -38px;
 		width: 30px;
 	}
 	
 	#ibm-related-content a.ibm-ribbon-prev {
-		left: -50px;
+		left: -32px;
 	}
 
 	#ibm-related-content a.ibm-ribbon-next {
-		right: -50px;
+		right: -32px;
 	}
 	// ribbon column adjust jeff
 
