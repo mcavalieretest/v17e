@@ -70,6 +70,19 @@ these fonts. */
 
 @font-face {
     font-family: 'iconsIBM';
+    src: url('#{$fontPath}/icons-ibm-v1.eot');
+    src: url('#{$fontPath}/icons-ibm-v1.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/icons-ibm-v1.woff') format('woff'),
+         url('#{$fontPath}/icons-ibm-v1.ttf') format('truetype'),
+         url('#{$fontPath}/icons-ibm-v1.svg#iconsIBM') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+Icons fonts (for local testing)
+@font-face {
+    font-family: 'iconsIBM';
     src: url('../i/v17e/icons/fontcustom/icons-ibm-v1.eot');
     src: url('../i/v17e/icons/fontcustom/icons-ibm-v1.eot?#iefix') format('embedded-opentype'),
          url('../i/v17e/icons/fontcustom/icons-ibm-v1.woff') format('woff'),
@@ -78,7 +91,7 @@ these fonts. */
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 // v17e font styles begin ============================================
 
 div, 

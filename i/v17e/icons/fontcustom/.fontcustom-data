@@ -1,10 +1,10 @@
 {
-  "file_name": "icons-ibm-v1",
+  "file_name": "icons-ibm-v1_e9428308e2162c378eb3f64a9cc33345",
   "fonts": [
-    "icons-ibm-v1.ttf",
-    "icons-ibm-v1.woff",
-    "icons-ibm-v1.eot",
-    "icons-ibm-v1.svg"
+    "icons-ibm-v1_e9428308e2162c378eb3f64a9cc33345.ttf",
+    "icons-ibm-v1_e9428308e2162c378eb3f64a9cc33345.woff",
+    "icons-ibm-v1_e9428308e2162c378eb3f64a9cc33345.eot",
+    "icons-ibm-v1_e9428308e2162c378eb3f64a9cc33345.svg"
   ],
   "glyphs": [
     "a-anchor",
@@ -51,12 +51,6 @@
     "nav-dropdown",
     "nav-menu",
     "nav-search",
-    "pag-chev-l-bd",
-    "pag-chev-l-lt",
-    "pag-chev-l-md",
-    "pag-chev-r-bd",
-    "pag-chev-r-lt",
-    "pag-chev-r-md",
     "password-link",
     "popup",
     "rate-star",
@@ -81,7 +75,6 @@
     "tog-tile",
     "tool-info",
     "tool-print",
-    "tool-settings",
     "tool-share",
     "x"
   ],
