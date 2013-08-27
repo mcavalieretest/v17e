@@ -5,7 +5,7 @@
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Aug 27 11:30:34 2013
+Created by FontForge 20120731 at Tue Aug 27 14:28:05 2013
  By Jefferson Florentino
 Created by Jefferson Florentino with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by Jefferson Florentino with FontForge 2.0 (http://fontforge.sf.net)
     bbox="-0.5 -63 510.75 447.75"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F100-F152"
+    unicode-range="U+F100-F153"
   />
     <missing-glyph />
     <glyph glyph-name="uniF100" unicode="&#xf100;" 
@@ -231,5 +231,7 @@ d="M304 216v-36h-36v36h36zM232 216v-36h-35v36h35zM232 144v-35h-35v35h35zM161 216
 d="M259 63v41h67v-107h-326v107h67v-41h192zM98 108v117h-98l163 163l163 -163h-98v-117h-130z" />
     <glyph glyph-name="uniF152" unicode="&#xf152;" horiz-adv-x="511" 
 d="M504 441c9 -9 9 -23 0 -32l-216 -216l216 -216c9 -9 9 -24 0 -33c-5 -4 -10 -7 -16 -7s-12 2 -17 7l-216 216l-216 -216c-5 -4 -10 -7 -16 -7s-12 2 -16 7c-9 9 -9 24 0 33l216 216l-216 216c-9 9 -9 23 0 32s23 9 32 0l216 -216l216 216c9 9 24 9 33 0z" />
+    <glyph glyph-name="uniF153" unicode="&#xf153;" horiz-adv-x="0" 
+ />
   </font>
 </defs></svg>
