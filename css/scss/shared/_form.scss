@@ -1818,14 +1818,6 @@ form.ibm-column-form span .dijitSelect,
 form.ibm-row-form span .dijitSelect {
 	float: left;
 }
-form.ibm-column-form span select + a.ibm-error-link,
-form.ibm-column-form span .dijitSelect + a.ibm-information-link,
-form.ibm-column-form span .dijitSelect + a.ibm-calculator-link,
-form.ibm-column-form span .dijitSelect + a.ibm-calendar-link,
-form.ibm-column-form span .dijitSelect + a.ibm-help-link{
-	position:relative;
-	top:3px;
-}
  
 
  /*
