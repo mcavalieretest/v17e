@@ -304,11 +304,13 @@ table.ibm-results-table h2 {
 	padding: 0px 0px 3px 0px;
 }
 
+/* Pagination code ==============================*/
+
 p.ibm-table-navigation {
 	clear: both;
 }
 
-.ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link,
+/*.ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-back-em-link,
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link,
 .ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link {
@@ -320,17 +322,46 @@ p.ibm-table-navigation {
 .ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link:hover,
 .ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link:hover {
 	background-position:0px -200px;
+}*/
+
+p.ibm-table-navigation a.ibm-back-em-link,
+p.ibm-table-navigation span.ibm-back-em-link {
+	padding-left:12px;
+}
+p.ibm-table-navigation a.ibm-back-em-link:before,
+p.ibm-table-navigation span.ibm-back-em-link:before {
+	@include px-to-rem(margin-left,-16px);
+}
+p.ibm-table-navigation a.ibm-forward-em-link:before {
+	content:"";
+}
+p.ibm-table-navigation a.ibm-forward-em-link:after {
+	color: $linkColor;
+	font-family: 'iconsIBM';
+	font-variant: normal;
+	content: "\00a0\f134\00a0";
 }
 
-p.ibm-table-navigation a.ibm-back-em-link {padding: 0px 0px 0px 16px;}
+span.ibm-firstpage-link {
+	padding-right:20px;
+}
+span.ibm-firstpage-link + span.ibm-back-em-link,
+span.ibm-firstpage-link + a.ibm-back-em-link{
+	padding-left:10px;
+}
+span.ibm-forward-em-link + span.ibm-lastpage-link {
+	padding-left:15px;
+}
 
-p.ibm-table-navigation a.ibm-forward-em-link, 
+
+
+/*p.ibm-table-navigation a.ibm-forward-em-link, 
 span.ibm-table-navigation a.ibm-forward-em-link,
 span.ibm-table-navigation-links span.ibm-forward-em-link {
 	background-position: 100% -1px;
 	padding: 0 20px 0 0 !important; 
-}
-
+}*/
+/*
 .ibm-col-4-3 p.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-4-3 span.ibm-table-navigation a.ibm-forward-em-link,
 .ibm-col-6-4 p.ibm-table-navigation a.ibm-forward-em-link,
@@ -359,7 +390,7 @@ p.ibm-table-navigation span.ibm-forward-em-link{
 
 p.ibm-table-navigation span.ibm-forward-em-link:hover{
 	background-position: 4px -1px;
-}
+}*/
 
 p.ibm-table-navigation .ibm-primary-navigation {
 	*float: left;
@@ -369,6 +400,15 @@ p.ibm-table-navigation .ibm-primary-navigation {
 p.ibm-table-navigation .ibm-secondary-navigation {
 	float: right;
 }
+/*Pagination with in the form ============= */
+form.ibm-column-form p.ibm-table-navigation span {
+    display: inline;
+    margin-left: 0;
+}
+/* End ==========================*/
+
+/* end of pagination code ===========================*/
+
 
 table.ibm-data-table.ibm-alternate{
     background: none;
