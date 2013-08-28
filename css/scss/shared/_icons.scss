@@ -436,8 +436,6 @@ a.ibm-inline:after {
 // ibm-ribbon start
 a.ibm-ribbon-next,
 a.ibm-ribbon-prev {
-//	background: url("../i/v17e/mod/chev.png") no-repeat;
-//	background-image: url("../i/v17e/mod/chev.svg"), none;	
 	display: block;
 	font-size: 0;
 	color: transparent;
@@ -446,6 +444,10 @@ a.ibm-ribbon-prev {
 	height: 60px;
 	position: absolute;
 	cursor: pointer;
+}
+#{$ie7Selector} a.ibm-ribbon-next,
+#{$ie7Selector} a.ibm-ribbon-prev {
+	background: url("../i/v17e/mod/chev-sprite.png") no-repeat;
 }
 a.ibm-ribbon-next:before,
 a.ibm-ribbon-prev:before {
@@ -457,15 +459,19 @@ a.ibm-ribbon-prev:before {
 	text-indent: 0%;
 }
 a.ibm-ribbon-next {
-	background-position: 0 -120px; 
 	right: -20px;
+}
+#{$ie7Selector} a.ibm-ribbon-next {
+	background-position: 0 0;
 }
 .ibm-portrait a.ibm-ribbon-next {
 	margin-top: -65px;
 }
 a.ibm-ribbon-prev {
-	background-position: 0 -300px;
 	left: -20px;
+}
+#{$ie7Selector} a.ibm-ribbon-prev {
+	background-position: -84px 0;
 }
 .ibm-portrait a.ibm-ribbon-prev {
 	margin-top: 25px;
