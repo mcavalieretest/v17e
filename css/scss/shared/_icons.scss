@@ -20,9 +20,9 @@
 .ibm-bullet-check				ibm-checkLarge-link
 .ibm-bullet-square				bullets
 .ibm-check-bold					ibm-check-link
-.ibm-cta-arrow-sm				v17e - (new alternative to the arrow)
+.ibm-cta-arrow-sm				ibm-chevron-link,ibm-chevron-alternate-link
 .ibm-cta-arrow					default for all elements which do not have a custom icon  (ibm-contrast-link,ibm-fontsize-link,ibm-digg-link,ibm-delicious-link,ibm-friendfeed-link,ibm-stumbleupon-link,ibm-livedoor-link,ibm-hatena-link,ibm-baidu-link,ibm-renren-link,ibm-kaixn-link,ibm-wykop-link,ibm-blip-link,ibm-livestream-link,ibm-weibo-link,ibm-vaideo-link,ibm-xing-link,ibm-skype-link,ibm-googleplus-link,ibm-yahoojapan-link)
-.ibm-cta-chevron-link			ibm-chevron-link,ibm-chevron-alternate-link
+.ibm-cta-chevron-link			v17e - (new alternative to chevron link)
 .ibm-cta-chevron				v17e - (new alternative to chevron link)
 .ibm-cta-download				duplicate with ibm-download-link
 .ibm-cta-generic				deuplicate with ibm-forward-link
@@ -288,10 +288,46 @@ li a.ibm-close:before {
 	text-decoration: none;
 }
 
+.ibm-col-6-4 li a[class*="-link"]:before,
+.ibm-col-6-4 li a.ibm-cta-arrow-sm:before,
+.ibm-col-6-4 li a.ibm-cta-chevron:before,
+.ibm-col-6-4 li a.ibm-cta-download:before,
+.ibm-col-6-4 li a.ibm-cta-generic:before,
+.ibm-col-6-4 li a.ibm-doc-folder:before,
+.ibm-col-6-4 li a.ibm-symp-doc:before,
+.ibm-col-6-4 li a.ibm-symp-spreadsheet:before,
+.ibm-col-6-4 li a.ibm-symp-presentation:before,
+.ibm-col-6-4 li a.ibm-download-whitepaper:before,
+.ibm-col-6-4 li a.ibm-download:before,
+.ibm-col-6-4 span.ibm-error-link:before,
+.ibm-col-6-4 li a.ibm-ibmer:before,
+.ibm-col-6-4 li a.ibm-logo-sp-na:before,
+.ibm-col-6-4 li a.ibm-media-play:before,
+.ibm-col-6-4 li a.ibm-video-.ibm-col-6-4 link:before,
+.ibm-col-6-4 li a.ibm-nav-search:before,
+.ibm-col-6-4 li a.ibm-soc-expert:before,
+.ibm-col-6-4 li a.ibm-soc-pinterest:before,
+.ibm-col-6-4 li a.ibm-soc-profile:before,
+.ibm-col-6-4 li a.ibm-soc-rssfeed:before,
+.ibm-col-6-4 li a.ibm-soc-tumbler:before,
+.ibm-col-6-4 li a.ibm-tog-.ibm-col-6-4 list:before,
+.ibm-col-6-4 li a.ibm-tog-tile:before,
+.ibm-col-6-4 li a.ibm-community:before,
+.ibm-col-6-4 li a.ibm-usergroup:before,
+.ibm-col-6-4 li a.ibm-tool-share:before,
+.ibm-col-6-4 li a.ibm-twistie-closed:before,
+.ibm-col-6-4 li a.ibm-twistie-open:before,
+.ibm-col-6-4 li a.ibm-close:before {
+	@include px-to-rem(margin-left,-35px);
+	text-decoration: none;
+}
+
+li a.ibm-feature-link:before,
 li a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
 li a.ibm-chevron-alternate-link:after,
 li.ibm-chevron-alternate-link a:after {
+	margin-left: 0;
 	text-decoration: none;
 }
 
@@ -310,7 +346,10 @@ li.ibm-chevron-alternate-link a:after {
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
 .ibm-check-link:before { content: "\00a0\f108\00a0"; }
-.ibm-cta-arrow-sm:before { content: "\00a0\f109\00a0"; }
+a.ibm-chevron-link:after,
+li.ibm-chevron-link a:after,
+a.ibm-chevron-alternate-link:after,
+li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-contrast-link:before,
 .ibm-fontsize-link:before,
 .ibm-digg-link:before,
@@ -331,10 +370,7 @@ li.ibm-chevron-alternate-link a:after {
 .ibm-skype-link:before,
 .ibm-googleplus-link:before,
 .ibm-yahoojapan-link:before { content: "\00a0\f10a\00a0"; }
-a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after,
-a.ibm-chevron-alternate-link:after,
-li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
+.ibm-cta-chevron-link:before { content: "\00a0\f10b\00a0"; }
 .ibm-cta-chevron:before { content: "\00a0\f10c\00a0"; }
 .ibm-cta-download:before { content: "\00a0\f10d\00a0"; }
 .ibm-cta-generic:before { content: "\00a0\f10e\00a0"; }

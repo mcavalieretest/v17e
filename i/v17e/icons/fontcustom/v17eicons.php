@@ -56,7 +56,7 @@ $file_contents = str_replace(".ibm-bullet-square:before {",".ibm-bullet:before,
 $file_contents = str_replace(".ibm-check-bold:before {",".ibm-check-link:before {",$file_contents);
 
 #chevron link
-$file_contents = str_replace(".ibm-cta-chevron-link:before {","a.ibm-chevron-link:after,
+$file_contents = str_replace(".ibm-cta-arrow-sm:before {","a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
 a.ibm-chevron-alternate-link:after,
 li.ibm-chevron-alternate-link a:after {",$file_contents);
@@ -226,7 +226,8 @@ $file_contents = str_replace(".ibm-v17-upload:before {",".ibm-upload-link:before
 $file_contents = str_replace(".ibm-v17-calender:before {",".ibm-calendar-link:before {",$file_contents);
 
 #menu
-$file_contents = str_replace(".ibm-nav-menu:before {",".ibm-menu-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-nav-menu:before {",".ibm-menu-link:before,
+#ibm-mobile-tabs:after {",$file_contents);
 
 #sort
 $file_contents = str_replace(".ibm-nav-dropdown:before {",".ibm-sort-link:before {",$file_contents);
