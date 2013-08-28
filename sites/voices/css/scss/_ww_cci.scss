@@ -1386,7 +1386,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
-@media only screen and (min-width:0) and (max-width:480px) {
+@media only screen and (min-width:0) and (max-width:568px) {
 
 		.leadspace--defaults {
 			margin:10px 0;
@@ -1443,7 +1443,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 }
 
 /* MODIFYERS FOR TABLETS (BEGIN) */
-@media only screen and (min-width:769px) and (max-width:800px) {
+@media only screen and (min-width:481px), screen and (min-width:569px), screen and (min-width:601px), screen and (min-width:641px), screen and (min-width:769px) and (max-width:800px) {
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 		min-height:100px;
 		#ibm-leadspace-body {
