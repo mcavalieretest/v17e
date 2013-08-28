@@ -12,7 +12,8 @@ $file_contents = str_replace(".ibm-a-anchor:before {",".ibm-anchor-down-link:bef
 .ibm-anchor-down-em-link:before {",$file_contents);
 
 #arrow 
-$file_contents = str_replace(".ibm-a-arrow:before {",".ibm-forward-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-forward-link:before {",".ibm-forward-link:before,
+.ibm-callaction-link:before {",$file_contents);
 
 #back 
 $file_contents = str_replace(".ibm-a-back-link:before {",".ibm-back-link:before,
@@ -27,10 +28,11 @@ $file_contents = str_replace(".ibm-a-forward-bd:before {",".ibm-forward-em-link:
 .ibm-generic-link:before {",$file_contents);
 
 #upward
-$file_contents = str_replace(".ibm-a-top:before {",".ibm-upward-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-a-top:before {",".ibm-upward-link:before,
+.ibm-anchor-up-link:before {",$file_contents);
 
 #bullet check
-$file_contents = str_replace(".ibm-bullet-check:before {",".ibm-bullet-check:before {",$file_contents);
+$file_contents = str_replace(".ibm-bullet-check:before {",".ibm-checkLarge-link:before {",$file_contents);
 
 #bullets
 $file_contents = str_replace(".ibm-bullet-square:before {",".ibm-bullet:before,
@@ -93,6 +95,12 @@ $file_contents = str_replace(".ibm-media-audio:before {",".ibm-audio-link:before
 
 #demoplay
 $file_contents = str_replace(".ibm-media-play:before {",".ibm-demoplay-link:before {",$file_contents);
+
+#document / symp doc / spreadsheet / presentation
+$file_contents = str_replace(".ibm-document-link:before {",".ibm-document-link:before,
+.ibm-symp-doc:before,
+.ibm-symp-spreadsheet:before,
+.ibm-symp-presentation:before {",$file_contents);
 
 
 #ribbon chevrons------------------------
@@ -161,7 +169,8 @@ $file_contents = str_replace(".ibm-tog-plus:before {",".ibm-add1-link:before,
 .ibm-show-hide h2 a:before {",$file_contents);
 
 #info link
-$file_contents = str_replace(".ibm-tool-info:before {",".ibm-information-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-tool-info:before {",".ibm-information-link:before,
+.ibm-informationLarge-link:before {",$file_contents);
 
 #print
 $file_contents = str_replace(".ibm-tool-print:before {",".ibm-print-link:before {",$file_contents);
@@ -178,6 +187,14 @@ $file_contents = str_replace(".ibm-v17-upload:before {",".ibm-upload-link:before
 #calendar
 $file_contents = str_replace(".ibm-v17-calender:before {",".ibm-calendar-link:before {",$file_contents);
 
+#sort
+$file_contents = str_replace(".ibm-nav-dropdown:before {",".ibm-sort-link:before {",$file_contents);
+
+#sort up
+$file_contents = str_replace(".ibm-sort-up:before {",".ibm-sort-up-link:before {",$file_contents);
+
+#sort down
+$file_contents = str_replace(".ibm-sort-down:before {",".ibm-sort-down-link:before {",$file_contents);
 
 
 

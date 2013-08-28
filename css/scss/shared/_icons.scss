@@ -10,8 +10,8 @@
 .ibm-a-back-link				ibm-back-link,ibm-back-em-link,ibm-backup-link
 .ibm-a-external-link		 	ibm-external-link
 .ibm-a-forward-bd		 		ibm-forward-em-link,ibm-generic-link
-.ibm-a-top						ibm-upward-link
-.ibm-bullet-check				v17e - (new alternative to the square bullet)
+.ibm-a-top						ibm-upward-link,ibm-anchor-up-link
+.ibm-bullet-check				ibm-checkLarge-link
 .ibm-bullet-square				bullets
 .ibm-check-bold					ibm-check-link
 .ibm-cta-arrow-sm				v17e - (new alternative to the arrow)
@@ -23,7 +23,7 @@
 .ibm-demo-link					ibm-demo-link
 .ibm-doc-folder					v17e - (new icon TBD)
 .ibm-doc-pdf					ibm-pdf-link
-.ibm-document-link				ibm-document-link
+.ibm-document-link				ibm-document-link,ibm-symp-doc,ibm-symp-spreadsheet,ibm-symp-presentation
 .ibm-download-link				ibm-download-link
 .ibm-download-whitepaper		v17e - (new icon TBD)
 .ibm-download					v17e - duplicate with ibm-download-link (alternate)
@@ -33,7 +33,7 @@
 .ibm-form-confirm-link			ibm-confirm-link
 .ibm-form-error-link			duplicate: ibm-error-link
 .ibm-form-reset					ibm-reset-link
-.ibm-forward-link				ibm-forward-link
+.ibm-forward-link				ibm-forward-link,ibm-callaction-link
 .ibm-help-lg					ibm-questionLarge-link
 .ibm-help						ibm-question-link,ibm-help-link
 .ibm-ibmer						v17e - (new icon TBD)
@@ -46,8 +46,10 @@
 .ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo
 .ibm-media-audio				ibm-audio-link
 .ibm-media-play					ibm-demoplay-link
-.ibm-nav-dropdown				v17e - (Kevin to provide alternate versions)
-.ibm-nav-menu					v17e - (new icon TBD) -- mobile view
+.ibm-nav-dropdown				ibm-sort-link
+.ibm-sort-up					ibm-sort-up-link
+.ibm-sort-down					ibm-sort-down-link
+.ibm-nav-menu					ibm-menu-link
 .ibm-nav-search					v17e - (new icon for masthead search)
 .ibm-password-link				ibm-password-link
 .ibm-popup						ibm-popup-link
@@ -71,7 +73,7 @@
 .ibm-tog-minus					ibm-delete-link,ibm-minimize-link,.ibm-show-hide h2 a.ibm-show-active
 .ibm-tog-plus					ibm-add1-link,ibm-maximize-link,.ibm-show-hide h2 a
 .ibm-tog-tile					v17e - (new icon for list view)
-.ibm-tool-info					ibm-information-link
+.ibm-tool-info					ibm-information-link,ibm-informationLarge-link
 .ibm-tool-print					ibm-print-link
 .ibm-tool-settings				ibm-setting-link
 .ibm-tool-share					v17e - (new icon TBD)
@@ -85,6 +87,7 @@
 .ibm-anchor-down-link:before,
 .ibm-anchor-down-em-link:before,
 .ibm-forward-link:before,
+.ibm-callaction-link:before,
 .ibm-back-link:before,
 .ibm-back-em-link:before,
 .ibm-backup-link:before,
@@ -92,7 +95,8 @@
 .ibm-forward-em-link:before,
 .ibm-generic-link:before,
 .ibm-upward-link:before,
-.ibm-bullet-check:before,
+.ibm-anchor-up-link:before,
+.ibm-checkLarge-link:before,
 .ibm-bullet:before,
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before,
@@ -110,6 +114,9 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-doc-folder:before,
 .ibm-pdf-link:before,
 .ibm-document-link:before,
+.ibm-symp-doc:before,
+.ibm-symp-spreadsheet:before,
+.ibm-symp-presentation:before,
 .ibm-download-link:before,
 .ibm-download-whitepaper:before,
 .ibm-download:before,
@@ -119,7 +126,6 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-cancel-link:before,
 .ibm-confirm-link:before,
 .ibm-reset-link:before,
-.ibm-forward-link:before,
 .ibm-questionLarge-link:before,
 .ibm-question-link:before,
 .ibm-help-link:before,
@@ -134,8 +140,8 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-logo-sp-na:before,
 .ibm-audio-link:before,
 .ibm-demoplay-link:before,
-.ibm-nav-dropdown:before,
-.ibm-nav-menu:before,
+.ibm-sort-link:before,
+.ibm-menu-link:before,
 .ibm-nav-search:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
@@ -156,8 +162,8 @@ a.ibm-ribbon-next:before,
 .ibm-soc-tumbler:before,
 .ibm-twitter-link:before,
 .ibm-youtube-link:before,
-.ibm-sort-down:before,
-.ibm-sort-up:before,
+.ibm-sort-down-link:before,
+.ibm-sort-up-link:before,
 .ibm-errorLarge-link:before,
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before,
@@ -170,6 +176,7 @@ a.ibm-ribbon-next:before,
 .ibm-show-hide h2 a:before,
 .ibm-tog-tile:before,
 .ibm-information-link:before,
+.ibm-informationLarge-link:before,
 .ibm-print-link:before,
 .ibm-setting-link:before,
 .ibm-tool-share:before,
@@ -195,6 +202,7 @@ ul.ibm-alternate-two a:before {
 li a.ibm-anchor-down-link:before,
 li a.ibm-anchor-down-em-link:before,
 li a.ibm-forward-link:before,
+li a.ibm-callaction-link:before,
 li a.ibm-back-link:before,
 li a.ibm-back-em-link:before,
 li a.ibm-backup-link:before,
@@ -202,7 +210,8 @@ li a.ibm-external-link:before,
 li a.ibm-forward-em-link:before,
 li a.ibm-generic-link:before,
 li a.ibm-upward-link:before,
-li a.ibm-bullet-check:before,
+li a.ibm-anchor-up-link:before,
+li a.ibm-checkLarge-link:before,
 li a.ibm-check-link:before,
 li a.ibm-cta-arrow-sm:before,
 li a.ibm-cta-arrow:before,
@@ -213,6 +222,9 @@ li a.ibm-demo-link:before,
 li a.ibm-doc-folder:before,
 li a.ibm-pdf-link:before,
 li a.ibm-document-link:before,
+li a.ibm-symp-doc:before,
+li a.ibm-symp-spreadsheet:before,
+li a.ibm-symp-presentation:before,
 li a.ibm-download-link:before,
 li a.ibm-download-whitepaper:before,
 li a.ibm-download:before,
@@ -223,7 +235,6 @@ li a.ibm-errorLarge-link:before,
 li a.ibm-cancel-link:before,
 li a.ibm-confirm-link:before,
 li a.ibm-reset-link:before,
-li a.ibm-forward-link:before,
 li a.ibm-questionLarge-link:before,
 li a.ibm-question-link:before,
 li a.ibm-help-link:before,
@@ -238,8 +249,8 @@ li a.ibm-anchor-down-link:before,
 li a.ibm-logo-sp-na:before,
 li a.ibm-audio-link:before,
 li a.ibm-demoplay-link:before,
-li a.ibm-nav-dropdown:before,
-li a.ibm-nav-menu:before,
+li a.ibm-sort-link:before,
+li a.ibm-menu-link:before,
 li a.ibm-nav-search:before,
 li a.ibm-password-link:before,
 li a.ibm-popup-link:before,
@@ -258,8 +269,8 @@ li a.ibm-soc-rssfeed:before,
 li a.ibm-soc-tumbler:before,
 li a.ibm-twitter-link:before,
 li a.ibm-youtube-link:before,
-li a.ibm-sort-down:before,
-li a.ibm-sort-up:before,
+li a.ibm-sort-down-link:before,
+li a.ibm-sort-up-link:before,
 li a.ibm-errorLarge-link:before,
 li a.ibm-caution-link:before,
 li a.ibm-cautionLarge-link:before,
@@ -270,6 +281,7 @@ li a.ibm-add1-link:before,
 li a.ibm-maximize-link:before,
 li a.ibm-tog-tile:before,
 li a.ibm-information-link:before,
+li a.ibm-informationLarge-link:before,
 li a.ibm-print-link:before,
 li a.ibm-setting-link:before,
 li a.ibm-tool-share:before,
@@ -291,15 +303,17 @@ li.ibm-chevron-alternate-link a:after {
 
 .ibm-anchor-down-link:before,
 .ibm-anchor-down-em-link:before { content: "\00a0\f100\00a0"; }
-.ibm-forward-link:before { content: "\00a0\f101\00a0"; }
+.ibm-forward-link:before,
+.ibm-callaction-link:before { content: "\00a0\f101\00a0"; }
 .ibm-back-link:before,
 .ibm-back-em-link:before,
 .ibm-backup-link:before { content: "\00a0\f102\00a0"; }
 .ibm-external-link:before { content: "\00a0\f103\00a0"; }
 .ibm-forward-em-link:before,
 .ibm-generic-link:before { content: "\00a0\f104\00a0"; }
-.ibm-upward-link:before { content: "\00a0\f105\00a0"; }
-.ibm-bullet-check:before { content: "\00a0\f106\00a0"; }
+.ibm-upward-link:before,
+.ibm-anchor-up-link:before { content: "\00a0\f105\00a0"; }
+.ibm-checkLarge-link:before { content: "\00a0\f106\00a0"; }
 .ibm-bullet:before,
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
@@ -316,7 +330,10 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-demo-link:before { content: "\00a0\f10f\00a0"; }
 .ibm-doc-folder:before { content: "\00a0\f110\00a0"; }
 .ibm-pdf-link:before { content: "\00a0\f111\00a0"; }
-.ibm-document-link:before { content: "\00a0\f112\00a0"; }
+.ibm-document-link:before,
+.ibm-symp-doc:before,
+.ibm-symp-spreadsheet:before,
+.ibm-symp-presentation:before { content: "\00a0\f112\00a0"; }
 .ibm-download-link:before { content: "\00a0\f113\00a0"; }
 .ibm-download-whitepaper:before { content: "\00a0\f114\00a0"; }
 .ibm-download:before { content: "\00a0\f115\00a0"; }
@@ -326,7 +343,6 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-cancel-link:before { content: "\00a0\f118\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0"; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0"; }
-.ibm-forward-link:before { content: "\00a0\f11c\00a0"; }
 .ibm-questionLarge-link:before { content: "\00a0\f11d\00a0"; }
 .ibm-question-link:before,
 .ibm-help-link:before { content: "\00a0\f11e\00a0"; }
@@ -341,8 +357,8 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-logo-sp-na:before { content: "\00a0\f126\00a0"; }
 .ibm-audio-link:before { content: "\00a0\f127\00a0"; }
 .ibm-demoplay-link:before { content: "\00a0\f128\00a0"; }
-.ibm-nav-dropdown:before { content: "\00a0\f129\00a0"; }
-.ibm-nav-menu:before { content: "\00a0\f12a\00a0"; }
+.ibm-sort-link:before { content: "\00a0\f129\00a0"; }
+.ibm-menu-link:before { content: "\00a0\f12a\00a0"; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0"; }
 a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
@@ -369,8 +385,8 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-soc-tumbler:before { content: "\00a0\f13f\00a0"; }
 .ibm-twitter-link:before { content: "\00a0\f140\00a0"; }
 .ibm-youtube-link:before { content: "\00a0\f141\00a0"; }
-.ibm-sort-down:before { content: "\00a0\f142\00a0"; }
-.ibm-sort-up:before { content: "\00a0\f143\00a0"; }
+.ibm-sort-down-link:before { content: "\00a0\f142\00a0"; }
+.ibm-sort-up-link:before { content: "\00a0\f143\00a0"; }
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before { content: "\00a0\f145\00a0"; }
 .ibm-tog-list:before { content: "\00a0\f146\00a0"; }
@@ -381,7 +397,8 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-maximize-link:before,
 .ibm-show-hide h2 a:before { content: "\00a0\f148\00a0"; }
 .ibm-tog-tile:before { content: "\00a0\f149\00a0"; }
-.ibm-information-link:before { content: "\00a0\f14a\00a0"; }
+.ibm-information-link:before,
+.ibm-informationLarge-link:before { content: "\00a0\f14a\00a0"; }
 .ibm-print-link:before { content: "\00a0\f14b\00a0"; }
 .ibm-setting-link:before { content: "\00a0\f14c\00a0"; }
 .ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
