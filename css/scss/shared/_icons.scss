@@ -8,8 +8,10 @@
 .ibm-a-anchor					ibm-anchor-down-link,ibm-anchor-down-em-link
 .ibm-a-arrow					ibm-forward-link
 .ibm-a-back-link				ibm-back-link,ibm-backup-link
-,ibm-pag-next					ibm-forward-em-link
-,ibm-pag-prev					ibm-back-em-link
+.ibm-pag-next					ibm-forward-em-link,ibm-forward-pg-link
+.ibm-pag-prev					ibm-back-em-link
+.ibm-tool-mobile				ibm-wireless-link
+.ibm-tool-calc					ibm-calculator-link
 .ibm-pag-first					ibm-firstpage-link
 .ibm-pag-last					ibm-lastpage-link
 .ibm-a-external-link		 	ibm-external-link
@@ -19,7 +21,7 @@
 .ibm-bullet-square				bullets
 .ibm-check-bold					ibm-check-link
 .ibm-cta-arrow-sm				v17e - (new alternative to the arrow)
-.ibm-cta-arrow					v17e - (new alternative to the arrow bold)
+.ibm-cta-arrow					default for all elements which do not have a custom icon  (ibm-contrast-link,ibm-fontsize-link,ibm-digg-link,ibm-delicious-link,ibm-friendfeed-link,ibm-stumbleupon-link,ibm-livedoor-link,ibm-hatena-link,ibm-baidu-link,ibm-renren-link,ibm-kaixn-link,ibm-wykop-link,ibm-blip-link,ibm-livestream-link,ibm-weibo-link,ibm-vaideo-link,ibm-xing-link,ibm-skype-link,ibm-googleplus-link,ibm-yahoojapan-link)
 .ibm-cta-chevron-link			ibm-chevron-link,ibm-chevron-alternate-link
 .ibm-cta-chevron				v17e - (new alternative to chevron link)
 .ibm-cta-download				duplicate with ibm-download-link
@@ -31,9 +33,10 @@
 .ibm-download-link				ibm-download-link
 .ibm-download-whitepaper		v17e - (new icon TBD)
 .ibm-download					v17e - duplicate with ibm-download-link (alternate)
-.ibm-email-link					ibm-email-link
+.ibm-email-link					ibm-email-link-alt
+.ibm-status-new					ibm-newLarge-link,ibm-new-link
 .ibm-form-alert					ibm-error-link,ibm-errorLarge-link
-.ibm-form-cancel				ibm-cancel-link
+.ibm-form-cancel				ibm-cancel-link,ibm-incorrect-link 
 .ibm-form-confirm-link			ibm-confirm-link
 .ibm-form-error-link			duplicate: ibm-error-link
 .ibm-form-reset					ibm-reset-link
@@ -49,7 +52,7 @@
 .ibm-link-down					ibm-anchor-down-link
 .ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo
 .ibm-media-audio				ibm-audio-link
-.ibm-media-play					ibm-demoplay-link
+.ibm-media-play					ibm-demoplay-link,ibm-media-play,ibm-video-link
 .ibm-nav-dropdown				ibm-sort-link
 .ibm-sort-up					ibm-sort-up-link
 .ibm-sort-down					ibm-sort-down-link
@@ -57,9 +60,12 @@
 .ibm-nav-search					v17e - (new icon for masthead search)
 .ibm-password-link				ibm-password-link
 .ibm-popup						ibm-popup-link
-.ibm-rate-star					ibm-fullstar-link 
+.ibm-rate-star					ibm-fullstar-link
+.ibm-recommend					ibm-recommend-link
 .ibm-rss						ibm-rss-link
-.ibm-setting-link				ibm-setting-link
+.ibm-setting-link				ibm-setting-link-alt
+.ibm-secure						ibm-secure-link
+.ibm-secure-non					ibm-non-secure-link
 .ibm-soc-blog					ibm-blog-link,ibm-chat-link
 .ibm-soc-expert					v17e - (new icon TBD)
 .ibm-soc-facebook				ibm-facebook-link
@@ -77,7 +83,9 @@
 .ibm-tog-minus					ibm-delete-link,ibm-minimize-link,.ibm-show-hide h2 a.ibm-show-active
 .ibm-tog-plus					ibm-add1-link,ibm-maximize-link,.ibm-show-hide h2 a
 .ibm-tog-tile					v17e - (new icon for list view)
+.ibm-tool-forum					ibm-community,ibm-community-link,ibm-forum-link,ibm-usergroup-link,ibm-usergroup
 .ibm-tool-info					ibm-information-link,ibm-informationLarge-link
+.ibm-tool-bookmark				ibm-dogear-link
 .ibm-tool-print					ibm-print-link
 .ibm-tool-settings				ibm-setting-link
 .ibm-tool-share					v17e - (new icon TBD)
@@ -94,11 +102,14 @@
 .ibm-callaction-link:before,
 .ibm-back-link:before,
 .ibm-back-em-link:before,
+.ibm-wireless-link:before,
+.ibm-calculator-link:before,
 .ibm-firstpage-link:before,
 .ibm-lastpage-link:before,
 .ibm-backup-link:before,
 .ibm-external-link:before,
 .ibm-forward-em-link:before,
+.ibm-forward-pg-link:before,
 .ibm-generic-link:before,
 .ibm-upward-link:before,
 .ibm-anchor-up-link:before,
@@ -108,7 +119,26 @@
 #ibm-footer-module li:before,
 .ibm-check-link:before,
 .ibm-cta-arrow-sm:before,
-.ibm-cta-arrow:before,
+.ibm-contrast-link:before,
+.ibm-fontsize-link:before,
+.ibm-digg-link:before,
+.ibm-delicious-link:before,
+.ibm-friendfeed-link:before,
+.ibm-stumbleupon-link:before,
+.ibm-livedoor-link:before,
+.ibm-hatena-link:before,
+.ibm-baidu-link:before,
+.ibm-renren-link:before,
+.ibm-kaixn-link:before,
+.ibm-wykop-link:before,
+.ibm-blip-link:before,
+.ibm-livestream-link:before,
+.ibm-weibo-link:before,
+.ibm-vaideo-link:before,
+.ibm-xing-link:before,
+.ibm-skype-link:before,
+.ibm-googleplus-link:before,
+.ibm-yahoojapan-link:before,
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
 a.ibm-chevron-alternate-link:after,
@@ -130,13 +160,16 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-error-link:before,
 .ibm-errorLarge-link:before,
 .ibm-cancel-link:before,
+.ibm-incorrect-link:before,
 .ibm-confirm-link:before,
 .ibm-reset-link:before,
 .ibm-questionLarge-link:before,
 .ibm-question-link:before,
 .ibm-help-link:before,
 .ibm-ibmer:before,
-.ibm-email-link:before,
+.ibm-email-link-alt:before,
+.ibm-newLarge-link:before,
+.ibm-new-link:before,
 .ibm-phone-link:before,
 .ibm-call-link:before,
 .ibm-requestquote-link:before,
@@ -146,6 +179,8 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-logo-sp-na:before,
 .ibm-audio-link:before,
 .ibm-demoplay-link:before,
+.ibm-media-play:before,
+.ibm-video-link:before,
 .ibm-sort-link:before,
 .ibm-menu-link:before,
 .ibm-nav-search:before,
@@ -154,8 +189,11 @@ a.ibm-ribbon-next:before,
 .ibm-password-link:before,
 .ibm-popup-link:before,
 .ibm-fullstar-link:before,
+.ibm-recommend-link:before,
 .ibm-rss-link:before,
-.ibm-setting-link:before,
+.ibm-setting-link-alt:before,
+.ibm-secure-link:before,
+.ibm-non-secure-link:before,
 .ibm-blog-link:before,
 .ibm-chat-link:before,
 .ibm-soc-expert:before,
@@ -181,8 +219,14 @@ a.ibm-ribbon-next:before,
 .ibm-maximize-link:before,
 .ibm-show-hide h2 a:before,
 .ibm-tog-tile:before,
+.ibm-community:before,
+.ibm-community-link:before,
+.ibm-forum-link:before,
+.ibm-usergroup-link:before,
+.ibm-usergroup:before,
 .ibm-information-link:before,
 .ibm-informationLarge-link:before,
+.ibm-dogear-link:before,
 .ibm-print-link:before,
 .ibm-setting-link:before,
 .ibm-tool-share:before,
@@ -211,18 +255,40 @@ li a.ibm-forward-link:before,
 li a.ibm-callaction-link:before,
 li a.ibm-back-link:before,
 li a.ibm-back-em-link:before,
+li a.ibm-wireless-link:before,
+li a.ibm-calculator-link:before,
 li a.ibm-firstpage-link:before,
 li a.ibm-lastpage-link:before,
 li a.ibm-backup-link:before,
 li a.ibm-external-link:before,
 li a.ibm-forward-em-link:before,
+li a.ibm-forward-pg-link:before,
 li a.ibm-generic-link:before,
 li a.ibm-upward-link:before,
 li a.ibm-anchor-up-link:before,
 li a.ibm-checkLarge-link:before,
 li a.ibm-check-link:before,
 li a.ibm-cta-arrow-sm:before,
-li a.ibm-cta-arrow:before,
+li a.ibm-contrast-link:before,
+li a.ibm-fontsize-link:before,
+li a.ibm-digg-link:before,
+li a.ibm-delicious-link:before,
+li a.ibm-friendfeed-link:before,
+li a.ibm-stumbleupon-link:before,
+li a.ibm-livedoor-link:before,
+li a.ibm-hatena-link:before,
+li a.ibm-baidu-link:before,
+li a.ibm-renren-link:before,
+li a.ibm-kaixn-link:before,
+li a.ibm-wykop-link:before,
+li a.ibm-blip-link:before,
+li a.ibm-livestream-link:before,
+li a.ibm-weibo-link:before,
+li a.ibm-vaideo-link:before,
+li a.ibm-xing-link:before,
+li a.ibm-skype-link:before,
+li a.ibm-googleplus-link:before,
+li a.ibm-yahoojapan-link:before,
 li a.ibm-cta-chevron:before,
 li a.ibm-cta-download:before,
 li a.ibm-cta-generic:before,
@@ -241,13 +307,16 @@ li a.ibm-error-link:before,
 span.ibm-error-link:before,
 li a.ibm-errorLarge-link:before,
 li a.ibm-cancel-link:before,
+li a.ibm-incorrect-link:before,
 li a.ibm-confirm-link:before,
 li a.ibm-reset-link:before,
 li a.ibm-questionLarge-link:before,
 li a.ibm-question-link:before,
 li a.ibm-help-link:before,
 li a.ibm-ibmer:before,
-li a.ibm-email-link:before,
+li a.ibm-email-link-alt:before,
+li a.ibm-newLarge-link:before,
+li a.ibm-new-link:before,
 li a.ibm-phone-link:before,
 li a.ibm-call-link:before,
 li a.ibm-requestquote-link:before,
@@ -257,14 +326,19 @@ li a.ibm-anchor-down-link:before,
 li a.ibm-logo-sp-na:before,
 li a.ibm-audio-link:before,
 li a.ibm-demoplay-link:before,
+li a.ibm-media-play:before,
+li a.ibm-video-link:before,
 li a.ibm-sort-link:before,
 li a.ibm-menu-link:before,
 li a.ibm-nav-search:before,
 li a.ibm-password-link:before,
 li a.ibm-popup-link:before,
 li a.ibm-fullstar-link:before,
+li a.ibm-recommend-link:before,
 li a.ibm-rss-link:before,
-li a.ibm-setting-link:before,
+li a.ibm-setting-link-alt:before,
+li a.ibm-secure-link:before,
+li a.ibm-non-secure-link:before,
 li a.ibm-blog-link:before,
 li a.ibm-chat-link:before,
 li a.ibm-soc-expert:before,
@@ -288,8 +362,14 @@ li a.ibm-minimize-link:before,
 li a.ibm-add1-link:before,
 li a.ibm-maximize-link:before,
 li a.ibm-tog-tile:before,
+li a.ibm-community:before,
+li a.ibm-community-link:before,
+li a.ibm-forum-link:before,
+li a.ibm-usergroup-link:before,
+li a.ibm-usergroup:before,
 li a.ibm-information-link:before,
 li a.ibm-informationLarge-link:before,
+li a.ibm-dogear-link:before,
 li a.ibm-print-link:before,
 li a.ibm-setting-link:before,
 li a.ibm-tool-share:before,
@@ -325,7 +405,26 @@ li.ibm-chevron-alternate-link a:after {
 #ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
 .ibm-check-link:before { content: "\00a0\f108\00a0"; }
 .ibm-cta-arrow-sm:before { content: "\00a0\f109\00a0"; }
-.ibm-cta-arrow:before { content: "\00a0\f10a\00a0"; }
+.ibm-contrast-link:before,
+.ibm-fontsize-link:before,
+.ibm-digg-link:before,
+.ibm-delicious-link:before,
+.ibm-friendfeed-link:before,
+.ibm-stumbleupon-link:before,
+.ibm-livedoor-link:before,
+.ibm-hatena-link:before,
+.ibm-baidu-link:before,
+.ibm-renren-link:before,
+.ibm-kaixn-link:before,
+.ibm-wykop-link:before,
+.ibm-blip-link:before,
+.ibm-livestream-link:before,
+.ibm-weibo-link:before,
+.ibm-vaideo-link:before,
+.ibm-xing-link:before,
+.ibm-skype-link:before,
+.ibm-googleplus-link:before,
+.ibm-yahoojapan-link:before { content: "\00a0\f10a\00a0"; }
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
 a.ibm-chevron-alternate-link:after,
@@ -343,10 +442,11 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-download-link:before { content: "\00a0\f113\00a0"; }
 .ibm-download-whitepaper:before { content: "\00a0\f114\00a0"; }
 .ibm-download:before { content: "\00a0\f115\00a0"; }
-.ibm-email-link:before { content: "\00a0\f116\00a0"; }
+.ibm-email-link-alt:before { content: "\00a0\f116\00a0"; }
 .ibm-error-link:before,
 .ibm-errorLarge-link:before { content: "\00a0\f117\00a0"; }
-.ibm-cancel-link:before { content: "\00a0\f118\00a0"; }
+.ibm-cancel-link:before,
+.ibm-incorrect-link:before { content: "\00a0\f118\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0"; }
 .ibm-form-error-link:before { content: "\00a0\f11a\00a0"; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0"; }
@@ -365,9 +465,11 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-anchor-down-link:before { content: "\00a0\f125\00a0"; }
 .ibm-logo-sp-na:before { content: "\00a0\f126\00a0"; }
 .ibm-audio-link:before { content: "\00a0\f127\00a0"; }
-.ibm-demoplay-link:before { content: "\00a0\f128\00a0"; }
+.ibm-demoplay-link:before,
+.ibm-media-play:before,
+.ibm-video-link:before { content: "\00a0\f128\00a0"; }
 .ibm-sort-link:before { content: "\00a0\f129\00a0"; }
-.ibm-nav-menu:before { content: "\00a0\f12a\00a0"; }
+.ibm-menu-link:before { content: "\00a0\f12a\00a0"; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0"; }
 a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
@@ -379,15 +481,16 @@ a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
 a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-firstpage-link:before { content: "\00a0\f132\00a0"; }
 .ibm-lastpage-link:before { content: "\00a0\f133\00a0"; }
-.ibm-forward-em-link:before { content: "\00a0\f134\00a0"; }
+.ibm-forward-em-link:before,
+.ibm-forward-pg-link:before { content: "\00a0\f134\00a0"; }
 .ibm-back-em-link:before { content: "\00a0\f135\00a0"; }
 .ibm-password-link:before { content: "\00a0\f136\00a0"; }
 .ibm-popup-link:before { content: "\00a0\f137\00a0"; }
 .ibm-fullstar-link:before { content: "\00a0\f138\00a0"; }
-.ibm-recommend:before { content: "\00a0\f139\00a0"; }
+.ibm-recommend-link:before { content: "\00a0\f139\00a0"; }
 .ibm-rss-link:before { content: "\00a0\f13a\00a0"; }
-.ibm-secure-non:before { content: "\00a0\f13b\00a0"; }
-.ibm-secure:before { content: "\00a0\f13c\00a0"; }
+.ibm-non-secure-link:before { content: "\00a0\f13b\00a0"; }
+.ibm-secure-link:before { content: "\00a0\f13c\00a0"; }
 .ibm-setting-link:before { content: "\00a0\f13d\00a0"; }
 .ibm-blog-link:before,
 .ibm-chat-link:before { content: "\00a0\f13e\00a0"; }
@@ -406,7 +509,8 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-status-alert:before { content: "\00a0\f14b\00a0"; }
 .ibm-caution-link:before,
 .ibm-cautionLarge-link:before { content: "\00a0\f14c\00a0"; }
-.ibm-status-new:before { content: "\00a0\f14d\00a0"; }
+.ibm-new-link:before,
+.ibm-newLarge-link:before { content: "\00a0\f14d\00a0"; }
 .ibm-tog-list:before { content: "\00a0\f14e\00a0"; }
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
@@ -415,18 +519,25 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-maximize-link:before,
 .ibm-show-hide h2 a:before { content: "\00a0\f150\00a0"; }
 .ibm-tog-tile:before { content: "\00a0\f151\00a0"; }
-.ibm-tool-calc:before { content: "\00a0\f152\00a0"; }
+.ibm-dogear-link:before { content: "\00a0\f152\00a0"; }
+.ibm-calculator-link:before { content: "\00a0\f153\00a0"; }
+.ibm-tool-desktop:before { content: "\00a0\f154\00a0"; }
+.ibm-community:before,
+.ibm-community-link:before,
+.ibm-forum-link:before,
+.ibm-usergroup-link:before,
+.ibm-usergroup:before { content: "\00a0\f155\00a0"; }
 .ibm-information-link:before,
-.ibm-informationLarge-link:before { content: "\00a0\f153\00a0"; }
-.ibm-print-link:before { content: "\00a0\f154\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f155\00a0"; }
-.ibm-tool-share:before { content: "\00a0\f156\00a0"; }
-.ibm-twistie-closed:before { content: "\00a0\f157\00a0"; }
-.ibm-twistie-open:before { content: "\00a0\f158\00a0"; }
-.ibm-calendar-link:before { content: "\00a0\f159\00a0"; }
-.ibm-upload-link:before { content: "\00a0\f15a\00a0"; }
-.ibm-close:before { content: "\00a0\f15b\00a0"; }
-
+.ibm-informationLarge-link:before { content: "\00a0\f156\00a0"; }
+.ibm-wireless-link:before { content: "\00a0\f157\00a0"; }
+.ibm-print-link:before { content: "\00a0\f158\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f159\00a0"; }
+.ibm-tool-share:before { content: "\00a0\f15a\00a0"; }
+.ibm-twistie-closed:before { content: "\00a0\f15b\00a0"; }
+.ibm-twistie-open:before { content: "\00a0\f15c\00a0"; }
+.ibm-calendar-link:before { content: "\00a0\f15d\00a0"; }
+.ibm-upload-link:before { content: "\00a0\f15e\00a0"; }
+.ibm-close:before { content: "\00a0\f15f\00a0"; }
 
 
 a.ibm-inline,
