@@ -94,12 +94,9 @@ these fonts. */
 
 // v17e font styles begin ============================================
 
-div, 
-p, 
-span, 
-a, 
-li {
+body {
 	font-family: $defaultFont;
+	font-weight: 300;
 }
 
 h1,
