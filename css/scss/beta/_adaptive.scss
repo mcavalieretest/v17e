@@ -1,5 +1,28 @@
 // adaptive styles begin ============================================
 
+
+
+	#ibm-mobile-tabs {
+		padding: 10px 20px;
+	}
+	#ibm-mobile-tabs select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: 1px solid #000;
+		border-radius: 0;
+		min-width: 100%;
+		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
+		padding: 10px 0;
+	}
+	#ibm-mobile-tabs:after {
+		color: #000;
+		right: 20px;
+		margin-top: -35px;
+	}
+	// mobile specific styles
+
+
 .ibm-mobile {
 	display: none !important;
 }
