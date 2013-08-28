@@ -7,9 +7,13 @@
 
 .ibm-a-anchor					ibm-anchor-down-link,ibm-anchor-down-em-link
 .ibm-a-arrow					ibm-forward-link
-.ibm-a-back-link				ibm-back-link,ibm-back-em-link,ibm-backup-link
+.ibm-a-back-link				ibm-back-link,ibm-backup-link
+,ibm-pag-next					ibm-forward-em-link
+,ibm-pag-prev					ibm-back-em-link
+.ibm-pag-first					ibm-firstpage-link
+.ibm-pag-last					ibm-lastpage-link
 .ibm-a-external-link		 	ibm-external-link
-.ibm-a-forward-bd		 		ibm-forward-em-link,ibm-generic-link
+.ibm-a-forward-bd		 		ibm-generic-link
 .ibm-a-top						ibm-upward-link,ibm-anchor-up-link
 .ibm-bullet-check				ibm-checkLarge-link
 .ibm-bullet-square				bullets
@@ -90,6 +94,8 @@
 .ibm-callaction-link:before,
 .ibm-back-link:before,
 .ibm-back-em-link:before,
+.ibm-firstpage-link:before,
+.ibm-lastpage-link:before,
 .ibm-backup-link:before,
 .ibm-external-link:before,
 .ibm-forward-em-link:before,
@@ -205,6 +211,8 @@ li a.ibm-forward-link:before,
 li a.ibm-callaction-link:before,
 li a.ibm-back-link:before,
 li a.ibm-back-em-link:before,
+li a.ibm-firstpage-link:before,
+li a.ibm-lastpage-link:before,
 li a.ibm-backup-link:before,
 li a.ibm-external-link:before,
 li a.ibm-forward-em-link:before,
@@ -301,15 +309,13 @@ li.ibm-chevron-alternate-link a:after {
 	text-decoration: none;
 }
 
+
 .ibm-anchor-down-link:before,
 .ibm-anchor-down-em-link:before { content: "\00a0\f100\00a0"; }
-.ibm-forward-link:before,
-.ibm-callaction-link:before { content: "\00a0\f101\00a0"; }
+.ibm-a-arrow:before { content: "\00a0\f101\00a0"; }
 .ibm-back-link:before,
-.ibm-back-em-link:before,
 .ibm-backup-link:before { content: "\00a0\f102\00a0"; }
 .ibm-external-link:before { content: "\00a0\f103\00a0"; }
-.ibm-forward-em-link:before,
 .ibm-generic-link:before { content: "\00a0\f104\00a0"; }
 .ibm-upward-link:before,
 .ibm-anchor-up-link:before { content: "\00a0\f105\00a0"; }
@@ -342,7 +348,10 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-errorLarge-link:before { content: "\00a0\f117\00a0"; }
 .ibm-cancel-link:before { content: "\00a0\f118\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0"; }
+.ibm-form-error-link:before { content: "\00a0\f11a\00a0"; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0"; }
+.ibm-forward-link:before,
+.ibm-callaction-link:before { content: "\00a0\f11c\00a0"; }
 .ibm-questionLarge-link:before { content: "\00a0\f11d\00a0"; }
 .ibm-question-link:before,
 .ibm-help-link:before { content: "\00a0\f11e\00a0"; }
@@ -358,7 +367,7 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f10b\00a0"; }
 .ibm-audio-link:before { content: "\00a0\f127\00a0"; }
 .ibm-demoplay-link:before { content: "\00a0\f128\00a0"; }
 .ibm-sort-link:before { content: "\00a0\f129\00a0"; }
-.ibm-menu-link:before { content: "\00a0\f12a\00a0"; }
+.ibm-nav-menu:before { content: "\00a0\f12a\00a0"; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0"; }
 a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
@@ -368,45 +377,56 @@ a.ibm-ribbon-next:active:before,
 a.ibm-ribbon-next:focus:before { content: "\00a0\f12f\00a0"; }
 a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
 a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
-.ibm-password-link:before { content: "\00a0\f132\00a0"; }
-.ibm-popup-link:before { content: "\00a0\f133\00a0"; }
-.ibm-fullstar-link:before { content: "\00a0\f134\00a0"; }
-.ibm-rss-link:before { content: "\00a0\f135\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f136\00a0"; }
+.ibm-firstpage-link:before { content: "\00a0\f132\00a0"; }
+.ibm-lastpage-link:before { content: "\00a0\f133\00a0"; }
+.ibm-forward-em-link:before { content: "\00a0\f134\00a0"; }
+.ibm-back-em-link:before { content: "\00a0\f135\00a0"; }
+.ibm-password-link:before { content: "\00a0\f136\00a0"; }
+.ibm-popup-link:before { content: "\00a0\f137\00a0"; }
+.ibm-fullstar-link:before { content: "\00a0\f138\00a0"; }
+.ibm-recommend:before { content: "\00a0\f139\00a0"; }
+.ibm-rss-link:before { content: "\00a0\f13a\00a0"; }
+.ibm-secure-non:before { content: "\00a0\f13b\00a0"; }
+.ibm-secure:before { content: "\00a0\f13c\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f13d\00a0"; }
 .ibm-blog-link:before,
-.ibm-chat-link:before { content: "\00a0\f137\00a0"; }
-.ibm-soc-expert:before { content: "\00a0\f138\00a0"; }
-.ibm-facebook-link:before { content: "\00a0\f139\00a0"; }
-.ibm-flickr-link:before { content: "\00a0\f13a\00a0"; }
-.ibm-linkedin-link:before { content: "\00a0\f13b\00a0"; }
-.ibm-soc-pinterest:before { content: "\00a0\f13c\00a0"; }
-.ibm-soc-profile:before { content: "\00a0\f13d\00a0"; }
-.ibm-soc-rssfeed:before { content: "\00a0\f13e\00a0"; }
-.ibm-soc-tumbler:before { content: "\00a0\f13f\00a0"; }
-.ibm-twitter-link:before { content: "\00a0\f140\00a0"; }
-.ibm-youtube-link:before { content: "\00a0\f141\00a0"; }
-.ibm-sort-down-link:before { content: "\00a0\f142\00a0"; }
-.ibm-sort-up-link:before { content: "\00a0\f143\00a0"; }
+.ibm-chat-link:before { content: "\00a0\f13e\00a0"; }
+.ibm-soc-expert:before { content: "\00a0\f13f\00a0"; }
+.ibm-facebook-link:before { content: "\00a0\f140\00a0"; }
+.ibm-flickr-link:before { content: "\00a0\f141\00a0"; }
+.ibm-linkedin-link:before { content: "\00a0\f142\00a0"; }
+.ibm-soc-pinterest:before { content: "\00a0\f143\00a0"; }
+.ibm-soc-profile:before { content: "\00a0\f144\00a0"; }
+.ibm-soc-rssfeed:before { content: "\00a0\f145\00a0"; }
+.ibm-soc-tumbler:before { content: "\00a0\f146\00a0"; }
+.ibm-twitter-link:before { content: "\00a0\f147\00a0"; }
+.ibm-youtube-link:before { content: "\00a0\f148\00a0"; }
+.ibm-sort-down-link:before { content: "\00a0\f149\00a0"; }
+.ibm-sort-up-link:before { content: "\00a0\f14a\00a0"; }
+.ibm-status-alert:before { content: "\00a0\f14b\00a0"; }
 .ibm-caution-link:before,
-.ibm-cautionLarge-link:before { content: "\00a0\f145\00a0"; }
-.ibm-tog-list:before { content: "\00a0\f146\00a0"; }
+.ibm-cautionLarge-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-status-new:before { content: "\00a0\f14d\00a0"; }
+.ibm-tog-list:before { content: "\00a0\f14e\00a0"; }
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
-.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f147\00a0"; }
+.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f14f\00a0"; }
 .ibm-add1-link:before,
 .ibm-maximize-link:before,
-.ibm-show-hide h2 a:before { content: "\00a0\f148\00a0"; }
-.ibm-tog-tile:before { content: "\00a0\f149\00a0"; }
+.ibm-show-hide h2 a:before { content: "\00a0\f150\00a0"; }
+.ibm-tog-tile:before { content: "\00a0\f151\00a0"; }
+.ibm-tool-calc:before { content: "\00a0\f152\00a0"; }
 .ibm-information-link:before,
-.ibm-informationLarge-link:before { content: "\00a0\f14a\00a0"; }
-.ibm-print-link:before { content: "\00a0\f14b\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f14c\00a0"; }
-.ibm-tool-share:before { content: "\00a0\f14d\00a0"; }
-.ibm-twistie-closed:before { content: "\00a0\f14e\00a0"; }
-.ibm-twistie-open:before { content: "\00a0\f14f\00a0"; }
-.ibm-calendar-link:before { content: "\00a0\f150\00a0"; }
-.ibm-upload-link:before { content: "\00a0\f151\00a0"; }
-.ibm-close:before { content: "\00a0\f152\00a0"; }
+.ibm-informationLarge-link:before { content: "\00a0\f153\00a0"; }
+.ibm-print-link:before { content: "\00a0\f154\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f155\00a0"; }
+.ibm-tool-share:before { content: "\00a0\f156\00a0"; }
+.ibm-twistie-closed:before { content: "\00a0\f157\00a0"; }
+.ibm-twistie-open:before { content: "\00a0\f158\00a0"; }
+.ibm-calendar-link:before { content: "\00a0\f159\00a0"; }
+.ibm-upload-link:before { content: "\00a0\f15a\00a0"; }
+.ibm-close:before { content: "\00a0\f15b\00a0"; }
+
 
 
 a.ibm-inline,

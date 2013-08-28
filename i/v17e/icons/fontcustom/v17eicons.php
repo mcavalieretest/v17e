@@ -17,15 +17,27 @@ $file_contents = str_replace(".ibm-forward-link:before {",".ibm-forward-link:bef
 
 #back 
 $file_contents = str_replace(".ibm-a-back-link:before {",".ibm-back-link:before,
-.ibm-back-em-link:before,
 .ibm-backup-link:before {",$file_contents);
 
 #external 
 $file_contents = str_replace(".ibm-a-external-link:before {",".ibm-external-link:before {",$file_contents);
 
+#pagination forward
+$file_contents = str_replace(".ibm-pag-next:before {",".ibm-forward-em-link:before {",$file_contents);
+
+#pagination back
+$file_contents = str_replace(".ibm-pag-prev:before {",".ibm-back-em-link:before {",$file_contents);
+
+#pagination first
+$file_contents = str_replace(".ibm-pag-first:before {",".ibm-firstpage-link:before {",$file_contents);
+
+#pagination last
+$file_contents = str_replace(".ibm-pag-last:before {",".ibm-lastpage-link:before {",$file_contents);
+
+
+
 #forward bold 
-$file_contents = str_replace(".ibm-a-forward-bd:before {",".ibm-forward-em-link:before,
-.ibm-generic-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-a-forward-bd:before {",".ibm-generic-link:before {",$file_contents);
 
 #upward
 $file_contents = str_replace(".ibm-a-top:before {",".ibm-upward-link:before,
