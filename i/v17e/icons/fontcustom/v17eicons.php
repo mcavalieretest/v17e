@@ -151,6 +151,12 @@ $file_contents = str_replace(".ibm-popup:before {",".ibm-popup-link:before {",$f
 #rate star
 $file_contents = str_replace(".ibm-rate-star:before {",".ibm-fullstar-link:before {",$file_contents);
 
+#rate star half
+$file_contents = str_replace(".ibm-rate-star-half:before {",".ibm-halfstar-link:before {",$file_contents);
+
+#rate star no
+$file_contents = str_replace(".ibm-rate-star-no:before {",".ibm-nostar-link:before {",$file_contents);
+
 #rss
 $file_contents = str_replace(".ibm-rss:before {",".ibm-rss-link:before {",$file_contents);
 
