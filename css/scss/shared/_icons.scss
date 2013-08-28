@@ -61,6 +61,8 @@
 .ibm-password-link				ibm-password-link
 .ibm-popup						ibm-popup-link
 .ibm-rate-star					ibm-fullstar-link
+.ibm-rate-star-half				ibm-halfstar-link
+.ibm-rate-star-no				ibm-nostar-link
 .ibm-recommend					ibm-recommend-link
 .ibm-rss						ibm-rss-link
 .ibm-setting-link				ibm-setting-link-alt
@@ -189,6 +191,8 @@ a.ibm-ribbon-next:before,
 .ibm-password-link:before,
 .ibm-popup-link:before,
 .ibm-fullstar-link:before,
+.ibm-halfstar-link:before,
+.ibm-nostar-link:before,
 .ibm-recommend-link:before,
 .ibm-rss-link:before,
 .ibm-setting-link-alt:before,
@@ -334,6 +338,8 @@ li a.ibm-nav-search:before,
 li a.ibm-password-link:before,
 li a.ibm-popup-link:before,
 li a.ibm-fullstar-link:before,
+li a.ibm-halfstar-link:before,
+li a.ibm-nostar-link:before,
 li a.ibm-recommend-link:before,
 li a.ibm-rss-link:before,
 li a.ibm-setting-link-alt:before,
@@ -486,58 +492,60 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-back-em-link:before { content: "\00a0\f135\00a0"; }
 .ibm-password-link:before { content: "\00a0\f136\00a0"; }
 .ibm-popup-link:before { content: "\00a0\f137\00a0"; }
-.ibm-fullstar-link:before { content: "\00a0\f138\00a0"; }
-.ibm-recommend-link:before { content: "\00a0\f139\00a0"; }
-.ibm-rss-link:before { content: "\00a0\f13a\00a0"; }
-.ibm-non-secure-link:before { content: "\00a0\f13b\00a0"; }
-.ibm-secure-link:before { content: "\00a0\f13c\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f13d\00a0"; }
+.ibm-halfstar-link:before { content: "\00a0\f138\00a0"; }
+.ibm-nostar-link:before { content: "\00a0\f139\00a0"; }
+.ibm-fullstar-link:before { content: "\00a0\f13a\00a0"; }
+.ibm-recommend-link:before { content: "\00a0\f13b\00a0"; }
+.ibm-rss-link:before { content: "\00a0\f13c\00a0"; }
+.ibm-non-secure-link:before { content: "\00a0\f13d\00a0"; }
+.ibm-secure-link:before { content: "\00a0\f13e\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f13f\00a0"; }
 .ibm-blog-link:before,
-.ibm-chat-link:before { content: "\00a0\f13e\00a0"; }
-.ibm-soc-expert:before { content: "\00a0\f13f\00a0"; }
-.ibm-facebook-link:before { content: "\00a0\f140\00a0"; }
-.ibm-flickr-link:before { content: "\00a0\f141\00a0"; }
-.ibm-linkedin-link:before { content: "\00a0\f142\00a0"; }
-.ibm-soc-pinterest:before { content: "\00a0\f143\00a0"; }
-.ibm-soc-profile:before { content: "\00a0\f144\00a0"; }
-.ibm-soc-rssfeed:before { content: "\00a0\f145\00a0"; }
-.ibm-soc-tumbler:before { content: "\00a0\f146\00a0"; }
-.ibm-twitter-link:before { content: "\00a0\f147\00a0"; }
-.ibm-youtube-link:before { content: "\00a0\f148\00a0"; }
-.ibm-sort-down-link:before { content: "\00a0\f149\00a0"; }
-.ibm-sort-up-link:before { content: "\00a0\f14a\00a0"; }
-.ibm-status-alert:before { content: "\00a0\f14b\00a0"; }
+.ibm-chat-link:before { content: "\00a0\f140\00a0"; }
+.ibm-soc-expert:before { content: "\00a0\f141\00a0"; }
+.ibm-facebook-link:before { content: "\00a0\f142\00a0"; }
+.ibm-flickr-link:before { content: "\00a0\f143\00a0"; }
+.ibm-linkedin-link:before { content: "\00a0\f144\00a0"; }
+.ibm-soc-pinterest:before { content: "\00a0\f145\00a0"; }
+.ibm-soc-profile:before { content: "\00a0\f146\00a0"; }
+.ibm-soc-rssfeed:before { content: "\00a0\f147\00a0"; }
+.ibm-soc-tumbler:before { content: "\00a0\f148\00a0"; }
+.ibm-twitter-link:before { content: "\00a0\f149\00a0"; }
+.ibm-youtube-link:before { content: "\00a0\f14a\00a0"; }
+.ibm-sort-down-link:before { content: "\00a0\f14b\00a0"; }
+.ibm-sort-up-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-status-alert:before { content: "\00a0\f14d\00a0"; }
 .ibm-caution-link:before,
-.ibm-cautionLarge-link:before { content: "\00a0\f14c\00a0"; }
+.ibm-cautionLarge-link:before { content: "\00a0\f14e\00a0"; }
 .ibm-new-link:before,
-.ibm-newLarge-link:before { content: "\00a0\f14d\00a0"; }
-.ibm-tog-list:before { content: "\00a0\f14e\00a0"; }
+.ibm-newLarge-link:before { content: "\00a0\f14f\00a0"; }
+.ibm-tog-list:before { content: "\00a0\f150\00a0"; }
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
-.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f14f\00a0"; }
+.ibm-show-hide h2 a.ibm-show-active:before { content: "\00a0\f151\00a0"; }
 .ibm-add1-link:before,
 .ibm-maximize-link:before,
-.ibm-show-hide h2 a:before { content: "\00a0\f150\00a0"; }
-.ibm-tog-tile:before { content: "\00a0\f151\00a0"; }
-.ibm-dogear-link:before { content: "\00a0\f152\00a0"; }
-.ibm-calculator-link:before { content: "\00a0\f153\00a0"; }
-.ibm-tool-desktop:before { content: "\00a0\f154\00a0"; }
+.ibm-show-hide h2 a:before { content: "\00a0\f152\00a0"; }
+.ibm-tog-tile:before { content: "\00a0\f153\00a0"; }
+.ibm-dogear-link:before { content: "\00a0\f154\00a0"; }
+.ibm-calculator-link:before { content: "\00a0\f155\00a0"; }
+.ibm-tool-desktop:before { content: "\00a0\f156\00a0"; }
 .ibm-community:before,
 .ibm-community-link:before,
 .ibm-forum-link:before,
 .ibm-usergroup-link:before,
-.ibm-usergroup:before { content: "\00a0\f155\00a0"; }
+.ibm-usergroup:before { content: "\00a0\f157\00a0"; }
 .ibm-information-link:before,
-.ibm-informationLarge-link:before { content: "\00a0\f156\00a0"; }
-.ibm-wireless-link:before { content: "\00a0\f157\00a0"; }
-.ibm-print-link:before { content: "\00a0\f158\00a0"; }
-.ibm-setting-link:before { content: "\00a0\f159\00a0"; }
-.ibm-tool-share:before { content: "\00a0\f15a\00a0"; }
-.ibm-twistie-closed:before { content: "\00a0\f15b\00a0"; }
-.ibm-twistie-open:before { content: "\00a0\f15c\00a0"; }
-.ibm-calendar-link:before { content: "\00a0\f15d\00a0"; }
-.ibm-upload-link:before { content: "\00a0\f15e\00a0"; }
-.ibm-close:before { content: "\00a0\f15f\00a0"; }
+.ibm-informationLarge-link:before { content: "\00a0\f158\00a0"; }
+.ibm-wireless-link:before { content: "\00a0\f159\00a0"; }
+.ibm-print-link:before { content: "\00a0\f15a\00a0"; }
+.ibm-setting-link:before { content: "\00a0\f15b\00a0"; }
+.ibm-tool-share:before { content: "\00a0\f15c\00a0"; }
+.ibm-twistie-closed:before { content: "\00a0\f15d\00a0"; }
+.ibm-twistie-open:before { content: "\00a0\f15e\00a0"; }
+.ibm-calendar-link:before { content: "\00a0\f15f\00a0"; }
+.ibm-upload-link:before { content: "\00a0\f160\00a0"; }
+.ibm-close:before { content: "\00a0\f161\00a0"; }
 
 
 a.ibm-inline,
