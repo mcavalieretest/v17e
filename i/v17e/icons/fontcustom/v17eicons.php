@@ -23,7 +23,8 @@ $file_contents = str_replace(".ibm-a-back-link:before {",".ibm-back-link:before,
 $file_contents = str_replace(".ibm-a-external-link:before {",".ibm-external-link:before {",$file_contents);
 
 #pagination forward
-$file_contents = str_replace(".ibm-pag-next:before {",".ibm-forward-em-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-pag-next:before {",".ibm-forward-em-link:before,
+.ibm-forward-pg-link:before {",$file_contents);
 
 #pagination back
 $file_contents = str_replace(".ibm-pag-prev:before {",".ibm-back-em-link:before {",$file_contents);
@@ -68,7 +69,8 @@ $file_contents = str_replace(".ibm-form-alert:before {",".ibm-error-link:before,
 .ibm-errorLarge-link:before {",$file_contents);
 
 #form cancel
-$file_contents = str_replace(".ibm-form-cancel:before {",".ibm-cancel-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-form-cancel:before {",".ibm-cancel-link:before,
+.ibm-incorrect-link:before {",$file_contents);
 
 #form confirm link
 $file_contents = str_replace(".ibm-form-confirm-link:before {",".ibm-confirm-link:before {",$file_contents);
@@ -82,6 +84,9 @@ $file_contents = str_replace(".ibm-help-lg:before {",".ibm-questionLarge-link:be
 #help / question link
 $file_contents = str_replace(".ibm-help:before {",".ibm-question-link:before,
 .ibm-help-link:before {",$file_contents);
+
+#update existing e-mail icon
+$file_contents = str_replace(".ibm-email-link:before {",".ibm-email-link-alt:before {",$file_contents);
 
 #email
 $file_contents = str_replace(".ibm-ldr-email:before {",".ibm-email-link:before {",$file_contents);
@@ -106,7 +111,9 @@ $file_contents = str_replace(".ibm-link-down:before {",".ibm-anchor-down-link:be
 $file_contents = str_replace(".ibm-media-audio:before {",".ibm-audio-link:before {",$file_contents);
 
 #demoplay
-$file_contents = str_replace(".ibm-media-play:before {",".ibm-demoplay-link:before {",$file_contents);
+$file_contents = str_replace(".ibm-media-play:before {",".ibm-demoplay-link:before,
+.ibm-media-play:before,
+.ibm-video-link:before {",$file_contents);
 
 #document / symp doc / spreadsheet / presentation
 $file_contents = str_replace(".ibm-document-link:before {",".ibm-document-link:before,
@@ -184,8 +191,21 @@ $file_contents = str_replace(".ibm-tog-plus:before {",".ibm-add1-link:before,
 $file_contents = str_replace(".ibm-tool-info:before {",".ibm-information-link:before,
 .ibm-informationLarge-link:before {",$file_contents);
 
+#bookmark
+$file_contents = str_replace(".ibm-tool-bookmark:before {",".ibm-dogear-link:before {",$file_contents);
+
+#community, form, usergroup
+$file_contents = str_replace(".ibm-tool-forum:before {",".ibm-community:before,
+.ibm-community-link:before,
+.ibm-forum-link:before,
+.ibm-usergroup-link:before,
+.ibm-usergroup:before {",$file_contents);
+
 #print
 $file_contents = str_replace(".ibm-tool-print:before {",".ibm-print-link:before {",$file_contents);
+
+#setting alt (replace)
+$file_contents = str_replace(".ibm-settings-link:before {",".ibm-setting-link-alt:before {",$file_contents);
 
 #setting
 $file_contents = str_replace(".ibm-tool-settings:before {",".ibm-setting-link:before {",$file_contents);
@@ -199,6 +219,9 @@ $file_contents = str_replace(".ibm-v17-upload:before {",".ibm-upload-link:before
 #calendar
 $file_contents = str_replace(".ibm-v17-calender:before {",".ibm-calendar-link:before {",$file_contents);
 
+#menu
+$file_contents = str_replace(".ibm-nav-menu:before {",".ibm-menu-link:before {",$file_contents);
+
 #sort
 $file_contents = str_replace(".ibm-nav-dropdown:before {",".ibm-sort-link:before {",$file_contents);
 
@@ -208,6 +231,46 @@ $file_contents = str_replace(".ibm-sort-up:before {",".ibm-sort-up-link:before {
 #sort down
 $file_contents = str_replace(".ibm-sort-down:before {",".ibm-sort-down-link:before {",$file_contents);
 
+#wireless
+$file_contents = str_replace(".ibm-tool-mobile:before {",".ibm-wireless-link:before {",$file_contents);
+
+#calculator
+$file_contents = str_replace(".ibm-tool-calc:before {",".ibm-calculator-link:before {",$file_contents);
+
+#new
+$file_contents = str_replace(".ibm-status-new:before {",".ibm-new-link:before,
+.ibm-newLarge-link:before {",$file_contents);
+
+#secure
+$file_contents = str_replace(".ibm-secure:before {",".ibm-secure-link:before {",$file_contents);
+
+#non-secure
+$file_contents = str_replace(".ibm-secure-non:before {",".ibm-non-secure-link:before {",$file_contents);
+
+#recommend
+$file_contents = str_replace(".ibm-recommend:before {",".ibm-recommend-link:before {",$file_contents);
+
+#default for missing icons
+$file_contents = str_replace(".ibm-cta-arrow:before {",".ibm-contrast-link:before,
+.ibm-fontsize-link:before,
+.ibm-digg-link:before,
+.ibm-delicious-link:before,
+.ibm-friendfeed-link:before,
+.ibm-stumbleupon-link:before,
+.ibm-livedoor-link:before,
+.ibm-hatena-link:before,
+.ibm-baidu-link:before,
+.ibm-renren-link:before,
+.ibm-kaixn-link:before,
+.ibm-wykop-link:before,
+.ibm-blip-link:before,
+.ibm-livestream-link:before,
+.ibm-weibo-link:before,
+.ibm-vaideo-link:before,
+.ibm-xing-link:before,
+.ibm-skype-link:before,
+.ibm-googleplus-link:before,
+.ibm-yahoojapan-link:before {",$file_contents);
 
 
 
