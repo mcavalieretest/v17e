@@ -428,6 +428,12 @@ li[class*="ibm-chevron"] a:after {
 #{$ie7Selector} .ibm-ind-link a.ibm-community,
 #{$ie7Selector} .ibm-ind-link a.ibm-usergroup,
 #{$ie7Selector} span.ibm-error-link,
+#{$ie7Selector} span .ibm-information-link,
+#{$ie7Selector} span .ibm-calculator-link,
+#{$ie7Selector} span .ibm-calendar-link,
+#{$ie7Selector} span .ibm-error-link,
+#{$ie7Selector} span .ibm-information-link,
+#{$ie7Selector} span .ibm-error-link,
 #{$ie7Selector} .ibm-standalone-acc,
 #{$ie7Selector} a.ibm-inline {
 	background: url("//1.www.s81c.com/i/v17/icons/ibm_sprite_arrow_blue_ON.png") no-repeat;
@@ -596,6 +602,7 @@ a.ibm-inline:after {
 	position: relative !important;
 }
 
+#{$ie7Selector} span.ibm-error-link,
 #{$ie7Selector} a.ibm-inline {
 	padding-left: 15px;
 }
