@@ -264,8 +264,8 @@ ul.ibm-alternate-two a.ibm-chevron-link:after {
 	color: #FFF !important;
 }
 
-li a[class*="-link"]:before,
-li a.ibm-call-info:before,
+
+/* Extra icons:
 li a.ibm-cta-arrow-sm:before,
 li a.ibm-cta-chevron:before,
 li a.ibm-cta-download:before,
@@ -276,11 +276,9 @@ li a.ibm-symp-spreadsheet:before,
 li a.ibm-symp-presentation:before,
 li a.ibm-download-whitepaper:before,
 li a.ibm-download:before,
-span.ibm-error-link:before,
 li a.ibm-ibmer:before,
 li a.ibm-logo-sp-na:before,
 li a.ibm-media-play:before,
-li a.ibm-video-link:before,
 li a.ibm-nav-search:before,
 li a.ibm-soc-expert:before,
 li a.ibm-soc-pinterest:before,
@@ -294,51 +292,99 @@ li a.ibm-usergroup:before,
 li a.ibm-tool-share:before,
 li a.ibm-twistie-closed:before,
 li a.ibm-twistie-open:before,
-li a.ibm-close:before {
-	@include px-to-rem(margin-left,-25px);
-	text-decoration: none;
-}
+li a.ibm-close:before
+*/
 
-.ibm-col-6-4 li a[class*="-link"]:before,
-.ibm-col-6-4 li a.ibm-call-info:before,
-.ibm-col-6-4 li a.ibm-cta-arrow-sm:before,
-.ibm-col-6-4 li a.ibm-cta-chevron:before,
-.ibm-col-6-4 li a.ibm-cta-download:before,
-.ibm-col-6-4 li a.ibm-cta-generic:before,
-.ibm-col-6-4 li a.ibm-doc-folder:before,
-.ibm-col-6-4 li a.ibm-symp-doc:before,
-.ibm-col-6-4 li a.ibm-symp-spreadsheet:before,
-.ibm-col-6-4 li a.ibm-symp-presentation:before,
-.ibm-col-6-4 li a.ibm-download-whitepaper:before,
-.ibm-col-6-4 li a.ibm-download:before,
-.ibm-col-6-4 span.ibm-error-link:before,
-.ibm-col-6-4 li a.ibm-ibmer:before,
-.ibm-col-6-4 li a.ibm-logo-sp-na:before,
-.ibm-col-6-4 li a.ibm-media-play:before,
-.ibm-col-6-4 li a.ibm-video-.ibm-col-6-4 link:before,
-.ibm-col-6-4 li a.ibm-nav-search:before,
-.ibm-col-6-4 li a.ibm-soc-expert:before,
-.ibm-col-6-4 li a.ibm-soc-pinterest:before,
-.ibm-col-6-4 li a.ibm-soc-profile:before,
-.ibm-col-6-4 li a.ibm-soc-rssfeed:before,
-.ibm-col-6-4 li a.ibm-soc-tumbler:before,
-.ibm-col-6-4 li a.ibm-tog-.ibm-col-6-4 list:before,
-.ibm-col-6-4 li a.ibm-tog-tile:before,
-.ibm-col-6-4 li a.ibm-community:before,
-.ibm-col-6-4 li a.ibm-usergroup:before,
-.ibm-col-6-4 li a.ibm-tool-share:before,
-.ibm-col-6-4 li a.ibm-twistie-closed:before,
-.ibm-col-6-4 li a.ibm-twistie-open:before,
-.ibm-col-6-4 li a.ibm-close:before {
+
+li a[class*="-link"]:before,
+li a.ibm-call-info:before,
+li a.ibm-symp-doc:before,
+li a.ibm-symp-presentation:before,
+li a.ibm-symp-spreadsheet:before,
+li a.ibm-community:before,
+li a.ibm-usergroup:before,
+.ibm-ind-link a[class*="-link"]:before,
+.ibm-ind-link a.ibm-call-info:before,
+.ibm-ind-link a.ibm-symp-doc:before,
+.ibm-ind-link a.ibm-symp-presentation:before,
+.ibm-ind-link a.ibm-symp-spreadsheet:before,
+.ibm-ind-link a.ibm-community:before,
+.ibm-ind-link a.ibm-usergroup:before,
+span.ibm-error-link:before {
 	@include px-to-rem(margin-left,-35px);
 	text-decoration: none;
 }
 
+.ibm-col-4-1 li a[class*="-link"]:before,
+.ibm-col-4-1 li a.ibm-call-info:before,
+.ibm-col-4-1 li a.ibm-symp-doc:before,
+.ibm-col-4-1 li a.ibm-symp-presentation:before,
+.ibm-col-4-1 li a.ibm-symp-spreadsheet:before,
+.ibm-col-4-1 li a.ibm-community:before,
+.ibm-col-4-1 li a.ibm-usergroup:before,
+.ibm-col-4-1 .ibm-ind-link a[class*="-link"]:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-call-info:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-symp-doc:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-symp-presentation:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-community:before,
+.ibm-col-4-1 .ibm-ind-link a.ibm-usergroup:before,
+.ibm-col-4-1 span.ibm-error-link:before,
+
+.ibm-col-5-1 li a[class*="-link"]:before,
+.ibm-col-5-1 li a.ibm-call-info:before,
+.ibm-col-5-1 li a.ibm-symp-doc:before,
+.ibm-col-5-1 li a.ibm-symp-presentation:before,
+.ibm-col-5-1 li a.ibm-symp-spreadsheet:before,
+.ibm-col-5-1 li a.ibm-community:before,
+.ibm-col-5-1 li a.ibm-usergroup:before,
+.ibm-col-5-1 .ibm-ind-link a[class*="-link"]:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-call-info:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-symp-doc:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-symp-presentation:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-community:before,
+.ibm-col-5-1 .ibm-ind-link a.ibm-usergroup:before,
+.ibm-col-5-1 span.ibm-error-link:before,
+
+.ibm-col-6-1 li a[class*="-link"]:before,
+.ibm-col-6-1 li a.ibm-call-info:before,
+.ibm-col-6-1 li a.ibm-symp-doc:before,
+.ibm-col-6-1 li a.ibm-symp-presentation:before,
+.ibm-col-6-1 li a.ibm-symp-spreadsheet:before,
+.ibm-col-6-1 li a.ibm-community:before,
+.ibm-col-6-1 li a.ibm-usergroup:before,
+.ibm-col-6-1 .ibm-ind-link a[class*="-link"]:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-call-info:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-symp-doc:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-symp-presentation:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-community:before,
+.ibm-col-6-1 .ibm-ind-link a.ibm-usergroup:before,
+.ibm-col-6-1 span.ibm-error-link:before,
+
+.ibm-col-6-2 li a[class*="-link"]:before,
+.ibm-col-6-2 li a.ibm-call-info:before,
+.ibm-col-6-2 li a.ibm-symp-doc:before,
+.ibm-col-6-2 li a.ibm-symp-presentation:before,
+.ibm-col-6-2 li a.ibm-symp-spreadsheet:before,
+.ibm-col-6-2 li a.ibm-community:before,
+.ibm-col-6-2 li a.ibm-usergroup:before,
+.ibm-col-6-2 .ibm-ind-link a[class*="-link"]:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-call-info:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-symp-doc:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-symp-presentation:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-symp-spreadsheet:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-community:before,
+.ibm-col-6-2 .ibm-ind-link a.ibm-usergroup:before,
+.ibm-col-6-2 span.ibm-error-link:before {
+	@include px-to-rem(margin-left,-25px);
+	text-decoration: none;
+}
+
 li a.ibm-feature-link:before,
-li a.ibm-chevron-link:after,
-li.ibm-chevron-link a:after,
-li a.ibm-chevron-alternate-link:after,
-li.ibm-chevron-alternate-link a:after {
+li a[class*="ibm-chevron"]:after,
+li[class*="ibm-chevron"] a:after {
 	margin-left: 0;
 	text-decoration: none;
 }

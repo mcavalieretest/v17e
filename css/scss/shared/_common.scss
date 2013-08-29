@@ -1166,15 +1166,20 @@ p.ibm-ind-link a,
 ul.ibm-link-list a {
 	display: inline-block;
 	margin: 0;
-	@include px-to-rem(padding-left,25px);
+	@include px-to-rem(padding-left,35px);
 	text-decoration: none;
 }
 
-.ibm-col-6-4 p.ibm-ind-link a,
-.ibm-col-6-4 ul.ibm-link-list a {
-	@include px-to-rem(padding-left,35px);
+.ibm-col-4-1 p.ibm-ind-link a,
+.ibm-col-4-1 ul.ibm-link-list a,
+.ibm-col-5-1 p.ibm-ind-link a,
+.ibm-col-5-1 ul.ibm-link-list a,
+.ibm-col-6-1 p.ibm-ind-link a,
+.ibm-col-6-1 ul.ibm-link-list a,
+.ibm-col-6-2 p.ibm-ind-link a,
+.ibm-col-6-2 ul.ibm-link-list a {
+	@include px-to-rem(padding-left,25px);
 }
-
 
 p.ibm-ind-link.ibm-next-page a {
 	@include px-to-rem(padding-right,25px);
