@@ -326,31 +326,20 @@ p.ibm-table-navigation {
 
 p.ibm-table-navigation a.ibm-back-em-link,
 p.ibm-table-navigation span.ibm-back-em-link {
-	padding-left:12px;
+	@include px-to-rem(padding-left,20px);
 }
 p.ibm-table-navigation a.ibm-back-em-link:before,
 p.ibm-table-navigation span.ibm-back-em-link:before {
-	@include px-to-rem(margin-left,-16px);
+	@include px-to-rem(margin-left,-20px);
 }
 p.ibm-table-navigation a.ibm-forward-em-link:before {
 	content:"";
 }
-p.ibm-table-navigation a.ibm-forward-em-link:after {
-	color: $linkColor;
-	font-family: 'iconsIBM';
-	font-variant: normal;
-	content: "\00a0\f134\00a0";
-}
-
 span.ibm-firstpage-link {
-	padding-right:20px;
+	@include px-to-rem(padding-right,18px);
 }
-span.ibm-firstpage-link + span.ibm-back-em-link,
-span.ibm-firstpage-link + a.ibm-back-em-link{
-	padding-left:10px;
-}
-span.ibm-forward-em-link + span.ibm-lastpage-link {
-	padding-left:15px;
+span.ibm-lastpage-link {
+	@include px-to-rem(padding-left,18px);
 }
 
 
