@@ -352,10 +352,26 @@ a.ibm-thumbnail-module h3 {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	
+	// primary mobile tabs start
+	#ibm-content-nav #ibm-primary-tabs {
+		height: auto;
+	}
 
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
+		width: 280px !important;
+	}
+	
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+		float: none;
+	}
+	// primary mobile tabs end	
+	
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
-		padding-right: 20px;
-		padding-left: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+		width: 300px;
+		margin: 0 auto;
 	}
 	
 	.ibm-landing-page #ibm-content-head {
