@@ -4,6 +4,8 @@
 
 	#ibm-mobile-tabs {
 		padding: 10px 20px;
+		position: relative;
+		margin: 0 auto;
 	}
 	#ibm-mobile-tabs select {
 		font-family: $defaultFont;
@@ -350,6 +352,15 @@ a.ibm-thumbnail-module h3 {
 		padding: 10px 0;
 	}
 	*/
+	
+	#ibm-mobile-tabs {
+		width: 280px;
+	}
+	#ibm-mobile-tabs select {
+	
+	}
+	
+	
 	// mobile specific styles
 
 	.ibm-landing-page #ibm-search-form {
