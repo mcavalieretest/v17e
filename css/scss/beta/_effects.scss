@@ -1,14 +1,11 @@
-// colors ============================================
-
-
-
 // shadow effects
+
 $insetshadow : "text-shadow: 0px 1px 0px rgba(255,255,255,.95)";
 $dropshadow : #05386B;
 
 
-
 // Monochroatic RGBa
+
 $w10 : rgba(255,255,255,.10);
 $w20 : rgba(255,255,255,.20);
 $w25 : rgba(255,255,255,.25);
@@ -27,36 +24,30 @@ $k95 : rgba(0,0,0,.95);
 // transitions effects
 
 
-
-
-
-
-
-
 // Shadow effects
 
-
 .section-shadow {
-	box-shadow:  0 5px 10px -3px #DEDEDE inset;
+	box-shadow: 0 5px 10px -3px #DEDEDE inset;
 }
 
-.shadow-soft{
-	text-shadow:0px 1px 3px rgba(0,0,0,.75);
+.shadow-soft {
+	text-shadow: 0 1px 3px rgba(0,0,0,.75);
 }
 
-.shadow-hard{
-	text-shadow:0px 1px 1px rgba(0,0,0,.75);
+.shadow-hard {
+	text-shadow: 0 1px 1px rgba(0,0,0,.75);
 }
 
-.emboss-light{
-	text-shadow:0px 1px 0px rgba(255,255,255,.95);
+.emboss-light {
+	text-shadow: 0 1px 0 rgba(255,255,255,.95);
 }
-.emboss-dark{
-	text-shadow:0px -1px 0px rgba(0,0,0,.75);
+
+.emboss-dark {
+	text-shadow: 0 -1px 0 rgba(0,0,0,.75);
 }
 
 .glow{
-	text-shadow:0px 0px 5px rgba(255,255,255,.75);
+	text-shadow: 0 0 5px rgba(255,255,255,.75);
 }
 
 

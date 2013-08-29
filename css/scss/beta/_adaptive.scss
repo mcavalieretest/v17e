@@ -1,38 +1,4 @@
 // adaptive styles begin ============================================
-
-
-
-	#ibm-mobile-tabs {
-		padding: 15px 20px;
-		position: relative;
-		margin: 0 auto;
-	}
-	#ibm-mobile-tabs select {
-		font-family: $defaultFont;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		@include background-gradient(top, #FFFEFB, #EFF0EF);
-		border-radius: 5px;
-		appearance: none;
-		border: 1px solid rgba(0,0,0,0.15);
-		box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-		text-shadow: 0px 1px 0px rgba(255,255,255,.95);
-		min-width: 100%;
-		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-		padding: 8px 15px 8px ;
-	}
-	#ibm-mobile-tabs:after {
-		color: #000;
-		pointer-events: none;
-		right: 27px;
-		margin-top: -33px;
-		font-size: 20px;
-		text-shadow: 0px 1px 0px rgba(255,255,255,1);
-
-	}
-	// mobile specific styles
-
-
 .ibm-mobile {
 	display: none !important;
 }
@@ -340,30 +306,35 @@ a.ibm-thumbnail-module h3 {
 	.ibm-no-mobile {
 		display: none !important;
 	}
-	/*
-	#ibm-mobile-tabs {
-		padding: 10px 20px;
-	}
-	#ibm-mobile-tabs select {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		border: 1px solid #000;
-		border-radius: 0;
-		min-width: 100%;
-		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-		padding: 10px 0;
-	}
-	*/
-	
 	#ibm-mobile-tabs {
 		width: 280px;
+		padding: 15px 20px;
+		position: relative;
+		margin: 0 auto;
 	}
 	#ibm-mobile-tabs select {
-	
+		font-family: $defaultFont;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		@include background-gradient(top, #FFFEFB, #EFF0EF);
+		border-radius: 5px;
+		appearance: none;
+		border: 1px solid rgba(0,0,0,0.15);
+		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+		text-shadow: 0 1px 0 rgba(255,255,255,.95);
+		min-width: 100%;
+		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
+		padding: 8px 15px 8px ;
 	}
-	
-	
+	#ibm-mobile-tabs:after {
+		color: #000;
+		pointer-events: none;
+		right: 27px;
+		top: 28px;
+		font-size: 20px;
+		text-shadow: 0 1px 0 rgba(255,255,255,1);
+
+	}
 	// mobile specific styles
 
 	.ibm-landing-page #ibm-search-form {
