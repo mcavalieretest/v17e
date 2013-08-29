@@ -474,59 +474,16 @@
     cursor: pointer;
 }
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next, 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next, 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev {
-    background: url("#{$imagePath}/i/v17/lead/leafed_lead_space_navigation_sprite.png") no-repeat 0px 0px transparent;
-    cursor: pointer;
-    display: block;
-    height: 24px;
-    position: absolute;
-    text-indent: -9999em;
-    width: 16px;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next{
-     background-position: 0 -590px !important;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-next:hover,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-next:hover{
-     background-position: 0 -830px !important;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev{
-    background-position: 0 -470px !important;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg a.ibm-ribbon-prev:hover,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background a.ibm-ribbon-prev:hover{
-    background-position: 0 -710px !important;
-}
-
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev {
-    background-position: 0 -100px;
     left: 200px;
     margin-top: 140px;
     z-index: 1;
 }
 
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next {
-    background-position: 100% 0;
     margin-top: -160px;
     right: 200px;
     display: none;
-}
-
-.ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev:hover {
-    background-position: 0 -150px;
-}
-
-.ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next:hover {
-    background-position: 100% -50px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav a.ibm-active {
