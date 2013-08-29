@@ -93,7 +93,8 @@ $file_contents = str_replace(".ibm-ldr-email:before {",".ibm-email-link:before {
 
 #phone
 $file_contents = str_replace(".ibm-ldr-phone:before {",".ibm-phone-link:before,
-.ibm-call-link:before {",$file_contents);
+.ibm-call-link:before,
+.ibm-call-info:before {",$file_contents);
 
 #quote
 $file_contents = str_replace(".ibm-ldr-quote:before {",".ibm-requestquote-link:before {",$file_contents);

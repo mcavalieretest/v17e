@@ -45,7 +45,7 @@
 .ibm-help						ibm-question-link,ibm-help-link
 .ibm-ibmer						v17e - (new icon TBD)
 .ibm-ldr-email					ibm-email-link
-.ibm-ldr-phone					ibm-phone-link,ibm-call-link
+.ibm-ldr-phone					ibm-phone-link,ibm-call-link,ibm-call-info
 .ibm-ldr-quote					ibm-requestquote-link
 .ibm-ldr-register				ibm-signin-link
 .ibm-ldr-repcall				ibm-callme-link
@@ -174,6 +174,7 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-new-link:before,
 .ibm-phone-link:before,
 .ibm-call-link:before,
+.ibm-call-info:before,
 .ibm-requestquote-link:before,
 .ibm-signin-link:before,
 .ibm-callme-link:before,
@@ -250,11 +251,21 @@ a.ibm-ribbon-next:before,
 	font-size: larger;
 }
 
-ul.ibm-alternate-two a:before {
+#ibm-common-menu .ibm-ribbon-pane li:before,
+#ibm-footer-module li:before,
+a.ibm-ribbon-prev:before,
+a.ibm-ribbon-next:before,
+.ibm-close:before {
+	font-size: inherit;
+}
+
+ul.ibm-alternate-two a:before,
+ul.ibm-alternate-two a.ibm-chevron-link:after {
 	color: #FFF !important;
 }
 
 li a[class*="-link"]:before,
+li a.ibm-call-info:before,
 li a.ibm-cta-arrow-sm:before,
 li a.ibm-cta-chevron:before,
 li a.ibm-cta-download:before,
@@ -289,6 +300,7 @@ li a.ibm-close:before {
 }
 
 .ibm-col-6-4 li a[class*="-link"]:before,
+.ibm-col-6-4 li a.ibm-call-info:before,
 .ibm-col-6-4 li a.ibm-cta-arrow-sm:before,
 .ibm-col-6-4 li a.ibm-cta-chevron:before,
 .ibm-col-6-4 li a.ibm-cta-download:before,
@@ -400,7 +412,8 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-ibmer:before { content: "\00a0\f11f\00a0"; }
 .ibm-email-link:before { content: "\00a0\f120\00a0"; }
 .ibm-phone-link:before,
-.ibm-call-link:before { content: "\00a0\f121\00a0"; }
+.ibm-call-link:before,
+.ibm-call-info:before { content: "\00a0\f121\00a0"; }
 .ibm-requestquote-link:before { content: "\00a0\f122\00a0"; }
 .ibm-signin-link:before { content: "\00a0\f123\00a0"; }
 .ibm-callme-link:before { content: "\00a0\f124\00a0"; }
