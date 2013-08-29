@@ -436,7 +436,7 @@ li[class*="ibm-chevron"] a:after {
 #{$ie7Selector} span .ibm-error-link,
 #{$ie7Selector} .ibm-standalone-acc,
 #{$ie7Selector} a.ibm-inline {
-	background: url("//1.www.s81c.com/i/v17/icons/ibm_sprite_arrow_blue_ON.png") no-repeat;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_arrow_blue_ON.png") no-repeat;
 }
 
 .ibm-anchor-down-link:before,
@@ -637,7 +637,7 @@ a.ibm-ribbon-prev {
 }
 #{$ie7Selector} a.ibm-ribbon-next,
 #{$ie7Selector} a.ibm-ribbon-prev {
-	background: url("../i/v17e/mod/chev-sprite.png") no-repeat;
+	background: url("#{$imagePath}/i/v17e/mod/chev-sprite.png") no-repeat;
 }
 a.ibm-ribbon-next:before,
 a.ibm-ribbon-prev:before {
