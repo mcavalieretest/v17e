@@ -179,6 +179,11 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 /* LEADSPACE TOGGLE BLOCK (END) */
 
 /* IBM CONTENT BLOCK OVERIDES (BEGIN) */
+
+#ibm-content-main { 
+	background-color: #f8f8f8;
+}
+
 #ibm-pcon#{$ibm-pcon__modifier} {
 	margin-top:0px;
 }
@@ -207,14 +212,14 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			padding-top:1px;
 		}
 		.ibm-band#{$ibm-band__modifier} {
-			background: #fff;
-			background: -moz-linear-gradient(top,  #f2f2f2 0%, #fff 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#fff));
-			background: -webkit-linear-gradient(top,  #f2f2f2 0%,#fff 100%);
-			background: -o-linear-gradient(top,  #f2f2f2 0%,#fff 100%);
-			background: -ms-linear-gradient(top,  #f2f2f2 0%,#fff 100%);
-			background: linear-gradient(to bottom,  #f2f2f2 0%,#fff 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#fff',GradientType=0 );
+			background: #f8f8f8;
+			background: -moz-linear-gradient(top,  #f2f2f2 0%, #f8f8f8 0%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(0%,#f8f8f8));
+			background: -webkit-linear-gradient(top,  #f2f2f2 0%,#f8f8f8 0%);
+			background: -o-linear-gradient(top,  #f2f2f2 0%,#f8f8f8 0%);
+			background: -ms-linear-gradient(top,  #f2f2f2 0%,#f8f8f8 0%);
+			background: linear-gradient(to bottom,  #f2f2f2 0%,#f8f8f8 0%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f8f8f8',GradientType=0 );
 			min-height:15px;	
 				//max-height: 50px;
 
@@ -449,6 +454,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		float:left;
 		border-bottom:1px solid #cccccc;
 		padding: 30px 0;
+		// background-color:#fff;
 
 		// LIST VIEW RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (BEGIN)
 		.ibm-col-6-4{
@@ -853,6 +859,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		.ibm-col-1-1{
 			float:left;
 			width:300px;
+			background-color: #fff;
 			transition:width all 0.20s ease;
 			-webkit-transition: all 0.20s ease; /* Safari */
 			-moz-transition: all 0.20s ease;
@@ -1443,7 +1450,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 }
 
 /* MODIFYERS FOR TABLETS (BEGIN) */
-@media only screen and (min-width:481px), screen and (min-width:569px), screen and (min-width:601px), screen and (min-width:641px), screen and (min-width:769px) and (max-width:800px) {
+@media only screen and (min-width:569px) and (max-width:800px) {
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
 		min-height:100px;
 		#ibm-leadspace-body {
@@ -1507,6 +1514,10 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 		ul, .ibm_cci--lv-rc-sharing {
 			width:inherit;
+
+			> ul {
+				width:502px; 
+			}
 		}
 	}
 
@@ -1514,7 +1525,11 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		width:inherit;
 
 		.ibm_cci--unr-cb, .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing {
-			width:540px;			
+			width:540px;
+
+			> ul {
+				width:502px;
+			}			
 		}
 	}
 
