@@ -8,12 +8,15 @@
 	#ibm-mobile-tabs select {
 		-webkit-appearance: none;
 		-moz-appearance: none;
+		@include background-gradient(top, #FFFEFB, #EFF0EF);
+		border-radius: 5px;
 		appearance: none;
-		border: 1px solid #000;
-		border-radius: 0;
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		text-shadow: 1px 1px 1px #FFF;
 		min-width: 100%;
 		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-		padding: 10px 0;
+		padding: 10px 25px;
 	}
 	#ibm-mobile-tabs:after {
 		color: #000;
