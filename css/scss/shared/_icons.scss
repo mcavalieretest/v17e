@@ -405,6 +405,32 @@ li[class*="ibm-chevron"] a:after {
 	text-decoration: none;
 }
 
+#{$ie7Selector} li[class*="-link"] a,
+#{$ie7Selector} li.ibm-call-info a,
+#{$ie7Selector} li.ibm-symp-doc a,
+#{$ie7Selector} li.ibm-symp-presentation a,
+#{$ie7Selector} li.ibm-symp-spreadsheet a,
+#{$ie7Selector} li.ibm-community a,
+#{$ie7Selector} li.ibm-usergroup a,
+#{$ie7Selector} li a[class*="-link"],
+#{$ie7Selector} li a.ibm-call-info,
+#{$ie7Selector} li a.ibm-symp-doc,
+#{$ie7Selector} li a.ibm-symp-presentation,
+#{$ie7Selector} li a.ibm-symp-spreadsheet,
+#{$ie7Selector} li a.ibm-community,
+#{$ie7Selector} li a.ibm-usergroup,
+#{$ie7Selector} .ibm-ind-link a[class*="-link"],
+#{$ie7Selector} .ibm-ind-link a.ibm-call-info,
+#{$ie7Selector} .ibm-ind-link a.ibm-symp-doc,
+#{$ie7Selector} .ibm-ind-link a.ibm-symp-presentation,
+#{$ie7Selector} .ibm-ind-link a.ibm-symp-spreadsheet,
+#{$ie7Selector} .ibm-ind-link a.ibm-community,
+#{$ie7Selector} .ibm-ind-link a.ibm-usergroup,
+#{$ie7Selector} span.ibm-error-link,
+#{$ie7Selector} .ibm-standalone-acc,
+#{$ie7Selector} a.ibm-inline {
+	background: url("//1.www.s81c.com/i/v17/icons/ibm_sprite_arrow_blue_ON.png") no-repeat;
+}
 
 .ibm-anchor-down-link:before,
 .ibm-anchor-down-em-link:before { content: "\00a0\f100\00a0"; }
@@ -566,6 +592,10 @@ a.ibm-inline:after {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 	position: relative !important;
+}
+
+#{$ie7Selector} a.ibm-inline {
+	padding-left: 15px;
 }
 
 .ibm-standalone-acc,
