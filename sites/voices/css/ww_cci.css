@@ -445,10 +445,10 @@
           opacity: 1; }
       #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul {
         display: none; }
-      #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing li:not(:nth-child(1)) {
-        margin-left: 5px; }
-      #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing li a img:hover {
-        opacity: 1; }
+        #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul li a img {
+          opacity: 0.2; }
+        #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul li a img:hover {
+          opacity: 1; }
     #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 li:not(:nth-child(1)) {
       margin-left: 5px; }
     #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 li a img:hover {
@@ -622,6 +622,10 @@
             opacity: 1; }
         #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul {
           display: none; }
+          #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul li a img {
+            opacity: 0.2; }
+          #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul li a img:hover {
+            opacity: 1; }
         #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing li:not(:nth-child(1)) {
           margin-left: 5px; }
         #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing li a img:hover {
@@ -920,10 +924,10 @@
       #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul {
         line-height: 0;
         display: none; }
-      #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing li:not(:nth-child(1)) {
-        margin-left: 5px; }
-      #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing li a img:hover {
-        opacity: 1; }
+        #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul li a img {
+          opacity: 0.2; }
+        #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul li a img:hover {
+          opacity: 1; }
     #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 li:not(:nth-child(1)) {
       margin-left: 5px; }
     #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm-col-6-2 li a img:hover {
@@ -1120,6 +1124,10 @@
             opacity: 1; }
         #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul {
           display: none; }
+          #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul li a img {
+            opacity: 0.2; }
+          #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul li a img:hover {
+            opacity: 1; }
         #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing li:not(:nth-child(1)) {
           margin-left: 5px; }
         #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing li a img:hover {

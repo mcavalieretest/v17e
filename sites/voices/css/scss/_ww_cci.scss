@@ -637,16 +637,18 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				
 				> ul {
 					display:none;
+
+					li a img{
+						// outline:1px solid #000;
+						opacity:0.2;
+					}
+
+					li a img:hover{
+						// outline:1px solid #000;
+						opacity:1;
+					}					
 				}	
 
-				li:not(:nth-child(1)){
-					margin-left:5px;
-				}
-
-				li a img:hover{
-					// outline:1px solid #000;
-					opacity:1;
-				}
 			}
 			li:not(:nth-child(1)){
 				margin-left:5px;
@@ -789,6 +791,16 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					
 					> ul {
 						display:none;
+
+						li a img{
+							// outline:1px solid #000;
+							opacity:0.2;
+						}
+
+						li a img:hover{
+							// outline:1px solid #000;
+							opacity:1;
+						}						
 					}	
 
 					li:not(:nth-child(1)){
@@ -1093,16 +1105,17 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					> ul {
 						line-height:0;
 						display:none;
+
+						li a img{
+							// outline:1px solid #000;
+							opacity:0.2;
+						}
+
+						li a img:hover{
+							// outline:1px solid #000;
+							opacity:1;
+						}						
 					}	
-
-					li:not(:nth-child(1)){
-						margin-left:5px;
-					}
-
-					li a img:hover{
-						// outline:1px solid #000;
-						opacity:1;
-					}
 				}
 				li:not(:nth-child(1)){
 					margin-left:5px;
@@ -1271,6 +1284,16 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						
 						> ul{
 							display:none;
+
+							li a img{
+								// outline:1px solid #000;
+								opacity:0.2;
+							}
+
+							li a img:hover{
+								// outline:1px solid #000;
+								opacity:1;
+							}							
 						}	
 
 						li:not(:nth-child(1)){
