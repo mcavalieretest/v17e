@@ -96,8 +96,12 @@ these fonts. */
 // v17e font styles begin ============================================
 html[lang="en-US"] body {
 	font-family: $defaultFont;
+}
+body {
+	font-family: arial;
 	font-weight: 300;
 }
+
 
 html[lang="en-US"] h1,
 html[lang="en-US"] h2,
@@ -105,6 +109,13 @@ html[lang="en-US"] h3,
 html[lang="en-US"] h4,
 html[lang="en-US"] strong {
 	font-family: $defaultHeaderFont;
+}
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-family: arial;
 }
 
 // Masthead Fonts ======================
@@ -188,6 +199,10 @@ html[lang="en-US"] #ibm-navigation #ibm-overview a,
 html[lang="en-US"] #ibm-navigation .ibm-active {
 	font-family: $defaultHeaderFont;
 }
+#ibm-navigation #ibm-overview a,
+#ibm-navigation .ibm-active {
+	font-family: arial;
+}
 
 #ibm-content-sidebar {
 	@include px-to-rem(font-size,13px);
@@ -249,6 +264,10 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 	@include px-to-rem(font-size,13px);
 	@include px-to-rem(line-height,14px);
 }
+#ibm-content-nav #ibm-primary-tabs a,
+#ibm-content-nav #ibm-secondary-tabs a {
+	font-family: arial;
+}
 
 // Buttons size
 [class*="ibm-btn-"] {
@@ -256,8 +275,11 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 }
 
 // Bold primary buttons
-[class*="ibm-btn-"][class$="pri"] {
+html[lang="en-US"] [class*="ibm-btn-"][class$="pri"] {
 	font-family: $defaultHeaderFont;
+}
+[class*="ibm-btn-"][class$="pri"] {
+	font-family: arial;
 }
 
 // Intro style
@@ -358,7 +380,7 @@ html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 }
 
 #ibm-footer-module a {
-//	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
 }
 
 #ibm-footer-module,
