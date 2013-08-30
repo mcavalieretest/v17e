@@ -75,12 +75,12 @@
 }
 
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:first-child {
-	border-left: 0px none;
-	margin-left:0px;
+	border-left: 0 none;
+	margin-left: 0;
 }
 
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:last-child {
-	border-right: 0px none;
+	border-right: 0 none;
 }
 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs a {
@@ -97,8 +97,23 @@
 	padding: 10px 16px 8px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
-	text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+	text-shadow: 0 0 4px rgba(0,0,0,0.2);
 	text-decoration: none;
+	@include transition(background-color 0.3s);
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+	background-color: #CCC;
+	background-color: rgba(255,255,255,0.55);
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+	background-color: #FFF;
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
+	background-color: #CCC;
 }
 
 #ibm-content-nav #ibm-primary-tabs.ibm-small-labels ul.ibm-tabs a {
@@ -111,10 +126,6 @@
 
 #ibm-content-nav #ibm-primary-tabs.ibm-large-labels ul.ibm-tabs a {
 	padding: 10px 10px;
-}
-
-#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
-	@include transition(background-color 0.3s);
 }
 
 /* added focus for static-tab links - Hemang P*/
