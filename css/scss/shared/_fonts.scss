@@ -94,17 +94,16 @@ these fonts. */
 */
 
 // v17e font styles begin ============================================
-
-body {
+html[lang="en-US"] body {
 	font-family: $defaultFont;
 	font-weight: 300;
 }
 
-h1,
-h2,
-h3,
-h4,
-strong {
+html[lang="en-US"] h1,
+html[lang="en-US"] h2,
+html[lang="en-US"] h3,
+html[lang="en-US"] h4,
+html[lang="en-US"] strong {
 	font-family: $defaultHeaderFont;
 }
 
@@ -278,8 +277,8 @@ strong {
 	@include px-to-rem(font-size,13px);
 }
 
-table caption em,
-table th {
+html[lang="en-US"] table caption em,
+html[lang="en-US"] table th {
 	font-family: $defaultHeaderFont;
 	font-style: normal;
 }
@@ -320,9 +319,9 @@ p.ibm-table-scroll-caption {
 	font-family: Georgia;
 }
 
-.ibm-pull-quote.ibm-alternate-font blockquote p,
-.ibm-pullquote-open.ibm-alternate-font, 
-.ibm-pullquote-close.ibm-alternate-font {
+html[lang="en-US"] .ibm-pull-quote.ibm-alternate-font blockquote p,
+html[lang="en-US"] .ibm-pullquote-open.ibm-alternate-font, 
+html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 	font-family: $defaultFont;
 }
 
@@ -359,7 +358,7 @@ p.ibm-table-scroll-caption {
 }
 
 #ibm-footer-module a {
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
+//	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
 }
 
 #ibm-footer-module,
