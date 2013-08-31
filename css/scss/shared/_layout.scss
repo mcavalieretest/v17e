@@ -74,9 +74,9 @@
 }
 
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
-    width: $landingGrid;
+    width: $landingGrid - 40px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
     position: relative;
     *position: static; /*ie6/7 fix*/
     min-height: 250px;
@@ -92,7 +92,7 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body h1 {
     color: #FFF;
-    text-shadow: #000 0px 1px 0px;
+    text-shadow: #000 0 1px 0;
     filter: Shadow(Color=#000000,   
             Direction=180, 
             Strength=1);
@@ -105,22 +105,22 @@
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p em span,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body em span {
-    color:#FFCF01;
+    color: #FFCF01;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body p a {
-    color:#82D1F5;
+    color: #82D1F5;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p a:hover,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body p a:hover {
-    color:#B2E2F8;
+    color: #B2E2F8;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body ul#ibm-navigation-trail li a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body ul#ibm-navigation-trail li a {
-    color:#BBB;
+    color: #BBB;
     text-shadow: 0 1px 0 #000;
     filter: Shadow(Color=#000000,   
             Direction=180, 
@@ -132,33 +132,33 @@
 /* styles for short leadspace ===================*/
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs {
     min-height: 110px;
-    _height:110px;
+    _height: 110px;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate{
-    min-height:70px;
-    _height:70px;
+    min-height: 70px;
+    _height: 70px;
     
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
     min-height: 70px;
-    _height:70px;
+    _height: 70px;
     padding-bottom: 40px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
     min-height: 115px;
-    _height:115px;
+    _height: 115px;
     padding-bottom: 5px;
     margin-bottom: 1px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1{
-	padding-top:25px;
+	padding-top: 25px;
 	padding-bottom: 20px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-35-space{
-    padding-top:35px;
+    padding-top: 35px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-navigation-trail + h1{
@@ -168,7 +168,7 @@
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
 	width: 480px;
-	padding-bottom:0;
+	padding-bottom: 0;
 }
 
 /* End of styles for short leadsapce */
@@ -178,14 +178,14 @@
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
-    min-height:290px;
-    _height:290px;
+    min-height: 290px;
+    _height: 290px;
     padding-bottom: 10px;  
     _padding-bottom: 0; 
 }
 
 .ibm-landing-page #ibm-leadspace-head h1 {
-    padding: 30px 20px;
+    padding: 30px 0;
     width: 540px;
     _background-color: transparent;
 }
@@ -203,7 +203,7 @@
 }
 
 .ibm-landing-page #ibm-leadspace-head p {
-    padding: 0 0 10px 20px;
+    padding: 0 0 10px 0;
     width: 480px;
 }
 
@@ -232,7 +232,7 @@
 .ibm-landing-page #ibm-leadspace-head p a {
     display: block;
     padding: 0;
-    margin-top:15px;
+    margin-top: 15px;
     text-decoration: none;
 }
 
@@ -329,6 +329,7 @@
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon #ibm-leadspace-body {
     width: 100%;
+    padding: 0 0 50px;
 }
 
 #ibm-leadspace-head.ibm-container {
@@ -346,7 +347,7 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h2 {
     position: relative;
-    padding: 30px 20px;
+    padding: 30px 0;
     width: 540px;
     clear: both;
     font-size: 2.6em;
@@ -383,7 +384,6 @@
 }
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
-    width: $landingGrid + 18px;
     padding: 0;
     margin: 0 auto;
     float: none;
@@ -584,12 +584,6 @@
 #ibm-lead-3,
 #ibm-leadspace-head.ibm-ribbon div.ibm-columns div.ibm-ribbon-view {
     display: none;
-}
-
-#ibm-lead-1 div.ibm-col-1-1 {
-    width: 990px;
-    float: none;
-    margin: 0 auto;
 }
 
 /* non js leadspace */

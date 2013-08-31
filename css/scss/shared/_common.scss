@@ -397,14 +397,14 @@ p.ibm-alternate-two a:visited  {
 #ibm-content-main .ibm-col-5-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover,
 #ibm-content-main .ibm-col-6-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover,
 #ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li:hover {
-	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 13px;
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0 13px;
 }
 
 #ibm-content-main .ibm-col-4-3 ul li li:hover,
 #ibm-content-main .ibm-col-5-4 ul li li:hover,
 #ibm-content-main .ibm-col-6-4 ul li li:hover,
 #ibm-content-main .ibm-col-6-5 ul li li:hover {
-	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 11px;
+	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0 11px;
 }
 
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul ol li.ibm-no-links:hover,
@@ -440,7 +440,7 @@ div.dijitDialog ul.ibm-link-list li:hover,
 #ibm-content ul.ibm-link-list li,
 #ibm-related-content ul.ibm-link-list li,
 .ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li {
-	padding-left: 0px;
+	padding-left: 0;
 }
 #ibm-com ul.ibm-tabs li {
 	clear: none;
@@ -455,9 +455,8 @@ div.dijitDialog ul.ibm-link-list li:hover,
 #ibm-content-head ul#ibm-navigation-trail {
     height: 1%;
     list-style-type: none;
-    margin: 0px 20px;
-    padding: 10px 0px 0px 0px;
-    text-shadow: 0px 1px 0px #FFF;
+    padding: 10px 0 0 0;
+    text-shadow: 0 1px 0 #FFF;
     position: relative#{$ie9Hack};
     *position: relative;
 }
@@ -468,11 +467,11 @@ div.dijitDialog ul.ibm-link-list li:hover,
 
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
-	margin: 0px 10px;
+	margin: 0 10px;
 }
 #ibm-content-head ul#ibm-navigation-trail li.ibm-first,
 #ibm-content-head ul#ibm-navigation-trail li:first-child {
-	padding-left: 0px;
+	padding-left: 0;
 }
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li,
@@ -481,8 +480,8 @@ div.dijitDialog ul.ibm-link-list li:hover,
     display: inline;
     float: left;
 	clear: none;
-    margin: 0px;
-    padding: 0px 16px 0px 2px;
+    margin: 0;
+    padding: 0 16px 0 2px;
 }
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
 .ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,

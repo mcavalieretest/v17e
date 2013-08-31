@@ -98,7 +98,7 @@ html[lang="en-US"] body {
 	font-family: $defaultFont;
 }
 body {
-	font-family: arial;
+	font-family: $defaultFont-dbcs;
 	font-weight: 300;
 }
 
@@ -115,7 +115,7 @@ h2,
 h3,
 h4,
 strong {
-	font-family: arial;
+	font-family: $defaultHeaderFont-dbcs;
 }
 
 // Masthead Fonts ======================
@@ -201,7 +201,7 @@ html[lang="en-US"] #ibm-navigation .ibm-active {
 }
 #ibm-navigation #ibm-overview a,
 #ibm-navigation .ibm-active {
-	font-family: arial;
+	font-family: $defaultHeaderFont-dbcs;
 }
 
 #ibm-content-sidebar {
@@ -250,6 +250,10 @@ html[lang="en-US"] #ibm-navigation .ibm-active {
 html[lang="en-US"] #ibm-content-head em, 
 html[lang="en-US"] #ibm-content #ibm-leadspace-head em {
 	font-family: $defaultHeaderFont;
+}
+#ibm-content-head em, 
+#ibm-content #ibm-leadspace-head em {
+	font-family: $defaultHeaderFont-dbcs;
 	font-style: normal;
 	color: #666;
 }
@@ -257,16 +261,19 @@ html[lang="en-US"] #ibm-content #ibm-leadspace-head em {
 html[lang="en-US"] .ibm-landing-page #ibm-leadspace-head p em span {
 	font-family: $defaultHeaderFont;
 }
+.ibm-landing-page #ibm-leadspace-head p em span {
+	font-family: $defaultHeaderFont-dbcs;
+}
 
 html[lang="en-US"] #ibm-content-nav #ibm-primary-tabs a,
 html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 	font-family: "HelvRegularIBM",Arial,sans-serif;
-	@include px-to-rem(font-size,13px);
-	@include px-to-rem(line-height,14px);
 }
 #ibm-content-nav #ibm-primary-tabs a,
 #ibm-content-nav #ibm-secondary-tabs a {
-	font-family: arial;
+	font-family: $defaultFont-dbcs;
+	@include px-to-rem(font-size,13px);
+	@include px-to-rem(line-height,14px);
 }
 
 // Buttons size
@@ -279,7 +286,7 @@ html[lang="en-US"] [class*="ibm-btn-"][class$="pri"] {
 	font-family: $defaultHeaderFont;
 }
 [class*="ibm-btn-"][class$="pri"] {
-	font-family: arial;
+	font-family: $defaultHeaderFont-dbcs;
 }
 
 // Intro style
@@ -302,6 +309,10 @@ html[lang="en-US"] [class*="ibm-btn-"][class$="pri"] {
 html[lang="en-US"] table caption em,
 html[lang="en-US"] table th {
 	font-family: $defaultHeaderFont;
+}
+table caption em,
+table th {
+	font-family: $defaultHeaderFont-dbcs;
 	font-style: normal;
 }
 
@@ -346,6 +357,11 @@ html[lang="en-US"] .ibm-pullquote-open.ibm-alternate-font,
 html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 	font-family: $defaultFont;
 }
+.ibm-pull-quote.ibm-alternate-font blockquote p,
+.ibm-pullquote-open.ibm-alternate-font, 
+.ibm-pullquote-close.ibm-alternate-font {
+	font-family: $defaultFont-dbcs;
+}
 
 #{$ie7Selector} #ibm-content #ibm-content-main .ibm-pull-quote blockquote p,
 #{$ie7Selector} #ibm-content #ibm-content-main .ibm-pull-quote blockquote p em {
@@ -357,7 +373,7 @@ html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 }
 .ibm-item-note {
 	font-family: Georgia;
-	font-style:bold;
+	font-style: bold;
 }
 
 .ibm-legal-text,
@@ -380,7 +396,7 @@ html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 }
 
 #ibm-footer-module a {
-	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
+	font-family: $defaultHeaderFont-dbcs;
 }
 
 #ibm-footer-module,

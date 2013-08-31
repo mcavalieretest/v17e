@@ -250,6 +250,12 @@ a.ibm-thumbnail-module h3 {
 		width: 100%;
 	}
 	
+	.ibm-landing-page #ibm-leadspace-head h1,
+	.ibm-landing-page #ibm-leadspace-head p,
+	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
+		width: auto;
+	}
+	
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
 		width: auto;
@@ -349,14 +355,6 @@ a.ibm-thumbnail-module h3 {
 		display: none !important;
 	}
 	
-	.ibm-landing-page #ibm-leadspace-head h1,
-	.ibm-landing-page #ibm-leadspace-head p,
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-		width: auto;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	
 	// primary mobile tabs start
 	#ibm-content-nav #ibm-primary-tabs {
 		height: auto;
@@ -371,11 +369,15 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
 		padding-right: 10px;
 		padding-left: 10px;
-		width: 300px;
+		width: 280px;
 		margin: 0 auto;
+	}
+	
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+		width: 300px;
 	}
 	
 	.ibm-landing-page #ibm-content-head {
@@ -571,14 +573,6 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-related-content {
 		width: 600px;
 	}
-
-	.ibm-landing-page #ibm-leadspace-head h1,
-	.ibm-landing-page #ibm-leadspace-head p,
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-		width: auto;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
 	
 	.ibm-landing-page #ibm-content-main > p,
 	.ibm-landing-page #ibm-content-main > h2,
@@ -588,6 +582,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 40px;
 	}
 	
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 40px;
 		padding-left: 40px;
@@ -798,12 +793,11 @@ a.ibm-thumbnail-module h3 {
 		width: 640px;
 	}
 	// to be removed.  only for testing
-	
-	.ibm-landing-page #ibm-leadspace-head h1,
-	.ibm-landing-page #ibm-leadspace-head p,
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-		padding-left: 61px;
-		padding-right: 61px;
+
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
+		padding-right: 60px;
+		padding-left: 60px;
 	}
 	
 	.ibm-landing-page #ibm-content-main > p,
@@ -811,11 +805,6 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > h3,
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		padding: 0 60px;
-	}
-	
-	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
-		padding-right: 60px;
-		padding-left: 60px;
 	}
 	
 	.ibm-landing-page #ibm-content-head {
@@ -863,19 +852,12 @@ a.ibm-thumbnail-module h3 {
 	}
 	// to be removed.  only for testing
 	
-	.ibm-landing-page #ibm-leadspace-head h1,
-	.ibm-landing-page #ibm-leadspace-head p,
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-		width: auto;
-		padding-left: 65px;
-		padding-right: 65px;
-	}
-	
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		width: auto;
 		padding: 0 64px;
 	}
 	
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 64px;
 		padding-left: 64px;
@@ -1094,18 +1076,12 @@ a.ibm-thumbnail-module h3 {
 		width: 800px;
 	}
 	// to be removed.  only for testing
-	
-	.ibm-landing-page #ibm-leadspace-head h1,
-	.ibm-landing-page #ibm-leadspace-head p,
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-		padding-left: 81px;
-		padding-right: 81px;
-	}
-	
+		
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
 		padding: 0 80px;
 	}
 	
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 80px;
 		padding-left: 80px;
