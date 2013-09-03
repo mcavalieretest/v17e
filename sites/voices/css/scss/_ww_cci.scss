@@ -141,7 +141,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 /* LEADSPACE TOGGLE BLOCK (BEGIN) */	
 #{$leadspace--toggle} {
 	@include leadspace--defaults;
-	width:140px;
+	width:120px;
 	font-size:0;	
 	ul.ibm_cci--ls--toggle--ul {
 		float:right;
@@ -452,10 +452,10 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	.ibm-col-1-1{
 		position:relative;
 		float:left;
-		border-bottom:1px solid #cccccc;
+		// border-bottom:1px solid #cccccc;
 		padding: 30px 0;
 		// background-color:#fff;
-
+		
 		// LIST VIEW RESOLVED BLOCK WITH CONVERSATION AND WITHOUT CONVERSATION (BEGIN)
 		.ibm-col-6-4{
 			@include ibm-listview-commons;
@@ -846,7 +846,13 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			}
 		}
 		// LIST VIEW UNRESOLVED TWEETS + YOUTUBE (END) 
-	}	
+	}
+	.ibm-col-1-1:nth-child(1){
+		border:0;
+	}
+	
+	.ibm-col-1-1:not(:nth-child(1)){border-top:1px solid #ccc;}
+	.ibm-col-1-1:last-child{border-bottom:1px solid #ccc;}
 }
 // LIST VIEW (END)
 
@@ -1335,10 +1341,24 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	/* HOVER EFFECTS BEGIN */
 	@each $view in ibm_cci-lv__modifier, ibm_cci-gv__modifier {
 		@if $view == ibm_cci-lv__modifier {
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:hover
+			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:first-child:hover + .ibm-col-1-1
 			{
+				border-top:1px solid $hover-color;
+			}
+			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover
+			{
+				border-top:1px solid $hover-color;
+			}
+			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover + .ibm-col-1-1
+			{
+				border-top:1px solid $hover-color;
+			}
+			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:last-child:hover
+			{
+				border-top:1px solid $hover-color;
 				border-bottom:1px solid $hover-color;
 			}
+
 		}
 		@else if $view == ibm_cci-gv__modifier{
 			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:hover
