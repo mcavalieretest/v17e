@@ -402,7 +402,7 @@
 
 #ibm-common-menu .ibm-ribbon-pane li:before {
 	color: #999;
-	@include px-to-rem(margin-left,-10px);
+	@include px-to-rem(margin-left,-12px);
 	position:relative;
 	top:-2px;
 }
