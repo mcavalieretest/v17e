@@ -86,7 +86,7 @@
 /*=Start========== Dark background definition ============*/
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon .ibm-container-body  {
-    @include background-gradient(top, $k95, $k75); 
+    @include background-gradient(top, $k95, $k85); 
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1,
