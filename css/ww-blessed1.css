@@ -1520,7 +1520,7 @@ span.ibm-thumbnail span.ibm-video-play { background-color: transparent; }
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body { width: 940px; margin: 0 auto; padding: 0 20px 50px 20px; position: relative; *position: static; /*ie6/7 fix*/ min-height: 250px; _height: 250px; }
 
 /*=Start========== Dark background definition ============*/
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background, .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon .ibm-container-body { background: #090909 url("http://1.www.s81c.com/i/fpo/leadspace-tall-bg-dark.png") repeat-x left top; }
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background, .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon .ibm-container-body { background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)); background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)); background: -o-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)); background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)); background: linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.75)); }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1, .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body h1 { color: #FFF; text-shadow: black 0 1px 0; filter: Shadow(Color=black, Direction=180, Strength=1); }
 
