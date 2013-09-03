@@ -1,4 +1,22 @@
 // adaptive styles begin ============================================
+
+
+// TESTING FOR IPAD HEIGHT ON PORTRAIT AND LANDSCAPE ============================================
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.v17e-height { 
+		min-height: 869px;
+	}
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.v17e-height { 
+		min-height: 600px;
+	}
+}
+// TESTING FOR IPAD HEIGHT ON PORTRAIT AND LANDSCAPE ============================================
+
+
+
+
 .ibm-mobile {
 	display: none !important;
 }
