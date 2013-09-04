@@ -1,4 +1,4 @@
-// icons styles begin ============================================
+// !icons styles begin ============================================
 
 // run 'fontcustom compile icons' from i/v17e directory to generate new font file
 
@@ -40,7 +40,7 @@
 .ibm-form-confirm-link			ibm-confirm-link
 .ibm-form-error-link			duplicate: ibm-error-link
 .ibm-form-reset					ibm-reset-link
-.ibm-forward-link				ibm-forward-link,ibm-callaction-link
+.ibm-forward-link				ibm-forward-link,ibm-callaction-link,ibm-cta-link
 .ibm-help-lg					ibm-questionLarge-link
 .ibm-help						ibm-question-link,ibm-help-link
 .ibm-ibmer						v17e - (new icon TBD)
@@ -102,6 +102,7 @@
 .ibm-anchor-down-em-link:before,
 .ibm-forward-link:before,
 .ibm-callaction-link:before,
+.ibm-cta-link:before,
 .ibm-back-link:before,
 .ibm-back-em-link:before,
 .ibm-wireless-link:before,
@@ -312,7 +313,7 @@ li a.ibm-usergroup:before,
 .ibm-ind-link a.ibm-community:before,
 .ibm-ind-link a.ibm-usergroup:before,
 span.ibm-error-link:before {
-	@include px-to-rem(margin-left,-35px);
+	@include px-to-rem(margin-left,-27px); // !Fucking large link position
 	text-decoration: none;
 }
 
@@ -395,9 +396,12 @@ span.ibm-error-link:before {
 .ibm-col-6-2 .ibm-ind-link a.ibm-community:before,
 .ibm-col-6-2 .ibm-ind-link a.ibm-usergroup:before,
 .ibm-col-6-2 span.ibm-error-link:before {
-	@include px-to-rem(margin-left,-25px);
+	@include px-to-rem(margin-left,-24px); // !Fucking small link position 
 	text-decoration: none;
 }
+
+// !Icon position in _common for no fucking reason
+
 
 li a.ibm-feature-link:before,
 li a[class*="ibm-chevron"]:after,
