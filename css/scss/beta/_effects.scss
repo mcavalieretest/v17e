@@ -1,8 +1,3 @@
-
-
-
-
-
 // Shadow effects ============================================
 
 .section-shadow {
@@ -52,3 +47,13 @@
 
 
 
+// !Gradients
+
+.grad-k95-85 {@include background-gradient(top, $k95, $k85); }
+
+// !Background colors
+.bgc-white { background-color:$white}
+.bgc-k02 { background-color:$k02}
+.bgc-k03 { background-color:$k03}
+.bgc-k05 { background-color:$k05}
+.bgc-blue { background-color:$ibmblue}
