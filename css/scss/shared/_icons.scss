@@ -221,10 +221,10 @@ a.ibm-ribbon-next:before,
 .ibm-tog-list:before,
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
-.ibm-show-hide h2 a.ibm-show-active:before,
+.ibm-show-hide h2 a.ibm-show-active:after,
 .ibm-add1-link:before,
 .ibm-maximize-link:before,
-.ibm-show-hide h2 a:before,
+.ibm-show-hide h2 a:after,
 .ibm-tog-tile:before,
 .ibm-community:before,
 .ibm-community-link:before,
@@ -575,10 +575,10 @@ p.ibm-table-navigation a.ibm-forward-em-link:after,
 .ibm-tog-list:before { content: "\f150"; }
 .ibm-delete-link:before,
 .ibm-minimize-link:before,
-.ibm-show-hide h2 a.ibm-show-active:before { content: "\f151"; }
+.ibm-show-hide h2 a.ibm-show-active:after { content: "\f151"; }
 .ibm-add1-link:before,
 .ibm-maximize-link:before,
-.ibm-show-hide h2 a:before { content: "\f152"; }
+.ibm-show-hide h2 a:after { content: "\f152"; }
 .ibm-tog-tile:before { content: "\f153"; }
 .ibm-dogear-link:before { content: "\f154"; }
 .ibm-calculator-link:before { content: "\f155"; }
