@@ -94,13 +94,13 @@ $k10 : rgba(0,0,0,.10);
 $k20 : rgba(0,0,0,.20);
 $k50 : rgba(0,0,0,.50);
 $k75 : rgba(0,0,0,.75);
+$k80 : rgba(0,0,0,.80);
+$k85 : rgba(0,0,0,.85);
 $k85 : rgba(0,0,0,.85);
 $k90 : rgba(0,0,0,.90);
 $k95 : rgba(0,0,0,.95);
 	
 // gradients
-
-
 
 .grad-k95-85 {@include background-gradient(top, $k95, $k85); }
 
