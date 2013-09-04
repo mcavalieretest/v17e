@@ -1165,7 +1165,7 @@ p.ibm-ind-link a,
 ul.ibm-link-list a {
 	display: inline-block;
 	margin: 0;
-	@include px-to-rem(padding-left,21px); //!icon position
+	@include px-to-rem(padding-left,21px); //!icon position with link
 	text-decoration: none;
 }
 
