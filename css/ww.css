@@ -2342,8 +2342,8 @@ p.ibm-ind-link a,
 ul.ibm-link-list a {
   display: inline-block;
   margin: 0;
-  padding-left: 21px;
-  padding-left: 2.1rem;
+  padding-left: 25px;
+  padding-left: 2.5rem;
   text-decoration: none; }
 
 #ibm-content-sidebar p.ibm-ind-link a,
@@ -4985,8 +4985,8 @@ li a.ibm-usergroup:before,
 .ibm-ind-link a.ibm-community:before,
 .ibm-ind-link a.ibm-usergroup:before,
 span.ibm-error-link:before {
-  margin-left: -27px;
-  margin-left: -2.7rem;
+  margin-left: -30px;
+  margin-left: -3rem;
   text-decoration: none; }
 
 #ibm-content-sidebar li a[class*="-link"]:before,
@@ -5064,8 +5064,8 @@ span.ibm-error-link:before {
 .ibm-col-6-2 .ibm-ind-link a.ibm-community:before,
 .ibm-col-6-2 .ibm-ind-link a.ibm-usergroup:before,
 .ibm-col-6-2 span.ibm-error-link:before {
-  margin-left: -24px;
-  margin-left: -2.4rem;
+  margin-left: -21px;
+  margin-left: -2.1rem;
   text-decoration: none; }
 
 li a.ibm-feature-link:before,
