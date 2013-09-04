@@ -62,14 +62,20 @@ css/
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85));
   background: linear-gradient(top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.85)); }
 
-.bg-col-k02 {
+.bgc-white {
+  background-color: white; }
+
+.bgc-k02 {
   background-color: rgba(0, 0, 0, 0.02); }
 
-.bg-col-k03 {
+.bgc-k03 {
   background-color: rgba(0, 0, 0, 0.03); }
 
-.bg-col-k05 {
+.bgc-k05 {
   background-color: rgba(0, 0, 0, 0.05); }
+
+.bgc-blue {
+  background-color: #4982c3; }
 
 .section-shadow {
   box-shadow: 0 5px 10px -3px #DEDEDE inset; }
@@ -10861,9 +10867,3 @@ ul:hover a.ibm-share-weibo:hover {
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-twitter:active {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -840px !important; }
-
-.ibm-share-this.ibm-alternate-large ul li a.ibm-share-stumble:active {
-  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1050px !important; }
-
-.ibm-share-this.ibm-alternate-large ul li a.ibm-share-connection:active {
-  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1260px; }

@@ -1,5 +1,11 @@
-@import url('ww-blessed1.css?z=1378270789822');
+@import url('ww-blessed1.css?z=1378271447775');
 
+
+.ibm-share-this.ibm-alternate-large ul li a.ibm-share-stumble:active {
+  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1050px !important; }
+
+.ibm-share-this.ibm-alternate-large ul li a.ibm-share-connection:active {
+  background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1260px; }
 
 .ibm-share-this.ibm-alternate-large ul li a.ibm-share-youtube:active {
   background: url("http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_CLICK.png") no-repeat 0 -1470px; }
