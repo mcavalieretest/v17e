@@ -313,7 +313,7 @@ li a.ibm-usergroup:before,
 .ibm-ind-link a.ibm-community:before,
 .ibm-ind-link a.ibm-usergroup:before,
 span.ibm-error-link:before {
-	@include px-to-rem(margin-left,-27px); // !Fucking large link position
+	@include px-to-rem(margin-left,-30px); // !Fucking large link position
 	text-decoration: none;
 }
 
@@ -396,7 +396,7 @@ span.ibm-error-link:before {
 .ibm-col-6-2 .ibm-ind-link a.ibm-community:before,
 .ibm-col-6-2 .ibm-ind-link a.ibm-usergroup:before,
 .ibm-col-6-2 span.ibm-error-link:before {
-	@include px-to-rem(margin-left,-24px); // !Fucking small link position 
+	@include px-to-rem(margin-left,-21px); // !Fucking small link position 
 	text-decoration: none;
 }
 
