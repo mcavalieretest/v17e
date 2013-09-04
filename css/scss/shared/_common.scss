@@ -90,7 +90,9 @@ p.ibm-alternate-two a:visited  {
 #ibm-content h2,
 #ibm-content h3,
 #ibm-content .ibm-columns h2,
-#ibm-content .ibm-columns h3 {
+#ibm-content .ibm-columns h3,
+.ibm-landing-page #ibm-content .ibm-columns h2,
+.ibm-landing-page #ibm-content .ibm-columns h3 {
 	margin: 5px 10px;
 }
 
@@ -99,10 +101,10 @@ p.ibm-alternate-two a:visited  {
 	padding-bottom:5px;
 }
 
-.ibm-landing-page #ibm-content h2,
+/*.ibm-landing-page #ibm-content h2,
 .ibm-landing-page #ibm-content h3 {
 	margin: 10px 20px;
-}
+}*/
 
 #ibm-content .ibm-container h2,
 #ibm-content .ibm-container h3,
@@ -2113,31 +2115,26 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 }
 
 .ibm-show-hide h2 a {
-	display: block;
-	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_OFF.png") no-repeat 100% -1602px;
-	padding-right: 16px;
 	text-decoration: none;
 	color: #000;        
 }
 
-.ibm-landing-page .ibm-show-hide h2 a {
-	background-position: 100% -1602px;
+.ibm-landing-page .ibm-show-hide h2 a:after,
+.ibm-show-hide h2 a.ibm-show-active:after,
+.ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:after,
+#ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide h2 a:after {
+	float: right;
+	position: relative;
+}
+ 
+.ibm-show-hide h2 a:hover:after,
+.ibm-landing-page .ibm-show-hide h2 a:hover:after {
+	color: #A5DF00;
 }
 
-#ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide h2 a {
-	color: #333;
-}
-.ibm-show-hide h2 a:hover,
-.ibm-landing-page .ibm-show-hide h2 a:hover {
-	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat 100% -1602px;
-}
-.ibm-show-hide h2 a.ibm-show-active,
-.ibm-landing-page .ibm-show-hide h2 a.ibm-show-active {
-	background-position: 100% -1402px;
-}
-.ibm-show-hide h2 a.ibm-show-active:hover,
-.ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:hover {
-	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_blue_ON.png") no-repeat 100% -1402px;
+.ibm-show-hide h2 a.ibm-show-active:hover:after,
+.ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:hover:after {
+	color: #DF3A01;
 }
 .ibm-show-hide h2 a.ibm-show-active:visited ,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:visited {
