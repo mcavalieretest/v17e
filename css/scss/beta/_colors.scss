@@ -2,13 +2,13 @@
 
 
 
-// link colors
+// !link colors
 $linkColor : #00649D;
 $linkColorHover : #05386B;
 $linkColorVisited : #745285;
 
 
-// ibm colors
+// !IBM Colors
 
 $yellow-1	:#FFE14F;
 $yellow-2	:#FFCF01;
@@ -62,7 +62,7 @@ $olive-4	:#3C3900;
 
 $ibmblue	:#4982c3;
 
-// Monochromatic
+// !Monochromatic HEX
 
 $white 		:#FFFFFF;
 $gray-10	:#E5E5E5;
@@ -78,7 +78,7 @@ $black		:#000000;
 
 
 
-// Monochromatic RGBa
+// !Monochromatic RGBa
 
 $w10 : rgba(255,255,255,.10);
 $w20 : rgba(255,255,255,.20);
@@ -100,11 +100,11 @@ $k85 : rgba(0,0,0,.85);
 $k90 : rgba(0,0,0,.90);
 $k95 : rgba(0,0,0,.95);
 	
-// gradients
+// !Gradients
 
 .grad-k95-85 {@include background-gradient(top, $k95, $k85); }
 
-// Background colors
+// !Background colors
 .bgc-white { background-color:$white}
 .bgc-k02 { background-color:$k02}
 .bgc-k03 { background-color:$k03}

@@ -1,6 +1,9 @@
 
 
-// Shadow effects
+
+
+
+// Shadow effects ============================================
 
 .section-shadow {
 	box-shadow: 0 5px 10px -3px #DEDEDE inset;
@@ -14,19 +17,38 @@
 	text-shadow: 0 1px 1px rgba(0,0,0,.75);
 }
 
+// Dark text is against light background
 .emboss-light {
 	text-shadow: 0 1px 0 rgba(255,255,255,.95);
 }
 
+
+// Light text is against dark background
 .emboss-dark {
 	text-shadow: 0 -1px 0 rgba(0,0,0,.75);
 }
 
+
+// Used when white text needs to
 .glow{
-	text-shadow: 0 0 5px rgba(255,255,255,.75);
+	text-shadow: 0 0 5px rgba(255,255,255,.75); 
 }
+
+
+
+
+// Type Alignments ============================================
+
+.center {text-align: center}
+
+
+
+
 
 
 
 
 // transitions effects
+
+
+
