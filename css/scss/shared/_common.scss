@@ -2109,12 +2109,14 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 	color: #000;        
 }
 
+#ibm-content .ibm-show-hide h2 a:after,
+#ibm-content .ibm-show-hide h2 a.ibm-show-active:after,
 .ibm-landing-page .ibm-show-hide h2 a:after,
-.ibm-show-hide h2 a.ibm-show-active:after,
 .ibm-landing-page .ibm-show-hide h2 a.ibm-show-active:after,
 #ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide h2 a:after {
 	float: right;
 	position: relative;
+	letter-spacing: -2px;
 }
  
 .ibm-show-hide h2 a:hover:after,
