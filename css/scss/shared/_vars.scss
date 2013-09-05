@@ -1,34 +1,54 @@
 // variables ============================================
 
 
-// paths
+// !img / font paths
 $fontPath : "//1.www.s81c.com/common/fonts";
 $imagePath : "http://1.www.s81c.com";
 
-// fonts
+// !fonts
 $defaultFont : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
 $defaultHeaderFont : "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
 $defaultFont-dbcs : Arial,sans-serif;
 $defaultHeaderFont-dbcs : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 
-// grid
+// !grid
 $landingGrid : 980px;
 $landingSpace : 20px;
 
-// icons
+// !icons
 $iconSpaceLeft : 1.5em;
 
-// hacks
+// !hacks
 $ie7Selector : ".dj_ie7";
 $ie8Selector : ".dj_ie8";
 $ie9Hack : "\0/";
 
 
-// mixins ============================================
+// !Shadow effects ============================================
+
+$section-shadow : 0 5px 10px -3px #DEDEDE inset;
+$shadow-soft : 0 1px 3px rgba(0,0,0,.75);
+$shadow-hard : 0 1px 1px rgba(0,0,0,.75);
+
+// Dark text is against light background
+$emboss-light : 0 1px 0 rgba(255,255,255,.95);
+	
+// Light text is against dark background
+$emboss-dark : 0 -1px 0 rgba(0,0,0,.75);
+
+// Used when white text needs to
+$glow :	0 0 5px rgba(255,255,255,.75);
+
+
+// !mixins ============================================
 
 @mixin px-to-rem($style,$px) {
 	#{$style}: $px;
 	#{$style}: $px/(10px / 1rem);
+}
+
+@mixin text-shadow($text...) {
+	text-shadow: $text;
 }
 
 @mixin border-radius($borders...) {

@@ -449,9 +449,8 @@ div.dijitDialog ul.ibm-link-list li:hover,
 #ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
 #ibm-content-head ul#ibm-navigation-trail {
     height: 1%;
-    list-style-type: none;
+    text-shadow: none;
     padding: 10px 0 0 0;
-    text-shadow: 0 1px 0 #FFF;
     position: relative#{$ie9Hack};
     *position: relative;
 }

@@ -1,61 +1,29 @@
-// Shadow effects ============================================
-
-.section-shadow {
-	box-shadow: 0 5px 10px -3px #DEDEDE inset;
-}
-
-.shadow-soft {
-	text-shadow: 0 1px 3px rgba(0,0,0,.75);
-}
-
-.shadow-hard {
-	text-shadow: 0 1px 1px rgba(0,0,0,.75);
-}
+.section-shadow { @include box-shadow($section-shadow) }
+.shadow-soft { @include text-shadow($shadow-soft) }
+.shadow-hard { @include text-shadow($shadow-hard) }
 
 // Dark text is against light background
-.emboss-light {
-	text-shadow: 0 1px 0 rgba(255,255,255,.95);
-}
-
+.emboss-light { @include text-shadow($emboss-light) }
 
 // Light text is against dark background
-.emboss-dark {
-	text-shadow: 0 -1px 0 rgba(0,0,0,.75);
-}
-
+.emboss-dark { @include text-shadow($emboss-dark) }
 
 // Used when white text needs to
-.glow {
-	text-shadow: 0 0 5px rgba(255,255,255,.75); 
-}
-
-
+.glow {	@include text-shadow($glow) }
 
 
 // Type Alignments ============================================
 
-.center {
-	text-align: center;
-}
-
-
-
-
-
-
+.center { text-align: center; }
 
 
 // transitions effects
 
+.grad-k95-85 { @include background-gradient(top, $k95, $k85); }
 
-
-// !Gradients
-
-.grad-k95-85 {@include background-gradient(top, $k95, $k85); }
-
-// !Background colors
-.bgc-white { background-color:$white}
-.bgc-k02 { background-color:$k02}
-.bgc-k03 { background-color:$k03}
-.bgc-k05 { background-color:$k05}
-.bgc-blue { background-color:$ibmblue}
+// Background colors
+.bgc-white { background-color : $white}
+.bgc-k02 { background-color : $k02}
+.bgc-k03 { background-color : $k03}
+.bgc-k05 { background-color : $k05}
+.bgc-blue { background-color : $ibmblue}

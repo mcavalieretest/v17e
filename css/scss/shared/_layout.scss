@@ -70,6 +70,12 @@
     _height: 70px;
 }
 
+.ibm-landing-page #ibm-leadspace-head h1,
+.ibm-landing-page #ibm-leadspace-head p,
+.ibm-landing-page #ibm-leadspace-head ul {
+	@include text-shadow($emboss-light);
+}
+
 #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
     padding-bottom:0;
 }
@@ -93,10 +99,6 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body h1,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body h1 {
     color: #FFF;
-    text-shadow: #000 0 1px 0;
-    filter: Shadow(Color=#000000,   
-            Direction=180, 
-            Strength=1);
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body p em,
@@ -122,10 +124,6 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body ul#ibm-navigation-trail li a,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon #ibm-leadspace-body ul#ibm-navigation-trail li a {
     color: #BBB;
-    text-shadow: 0 1px 0 #000;
-    filter: Shadow(Color=#000000,   
-            Direction=180, 
-            Strength=1);
 }
 /*=End========== Dark background definition ============*/
 
