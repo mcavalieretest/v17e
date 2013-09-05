@@ -28,15 +28,16 @@ $ibm-pcon__modifier						: ".ibm_cci__ibm-pcon";
 $hover-color 							: #f04e37;
 $ibm-listview-unro 						: ".ibm_cci--lv-unro-b"; //List view unresolved block
 $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved block
+$ibm-widget-js 							: "#ibm_cci-widget-js";
 
 
 /* LEADSPACE OVERIDES (BEGIN) */
-.ibm-landing-page #ibm-leadspace-head  {
+.ibm-landing-page #ibm-leadspace-head {
 	background: none;
 	border-bottom: none;
 }
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height{
 	min-height: 127px;
 	_height: 127px;
 	#ibm-leadspace-body {
@@ -51,7 +52,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	p { float:left; width:auto; padding:0; }
 }
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body { 
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body{ 
 	@include h1-p-overrides;
 }		
 /* LEADSPACE OVERIDES (END) */
@@ -210,6 +211,8 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		.ibm-columns { 
 			/* ibm-column override to display outline for list rows */
 			padding-top:1px;
+			// Hack
+			overflow:no;
 		}
 		.ibm-band#{$ibm-band__modifier} {
 			background: #f8f8f8;
@@ -456,13 +459,28 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		padding:0;
 		color:#ccc;
 
+
+		a:link, a:visited {
+			color:#ccc;
+		}
+
+		a:hover, a:active {
+			color:#000;
+			opacity: 1;
+		}
+
 		a img {
 			opacity:0.1;
 			padding: 0 5px 0 0;
+			vertical-align: top;
 		}
 		a img:hover {
 			opacity:1;
 		}						
+	}
+	p.ibm_cci-tts:hover a, p.ibm_cci-tts:hover a img {
+		opacity:1;
+		color:#000;
 	}				
 	p.ibm_cci-tts span:before {
 		content: '\25CF';
@@ -470,19 +488,19 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		padding-right:5px;
 		color:#000;
 		opacity:0.1;
-		position:relative;
-		top:-5px;
+		// position:relative;
+		// top:-5px;
 	}
 }
 
-#ibm-content .ibm-columns.ibm_cci-gv__modifier > * a,
-#ibm-content .ibm-columns.ibm_cci-lv__modifier > * a {
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier > * a,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier > * a {
 	text-decoration:none !important;
 	color:#000;
 } 
 
 //LIST VIEW UNRESOLVED AND RESOLVED (BEGIN)
-#ibm-content .ibm-columns.ibm_cci-lv__modifier{
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier{
 	.ibm-col-1-1{
 		position:relative;
 		float:left;
@@ -615,8 +633,8 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 				li {
 					@include ibm_cci-ul--li__modifier;
-					// height:25px;
-					// width:25px;
+					height:25px;
+					width:25px;
 					display:inline;
 					margin:0;
 					padding:0;
@@ -626,12 +644,19 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					clear:none;
 					opacity:0.5;
 
-					// > a img {
-					// 	opacity:0.5;
-					// }
+					> a img {
+						opacity:0.5;
+					}
 				}
 				li.selected {
 					opacity:1;
+				}
+				li:hover, li:hover a img {
+					opacity:1;
+				}
+				a img {
+					height:25px;
+					width:25px;
 				}			
 			}
 
@@ -660,6 +685,8 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			.ibm_cci--lv-rc-description {
 				@include ibm_cci--lv-rc-th;
 				margin: 0;
+				height:100px;
+				min-height:30px;
 
 				p {
 					float: left;
@@ -677,11 +704,13 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				@include ibm_cci--lv-sharing;
 				
 				> ul {
-					display:none;
+					visibility:hidden;
 
 					li a img{
 						// outline:1px solid #000;
 						opacity:0.2;
+						width:16px;
+						height:16px;
 					}
 
 					li a img:hover{
@@ -831,7 +860,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					}
 					
 					> ul {
-						display:none;
+						visibility:hidden;
 
 						li a img{
 							// outline:1px solid #000;
@@ -914,7 +943,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 // IBM_CCI-GV__MODIFIER GRID STARTS HERE
 // 
-#ibm-content .ibm-columns.ibm_cci-gv__modifier{
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier{
 		// -webkit-column-count: 3;
 		// -webkit-column-gap: 0;
 		// -webkit-column-fill: auto;
@@ -962,6 +991,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				width:270px;
 				padding:15px;
 				margin:0;
+				overflow:hidden;
 
 				.ibm_cci--rea-block{
 					// display:none;
@@ -1072,6 +1102,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 							font-size:0;
 							margin:15px 0 !important;
 							line-height:0;
+							padding-bottom:0;
 
 							span.ibm_cci--tweet-description-readmore a {
 								// color: #F04E37;
@@ -1101,6 +1132,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				padding:15px;
 				width:270px;
 				border-top:1px solid #ccc;
+				overflow:hidden;
 				// outline:1px solid #ccc; *FOR TESTING ONLY
 				
 				ul {
@@ -1109,8 +1141,8 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 					li {
 						@include ibm_cci-ul--li__modifier;
-						// height:25px;
-						// width:25px;
+						height:25px;
+						width:25px;
 						display:inline;
 						margin:0;
 						padding:0;
@@ -1119,13 +1151,23 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						// float:left;
 						clear:none;
 						opacity:0.5;
-						// > a img {
-						// 	opacity:0.4;
-						// }
+						> a img {
+							opacity:0.4;
+						}
 					}
 					li.selected {
 						opacity:1;
 					}
+
+					li:hover, li:hover a img {
+						opacity:1;
+					}
+
+					a img {
+						height:25px;
+						width:25px;
+					}
+
 				}
 
 				.ibm_cci--lv-rc-th {
@@ -1149,6 +1191,8 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				.ibm_cci--lv-rc-description {
 					@include ibm_cci--lv-rc-th;
 					margin: 0;
+					height:100px;
+					min-height:30px;
 
 					p {
 						float: left;
@@ -1168,11 +1212,13 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 					
 					> ul {
 						line-height:0;
-						display:none;
+						visibility:hidden;
 
 						li a img{
 							// outline:1px solid #000;
 							opacity:0.2;
+							width:16px;
+							height:16px;
 						}
 
 						li a img:hover{
@@ -1202,6 +1248,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 				@include ibm-listview-commons;
 				width:270px;
 				padding:15px;
+				overflow:hidden;
 
 				.ibm_cci--rea-block{
 					@include ibm_cci--rea-block;
@@ -1230,7 +1277,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 				//FOR YOUTUBE BLOCK (BEGIN)
 				.ibm_cci-fav-ihb {
-					min-width:180px;
+					max-width:160px;
 					padding:0;
 					border:0;
 					float:left;
@@ -1258,7 +1305,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						font-size:1.2rem;
 						line-height: 17px;
 						vertical-align: top;
-						min-width:120px;
+						float:left;
 					}
 				}
 
@@ -1280,6 +1327,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 							font-size:0;
 							margin:15px 0 !important;
 							line-height:0;
+							padding-bottom:0;
 
 							span.ibm_cci--tweet-description-readmore a {
 								// color: #F04E37;
@@ -1353,7 +1401,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 						}
 						
 						> ul{
-							display:none;
+							visibility:hidden;
 
 							li a img{
 								// outline:1px solid #000;
@@ -1405,19 +1453,19 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	/* HOVER EFFECTS BEGIN */
 	@each $view in ibm_cci-lv__modifier, ibm_cci-gv__modifier {
 		@if $view == ibm_cci-lv__modifier {
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:first-child:hover + .ibm-col-1-1
+			#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:first-child:hover + .ibm-col-1-1
 			{
 				border-top:1px solid $hover-color;
 			}
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover
+			#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover
 			{
 				border-top:1px solid $hover-color;
 			}
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover + .ibm-col-1-1
+			#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover + .ibm-col-1-1
 			{
 				border-top:1px solid $hover-color;
 			}
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:last-child:hover
+			#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:last-child:hover
 			{
 				border-top:1px solid $hover-color;
 				border-bottom:1px solid $hover-color;
@@ -1425,44 +1473,49 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 
 		}
 		@else if $view == ibm_cci-gv__modifier{
-			#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:hover
+			#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover
 			{
 				outline:1px solid $hover-color;
 			}
 		} 
-
-		#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
-		#ibm-content .ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib {
+		
+		#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
+		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
+		#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
+		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
+		
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib {
 			visibility:visible;
 		}
 	}
 
-	// #ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover
+	// #{$ibm-widget-js} .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover
 	// { 
 	// 	// border-top:1px solid #F04E37; 
 	// 	border-bottom:1px solid $hover-color;
 	// }
-	// #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover
+	// #{$ibm-widget-js} .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover
 	// { 
 	// 	outline:1px solid $hover-color;
 	// }
 	
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
 	{
 		background-color:$hover-color;
 	}
 	
 	//LIST VIEW
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--lv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--lv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
 	.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
 	.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
 	//GRID VIEW
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
 	.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
 	.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title
 	{
@@ -1475,22 +1528,17 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	// }
 
 	//LIST VIEW
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb p.ibm_cci--tweet-description,
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing ul,
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing ul,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb p.ibm_cci--tweet-description,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2,
 	//GRID VIEW
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
-	// #ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing ul,
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing ul
+	// #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
 	{
 		display:block;
 	}
 	
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a,
-	#ibm-content .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a
 	{
 		text-decoration:none;
 		color: $hover-color;
@@ -1554,6 +1602,21 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		.ibm-landing-page#ibm-top .ibm-columns .ibm-col-1-1 {
 			margin:0 0 20px 0;
 		}
+
+		//FOR MAIN CONTENT
+	
+	// TO ADAPT TO UMESH (BEGIN)
+	// #{$ibm-widget-js}#ibm-grid-widget-container {
+	// 	width:400px;
+	// 	padding:0;
+	// 	margin:0;
+	// }
+
+	// #{$ibm-widget-js}#ibm-grid-widget {
+	// 	width:320px;
+	// 	margin:0 auto;
+	// }
+	// TO ADAPT TO UMESH (END) 
 }
 
 /* MODIFYERS FOR TABLETS (BEGIN) */
@@ -1597,10 +1660,22 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 	}
 
 //FOR MAIN CONTENT
+// TO ADAPT TO UMESH (BEGIN) 
+	// #{$ibm-widget-js}#ibm-grid-widget-container {
+	// 	width:800px;
+	// 	padding:0;
+	// }
+
+	// #{$ibm-widget-js}#ibm-grid-widget {
+	// 	width:640px;
+	// 	margin:0 auto;
+	// }
+// TO ADAPT TO UMESH (END)	
+
 	.ibm-landing-page#ibm-top .ibm-columns .ibm-col-6-4{
 		width:640px;
 	}
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-4 .ibm_cci--rcb {
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-4 .ibm_cci--rcb {
 		width:540px;
 		padding:0;
 		border:0;
@@ -1614,10 +1689,11 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 			}
 		}
 	}
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 {
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 {
 		width:540px;
 		margin: 20px 0 0 80px;
 		clear:both;
+		display:none;
 
 		ul, .ibm_cci--lv-rc-sharing {
 			width:inherit;
@@ -1628,7 +1704,7 @@ $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved bloc
 		}
 	}
 
-	#ibm-content .ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b {
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b {
 		width:inherit;
 
 		.ibm_cci--unr-cb, .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing {
