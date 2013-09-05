@@ -197,6 +197,7 @@ li a.ibm-close:before
 */
 
 li a[class*="-link"]:before,
+p a.ibm-external-link:before,
 li a.ibm-call-info:before,
 li a.ibm-symp-doc:before,
 li a.ibm-symp-presentation:before,
@@ -500,10 +501,16 @@ p.ibm-table-navigation a.ibm-forward-em-link:after,
 .ibm-upload-link:before { content: "\f160"; }
 .ibm-close:before { content: "\f161"; }
 
+p a.ibm-external-link {
+	padding-left: 20px;
+	position: relative;
+}
+p a.ibm-external-link.ibm-inline,
 a.ibm-inline:before,
 a.ibm-inline:after {
 	margin-left: 2px;
 	margin-right: 5px;
+	padding-left: 0;
 	position: relative;
 }
 a.ibm-inline:after {

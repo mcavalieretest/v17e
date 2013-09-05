@@ -165,10 +165,8 @@ margin-top:2px;
 #ibm-content ul.ibm-live-assistance-list a.ibm-video-link:link,
 #ibm-content ul.ibm-live-assistance-list a.ibm-demoplay-link:link,
 #ibm-content ul.ibm-live-assistance-list a.ibm-signin-link:link {
-
 	text-decoration: none !important;
-	 float: left;
-    margin-bottom: 5px;
+	position: relative;
 }
 #ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:hover,
 #ibm-content ul.ibm-live-assistance-list a.ibm-phone-link:hover,
