@@ -824,9 +824,6 @@ table .ibm-standalone-acc {
 	@include px-to-rem(font-size,22px);
 }
 
-form p span.ibm-error-link:before {
-	@include px-to-rem(font-size,22px);	
-}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
 	select[disabled] {
