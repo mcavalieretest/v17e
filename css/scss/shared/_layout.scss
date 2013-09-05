@@ -91,6 +91,12 @@
 }
 
 /*=Start========== Dark background definition ============*/
+
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background h1,
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background p,
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background ul {
+	@include text-shadow($emboss-dark);
+}
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background,
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-bg.ibm-ribbon .ibm-container-body  {
 	@include background-gradient(top, $k95, $k85);
