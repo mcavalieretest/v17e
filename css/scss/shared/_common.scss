@@ -308,15 +308,7 @@ p.ibm-alternate-two a:visited  {
 #ibm-content-main .ibm-col-6-4 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li,
 #ibm-content-main .ibm-col-6-5 ul.ibm-twisty.ibm-alternate ul.ibm-bullet-list li {
 	background: url("#{$imagePath}/i/v17/bullets/ibm_lg_bullet_grey_on.gif") no-repeat 0px 13px;
-	padding: 5px 0px 5px 11px;
-}
-
-#ibm-content-main .ibm-col-4-3 ul.ibm-link-list li,
-#ibm-content-main .ibm-col-5-4 ul.ibm-link-list li,
-#ibm-content-main .ibm-col-6-4 ul.ibm-link-list li,
-#ibm-content-main .ibm-col-6-5 ul.ibm-link-list li,
-.ibm-landing-page #ibm-content-main .ibm-col-1-1 ul.ibm-link-list li {
-    line-height: 1em;
+	padding: 5px 0 5px 11px;
 }
 
 #ibm-content-main .ibm-col-4-3 ul.ibm-error li,
@@ -357,7 +349,7 @@ p.ibm-alternate-two a:visited  {
 #ibm-content ul.ibm-bullet-list li ol li,
 #ibm-content ul.ibm-bullet-list li ol li:hover {
 	background-image: none !important;
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 // Default page bullet style for col-1-1 and col 5-3
