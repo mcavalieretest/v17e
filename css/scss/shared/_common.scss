@@ -1167,7 +1167,9 @@ p.ibm-ind-link a,
 ul.ibm-link-list a {
 	display: inline-block;
 	margin: 0;
-	@include px-to-rem(padding-left,25px); //!Large icon position with link
+	padding-left: 1.4em;
+	position: relative;
+//	@include px-to-rem(padding-left,25px); //!Large icon position with link
 	text-decoration: none;
 }
 
@@ -1181,7 +1183,7 @@ ul.ibm-link-list a {
 .ibm-col-6-1 ul.ibm-link-list a,
 .ibm-col-6-2 p.ibm-ind-link a,
 .ibm-col-6-2 ul.ibm-link-list a {
-	@include px-to-rem(padding-left,21px); //!Small icon position with link
+//	@include px-to-rem(padding-left,21px); //!Small icon position with link
 }
 
 p.ibm-ind-link.ibm-next-page a {
