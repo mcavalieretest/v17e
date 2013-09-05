@@ -508,6 +508,9 @@ a.ibm-inline:after {
 	margin-right: 5px;
 	position: relative;
 }
+a.ibm-inline:after {
+	margin-right: 0;
+}
 
 #{$ie7Selector} span.ibm-error-link,
 #{$ie7Selector} a.ibm-inline {
