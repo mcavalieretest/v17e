@@ -147,10 +147,14 @@ a.ibm-ribbon-next:before,
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
-	letter-spacing: -3px;
+	letter-spacing: -4px;
 	position: absolute;
 	text-decoration: none;
 	font-size: 1.32em;
+}
+
+#ibm-content-sidebar [class*="-link"]:before {
+	letter-spacing: -3px;
 }
 
 #ibm-common-menu .ibm-ribbon-pane li:before,
@@ -503,13 +507,13 @@ p.ibm-table-navigation a.ibm-forward-em-link:after,
 .ibm-close:before { content: "\00a0\f161\00a0"; }
 
 p a.ibm-external-link {
-	padding-left: 20px;
+	padding-left: 1.4em;
 	position: relative;
 }
 p a.ibm-external-link.ibm-inline,
 a.ibm-inline:before,
 a.ibm-inline:after {
-	margin-right: 5px;
+	margin-right: 6px;
 	padding-left: 0;
 	position: relative;
 }
