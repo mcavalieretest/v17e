@@ -12,6 +12,7 @@
     margin: 20px auto;
     padding: 0 0 10px 202px;
     background: #FFF;
+   	@include text-shadow($emboss-light);
 }
 #ibm-pcon:after {
 	@include aslett-clearing;
@@ -70,18 +71,13 @@
     _height: 70px;
 }
 
-.ibm-landing-page #ibm-leadspace-head h1,
-.ibm-landing-page #ibm-leadspace-head p,
-.ibm-landing-page #ibm-leadspace-head ul {
-	@include text-shadow($emboss-light);
-}
-
 #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
     padding-bottom:0;
 }
 
 .ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
     width: $landingGrid - 40px;
+   	@include text-shadow($emboss-light);
     margin: 0 auto;
     padding: 0 20px 50px 20px;
     position: relative;
@@ -92,9 +88,7 @@
 
 /*=Start========== Dark background definition ============*/
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background h1,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background p,
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background ul {
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background {
 	@include text-shadow($emboss-dark);
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background,
