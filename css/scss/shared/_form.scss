@@ -788,7 +788,6 @@ form p span a.ibm-calendar-link,
 form p span a.ibm-information-link,
 form p span a.ibm-error-link,
 form p span a.ibm-help-link {
-	@include px-to-rem(font-size,22px);
     display: inline-block;
     width: 24px;
     text-decoration: none;
