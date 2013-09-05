@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<!-- 
+	NOTE:
+	This file is the master landing page template.
+	All comments starting with NOTE can also be removed!
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+<meta name="Description" content="REPLACE"/>
+<meta name="Keywords" content="REPLACE"/>
+<meta name="Robots" content="index,follow"/>
+<meta name="Owner" content="REPLACE_ME@US.IBM.COM"/>
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+<meta name="DC.Language" scheme="rfc1766" content="en-US"/>
+<meta name="DC.Date" scheme="iso8601" content="REPLACE"/>
+<meta name="DC.Rights" content="© Copyright IBM Corp. 2011"/>
+<meta name="IBM.Country" content="US"/>
+
+<meta name="Source" content="REPLACE"/>
+<title>IBM v17 TEMPLATE Show Hide</title>
+<!-- NOTE: link to static domain, i.e. 1.www.s81c.com -->
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<!-- NOTE: link to static domain, i.e. 1.www.s81c.com -->
+<script src="http://webdev.webmaster.ibm.com/common/js/dojo/www.js" type="text/javascript">//</script>
+
+
+
+</head>
+<body id="ibm-com">
+<div id="ibm-top" class="ibm-landing-page">
+<!-- MASTHEAD_BEGIN -->
+
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
+
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<p>
+<label for="q">
+<span class="ibm-access">Search</span>
+</label>
+
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input name="v" type="hidden" value="17"/>
+<input type="hidden" name="en" value="utf"/>
+<input name="lang" type="hidden" value="en"/>
+<input name="cc" type="hidden" value="us"/>
+<input value="Submit" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+<!-- LEADSPACE_BEGIN -->
+<div id="ibm-leadspace-head" class="ibm-alternate">
+<div id="ibm-leadspace-body">
+<h1>Show hide implementation</h1>
+</div>
+</div>
+<!-- LEADSPACE_END -->
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+<!-- TITLE_BEGIN -->
+<div id="ibm-content-head"></div>
+<!-- TITLE_END -->
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+		<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			<p class="ibm-intro"><em>To use a code snippet on your page, copy the entire contents of the scrollable grey code snippet module and paste the code snippet into your text editor.</em></p>
+			
+						<div class="ibm-rule"><hr/></div>
+			<p><strong>Example: show/hide with text links</strong></p>
+			<div class="ibm-container ibm-simple-show-hide">
+<h2>Lorem ipsum dolor</h2>
+<div class="ibm-container-body">
+<p class="ibm-show-hide-controls"><a
+href="#show">Show descriptions</a> | <a
+class="ibm-active"
+href="#hide">Hide descriptions</a></p>
+<h3><a class="ibm-show-hide-link"
+href="#">Ut wisi enim ad minim veniam</a></h3>
+<div class="ibm-hideable"><p>Quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p></div>
+<h3><a class="ibm-show-hide-link"
+href="#">Quis nostrud exerci tation</a></h3>
+<div class="ibm-hideable"><p>Ullamcorper suscipit ut wisi enim ad minim veniam
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p></div>
+<h3><a class="ibm-show-hide-link"
+href="#">Lobortis nisl ut aliquip ex</a></h3>
+<div class="ibm-hideable"><p>Quis nostrud exerci tation ullamcorper suscipit
+ut wisi enim ad minim veniam ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+</div>
+</div>
+</div>
+
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- SHOW/HIDE WITH TEXT LINKS EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container ibm-simple-show-hide"&gt;<br/>
+&lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p class="ibm-show-hide-controls"&gt;&lt;a<br/>
+href="#show"&gt;Show descriptions&lt;/a&gt; | &lt;a<br/>
+class="ibm-active"<br/>
+href="#hide"&gt;Hide descriptions&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;h3&gt;&lt;a class="ibm-show-hide-link"<br/>
+href="#"&gt;Ut wisi enim ad minim veniam&lt;/a&gt;&lt;/h3&gt;<br/>
+&lt;div class="ibm-hideable"&gt;&lt;p&gt;Quis nostrud exerci tation ullamcorper suscipit<br/>
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure<br/>
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore<br/>
+facilisi.&lt;/p&gt;&lt;/div&gt;<br/>
+&lt;h3&gt;&lt;a class="ibm-show-hide-link"<br/>
+href="#"&gt;Quis nostrud exerci tation&lt;/a&gt;&lt;/h3&gt;<br/>
+&lt;div class="ibm-hideable"&gt;&lt;p&gt;Ullamcorper suscipit ut wisi enim ad minim veniam<br/>
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure<br/>
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore<br/>
+facilisi.&lt;/p&gt;&lt;/div&gt;<br/>
+&lt;h3&gt;&lt;a class="ibm-show-hide-link"<br/>
+href="#"&gt;Lobortis nisl ut aliquip ex&lt;/a&gt;&lt;/h3&gt;<br/>
+&lt;div class="ibm-hideable"&gt;&lt;p&gt;Quis nostrud exerci tation ullamcorper suscipit<br/>
+ut wisi enim ad minim veniam ea commodo consequat. Duis autem vel eum iriure<br/>
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore<br/>
+facilisi.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+		</div>
+		
+				
+				<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: basic twisty show/hide</strong></p>
+			<div class="ibm-container">
+<h2>Lorem ipsum dolor</h2>
+<div class="ibm-container-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Ut wisi enim ad minim</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Consectetuer adipiscing</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Nobis eleifend option congue</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- BASIC TWISTY SHOW/HIDE EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container"&gt;<br/>
+&lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;STRONG&gt;Ut wisi enim ad minim&lt;/STRONG&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Consectetuer adipiscing&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Nobis eleifend option congue&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+			</div>
+				
+				
+				<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: nested twisty show/hide</strong></p>
+			<div class="ibm-container">
+<h2>Lorem ipsum dolor</h2>
+<div class="ibm-container-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Ut wisi enim ad minim</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Duis diam sed</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Magna amet dolor</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Vulpate duis diam</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Consectetuer adipiscing</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a><strong>Feugiat nulla diam</strong>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Nobis eleifend option congue</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Vero eros et accumsan</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- NESTED TWISTY SHOW/HIDE EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container"&gt;<br/>
+&lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Ut wisi enim ad minim&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Duis diam sed&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Magna amet dolor&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Vulpate duis diam&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Consectetuer adipiscing&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;&lt;strong&gt;Feugiat nulla diam&lt;/strong&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Nobis eleifend option congue&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;&lt;strong&gt;Vero eros et accumsan&lt;/strong&gt;&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;
+</code></p>
+</div>
+	</div>		
+			</div>
+			
+							<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: nested twisty show/hide with form control elements</strong></p>
+			<div class="ibm-container">
+<h2>Lorem ipsum dolor</h2>
+<div class="ibm-container-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<strong class="ibm-twisty-head">Ut wisi enim ad minim (checkbox example)</strong>
+<div class="ibm-twisty-body">
+<ul class="ibm-form-element-list">
+<li><input id="local-r4aa" name="r4aa" type="checkbox" value="1" /><label for="local-r4aa">Option 1</label></li>
+<li><input id="local-r4ab" name="r4ab" type="checkbox" value="1" /><label for="local-r4ab">Option 2</label></li>
+<li><input id="local-r4ac" name="r4ac" type="checkbox" value="1" /><label for="local-r4ac">Option 3</label></li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<strong class="ibm-twisty-head">Vulpate duis diam (grouped checkbox example)</strong>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head">
+<input id="local-r0a" name="r0a" type="checkbox"value="1" /><label for="local-r0a">Group 1</label>
+</span>
+<div class="ibm-twisty-body">
+<ul class="ibm-form-element-list">
+<li><input id="local-r0aa" name="r0aa" type="checkbox" value="1" /><label for="local-r0aa">Option 1</label></li>
+<li><input id="local-r0ab" name="r0ab" type="checkbox" value="1" /><label for="local-r0ab">Option 2</label></li>
+<li><input id="local-r0ac" name="r0ac" type="checkbox" value="1" /><label for="local-r0ac">Option 3</label></li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head">
+<input id="local-r3a" name="r3a" type="checkbox" value="1" /><label for="local-r3a">Group 2</label>
+</span>
+<div class="ibm-twisty-body">
+<ul class="ibm-form-element-list">
+<li><input id="local-r3aa" name="r3aa" type="checkbox" value="1" /><label for="local-r3aa">Option 1</label></li>
+<li><input id="local-r3ab" name="r3ab" type="checkbox" value="1" /><label for="local-r3ab">Option 2</label></li>
+<li><input id="local-r3ac" name="r3ac" type="checkbox" value="1" /><label for="local-r3ac">Option 3</label></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<strong class="ibm-twisty-head">Consectetuer adipiscing (radio button example)</strong>
+<div class="ibm-twisty-body">
+<ul class="ibm-form-element-list">
+<li><input id="local-r1aa" name="r1a" type="radio" value="a" /><label for="local-r1aa">Option A</label></li>
+<li><input id="local-r1ab" name="r1a" type="radio" value="b" /><label for="local-r1ab">Option B</label></li>
+<li><input id="local-r1ac" name="r1a" type="radio" value="c" /><label for="local-r1ac">Option C</label></li>
+<li><input id="local-r1ad" name="r1a" type="radio" value="d" />
+<label for="local-r1ad">Option D</label></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- NESTED TWISTY SHOW/HIDE WITH FORM CONTROL ELEMENTS EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container"&gt;<br/>
+&lt;h2&gt;Lorem ipsum dolor&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;strong class="ibm-twisty-head"&gt;Ut wisi enim ad minim (checkbox example)&lt;/strong&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-form-element-list"&gt;<br/>
+&lt;li&gt;&lt;input id="local-r4aa" name="r4aa" type="checkbox" value="1" /&gt;&lt;label for="local-r4aa"&gt;Option 1&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r4ab" name="r4ab" type="checkbox" value="1" /&gt;&lt;label for="local-r4ab"&gt;Option 2&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r4ac" name="r4ac" type="checkbox" value="1" /&gt;&lt;label for="local-r4ac"&gt;Option 3&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;strong class="ibm-twisty-head"&gt;Vulpate duis diam (grouped checkbox example)&lt;/strong&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-twisty"&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;<br/>
+&lt;input id="local-r0a" name="r0a" type="checkbox"value="1" /&gt;&lt;label for="local-r0a"&gt;Group 1&lt;/label&gt;<br/>
+&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-form-element-list"&gt;<br/>
+&lt;li&gt;&lt;input id="local-r0aa" name="r0aa" type="checkbox" value="1" /&gt;&lt;label for="local-r0aa"&gt;Option 1&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r0ab" name="r0ab" type="checkbox" value="1" /&gt;&lt;label for="local-r0ab"&gt;Option 2&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r0ac" name="r0ac" type="checkbox" value="1" /&gt;&lt;label for="local-r0ac"&gt;Option 3&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;span class="ibm-twisty-head"&gt;<br/>
+&lt;input id="local-r3a" name="r3a" type="checkbox" value="1" /&gt;&lt;label for="local-r3a"&gt;Group 2&lt;/label&gt;<br/>
+&lt;/span&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-form-element-list"&gt;<br/>
+&lt;li&gt;&lt;input id="local-r3aa" name="r3aa" type="checkbox" value="1" /&gt;&lt;label for="local-r3aa"&gt;Option 1&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r3ab" name="r3ab" type="checkbox" value="1" /&gt;&lt;label for="local-r3ab"&gt;Option 2&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r3ac" name="r3ac" type="checkbox" value="1" /&gt;&lt;label for="local-r3ac"&gt;Option 3&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;li&gt;<br/>
+&lt;a class="ibm-twisty-trigger" href="#toggle"&gt;&lt;img alt="-" src="//www.ibm.com/i/c.gif" /&gt;&lt;/a&gt;<br/>
+&lt;strong class="ibm-twisty-head"&gt;Consectetuer adipiscing (radio button example)&lt;/strong&gt;<br/>
+&lt;div class="ibm-twisty-body"&gt;<br/>
+&lt;ul class="ibm-form-element-list"&gt;<br/>
+&lt;li&gt;&lt;input id="local-r1aa" name="r1a" type="radio" value="a" /&gt;&lt;label for="local-r1aa"&gt;Option A&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r1ab" name="r1a" type="radio" value="b" /&gt;&lt;label for="local-r1ab"&gt;Option B&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r1ac" name="r1a" type="radio" value="c" /&gt;&lt;label for="local-r1ac"&gt;Option C&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;li&gt;&lt;input id="local-r1ad" name="r1a" type="radio" value="d" /&gt;<br/>
+&lt;label for="local-r1ad"&gt;Option D&lt;/label&gt;&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/li&gt;<br/>
+&lt;/ul&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+			</div>
+			
+	
+	
+							<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: single panel show/hide subhead module</strong></p>
+			<div class="ibm-container ibm-show-hide">
+<h2><a>Lorem ipsum dolor</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-em-link" href="#">Lorem ipsum dolor sit amet</a></p>
+</div>
+</div>
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- SINGLE PANEL SHOW/HIDE SUBHEAD MODULE EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container ibm-show-hide"&gt;<br/>
+&lt;h2&gt;&lt;a&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-em-link" href="#"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+			</div>
+	
+	<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: multi panel show/hide subhead module</strong></p>
+			<div class="ibm-container ibm-show-hide">
+<h2><a>Lorem ipsum dolor</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-em-link" href="#">Lorem ipsum dolor sit amet</a></p>
+</div>
+<h2><a class="ibm-show-hide-link" href="#">Ut wisi enim ad minim veniam</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-em-link" href="#">Lorem ipsum dolor sit amet</a></p>
+</div>
+<h2><a class="ibm-show-hide-link" href="#">Quis nostrud exerci tation</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-em-link" href="#">Lorem ipsum dolor sit amet</a></p>
+</div>
+</div>
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- MULTI PANEL SHOW/HIDE SUBHEAD MODULE EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container ibm-show-hide"&gt;<br/>
+&lt;h2&gt;&lt;a&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-em-link" href="#"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;h2&gt;&lt;a class="ibm-show-hide-link" href="#"&gt;Ut wisi enim ad minim veniam&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-em-link" href="#"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;h2&gt;&lt;a class="ibm-show-hide-link" href="#"&gt;Quis nostrud exerci tation&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-em-link" href="#"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+			</div>
+			
+			
+				<div class="ibm-columns">
+			<div class="ibm-col-1-1">
+			
+			<p><strong>Example: right column multi panel show/hide subhead module</strong></p>
+			<div class="ibm-container ibm-show-hide">
+<h2><a>Lorem ipsum dolor</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-link" href="#">Lorem ipsum dolor</a></p>
+</div>
+<h2><a>Ut wisi enim ad minim</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-link" href="#">Lorem ipsum dolor</a></p>
+</div>
+<h2><a>Quis nostrud exerci</a></h2>
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+<div class="ibm-rule"><hr /></div>
+<p class="ibm-ind-link"><a class="ibm-forward-link" href="#">Lorem ipsum dolor</a></p>
+</div>
+</div>
+		<div class="ibm-code-sample">
+<p><code>&lt;!-- RIGHT COLUMN MULTI PANEL SHOW/HIDE SUBHEAD MODULE EXAMPLE --&gt;<br/>
+&lt;div class="ibm-container ibm-show-hide"&gt;<br/>
+&lt;h2&gt;&lt;a&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-link" href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;h2&gt;&lt;a&gt;Ut wisi enim ad minim&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-link" href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;h2&gt;&lt;a&gt;Quis nostrud exerci&lt;/a&gt;&lt;/h2&gt;<br/>
+&lt;div class="ibm-container-body"&gt;<br/>
+&lt;p&gt;Duis autem vel eum iriure dolor in hendrerit in vulputate.&lt;/p&gt;<br/>
+&lt;div class="ibm-rule"&gt;&lt;hr /&gt;&lt;/div&gt;<br/>
+&lt;p class="ibm-ind-link"&gt;&lt;a class="ibm-forward-link" href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+</code></p>
+</div>
+	</div>		
+			</div>
+	
+	
+	<div class="ibm-columns">
+	<div class="ibm-col-1-1">
+	
+	<div class="ibm-container ibm-show-hide">
+
+<h2><a class="ibm-show-active" href="#show-hide">Lorem ipsum dolor</a></h2>
+<h3>Quis nostrud exerci</h3>
+<h3>Ut wisi enim ad minim</h3>
+
+<div class="ibm-container-body">
+
+<h3><a href="#" class="ibm-show-hide-link">Lorem ipsum dolor</a></h3>
+<p>Quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+<h3><a href="#" class="ibm-show-hide-link">Quis nostrud exerci</a></h3>
+<p>Ullamcorper suscipit ut wisi enim ad minim veniam
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+<h3><a href="#" class="ibm-show-hide-link">Ut wisi enim ad minim</a></h3>
+<p>Ullamcorper suscipit ut wisi enim ad minim veniam
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+
+</div>
+</div>
+	</div>
+	
+	</div>
+	
+	<div class="ibm-columns">
+	<div class="ibm-col-1-1">
+	<div class="ibm-container ibm-show-hide">
+
+<h2><a class="ibm-show-active" href="#show-hide">Lorem ipsum dolor</a></h2>
+<h3>Quis nostrud exerci</h3>
+<h3>Ut wisi enim ad minim</h3>
+
+<div class="ibm-container-body">
+
+<h2><a href="#show-hide" class="ibm-show-active">Lorem ipsum dolor</a></h2>
+<p>Quis nostrud exerci tation ullamcorper suscipit
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+<h3><a href="#" class="ibm-show-hide-link">Quis nostrud exerci</a></h3>
+<p>Ullamcorper suscipit ut wisi enim ad minim veniam
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+<h3><a href="#" class="ibm-show-hide-link">Ut wisi enim ad minim</a></h3>
+<p>Ullamcorper suscipit ut wisi enim ad minim veniam
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+facilisi.</p>
+
+
+</div>
+</div>
+	</div>
+	</div>
+	
+	<div class="ibm-columns">
+	<div class="ibm-col-1-1">
+	<div class="ibm-container ibm-show-hide">
+<h2><a href="#show-hide" class="">Lorem ipsum dolor</a></h2>
+<div class="ibm-container-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><STRONG>Ut wisi enim ad minim</STRONG></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Consectetuer adipiscing</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Nobis eleifend option congue</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="ibm-container ibm-show-hide">
+<h2><a href="#show-hide" class="">Lorem ipsum dolor</a></h2>
+<div class="ibm-container-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Ut wisi enim ad minim</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Duis diam sed</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Magna amet dolor</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Vulpate duis diam</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Consectetuer adipiscing</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a><strong>Feugiat nulla diam</strong>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Nobis eleifend option congue</strong></span>
+<div class="ibm-twisty-body">
+<ul class="ibm-twisty">
+<li>
+<a class="ibm-twisty-trigger" href="#toggle"><img alt="-" src="//www.ibm.com/i/c.gif" /></a>
+<span class="ibm-twisty-head"><strong>Vero eros et accumsan</strong></span>
+<div class="ibm-twisty-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div> 
+	
+	</div>
+	
+	</div>
+	
+	
+			
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+<div id="ibm-merchandising-module">
+<!--IBM Web Merchandising Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+
+</div>
+
+<div id="ibm-related-content"></div>
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+
+</div>
+
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
