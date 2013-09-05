@@ -88,7 +88,7 @@
 
 /*=Start========== Dark background definition ============*/
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background {
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body {
 	@include text-shadow($emboss-dark);
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background,
