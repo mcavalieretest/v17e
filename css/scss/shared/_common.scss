@@ -1168,24 +1168,11 @@ p.ibm-ind-link a,
 ul.ibm-link-list a {
 	display: inline-block;
 	margin: 0;
-	padding-left: 1.5em;
+	padding-left: $iconSpaceLeft;
 	position: relative;
-//	@include px-to-rem(padding-left,25px); //!Large icon position with link
 	text-decoration: none;
 }
 
-#ibm-content-sidebar p.ibm-ind-link a,
-#ibm-content-sidebar ul.ibm-link-list a,
-.ibm-col-4-1 p.ibm-ind-link a,
-.ibm-col-4-1 ul.ibm-link-list a,
-.ibm-col-5-1 p.ibm-ind-link a,
-.ibm-col-5-1 ul.ibm-link-list a,
-.ibm-col-6-1 p.ibm-ind-link a,
-.ibm-col-6-1 ul.ibm-link-list a,
-.ibm-col-6-2 p.ibm-ind-link a,
-.ibm-col-6-2 ul.ibm-link-list a {
-//	@include px-to-rem(padding-left,21px); //!Small icon position with link
-}
 
 p.ibm-ind-link.ibm-next-page a {
 	@include px-to-rem(padding-right,25px);

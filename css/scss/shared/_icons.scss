@@ -217,95 +217,11 @@ li a.ibm-usergroup:before,
 .ibm-ind-link a.ibm-community:before,
 .ibm-ind-link a.ibm-usergroup:before {
 	left: 0;
-//	@include px-to-rem(margin-left,-25px); // large link position
 	text-decoration: none;
 }
 
 span.ibm-error-link:before {
 	@include px-to-rem(margin-left,-20px);
-	text-decoration: none;
-}
-
-#ibm-content-sidebar li a[class*="-link"]:before,
-#ibm-content-sidebar li a.ibm-call-info:before,
-#ibm-content-sidebar li a.ibm-symp-doc:before,
-#ibm-content-sidebar li a.ibm-symp-presentation:before,
-#ibm-content-sidebar li a.ibm-symp-spreadsheet:before,
-#ibm-content-sidebar li a.ibm-community:before,
-#ibm-content-sidebar li a.ibm-usergroup:before,
-#ibm-content-sidebar .ibm-ind-link a[class*="-link"]:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-call-info:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-symp-doc:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-symp-presentation:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-symp-spreadsheet:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-community:before,
-#ibm-content-sidebar .ibm-ind-link a.ibm-usergroup:before,
-#ibm-content-sidebar span.ibm-error-link:before,
-
-.ibm-col-4-1 li a[class*="-link"]:before,
-.ibm-col-4-1 li a.ibm-call-info:before,
-.ibm-col-4-1 li a.ibm-symp-doc:before,
-.ibm-col-4-1 li a.ibm-symp-presentation:before,
-.ibm-col-4-1 li a.ibm-symp-spreadsheet:before,
-.ibm-col-4-1 li a.ibm-community:before,
-.ibm-col-4-1 li a.ibm-usergroup:before,
-.ibm-col-4-1 .ibm-ind-link a[class*="-link"]:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-call-info:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-symp-doc:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-symp-presentation:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-community:before,
-.ibm-col-4-1 .ibm-ind-link a.ibm-usergroup:before,
-.ibm-col-4-1 span.ibm-error-link:before,
-
-.ibm-col-5-1 li a[class*="-link"]:before,
-.ibm-col-5-1 li a.ibm-call-info:before,
-.ibm-col-5-1 li a.ibm-symp-doc:before,
-.ibm-col-5-1 li a.ibm-symp-presentation:before,
-.ibm-col-5-1 li a.ibm-symp-spreadsheet:before,
-.ibm-col-5-1 li a.ibm-community:before,
-.ibm-col-5-1 li a.ibm-usergroup:before,
-.ibm-col-5-1 .ibm-ind-link a[class*="-link"]:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-call-info:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-symp-doc:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-symp-presentation:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-community:before,
-.ibm-col-5-1 .ibm-ind-link a.ibm-usergroup:before,
-.ibm-col-5-1 span.ibm-error-link:before,
-
-.ibm-col-6-1 li a[class*="-link"]:before,
-.ibm-col-6-1 li a.ibm-call-info:before,
-.ibm-col-6-1 li a.ibm-symp-doc:before,
-.ibm-col-6-1 li a.ibm-symp-presentation:before,
-.ibm-col-6-1 li a.ibm-symp-spreadsheet:before,
-.ibm-col-6-1 li a.ibm-community:before,
-.ibm-col-6-1 li a.ibm-usergroup:before,
-.ibm-col-6-1 .ibm-ind-link a[class*="-link"]:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-call-info:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-symp-doc:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-symp-presentation:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-symp-spreadsheet:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-community:before,
-.ibm-col-6-1 .ibm-ind-link a.ibm-usergroup:before,
-.ibm-col-6-1 span.ibm-error-link:before,
-
-.ibm-col-6-2 li a[class*="-link"]:before,
-.ibm-col-6-2 li a.ibm-call-info:before,
-.ibm-col-6-2 li a.ibm-symp-doc:before,
-.ibm-col-6-2 li a.ibm-symp-presentation:before,
-.ibm-col-6-2 li a.ibm-symp-spreadsheet:before,
-.ibm-col-6-2 li a.ibm-community:before,
-.ibm-col-6-2 li a.ibm-usergroup:before,
-.ibm-col-6-2 .ibm-ind-link a[class*="-link"]:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-call-info:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-symp-doc:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-symp-presentation:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-symp-spreadsheet:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-community:before,
-.ibm-col-6-2 .ibm-ind-link a.ibm-usergroup:before,
-.ibm-col-6-2 span.ibm-error-link:before {
-//	@include px-to-rem(margin-left,-21px); // small link position 
 	text-decoration: none;
 }
 
