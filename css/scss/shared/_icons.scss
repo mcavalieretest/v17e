@@ -221,7 +221,9 @@ li a.ibm-usergroup:before,
 }
 
 .ibm-live-assistance-list p.ibm-call-info:before,
+.ibm-link-list p.ibm-call-info:before,
 .ibm-live-assistance-list p[class*="-link"]:before,
+.ibm-link-list p[class*="-link"]:before,
 span.ibm-error-link:before {
 	margin-left: -1.08em;
 	text-decoration: none;
