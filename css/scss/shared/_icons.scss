@@ -220,8 +220,10 @@ li a.ibm-usergroup:before,
 	text-decoration: none;
 }
 
+.ibm-live-assistance-list p.ibm-call-info:before,
+.ibm-live-assistance-list p[class*="-link"]:before,
 span.ibm-error-link:before {
-	@include px-to-rem(margin-left,-20px);
+	margin-left: -1.08em;
 	text-decoration: none;
 }
 
