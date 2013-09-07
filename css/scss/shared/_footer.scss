@@ -35,7 +35,8 @@
 
 #ibm-footer-module ul li:before {
 	color: #797979;
-	@include px-to-rem(margin-left,-12px);
+	margin-left: -($iconSpaceLeft);
+	line-height: 1.1;
 }
 
 #{$ie7Selector} #ibm-footer-module li {

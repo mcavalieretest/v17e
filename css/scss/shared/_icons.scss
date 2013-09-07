@@ -52,7 +52,7 @@
 .ibm-link-down					ibm-anchor-down-link
 .ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo
 .ibm-media-audio				ibm-audio-link
-.ibm-media-play					ibm-demoplay-link,ibm-media-play,ibm-video-link
+.ibm-media-play					ibm-demoplay-link,ibm-media-play,ibm-video-link,ibm-video-podcast-link
 .ibm-nav-dropdown				ibm-sort-link
 .ibm-sort-up					ibm-sort-up-link
 .ibm-sort-down					ibm-sort-down-link
@@ -99,6 +99,7 @@
 
 #ibm-mobile-tabs:after,
 [class*="-link"]:before,
+ul.ibm-bullet-list li:before,
 .ibm-bullet:before,
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before,
@@ -145,18 +146,16 @@ a.ibm-ribbon-next:before,
 	font-family: 'iconsIBM';
 	font-variant: normal;
 	text-transform: none;
-	-webkit-font-smoothing: antialiased;
+	// -webkit-font-smoothing: antialiased;   Disabled since this setting caused a font size issue between FF and webkit
 	display: inline-block;
-	letter-spacing: -4px;
+	letter-spacing: 4px;
 	position: absolute;
 	text-decoration: none;
-	font-size: 1.32em;
+	font-size: $iconSpaceLeft;
 }
 
-#ibm-content-sidebar [class*="-link"]:before {
-	letter-spacing: -3px;
-}
-
+ul.ibm-bullet-list li:before,
+.ibm-bullet:before,
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before,
 a.ibm-ribbon-prev:before,
@@ -165,9 +164,9 @@ a.ibm-ribbon-next:before,
 	font-size: inherit;
 }
 
-ul.ibm-alternate-two a:before,
-ul.ibm-alternate-two a.ibm-chevron-link:after {
-	color: #FFF !important;
+#ibm-top ul.ibm-alternate-two a:before,
+#ibm-top ul.ibm-alternate-two a.ibm-chevron-link:after {
+	color: $white;
 }
 
 
@@ -201,8 +200,32 @@ li a.ibm-twistie-open:before,
 li a.ibm-close:before
 */
 
+#ibm-top ul.ibm-link-list li[class*="-link"],
+#ibm-top ul.ibm-link-list li.ibm-call-info,
+#ibm-top ul.ibm-link-list li.ibm-symp-doc,
+#ibm-top ul.ibm-link-list li.ibm-symp-presentation,
+#ibm-top ul.ibm-link-list li.ibm-symp-spreadsheet,
+#ibm-top ul.ibm-link-list li.ibm-community,
+#ibm-top ul.ibm-link-list li.ibm-usergroup {
+	padding-left: $iconSpaceLeft;
+}
+
+ul.ibm-bullet-list li:before,
+#ibm-top ul.ibm-link-list li[class*="-link"] > a,
+#ibm-top ul.ibm-link-list li.ibm-call-info > a,
+#ibm-top ul.ibm-link-list li.ibm-symp-doc > a,
+#ibm-top ul.ibm-link-list li.ibm-symp-presentation > a,
+#ibm-top ul.ibm-link-list li.ibm-symp-spreadsheet > a,
+#ibm-top ul.ibm-link-list li.ibm-community > a,
+#ibm-top ul.ibm-link-list li.ibm-usergroup > a,
+li[class*="-link"]:before,
 li a[class*="-link"]:before,
-p a.ibm-external-link:before,
+li.ibm-call-info:before,
+li.ibm-symp-doc:before,
+li.ibm-symp-presentation:before,
+li.ibm-symp-spreadsheet:before,
+li.ibm-community:before,
+li.ibm-usergroup:before,
 li a.ibm-call-info:before,
 li a.ibm-symp-doc:before,
 li a.ibm-symp-presentation:before,
@@ -215,20 +238,27 @@ li a.ibm-usergroup:before,
 .ibm-ind-link a.ibm-symp-presentation:before,
 .ibm-ind-link a.ibm-symp-spreadsheet:before,
 .ibm-ind-link a.ibm-community:before,
-.ibm-ind-link a.ibm-usergroup:before {
-	left: 0;
-	text-decoration: none;
-}
-
+.ibm-ind-link a.ibm-usergroup:before,
+p a.ibm-external-link:before,
 .ibm-live-assistance-list p.ibm-call-info:before,
 .ibm-link-list p.ibm-call-info:before,
 .ibm-live-assistance-list p[class*="-link"]:before,
 .ibm-link-list p[class*="-link"]:before,
 span.ibm-error-link:before {
-	margin-left: -1.08em;
+	margin-left: -($iconSpaceLeft);
 	text-decoration: none;
 }
 
+
+#ibm-top ul.ibm-link-list li.ibm-link-description {
+	padding-left: 0;
+}
+#ibm-top ul.ibm-link-list li.ibm-link-description > a {
+	margin-left: 0;
+}
+#ibm-top ul.ibm-link-list li.ibm-link-description p{
+	padding-left: $iconSpaceLeft;
+}
 // !Icon position in _common for no  reason
 
 
@@ -282,6 +312,7 @@ li[class*="ibm-chevron"] a:after {
 .ibm-upward-link:before,
 .ibm-anchor-up-link:before { content: "\00a0\f105\00a0"; }
 .ibm-checkLarge-link:before { content: "\00a0\f106\00a0"; }
+ul.ibm-bullet-list li:before,
 .ibm-bullet:before,
 #ibm-common-menu .ibm-ribbon-pane li:before,
 #ibm-footer-module li:before { content: "\00a0\f107\00a0"; }
@@ -350,6 +381,7 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-audio-link:before { content: "\00a0\f127\00a0"; }
 .ibm-demoplay-link:before,
 .ibm-media-play:before,
+.ibm-video-podcast-link:before,
 .ibm-video-link:before { content: "\00a0\f128\00a0"; }
 .ibm-sort-link:before { content: "\00a0\f129\00a0"; }
 .ibm-menu-link:before,
@@ -426,19 +458,35 @@ p.ibm-table-navigation a.ibm-forward-em-link:after,
 .ibm-upload-link:before { content: "\00a0\f160\00a0"; }
 .ibm-close:before { content: "\00a0\f161\00a0"; }
 
-p a.ibm-external-link {
-	padding-left: 1.4em;
-	position: relative;
+
+// !bullet colors start
+ul.ibm-bullet-list li:before,
+ul.ibm-bullet-list.ibm-no-links li:hover:before {
+	color: $gray-20;
 }
+
+ul.ibm-bullet-list li:hover:before {
+	color: $orange-1;
+}
+
+ul.ibm-bullet-list.ibm-error li:before {
+	color: $red-2;
+}
+// !bullet colors end
+
+p a.ibm-external-link {
+	position: relative;
+	padding-left: $iconSpaceLeft;
+}
+
 p a.ibm-external-link.ibm-inline,
+p a.ibm-external-link.ibm-inline:before,
 a.ibm-inline:before,
 a.ibm-inline:after {
-	margin-right: 6px;
+	margin-left: 0;
 	padding-left: 0;
+	letter-spacing: 0;
 	position: relative;
-}
-a.ibm-inline:after {
-	margin-right: 0;
 }
 
 #{$ie7Selector} span.ibm-error-link,
@@ -458,6 +506,7 @@ a.ibm-inline:after {
 	color: #00649D;
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+	letter-spacing: -7px;
 	//position: relative !important;
 }
 

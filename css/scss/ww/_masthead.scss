@@ -402,9 +402,8 @@
 
 #ibm-common-menu .ibm-ribbon-pane li:before {
 	color: #999;
-	@include px-to-rem(margin-left,-12px);
-	position:relative;
-	top:-2px;
+	margin-left: -($iconSpaceLeft);
+	line-height: 1.1;
 }
 
 #{$ie7Selector} #ibm-common-menu .ibm-ribbon-pane li {
