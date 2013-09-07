@@ -2,6 +2,7 @@
 
 
 // TESTING FOR IPAD HEIGHT ON PORTRAIT AND LANDSCAPE ============================================
+/*
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
 	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.v17e-height { 
 		min-height: 869px;
@@ -12,6 +13,7 @@
 		min-height: 600px;
 	}
 }
+*/
 // TESTING FOR IPAD HEIGHT ON PORTRAIT AND LANDSCAPE ============================================
 
 
@@ -215,11 +217,11 @@ a.ibm-thumbnail-module h3 {
 
 
 // Begin masthead test updates
-
+/*
 #ibm-content {
 	background: url("../i/fpo/bg-grid-1024.png") repeat-y 50% 0;
 }
-
+*/
 // Begin masthead test updates
 
 
@@ -320,7 +322,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page #ibm-content {
-		background: url("../i/fpo/bg-grid-320.gif") repeat-y 50% 0;
+	//	background: url("../i/fpo/bg-grid-320.gif") repeat-y 50% 0;
 		min-width: 320px;
 	}
 
@@ -862,7 +864,7 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page #ibm-content,
 	.ibm-landing-page #ibm-related-content {
-		background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
+	//	background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
 		width: 768px;
 	}
 	// to be removed.  only for testing
