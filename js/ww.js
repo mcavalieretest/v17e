@@ -1,3 +1,5 @@
+document.write('<script src="http://1.www.s81c.com/common/js/dojo/www.js" type="text/JavaScript"><\/script>');
+
 /*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
 //@ sourceMappingURL=jquery-1.10.2.min.map
 */
@@ -8,9 +10,10 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
 jQuery.noConflict();
 
+/*
 jQuery(function() {
 
 	jQuery.getScript('http://1.www.s81c.com/common/js/dojo/www.js');
         
 });
-        
+*/
