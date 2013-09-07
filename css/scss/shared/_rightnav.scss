@@ -129,87 +129,8 @@ margin-top:2px;
 	clear: both;
 }
 
-#ibm-content ul.ibm-live-assistance-list li {
-	padding-left: 0 ;
-
-}
-
-#ibm-content ul.ibm-live-assistance-list a:link {
-
-    text-decoration: underline;
-}
-
-#ibm-content ul.ibm-live-assistance-list p,
-#ibm-content .ibm-columns ul.ibm-live-assistance-list p,
-.ibm-landing-page ul.ibm-live-assistance-list li p,
-#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-phone-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-email-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-generic-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-requestquote-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-forward-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-call-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-video-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-demoplay-link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-signin-link {
-	padding: 0 0 0 1.5em !important;
-	
-}
-#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-phone-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-email-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-generic-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-requestquote-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-forward-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-call-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-video-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-demoplay-link:link,
-#ibm-content ul.ibm-live-assistance-list a.ibm-signin-link:link {
-	text-decoration: none !important;
-	position: relative;
-}
-#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-phone-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-email-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-generic-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-requestquote-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-forward-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-call-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-video-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-demoplay-link:hover,
-#ibm-content ul.ibm-live-assistance-list a.ibm-signin-link:hover {
-
-	text-decoration:underline !important;
-}
-
-#ibm-content ul.ibm-live-assistance-list li.ibm-chat-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-phone-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-email-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-generic-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-requestquote-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-forward-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-call-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-video-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-demoplay-link,
-#ibm-content ul.ibm-live-assistance-list li.ibm-signin-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-chat-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-phone-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-email-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-generic-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-requestquote-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-forward-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-call-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-video-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-demoplay-link,
-#ibm-leadspace-head ul.ibm-live-assistance-list li.ibm-signin-link {
-  -ms-filter: "none" !important;
-}
-
-ul.ibm-live-assistance-list li.ibm-phone-link a:link,
-ul.ibm-live-assistance-list li.ibm-generic-link a:link {
-	display: inline !important;
-    margin: 0 !important;
-    padding: 0 !important;  
+#ibm-content ul.ibm-live-assistance-list a {
+	text-decoration: none;
 }
 
 .ibm-container-body p + ul.ibm-live-assistance-list {
