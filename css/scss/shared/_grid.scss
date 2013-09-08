@@ -39,11 +39,10 @@
     width: auto; 
 }
 
-#{$ie7Selector} #ibm-top .ibm-columns .ibm-columns{
+#{$ie7Selector} #ibm-top .ibm-columns .ibm-columns,
+#{$ie7Selector} #ibm-content .ibm-playlist .ibm-container-body .ibm-columns {
 	overflow:hidden;
 }
-
-
 
 .ibm-columns:after {
 	@include aslett-clearing;
