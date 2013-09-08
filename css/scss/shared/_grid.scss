@@ -39,6 +39,12 @@
     width: auto; 
 }
 
+#{$ie7Selector} #ibm-top .ibm-columns .ibm-columns{
+	overflow:hidden;
+}
+
+
+
 .ibm-columns:after {
 	@include aslett-clearing;
     overflow: hidden;
