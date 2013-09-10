@@ -10,7 +10,6 @@
 	border-top: 1px solid #666;
 	border-bottom: 2px solid rgba(255,255,255,0.8);
 	*overflow: hidden;
-	_position: relative;
 }
 
 .dijit_a11y #ibm-masthead {
@@ -122,7 +121,6 @@
 #ibm-mast-options li#ibm-geo a {
 	background: url("#{$imagePath}/i/v17/icons/country-icons-sprite.png") no-repeat 10px 0px transparent;
 	padding: 3px 20px 3px 40px;
-	_background:none; /* ie6 tweak*/
 }
 
 #ibm-mast-options li#ibm-geo a.ibm-back-country,
@@ -131,7 +129,6 @@
 	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_inter_country_nav.png") no-repeat 4px 4px transparent;
 	padding-left: 20px;
     padding-top: 4px;
-    _background:none; /* ie6 tweak*/
 }
 
 #ibm-mast-options li#ibm-geo a.ibm-back-country:hover {
@@ -204,7 +201,6 @@
 #ibm-universal-nav #ibm-menu-links {
 	margin-left: 130px;
 	*margin-left: 90px;
-	_margin-left: 75px;
 }
 
 #ibm-universal-nav #ibm-unav-links li,
@@ -223,8 +219,6 @@
 	letter-spacing: 0; 
 	text-shadow: 0 -1px 0 #000;
 	padding: 15px 12px;
-	_height: 1%;
-	_float: left;
 }
 
 #ibm-universal-nav li#ibm-home {
@@ -241,9 +235,6 @@
 	top: 0;
 	left: 0;
 	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") 0px 0px no-repeat;
-	_background: none;  
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/t/ibm-logo.png');
-	_cursor: pointer;
 	width: 100px;
 	float: left;
 	height: 50px;
@@ -263,7 +254,6 @@
 #ibm-universal-nav #ibm-menu-links li a:hover,
 #ibm-universal-nav #ibm-menu-links li a:focus {
    	@include background-gradient(top, #696c72, #333334);
-	_background: none transparent no-scroll repeat; 
 	text-shadow: 0 0 3px #FFF;
 	color: #FFF;
 }
@@ -360,7 +350,6 @@
 #ibm-common-menu {
 	background-color: #DDD;
 	*background: none;
-	_background: none; /* IE6 fix */  
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1');   
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#d1d1d1',EndColorStr='#f1f1f1')";
    	@include background-gradient(top, #dddddd, #f1f1f1);
@@ -538,8 +527,6 @@
 #ibm-search-module {
 	float: right;
 	margin-left: -100%;
-	_position: absolute;
-	_right: 0;
 }
 
 #{$ie7Selector} #ibm-search-module {
@@ -553,9 +540,6 @@
 	margin: 13px 40px -36px 1px;
 	display: inline-block;
 	border: 0 solid transparent;
-	_float: none;
-	_position: absolute;
-	_right: 0;
 }
 
 #ibm-search-form select {
@@ -600,8 +584,6 @@
 
 #ibm-search {
 	background: url("#{$imagePath}/i/v17/icons/search.png") 0px 3px no-repeat;
-    _background:none;
-    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/icons/search.png', sizingMethod='crop');
 	width: 24px;
 	height: 21px;
 	margin-left: -30px;

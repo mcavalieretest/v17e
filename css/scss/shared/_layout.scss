@@ -3,10 +3,9 @@
 #ibm-top {
     background: #FFF;
     margin-top: 74px;
-    _margin-top: 0; /* IE 6 */
     min-width: 980px;
-    _float: left;
 }
+
 #ibm-pcon {
     width: 778px;
     margin: 20px auto;
@@ -83,7 +82,6 @@
     position: relative;
     *position: static; /*ie6/7 fix*/
     min-height: 250px;
-    _height: 250px;
 }
 
 /*=Start========== Dark background definition ============*/
@@ -131,22 +129,17 @@
 /* styles for short leadspace ===================*/
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs {
     min-height: 110px;
-    _height: 110px;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate{
-    min-height: 70px;
-    _height: 70px;
-    
+    min-height: 70px;   
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
     min-height: 70px;
-    _height: 70px;
     padding-bottom: 40px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
     min-height: 115px;
-    _height: 115px;
     padding-bottom: 5px;
     margin-bottom: 1px;
 }
@@ -173,20 +166,16 @@
 /* End of styles for short leadsapce */
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs {
     min-height: 300px;
-    _height: 300px;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
     min-height: 290px;
-    _height: 290px;
-    padding-bottom: 10px;  
-    _padding-bottom: 0; 
+    padding-bottom: 10px; 
 }
 
 .ibm-landing-page #ibm-leadspace-head h1 {
     padding: 30px 0;
     width: 540px;
-    _background-color: transparent;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-5col h1 {
@@ -496,8 +485,6 @@
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay {
     display: none;
     background:url("#{$imagePath}/i/v17/lead/lead_pagination_overlay.png") no-repeat 0 0;
-    _background: none;
-    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/lead/lead_pagination_overlay.png');
     cursor: pointer;
     position: absolute;
     text-align: left;
@@ -521,7 +508,6 @@
     height: 60px;
     margin: 18px 10px 5px 20px;
     width: 60px;
-    _margin-left: 10px;
 }
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a .ibm-pagination-overlay h2 {
