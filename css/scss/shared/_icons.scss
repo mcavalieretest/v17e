@@ -99,6 +99,7 @@
 
 #ibm-mobile-tabs:after,
 [class*="-link"]:before,
+#ibm-parent-link a:before,
 ul li:before,
 .ibm-bullet:before,
 .ibm-cta-arrow-sm:before,
@@ -217,6 +218,7 @@ li a.ibm-close:before
 }
 
 ul li:before,
+#ibm-parent-link a:before,
 #ibm-top ul.ibm-link-list li[class*="-link"] > a,
 #ibm-top ul.ibm-link-list li.ibm-call-info > a,
 #ibm-top ul.ibm-link-list li.ibm-symp-doc > a,
@@ -360,6 +362,7 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0" ; }
 .ibm-form-error-link:before { content: "\00a0\f11a\00a0" ; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0" ; }
+#ibm-parent-link a:before,
 .ibm-forward-link:before,
 .ibm-callaction-link:before { content: "\00a0\f11c\00a0" ; }
 .ibm-questionLarge-link:before { content: "\00a0\f11d\00a0" ; }
@@ -457,6 +460,7 @@ p.ibm-table-navigation a.ibm-forward-em-link:after,
 
 
 // !bullet colors start
+#ibm-parent-link a:before,
 ul li:before,
 ul.ibm-no-links li:hover:before {
 	color: $gray-20;
@@ -479,6 +483,7 @@ ul.ibm-error li:before {
 #ibm-social-tools li:before,
 #ibm-navigation-trail li:before,
 #ibm-content-nav li:before,
+#ibm-primary-links > li:before,
 .ibm-portlet-controls,
 .ibm-share-this li:before,
 .ibm-link-list li:before,

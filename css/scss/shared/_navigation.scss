@@ -15,31 +15,17 @@
 	margin-left: -100%;
 }
 
-
-#ibm-navigation #ibm-primary-links li#ibm-parent-link a {
-	background:url("#{$imagePath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 0.33em;
-	_background:url("#{$imagePath}/i/v17/t/t-bk-gray.gif") no-repeat -4px 3px;
-	border-top:none;
-	border-bottom:1px solid #FFF;
-	display:block;
-	margin:0;
-	padding:3px 6px 3px 10px;
-}
-
-#ibm-navigation #ibm-primary-links li#ibm-parent-link a:hover {
-	background-position: -4px 0.33em;
-	_background-position: -4px 3px;
-
+#ibm-secondary-navigation ul {
+	padding-left: $iconSpaceLeft;
 }
 
 #ibm-secondary-navigation ul li a {
-     background: url("#{$imagePath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 8px;
 	display: block;
     *zoom:1;
 	_height: 1%;
-	padding: 1px 4px 1px 7px;
 	text-decoration: none;
 }
+
 #ibm-secondary-navigation ul li a:hover {
 	text-decoration: underline;
 }
@@ -85,17 +71,34 @@ filter: none;
     background: #FFF;
 }
 
-#ibm-navigation #ibm-primary-links li {
+#ibm-navigation #ibm-primary-links li#ibm-parent-link a:hover {
+	background: #FFF;
+}
 
+#ibm-navigation #ibm-primary-links li#ibm-parent-link a {
+	border-top: none;
+	border-bottom: 1px solid #FFF;
+	display: block;
+	margin: 0;
+	padding: 3px 6px 3px $iconSpaceLeft;
+}
+
+#ibm-navigation #ibm-primary-links li {
+	padding: 0;
     border-style: solid;
     border-left-width: 1px;
     border-right-width: 1px;
     border-color:#e0e0e0;
-
 }
-#ibm-navigation #ibm-primary-links li.ibm-is-active, #ibm-navigation #ibm-primary-links li.ibm-active   {
+
+#ibm-navigation #ibm-primary-links li:before {
+	line-height: 2;
+}
+
+#ibm-navigation #ibm-primary-links li.ibm-is-active, 
+#ibm-navigation #ibm-primary-links li.ibm-active   {
     border-bottom: 1px solid #e0e0e0;
-    background-color: #fff;
+    background-color: #FFF;
 	_zoom:1;
 }
 
@@ -185,7 +188,6 @@ filter: none;
     background:none;
     border: 0;
     padding-left: 7px;
-    background: url("#{$imagePath}/i/v17/t/left_nav_bullet.png") no-repeat 0px 11px;
 }
 
 #ibm-navigation #ibm-primary-links li li.ibm-is-active, 
