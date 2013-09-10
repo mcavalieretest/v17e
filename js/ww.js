@@ -6,7 +6,7 @@
 // Load ibm.com Dojo
 (function() {
  document.write('<script type="text/javascript" src="' +
-   'http://1.www.s81c.com/common/js/dojo/www.js'+
+   '//1.www.s81c.com/common/js/dojo/www.js'+
    	'"></' + 'script>');
 })('loadDojo');
 
