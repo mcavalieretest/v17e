@@ -16,7 +16,6 @@
 #ibm-media .ibm-ribbon .ibm-container-body,
 #ibm-related-content .ibm-ribbon .ibm-container-body {
 	position: relative;
-	_height: 1%;
 }
 
 #{$ie7Selector} #ibm-content .ibm-video .ibm-container-body,
@@ -65,7 +64,6 @@
 	height: 90px;
 	height: 88px#{$ie9Hack};
 	*height: 87px;
-	_height: 95px;
 }
 
 #ibm-masthead .ibm-ribbon-pane {
@@ -154,7 +152,6 @@
 	height: 8px;
 	margin: 3px;
 	*margin-top: 10px;
-	_margin-top: 0;
 	text-decoration: none;
 }
 
@@ -170,10 +167,8 @@
 	font-size: 0;
 	text-indent: -100%;
 	*text-indent: 0;
-	_text-indent: -9999px;
 	overflow:hidden;
 	margin-top: 10px;
-	_overflow: visible;
 	color: transparent;
 }
 
