@@ -316,9 +316,9 @@ table th {
 	font-style: normal;
 }
 
-p.ibm-table-navigation,
+.ibm-table-navigation,
 p.ibm-table-scroll-caption {
-	@include px-to-rem(font-size,13px);
+	@include px-to-rem(font-size,15px);
 }
 
 // Common elements

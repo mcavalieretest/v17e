@@ -103,7 +103,6 @@
 ul li:before,
 .ibm-bullet:before,
 .ibm-cta-arrow-sm:before,
-p.ibm-table-navigation a.ibm-forward-em-link:after,
 a.ibm-chevron-link:after,
 li.ibm-chevron-link a:after,
 a.ibm-chevron-alternate-link:after,
@@ -399,7 +398,6 @@ a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
 a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-firstpage-link:before { content: "\00a0\f132\00a0" ; }
 .ibm-lastpage-link:before { content: "\00a0\f133\00a0" ; }
-p.ibm-table-navigation a.ibm-forward-em-link:after,
 .ibm-forward-em-link:before,
 .ibm-forward-pg-link:before { content: "\00a0\f134\00a0" ; }
 .ibm-back-em-link:before { content: "\00a0\f135\00a0" ; }
@@ -487,6 +485,7 @@ ul.ibm-error li:before {
 #ibm-content-nav li:before,
 #ibm-primary-links > li:before,
 .ibm-container-controls li:before,
+.ibm-table-navigation li:before,
 .ibm-portlet-controls,
 .ibm-share-this li:before,
 .ibm-link-list li:before,

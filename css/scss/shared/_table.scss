@@ -308,99 +308,60 @@ table.ibm-results-table h2 {
 	padding: 0px 0px 3px 0px;
 }
 
-/* Pagination code ==============================*/
+/* Pagination code start ==============================*/
 
-p.ibm-table-navigation {
+.ibm-table-navigation {
 	clear: both;
 }
 
-/*.ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link,
-.ibm-col-6-4 p.ibm-table-navigation a.ibm-back-em-link,
-.ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link {
-	background-position:1px -200px
+.ibm-table-navigation:after {
+	@include aslett-clearing;
 }
 
-.ibm-col-4-3 p.ibm-table-navigation a.ibm-back-em-link:hover,
-.ibm-col-6-4 p.ibm-table-navigation a.ibm-back-em-link:hover,
-.ibm-col-6-5 p.ibm-table-navigation a.ibm-back-em-link:hover,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-back-em-link:hover {
-	background-position:0px -200px;
-}*/
+.ibm-table-navigation li {
+	padding-left: 0;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
 
-p.ibm-table-navigation a.ibm-back-em-link,
-p.ibm-table-navigation span.ibm-back-em-link {
-	@include px-to-rem(padding-left,20px);
 }
-p.ibm-table-navigation a.ibm-back-em-link:before,
-p.ibm-table-navigation span.ibm-back-em-link:before {
-	@include px-to-rem(margin-left,-20px);
-}
-p.ibm-table-navigation a.ibm-forward-em-link:before {
-	content:"";
-}
-span.ibm-firstpage-link {
-	@include px-to-rem(padding-right,18px);
-}
-span.ibm-lastpage-link {
-	@include px-to-rem(padding-left,18px);
+.ibm-table-navigation li:last-child { margin-right: 0; }
+
+.ibm-table-navigation a {
+	@include border-radius(2px);
+	display: inline-block;
+	min-width: 30px;
+	color: #556270;
+	border: 1px solid #ddd;
+	padding: 6px 5px 5px 5px;
+	@include background-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
 }
 
-
-
-/*p.ibm-table-navigation a.ibm-forward-em-link, 
-span.ibm-table-navigation a.ibm-forward-em-link,
-span.ibm-table-navigation-links span.ibm-forward-em-link {
-	background-position: 100% -1px;
-	padding: 0 20px 0 0 !important; 
-}*/
-/*
-.ibm-col-4-3 p.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-4-3 span.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-6-4 p.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-6-4 span.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-6-5 p.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-6-5 span.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-forward-em-link,
-.ibm-col-5-4 span.ibm-table-navigation a.ibm-forward-em-link {
-	background-position: 100% 0px;
+.ibm-table-navigation.ibm-dark a {
+	color: #FFF;
+	@include text-shadow($emboss-dark);
+	@include background-gradient(top, #556270 0%, #444d57 100%);
 }
 
-.ibm-col-4-3 p.ibm-table-navigation a.ibm-forward-em-link:hover,
-.ibm-col-6-4 p.ibm-table-navigation a.ibm-forward-em-link:hover,
-.ibm-col-6-5 p.ibm-table-navigation a.ibm-forward-em-link:hover,
-.ibm-col-5-4 p.ibm-table-navigation a.ibm-forward-em-link:hover {
-	background-position: 104% 0px;
+.ibm-table-navigation p {
+	min-width: 30px;
+	padding: 6px 5px 5px 5px;			
 }
 
-p.ibm-table-navigation a.ibm-forward-em-link:hover {
-	background-position: 104% -1px;
-} 
-
-p.ibm-table-navigation span.ibm-forward-em-link{
-	background-position: 3px -1px;
+.ibm-table-navigation li.ibm-active a {
+	background: #FFF;
+	font-weight: bold;
 }
 
-p.ibm-table-navigation span.ibm-forward-em-link:hover{
-	background-position: 4px -1px;
-}*/
-
-p.ibm-table-navigation .ibm-primary-navigation {
-	*float: left;
-	*height: 1%;
+.ibm-table-navigation a:hover {
+	text-decoration: none;
+	@include background-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
 }
 
-p.ibm-table-navigation .ibm-secondary-navigation {
-	float: right;
+.ibm-table-navigation.ibm-dark a:hover {
+	@include background-gradient(top, #556270 0%, #5b6774 100%);
 }
-/*Pagination with in the form ============= */
-form.ibm-column-form p.ibm-table-navigation span {
-    display: inline;
-    margin-left: 0;
-}
-/* End ==========================*/
-
-/* end of pagination code ===========================*/
+/* Pagination code end ===========================*/
 
 
 table.ibm-data-table.ibm-alternate{
