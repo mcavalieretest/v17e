@@ -213,7 +213,6 @@ form.ibm-column-form .dijitTextBox INPUT{
     display: none;
     *display: block;
     *color: transparent;
-    _color: #333;
 }
 
 
@@ -345,7 +344,6 @@ There are three areas of styling for the Menu:
 /* fixing font size issues -end ************/
 
 .v17 .dijitMenu {
-    _width: 250px !important;
     max-width: 600px;
     list-style-type: none;
     padding: 0;    
@@ -746,7 +744,6 @@ form.ibm-column-form p span.ibm-form-grp-lbl span {
 
 form.ibm-column-form p span span {
     margin-top: 5px;
-    _margin-top: 0;
 }
 
 form.ibm-column-form p span span.ibm-ind-error{
@@ -755,12 +752,12 @@ form.ibm-column-form p span span.ibm-ind-error{
 
 form.ibm-column-form p span span span {
     margin-top: -5px;
-    _margin-top: 0;
 }
+
 .ibm-landing-page form.ibm-column-form p span table {
-    _float: left;
     margin-top: -3px;
 }
+
 form.ibm-column-form p span.ibm-input-group div {
     *display: inline;
 }
@@ -857,7 +854,6 @@ form.ibm-column-form p span.ibm-input-group label a
     position: relative;
     top: 3px;
     *top: -8px;
-    _top: 3px;
 }
 form.ibm-column-form label span {
     display: inline;
@@ -942,21 +938,19 @@ form.ibm-row-form .ibm-col-4-2 p span input[type=text],
 form.ibm-row-form .ibm-col-2-1 p span input[type=text],
 form.ibm-row-form .ibm-col-6-3 p span input[type=text],
 form.ibm-row-form .ibm-col-6-2 p span input[type=text]{
-width:98%\9;
+	width:98%\9;
 }
 
 form.ibm-row-form p span input[type=image]{
-width:auto\9;}
+	width:auto\9;
+}
 
 
 form.ibm-row-form div.ibm-two-column p.ibm-first {
     float: left;
     width: 250px;
 }
-form.ibm-row-form div.ibm-two-column p.ibm-second{
-    _width: 250px;
 
-}
 .ibm-landing-page form.ibm-row-form div.ibm-two-column p.ibm-first {
     width: 250px;
 }
@@ -965,7 +959,6 @@ form.ibm-row-form div.ibm-two-column p.ibm-second{
     margin-left: 400px;
 
 }
-
 
 /*form.ibm-column-form label {
 	margin-top: 3px;
@@ -977,25 +970,25 @@ form.ibm-column-form label span.ibm-additional-info{
     display: block;
     padding-bottom: 4px;
 }
+
 form.ibm-row-form label span.ibm-additional-info,
 form.ibm-column-form label span.ibm-additional-info{
-color:#333;
+	color:#333;
 }
+
 form.ibm-row-form label span {
     display:inline;
     margin:0px;
 }
 
-
-
-
-
 form .ibm-checkbox-layout {
     clear: both;
 }
+
 form .ibm-checkbox-layout input {
     float:left;
 }
+
 #ibm-content-main form .ibm-checkbox-layout label {
     clear: right;
     display: block;
@@ -1251,14 +1244,13 @@ form .ibm-checkbox-layout input {
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
 	@include background-gradient(top, #FFFFFF, #F1F1F1);
-	_background-color: #F1F1F1;
 	height: 100%;
 }
 
 
 /* tag:crosstheme -  required in all themes */
 .dojoxGrid table {
-border-collapse: separate;
+	border-collapse: separate;
 }
 
 /* tag:crosstheme -  required in all themes */
@@ -1403,7 +1395,6 @@ border-collapse: separate;
 	display: block;
 	padding: 3px 5px 3px 4px;
 	border: solid 1px transparent;
-	_border: 0;
 	/* intentionally matches background-color, no visible border until hover/selection */
 	background-color: rgba(171, 212, 251, 0);
 	@include transition(background-color, border 0.35s);
@@ -1575,7 +1566,6 @@ border-collapse: separate;
 .v17 .dijitCalendar .dijitDropDownButtonHover .dijitArrowButtonInner {
 	background-position: 6px -967px;
 	*background-position: 6px -970px;
-	_background-position: 6px -968px;
 }
 
 .v17 .dijitCalendar .dijitDropDownButtonHover .dijitButtonNode,
@@ -1584,8 +1574,7 @@ border-collapse: separate;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F3F3', endColorstr='#E1E1E1');
 	@include background-gradient(top, #F3F3F3, #E1E1E1);
 	padding: 0 3px 0 2px;
-	border: solid 1px #cccccc;
-	_width: 100px;
+	border: solid 1px #CCC;
 }
 .v17.dijit_a11y .dijitCalendar .dijitDropDownButtonHover .dijitButtonNode,
 .v17.dijit_a11y .dijitCalendar .dijitDropDownButton:hover .dijitButtonNode {
@@ -1601,7 +1590,6 @@ border-collapse: separate;
 	@include background-gradient(top, #62676d, #383d42);
     padding: 5px 0;
 	border: 5px solid rgba(255,255,255,0.95);
-	_width: 100px !important;
 }
 
 .v17.dijit_a11y .dijitCalendarMonthMenu {
@@ -1617,7 +1605,6 @@ border-collapse: separate;
 	line-height: 1.2em;
     font-weight: bold;
 	text-align: left;
-	_width: 100px;
 }
 
 .v17 .dijitCalendarMonthMenu .dijitCalendarMonthLabelHover {
@@ -1666,7 +1653,6 @@ border-collapse: separate;
     background-repeat: no-repeat;
     background-position: 6px -767px;
 	*background-position: 6px -770px;
-	_background-position: 6px -768px;
 
 }
 .v17.dijit_a11y .dijitCalendar .dijitArrowButtonInner {
@@ -1710,18 +1696,15 @@ border-collapse: separate;
 
 
 .v17 .dijitCalendarMonthMenu.dijitMenu  {
-
-
     width: 100px !important;
     min-width: 100px;
     margin: 0px !important;
 }
 
-
 .v17 DIV.dijitArrowButton {
     display: none;
-
 }
+
 .v17.dijit_a11y DIV.dijitArrowButton {
     display: inline;
     float: right;

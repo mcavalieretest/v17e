@@ -1084,7 +1084,6 @@ div.ibm-column.ibm-list-container .ibm-rule { margin:5px 0; }
 .ibm-container h2 {
 	padding: 5px 0;
 	height: auto;
-	_height:1%;
 }
 
 // twitter changes required in screen.source.css
@@ -1830,7 +1829,6 @@ div.ibm-anchor-pointer {
     visibility: visible;
     display: block;
     position: absolute;
-	_position: relative;
 }
 
                        
@@ -1838,7 +1836,6 @@ div.ibm-anchor-pointer a {
 	position: absolute;
 	*position: relative;
 	*margin-top: -80px;
-	_margin-top: 0;
 	top: -80px;
 	display: block;
 }
@@ -2008,24 +2005,17 @@ p.ibm-button-link-alternate a:active {
 // ----  RSS link list styles  ----
 // BEGIN rss element in ibm-col-6-x
 
-.ibm-rss-module .ibm-container h2 {
-	_width:99%;
-}
-
 .ibm-rss-module .ibm-container .ibm-container-body p {
 	color: #AAA;
 }
 
 .ibm-rss-module h2 a {
-	_width:95%;
-	_padding-right: 5%;
 	color: #777;
 }
 
 .ibm-rss-module #ibm-rss-container {
 	position: relative;
 	overflow: hidden;
-	_float: left;
 }
 
 .ibm-rss-module #ibm-rss-container ul.ibm-rss-list {
@@ -2123,7 +2113,7 @@ div.ibm-tab-section.ibm-step-indicator {
     background-repeat: no-repeat;
     cursor: pointer;
     line-height:1.8em;
-  	 padding-bottom: 5px;
+	padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 40px;
 	cursor:default;

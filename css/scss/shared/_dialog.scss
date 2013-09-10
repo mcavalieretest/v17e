@@ -249,7 +249,6 @@
 	.dijitDialogPaneContent ul li, 
 	     .dijitDialog ul.ibm-no-links li:hover {
 	    background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
-	    _background: none; /* IE6 fix*/    
 	    padding: 5px 0 5px 8px;
 	    height: 1%;
 	    clear: left;

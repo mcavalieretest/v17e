@@ -127,9 +127,7 @@
 
 .ibm-columns .ibm-col-6-1 {
 //    width: 140px;
-//    _width: 130px;
 	width: (($landingGrid - $landingSpace) / 6) - $landingSpace;
-	_width: ((($landingGrid - $landingSpace) / 6) - $landingSpace) - 10px;   	
 }
 
 .ibm-columns .ibm-col-6-2 {

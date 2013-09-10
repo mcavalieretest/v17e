@@ -45,8 +45,6 @@
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home a {
 	display: block;
 	background: url("#{$imagePath}/i/v17/t/ibm-logo.png") no-repeat 0 -100px transparent;
-	_filter:none;
-	_cursor: pointer;
 	width: 74px;
 	float: left;
 	height: 30px;
@@ -248,7 +246,6 @@
 	background-color: #DDD;
 	*background:none;
 	@include background-gradient(#DDDDDD, #F1F1F1);
-	_background:none; /* IE6 fix */  
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#DDDDDD',EndColorStr='#F1F1F1');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#DDDDDD',EndColorStr='#F1F1F1')";  
 	border-top: 0;

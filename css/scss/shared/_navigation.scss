@@ -142,14 +142,6 @@ filter: none;
     border: 0px;
 }
 
-
-
-#ibm-navigation #ibm-primary-links a.ibm-is-active:hover, 
-#ibm-navigation #ibm-primary-links a.ibm-active:hover {
-    _background-color: #485159;
-    _color: #fff;
-}
-
 #ibm-navigation #ibm-primary-links > li > a.ibm-is-active, 
 #ibm-navigation #ibm-primary-links > li > a.ibm-active,
 #ibm-navigation #ibm-primary-links li a.ibm-is-active + ul,
@@ -160,9 +152,9 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links > li > a.ibm-is-active:active, 
 #ibm-navigation #ibm-primary-links > li > a.ibm-active:active {
-      margin-left: 0 !important; 
-    margin-right: 0 !important; 
-    padding: 7px 14px 6px 7px;
+	margin-left: 0 !important; 
+	margin-right: 0 !important; 
+	padding: 7px 14px 6px 7px;
 }
 
 #ibm-navigation #ibm-primary-links li.ibm-is-active a, 
@@ -175,7 +167,6 @@ filter: none;
 #ibm-navigation #ibm-primary-links li.ibm-is-active a:hover, 
 #ibm-navigation #ibm-primary-links li.ibm-active a:hover, #ibm-navigation #ibm-primary-links li.ibm-is-active a:active, #ibm-navigation #ibm-primary-links li.ibm-active a:active {
    color: #000;
-    _background: none;
 }
 
 #ibm-navigation #ibm-primary-links li ul {
