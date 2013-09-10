@@ -47,16 +47,13 @@
 	height: 140px;
 	top: -225px;
 	*position: absolute;
-	_top: 0px;
 	_margin-top: 100px;
 	left: 230px;
 	*left:400px;
-	_left: 0px;
 }
 
 .ibm-col-6-4 .ibm-video-play {
 	*left: 250px;
-	_left:0px;
 }
 
 .ibm-col-1-1 .ibm-video .ibm-video-container div:hover .ibm-video-play,
@@ -74,8 +71,6 @@
 	width: 132px;
 	height: 132px;
 	top: 20px;
-	_top: 0px;
-	_margin-top: 35px;
 	left: 84px;
     position: absolute;
 }
@@ -183,7 +178,6 @@
 	display: block;
 	padding-bottom: 0;
 	padding-right: 0;
-	_margin-top: -25px;
 }
 #{$ie7Selector} #ibm-content .ibm-container-controls,
 #{$ie7Selector} #ibm-media .ibm-container-controls {
