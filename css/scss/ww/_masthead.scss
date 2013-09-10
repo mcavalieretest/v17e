@@ -211,6 +211,10 @@
 	float: left;
 }
 
+#ibm-universal-nav li {
+	padding: 0px;
+}
+
 #ibm-universal-nav li a {
 	color: #CCC;
 	display: block;
@@ -367,6 +371,14 @@
 	display: none;
 }
 
+#ibm-common-menu h3 {
+	padding: 0 5px;
+}
+
+#ibm-common-menu h3.ibm-access + ul {
+	margin-top: 23px !important;
+}
+
 #ibm-common-menu h3,
 #ibm-common-menu h3 a {
 	color: #333;
@@ -388,21 +400,14 @@
 	text-decoration: underline;
 	color: #555;
 }
-#ibm-common-menu ul {
-    list-style: none;
-    padding: 0 0 18px 0;
-}
-#ibm-common-menu li {
-	padding-left: 10px;
-	margin-top: 10px;
-}
-#ibm-common-menu li:active {
-	opacity: .6;
+
+#ibm-common-menu .ibm-ribbon-pane li {
+	padding: 0 0 0 $iconSpaceLeft;
+	margin: 8px 0;
 }
 
 #ibm-common-menu .ibm-ribbon-pane li:before {
 	color: #999;
-	margin-left: -($iconSpaceLeft);
 	line-height: 1.1;
 }
 
@@ -454,7 +459,7 @@
 	box-shadow: 0 1px 7px #C5C5C5;
 	height: 39px;
 	margin-top: -39px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	opacity: 0;
 }
 
@@ -468,7 +473,7 @@
 	margin: 0 20px 0 0;
 	background-image: none;
 	float: left;
-	padding: 0 10px 11px 10px;
+	padding: 0 10px 11px 5px;
 }
 
 #ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
@@ -494,7 +499,7 @@
 	width: 170px;
 	height: 282px;
 	*height: 232px;
-	padding-left: 20px;
+	padding-left: 10px;
 	margin: 0;
 }
 
