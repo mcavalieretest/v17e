@@ -268,7 +268,9 @@ $ibm-widget-js 							: "#ibm_cci-widget-js";
 		// top:-5px;
 	}
 }
-
+body ul li:before, body ul li:after {
+	content:none;
+}
 
 /* LEADSPACE OVERIDES (BEGIN) */
 .ibm-landing-page #ibm-leadspace-head {

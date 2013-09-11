@@ -11,3 +11,17 @@
 // Date: [Date of file edits] (e.g. July 30, 2013)
 //
 
+dojo.ready(function(){
+	var toggleButton = dojo.query("#ibm_cci--toggle-js ul li");
+		console.log(toggleButton);
+
+		toggleButton.forEach(function(node){
+			dojo.connect(node, 'onclick', function(t){
+				dojo.stopEvent(t);
+				console.log(t);
+		})
+	})
+
+
+
+});
