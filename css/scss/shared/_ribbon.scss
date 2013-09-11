@@ -294,7 +294,7 @@ span.ibm-thumbnail span {
 	background-color: #000;
 	color: #FFF;
 	float: right;
-	padding-right: 1px;
+	@include px-to-rem(font-size,11px);
 }
 
 span.ibm-thumbnail span.ibm-video-play {
@@ -305,13 +305,13 @@ span.ibm-thumbnail span.ibm-video-play {
 .ibm-col-5-1 span.ibm-thumbnail span,
 .ibm-col-6-1 span.ibm-thumbnail span,
 .ibm-ribbon-pane .ibm-col-6-2 span.ibm-thumbnail span {
-	top: -15px;
+	top: -18px;
 }
 
 .ibm-col-6-2 span.ibm-thumbnail span,
 .ibm-col-6-3 span.ibm-thumbnail span {
-        top: -25px;
-		*top: 40px; /* ie7 fix */
+        top: -32px;
+		*top: 47px; /* ie7 fix */
 }
 
 #ibm-content .ibm-columns div.ibm-col-6-1 div.ibm-ribbon h2 {
