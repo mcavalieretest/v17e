@@ -1,0 +1,383 @@
+// button styles begin ==============================================
+
+a.ibm-btn-pri,
+a.ibm-btn-sec {
+	display: inline-block;
+	text-decoration: none;	
+}
+
+a.ibm-btn-pri,
+a.ibm-btn-sec,
+input.ibm-btn-pri,
+input.ibm-btn-sec,
+input.ibm-btn-arrow-pri,
+input.ibm-btn-cancel-pri,
+input.ibm-btn-cart-pri,
+input.ibm-btn-customize-pri,
+input.ibm-btn-download-pri,
+input.ibm-btn-view-pri,
+input.ibm-btn-sec,
+input.ibm-btn-add-sec,
+input.ibm-btn-arrow-sec,
+input.ibm-btn-back-sec,
+input.ibm-btn-cancel-sec,
+input.ibm-btn-cart-sec,
+input.ibm-btn-chat-sec,
+input.ibm-btn-customize-sec,
+input.ibm-btn-download-sec,
+input.ibm-btn-email-sec,
+input.ibm-btn-pda-sec,
+input.ibm-btn-phone-sec,
+input.ibm-btn-refresh-sec,
+input.ibm-btn-remove-sec,
+input.ibm-btn-undo-sec,
+input.ibm-btn-video-sec,
+input.ibm-btn-view-sec {
+	background: #DBDBDB;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
+	@include background-gradient(top, #F5F5F5, #DBDBDB);
+	border: 1px solid #DBDBDB;
+	color: #000;
+	padding: 6px 28px;
+	margin-bottom:20px;
+	@include border-radius(5px);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
+	text-shadow: #FFF 0px 1px 0px;
+	min-width: 120px;
+	min-width: 90px\9;
+	*min-width: auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+a.ibm-btn-pri:hover,
+a.ibm-btn-arrow-pri:hover,
+input.ibm-btn-pri:hover,
+input.ibm-btn-arrow-pri:hover,
+input.ibm-btn-cancel-pri:hover,
+input.ibm-btn-cart-pri:hover,
+input.ibm-btn-customize-pri:hover,
+input.ibm-btn-download-pri:hover,
+input.ibm-btn-view-pri:hover,
+a.ibm-btn-sec:hover,
+input.ibm-btn-sec:hover,
+input.ibm-btn-add-sec:hover,
+input.ibm-btn-arrow-sec:hover,
+input.ibm-btn-back-sec:hover,
+input.ibm-btn-cancel-sec:hover,
+input.ibm-btn-cart-sec:hover,
+input.ibm-btn-chat-sec:hover,
+input.ibm-btn-customize-sec:hover,
+input.ibm-btn-download-sec:hover,
+input.ibm-btn-email-sec:hover,
+input.ibm-btn-pda-sec:hover,
+input.ibm-btn-phone-sec:hover,
+input.ibm-btn-refresh-sec:hover,
+input.ibm-btn-remove-sec:hover,
+input.ibm-btn-undo-sec:hover,
+input.ibm-btn-video-sec:hover,
+input.ibm-btn-view-sec:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
+	@include background-gradient(top, #FFFFFF, #CBCBCB);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
+}
+
+a.ibm-btn-pri:focus,
+a.ibm-btn-arrow-pri:focus,
+input.ibm-btn-pri:focus,
+input.ibm-btn-arrow-pri:focus,
+input.ibm-btn-cancel-pri:focus,
+input.ibm-btn-cart-pri:focus,
+input.ibm-btn-customize-pri:focus,
+input.ibm-btn-download-pri:focus,
+input.ibm-btn-view-pri:focus,
+a.ibm-btn-sec:focus,
+input.ibm-btn-sec:focus,
+input.ibm-btn-add-sec:focus,
+input.ibm-btn-arrow-sec:focus,
+input.ibm-btn-back-sec:focus,
+input.ibm-btn-cancel-sec:focus,
+input.ibm-btn-cart-sec:focus,
+input.ibm-btn-chat-sec:focus,
+input.ibm-btn-customize-sec:focus,
+input.ibm-btn-download-sec:focus,
+input.ibm-btn-email-sec:focus,
+input.ibm-btn-pda-sec:focus,
+input.ibm-btn-phone-sec:focus,
+input.ibm-btn-refresh-sec:focus,
+input.ibm-btn-remove-sec:focus,
+input.ibm-btn-undo-sec:focus,
+input.ibm-btn-video-sec:focus,
+input.ibm-btn-view-sec:focus {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
+	@include background-gradient(top, #FFFFFF, #ABABAB);
+	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
+}
+
+a.ibm-btn-pri:active,
+a.ibm-btn-arrow-pri:active,
+input.ibm-btn-pri:active,
+input.ibm-btn-arrow-pri:active,
+input.ibm-btn-cancel-pri:active,
+input.ibm-btn-cart-pri:active,
+input.ibm-btn-customize-pri:active,
+input.ibm-btn-download-pri:active,
+input.ibm-btn-view-pri:active,
+a.ibm-btn-sec:active,
+input.ibm-btn-sec:active,
+input.ibm-btn-add-sec:active,
+input.ibm-btn-arrow-sec:active,
+input.ibm-btn-back-sec:active,
+input.ibm-btn-cancel-sec:active,
+input.ibm-btn-cart-sec:active,
+input.ibm-btn-chat-sec:active,
+input.ibm-btn-customize-sec:active,
+input.ibm-btn-download-sec:active,
+input.ibm-btn-email-sec:active,
+input.ibm-btn-pda-sec:active,
+input.ibm-btn-phone-sec:active,
+input.ibm-btn-refresh-sec:active,
+input.ibm-btn-remove-sec:active,
+input.ibm-btn-undo-sec:active,
+input.ibm-btn-video-sec:active,
+input.ibm-btn-view-sec:active {
+	color: #515151;
+	padding: 7px 20px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
+	@include background-gradient(top, #CBCBCB, #F5F5F5);
+	@include box-shadow(inset 0px 1px 3px #C1C1C1);
+}
+
+a.ibm-btn-pri:active,
+a.ibm-btn-arrow-pri:active,
+a.ibm-btn-sec:active {
+	padding: 6px 20px 5px;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+}
+
+
+input.ibm-btn-go,
+input.ibm-btn-view {
+	border: 0;
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+	margin-bottom: -13px;
+}
+input.ibm-btn-go {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px 0px;
+}
+input.ibm-btn-go:hover  {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -40px;
+}
+input.ibm-btn-go:active, input.ibm-btn-go:focus {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -80px;
+}
+input.ibm-btn-view {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -120px;
+}
+input.ibm-btn-view:hover {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -160px;
+}
+input.ibm-btn-view:active, input.ibm-btn-view:focus {
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -200px;
+}
+
+// Small button style
+#ibm-top a.ibm-btn-small, 
+#ibm-top input.ibm-btn-small {
+	min-width: 96px;
+	min-width: 90px\9;
+	*min-width: auto;
+	font-size:.9em;
+ 	@include border-radius(4px); 
+ 	@include box-shadow(0px 1px 2px rgba(0,0,0,0.4));
+ 	padding:5px;
+ 	text-align:center;
+}
+
+.ibm-col-1-1 .ibm-btn-small {
+	font-size:.8em;
+}
+
+p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
+	 min-width: 75px !important;
+     padding: 4px 10px!important;
+}
+
+// End of small button style
+
+
+// HC Mode styles for buttons
+.dijit_a11y input.ibm-btn-pri,
+.dijit_a11y input.ibm-btn-sec,
+.dijit_a11y input.ibm-btn-arrow-pri,
+.dijit_a11y input.ibm-btn-cancel-pri,
+.dijit_a11y input.ibm-btn-cart-pri,
+.dijit_a11y input.ibm-btn-customize-pri,
+.dijit_a11y input.ibm-btn-download-pri,
+.dijit_a11y input.ibm-btn-view-pri,
+.dijit_a11y input.ibm-btn-sec,
+.dijit_a11y input.ibm-btn-add-sec,
+.dijit_a11y input.ibm-btn-arrow-sec,
+.dijit_a11y input.ibm-btn-back-sec,
+.dijit_a11y input.ibm-btn-cancel-sec,
+.dijit_a11y input.ibm-btn-cart-sec,
+.dijit_a11y input.ibm-btn-chat-sec,
+.dijit_a11y input.ibm-btn-customize-sec,
+.dijit_a11y input.ibm-btn-download-sec,
+.dijit_a11y input.ibm-btn-email-sec,
+.dijit_a11y input.ibm-btn-pda-sec,
+.dijit_a11y input.ibm-btn-phone-sec,
+.dijit_a11y input.ibm-btn-refresh-sec,
+.dijit_a11y input.ibm-btn-remove-sec,
+.dijit_a11y input.ibm-btn-undo-sec,
+.dijit_a11y input.ibm-btn-video-sec,
+.dijit_a11y input.ibm-btn-view-sec {
+	background: #FFF;
+	border: 1px outset #FFF;
+	filter: none;
+}
+
+.dijit_a11y input.ibm-btn-pri:hover,
+.dijit_a11y input.ibm-btn-arrow-pri:hover,
+.dijit_a11y input.ibm-btn-cancel-pri:hover,
+.dijit_a11y input.ibm-btn-cart-pri:hover,
+.dijit_a11y input.ibm-btn-customize-pri:hover,
+.dijit_a11y input.ibm-btn-download-pri:hover,
+.dijit_a11y input.ibm-btn-view-pri:hover,
+.dijit_a11y input.ibm-btn-sec:hover,
+.dijit_a11y input.ibm-btn-add-sec:hover,
+.dijit_a11y input.ibm-btn-arrow-sec:hover,
+.dijit_a11y input.ibm-btn-back-sec:hover,
+.dijit_a11y input.ibm-btn-cancel-sec:hover,
+.dijit_a11y input.ibm-btn-cart-sec:hover,
+.dijit_a11y input.ibm-btn-chat-sec:hover,
+.dijit_a11y input.ibm-btn-customize-sec:hover,
+.dijit_a11y input.ibm-btn-download-sec:hover,
+.dijit_a11y input.ibm-btn-email-sec:hover,
+.dijit_a11y input.ibm-btn-pda-sec:hover,
+.dijit_a11y input.ibm-btn-phone-sec:hover,
+.dijit_a11y input.ibm-btn-refresh-sec:hover,
+.dijit_a11y input.ibm-btn-remove-sec:hover,
+.dijit_a11y input.ibm-btn-undo-sec:hover,
+.dijit_a11y input.ibm-btn-video-sec:hover,
+.dijit_a11y input.ibm-btn-view-sec:hover,
+.dijit_a11y input.ibm-btn-pri:focus,
+.dijit_a11y input.ibm-btn-arrow-pri:focus,
+.dijit_a11y input.ibm-btn-cancel-pri:focus,
+.dijit_a11y input.ibm-btn-cart-pri:focus,
+.dijit_a11y input.ibm-btn-customize-pri:focus,
+.dijit_a11y input.ibm-btn-download-pri:focus,
+.dijit_a11y input.ibm-btn-view-pri:focus,
+.dijit_a11y input.ibm-btn-sec:focus,
+.dijit_a11y input.ibm-btn-add-sec:focus,
+.dijit_a11y input.ibm-btn-arrow-sec:focus,
+.dijit_a11y input.ibm-btn-back-sec:focus,
+.dijit_a11y input.ibm-btn-cancel-sec:focus,
+.dijit_a11y input.ibm-btn-cart-sec:focus,
+.dijit_a11y input.ibm-btn-chat-sec:focus,
+.dijit_a11y input.ibm-btn-customize-sec:focus,
+.dijit_a11y input.ibm-btn-download-sec:focus,
+.dijit_a11y input.ibm-btn-email-sec:focus,
+.dijit_a11y input.ibm-btn-pda-sec:focus,
+.dijit_a11y input.ibm-btn-phone-sec:focus,
+.dijit_a11y input.ibm-btn-refresh-sec:focus,
+.dijit_a11y input.ibm-btn-remove-sec:focus,
+.dijit_a11y input.ibm-btn-undo-sec:focus,
+.dijit_a11y input.ibm-btn-video-sec:focus,
+.dijit_a11y input.ibm-btn-view-sec:focus,
+.dijit_a11y input.ibm-btn-pri:active,
+.dijit_a11y input.ibm-btn-arrow-pri:active,
+.dijit_a11y input.ibm-btn-cancel-pri:active,
+.dijit_a11y input.ibm-btn-cart-pri:active,
+.dijit_a11y input.ibm-btn-customize-pri:active,
+.dijit_a11y input.ibm-btn-download-pri:active,
+.dijit_a11y input.ibm-btn-view-pri:active,
+.dijit_a11y input.ibm-btn-sec:active,
+.dijit_a11y input.ibm-btn-add-sec:active,
+.dijit_a11y input.ibm-btn-arrow-sec:active,
+.dijit_a11y input.ibm-btn-back-sec:active,
+.dijit_a11y input.ibm-btn-cancel-sec:active,
+.dijit_a11y input.ibm-btn-cart-sec:active,
+.dijit_a11y input.ibm-btn-chat-sec:active,
+.dijit_a11y input.ibm-btn-customize-sec:active,
+.dijit_a11y input.ibm-btn-download-sec:active,
+.dijit_a11y input.ibm-btn-email-sec:active,
+.dijit_a11y input.ibm-btn-pda-sec:active,
+.dijit_a11y input.ibm-btn-phone-sec:active,
+.dijit_a11y input.ibm-btn-refresh-sec:active,
+.dijit_a11y input.ibm-btn-remove-sec:active,
+.dijit_a11y input.ibm-btn-undo-sec:active,
+.dijit_a11y input.ibm-btn-video-sec:active,
+.dijit_a11y input.ibm-btn-view-sec:active  {
+	border: 1px inset #FFF;
+}
+
+.dijit_a11y input.ibm-btn-go,
+.dijit_a11y input.ibm-btn-view {
+	background: #FFF;
+	filter: none;
+}
+
+
+// Button links declaration
+p.ibm-button-link a,
+p.ibm-button-link-alternate a {
+	background: #dbdbdb;
+	border: 1px solid #dbdbdb;	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dbdbdb');
+	@include background-gradient(top, #f5f5f5, #dbdbdb);
+ 	@include border-radius(5px); 
+ 	@include box-shadow(0 2px 3px rgba(0,0,0,0.4));
+	color: #000;
+	display: inline-block;
+	font-weight: bold;
+	min-width: 80px;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+p.ibm-button-link a:hover {
+	background: #cbcbcb;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb');
+	@include background-gradient(top, #ffffff, #cbcbcb);
+ 	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
+}
+p.ibm-button-link a:active {
+	background: #f5f5f5;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcbcb', endColorstr='#f5f5f5');
+	@include background-gradient(top, #cbcbcb, #f5f5f5);
+	color: #515151;
+ 	@include box-shadow(0 1px 3px #c1c1c1 inset);
+}
+
+p.ibm-button-link-alternate a {
+	background: #1b587b;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d83b1', endColorstr='#1b587b');
+	@include background-gradient(top, #0d83b1, #1b587b);
+	border: 1px solid #1b587b;
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+p.ibm-button-link-alternate a:hover {
+	background: #052a41;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32bdf0', endColorstr='#052a41');
+	@include background-gradient(top, #32bdf0, #052a41);
+}
+p.ibm-button-link-alternate a:active {
+	background: #0d83b1;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#052a41', endColorstr='#0d83b1');
+	@include background-gradient(top, #052a41, #0d83b1);
+	color: #fff;
+ 	@include box-shadow(0 1px 3px #14405a inset);
+}
+
+
+// button styles end ==============================================
