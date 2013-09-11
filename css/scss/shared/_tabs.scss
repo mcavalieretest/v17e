@@ -245,8 +245,14 @@
 }
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-tabs {
-  margin-bottom:-10px;
+	margin-bottom:-10px;
+	margin-left: $iconSpaceLeft;
 }
+
+#ibm-com .ibm-tab-section.ibm-text ul.ibm-tabs.ibm-link-list.ibm-inner-list {
+	margin-left: $iconSpaceLeft;	
+}
+
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li.ibm-highlight-tab,
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li.ibm-highlight-link {
@@ -266,8 +272,7 @@
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list,
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list {
-	text-align:left;
-	padding-left:0px;
+	text-align: left;
 }
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li {
@@ -276,16 +281,8 @@
  
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li,
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li {
-	border-right:0px none !important;
-	padding-right:0px !important;
-}
-
-#ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li {
-	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 10px;
-}
-
-#ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li:hover {
-	background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_on.png") no-repeat 0px 10px;
+	border-right: 0 none !important;
+	padding-right: 0 !important;
 }
 
 #ibm-com .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li a {
@@ -342,12 +339,12 @@
 }
 
 #ibm-com .ibm-columns.ibm-graphic-tabs .ibm-col-1-1 {
-	margin: 0px -10px;
+	margin: 0;
 }
 
 #ibm-com .ibm-columns.ibm-graphic-tabs,
 #ibm-com .ibm-container.ibm-graphic-tabs {
-	margin: 0px 10px;
+	margin: 0 10px;
 	padding-bottom: 40px;
 }
 
@@ -378,6 +375,10 @@
 	display: block;
 	padding: 0px;
 	position: relative;
+}
+
+#ibm-com ul.ibm-tabs:after {
+	@include aslett-clearing;
 }
 
 #ibm-com ul.ibm-tabs li {

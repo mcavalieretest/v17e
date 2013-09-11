@@ -154,6 +154,7 @@ a.ibm-ribbon-next:before,
 
 ul li:before,
 .ibm-bullet:before,
+#ibm-top ul li.ibm-highlight-link:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-close:before {
@@ -485,7 +486,6 @@ ul.ibm-error li:before {
 #ibm-content-nav li:before,
 #ibm-primary-links > li:before,
 .ibm-container-controls li:before,
-.ibm-table-navigation li:before,
 .ibm-portlet-controls,
 .ibm-share-this li:before,
 .ibm-link-list li:before,
@@ -496,7 +496,7 @@ ul.ibm-error li:before {
 .ibm-twisty li:before,
 .ibm-stock-list li:before,
 .ibm-portrait-module-list > li:before,
-.ibm-tabs li:before,
+ul.ibm-tabs li:before,
 #ibm-footer li:before {
 	display: none;
 }
