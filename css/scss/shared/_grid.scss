@@ -24,9 +24,17 @@
     margin: 0 -10px;
 }
 
-.ibm-landing-page #ibm-content .ibm-container .ibm-columns {
+/*.ibm-landing-page #ibm-content .ibm-container .ibm-columns {
 	width: auto;
 	margin: 0 -20px;
+}*/
+
+.ibm-landing-page #ibm-content .ibm-container .ibm-columns,
+.ibm-landing-page #ibm-content .ibm-container .ibm-container.ibm-ribbon .ibm-columns {
+	padding: 0;
+}
+.ibm-landing-page #ibm-content .ibm-container.ibm-ribbon .ibm-columns {
+    padding: 0 10px;
 }
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-container .ibm-columns {
@@ -39,8 +47,7 @@
     width: auto; 
 }
 
-#{$ie7Selector} #ibm-top .ibm-columns .ibm-columns,
-#{$ie7Selector} #ibm-content .ibm-playlist .ibm-container-body .ibm-columns {
+#{$ie7Selector} #ibm-top .ibm-columns .ibm-columns {
 	overflow:hidden;
 }
 
