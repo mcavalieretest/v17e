@@ -282,10 +282,10 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 }
 
 // Bold primary buttons
-html[lang="en-US"] [class*="ibm-btn-"][class$="pri"] {
+html[lang="en-US"] [class*="ibm-btn-"][class*="-pri"] {
 	font-family: $defaultHeaderFont;
 }
-[class*="ibm-btn-"][class$="pri"] {
+[class*="ibm-btn-"][class*="-pri"] {
 	font-family: $defaultHeaderFont-dbcs;
 }
 
