@@ -6,17 +6,26 @@ a.ibm-btn-sec {
 	text-decoration: none;	
 }
 
+p.ibm-button-link a,
+p.ibm-button-link-alternate a {
+	font-weight: bold;
+	display: inline-block;
+}
+
 a.ibm-btn-pri,
 a.ibm-btn-sec,
 input[class*="ibm-btn-"][class*="-pri"],
-input[class*="ibm-btn-"][class*="-sec"] {
+input[class*="ibm-btn-"][class*="-sec"],
+p.ibm-button-link a,
+p.ibm-button-link-alternate a {
 	background: #DBDBDB;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
 	@include background-gradient(top, #F5F5F5, #DBDBDB);
 	border: 1px solid #DBDBDB;
 	color: #000;
-	padding: 6px 28px;
-	margin-bottom:20px;
+	text-decoration: none;
+	padding: 5px 20px;
+	margin-bottom: 20px;
 	@include border-radius(5px);
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
 	text-shadow: #FFF 0px 1px 0px;
@@ -27,10 +36,18 @@ input[class*="ibm-btn-"][class*="-sec"] {
 	cursor: pointer;
 }
 
+a.ibm-btn-pri,
+a.ibm-btn-sec,
+p.ibm-button-link a,
+p.ibm-button-link-alternate a {
+	min-width: 80px;
+}
+
 a.ibm-btn-pri:hover,
 a.ibm-btn-sec:hover,
 input[class*="ibm-btn-"][class*="-pri"]:hover,
-input[class*="ibm-btn-"][class*="-sec"]:hover {
+input[class*="ibm-btn-"][class*="-sec"]:hover,
+p.ibm-button-link a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
 	@include background-gradient(top, #FFFFFF, #CBCBCB);
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
@@ -39,7 +56,8 @@ input[class*="ibm-btn-"][class*="-sec"]:hover {
 a.ibm-btn-pri:focus,
 a.ibm-btn-sec:focus,
 input[class*="ibm-btn-"][class*="-pri"]:focus,
-input[class*="ibm-btn-"][class*="-sec"]:focus {
+input[class*="ibm-btn-"][class*="-sec"]:focus,
+p.ibm-button-link a:focus {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
 	@include background-gradient(top, #FFFFFF, #ABABAB);
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
@@ -48,7 +66,8 @@ input[class*="ibm-btn-"][class*="-sec"]:focus {
 a.ibm-btn-pri:active,
 a.ibm-btn-sec:active,
 input[class*="ibm-btn-"][class*="-pri"]:active,
-input[class*="ibm-btn-"][class*="-sec"]:active {
+input[class*="ibm-btn-"][class*="-sec"]:active,
+p.ibm-button-link a:active {
 	color: #515151;
 	padding: 7px 20px;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
@@ -79,7 +98,8 @@ input.ibm-btn-go {
 input.ibm-btn-go:hover  {
 	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -40px;
 }
-input.ibm-btn-go:active, input.ibm-btn-go:focus {
+input.ibm-btn-go:active, 
+input.ibm-btn-go:focus {
 	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -80px;
 }
 input.ibm-btn-view {
@@ -88,7 +108,8 @@ input.ibm-btn-view {
 input.ibm-btn-view:hover {
 	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -160px;
 }
-input.ibm-btn-view:active, input.ibm-btn-view:focus {
+input.ibm-btn-view:active, 
+input.ibm-btn-view:focus {
 	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -200px;
 }
 
@@ -109,7 +130,8 @@ input.ibm-btn-view:active, input.ibm-btn-view:focus {
 	font-size:.8em;
 }
 
-p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
+p.ibm-button-link a.ibm-btn-small, 
+p.ibm-button-link-alternate a.ibm-btn-small{
 	 min-width: 75px !important;
      padding: 4px 10px!important;
 }
@@ -142,38 +164,6 @@ p.ibm-button-link a.ibm-btn-small, p.ibm-button-link-alternate a.ibm-btn-small{
 
 
 // Button links declaration
-p.ibm-button-link a,
-p.ibm-button-link-alternate a {
-	background: #dbdbdb;
-	border: 1px solid #dbdbdb;	
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#dbdbdb');
-	@include background-gradient(top, #f5f5f5, #dbdbdb);
- 	@include border-radius(5px); 
- 	@include box-shadow(0 2px 3px rgba(0,0,0,0.4));
-	color: #000;
-	display: inline-block;
-	font-weight: bold;
-	min-width: 80px;
-	padding: 5px 20px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 0 1px 0 #FFF;
-	white-space: nowrap;
-	margin-bottom: 20px;
-}
-p.ibm-button-link a:hover {
-	background: #cbcbcb;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cbcbcb');
-	@include background-gradient(top, #ffffff, #cbcbcb);
- 	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
-}
-p.ibm-button-link a:active {
-	background: #f5f5f5;
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cbcbcb', endColorstr='#f5f5f5');
-	@include background-gradient(top, #cbcbcb, #f5f5f5);
-	color: #515151;
- 	@include box-shadow(0 1px 3px #c1c1c1 inset);
-}
 
 p.ibm-button-link-alternate a {
 	background: #1b587b;
@@ -183,11 +173,13 @@ p.ibm-button-link-alternate a {
 	color: #FFF;
 	text-shadow: 0 1px 0 #000;
 }
+
 p.ibm-button-link-alternate a:hover {
 	background: #052a41;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32bdf0', endColorstr='#052a41');
 	@include background-gradient(top, #32bdf0, #052a41);
 }
+
 p.ibm-button-link-alternate a:active {
 	background: #0d83b1;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#052a41', endColorstr='#0d83b1');

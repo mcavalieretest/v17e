@@ -165,6 +165,12 @@ strong {
 	@include px-to-rem(line-height,24px);
 }
 
+#ibm-content .ibm-col-6-2,
+#ibm-related-content .ibm-col-6-2 {
+	@include px-to-rem(font-size,15px);
+	@include px-to-rem(line-height,20px);
+}
+
 #ibm-content .ibm-col-4-1,
 #ibm-related-content .ibm-col-4-1 {
 	@include px-to-rem(font-size,15px);
