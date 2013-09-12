@@ -63,6 +63,14 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	box-shadow: $shadows;
 }
 
+@mixin background-btn-gradient($gradients...) {
+	background-image: -webkit-linear-gradient($gradients);
+	background-image: -moz-linear-gradient($gradients);
+	background-image: -o-linear-gradient($gradients);
+	background-image: -ms-linear-gradient($gradients);
+	background-image: linear-gradient($gradients);
+}
+
 @mixin background-gradient($gradients...) {
 	background: -webkit-linear-gradient($gradients);
 	background: -moz-linear-gradient($gradients);

@@ -284,7 +284,11 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 
 // Buttons size
 [class*="ibm-btn-"] {
-	@include px-to-rem(font-size,16px);
+	font-size: 1.05em;
+}
+#ibm-top a.ibm-btn-small, 
+#ibm-top input.ibm-btn-small {
+	font-size: 0.8em;
 }
 
 // Bold primary buttons
