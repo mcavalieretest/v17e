@@ -1,45 +1,41 @@
 // button styles begin ==============================================
 
 a.ibm-btn-pri,
-a.ibm-btn-sec {
-	display: inline-block;
-	text-decoration: none;	
-}
-
-p.ibm-button-link a,
-p.ibm-button-link-alternate a {
-	font-weight: bold;
-	display: inline-block;
-}
-
-a.ibm-btn-pri,
 a.ibm-btn-sec,
 input[class*="ibm-btn-"][class*="-pri"],
 input[class*="ibm-btn-"][class*="-sec"],
-p.ibm-button-link a,
-p.ibm-button-link-alternate a {
+.ibm-button-link a,
+.ibm-button-link-alternate a {
 	background: #DBDBDB;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
 	@include background-gradient(top, #F5F5F5, #DBDBDB);
 	border: 1px solid #DBDBDB;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 	color: #000;
 	text-decoration: none;
 	padding: 5px 20px;
-	margin-bottom: 20px;
 	@include border-radius(5px);
-	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
-	text-shadow: #FFF 0px 1px 0px;
+	@include box-shadow(0 1px 0 rgba(255,255,255,0.3) inset, 0 2px 3px rgba(0,0,0,0.4));
+	text-shadow: #FFF 0 1px 0;
 	min-width: 120px;
 	min-width: 90px\9;
 	*min-width: auto;
+	min-height: 20px;
 	text-align: center;
 	cursor: pointer;
 }
 
 a.ibm-btn-pri,
-a.ibm-btn-sec,
-p.ibm-button-link a,
-p.ibm-button-link-alternate a {
+a.ibm-btn-sec {
+	display: inline-block;
+	text-decoration: none;
+	min-width: 80px;
+}
+
+.ibm-button-link a,
+.ibm-button-link-alternate a {
+	font-weight: bold;
+	display: inline-block;
 	min-width: 80px;
 }
 
@@ -47,27 +43,27 @@ a.ibm-btn-pri:hover,
 a.ibm-btn-sec:hover,
 input[class*="ibm-btn-"][class*="-pri"]:hover,
 input[class*="ibm-btn-"][class*="-sec"]:hover,
-p.ibm-button-link a:hover {
+.ibm-button-link a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
 	@include background-gradient(top, #FFFFFF, #CBCBCB);
-	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
+	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
 }
 
 a.ibm-btn-pri:focus,
 a.ibm-btn-sec:focus,
 input[class*="ibm-btn-"][class*="-pri"]:focus,
 input[class*="ibm-btn-"][class*="-sec"]:focus,
-p.ibm-button-link a:focus {
+.ibm-button-link a:focus {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
 	@include background-gradient(top, #FFFFFF, #ABABAB);
-	@include box-shadow(0px 2px 3px rgba(0,0,0,0.5));
+	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
 }
 
 a.ibm-btn-pri:active,
 a.ibm-btn-sec:active,
 input[class*="ibm-btn-"][class*="-pri"]:active,
 input[class*="ibm-btn-"][class*="-sec"]:active,
-p.ibm-button-link a:active {
+.ibm-button-link a:active {
 	color: #515151;
 	padding: 7px 20px;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
@@ -87,30 +83,36 @@ input::-moz-focus-inner {
 input.ibm-btn-go,
 input.ibm-btn-view {
 	border: 0;
-	padding: 0px;
+	padding: 0;
 	width: 30px;
 	height: 30px;
 	margin-bottom: -13px;
 }
+
 input.ibm-btn-go {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px 0px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 0;
 }
+
 input.ibm-btn-go:hover  {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -40px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 -40px;
 }
+
 input.ibm-btn-go:active, 
 input.ibm-btn-go:focus {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -80px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 -80px;
 }
+
 input.ibm-btn-view {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -120px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 -120px;
 }
+
 input.ibm-btn-view:hover {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -160px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 -160px;
 }
+
 input.ibm-btn-view:active, 
 input.ibm-btn-view:focus {
-	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0px -200px;
+	background:url("#{$imagePath}/i/v17/buttons/btn-sprite.png") no-repeat 0 -200px;
 }
 
 // Small button style
@@ -119,21 +121,15 @@ input.ibm-btn-view:focus {
 	min-width: 96px;
 	min-width: 90px\9;
 	*min-width: auto;
-	font-size:.9em;
+	@include px-to-rem(font-size,12px);
  	@include border-radius(4px); 
- 	@include box-shadow(0px 1px 2px rgba(0,0,0,0.4));
- 	padding:5px;
- 	text-align:center;
+ 	padding: 5px;
 }
 
-.ibm-col-1-1 .ibm-btn-small {
-	font-size:.8em;
-}
-
-p.ibm-button-link a.ibm-btn-small, 
-p.ibm-button-link-alternate a.ibm-btn-small{
-	 min-width: 75px !important;
-     padding: 4px 10px!important;
+#ibm-top .ibm-button-link a.ibm-btn-small, 
+#ibm-top .ibm-button-link-alternate a.ibm-btn-small{
+	 min-width: 75px;
+     padding: 4px 10px;
 }
 
 // End of small button style
@@ -165,7 +161,7 @@ p.ibm-button-link-alternate a.ibm-btn-small{
 
 // Button links declaration
 
-p.ibm-button-link-alternate a {
+.ibm-button-link-alternate a {
 	background: #1b587b;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d83b1', endColorstr='#1b587b');
 	@include background-gradient(top, #0d83b1, #1b587b);
@@ -174,19 +170,18 @@ p.ibm-button-link-alternate a {
 	text-shadow: 0 1px 0 #000;
 }
 
-p.ibm-button-link-alternate a:hover {
+.ibm-button-link-alternate a:hover {
 	background: #052a41;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#32bdf0', endColorstr='#052a41');
 	@include background-gradient(top, #32bdf0, #052a41);
 }
 
-p.ibm-button-link-alternate a:active {
+.ibm-button-link-alternate a:active {
 	background: #0d83b1;
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#052a41', endColorstr='#0d83b1');
 	@include background-gradient(top, #052a41, #0d83b1);
 	color: #FFF;
  	@include box-shadow(0 1px 3px #14405a inset);
 }
-
 
 // button styles end ==============================================
