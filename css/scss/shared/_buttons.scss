@@ -172,11 +172,10 @@ input.ibm-btn-view:focus {
 // Small button style
 #ibm-top a.ibm-btn-small, 
 #ibm-top input.ibm-btn-small {
-	min-width: 96px;
-	min-width: 90px\9;
+	min-width: 75px;
 	*min-width: auto;
  	@include border-radius(4px); 
- 	padding: 5px;
+	padding: 5px;
 }
 
 #ibm-top .ibm-button-link a.ibm-btn-small, 
