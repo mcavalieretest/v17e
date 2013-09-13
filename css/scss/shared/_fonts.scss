@@ -284,7 +284,7 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 
 // Buttons size
 [class*="ibm-btn-"] {
-	font-size: 1.05em;
+	font-size: inherit;
 }
 #ibm-top a.ibm-btn-small, 
 #ibm-top input.ibm-btn-small {
