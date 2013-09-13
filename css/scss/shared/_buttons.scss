@@ -27,7 +27,7 @@ input[class*="ibm-btn-"][class*="-sec"],
 	overflow: hidden;
 	text-overflow: ellipsis;
 	@include box-sizing(border-box);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6EEEEEE',GradientType=0); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($k00)}', endColorstr='#{ie-hex-str($k20)}');
 }
 
 a.ibm-btn-pri,
@@ -46,9 +46,9 @@ a.ibm-btn-pri,
 input[class*="ibm-btn-"][class*="-pri"],
 .ibm-button-link a {
 	background-color: #333;
-	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	border-color: $k10 $k10 $k25;
 	color: #FFF;
-	@include box-shadow(0 1px 0 rgba(255,255,255,.3) inset, 0 1px 3px rgba(0,0,0,.5));
+	@include box-shadow(0 1px 0 $w30 inset, 0 1px 3px $k50);
 	@include text-shadow($emboss-dark);
 }
 
@@ -57,9 +57,9 @@ a.ibm-btn-sec,
 input[class*="ibm-btn-"][class*="-sec"],
 .ibm-button-link-alternate a {
 	background-color: #FFF;
-	border-color: #CCC rgba(0,0,0,.1) rgba(0,0,0,.25);
+	border-color: #CCC $k10 $k25;
 	color: #000;
-	@include box-shadow(0 1px 0 rgba(255,255,255,.3) inset, 0 1px 3px rgba(0,0,0,.5));
+	@include box-shadow(0 1px 0 $w30 inset, 0 1px 3px $k50);
 	@include text-shadow($emboss-light);	
 }
 
@@ -70,10 +70,10 @@ input[class*="ibm-btn-"][class*="-sec"],
 //	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
 //	@include background-gradient(background-image,(top, rgba(255,255,255,.2),rgba(255,255,255,.8)));
 // background-image: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.8));
-	@include background-gradient(background-image,(top, rgba(255,255,255,.1),rgba(0,0,0,.4)));
-	@include box-shadow(0 1px 5px rgba(0,0,0,.5));
+	@include background-gradient(background-image,(top, $w10, $k40));
+	@include box-shadow(0 1px 5px $k50);
 	@include text-shadow($glow);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6CCCCCC',GradientType=0); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($w10)}', endColorstr='#{ie-hex-str($k40)}');
 }
 
 //	!Secondary button hover state
@@ -83,10 +83,10 @@ input[class*="ibm-btn-"][class*="-sec"],
 //	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
 //	@include background-gradient(top, rgba(255,255,255,.2),rgba(255,255,255,.8));
 // background-image: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.8));
-	@include background-gradient(background-image,(top, rgba(255,255,255,.1),rgba(0,0,0,.4)));
-	@include box-shadow(0 1px 5px rgba(0,0,0,.5));
+	@include background-gradient(background-image,(top, $w10, $k40));
+	@include box-shadow(0 1px 5px $k50);
 	@include text-shadow($glow);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6CCCCCC',GradientType=0); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($w10)}', endColorstr='#{ie-hex-str($k40)}');
 }
 
 //	!Primary button focus state
@@ -96,14 +96,14 @@ input[class*="ibm-btn-"][class*="-sec"],
 //	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
 //	@include background-gradient(top, #FFFFFF, #ABABAB);
 //	@include background-gradient(top, rgba(0,0,0,.25),rgba(0,0,0,.1));
-	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));
+	@include box-shadow(0 2px 3px $k50);
 }
 
 //	!Secondary button focus state
 #ibm-content a.ibm-btn-sec:focus,
 #ibm-content input[class*="ibm-btn-"][class*="-sec"]:focus,
 #ibm-content .ibm-button-link-alternate a:focus {
-	@include box-shadow(0 2px 3px rgba(0,0,0,0.5));	
+	@include box-shadow(0 2px 3px $k50);	
 }
 
 //	!Primary button active state
@@ -116,8 +116,8 @@ input[class*="ibm-btn-"][class*="-sec"],
 //	@include background-gradient(top, rgba(255,255,255,.2),rgba(255,255,255,.8));
 	color: rgba(255,255,255,.8);
 	text-shadow: none;
-	@include background-gradient(background-image,(top, rgba(0,0,0,.25),rgba(0,0,0,.1)));
-	@include box-shadow(inset 0 0 5px rgba(0,0,0,.5));
+	@include background-gradient(background-image,(top, $k25, $k10));
+	@include box-shadow(inset 0 0 5px $k50);
 }
 
 //	!Secondary button active state
@@ -126,8 +126,8 @@ input[class*="ibm-btn-"][class*="-sec"],
 #ibm-content .ibm-button-link-alternate a:active {
 	color: rgba(0,0,0,.8);
 	text-shadow: none;
-	@include background-gradient(background-image,(top, rgba(0,0,0,.25),rgba(0,0,0,.1)));
-	@include box-shadow(inset 0 0 5px rgba(0,0,0,.5));
+	@include background-gradient(background-image,(top, $k25, $k10));
+	@include box-shadow(inset 0 0 5px $k50);
 }
 
 input::-moz-focus-inner {
