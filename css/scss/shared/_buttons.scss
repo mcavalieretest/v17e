@@ -62,6 +62,19 @@ input[class*="ibm-btn-"][class*="-sec"],
 	@include text-shadow($emboss-light);
 }
 
+#{$ie9Selector} a.ibm-btn-sec,
+#{$ie8Selector} a.ibm-btn-sec,
+#{$ie7Selector} a.ibm-btn-sec,
+#{$ie9Selector} input[class*="ibm-btn-"][class*="-sec"],
+#{$ie8Selector} input[class*="ibm-btn-"][class*="-sec"],
+#{$ie7Selector} input[class*="ibm-btn-"][class*="-sec"],
+#{$ie9Selector} .ibm-button-link-alternate a,
+#{$ie8Selector} .ibm-button-link-alternate a,
+#{$ie7Selector} .ibm-button-link-alternate a {
+	background-color: #EEE;
+}
+
+
 //	!Primary button hover state
 #ibm-content a.ibm-btn-pri:hover,
 #ibm-content input[class*="ibm-btn-"][class*="-pri"]:hover,
