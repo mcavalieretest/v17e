@@ -2,8 +2,7 @@
 
 .ibm-button-link,
 .ibm-button-link-alternate {
-	display: inline-block;
-	padding: 0 !important;
+	display: inline;
 }
 
 a.ibm-btn-pri,
@@ -17,6 +16,7 @@ input[class*="ibm-btn-"][class*="-sec"],
 	text-decoration: none;
 	padding: .43em 1.24em .44em;
 	@include border-radius(5px);
+	max-width: 100%;
 	min-width: 120px;
 	min-width: 90px\9;
 	*min-width: auto;
@@ -26,38 +26,8 @@ input[class*="ibm-btn-"][class*="-sec"],
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-width: inherit;
 	@include box-sizing(border-box);
 }
-
-.ibm-col-5-1 a.ibm-btn-pri,
-.ibm-col-5-1 a.ibm-btn-sec,
-.ibm-col-5-1 input[class*="ibm-btn-"][class*="-pri"],
-.ibm-col-5-1 input[class*="ibm-btn-"][class*="-sec"],
-.ibm-col-5-1 .ibm-button-link a,
-.ibm-col-5-1 .ibm-button-link-alternate a {
-	max-width: 172px;
-}
-
-.ibm-col-6-1 a.ibm-btn-pri,
-.ibm-col-6-1 a.ibm-btn-sec,
-.ibm-col-6-1 input[class*="ibm-btn-"][class*="-pri"],
-.ibm-col-6-1 input[class*="ibm-btn-"][class*="-sec"],
-.ibm-col-6-1 .ibm-button-link a,
-.ibm-col-6-1 .ibm-button-link-alternate a {
-	max-width: 140px;
-}
-
-.ibm-col-6-2 a.ibm-btn-pri,
-.ibm-col-6-2 a.ibm-btn-sec,
-.ibm-col-6-2 input[class*="ibm-btn-"][class*="-pri"],
-.ibm-col-6-2 input[class*="ibm-btn-"][class*="-sec"],
-.ibm-col-6-2 .ibm-button-link a,
-.ibm-col-6-2 .ibm-button-link-alternate a {
-	max-width: 300px;
-}
-
-
 
 a.ibm-btn-pri,
 a.ibm-btn-sec {
