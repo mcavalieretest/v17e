@@ -18,7 +18,7 @@
 	background: #000;
 	overflow: hidden;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#585B62', endColorstr='#1E1E20');
-	@include background-gradient(top, #585B62, #1E1E20);
+	@include background-gradient(background,(top, #585B62, #1E1E20));
 	height: 35px;
 	border-top: 1px solid #9699A2;
 	border-bottom: 1px solid #0B0B0B;
@@ -67,7 +67,7 @@
 	top: 30px;
 	background:#000;
 	// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282828', endColorstr='#000000');
-	@include background-gradient(top, #282828, #000000);
+	@include background-gradient(background,(top, #282828, #000000));
 	border-radius: 0 3px 3px 3px;
 	border: 1px solid #404040;
   	@include box-shadow(2px 2px 4px -2px rgba(0,0,0,.8), -2px 2px 4px -2px rgba(0,0,0,.8));
@@ -103,7 +103,7 @@
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home .ibm-logo-subnav a:hover {
 	background: #333;
 	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3B3B3B', endColorstr='#2A2A2A');*/
-	@include background-gradient(top, #3B3B3B, #2A2A2A);
+	@include background-gradient(background,(top, #3B3B3B, #2A2A2A));
 }
 
 .ibm-application #ibm-masthead #ibm-universal-nav li#ibm-home .ibm-logo-subnav li.ibm-first a {
@@ -245,7 +245,7 @@
 .ibm-application #ibm-masthead #ibm-common-menu {
 	background-color: #DDD;
 	*background:none;
-	@include background-gradient(#DDDDDD, #F1F1F1);
+	@include background-gradient(background,(#DDD, #F1F1F1));
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#DDDDDD',EndColorStr='#F1F1F1');
 	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(StartColorStr='#DDDDDD',EndColorStr='#F1F1F1')";  
 	border-top: 0;
@@ -301,7 +301,7 @@
 .ibm-application #ibm-masthead .ibm-menu-subtabs {
 	background-color: #CCC;
 	*background: none;
-	@include background-gradient(#CCCCCC, #EDEDED);
+	@include background-gradient(background,(#CCC, #EDEDED));
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EDEDED');
 	border-bottom: 1px solid #B2B2B2;
 	height: 39px;
@@ -393,7 +393,7 @@
 }
 
 .ibm-application #ibm-footer {
-	@include background-gradient(#585B62, #1E1E20);
+	@include background-gradient(background,(#585B62, #1E1E20));
 	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#585B62',EndColorStr='#1E1E20'); 
 	padding-top: 0;
 	line-height: 27px;

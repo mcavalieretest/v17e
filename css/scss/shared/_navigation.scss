@@ -110,8 +110,7 @@ filter: none;
     *zoom: 1;
     border-top: 1px solid #f4f4f5;
     border-bottom: 1px solid #d7d7d8;
-      _height: 1%;
-
+	_height: 1%;
 }
 
 #ibm-navigation #ibm-primary-links a:hover {
@@ -119,15 +118,15 @@ filter: none;
 	background-color: #9c9c9c;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC')";
 	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#DFE2E4', endColorstr='#C7C9CC');
-	@include background-gradient(top, #DFE2E4, #C7C9CC);
+	@include background-gradient(background,(top, #DFE2E4, #C7C9CC));
 	color: #000;
-	text-shadow: 0px 1px 0px #fff;
+	text-shadow: 0px 1px 0px #FFF;
 	border-top-color: #e5e7e9;
 }
 
 #ibm-navigation #ibm-primary-links a:focus {
      background: none;
-    background-color: #fff;
+    background-color: #FFF;
     color: #111;
 }
 
@@ -135,7 +134,7 @@ filter: none;
     padding: 8px 14px 7px 8px;
     margin-left: -1px; /* needed for A to span over side borders of LI*/
     margin-right: -1px; /* needed for A to span over side borders of LI*/
-    color: #fff;
+    color: #FFF;
     background: url("#{$imagePath}/i/v17/t/left_nav_chevron_sprite.png") no-repeat 154px -424px #485159; /* absolution position of BG image needs to be set because of negative margin offset */
 	@include background-image-gradient(url("#{$imagePath}/i/v17/t/left_nav_chevron_sprite.png"), no-repeat 155px -424px, top, #485159, #A2A9B2);
     text-shadow: none;
@@ -146,7 +145,7 @@ filter: none;
 #ibm-navigation #ibm-primary-links > li > a.ibm-active,
 #ibm-navigation #ibm-primary-links li a.ibm-is-active + ul,
 #ibm-navigation #ibm-primary-links li a.ibm-active + ul {
-    background: #fff;
+    background: #FFF;
     color: #000;
 }
 
@@ -267,10 +266,10 @@ filter: none;
     background-color: #9c9c9c;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#b9bdc3', endColorstr='#62676b')";
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b9bdc3', endColorstr='#62676b');
-	@include background-gradient(top, #b9bdc3, #62676b);
+	@include background-gradient(background,(top, #b9bdc3, #62676b));
     text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     border: 0px;
-    color: #fff;
+    color: #FFF;
     margin-left: 0;
     margin-right: 0;
     padding: 7px 6px 6px 7px;

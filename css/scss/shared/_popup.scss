@@ -30,7 +30,7 @@
 
 .ibm-popup #ibm-masthead {
 	background: #000;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64',endColorstr='#1B1B1C');
-	@include background-gradient(top, #595C64, #1B1B1C);
+	@include background-gradient(background,(top, #595C64, #1B1B1C));
 	border-bottom: medium none;
 	height: 32px;
 	min-width: 390px;

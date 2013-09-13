@@ -60,11 +60,6 @@ table.ibm-data-table th {
 	vertical-align: top;
 }
 
-#ibm-content table.ibm-data-table td ul li {
-    background: url("#{$imagePath}/i/v17/bullets/ibm_bullet_grey_off.png") no-repeat 0px 12px transparent;
-    padding-left: 10px;
-}
-
 table.ibm-data-table thead th.ibm-sort-down a span.ibm-icon {
 	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_tables_blue_OFF.png") no-repeat 100% -201px;
 }
@@ -334,13 +329,13 @@ table.ibm-results-table h2 {
 	color: #556270;
 	border: 1px solid #ddd;
 	padding: 6px 5px 5px 5px;
-	@include background-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	@include background-gradient(background,(top, #FFF 0%, #F0F0F0 100%));
 }
 
 .ibm-table-navigation.ibm-dark a {
 	color: #FFF;
 	@include text-shadow($emboss-dark);
-	@include background-gradient(top, #556270 0%, #444d57 100%);
+	@include background-gradient(background,(top, #556270 0%, #444d57 100%));
 }
 
 .ibm-table-navigation p {
@@ -355,11 +350,11 @@ table.ibm-results-table h2 {
 
 .ibm-table-navigation a:hover {
 	text-decoration: none;
-	@include background-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
+	@include background-gradient(background,(top, #FFF 0%, #E6E6E6 100%));
 }
 
 .ibm-table-navigation.ibm-dark a:hover {
-	@include background-gradient(top, #556270 0%, #5b6774 100%);
+	@include background-gradient(background,(top, #556270 0%, #5b6774 100%));
 }
 /* Pagination code end ===========================*/
 

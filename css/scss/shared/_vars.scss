@@ -63,20 +63,18 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	box-shadow: $shadows;
 }
 
-@mixin background-btn-gradient($gradients...) {
-	background-image: -webkit-linear-gradient($gradients);
-	background-image: -moz-linear-gradient($gradients);
-	background-image: -o-linear-gradient($gradients);
-	background-image: -ms-linear-gradient($gradients);
-	background-image: linear-gradient($gradients);
+@mixin box-sizing($sizings...) {
+	-webkit-box-sizing: $sizings;
+	-moz-box-sizing: $sizings;
+	box-sizing: $sizings;
 }
 
-@mixin background-gradient($gradients...) {
-	background: -webkit-linear-gradient($gradients);
-	background: -moz-linear-gradient($gradients);
-	background: -o-linear-gradient($gradients);
-	background: -ms-linear-gradient($gradients);
-	background: linear-gradient($gradients);
+@mixin background-gradient($style,$gradients...) {
+	#{$style}: -webkit-linear-gradient($gradients);
+	#{$style}: -moz-linear-gradient($gradients);
+	#{$style}: -o-linear-gradient($gradients);
+	#{$style}: -ms-linear-gradient($gradients);
+	#{$style}: linear-gradient($gradients);
 }
 
 @mixin background-image-gradient($image-url, $image-position, $gradient-position, $gradient-color1, $gradient-color2) {

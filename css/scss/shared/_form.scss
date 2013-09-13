@@ -76,7 +76,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     font-style: normal;
     background-color: transparent\9; /* IE9 and below gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#FFFFFF');
-	@include background-gradient(top, #E5E5E5, #FFFFFF);
+	@include background-gradient(background,(top, #E5E5E5, #FFF));
 }
 
 .v17 #ibm-content input[type="text"].ibm-alt-inputsize-medium,
@@ -89,14 +89,15 @@ form.ibm-column-form .dijitTextBox INPUT{
     width:85px;
 }
 
-.v17 #ibm-content select:focus,.v17 .dijitDialog select:focus{
+.v17 #ibm-content select:focus,
+.v17 .dijitDialog select:focus{
 	border: 1px solid #CCC;
     color: #333;
    /** background: #E5E5E5;***/
     font-style: normal;
     background-color: transparent\9; /* IE9 and below gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E5E5E5', endColorstr='#FFFFFF');
-	@include background-gradient(top, #E5E5E5, #FFFFFF);
+	@include background-gradient(background,(top, #E5E5E5, #FFF));
 }
 
 
@@ -121,7 +122,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     background-color: #D8D8D8;
     background-color: transparent\9; /* IE9 and below gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2F2F2', endColorstr='#D8D8D8');
-	@include background-gradient(top, rgba(242,242,242,0.2), rgba(216,216,216,0.5));
+	@include background-gradient(background,(top, rgba(242,242,242,0.2), rgba(216,216,216,0.5)));
 	@include border-radius(3px);
     color: #333;
     text-decoration: none;
@@ -223,7 +224,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     background: #D8D8D8;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2F2F2', endColorstr='#D8D8D8');
-   	@include background-gradient(top, rgba(242,242,242,0.8), rgba(216,216,216,0.8));
+   	@include background-gradient(background,(top, rgba(242,242,242,0.8), rgba(216,216,216,0.8)));
     color: #000;
     text-shadow: 0 1px 0 #FFF;
 }
@@ -246,7 +247,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     background: #D8D8D8;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2F2F2', endColorstr='#D8D8D8');
-   	@include background-gradient(top, rgba(242,242,242,0.8), rgba(216,216,216,0.8));
+   	@include background-gradient(background,(top, rgba(242,242,242,0.8), rgba(216,216,216,0.8)));
     color: #000;
     text-shadow: 0 1px 0 #FFF;
 }
@@ -381,7 +382,7 @@ There are three areas of styling for the Menu:
     background: #1B2125;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63686E', endColorstr='#1B2125');
-	@include background-gradient(top, #63686E 0px, #1B2125 56px);
+	@include background-gradient(background,(top, #63686E 0px, #1B2125 56px));
 }
 
 /* hover over a MenuBarItem */
@@ -407,7 +408,7 @@ There are three areas of styling for the Menu:
     background: #000;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#535353', endColorstr='#0D0D0D');
-	@include background-gradient(top, #535353, #0D0D0D);
+	@include background-gradient(background,(top, #535353, #0D0D0D));
 }
 
 
@@ -1243,7 +1244,7 @@ form .ibm-checkbox-layout input {
 	background: #F1F1F1;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#F1F1F1');
-	@include background-gradient(top, #FFFFFF, #F1F1F1);
+	@include background-gradient(background,(top, #FFF, #F1F1F1));
 	height: 100%;
 }
 
@@ -1553,7 +1554,7 @@ form .ibm-checkbox-layout input {
     width: 100px;
 	background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#F5F5F5');
-	@include background-gradient(top, #FCFCFC, #F5F5F5);
+	@include background-gradient(background,(top, #FCFCFC, #F5F5F5));
 	padding: 0 3px 0 2px;
 	border: solid 1px #ddd;
 	@include border-radius(4px);
@@ -1572,7 +1573,7 @@ form .ibm-checkbox-layout input {
 .v17 .dijitCalendar .dijitDropDownButton:hover .dijitButtonNode {
 	background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3F3F3', endColorstr='#E1E1E1');
-	@include background-gradient(top, #F3F3F3, #E1E1E1);
+	@include background-gradient(background,(top, #F3F3F3, #E1E1E1));
 	padding: 0 3px 0 2px;
 	border: solid 1px #CCC;
 }
@@ -1587,7 +1588,7 @@ form .ibm-checkbox-layout input {
 .v17 .dijitCalendarMonthMenu {
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62676d', endColorstr='#383d42');
-	@include background-gradient(top, #62676d, #383d42);
+	@include background-gradient(background,(top, #62676d, #383d42));
     padding: 5px 0;
 	border: 5px solid rgba(255,255,255,0.95);
 }
@@ -1614,7 +1615,7 @@ form .ibm-checkbox-layout input {
 	border-bottom: solid 1px #cfcfcf;
 	background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#515151', endColorstr='#121212');
-	@include background-gradient(top, #515151, #121212);
+	@include background-gradient(background,(top, #515151, #121212));
 }
 
 
@@ -1731,7 +1732,7 @@ form .ibm-checkbox-layout input {
     border: 1px solid #CBCBCB;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DBDBDB');
-	@include background-gradient(top, #F5F5F5, #DBDBDB);
+	@include background-gradient(background,(top, #F5F5F5, #DBDBDB));
 	@include box-shadow(0px 2px 3px rgba(0,0,0,0.4));
 }
 

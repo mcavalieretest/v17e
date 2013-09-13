@@ -20,7 +20,7 @@
 
 	// transitions effects
 
-	.grad-k95-85 { @include background-gradient(top, $k95, $k85); }
+	.grad-k95-85 { @include background-gradient(background,(top, $k95, $k85)); }
 
 	// Background colors
 	.bgc-white { background-color : $white}

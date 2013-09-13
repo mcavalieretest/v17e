@@ -343,7 +343,7 @@ a.ibm-thumbnail-module h3 {
 		font-family: $defaultFont;
 		-webkit-appearance: none;
 		-moz-appearance: none;
-		@include background-gradient(top, #FFFEFB, #EFF0EF);
+		@include background-gradient(background,(top, #FFFEFB, #EFF0EF));
 		border-radius: 5px;
 		appearance: none;
 		border: 1px solid rgba(0,0,0,0.15);
