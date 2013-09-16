@@ -147,48 +147,6 @@ ol {
 	min-height: 70px;
 }
 
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content-head ul#ibm-navigation-trail {
-    height: 1%;
-    text-shadow: none;
-    padding: 10px 0 0 0;
-    position: relative#{$ie9Hack};
-    *position: relative;
-}
-
-#ibm-navigation-trail:after {
-	@include aslett-clearing;
-}
-
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content-head ul#ibm-navigation-trail {
-	margin: 0 10px;
-}
-#ibm-content-head ul#ibm-navigation-trail li.ibm-first,
-#ibm-content-head ul#ibm-navigation-trail li:first-child {
-	padding-left: 0;
-}
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li,
-#ibm-content-head ul#ibm-navigation-trail li {
-    background: url("#{$imagePath}/i/v17/t/nav-trail.gif") no-repeat 99% 5px;
-    display: inline;
-    float: left;
-	clear: none;
-    margin: 0;
-    padding: 0 16px 0 2px;
-}
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,
-#ibm-content-head ul#ibm-navigation-trail li a:link, 
-#ibm-content-head ul#ibm-navigation-trail li a:visited {
-    color: #666;
-    text-decoration: none;
-}
-
 // Ordered list definition + ibm-alpha-list + ibm-roman-list
 
 #ibm-content ol.ibm-alpha-list {
@@ -235,11 +193,6 @@ ol {
 
 
 //End of OL definition
-
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:hover,
-#ibm-content-head ul#ibm-navigation-trail li a:hover {
-	text-decoration: underline;	
-}
 
 .ibm-landing-page #ibm-content .ibm-columns .ibm-container h2 {
     display: block;
@@ -746,9 +699,6 @@ div.ibm-alternate-rule-2 hr {
 	padding: 10px 10px 0 !important;
 }
 
-
-
-
 #ibm-content #ibm-leadspace-head img{
 	padding-left: 10px;
 	padding-top: 20px;
@@ -770,10 +720,6 @@ div.ibm-alternate-rule-2 hr {
 
 // end of small leadspace image
 
-#ibm-content-head #ibm-navigation-trail + h1 {
-	padding-top: 0;
-}
-
 #ibm-content-head p {
     padding: 0 10px;
 	clear: both;
@@ -783,7 +729,6 @@ div.ibm-alternate-rule-2 hr {
 #ibm-content-head img {
 	margin: 10px 10px 0;
 }
-
 
 
 #ibm-leadspace.ibm-intro img {
