@@ -67,8 +67,6 @@ input[class*="ibm-btn-"][class*="-sec"],
 #ibm-content a.ibm-btn-pri:hover,
 #ibm-content input[class*="ibm-btn-"][class*="-pri"]:hover,
 #ibm-content .ibm-button-link a:hover {
-//	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
-//	@include background-gradient(background-image,(top, rgba(255,255,255,.2),rgba(255,255,255,.8)));
 // background-image: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.8));
 	@include background-gradient(background-image,(top, $w10, $k40));
 	@include box-shadow(0 1px 5px $k50);
@@ -80,8 +78,6 @@ input[class*="ibm-btn-"][class*="-sec"],
 #ibm-content a.ibm-btn-sec:hover,
 #ibm-content input[class*="ibm-btn-"][class*="-sec"]:hover,
 #ibm-content .ibm-button-link-alternate a:hover {
-//	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#CBCBCB');
-//	@include background-gradient(top, rgba(255,255,255,.2),rgba(255,255,255,.8));
 // background-image: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.8));
 	@include background-gradient(background-image,(top, $w10, $k40));
 	@include box-shadow(0 1px 5px $k50);
@@ -93,7 +89,6 @@ input[class*="ibm-btn-"][class*="-sec"],
 #ibm-content a.ibm-btn-pri:focus,
 #ibm-content input[class*="ibm-btn-"][class*="-pri"]:focus,
 #ibm-content .ibm-button-link a:focus {
-//	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#ABABAB');
 //	@include background-gradient(top, #FFFFFF, #ABABAB);
 //	@include background-gradient(top, rgba(0,0,0,.25),rgba(0,0,0,.1));
 	@include box-shadow(0 2px 3px $k50);
@@ -110,10 +105,6 @@ input[class*="ibm-btn-"][class*="-sec"],
 #ibm-content a.ibm-btn-pri:active,
 #ibm-content input[class*="ibm-btn-"][class*="-pri"]:active,
 #ibm-content .ibm-button-link a:active {
-//	color: #515151;
-//	padding: 7px 20px;
-//	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CBCBCB', endColorstr='#F5F5F5');
-//	@include background-gradient(top, rgba(255,255,255,.2),rgba(255,255,255,.8));
 	color: rgba(255,255,255,.8);
 	text-shadow: none;
 	@include background-gradient(background-image,(top, $k25, $k10));
