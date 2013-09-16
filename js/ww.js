@@ -20,10 +20,57 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
 jQuery.noConflict();
 
-/*
 jQuery(function() {
 
-	jQuery.getScript('http://1.www.s81c.com/common/js/dojo/www.js');
+	var ibmcom = {
+    
+        mobTabs: function () {
         
+        // Check if primary tabs exists
+        if(jQuery('#ibm-primary-tabs').length)
+
+		jQuery("#ibm-primary-tabs").addClass("ibm-no-mobile").after('<div id="ibm-mobile-tabs" class="ibm-mobile"><select></select></div>');
+
+		// Loop through each link under primary tabs and convert it to a dropdown list
+		jQuery('#ibm-primary-tabs li').each(function(){
+		
+			var selectedLink = jQuery(this).hasClass('ibm-active');
+			
+			if(selectedLink) {
+				selectedLink = 'selected="selected"'
+				}
+			else {
+				selectedLink = '';
+				}
+		
+			jQuery('#ibm-mobile-tabs select').append('<option ' + 
+			
+			selectedLink + 
+
+			' value="' + jQuery(this).find("a").attr('href') + '">' + 
+			jQuery(this).find("a").text() + 
+			'</option>');
+			
+			// check for change on dropdown list and submit value to window.location
+			jQuery('#ibm-mobile-tabs select').change(
+			
+			function(){
+				window.location = jQuery(this).val();
+			 });
+			
+		});
+        
+        },
+
+        init: function () {
+        
+        	// init primary tabs to dropdown list function
+			ibmcom.mobTabs();
+			
+        }
+
+    }; 
+
+ibmcom.init();
+
 });
-*/
