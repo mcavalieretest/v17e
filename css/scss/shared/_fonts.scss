@@ -1,74 +1,5 @@
 // fonts styles ============================================ 
 
-/*!
-Do not attempt to copy, install or redistribute 
-these fonts. */
-
-// SIMPLER NAMES
-
-// LubalinDemiIBM = Lubalin-Medium
-// LubalinGraphStdBookIBM = Lubalin-Book
-
-// HelvLightIBM = Helvetica-Light
-// HelvRegularIBM = Helvetica-Regular
-// HelvBoldIBM = Helvetica-Bold
-
-@font-face {
-    font-family: 'LubalinDemiIBM';
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot'); /* IE9 Compat Modes */
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.woff') format('woff'), /* Modern Browsers */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.svg#LubalinDemiIBM') format('svg'); /* Legacy iOS */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LubalinGraphStdBookIBM';
-    src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot');
-    src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.woff') format('woff'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.svg#LubalinGraphStdBookIBM') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvLightIBM';
-    src: url('#{$fontPath}/helvneueforibm-light-webfont.eot');
-    src: url('#{$fontPath}/helvneueforibm-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.woff') format('woff'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.svg#HelvLightIBM') format('svg');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvRegularIBM';
-    src: url('#{$fontPath}/helveticaneue-webfont.eot');
-    src: url('#{$fontPath}/helveticaneue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helveticaneue-webfont.woff') format('woff'),
-         url('#{$fontPath}/helveticaneue-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helveticaneue-webfont.svg#HelvRegularIBM') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvBoldIBM';
-    src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot');
-    src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.woff') format('woff'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.svg#HelvBoldIBM') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 @font-face {
     font-family: 'iconsIBM';
     src: url('#{$fontPath}/icons-ibm-v1_1.eot');
@@ -94,22 +25,11 @@ these fonts. */
 */
 
 // v17e font styles begin ============================================
-html[lang="en-US"] body {
-	font-family: $defaultFont;
-}
 body {
 	font-family: $defaultFont-dbcs;
 	font-weight: 300;
 }
 
-
-html[lang="en-US"] h1,
-html[lang="en-US"] h2,
-html[lang="en-US"] h3,
-html[lang="en-US"] h4,
-html[lang="en-US"] strong {
-	font-family: $defaultHeaderFont;
-}
 h1,
 h2,
 h3,
@@ -201,10 +121,6 @@ strong {
 	@include px-to-rem(font-size,11.2px);	
 }
 
-html[lang="en-US"] #ibm-navigation #ibm-overview a,
-html[lang="en-US"] #ibm-navigation .ibm-active {
-	font-family: $defaultHeaderFont;
-}
 #ibm-navigation #ibm-overview a,
 #ibm-navigation .ibm-active {
 	font-family: $defaultHeaderFont-dbcs;
@@ -253,10 +169,6 @@ html[lang="en-US"] #ibm-navigation .ibm-active {
 	@include px-to-rem(font-size,14px);	
 }
 
-html[lang="en-US"] #ibm-content-head em, 
-html[lang="en-US"] #ibm-content #ibm-leadspace-head em {
-	font-family: $defaultHeaderFont;
-}
 #ibm-content-head em, 
 #ibm-content #ibm-leadspace-head em {
 	font-family: $defaultHeaderFont-dbcs;
@@ -264,17 +176,10 @@ html[lang="en-US"] #ibm-content #ibm-leadspace-head em {
 	color: #666;
 }
 
-html[lang="en-US"] .ibm-landing-page #ibm-leadspace-head p em span {
-	font-family: $defaultHeaderFont;
-}
 .ibm-landing-page #ibm-leadspace-head p em span {
 	font-family: $defaultHeaderFont-dbcs;
 }
 
-html[lang="en-US"] #ibm-content-nav #ibm-primary-tabs a,
-html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
-	font-family: "HelvRegularIBM",Arial,sans-serif;
-}
 #ibm-content-nav #ibm-primary-tabs a,
 #ibm-content-nav #ibm-secondary-tabs a {
 	font-family: $defaultFont-dbcs;
@@ -292,9 +197,6 @@ html[lang="en-US"] #ibm-content-nav #ibm-secondary-tabs a {
 }
 
 // Bold primary buttons
-html[lang="en-US"] [class*="ibm-btn-"][class*="-pri"] {
-	font-family: $defaultHeaderFont;
-}
 [class*="ibm-btn-"][class*="-pri"] {
 	font-family: $defaultHeaderFont-dbcs;
 }
@@ -316,10 +218,6 @@ html[lang="en-US"] [class*="ibm-btn-"][class*="-pri"] {
 	@include px-to-rem(font-size,13px);
 }
 
-html[lang="en-US"] table caption em,
-html[lang="en-US"] table th {
-	font-family: $defaultHeaderFont;
-}
 table caption em,
 table th {
 	font-family: $defaultHeaderFont-dbcs;
@@ -362,11 +260,6 @@ p.ibm-table-scroll-caption {
 	font-family: Georgia;
 }
 
-html[lang="en-US"] .ibm-pull-quote.ibm-alternate-font blockquote p,
-html[lang="en-US"] .ibm-pullquote-open.ibm-alternate-font, 
-html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
-	font-family: $defaultFont;
-}
 .ibm-pull-quote.ibm-alternate-font blockquote p,
 .ibm-pullquote-open.ibm-alternate-font, 
 .ibm-pullquote-close.ibm-alternate-font {
@@ -391,12 +284,6 @@ html[lang="en-US"] .ibm-pullquote-close.ibm-alternate-font {
 	@include px-to-rem(font-size,11px);
 }
 // Content styles =======================
-
-
-
-
-
-
 
 
 // Footer font=============================
