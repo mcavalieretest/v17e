@@ -100,6 +100,7 @@
 #ibm-mobile-tabs:after,
 [class*="-link"]:before,
 #ibm-parent-link a:before,
+#ibm-navigation-trail li:after,
 ul li:before,
 .ibm-bullet:before,
 .ibm-cta-arrow-sm:before,
@@ -154,6 +155,7 @@ a.ibm-ribbon-next:before,
 
 ul li:before,
 .ibm-bullet:before,
+#ibm-navigation-trail li:after,
 #ibm-top ul li.ibm-highlight-link:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
@@ -395,6 +397,7 @@ a.ibm-ribbon-prev:before { content: "\00a0\f12d\00a0"; }
 a.ibm-ribbon-prev:hover:before { content: "\00a0\f12e\00a0"; }
 a.ibm-ribbon-next:active:before,
 a.ibm-ribbon-next:focus:before { content: "\00a0\f12f\00a0"; }
+#ibm-navigation-trail li:after,
 a.ibm-ribbon-next:before { content: "\00a0\f130\00a0"; }
 a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 .ibm-firstpage-link:before { content: "\00a0\f132\00a0" ; }
@@ -462,6 +465,7 @@ a.ibm-ribbon-next:hover:before { content: "\00a0\f131\00a0"; }
 
 // !bullet colors start
 #ibm-parent-link a:before,
+#ibm-navigation-trail li:after,
 ul li:before,
 ul.ibm-link-list.ibm-alternate a:before,
 ul.ibm-link-list.ibm-alternate a:after,
