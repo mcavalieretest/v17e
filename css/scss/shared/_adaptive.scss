@@ -404,13 +404,17 @@ a.ibm-thumbnail-module h3 {
 
 	.ibm-landing-page #ibm-content-main > p,
 	.ibm-landing-page #ibm-content-main > h2,
-	.ibm-landing-page #ibm-content-main > h3,
-	#ibm-content-sidebar {
+	.ibm-landing-page #ibm-content-main > h3 {
 		width: 280px;
 	}
 
 	.ibm-landing-page#ibm-top .ibm-container .ibm-columns {
 		width: 300px;
+	}
+	
+	#ibm-content .ibm-columns .ibm-col-2-1 {
+		width: 300px;
+		margin: 0;
 	}
 
 	#ibm-com #ibm-top {
@@ -449,21 +453,20 @@ a.ibm-thumbnail-module h3 {
 		}
 	}
 
+	#ibm-com #ibm-top .ibm-columns .ibm-columns {
+		padding: 0;
+	}
+
 	//Default template styles
 	#ibm-pcon,
-	#ibm-footer-module .ibm-columns {
- 		width: 300px;
- 		padding: 0 10px;
- 	}
- 		
- 	#ibm-content-main {
-		float:none;
-		width:300px;
+	#ibm-content-main {
+		width: 320px;
+		padding: 0;
 	}
 	
 	#ibm-content #ibm-leadspace-head h1,
 	#ibm-content #ibm-leadspace-head p {
-		padding:10px 0 !important;
+		padding: 10px 0 !important;
 	
 	}
 	
@@ -472,6 +475,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	#ibm-content-sidebar {
+		width: 300px;
 		margin: 0 10px;
 	}
 
