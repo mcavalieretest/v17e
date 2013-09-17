@@ -412,7 +412,7 @@ a.ibm-thumbnail-module h3 {
 		width: 300px;
 	}
 
-	.ibm-landing-page#ibm-top {
+	#ibm-top {
 	
 		.ibm-columns {
 			width: 300px;
@@ -464,18 +464,6 @@ a.ibm-thumbnail-module h3 {
 	#ibm-content #ibm-leadspace-head p {
 		padding:10px 0 !important;
 	
-	}
-	
-	#ibm-content .ibm-columns {
-		.ibm-col-1-1,
-		.ibm-col-2-1,
-		.ibm-col-5-1,
-		.ibm-col-5-2,
-		.ibm-col-5-3,
-		.ibm-col-5-4,
-		.ibm-col-6-1 {
-				width:280px;
-			}
 	}
 	
 	#ibm-navigation {
@@ -560,8 +548,7 @@ a.ibm-thumbnail-module h3 {
 	}
 		
 	// Begin footer test updates
-	.ibm-landing-page #ibm-footer-module .ibm-columns,
-	#ibm-footer-module .ibm-columns {
+	#ibm-top #ibm-footer-module .ibm-columns {
 				
 		.ibm-col-6-1 {
 			@include px-to-rem(font-size,11.2px);
