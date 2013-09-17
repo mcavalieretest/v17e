@@ -1,0 +1,41 @@
+/*! 
+ * Name: ibm.com v17e fonts CSS file
+ * Version: 1.0
+ * Owner: Corporate Webmaster (NUS_N_NIWWW)
+ * Copyright (c) 2013 IBM Corporation
+ */
+ 
+// URI: www.ibm.com/common/v17e/css/fonts.css
+// Description: Official SASS latin font files for v17e project
+// Date: Sept 17, 2013
+//
+// Notes:
+//   Add "ibm-adapt" class to modules that change under different viewport
+//   Use ".ibm_cci-" class prefix for site specific custom code
+ 
+// The contents are auto-created from individual files
+// listed below. Use a SASS compiler to create the fonts.css file.
+
+
+/*  v17e latin fonts SASS structure map...
+
+css/
+|
+|-- scss/
+|   |-- shared/					# shared modules
+|   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _custom-fonts.scss	# fonts
+|   |   ...
+|   ...
+|
+`-- fonts.scss					# latin fonts SASS file
+*/
+
+
+
+// The v17e output build (ww.css) can be controlled by adjusting the import references below...
+// imports ============================================
+
+@import "scss/shared/vars",
+		"scss/shared/custom-fonts";
+
