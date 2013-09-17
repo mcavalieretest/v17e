@@ -11,6 +11,10 @@
 	border-bottom: 0;
 }
 
+.ibm-application #ibm-common-menu .ibm-menu-dynamic {
+	width: auto;
+}
+
 .ibm-application #ibm-masthead #ibm-universal-nav {
 	width: 100%;
 	float: left;
@@ -267,26 +271,14 @@
 
 .ibm-application #ibm-masthead #ibm-common-menu a {
 	color: #666;
-	text-shadow: none;
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu a:hover {
-	text-decoration: underline;
 	color: #222;
 }
 
 .ibm-application #ibm-masthead #ibm-common-menu a:active {
-	text-decoration: underline;
 	color: #666;
-}
-
-.ibm-application #ibm-masthead #ibm-common-menu li {
-	background: url("#{$imagePath}/i/v17/bullets-alt.gif") -2px 2px no-repeat transparent;
-}
-
-.ibm-application #ibm-masthead #ibm-common-menu li:hover,
-.ibm-application #ibm-masthead #ibm-common-menu li.ibm-active {
-	background-position: -2px -98px;
 }
 
 .ibm-application #ibm-masthead .ibm-mm-close span {
