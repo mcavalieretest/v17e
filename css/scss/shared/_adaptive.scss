@@ -230,17 +230,17 @@ a.ibm-thumbnail-module h3 {
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 @media only screen and (min-width: 0px) and (max-width: 800px) {
 
-	.ibm-landing-page#ibm-top {
+	#ibm-top {
 		margin-top: 0 !important;
 	}
 	
 	// Begin masthead test updates
-	.ibm-landing-page #ibm-masthead {
+	#ibm-masthead {
 		min-width: 100%;
 		position: relative;
 	}
 	
-	.ibm-landing-page #ibm-universal-nav {
+	#ibm-universal-nav {
 		min-width: 100%;
 		height: 35px !important;
 		
@@ -257,7 +257,7 @@ a.ibm-thumbnail-module h3 {
 
 	}
 	
-	.ibm-landing-page #ibm-search-form {
+	#ibm-search-form {
 		margin: 4px 40px 0 1px;
 	}
 	// End masthead test updates
@@ -296,7 +296,7 @@ a.ibm-thumbnail-module h3 {
 		margin-left: -10px;
 	}
 	
-	.ibm-landing-page #ibm-footer ul {
+	#ibm-footer ul {
 		width: auto;
 		padding: 0;
 	}
@@ -310,14 +310,14 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 0px) and (max-width: 568px) {
 
 	// to be removed.  only for testing
-	/*
+	
 	#ibm-leadspace-body p:after {
 		content: "min-width: 0px | max-width: 568px"; 
 	}
-	*/
+	
 	// to be removed.  only for testing
 	
-	.ibm-landing-page#ibm-top {
+	#ibm-top {
 		min-width: 320px;
 	}
 	
@@ -386,7 +386,8 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body {
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	#ibm-content #ibm-leadspace-head #ibm-leadspace-body  {
 		padding-right: 10px;
 		padding-left: 10px;
 		width: 280px;
@@ -445,6 +446,44 @@ a.ibm-thumbnail-module h3 {
 			}
 
 		}
+	}
+
+	//Default template styles
+	#ibm-pcon,
+	#ibm-footer-module .ibm-columns {
+ 		width: 300px;
+ 		padding: 0 10px;
+ 	}
+ 		
+ 	#ibm-content-main {
+		float:none;
+		width:300px;
+	}
+	
+	#ibm-content #ibm-leadspace-head h1,
+	#ibm-content #ibm-leadspace-head p {
+		padding:10px 0 !important;
+	
+	}
+	
+	#ibm-content .ibm-columns {
+		.ibm-col-1-1,
+		.ibm-col-2-1,
+		.ibm-col-5-1,
+		.ibm-col-5-2,
+		.ibm-col-5-3,
+		.ibm-col-5-4,
+		.ibm-col-6-1 {
+				width:280px;
+			}
+	}
+	
+	#ibm-navigation {
+	   display:none;
+	}
+	
+	#ibm-content-sidebar {
+		margin:0 10px;
 	}
 
 
@@ -521,7 +560,8 @@ a.ibm-thumbnail-module h3 {
 	}
 		
 	// Begin footer test updates
-	.ibm-landing-page #ibm-footer-module .ibm-columns {
+	.ibm-landing-page #ibm-footer-module .ibm-columns,
+	#ibm-footer-module .ibm-columns {
 				
 		.ibm-col-6-1 {
 			@include px-to-rem(font-size,11.2px);
@@ -540,11 +580,11 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 481px) and (max-width: 568px) {
 
 	// to be removed.  only for testing
-	/*
+	
 	#ibm-leadspace-body p:after {
 		content: "min-width: 481 | max-width: 568px";
 	}
-	*/
+	
 	a.ibm-ribbon-next:before,
 	a.ibm-ribbon-prev:before {
 		font-size: 30px;
@@ -575,11 +615,11 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 569px) and (max-width: 640px) {
 
 	// to be removed.  only for testing
-	/*
+
 	#ibm-leadspace-body p:after {
 		content: "min-width: 569 | max-width: 640px";
 	}
-	*/
+	
 	// to be removed.  only for testing
 		
 	.ibm-landing-page#ibm-top {
@@ -793,14 +833,14 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 601px) and (max-width: 640px) {
 
 	// to be removed.  only for testing
-	/*
+
 	#ibm-leadspace-body p:after {
 		content: "min-width: 601px | max-width: 640px";
 	}
 	.ibm-landing-page #ibm-content {
 		background: none;	
 	}
-	*/
+	
 	.ibm-landing-page#ibm-top {
 		min-width: 640px;
 	}
@@ -853,11 +893,11 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 641px) and (max-width: 800px) {
 
 	// to be removed.  only for testing
-	/*
+
 	#ibm-leadspace-body p:after {
 		content: "min-width: 641 | max-width: 800px";
 	}
-	*/
+	
 	.ibm-landing-page#ibm-top {
 		min-width: 768px;
 	}
@@ -1079,11 +1119,11 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 769px) and (max-width: 800px) {
 
 	// to be removed.  only for testing
-	/*
+
 	#ibm-leadspace-body p:after {
 		content: "min-width: 769px | max-width: 800px";
 	}
-	*/
+	
 	.ibm-landing-page#ibm-top {
 		min-width: 800px;
 	}
