@@ -97,7 +97,6 @@ strong {
 	@include px-to-rem(line-height,18px);
 }
 
-
 #ibm-content .ibm-col-5-1,
 #ibm-content .ibm-col-6-1,
 #ibm-related-content .ibm-col-5-1,
@@ -114,8 +113,6 @@ strong {
 }
 // End of Content grid font size =======================
 
-
-
 // Default template styles =======================
 #ibm-navigation {
 	@include px-to-rem(font-size,11.2px);	
@@ -131,12 +128,6 @@ strong {
 	@include px-to-rem(line-height,15px);
 }
 // End of Default template styles =======================
-
-
-
-
-
-
 
 // Content styles =======================
 // line-height is .7 of font-size
