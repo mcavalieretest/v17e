@@ -1,13 +1,45 @@
-//former shCore.scss content - Begin
+//variables
 
-@mixin round_corners_custom($top, $right, $bottom, $left) {
-	-moz-border-radius: $top $right $bottom $left !important;
-	-webkit-border-radius: $top $right $bottom $left !important;
-}
+$background:					#f8f8f8 !default;
 
-@mixin round_corners($radius) {
-	@include round_corners_custom($radius, $radius, $radius, $radius);
-}
+$line_alt1_background:			$background !default;
+$line_alt2_background:			$background !default;
+
+$line_highlighted_background:	#e0e0e0 !default;
+$line_highlighted_number:		black !default;
+
+$gutter_text:					#afafaf !default;
+$gutter_border_color:			#6ce26c !default;
+$gutter_border:					0px solid $gutter_border_color !default;
+
+$toolbar_collapsed_a:			#00f !default;
+$toolbar_collapsed_a_hover:		#f00 !default;
+$toolbar_collapsed_background:	#fff !default;
+$toolbar_collapsed_border:		1px solid $gutter_border_color !default;
+
+$toolbar_a:						#fff !default;
+$toolbar_a_hover:				#000 !default;
+$toolbar_background:			$gutter_border_color !default;
+$toolbar_border:				none !default;
+
+$code_plain:					black !default;
+$code_comments:					#009e73 !default;
+$code_string:					#D55061 !default;
+$code_keyword:					#04527F !default;
+$code_preprocessor:				gray !default;
+$code_variable:					#aa7700 !default;
+$code_value:					#009900 !default;
+$code_functions:				#ff1493 !default;
+$code_constants:				#0066cc !default;
+$code_script:					$code_keyword !default;
+$code_script_background:		none !default;
+$code_color1:					gray !default;
+$code_color2:					#ff1493 !default;
+$code_color3:					red !default;
+
+$caption_color:					$code_plain !default;
+
+
 
 .syntaxhighlighter {
 	a,
@@ -20,30 +52,9 @@
 	table thead,
 	table caption,
 	textarea {
-		@include round_corners(0);
-		
-		background: none !important;
-		border: 0 !important;
-		bottom: auto !important;
-		float: none !important;
-		height: auto !important;
-		left: auto !important;
-		line-height: 1.1em !important;
-		margin: 0 !important;
-		outline: 0 !important;
-		overflow: visible !important;
-		padding: 0 !important;
-		position: static !important;
-		right: auto !important;
-		text-align: left !important;
-		top: auto !important;
-		vertical-align: baseline !important;
-		width: auto !important;
-		box-sizing: content-box !important;
 		font: {
 			family: "Courier New", Courier, monospace !important;
 			weight: normal !important;
-			style: normal !important;
 		}
 		min: {
 			// For IE8, FF & WebKit
@@ -55,6 +66,8 @@
 }
 
 .syntaxhighlighter {
+	border: 1px solid #f0f0f0;
+	padding: 10px 0;
 	width: 100% !important;
 	margin: 1em 0 1em 0 !important;
 	
@@ -130,6 +143,7 @@
 			width: auto !important;
 			height: auto !important;
 			
+			
 			span {
 				display: inline !important;
 				margin-right: 1em !important;
@@ -152,6 +166,8 @@
 		height: 11px !important;
 		font-size: 10px !important;
 		z-index: 10 !important;
+		line-height: 1.1em !important;
+		display:none !important;
 		
 		span.title { display: inline !important; }
 		
@@ -216,51 +232,9 @@
 	}
 }
 
-//former shCore.scss content - END
 
 
-//former shThemeDefault.scss content - BEGIN
 
-//former _theme_template.scss content - BEGIN
-
-$background:					white !default;
-
-$line_alt1_background:			$background !default;
-$line_alt2_background:			$background !default;
-
-$line_highlighted_background:	#e0e0e0 !default;
-$line_highlighted_number:		black !default;
-
-$gutter_text:					#afafaf !default;
-$gutter_border_color:			#6ce26c !default;
-$gutter_border:					3px solid $gutter_border_color !default;
-
-$toolbar_collapsed_a:			#00f !default;
-$toolbar_collapsed_a_hover:		#f00 !default;
-$toolbar_collapsed_background:	#fff !default;
-$toolbar_collapsed_border:		1px solid $gutter_border_color !default;
-
-$toolbar_a:						#fff !default;
-$toolbar_a_hover:				#000 !default;
-$toolbar_background:			$gutter_border_color !default;
-$toolbar_border:				none !default;
-
-$code_plain:					black !default;
-$code_comments:					#008200 !default;
-$code_string:					blue !default;
-$code_keyword:					#006699 !default;
-$code_preprocessor:				gray !default;
-$code_variable:					#aa7700 !default;
-$code_value:					#009900 !default;
-$code_functions:				#ff1493 !default;
-$code_constants:				#0066cc !default;
-$code_script:					$code_keyword !default;
-$code_script_background:		none !default;
-$code_color1:					gray !default;
-$code_color2:					#ff1493 !default;
-$code_color3:					red !default;
-
-$caption_color:					$code_plain !default;
 
 // Interface elements.
 .syntaxhighlighter {
@@ -326,7 +300,7 @@ $caption_color:					$code_plain !default;
 	
 	// Actual syntax highlighter colors.
 	.plain, .plain a { color: $code_plain !important; }
-	.comments, .comments a { color: $code_comments !important; }
+	.comments, .comments a { color: $code_comments !important; font-style: italic; }
 	.string, .string a { color: $code_string !important; }
 	.keyword { color: $code_keyword !important; }
 	.preprocessor { color: $code_preprocessor !important; }
@@ -344,13 +318,12 @@ $caption_color:					$code_plain !default;
 	.color3, .color3 a { color: $code_color3 !important; } 
 }
 
-//former _theme_template.scss content - END
+
 
 .syntaxhighlighter {
 	.keyword { font-weight: bold !important; }
 }
 
-//former shThemeDefault.scss content - END
 
 
 
