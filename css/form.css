@@ -11,6 +11,7 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _colors.scss		# colors and gradient styles
 |   |   |-- _form.scss			# forms
 |   |   ...
 |   ...

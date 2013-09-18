@@ -24,6 +24,7 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _colors.scss		# colors and gradient styles
 |   |   |-- _form.scss			# forms
 |   |   ...
 |   ...
@@ -33,7 +34,7 @@ css/
 
 
 
-// The v17e fonts output build (form.css) can be controlled by adjusting the import references below...
+// The v17e form output build (form.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "scss/shared/vars",
