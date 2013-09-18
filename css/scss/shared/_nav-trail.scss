@@ -1,6 +1,4 @@
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content-head ul#ibm-navigation-trail {
+ul#ibm-navigation-trail {
     height: 1%;
     text-shadow: none;
     padding: 10px 0 0 0;
@@ -8,7 +6,7 @@
     *position: relative;
 }
 
-#ibm-navigation-trail:after {
+ul#ibm-navigation-trail:after {
 	@include aslett-clearing;
 }
 
@@ -22,27 +20,25 @@
 	padding-left: 0;
 }
 
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li,
-#ibm-content-head ul#ibm-navigation-trail li {
+ul#ibm-navigation-trail li {
     display: inline;
     float: left;
 	clear: none;
     padding: 0 16px 0 2px;
 }
 
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li a:link,
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail li a:visited,
-#ibm-content-head ul#ibm-navigation-trail li a:link, 
-#ibm-content-head ul#ibm-navigation-trail li a:visited {
+ul#ibm-navigation-trail li a:link,
+ul#ibm-navigation-trail li a:visited {
     color: #666;
     text-decoration: none;
 }
 
-.ibm-landing-page #ibm-leadspace-head ul#ibm-navigation-trail li a:hover,
-#ibm-content-head ul#ibm-navigation-trail li a:hover {
+.ibm-alternate-background ul#ibm-navigation-trail li a,
+.ibm-alternate-bg.ibm-ribbon ul#ibm-navigation-trail li a {
+    color: #BBB;
+}
+
+ul#ibm-navigation-trail li a:hover {
 	text-decoration: underline;	
 }
 
