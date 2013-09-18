@@ -1,12 +1,12 @@
 /*! 
- * Name: ibm.com v17e fonts CSS file
+ * Name: ibm.com v17e application CSS file
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
  
-// URI: www.ibm.com/common/v17e/css/fonts.css
-// Description: Official SASS latin font files for v17e project
+// URI: www.ibm.com/common/v17e/css/application.css
+// Description: Official SASS application files for v17e project
 // Date: Sept 17, 2013
 //
 // Notes:
@@ -14,7 +14,7 @@
 //   Use ".ibm_cci-" class prefix for site specific custom code
  
 // The contents are auto-created from individual files
-// listed below. Use a SASS compiler to create the fonts.css file.
+// listed below. Use a SASS compiler to create the application.css file.
 
 
 /*  v17e latin fonts SASS structure map...
@@ -24,11 +24,11 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
-|   |   |-- _custom-fonts.scss	# fonts
+|   |   |-- _application.scss	# fonts
 |   |   ...
 |   ...
 |
-`-- fonts.scss					# latin fonts SASS file
+`-- application.scss					# latin fonts SASS file
 */
 
 
@@ -38,5 +38,5 @@ css/
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/custom-fonts";
+		"scss/shared/application";
 
