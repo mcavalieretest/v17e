@@ -24,7 +24,7 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
-|   |   |-- _table.scss	# fonts
+|   |   |-- _data.scss	# fonts
 |   |   ...
 |   ...
 |
@@ -38,5 +38,5 @@ css/
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/table";
+		"scss/shared/data";
 

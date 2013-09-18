@@ -28,7 +28,7 @@ css/
 |   |   |-- _reset.scss			# reset
 |   |   |-- _accessibility.scss	# accessibility
 |   |   |-- _navigation.scss	# navigation
-|   |   |-- _scoped-search.scss	# scoped-search
+|   |   |-- _scoped-search.scss	# scoped-search (could not find an example of this being used.  confirm with Minija / Vlad)
 |   |   |-- _related.scss		# related
 |   |   |-- _footer.scss		# footer
 |   |   |-- _common.scss		# common
@@ -37,24 +37,24 @@ css/
 |   |   |-- _ribbon.scss		# ribbon
 |   |   |-- _sidebar.scss		# sidebar
 |   |   |-- _layout.scss		# layout
-|   |   |-- _liquid.scss		# liquid
+|   |   |-- _liquid.scss		# liquid (not commonly used on ibm.com)
 |   |   |-- _grid.scss			# grid
 |   |   |-- _icons.scss			# icons
 |   |   |-- _dialog.scss		# dialog
-|   |   |-- _form.scss			# form
+|   |   |-- _form.scss			# form (loaded as a seperate form.css file)
 |   |   |-- _signin.scss		# signin (discontinued http://webdev.webmaster.ibm.com/common/testpages/misc_stuff/signin.html)
 |   |   |-- _tabs.scss			# tabs
 |   |   |-- _scroll.scss		# scroll
 |   |   |-- _video.scss			# video
 |   |   |-- _rightnav.scss		# rightnav
-|   |   |-- _table.scss			# table
+|   |   |-- _data.scss			# data (loaded as a seperate data.css file)
 |   |   |-- _landing.scss		# landing
 |   |   |-- _tooltip.scss		# tooltip
 |   |   |-- _popup.scss			# popup
 |   |   |-- _print.scss			# print
 |   |   |-- _social-toolbar.scss# social-toolbar
 |   |   |-- _rating.scss		# rating
-|   |   |-- _application.scss	# application
+|   |   |-- _application.scss	# application (loaded as a separate application.css file)
 |   |   |-- _adaptive.scss		# adaptive styles
 |   |   ...
 |   |-- ww/						# ww modules
@@ -103,7 +103,7 @@ css/
 		"scss/shared/scroll",
 		"scss/shared/video",
 		"scss/shared/rightnav",
-//		"scss/shared/table",
+//		"scss/shared/data",
 		"scss/shared/landing",
 		"scss/shared/tooltip",
 		"scss/shared/popup",
