@@ -17,7 +17,7 @@
 // listed below. Use a SASS compiler to create the form.css file.
 
 
-/*  v17e latin fonts SASS structure map...
+/*  v17e form SASS structure map...
 
 css/
 |
@@ -25,6 +25,7 @@ css/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
 |   |   |-- _colors.scss		# colors and gradient styles
+|   |-- direct/					# directly linked files
 |   |   |-- _form.scss			# forms
 |   |   ...
 |   ...
@@ -39,5 +40,5 @@ css/
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/form";
+		"scss/direct/form";
 

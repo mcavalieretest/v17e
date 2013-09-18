@@ -24,7 +24,9 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
-|   |   |-- _application.scss	# application shared file
+|   |   |-- _colors.scss		# colors and gradient styles
+|   |-- direct/					# directly linked files
+|   |   |-- _application.scss	# application file
 |   |   ...
 |   ...
 |
@@ -33,10 +35,10 @@ css/
 
 
 
-// The v17e fonts output build (application.css) can be controlled by adjusting the import references below...
+// The v17e application output build (application.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/application";
+		"scss/direct/application";
 

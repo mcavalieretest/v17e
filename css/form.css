@@ -4,7 +4,7 @@
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
-/*  v17e latin fonts SASS structure map...
+/*  v17e form SASS structure map...
 
 css/
 |
@@ -12,6 +12,7 @@ css/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
 |   |   |-- _colors.scss		# colors and gradient styles
+|   |-- direct/					# directly linked files
 |   |   |-- _form.scss			# forms
 |   |   ...
 |   ...

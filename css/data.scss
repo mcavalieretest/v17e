@@ -24,7 +24,9 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
-|   |   |-- _data.scss	# fonts
+|   |   |-- _colors.scss		# colors and gradient styles
+|   |-- direct/					# directly linked files
+|   |   |-- _data.scss			# data table file
 |   |   ...
 |   ...
 |
@@ -33,10 +35,10 @@ css/
 
 
 
-// The v17e fonts output build (data.css) can be controlled by adjusting the import references below...
+// The v17e data table output build (data.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/data";
+		"scss/direct/data";
 

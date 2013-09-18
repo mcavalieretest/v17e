@@ -25,7 +25,8 @@ css/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
 |   |   |-- _colors.scss		# colors and gradient styles
-|   |   |-- _social.scss		# social content styles
+|   |-- direct/					# directly linked files
+|   |   |-- _social.scss		# social file
 |   |   ...
 |   ...
 |
@@ -39,5 +40,5 @@ css/
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/shared/social";
+		"scss/direct/social";
 
