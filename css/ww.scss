@@ -41,22 +41,24 @@ css/
 |   |   |-- _grid.scss			# grid
 |   |   |-- _icons.scss			# icons
 |   |   |-- _dialog.scss		# dialog
-|   |   |-- _form.scss			# form (loaded as a seperate form.css file)
 |   |   |-- _signin.scss		# signin (discontinued http://webdev.webmaster.ibm.com/common/testpages/misc_stuff/signin.html)
 |   |   |-- _tabs.scss			# tabs
 |   |   |-- _scroll.scss		# scroll
 |   |   |-- _video.scss			# video
 |   |   |-- _rightnav.scss		# rightnav
-|   |   |-- _data.scss			# data (loaded as a seperate data.css file)
 |   |   |-- _landing.scss		# landing
 |   |   |-- _tooltip.scss		# tooltip
 |   |   |-- _popup.scss			# popup
 |   |   |-- _print.scss			# print
-|   |   |-- _social.scss		# social (loaded as a separate social.css file)
 |   |   |-- _social-toolbar.scss# social-toolbar
 |   |   |-- _rating.scss		# rating
-|   |   |-- _application.scss	# application (loaded as a separate application.css file)
 |   |   |-- _adaptive.scss		# adaptive styles
+|   |   ...
+|   |-- direct/					# directly loaded CSS files
+|   |   |-- _data.scss			# data (loaded as a seperate data.css file)
+|   |   |-- _form.scss			# form (loaded as a seperate form.css file)
+|   |   |-- _social.scss		# social (loaded as a separate social.css file)
+|   |   |-- _application.scss	# application (loaded as a separate application.css file)
 |   |   ...
 |   |-- ww/						# ww modules
 |   |   |-- _localeselector.scss# localselector
@@ -98,27 +100,21 @@ css/
 		"scss/shared/grid",
 		"scss/shared/icons",
 		"scss/shared/dialog",
-//		"scss/shared/form",
 //		"scss/shared/signin",
 		"scss/shared/tabs",
 		"scss/shared/scroll",
 		"scss/shared/video",
 		"scss/shared/rightnav",
-//		"scss/shared/data",
 		"scss/shared/landing",
 		"scss/shared/tooltip",
 		"scss/shared/popup",
 		"scss/shared/print",
-//		"scss/shared/social",
 		"scss/shared/social-toolbar",
 		"scss/shared/rating",
-//		"scss/shared/application",
-
 //		"scss/ww/localeselector",
 		"scss/ww/masthead",
 		"scss/ww/merchandising",
 
 		"scss/shared/adaptive",
-
+		
 		"scss/beta/effects";
-
