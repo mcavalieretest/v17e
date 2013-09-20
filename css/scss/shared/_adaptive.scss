@@ -880,7 +880,7 @@ a.ibm-thumbnail-module h3 {
 		background: none;	
 	}
 	
-	.ibm-landing-page#ibm-top {
+	#ibm-top {
 		min-width: 640px;
 	}
 	
@@ -890,7 +890,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// to be removed.  only for testing
 
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 60px;
 		padding-left: 60px;
@@ -903,7 +903,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 60px;
 	}
 	
-	.ibm-landing-page #ibm-content-head {
+	#ibm-top #ibm-content-head {
 		padding: 0 50px;
 	}
 		
@@ -922,7 +922,17 @@ a.ibm-thumbnail-module h3 {
 		}
 			
 	}
-
+	
+	// Default template styles 
+	
+	#ibm-pcon{
+		padding: 0;
+		width: 640px;
+	}
+	
+	#ibm-content-main {
+    margin: 0 50px;
+    }
 }
 // -------------------------------------------------------------- media query to be used on 640px Android viewport -------------------------------------------------------------- 
 
