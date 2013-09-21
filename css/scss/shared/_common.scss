@@ -125,12 +125,23 @@ ul li {
 }
 
 p.ibm-ind-link a,
+p a[class*="-link"],
+p a.ibm-call-info,
+p a.ibm-symp-doc,
+p a.ibm-symp-presentation,
+p a.ibm-symp-spreadsheet,
+p a.ibm-community,
+p a.ibm-usergroup,
 ul.ibm-link-list a {
 	display: inline-block;
 	margin: 0;
 	padding-left: $iconSpaceLeft;
 	position: relative;
 	text-decoration: none;
+}
+
+p a.ibm-feature-link {
+	padding-left: 0;
 }
 // !Default list end
 
