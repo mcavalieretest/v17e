@@ -48,7 +48,8 @@ strong {
 }
 
 .ibm-landing-page #ibm-content .ibm-col-1-1,
-#ibm-related-content .ibm-col-1-1 {
+#ibm-related-content .ibm-col-1-1,
+#ibm-content .ibm-intro {
 	@include px-to-rem(font-size,$bodyFontSize + 5);
 	@include px-to-rem(line-height,($bodyFontSize + 5)*$largeLineHeight);
 }
@@ -196,11 +197,6 @@ strong {
 }
 
 // Intro style
-#ibm-content .ibm-intro {
-	@include px-to-rem(font-size,23px);
-	@include px-to-rem(line-height,27px);
-}
-
 #ibm-content .ibm-intro em {
 	font-style: normal;
 }
