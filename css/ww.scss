@@ -24,8 +24,9 @@ css/
 |-- scss/
 |   |-- shared/					# shared modules
 |   |   |-- _vars.scss			# project variables and mixins
-|   |   |-- _fonts.scss			# fonts
+|   |   |-- _font-load.scss		# external font loading
 |   |   |-- _reset.scss			# reset
+|   |   |-- _fonts.scss			# fonts
 |   |   |-- _accessibility.scss	# accessibility
 |   |   |-- _navigation.scss	# navigation
 |   |   |-- _scoped-search.scss	# scoped-search (could not find an example of this being used.  confirm with Minija / Vlad)
@@ -80,11 +81,11 @@ css/
 // imports ============================================
 
 @import "scss/shared/vars",
-
 		"scss/beta/colors",
 
-		"scss/shared/fonts",
+		"scss/shared/font-load",
 		"scss/shared/reset",
+		"scss/shared/fonts",
 		"scss/shared/accessibility",
 		"scss/shared/navigation",
 //		"scss/shared/scoped-search",
@@ -112,6 +113,7 @@ css/
 		"scss/shared/social-toolbar",
 		"scss/shared/rating",
 //		"scss/ww/localeselector",
+
 		"scss/ww/masthead",
 		"scss/ww/merchandising",
 

@@ -18,11 +18,6 @@ html, body {
 	background: #333 url("#{$imagePath}/i/v17/t/bg-loader.gif") no-repeat 50% 200px;
 }
 
-body {
-	@include px-to-rem(font-size,16px);
-	@include px-to-rem(line-height,20px);
-}
-
 /* ol and ul list style applied only for v17 html code */
 ol, ul{
 	border: 0px;

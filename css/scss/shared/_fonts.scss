@@ -1,101 +1,9 @@
-// fonts styles ============================================ 
-
-/*!
-Do not attempt to copy, install or redistribute 
-these fonts. */
-
-// SIMPLER NAMES
-
-// LubalinDemiIBM = Lubalin-Medium
-// LubalinGraphStdBookIBM = Lubalin-Book
-
-// HelvLightIBM = Helvetica-Light
-// HelvRegularIBM = Helvetica-Regular
-// HelvBoldIBM = Helvetica-Bold
-
-@font-face {
-    font-family: 'LubalinDemiIBM';
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot'); /* IE9 Compat Modes */
-    src: url('#{$fontPath}/lubalinforibm-demi-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.woff') format('woff'), /* Modern Browsers */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('#{$fontPath}/lubalinforibm-demi-webfont.svg#LubalinDemiIBM') format('svg'); /* Legacy iOS */
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LubalinGraphStdBookIBM';
-    src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot');
-    src: url('#{$fontPath}/lubalingraphstd-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.woff') format('woff'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/lubalingraphstd-book-webfont.svg#LubalinGraphStdBookIBM') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvLightIBM';
-    src: url('#{$fontPath}/helvneueforibm-light-webfont.eot');
-    src: url('#{$fontPath}/helvneueforibm-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.woff') format('woff'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helvneueforibm-light-webfont.svg#HelvLightIBM') format('svg');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvRegularIBM';
-    src: url('#{$fontPath}/helveticaneue-webfont.eot');
-    src: url('#{$fontPath}/helveticaneue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helveticaneue-webfont.woff') format('woff'),
-         url('#{$fontPath}/helveticaneue-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helveticaneue-webfont.svg#HelvRegularIBM') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelvBoldIBM';
-    src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot');
-    src: url('#{$fontPath}/helvneueforibm-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.woff') format('woff'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.ttf') format('truetype'),
-         url('#{$fontPath}/helvneueforibm-bold-webfont.svg#HelvBoldIBM') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'iconsIBM';
-    src: url('#{$fontPath}/icons-ibm-v1_1.eot');
-    src: url('#{$fontPath}/icons-ibm-v1_1.eot?#iefix') format('embedded-opentype'),
-         url('#{$fontPath}/icons-ibm-v1_1.woff') format('woff'),
-         url('#{$fontPath}/icons-ibm-v1_1.ttf') format('truetype'),
-         url('#{$fontPath}/icons-ibm-v1_1.svg#iconsIBM') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* For local testing....
-@font-face {
-    font-family: 'iconsIBM';
-    src: url('../i/v17e/icons/fontcustom/icons-ibm-v1_1.eot?reload1');
-    src: url('../i/v17e/icons/fontcustom/icons-ibm-v1_1.eot?#iefix-reload1') format('embedded-opentype'),
-         url('../i/v17e/icons/fontcustom/icons-ibm-v1_1.woff?reload1') format('woff'),
-         url('../i/v17e/icons/fontcustom/icons-ibm-v1_1.ttf?reload1') format('truetype'),
-         url('../i/v17e/icons/fontcustom/icons-ibm-v1_1.svg#iconsIBM?reload1') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
-
 // v17e font styles begin ============================================
 body {
-	font-family: $defaultFont-dbcs;
+	@include px-to-rem(font-size,$bodyFontSize);
+	@include px-to-rem(line-height,20px);
 	font-weight: 300;
+	font-family: $defaultFont-dbcs;
 }
 
 body.ibm-type {
@@ -136,13 +44,13 @@ strong {
 #ibm-content .ibm-col-1-1,
 #ibm-content .ibm-col-5-2,
 #ibm-content .ibm-col-5-3 {
-	@include px-to-rem(font-size,16px);
+	@include px-to-rem(font-size,$bodyFontSize);
 }
 
 .ibm-landing-page #ibm-content .ibm-col-1-1,
 #ibm-related-content .ibm-col-1-1 {
-	@include px-to-rem(font-size,21px);
-	@include px-to-rem(line-height,29px);
+	@include px-to-rem(font-size,$bodyFontSize + 5);
+	@include px-to-rem(line-height,($bodyFontSize + 5)*$largeLineHeight);
 }
 
 #ibm-content .ibm-col-4-2,
@@ -161,28 +69,25 @@ strong {
 #ibm-related-content .ibm-col-6-3,
 #ibm-related-content .ibm-col-6-4,
 #ibm-related-content .ibm-col-6-5 {
-	@include px-to-rem(font-size,18px);
-	@include px-to-rem(line-height,24px);
-}
-
-#ibm-content .ibm-col-6-2,
-#ibm-related-content .ibm-col-6-2 {
-	@include px-to-rem(font-size,15px);
-	@include px-to-rem(line-height,20px);
+	@include px-to-rem(font-size,$bodyFontSize + 2);
+	@include px-to-rem(line-height,($bodyFontSize + 2)*$defaultLineHeight);
 }
 
 #ibm-content .ibm-col-4-1,
-#ibm-related-content .ibm-col-4-1 {
-	@include px-to-rem(font-size,15px);
-	@include px-to-rem(line-height,18px);
+#ibm-content .ibm-col-6-2,
+#ibm-related-content .ibm-col-4-1,
+#ibm-related-content .ibm-col-6-2 {
+	@include px-to-rem(font-size,$bodyFontSize - 1);
+	@include px-to-rem(line-height,($bodyFontSize - 1)*$defaultLineHeight);
 }
 
 #ibm-content .ibm-col-5-1,
 #ibm-content .ibm-col-6-1,
 #ibm-related-content .ibm-col-5-1,
-#ibm-related-content .ibm-col-6-1 {
-	@include px-to-rem(font-size,13px);
-	@include px-to-rem(line-height,15px);
+#ibm-related-content .ibm-col-6-1,
+#ibm-content-sidebar {
+	@include px-to-rem(font-size,$bodyFontSize - 3);
+	@include px-to-rem(line-height,($bodyFontSize - 3)*$smallLineHeight);
 }
 
 #{$ie7Selector} #ibm-content #ibm-content-main *,
@@ -206,11 +111,6 @@ strong {
 .ibm-type #ibm-navigation #ibm-overview a,
 .ibm-type #ibm-navigation .ibm-active {
 	font-family: $defaultHeaderFont;
-}
-
-#ibm-content-sidebar {
-	@include px-to-rem(font-size,13px);
-	@include px-to-rem(line-height,15px);
 }
 // End of Default template styles =======================
 
@@ -376,7 +276,9 @@ p.ibm-table-scroll-caption {
 	font-size: 24px;
 	line-height: 30px;
 }
-.ibm-additional-info,.ibm-item-note {
+
+.ibm-additional-info,
+.ibm-item-note {
 	@include px-to-rem(font-size,12px);
 }
 .ibm-item-note {
