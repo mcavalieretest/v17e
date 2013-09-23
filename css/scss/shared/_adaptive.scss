@@ -268,7 +268,6 @@ a.ibm-thumbnail-module h3 {
 	
 	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
 	#ibm-top #ibm-leadspace-head h1,
-	#ibm-top #ibm-leadspace-head.ibm-alternate h1,
 	#ibm-top #ibm-leadspace-head p,
 	#ibm-top #ibm-leadspace-head.ibm-alternate p {
 		width: auto;
@@ -388,8 +387,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
-	#ibm-content #ibm-leadspace-head #ibm-leadspace-body  {
+	#ibm-top #ibm-leadspace-head #ibm-leadspace-body  {
 		padding-right: 10px;
 		padding-left: 10px;
 		width: 280px;
