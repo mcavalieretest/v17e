@@ -46,12 +46,22 @@ strong {
 #ibm-content .ibm-col-5-3 {
 	@include px-to-rem(font-size,$bodyFontSize);
 }
+#ibm-content .ibm-col-1-1.large,
+#ibm-content .ibm-col-5-2.large,
+#ibm-content .ibm-col-5-3.large {
+	@include px-to-rem(font-size,$largeFontSize);
+}
 
 .ibm-landing-page #ibm-content .ibm-col-1-1,
 #ibm-related-content .ibm-col-1-1,
 #ibm-content .ibm-intro {
 	@include px-to-rem(font-size,$bodyFontSize + 5);
 	@include px-to-rem(line-height,($bodyFontSize + 5)*$largeLineHeight);
+}
+.ibm-landing-page #ibm-content .ibm-col-1-1.large,
+#ibm-related-content .ibm-col-1-1.large {
+	@include px-to-rem(font-size,$largeFontSize + 5);
+	@include px-to-rem(line-height,($largeFontSize + 5)*$largeLineHeight);
 }
 
 #ibm-content .ibm-col-4-2,
@@ -73,6 +83,25 @@ strong {
 	@include px-to-rem(font-size,$bodyFontSize + 2);
 	@include px-to-rem(line-height,($bodyFontSize + 2)*$defaultLineHeight);
 }
+#ibm-content .ibm-col-4-2.large,
+#ibm-content .ibm-col-4-3.large,
+.ibm-landing-page #ibm-content .ibm-col-5-2.large,
+.ibm-landing-page #ibm-content .ibm-col-5-3.large,
+#ibm-content .ibm-col-5-4.large,
+#ibm-content .ibm-col-6-3.large,
+#ibm-content .ibm-col-6-4.large,
+#ibm-content .ibm-col-6-5.large,
+#ibm-related-content .ibm-col-4-2.large,
+#ibm-related-content .ibm-col-4-3.large,
+#ibm-related-content .ibm-col-5-2.large,
+#ibm-related-content .ibm-col-5-3.large,
+#ibm-related-content .ibm-col-5-4.large,
+#ibm-related-content .ibm-col-6-3.large,
+#ibm-related-content .ibm-col-6-4.large,
+#ibm-related-content .ibm-col-6-5.large {
+	@include px-to-rem(font-size,$largeFontSize + 2);
+	@include px-to-rem(line-height,($largeFontSize + 2)*$defaultLineHeight);
+}
 
 #ibm-content .ibm-col-4-1,
 #ibm-content .ibm-col-6-2,
@@ -80,6 +109,13 @@ strong {
 #ibm-related-content .ibm-col-6-2 {
 	@include px-to-rem(font-size,$bodyFontSize - 1);
 	@include px-to-rem(line-height,($bodyFontSize - 1)*$defaultLineHeight);
+}
+#ibm-content .ibm-col-4-1.large,
+#ibm-content .ibm-col-6-2.large,
+#ibm-related-content .ibm-col-4-1.large,
+#ibm-related-content .ibm-col-6-2.large {
+	@include px-to-rem(font-size,$largeFontSize - 1);
+	@include px-to-rem(line-height,($largeFontSize - 1)*$defaultLineHeight);
 }
 
 #ibm-content .ibm-col-5-1,
@@ -89,6 +125,13 @@ strong {
 #ibm-content-sidebar {
 	@include px-to-rem(font-size,$bodyFontSize - 3);
 	@include px-to-rem(line-height,($bodyFontSize - 3)*$smallLineHeight);
+}
+#ibm-content .ibm-col-5-1.large,
+#ibm-content .ibm-col-6-1.large,
+#ibm-related-content .ibm-col-5-1.large,
+#ibm-related-content .ibm-col-6-1.large {
+	@include px-to-rem(font-size,$largeFontSize - 3);
+	@include px-to-rem(line-height,($largeFontSize - 3)*$smallLineHeight);
 }
 
 #{$ie7Selector} #ibm-content #ibm-content-main *,
