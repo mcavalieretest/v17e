@@ -460,7 +460,7 @@ h1#{$leadspace__modifier}{
 					p.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.3rem;
+						font-size:1.7rem;
 						line-height: 17px;
 						vertical-align: top;
 					}
@@ -657,6 +657,12 @@ h1#{$leadspace__modifier}{
 			.ibm_cci--rea-block {
 				@include ibm_cci--rea-block;
 				margin-left:0;
+
+				// ul {
+				// 	li {
+				// 		padding:0;
+				// 	}
+				// }
 			}
 
 			.ibm_cci--unr-cb {
@@ -691,7 +697,7 @@ h1#{$leadspace__modifier}{
 					p.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.2rem;
+						font-size:1.7rem;
 						line-height: 17px;
 						vertical-align: top;
 					}
@@ -972,7 +978,7 @@ h1#{$leadspace__modifier}{
 						p.ibm_cci--feed-title {
 							font-family:"HelvRegularIBM";
 							text-indent: 0;
-							font-size:1.3rem;
+							font-size:1.7rem;
 							line-height: 17px;
 							vertical-align: top;
 							padding:0 0 10px 0;
@@ -997,7 +1003,7 @@ h1#{$leadspace__modifier}{
 								@include ibm_cci-ul--li__modifier;
 								display:inline-block;
 								line-height:0;
-								padding:5px 0;
+								padding:0;
 
 								a {
 									opacity:1;
@@ -1235,7 +1241,7 @@ h1#{$leadspace__modifier}{
 					p.ibm_cci--feed-title {
 						font-family: "HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.3rem;
+						font-size:1.7rem;
 						line-height: 17px;
 						vertical-align: top;
 						float:left;
@@ -1251,7 +1257,7 @@ h1#{$leadspace__modifier}{
 						h2.ibm_cci--tweet-title{
 							font: normal 2.4rem/30px "HelvLightIBM";
 							color: #000;
-							margin:0;
+							margin:10px 0 0 0;
 							padding:0;				
 						}
 
@@ -1623,8 +1629,12 @@ h1#{$leadspace__modifier}{
 		.ibm-band#{$ibm-band__modifier} {
 			width:100%;
 		}
+		
+		#ibm-top #ibm_cci-widget-js.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 {
+			width:300px;
+		}
 
-		.ibm-landing-page#ibm-top .ibm-columns .ibm-col-1-1 {
+		#ibm-top .ibm-columns .ibm-col-1-1 {
 			margin:0 0 20px 0;
 		}
 
