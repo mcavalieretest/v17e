@@ -5,295 +5,70 @@
  * Copyright (c) 2013 IBM Corporation
  */
 
-// URI: [File location on live site]
-// Description: [CSS Customization Stylesheet for "IBM Voices"]
-// Author: [Vishwas Chouhan | vchouhan@us.ibm.com]
-// Date: [August 3, 2013] (e.g. July 30, 2013)
+/// URI: www.ibm.com/common/v17e/css/application.css
+// Description: Official SASS application files for v17e project
+// Date: Sept 17, 2013
 //
 // Notes:
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
-
-// Default variables
-$sprite-url 							: "../i/ibm-voices-sprite.png";
-$leadspace--logo 						: ".ibm_cci--ls--logo";
-$leadspace--search 						: ".ibm_cci--ls--search";
-$leadspace--toggle 						: ".ibm_cci--ls--toggle";
-$leadspace__modifier 					: ".ibm_cci--h1__modifyer";
-$default-font-family 					: Arial, "serif", sans-serif, Helvetica;
-$search--field--shadow 					: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
-$ibm-content__modifier 					: ".ibm_cci__ibm-content";
-$ibm-band__modifier						: ".ibm_cci__ibm-band";
-$ibm-pcon__modifier						: ".ibm_cci__ibm-pcon";
-$hover-color 							: #f04e37;
-$ibm-listview-unro 						: ".ibm_cci--lv-unro-b"; //List view unresolved block
-$ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved block
-$ibm-widget-js 							: "#ibm_cci-widget-js";
+ 
+// The contents are auto-created from individual files
+// listed below. Use a SASS compiler to create the application.css file.
 
 
+/*  v17e application SASS structure map...
 
-@mixin h1-p-overrides {
-	h1 { float:left; width:auto; padding:0; }
-	p { float:left; width:auto; padding:0; }
-}
+css/
+|
+|-- scss/
+|	|-- cci_vars.scss			# voices custom scss
+|   |
+|   |
+*/
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height #ibm-leadspace-body{ 
-	@include h1-p-overrides;
-}		
-/* LEADSPACE OVERIDES (END) */
+// The v17e application output build (application.css) can be controlled by adjusting the import references below...
+// imports ============================================
 
-/* LEADSPACE DEFAULTS (BEGIN) */
-@mixin leadspace--defaults{
-	float:left; 
-	margin:40px 0; 
-	// padding:0 0 0 20px;
-	padding:0;
-}
+@import "../../../css/scss/shared/_vars",
+		"../../../css/scss/beta/_colors",
+		"cci_vars";
 
-/* LOAD SPRITE IMAGE DEFAULT (BEGIN) */
-@mixin mysprite {
-	background: url($sprite-url) no-repeat;
-	line-height: 0;
-	overflow: hidden;
-	border: 0;
-	display:block;
-		// width: 600px;
-		// height:200px;
-}
-
-@mixin ibm_cci-ul__modifier{
-	float:left;
-	margin: 0;
-	padding: 0;
-	line-height:0;
-}
-
-@mixin ibm_cci-ul--li__modifier{
-	background:none;
-	list-style: none;
-}
-
-/* LIST VIEW (BEGIN) */
-@mixin ibm-listview-commons {
-		float:left;
-	// padding: 30px 0;
-	// outline:1px solid #ccc;
-}
-
-@mixin ibm_cci--rea-rank-common {
-	float:left;
-	width:30px;
-	margin:0;
-	padding:0;
-}
-
-@mixin ibm_cci--rea-b {
-	@include ibm_cci--rea-rank-common;
-	height:8px;
-	// margin-left:2px;
-	// background-color:#ccc;
-
-	.ibm_cci--rea-b-e {
-		@include ibm_cci--rea-rank-common;
-		height:2px;
-		background-color:#dfdfdf;
-		text-indent: -999999px;
-		border-bottom:1px solid #fff;
-
-		.ibm_cci--rea-b {
-			@extend .ibm_cci--rea-b-e;
-			width:20px;
-			background-color:#afafaf;
-			border-bottom:0;
-		}
-	}
-}
-
-@mixin ibm_cci--rea-block {
-	float:left;
-	width:70px;
-	margin:0 10px 0 0;
-
-	ul {
-		@include ibm_cci-ul__modifier;
-
-		li {
-			@include ibm_cci-ul--li__modifier;
-			padding:5px 0;
-			float:left;
-			clear:both;
-
-			.ibm_cci--rea-b {
-				@include ibm_cci--rea-b;
-			}
-
-			p.ibm_cci--rea-rank {
-				display:block;
-				font: normal 5.2rem/40px "HelvLightIBM";
-				color:#dfdfdf;
-				/* 
-					The ww-blessed css has a 5px bottom padding
-					with !important. To overwrite the important 
-					we are adding important to our <p>.
-					*/
-					padding-bottom:0 !important;
-			}
-		}
-	}
-}
-@mixin ibm_cci--lv-rc-title{
-		float:left;
-		font: bold 12px/15px "HelvLightIBM";
-		padding:0;
-		margin: 0;
-		clear:both;
-		position:relative;
-
-		// a {
-		// 	// text-decoration:none;
-		// 	color:#000;
-		// }
-
-		// a:hover {
-		// 	// text-decoration:none !important;
-		// }
-}
-
-@mixin ibm_cci--lv-rc-th{
-	float:left;
-	//width:100%;
-	// position:relative;
-	//margin:10px 0 0 0;
-
-	.ibm_cci--lv-rc-avatar {
-		float:left;
-		width:25px;
-		height:25px;
-		position:absolute;
-	}
-
-	.ibm_cci--lv-rc-title, .ibm_cci--lv-rc-h, .ibm_cci--lv-r-wct, .ibm_cci--lv-r-wch {
-		@include ibm_cci--lv-rc-title;
-	}
-
-	.ibm_cci--lv-r-wct, .ibm_cci--lv-r-wch{
-		margin-left:35px;
-	}
-
-}
-
-//LIST SHARING (BEGIN)
-@mixin ibm_cci--lv-sharing{
-	@include ibm_cci--lv-rc-th;
-	margin:10px 0 0 0;
-	//width:270px;
-
-	ul {
-		@include ibm_cci-ul__modifier;
-
-		li{
-			@include ibm_cci-ul--li__modifier;
-			width:16px;
-			height:16px;
-		}
-		li:hover {
-			outline:0 !important;
-		}
-		li:not(:nth-child(1)) {
-			padding: 0 0 0 15px;
-		}													
-	}
-
-	// p.ibm_cci-tts {
-	// 	float:right;
-	// 	font: normal 12px/16px "HelvLightIBM";
-	// 	vertical-align: top;
-	// 	padding:0;
-
-	// 	a img {
-	// 		opacity:0.1;
-	// 		padding: 0 5px 0 0;
-	// 	}
-	// 	a img:hover {
-	// 		opacity:1;
-	// 	}						
-	// }
-}
-
-@mixin ibm_cci--time-stamp {
-	float:left;
-	margin-top:10px;
-	padding-left:15px;
-	width:80px;
-
-	p.ibm_cci-tts {
-		// float:left;
-		display: inline-block;
-		// position:absolute;
-		font: normal 12px/16px "HelvLightIBM";
-		vertical-align: top;
-		padding:0;
-		color:#ccc;
-
-
-		a:link, a:visited {
-			color:#ccc;
-		}
-
-		a:hover, a:active {
-			color:#000;
-			opacity: 1;
-		}
-
-		a img {
-			opacity:0.1;
-			padding: 0 5px 0 0;
-			vertical-align: top;
-		}
-		a img:hover {
-			opacity:1;
-		}						
-	}
-	p.ibm_cci-tts:hover a, p.ibm_cci-tts:hover a img {
-		opacity:1;
-		color:#000;
-	}				
-	p.ibm_cci-tts span:before {
-		content: '\25CF';
-		font-size: 10px;
-		padding-right:5px;
-		color:#000;
-		opacity:0.1;
-		// position:relative;
-		// top:-5px;
-	}
-}
 body ul li:before, body ul li:after {
 	content:none;
 }
 
-/* LEADSPACE OVERIDES (BEGIN) */
-.ibm-landing-page #ibm-leadspace-head {
-	background: none;
-	border-bottom: none;
-}
+// #ibm-leadspace-head.ibm_cc__voices_ls #ibm-leadspace-body{ 
+	
+// }	
 
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height{
+/* LEADSPACE OVERIDES (BEGIN) */
+#ibm-leadspace-head.ibm_cc__voices_ls{
 	min-height: 127px;
 	_height: 127px;
-	#ibm-leadspace-body {
-		padding: 0;
-		min-height:127px;
+	background: none;
+	border-bottom: none;
+
+	p a {
+		margin-top: 0;
+	}
+
+#ibm-leadspace-body {
+
+	@include h1-p-overrides;
+
+		padding: 0 !important;
+		min-height:250px !important;
 		line-height:0;
 
-//TRENDING KEYWORDS (BEGIN)
+				//TRENDING KEYWORDS (BEGIN)
 				.ibm_cci--sk.ibm_cci--sk__mt{
 					float:left;
-					padding-top:20px;
+					padding-top:30px;
 					border-top:1px dotted #ccc;
 					width:inherit;
 					
-					ul {
+					ul.ibm_cci__ml {
 						@include ibm_cci-ul__modifier;
 					
 						li.ibm_cci__ml_t{
@@ -315,7 +90,7 @@ body ul li:before, body ul li:after {
 							}
 						}
 
-						li.ibm_cci__ml {
+						li {
 							@include ibm_cci-ul--li__modifier;
 							display: inline-block;
 							padding: 0 10px 0 0;							
@@ -324,10 +99,9 @@ body ul li:before, body ul li:after {
 							margin: 0 0 10px 2px;								
 							p {
 								display:inline;
-								font-size:1.8rem;
 								line-height:2.0rem;
 								> span a{
-									font-size:1.8rem;
+									font-size:2.0rem;
 									line-height:2.0rem;
 									color: #ccc;
 									float:left;
@@ -336,13 +110,11 @@ body ul li:before, body ul li:after {
 									color: #ccc;
 								}
 								> span a:hover, span a:active {
-									color: #f04e37;
-								}									
-
-								> span a.ibm_cci-clicked{
-									color: #f04e37;
+									color: #adadad;
 								}
-
+								// > span a.ibm_cci-clicked{
+								// 	color: #f04e37;
+								// }
 								>a:not(:first-child){
 									@include mysprite;
 									width:16px;
@@ -355,6 +127,7 @@ body ul li:before, body ul li:after {
 									opacity: 0.1;
 									visibility:hidden;
 								}
+
 								>a.ibm_cci-close:not(:first-child){
 									opacity: 1;
 									visibility:visible;	
@@ -363,6 +136,25 @@ body ul li:before, body ul li:after {
 									opacity: 0.5;
 								}															
 							}
+
+							p:hover{
+								>a:not(:first-child){
+									background-position: -205px -50px;
+									opacity: 1;
+									visibility:visible;
+								}
+							}
+
+							p.ibm_cci-clicked {
+								> span a {
+									color: #f04e37;
+								}
+								>a:not(:first-child){
+									background-position: -205px -70px;
+									opacity: 1;
+									visibility:visible;
+								}
+							}							
 						}
 					}	
 					// Add the ibm_cci__bg-color to the li for hover effect on the li element  
@@ -388,19 +180,18 @@ body ul li:before, body ul li:after {
 					color:#9a9a9a;
 					font-size:1.2rem;
 					font-style: italic;
-					line-height:22px;
 					// margin-left: 5px;
-					padding:0;
+					line-height: 12px;
+					padding: 10px 0 30px 0
 				}
 //TRENDING KEYWORDS (END)
 
 	}
-}
+}	
 
-
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body h1{
+h1#{$leadspace__modifier}{
 		@include mysprite;
-		font-size: 0;
+		text-indent:-999rem;
 		color: #fff;
 	}
 
@@ -411,7 +202,7 @@ body ul li:before, body ul li:after {
 }
 
 /* LEADSPACE LOGO BLOCK H1 (BEGIN) */	
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
+#{$leadspace--logo} h1#{$leadspace__modifier} {
 	background-position: 0 0;
 	width:223px;
 	height:49px;
@@ -472,7 +263,7 @@ body ul li:before, body ul li:after {
 		li {
 			display: inline-block;
 			list-style:none; 
-			margin:0 1px;
+			margin:0 0 0 1px;
 			padding:0;	
 			a {
 				@include mysprite;
@@ -481,7 +272,7 @@ body ul li:before, body ul li:after {
 			}	 
 		}
 		li.ibm_cci--ls--toggle--li--grid-icon a {
-			background-position: -87px -50px;
+			background-position: -85px -50px;
 			&.selected {
 				background-position: -129px -50px;
 			}
@@ -667,8 +458,9 @@ body ul li:before, body ul li:after {
 					}
 
 					p.ibm_cci--feed-title {
+						font-family:"HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.2rem;
+						font-size:1.3rem;
 						line-height: 17px;
 						vertical-align: top;
 					}
@@ -787,6 +579,7 @@ body ul li:before, body ul li:after {
 				margin:10px 0 0 0;
 
 				.ibm_cci--lv-rc-h, .ibm_cci--lv-r-wch{
+					font-family:"HelvLightIBM";
 					font-weight:normal;
 				}
 			}
@@ -808,6 +601,7 @@ body ul li:before, body ul li:after {
 				margin: 0;
 				// height:100px;
 				min-height:30px;
+				padding-top:9px;
 
 				p {
 					float: left;
@@ -895,6 +689,7 @@ body ul li:before, body ul li:after {
 					}
 
 					p.ibm_cci--feed-title {
+						font-family:"HelvRegularIBM";
 						text-indent: 0;
 						font-size:1.2rem;
 						line-height: 17px;
@@ -1011,6 +806,7 @@ body ul li:before, body ul li:after {
 					margin:0;
 
 					.ibm_cci--lv-r-wch{
+						font-family:"HelvLightIBM";
 						font-weight:normal;
 					}
 				}
@@ -1074,6 +870,7 @@ body ul li:before, body ul li:after {
 		// column-count: 3;
 		// column-gap: 0;
 		// column-fill: auto;
+		padding:40px !important;
 		 
 		
 		.ibm-col-1-1{
@@ -1125,6 +922,9 @@ body ul li:before, body ul li:after {
 					margin:0;
 
 					ul {
+						li {
+							padding:0;
+						}
 						li:nth-child(1){
 							display:none;
 						}
@@ -1154,7 +954,7 @@ body ul li:before, body ul li:after {
 						p.ibm_cci--feed-icon {
 							float:left;
 							color:#000;
-							padding:5px 0;
+							padding:0;
 							margin:0;
 							line-height:0;
 							text-indent:-99999;
@@ -1170,10 +970,12 @@ body ul li:before, body ul li:after {
 						}
 
 						p.ibm_cci--feed-title {
+							font-family:"HelvRegularIBM";
 							text-indent: 0;
-							font-size:1.2rem;
+							font-size:1.3rem;
 							line-height: 17px;
 							vertical-align: top;
+							padding:0 0 10px 0;
 						}
 					}
 
@@ -1319,6 +1121,7 @@ body ul li:before, body ul li:after {
 					margin: 0;
 					height:100px;
 					min-height:30px;
+					padding-top:9px;
 
 					p {
 						float: left;
@@ -1384,7 +1187,10 @@ body ul li:before, body ul li:after {
 					width:30px;
 					margin:0;
 
-					ul { 
+					ul {
+						li{
+							padding:0;
+						} 
 						li:nth-child(1){
 							display:none;
 						}
@@ -1411,7 +1217,7 @@ body ul li:before, body ul li:after {
 					p.ibm_cci--feed-icon {
 						float:left;
 						color:#000;
-						padding:5px 0;
+						padding:0;
 						margin:0;
 						line-height:0;
 						text-indent:-99999;
@@ -1427,11 +1233,13 @@ body ul li:before, body ul li:after {
 					}
 
 					p.ibm_cci--feed-title {
+						font-family: "HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.2rem;
+						font-size:1.3rem;
 						line-height: 17px;
 						vertical-align: top;
 						float:left;
+						padding:0;
 					}
 				}
 
@@ -1671,81 +1479,9 @@ body ul li:before, body ul li:after {
 	}
 	/* HOVER EFFECTS END */
 
-
-
-/* MODIFYERS FOR MOBILE (BEGIN) */
-@media only screen and (min-width:0) and (max-width:568px) {
-
-		.leadspace--defaults {
-			margin:10px 0;
-		}
-
-		.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
-			min-height:65px;
-
-			#ibm-leadspace-body {
-				width:100%;
-				min-height:65px;
-			}
-		}
-
-		#{$leadspace--logo} {
-			width:280px;
-			padding: 0 20px;
-			margin:20px 0 0 0;
-		}
-
-		.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
-			background-position: -224px -38px;
-			width:125px;
-			height:28px;
-			a {
-				width:125px;
-				line-height: 28px;
-			}		
-		}	
-
-		#{$leadspace--search} form input.ibm-cc-search--field {
-			width:225px; 
-			margin-top:0;
-			padding: 0 28px 0 0;
-		}
-
-		#{$leadspace--search}, #{$leadspace--toggle}, .ibm_cci--sk.ibm_cci--sk__mt, .ibm_cci--sr {
-			display: none;
-		}
-
-		.ibm-band#{$ibm-band__modifier} {
-			width:100%;
-		}
-
-		.ibm-landing-page#ibm-top .ibm-columns .ibm-col-1-1 {
-			margin:0 0 20px 0;
-		}
-
-		#ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band {
-			margin-bottom:20px;
-		}
-
-		//FOR MAIN CONTENT
-	
-	// TO ADAPT TO UMESH (BEGIN)
-	// #{$ibm-widget-js}#ibm-grid-widget-container {
-	// 	width:400px;
-	// 	padding:0;
-	// 	margin:0;
-	// }
-
-	// #{$ibm-widget-js}#ibm-grid-widget {
-	// 	width:320px;
-	// 	margin:0 auto;
-	// }
-	// TO ADAPT TO UMESH (END) 
-}
-
 /* MODIFYERS FOR TABLETS (BEGIN) */
-@media only screen and (min-width:569px) and (max-width:800px) {
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-cc-new-min-height {
+@media only screen and (min-width:0) and (max-width:800px) {
+	.ibm-landing-page .ibm_cc__voices_ls {
 		min-height:100px;
 		#ibm-leadspace-body {
 			width:660px;
@@ -1760,7 +1496,7 @@ body ul li:before, body ul li:after {
 		width:200px;
 	}
 
-	.ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body #{$leadspace--logo} h1#{$leadspace__modifier} {
+	#{$leadspace--logo} h1#{$leadspace__modifier} {
 		background-position: -224px 0;
 		width:167px;
 		height:37px;
@@ -1840,4 +1576,74 @@ body ul li:before, body ul li:after {
 		}
 	}
 
+}
+
+/* MODIFYERS FOR MOBILE (BEGIN) */
+@media only screen and (min-width:0) and (max-width:568px) {
+
+		.leadspace--defaults {
+			margin:10px 0;
+		}
+
+		.ibm-landing-page .ibm_cc__voices_ls {
+			min-height:65px;
+
+			#ibm-leadspace-body {
+				width:100%;
+				min-height:65px;
+			}
+		}
+
+		#{$leadspace--logo} {
+			width:280px;
+			padding: 0 20px;
+			margin:20px 0 0 0;
+		}
+
+		#{$leadspace--logo} h1#{$leadspace__modifier} {
+			background-position: -224px -38px;
+			width:125px;
+			height:28px;
+			a {
+				width:125px;
+				line-height: 28px;
+			}		
+		}	
+
+		#{$leadspace--search} form input.ibm-cc-search--field {
+			width:225px; 
+			margin-top:0;
+			padding: 0 28px 0 0;
+		}
+
+		#{$leadspace--search}, #{$leadspace--toggle}, .ibm_cci--sk.ibm_cci--sk__mt, .ibm_cci--sr {
+			display: none;
+		}
+
+		.ibm-band#{$ibm-band__modifier} {
+			width:100%;
+		}
+
+		.ibm-landing-page#ibm-top .ibm-columns .ibm-col-1-1 {
+			margin:0 0 20px 0;
+		}
+
+		#ibm-content.ibm_cci__ibm-content #ibm-content-body #ibm-content-main .ibm-band.ibm_cci__ibm-band {
+			margin-bottom:20px;
+		}
+
+		//FOR MAIN CONTENT
+	
+	// TO ADAPT TO UMESH (BEGIN)
+	// #{$ibm-widget-js}#ibm-grid-widget-container {
+	// 	width:400px;
+	// 	padding:0;
+	// 	margin:0;
+	// }
+
+	// #{$ibm-widget-js}#ibm-grid-widget {
+	// 	width:320px;
+	// 	margin:0 auto;
+	// }
+	// TO ADAPT TO UMESH (END) 
 }
