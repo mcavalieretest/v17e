@@ -150,7 +150,7 @@ body ul li:before, body ul li:after {
 									color: #f04e37;
 								}
 								>a:not(:first-child){
-									background-position: -205px -70px;
+									background-position: -205px -69px;
 									opacity: 1;
 									visibility:visible;
 								}
@@ -457,7 +457,7 @@ h1#{$leadspace__modifier}{
 						}					
 					}
 
-					p.ibm_cci--feed-title {
+					a.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
 						font-size:1.7rem;
@@ -694,7 +694,7 @@ h1#{$leadspace__modifier}{
 						}					
 					}
 
-					p.ibm_cci--feed-title {
+					a.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
 						font-size:1.7rem;
@@ -876,7 +876,7 @@ h1#{$leadspace__modifier}{
 		// column-count: 3;
 		// column-gap: 0;
 		// column-fill: auto;
-		padding:40px !important;
+		padding:40px 0 !important;
 		 
 		
 		.ibm-col-1-1{
@@ -975,7 +975,7 @@ h1#{$leadspace__modifier}{
 							}					
 						}
 
-						p.ibm_cci--feed-title {
+						a.ibm_cci--feed-title {
 							font-family:"HelvRegularIBM";
 							text-indent: 0;
 							font-size:1.7rem;
@@ -1238,7 +1238,7 @@ h1#{$leadspace__modifier}{
 						}					
 					}
 
-					p.ibm_cci--feed-title {
+					a.ibm_cci--feed-title {
 						font-family: "HelvRegularIBM";
 						text-indent: 0;
 						font-size:1.7rem;
@@ -1550,7 +1550,7 @@ h1#{$leadspace__modifier}{
 		.ibm_cci-fav-ihb{
 			width:480px;
 
-			p.ibm_cci--feed-title {
+			a.ibm_cci--feed-title {
 				width:480px;
 			}
 		}
