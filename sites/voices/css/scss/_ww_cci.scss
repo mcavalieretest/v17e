@@ -1398,8 +1398,8 @@ h1#{$leadspace__modifier}{
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,		
-		// #{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
-		// #{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib,
 		{
 			visibility:visible;
 		}
@@ -1631,4 +1631,21 @@ h1#{$leadspace__modifier}{
 	// 	margin:0 auto;
 	// }
 	// TO ADAPT TO UMESH (END) 
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px){
+	#ibm-top.ibm-landing-page .ibm-columns#ibm_cci-widget-js{
+		width: 660px
+	}
+	
+	#ibm-top.ibm-landing-page .ibm-columns#ibm_cci-widget-js .voicesItem{
+		margin-left:2px;
+	}
+	
+	
+	#ibm_cci-widget-js.ibm-columns.ibm_cci-lv__modifier .tweetitem .ibm_cci-rel-tweet-detils-container{
+		display:block;
+		float:left;
+		min-width:510px;
+	}
 }

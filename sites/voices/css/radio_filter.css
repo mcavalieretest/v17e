@@ -160,7 +160,7 @@
 	visibility:none;
 }
 
-@media only screen and (max-width: 800px) and (min-width: 481px){
+/*@media only screen and (max-width: 800px) and (min-width: 481px){
 	#ibm-top.ibm-landing-page .ibm-columns#ibm_cci-widget-js{
 		width: 660px
 	}
@@ -175,4 +175,4 @@
 		float:left;
 		min-width:510px;
 	}
-}
+}*/
