@@ -1,12 +1,12 @@
 /*! 
- * Name: Smarter Planet v17e customization CSS file
+ * Name: IBM Voices customizations
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
  
-// URI: www.ibm.com/common/v17e/smarter-planet/css/ww_cci.css
-// Description: Official SASS file for v17e Smarter Planet project
+// URI: www.ibm.com/common/v17e/voices/css/ww_cci.css
+// Description: Official SASS file for v17e Voices project
 // Date: Sept 24, 2013
 //
 // Notes:
@@ -17,7 +17,7 @@
 // listed below. Use a SASS compiler to create the ww_cci.css file.
 
 
-/*  v17e Smarter Planet SASS structure map...
+/*  v17e Voices SASS structure map...
 
 css/
 |
@@ -30,9 +30,9 @@ css/
 |
 sites/
 |
-|-- smarter-planet/
+|-- voices/
 |   |-- css/
-|   |   |-- _ww_cci.scss		# Smarter Planet custom SASS file
+|   |   |-- _ww_cci.scss		# Voices custom SASS file
 |   |   ...
 |   |-- ww_cci.scss				# Build file that pulls in all components (this file)
 `
@@ -40,7 +40,7 @@ sites/
 
 
 
-// The v17e Smarter Planet output build (ww_cci.css) can be controlled by adjusting the import references below...
+// The v17e Voices output build (ww_cci.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "../../../css/scss/shared/vars",
