@@ -622,10 +622,6 @@ a.ibm-thumbnail-module h3 {
 		width: 600px;
 	}
 	
-	.ibm-landing-page #ibm-content-main{
-		margin: 0;
-	}
-	
 	.ibm-landing-page #ibm-content-main > p,
 	.ibm-landing-page #ibm-content-main > h2,
 	.ibm-landing-page #ibm-content-main > h3,
@@ -634,13 +630,13 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 40px;
 	}
 	
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 40px;
 		padding-left: 40px;
 	}
 	
-	#ibm-top #ibm-content-head {
+	.ibm-landing-page #ibm-content-head {
 		padding: 0 30px;
 	}
 
@@ -700,49 +696,45 @@ a.ibm-thumbnail-module h3 {
 			}
 		}
 	}
-
-	//Default template
-	#ibm-pcon{
-		width: 600px;
-		padding: 0;
+	
+	// Default template
+	
+	#ibm-pcon {
+		width: 466px;
+		padding: 0 0 0 134px;
+		margin: 0;
 	}
+	
 	#ibm-content-main {
-		width: 540px;
-		padding: 0;
-		margin: 0 30px;
+		width: 330px;
 	}
 	
-	#ibm-content #ibm-leadspace-head h1,
-	#ibm-content #ibm-leadspace-head p {
-		padding: 10px 0 !important;
-	}
-	
-	#ibm-content-main .ibm-columns {
-			.ibm-col-1-1,
-			.ibm-col-5-3 {
-				width:520px;
+	#ibm-content .ibm-columns {
+		
+		.ibm-col-1-1,.ibm-col-5-3 { 
+				width: 304px;
 			}
-			.ibm-col-2-1 {
-	    		width: 250px;
-	    	}
-			.ibm-col-5-2 {
-	 			width: 340px;
-	 		}
-	  		.ibm-col-5-1 {
-	 			width: 160px;
-	 		}
-	 }
+		.ibm-col-2-1 { 
+				width: 140px;
+			}
+		.ibm-col-5-1 { 
+				width: 88px;
+			}
+		.ibm-col-5-2 {
+				width: 196px;
+			}
+	}
+	
 	#ibm-navigation {
-	   display: none;
+		 width: 88px;
+		 left: -98px;
 	}
 	#ibm-content-sidebar {
-		 width: 520px;
-		 margin: 0 auto;
-		 padding-left: 40px;
-		 padding-right: 40px;
+   		margin: 0 20px 0 0;
+    	width: 88px;
+    	padding-left: 10px;
+    }
     	
-	}
-	
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
