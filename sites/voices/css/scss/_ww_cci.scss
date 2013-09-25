@@ -7,6 +7,8 @@
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
 
+@import "cci_vars";
+
 body ul li:before, body ul li:after {
 	content:none;
 }
@@ -27,7 +29,6 @@ body ul li:before, body ul li:after {
 	}
 
 #ibm-leadspace-body {
-
 	@include h1-p-overrides;
 
 		padding: 0 !important;
@@ -74,7 +75,7 @@ body ul li:before, body ul li:after {
 								display:inline;
 								line-height:2.0rem;
 								> span a{
-									font-size:2.0rem;
+									font-size:1.8rem;
 									line-height:2.0rem;
 									color: #ccc;
 									float:left;
@@ -433,7 +434,7 @@ h1#{$leadspace__modifier}{
 					a.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.7rem;
+						font-size:1.3rem;
 						line-height: 17px;
 						vertical-align: top;
 					}
@@ -670,7 +671,7 @@ h1#{$leadspace__modifier}{
 					a.ibm_cci--feed-title {
 						font-family:"HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.7rem;
+						font-size:1.3rem;
 						line-height: 17px;
 						vertical-align: top;
 					}
@@ -849,7 +850,7 @@ h1#{$leadspace__modifier}{
 		// column-count: 3;
 		// column-gap: 0;
 		// column-fill: auto;
-		padding:40px 0 !important;
+		margin:40px auto !important;
 		 
 		
 		.ibm-col-1-1{
@@ -951,7 +952,7 @@ h1#{$leadspace__modifier}{
 						a.ibm_cci--feed-title {
 							font-family:"HelvRegularIBM";
 							text-indent: 0;
-							font-size:1.7rem;
+							font-size:1.3rem;
 							line-height: 17px;
 							vertical-align: top;
 							padding:0 0 10px 0;
@@ -1079,7 +1080,8 @@ h1#{$leadspace__modifier}{
 
 				.ibm_cci--lv-rc-th {
 					@include ibm_cci--lv-rc-th; 
-					min-width:120px;
+					// min-width:120px;
+					padding-right:7px;
 					max-width:180px;
 				}
 
@@ -1098,7 +1100,7 @@ h1#{$leadspace__modifier}{
 				.ibm_cci--lv-rc-description {
 					@include ibm_cci--lv-rc-th;
 					margin: 0;
-					height:100px;
+					height:80px;
 					min-height:30px;
 					padding-top:9px;
 
@@ -1214,7 +1216,7 @@ h1#{$leadspace__modifier}{
 					a.ibm_cci--feed-title {
 						font-family: "HelvRegularIBM";
 						text-indent: 0;
-						font-size:1.7rem;
+						font-size:1.3rem;
 						line-height: 17px;
 						vertical-align: top;
 						float:left;
@@ -1422,15 +1424,15 @@ h1#{$leadspace__modifier}{
 	//LIST VIEW
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--lv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
-	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
 	//GRID VIEW
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
-	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title,
-	.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a
 	{
 		color:$hover-color;
 	}
