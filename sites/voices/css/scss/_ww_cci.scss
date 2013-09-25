@@ -1122,7 +1122,7 @@ h1#{$leadspace__modifier}{
 					
 					> ul {
 						line-height:0;
-						visibility:visible;
+						visibility:hidden;
 
 						li a img{
 							// outline:1px solid #000;
@@ -1316,7 +1316,7 @@ h1#{$leadspace__modifier}{
 						}
 						
 						> ul{
-							visibility:visible;
+							visibility:hidden;
 
 							li a img{
 								// outline:1px solid #000;
@@ -1397,10 +1397,10 @@ h1#{$leadspace__modifier}{
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
 		#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
-		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
-		
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib {
+		#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,		
+		// #{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
+		// #{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib,
+		{
 			visibility:visible;
 		}
 	}
