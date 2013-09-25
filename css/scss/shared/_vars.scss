@@ -50,33 +50,45 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 
 // !mixins ============================================
 
+// Convert PX to REM
+// e.g. @include px-to-rem(font-size,11px);
 @mixin px-to-rem($style,$px) {
 	#{$style}: $px;
 	#{$style}: $px/(10px / 1rem);
 }
 
+// Add text shadow
+// e.g. @include text-shadow($glow);
 @mixin text-shadow($text...) {
 	text-shadow: $text;
 }
 
+// Apply browser prefix for border-radius
+// e.g. @include border-radius(2px);
 @mixin border-radius($borders...) {
 	-webkit-border-radius: $borders;
 	-moz-border-radius: $borders;
 	border-radius: $borders;
 }
 
+// Apply browser prefix for box-shadow
+// e.g. @include box-shadow(0 1px 0 $w30 inset, 0 1px 3px $k50);
 @mixin box-shadow($shadows...) {
 	-webkit-box-shadow: $shadows;
 	-moz-box-shadow: $shadows;
 	box-shadow: $shadows;
 }
 
+// Apply browser prefix for box-sizing
+// e.g. @include box-sizing(border-box);
 @mixin box-sizing($sizings...) {
 	-webkit-box-sizing: $sizings;
 	-moz-box-sizing: $sizings;
 	box-sizing: $sizings;
 }
 
+// Apply browser prefix for gradients
+// e.g. @include background-gradient(background-image,(top, $w10, $k40));
 @mixin background-gradient($style,$gradients...) {
 	#{$style}: -webkit-linear-gradient($gradients);
 	#{$style}: -moz-linear-gradient($gradients);
@@ -85,6 +97,8 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	#{$style}: linear-gradient($gradients);
 }
 
+// Apply browser prefix for background image gradients
+// e.g. @include background-image-gradient(url("#{$imagePath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
 @mixin background-image-gradient($image-url, $image-position, $gradient-position, $gradient-color1, $gradient-color2) {
 	background: $gradient-color2;
 	background: $image-url $image-position, -webkit-linear-gradient($gradient-position, $gradient-color1, $gradient-color2);
@@ -95,6 +109,8 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($gradient-color1)}', endColorstr='#{ie-hex-str($gradient-color2)}');	
 }
 
+// Apply browser prefix for transitions
+// e.g. @include transition(opacity 0.3s);
 @mixin transition($transitions...) {
 	-webkit-transition: $transitions;
 	-moz-transition: $transitions;
@@ -103,6 +119,8 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	transition: $transitions;
 }
 
+// Float reset
+// e.g. @include aslett-clearing;
 @mixin aslett-clearing {
 	clear: both;
 	content: " ";
