@@ -1,12 +1,12 @@
 /*! 
- * Name: ibm.com v17e data table CSS file
+ * Name: ibm.com v17e module CSS file
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
  
-// URI: www.ibm.com/common/v17e/css/data.css
-// Description: Official SASS data table file for v17e project
+// URI: www.ibm.com/common/v17e/css/module.css
+// Description: Official SASS module file for v17e project
 // Date: Sept 17, 2013
 //
 // Notes:
@@ -14,10 +14,10 @@
 //   Use ".ibm_cci-" class prefix for site specific custom code
  
 // The contents are auto-created from individual files
-// listed below. Use a SASS compiler to create the data.css file.
+// listed below. Use a SASS compiler to create the module.css file.
 
 
-/*  v17e table data SASS structure map...
+/*  v17e module SASS structure map...
 
 css/
 |
@@ -26,11 +26,11 @@ css/
 |   |   |-- _vars.scss			# project variables and mixins
 |   |   |-- _colors.scss		# colors and gradient styles
 |   |-- direct/					# directly linked files
-|   |   |-- _data.scss			# data table file
+|   |   |-- _module.scss		# module file
 |   |   ...
 |   ...
 |
-`-- data.scss					# data table SASS file
+`-- module.scss					# module SASS file
 */
 
 
@@ -40,5 +40,5 @@ css/
 
 @import "scss/shared/vars",
 		"scss/beta/colors",
-		"scss/direct/data";
+		"scss/direct/module";
 

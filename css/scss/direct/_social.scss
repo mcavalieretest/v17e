@@ -1,4 +1,33 @@
-/* share styles for content area - .ibm-share-this ul:hover state */
+// share styles for content area
+#ibm-content .ibm-share-this {
+	border-top: 2px solid #666;
+}
+
+#ibm-content .ibm-share-this ul {
+	padding: 10px 0 16px;
+}
+
+#ibm-content .ibm-share-this ul li {
+	background-image: none !important;
+	float: left;
+	clear: none;
+	padding: 0 10px 0 0;
+}
+
+#ibm-content .ibm-share-this ul li a {
+	display: block;
+	height: 15px;
+	width: 16px;
+    text-indent: -9999px;
+	overflow: hidden;
+}
+
+#ibm-content .ibm-share-this ul li a:focus {
+    outline: none;
+}
+
+
+// .ibm-share-this ul:hover state
 
 .ibm-share-this ul:hover a[class^="ibm-share"][class$="email"] {
 	background: url("#{$imagePath}/i/v17/icons/sprites-pt-all.png") no-repeat -26px -52px;
