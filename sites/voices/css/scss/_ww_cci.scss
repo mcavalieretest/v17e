@@ -1,38 +1,11 @@
-/*! 
- * Name: IBM Voices
- * Version: 1.0
- * Owner: Corporate Webmaster (NUS_N_NIWWW)
- * Copyright (c) 2013 IBM Corporation
- */
-
-/// URI: www.ibm.com/common/v17e/css/application.css
-// Description: Official SASS application files for v17e project
-// Date: Sept 17, 2013
+// URI: www.ibm.com/common/v17e/voices/css/ww_cci.css
+// Description: Voices v17e customization CSS file
+// Author: [Name and Lotus Notes address of CSS author]
+// Date: [Date of file edits] (e.g. July 30, 2013)
 //
 // Notes:
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
- 
-// The contents are auto-created from individual files
-// listed below. Use a SASS compiler to create the application.css file.
-
-
-/*  v17e application SASS structure map...
-
-css/
-|
-|-- scss/
-|	|-- cci_vars.scss			# voices custom scss
-|   |
-|   |
-*/
-
-// The v17e application output build (application.css) can be controlled by adjusting the import references below...
-// imports ============================================
-
-@import "../../../css/scss/shared/_vars",
-		"../../../css/scss/beta/_colors",
-		"cci_vars";
 
 body ul li:before, body ul li:after {
 	content:none;
