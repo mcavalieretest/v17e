@@ -700,38 +700,40 @@ a.ibm-thumbnail-module h3 {
 	// Default template
 	
 	#ibm-pcon {
-		width: 466px;
-		padding: 0 0 0 134px;
+		width: 560px;
+		padding-left: 30px;
+		padding-right: 0px;
 		margin: 0;
 	}
 	
 	#ibm-content-main {
-		width: 330px;
+		width: 405px;
 	}
+	
 	
 	#ibm-content .ibm-columns {
 		
 		.ibm-col-1-1,.ibm-col-5-3 { 
-				width: 304px;
+				width: 385px;
 			}
 		.ibm-col-2-1 { 
-				width: 140px;
+				width: 175px;
 			}
 		.ibm-col-5-1 { 
-				width: 88px;
+				width: 115px;
 			}
 		.ibm-col-5-2 {
-				width: 196px;
+				width: 240px;
 			}
 	}
 	
 	#ibm-navigation {
-		 width: 88px;
-		 left: -98px;
+		 display: none;
 	}
+	
 	#ibm-content-sidebar {
-   		margin: 0 20px 0 0;
-    	width: 88px;
+   		margin: 0 20px;
+    	width: 115px;
     	padding-left: 10px;
     }
     	
