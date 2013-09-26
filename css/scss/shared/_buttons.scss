@@ -41,6 +41,10 @@ a.ibm-btn-sec {
 	display: inline-block;
 }
 
+input[class*="ibm-btn-"][class*="-pri"] {
+	padding: 0.55em 1.24em 0.38em;
+}
+
 //	!Primary button default state
 a.ibm-btn-pri,
 input[class*="ibm-btn-"][class*="-pri"],
@@ -166,13 +170,13 @@ input.ibm-btn-view:focus {
 	min-width: 75px;
 	*min-width: auto;
  	@include border-radius(4px); 
-	padding: 5px;
+	padding: 0.8em 1em 0.5em;
 }
 
 #ibm-top .ibm-button-link a.ibm-btn-small, 
 #ibm-top .ibm-button-link-alternate a.ibm-btn-small {
 	 min-width: 75px;
-     padding: 4px 10px;
+     padding: 0.4em 1em;
 }
 
 // End of small button style
