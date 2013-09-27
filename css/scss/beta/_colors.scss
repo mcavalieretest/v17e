@@ -104,3 +104,47 @@ $k85 : rgba(0,0,0,.85);
 $k85 : rgba(0,0,0,.85);
 $k90 : rgba(0,0,0,.90);
 $k95 : rgba(0,0,0,.95);
+
+
+
+// !Code highlighting variables
+
+$background:					#f8f8f8 !default;
+
+$line_alt1_background:			$background !default;
+$line_alt2_background:			$background !default;
+
+$line_highlighted_background:	#e0e0e0 !default;
+$line_highlighted_number:		black !default;
+
+$gutter_text:					#afafaf !default;
+$gutter_border_color:			#6ce26c !default;
+$gutter_border:					0px solid $gutter_border_color !default;
+
+$toolbar_collapsed_a:			#00f !default;
+$toolbar_collapsed_a_hover:		#f00 !default;
+$toolbar_collapsed_background:	#fff !default;
+$toolbar_collapsed_border:		1px solid $gutter_border_color !default;
+
+$toolbar_a:						#fff !default;
+$toolbar_a_hover:				#000 !default;
+$toolbar_background:			$gutter_border_color !default;
+$toolbar_border:				none !default;
+
+$code_plain:					black !default;
+$code_comments:					#009e73 !default;
+$code_string:					#D55061 !default;
+$code_keyword:					#04527F !default;
+$code_preprocessor:				gray !default;
+$code_variable:					#aa7700 !default;
+$code_value:					#009900 !default;
+$code_functions:				#ff1493 !default;
+$code_constants:				#0066cc !default;
+$code_script:					$code_keyword !default;
+$code_script_background:		none !default;
+$code_color1:					gray !default;
+$code_color2:					#ff1493 !default;
+$code_color3:					red !default;
+
+$caption_color:					$code_plain !default;
+
