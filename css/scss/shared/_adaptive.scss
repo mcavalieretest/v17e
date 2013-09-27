@@ -881,7 +881,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// to be removed.  only for testing
 
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 60px;
 		padding-left: 60px;
@@ -894,7 +894,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 60px;
 	}
 	
-	#ibm-top #ibm-content-head {
+	.ibm-landing-page #ibm-content-head {
 		padding: 0 50px;
 	}
 		
@@ -917,13 +917,19 @@ a.ibm-thumbnail-module h3 {
 	// Default template styles 
 	
 	#ibm-pcon{
-		padding: 0;
-		width: 640px;
+		width: 580px;
+		padding-left: 50px;
+		padding-right: 0px;
 	}
 	
-	#ibm-content-main {
-    margin: 0 50px;
-    }
+	#ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+  		padding-right: 50px;
+	}
+	
+	#ibm-content #ibm-leadspace-head p {
+		padding-top: 10px;
+	}
+	
 }
 // -------------------------------------------------------------- media query to be used on 640px Android viewport -------------------------------------------------------------- 
 
@@ -954,13 +960,13 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 64px;
 	}
 	
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 64px;
 		padding-left: 64px;
 	}
 	
-	#ibm-top #ibm-content-head {
+	.ibm-landing-page #ibm-content-head {
 		padding: 0 54px;
 	}
 	
@@ -1038,55 +1044,54 @@ a.ibm-thumbnail-module h3 {
 		margin: 0;
 	}
 	//Default template layout
-	
 	#ibm-pcon {
-		width: 768px;
-		padding: 0;
+		width: 582px;
+		padding: 0 0 0 186px;
 	}
+	
 	#ibm-content-main {
-    	margin: 0 54px;
-    	padding: 0;
-    	width: 650px;
+		width: 396px;
+	}
+	#ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+    	padding-left: 10px;
+    	padding-right: 64px;
     }
+	
+	#ibm-navigation {
+		width: 112px;
+		left: -122px;
+	}
+	
+	#ibm-content-sidebar {
+		width: 112px;
+		margin: 0 0 0 54px;
+		padding-left: 10px;
+	}
+	
     #ibm-content #ibm-leadspace-head h1,
 	#ibm-content #ibm-leadspace-head p {
 		padding: 10px 0 !important;
 	}
 	
     #ibm-content-main .ibm-columns {
-    	margin: 0px;
-    	
     	.ibm-col-1-1,
     	.ibm-col-5-3 {
-    		 	width: 640px;
+    		 	width: 376px;
     		}
     	
 		 .ibm-col-2-1 {
-				width: 294px;
+				width: 174px;
 			}
 		 .ibm-col-5-1 {
-				width: 190px;
+				width: 112px;
 			}
 		.ibm-col-5-2 {
-				width: 400px;
+				width: 238px;
 			}
 			
 	}
-    
-    
-	#ibm-navigation {
-		display: none;
-	}
-	
-	#ibm-content-sidebar {
-		margin: 0 auto;
-		padding-left: 64px;
-		padding-right: 64px;
-    	width: 640px;
-	}
-	
-	
-	
+  
+
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
