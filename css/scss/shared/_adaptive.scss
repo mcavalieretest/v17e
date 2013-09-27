@@ -701,9 +701,9 @@ a.ibm-thumbnail-module h3 {
 	// Default template
 	
 	#ibm-pcon {
-		width: 560px;
+		width: 540px;
 		padding-left: 30px;
-		padding-right: 0px;
+		padding-right: 30px;
 		margin: 0;
 	}
 	
@@ -736,7 +736,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	#ibm-content-sidebar {
-   		margin: 0 20px;
+   		margin: 0 10px;
     	width: 115px;
     	padding-left: 10px;
     }
@@ -921,13 +921,9 @@ a.ibm-thumbnail-module h3 {
 	// Default template styles 
 	
 	#ibm-pcon{
-		width: 580px;
+		width: 540px;
 		padding-left: 50px;
-		padding-right: 0px;
-	}
-	
-	#ibm-content #ibm-leadspace-head #ibm-leadspace-body {
-  		padding-right: 50px;
+		padding-right: 50px;
 	}
 	
 	#ibm-content #ibm-leadspace-head p {
@@ -1051,32 +1047,32 @@ a.ibm-thumbnail-module h3 {
 	//Default template layout
 	
 	#ibm-pcon {
-		width: 582px;
-		padding: 0 0 0 186px;
+		width: 640px;
+		padding-left: 64px;
+		padding-right: 64px;
 	}
 	
 	#ibm-content-main {
 		width: 396px;
+		margin-left:120px;
 	}
-	#ibm-content #ibm-leadspace-head #ibm-leadspace-body {
-    	padding-left: 10px;
-    	padding-right: 64px;
-    }
 	
+	#ibm-content-head,
+	#ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+    	margin-left: 120px;
+    }
+	#ibm-content #ibm-leadspace-head p {
+		padding-top: 10px;
+	}
 	#ibm-navigation {
 		width: 112px;
-		left: -122px;
+		left: 0;
 	}
 	
 	#ibm-content-sidebar {
 		width: 112px;
-		margin: 0 54px;
+		margin: 0;
 		padding-left: 10px;
-	}
-	
-    #ibm-content #ibm-leadspace-head h1,
-	#ibm-content #ibm-leadspace-head p {
-		padding: 10px 0 !important;
 	}
 	
     #ibm-content-main .ibm-columns {
