@@ -14,15 +14,15 @@
 {
 	position: absolute;
 	z-index: 9998;
-	width: 200%;
+	width: 250%;
 	height: 100%;
 	top: 0;
 	background-color: #000;
-	margin-left:-350px;
+	margin-left:-500px;
 	margin-top:-500px;
 }
 
-.screen .radioSelects{
+/*.screen .radioSelects{
 	padding:10px 20px 10px 0;
 	float: right;
 	display: block;
@@ -54,7 +54,7 @@
 .errornote{
 	font: 'helveticaneueregular',HelveticaNeue,Helvetica,Arial,sans-serif !important;;
 	font-size: 2em;
-}
+}*/
 
 .voicesLoader{
 	height:30px;
@@ -121,12 +121,14 @@
 	display:block;
 	float:left;
 	min-width:247px;
+	padding-bottom:10px;
 }
 
 #ibm_cci-widget-js.ibm-columns.ibm_cci-gv__modifier .tweetitem .ibm_cci-rel-tweet-detils-container{
 	display:block;
 	float:left;
 	min-width:240px;
+	padding-bottom:10px;
 }
 
 

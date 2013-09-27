@@ -41,43 +41,44 @@
     <!-- link rel="stylesheet" href="js/ibm/voices/css/trendingTopics.css" type="text/css"/ -->
 
     <script>
-<![CDATA[
-        var dojoConfig = {
-            baseUrl: "./js",
-            isDebug: true,
-            isLocal: true,
-            voicesServiceBase: 'https://wwwbeta-sso.toronto.ca.ibm.com:444/social/aggregator/'
-        };
-    ]]>
+	<![CDATA[
+	        var dojoConfig = {
+	            baseUrl: "./js",
+	            isDebug: true,
+	            isLocal: true,
+	            voicesServiceBase: 'https://wwwbeta-sso.toronto.ca.ibm.com:444/social/aggregator/'
+	        };
+	    ]]>
     </script>
     <script src="//1.www.s81c.com/common/js/dojo/www.js" type="text/javascript"></script>
-    <!-- <script src="http://bprint.webmaster.ibm.com/voices/v17e/src/js/ibm/grid/layer.js" type="text/javascript"></script> -->
-    <script src="http://9.58.47.111:5516/GridLayoutTry1/src/js/ibm/grid/layer.js" type="text/javascript"></script>
+    <script src="http://bprint.webmaster.ibm.com/voices/v17e/src/js/ibm/grid/layer.js" type="text/javascript"></script>
+    <!-- <script src="http://9.58.47.111:5516/GridLayoutTry1/src/js/ibm/grid/layer.js" type="text/javascript"></script> -->
     <script>
-<![CDATA[
-        var introText = {mainintro:'&lt;strong&gt;What is Voices?&lt;/strong&gt;&lt;br /&gt;IBM Voices allows you to discover the most valuable social content shared, created and discussed by IBMers. You can use the site to connect and participate with key thought-leaders and subject matter experts around the technology and business issues that are most important to you. Learn with IBM to create a smarter planet and better understand the information that is shaping our world.',
-             accounts:'&lt;h2 class="ibm-alternate-rule"&gt;&lt;span&gt;IBM Accounts:&lt;/span&gt; 129&lt;/h2&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;65 IBMers&lt;br /&gt;64 Brands&lt;/p&gt;&lt;/div&gt;',
-             contenttype:'&lt;h2 class="ibm-alternate-rule"&gt;&lt;span&gt;Content types:&lt;/span&gt; beta 2.0&lt;/h2&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;Twitter&lt;br /&gt;&lt;span class="no"&gt;Blogs&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Youtube&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Flickr&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;&lt;span class="no"&gt;Facebook&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;LinkedIn&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Google+&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Tumblr&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;',
-             imgDesc:'&lt;p&gt;&lt;img src="/social/aggregator/images/ibm/voices/misc/voices_img_reascore.png" width="300" height="115" border="0" alt="REA Score Graphic" /&gt;&lt;/p&gt;&lt;p&gt;The &lt;strong&gt;REA Score&lt;/strong&gt; of each content item is represented by these horizontal bars. IBM measures the performance of its social content by the metrics of Reach, Engagement and Amplification.&lt;/p&gt;'};  
-    ]]>
+	<![CDATA[
+	        var introText = {mainintro:'&lt;strong&gt;What is Voices?&lt;/strong&gt;&lt;br /&gt;IBM Voices allows you to discover the most valuable social content shared, created and discussed by IBMers. You can use the site to connect and participate with key thought-leaders and subject matter experts around the technology and business issues that are most important to you. Learn with IBM to create a smarter planet and better understand the information that is shaping our world.',
+	             accounts:'&lt;h2 class="ibm-alternate-rule"&gt;&lt;span&gt;IBM Accounts:&lt;/span&gt; 129&lt;/h2&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;65 IBMers&lt;br /&gt;64 Brands&lt;/p&gt;&lt;/div&gt;',
+	             contenttype:'&lt;h2 class="ibm-alternate-rule"&gt;&lt;span&gt;Content types:&lt;/span&gt; beta 2.0&lt;/h2&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;Twitter&lt;br /&gt;&lt;span class="no"&gt;Blogs&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Youtube&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Flickr&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div class="ibm-col-6-1 list"&gt;&lt;p&gt;&lt;span class="no"&gt;Facebook&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;LinkedIn&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Google+&lt;/span&gt;&lt;br /&gt;&lt;span class="no"&gt;Tumblr&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;',
+	             imgDesc:'&lt;p&gt;&lt;img src="/social/aggregator/images/ibm/voices/misc/voices_img_reascore.png" width="300" height="115" border="0" alt="REA Score Graphic" /&gt;&lt;/p&gt;&lt;p&gt;The &lt;strong&gt;REA Score&lt;/strong&gt; of each content item is represented by these horizontal bars. IBM measures the performance of its social content by the metrics of Reach, Engagement and Amplification.&lt;/p&gt;'};  
+	    ]]>
     </script>
     <script charset="utf-8" src="//1.www.s81c.com/common/js/dojo/1.6/dojo/dnd/common.xd.js" type="text/javascript"></script>
     <script charset="utf-8" src="//1.www.s81c.com/common/js/dojo/1.6/dojo/dnd/autoscroll.xd.js" type="text/javascript"></script>
     <script charset="utf-8" src="//1.www.s81c.com/common/js/dojo/1.6/dijit/layout/_LayoutWidget.xd.js" type="text/javascript"></script>
     <script charset="utf-8" id="dojoIoScript1" src="//1.www.s81c.com/common/js/dynamicnav/www/usen-utf8.js" type="text/javascript"></script>
-    <script charset="utf-8" id="dojoIoScript2" src=
-    "https://www.ibm.com/gateway/secstate/?&amp;cc=us&amp;lc=en&amp;format=json&amp;ts=1380059436224&amp;dc_subject=REPLACE&amp;currenturl=%2F%2Flocalhost%3A5516%2FGridLayoutTry1%2Fsrc%2Findexgrid.html&amp;ctype=REPLACE&amp;ww=Y&amp;cb=100%3A__tcb58315%40109%3A__tcb34506%40102%3A__tcb9062%40106%3A__tcb9589"
+
+    <script charset="utf-8" id="dojoIoScript2" src="https://www.ibm.com/gateway/secstate/?&amp;cc=us&amp;lc=en&amp;format=json&amp;ts=1380059436224&amp;dc_subject=REPLACE&amp;currenturl=%2F%2Flocalhost%3A5516%2FGridLayoutTry1%2Fsrc%2Findexgrid.html&amp;ctype=REPLACE&amp;ww=Y&amp;cb=100%3A__tcb58315%40109%3A__tcb34506%40102%3A__tcb9062%40106%3A__tcb9589"
     type="text/javascript"></script>
+
     <script src="//service.maxymiser.net/cdn/ibm/js/mmcore.js" type="text/javascript"></script>
-    <script charset="utf-8" id="mmcore.1" src=
-    "http://service.maxymiser.net/cg/v5us/?fv=dmn%3Dibm.com%3Bref%3D%3Burl%3Dhttp%253A%252F%252Flocalhost%253A5516%252FGridLayoutTry1%252Fsrc%252Findexgrid.html%3Bscrw%3D1600%3Bscrh%3D900%3Bclrd%3D24%3Bcok%3D1%3B&amp;tst=0.408&amp;pd=-271903532%257CRQAAAAoBQjqbtIGNCTYEF%2F0JAMos0YuEh9BIAAsAAACDKQnbUH3QSAAAAAD%2F%2F%2F%2F%2FAJkJBAAFAAAAAQAAAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAAAAAABRQ%253D%253D&amp;srv=cg4.use&amp;mmid=1846243889%7CRQAAAAo6m7SBjQkAAA%3D%3D&amp;jsver=5.14&amp;ri=1&amp;rul="
+
+    <script charset="utf-8" id="mmcore.1" src="http://service.maxymiser.net/cg/v5us/?fv=dmn%3Dibm.com%3Bref%3D%3Burl%3Dhttp%253A%252F%252Flocalhost%253A5516%252FGridLayoutTry1%252Fsrc%252Findexgrid.html%3Bscrw%3D1600%3Bscrh%3D900%3Bclrd%3D24%3Bcok%3D1%3B&amp;tst=0.408&amp;pd=-271903532%257CRQAAAAoBQjqbtIGNCTYEF%2F0JAMos0YuEh9BIAAsAAACDKQnbUH3QSAAAAAD%2F%2F%2F%2F%2FAJkJBAAFAAAAAQAAAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FAAAAAAABRQ%253D%253D&amp;srv=cg4.use&amp;mmid=1846243889%7CRQAAAAo6m7SBjQkAAA%3D%3D&amp;jsver=5.14&amp;ri=1&amp;rul="
     type="text/javascript"></script>
-    <script charset="utf-8" id="dojoIoScript6" src=
-    "http://onyx.webmaster.ibm.com/social/aggregator/voices/comet.json?siteId=80&amp;cometRequest=%7B%22siteId%22%3A%2280%22%2C%22searchCriteria%22%3A%7B%22noFilter%22%3Atrue%2C%22voices%22%3A%7B%22noOfItems%22%3A20%7D%2C%22feeds%22%3Anull%2C%22fromDate%22%3Anull%2C%22filter%22%3Anull%7D%2C%22action%22%3A%22search%22%7D&amp;dojo.preventCache=1380059443111&amp;callback=dojo.io.script.jsonp_dojoIoScript6._jsonpCallback"
+
+    <script charset="utf-8" id="dojoIoScript6" src="http://onyx.webmaster.ibm.com/social/aggregator/voices/comet.json?siteId=80&amp;cometRequest=%7B%22siteId%22%3A%2280%22%2C%22searchCriteria%22%3A%7B%22noFilter%22%3Atrue%2C%22voices%22%3A%7B%22noOfItems%22%3A20%7D%2C%22feeds%22%3Anull%2C%22fromDate%22%3Anull%2C%22filter%22%3Anull%7D%2C%22action%22%3A%22search%22%7D&amp;dojo.preventCache=1380059443111&amp;callback=dojo.io.script.jsonp_dojoIoScript6._jsonpCallback"
     type="text/javascript"></script>
 </head>
 
-<body class="ibm-type v17" id="ibm-com">
+<body class="ibm-type" id="ibm-com">
     <div class="ibm-landing-page" id="ibm-top" style="margin-top: 33px;">
         <!-- MASTHEAD_BEGIN -->
 
