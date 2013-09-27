@@ -1,4 +1,5 @@
 // Module styles which include: 
+//	-- QA list (.question / answer)
 //	-- anchor link A-Z (.ibm-link-list-az)
 //	-- directory link list (.ibm-directory-link-list)
 //	-- list container (.ibm-list-container)
@@ -8,6 +9,19 @@
 //	-- RSS module (.ibm-rss-module)
 //	-- step indication and container (.ibm-step-indicator / .ibm-step-container)
 
+
+// Style for QA
+.question {
+	font-weight: bold;
+}
+
+.answer {
+	padding-bottom: 20px;
+}
+// End of QA style
+
+
+// Style for anchor link A-Z style
 #ibm-content div.ibm-link-list-az {
 	padding-bottom: 40px;
 }
