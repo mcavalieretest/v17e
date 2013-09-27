@@ -7,6 +7,8 @@
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
 
+@import "cci_vars";
+
 body ul li:before, body ul li:after {
 	content:none;
 }
@@ -36,7 +38,7 @@ body ul li:before, body ul li:after {
 				//TRENDING KEYWORDS (BEGIN)
 				.ibm_cci--sk.ibm_cci--sk__mt{
 					float:left;
-					padding-top:30px;
+					padding-top:20px;
 					border-top:1px dotted #ccc;
 					width:inherit;
 					
@@ -451,6 +453,7 @@ h1#{$leadspace__modifier}{
 					ul.ibm_cci-sie{
 						@include ibm_cci-ul__modifier;
 						float:right;
+
 						li {
 							@include ibm_cci-ul--li__modifier;
 							display:inline-block;
@@ -459,6 +462,11 @@ h1#{$leadspace__modifier}{
 
 							a {
 								opacity:1;
+
+								img {
+									width:16px;
+									height:16px;									 
+								}
 							}
 
 							a:hover {
@@ -501,7 +509,9 @@ h1#{$leadspace__modifier}{
 				}
 			}
 		}
+		// .ibm-col-6-2.tweetitem{
 
+		// }
 		.ibm-col-6-2{
 			@include ibm-listview-commons;
 			margin:0 0 0 20px;
@@ -531,9 +541,11 @@ h1#{$leadspace__modifier}{
 						height:25px;
 						width:25px;
 						opacity:0.5;
+						outline:1px solid #ccc;
 					}
 					a img.selected {
 						opacity:1;
+						outline:1px solid #000;
 					}					
 				}
 				// li.selected {
@@ -549,6 +561,8 @@ h1#{$leadspace__modifier}{
 				@include ibm_cci--lv-rc-th; 
 				// min-width:100px;
 				margin:10px 0 0 0;
+				padding-right: 7px;
+				// max-width: 180px;
 
 				.ibm_cci--lv-rc-h, .ibm_cci--lv-r-wch{
 					font-family:"HelvLightIBM";
@@ -579,7 +593,8 @@ h1#{$leadspace__modifier}{
 					float: left;
 					font-family: HelvLightIBM;
 					font-size: 14px;
-					line-height: 18px;
+					padding:0;
+					// line-height: 18px;
 
 					a {
 						// text-decoration:none;
@@ -707,6 +722,7 @@ h1#{$leadspace__modifier}{
 						}
 						.ibm_cci-media-container{
 							display:none;
+							line-height: 0;
 						}						
 					}												
 				//FOR YOUTUBE BLOCK (END)	
@@ -967,6 +983,7 @@ h1#{$leadspace__modifier}{
 						visibility:hidden;
 						border:0;
 						overflow: hidden;
+						margin-top:15px; //added 09
 
 						ul.ibm_cci-sie{
 							@include ibm_cci-ul__modifier;
@@ -979,6 +996,11 @@ h1#{$leadspace__modifier}{
 
 								a {
 									opacity:1;
+
+									img {
+										width:16px;
+										height:16px;										
+									}
 								}
 
 								a:hover {
@@ -992,7 +1014,7 @@ h1#{$leadspace__modifier}{
 						@extend .ibm_cci--rcb;
 						clear:both;
 						border:0;
-						padding-bottom:5px;
+						// padding-bottom:5px;
 
 						h2.ibm_cci--tweet-title{
 							font: bold 2.4rem/30px "HelvBoldIBM";
@@ -1024,6 +1046,7 @@ h1#{$leadspace__modifier}{
 						}
 						.ibm_cci-media-container{
 							display:block;
+							line-height:0;
 						}						
 					}
 				}
@@ -1040,7 +1063,7 @@ h1#{$leadspace__modifier}{
 				
 				ul {
 					@include ibm_cci-ul__modifier;
-					margin: 0 0 15px 0;
+					margin: 0 0 10px 0;
 
 					li {
 						@include ibm_cci-ul--li__modifier;
@@ -1061,9 +1084,11 @@ h1#{$leadspace__modifier}{
 							height:25px;
 							width:25px;
 							opacity:0.5;
+							outline:1px solid #ccc;
 						}
 						a img.selected {
 							opacity:1;
+							outline:1px solid #000;
 						}						
 						 
 					}
@@ -1101,13 +1126,14 @@ h1#{$leadspace__modifier}{
 					margin: 0;
 					height:80px;
 					min-height:30px;
-					padding-top:9px;
+					padding-top:2px;
 
 					p {
 						float: left;
 						font-family: HelvLightIBM;
 						font-size: 14px;
-						line-height: 18px;
+						// line-height: 18px;
+						padding:0;
 
 						a {
 							// text-decoration:none;
@@ -1425,13 +1451,13 @@ h1#{$leadspace__modifier}{
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--lv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
-	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb .ibm_cci--tweet-description .ibm_cci--tweet-content-text span.ibm_cci--tweet-description-readmore a,
+
 	//GRID VIEW
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
-	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a
 	{
 		color:$hover-color;
 	}
