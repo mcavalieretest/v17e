@@ -1043,7 +1043,9 @@ a.ibm-thumbnail-module h3 {
 		width: 660px;
 		margin: 0;
 	}
+	
 	//Default template layout
+	
 	#ibm-pcon {
 		width: 582px;
 		padding: 0 0 0 186px;
@@ -1064,7 +1066,7 @@ a.ibm-thumbnail-module h3 {
 	
 	#ibm-content-sidebar {
 		width: 112px;
-		margin: 0 0 0 54px;
+		margin: 0 54px;
 		padding-left: 10px;
 	}
 	
@@ -1235,13 +1237,13 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 80px;
 	}
 	
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 80px;
 		padding-left: 80px;
 	}
 	
-	#ibm-top #ibm-content-head {
+	.ibm-landing-page #ibm-content-head {
 		padding: 0 70px;
 	}
 		
@@ -1263,15 +1265,6 @@ a.ibm-thumbnail-module h3 {
 	
 	// Default template styles 
 	
-	#ibm-pcon{
-		padding: 0;
-		width: 800px;
-	}
-	
-	#ibm-content-main {
-    	margin: 0 70px;
-    }
-
 }
 // -------------------------------------------------------------- media query to be used on 800px Android viewport -------------------------------------------------------------- 
 
