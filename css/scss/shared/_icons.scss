@@ -98,6 +98,7 @@
 */
 
 #ibm-mobile-tabs:after,
+#ibm-leftnav-links:after,
 [class*="-link"]:before,
 #ibm-parent-link a:before,
 #ibm-navigation-trail li:after,
@@ -382,7 +383,8 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-video-link:before { content: "\00a0\f128\00a0" ; }
 .ibm-sort-link:before { content: "\00a0\f129\00a0" ; }
 .ibm-menu-link:before,
-#ibm-mobile-tabs:after { content: "\00a0\f12a\00a0" ; }
+#ibm-mobile-tabs:after,
+#ibm-leftnav-links:after { content: "\00a0\f12a\00a0" ; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0" ; }
 a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }

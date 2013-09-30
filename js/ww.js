@@ -63,11 +63,64 @@ jQuery(function() {
 		});
         
         },
+        
+        leftNavTabs: function () {
+        
+        // Check if left nav links exists
+        if(jQuery('#ibm-primary-links').length)
+
+		jQuery("#ibm-content-main").prepend('<div id="ibm-leftnav-links" class="ibm-mobile"><select></select></div>');
+
+		// Loop through each link under primary tabs and convert it to a dropdown list
+		jQuery('#ibm-primary-links a').each(function(){
+		
+			var selectedLink = jQuery(this).parent().hasClass('ibm-active');
+			var depth = jQuery(this).parents('ul').length;
+			var depthIndicator = '';
+	
+			if (depth == '2') {
+				depthIndicator = '- ';
+				}
+			if (depth == '3') {
+				depthIndicator = '-- ';
+				}
+			if (depth == '4') {
+				depthIndicator = '--- ';
+				}
+			
+			if(selectedLink) {
+				selectedLink = 'selected="selected"'
+				}
+			else {
+				selectedLink = '';
+				}
+		
+			jQuery('#ibm-leftnav-links select').append('<option ' + 
+			
+			selectedLink + 
+
+			' value="' + jQuery(this).attr('href') + '">' + 
+			depthIndicator + 
+			jQuery(this).text() + 
+			'</option>');
+			
+			// check for change on dropdown list and submit value to window.location
+			jQuery('#ibm-leftnav-links select').change(
+			
+			function(){
+				window.location = jQuery(this).val();
+			 });
+			
+		});
+        
+        },
 
         init: function () {
         
         	// init primary tabs to dropdown list function
 			ibmcom.mobTabs();
+        	// init convert the left nav links (default template) into a dropdown list
+			ibmcom.leftNavTabs();
 			
         }
 
