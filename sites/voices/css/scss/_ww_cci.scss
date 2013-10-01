@@ -378,9 +378,46 @@ h1#{$leadspace__modifier}{
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier > * a {
 	text-decoration:none !important;
 	color:#000;
-} 
+}
 
-//LIST VIEW UNRESOLVED AND RESOLVED (BEGIN)
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm_cci-voicesLoader, #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm_cci-voicesLoader{
+	width:100%;
+	float:left;
+	height:30px;
+}
+
+
+#{$ibm-widget-js} .ibm_cci-blocker {
+	position: absolute;
+	z-index: 9998;
+	width: 250%;
+	height: 100%;
+	top: 0;
+	background-color: #000;
+	margin-left:-500px;
+	margin-top:-500px;
+}
+
+#{$ibm-widget-js} .ibm_cci-.loader {
+	position: absolute;
+	z-index: 9999;
+	width: 38px;
+	height: 38px;
+	opacity: .75;
+	top: 150px;
+	left: 50%;
+	margin: -19px 0 0 -19px;
+	background-image: url(../i/loader.png);
+}
+
+
+
+
+/*
+ 	*
+	** LIST VIEW UNRESOLVED AND RESOLVED (BEGIN) **
+	*
+*/
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier{
 	.ibm-col-1-1{
 		position:relative;
@@ -517,9 +554,21 @@ h1#{$leadspace__modifier}{
 			margin:0 0 0 20px;
 			// outline:1px solid #ccc; *FOR TESTING ONLY
 			
+			.ibm_cci-relatedTweetContainer{
+				min-width: 30px;
+			}
+			
+			.ibm_cci-rel-tweet-detils-container {
+				display:block;
+				float:left;
+				min-width:247px;
+				padding-bottom:10px;
+			}
+			
 			ul {
 				@include ibm_cci-ul__modifier;
 				clear:right;
+				padding-bottom: 10px;
 
 				li {
 					@include ibm_cci-ul--li__modifier;
@@ -560,9 +609,10 @@ h1#{$leadspace__modifier}{
 			.ibm_cci--lv-rc-th {
 				@include ibm_cci--lv-rc-th; 
 				// min-width:100px;
-				margin:10px 0 0 0;
+				// margin:10px 0 0 0;
 				padding-right: 7px;
 				// max-width: 180px;
+				margin:0 !important;
 
 				.ibm_cci--lv-rc-h, .ibm_cci--lv-r-wch{
 					font-family:"HelvLightIBM";
@@ -571,7 +621,8 @@ h1#{$leadspace__modifier}{
 			}
 
 			.ibm_cci--time-stamp{
-				@include ibm_cci--time-stamp;	
+				@include ibm_cci--time-stamp;
+				margin:0 !important;
 			}
 
 			//To remove the margin from single conversation Title and Handle.
@@ -723,6 +774,7 @@ h1#{$leadspace__modifier}{
 						.ibm_cci-media-container{
 							display:none;
 							line-height: 0;
+							text-align:center;
 						}						
 					}												
 				//FOR YOUTUBE BLOCK (END)	
@@ -852,8 +904,11 @@ h1#{$leadspace__modifier}{
 
 
 
-// IBM_CCI-GV__MODIFIER GRID STARTS HERE
-// 
+/*
+ 	*
+	** GRID VIEW UNRESOLVED AND RESOLVED (BEGIN) **
+	*
+*/
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier{
 		// -webkit-column-count: 3;
 		// -webkit-column-gap: 0;
@@ -1060,6 +1115,17 @@ h1#{$leadspace__modifier}{
 				border-top:1px dotted #ccc;
 				overflow:hidden;
 				// outline:1px solid #ccc; *FOR TESTING ONLY
+				
+				.ibm_cci-relatedTweetContainer{
+					min-width: 30px;
+				}
+
+				.ibm_cci-rel-tweet-detils-container{
+					display:block;
+					float:left;
+					min-width:240px;
+					padding-bottom:10px;
+				}
 				
 				ul {
 					@include ibm_cci-ul__modifier;
@@ -1583,6 +1649,58 @@ h1#{$leadspace__modifier}{
 	}
 
 }
+
+// From Radio filter independent css defined by Umesh (BEGIN)
+a.ibm_cci-gototop {
+	visibility: hidden;
+	position: fixed;
+	right: 20px;
+	bottom: 0px;
+	color: #000;
+	font: normal 0.9em 'helveticaneuelight',HelveticaNeue,Helvetica,Arial,sans-serif, sans-serif;
+	text-decoration: none;
+	margin: 0;
+	padding:0;
+	border: 0;
+	width: 56px;
+	height: 72px;
+	background: #DFDFDF url('../i/backtotop.png') no-repeat;
+	z-index: 1000;
+	text-indent: -999999px;
+}
+
+.ibm_cci-search-term-highlight{
+	background: #dfdfdf;
+}
+
+.ibm_cci-colorClass1{
+	background: #d8bebe;
+}
+
+.ibm_cci-colorClass2{
+	background: #c8c8c8;
+}
+
+.ibm_cci-colorClass3{
+	background: #f59999;
+}
+
+.ibm_cci--voices-divider{
+	width: 100%;
+	border:dotted #ccc; 
+	border-width:1px 0 0 0; 
+	height:0;
+	line-height:0px;
+	font-size:0;
+	margin:0;
+	padding:0 0 10px 0;
+}
+
+.ibm_cci--newly-added{
+	visibility:none;
+}
+
+// From Radio filter independent css defined by Umesh (END)
 
 /* MODIFYERS FOR MOBILE (BEGIN) */
 @media only screen and (min-width:0) and (max-width:568px) {
