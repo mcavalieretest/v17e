@@ -216,6 +216,39 @@ a.ibm-thumbnail-module h3 {
 // ribbon style adjust
 
 
+// dropdown menu list styles
+.ibm-menu-list {
+		margin: 0 auto;
+}
+.ibm-menu-list div {
+	padding: 15px 0;
+	position: relative;
+}
+.ibm-menu-list div:after {
+	color: #000;
+	pointer-events: none;
+	right: 7px;
+	top: 28px;
+	font-size: 20px;
+	text-shadow: $emboss-light;
+}
+.ibm-menu-list select {
+	font-family: $defaultFont;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	@include background-gradient(background,(top, #FFFEFB, #EFF0EF));
+	border-radius: 5px;
+	appearance: none;
+	border: 1px solid rgba(0,0,0,0.15);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	text-shadow: $emboss-light;
+	min-width: 100%;
+	font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
+	padding: 8px 15px 8px ;
+}
+// dropdown menu list styles
+
+
 // Begin masthead test updates
 /*
 #ibm-content {
@@ -225,48 +258,17 @@ a.ibm-thumbnail-module h3 {
 // Begin masthead test updates
 
 
-
-
-
 // -------------------------------------------------------------- media query to be shared between Tablet and iPhone viewport --------------------------------------------------------------
 @media only screen and (min-width: 0px) and (max-width: 640px) {
 
-	// mobile / tablet specific styles
-	
+	// mobile / tablet specific styles (default template)
 	#ibm-leftnav-links.ibm-mobile {
 		display: block !important;
 	}
-	#ibm-leftnav-links {
-		width: auto;
-		padding: 15px 10px;
-		position: relative;
+	#ibm-leftnav-links div {
+		margin: 0 10px;
 	}
-	#ibm-mobile-tabs select,
-	#ibm-leftnav-links select {
-		font-family: $defaultFont;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		@include background-gradient(background,(top, #FFFEFB, #EFF0EF));
-		border-radius: 5px;
-		appearance: none;
-		border: 1px solid rgba(0,0,0,0.15);
-		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-		text-shadow: $emboss-light;
-		min-width: 100%;
-		font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-		padding: 8px 15px 8px ;
-	}
-	#ibm-mobile-tabs:after,
-	#ibm-leftnav-links:after {
-		color: #000;
-		pointer-events: none;
-		right: 17px;
-		top: 28px;
-		font-size: 20px;
-		text-shadow: $emboss-light;
-	}
-
-	// mobile / tablet specific styles
+	// mobile / tablet specific styles (default template)
 
 }
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
@@ -383,12 +385,6 @@ a.ibm-thumbnail-module h3 {
 	// mobile tabs specific styles
 	#ibm-mobile-tabs {
 		width: 280px;
-		padding: 15px 20px;
-		position: relative;
-		margin: 0 auto;
-	}
-	#ibm-mobile-tabs:after {
-		right: 27px;
 	}
 	// mobile tabs specific styles
 
@@ -738,9 +734,7 @@ a.ibm-thumbnail-module h3 {
 	
 	#ibm-pcon {
 		width: 540px;
-		padding-left: 30px;
-		padding-right: 30px;
-		margin: 0;
+		padding: 0 30px 10px;
 	}
 	
 	#ibm-content-main {

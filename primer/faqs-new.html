@@ -47,7 +47,7 @@
 
 jQuery(function() {
 
-function doThings(sortVal){
+function filterList(sortVal){
 
 jQuery('dt, dd').css('display','none')
 		
@@ -63,8 +63,8 @@ jQuery('dt, dd').css('display','none')
 	
 };
 
-jQuery('select#ibm-sort').change(function () {
-	doThings(this.value);
+jQuery('.ibm-menu-list#ibm-sort select').change(function () {
+	filterList(this.value);
 });
 
 });
@@ -152,11 +152,15 @@ jQuery('select#ibm-sort').change(function () {
 
 <h2>Template updates to enable v17e</h2>
 
-<select id="ibm-sort">
+<form class="ibm-menu-list" action="http://www.ibm.com/links" id="ibm-sort">
+<div>
+<select>
 	<option value="general">General</option>
 	<option value="owner">Owner</option>
 	<option value="developer">Developer</option>
 </select>
+</div>
+</form>
 
 <dl>
     <dt class="question" data-sort="general">What is v17e?</dt>
@@ -191,7 +195,7 @@ jQuery('select#ibm-sort').change(function () {
     	<ol>
     		<li>Add a meta tag</li>
     		<li>Change the .css file you are calling.</li>
-    		<li>Add a class to each page's body tag (e.g. change the body tag from <body id="ibm-com"> to <body id="ibm-com" class="ibm-type">)</li> 
+    		<li>Add a class to each page's body tag (e.g. change the body tag from &lt;body id="ibm-com"> to &lt;body id="ibm-com" class="ibm-type">)</li> 
     		<li>If the page includes any of the following: a data table, form, application, and/or social icons for the content space, you'll need to add a call to the appropriate css file.</li>
     	</ol>
     	<a href="http://205.186.160.10/v17e/primer/index.html">Learn more here</a>
@@ -216,7 +220,7 @@ jQuery('select#ibm-sort').change(function () {
     <dd class="answer">Have your development team contact Jeff Florentino, or other administrators of SVN, to grant you the appropriate access. Suggested software to use is 'Versions', to keep track of the different versions that are created.  v17e contrubutors will also need a SASS compiler. You can either use the command prompt, CodeKit or prepros.</dd>
     
     <dt class="question" data-sort="developer">Where are the main JS and CSS files?</dt>
-    <dd class="answer">Once you are granted access to SVN, you will then be able to download the appropriate JS and CSS files from the SVN directory. They are located at v17_enhanced/trunk/css and v17_enhanced/trunk/js. The production references are: <link href="//1.www.s81c.com/common/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" /> and <script src="//1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript"></script>. jQuery and Modernizr are included as part of the common v17e JS.</dd>
+    <dd class="answer">Once you are granted access to SVN, you will then be able to download the appropriate JS and CSS files from the SVN directory. They are located at v17_enhanced/trunk/css and v17_enhanced/trunk/js. The production references are: <span style="word-wrap: break-word">&lt;link href="//1.www.s81c.com/common/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" /> and &lt;script src="//1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript">&lt;/script></span>. jQuery and Modernizr are included as part of the common v17e JS.</dd>
     
     <dt class="question" data-sort="developer">What are the main classes that are available in v17e?</dt>
     <dd class="answer">Some of the main classes include new classes for bands, containers, and modules. They can be referenced here (link to another subpage for classes...?): </dd>

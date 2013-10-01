@@ -31,7 +31,7 @@ jQuery(function() {
         // Check if primary tabs exists
         if(jQuery('#ibm-primary-tabs').length)
 
-		jQuery("#ibm-primary-tabs").addClass("ibm-no-mobile").after('<div id="ibm-mobile-tabs" class="ibm-mobile"><select></select></div>');
+		jQuery("#ibm-primary-tabs").addClass("ibm-no-mobile").after('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-mobile-tabs"><div><select></select></div></form>');
 
 		// Loop through each link under primary tabs and convert it to a dropdown list
 		jQuery('#ibm-primary-tabs li').each(function(){
@@ -47,11 +47,11 @@ jQuery(function() {
 		
 			jQuery('#ibm-mobile-tabs select').append('<option ' + 
 			
-			selectedLink + 
+				selectedLink + 
 
-			' value="' + jQuery(this).find("a").attr('href') + '">' + 
-			jQuery(this).find("a").text() + 
-			'</option>');
+				' value="' + jQuery(this).find("a").attr('href') + '">' + 
+				jQuery(this).find("a").text() + 
+				'</option>');
 			
 			// check for change on dropdown list and submit value to window.location
 			jQuery('#ibm-mobile-tabs select').change(
@@ -69,7 +69,7 @@ jQuery(function() {
         // Check if left nav links exists
         if(jQuery('#ibm-primary-links').length)
 
-		jQuery("#ibm-content-main").prepend('<div id="ibm-leftnav-links" class="ibm-mobile"><select></select></div>');
+		jQuery("#ibm-content-main").prepend('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-leftnav-links"><div><select></select></div></form>');
 
 		// Loop through each link under primary tabs and convert it to a dropdown list
 		jQuery('#ibm-primary-links a').each(function(){
@@ -97,12 +97,12 @@ jQuery(function() {
 		
 			jQuery('#ibm-leftnav-links select').append('<option ' + 
 			
-			selectedLink + 
+				selectedLink + 
 
-			' value="' + jQuery(this).attr('href') + '">' + 
-			depthIndicator + 
-			jQuery(this).text() + 
-			'</option>');
+				' value="' + jQuery(this).attr('href') + '">' + 
+				depthIndicator + 
+				jQuery(this).text() + 
+				'</option>');
 			
 			// check for change on dropdown list and submit value to window.location
 			jQuery('#ibm-leftnav-links select').change(
@@ -119,6 +119,7 @@ jQuery(function() {
         
         	// init primary tabs to dropdown list function
 			ibmcom.mobTabs();
+			
         	// init convert the left nav links (default template) into a dropdown list
 			ibmcom.leftNavTabs();
 			
