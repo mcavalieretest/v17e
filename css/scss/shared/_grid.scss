@@ -16,30 +16,6 @@
     padding: 0 0 10px;
 }
 
-
-
-/*
-#ibm-content .ibm-container .ibm-columns {
-    margin: 0 -10px;
-}
-
-
-
-.ibm-landing-page #ibm-content .ibm-container .ibm-columns,
-.ibm-landing-page #ibm-content .ibm-container .ibm-container.ibm-ribbon .ibm-columns {
-	padding: 0;
-}
-.ibm-landing-page #ibm-content .ibm-container.ibm-ribbon .ibm-columns {
-    padding: 0 10px;
-}
-
-.ibm-landing-page #ibm-content .ibm-columns .ibm-container .ibm-columns {
-	margin: 0 -10px;
-}
-
-*/
-
-
 #ibm-top .ibm-container .ibm-columns {
     margin: 0 -10px;
 }
@@ -52,7 +28,6 @@
 #ibm-top .ibm-container .ibm-container.ibm-ribbon .ibm-columns {
 	padding: 0;
 }
-
 
 #ibm-top .ibm-columns .ibm-columns {
     padding: 0;
@@ -80,37 +55,6 @@
 	width: 980px;
 	margin: 0 auto;
 }
-/*
-.ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
-	margin: 0 -10px;
-}
-
-.ibm-landing-page #ibm-content .ibm-columns .ibm-media .ibm-columns {
-    overflow: visible;
-    width: $landingGrid - $landingSpace;
-}
-*/
-
-/* 
-==== Enabling nesting on LN pages BEGIN
-- css code to make nesting on LN page possible
-- if padding reset for column cells is needed, add code here please
-*/
-
-/*
-.ibm-columns .ibm-col-5-3 .ibm-columns .ibm-col-2-1 {
-    margin-left: 0;
-}
-
-.ibm-columns .ibm-col-5-3 .ibm-columns .ibm-col-2-1 + .ibm-col-2-1 {
-    margin-right: 0;
-    margin-left: 10px;
-}
-*/
-
-/*
-==== Enabling nesting on LN pages END
-*/
 
 .ibm-columns .ibm-col-4-1 {
 //    width: 220px;
@@ -186,29 +130,6 @@
 .ibm-default #ibm-content .ibm-columns .ibm-col-2-1 {
     width: 268px;
 }
-
-/*
-.ibm-landing-page #ibm-content .ibm-container .ibm-columns .ibm-col-2-1,
-#ibm-content .ibm-columns .ibm-col-6-4 .ibm-col-2-1 {
-	width: 300px;
-}
-
-#ibm-content .ibm-columns .ibm-video, 
-#ibm-content .ibm-columns .ibm-playlist {
-    margin-bottom: 0;
-}
-*/
-/*
-.v17 .dijitDialogPaneContent .ibm-columns {
-    padding-left: 0;
-}
-
-.v17 .dijitDialogPaneContent .ibm-container .ibm-columns .ibm-col-1-1 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-*/
 
 .dijitDialogPaneContent .ibm-columns {
     padding: 0;
