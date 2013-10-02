@@ -216,6 +216,11 @@
 
 //================content-expand for 5 column layout============
 
+
+.ibm-content-expand #ibm-content .ibm-columns {
+	width: auto;
+}
+
 .ibm-content-expand #ibm-content .ibm-columns .ibm-col-1-1 {
 	width: 748px;
 }
