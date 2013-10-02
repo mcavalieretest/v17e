@@ -317,10 +317,16 @@ a.ibm-thumbnail-module h3 {
 	
 	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
 	#ibm-top #ibm-leadspace-head h1,
+	#ibm-top #ibm-leadspace-head h2,
 	#ibm-top #ibm-leadspace-head p,
 	#ibm-top #ibm-leadspace-head.ibm-alternate p {
 		width: auto;
 		
+	}
+
+	#ibm-top #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
+		margin: 0;
+		padding: 0px !important; //this important can be removed once the relate JS is updated as well
 	}
 	
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs,
