@@ -1,33 +1,29 @@
 // grid styles begin ============================================
 
 .ibm-columns {
-    width: 960px;
+    width: $landingGrid - $landingSpace;
     padding: 0 10px;
     margin: 0 auto;
     clear: both;
 }
 
 #ibm-content .ibm-columns {
-    clear: both;
-    margin: 0;
+    padding: 0 ($landingSpace / 2) ($landingSpace / 2);
+}
+
+.ibm-default #ibm-content .ibm-columns {
     width: auto;
     padding: 0 0 10px;
 }
 
-.ibm-landing-page #ibm-content .ibm-columns {
-    width: $landingGrid - $landingSpace;
-    padding: 0 ($landingSpace / 2) ($landingSpace / 2);
-    margin: 0 auto;
-}
 
+
+/*
 #ibm-content .ibm-container .ibm-columns {
     margin: 0 -10px;
 }
 
-/*.ibm-landing-page #ibm-content .ibm-container .ibm-columns {
-	width: auto;
-	margin: 0 -20px;
-}*/
+
 
 .ibm-landing-page #ibm-content .ibm-container .ibm-columns,
 .ibm-landing-page #ibm-content .ibm-container .ibm-container.ibm-ribbon .ibm-columns {
@@ -40,6 +36,19 @@
 .ibm-landing-page #ibm-content .ibm-columns .ibm-container .ibm-columns {
 	margin: 0 -10px;
 }
+
+*/
+
+
+#ibm-top .ibm-container.ibm-ribbon .ibm-columns {
+    padding: 0 10px;
+}
+
+#ibm-top .ibm-container .ibm-columns,
+#ibm-top .ibm-container .ibm-container.ibm-ribbon .ibm-columns {
+	padding: 0;
+}
+
 
 #ibm-top .ibm-columns .ibm-columns {
     padding: 0;
@@ -62,11 +71,12 @@
     min-height: 1px;
 }
 
+
 .ibm-landing-page #ibm-content #ibm-content-main > .ibm-media {
 	width: 980px;
 	margin: 0 auto;
 }
-
+/*
 .ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
 	margin: 0 -10px;
 }
@@ -75,6 +85,7 @@
     overflow: visible;
     width: $landingGrid - $landingSpace;
 }
+*/
 
 /* 
 ==== Enabling nesting on LN pages BEGIN
@@ -82,6 +93,7 @@
 - if padding reset for column cells is needed, add code here please
 */
 
+/*
 .ibm-columns .ibm-col-5-3 .ibm-columns .ibm-col-2-1 {
     margin-left: 0;
 }
@@ -90,6 +102,7 @@
     margin-right: 0;
     margin-left: 10px;
 }
+*/
 
 /*
 ==== Enabling nesting on LN pages END
@@ -152,25 +165,25 @@
    	width: ((($landingGrid - $landingSpace) / 6) * 5) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-1-1,
-.ibm-landing-page #ibm-content .ibm-columns .ibm-col-1-1 {
+.ibm-columns .ibm-col-1-1 {
 //    width: 940px;
    width: ($landingGrid - ($landingSpace * 2));
   
 }
 
-#ibm-content .ibm-columns .ibm-col-1-1 {
+.ibm-default #ibm-content .ibm-columns .ibm-col-1-1 {
 	width: 556px;
 }
 
-#ibm-content .ibm-columns .ibm-col-6-4 .ibm-col-1-1 {
+.ibm-default #ibm-content .ibm-columns .ibm-col-6-4 .ibm-col-1-1 {
 	width: auto;
 }
 
-#ibm-content .ibm-columns .ibm-col-2-1 {
+.ibm-default #ibm-content .ibm-columns .ibm-col-2-1 {
     width: 268px;
 }
 
+/*
 .ibm-landing-page #ibm-content .ibm-container .ibm-columns .ibm-col-2-1,
 #ibm-content .ibm-columns .ibm-col-6-4 .ibm-col-2-1 {
 	width: 300px;
@@ -180,7 +193,8 @@
 #ibm-content .ibm-columns .ibm-playlist {
     margin-bottom: 0;
 }
-
+*/
+/*
 .v17 .dijitDialogPaneContent .ibm-columns {
     padding-left: 0;
 }
@@ -190,10 +204,11 @@
     margin-left: 0;
     margin-right: 0;
 }
+*/
 
 //================content-expand for 5 column layout============
 
-.ibm-content-expand #ibm-content .ibm-columns .ibm-col-1-1{
+.ibm-content-expand #ibm-content .ibm-columns .ibm-col-1-1 {
 	width: 748px;
 }
 
@@ -214,12 +229,12 @@
 
 
 /* =========================== */
-
+/* What is this?
 #ibm-gc-column-one .ibm-columns .ibm-col-2-1 {
     width: 195px;
     padding: 0;
 }
-
+*/
 #ibm-content-sidebar .ibm-columns .ibm-col-5-1  {
 	padding: 0;
 	margin: 0;
