@@ -130,3 +130,20 @@ jQuery(function() {
 ibmcom.init();
 
 });
+
+
+function animationHover(element, animation){
+    element = jQuery(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);        
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+        });
+}
+
+
