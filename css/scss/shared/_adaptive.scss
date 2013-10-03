@@ -479,6 +479,15 @@ a.ibm-thumbnail-module h3 {
 				@include px-to-rem(line-height,24px);
 			}
 		}
+		
+		.ibm-default #ibm-content .ibm-columns {
+			width: 300px;
+			
+				.ibm-col-1-1 {
+					width: 280px;
+				}
+		}
+		
 		.ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
