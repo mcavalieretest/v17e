@@ -458,11 +458,14 @@ a.ibm-thumbnail-module h3 {
 			width: 300px;
 		}
 		
+		
+
+		
 			.ibm-col-1-1,
 			.ibm-col-2-1,
 			.ibm-col-4-1,
 			.ibm-col-4-2,
-			.ibm-w-gutter .ibm-col-4-2,
+			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
 			.ibm-col-4-3,
 			.ibm-col-5-1,
 			.ibm-col-5-2,
@@ -471,8 +474,8 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-1,
 			.ibm-col-6-2,
 			.ibm-col-6-3,
-			.ibm-w-gutter .ibm-col-6-3,
-			.ibm-thumbnail-small > div[class^="ibm-col-"],
+			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"],
 			.ibm-col-6-4,
 			.ibm-col-6-5 {
 				width: 280px;
@@ -480,7 +483,7 @@ a.ibm-thumbnail-module h3 {
 				@include px-to-rem(line-height,24px);
 			}
 		
-		.ibm-ribbon .ibm-w-gutter {
+		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
 				width: 280px;
@@ -717,9 +720,10 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-2 {
 				width: 160px;
 			}
-			.ibm-w-gutter .ibm-col-4-2,
-			.ibm-w-gutter .ibm-col-6-3,
-			.ibm-thumbnail-small > div[class^="ibm-col-"] {
+					
+			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
 				width: 240px;
 			}
 			.ibm-col-6-4 {
@@ -729,7 +733,7 @@ a.ibm-thumbnail-module h3 {
 				width: 430px;
 			}
 		
-		.ibm-ribbon .ibm-w-gutter {
+		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
 				width: 240px;
@@ -1051,9 +1055,9 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-2 {
 				width: 200px;
 			}
-			.ibm-w-gutter .ibm-col-4-2,
-			.ibm-w-gutter .ibm-col-6-3,
-			.ibm-thumbnail-small > div[class^="ibm-col-"] {
+			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
 				width: 300px;
 			}
 			.ibm-col-6-4 {
@@ -1064,7 +1068,7 @@ a.ibm-thumbnail-module h3 {
 			}
 		
 		
-		.ibm-ribbon .ibm-w-gutter {
+		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
 				width: 300px;
