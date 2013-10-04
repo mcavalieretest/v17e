@@ -44,7 +44,7 @@
     overflow: hidden;
 }
 
-.ibm-columns [class*="ibm-col-"] {
+[class*="ibm-col-"] {
     float: left;
     margin: 0 ($landingSpace / 2);
     min-height: 1px;
@@ -56,64 +56,64 @@
 	margin: 0 auto;
 }
 
-.ibm-columns .ibm-col-4-1 {
+.ibm-col-4-1 {
 //    width: 220px;
 	width: (($landingGrid - $landingSpace) / 4) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-4-2,
-.ibm-columns .ibm-col-2-1,
-.ibm-columns .ibm-col-6-3 {
+.ibm-col-4-2,
+.ibm-col-2-1,
+.ibm-col-6-3 {
 //    width: 460px;
 	width: (($landingGrid - $landingSpace) / 2) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-4-3 {
+.ibm-col-4-3 {
 //    width: 700px;
 	width: ((($landingGrid - $landingSpace) / 4) * 3) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-1 {
+.ibm-col-5-1 {
 //    width: 172px;
    	width: (($landingGrid - $landingSpace) / 5) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-2 {
+.ibm-col-5-2 {
 //    width: 364px;
    	width: ((($landingGrid - $landingSpace) / 5) * 2) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-3 {
+.ibm-col-5-3 {
 //    width: 556px;
    	width: ((($landingGrid - $landingSpace) / 5) * 3) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-5-4 {
+.ibm-col-5-4 {
 //    width: 748px;
    	width: ((($landingGrid - $landingSpace) / 5) * 4) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-1 {
+.ibm-col-6-1 {
 //    width: 140px;
 	width: (($landingGrid - $landingSpace) / 6) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-2 {
+.ibm-col-6-2 {
 //    width: 300px;
    	width: ((($landingGrid - $landingSpace) / 6) * 2) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-4 {
+.ibm-col-6-4 {
 //    width: 620px;
    	width: ((($landingGrid - $landingSpace) / 6) * 4) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-6-5 {
+.ibm-col-6-5 {
 //    width: 780px;
    	width: ((($landingGrid - $landingSpace) / 6) * 5) - $landingSpace;
 }
 
-.ibm-columns .ibm-col-1-1 {
+.ibm-col-1-1 {
 //    width: 940px;
    width: ($landingGrid - ($landingSpace * 2));
   
@@ -163,7 +163,7 @@
 
 
 /* =========================== */
-#ibm-content-sidebar .ibm-columns .ibm-col-5-1  {
+#ibm-content-sidebar .ibm-col-5-1  {
 	padding: 0;
 	margin: 0;
 }
