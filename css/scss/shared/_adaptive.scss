@@ -326,7 +326,7 @@ a.ibm-thumbnail-module h3 {
 
 	#ibm-top #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
 		margin: 0;
-		padding: 0px !important; //this important can be removed once the relate JS is updated as well
+		padding: 0 !important; //this important can be removed once the relate JS is updated as well
 	}
 	
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs,
@@ -336,7 +336,7 @@ a.ibm-thumbnail-module h3 {
 	
 	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs,
 	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs ul.ibm-tabs {
-		padding: 0px;
+		padding: 0;
 	}
 	
 	.ibm-landing-page #ibm-content table {
@@ -456,7 +456,8 @@ a.ibm-thumbnail-module h3 {
 
 		.ibm-columns {
 			width: 300px;
-			
+		}
+		
 			.ibm-col-1-1,
 			.ibm-col-2-1,
 			.ibm-col-4-1,
@@ -478,7 +479,7 @@ a.ibm-thumbnail-module h3 {
 				@include px-to-rem(font-size,18px);
 				@include px-to-rem(line-height,24px);
 			}
-		}
+		
 		.ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
@@ -504,7 +505,8 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-default #ibm-content {
-		.ibm-col-1-1,.ibm-col-2-1 {
+		.ibm-col-1-1,
+		.ibm-col-2-1 {
 					width: 280px;
 				}
 		}
@@ -591,15 +593,12 @@ a.ibm-thumbnail-module h3 {
 	}
 		
 	// Begin footer test updates
-	#ibm-footer-module .ibm-columns {
-				
-		.ibm-col-6-1 {
+	#ibm-footer-module .ibm-columns .ibm-col-6-1 {
 			@include px-to-rem(font-size,11.2px);
 			width: 120px;
 			min-height: 235px;
 		}
 
-	}
 	// End footer test updates
 
 }
@@ -686,7 +685,7 @@ a.ibm-thumbnail-module h3 {
 	
 		.ibm-columns {
 			width: 540px;
-		
+		}
 			.ibm-col-1-1 {
 				width: 520px;
 			}
@@ -729,7 +728,7 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-5 {
 				width: 430px;
 			}
-		}
+		
 		.ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
 			.ibm-col-6-3 {
@@ -1020,7 +1019,7 @@ a.ibm-thumbnail-module h3 {
 	
 		.ibm-columns {
 			width: auto;
-		
+		}
 			.ibm-col-1-1 {
 				width: 640px;
 			}
@@ -1063,7 +1062,7 @@ a.ibm-thumbnail-module h3 {
 			.ibm-col-6-5 {
 				width: 530px;
 			}
-		}
+		
 		
 		.ibm-ribbon .ibm-w-gutter {
 			.ibm-col-4-2,
