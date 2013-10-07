@@ -174,6 +174,7 @@ a.ibm-thumbnail-module h3 {
 .ibm-thumbnail-small .ibm-thumbnail-module ul {
 	margin-left: 70px !important;
 }
+
 .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h2,
 .ibm-thumbnail-small .ibm-thumbnail-module .ibm-sprite + h3 {
 	position: relative;
@@ -194,6 +195,7 @@ a.ibm-thumbnail-module h3 {
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
 	float: right;
 }
+
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h2,
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap h3,
 .ibm-thumbnail-small .ibm-thumbnail-module.ibm-thumbnail-swap p,
@@ -221,10 +223,12 @@ a.ibm-thumbnail-module h3 {
 		margin: 0 auto;
 		line-height: normal;
 }
+
 .ibm-menu-list div {
 	padding: 15px 0;
 	position: relative;
 }
+
 .ibm-menu-list div:after {
 	color: #000;
 	pointer-events: none;
@@ -233,6 +237,7 @@ a.ibm-thumbnail-module h3 {
 	font-size: 20px;
 	text-shadow: $emboss-light;
 }
+
 .ibm-menu-list select {
 	font-family: $defaultFont;
 	-webkit-appearance: none;
@@ -296,10 +301,12 @@ a.ibm-thumbnail-module h3 {
 		li#ibm-home {
 			height: 30px !important;
 		}
+		
 		li#ibm-home a {
 			background-position: 0 -98px;
 			height: 30px !important;
 		}
+		
 		#ibm-menu-links {
 			display: none;
 		}
@@ -321,7 +328,6 @@ a.ibm-thumbnail-module h3 {
 	#ibm-top #ibm-leadspace-head p,
 	#ibm-top #ibm-leadspace-head.ibm-alternate p {
 		width: auto;
-		
 	}
 
 	#ibm-top #ibm-leadspace-head .ibm-ribbon-section .ibm-columns .ibm-col-1-1 {
@@ -385,6 +391,7 @@ a.ibm-thumbnail-module h3 {
 	.ibm-mobile {
 		display: block !important;
 	}
+	
 	.ibm-no-mobile {
 		display: none !important;
 	}
@@ -431,6 +438,7 @@ a.ibm-thumbnail-module h3 {
 	#ibm-top #ibm-content-head {
 		padding: 0 10px;
 	}
+	
 	.ibm-landing-page #ibm-content-main {
 		padding:0;
 	}
@@ -454,42 +462,35 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 10px;
 	}
 
-		.ibm-columns {
-			width: 300px;
-		}
-		
-		
-
-		
-			.ibm-col-1-1,
-			.ibm-col-2-1,
-			.ibm-col-4-1,
-			.ibm-col-4-2,
-			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
-			.ibm-col-4-3,
-			.ibm-col-5-1,
-			.ibm-col-5-2,
-			.ibm-col-5-3,
-			.ibm-col-5-4,
-			.ibm-col-6-1,
-			.ibm-col-6-2,
-			.ibm-col-6-3,
-			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
-			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"],
-			.ibm-col-6-4,
-			.ibm-col-6-5 {
-				width: 280px;
-				@include px-to-rem(font-size,18px);
-				@include px-to-rem(line-height,24px);
-			}
-		
-		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
-			.ibm-col-4-2,
-			.ibm-col-6-3 {
-				width: 280px;
-			}
-
-		}
+	.ibm-columns {
+		width: 300px;
+	}
+	
+	.ibm-col-1-1,
+	.ibm-col-2-1,
+	.ibm-col-4-1,
+	.ibm-col-4-2,
+	.ibm-col-4-3,
+	.ibm-col-5-1,
+	.ibm-col-5-2,
+	.ibm-col-5-3,
+	.ibm-col-5-4,
+	.ibm-col-6-1,
+	.ibm-col-6-2,
+	.ibm-col-6-3,
+	.ibm-col-6-4,
+	.ibm-col-6-5,
+	.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"],
+	.ibm-default #ibm-content .ibm-col-1-1,
+	.ibm-default #ibm-content .ibm-col-2-1 {
+		width: 280px;
+		@include px-to-rem(font-size,18px);
+		@include px-to-rem(line-height,24px);
+	}
 
 	//Default template styles
 	#ibm-pcon {
@@ -506,13 +507,6 @@ a.ibm-thumbnail-module h3 {
 	#ibm-content #ibm-leadspace-head p {
 		padding: 10px 0 !important;
 	}
-	
-	.ibm-default #ibm-content {
-		.ibm-col-1-1,
-		.ibm-col-2-1 {
-					width: 280px;
-				}
-		}
 	
 	#ibm-navigation {
 	   display: none;
@@ -539,7 +533,7 @@ a.ibm-thumbnail-module h3 {
 	a.ibm-ribbon-next:before,
 	a.ibm-ribbon-prev:before {
 		font-size: 20px;
-		letter-spacing: 0px;
+		letter-spacing: 0;
 	}
 	// ribbon column adjust
 	
@@ -548,29 +542,35 @@ a.ibm-thumbnail-module h3 {
 	.ibm-thumbnail-module {
 		padding-bottom: 10px;
 	}
+	
 	.ibm-thumbnail-module .ibm-sprite,
 	.ibm-thumbnail-module .ibm-resize {
 		float: left;
 	}
+	
 	.ibm-thumbnail-module h2,
 	.ibm-thumbnail-module h3,
 	.ibm-thumbnail-module p,
 	.ibm-thumbnail-module ul {
 		margin-left: 70px !important;
 	}
+	
 	.ibm-thumbnail-module .ibm-sprite + h2,
 	.ibm-thumbnail-module .ibm-sprite + h3 {
 		position: relative;
 		top: -2px;
 	}
+	
 	.ibm-thumbnail-module .ibm-sprite,
 	.ibm-thumbnail-module .ibm-resize {
 		height: 60px !important;
 		width: 60px !important;
 	}
+	
 	.ibm-thumbnail-module:hover .ibm-sprite img {
 		top: -75px !important;
 	}
+	
 	.ibm-thumbnail-module:active .ibm-sprite img {
 		top: -150px !important;
 	}
@@ -582,6 +582,7 @@ a.ibm-thumbnail-module h3 {
 	.ibm-thumbnail-module.ibm-thumbnail-swap .ibm-resize {
 		float: right;
 	}
+	
 	.ibm-thumbnail-module.ibm-thumbnail-swap h2,
 	.ibm-thumbnail-module.ibm-thumbnail-swap h3,
 	.ibm-thumbnail-module.ibm-thumbnail-swap p,
@@ -597,11 +598,10 @@ a.ibm-thumbnail-module h3 {
 		
 	// Begin footer test updates
 	#ibm-footer-module .ibm-columns .ibm-col-6-1 {
-			@include px-to-rem(font-size,11.2px);
-			width: 120px;
-			min-height: 235px;
-		}
-
+		@include px-to-rem(font-size,11.2px);
+		width: 120px;
+		min-height: 235px;
+	}
 	// End footer test updates
 
 }
@@ -647,11 +647,9 @@ a.ibm-thumbnail-module h3 {
 @media only screen and (min-width: 569px) and (max-width: 640px) {
 
 	// to be removed.  only for testing
-
 	#ibm-leadspace-body p:after {
 		content: "min-width: 569 | max-width: 640px";
 	}
-	
 	// to be removed.  only for testing
 		
 	#ibm-top {
@@ -680,65 +678,71 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-head {
 		padding: 0 30px;
 	}
-	
-	
+
 	#ibm-top .ibm-columns {
 		padding: 0 30px;
 	}
 	
-		.ibm-columns {
-			width: 540px;
-		}
-			.ibm-col-1-1 {
-				width: 520px;
-			}
-			.ibm-col-4-1 {
-				width: 115px;
-			}
-			.ibm-col-4-2,
-			.ibm-col-6-3 {
-				width: 250px;
-			}
-			.ibm-col-4-3 {
-				width: 385px;
-			}
-			.ibm-col-5-1 {
-				width: 88px;
-			}
-			.ibm-col-5-2 {
-				width: 196px;
-			}
-			.ibm-col-5-3 {
-				width: 304px;
-			}
-			.ibm-col-5-4 {
-				width: 412px;
-			}
-			.ibm-col-6-1 {
-				width: 70px;
-			}
-			.ibm-col-6-2 {
-				width: 160px;
-			}
-					
-			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
-			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
-			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
-				width: 240px;
-			}
-			.ibm-col-6-4 {
-				width: 340px;
-			}
-			.ibm-col-6-5 {
-				width: 430px;
-			}
-		
-		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
-			.ibm-col-4-2,
-			.ibm-col-6-3 {
-				width: 240px;
-			}
-		}
+	.ibm-columns {
+		width: 540px;
+	}
+
+	.ibm-col-1-1 {
+		width: 520px;
+	}
+	
+	.ibm-col-4-1 {
+		width: 115px;
+	}
+	
+	.ibm-col-4-2,
+	.ibm-col-6-3 {
+		width: 250px;
+	}
+	
+	.ibm-col-4-3 {
+		width: 385px;
+	}
+	
+	.ibm-col-5-1 {
+		width: 88px;
+	}
+	
+	.ibm-col-5-2 {
+		width: 196px;
+	}
+	
+	.ibm-col-5-3 {
+		width: 304px;
+	}
+	
+	.ibm-col-5-4 {
+		width: 412px;
+	}
+	
+	.ibm-col-6-1 {
+		width: 70px;
+	}
+	
+	.ibm-col-6-2 {
+		width: 160px;
+	}
+
+	.ibm-col-6-4 {
+		width: 340px;
+	}
+	
+	.ibm-col-6-5 {
+		width: 430px;
+	}
+
+	.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
+		width: 240px;
+	}
 	
 	// Default template
 	
@@ -756,20 +760,24 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-default #ibm-content {
-		
+	
 		.ibm-col-1-1,
 		.ibm-col-5-3 { 
-				width: 385px;
-			}
+			width: 385px;
+		}
+		
 		.ibm-col-2-1 { 
-				width: 182px;
-			}
+			width: 182px;
+		}
+		
 		.ibm-col-5-1 { 
-				width: 115px;
-			}
+			width: 115px;
+		}
+		
 		.ibm-col-5-2 {
-				width: 250px;
-			}
+			width: 250px;
+		}
+		
 	}
 	
 	#ibm-navigation {
@@ -954,7 +962,6 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 50px;
 	}
 
-	
 	// Default template styles 
 	
 	#ibm-pcon {
@@ -1020,60 +1027,67 @@ a.ibm-thumbnail-module h3 {
 	#ibm-top .ibm-columns {
 		padding: 0 54px;
 	}
+
+	.ibm-columns {
+		width: auto;
+	}
+
+	.ibm-col-1-1 {
+		width: 640px;
+	}
 	
-		.ibm-columns {
-			width: auto;
-		}
-			.ibm-col-1-1 {
-				width: 640px;
-			}
-			.ibm-col-4-1 {
-				width: 145px;
-			}
-			.ibm-col-4-2,
-			.ibm-col-6-3 {
-				width: 310px;
-			}
-			.ibm-col-4-3 {
-				width: 475px;
-			}
-			.ibm-col-5-1 {
-				width: 112px;
-			}
-			.ibm-col-5-2 {
-				width: 244px;
-			}
-			.ibm-col-5-3 {
-				width: 376px;
-			}
-			.ibm-col-5-4 {
-				width: 508px;
-			}
-			.ibm-col-6-1 {
-				width: 90px;
-			}
-			.ibm-col-6-2 {
-				width: 200px;
-			}
-			.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
-			.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
-			.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
-				width: 300px;
-			}
-			.ibm-col-6-4 {
-				width: 420px;
-			}
-			.ibm-col-6-5 {
-				width: 530px;
-			}
-		
-		
-		.ibm-landing-page .ibm-ribbon .ibm-w-gutter {
-			.ibm-col-4-2,
-			.ibm-col-6-3 {
-				width: 300px;
-			}
-		}
+	.ibm-col-4-1 {
+		width: 145px;
+	}
+	
+	.ibm-col-4-2,
+	.ibm-col-6-3 {
+		width: 310px;
+	}
+	
+	.ibm-col-4-3 {
+		width: 475px;
+	}
+	
+	.ibm-col-5-1 {
+		width: 112px;
+	}
+	
+	.ibm-col-5-2 {
+		width: 244px;
+	}
+	
+	.ibm-col-5-3 {
+		width: 376px;
+	}
+	
+	.ibm-col-5-4 {
+		width: 508px;
+	}
+	
+	.ibm-col-6-1 {
+		width: 90px;
+	}
+	
+	.ibm-col-6-2 {
+		width: 200px;
+	}
+
+	.ibm-col-6-4 {
+		width: 420px;
+	}
+	
+	.ibm-col-6-5 {
+		width: 530px;
+	}
+
+	.ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-4-2,
+	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3,
+	.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
+		width: 300px;
+	}
 	
 	//Default template layout
 	
@@ -1110,6 +1124,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	
     .ibm-default #ibm-content {
+    
     	.ibm-col-1-1 {
     	 	width: 376px;
     	}
@@ -1119,7 +1134,6 @@ a.ibm-thumbnail-module h3 {
 		}
 		
 	}
-  
 
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
