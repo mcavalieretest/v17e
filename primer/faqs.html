@@ -171,7 +171,7 @@ jQuery('.ibm-menu-list#ibm-sort select').change(function () {
 </div>
 	
     <dt class="question" data-sort="general all">What's new in v17e?</dt>
-    <dd class="answer">Adaptive and responsive grids for desktop, tablet, and mobile screens. Other enhancements: updated jquery code, icon's have been converted to a font, IBM custom fonts, as well as new, redesigned modules.</dd>
+    <dd class="answer">Adaptive grids for desktop, tablet, and mobile screens. Other enhancements: updated jquery code, icons have been converted to fonts, IBM custom fonts, as well as new, adaptive modules.</dd>
     
 	<dt class="question" data-sort="general owner all">What's new in v17e? (details)</dt>
     <dd class="answer">There are a few new classes and containers in v17e that you can use to improve your page appearance for mobile devices or just generally to tweak the page. Three biggies include 1) adding the ibm-resize class to an image tag allows the image to get smaller (or larger) as needed based on window size, 2) the ibm-band class puts an edge to edge band around ibm-columns, visually breaking the space into horizontal bands and opening up the space to the left and right of the content for use, and 3) ibm-sprite lets you have an image that looks different on mouse over or down using a single image (sprite).</dd>
@@ -200,12 +200,18 @@ jQuery('.ibm-menu-list#ibm-sort select').change(function () {
     <dt class="question" data-sort="general owner developer all">How much work is involved in changing a v17 page into a v17e page?</dt>
     <dd class="answer">
     	<ol>
-    		<li>Add a meta tag</li>
+    		<li>Add the viewport meta tag<br />
+	    		e.g.<br />
+	    		&lt;meta name="viewport" content="width=device-width, initial-scale=1"/>
+    		</li>
     		<li>Change the .css file you are calling.</li>
-    		<li>Add a class to each page's body tag (e.g. change the body tag from &lt;body id="ibm-com"> to &lt;body id="ibm-com" class="ibm-type">)</li> 
-    		<li>If the page includes any of the following: a data table, form, application, and/or social icons for the content space, you'll need to add a call to the appropriate css file.</li>
+    		<li>For non-DBCS pages, add the "ibm-type" class to the page's body tag (e.g. change the body tag from &lt;body id="ibm-com"> to &lt;body id="ibm-com" class="ibm-type">).  The "ibm-type" class applies the custom IBM fonts. This must not be applied to DBCS pages.</li>
+    		<li>The default template (left nav template) now requires an "ibm-default" class<br />
+    		e.g.<br />
+    		 &lt;div id="ibm-top" class="ibm-default"></li>
+    		<li>If the page includes any of the following: a data table, list modules, form, application, and/or social icons for the content space, you'll need to add a call to the appropriate css file.</li>
     	</ol>
-    	<a href="http://205.186.160.10/v17e/primer/index.html">Learn more here</a>
+    	<a href="index.html">Learn more here</a>
     </dd>
     
     <dt class="question" data-sort="general owner developer all">Where can I get more information about v17e?</dt>
