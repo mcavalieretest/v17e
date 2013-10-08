@@ -1,0 +1,95 @@
+// Text controls
+
+#ibm-content p {
+	padding: 10px;
+}
+
+#ibm-content h2,
+#ibm-content h3,
+#ibm-content .ibm-columns h2,
+#ibm-content .ibm-columns h3,
+.ibm-landing-page #ibm-content .ibm-columns h2,
+.ibm-landing-page #ibm-content .ibm-columns h3 {
+	margin: 5px 10px;
+}
+
+#ibm-content h4,
+#ibm-content .ibm-columns h4 {
+	padding-bottom: 5px;
+}
+
+#ibm-content .ibm-container h2,
+#ibm-content .ibm-container h3,
+#ibm-content .ibm-ribbon > h2,
+#ibm-content .ibm-ribbon > h3,
+.ibm-landing-page #ibm-content .ibm-container h2,
+.ibm-landing-page #ibm-content .ibm-container h3 {
+	margin: 0;
+}
+
+#ibm-content .ibm-container-body p ~ h2,
+#ibm-content .ibm-container-body p ~ h3,
+.ibm-landing-page #ibm-content .ibm-container-body p ~ h2,
+.ibm-landing-page #ibm-content .ibm-container-body p ~ h3,
+#ibm-content .ibm-columns [class*="ibm-col-"] h2,
+#ibm-content .ibm-columns [class*="ibm-col-"] h3 {
+	margin: 5px 0;
+}
+
+#ibm-content .ibm-columns .ibm-container h2 {
+	margin: 0;
+}
+
+#ibm-content .ibm-container h3 + p {
+	padding-top: 0 !important;
+}
+
+#ibm-content .ibm-container-body p,
+#ibm-content .ibm-columns p {
+	padding: 6px 0;	
+}
+
+.ibm-landing-page #ibm-content p {
+	padding: 10px 20px;
+}
+
+.ibm-landing-page #ibm-content #ibm-content-head p {
+	padding: 10px;	
+}
+
+.ibm-landing-page #ibm-content .ibm-columns p {
+	padding: 6px 10px;
+}
+
+.ibm-landing-page #ibm-content .ibm-container p,
+.ibm-landing-page #ibm-content .ibm-columns [class*="ibm-col-"] p,
+.dijitDialogPaneContent .ibm-common-overlay .ibm-columns [class*="ibm-col-6-"] p {
+	padding: 6px 0;
+}
+
+#ibm-content .ibm-columns h2 + p,
+#ibm-content .ibm-columns h3 + p {
+	padding-top: 0 !important;
+	margin-top: -2px !important;
+}
+#ibm-content .ibm-columns h2.ibm-alternate + p {
+	margin-top: 4px !important;
+}
+#ibm-content .ibm-columns h2.ibm-rule + p,
+#ibm-content .ibm-columns h3.ibm-rule + p,
+#ibm-content .ibm-columns h2.ibm-rule-alternate + p,
+#ibm-content .ibm-columns h3.ibm-rule-alternate + p,
+#ibm-content .ibm-columns h2.ibm-alternate-rule + p,
+#ibm-content .ibm-columns h3.ibm-alternate-rule + p {
+	margin-top: 0 !important;
+}
+
+#ibm-content .ibm-columns p + h2,
+#ibm-content .ibm-columns p + h3 {
+	margin-top: 6px;
+}
+
+#ibm-content .ibm-columns ul + h2,
+#ibm-content .ibm-columns ul + h3 {
+	padding-top: 8px;
+}
