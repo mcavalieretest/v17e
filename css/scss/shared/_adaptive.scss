@@ -335,6 +335,10 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 !important; //this important can be removed once the relate JS is updated as well
 	}
 	
+	#ibm-top.ibm-landing-page #ibm-leadspace-head.ibm-no-tabs .ibm-ribbon-nav {
+		width: auto;
+	}
+
 	.ibm-landing-page #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
 		width: auto;
