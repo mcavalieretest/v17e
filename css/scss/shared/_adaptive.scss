@@ -358,6 +358,10 @@ a.ibm-thumbnail-module h3 {
 		padding: 0;
 	}
 	
+	.ibm-landing-page #ibm-content .ibm-ribbon .ibm-ribbon-section .ibm-columns {
+		padding: 0 10px;
+	}
+	
 	.ibm-landing-page #ibm-related-content .ibm-ribbon-section {
 		margin-left: -10px;
 	}
@@ -526,13 +530,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	#ibm-related-content > .ibm-container {
 		margin: 10px auto;
 		width: 280px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-ribbon .ibm-columns {
-		padding: 0 10px;
 	}
 		
 	a.ibm-ribbon-next:before,
@@ -634,14 +635,6 @@ a.ibm-thumbnail-module h3 {
 	
 	a.ibm-ribbon-prev {
 		left: -40px;
-	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -20px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -20px;
 	}
 
 }
@@ -799,13 +792,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	#ibm-related-content > .ibm-container {
 		width: auto;
 		margin: 10px 40px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-ribbon .ibm-columns {
-		padding: 0 10px;
 	}
 	
 	a.ibm-ribbon-next:before,
@@ -819,14 +809,6 @@ a.ibm-thumbnail-module h3 {
 	
 	a.ibm-ribbon-prev {
 		left: -20px;
-	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -10px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -10px;
 	}
 	// ribbon column adjust
 	
@@ -959,7 +941,8 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	#ibm-related-content > .ibm-container {
 		margin: 10px 60px;
 	}
 	
@@ -1144,13 +1127,10 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	#ibm-related-content > .ibm-container {
 		width: 640px;
 		margin: 10px 64px;
-	}
-	
-	.ibm-landing-page #ibm-content .ibm-ribbon .ibm-columns {
-		padding: 0 10px;
 	}
 
 	a.ibm-ribbon-next:before,
@@ -1164,14 +1144,6 @@ a.ibm-thumbnail-module h3 {
 	
 	a.ibm-ribbon-prev {
 		left: -40px;
-	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -30px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -30px;
 	}
 	// ribbon column adjust
 	
@@ -1296,7 +1268,8 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	#ibm-related-content > .ibm-container {
 		margin: 10px 80px;
 	}
 		
@@ -1331,14 +1304,6 @@ a.ibm-thumbnail-module h3 {
 		left: -39px;
 		width: 25px;
 	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -29px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -29px;
-	}
 	// ribbon column adjust
 
 }
@@ -1365,14 +1330,6 @@ a.ibm-thumbnail-module h3 {
 		left: -60px;
 		width: 30px;
 	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -50px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -50px;
-	}
 	// ribbon column adjust
 
 }
@@ -1398,14 +1355,6 @@ a.ibm-thumbnail-module h3 {
 	a.ibm-ribbon-prev {
 		left: -80px;
 		width: 30px;
-	}
-	
-	#ibm-related-content a.ibm-ribbon-prev {
-		left: -70px;
-	}
-
-	#ibm-related-content a.ibm-ribbon-next {
-		right: -70px;
 	}
 	// ribbon column adjust
 

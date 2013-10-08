@@ -38,7 +38,7 @@
 	width: 940px;	
 }
 
-.ibm-landing-page #ibm-content .ibm-columns .ibm-ribbon .ibm-columns,
+.ibm-landing-page #ibm-content .ibm-columns .ibm-ribbon .ibm-ribbon-section .ibm-columns,
 .ibm-landing-page #ibm-content .ibm-container .ibm-ribbon-pane .ibm-columns {
 	margin: 0;
 }
@@ -64,7 +64,8 @@
 .ibm-landing-page #ibm-content-main > .ibm-container,
 .ibm-landing-page #ibm-content-main > .ibm-ribbon,
 .ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
-.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon {
+.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+#ibm-related-content > .ibm-container {
 	margin: 10px auto;
 	width: 940px;
 }

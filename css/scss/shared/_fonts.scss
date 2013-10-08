@@ -63,6 +63,17 @@ strong {
 	@include px-to-rem(font-size,$bodyFontSize + 5);
 	@include px-to-rem(line-height,($bodyFontSize + 5)*$largeLineHeight);
 }
+
+
+/*
+.ibm-landing-page #ibm-content .ibm-col-1-1 p,
+#ibm-related-content .ibm-col-1-1 p,
+#ibm-content .ibm-intro p {
+	padding: (($bodyFontSize + 5)*$largeLineHeight * $textPadding) 0;
+}
+*/
+
+
 .ibm-landing-page #ibm-content .ibm-col-1-1.large,
 #ibm-related-content .ibm-col-1-1.large {
 	@include px-to-rem(font-size,$largeFontSize + 5);

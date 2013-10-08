@@ -11,9 +11,11 @@ $defaultHeaderFont : "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
 $defaultFont-dbcs : Arial,sans-serif;
 $defaultHeaderFont-dbcs : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 
-$bodyFontSize: 16px;
-$largeFontSize: $bodyFontSize + 2;
-$smallFontSize: $bodyFontSize - 2;
+$bodyFontSize : 16px;
+$largeFontSize : $bodyFontSize + 2;
+$smallFontSize : $bodyFontSize - 2;
+
+$textPadding : .5; // half of line height
 
 $defaultLineHeight : 1.35;
 $smallLineHeight : 1.25;
