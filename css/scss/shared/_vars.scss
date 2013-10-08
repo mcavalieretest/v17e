@@ -15,7 +15,8 @@ $bodyFontSize : 16px;
 $largeFontSize : $bodyFontSize + 2;
 $smallFontSize : $bodyFontSize - 2;
 
-$textPadding : .5; // half of line height
+$paragraphPadding : .5;
+$headerPadding : .5;
 
 $defaultLineHeight : 1.35;
 $smallLineHeight : 1.25;
