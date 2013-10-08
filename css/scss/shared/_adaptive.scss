@@ -50,14 +50,14 @@ a.ibm-thumbnail-module h3 {
 
 .ibm-landing-page .ibm-columns > .ibm-thumbnail-small,
 .ibm-landing-page .ibm-w-gutter {
-	margin: 0px -10px;
+	margin: 0 -10px;
 }
 
 .ibm-landing-page .ibm-w-gutter .ibm-col-4-2,
 .ibm-landing-page .ibm-w-gutter .ibm-col-6-3,
 .ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
 	width: 450px;
-	margin: 0px 20px;
+	margin: 0 20px;
 }
 
 .ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"] {
@@ -265,7 +265,7 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be shared between Tablet and iPhone viewport --------------------------------------------------------------
-@media only screen and (min-width: 0px) and (max-width: 640px) {
+@media only screen and (min-width: 0) and (max-width: 640px) {
 
 	// mobile / tablet specific styles (default template)
 	#ibm-leftnav-links.ibm-mobile {
@@ -282,7 +282,7 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media only screen and (min-width: 0) and (max-width: 800px) {
 
 	#ibm-top {
 		margin-top: 0 !important;
@@ -373,12 +373,12 @@ a.ibm-thumbnail-module h3 {
 
 
 // -------------------------------------------------------------- media query to be used on iPhone viewport --------------------------------------------------------------
-@media only screen and (min-width: 0px) and (max-width: 568px) {
+@media only screen and (min-width: 0) and (max-width: 568px) {
 
 	// to be removed.  only for testing
 	
 //	#ibm-leadspace-body p:after {
-//		content: "min-width: 0px | max-width: 568px"; 
+//		content: "min-width: 0 | max-width: 568px"; 
 //	}
 	
 	// to be removed.  only for testing
@@ -496,7 +496,7 @@ a.ibm-thumbnail-module h3 {
 		@include px-to-rem(line-height,24px);
 	}
 
-	//Default template styles
+	// Default template start
 	#ibm-pcon {
 		width: 320px;
 		padding: 0;
@@ -520,6 +520,7 @@ a.ibm-thumbnail-module h3 {
 		width: 280px;
 		margin: 0 20px;
 	}
+	// Default template end
 
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
@@ -748,8 +749,7 @@ a.ibm-thumbnail-module h3 {
 		width: 240px;
 	}
 	
-	// Default template
-	
+	// Default template start
 	#ibm-pcon {
 		width: 540px;
 		padding: 0 30px 10px;
@@ -793,7 +793,8 @@ a.ibm-thumbnail-module h3 {
     	width: 115px;
     	padding: 0 10px;
     }
-    	
+	// Default template end
+	
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
@@ -966,13 +967,13 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 50px;
 	}
 
-	// Default template styles 
-	
+	// Default template start
 	#ibm-pcon {
 		width: 540px;
 		padding-left: 50px;
 		padding-right: 50px;
 	}
+	// Default template end
 	
 	#ibm-content #ibm-leadspace-head p {
 		padding-top: 10px;
@@ -998,7 +999,7 @@ a.ibm-thumbnail-module h3 {
 	
 	.ibm-landing-page #ibm-content,
 	.ibm-landing-page #ibm-related-content {
-	//	background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0px;
+	//	background: url("../i/fpo/bg-grid-768.png") repeat-y 50% 0;
 		width: 768px;
 	}
 	// to be removed.  only for testing
@@ -1018,7 +1019,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 54px;
 	}
 	
-	.ibm-landing-page #ibm-content-main{
+	.ibm-landing-page #ibm-content-main {
 		margin: 0;
 	}
 	
@@ -1093,8 +1094,7 @@ a.ibm-thumbnail-module h3 {
 		width: 300px;
 	}
 	
-	//Default template layout
-	
+	// Default template start
 	#ibm-pcon {
 		width: 640px;
 		padding-left: 64px;
@@ -1138,7 +1138,8 @@ a.ibm-thumbnail-module h3 {
 		}
 		
 	}
-
+	// Default template end
+	
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
