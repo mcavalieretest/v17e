@@ -54,14 +54,8 @@ jQuery('dt, dd').css('display','none')
 	if(sortVal == 'all') {
 		jQuery('dt, dd').css('display','block')
 	}
-	if(sortVal == 'general') {
-		jQuery('dt[data-sort*="general"]').css('display', 'block').next().css('display', 'block')
-	}
-	if(sortVal == 'owner') {
-		jQuery('dt[data-sort*="owner"]').css('display', 'block').next().css('display', 'block')
-	}
-	if(sortVal == 'developer') {
-		jQuery('dt[data-sort*="developer"]').css('display', 'block').next().css('display', 'block')
+	else {
+		jQuery('dt[data-sort*="' + sortVal + '"]').css('display', 'block').next().css('display', 'block')
 	}
 	
 };
