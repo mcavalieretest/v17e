@@ -14,7 +14,7 @@ input[class*="ibm-btn-"][class*="-sec"],
 	@include background-gradient(background-image,(top, $k00, $k20));
 	border: 1px solid #DBDBDB;
 	text-decoration: none;
-	padding: .43em 1.24em .44em;
+	padding: .45em 1.24em .48em;
 	@include border-radius(5px);
 	max-width: 100%;
 	min-width: 120px;
@@ -39,10 +39,6 @@ a.ibm-btn-sec {
 .ibm-button-link a,
 .ibm-button-link-alternate a {
 	display: inline-block;
-}
-
-input[class*="ibm-btn-"][class*="-pri"] {
-	padding: 0.55em 1.24em 0.38em;
 }
 
 //	!Primary button default state

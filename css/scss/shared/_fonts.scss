@@ -270,10 +270,7 @@ strong {
 // Bold primary buttons
 [class*="ibm-btn-"][class*="-pri"] {
 	font-family: $defaultHeaderFont-dbcs;
-}
-
-.ibm-type [class*="ibm-btn-"][class*="-pri"] {
-	font-family: $defaultHeaderFont;
+	font-weight: bold;
 }
 
 // Intro style
