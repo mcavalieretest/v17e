@@ -257,8 +257,8 @@ span.ibm-error-link:before,
 #ibm-top ul.ibm-link-list li.ibm-link-description p {
 	padding-left: $iconSpaceLeft;
 }
-// !Icon position in _common for no  reason
 
+p a[class*="ibm-chevron"]:after,
 li a.ibm-feature-link:before,
 li a[class*="ibm-chevron"]:after,
 li[class*="ibm-chevron"] a:after {
