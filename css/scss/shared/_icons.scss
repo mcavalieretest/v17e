@@ -259,12 +259,16 @@ span.ibm-error-link:before,
 }
 // !Icon position in _common for no  reason
 
-
 li a.ibm-feature-link:before,
 li a[class*="ibm-chevron"]:after,
 li[class*="ibm-chevron"] a:after {
 	margin-left: 0;
+	line-height: 0.7em;
 	text-decoration: none;
+}
+
+p a[class*="ibm-chevron"] {
+	padding-left: 0;
 }
 
 #{$ie7Selector} li[class*="-link"] a,
