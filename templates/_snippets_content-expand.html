@@ -7,60 +7,6 @@
 
 	All comments starting with NOTE can be removed and must not be included in production pages!
 
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
-	All comments starting with NOTE can be removed and must not be included in production pages!
-
  -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -89,12 +35,18 @@
 <title>IBM v17 TEMPLATE--Content Expand Class</title>
 
 <link href="../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/social.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/data.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/module.css" rel="stylesheet" title="www" type="text/css" />
+
 <script src="../js/ww.js" type="text/javascript">
 //
 </script>
+
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-content-expand">
+
 <!-- MASTHEAD_BEGIN -->
 <div id="ibm-masthead">
 <div id="ibm-mast-options"><ul>
@@ -156,7 +108,7 @@
 
 <!-- NOTE: IBM Leadspace -->
 <div id="ibm-leadspace" class="ibm-intro">
-<img src="//webdev.webmaster.ibm.com/v16/i/leadspace.jpg" alt="" />
+<img src="//webdev.webmaster.ibm.com/v16/i/leadspace.jpg" alt="" class="ibm-resize"/>
 <p>
 	This is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test is a test
 	<br />
@@ -271,7 +223,7 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 			dojo.addOnLoad(function() {
 				var d = new dijit.Dialog({
 					title: 'My Dialog Title',
-					content: 'Some content on the Dialog... '
+					content: '<div class="ibm-main">Some content on <input type="text" /> the Dialog... </div>'
 					//, class: 'ibm-overlay-alt'
 				});
 				d.show();
@@ -297,12 +249,31 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 </div>
 <div class="ibm-container ibm-alternate">
 <div class="ibm-container-body">
-<p>Duis autem vel eum iriure dolor in hendrerit <a href="#test" class="ibm-tooltip" title="just some text that shows up">tooltip in overlay</a> in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<p><a href="#"></a>Duis autem vel eum iriure dolor in hendrerit <a href="#test" class="ibm-tooltip" title="just some text that shows up">tooltip in overlay</a> in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-
+<p>
+	<input type="text" name="some_fancy_name" value="test" />
+</p>
 <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 </div>
 </div> 
+
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<ul class="ibm-bullet-list">
+<li>Lorem Ipsum vel eum iriure </li>
+<li>Lorem Ipsum vel eum iriure </li>
+<li>Lorem Ipsum vel eum iriure </li>
+<li>Lorem Ipsum vel eum iriure </li>
+
+</ul>
+
+<ol><li>Lorem Ipsum vel eum iriure </li>
+<li>Lorem Ipsum vel eum iriure </li>
+<li>Lorem Ipsum vel eum iriure </li>
+</ol>
+</div>
+</div>
 
 
 
@@ -353,6 +324,27 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 <div class="ibm-container-body">
 <p class="ibm-show-hide-controls">
 <a href="#show">Show descriptions</a> | <a class="ibm-active" href="#hide">Hide descriptions</a></p>
+<h3><a class="ibm-show-hide-link" href="#">Ut wisi enim ad minim veniam</a></h3>
+<div class="ibm-hideable">
+<p>Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore facilisi.</p>
+</div>
+<h3><a class="ibm-show-hide-link" href="#">Quis nostrud exerci tation</a></h3>
+<div class="ibm-hideable"><p>Ullamcorper suscipit ut wisi enim ad minim veniam lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore facilisi.</p></div>
+<h3><a class="ibm-show-hide-link" href="#">Lobortis nisl ut aliquip ex</a></h3>
+<div class="ibm-hideable"><p>Quis nostrud exerci tation ullamcorper suscipit ut wisi enim ad minim veniam ea commodo consequat. Duis autem vel eum iriure
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore facilisi.</p>
+</div>
+</div>
+</div>
+
+<!-- SHOW/HIDE WITH TEXT LINKS EXAMPLE / ALTERNATE -->
+<div class="ibm-container ibm-simple-show-hide ibm-alternate">
+<h2><a>Simple show/hide alternative</a></h2>
+<p class="ibm-show-hide-controls">
+<a href="#show">Show descriptions</a> | <a class="ibm-active" href="#hide">Hide descriptions</a></p>
+<div class="ibm-container-body">
 <h3><a class="ibm-show-hide-link" href="#">Ut wisi enim ad minim veniam</a></h3>
 <div class="ibm-hideable">
 <p>Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
@@ -475,7 +467,8 @@ dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
 
 
 <!-- NOTE: table works the same in v16 and v17 -->
-
+<div class="ibm-container">
+<div class="ibm-container-body">
 <table border="0" cellpadding="0" cellspacing="0" class="ibm-data-table" summary="Table with three columns and 4 rows. The first row contains the column headers. The first column contains the row headers.">
 <caption><em>Table</em></caption>
 <thead>
@@ -505,7 +498,8 @@ dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore 
 </tr>
 </tbody>
 </table>
-
+</div>
+</div>
 
 
 
@@ -875,11 +869,11 @@ Sentio aliquos togatos</td>
 <img alt="" src="//webdev.webmaster.ibm.com/v16/i/imagery.gif"/>
 <p class="ibm-list-next"><a class="ibm-feature-link" href="replace.html">Find out how to chicken master jones blah blah blahdy blah arrrg.</a></p>
 <ul class="ibm-bullet-list">
-<li><a href="url" class="ibm-forward-link">Donec dolor mauris arrg asa</a></li>
-<li><a href="url" class="ibm-forward-link">Etiam massa</a></li>
-<li><a href="url" class="ibm-forward-link">Donec dolor mauris</a></li>
+<li><a href="url">Donec dolor mauris arrg asa</a></li>
+<li><a href="url">Etiam massa</a></li>
+<li><a href="url">Donec dolor mauris</a></li>
 
-<li><a href="url" class="ibm-forward-link">Etiam massa</a><p>This is another test</p></li>
+<li><a href="url">Etiam massa</a><p>This is another test</p></li>
 </ul>
 <ul class="ibm-link-list">
 <li><a href="url" class="ibm-forward-link">Donec dolor mauris arrg asa</a></li>
@@ -902,11 +896,11 @@ Sentio aliquos togatos</td>
 <img alt="" src="//webdev.webmaster.ibm.com/v16/i/imagery.gif"/>
 <p class="ibm-list-next"><a class="ibm-feature-link" href="replace.html">Find out how to chicken master jones blah blah blahdy blah arrrg.</a></p>
 <ul class="ibm-bullet-list">
-<li><a href="url" class="ibm-forward-link">Donec dolor mauris arrg asa</a></li>
-<li><a href="url" class="ibm-forward-link">Etiam massa</a></li>
-<li><a href="url" class="ibm-forward-link">Donec dolor mauris</a></li>
+<li><a href="url">Donec dolor mauris arrg asa</a></li>
+<li><a href="url">Etiam massa</a></li>
+<li><a href="url">Donec dolor mauris</a></li>
 
-<li><a href="url" class="ibm-forward-link">Etiam massa</a><p>This is another test</p></li>
+<li><a href="url">Etiam massa</a><p>This is another test</p></li>
 </ul>
 <ul class="ibm-link-list">
 <li><a href="url" class="ibm-forward-link">Donec dolor mauris arrg asa</a></li>
@@ -1174,29 +1168,29 @@ Sentio aliquos togatos</td>
 <h2 class="ibm-access">Tab navigation</h2>
 <ul class="ibm-tabs">
 <li class="ibm-first-tab ibm-highlight-tab"><a
-	href="">Welcome</a><span
+	href="?fake=Welcome">Welcome</a><span
 	class="ibm-access"> - selected tab,</span></li>
 
-<li><a href="">Organization</a></li>
-<li><a href="">Interests</a></li>
-<li class="ibm-last-tab"><a href="" >Other profiles</a></li>
+<li><a href="?fake=Organization">Organization</a></li>
+<li><a href="?fake=Interests">Interests</a></li>
+<li class="ibm-last-tab"><a href="?Other%20profiles" >Other profiles</a></li>
 </ul>
 </div>
 
 <div class="ibm-tab-section ibm-text">
 <h2 class="ibm-access">Tab navigation</h2>
 <ul class="ibm-tabs">
-<li class="ibm-first-tab ibm-highlight-tab"><a href="">Duis autem</a><span class="ibm-access"> - selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-first-tab ibm-highlight-tab"><a href="?fake=Duis%20autem">Duis autem</a><span class="ibm-access"> - selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
 
-<li><a href="">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-last-tab"><a href="">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Vel%20eum%20iriure">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Dolor%20in%20hendrerit">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=In%20vulputate">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Velit%20esse%20molestie">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ut%20wisi%20enim">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ad%20minim%20veniam">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Quis%20nostrud">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Exerci%20tation">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-last-tab"><a href="?fake=Ullamcorper%20suscipit">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
 
 </ul>
 <div class="ibm-rule"><hr /></div>
@@ -1211,73 +1205,30 @@ Sentio aliquos togatos</td>
 <h2 class="ibm-access">Tab navigation</h2>
 <ul class="ibm-tabs">
 <li class="ibm-first-tab ibm-highlight-tab"><a
-	href="">Welcome</a><span
+	href="?fake=Welcome">Welcome</a><span
 	class="ibm-access"> - selected tab,</span></li>
 
-<li><a href="">Organization</a></li>
-<li><a href="">Interests</a></li>
-<li class="ibm-last-tab"><a href="" >Other profiles</a></li>
+<li><a href="?fake=Organization">Organization</a></li>
+<li><a href="?fake=Interests">Interests</a></li>
+<li class="ibm-last-tab"><a href="?Other%20profiles" >Other profiles</a></li>
 </ul>
 </div>
 
 <div class="ibm-tab-section ibm-text">
 <h2 class="ibm-access">Tab navigation</h2>
 <ul class="ibm-tabs">
-<li class="ibm-first-tab"><a href="">Duis autem</a><span class="ibm-access"> - selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-first-tab"><a href="?fake=Duis%20autem">Duis autem</a><span class="ibm-access"> - selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
 
-<li><a href="">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-highlight-tab"><a href="">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-last-tab"><a href="">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Vel%20eum%20iriure">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Dolor%20in%20hendrerit">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=In%20vulputate">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Velit%20esse%20molestie">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ut%20wisi%20enim">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-highlight-tab"><a href="?fake=Ad%20minim%20veniam">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Quis%20nostrud">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Exerci%20tation">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-last-tab"><a href="?fake=Ullamcorper%20suscipit">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
 
-</ul>
-<div class="ibm-rule"><hr /></div>
-</div>
-<div class="ibm-container-body">&nbsp;</div>
-</div>
-
-<div class="ibm-container">
-<div class="ibm-tab-section ibm-text">
-<h2 class="ibm-access">Tab navigation</h2>
-<ul class="ibm-tabs">
-<li class="ibm-first-tab ibm-highlight-tab"><a href="">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
-
-<li><a href="">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-last-tab"><a href="">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
-</ul>
-<div class="ibm-rule"><hr /></div>
-</div>
-
-<div class="ibm-container-body">&nbsp;</div>
-</div>
-
-<div class="ibm-container">
-<div class="ibm-tab-section ibm-text">
-<h2 class="ibm-access">Tab navigation</h2>
-<ul class="ibm-tabs">
-<li class="ibm-first-tab"><a href="">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
-<li class=" ibm-highlight-tab"><a href="">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
-
-<li><a href="">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-last-tab"><a href="">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
 </ul>
 <div class="ibm-rule"><hr /></div>
 </div>
@@ -1288,17 +1239,60 @@ Sentio aliquos togatos</td>
 <div class="ibm-tab-section ibm-text">
 <h2 class="ibm-access">Tab navigation</h2>
 <ul class="ibm-tabs">
-<li class="ibm-first-tab"><a href="">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-first-tab ibm-highlight-tab"><a href="?fake=Duis%20autem">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Vel%20eum%20iriure">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Dolor%20in%20hendrerit">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
 
-<li><a href="">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
-<li><a href="">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
-<li class="ibm-last-tab ibm-highlight-tab"><a href="">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=In%20vulputate">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Velit%20esse%20molestie">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ut%20wisi%20enim">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ad%20minim%20veniam">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Quis%20nostrud">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Exerci%20tation">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-last-tab"><a href="?fake=Ullamcorper%20suscipit">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
+</ul>
+<div class="ibm-rule"><hr /></div>
+</div>
+
+<div class="ibm-container-body">&nbsp;</div>
+</div>
+
+<div class="ibm-container">
+<div class="ibm-tab-section ibm-text">
+<h2 class="ibm-access">Tab navigation</h2>
+<ul class="ibm-tabs">
+<li class="ibm-first-tab"><a href="?fake=Duis%20autem">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Vel%20eum%20iriure">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Dolor%20in%20hendrerit">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
+<li class=" ibm-highlight-tab"><a href="?fake=In%20vulputate">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
+
+<li><a href="?fake=Velit%20esse%20molestie">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ut%20wisi%20enim">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ad%20minim%20veniam">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Quis%20nostrud">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Exerci%20tation">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-last-tab"><a href="?fake=Ullamcorper%20suscipit">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
+</ul>
+<div class="ibm-rule"><hr /></div>
+</div>
+<div class="ibm-container-body">&nbsp;</div>
+</div>
+
+<div class="ibm-container">
+<div class="ibm-tab-section ibm-text">
+<h2 class="ibm-access">Tab navigation</h2>
+<ul class="ibm-tabs">
+<li class="ibm-first-tab"><a href="?fake=Duis%20autem">Duis autem</a><span class="ibm-access">- selected tab,</span><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Vel%20eum%20iriure">Vel eum iriure</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Dolor%20in%20hendrerit">Dolor in hendrerit</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=In%20vulputate">In vulputate</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Velit%20esse%20molestie">Velit esse molestie</a><span class="ibm-sep">&nbsp;</span></li>
+
+<li><a href="?fake=Ut%20wisi%20enim">Ut wisi enim</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Ad%20minim%20veniam">Ad minim veniam</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Quis%20nostrud">Quis nostrud</a><span class="ibm-sep">&nbsp;</span></li>
+<li><a href="?fake=Exerci%20tation">Exerci tation</a><span class="ibm-sep">&nbsp;</span></li>
+<li class="ibm-last-tab ibm-highlight-tab"><a href="?fake=Ullamcorper%20suscipit">Ullamcorper suscipit</a><span class="ibm-sep">&nbsp;</span></li>
 </ul>
 <div class="ibm-rule"><hr /></div>
 </div>
@@ -1394,17 +1388,17 @@ Sentio aliquos togatos</td>
 </div>
 
 
-
-
-
 <div class="ibm-container">
 <h2>Products</h2>
-<div class="ibm-container-body ibm-three-column">
+<div class="ibm-container-body">
 <p>ThinkPad&reg; notebooks, ThinkCentre&trade; desktops and other PC products are now products of Lenovo. Links notated by an asterisk (*) will take you to Lenovo's Web site.  <a href="#">Learn more</a>.</p>
 
 <div class="ibm-rule"><hr /></div>
 
-<div class="ibm-column ibm-list-container ibm-first">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-5-1">
 <h3>Systems &amp; Servers</h3>
 <ul class="ibm-bullet-list">
 <li><a href="#">System i (iSeries)</a></li>
@@ -1429,7 +1423,7 @@ Sentio aliquos togatos</td>
 </ul>
 </div>
 
-<div class="ibm-column ibm-list-container ibm-second">
+<div class="ibm-col-5-1">
 <h3><a href="#">Software</a></h3>
 <ul class="ibm-bullet-list">
 <li><a href="#">Software by category</a></li>
@@ -1453,9 +1447,10 @@ Sentio aliquos togatos</td>
 <h3><a href="#">Semiconductors</a></h3>
 <div class="ibm-rule"><hr /></div>
 <h3><a href="#">Upgrades, accessories &amp; parts</a></h3>
+
 </div>
 
-<div class="ibm-column ibm-list-container ibm-third">
+<div class="ibm-col-5-1">
 <h3><a href="#">Printing systems</a></h3>
 <div class="ibm-rule"><hr /></div>
 <h3><a href="#">Point-of-sale and self-service offerings</a></h3>
@@ -1479,8 +1474,10 @@ Sentio aliquos togatos</td>
 </div>
 
 </div>
+
 </div>
 
+</div>
 
 <!-- code module -->
 <div class="ibm-container ibm-alternate">
@@ -1511,9 +1508,9 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 <!-- code module -->
 
 
-<div class="ibm-two-column">
+<div class="ibm-columns">
 
-<div class="ibm-column ibm-first">
+<div class="ibm-col-2-1">
 
 <div class="ibm-container">
 <h2>Linking to ibm.com 1-1</h2>
@@ -1535,9 +1532,10 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 
 </div>
 
+
 </div>
 
-<div class="ibm-column ibm-second">
+<div class="ibm-col-2-1">
 
 
 
@@ -1589,9 +1587,6 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 
 
 
-
-
-
 <div class="ibm-container ibm-portrait-module">
 <h2>ibm-portrait-module</h2>
 <div class="ibm-container-body">
@@ -1614,7 +1609,7 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 &lt;h2&gt;ibm-portrait-module&lt;/h2&gt;<br />
 &lt;div class="ibm-container-body"&gt;<br />
 
-&lt;img alt="" src="//webdev.webmaster.ibm.com/v16/i/imagery.gif"/&gt;<br />
+&lt;img alt="" src="/v16/i/imagery.gif"/&gt;<br />
 &lt;p&gt;&lt;a class="ibm-feature-link" href="replace.html"&gt;Find out how to chicken master jones blah blah blahdy blah arrrg.&lt;/a&gt;&lt;/p&gt;<br />
 
 &lt;/div&gt;<br />
@@ -1624,13 +1619,6 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 
 </div>
 </div>
-
-
-
-
-
-
-
 
 
 <div class="ibm-container">
@@ -1659,17 +1647,14 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 </div>
 
 
-
-
-
-
-
 <div class="ibm-container">
 <h2>ibm-portrait-module-list 2</h2>
-<div class="ibm-container-body ibm-two-column">
+<div class="ibm-container-body">
 
-<div class="ibm-column ibm-first">
+<div class="ibm-columns">
 
+
+<div class="ibm-col-2-1">
 <ul class="ibm-portrait-module-list">
 <li><img alt="" src="//webdev.webmaster.ibm.com/v16/i/imagery.gif"/>
 <h3><a class="ibm-feature-link" href="http://www.ibm.com">Test 1</a></h3>
@@ -1689,8 +1674,8 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 
 </div>
 
-<div class="ibm-column ibm-second">
 
+<div class="ibm-col-2-1">
 <ul class="ibm-portrait-module-list">
 <li><img alt="" src="//webdev.webmaster.ibm.com/v16/i/color_palette.gif"/>
 <h3><a class="ibm-feature-link" href="http://www.ibm.com">Test 2</a></h3>
@@ -1708,12 +1693,10 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 
 </div>
 
+</div>
 
 </div>
 </div>
-
-
-
 
 
 
@@ -2220,7 +2203,7 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 <ol class="ibm-article-list">
 <li><h3>07 Dec 2006</h3>
 
-<p><strong><a href="" class="ibm-feature-link">Indian financial institution banks on software to mine customer feedback</a></strong><br />India's second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
+<p><strong><a href="" class="ibm-feature-link">Indian financial institution banks on software to mine customer feedback</a></strong><br />India’s second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
 <li><h3>07 Dec 2006</h3>
 <p><strong><a href="" class="ibm-feature-link">New 911 system gives D.C. residents quick answers</a></strong><br />Washington, DC, residents can expect their 911 calls be answered within five seconds thanks to a new phone system designed, developed and installed by IBM. With the Unified Communications Center, 99.7 percent of emergency calls are answered within five seconds, with most calls answered in less than one second. That compares to a national average of about 10 seconds.</p></li>
 </ol>
@@ -2241,15 +2224,15 @@ $generator-&gt;getContent(100, 'html', false);<br/>
 <li><h3>07 Dec 2006</h3>
 <h4><a href="" class="ibm-feature-link">Indian financial institution banks on software to mine customer feedback</a></h4>
 
-<p>India's second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p>
+<p>India’s second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p>
 <h4><a href="" class="ibm-feature-link">Indian financial institution banks on software to mine customer feedback</a></h4>
-<p>India's second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
+<p>India’s second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
 <li><h3>07 Dec 2006</h3>
 
 <h4><a href="" class="ibm-feature-link">New 911 system gives D.C. residents quick answers</a></h4>
 <p>Washington, DC, residents can expect their 911 calls be answered within five seconds thanks to a new phone system designed, developed and installed by IBM. With the Unified Communications Center, 99.7 percent of emergency calls are answered within five seconds, with most calls answered in less than one second. That compares to a national average of about 10 seconds.</p>
 <h4><a href="" class="ibm-feature-link">Indian financial institution banks on software to mine customer feedback</a></h4>
-<p>India's second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
+<p>India’s second largest private bank will sift through nearly all its customer feedback to respond better and identify new business opportunities. HDFC Bank Ltd. will work with IBM to install information management software that will examine customer feedback in emails and phone calls from among its 535 branches in 300 cities.</p></li>
 
 </ol>
 
@@ -2706,7 +2689,7 @@ International Line:<br />
 <li><a class="ibm-forward-link" href="#">Page title generator</a></li>
 <li><a class="ibm-forward-em-link" href="#">Forward</a></li>
 
-<li><a class="ibm-information-link" href="#">Information/Help</a></li>
+<li><a class="ibm-information-link" href="#">Information/help</a></li>
 <li><a class="ibm-password-link" href="#">Password</a></li>
 <li><a class="ibm-secure-link" href="#">Secure</a></li>
 <li><a class="ibm-pdf-link" href="#">PDF</a></li>
@@ -2792,7 +2775,7 @@ International Line:<br />
 
 <li id="ibm-overview"><a href="index.shtml">Lorem ipsum</a></li>
 <li><a href="http://pokgsa.ibm.com/~katagawa/public/example/?a=0">Dolor sit amet</a></li>
-<li><a href="http://pokgsa.ibm.com/~katagawa/public/example/?a=1">Consetetur sadipscing</a>
+<li class="ibm-active"><a href="http://pokgsa.ibm.com/~katagawa/public/example/?a=1">Consetetur sadipscing</a>
 <ul>
 <li><a href="http://pokgsa.ibm.com/~katagawa/public/example/?a=0">Tuna</a></li>
 

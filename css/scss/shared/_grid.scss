@@ -11,7 +11,8 @@
     padding: 0 ($landingSpace / 2) ($landingSpace / 2);
 }
 
-.ibm-default #ibm-content .ibm-columns {
+.ibm-default #ibm-content .ibm-columns,
+.ibm-content-expand #ibm-content .ibm-columns {
     width: auto;
     padding: 0 0 10px;
 }
@@ -119,11 +120,11 @@
   
 }
 
-.ibm-default #ibm-content .ibm-col-1-1 {
-	width: 556px;
-}
-
-.ibm-default #ibm-content .ibm-col-6-4 .ibm-col-1-1 {
+.ibm-default #ibm-content .ibm-col-1-1,
+.ibm-default #ibm-content .ibm-col-5-3,
+.ibm-default #ibm-content .ibm-col-6-4 .ibm-col-1-1,
+.ibm-content-expand #ibm-content .ibm-col-1-1,
+.ibm-content-expand #ibm-content .ibm-col-5-3 {
 	width: auto;
 }
 
@@ -137,26 +138,13 @@
 
 //================content-expand for 5 column layout============
 
-
-.ibm-content-expand #ibm-content .ibm-columns {
-	width: auto;
-}
-
-.ibm-content-expand #ibm-content .ibm-col-1-1 {
-	width: 748px;
-}
-
 .ibm-content-expand #ibm-content  .ibm-col-5-1 {
-    width: 169px;
+    width: 232px;
 }
 
 .ibm-content-expand #ibm-content .ibm-col-2-1,
 .ibm-content-expand #ibm-content .ibm-col-5-2 {
     width: 359px;
-}
-
-.ibm-content-expand #ibm-content .ibm-col-5-3 {
-    width: 549px;
 }
 
 //=============End of content-exapnd style================
@@ -166,4 +154,5 @@
 #ibm-content-sidebar .ibm-col-5-1  {
 	padding: 0;
 	margin: 0;
+	float: none;
 }
