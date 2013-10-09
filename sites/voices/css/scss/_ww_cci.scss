@@ -7,7 +7,9 @@
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
 
-@import "cci_vars";
+
+// Import all stylesheets inside of ww_cci.scss
+//@import "cci_vars";
 
 body ul li:before, body ul li:after {
 	content:none;
