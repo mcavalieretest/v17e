@@ -63,7 +63,8 @@ jQuery('h2, p').css('display','none')
 		jQuery('h2, p').css('display','block')
 	}
 	else {
-		jQuery('h2[data-sort*="' + sortVal + '"]').css('display', 'block').next().css('display', 'block')
+		jQuery('h2[data-sort*="' + sortVal + '"]').css('display', 'block').next('div').children().css('display', 'block')
+		
 	}
 	
 };
@@ -185,6 +186,12 @@ jQuery('.ibm-menu-list#ibm-sort select').change(function () {
 		<div class="ibm-container-body">
 		<p class="answer">There are a few new classes and containers in v17e that you can use to improve your page appearance for mobile devices or just generally to tweak the page. Three biggies include 1) adding the ibm-resize class to an image tag allows the image to get smaller (or larger) as needed based on window size, 2) the ibm-band class puts an edge to edge band around ibm-columns, visually breaking the space into horizontal bands and opening up the space to the left and right of the content for use, and 3) ibm-sprite lets you have an image that looks different on mouse over or down using a single image (sprite).</p>
 		</div>
+	<h2 data-sort="developer all"><a class="ibm-show-hide-link" href="#">How do I get started? How do I get access?</a></h2>
+		<div class="ibm-container-body">
+		<p class="answer">Your developement team can first get started by contacting Jeff Florentino (Notes ID) who will then grant you and your dev team access to the v17_enhanced SVN repository. Your developers should first get familiar with v17 code and elements found on the CDDS site. Once familiar, you will set you up to start coding with v17e.</p>
+		</div>
+		
+		
 	</div>
 
 	<!-- dl>
