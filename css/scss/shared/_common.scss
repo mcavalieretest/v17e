@@ -716,15 +716,9 @@ div.ibm-code-sample {
 }
 div.ibm-alternate-code-sample {
     background-color: #F7F7F7;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     color: #666;
-    padding:0 10px;
-}
-
-.ibm-landing-page div.ibm-columns div.ibm-code-sample,
-.ibm-landing-page div.ibm-columns div.ibm-alternate-code-sample,
-div.ibm-columns div.ibm-code-sample {
-	margin: 10px 0px;
+    padding: 0 10px;
 }
 
 // end of code sample  section
@@ -733,14 +727,14 @@ div.ibm-columns div.ibm-code-sample {
 // inset styles
 #ibm-content-main p img.ibm-inset {
 	float: left;
-    margin: 5px 20px 12px 0px;
-    padding: 0px;
+    margin: 5px 20px 12px 0;
+    padding: 0;
 }
 #ibm-content-main p img.ibm-inset.ibm-alternate {
     float: right;
-	border: 0px none;
-	margin: 5px 0px 12px 20px;
-    padding: 0px;
+	border: 0 none;
+	margin: 5px 0 12px 20px;
+    padding: 0;
 }
 
 .ibm-inset-img-caption.ibm-alternate {

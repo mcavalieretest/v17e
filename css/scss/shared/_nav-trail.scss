@@ -10,11 +10,6 @@ ul#ibm-navigation-trail:after {
 	@include aslett-clearing;
 }
 
-#ibm-content #ibm-leadspace-head ul#ibm-navigation-trail,
-#ibm-content-head ul#ibm-navigation-trail {
-	margin: 0 10px;
-}
-
 #ibm-content-head ul#ibm-navigation-trail li.ibm-first,
 #ibm-content-head ul#ibm-navigation-trail li:first-child {
 	padding-left: 0;

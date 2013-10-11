@@ -73,11 +73,14 @@ strong {
 // default/content expand (left nav) template end
 
 .ibm-default #ibm-content p,
-.ibm-content-expand #ibm-content p,
-#ibm-content-main > p {
+.ibm-content-expand #ibm-content p {
 	padding: 6px 0;
 }
 
+.ibm-default #ibm-content-main > p,
+.ibm-content-expand #ibm-content-main > p {
+	padding: 6px 10px;
+}
 
 .ibm-col-1-1,
 #ibm-content .ibm-intro {
