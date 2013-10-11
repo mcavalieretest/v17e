@@ -33,7 +33,7 @@ css/
 |   |   |-- _related.scss		# related
 |   |   |-- _footer.scss		# footer
 |   |   |-- _common.scss		# common
-|   |   |-- _text.scss			# text
+|   |   |-- _text.scss			# text (removed for testing new paragraph / header spacing)
 |   |   |-- _nav-trail.scss		# navigation trail
 |   |   |-- _buttons.scss		# buttons
 |   |   |-- _ribbon.scss		# ribbon
@@ -94,7 +94,7 @@ css/
 		"scss/shared/related",
 		"scss/shared/footer",
 		"scss/shared/common",
-		"scss/shared/text",
+//		"scss/shared/text",
 		"scss/shared/nav-trail",
 		"scss/shared/buttons",
 		"scss/shared/ribbon",

@@ -82,17 +82,15 @@
 }
 
 .ibm-popup #ibm-content-main {
-	padding-right: 20px;
 	width: 95%;
 }
 
 .ibm-popup #ibm-content #ibm-content-main p.ibm-intro {
 	color: #222;
-	padding-left: 10px;
 }
 
 .ibm-popup #ibm-content .ibm-buttons-row p {
-    padding: 10px 0 10px 10px;
+    padding: 10px 0;
     width: 95%;
 }
 
@@ -103,18 +101,13 @@
 }
 
 .ibm-popup iframe {
-	margin: -5px 0 10px 10px; 
-	border:2px solid #CCC; 
-	padding: 0;
+	border: 2px solid #CCC;
 	font-weight: normal; 
 	font-size: 0.8em; 
 	color: rgb(0, 0, 0);
 }
 
 #ibm-mytext {
-    font-size: 0.8em !important;
-    font-weight: normal;
-    margin-left: 10px !important;
     max-width: 480px;
     min-width: 95%;
 }
