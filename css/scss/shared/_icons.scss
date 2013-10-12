@@ -101,7 +101,6 @@
 [class*="-link"]:before,
 #ibm-parent-link a:before,
 #ibm-navigation-trail li:after,
-ul li:before,
 .ibm-bullet:before,
 .ibm-cta-arrow-sm:before,
 a.ibm-chevron-link:after,
@@ -153,7 +152,17 @@ a.ibm-ribbon-next:before,
 	font-size: $iconSpaceLeft;
 }
 
-ul li:before,
+ul li:before {
+	color: $linkColor;
+	font-family: 'iconsIBM';
+	font-variant: normal;
+	text-transform: none;
+	display: inline-block;
+	letter-spacing: 4px;
+	position: absolute;
+	text-decoration: none;
+}
+
 .ibm-bullet:before,
 #ibm-navigation-trail li:after,
 #ibm-top ul li.ibm-highlight-link:before,
@@ -161,16 +170,6 @@ a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-close:before {
 	font-size: inherit;
-}
-
-ul li[class*="-link"]:before,
-ul li.ibm-call-info:before,
-ul li.ibm-symp-doc:before,
-ul li.ibm-symp-presentation:before,
-ul li.ibm-symp-spreadsheet:before,
-ul li.ibm-community:before,
-ul li.ibm-usergroup:before {
-	font-size: $iconSpaceLeft;
 }
 
 ul li.ibm-no-links:before {
@@ -214,6 +213,7 @@ li a.ibm-close:before
 */
 
 #ibm-top ul.ibm-link-list li[class*="-link"],
+#ibm-top ul.ibm-link-list li.ibm-bullet,
 #ibm-top ul.ibm-link-list li.ibm-call-info,
 #ibm-top ul.ibm-link-list li.ibm-symp-doc,
 #ibm-top ul.ibm-link-list li.ibm-symp-presentation,
@@ -251,6 +251,7 @@ span.ibm-error-link:before,
 	text-decoration: none;
 }
 
+ul.ibm-link-list li.ibm-bullet a,
 #ibm-top ul.ibm-link-list li.ibm-link-description {
 	padding-left: 0;
 }
@@ -514,6 +515,7 @@ ul.ibm-tabs li:before,
 
 // !add back the icons when a class on the <li> is used
 .ibm-link-list li[class*="-link"]:before,
+.ibm-link-list li.ibm-bullet:before,
 .ibm-link-list li.ibm-call-info:before,
 .ibm-link-list li.ibm-symp-doc:before,
 .ibm-link-list li.ibm-symp-presentation:before,
