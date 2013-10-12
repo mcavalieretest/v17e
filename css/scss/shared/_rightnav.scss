@@ -9,7 +9,7 @@
 
 .ibm-liquid #ibm-content-sidebar {
 	float: left;
-	margin: 0  -202px 0  0 ;
+	margin: 0  -202px 0  0;
 	padding-left: 10px;
 }
 .ibm-landing-page #ibm-content-sidebar {
@@ -37,19 +37,11 @@
 }
 
 #ibm-content-sidebar .ibm-container.ibm-alternate .ibm-container-body {
-	border-width:0px;
+	border-width: 0;
 }
 
-#ibm-content #ibm-content-sidebar p.ibm-ind-link {padding: 0 ;}
-
-#ibm-twitter-list li {
-	border-top: 1px dotted #CCC;
-	padding: 0 ;
-}
-
-#ibm-twitter-list li {
-	padding-top:7px !important; 
-	padding-bottom:5px !important;
+#ibm-content #ibm-content-sidebar p.ibm-ind-link {
+	padding: 0;
 }
 
 ul.ibm-link-list li a {
@@ -68,7 +60,7 @@ ul.ibm-link-list li.ibm-first {
 /* V17 Contact module style */
 #ibm-content #ibm-content-sidebar #ibm-contact-module .ibm-container,
 .ibm-landing-page #ibm-content .ibm-col-6-1 #ibm-contact-module .ibm-container{
-	border-top:0 none !important;
+	border-top: 0 none !important;
 }
 #ibm-content #ibm-contact-module ul.ibm-alternate li,
 #ibm-content #ibm-contact-module ul.ibm-alternate li span,
@@ -107,17 +99,12 @@ ul.ibm-link-list li.ibm-first {
 .ibm-landing-page .ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait img {
 	display: inline;
 	float: left;
-	margin: 8px 10px 5px 0 ;
+	margin: 8px 10px 5px 0;
 }
 
 #ibm-content-sidebar ul.ibm-link-list li p.ibm-call-info {
 	padding-left: 20px !important;
 }
-
-
-
-
-
 
 #ibm-content ul.ibm-live-assistance-list {
 	clear: both;
@@ -128,7 +115,7 @@ ul.ibm-link-list li.ibm-first {
 }
 
 .ibm-container-body p + ul.ibm-live-assistance-list {
-	padding-top:0px !important;
+	padding-top: 0 !important;
 }
 
 .ibm-columns .ibm-col-5-1 ul.ibm-live-assistance-list {
@@ -144,17 +131,6 @@ ul.ibm-link-list li.ibm-first {
 .ibm-container.ibm-live-assistance .ibm-container-body div.ibm-portrait.ibm-alternate p {
 	margin-left: 46px !important;
 }
-
-
-/* LEGACY.  MIGHT BE ABLE TO DELETE FOR V17 */
-#ibm-content #ibm-content-sidebar .ibm-ms-statement {
-	margin: 0 ;
-}
-#ibm-content #ibm-content-sidebar .ibm-ms-statement .ibm-container-body p {
-	color: #000;
-	padding: 0 ;
-}
-/* LEGACY.  MIGHT BE ABLE TO DELETE FOR V17 */
 
 
 #ibm-content-sidebar form.ibm-sidebar-form {
