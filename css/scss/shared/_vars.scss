@@ -12,8 +12,8 @@ $defaultFont-dbcs : Arial,sans-serif;
 $defaultHeaderFont-dbcs : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
 
 $bodyFontSize : 16px;
-$largeFontSize : $bodyFontSize + 2;
-$smallFontSize : $bodyFontSize - 2;
+$largeFontSize : $bodyFontSize * 1.25;
+$smallFontSize : $bodyFontSize * .8;
 
 $paragraphSpacing : .5;
 $headerSpacing : .5;
