@@ -123,8 +123,7 @@
 .ibm-default #ibm-content .ibm-col-1-1,
 .ibm-default #ibm-content .ibm-col-5-3,
 .ibm-default #ibm-content .ibm-col-6-4 .ibm-col-1-1,
-.ibm-content-expand #ibm-content .ibm-col-1-1,
-.ibm-content-expand #ibm-content .ibm-col-5-3 {
+.ibm-content-expand #ibm-content .ibm-col-1-1 {
 	width: auto;
 }
 
@@ -139,7 +138,7 @@
 //================content-expand for 5 column layout============
 
 .ibm-content-expand #ibm-content  .ibm-col-5-1 {
-    width: 232px;
+    width: 169px;
 }
 
 .ibm-content-expand #ibm-content .ibm-col-2-1,
@@ -147,6 +146,9 @@
     width: 359px;
 }
 
+.ibm-content-expand #ibm-content .ibm-col-5-3 {
+	width: 549px;
+}
 //=============End of content-exapnd style================
 
 

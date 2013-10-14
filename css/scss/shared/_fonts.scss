@@ -73,7 +73,13 @@ strong {
 // default/content expand (left nav) template end
 
 .ibm-default #ibm-content p,
-.ibm-content-expand #ibm-content p {
+.ibm-default #ibm-content h2,
+.ibm-default #ibm-content h3,
+.ibm-default #ibm-content h4,
+.ibm-content-expand #ibm-content p,
+.ibm-content-expand #ibm-content h2,
+.ibm-content-expand #ibm-content h3,
+.ibm-content-expand #ibm-content h4 {
 	padding: 6px 0;
 }
 
@@ -100,17 +106,32 @@ strong {
 	@include px-to-rem(line-height,($smallFontSize + 5)*$largeLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-1-1 p {
-	padding: (($bodyFontSize + 5)*$largeLineHeight * $paragraphPadding) 0;
+	padding: (($bodyFontSize + 5)*$largeLineHeight * $paragraphSpacing) 0;
 }
 .ibm-col-1-1.large p {
-	padding: (($largeFontSize + 5)*$largeLineHeight * $paragraphPadding) 0;
+	padding: (($largeFontSize + 5)*$largeLineHeight * $paragraphSpacing) 0;
 }
 .ibm-col-1-1.small p {
-	padding: (($smallFontSize + 5)*$largeLineHeight * $paragraphPadding) 0;
+	padding: (($smallFontSize + 5)*$largeLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-1-1 h2,
+.ibm-col-1-1 h3,
+.ibm-col-1-1 h4 {
+	padding: (($bodyFontSize + 5)*$largeLineHeight * $headerSpacing) 0;
+}
+.ibm-col-1-1.large h2,
+.ibm-col-1-1.large h3,
+.ibm-col-1-1.large h4 {
+	padding: (($largeFontSize + 5)*$largeLineHeight * $headerSpacing) 0;
+}
+.ibm-col-1-1.small h2,
+.ibm-col-1-1.small h3,
+.ibm-col-1-1.small h4 {
+	padding: (($smallFontSize + 5)*$largeLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -126,7 +147,7 @@ strong {
 	@include px-to-rem(line-height,($bodyFontSize + 2)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-2 p,
 .ibm-col-4-3 p,
 .ibm-col-5-2 p,
@@ -135,9 +156,35 @@ strong {
 .ibm-col-6-3 p,
 .ibm-col-6-4 p,
 .ibm-col-6-5 p {
-	padding: (($bodyFontSize + 2)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($bodyFontSize + 2)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-2 h2,
+.ibm-col-4-2 h3,
+.ibm-col-4-2 h4,
+.ibm-col-4-3 h2,
+.ibm-col-4-3 h3,
+.ibm-col-4-3 h4,
+.ibm-col-5-2 h2,
+.ibm-col-5-2 h3,
+.ibm-col-5-2 h4,
+.ibm-col-5-3 h2,
+.ibm-col-5-3 h3,
+.ibm-col-5-3 h4,
+.ibm-col-5-4 h2,
+.ibm-col-5-4 h3,
+.ibm-col-5-4 h4,
+.ibm-col-6-3 h2,
+.ibm-col-6-3 h3,
+.ibm-col-6-3 h4,
+.ibm-col-6-4 h2,
+.ibm-col-6-4 h3,
+.ibm-col-6-4 h4,
+.ibm-col-6-5 h2,
+.ibm-col-6-5 h3,
+.ibm-col-6-5 h4 {
+	padding: (($bodyFontSize + 2)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -153,7 +200,7 @@ strong {
 	@include px-to-rem(line-height,($largeFontSize + 2)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-2.large p,
 .ibm-col-4-3.large p,
 .ibm-col-5-2.large p,
@@ -162,9 +209,35 @@ strong {
 .ibm-col-6-3.large p,
 .ibm-col-6-4.large p,
 .ibm-col-6-5.large p {
-	padding: (($largeFontSize + 2)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($largeFontSize + 2)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-2.large h2,
+.ibm-col-4-2.large h3,
+.ibm-col-4-2.large h4,
+.ibm-col-4-3.large h2,
+.ibm-col-4-3.large h3,
+.ibm-col-4-3.large h4,
+.ibm-col-5-2.large h2,
+.ibm-col-5-2.large h3,
+.ibm-col-5-2.large h4,
+.ibm-col-5-3.large h2,
+.ibm-col-5-3.large h3,
+.ibm-col-5-3.large h4,
+.ibm-col-5-4.large h2,
+.ibm-col-5-4.large h3,
+.ibm-col-5-4.large h4,
+.ibm-col-6-3.large h2,
+.ibm-col-6-3.large h3,
+.ibm-col-6-3.large h4,
+.ibm-col-6-4.large h2,
+.ibm-col-6-4.large h3,
+.ibm-col-6-4.large h4,
+.ibm-col-6-5.large h2,
+.ibm-col-6-5.large h3,
+.ibm-col-6-5.large h4 {
+	padding: (($largeFontSize + 2)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -180,7 +253,7 @@ strong {
 	@include px-to-rem(line-height,($smallFontSize + 2)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-2.small p,
 .ibm-col-4-3.small p,
 .ibm-col-5-2.small p,
@@ -189,9 +262,35 @@ strong {
 .ibm-col-6-3.small p,
 .ibm-col-6-4.small p,
 .ibm-col-6-5.small p {
-	padding: (($smallFontSize + 2)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($smallFontSize + 2)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-2.small h2,
+.ibm-col-4-2.small h3,
+.ibm-col-4-2.small h4,
+.ibm-col-4-3.small h2,
+.ibm-col-4-3.small h3,
+.ibm-col-4-3.small h4,
+.ibm-col-5-2.small h2,
+.ibm-col-5-2.small h3,
+.ibm-col-5-2.small h4,
+.ibm-col-5-3.small h2,
+.ibm-col-5-3.small h3,
+.ibm-col-5-3.small h4,
+.ibm-col-5-4.small h2,
+.ibm-col-5-4.small h3,
+.ibm-col-5-4.small h4,
+.ibm-col-6-3.small h2,
+.ibm-col-6-3.small h3,
+.ibm-col-6-3.small h4,
+.ibm-col-6-4.small h2,
+.ibm-col-6-4.small h3,
+.ibm-col-6-4.small h4,
+.ibm-col-6-5.small h2,
+.ibm-col-6-5.small h3,
+.ibm-col-6-5.small h4 {
+	padding: (($smallFontSize + 2)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -201,12 +300,20 @@ strong {
 	@include px-to-rem(line-height,($bodyFontSize - 1)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-1 p,
 .ibm-col-6-2 p {
-	padding: (($bodyFontSize - 1)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($bodyFontSize - 1)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-1 h2,
+.ibm-col-4-1 h3,
+.ibm-col-4-1 h4,
+.ibm-col-6-2 h2,
+.ibm-col-6-2 h3,
+.ibm-col-6-2 h4 {
+	padding: (($bodyFontSize - 1)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -216,12 +323,20 @@ strong {
 	@include px-to-rem(line-height,($largeFontSize - 1)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-1.large p,
 .ibm-col-6-2.large p {
-	padding: (($largeFontSize - 1)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($largeFontSize - 1)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-1.large h2,
+.ibm-col-4-1.large h3,
+.ibm-col-4-1.large h4,
+.ibm-col-6-2.large h2,
+.ibm-col-6-2.large h3,
+.ibm-col-6-2.large h4 {
+	padding: (($largeFontSize - 1)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -231,12 +346,20 @@ strong {
 	@include px-to-rem(line-height,($smallFontSize - 1)*$defaultLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-4-1.small p,
 .ibm-col-6-2.small p {
-	padding: (($smallFontSize - 1)*$defaultLineHeight * $paragraphPadding) 0;
+	padding: (($smallFontSize - 1)*$defaultLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-4-1.small h2,
+.ibm-col-4-1.small h3,
+.ibm-col-4-1.small h4,
+.ibm-col-6-2.small h2,
+.ibm-col-6-2.small h3,
+.ibm-col-6-2.small h4 {
+	padding: (($smallFontSize - 1)*$defaultLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -247,12 +370,20 @@ strong {
 	@include px-to-rem(line-height,($bodyFontSize - 3)*$smallLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-5-1 p,
 .ibm-col-6-1 p {
-	padding: (($bodyFontSize - 3)*$smallLineHeight * $paragraphPadding) 0;
+	padding: (($bodyFontSize - 3)*$smallLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-5-1 h2,
+.ibm-col-5-1 h3,
+.ibm-col-5-1 h4,
+.ibm-col-6-1 h2,
+.ibm-col-6-1 h3,
+.ibm-col-6-1 h4 {
+	padding: (($bodyFontSize - 3)*$smallLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -262,12 +393,20 @@ strong {
 	@include px-to-rem(line-height,($largeFontSize - 3)*$smallLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-5-1.large p,
 .ibm-col-6-1.large p {
-	padding: (($largeFontSize - 3)*$smallLineHeight * $paragraphPadding) 0;
+	padding: (($largeFontSize - 3)*$smallLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-5-1.large h2,
+.ibm-col-5-1.large h3,
+.ibm-col-5-1.large h4,
+.ibm-col-6-1.large h2,
+.ibm-col-6-1.large h3,
+.ibm-col-6-1.large h4 {
+	padding: (($largeFontSize - 3)*$smallLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 
@@ -277,12 +416,20 @@ strong {
 	@include px-to-rem(line-height,($smallFontSize - 3)*$smallLineHeight);
 }
 
-// paragraph spacing
+// paragraph/header spacing
 .ibm-col-5-1.small p,
 .ibm-col-6-1.small p {
-	padding: (($smallFontSize - 3)*$smallLineHeight * $paragraphPadding) 0;
+	padding: (($smallFontSize - 3)*$smallLineHeight * $paragraphSpacing) 0;
 }
-// paragraph spacing
+.ibm-col-5-1.small h2,
+.ibm-col-5-1.small h3,
+.ibm-col-5-1.small h4,
+.ibm-col-6-1.small h2,
+.ibm-col-6-1.small h3,
+.ibm-col-6-1.small h4 {
+	padding: (($smallFontSize - 3)*$smallLineHeight * $headerSpacing) 0;
+}
+// paragraph/header spacing
 
 
 

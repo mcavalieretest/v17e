@@ -432,7 +432,8 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body  {
+	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-content-expand #ibm-content #ibm-leadspace-head #ibm-leadspace-body  {
 		padding-right: 10px;
 		padding-left: 10px;
 		width: 280px;
@@ -494,7 +495,12 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page .ibm-ribbon .ibm-w-gutter .ibm-col-6-3,
 	.ibm-landing-page .ibm-thumbnail-small > div[class^="ibm-col-"],
 	.ibm-default #ibm-content .ibm-col-1-1,
-	.ibm-default #ibm-content .ibm-col-2-1 {
+	.ibm-default #ibm-content .ibm-col-2-1,
+	.ibm-content-expand #ibm-content .ibm-col-1-1,
+	.ibm-content-expand #ibm-content .ibm-col-2-1,
+	.ibm-content-expand #ibm-content .ibm-col-5-1,
+	.ibm-content-expand #ibm-content .ibm-col-5-2,
+	.ibm-content-expand #ibm-content .ibm-col-5-3 {
 		width: 280px;
 		@include px-to-rem(font-size,18px);
 		@include px-to-rem(line-height,24px);
@@ -782,6 +788,25 @@ a.ibm-thumbnail-module h3 {
     	padding: 0 10px;
     }
 	// Default template end
+
+	// Content expand template start
+	.ibm-content-expand #ibm-content  {
+
+		.ibm-col-5-1 {
+			width: 110px;
+		}
+		
+		.ibm-col-2-1,
+		.ibm-col-5-2 {
+			width: 240px;
+		}
+		
+		.ibm-col-5-3 {
+			width: 370px;
+		}
+	
+	}
+	// Content expand template end	
 	
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
@@ -885,6 +910,7 @@ a.ibm-thumbnail-module h3 {
 		
 		.ibm-col-6-1 {
 			width: 160px;
+			min-height: 200px;
 		}
 		
 	}
@@ -1114,6 +1140,29 @@ a.ibm-thumbnail-module h3 {
 	}
 	// Default template end
 	
+	// Content expand template start
+	.ibm-content-expand #ibm-content  {
+	
+		.ibm-col-1-1 {
+			width: 510px;
+		}
+		
+		.ibm-col-5-1 {
+			width: 112px;
+		}
+		
+		.ibm-col-2-1,
+		.ibm-col-5-2 {
+			width: 245px;
+		}
+		
+		.ibm-col-5-3 {
+			width: 378px;
+		}
+	
+	}
+	// Content expand template end	
+	
 	// ribbon column adjust
 	.ibm-landing-page #ibm-content-main > .ibm-container,
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
@@ -1214,6 +1263,7 @@ a.ibm-thumbnail-module h3 {
 		
 		.ibm-col-6-1 {
 			width: 200px;
+			min-height: 200px;
 		}
 
 	}
