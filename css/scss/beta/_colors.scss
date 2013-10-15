@@ -98,12 +98,21 @@ $k20 : rgba(0,0,0,.20);
 $k25 : rgba(0,0,0,.25);
 $k40 : rgba(0,0,0,.40);
 $k50 : rgba(0,0,0,.50);
+$k65 : rgba(0,0,0,.50);
+$k75 : rgba(0,0,0,.50);
 $k75 : rgba(0,0,0,.75);
 $k80 : rgba(0,0,0,.80);
 $k85 : rgba(0,0,0,.85);
 $k85 : rgba(0,0,0,.85);
 $k90 : rgba(0,0,0,.90);
 $k95 : rgba(0,0,0,.95);
+
+
+.bg-white {background-color: $white}
+.bg-k01 {background-color: $k01}
+.bg-k03 {background-color: $k03}
+.bg-k05 {background-color: $k05}
+.bg-k10 {background-color: $k10}
 
 
 

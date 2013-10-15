@@ -16,11 +16,17 @@
 	// Type Alignments ============================================
 
 	.center { text-align: center; }
+	
 
 
-	// transitions effects
+	// Gradient effects
 
 	.grad-k95-85 { @include background-gradient(background,(top, $k95, $k85)); }
+	.grad-k85-75 { @include background-gradient(background,(top, $k85, $k75)); }
+	.grad-k75-65 { @include background-gradient(background,(top, $k75, $k65)); }
+	.grad-k05-02 { @include background-gradient(background,(top, $k05, $k02)); }
+
+
 
 	// Background colors
 	.bgc-white { background-color : $white}
