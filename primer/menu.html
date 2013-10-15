@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Push menu</title>
+
+<link rel="stylesheet" type="text/css" href="../css/ww.css" />
+
+		<style type="text/css">
+
+html, body, 
+.container, 
+.scroller {
+	height: 100%;
+}
+
+.scroller {
+	overflow-y: scroll;
+}
+
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.menu-trigger {
+	position: relative;
+	padding-left: 60px;
+}
+
+.menu-trigger:before {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 40px;
+	height: 6px;
+	background: #fff;
+	box-shadow: 0 6px #000, 0 12px #fff, 0 18px #000, 0 24px #fff, 0 30px #000;
+	content: '';
+}
+
+.mp-pusher {
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+
+.mp-menu {
+	position: absolute; /* we can't use fixed here :( */
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 300px;
+	height: 100%;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.mp-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+/* overlays for pusher and for level that gets covered */
+.mp-pusher::after,
+.mp-level::after,
+.mp-level::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+
+.mp-pusher::after,
+.mp-level::after {
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+.mp-level::after {
+	z-index: -1;
+}
+
+.mp-pusher.mp-pushed::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.mp-pusher,
+.mp-level {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/* First level */
+.mp-menu > .mp-level {
+	box-shadow: none;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* content style */
+.mp-menu ul li:before {
+	display: none;
+}
+
+.mp-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: #FFF;
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 300;
+	font-size: 2em;
+}
+
+.mp-menu ul li > a {
+	display: block;
+	padding: 0.7em 1em 0.7em 0;
+	color: #FFF;
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	font-size: 1.4em;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* We'll show the first level only */
+.no-csstransforms3d .mp-pusher,
+.no-js .mp-pusher {
+	padding-left: 300px;
+}
+
+.no-csstransforms3d .mp-menu .mp-level,
+.no-js .mp-menu .mp-level {
+	display: none;
+}
+
+.no-csstransforms3d .mp-menu > .mp-level,
+.no-js .mp-menu > .mp-level {
+	display: block;
+}
+
+</style>
+		
+		
+		
+<script src="../js/ww.js" type="text/javascript"></script>
+
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="#">Industries &amp; solutions</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Products</a></li>
+							<li><a href="#">Support &amp; downloads</a></li>
+							<li><a href="#">My IBM</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+
+								<p><a href="#" id="trigger" class="menu-trigger">Open/Close Menu</a></p>
+						
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+
+			</div><!-- /pusher -->
+		</div><!-- /container -->
+
+	</body>
+</html>
