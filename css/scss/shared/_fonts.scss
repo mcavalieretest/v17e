@@ -24,7 +24,18 @@ strong {
 .ibm-type h4,
 .ibm-type strong {
 	font-family: $defaultHeaderFont;
+	font-weight: 300;
 }
+
+
+.ibm-type .section-header h1,
+.ibm-type .section-header h2,
+.ibm-type .section-header h3,
+.ibm-type .section-header h4,
+.ibm-type .section-headerstrong {
+	font-family: $sectionHeaderFont; 
+}
+
 
 // Masthead Fonts ======================
 #ibm-mast-options {
