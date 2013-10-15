@@ -18,7 +18,6 @@
 	.center { text-align: center; }
 	
 
-
 	// Gradient effects
 
 	.grad-k95-85 { @include background-gradient(background,(top, $k95, $k85)); }
@@ -27,11 +26,14 @@
 	.grad-k05-02 { @include background-gradient(background,(top, $k05, $k02)); }
 
 
-
 	// Background colors
-	.bgc-white { background-color : $white}
-	.bgc-k02 { background-color : $k02}
-	.bgc-k03 { background-color : $k03}
-	.bgc-k05 { background-color : $k05}
-	.bgc-blue { background-color : $ibmblue}
+	.bg-white { background-color : $white}
+	.bg-k01 { background-color : $k01}
+	.bg-k02 { background-color : $k02}
+	.bg-k03 { background-color : $k03}
+	.bg-k05 { background-color : $k05}
+	.bg-k10 { background-color : $k10}
+	.bg-blue { background-color : $ibmblue}
+
+
 }
