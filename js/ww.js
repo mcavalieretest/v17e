@@ -129,7 +129,9 @@ jQuery(function() {
 
 ibmcom.init();
 
-new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+if(jQuery('#mp-menu').length > 0) {
+	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+}
 
 });
 
