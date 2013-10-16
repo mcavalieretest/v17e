@@ -86,19 +86,27 @@
 	  });
 </script>
 <style type="text/css">
-dd.answer {display:none;}
+dd.answer {
+	display:none;
+}
 dt.question{
-border-top:2px solid #ccc;
-cursor:pointer;
-padding-bottom: 10px;
+	border-top:2px solid #666;
+	cursor:pointer;
+	padding-bottom: 10px;
 }
 
-#toggle-view span {
-       float: right;
-       margin-right:25px;
-        color:#f6f;
-        font-size:13px;
-    }
+#toggle-view span.ibm-add1-link,
+#toggle-view span.ibm-delete-link {
+     float: right;
+     margin-right:25px;
+     
+}
+span.ibm-add1-link:hover:before {
+   color:#A5Df00;
+}
+span.ibm-delete-link:hover:before {
+   color:#fd0202;
+}
 </style>
 
 </head>
