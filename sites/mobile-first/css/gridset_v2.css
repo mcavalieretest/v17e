@@ -1,0 +1,54 @@
+
+/** Gridset Styles */
+
+#gridscreenwidthwrap{display:block !important;}
+
+.gridsetoverlaywrap{padding:0 !important;display:block;position:absolute;top:0;left:0;width:100%;height:100%;z-index:10000;pointer-events:none;}
+
+.gridsetnoareas .gridsetoverlaywrap{position:relative;}
+
+.gridwrap{padding:0 !important;display:block;position:relative;top:0;width:100%; height:100%;font-family:Helvetica, Arial, sans-serif !important;}
+
+.gridoverlay{padding:0 !important;position:relative;height:100%;overflow:hidden !important;background:none !important;  margin:0 auto;}
+
+.gridoverlay .gridset{padding:0 !important;position:fixed;width:100%;height:100%;top:0;margin:0 auto;opacity:0.8; display:block;}
+
+.gridset .wrapper{height:100%}
+
+.gridoverlay .gridset .ibm-columns {position:relative;width:100%;max-width:980px; margin:0 auto;background-color:#ffcc00;z-index:10000;height:100%;}
+
+.gridoverlay .gridset .ibm-columns [class*="ibm-col-"] {padding:0;text-align:left;font-size:10px !important; -moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box; height:100%; }
+
+.gridoverlay .gridset .ibm-columns [class*="ibm-col-6"] {border:1px solid blue !important;background-color:blue; opacity:.5; width:14.28%;}
+
+.gridoverlay .gridset .ibm-columns [class*="ibm-col-5"] {border:1px solid red !important; width:17.55%}
+
+.gridoverlay .gridset .ibm-columns [class*="ibm-col-"]:first-child {margin-left:20px;}
+.gridoverlay .gridset .ibm-columns [class*="ibm-col-"]:last-child {margin-right:20px;}
+
+.gridoverlay div small{width:100%;display:block;text-align:center;font-weight:400 !important;letter-spacing: 1px !important;padding-top:0 !important;text-transform:none !important;height:22px !important;line-height:22px !important;text-style:normal !important;border-bottom:1px solid #FFD800 !important;color:#333 !important;background-color:#FFF79F !important;}
+
+.gridoverlay .gridset > div:nth-child(2){padding-top:23px !important;}
+
+.gridoverlay .gridset > div:nth-child(2) small{border-bottom:1px dashed #FFD800 !important;}
+
+.gridoverlay .gridset > div:nth-child(2) > div{border:1px dashed #FFD800 !important;}
+
+.gridoverlay .gridset > div:nth-child(3){padding-top:45px !important;}
+
+.gridoverlay .gridset > div:nth-child(3) small{border-bottom:1px dotted #FFD800 !important;}
+
+.gridoverlay .gridset > div:nth-child(3) > div{border:1px dotted #FFD800 !important;}
+
+.gridoverlay .gridset > div:nth-child(4){padding-top:67px !important;}
+
+.gridoverlay .gridset > div:nth-child(4) small{border-bottom:1px double #FFD800 !important;}
+
+.gridoverlay .gridset > div:nth-child(4) > div{border:1px double #FFD800 !important;}
+
+.gridsetoverlaywrap .noshow{display:none;}#gridscreenwidthwrap{margin:0 !important;padding:0 !important;display:none;width:100%;position:fixed !important;z-index:10000 !important;bottom:0 !important;left:0 !important;height:30px !important;opacity:0.95;border-top:1px solid #FFD800 !important;color:#333;background-color:#FFF79F !important;font-family:Helvetica, Arial, sans-serif !important;}#gridscreenwidth{margin:0 !important;display:block;width:100% !important;max-width:none !important;text-align:center !important;font-size:12px;line-height:1;padding-top:8px !important;}#gridscreenwidth strong{text-transform:none;}
+
+/*adaptive settings*/
+
+.ibm-columns 
+
