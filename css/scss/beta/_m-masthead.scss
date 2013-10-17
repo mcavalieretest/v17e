@@ -125,8 +125,6 @@ html, body,
      transition: background-color 100ms linear;
 }
 
-/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-.no-csstransforms3d .m-shift,
-.no-js .m-shift {
-	padding-left: 250px;
+#m-menu {
+	display: none;
 }

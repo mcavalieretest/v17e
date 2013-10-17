@@ -317,8 +317,15 @@ a.ibm-thumbnail-module h3 {
 		display: none;
 	}
 	
-	#m-open {
+	#m-open,
+	#m-menu {
 		display: block;
+	}
+	
+	/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+	.no-csstransforms3d .m-shift,
+	.no-js .m-shift {
+		padding-left: 250px;
 	}
 	
 	// End masthead test updates
