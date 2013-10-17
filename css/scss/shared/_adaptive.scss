@@ -24,9 +24,9 @@
 }
 
 .ibm-resize {
-	max-width: 100%;
-    width: 100%;
-    height: auto;
+	max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
 }
 
 a.ibm-thumbnail-module {
@@ -514,6 +514,7 @@ a.ibm-thumbnail-module h3 {
 		width: 300px;
 	}
 	
+	
 	.ibm-col-1-1,
 	.ibm-col-2-1,
 	.ibm-col-4-1,
@@ -576,6 +577,8 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-main > .ibm-ribbon,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-container,
 	.ibm-landing-page #ibm-content-main .ibm-band > .ibm-ribbon,
+	.ibm-landing-page #ibm-content-main .ibm-media > .ibm-ribbon,
+	.ibm-landing-page #ibm-content-main .ibm-media > .ibm-playlist,
 	#ibm-related-content > .ibm-container {
 		margin: 10px auto;
 		width: 280px;

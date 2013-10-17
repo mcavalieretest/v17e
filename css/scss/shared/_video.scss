@@ -23,7 +23,15 @@
 	margin-bottom: 10px;
 	
 	position: relative;
+	
 }
+
+.ibm-video-container > div ,
+.ibm-video-container > div > div,
+img.ibm-video-background {
+ 	@extend .ibm-resize;
+}
+
 .ibm-video .ibm-video-container a {
 	/* position: relative; breaks on http://webdev.webmaster.ibm.com/smartercomputing/us/en/ */
 }
