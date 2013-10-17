@@ -1,18 +1,3 @@
-html, body, 
-#m-wrap,
-.m-content {
-	height: 100%;
-}
-
-/* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
-.dj_safari.touch #m-wrap {
-	height: auto;
-}
-
-.m-content {
-	overflow-y: scroll;
-	position: relative;
-}
 
 #m-wrap {
 	position: relative;
@@ -85,12 +70,6 @@ html, body,
 	-webkit-transition: opacity 0.3s;
 	-moz-transition: opacity 0.3s;
 	transition: opacity 0.3s;
-}
-
-.m-shift {
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
 }
 
 .m-menu ul li {

@@ -19,21 +19,6 @@ css/
 |
 `-- documentation.scss			# documentation SASS file
 */
-.bg-white {
-  background-color: white; }
-
-.bg-k01 {
-  background-color: rgba(0, 0, 0, 0.01); }
-
-.bg-k03 {
-  background-color: rgba(0, 0, 0, 0.03); }
-
-.bg-k05 {
-  background-color: rgba(0, 0, 0, 0.05); }
-
-.bg-k10 {
-  background-color: rgba(0, 0, 0, 0.1); }
-
 .syntaxhighlighter a,
 .syntaxhighlighter div,
 .syntaxhighlighter code,

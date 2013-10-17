@@ -3,110 +3,26 @@
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
- */.ibm_cci-sp-band{background-color:#bada55 !important}
+ */
+/*  v17e Smarter Planet SASS structure map...
 
-#videoContent {
-    width: 460px;
-}
-
-#videoContent iframe {
-	width: 460px;
-}
-@media all and (max-width:640px){
-	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body, #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
-    margin: 0 auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 88%;
-     margin:0 6%;
-}
-
-#ibm-com .ibm-columns {
-    padding: 0 10px;
-    width: 100%;
-   }
-
-
-.ibm-columns .ibm-col-1-1, .ibm-columns .ibm-col-6-1, .ibm-columns .ibm-col-6-2, .ibm-columns .ibm-col-6-3, .ibm-columns .ibm-col-6-4, .ibm-columns .ibm-col-6-5 {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    width: 88%;
-    margin:0 6%;
-}
-
-#videoContent {
-    width: 100%;
-}
-
-#videoContent iframe {
-	width:100%;
-}
-
-#camera_wrap_2 {
-	height:400px;
-}
-
-a.ibm-btn-pri, a.ibm-btn-sec, input[class*="ibm-btn-"][class*="-pri"], input[class*="ibm-btn-"][class*="-sec"], .ibm-button-link a, .ibm-button-link-alternate a {
-	padding:0.43em 0.5em 0.44em;
-	min-width: 78px;
-	font-size: 15px;
-}
-
-.header {
-	text-align:center;
-}
-
-}
-
-		.ibm-col-1-1 h2.intro, .ibm-col-6-4 h2.intro, .ibm-col-6-2 h2.intro {
-		    color: #393939 !important;
-		    font-size: 40px !important;
-		    line-height: 44px !important;
-		    margin-bottom: 20px !important;
-		    font-family:'lubalinforibm-demi';
-		}
-		
-		.ibm-button-link{
-			background-color: #646464;
-			background-image: linear-gradient(to bottom, #646464, #282828);
-			border: 1px solid #616261;
-			border-radius: 5px 5px 5px 5px;
-			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-			color: #FFFFFF !important;
-			display: inline-block !important;
-			font-weight: bold;
-			text-align: center;
-			text-decoration: none;
-			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-			width: auto;
-			float:left;
-			margin-right:20px;
-		}
-		.ibm-button-link .ibm-button-link a {
-		  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4) !important;
-		  font-size: 13px !important;
-		  line-height: 20px;
-		  padding: 8px 10px !important;
-		}
-		
-.products{
-	/*border:1px solid #666;*/
-	padding:0;
-	
-}
-.products h3, .producst h3 a, .products p {margin:10px;}
-
-@media all and (max-width:760px){
-
-	.ibm-button-link {
-		margin-right:1%;
-		width:auto;
-	}
-
-	.ibm-button-link a {
-		font-size:13px;
-	}
-}
-
-
+css/
+|
+|-- scss/
+|   |-- shared/					# shared modules
+|   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _colors.scss		# colors and gradient styles
+|   |   ...
+|   ...
+|
+sites/
+|
+|-- smarter-planet/
+|   |-- css/
+|   |   |-- _ww_cci.scss		# Smarter Planet custom SASS file
+|   |   ...
+|   |-- ww_cci.scss				# Build file that pulls in all components (this file)
+`
+*/
+.ibm_cci-sp-band {
+  background-color: #bada55 !important; }

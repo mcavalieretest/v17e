@@ -249,11 +249,6 @@ var checkMLinksExist = setInterval(function() {
 		},
 		_openMenu : function( ) {
 
-			// move the main wrapper
-			var translateVal = this.el.offsetWidth + 0;
-			
-			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
-
 			// check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
 			var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
 			var viewportHeight = jQuery(window).height();
@@ -261,7 +256,7 @@ var checkMLinksExist = setInterval(function() {
 			if(iOSCheck) {
 				jQuery('#m-wrap').css("height", '100%');
 			}
-			else if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
+			if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
 				jQuery('#m-wrap').css("height", mNavHeightCheck);	
 			}
 
@@ -272,7 +267,6 @@ var checkMLinksExist = setInterval(function() {
 		},
 		// close the menu
 		_resetMenu : function() {
-			this._setTransform('translate3d(0,0,0)');
 			
 			// reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
 			if(iOSCheck){
@@ -284,13 +278,6 @@ var checkMLinksExist = setInterval(function() {
 			this.open = false;
 		},
 
-		// translate the el
-		_setTransform : function( val, el ) {
-			el = el || this.wrapper;
-			el.style.WebkitTransform = val;
-			el.style.MozTransform = val;
-			el.style.transform = val;
-		}
 	}
 
 	// add to global namespace
