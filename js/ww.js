@@ -276,9 +276,9 @@ var checkMLinksExist = setInterval(function() {
 			// remove class m-enable from m shift
 			jQuery(this.wrapper).removeClass('m-enable');
 			this.open = false;
-		},
+		}
 
-	}
+	};
 
 	// add to global namespace
 	window.mlPushMenu = mlPushMenu;
