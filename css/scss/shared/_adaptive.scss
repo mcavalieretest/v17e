@@ -313,9 +313,14 @@ a.ibm-thumbnail-module h3 {
 
 	}
 	
-	#ibm-search-form {
-		margin: 4px 40px 0 1px;
+	#ibm-masthead #ibm-search-module {
+		display: none;
 	}
+	
+	#m-open {
+		display: block;
+	}
+	
 	// End masthead test updates
 	
 	.ibm-landing-page #ibm-content-head {

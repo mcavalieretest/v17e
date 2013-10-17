@@ -129,9 +129,23 @@ jQuery(function() {
 
 ibmcom.init();
 
-if(jQuery('#mp-menu').length > 0) {
-	new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+
+if(jQuery('#ibm-top').length > 0) {
+	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
 }
+
+
+// Loop till masthead links are available.  When available, prepend them to #m-shift
+var checkMLinksExist = setInterval(function() {
+   if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
+	   var mastLinks = jQuery('#ibm-menu-links').html();
+      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div>');
+      jQuery('#ibm-universal-nav').append('<p id="m-open"><a href="#" id="m-navigation">Dynamic mobile menu testing</a></p>');
+      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
+      clearInterval(checkMLinksExist);
+   }
+}, 200); // check every 200ms
+
 
 });
 
@@ -148,7 +162,7 @@ if(jQuery('#mp-menu').length > 0) {
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
+	var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
 	'use strict';
 
 	function extend( a, b ) {
@@ -194,7 +208,7 @@ if(jQuery('#mp-menu').length > 0) {
 			this.open = false;
 
 			// the moving wrapper
-			this.wrapper = document.getElementById( 'mp-pusher' );
+			this.wrapper = document.getElementById( 'm-shift' );
 			
 			// the menu items
 			this.menuItems = Array.prototype.slice.call( this.el.querySelectorAll( 'li' ) );
@@ -240,16 +254,33 @@ if(jQuery('#mp-menu').length > 0) {
 			
 			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
 
-			// add class mp-pushed to main wrapper if opening the first time
-			jQuery(this.wrapper).addClass('mp-pushed');
+			// check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
+			var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
+			var viewportHeight = jQuery(window).height();
+
+			if(iOSCheck) {
+				jQuery('#m-wrap').css("height", '100%');
+			}
+			else if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
+				jQuery('#m-wrap').css("height", mNavHeightCheck);	
+			}
+
+			// add class m-enable to main wrapper if opening the first time
+			jQuery(this.wrapper).addClass('m-enable');
 				this.open = true;
 
 		},
 		// close the menu
 		_resetMenu : function() {
 			this._setTransform('translate3d(0,0,0)');
-			// remove class mp-pushed from main wrapper
-			jQuery(this.wrapper).removeClass('mp-pushed');
+			
+			// reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
+			if(iOSCheck){
+				jQuery('#m-wrap').css("height", 'auto');	
+			}
+
+			// remove class m-enable from m shift
+			jQuery(this.wrapper).removeClass('m-enable');
 			this.open = false;
 		},
 

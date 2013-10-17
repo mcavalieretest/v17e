@@ -70,6 +70,7 @@ css/
 |   |-- beta/					# v17e modules (this is where all the v17e styles will be placed.  after review we can move these styles into the shared or ww folder.)
 |   |   |-- _colors.scss		# colors and gradient styles
 |   |   |-- _effects.scss		# shadow and emboss effects
+|   |   |-- _m-masthead.scss	# mobile masthead styles
 |   |   ...
 |   ...
 |
@@ -119,6 +120,8 @@ css/
 
 		"scss/ww/masthead",
 		"scss/ww/merchandising",
+
+		"scss/beta/m-masthead",
 
 		"scss/shared/adaptive",
 		

@@ -1,0 +1,132 @@
+html, body, 
+#m-wrap,
+.m-content {
+	height: 100%;
+}
+
+/* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
+.dj_safari.touch #m-wrap {
+	height: auto;
+}
+
+.m-content {
+	overflow-y: scroll;
+	position: relative;
+}
+
+#m-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+#m-open {
+	display: none;
+	float: right;
+}
+#m-open a {
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 0 40px;
+}
+
+#m-open a:before {
+	position: absolute;
+	top: -8px;
+	left: 0;
+	width: 30px;
+	height: 4px;
+	box-shadow: 0 8px #FFF, 0 16px #FFF, 0 24px #FFF;
+	content: '';
+}
+
+.m-shift {
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+
+.m-menu {
+	position: absolute; /* we can't use fixed here :( */
+	background-color: #000;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 250px;
+	height: 100%;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	-moz-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+}
+
+.m-shift:after {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	content: '';
+	opacity: 0;
+}
+
+.m-shift:after {
+	background: rgba(0,0,0,0.3);
+	-webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	-moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+	transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+.m-shift.m-enable:after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.m-shift {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.m-menu ul li {
+	padding: 0;
+}
+
+.m-menu ul li:before {
+	display: none;
+}
+
+.m-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: #FFF;
+	font-size: 2em;
+}
+
+.m-menu ul li a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	padding: 0.7em;
+	color: #FFF;
+	font-size: 1.2em;
+}
+.m-menu ul li a:hover {
+	background-color: #595C64;
+     -webkit-transition: background-color 100ms linear;
+     -moz-transition: background-color 100ms linear;
+     -o-transition: background-color 100ms linear;
+     -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .m-shift,
+.no-js .m-shift {
+	padding-left: 250px;
+}
