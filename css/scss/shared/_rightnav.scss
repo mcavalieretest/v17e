@@ -6,10 +6,9 @@
     width: 172px;
 }
 
-
 .ibm-liquid #ibm-content-sidebar {
 	float: left;
-	margin: 0  -202px 0  0;
+	margin: 0 -202px 0 0;
 	padding-left: 10px;
 }
 .ibm-landing-page #ibm-content-sidebar {
@@ -22,7 +21,7 @@
 #ibm-content-sidebar p,
 #ibm-content-sidebar ul {
 	color: #666;
-	margin: 0em;
+	margin: 0;
 }
 
 #ibm-content-sidebar h2 {
@@ -32,7 +31,7 @@
 #ibm-content-sidebar .ibm-container .ibm-container-body img {
 	display: block;
 	clear: both;
-	margin: 0  auto 4px;
+	margin: 0 auto 4px;
 	text-align: center;
 }
 
@@ -45,7 +44,7 @@
 }
 
 ul.ibm-link-list li a {
-	height:1%;
+	height: 1%;
 }
 
 #ibm-content-sidebar ul.ibm-link-list li.ibm-first,
@@ -132,13 +131,12 @@ ul.ibm-link-list li.ibm-first {
 	margin-left: 46px !important;
 }
 
-
 #ibm-content-sidebar form.ibm-sidebar-form {
-	padding-top:0;
-	padding-bottom:12px;
+	padding-top: 0;
+	padding-bottom: 12px;
 }
 #ibm-content-sidebar form.ibm-sidebar-form p {
-	padding-top:5px !important;
-	padding-bottom:0 !important;
+	padding-top: 5px !important;
+	padding-bottom: 0 !important;
 }
 /* features styles end ============================================== */

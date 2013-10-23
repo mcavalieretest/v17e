@@ -48,11 +48,7 @@ Comments
 following attibutes needs to be set for IE7/8 to clear gradien on submenu level
 -ms-filter: none;
 filter: none;
-
-
-
 */
-
 
 #ibm-navigation #ibm-primary-links {
 	background: url("#{$imagePath}/i/v17/t/left_nav_base_solid.png") no-repeat bottom right #EEE;
@@ -63,16 +59,11 @@ filter: none;
 	padding-bottom: 30px;
 }
 
-
 #ibm-navigation #ibm-primary-links #ibm-parent-link {
 	position: relative;
 	margin-top: -20px;
     border: 0px;
     background: #FFF;
-}
-
-#ibm-navigation #ibm-primary-links li#ibm-parent-link a:hover {
-	background: #FFF;
 }
 
 #ibm-navigation #ibm-primary-links li#ibm-parent-link a {
@@ -81,6 +72,10 @@ filter: none;
 	display: block;
 	margin: 0;
 	padding: 3px 6px 3px $iconSpaceLeft;
+}
+
+#ibm-navigation #ibm-primary-links li#ibm-parent-link a:hover {
+	background: #FFF;
 }
 
 #ibm-navigation #ibm-primary-links li {
@@ -159,7 +154,6 @@ filter: none;
 #ibm-navigation #ibm-primary-links li.ibm-is-active a, 
 #ibm-navigation #ibm-primary-links li.ibm-active a {
     border-bottom: 0;
-    /*background: none;*/
     padding-bottom: 3px;
 }
 
@@ -172,9 +166,7 @@ filter: none;
 
 #ibm-navigation #ibm-primary-links li ul {
     padding-left: 10px;
-
 }
-
 
 #ibm-navigation #ibm-primary-links li ul li {
     background:none;
@@ -189,16 +181,13 @@ filter: none;
     filter:none;
 }
 
-
 #ibm-navigation #ibm-primary-links li ul li a {
     padding-left: 0;
     padding-bottom: 3px;
     padding-top: 5px;
     border: 0px;
     background: none;
-   /* font-size: 0.84em;*/
 }
-
 
 #ibm-navigation #ibm-primary-links li ul li a:hover {
     text-decoration: underline;
@@ -279,14 +268,13 @@ filter: none;
 
 
 /* IBM NAVIGATION RELATED LINKS */
-
-
 #ibm-secondary-navigation {
     color: #666;
-    padding-left: 0;
-    padding-top: 30px;
+	padding: 10px 0 0 0;
 }
 
-
+#ibm-secondary-navigation li {
+	padding-left: 0;
+}
 
 
