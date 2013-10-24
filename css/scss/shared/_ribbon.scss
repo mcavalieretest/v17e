@@ -81,13 +81,6 @@
 	margin: 0;
 }
 
-#ibm-content .ibm-video .ibm-container-body p,
-#ibm-content .ibm-playlist .ibm-container-body p,
-#ibm-content .ibm-ribbon .ibm-container-body p,
-#ibm-media .ibm-ribbon .ibm-container-body p {
-	padding: 0 0 10px;
-}
-
 #ibm-content .ibm-video .ibm-columns,
 #ibm-content .ibm-ribbon .ibm-ribbon-section .ibm-columns,
 #ibm-related-content .ibm-ribbon .ibm-ribbon-section .ibm-columns,
@@ -371,7 +364,6 @@ span.ibm-thumbnail span.ibm-video-play {
 #ibm-content .ibm-ribbon .ibm-container-body p,
 #ibm-media .ibm-ribbon .ibm-container-body p {
 	color: #666;
-	padding-bottom: 5px;
 	position: relative;
 }
 
@@ -386,8 +378,4 @@ span.ibm-thumbnail span.ibm-video-play {
 
 #ibm-pcon #ibm-content #ibm-content-body #ibm-content-main .ibm-ribbon .ibm-ribbon-container .ibm-columns p {
 	word-wrap: break-word;
-}
-
-#ibm-content-main .ibm-ribbon .ibm-ribbon-pane .ibm-columns .ibm-col-5-1 .ibm-media-thumb p {
-	font-size : 1em;
 }
