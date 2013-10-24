@@ -107,7 +107,7 @@ p a.ibm-feature-link {
 
 ol {
 	list-style-type: decimal;
-    padding: 0px 0px 0px $iconSpaceLeft;
+    padding: 0 0 0 $iconSpaceLeft;
 }
 
 #ibm-com ul.ibm-tabs li {
@@ -228,7 +228,7 @@ ol {
 }
 
 ul li div.ibm-container{
-	margin-top:8px !important;
+	margin-top: 8px !important;
 }
 
 #ibm-content .ibm-container:first-child {
@@ -357,13 +357,11 @@ div.ibm-rule-alternate {
 div.ibm-alternate-rule-1 {
 	background-color: #666;
 	height: 2px;
-	
 }
 
 div.ibm-alternate-rule-2 {
 	background-color: #CCC;
 	height: 2px;
-	
 }
 
 .ibm-container-body div.ibm-rule,
@@ -376,7 +374,7 @@ div.ibm-alternate-rule-2 {
 .ibm-columns div.ibm-rule-alternate,
 .ibm-columns div.ibm-alternate-rule-1,
 .ibm-columns div.ibm-alternate-rule-2 {
-	margin: 10px 0px;
+	margin: 10px 0;
 }
 
 
@@ -507,7 +505,7 @@ div.ibm-alternate-rule-2 hr {
 
 
 #ibm-leadspace.ibm-intro img {
-	margin-bottom:14px;
+	margin-bottom: 14px;
 }
 
 #ibm-leadspace.ibm-intro p {
@@ -517,7 +515,7 @@ div.ibm-alternate-rule-2 hr {
 }
 
 .ibm-price {
-	color:#00834e !important;
+	color: #00834e !important;
 }
 
 #ibm-content-main p.ibm-ind-link.ibm-next-page,
@@ -544,8 +542,8 @@ a.ibm-feature-link:hover {
 }
 
 div.ibm-list-next {
-	padding-bottom:0;
-	margin-bottom:0;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .ibm-indent {
@@ -565,7 +563,9 @@ div.ibm-list-next {
 #ibm-content .ibm-portrait-module ul.ibm-link-list li p {
 	padding-left: 16px;
 }
-#ibm-content .ibm-portrait-module .ibm-container-body {min-height:55px;}
+#ibm-content .ibm-portrait-module .ibm-container-body {
+	min-height: 55px;
+}
 
 
 // PORTRAIT-MODULE-LIST STYLES START
@@ -616,7 +616,7 @@ div.ibm-list-next {
 #ibm-content ul.ibm-portrait-module-list img,
 #ibm-content ul.ibm-thumbnail-list img {
 	float: left;
-	padding-bottom:10px;
+	padding-bottom: 10px;
 	padding-right: 10px;
 }
 #ibm-content ul.ibm-portrait-module-list p,
@@ -758,15 +758,15 @@ div.ibm-alternate-code-sample {
 
 // Show/hide styles begin ===========================================
 .ibm-simple-show-hide .ibm-container-body {
-	padding-bottom:4px;
+	padding-bottom: 4px;
 }
 .ibm-simple-show-hide p.ibm-show-hide-controls {
-	color:#666;
-	display:none;
+	color: #666;
+	display: none;
 }
 .ibm-simple-show-hide p.ibm-show-hide-controls a,
 .ibm-simple-show-hide h3 a.ibm-show-hide-link {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 .ibm-simple-show-hide h3 a.ibm-show-hide-link:hover {
@@ -778,8 +778,8 @@ div.ibm-alternate-code-sample {
 
 #ibm-content .ibm-container.ibm-show-hide,
 #ibm-content #ibm-content-sidebar .ibm-container.ibm-show-hide {
-	border-top: 0px none;
-	margin-bottom: 0px;
+	border-top: 0 none;
+	margin-bottom: 0;
 }
 .ibm-landing-page #ibm-content .ibm-container.ibm-show-hide {
 	margin-bottom: 5px !important;
@@ -790,31 +790,31 @@ div.ibm-alternate-code-sample {
 
 
 .ibm-show-hide .ibm-video .ibm-container {
-	border-top:0 !important;
-	margin:0 !important;
+	border-top: 0 !important;
+	margin: 0 !important;
 }
 
 
 // showhide fix for video module when it is inside accordion
 .ibm-show-hide .ibm-video h2 {
-	border-top:0 !important;
-	font-weight:normal;
+	border-top: 0 !important;
+	font-weight: normal;
 	
 }
 
 .ibm-show-hide .ibm-video h2 a {
-	background:none !important;
-	color:#666;
+	background: none !important;
+	color: #666;
 }
 
 .ibm-show-hide .ibm-video {
-	margin-top:0 !important;
-	border-top:0 !important;
+	margin-top: 0 !important;
+	border-top: 0 !important;
 }
 
 .ibm-show-hide .ibm-video .ibm-container {
-	border-top:0 !important;
-	margin:0 !important;
+	border-top: 0 !important;
+	margin: 0 !important;
 }
 
 .ibm-show-hide h2 {
@@ -884,36 +884,29 @@ div#ibm-reg-number a:hover {
 }
 
 // IBM Legal text Style
+.ibm-legal-text,
+.ibm-legal {
+	background-color: #333;
+    color: #999;
+    margin: 0 auto;
+    padding: 30px 20px 50px;
+}
 #ibm-content-main .ibm-legal-text,
 #ibm-content-main .ibm-legal{
   	background: none;
     color: #666;
-    margin: 0 10px;
-    padding: 30px 10px 80px;
-    text-align: left;
+    padding: 30px 20px 80px;
     width: auto;
-}
-
-#ibm-content-main .ibm-legal-text .ibm-required,
-#ibm-content-main .ibm-legal .ibm-required {
-	color: #D9182D;
 }
 .ibm-legal-text .ibm-required,
 .ibm-legal .ibm-required {
 	position: absolute;
     margin: 0 0 0 -10px;
 }
-
-.ibm-legal-text,
-.ibm-legal {
-	background-color: #333;
-    color: #999;
-    margin: 0 auto;
-    padding: 30px 10px 50px;
-    width: 960px;
+#ibm-content-main .ibm-legal-text .ibm-required,
+#ibm-content-main .ibm-legal .ibm-required {
+	color: #D9182D;
 }
-
-
 // End of the Legal text
 
 // Cross links style
@@ -929,13 +922,11 @@ div#ibm-reg-number a:hover {
 // Anchor links fix
 
 // both element has to be placed near desired anchor and "div.ibm-anchor-pointer a" should contain this anchor's ID'
-
 div.ibm-anchor-pointer {
     visibility: visible;
     display: block;
     position: absolute;
 }
-
                        
 div.ibm-anchor-pointer a {
 	position: absolute;
@@ -945,14 +936,12 @@ div.ibm-anchor-pointer a {
 	display: block;
 }
 
-
-
 // End of Anchor links fix
 
 // IE7 Buttons Extra Padding Bug fix - ad more classes here if needed
 
 input.ibm-btn-arrow-sec {
-    *overflow:visible;
+    *overflow: visible;
 }
 
 
@@ -995,30 +984,30 @@ input.ibm-btn-arrow-sec {
 }
 
 .ibm-pullquote-open {
-	color:#BBB;
+	color: #BBB;
 	margin-left: -18px;
-	float:left;
-	position:absolute;
-	margin-top:5px;
+	float: left;
+	position: absolute;
+	margin-top: 5px;
 }
 
 .ibm-pullquote-close {
-    color:#BBB;
+    color: #BBB;
     position: absolute;   
-    margin-left:2px;
-    margin-top:7px;
+    margin-left: 2px;
+    margin-top: 7px;
 }
 
 #{$ie7Selector} .ibm-pullquote-open { 
-	margin-top:-2px;
-	padding-top:2px;
+	margin-top: -2px;
+	padding-top: 2px;
 }
 
 #{$ie7Selector} .ibm-pullquote-close {
-	padding-top:4px;
-	padding-bottom:2px;
-	margin-top:-1px;
-	margin-left:1px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	margin-top: -1px;
+	margin-left: 1px;
 }
 // End of styles for pull-quote ==============================
 
@@ -1046,11 +1035,6 @@ input.ibm-btn-arrow-sec {
 	text-decoration: none !important;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	#ibm-content .ibm-columns h2 + p {
-		margin-top: 5px !important;
-	}
-}
 
 // universal background dim for just about anything BEGIN
 
@@ -1061,12 +1045,12 @@ input.ibm-btn-arrow-sec {
 	opacity: .5;
 	filter:alpha(opacity=50);
 	height: 100%;
-	left: 0px;
+	left: 0;
 	position: fixed;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	z-index: 901;
-	display:none;
+	display: none;
 }
 
 // universal background dim for just about anything END
