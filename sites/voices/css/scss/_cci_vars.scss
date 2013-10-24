@@ -15,7 +15,11 @@ $hover-color 							: #f04e37;
 $ibm-listview-unro 						: ".ibm_cci--lv-unro-b"; //List view unresolved block
 $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved block
 $ibm-widget-js 							: "#ibm_cci-widget-js";
-$ibm-widget-about							: "#ibm_cci-about-widget";
+$ibm-widget-about						: "#ibm_cci-about-widget";
+$ie7Selector 							: ".dj_ie7";
+$ie8Selector 							: ".dj_ie8";
+$ie9Selector 							: ".dj_ie9";
+$ie9Hack 								: "\0/";
 
 @mixin h1-p-overrides {
 	h1 { 
@@ -31,7 +35,7 @@ $ibm-widget-about							: "#ibm_cci-about-widget";
 /* LEADSPACE DEFAULTS (BEGIN) */
 @mixin leadspace--defaults{
 	float:left; 
-	margin:40px 0 40px 0; 
+	margin:40px 0; 
 	// padding:0 0 0 20px;
 	padding:0;
 }
@@ -98,35 +102,43 @@ $ibm-widget-about							: "#ibm_cci-about-widget";
 @mixin ibm_cci--rea-block {
 	float:left;
 	width:70px;
-	margin:0 10px 0 0;
+	margin:0 10px 0 0; //added 10px top to offset the position for IE in p.ibm_cci--rea-rank 
 
 	ul {
 		@include ibm_cci-ul__modifier;
 
 		li {
 			@include ibm_cci-ul--li__modifier;
-			padding:5px 0;
+			padding:0 0 0 0; // removed bottom 5px 0 for IE issue
 			float:left;
 			clear:both;
 
 			.ibm_cci--rea-b {
 				@include ibm_cci--rea-b;
-			}
-
+			}	
 			p.ibm_cci--rea-rank {
 				display:block;
-				font: normal 5.2rem/40px "HelvLightIBM";
+				// font: normal 5.2rem/40px "HelvLightIBM";
+				font-family: "HelvLightIBM";
+				font-size:5.2rem;
+				line-height:52px;
+				font-weight:normal;
 				color:#dfdfdf;
-				/* 
-					The ww-blessed css has a 5px bottom padding
-					with !important. To overwrite the important 
-					we are adding important to our <p>.
-					*/
-					padding-bottom:0 !important;
+				padding:0; 
+				vertical-align:top;
+					// Changed padding-bottom:0 !important for IE issue
+					// Added 3 properties below for IE issue
+					position:relative;
+					top:0;
+					left:0;
 			}
 
 			p.ibm_cci--rea-rank.ibm_cci-reducedFont {
-				font:normal normal 4.2rem/40px "HelvLightIBM";
+				// font:normal normal 4.2rem/40px "HelvLightIBM";
+				font-family: "HelvLightIBM";
+				font-size:4.2rem;
+				line-height:40px;
+				font-weight:normal;
 			}
 		}
 	}
