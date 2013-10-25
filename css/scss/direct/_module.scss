@@ -60,7 +60,7 @@
 
 .ibm-landing-page #ibm-content div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor,
 #ibm-content .ibm-col-6-4 div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor {
-	padding-left:10px;
+	padding-left: 10px;
 }
 
 #ibm-content div.ibm-link-list-az ul.ibm-link-list span.ibm-no-anchor {
@@ -110,7 +110,7 @@
 }
 
 #ibm-content div.ibm-link-list-az ul.ibm-link-list a:visited {
-	color:#969;
+	color: #969;
 }
 
 #{$ie7Selector} #ibm-content div.ibm-link-list-az ul.ibm-link-list li span.ibm-no-anchor {
@@ -167,7 +167,7 @@ div.ibm-column.ibm-list-container {
 
 div.ibm-column.ibm-list-container h3,
 div.ibm-column.ibm-list-container .ibm-rule { 
-	margin:5px 0; 
+	margin: 5px 0; 
 }
 // End of list container styles
 
@@ -216,7 +216,7 @@ div.ibm-column.ibm-list-container .ibm-rule {
 .ibm-landing-page #ibm-content .ibm-col-5-3 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-6-2 ol.ibm-article-list h3,
 .ibm-landing-page #ibm-content .ibm-col-6-3 ol.ibm-article-list h3 {
-	margin-top:2px;
+	margin-top: 2px;
 }
 
 #ibm-content ol.ibm-article-list h4 {
@@ -248,12 +248,12 @@ div.ibm-column.ibm-list-container .ibm-rule {
 } 
 
 .ibm-twitter-list li {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #EEE;
 	margin-bottom: 5px;
 }
 
 .ibm-twitter-list li a {
-	padding-left:18px;
+	padding-left: 18px;
 	color: #00649D !important;
 }
 
@@ -263,8 +263,8 @@ div.ibm-column.ibm-list-container .ibm-rule {
 // Twisty styles begin ==============================================
 ul.ibm-twisty {
 	display: block;
-	padding:4px 0px;
-	height:1%;
+	padding: 4px 0;
+	height: 1%;
 }
 
 ul.ibm-twisty li {
@@ -285,7 +285,7 @@ ul.ibm-twisty li a.ibm-twisty-trigger {
 }
 
 ul.ibm-twisty li a.ibm-twisty-trigger-closed {
-	background:url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_ON.png") no-repeat -2px -1001px !important;
+	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_controls_ON.png") no-repeat -2px -1001px !important;
 }
 
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty li a.ibm-twisty-trigger-closed,
@@ -418,12 +418,12 @@ ul.ibm-twisty.ibm-alternate-blue-twisty li span.ibm-twisty-head {
 // showhide fix for twitter module when it is inside accordion
 .ibm-show-hide .ibm-twitter-module h2 {
 	border-top: 0 !important;
-	font-weight:normal;
+	font-weight: normal;
 	
 }
 
 .ibm-show-hide .ibm-twitter-module h2 a {
-	background:none !important;
+	background: none !important;
 	color: #666;
 }
 
@@ -578,9 +578,7 @@ div.ibm-tab-section.ibm-step-indicator {
 #ibm-com .ibm-col-4-2 div.ibm-step-indicator ul.ibm-tabs li {
 	background-image: url("#{$imagePath}/i/v17/ibm-si-chevron-23x17.png");
 	line-height: 1.49em;
-	padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 26px;
+	padding: 0 26px 2px 6px;
 }
 
 #ibm-com .ibm-col-6-3 div.ibm-step-indicator ul.ibm-tabs li a,
@@ -588,12 +586,12 @@ div.ibm-tab-section.ibm-step-indicator {
 #ibm-com .ibm-col-5-3 div.ibm-step-indicator ul.ibm-tabs li a,
 #ibm-com .ibm-col-5-2 div.ibm-step-indicator ul.ibm-tabs li a,
 #ibm-com .ibm-col-4-2 div.ibm-step-indicator ul.ibm-tabs li a {
-	font-size:.9em;
+	font-size: .9em;
 	*margin: 0 0 0 10px;
 }
 
-div.ibm-step-container .ibm-buttons-row{
-  padding-top: 20px;
+div.ibm-step-container .ibm-buttons-row {
+	padding-top: 20px;
 }
 
 div.ibm-step-container .ibm-buttons-row p a.ibm-btn-pri,
@@ -626,6 +624,5 @@ div.ibm-step-container .ibm-buttons-row span.ibm-sep {
 
 div.ibm-step-container .ibm-hide-if-no-js,
 div.ibm-step-container .ibm-hidden-content {
-  display: none;
+	display: none;
 }
-
