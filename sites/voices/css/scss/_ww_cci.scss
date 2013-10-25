@@ -2040,7 +2040,11 @@ a.ibm_cci-gototop {
 		#ibm-content #{$ibm-widget-about}.ibm-columns .ibm-col-6-4.ibm_cci_acc{
 				position:relative;
 				top:-20px;
-			}			
+			}
+
+	.ibm-legal-text, .ibm-legal {
+			width:300px;
+		}						
 }
 
 
@@ -2205,5 +2209,10 @@ a.ibm_cci-gototop {
 						margin-left: 0;
 					}
 				}
-			}		
+			}
+
+		#ibm-footer-module .ibm-columns .ibm-col-6-1 { min-height: 200px;}	
+		.ibm-legal-text, .ibm-legal {
+			width:768px;
+		}			
 }
