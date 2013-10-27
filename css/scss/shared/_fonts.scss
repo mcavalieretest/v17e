@@ -478,9 +478,14 @@ strong {
 }
 */
 
-#ibm-top h1 {
+#ibm-top h1,
+.ibm-landing-page #ibm-leadspace-head.ibm-ribbon h2 {
 	@include px-to-rem(font-size,36px);
 	@include px-to-rem(line-height,40px);
+}
+
+#ibm-top h1.small {
+	@include px-to-rem(font-size,30px);
 }
 
 #ibm-navigation-trail {
@@ -493,7 +498,7 @@ strong {
 }
 
 #ibm-content-head em, 
-#ibm-content #ibm-leadspace-head em {
+.ibm-default #ibm-leadspace-head em {
 	font-family: $defaultHeaderFont-dbcs;
 	font-style: normal;
 	color: #666;
