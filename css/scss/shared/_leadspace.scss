@@ -56,10 +56,10 @@
 }
 
 #ibm-leadspace-body {
-    width: $landingGrid - 40px;
+    width: $landingGrid;
    	@include text-shadow($emboss-light);
     margin: 0 auto;
-    padding: 0 20px 50px 20px;
+    padding: 0 0 50px;
     min-height: 250px;
 }
 
@@ -79,12 +79,12 @@
     padding: 0;
     
 }
-#ibm-leadspace-body .ibm-columns,
+/*#ibm-leadspace-body .ibm-columns,
 #ibm-leadspace-body [class*="ibm-col-"] {
 	margin: 0;
 	padding: 0;
 
-}
+}*/
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-navigation-trail + .ibm-columns h1 {
    padding: 0 0 10px;
