@@ -380,30 +380,6 @@
 }
 /*End of Multileaf Leadspace=========================== */
 
-
-/* start of no leadspace style============================== */
-.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace{
-	background: none;
-	border-bottom: none;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace #ibm-leadspace-body {
-  	padding-bottom: 0;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace-tabs {
-	height:70px;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-no-leadspace + #ibm-pcon {
-	margin: 0 auto 20px;
-}
-
-.ibm-landing-page.ibm-application #ibm-leadspace-head.ibm-no-leadspace + #ibm-pcon {
-	margin: -15px auto 20px;
-}
-
-
 /*=Start========== Dark background definition ============*/
 
 #ibm-leadspace-head.ibm-alternate-background #ibm-leadspace-body {
