@@ -140,30 +140,30 @@
 }
 
 /* Styles of leadspace for default pages =====================*/
-.ibm-default #ibm-leadspace-head {
+#ibm-content #ibm-leadspace-head{
     background: none;
     border-bottom: 0 none;
     min-height: 70px;
     _height: 70px;
 }
 
-.ibm-default #ibm-leadspace-body {
+#ibm-content #ibm-leadspace-body {
     padding: 0;
     margin: 0;
     min-height: inherit;
 }
-.ibm-default #ibm-leadspace-head #ibm-navigation-trail {
+#ibm-content #ibm-leadspace-head #ibm-navigation-trail {
  	padding: 10px 0 0 10px;
 }
 
-.ibm-default #ibm-leadspace-head #ibm-navigation-trail + .ibm-columns h1 {
+#ibm-content #ibm-leadspace-head #ibm-navigation-trail + .ibm-columns h1 {
 	padding: 0;
 }
-.ibm-default #ibm-leadspace-head h1 {
+#ibm-content #ibm-leadspace-head h1 {
 	padding: 20px 0 0;
 } 
 
-.ibm-default #ibm-leadspace-head p {
+#ibm-content #ibm-leadspace-head p {
     padding: 0 0 10px;
 }
 
