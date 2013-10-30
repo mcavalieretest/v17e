@@ -28,12 +28,9 @@ strong {
 }
 
 
-.ibm-type .section-header h1,
-.ibm-type .section-header h2,
-.ibm-type .section-header h3,
-.ibm-type .section-header h4,
-.ibm-type .section-headerstrong {
+.ibm-type #ibm-top .section-header {
 	font-family: $sectionHeaderFont; 
+	font-weight: 300;
 }
 
 
@@ -444,6 +441,23 @@ strong {
 // paragraph/header spacing
 
 
+// section header spacing
+#ibm-com #ibm-top .section-header {
+	@include px-to-rem(font-size,$sectionHeaderSize);
+	@include px-to-rem(line-height,$sectionHeaderSize * $defaultLineHeight);
+	padding-bottom: $sectionHeaderSize * $defaultLineHeight * $headerSpacing;
+}
+#ibm-com #ibm-top .section-header.large {
+	@include px-to-rem(font-size,$largeHeaderSize);
+	@include px-to-rem(line-height,$largeHeaderSize * $largeLineHeight);
+	padding-bottom: $largeHeaderSize * $largeLineHeight * $headerSpacing;
+}
+#ibm-com #ibm-top .section-header.small {
+	@include px-to-rem(font-size,$smallHeaderSize);
+	@include px-to-rem(line-height,$smallHeaderSize * $smallLineHeight);
+	padding-bottom: $smallHeaderSize * $smallLineHeight * $headerSpacing;
+}
+// section header spacing
 
 #{$ie7Selector} #ibm-content #ibm-content-main *,
 #{$ie7Selector} #ibm-content-sidebar *,
