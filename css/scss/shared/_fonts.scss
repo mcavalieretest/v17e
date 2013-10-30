@@ -320,7 +320,7 @@ strong {
 .ibm-col-6-2 h2,
 .ibm-col-6-2 h3,
 .ibm-col-6-2 h4 {
-	padding: ($bodyFontSize * $defaultLineHeight * $headerSpacing) 0;
+	padding: 0 0 ($bodyFontSize * $defaultLineHeight * $headerSpacing);
 }
 // paragraph/header spacing
 
