@@ -449,12 +449,12 @@ strong {
 }
 #ibm-com #ibm-top .section-header.large {
 	@include px-to-rem(font-size,$largeHeaderSize);
-	@include px-to-rem(line-height,$largeHeaderSize * $defaultLineHeight);
+	@include px-to-rem(line-height,$largeHeaderSize * $smallLineHeight);
 	padding-bottom: $largeHeaderSize * $largeLineHeight * $headerSpacing;
 }
 #ibm-com #ibm-top .section-header.small {
 	@include px-to-rem(font-size,$smallHeaderSize);
-	@include px-to-rem(line-height,$smallHeaderSize * $defaultLineHeight);
+	@include px-to-rem(line-height,$smallHeaderSize * $smallLineHeight);
 	padding-bottom: $smallHeaderSize * $smallLineHeight * $headerSpacing;
 }
 // section header spacing
