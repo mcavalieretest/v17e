@@ -12,6 +12,13 @@
     padding: 0;
 }
 /* End of v16 class used in v17============ */
+.ibm-landing-page #ibm-leadspace-head.ibm-no-tabs {
+    min-height: 300px;
+}
+.ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
+    min-height: 290px;
+    padding-bottom: 10px; 
+}
 
 #ibm-leadspace-head {
    	background-color: #F7F7F7;
@@ -70,21 +77,22 @@
 
 /* styles for short leadspace ===================*/
 
+
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate{
     min-height: 120px;   
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
-    min-height: 120px;
-    padding: 0;
-    
+    min-height: 70px;
+   
 }
-/*#ibm-leadspace-body .ibm-columns,
-#ibm-leadspace-body [class*="ibm-col-"] {
-	margin: 0;
-	padding: 0;
 
-}*/
+.ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
+    min-height: 80px;
+    padding-bottom: 15px;
+   
+}
+
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-navigation-trail + .ibm-columns h1 {
    padding: 0 0 10px;
@@ -93,10 +101,11 @@
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1 {
 	padding: 10px 0;
 }
-
+/*
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-	padding: 0 0 18px;
-}
+	margin:0;
+}*/
+
 /* ======ibm-35-space class is only used with short leadspace , without tabs, without navigation trail and without subtitle*/
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate h1.ibm-35-space{
     padding-top: 35px;
@@ -110,30 +119,6 @@
 /* End of styles for short leadsapce ==========================*/
 
 
-/* since we added ibm-columns in the leadspace , don't think so this styles are required. Check with Jeff */
-/*
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-5col h1 {
-    width: 740px;
-}
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate-4col h1 {
-    width: 580px;
-}*/
-
-/*#ibm-content #ibm-leadspace-head.ibm-alternate h1 {
-    width: 100%;
-}*/
-
-
-/*
-#ibm-content #ibm-leadspace-head p em span {
-	display: block;
-}*/
-/*
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate p {
-    width: 620px;
-}
-*/
 
 #ibm-content #ibm-leadspace-head.ibm-no-image p {
     width: 100%;
