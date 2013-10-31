@@ -8,21 +8,14 @@
 //   Use ".ibm_cci-" class prefix for site specific custom code
 
 
-// Import all stylesheets inside of ww_cci.scss
-//@import "cci_vars";
-
 body ul li:before, body ul li:after {
 	content:none;
 }
 
 //For testing blocks
-// div * {outline:1px solid #F00}
+div * {outline:1px solid #F00}
 // p {outline:1px solid #0F0}
 // li {outline:1px solid #00F}
-
-// #ibm-leadspace-head.ibm_cc__voices_ls #ibm-leadspace-body{ 
-	
-// }	
 
 /* LEADSPACE OVERIDES (BEGIN) */
 #ibm-leadspace-head.ibm_cc__voices_ls{
@@ -32,12 +25,11 @@ body ul li:before, body ul li:after {
 	border-bottom: none;
 
 	p a {
-		margin-top: 0;
+		margin: 0;
 	}
 
 #ibm-leadspace-body {
 	@include h1-p-overrides;
-
 		text-shadow:none;
 		padding: 0;
 		min-height:222px;
@@ -56,7 +48,7 @@ body ul li:before, body ul li:after {
 						li.ibm_cci__ml_t{
 							@include ibm_cci-ul--li__modifier;
 							display: inline-block;
-							padding: 0 10px 0 0;							
+							padding: 0 20px 0 0;							
 								// background-color:#f0f0f0;
 								// outline:1px solid #e7e6e6;
 							margin: 0 0 10px 2px;								
@@ -341,8 +333,8 @@ h1#{$leadspace__modifier}{
 }
 /* LEADSPACE TOGGLE BLOCK (END) */
 
-/* IBM CONTENT BLOCK OVERIDES (BEGIN) */
 
+/* IBM CONTENT BLOCK OVERIDES (BEGIN) */
 #ibm-content-main { 
 	background-color: #f8f8f8;
 }
@@ -368,7 +360,7 @@ h1#{$leadspace__modifier}{
 		// h1: 1.0em;
 		.ibm-columns { 
 			/* ibm-column override to display outline for list rows */
-			padding:inherit;
+			//padding:inherit;
 			// Hack
 			// overflow:no;
 		}
@@ -395,6 +387,8 @@ h1#{$leadspace__modifier}{
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f8f8f8',GradientType=0 );
 			min-height:5px;	
 			padding:0;
+			box-shadow: inset 0 4px 8px -4px rgba(0,0,0,0.1);
+			border-top: rgba(0,0,0,0.1) solid 1px;
 				//max-height: 50px;
 
 				// .ibm-columns .ibm-col-1-1.ibm_cci--sk.ibm_cci--sk__mt{
@@ -2097,33 +2091,48 @@ a.ibm_cci-gototop {
 	// #ibm-leadspace-head.ibm_cc__voices_ls #ibm-leadspace-body .ibm_cci--sk.ibm_cci--sk__mt {
 	// 	margin-left:10px;
 	// }
+	//
+	#ibm-top .ibm-columns {
+		padding: 0 35px;
+	} 
+
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier {
+		width:730px;
+		padding:0;
+
+		.ibm-col-1-1 {
+			width:730px;
+			margin:0;
+		}
+	}
+
 
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier {
 		width:640px;
-		padding:0 10px;
+		padding:0;
 	}
 
 	.ibm-landing-page#ibm-top .ibm-columns .ibm-col-6-4{
-		width:640px;
+		width:730px;
 	}
 
 
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-4 .ibm_cci--rcb {
-		width:540px;
+		width:650px;
 		padding:0;
 		border:0;
 		clear:none;
 
 		.ibm_cci-fav-ihb{
-			width:480px;
+			width:590px;
 
 			a.ibm_cci--feed-title {
-				width:450px;
+				width:560px;
 			}
 		}
 	}
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 {
-		width:540px;
+		width:650px;
 		margin: 20px 0 0 80px;
 		clear:both;
 		display:none;
@@ -2138,7 +2147,7 @@ a.ibm_cci-gototop {
 	}
 	
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm-col-6-2 .ibm_cci-rel-tweet-detils-container{
-		min-width: 505px;
+		min-width: 596px;
 	}
 
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1 .ibm_cci--lv-unro-b {
@@ -2213,6 +2222,6 @@ a.ibm_cci-gototop {
 
 		#ibm-footer-module .ibm-columns .ibm-col-6-1 { min-height: 200px;}	
 		.ibm-legal-text, .ibm-legal {
-			width:768px;
+			width:708px;
 		}			
 }

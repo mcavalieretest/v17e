@@ -47,6 +47,7 @@ $ie9Hack 								: "\0/";
 	overflow: hidden;
 	border: 0;
 	display:block;
+	padding:0;
 		// width: 600px;
 		// height:200px;
 }
@@ -188,7 +189,8 @@ $ie9Hack 								: "\0/";
 		font-weight:normal !important;
 	}
 	h3.ibm_cci--lv-rc-title {
-		margin:0; 
+		margin:0;
+		padding:0;
 	}
 	h3.ibm_cci--lv-r-wct, p.ibm_cci--lv-r-wch{
 		margin:0 0 0 35px;
