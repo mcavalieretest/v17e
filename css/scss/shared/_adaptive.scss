@@ -471,14 +471,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-	#ibm-top #ibm-leadspace-head #ibm-leadspace-body,
-	.ibm-content-expand #ibm-content #ibm-leadspace-head #ibm-leadspace-body  {
-		padding-right: 10px;
-		padding-left: 10px;
-		width: 280px;
-		margin: 0 auto;
-	}
-	
+		
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
 		width: 280px;
 	}
@@ -556,9 +549,11 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 10px;
 	}
 	
-	#ibm-content #ibm-leadspace-head h1,
-	#ibm-content #ibm-leadspace-head p {
-		padding: 10px 0 !important;
+	
+	#ibm-content #ibm-leadspace-head #ibm-leadspace-body,
+	.ibm-content-expand #ibm-content #ibm-leadspace-head #ibm-leadspace-body {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	#ibm-navigation {
@@ -714,7 +709,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 40px;
 	}
 	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 40px;
 		padding-left: 40px;
@@ -982,7 +977,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// to be removed.  only for testing
 
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 60px;
 		padding-left: 60px;
@@ -1055,7 +1050,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 64px;
 	}
 	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 64px;
 		padding-left: 64px;
@@ -1340,7 +1335,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 80px;
 	}
 	
-	.ibm-landing-page #ibm-leadspace-head #ibm-leadspace-body,
+	
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 80px;
 		padding-left: 80px;
