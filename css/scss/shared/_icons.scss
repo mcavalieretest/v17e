@@ -176,11 +176,12 @@ ul li.ibm-no-links:before {
 	font-size: inherit;	
 }
 
+#ibm-top .ibm-alternate-background a[class*="-link"]:before,
+#ibm-top .ibm-alternate-background a[class*="-link"]:after,
 #ibm-top ul.ibm-alternate-two a:before,
 #ibm-top ul.ibm-alternate-two a.ibm-chevron-link:after {
 	color: $white;
 }
-
 
 /* Extra icons:
 li a.ibm-cta-arrow-sm:before,
