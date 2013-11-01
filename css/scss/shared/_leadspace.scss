@@ -84,7 +84,7 @@
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
     min-height: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 40px;   
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate.ibm-no-tabs #ibm-leadspace-body {
@@ -136,6 +136,11 @@
     margin: 0;
     min-height: inherit;
 }
+#{$ie7Selector} #ibm-content #ibm-leadspace-head,
+#{$ie7Selector} #ibm-content #ibm-leadspace-body {
+	min-height: 70px;
+}
+
 #ibm-content #ibm-leadspace-head #ibm-navigation-trail {
  	padding: 10px 0 0 10px;
 }
