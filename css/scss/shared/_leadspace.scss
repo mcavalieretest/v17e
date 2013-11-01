@@ -12,9 +12,7 @@
     padding: 0;
 }
 /* End of v16 class used in v17============ */
-.ibm-landing-page #ibm-leadspace-head.ibm-no-tabs {
-    min-height: 300px;
-}
+
 .ibm-landing-page #ibm-leadspace-head.ibm-no-tabs #ibm-leadspace-body {
     min-height: 290px;
     padding-bottom: 10px; 
@@ -24,12 +22,6 @@
    	background-color: #F7F7F7;
 	@include background-gradient(background,(top, #FFF, #F7F7F7));
     border-bottom: 1px solid #E5E5E5;
-}
-
-
-
-.ibm-landing-page #ibm-leadspace-head {
-    min-height: 300px;
 }
 
 .ibm-landing-page #ibm-leadspace-head h1 {
@@ -76,11 +68,6 @@
 
 
 /* styles for short leadspace ===================*/
-
-
-.ibm-landing-page #ibm-leadspace-head.ibm-alternate{
-    min-height: 120px;   
-}
 
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate #ibm-leadspace-body {
     min-height: 80px;
@@ -173,7 +160,10 @@
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon #ibm-leadspace-body {
     width: 100%;
-    padding: 0;
+}
+
+#{$ie7Selector} .ibm-landing-page #ibm-leadspace-head.ibm-ribbon #ibm-leadspace-body{
+	padding-bottom:0;
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h1,
@@ -201,11 +191,11 @@
     clear: none;
     min-height: 300px;
     float: left;
-    padding: 0;
+   
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon .ibm-columns [class*="ibm-col-"] {
-    padding: 0;
+   
     margin: 0 auto;
     float: none;
     position: relative;
@@ -213,9 +203,13 @@
 /* ribbon navigation styles begins============================ */
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav {
-    margin: -65px auto 0;
+    margin: -70px auto 0;
     width: auto;
 }
+#{$ie7Selector} .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav {
+ 	margin: -60px auto 0;
+}
+
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
 	background: url("#{$imagePath}/i/v17/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
