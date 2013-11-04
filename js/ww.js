@@ -130,22 +130,24 @@ jQuery(function() {
 ibmcom.init();
 
 
-if(jQuery('#ibm-top').length > 0) {
-	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
-}
+//if(jQuery('#ibm-top').length > 0) {
+//	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
+//}
 
 
 // Loop till masthead links are available.  When available, prepend them to #m-shift
-var checkMLinksExist = setInterval(function() {
-   if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
-	   var mastLinks = jQuery('#ibm-menu-links').html();
-      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div>');
-      jQuery('#ibm-universal-nav').append('<p id="m-open"><a href="#" id="m-navigation">Dynamic mobile menu testing</a></p>');
-      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
-      clearInterval(checkMLinksExist);
-   }
-}, 200); // check every 200ms
+//var checkMLinksExist = setInterval(function() {
+//   if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
+//	   var mastLinks = jQuery('#ibm-menu-links').html();
+//      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div>');
+//      jQuery('#ibm-universal-nav').append('<p id="m-open"><a href="#" id="m-navigation">Dynamic mobile menu testing</a></p>');
+//      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
+//      clearInterval(checkMLinksExist);
+//   }
+//}, 200); // check every 200ms
 
+
+//new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {type : 'cover'} );
 
 });
 
@@ -162,7 +164,7 @@ var checkMLinksExist = setInterval(function() {
  * http://www.codrops.com
  */
 ;( function( window ) {
-	var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+	
 	'use strict';
 
 	function extend( a, b ) {
@@ -184,6 +186,18 @@ var checkMLinksExist = setInterval(function() {
 		return (el!==false);
 	}
 
+	// returns the depth of the element "e" relative to element with id=id ()
+	// for this calculation only parents with classname = waypoint (mp-level) are considered
+	function getLevelDepth( e, id, waypoint, cnt ) {
+
+		cnt = cnt || 0;
+		if ( e.id.indexOf( id ) >= 0 ) return cnt;
+		if( jQuery(e).hasClass( waypoint ) ) {
+			++cnt;
+		}
+		return e.parentNode && getLevelDepth( e.parentNode, id, waypoint, cnt );
+	}
+
 	// http://coveroverflow.com/a/11381730/989439
 	function mobilecheck() {
 		var check = false;
@@ -191,10 +205,18 @@ var checkMLinksExist = setInterval(function() {
 		return check;
 	}
 
-	function mlPushMenu( el, trigger ) {	
+	// returns the closest element to 'e' that has class "classname"
+	function closest( e, classname ) {
+		if( jQuery(e).hasClass( classname ) ) {
+			return e;
+		}
+		return e.parentNode && closest( e.parentNode, classname );
+	}
+
+	function mlPushMenu( el, trigger, options ) {	
 		this.el = el;
 		this.trigger = trigger;
-
+		this.options = extend( this.defaults, options );
 		// support 3d transforms
 		this.support = Modernizr.csstransforms3d;
 		if( this.support ) {
@@ -203,18 +225,35 @@ var checkMLinksExist = setInterval(function() {
 	}
 
 	mlPushMenu.prototype = {
+		defaults : {
+			// overlap: there will be a gap between open levels
+			// cover: the open levels will be on top of any previous open level
+			type : 'overlap', // overlap || cover
+			// space between each overlaped level
+			levelSpacing : 40,
+			// classname for the element (if any) that when clicked closes the current level
+			backClass : 'mp-back'
+		},
 		_init : function() {
 			// if menu is open or not
 			this.open = false;
-
+			// level depth
+			this.level = 0;
 			// the moving wrapper
-			this.wrapper = document.getElementById( 'm-shift' );
-			
+			this.wrapper = document.getElementById( 'mp-pusher' );
+			// the mp-level elements
+			this.levels = Array.prototype.slice.call( this.el.querySelectorAll( 'div.mp-level' ) );
+			// save the depth of each of these mp-level elements
+			var self = this;
+			this.levels.forEach( function( el, i ) { el.setAttribute( 'data-level', getLevelDepth( el, self.el.id, 'mp-level' ) ); } );
 			// the menu items
 			this.menuItems = Array.prototype.slice.call( this.el.querySelectorAll( 'li' ) );
-
+			// if type == "cover" these will serve as hooks to move back to the previous level
+			this.levelBack = Array.prototype.slice.call( this.el.querySelectorAll( '.' + this.options.backClass ) );
 			// event type (if mobile use touch events)
 			this.eventtype = mobilecheck() ? 'touchstart' : 'click';
+			// add the class mp-overlap or mp-cover to the main element depending on options.type
+			jQuery(this.el).addClass( 'mp-' + this.options.type );
 
 			// initialize / bind the necessary events
 			this._initEvents();
@@ -246,39 +285,116 @@ var checkMLinksExist = setInterval(function() {
 				}
 			} );
 
+			// opening a sub level menu
+			this.menuItems.forEach( function( el, i ) {
+				// check if it has a sub level
+				var subLevel = el.querySelector( 'div.mp-level' );
+				if( subLevel ) {
+					el.querySelector( 'a' ).addEventListener( self.eventtype, function( ev ) {
+						ev.preventDefault();
+						var level = closest( el, 'mp-level' ).getAttribute( 'data-level' );
+						if( self.level <= level ) {
+							ev.stopPropagation();
+							
+							jQuery(closest( el, 'mp-level' )).addClass( 'mp-level-overlay' );
+							
+							self._openMenu( subLevel );
+						}
+					} );
+				}
+			} );
+
+			// closing the sub levels :
+			// by clicking on the visible part of the level element
+			this.levels.forEach( function( el, i ) {
+				el.addEventListener( self.eventtype, function( ev ) {
+					ev.stopPropagation();
+					var level = el.getAttribute( 'data-level' );
+					if( self.level > level ) {
+						self.level = level;
+						self._closeMenu();
+					}
+				} );
+			} );
+
+			// by clicking on a specific element
+			this.levelBack.forEach( function( el, i ) {
+				el.addEventListener( self.eventtype, function( ev ) {
+					ev.preventDefault();
+					var level = closest( el, 'mp-level' ).getAttribute( 'data-level' );
+					if( self.level <= level ) {
+						ev.stopPropagation();
+						self.level = closest( el, 'mp-level' ).getAttribute( 'data-level' ) - 1;
+						self.level === 0 ? self._resetMenu() : self._closeMenu();
+					}
+				} );
+			} );	
 		},
-		_openMenu : function( ) {
+		_openMenu : function( subLevel ) {
+			// increment level depth
+			++this.level;
 
-			// check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
-			var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
-			var viewportHeight = jQuery(window).height();
+			// move the main wrapper
+			var levelFactor = ( this.level - 1 ) * this.options.levelSpacing,
+				translateVal = this.options.type === 'overlap' ? this.el.offsetWidth + levelFactor : this.el.offsetWidth;
+			
+			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
 
-			if(iOSCheck) {
-				jQuery('#m-wrap').css("height", '100%');
+			if( subLevel ) {
+				// reset transform for sublevel
+				this._setTransform( '', subLevel );
+				// need to reset the translate value for the level menus that have the same level depth and are not open
+				for( var i = 0, len = this.levels.length; i < len; ++i ) {
+					var levelEl = this.levels[i];
+					if( levelEl != subLevel && !jQuery(levelEl).hasClass( 'mp-level-open' ) ) {
+						this._setTransform( 'translate3d(-100%,0,0) translate3d(' + -1*levelFactor + 'px,0,0)', levelEl );
+					}
+				}
 			}
-			if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
-				jQuery('#m-wrap').css("height", mNavHeightCheck);	
-			}
-
-			// add class m-enable to main wrapper if opening the first time
-			jQuery(this.wrapper).addClass('m-enable');
+			// add class mp-pushed to main wrapper if opening the first time
+			if( this.level === 1 ) {
+			jQuery(this.wrapper).addClass( 'mp-pushed' );
 				this.open = true;
-
+			}
+			// add class mp-level-open to the opening level element
+			jQuery(subLevel || this.levels[0]).addClass( 'mp-level-open' );
 		},
 		// close the menu
 		_resetMenu : function() {
-			
-			// reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
-			if(iOSCheck){
-				jQuery('#m-wrap').css("height", 'auto');	
-			}
-
-			// remove class m-enable from m shift
-			jQuery(this.wrapper).removeClass('m-enable');
+			this._setTransform('translate3d(0,0,0)');
+			this.level = 0;
+			// remove class mp-pushed from main wrapper
+			jQuery(this.wrapper).removeClass( 'mp-pushed' );
+			this._toggleLevels();
 			this.open = false;
+		},
+		// close sub menus
+		_closeMenu : function() {
+			var translateVal = this.options.type === 'overlap' ? this.el.offsetWidth + ( this.level - 1 ) * this.options.levelSpacing : this.el.offsetWidth;
+			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
+			this._toggleLevels();
+		},
+		// translate the el
+		_setTransform : function( val, el ) {
+			el = el || this.wrapper;
+			el.style.WebkitTransform = val;
+			el.style.MozTransform = val;
+			el.style.transform = val;
+		},
+		// removes classes mp-level-open from closing levels
+		_toggleLevels : function() {
+			for( var i = 0, len = this.levels.length; i < len; ++i ) {
+				var levelEl = this.levels[i];
+				if( levelEl.getAttribute( 'data-level' ) >= this.level + 1 ) {
+					jQuery(levelEl).removeClass( 'mp-level-open' );
+					jQuery(levelEl).removeClass( 'mp-level-overlay' );
+				}
+				else if( Number( levelEl.getAttribute( 'data-level' ) ) == this.level ) {
+					jQuery(levelEl).removeClass( 'mp-level-overlay' );
+				}
+			}
 		}
-
-	};
+	}
 
 	// add to global namespace
 	window.mlPushMenu = mlPushMenu;
