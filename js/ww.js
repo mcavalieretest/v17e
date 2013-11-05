@@ -130,24 +130,32 @@ jQuery(function() {
 ibmcom.init();
 
 
-//if(jQuery('#ibm-top').length > 0) {
-//	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
-//}
+if(jQuery('#ibm-top').length > 0) {
+	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
+}
 
 
 // Loop till masthead links are available.  When available, prepend them to #m-shift
-//var checkMLinksExist = setInterval(function() {
-//   if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
-//	   var mastLinks = jQuery('#ibm-menu-links').html();
-//      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div>');
-//      jQuery('#ibm-universal-nav').append('<p id="m-open"><a href="#" id="m-navigation">Dynamic mobile menu testing</a></p>');
-//      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
-//      clearInterval(checkMLinksExist);
-//   }
-//}, 200); // check every 200ms
+var checkMLinksExist = setInterval(function() {
+   if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
+	   var mastLinks = jQuery('#ibm-menu-links').html();
+      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><div id="m-main-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div></div>');
+      jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
+      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
+      
+      if (jQuery('#m-site-navigation').length) {
+      	jQuery('#m-site-menu').appendTo("#m-menu");
+      	new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-site-navigation' ) );
+      }
+      
+      clearInterval(checkMLinksExist);
+   }
+}, 200); // check every 200ms
 
 
-//new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {type : 'cover'} );
+//new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation-2' ) );
+
+
 
 });
 
@@ -164,7 +172,7 @@ ibmcom.init();
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
+	var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
 	'use strict';
 
 	function extend( a, b ) {
@@ -187,7 +195,7 @@ ibmcom.init();
 	}
 
 	// returns the depth of the element "e" relative to element with id=id ()
-	// for this calculation only parents with classname = waypoint (mp-level) are considered
+	// for this calculation only parents with classname = waypoint (m-level) are considered
 	function getLevelDepth( e, id, waypoint, cnt ) {
 
 		cnt = cnt || 0;
@@ -228,11 +236,11 @@ ibmcom.init();
 		defaults : {
 			// overlap: there will be a gap between open levels
 			// cover: the open levels will be on top of any previous open level
-			type : 'overlap', // overlap || cover
+			type : 'cover', // overlap || cover
 			// space between each overlaped level
 			levelSpacing : 40,
 			// classname for the element (if any) that when clicked closes the current level
-			backClass : 'mp-back'
+			backClass : 'm-back'
 		},
 		_init : function() {
 			// if menu is open or not
@@ -240,20 +248,20 @@ ibmcom.init();
 			// level depth
 			this.level = 0;
 			// the moving wrapper
-			this.wrapper = document.getElementById( 'mp-pusher' );
-			// the mp-level elements
-			this.levels = Array.prototype.slice.call( this.el.querySelectorAll( 'div.mp-level' ) );
-			// save the depth of each of these mp-level elements
+			this.wrapper = document.getElementById( 'm-shift' );
+			// the m-level elements
+			this.levels = Array.prototype.slice.call( this.el.querySelectorAll( 'div.m-level' ) );
+			// save the depth of each of these m-level elements
 			var self = this;
-			this.levels.forEach( function( el, i ) { el.setAttribute( 'data-level', getLevelDepth( el, self.el.id, 'mp-level' ) ); } );
+			this.levels.forEach( function( el, i ) { el.setAttribute( 'data-level', getLevelDepth( el, self.el.id, 'm-level' ) ); } );
 			// the menu items
 			this.menuItems = Array.prototype.slice.call( this.el.querySelectorAll( 'li' ) );
 			// if type == "cover" these will serve as hooks to move back to the previous level
 			this.levelBack = Array.prototype.slice.call( this.el.querySelectorAll( '.' + this.options.backClass ) );
 			// event type (if mobile use touch events)
 			this.eventtype = mobilecheck() ? 'touchstart' : 'click';
-			// add the class mp-overlap or mp-cover to the main element depending on options.type
-			jQuery(this.el).addClass( 'mp-' + this.options.type );
+			// add the class m-overlap or m-cover to the main element depending on options.type
+			jQuery(this.el).addClass( 'm-' + this.options.type );
 
 			// initialize / bind the necessary events
 			this._initEvents();
@@ -269,6 +277,19 @@ ibmcom.init();
 
 			// open (or close) the menu
 			this.trigger.addEventListener( this.eventtype, function( ev ) {
+
+				
+				if (jQuery(this).attr('id') == 'm-site-navigation') {
+					jQuery('#m-menu').addClass('m-site-menu-enable');
+					jQuery('#m-site-menu').show();
+					jQuery('#m-main-menu').hide();
+				}
+				else {
+					jQuery('#m-menu').removeClass('m-site-menu-enable');
+					jQuery('#m-main-menu').show();
+					jQuery('#m-site-menu').hide();
+				}
+
 				ev.stopPropagation();
 				ev.preventDefault();
 				if( self.open ) {
@@ -288,15 +309,15 @@ ibmcom.init();
 			// opening a sub level menu
 			this.menuItems.forEach( function( el, i ) {
 				// check if it has a sub level
-				var subLevel = el.querySelector( 'div.mp-level' );
+				var subLevel = el.querySelector( 'div.m-level' );
 				if( subLevel ) {
 					el.querySelector( 'a' ).addEventListener( self.eventtype, function( ev ) {
 						ev.preventDefault();
-						var level = closest( el, 'mp-level' ).getAttribute( 'data-level' );
+						var level = closest( el, 'm-level' ).getAttribute( 'data-level' );
 						if( self.level <= level ) {
 							ev.stopPropagation();
 							
-							jQuery(closest( el, 'mp-level' )).addClass( 'mp-level-overlay' );
+							jQuery(closest( el, 'm-level' )).addClass( 'm-level-overlay' );
 							
 							self._openMenu( subLevel );
 						}
@@ -321,24 +342,38 @@ ibmcom.init();
 			this.levelBack.forEach( function( el, i ) {
 				el.addEventListener( self.eventtype, function( ev ) {
 					ev.preventDefault();
-					var level = closest( el, 'mp-level' ).getAttribute( 'data-level' );
+					var level = closest( el, 'm-level' ).getAttribute( 'data-level' );
 					if( self.level <= level ) {
 						ev.stopPropagation();
-						self.level = closest( el, 'mp-level' ).getAttribute( 'data-level' ) - 1;
+						self.level = closest( el, 'm-level' ).getAttribute( 'data-level' ) - 1;
 						self.level === 0 ? self._resetMenu() : self._closeMenu();
 					}
 				} );
 			} );	
 		},
 		_openMenu : function( subLevel ) {
+		
+		
+			// check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
+			var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
+			var viewportHeight = jQuery(window).height();
+
+			if(iOSCheck) {
+				jQuery('#m-wrap').css("height", '100%');
+			}
+			if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
+				jQuery('#m-wrap').css("height", mNavHeightCheck);	
+			}
+		
+		
 			// increment level depth
 			++this.level;
 
 			// move the main wrapper
 			var levelFactor = ( this.level - 1 ) * this.options.levelSpacing,
-				translateVal = this.options.type === 'overlap' ? this.el.offsetWidth + levelFactor : this.el.offsetWidth;
+				translateVal = this.el.offsetWidth;
 			
-			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
+			//this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
 
 			if( subLevel ) {
 				// reset transform for sublevel
@@ -346,32 +381,39 @@ ibmcom.init();
 				// need to reset the translate value for the level menus that have the same level depth and are not open
 				for( var i = 0, len = this.levels.length; i < len; ++i ) {
 					var levelEl = this.levels[i];
-					if( levelEl != subLevel && !jQuery(levelEl).hasClass( 'mp-level-open' ) ) {
-						this._setTransform( 'translate3d(-100%,0,0) translate3d(' + -1*levelFactor + 'px,0,0)', levelEl );
+					if( levelEl != subLevel && !jQuery(levelEl).hasClass( 'm-level-open' ) ) {
+					//	this._setTransform( 'translate3d(-100%,0,0) translate3d(' + -1*levelFactor + 'px,0,0)', levelEl );
 					}
 				}
 			}
-			// add class mp-pushed to main wrapper if opening the first time
+			// add class m-enable to main wrapper if opening the first time
 			if( this.level === 1 ) {
-			jQuery(this.wrapper).addClass( 'mp-pushed' );
+			jQuery(this.wrapper).addClass( 'm-enable' );
 				this.open = true;
 			}
-			// add class mp-level-open to the opening level element
-			jQuery(subLevel || this.levels[0]).addClass( 'mp-level-open' );
+			// add class m-level-open to the opening level element
+			jQuery(subLevel || this.levels[0]).addClass( 'm-level-open' );
 		},
 		// close the menu
 		_resetMenu : function() {
-			this._setTransform('translate3d(0,0,0)');
+		
+		
+			// reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
+			if(iOSCheck){
+				jQuery('#m-wrap').css("height", 'auto');	
+			}
+		
+			//this._setTransform('translate3d(0,0,0)');
 			this.level = 0;
-			// remove class mp-pushed from main wrapper
-			jQuery(this.wrapper).removeClass( 'mp-pushed' );
+			// remove class m-enable from main wrapper
+			jQuery(this.wrapper).removeClass( 'm-enable' );
 			this._toggleLevels();
 			this.open = false;
 		},
 		// close sub menus
 		_closeMenu : function() {
-			var translateVal = this.options.type === 'overlap' ? this.el.offsetWidth + ( this.level - 1 ) * this.options.levelSpacing : this.el.offsetWidth;
-			this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
+			var translateVal = this.el.offsetWidth;
+		//	this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
 			this._toggleLevels();
 		},
 		// translate the el
@@ -381,16 +423,16 @@ ibmcom.init();
 			el.style.MozTransform = val;
 			el.style.transform = val;
 		},
-		// removes classes mp-level-open from closing levels
+		// removes classes m-level-open from closing levels
 		_toggleLevels : function() {
 			for( var i = 0, len = this.levels.length; i < len; ++i ) {
 				var levelEl = this.levels[i];
 				if( levelEl.getAttribute( 'data-level' ) >= this.level + 1 ) {
-					jQuery(levelEl).removeClass( 'mp-level-open' );
-					jQuery(levelEl).removeClass( 'mp-level-overlay' );
+					jQuery(levelEl).removeClass( 'm-level-open' );
+					jQuery(levelEl).removeClass( 'm-level-overlay' );
 				}
 				else if( Number( levelEl.getAttribute( 'data-level' ) ) == this.level ) {
-					jQuery(levelEl).removeClass( 'mp-level-overlay' );
+					jQuery(levelEl).removeClass( 'm-level-overlay' );
 				}
 			}
 		}
