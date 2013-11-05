@@ -60,8 +60,8 @@
 	transform: translate3d(-100%, 0, 0);
 }
 
-#m-menu.m-site-menu-enable,
-#m-menu.m-site-menu-enable .m-level {
+#m-menu.m-local-menu-enable,
+#m-menu.m-local-menu-enable .m-level {
 	background: #336CA6;
 }
 
@@ -127,8 +127,8 @@
 /* First level */
 .m-menu #m-main-menu > .m-level,
 .m-menu #m-main-menu > .m-level.m-level-open,
-.m-menu #m-site-menu > .m-level,
-.m-menu #m-site-menu > .m-level.m-level-open {
+.m-menu #m-local-menu > .m-level,
+.m-menu #m-local-menu > .m-level.m-level-open {
 	box-shadow: none;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
@@ -241,6 +241,6 @@
 }
 
 #m-menu,
-#m-site-link {
+#m-local-link {
 	display: none;
 }
