@@ -351,18 +351,15 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-	.no-csstransforms3d .m-shift,
-	.no-js .m-shift {
+	.no-csstransforms3d .m-shift {
 		padding-left: 250px;
 	}
 	
-	.no-csstransforms3d .m-menu .m-level,
-	.no-js .m-menu .m-level {
+	.no-csstransforms3d .m-menu .m-level {
 		display: none;
 	}
 
-	.no-csstransforms3d .m-menu #m-main-menu > .m-level,
-	.no-js .m-menu #m-main-menu > .m-level {
+	.no-csstransforms3d .m-menu #m-main-menu > .m-level {
 		display: block;
 	}
 	
