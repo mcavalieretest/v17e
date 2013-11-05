@@ -143,9 +143,9 @@ var checkMLinksExist = setInterval(function() {
       jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
       new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
       
-      if (jQuery('#m-site-navigation').length) {
-      	jQuery('#m-site-menu').appendTo("#m-menu");
-      	new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-site-navigation' ) );
+      if (jQuery('#m-local-navigation').length) {
+      	jQuery('#m-local-menu').appendTo("#m-menu");
+      	new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-local-navigation' ) );
       }
       
       clearInterval(checkMLinksExist);
@@ -279,15 +279,15 @@ var checkMLinksExist = setInterval(function() {
 			this.trigger.addEventListener( this.eventtype, function( ev ) {
 
 				
-				if (jQuery(this).attr('id') == 'm-site-navigation') {
-					jQuery('#m-menu').addClass('m-site-menu-enable');
-					jQuery('#m-site-menu').show();
+				if (jQuery(this).attr('id') == 'm-local-navigation') {
+					jQuery('#m-menu').addClass('m-local-menu-enable');
+					jQuery('#m-local-menu').show();
 					jQuery('#m-main-menu').hide();
 				}
 				else {
-					jQuery('#m-menu').removeClass('m-site-menu-enable');
+					jQuery('#m-menu').removeClass('m-local-menu-enable');
 					jQuery('#m-main-menu').show();
-					jQuery('#m-site-menu').hide();
+					jQuery('#m-local-menu').hide();
 				}
 
 				ev.stopPropagation();
