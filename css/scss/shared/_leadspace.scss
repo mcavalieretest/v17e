@@ -345,6 +345,10 @@
     display: none;
 }
 
+#{$ie7Selector} .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-next {
+	margin-top: 138px !important;
+}
+
 .ibm-landing-page #ibm-leadspace-head a.ibm-disabled {
     visibility: hidden;
 }
