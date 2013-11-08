@@ -43,16 +43,13 @@
 #ibm-related-content .ibm-columns h2,
 #ibm-related-content .ibm-columns h3 {
     color: #4C4C4C;
-    margin: 0;
-    padding: 4px 0 0;
 }
 
-#ibm-related-content h2 + ul,#ibm-related-content h3 + ul {
+#ibm-related-content h2 + ul,
+#ibm-related-content h3 + ul {
 	padding-top: 4px;
 }
-#ibm-related-content .ibm-columns p {
-	padding: 4px 0 10px;
-}
+
 #ibm-related-content p {
 	color: #666;
 }
@@ -80,7 +77,6 @@
 
 #ibm-related-content #ibm-merchandising-module {
 	float: left;
-    _margin-left: -10px; /* ie6 hack to avoid 6 MTE moudles break layout*/
 }
 
 #ibm-related-content #ibm-merchandising-module .ibm-container {
