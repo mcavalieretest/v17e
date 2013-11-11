@@ -21,11 +21,11 @@
 
 #m-open-link a:before {
 	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 30px;
-	height: 4px;
-	box-shadow: 0 8px #FFF, 0 16px #FFF, 0 24px #FFF;
+	top: 4px;
+	right: 20px;
+	width: 18px;
+	height: 3px;
+	box-shadow: 0 6px #FFF, 0 12px #FFF, 0 18px #FFF;
 	content: '';
 }
 

@@ -433,9 +433,13 @@ a.ibm-thumbnail-module h3 {
 //	}
 	
 	// to be removed.  only for testing
-	
+
 	#ibm-top {
 		min-width: 320px;
+	}
+	
+	#ibm-mast-options  {
+		display: none;
 	}
 	
 	.ibm-landing-page #ibm-content {
