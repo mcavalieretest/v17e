@@ -1,7 +1,8 @@
 // variables ============================================
 
 // Default variables
-$sprite-url 							: "../images/ibm/voices/v17e/ibm-voices-sprite.png";
+
+$sprite-url 							: #{$imagePath}/"voices/i/ibm-voices-sprite.png";
 $leadspace--logo 						: ".ibm_cci--ls--logo";
 $leadspace--search 						: ".ibm_cci--ls--search";
 $leadspace--toggle 						: ".ibm_cci--ls--toggle";
