@@ -4,7 +4,7 @@
 #ibm-content .ibm-media .ibm-container.ibm-video h2,
 #ibm-content .ibm-media .ibm-container.ibm-portrait h2 {
 	display: inline-block;
-	padding: 7px 0px 2px;
+	padding: 7px 0 2px;
 	margin-right: -10px;
 }
 
@@ -14,14 +14,11 @@
 	clear: none;
 }
 
-
-
 .ibm-video .ibm-video-container {
 	background-color: #333;
 	text-align: center;
 	margin-top: 6px;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 	position: relative;
 	
 }
@@ -32,12 +29,8 @@ img.ibm-video-background {
  	@extend .ibm-resize;
 }
 
-.ibm-video .ibm-video-container a {
-	/* position: relative; breaks on http://webdev.webmaster.ibm.com/smartercomputing/us/en/ */
-}
-
 .ibm-video-play {
-	background: url("#{$imagePath}/i/v17/video-play-sprite.png") no-repeat -6px -600px;
+	background: url("#{$imagePath}/i/video-play-sprite.png") no-repeat -6px -600px;
 	display: block;
 	cursor: pointer;
 	position: absolute;
@@ -105,7 +98,7 @@ img.ibm-video-background {
 	height: 28px;
 	margin-top: 23px;
 	left: 15px;
-        top: -15px;
+	top: -15px;
 }
 
 .ibm-col-6-2 .ibm-thumbnail:hover .ibm-video-play,
@@ -207,7 +200,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 }
 
 .ibm-container-controls a {
-	background: url("#{$imagePath}/i/v17/icons/scroll_nav_sprite.gif") no-repeat;
+	background: url("#{$imagePath}/i/icons/scroll_nav_sprite.gif") no-repeat;
 }
 .ibm-container-controls a.ibm-show-hide {
 	background-position: 9px -245px;
@@ -273,24 +266,24 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 
 	
 .ibm-play-button-small {	
-	background-image: url("#{$imagePath}/i/v17/video-play-button-small.png");
+	background-image: url("#{$imagePath}/i/video-play-button-small.png");
 }
 	.ibm-play-button-small:hover {	
-		background-image: url("#{$imagePath}/i/v17/video-play-button-small-hover.png");
+		background-image: url("#{$imagePath}/i/video-play-button-small-hover.png");
 	}
 
 .ibm-play-button-medium {	
-	background-image: url("#{$imagePath}/i/v17/video-play-button-medium.png");
+	background-image: url("#{$imagePath}/i/video-play-button-medium.png");
 }
 	.ibm-play-button-medium:hover {	
-		background-image: url("#{$imagePath}/i/v17/video-play-button-medium-hover.png");
+		background-image: url("#{$imagePath}/i/video-play-button-medium-hover.png");
 	}
 
 .ibm-play-button-large {	
-	background-image: url("#{$imagePath}/i/v17/video-play-button-large.png");
+	background-image: url("#{$imagePath}/i/video-play-button-large.png");
 }
 	.ibm-play-button-large:hover {	
-		background-image: url("#{$imagePath}/i/v17/video-play-button-large-hover.png");
+		background-image: url("#{$imagePath}/i/video-play-button-large-hover.png");
 	}
 
 

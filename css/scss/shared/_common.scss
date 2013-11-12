@@ -312,7 +312,7 @@ ul li div.ibm-container{
 
 // Right side icon style
 a.ibm-anchor-down-link-alternate {
-    background: url("#{$imagePath}/i/v17/icons/ibm_icon_sprites_v2.png") no-repeat 100% -3998px !important;
+    background: url("#{$imagePath}/i/icons/ibm_icon_sprites_v2.png") no-repeat 100% -3998px !important;
     padding: 0 20px 3px 0;
 }
 
@@ -328,7 +328,7 @@ a.ibm-anchor-down-link-alternate {
 a.ibm-external-link-alternate, 
 #ibm-content ul.ibm-bullet-list li a.ibm-external-link-alternate, 
 #ibm-related-content ul.ibm-bullet-list li a.ibm-external-link-alternate {
-	background: url("#{$imagePath}/i/v17/icons/ibm_sprite_links_blue_ON.png") no-repeat 100% -1px !important;
+	background: url("#{$imagePath}/i/icons/ibm_sprite_links_blue_ON.png") no-repeat 100% -1px !important;
 	padding: 0 20px 3px 0;
 }
 
@@ -1010,7 +1010,7 @@ input.ibm-btn-arrow-sec {
 	width: inherit;
 	height: 20px !important;
 	padding: 15px;
-	background: url("#{$imagePath}/i/v17/animated-progress-20x20b.gif") no-repeat center center transparent;
+	background: url("#{$imagePath}/i/animated-progress-20x20b.gif") no-repeat center center transparent;
 	text-decoration: none;
 }
 
@@ -1019,7 +1019,7 @@ input.ibm-btn-arrow-sec {
 	width: inherit;
 	height: 38px !important;
 	padding: 15px;
-	background: url("#{$imagePath}/i/v17/animated-progress-38x38c.gif") no-repeat center center transparent;
+	background: url("#{$imagePath}/i/animated-progress-38x38c.gif") no-repeat center center transparent;
 	text-decoration: none;
 }
 

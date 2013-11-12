@@ -1,7 +1,7 @@
 // footer styles begin ============================================
 
 #ibm-footer-module {
-	@include background-image-gradient(url("#{$imagePath}/i/v17/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
+	@include background-image-gradient(url("#{$imagePath}/i/footermod-bg.png"), no-repeat center top, top, #474A50, #0F161A);
     border-top: 1px solid #666;
     clear: both;
     width: 100%;
@@ -39,7 +39,7 @@
 }
 
 #{$ie7Selector} #ibm-footer-module li {
-    background: url("#{$imagePath}/i/v17/bullets.gif") no-repeat -2px 2px;
+    background: url("#{$imagePath}/i/bullets.gif") no-repeat -2px 2px;
 }
 
 #ibm-footer-module li:hover:before,
