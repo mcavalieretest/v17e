@@ -433,7 +433,7 @@ h1#{$leadspace__modifier}{
 	top: 150px;
 	left: 50%;
 	margin: -19px 0 0 -19px;
-	background-image: url("#{$imagePath}/voices/i/loader.png");
+	background-image: url('#{$imagePath}/voices/i/loader.png');
 }
 
 
@@ -1860,7 +1860,7 @@ a.ibm_cci-gototop {
 	border: 0;
 	width: 56px;
 	height: 72px;
-	background: #DFDFDF url("#{$imagePath}/voices/i/backtotop.png") no-repeat;
+	background: #DFDFDF url('#{$imagePath}/voices/i/backtotop.png') no-repeat;
 	z-index: 1000;
 	text-indent: -999999px;
 }
