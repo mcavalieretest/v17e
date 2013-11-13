@@ -43,7 +43,7 @@ $ie9Hack 								: "\0/";
 
 /* LOAD SPRITE IMAGE DEFAULT (BEGIN) */
 @mixin mysprite {
-	background: url('$sprite-url') no-repeat;
+	background: url($sprite-url) no-repeat;
 	line-height: 0;
 	overflow: hidden;
 	border: 0;
