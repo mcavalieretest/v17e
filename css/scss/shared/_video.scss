@@ -26,7 +26,8 @@
 .ibm-video-container > div ,
 .ibm-video-container > div > div,
 img.ibm-video-background {
- 	@extend .ibm-resize;
+// 	@extend .ibm-resize;
+	max-width: 100% !important;
 }
 
 .ibm-video-play {
