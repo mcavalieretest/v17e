@@ -1046,6 +1046,12 @@ a.ibm-thumbnail-module h3 {
 //		content: "min-width: 641 | max-width: 800px";
 //	}
 	
+	
+	// reduce font size for comments (need to tweak for different devices)
+	html {
+		font-size: 50%;
+	}
+	
 	#ibm-top {
 		min-width: 768px;
 	}
