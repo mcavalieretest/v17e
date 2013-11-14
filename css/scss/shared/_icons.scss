@@ -486,6 +486,10 @@ ul li:hover:before {
 	color: $orange-1;
 }
 
+#ibm-content-nav #ibm-secondary-tab-list ul li.ibm-active:before {
+	color: $black;	
+}
+
 ul.ibm-error li:before {
 	color: $red-2;
 }
@@ -495,10 +499,10 @@ ul.ibm-error li:before {
 // !remove bullets from these lists start
 #ibm-mast-options li:before,
 #ibm-universal-nav li:before,
+.ibm-tab-overlay ul li:before,
 #ibm-common-menu .ibm-menu-subtabs li:before,
 #ibm-social-tools li:before,
 #ibm-navigation-trail li:before,
-#ibm-content-nav li:before,
 #ibm-primary-links > li:before,
 .ibm-container-controls li:before,
 .ibm-portlet-controls,
