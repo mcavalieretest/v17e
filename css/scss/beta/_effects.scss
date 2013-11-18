@@ -28,12 +28,35 @@
 
 	// Background colors
 	.bg-white { background-color : $white}
+	.bg-w90 { background-color : $w90}
+	.bg-w90 { background-color : rgba(255,255,255,0.90) !important}
 	.bg-k01 { background-color : $k01}
 	.bg-k02 { background-color : $k02}
 	.bg-k03 { background-color : $k03}
 	.bg-k05 { background-color : $k05}
 	.bg-k10 { background-color : $k10}
 	.bg-blue { background-color : $ibmblue}
+
+
+
+	.bottom {position: absolute; bottom: 40px }
+	.white-box {padding:40px; background-color:rgba(255,255,255,0.95)}
+
+	// Section Shadows ============================================
+
+	.fade-up-sharp {background: url(/i/v17e/bg/gradient-bg-a.png) repeat-x center 100%;}
+	.fade-up {background: url(/i/v17e/bg/gradient-bg-b.png) repeat-x center 100%;}
+	.shad-sm {background: url(/i/v17e/bg/shad-curve-bottom-320,.png) no-repeat center 100%;}
+	.shad-med {background: url(/i/v17e/bg/shad-curve-bottom-med.png) no-repeat center 100%;}
+	.shad-wide {background: url(/i/v17e/bg/shad-curve-bottom-wide.png) no-repeat center bottom;}
+
+
+	// Exdenting  ============================================
+	.exdent-sm {margin-left:-10px} 		// tablet 5px	phone 5px
+	.exdent-md {margin-left:-20px} 		// tablet 10px	phone 5px
+	.exdent-lg {margin-left:-40px} 		// tablet 20px	phone 10px
+
+
 
 
 }
