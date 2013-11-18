@@ -27,6 +27,23 @@ sites/
 .ibm-band.ibm_cci-background {
   background-color: #F5F5F5; }
 
+h1.ibm-brand {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif; }
+
+h1.ibm-brand strong {
+  font-family: "LubalinDemiIBM"; }
+
+a#ibm-top-level {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  border-right: 1px solid #333;
+  width: 80px;
+  line-height: 1em;
+  float: left;
+  margin-right: 20px;
+  margin-top: 15px; }
+
 .ibm-intro-band {
   padding-top: 0;
   background: url(../i/case-studies/measurable_results.jpg) center center;
