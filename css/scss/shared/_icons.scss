@@ -551,6 +551,10 @@ a.ibm-inline:after {
 	position: relative;
 }
 
+p.ibm-ind-link a.ibm-chevron-link {
+	margin-right: 20px;
+}
+
 #{$ie7Selector} span.ibm-error-link,
 #{$ie7Selector} a.ibm-inline {
 	padding-left: 15px;

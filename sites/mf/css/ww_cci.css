@@ -24,5 +24,60 @@ sites/
 |   |-- ww_cci.scss				# Build file that pulls in all components (this file)
 `
 */
-.ibm_cci-site-band {
-  background-color: #bada55 !important; }
+.ibm-band.ibm_cci-background {
+  background-color: #F5F5F5; }
+
+.ibm-intro-band {
+  padding-top: 0;
+  background: url(../i/case-studies/measurable_results.jpg) center center;
+  background-size: cover; }
+
+.ibm-alternate-background {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
+
+.ibm-alternate-background h2 {
+  color: #FFF; }
+
+.ibm-card {
+  outline: #CCC solid 1px;
+  background-color: #FFF;
+  min-height: 200px;
+  margin: 10px;
+  float: left; }
+
+.ibm-card * {
+  word-wrap: break-word; }
+
+.ibm-card:hover {
+  outline-color: #168DB9; }
+
+.ibm-card:hover h2 {
+  color: #168DB9; }
+
+.ibm-card:hover div.ibm-rule {
+  border-top-color: #168DB9; }
+
+#ibm-com .ibm-card .ibm-category {
+  color: #999;
+  padding-left: 20px;
+  background: url(../i/icons/feature-arrow.gif) no-repeat 0 0; }
+
+.ibm-card h2 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: .5px;
+  line-height: 1em; }
+
+.ibm-card img {
+  margin: 10px 0px 25px; }
+
+#ibm-com .ibm-inner-margin .ibm-rule {
+  margin: 10px -15px; }
+
+.ibm-card .ibm-inner-margin .ibm-featured {
+  position: relative;
+  margin: -15px -15px 5px;
+  padding: 10px 10px 2px;
+  border-left: 4px solid #168DB9;
+  font-weight: bold; }
