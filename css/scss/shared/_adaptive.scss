@@ -285,6 +285,11 @@ a.ibm-thumbnail-module h3 {
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 @media only screen and (min-width: 0) and (max-width: 800px) {
 
+	// reduce font size for comments (need to tweak for different devices)
+	html {
+		font-size: 50%;
+	}
+
 	#ibm-top {
 		margin-top: 0 !important;
 	}
@@ -1050,11 +1055,6 @@ a.ibm-thumbnail-module h3 {
 //		content: "min-width: 641 | max-width: 800px";
 //	}
 	
-	
-	// reduce font size for comments (need to tweak for different devices)
-	html {
-		font-size: 50%;
-	}
 	
 	#ibm-top {
 		min-width: 768px;

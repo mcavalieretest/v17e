@@ -81,6 +81,9 @@ a#ibm-top-level {
   margin-top: 100px; }
 
 @media only screen and (min-width: 0) and (max-width: 568px) {
+  .ibm-band.ibm-intro-band {
+    min-height: 210px; }
+
   .ibm-band.ibm-intro-band [class*="ibm-col-"] {
     margin-top: 25px; } }
 .ibm-alternate-background {
