@@ -46,6 +46,9 @@ sites/
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:focus {
   background-color: rgba(0, 0, 0, 0.25); }
 
+#ibm-leadspace-head {
+  background: url(../i/case-studies/lead-bg.png) repeat 50% 50%; }
+
 h1.ibm-brand {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif; }
 
