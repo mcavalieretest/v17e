@@ -74,7 +74,9 @@ a#ibm-top-level {
   color: #FFF; }
 
 .ibm-card {
-  outline: #CCC solid 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   background-color: #FFF;
   min-height: 200px;
   margin: 10px;
@@ -89,12 +91,8 @@ a#ibm-top-level {
 .ibm-card:hover h2 {
   color: #168DB9; }
 
-.ibm-card:hover div.ibm-rule {
-  border-top-color: #168DB9; }
-
 #ibm-com .ibm-card .ibm-category {
-  color: #999;
-  padding-left: 20px; }
+  color: #999; }
 
 .ibm-card h2 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;

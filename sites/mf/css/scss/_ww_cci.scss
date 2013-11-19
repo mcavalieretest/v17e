@@ -73,7 +73,8 @@ a#ibm-top-level {
 
 
 .ibm-card {
-	outline: #CCC solid 1px;
+//	outline: #CCC solid 1px;
+	@include box-shadow(0 1px 3px $k25);
 	background-color: #FFF;
 	min-height: 200px;
 	margin: 10px;
@@ -91,13 +92,9 @@ a#ibm-top-level {
 .ibm-card:hover h2 {
 	color: #168DB9;
 }
-.ibm-card:hover div.ibm-rule {
-	border-top-color: #168DB9;
-}
 
 #ibm-com .ibm-card .ibm-category {
 	color: #999;
-	padding-left: 20px;
 }
 
 .ibm-card h2 {
