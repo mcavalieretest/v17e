@@ -9,8 +9,18 @@
 
 
 
-.ibm-band.ibm_cci-background {
+#ibm-top #ibm-pcon {
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.ibm_cci-background {
 	background-color: #F5F5F5;
+}
+
+.ibm_cci-background .ibm-band {
+	min-height: inherit;
 }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
@@ -26,6 +36,12 @@
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:focus {
 	background-color: $k25;	
 }
+
+
+
+
+
+
 
 h1.ibm-brand {
 	font-family: $sectionHeaderFont;
@@ -53,11 +69,17 @@ a#ibm-top-level {
 }
 
 
-.ibm-intro-band {
+.ibm-band.ibm-intro-band {
 	padding-top: 0;
 	background: url(../i/case-studies/measurable_results.jpg) center center;
 	background-size: cover;
-	@include box-shadow(3px 3px 5px 6px #000);
+	@include box-shadow(0 3px 3px rgba(0,0,0,0.5));
+	min-height: 350px;
+	margin-bottom: 20px;
+}
+
+.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+	margin-top: 100px;
 }
 
 .ibm-alternate-background {
@@ -73,11 +95,10 @@ a#ibm-top-level {
 
 
 .ibm-card {
-//	outline: #CCC solid 1px;
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
 	min-height: 200px;
-	margin: 10px;
+	margin-bottom: 20px;
 	float: left;
 }
 

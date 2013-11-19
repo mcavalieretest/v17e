@@ -24,8 +24,16 @@ sites/
 |   |-- ww_cci.scss				# Build file that pulls in all components (this file)
 `
 */
-.ibm-band.ibm_cci-background {
+#ibm-top #ibm-pcon {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.ibm_cci-background {
   background-color: #F5F5F5; }
+
+.ibm_cci-background .ibm-band {
+  min-height: inherit; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
   border-top: 1px solid rgba(0, 0, 0, 0.01); }
@@ -59,13 +67,18 @@ a#ibm-top-level {
   float: left;
   margin-right: 20px; }
 
-.ibm-intro-band {
+.ibm-band.ibm-intro-band {
   padding-top: 0;
   background: url(../i/case-studies/measurable_results.jpg) center center;
   background-size: cover;
-  -webkit-box-shadow: 3px 3px 5px 6px black;
-  -moz-box-shadow: 3px 3px 5px 6px black;
-  box-shadow: 3px 3px 5px 6px black; }
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  min-height: 350px;
+  margin-bottom: 20px; }
+
+.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+  margin-top: 100px; }
 
 .ibm-alternate-background {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
@@ -79,7 +92,7 @@ a#ibm-top-level {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
   min-height: 200px;
-  margin: 10px;
+  margin-bottom: 20px;
   float: left; }
 
 .ibm-card * {
