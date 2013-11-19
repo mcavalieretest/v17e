@@ -249,6 +249,7 @@ a.ibm-thumbnail-module h3 {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 	text-shadow: $emboss-light;
 	min-width: 100%;
+	max-width: 100%;
 	font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
 	padding: 8px 15px 8px ;
 }
