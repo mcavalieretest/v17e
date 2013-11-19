@@ -74,7 +74,7 @@ a#ibm-top-level {
 
 .ibm-card {
 //	outline: #CCC solid 1px;
-	@include box-shadow(0 1px 3px $k25);
+	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
 	min-height: 200px;
 	margin: 10px;
@@ -86,7 +86,7 @@ a#ibm-top-level {
 }
 
 .ibm-card:hover {
-	outline-color: #168DB9;
+	@include box-shadow(0 1px 3px $k40);
 }
 
 .ibm-card:hover h2 {
@@ -117,7 +117,7 @@ a#ibm-top-level {
 
 .ibm-card .ibm-inner-margin .ibm-featured {
 	position: relative;
-	margin: -15px -15px 5px;
+	margin: -15px -10px 5px;
 	padding: 10px 10px 2px;
 	font-weight: bold;
 }

@@ -74,9 +74,9 @@ a#ibm-top-level {
   color: #FFF; }
 
 .ibm-card {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
   min-height: 200px;
   margin: 10px;
@@ -86,7 +86,9 @@ a#ibm-top-level {
   word-wrap: break-word; }
 
 .ibm-card:hover {
-  outline-color: #168DB9; }
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); }
 
 .ibm-card:hover h2 {
   color: #168DB9; }
@@ -109,6 +111,6 @@ a#ibm-top-level {
 
 .ibm-card .ibm-inner-margin .ibm-featured {
   position: relative;
-  margin: -15px -15px 5px;
+  margin: -15px -10px 5px;
   padding: 10px 10px 2px;
   font-weight: bold; }
