@@ -302,7 +302,9 @@ a.ibm-thumbnail-module h3 {
 			height: 30px !important;
 		}
 		
-		li#ibm-home a {
+		li#ibm-home a,
+		li#ibm-home a:hover,
+		li#ibm-home a:focus {
 			background-position: 0 -98px;
 			height: 30px !important;
 		}
@@ -312,6 +314,7 @@ a.ibm-thumbnail-module h3 {
 		}
 
 	}
+	
 	
 	#ibm-masthead #ibm-search-module {
 		display: none;

@@ -82,6 +82,14 @@ a#ibm-top-level {
 	margin-top: 100px;
 }
 
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+		margin-top: 25px;
+	}
+}
+
+
 .ibm-alternate-background {
 	@include text-shadow($emboss-dark);
 }
@@ -143,3 +151,7 @@ a#ibm-top-level {
 	font-weight: bold;
 }
 
+.ibm-card .ibm-featured,
+.ibm-card .ibm-category {
+	font-size: 14px;
+}
