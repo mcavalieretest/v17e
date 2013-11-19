@@ -1,0 +1,81 @@
+
+//media queries
+$medium: 768px;
+$small: 480px;
+
+//number of columns
+$block-grid-cell: 12;
+
+
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display:block;
+    clear:both;
+  }
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+//blockgrid behaviour for large viewport
+
+@for $i from 1 through $block-grid-cell{
+  .bgrid-large-#{($i)} {
+    &>li {
+        width: 100%/$i;
+    }
+  }
+}
+
+
+//blockgrid behaviour for medium viewport
+
+@media only screen and (max-width: $medium) {
+    @for $i from 1 through $block-grid-cell{
+      .bgrid-medium-#{($i)} {
+        &>li {
+            width: 100%/$i;
+        }
+      }
+    }
+}
+
+
+//blockgrid behaviour for small viewport
+
+@media only screen and (max-width: $small) {
+    @for $i from 1 through $block-grid-cell{
+      .bgrid-small-#{($i)} {
+        &>li {
+            width: 100%/$i;
+        }
+      }
+    }
+}
+
+//common block grid styles
+
+[class*="bgrid-large"] {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include clearfix;
+
+     &>li {
+        display: inline;
+        float: left;
+        padding: 10px;
+        @include box-sizing;
+
+        &:before {
+          display:none
+        }
+    }
+}
+

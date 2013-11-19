@@ -1,0 +1,126 @@
+.bgrid-large-1 > li {
+  width: 100%; }
+
+.bgrid-large-2 > li {
+  width: 50%; }
+
+.bgrid-large-3 > li {
+  width: 33.33333%; }
+
+.bgrid-large-4 > li {
+  width: 25%; }
+
+.bgrid-large-5 > li {
+  width: 20%; }
+
+.bgrid-large-6 > li {
+  width: 16.66667%; }
+
+.bgrid-large-7 > li {
+  width: 14.28571%; }
+
+.bgrid-large-8 > li {
+  width: 12.5%; }
+
+.bgrid-large-9 > li {
+  width: 11.11111%; }
+
+.bgrid-large-10 > li {
+  width: 10%; }
+
+.bgrid-large-11 > li {
+  width: 9.09091%; }
+
+.bgrid-large-12 > li {
+  width: 8.33333%; }
+
+@media only screen and (max-width: 768px) {
+  .bgrid-medium-1 > li {
+    width: 100%; }
+
+  .bgrid-medium-2 > li {
+    width: 50%; }
+
+  .bgrid-medium-3 > li {
+    width: 33.33333%; }
+
+  .bgrid-medium-4 > li {
+    width: 25%; }
+
+  .bgrid-medium-5 > li {
+    width: 20%; }
+
+  .bgrid-medium-6 > li {
+    width: 16.66667%; }
+
+  .bgrid-medium-7 > li {
+    width: 14.28571%; }
+
+  .bgrid-medium-8 > li {
+    width: 12.5%; }
+
+  .bgrid-medium-9 > li {
+    width: 11.11111%; }
+
+  .bgrid-medium-10 > li {
+    width: 10%; }
+
+  .bgrid-medium-11 > li {
+    width: 9.09091%; }
+
+  .bgrid-medium-12 > li {
+    width: 8.33333%; } }
+@media only screen and (max-width: 480px) {
+  .bgrid-small-1 > li {
+    width: 100%; }
+
+  .bgrid-small-2 > li {
+    width: 50%; }
+
+  .bgrid-small-3 > li {
+    width: 33.33333%; }
+
+  .bgrid-small-4 > li {
+    width: 25%; }
+
+  .bgrid-small-5 > li {
+    width: 20%; }
+
+  .bgrid-small-6 > li {
+    width: 16.66667%; }
+
+  .bgrid-small-7 > li {
+    width: 14.28571%; }
+
+  .bgrid-small-8 > li {
+    width: 12.5%; }
+
+  .bgrid-small-9 > li {
+    width: 11.11111%; }
+
+  .bgrid-small-10 > li {
+    width: 10%; }
+
+  .bgrid-small-11 > li {
+    width: 9.09091%; }
+
+  .bgrid-small-12 > li {
+    width: 8.33333%; } }
+[class*="bgrid-large"] {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  [class*="bgrid-large"]:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  [class*="bgrid-large"] > li {
+    display: inline;
+    float: left;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    [class*="bgrid-large"] > li:before {
+      display: none; }
