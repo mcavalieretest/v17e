@@ -13,6 +13,19 @@
 	background-color: #F5F5F5;
 }
 
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+	border-top: 1px solid $k01;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+	color: #000;
+	background-color: $k10;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover, 
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:focus {
+	background-color: $k25;	
+}
 
 h1.ibm-brand {
 	font-family: $sectionHeaderFont;
@@ -26,7 +39,7 @@ a#ibm-top-level {
 	display: block;
 	color: #333;
 	text-decoration: none;
-	border-right: 1px solid #333;
+	border-right: 1px solid #999;
 	width: 80px;
 	line-height: 1em;
 	float: left;
@@ -34,10 +47,17 @@ a#ibm-top-level {
 	margin-top: 15px;
 }
 
+.ibm-link-list.ibm-adapt-list li {
+	float: left;
+	margin-right: 20px;
+}
+
+
 .ibm-intro-band {
 	padding-top: 0;
 	background: url(../i/case-studies/measurable_results.jpg) center center;
 	background-size: cover;
+	@include box-shadow(3px 3px 5px 6px #000);
 }
 
 .ibm-alternate-background {
