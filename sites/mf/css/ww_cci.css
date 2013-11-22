@@ -52,7 +52,7 @@ sites/
   background-color: rgba(0, 0, 0, 0.5); }
 
 #ibm-leadspace-head.ibm-alternate-background {
-  background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 100% 50%; }
+  background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 100% 100%; }
 
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
   min-height: 300px; }
@@ -117,6 +117,9 @@ h1.ibm-brand strong {
 	margin-top: 100px;
 }
 */
+@media only screen and (min-width: 0) and (max-width: 800px) {
+  #ibm-leadspace-head.ibm-alternate-background {
+    background-position: 55% 100%; } }
 @media only screen and (min-width: 0) and (max-width: 568px) {
   /*
   	.ibm-band.ibm-intro-band {
@@ -127,9 +130,6 @@ h1.ibm-brand strong {
   		margin-top: 25px;
   	}
   */
-  #ibm-leadspace-head.ibm-alternate-background {
-    background-position: 55% 100%; }
-
   #ibm-com #ibm-top .ibm-alternate-background h2.section-header {
     font-size: 35px;
     font-size: 3.5rem;
@@ -205,3 +205,136 @@ h1.ibm-brand strong {
 .ibm-card .ibm-featured,
 .ibm-card .ibm-category {
   font-size: 14px; }
+
+#lpbutton.ibm-access {
+  left: auto;
+  width: auto;
+  position: relative;
+  padding: 5px 0; }
+
+#lpbutton.ibm-access a.ibm-chat-link {
+  text-decoration: none; }
+
+#lpbutton.ibm-access a.ibm-chat-link:hover,
+#lpbutton.ibm-access a.ibm-chat-link:focus {
+  text-decoration: underline; }
+
+.ibm-connect-bar {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 55px;
+  *height: 40px;
+  height: 40px\9; }
+
+.ibm-connect-bar li {
+  display: block;
+  width: 32px;
+  height: 32px !important;
+  float: left;
+  margin-right: 5px;
+  padding: 0 !important;
+  clear: none !important;
+  background: none !important; }
+
+.ibm-connect-bar li:before {
+  display: none; }
+
+.ibm-connect-bar li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  background: url("//www.ibm.com/cloud-computing/images/ibm-soc-dest-sprite.png") no-repeat; }
+
+.ibm-connect-bar li em {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 19px;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out; }
+
+.ibm-connect-bar li:hover em {
+  opacity: 1;
+  *opacity: 0;
+  opacity: 0\9; }
+
+.ibm-connect-bar li a.ibm-connect-bar-twitter {
+  background-position: -3px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-youtube {
+  background-position: -43px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-linkedin {
+  background-position: -83px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-facebook {
+  background-position: -123px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-google {
+  background-position: -163px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-blog {
+  background-position: -203px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-pin {
+  background-position: -243px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-tumblr {
+  background-position: -283px 0px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-twitter:hover {
+  background-position: -3px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-youtube:hover {
+  background-position: -43px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-linkedin:hover {
+  background-position: -83px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-facebook:hover {
+  background-position: -123px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-google:hover {
+  background-position: -163px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-blog:hover {
+  background-position: -203px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-pin:hover {
+  background-position: -243px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-tumblr:hover {
+  background-position: -283px -40px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-twitter:active {
+  background-position: -3px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-youtube:active {
+  background-position: -43px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-linkedin:active {
+  background-position: -83px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-facebook:active {
+  background-position: -123px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-google:active {
+  background-position: -163px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-blog:active {
+  background-position: -203px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-pin:active {
+  background-position: -243px -80px; }
+
+.ibm-connect-bar li a.ibm-connect-bar-tumblr:active {
+  background-position: -283px -80px; }
