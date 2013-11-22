@@ -227,9 +227,13 @@ var checkMLinksExist = setInterval(function() {
 		this.options = extend( this.defaults, options );
 		// support 3d transforms
 		this.support = Modernizr.csstransforms3d;
-		if( this.support ) {
+        // need to catch IE9 - while it doesn't support CSS transform 3d, id does support CSS for possible fallback - see adaptive.scss - selectors with .no-csstransforms3d
+        this.isIE9 = jQuery.support.cssFloat; 
+		if(( this.support ) || (this.isIE9)) {
 			this._init();
 		}
+
+
 	}
 
 	mlPushMenu.prototype = {
@@ -267,6 +271,7 @@ var checkMLinksExist = setInterval(function() {
 			this._initEvents();
 		},
 		_initEvents : function() {
+
 			var self = this;
 
 			// the menu should close if clicking somewhere on the body
@@ -388,6 +393,8 @@ var checkMLinksExist = setInterval(function() {
 			}
 			// add class m-enable to main wrapper if opening the first time
 			if( this.level === 1 ) {
+
+
 			jQuery(this.wrapper).addClass( 'm-enable' );
 				this.open = true;
 			}
