@@ -25,16 +25,11 @@ ul#ibm-navigation-trail li {
 ul#ibm-navigation-trail li a:link,
 ul#ibm-navigation-trail li a:visited {
     color: #666;
-    text-decoration: none;
 }
 
 .ibm-alternate-background ul#ibm-navigation-trail li a,
 .ibm-alternate-bg.ibm-ribbon ul#ibm-navigation-trail li a {
     color: #BBB;
-}
-
-ul#ibm-navigation-trail li a:hover {
-	text-decoration: underline;	
 }
 
 #ibm-content-head #ibm-navigation-trail + h1 {

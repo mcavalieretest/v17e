@@ -32,7 +32,7 @@
     padding: 5px 0 30px;
 }
 
-.ibm-landing-page #ibm-leadspace-head [class*="ibm-col-"] p {
+.ibm-landing-page #ibm-leadspace-head p {
   	padding-bottom: 0;
 }
 .ibm-landing-page #ibm-leadspace-head.ibm-no-image p {
@@ -49,9 +49,13 @@
     display: block;
 }
 
-#ibm-leadspace-head p a {
-    display: block;
+#ibm-leadspace-head a {
     text-decoration: none;
+}
+
+#ibm-leadspace-head a:hover,
+#ibm-leadspace-head a:active {
+	text-decoration: underline;
 }
 
 #ibm-leadspace-body {
@@ -61,10 +65,6 @@
     padding: 0 0 50px;
     min-height: 250px;
 }
-
-
-
-
 
 
 /* styles for short leadspace ===================*/
@@ -376,7 +376,8 @@
 	@include background-gradient(background,(top, $k90, $k85));
 }
 
-#ibm-leadspace-head.ibm-alternate-background h1 {
+.ibm-alternate-background h1,
+.ibm-alternate-background a {
     color: #FFF;
 }
 
@@ -388,11 +389,11 @@
     color: #FFCF01;
 }
 
-#ibm-leadspace-head.ibm-alternate-background p a{
+.ibm-alternate-background p a {
     color: #82D1F5;
 }
 
-#ibm-leadspace-head.ibm-alternate-background p a:hover{
+.ibm-alternate-background p a:hover {
     color: #B2E2F8;
 }
 

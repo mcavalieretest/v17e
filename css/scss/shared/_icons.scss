@@ -50,7 +50,7 @@
 .ibm-ldr-register				ibm-signin-link
 .ibm-ldr-repcall				ibm-callme-link
 .ibm-link-down					ibm-anchor-down-link
-.ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo
+.ibm-logo-sp-na					v17e - (new icon TBD) --smarter planet logo - ibm-logo-sp
 .ibm-media-audio				ibm-audio-link
 .ibm-media-play					ibm-demoplay-link,ibm-media-play,ibm-video-link,ibm-video-podcast-link
 .ibm-nav-dropdown				ibm-sort-link
@@ -119,7 +119,7 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-ibmer:before,
 .ibm-email-link-alt:before,
 .ibm-call-info:before,
-.ibm-logo-sp-na:before,
+.ibm-logo-sp:before,
 .ibm-media-play:before,
 .ibm-nav-search:before,
 .m-menu .m-back:after,
@@ -179,12 +179,14 @@ ul li.ibm-no-links:before {
 	font-size: inherit;	
 }
 
+.ibm-alternate-background .ibm-logo-sp:before,
 #ibm-top .ibm-alternate-background a[class*="-link"]:before,
 #ibm-top .ibm-alternate-background a[class*="-link"]:after,
 #ibm-top ul.ibm-alternate-two a:before,
 #ibm-top ul.ibm-alternate-two a.ibm-chevron-link:after {
 	color: $white;
 }
+
 
 /* Extra icons:
 li a.ibm-cta-arrow-sm:before,
@@ -198,7 +200,7 @@ li a.ibm-symp-presentation:before,
 li a.ibm-download-whitepaper:before,
 li a.ibm-download:before,
 li a.ibm-ibmer:before,
-li a.ibm-logo-sp-na:before,
+li a.ibm-logo-sp:before,
 li a.ibm-media-play:before,
 li a.ibm-nav-search:before,
 li a.ibm-soc-expert:before,
@@ -230,6 +232,7 @@ li a.ibm-close:before
 
 ul li:before,
 #ibm-parent-link a:before,
+a.ibm-logo-sp:before,
 #ibm-top ul.ibm-link-list li[class*="-link"] > a,
 #ibm-top ul.ibm-link-list li.ibm-call-info > a,
 #ibm-top ul.ibm-link-list li.ibm-symp-doc > a,
@@ -387,7 +390,7 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-signin-link:before { content: "\00a0\f123\00a0" ; }
 .ibm-callme-link:before { content: "\00a0\f124\00a0" ; }
 .ibm-anchor-down-link:before { content: "\00a0\f125\00a0" ; }
-.ibm-logo-sp-na:before { content: "\00a0\f126\00a0" ; }
+.ibm-logo-sp:before { content: "\00a0\f126\00a0" ; }
 .ibm-audio-link:before { content: "\00a0\f127\00a0" ; }
 .ibm-demoplay-link:before,
 .ibm-media-play:before,

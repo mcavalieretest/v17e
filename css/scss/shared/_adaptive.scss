@@ -251,7 +251,8 @@ a.ibm-thumbnail-module h3 {
 	min-width: 100%;
 	max-width: 100%;
 	font-size: 20px; // Font size needs to be set to prevent zoom on iPhone
-	padding: 8px 35px 8px 15px ;
+	padding: 8px 35px 8px 15px;
+	font-weight: 300;
 	text-indent: 0.01px;
 	text-overflow: '';
 }
@@ -483,6 +484,11 @@ a.ibm-thumbnail-module h3 {
 	// primary mobile tabs start
 	#ibm-content-nav #ibm-primary-tabs {
 		height: auto;
+	}
+
+	.ibm-landing-page ul#ibm-navigation-trail {
+		width: 280px;
+		margin: 0 auto;
 	}
 
 	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
@@ -732,7 +738,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 40px;
 	}
 	
-	
+	.ibm-landing-page ul#ibm-navigation-trail,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 40px;
 		padding-left: 40px;
@@ -1000,7 +1006,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// to be removed.  only for testing
 
-	
+	.ibm-landing-page ul#ibm-navigation-trail,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 60px;
 		padding-left: 60px;
@@ -1074,7 +1080,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 64px;
 	}
 	
-	
+	.ibm-landing-page ul#ibm-navigation-trail,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 64px;
 		padding-left: 64px;
@@ -1359,7 +1365,7 @@ a.ibm-thumbnail-module h3 {
 		padding: 0 80px;
 	}
 	
-	
+	.ibm-landing-page ul#ibm-navigation-trail,
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 80px;
 		padding-left: 80px;

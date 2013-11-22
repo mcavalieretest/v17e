@@ -25,7 +25,6 @@ sites/
 `
 */
 #ibm-top #ibm-pcon {
-  margin-top: 10px;
   margin-bottom: 0;
   padding-bottom: 0; }
 
@@ -35,68 +34,131 @@ sites/
 .ibm_cci-background .ibm-band {
   min-height: inherit; }
 
+.ibm_cci-divider {
+  display: block;
+  border-top: 1px solid #FFF;
+  margin-bottom: 5px;
+  width: 40px; }
+
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
   border-top: 1px solid rgba(0, 0, 0, 0.01); }
 
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 14px; }
 
-#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
-#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:focus {
-  background-color: rgba(0, 0, 0, 0.4); }
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #ibm-leadspace-head.ibm-alternate-background {
-  background: url(../i/case-studies/lead-bg.jpg) repeat 50% 50%;
+  background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 50% 50%;
   background-size: cover; }
 
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
-  min-height: 350px; }
+  min-height: 300px; }
 
-h1.ibm-brand {
+#ibm-top h1.ibm-brand {
+  /*	font-size: 5.5rem;
+  	line-height: 5.5rem;
+  */
+  padding: 10px 0 15px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif; }
 
 h1.ibm-brand strong {
   font-family: "LubalinDemiIBM"; }
 
-a#ibm-top-level {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  border-right: 1px solid #999;
-  width: 80px;
-  line-height: 1em;
-  float: left;
-  margin-right: 20px;
+#ibm-top p#ibm-top-level {
+  font-size: .9em;
+  padding: 5px 0;
   margin-top: 15px; }
+
+#ibm-top p#ibm-top-level a {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1em; }
+
+#ibm-top p#ibm-top-level a:before {
+  font-size: 1.2em;
+  margin-left: -1.6em;
+  color: rgba(255, 255, 255, 0.75); }
 
 .ibm-link-list.ibm-adapt-list li {
   float: left;
+  font-size: .9em;
   margin-right: 20px; }
 
+.ibm-link-list.ibm-adapt-list li a:before {
+  margin-left: -1.6em;
+  font-size: 1.2em; }
+
+.ibm-link-list.ibm-top-cta {
+  float: right;
+  margin-top: 10px; }
+
+#ibm-com #ibm-top .ibm-alternate-background h2.section-header {
+  color: #FFF;
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 43px;
+  line-height: 4.3rem;
+  padding: 10px 0 30px; }
+
+/*
 .ibm-band.ibm-intro-band {
-  padding-top: 0;
-  background: url(../i/case-studies/measurable_results.jpg) center center;
-  background-size: cover;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  min-height: 350px;
-  margin-bottom: 20px; }
+	padding-top: 0;
+	background: url(../i/case-studies/measurable_results.jpg) center center;
+	background-size: cover;
+	@include box-shadow(0 3px 3px rgba(0,0,0,0.5));
+	min-height: 350px;
+	margin-bottom: 20px;
+}
 
 .ibm-band.ibm-intro-band [class*="ibm-col-"] {
-  margin-top: 100px; }
-
+	margin-top: 100px;
+}
+*/
 @media only screen and (min-width: 0) and (max-width: 568px) {
-  .ibm-band.ibm-intro-band {
-    min-height: 210px; }
+  /*
+  	.ibm-band.ibm-intro-band {
+  		min-height: 210px;
+  	}
+  	
+  	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+  		margin-top: 25px;
+  	}
+  */
+  #ibm-leadspace-head.ibm-alternate-background {
+    background-position: 55% 100%; }
 
-  .ibm-band.ibm-intro-band [class*="ibm-col-"] {
-    margin-top: 25px; } }
+  #ibm-com #ibm-top .ibm-alternate-background h2.section-header {
+    font-size: 35px;
+    font-size: 3.5rem; }
+
+  .ibm-link-list.ibm-top-cta {
+    float: none; } }
 .ibm-alternate-background {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
 
 .ibm-alternate-background h2 {
   color: #FFF; }
+
+#ibm-com #ibm-top .section-header.ibm_cci-small {
+  font-size: 24px;
+  font-size: 2.4rem;
+  padding-bottom: 0; }
+
+.ibm_cci-sort .ibm-menu-list > div {
+  padding: 0; }
+
+.ibm_cci-sort .ibm-menu-list div:after {
+  top: 12px; }
+
+#ibm-top .ibm_cci-sort .ibm_cci-separator {
+  float: left;
+  padding: 0;
+  margin: 0 10px;
+  line-height: 40px; }
 
 .ibm-card {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
