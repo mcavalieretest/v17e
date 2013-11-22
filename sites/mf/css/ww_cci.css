@@ -165,7 +165,6 @@ h1.ibm-brand strong {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-color: #FFF;
-  min-height: 200px;
   margin-bottom: 20px;
   float: left; }
 
@@ -177,13 +176,15 @@ h1.ibm-brand strong {
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
 
-.ibm-card:hover h2 {
+.ibm-card:hover h2,
+.ibm-card:hover h3 {
   color: #168DB9; }
 
 #ibm-com .ibm-card .ibm-category {
   color: #999; }
 
-.ibm-card h2 {
+.ibm-card h2,
+.ibm-card h3 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;

@@ -186,7 +186,7 @@ h1.ibm-brand strong {
 .ibm-card {
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
-	min-height: 200px;
+//	min-height: 200px;
 	margin-bottom: 20px;
 	float: left;
 }
@@ -199,7 +199,8 @@ h1.ibm-brand strong {
 	@include box-shadow(0 1px 5px $k40);
 }
 
-.ibm-card:hover h2 {
+.ibm-card:hover h2,
+.ibm-card:hover h3 {
 	color: #168DB9;
 }
 
@@ -207,7 +208,8 @@ h1.ibm-brand strong {
 	color: #999;
 }
 
-.ibm-card h2 {
+.ibm-card h2,
+.ibm-card h3 {
 	font-family: $sectionHeaderFont;
 	font-weight: 300;
 	font-size: 28px;
