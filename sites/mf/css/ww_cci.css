@@ -52,8 +52,7 @@ sites/
   background-color: rgba(0, 0, 0, 0.5); }
 
 #ibm-leadspace-head.ibm-alternate-background {
-  background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 50% 50%;
-  background-size: cover; }
+  background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 100% 50%; }
 
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
   min-height: 300px; }
@@ -133,7 +132,8 @@ h1.ibm-brand strong {
 
   #ibm-com #ibm-top .ibm-alternate-background h2.section-header {
     font-size: 35px;
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    padding: 0 0 10px; }
 
   .ibm-link-list.ibm-top-cta {
     float: none; } }

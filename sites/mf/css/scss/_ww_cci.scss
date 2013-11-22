@@ -45,8 +45,8 @@
 
 
 #ibm-leadspace-head.ibm-alternate-background {
-	background: #000 url(../i/case-studies/lead-ottawa.jpg) no-repeat 50% 50%;
-	background-size: cover;
+	background: #000 url(../i/case-studies/lead-ottawa.jpg) no-repeat 100% 50%;
+//	background-size: cover;
 }
 
 
@@ -140,6 +140,7 @@ h1.ibm-brand strong {
 	}
 	#ibm-com #ibm-top .ibm-alternate-background h2.section-header {
 		@include px-to-rem(font-size,35px);
+		padding: 0 0 10px;
 	}
 	.ibm-link-list.ibm-top-cta {
 		float: none;
