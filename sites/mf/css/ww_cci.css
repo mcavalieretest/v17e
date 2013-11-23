@@ -44,12 +44,12 @@ sites/
   border-top: 1px solid rgba(0, 0, 0, 0.01); }
 
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   min-height: 14px; }
 
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.95); }
 
 #ibm-leadspace-head.ibm-alternate-background {
   background: black url(../i/case-studies/lead-ottawa.jpg) no-repeat 100% 100%; }
