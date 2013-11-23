@@ -191,6 +191,9 @@ h1.ibm-brand strong {
 .ibm-card:hover h3 {
   color: #f04e37; }
 
+#ibm-content .ibm-card:hover p {
+  color: #000 !important; }
+
 #ibm-com .ibm-card .ibm-category {
   color: #999;
   margin-top: -5px; }
