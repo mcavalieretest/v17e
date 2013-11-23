@@ -195,7 +195,7 @@ h1.ibm-brand strong {
   margin: 10px 0px 25px;
   display: block; }
 
-.ibm-card img.ibm-no-margin {
+.ibm-card .ibm-no-margin {
   margin-left: -15px;
   margin-right: -15px; }
 
@@ -211,7 +211,7 @@ h1.ibm-brand strong {
   height: 24px;
   width: 33px; }
 
-.ibm-card .ibm-media .ibm-no-margin + .ibm-video-play {
+.ibm-card .ibm-media .ibm-no-margin .ibm-video-play {
   left: 0px; }
 
 .no-svg .ibm-card .ibm-media .ibm-video-play {
