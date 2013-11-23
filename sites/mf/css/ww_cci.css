@@ -195,17 +195,24 @@ h1.ibm-brand strong {
   margin: 10px 0px 25px;
   display: block; }
 
+.ibm-card img.ibm-no-margin {
+  margin-left: -15px;
+  margin-right: -15px; }
+
 .ibm-card .ibm-media {
   display: block;
   position: relative; }
 
 .ibm-card .ibm-media .ibm-video-play {
   background: url("../i/icons/icn-video-play.svg") no-repeat;
-  bottom: 0;
+  bottom: 10px;
   top: auto;
-  left: 0;
+  left: 15px;
   height: 24px;
   width: 33px; }
+
+.ibm-card .ibm-media .ibm-no-margin + .ibm-video-play {
+  left: 0px; }
 
 .no-svg .ibm-card .ibm-media .ibm-video-play {
   background-image: url("../i/icons/icn-video-play.png"); }
