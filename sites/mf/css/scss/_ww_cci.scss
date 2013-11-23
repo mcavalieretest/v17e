@@ -219,6 +219,7 @@ h1.ibm-brand strong {
 
 #ibm-com .ibm-card .ibm-category {
 	color: #999;
+	margin-top: -5px;
 }
 
 .ibm-card h2,
@@ -284,7 +285,7 @@ h1.ibm-brand strong {
 
 .ibm-card .ibm-featured,
 .ibm-card .ibm-category {
-	font-size: 14px;
+	@include px-to-rem(font-size,14px);
 }
 
 

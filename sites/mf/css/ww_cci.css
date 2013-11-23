@@ -192,7 +192,8 @@ h1.ibm-brand strong {
   color: #168DB9; }
 
 #ibm-com .ibm-card .ibm-category {
-  color: #999; }
+  color: #999;
+  margin-top: -5px; }
 
 .ibm-card h2,
 .ibm-card h3 {
@@ -239,7 +240,8 @@ h1.ibm-brand strong {
 
 .ibm-card .ibm-featured,
 .ibm-card .ibm-category {
-  font-size: 14px; }
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 #lpbutton.ibm-access {
   left: auto;
