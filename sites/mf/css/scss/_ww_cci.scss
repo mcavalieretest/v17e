@@ -218,9 +218,33 @@ h1.ibm-brand strong {
 }
 
 
+// Card image to apply video play button
 .ibm-card img {
 	margin: 10px 0px 25px;
+	display: block;
 }
+
+.ibm-card .ibm-media {
+	display: block;
+	position: relative;
+}
+
+.ibm-card .ibm-media .ibm-video-play {
+	background: url('../i/icons/icn-video-play.svg') no-repeat;
+	bottom: 0;
+	top: auto;
+	left: 0;
+	height: 24px;
+	width: 33px;
+	
+}
+
+.no-svg .ibm-card .ibm-media .ibm-video-play {
+	background-image: url('../i/icons/icn-video-play.png');
+}
+
+
+
 
 #ibm-com .ibm-inner-margin .ibm-rule {
 	margin: 10px -15px;
