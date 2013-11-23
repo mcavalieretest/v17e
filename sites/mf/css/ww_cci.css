@@ -57,11 +57,15 @@ sites/
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
   min-height: 300px; }
 
+#ibm-top h1 {
+  font-size: 45px;
+  font-size: 4.5rem; }
+
 #ibm-top h1.ibm-brand {
   /*	font-size: 5.5rem;
   	line-height: 5.5rem;
   */
-  padding: 10px 0 15px;
+  padding: 10px 0 25px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif; }
 
 h1.ibm-brand strong {

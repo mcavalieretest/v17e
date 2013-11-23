@@ -54,12 +54,17 @@
 	min-height: 300px;
 }
 
+#ibm-top h1 {
+	@include px-to-rem(font-size,45px);
+	
+}
+
 
 #ibm-top h1.ibm-brand {
 /*	font-size: 5.5rem;
 	line-height: 5.5rem;
 */
-	padding: 10px 0 15px;
+	padding: 10px 0 25px;
 	font-family: $sectionHeaderFont;
 }
 
