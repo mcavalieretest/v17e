@@ -154,7 +154,10 @@ h1.ibm-brand strong {
 		margin-top: 25px;
 	}
 */
-
+	.ibm_cci-divider {
+		display: none;
+	}
+	
 	#ibm-com #ibm-top .ibm-alternate-background h2.section-header {
 		@include px-to-rem(font-size,35px);
 		padding: 0 0 10px;
