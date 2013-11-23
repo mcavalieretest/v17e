@@ -200,7 +200,8 @@ h1.ibm-brand strong {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
-  line-height: 1em; }
+  line-height: 1em;
+  padding-bottom: 8px !important; }
 
 .ibm-card img {
   margin: 2px 0px 15px;
