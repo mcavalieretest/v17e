@@ -534,7 +534,7 @@ strong {
 #ibm-content-nav #ibm-primary-tabs a,
 #ibm-content-nav #ibm-secondary-tabs a {
 	font-family: $defaultFont-dbcs;
-	@include px-to-rem(font-size,13px);
+	@include px-to-rem(font-size,14px);
 	@include px-to-rem(line-height,14px);
 }
 
