@@ -58,7 +58,6 @@
 
 #ibm-top h1 {
 	@include px-to-rem(font-size,45px);
-	
 }
 
 
@@ -214,7 +213,7 @@ h1.ibm-brand strong {
 
 .ibm-card:hover h2,
 .ibm-card:hover h3 {
-	color: #168DB9;
+	color: $red-1;
 }
 
 #ibm-com .ibm-card .ibm-category {
