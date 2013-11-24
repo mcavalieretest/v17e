@@ -294,14 +294,9 @@ h1.ibm-brand strong {
 }
 
 .ibm-connect-bar li { 
-	display: block; 
-	width: 32px; 
-	height: 32px !important; 
 	float: left; 
 	margin-right: 5px; 
-	padding: 0 !important;
-	clear: none !important;
-	background: none !important;
+	padding: 0;
 }
 
 .ibm-connect-bar li:before {
@@ -365,6 +360,10 @@ h1.ibm-brand strong {
 .ibm-connect-bar li a.ibm-connect-bar-pin:active { background-position: -243px -80px; }
 .ibm-connect-bar li a.ibm-connect-bar-tumblr:active { background-position: -283px -80px; }
 
+.ibm-connect-bar.ibm_cci-tab {
+	display: none;
+}
+
 @media only screen and (min-width: 0) and (max-width: 800px) {
 
 	#ibm-leadspace-head.ibm-alternate-background {
@@ -407,6 +406,13 @@ h1.ibm-brand strong {
 	.ibm-card h3 {
 		@include px-to-rem(font-size,24px);
 		line-height: 1.2em;
+	}
+	
+	.ibm-connect-bar.ibm_cci-tab {
+		display: block;
+	}
+	.ibm_cci-no-tab {
+		display: none;
 	}
 
 }
