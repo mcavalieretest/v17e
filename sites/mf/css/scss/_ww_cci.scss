@@ -405,7 +405,7 @@ h1.ibm-brand strong {
 @media only screen and (min-width: 568) and (max-width: 640px) {
 	.ibm-card h2, 
 	.ibm-card h3 {
-		@include px-to-rem(font-size,24px);
+		@include px-to-rem(font-size,22px);
 	}
 
 }
