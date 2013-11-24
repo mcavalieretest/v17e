@@ -135,43 +135,6 @@ h1.ibm-brand strong {
 }
 */
 
-@media only screen and (min-width: 0) and (max-width: 800px) {
-
-	#ibm-leadspace-head.ibm-alternate-background {
-		background-position: 55% 100%;
-	}
-
-}
-
-@media only screen and (min-width: 0) and (max-width: 568px) {
-
-/*
-	.ibm-band.ibm-intro-band {
-		min-height: 210px;
-	}
-	
-	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
-		margin-top: 25px;
-	}
-*/
-	.ibm_cci-divider {
-		display: none;
-	}
-	
-	#ibm-top h1.ibm-brand {
-		padding-bottom: 15px;
-	}
-	
-	#ibm-com #ibm-top .ibm-alternate-background h2.section-header {
-		@include px-to-rem(font-size,35px);
-		padding: 0 0 10px;
-	}
-	.ibm-link-list.ibm-top-cta {
-		float: none;
-	}
-	
-}
-
 
 .ibm-alternate-background {
 	@include text-shadow($emboss-dark);
@@ -236,7 +199,7 @@ h1.ibm-brand strong {
 .ibm-card h3 {
 	font-family: $sectionHeaderFont;
 	font-weight: 300;
-	font-size: 28px;
+	@include px-to-rem(font-size,28px);
 	line-height: 1em;
 	padding-bottom: 8px !important;
 }
@@ -402,3 +365,47 @@ h1.ibm-brand strong {
 .ibm-connect-bar li a.ibm-connect-bar-pin:active { background-position: -243px -80px; }
 .ibm-connect-bar li a.ibm-connect-bar-tumblr:active { background-position: -283px -80px; }
 
+@media only screen and (min-width: 0) and (max-width: 800px) {
+
+	#ibm-leadspace-head.ibm-alternate-background {
+		background-position: 55% 100%;
+	}
+
+}
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+
+/*
+	.ibm-band.ibm-intro-band {
+		min-height: 210px;
+	}
+	
+	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+		margin-top: 25px;
+	}
+*/
+	.ibm_cci-divider {
+		display: none;
+	}
+	
+	#ibm-top h1.ibm-brand {
+		padding-bottom: 15px;
+	}
+	
+	#ibm-com #ibm-top .ibm-alternate-background h2.section-header {
+		@include px-to-rem(font-size,35px);
+		padding: 0 0 10px;
+	}
+	.ibm-link-list.ibm-top-cta {
+		float: none;
+	}
+	
+}
+
+@media only screen and (min-width: 568) and (max-width: 640px) {
+	.ibm-card h2, 
+	.ibm-card h3 {
+		@include px-to-rem(font-size,24px);
+	}
+
+}

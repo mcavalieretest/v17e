@@ -128,32 +128,6 @@ h1.ibm-brand strong {
 	margin-top: 100px;
 }
 */
-@media only screen and (min-width: 0) and (max-width: 800px) {
-  #ibm-leadspace-head.ibm-alternate-background {
-    background-position: 55% 100%; } }
-@media only screen and (min-width: 0) and (max-width: 568px) {
-  /*
-  	.ibm-band.ibm-intro-band {
-  		min-height: 210px;
-  	}
-  	
-  	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
-  		margin-top: 25px;
-  	}
-  */
-  .ibm_cci-divider {
-    display: none; }
-
-  #ibm-top h1.ibm-brand {
-    padding-bottom: 15px; }
-
-  #ibm-com #ibm-top .ibm-alternate-background h2.section-header {
-    font-size: 35px;
-    font-size: 3.5rem;
-    padding: 0 0 10px; }
-
-  .ibm-link-list.ibm-top-cta {
-    float: none; } }
 .ibm-alternate-background {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
 
@@ -209,6 +183,7 @@ h1.ibm-brand strong {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
+  font-size: 2.8rem;
   line-height: 1em;
   padding-bottom: 8px !important; }
 
@@ -388,3 +363,35 @@ h1.ibm-brand strong {
 
 .ibm-connect-bar li a.ibm-connect-bar-tumblr:active {
   background-position: -283px -80px; }
+
+@media only screen and (min-width: 0) and (max-width: 800px) {
+  #ibm-leadspace-head.ibm-alternate-background {
+    background-position: 55% 100%; } }
+@media only screen and (min-width: 0) and (max-width: 568px) {
+  /*
+  	.ibm-band.ibm-intro-band {
+  		min-height: 210px;
+  	}
+  	
+  	.ibm-band.ibm-intro-band [class*="ibm-col-"] {
+  		margin-top: 25px;
+  	}
+  */
+  .ibm_cci-divider {
+    display: none; }
+
+  #ibm-top h1.ibm-brand {
+    padding-bottom: 15px; }
+
+  #ibm-com #ibm-top .ibm-alternate-background h2.section-header {
+    font-size: 35px;
+    font-size: 3.5rem;
+    padding: 0 0 10px; }
+
+  .ibm-link-list.ibm-top-cta {
+    float: none; } }
+@media only screen and (min-width: 568) and (max-width: 640px) {
+  .ibm-card h2,
+  .ibm-card h3 {
+    font-size: 24px;
+    font-size: 2.4rem; } }
