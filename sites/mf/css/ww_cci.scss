@@ -1,13 +1,13 @@
 /*! 
- * Name: [Site] v17e customization CSS file
+ * Name: MobileFirst v17e customization CSS file
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
  
-// URI: www.ibm.com/common/v17e/[Site]/css/ww_cci.css
-// Description: Official SASS file for v17e [Site] project
-// Date: Sept 24, 2013
+// URI: www.ibm.com/common/v17e/mobilefirst/css/ww_cci.css
+// Description: Official SASS file for v17e MobileFirst project
+// Date: Nov 25, 2013
 //
 // Notes:
 //   Add "ibm-adapt" class to modules that change under different viewport
@@ -17,7 +17,7 @@
 // listed below. Use a SASS compiler to create the ww_cci.css file.
 
 
-/*  v17e [Site] SASS structure map...
+/*  v17e MobileFirst SASS structure map...
 
 css/
 |
@@ -40,7 +40,7 @@ sites/
 
 
 
-// The v17e [Site] output build (ww_cci.css) can be controlled by adjusting the import references below...
+// The v17e MobileFirst output build (ww_cci.css) can be controlled by adjusting the import references below...
 // imports ============================================
 
 @import "../../../css/scss/shared/vars",
