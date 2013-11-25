@@ -153,13 +153,13 @@ form.ibm-column-form .dijitTextBox INPUT{
 
 .v17 table.ibm-data-table tbody table.dijitSelect tr:hover .dijitDownArrowButton,
 .v17 table.ibm-data-table tbody tr:hover table.dijitSelect .dijitDownArrowButton {
-    background: url("#{$imagePath}/i/icons/dropdown_sprite.png") no-repeat 100% -4px;
+    background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -4px;
 }
 
 
 .v17 table.ibm-data-table tbody table.dijitSelectHover tr:hover .dijitDownArrowButton,
 .v17 table.ibm-data-table tbody tr:hover table.dijitSelectHover .dijitDownArrowButton {
-    background: url("#{$imagePath}/i/icons/dropdown_sprite.png") no-repeat 100% -54px;
+    background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -54px;
 }
 
 /*data table style overflow into dojo dropdown widget fix END */
@@ -205,7 +205,7 @@ form.ibm-column-form .dijitTextBox INPUT{
 }
 
 .v17 .dijitSelect .dijitArrowButton {
-    background: url("#{$imagePath}/i/icons/dropdown_sprite.png") no-repeat 100% -4px;
+    background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -4px;
     *background-position: 100% 0px;
     padding: 0;
     width: 20px;
@@ -431,7 +431,7 @@ There are three areas of styling for the Menu:
 }
 
 .v17 .dijitCheckedMenuItemIcon {
-    background: url("#{$imagePath}/i/icons/form_sprites.png") no-repeat -15px 50%;
+    background: url(#{$imagePath}/i/icons/form_sprites.png) no-repeat -15px 50%;
     width: 15px;
     height: 16px;
     margin-right: 5px;
@@ -536,7 +536,7 @@ There are three areas of styling for the Menu:
 
 .v17 .dijitCheckBox,
 .v17 .dijitCheckBoxIcon     /* inside a toggle button */    {
-    background-image: url("#{$imagePath}/i/icons/form_sprites.png"); /* checkbox sprite image */
+    background-image: url(#{$imagePath}/i/icons/form_sprites.png); /* checkbox sprite image */
     background-repeat: no-repeat;
     width: 15px;
     height: 16px;
@@ -610,12 +610,12 @@ There are three areas of styling for the Menu:
 
 .v17 .dijitToggleButton .dijitRadio,
 .v17 .dijitToggleButton .dijitRadioIcon {
-    background-image: url("#{$imagePath}/i/icons/form_sprites.png");
+    background-image: url(#{$imagePath}/i/icons/form_sprites.png);
 }
 
 .v17 .dijitRadio,
 .v17 .dijitRadioIcon    {       /* inside a toggle button */
-    background-image: url("#{$imagePath}/i/icons/form_sprites.png"); /* checkbox sprite image */
+    background-image: url(#{$imagePath}/i/icons/form_sprites.png); /* checkbox sprite image */
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -1053,7 +1053,7 @@ form .ibm-checkbox-layout input {
     overwrite hover behaviour - do not allow link to jump up
 */
 #etpForm a.ibm-error-link:hover {
-    background: url("#{$imagePath}/i/icons/sprites-form.gif") no-repeat 0px -126px transparent;
+    background: url(#{$imagePath}/i/icons/sprites-form.gif) no-repeat 0px -126px transparent;
 }
 
 
@@ -1087,7 +1087,7 @@ form .ibm-checkbox-layout input {
 
 .v17 .dijitDateTextBox .dijitInputContainer .dijitInputInner,
 .v17 .dijitDateTextBox .dijitInputContainer .dijitInputInner:focus {
-    background: url("#{$imagePath}/i/icons/ibm_sprite_tools_blue_ON.png") no-repeat 100% 4px;
+    background: url(#{$imagePath}/i/icons/ibm_sprite_tools_blue_ON.png) no-repeat 100% 4px;
 
 }
 
@@ -1161,7 +1161,7 @@ form .ibm-checkbox-layout input {
   width: 15px;
   height: 15px;
   margin: 0 auto;
-  background-image: url("#{$imagePath}/i/calendar/buttonArrows.png");
+  background-image: url(#{$imagePath}/i/calendar/buttonArrows.png);
   background-repeat: no-repeat;
   background-position: -51px 53%;
   
@@ -1309,7 +1309,7 @@ form .ibm-checkbox-layout input {
 .v17 .dijitCalendarIncrementControl {
   width: 18px;
   height: 16px;
-  background-image: url("#{$imagePath}/i/calendar/callendar_arrows_sprite.png");
+  background-image: url(#{$imagePath}/i/calendar/callendar_arrows_sprite.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
 }
@@ -1650,7 +1650,7 @@ form .ibm-checkbox-layout input {
     width: 15px;
     height: 15px;
     margin: 0 auto;
-    background-image: url("#{$imagePath}/i/calendar/callendar_arrows_sprite.png");
+    background-image: url(#{$imagePath}/i/calendar/callendar_arrows_sprite.png);
     background-repeat: no-repeat;
     background-position: 6px -767px;
 	*background-position: 6px -770px;

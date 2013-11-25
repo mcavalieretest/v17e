@@ -212,7 +212,7 @@
 
 
 .ibm-landing-page #ibm-leadspace-head .ibm-ribbon-nav a {
-	background: url("#{$imagePath}/i/lead/leafed_lead_space_dots_sprite.png") no-repeat 0px -219px transparent;
+	background: url(#{$imagePath}/i/lead/leafed_lead_space_dots_sprite.png) no-repeat 0px -219px transparent;
 	overflow: visible;
 	text-indent: 0;
 	position: relative;
@@ -273,7 +273,7 @@
 
 .ibm-landing-page #ibm-leadspace-head .ibm-pagination-overlay {
     display: none;
-    background:url("#{$imagePath}/i/lead/lead_pagination_overlay.png") no-repeat 0 0;
+    background:url(#{$imagePath}/i/lead/lead_pagination_overlay.png) no-repeat 0 0;
     cursor: pointer;
     position: absolute;
     text-align: left;

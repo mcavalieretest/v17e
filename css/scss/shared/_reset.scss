@@ -15,7 +15,7 @@ html {
 }
 
 html, body {
-	background: #333 url("#{$imagePath}/i/t/bg-loader.gif") no-repeat 50% 200px;
+	background: #333 url(#{$imagePath}/i/t/bg-loader.gif) no-repeat 50% 200px;
 }
 
 /* ol and ul list style applied only for v17 html code */

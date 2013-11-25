@@ -135,29 +135,29 @@ input.ibm-btn-view {
 }
 
 input.ibm-btn-go {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 0;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 0;
 }
 
 input.ibm-btn-go:hover  {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 -40px;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 -40px;
 }
 
 input.ibm-btn-go:active, 
 input.ibm-btn-go:focus {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 -80px;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 -80px;
 }
 
 input.ibm-btn-view {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 -120px;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 -120px;
 }
 
 input.ibm-btn-view:hover {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 -160px;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 -160px;
 }
 
 input.ibm-btn-view:active, 
 input.ibm-btn-view:focus {
-	background: url("#{$imagePath}/i/buttons/btn-sprite.png") no-repeat 0 -200px;
+	background: url(#{$imagePath}/i/buttons/btn-sprite.png) no-repeat 0 -200px;
 }
 
 // Small button style

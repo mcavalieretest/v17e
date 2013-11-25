@@ -312,7 +312,7 @@ p a[class*="ibm-chevron"] {
 #{$ie7Selector} span .ibm-error-link,
 #{$ie7Selector} .ibm-standalone-acc,
 #{$ie7Selector} a.ibm-inline {
-	background: url("#{$imagePath}/i/icons/ibm_sprite_arrow_blue_ON.png") no-repeat;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_arrow_blue_ON.png) no-repeat;
 }
 
 .ibm-anchor-down-link:before,
@@ -595,7 +595,7 @@ a.ibm-ribbon-prev {
 }
 #{$ie7Selector} a.ibm-ribbon-next,
 #{$ie7Selector} a.ibm-ribbon-prev {
-	background: url("#{$imagePath}/i/mod/chev-sprite.png") no-repeat;
+	background: url(#{$imagePath}/i/mod/chev-sprite.png) no-repeat;
 }
 a.ibm-ribbon-next:before,
 a.ibm-ribbon-prev:before {

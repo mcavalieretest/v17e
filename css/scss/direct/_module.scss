@@ -277,7 +277,7 @@ ul.ibm-twisty ul.ibm-bullet-list li {
 
 ul.ibm-twisty li a.ibm-twisty-trigger {
 	display: block;
-	background: url("#{$imagePath}/i/icons/ibm_sprite_controls_ON.png") no-repeat 0 -1201px;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_controls_ON.png) no-repeat 0 -1201px;
 	float: left;
 	height: 16px;
 	overflow: hidden;
@@ -285,7 +285,7 @@ ul.ibm-twisty li a.ibm-twisty-trigger {
 }
 
 ul.ibm-twisty li a.ibm-twisty-trigger-closed {
-	background: url("#{$imagePath}/i/icons/ibm_sprite_controls_ON.png") no-repeat -2px -1001px !important;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_controls_ON.png) no-repeat -2px -1001px !important;
 }
 
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty li a.ibm-twisty-trigger-closed,
@@ -336,11 +336,11 @@ ul.ibm-twisty ul.ibm-form-element-list {
 
 // Alternate twisty styles for +/- icon begin ================================================
 #ibm-content ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger{
-	background: url("#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png") no-repeat -1px -601px;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png) no-repeat -1px -601px;
 }
 
 #ibm-content ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed {
-    background: url("#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png") repeat 0 -801px !important;
+    background: url(#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png) repeat 0 -801px !important;
 } 
 
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate li a.ibm-twisty-trigger-closed,
@@ -363,11 +363,11 @@ ul.ibm-twisty ul.ibm-form-element-list {
 // Blue Version of twisty =============================
 
 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed {
-	background: url("#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png") no-repeat -2px -1001px transparent !important;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png) no-repeat -2px -1001px transparent !important;
 }
 
 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger {
-	background: url("#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png") no-repeat 0 -1201px transparent;
+	background: url(#{$imagePath}/i/icons/ibm_sprite_controls_blue_ON.png) no-repeat 0 -1201px transparent;
 }
 
 .ibm-landing-page #ibm-content .ibm-col-1-1 ul.ibm-twisty.ibm-alternate-blue-twisty li a.ibm-twisty-trigger-closed,
@@ -520,7 +520,7 @@ div.ibm-tab-section.ibm-step-indicator {
  
 #ibm-com div.ibm-step-indicator ul.ibm-tabs li {
     border-bottom: 0 none !important;
-    background-image: url("#{$imagePath}/i/ibm-si-chevron-29x22.png");
+    background-image: url(#{$imagePath}/i/ibm-si-chevron-29x22.png);
     background-position: 100% 0;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -576,7 +576,7 @@ div.ibm-tab-section.ibm-step-indicator {
 #ibm-com .ibm-col-5-3 div.ibm-step-indicator ul.ibm-tabs li,
 #ibm-com .ibm-col-5-2 div.ibm-step-indicator ul.ibm-tabs li,
 #ibm-com .ibm-col-4-2 div.ibm-step-indicator ul.ibm-tabs li {
-	background-image: url("#{$imagePath}/i/ibm-si-chevron-23x17.png");
+	background-image: url(#{$imagePath}/i/ibm-si-chevron-23x17.png);
 	line-height: 1.49em;
 	padding: 0 26px 2px 6px;
 }

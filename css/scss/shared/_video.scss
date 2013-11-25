@@ -31,7 +31,7 @@ img.ibm-video-background {
 }
 
 .ibm-video-play {
-	background: url("#{$imagePath}/i/video-play-sprite.png") no-repeat -6px -600px;
+	background: url(#{$imagePath}/i/video-play-sprite.png) no-repeat -6px -600px;
 	display: block;
 	cursor: pointer;
 	position: absolute;
@@ -201,7 +201,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 }
 
 .ibm-container-controls a {
-	background: url("#{$imagePath}/i/icons/scroll_nav_sprite.gif") no-repeat;
+	background: url(#{$imagePath}/i/icons/scroll_nav_sprite.gif) no-repeat;
 }
 .ibm-container-controls a.ibm-show-hide {
 	background-position: 9px -245px;
@@ -267,24 +267,24 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 
 	
 .ibm-play-button-small {	
-	background-image: url("#{$imagePath}/i/video-play-button-small.png");
+	background-image: url(#{$imagePath}/i/video-play-button-small.png);
 }
 	.ibm-play-button-small:hover {	
-		background-image: url("#{$imagePath}/i/video-play-button-small-hover.png");
+		background-image: url(#{$imagePath}/i/video-play-button-small-hover.png);
 	}
 
 .ibm-play-button-medium {	
-	background-image: url("#{$imagePath}/i/video-play-button-medium.png");
+	background-image: url(#{$imagePath}/i/video-play-button-medium.png);
 }
 	.ibm-play-button-medium:hover {	
-		background-image: url("#{$imagePath}/i/video-play-button-medium-hover.png");
+		background-image: url(#{$imagePath}/i/video-play-button-medium-hover.png);
 	}
 
 .ibm-play-button-large {	
-	background-image: url("#{$imagePath}/i/video-play-button-large.png");
+	background-image: url(#{$imagePath}/i/video-play-button-large.png);
 }
 	.ibm-play-button-large:hover {	
-		background-image: url("#{$imagePath}/i/video-play-button-large-hover.png");
+		background-image: url(#{$imagePath}/i/video-play-button-large-hover.png);
 	}
 
 
