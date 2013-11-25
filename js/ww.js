@@ -277,12 +277,14 @@ var checkMLinksExist = setInterval(function() {
 			// the menu should close if clicking somewhere on the body
 			var bodyClickFn = function( el ) {
 				self._resetMenu();
+				jQuery('html').removeClass('m-menu-open');
 				el.removeEventListener( self.eventtype, bodyClickFn );
 			};
 
 			// open (or close) the menu
 			this.trigger.addEventListener( this.eventtype, function( ev ) {
 
+				jQuery('html').addClass('m-menu-open');
 				
 				if (jQuery(this).attr('id') == 'm-local-navigation') {
 					jQuery('#m-menu').addClass('m-local-menu-enable');

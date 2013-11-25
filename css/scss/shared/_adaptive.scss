@@ -303,6 +303,10 @@ a.ibm-thumbnail-module h3 {
 		position: relative;
 	}
 	
+	#ibm-mast-options  {
+		display: none;
+	}
+	
 	#ibm-universal-nav {
 		min-width: 100%;
 		height: 35px !important;
@@ -335,9 +339,10 @@ a.ibm-thumbnail-module h3 {
 		display: block;
 	}
 	
-	html, body, 
-	#m-wrap,
-	.m-content {
+	html.m-menu-open, 
+	html.m-menu-open body,
+	html.m-menu-open #m-wrap,
+	html.m-menu-open .m-content {
 		height: 100%;
 	}
 
@@ -354,26 +359,26 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.m-shift.m-enable {
-		@include transform(translate3d(250px, 0px, 0px));
+		@include transform(translate3d(-250px, 0px, 0px));
 	}
 
 	.m-content {
-		overflow-y: scroll;
+		overflow-y: hidden;
 		position: relative;
 	}
 	
 	/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 
 	.no-csstransforms3d #m-menu {
-		margin-left: -250px;
+		margin-right: -250px;
 	}
 
 	.no-csstransforms3d .m-shift.m-enable {
-		padding-left: 250px;
+		padding-right: 250px;
 	}
 
 	.no-csstransforms3d .m-shift.m-enable #m-menu {
-		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	// .no-csstransforms3d .m-menu .m-level {
@@ -457,10 +462,6 @@ a.ibm-thumbnail-module h3 {
 
 	#ibm-top {
 		min-width: 320px;
-	}
-	
-	#ibm-mast-options  {
-		display: none;
 	}
 	
 	.ibm-landing-page #ibm-content {
