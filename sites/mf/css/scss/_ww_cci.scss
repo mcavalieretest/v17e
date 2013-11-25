@@ -47,7 +47,7 @@
 
 
 #ibm-leadspace-head.ibm-alternate-background {
-	background: #000 url(//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/lead-ottawa.jpg) no-repeat 100% 100%;
+	background: #000 url(#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg) no-repeat 100% 100%;
 //	background-size: cover;
 }
 
@@ -222,7 +222,7 @@ h1.ibm-brand strong {
 }
 
 .ibm-card .ibm-media .ibm-video-play {
-	background: url(//1.www.s81c.com/common/v17e/i/icons/icn-video-play.svg) no-repeat;
+	background: url(#{$imagePath}/i/icons/icn-video-play.svg) no-repeat;
 	bottom: 10px;
 	top: auto;
 	left: 15px;
@@ -235,7 +235,7 @@ h1.ibm-brand strong {
 }
 
 .no-svg .ibm-card .ibm-media .ibm-video-play {
-	background-image: url(//1.www.s81c.com/common/v17e/i/icons/icn-video-play.png);
+	background-image: url(#{$imagePath}/i/icons/icn-video-play.png);
 }
 
 
@@ -308,7 +308,7 @@ h1.ibm-brand strong {
 	text-indent: -9999px; 
 	overflow: hidden; 
 	text-decoration: none;
-	background: url(//1.www.s81c.com/common/v17e/i/icons/ibm-soc-dest-sprite.png) no-repeat;
+	background: url(#{$imagePath}/i/icons/ibm-soc-dest-sprite.png) no-repeat;
 }
 
 .ibm-connect-bar li em { 
