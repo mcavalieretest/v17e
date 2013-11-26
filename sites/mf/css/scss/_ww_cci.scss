@@ -278,12 +278,6 @@ h1.ibm-brand strong {
 	font-weight: bold;
 }
 
-.ibm-card .ibm-featured,
-.ibm-card .ibm-category {
-	@include px-to-rem(font-size,14px);
-}
-
-
 // To force "Chat now" button to appear (Talk to team about moving this into _common)
 #lpbutton.ibm-access {
 	left: auto;
@@ -433,4 +427,11 @@ h1.ibm-brand strong {
 		display: none;
 	}
 
+}
+
+@media only screen and (min-width: 801px) {
+	.ibm-card .ibm-featured,
+	.ibm-card .ibm-category {
+		@include px-to-rem(font-size,14px);
+		}
 }
