@@ -249,6 +249,10 @@ h1.ibm-brand strong {
 	margin-bottom: 15px;
 }
 
+.ibm-card .ibm-ind-link a.ibm-media {
+	margin-bottom: 0;
+}
+
 .ibm-card .ibm-media .ibm-video-play {
 	background: url(#{$imagePath}/i/icons/icn-video-play.svg) no-repeat;
 	bottom: 10px;
