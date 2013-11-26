@@ -34,6 +34,18 @@
 	margin-bottom: -40px;
 }
 
+
+// crop-small and crop-large removes top and bottom margins fom card images
+.ibm-card .ibm-media.crop-small img {
+	margin-top: -25px;
+	margin-bottom: -25px;
+}
+
+.ibm-card .ibm-media.crop-large img {
+	margin-top: -40px;
+	margin-bottom: -40px;
+}
+
 #ibm-top #ibm-pcon {
 	margin-top: 40px;
 	margin-bottom: 0;
