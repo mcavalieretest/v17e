@@ -59,6 +59,8 @@
 
 #ibm-leadspace-head.ibm-alternate-background {
 	background: #000 url(#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg) no-repeat 50% 50%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale')";
 	background-size: cover;
 }
 
