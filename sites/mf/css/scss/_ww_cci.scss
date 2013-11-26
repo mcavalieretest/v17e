@@ -56,14 +56,17 @@
 	background-color: $k95;	
 }
 
-
 #ibm-leadspace-head.ibm-alternate-background {
 	background: #000 url(#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg) no-repeat 50% 50%;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale')";
 	background-size: cover;
 }
 
+.no-backgroundsize #ibm-leadspace-head.ibm-alternate-background {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale')";
+	min-height: 100%;
+	min-width: 100%;
+}
 
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
 	min-height: 300px;
