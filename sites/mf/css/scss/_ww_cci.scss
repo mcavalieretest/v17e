@@ -29,12 +29,7 @@
 // small 25px
 // large 40px
 
-
-.ibm-card .ibm-no-margin {
-	overflow: hidden;
-}
-
-.ibm-card .ibm-no-margin img {
+.ibm-card .ibm-media img {
 	margin-top: -25px;
 	margin-bottom: -25px;
 }
@@ -249,7 +244,9 @@ h1.ibm-brand strong {
 
 .ibm-card .ibm-media {
 	display: block;
+	overflow: hidden;
 	position: relative;
+	margin-bottom: 15px;
 }
 
 .ibm-card .ibm-media .ibm-video-play {
