@@ -9,6 +9,22 @@
 
 
 
+
+//  Kevin Added this
+// 300x200 base
+.crop-h-sm {} //  minus 25px top and bottom
+.crop-h-md {} //  minus 25px top and bottom
+.crop-h-lg {} //  minus 50px top and bottom
+
+.card-img-sm {height:100px; overflow: hidden} //  100px tall minus 25px top and bottom
+.card-img-md {height:150px; overflow: hidden} //  minus 25px top and bottom
+.card-img-lg {height:170px; overflow: hidden} //  minus 50px top and bottom
+
+.card-img-sm {height:100px; margin-top: -50px; overflow: hidden} //  100px tall minus 25px top and bottom
+.card-img-md img {height:150px; margin-top: -25px; overflow: hidden} //  minus 25px top and bottom
+.card-img-lg {height:170px; margin-top: -15px; overflow: hidden} //  minus 50px top and bottom
+
+
 #ibm-top #ibm-pcon {
 	margin-top: 40px;
 	margin-bottom: 0;
