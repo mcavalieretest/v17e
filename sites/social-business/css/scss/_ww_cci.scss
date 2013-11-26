@@ -1,10 +1,3 @@
-/*! 
- * Name: [Project name]
- * Version: 1.0
- * Owner: Corporate Webmaster (NUS_N_NIWWW)
- * Copyright (c) 2013 IBM Corporation
- */
-
 // URI: [File location on live site]
 // Description: [CSS Customization Stylesheet for "Project name"]
 // Author: [Name and Lotus Notes address of CSS author]
@@ -13,4 +6,429 @@
 // Notes:
 //   Add "ibm-adapt" class to modules that change under different viewport
 //   Use ".ibm_cci-" class prefix for site specific custom code
+.ibm-landing-page #ibm-pcon {
+	width: 100% !important;
+	margin: 10px 0 !important;
+	padding-top: 0 !important;
+}
 
+#ibm-leadspace-head.ibm_cc__sbi_ls {
+	background: $dark-blue;
+	#ibm-leadspace-body {
+		background:url('../i/sbi_blogbanner.png') 0 0 no-repeat;
+		padding-bottom: 0px;
+		min-height: 200px;
+		.ibm-columns{
+			.ibm-col-1-1 {
+				.ibm_cci--ls--branding {
+					h1.ibm_cci--h1__modifier {
+						 font-family: "LubalinGraphStdBookIBM";
+						 color: #fff;
+						 // font-size: 3.438rem;
+						 @include px-to-rem(font-size, 55px);
+						 padding-top: 80px;
+						 span {
+						 	word-spacing:-15px;
+						 	span {
+						 		font-weight: bold;
+						 	}
+						 }
+					}
+				}
+			}
+			.ibm-col-6-2 {
+				form { padding-top:12px;}
+			}
+			.ibm_cci--ls--social {
+				padding-top: 12px;
+				ul li:before  { content: none;}
+
+				ul {
+					list-style-type: none;
+					
+					li {
+						display:inline-block;
+						background-image: none !important;
+						padding: 0px;
+						
+						a {
+							width: 24px;
+							height: 24px;
+							margin:2px;
+							display:block;					
+						}
+
+						a.sbi_smarterplanet{
+							background-image: url(../i/sbsm_smarterplanet.png);
+						}
+						a.sbi_facebook{
+							background-image: url(../i/sbsm_facebook.png);
+						}
+						a.sbi_twitter{
+							background-image: url(../i/sbsm_twitter.png);
+						}
+						a.sbi_socialbusiness{
+							background-image: url(../i/sbsm_socialbiz.png);
+						}
+						a.sbi_linkedin{
+							background-image: url(../i/sbsm_linkedin.png);
+						}
+						a.sbi_youtube{
+							background-image: url(../i/sbsm_youtube.png);
+						}
+					}
+				
+				}
+			}
+		}
+
+	}
+}
+
+#ibm-navigation.ibm_cci--nav {
+	display:block;
+	left: 0px;
+	margin-left: 0px;
+	font-family: "LubalinGraphStdBookIBM";
+	width: 100%;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom:20px;
+	#ibm-primary-links {
+		background: none;
+		padding-bottom: none;
+		width: 100%;
+		padding-bottom: 0px;
+		li {
+			border:2px solid $dark-blue;
+			border-bottom: none;
+			display: block;
+			a {
+				@include px-to-rem(font-size, 18px);
+				color: $dark-blue;
+				border-top: none;
+				border-bottom: none;
+				transition: all .3s ease-out;
+			}
+
+			a:hover {
+				background: $dark-blue;
+				text-shadow: none;
+				color: #fff;
+				font-weight: normal;
+			}
+			a:hover {
+				background: $dark-blue;
+				// padding: 7px 14px 6px 7px;
+				margin-left:0px;
+				margin-right: 0px;
+			}
+		}
+
+		li.last
+		{
+			border-bottom:2px solid $dark-blue;
+		}
+
+		li.cci_active a {
+			font-family: "LubalinGraphStdBookIBM";
+			background-color: $dark-blue;
+			color: #fff;
+			font-weight:normal;
+		}
+	}
+}
+.ibm-col-6-2 .ibm-container-alt.ibm_cci--sbi-sidebar {
+	margin-top:20px;
+}
+
+.ibm-col-6-4.ibm_cci__sbi_feature_post {
+	h2.ibm_cci--fpost--h2 {
+		font-family: "LubalinGraphStdBookIBM";
+		@include px-to-rem(font-size, 31px);
+		@include px-to-rem(line-height, 32px * $smallLineHeight);
+	}			
+}
+
+
+.ibm-col-6-4.ibm_cci__sbi_post {
+	h2.ibm_cci--post--h2 {
+		font-family: "LubalinGraphStdBookIBM";
+		@include px-to-rem(font-size, 31px);
+		@include px-to-rem(line-height, 32px * $smallLineHeight);
+	}
+
+	h3.ibm_cci--post-h3 {
+		font-family: "LubalinGraphStdBookIBM";
+		@include px-to-rem(font-size, 18px);
+		@include px-to-rem(line-height, 19px * $smallLineHeight);
+		float: left;
+		clear: both;
+	}
+
+	p {
+		float: left;
+	}
+
+	ul {
+		float: left;
+	}
+}
+
+.ibm-col-6-4.ibm_cci--sbi_archives--title{
+	h2.ibm_cci--archive--h2 {
+		font-family: "LubalinGraphStdBookIBM";
+		@include px-to-rem(font-size, 31px);
+		@include px-to-rem(line-height, 32px * $smallLineHeight);
+		padding-bottom:20px;
+	}	
+}
+
+.ibm-col-6-4.ibm_cci__sbi_post,
+.ibm-col-6-4.ibm_cci--sbi--post-excerpt,
+.ibm-col-6-4.ibm_cci--sbi--archive-item{
+ul.ibm_cci--post-share {
+		list-style-type: none;
+		display: inline-block;
+		float: left;
+		clear: both;
+		li {
+			display: inline-block;
+			padding:3px;
+			a{
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				text-indent: -9999px !important;
+				padding-left: 0px;
+			}
+		}	
+
+	}
+	.ibm_cci--comment-count {
+		float: right;
+	}
+}
+
+
+
+
+.ibm-col-6-4.ibm_cci--sbi--post-excerpt,
+.ibm-col-6-4.ibm_cci--sbi--archive-item {
+	padding: 20px 0px;
+	margin-bottom: 0px;
+	border-top: 1px solid #cccccc;
+	img {
+		float: left;
+	}
+	h3 {
+		// float: left;
+	}
+
+	span.ibm_cci--sbi--archive-item--byline {
+		color: $dark-blue;
+	}
+
+	span.ibm_cci--sbi--archive-item--date {
+		float:right;
+	}
+
+	img {
+		margin: 4px 15px 10px 0px;
+	}
+	p {
+		@include px-to-rem(font-size, 14px);
+		@include px-to-rem(line-height, 15px * $smallLineHeight);
+		margin:10px 0px;
+
+	}
+
+	.ibm_cci--comment-count {
+		margin-top:2px;
+		@include px-to-rem(font-size, 14px);
+	}
+
+
+
+
+
+	span.ibm_cci--post-rating {
+		width:16px;
+		height: 16px;
+		outline: 1px solid black;
+		display:inline-block;
+
+		a {
+			display:inline-block;
+			text-indent:-9999px;
+		}
+	}
+
+}
+
+.ibm-col-6-4.ibm_cci--sbi--post-excerpt {
+	img {
+		display:none;
+	}
+
+	.ibm_cci--read-more {
+		@include px-to-rem(font-size, 13px);
+		float: right;
+
+	}
+
+	.ibm_cci--read-more:before {
+	top:2px;
+		}
+}
+
+
+
+textarea.ibm_cci--sbi-comment{
+	min-width:98%;
+	max-width:98%;
+	width: 98%;
+	padding: 1%;
+}
+
+
+.ibm-container-alt.ibm_cci--sbi-twitter-widget {
+	padding-top:20px;
+	position:relative;
+	iframe {
+		width:100%;
+	}
+}
+
+.ibm_cci--rss-subscribe {
+	float: left;
+	width: 90%;
+	color: #fff;
+	padding: 5%;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+	border-radius: 8px;
+	background: $dark-blue;
+
+
+	h4 {
+		font-family: "LubalinGraphStdBookIBM";
+		font-weight: normal;
+		margin-left: 29px;
+	}
+}
+
+.ibm-btn-small.ibm_cci-subscribe-button {
+	margin-left: 5px;
+	margin-right: 5px; 
+}
+
+h3.ibm_cci--h3__modifier {
+	font-family: "LubalinGraphStdBookIBM";
+}
+
+.ibm-columns .ibm-container.ibm_cci--author-ribbon {
+	border-top: none !important;
+
+	.ibm-ribbon-prev {
+		margin-top:34px !important;
+	}
+	.ibm-ribbon-next {
+		margin-top:-99px !important;
+	}
+}
+
+
+.ibm-col-6-2 form.ibm_cci--sbi-form{
+	position:relative;
+	input.ibm_cci--sbi-form--input {
+		position:relative;
+		display: block;		
+		padding: 4px 8% 4px 2%;
+		width: 90%;
+	}
+	input.ibm-btn-search.ibm_cci--sbi-form--search {
+		position:absolute !important;
+		z-index:3;
+		top:13px;
+		right:0;
+	}
+}
+
+
+form.ibm_cci--sbi-comment-form{
+	a.ibm_cci--submit {
+		float: right;
+	}
+}
+
+.ibm-columns .ibm-col-6-4.ibm_cci--sbi--post-excerpt:first-child {
+	border-top: none;
+	margin-top: 0px;
+}
+
+
+
+.ibm_cci--toggle-widget-content {display: none;}
+.ibm_cci--toggle-widget-content.selected {display: block;}
+ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !important; }
+
+@media only screen and (max-width: 568px) and (min-width: 0) {
+	
+	#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body .ibm-columns .ibm-col-1-1 .ibm_cci--ls--branding h1.ibm_cci--h1__modifier { 
+		padding-top:18px;
+		padding-bottom: 20px;
+		@include px-to-rem(font-size, 35px);
+		span{
+				word-spacing:-8px;
+			}
+
+	}
+	#ibm-navigation.ibm_cci--nav {
+		display:none;
+	}
+	form.ibm_cci--sbi-form{
+		display:none;
+	}
+	.ibm-container-alt.ibm_cci--rss-subscribe {
+		margin-bottom: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 640px) and (min-width: 569px) {
+	.ibm_cci--rss-subscribe p img {
+		display:none;
+	}
+
+
+		#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body .ibm-columns .ibm-col-1-1 .ibm_cci--ls--branding h1.ibm_cci--h1__modifier { 
+			@include px-to-rem(font-size, 45px);
+			padding-top: 40px;
+			span{
+				word-spacing:-10px;
+			}
+
+			
+		}
+		.ibm_cci--rss-subscribe h4 {
+		margin-left:7px;
+	}
+
+}
+@media only screen and (max-width: 800px) and (min-width: 641px) {
+	.ibm_cci--rss-subscribe p img {
+		display:none;
+	}
+
+
+	.ibm_cci--rss-subscribe h4 {
+		margin-left:7px;
+	}
+	#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body .ibm-columns .ibm-col-1-1 .ibm_cci--ls--branding h1.ibm_cci--h1__modifier { 
+		padding-top:40px;
+		span{
+				word-spacing:-11px;
+			}
+	}
+}
