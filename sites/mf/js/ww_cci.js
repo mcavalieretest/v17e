@@ -11,18 +11,12 @@
 // Date: Nov 25, 2013
 //
 
-if (!Modernizr.svg) {
-//  $(".logo img").attr("src", "images/logo.png");
-//	$(".logo img").attr("src", "images/logo.png");
-	alert('test');
-}
-
 jQuery(function() {
 
 var mDeviceCheck = /(android|iPad|iPhone|iPod|playbook)/g.test( navigator.userAgent );
 
 if(!mDeviceCheck) {
-	jQuery.getScript( "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js" )
+	jQuery.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
 }
 
 });
