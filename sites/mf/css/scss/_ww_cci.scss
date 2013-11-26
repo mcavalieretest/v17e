@@ -25,6 +25,20 @@
 .card-img-lg {height:170px; margin-top: -15px; overflow: hidden} //  minus 50px top and bottom
 
 
+
+// small 25px
+// large 40px
+
+
+.ibm-card .ibm-no-margin {
+	overflow: hidden;
+}
+
+.ibm-card .ibm-no-margin img {
+	margin-top: -25px;
+	margin-bottom: -25px;
+}
+
 #ibm-top #ibm-pcon {
 	margin-top: 40px;
 	margin-bottom: 0;
