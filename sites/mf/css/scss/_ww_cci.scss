@@ -9,41 +9,24 @@
 
 
 
-
-//  Kevin Added this
-// 300x200 base
-.crop-h-sm {} //  minus 25px top and bottom
-.crop-h-md {} //  minus 25px top and bottom
-.crop-h-lg {} //  minus 50px top and bottom
-
-.card-img-sm {height:100px; overflow: hidden} //  100px tall minus 25px top and bottom
-.card-img-md {height:150px; overflow: hidden} //  minus 25px top and bottom
-.card-img-lg {height:170px; overflow: hidden} //  minus 50px top and bottom
-
-.card-img-sm {height:100px; margin-top: -50px; overflow: hidden} //  100px tall minus 25px top and bottom
-.card-img-md img {height:150px; margin-top: -25px; overflow: hidden} //  minus 25px top and bottom
-.card-img-lg {height:170px; margin-top: -15px; overflow: hidden} //  minus 50px top and bottom
-
-
-
 // small 25px
 // large 40px
 
 .ibm-card .ibm-media img {
-	margin-top: -40px;
-	margin-bottom: -40px;
+	margin-top: -20px;
+	margin-bottom: -20px;
 }
 
 
 // crop-small and crop-large removes top and bottom margins fom card images
 .ibm-card .ibm-media.crop-small img {
-	margin-top: -25px;
-	margin-bottom: -25px;
+	margin-top: -50px;
+	margin-bottom: -50px;
 }
 
 .ibm-card .ibm-media.crop-large img {
-	margin-top: -40px;
-	margin-bottom: -40px;
+	margin-top: -20px;
+	margin-bottom: -20px;
 }
 
 #ibm-top #ibm-pcon {
