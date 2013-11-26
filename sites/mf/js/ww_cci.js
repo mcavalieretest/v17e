@@ -1,12 +1,28 @@
 /*
- * Name: [Project name]
+ * Name: MobileFirst
  * Version: 1.0
  * Owner: Corporate Webmaster (NUS_N_NIWWW)
  * Copyright (c) 2013 IBM Corporation
  */
 
-// URI: [File location on live site]
-// Description: [JS Customization for "Project name"]
-// Author: [Name and Lotus Notes address of JS author]
-// Date: [Date of file edits] (e.g. July 30, 2013)
+// URI: www.ibm.com/common/v17e/mobilefirst/js/ww_cci.min.js
+// Description: JS Customization for MobileFirst project
+// Author: Jefferson D Florentino/New York/IBM@IBMUS
+// Date: Nov 25, 2013
 //
+
+if (!Modernizr.svg) {
+//  $(".logo img").attr("src", "images/logo.png");
+//	$(".logo img").attr("src", "images/logo.png");
+	alert('test');
+}
+
+jQuery(function() {
+
+var mDeviceCheck = /(android|iPad|iPhone|iPod|playbook)/g.test( navigator.userAgent );
+
+if(!mDeviceCheck) {
+	jQuery.getScript( "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js" )
+}
+
+});
