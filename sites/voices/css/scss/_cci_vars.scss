@@ -1,7 +1,8 @@
 // variables ============================================
 
 // Default variables
-
+$fontPath 								: "//1.www.s81c.com/common/fonts";
+$imagePath 								: "//1.www.s81c.com/common/v17e";
 $sprite-url 							: "#{$imagePath}/voices/i/ibm-voices-sprite.png";
 $leadspace--logo 						: ".ibm_cci--ls--logo";
 $leadspace--search 						: ".ibm_cci--ls--search";
@@ -68,8 +69,7 @@ $ie9Hack 								: "\0/";
 /* LIST VIEW (BEGIN) */
 @mixin ibm-listview-commons {
 		float:left;
-	// padding: 30px 0;
-	// outline:1px solid #ccc;
+		margin:0;
 }
 
 @mixin ibm_cci--rea-rank-common {
@@ -238,11 +238,42 @@ $ie9Hack 								: "\0/";
 	// }
 }
 
+
+@mixin feed-icon {
+
+	float:left;
+	color:#000;
+	padding:0;
+	margin:0;
+	line-height:0;
+	text-indent:-99999;
+
+	img {
+		border:0;
+		outline:0;
+		margin:0 10px 0 0;
+		padding:0;
+		width:16px;
+		height:16px;
+	}	
+
+}
+
+@mixin feed-no-icon {
+	a img{
+		display:none;
+	}
+}
+
+
+@mixin cci-sib {
+	
+}
 @mixin ibm_cci--time-stamp {
 	float:left;
 	margin-top:10px;
 	// padding-left:15px;
-	width:80px;
+	// width:80px;
 
 	p.ibm_cci-tts {
 		// float:left;

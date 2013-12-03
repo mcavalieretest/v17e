@@ -1,0 +1,542 @@
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier{
+		margin:40px auto !important;
+		padding:0;
+		
+		.ibm-col-1-1{
+			float:left;
+			width:300px;
+			background-color: #fff;
+			transition:width all 0.20s ease;
+			-webkit-transition: all 0.20s ease; /* Safari */
+			-moz-transition: all 0.20s ease;
+			transition-duration:0.50s;
+			-webkit-transition-duration: 0.50s;
+			-moz-transition-duration: 0.50s;
+			clear:none;
+			outline:1px solid #ccc;
+			margin-bottom:20px;
+			min-height:170px;
+			position:relative;
+			
+			// GRID VIEW RESOLVED WITH CONVERSATION AND WITHOUT CONVERSATION (END)
+			.ibm-col-6-4{
+				width:270px;
+				padding:15px;
+				margin:0;
+				overflow:hidden;
+
+				.ibm_cci--rea-block{
+					// display:none;
+					@include ibm_cci--rea-block;
+					position:absolute;
+					top:15px;
+					right:15px;
+					width:30px;
+					margin:0;
+
+					ul {
+						li {
+							padding:0;
+						}
+						li:nth-child(1){
+							display:none;
+						}
+
+						// li:nth-child(2){
+						// 	position:absolute;
+						// 	top:0;
+						// 	right:270px;
+						// }
+					}
+				}
+
+				.ibm_cci--rcb{
+					float:left;
+					width:inherit;
+					margin:0;
+					padding:0;
+					border-right:none;
+
+					.ibm_cci-fav-ihb {
+						@extend .ibm_cci--rcb;
+						width:inherit;
+						clear:both;
+						padding:0;
+						border:0;
+
+						p.ibm_cci--feed-icon {
+							float:left;
+							color:#000;
+							padding:0;
+							margin:0;
+							line-height:0;
+							text-indent:-99999;
+
+							img {
+								border:0;
+								outline:0;
+								margin:0 10px 0 0;
+								padding:0;
+								width:16px;
+								height:16px;
+							}					
+						}
+
+						p.ibm_cci--feed-no-icon {
+							a img{
+								display:none;
+							}
+						}						
+
+						a.ibm_cci--feed-title {
+							font-family:"HelvRegularIBM";
+							text-indent: 0;
+							font-size:1.3rem;
+							line-height: 16px;
+							vertical-align: top;
+							padding:0 0 10px 0;
+							float:left;
+						}
+					}
+
+					.ibm_cci-sib {
+						display:none;
+					}
+
+					.ibm_cci-gv-sib {
+						float:left;
+						width:60px;
+						visibility:hidden;
+						border:0;
+						overflow: hidden;
+						margin-top:15px; //added 09
+
+						ul.ibm_cci-sie{
+							@include ibm_cci-ul__modifier;
+							// float:right;
+							li {
+								@include ibm_cci-ul--li__modifier;
+								display:inline-block;
+								line-height:0;
+								padding:0;
+
+								a {
+									opacity:1;
+
+									img {
+										width:16px;
+										height:16px;										
+									}
+								}
+
+								a:hover {
+									opacity:0.3;
+								}
+							}
+						}
+					}
+
+					.ibm_cci--ttb{
+						@extend .ibm_cci--rcb;
+						clear:both;
+						border:0;
+						// padding-bottom:5px;
+
+						h2.ibm_cci--tweet-title{
+							font: bold 2.4rem/30px "HelvBoldIBM";
+							color: #000;
+						}
+
+						p.ibm_cci--tweet-description {
+							// font: italic 1.4rem/20px "HelvLightIBM";
+							display:block;
+							font-size:0;
+							margin:15px 0 !important;
+							line-height:0;
+							padding-bottom:0;
+
+							span.ibm_cci--tweet-description-readmore a {
+								// color: #F04E37;
+								// text-decoration: none;
+								display:none;
+							}
+							
+							img.ibm_cci--tweet-image {
+								display:block;
+								// line-height:0;
+								// font-size:0;
+								margin:0;
+								padding:0;
+								width:270px;
+							}
+						}
+						.ibm_cci-media-container{
+							display:block;
+							line-height:0;
+							text-align:center;
+							margin-top:13px;
+
+							.ibm-video {
+								.ibm-video-container {
+									margin-bottom:0;
+								}
+							}
+						}						
+					}
+				}
+			}
+
+			.ibm-col-6-2{
+				@include ibm-listview-commons;
+				margin:0;
+				padding:15px;
+				width:270px;
+				border-top:1px dotted #ccc;
+				overflow:hidden;
+				// outline:1px solid #ccc; *FOR TESTING ONLY
+				
+				.ibm_cci-relatedTweetContainer{
+					min-width: 35px;
+				}
+
+				.ibm_cci-rel-tweet-detils-container{
+					display:block;
+					float:left;
+					min-width:235px;
+					padding-bottom:10px;
+				}
+				
+				ul {
+					@include ibm_cci-ul__modifier;
+					margin: 0 0 10px 0;
+
+					li {
+						@include ibm_cci-ul--li__modifier;
+						height:25px;
+						width:25px;
+						display:inline;
+						margin:0;
+						padding:0;
+						line-height:0;
+						font-size:0;
+						// float:left;
+						clear:none;
+						// opacity:0.5;
+						// > a img {
+						// 	opacity:0.4;
+						// }
+						a img {
+							height:25px;
+							width:25px;
+							opacity:0.5;
+							outline:1px solid #ccc;
+						}
+						a img.selected {
+							opacity:1;
+							outline:1px solid #000;
+						}
+
+						a img.ibm_cci-sel-no {
+							opacity:1;
+							outline:none;
+						}						
+						 
+					}
+					// li.selected {
+					// 	opacity:1;
+					// }
+
+					// li:hover, li:hover a img {
+					// 	opacity:1;
+					// }
+
+				}
+
+				.ibm_cci--lv-rc-th {
+					@include ibm_cci--lv-rc-th; 
+					// min-width:120px;
+					padding-right:7px;
+					max-width:180px;
+				}
+
+				.ibm_cci--time-stamp{
+					@include ibm_cci--time-stamp;
+					margin-top:0;	
+				}				
+
+				//TO REMOVE THE MARGIN FROM SINGLE CONVERSATION TITLE AND HANDLE.
+				// IF THERE IS ONLY ONE CONVERSATION
+				.ibm_cci--lv-rc-th.ibm_cci--lv-rc-th__rm
+				{
+					margin:0;
+				}
+
+				.ibm_cci--lv-rc-description {
+					@include ibm_cci--lv-rc-th;
+					margin: 0;
+					height:80px;
+					min-height:30px;
+					padding-top:2px;
+
+					p {
+						float: left;
+						font: normal 1.4rem/2.0rem "HelvLightIBM";
+						padding:0;
+
+						a {
+							// text-decoration:none;
+						}
+					}
+				}
+
+				.ibm_cci--lv-rc-sharing {
+					@include ibm_cci--lv-sharing;
+					width:270px;
+					
+					& ul {
+						line-height:0;
+						visibility:hidden;
+
+						li a img{
+							// outline:1px solid #000;
+							opacity:0.2;
+							width:16px;
+							height:16px;
+							outline:0;
+						}
+
+						li a img:hover{
+							// outline:1px solid #000;
+							opacity:0.5;
+						}						
+					}	
+				}
+				li:not(:nth-child(1)){
+					margin-left:5px;
+				}
+
+				li a img:hover{
+						// outline:1px solid #000;
+						opacity:0.5;
+					}
+
+				}
+			// GRID VIEW RESOLVED WITH CONVERSATION AND WITHOUT CONVERSATION (END)
+
+
+
+
+
+			// GRID VIEW UNRESOLVED TWEETS + YOUTUBE (BEGIN)
+			#{$ibm-listview-unro}{
+				@include ibm-listview-commons;
+				width:270px;
+				padding:15px;
+				overflow:hidden;
+
+				.ibm_cci--rea-block{
+					@include ibm_cci--rea-block;
+					position:absolute;
+					top:15px;
+					right:15px;
+					width:30px;
+					margin:0;
+
+					ul {
+						li{
+							padding:0;
+						} 
+						li:nth-child(1){
+							display:none;
+						}
+
+						// li:nth-child(2){
+						// 	position:absolute;
+						// 	top:0;
+						// 	right:270px;
+						// }
+					}
+				}
+
+				.ibm_cci--unr-cb{
+					width:270px;
+					float:left;
+
+				//FOR YOUTUBE BLOCK (BEGIN)
+				.ibm_cci-fav-ihb {
+					max-width:160px;
+					padding:0;
+					border:0;
+					float:left;
+
+					p.ibm_cci--feed-icon {
+						float:left;
+						color:#000;
+						padding:0;
+						margin:0;
+						line-height:0;
+						text-indent:-99999;
+
+						img {
+							border:0;
+							outline:0;
+							margin:0 10px 0 0;
+							padding:0;
+							width:16px;
+							height:16px;
+						}					
+					}
+
+					p.ibm_cci--feed-no-icon {
+							a img{
+								display:none;
+							}
+						}
+
+					a.ibm_cci--feed-title {
+						font-family: "HelvRegularIBM";
+						text-indent: 0;
+						font-size:1.3rem;
+						line-height: 17px;
+						vertical-align: top;
+						float:left;
+						padding:0;
+						float:left;
+					}
+				}
+
+				.ibm_cci--ttb {
+					clear:both;
+						// margin-top:10px;
+						float:left;
+
+						h2.ibm_cci--tweet-title{
+							font: normal 2.4rem/30px "HelvLightIBM";
+							color: #000;
+							margin:10px 0 0 0;
+							padding:0;				
+						}
+
+						p.ibm_cci--tweet-description {
+							// font: italic 1.4rem/20px "HelvLightIBM";
+							display:block;
+							font-size:0;
+							margin:15px 0 !important;
+							line-height:0;
+							padding-bottom:0;
+
+							span.ibm_cci--tweet-description-readmore a {
+								// color: #F04E37;
+								// text-decoration: none;
+								display:none;
+							}
+
+							img.ibm_cci--tweet-image {
+								display:block;
+								// line-height:0;
+								// font-size:0;
+								margin:0;
+								padding:0;
+								width:270px;
+							}							
+						}
+						.ibm_cci-media-container{
+							display:block;
+						}						
+					}												
+				//FOR YOUTUBE BLOCK (END)					
+
+					.ibm_cci--gv-rc-th{ 
+						@include ibm_cci--lv-rc-th;
+					}
+
+					.ibm_cci--time-stamp{
+						@include ibm_cci--time-stamp;
+						margin-top:0;	
+					}	
+
+					.ibm_cci--ttb{
+					clear:both;
+					// margin-top:10px;
+					float:left;
+
+						h2.ibm_cci--tweet-title{
+							font: normal 2.4rem/30px "HelvLightIBM";
+							color: #000;
+							margin:10px 0 0 0;
+							padding:0;				
+						}
+					}
+
+					.ibm_cci--lv-rc-sharing{
+						@include ibm_cci--lv-sharing;
+						width:270px;
+						ul {
+							@include ibm_cci-ul__modifier;
+
+							li {
+								@include ibm_cci-ul--li__modifier;
+								// height:25px;
+								// width:25px;
+								display:inline;
+								margin:0;
+								padding:0;
+								line-height:0;
+								font-size:0;
+								// float:left;
+								clear:none;
+								opacity:0.5;
+
+								// > a img {
+								// 	opacity:0.4;
+								// }
+							}
+							li.selected {
+								opacity:1;
+							}			
+						}
+						
+						> ul{
+							visibility:hidden;
+
+							li a img{
+								// outline:1px solid #000;
+								opacity:0.2;
+							}
+
+							li a img:hover{
+								// outline:1px solid #000;
+								opacity:0.5;
+							}							
+						}	
+
+						li:not(:nth-child(1)){
+							margin-left:5px;
+						}
+
+						li a img:hover{
+							// outline:1px solid #000;
+							opacity:1;
+						}
+
+						p.ibm_cci-tts {
+							float:right;
+							font: normal 12px/16px "HelvLightIBM";
+							vertical-align: top;
+							padding:0;
+
+							a img {
+								opacity:0.1;
+								padding: 0 0 0 0;
+							}
+							a img:hover {
+								opacity:1;
+							}						
+						}
+					}
+				}
+				
+			}
+			// GRID VIEW UNRESOLVED TWEETS + YOUTUBE (END)
+		}	
+	}

@@ -6,11 +6,12 @@
 }
 
 #ibm-leadspace-body {
-	@include h1-p-overrides;
+	// @include h1-p-overrides;
 		text-shadow:none;
 		padding: 0;
 		min-height:222px;
 		line-height:0;
+		width:940px;
 }		
 
 #ibm-leadspace-body .ibm_cci--sk.ibm_cci--sk__mt{
@@ -72,6 +73,7 @@
 			}
 			> span a:hover, span a:active {
 				color: #adadad;
+				text-decoration: none;
 			}																											
 		}
 		p:hover{
@@ -125,6 +127,7 @@
 
 	li.ibm_cci__ml_t{
 		padding: 0 20px 0 0;							
+		display:inline;
 		p {
 			display:inline;
 			font-size:1.8rem;
@@ -139,7 +142,7 @@
 	}			
 }
 
-.ibm-landing-page #ibm-leadspace-head .ibm_cci--sr {
+#ibm-leadspace-head .ibm_cci--sr {
 	float:left;
 	clear:both;
 	margin-top:6px;
@@ -156,9 +159,14 @@
 }
 
 
-/* LEADSPACE LOGO BLOCK (BEGIN) */	
-#ibm-leadspace-body #{$leadspace--logo} {
+/* LEADSPACE LOGO BLOCK (BEGIN) */
+
+#ibm-leadspace-body #{$leadspace--logo}, #{$leadspace--search}, #{$leadspace--toggle} {
 	@include leadspace--defaults;
+}	
+
+#ibm-leadspace-body #{$leadspace--logo} {
+	// @include leadspace--defaults;
 	width:300px;
 
 	h1#{$leadspace__modifier} {
@@ -184,7 +192,7 @@
 		float:right;
 		position:relative;
 		left:-77px;
-		top:50px;
+		// top:50px;
 		padding: 5px 0 0 0;
 		color:#ccc;
 		width:auto;
@@ -216,7 +224,7 @@
 
 /* LEADSPACE SEARCH BLOCK (BEGIN) */	
 #{$leadspace--search} {
-	@include leadspace--defaults;
+	// @include leadspace--defaults;
 	width:510px;
 
 	form input.ibm-cc-search--field {
@@ -253,7 +261,7 @@
 
 /* LEADSPACE TOGGLE BLOCK (BEGIN) */	
 #{$leadspace--toggle} {
-	@include leadspace--defaults;
+	// @include leadspace--defaults;
 	width:86px;
 	font-size:0;
 	float:right;	

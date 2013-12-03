@@ -1,0 +1,22 @@
+{
+  "fonts": [
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo_49f324d6a657419bb57acc326cd2fcb5.ttf",
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo_49f324d6a657419bb57acc326cd2fcb5.woff",
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo_49f324d6a657419bb57acc326cd2fcb5.eot",
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo_49f324d6a657419bb57acc326cd2fcb5.svg"
+  ],
+  "templates": [
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo.css",
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/_ibmvo.scss",
+    "/Users/vc/Sites/v17_enhanced/trunk/sites/voices/images/ibm/voices/v17e/fontcustom/ibmvo/ibmvo-preview.html"
+  ],
+  "glyphs": [
+    "backtotop",
+    "favorite",
+    "grid",
+    "list",
+    "reply",
+    "retweet",
+    "twitterbird"
+  ]
+}
