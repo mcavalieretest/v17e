@@ -14,7 +14,8 @@
 }
 
 // 6-4 Grid COMMONS (START)
-#{$ibm-widget-js} .ibm-col-6-4, #{$ibm-widget-js} .ibm_cci--rcb {
+#{$ibm-widget-js} .ibm-col-6-4, 
+#{$ibm-widget-js} .ibm_cci--rcb {
 	@include ibm-listview-commons;
 }
 
@@ -23,7 +24,8 @@
 	@include ibm_cci--rea-block;
 }
 
-.ibm-columns.ibm_cci-gv__modifier .ibm_cci-sib, .ibm-columns.ibm_cci-lv__modifier .ibm_cci-gv-sib  {
+.ibm-columns.ibm_cci-gv__modifier .ibm_cci-sib, 
+.ibm-columns.ibm_cci-lv__modifier .ibm_cci-gv-sib  {
 	display:none;	
 }
 
@@ -39,7 +41,8 @@
 	float:right;
 }
 
-.ibm-columns.ibm_cci-gv__modifier ul.ibm_cci-sie, .ibm-columns.ibm_cci-lv__modifier ul.ibm_cci-sie{
+.ibm-columns.ibm_cci-gv__modifier ul.ibm_cci-sie, 
+.ibm-columns.ibm_cci-lv__modifier ul.ibm_cci-sie{
 	@include ibm_cci-ul__modifier;
 }
 
@@ -78,7 +81,8 @@
 	min-width: 35px;
 }		
 
-.ibm-columns.ibm_cci-gv__modifier .ibm-col-6-2, .ibm-columns.ibm_cci-lv__modifier .ibm-col-6-2 {
+.ibm-columns.ibm_cci-gv__modifier .ibm-col-6-2, 
+.ibm-columns.ibm_cci-lv__modifier .ibm-col-6-2 {
 	@include ibm-listview-commons;
 	
 	ul {
@@ -312,32 +316,5 @@
 		opacity:1;
 	}						
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // LIST AND GRID UNRESOLVED TWEETS (Begin)

@@ -18,10 +18,10 @@ $ibm-listview-unro 						: ".ibm_cci--lv-unro-b"; //List view unresolved block
 $ibm-gridview-unresolved 				: ".ibm_cci--gv-unr-b"; //List view unresolved block
 $ibm-widget-js 							: "#ibm_cci-widget-js";
 $ibm-widget-about						: "#ibm_cci-about-widget";
-$ie7Selector 							: ".dj_ie7";
-$ie8Selector 							: ".dj_ie8";
-$ie9Selector 							: ".dj_ie9";
-$ie9Hack 								: "\0/";
+// $ie7Selector 							: ".dj_ie7";
+// $ie8Selector 							: ".dj_ie8";
+// $ie9Selector 							: ".dj_ie9";
+// $ie9Hack 								: "\0/";
 
 @mixin h1-p-overrides {
 	h1 { 

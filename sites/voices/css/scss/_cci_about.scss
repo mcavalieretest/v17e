@@ -24,7 +24,8 @@ h2.ibm_cci-title {
 	margin-top:40px;
 	//outline:1px solid #f00;
 }
-.ibm-col-6-2.ibm_cci-ba{
+.ibm-col-6-2.ibm_cci-ba,
+.ibm-col-6-2.ibm_cci-ia{
 	border-top:1px solid #cccccc;
 	// margin:0;
 	padding:5px 0;
@@ -75,7 +76,7 @@ ul.ibm_cci-ba-list, ul.ibm_cci-ia-list{
 }	
 
 .ibm-col-6-2.ibm_cci-ia{
-	border-top:1px solid #cccccc;
+	//
 
 	ul.ibm_cci-ia-az{
 		@include ibm_cci-ul__modifier;
@@ -113,12 +114,12 @@ ul.ibm_cci-ba-list, ul.ibm_cci-ia-list{
 }
 
 
-.ibm-col-6-4.ibm_cci_acc{
+#{$ibm-widget-about} .ibm-col-6-4.ibm_cci_acc{
 	position:relative;
 	top:-425px;
 }	
 
-.ibm-col-6-2.ibm_cci-rr {
+#{$ibm-widget-about} .ibm-col-6-2.ibm_cci-rr {
 	//
 	img.ibm_cci-rea-main{
 		padding-bottom:15px;
@@ -135,7 +136,7 @@ ul.ibm_cci-ba-list, ul.ibm_cci-ia-list{
 	}
 }
 
-.ibm-columns.ibm_cci-reacontainer{
+#{$ibm-widget-about} .ibm-columns.ibm_cci-reacontainer{
 	//
 	.ibm-col-6-2{
 		margin: 15px 0 5px 10px;
