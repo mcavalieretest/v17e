@@ -17,14 +17,14 @@
 	<meta property="og:image" content="http://www.ibm.com/mobilefirst/us/en/see-it-in-action/i/ottawa/facebook-share.png">
 	<title>Mobile Enterprise, IBM Mobile First. Put your business in motion.</title>
 		
-	<link href="http://1.www.s81c.com/common/v17e/mobilefirst/css/ww.css" rel="stylesheet" title="www" type="text/css" />
+	<link href="//1.www.s81c.com/common/v17e/mobilefirst/css/ww.css" rel="stylesheet" title="www" type="text/css" />
 	<link rel="IBM.Mobile.redirect" href="self" />
 	<link href="css/timeline.css" rel="stylesheet" type="text/css"/>
 	<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css"/>
 	<link href="css/ww_cci-casestudies.css" rel="stylesheet" title="www" type="text/css" />
 	
 	<script type='text/javascript' src='js/modernizr.custom.js'></script>
-	<script src="http://1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript"></script>
+	<script src="//1.www.s81c.com/common/v17e/mobilefirst/js/ww.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 	<script type='text/javascript' src='js/jquery.address-1.5.min.js'></script>	
     <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
@@ -1188,9 +1188,11 @@
 		</div>
 		<div class="ibm-col-6-2">
 			<h2>Call us at:</h2>
-			<span style="font-size:2.2em" class="phone">1-877-426-3774</span> <br>Priority code:<span>109HE03W</span><p></p>
+			<span class="phone"><a href="tel:1-877-426-3774">1-877-426-3774</a></span> <br>Priority code:<span>109HE03W</span></p>
 			<ul class="ibm-live-assistance-list">
-				<li id="lpbutton" class="ibm-access" style="visibility: visible;"><li class="ibm-first"><a onclick="lpMTagConfig.dynButton0.actionHook();;ibmStats.event({ibmEV:&quot;external link&quot;,ibmEvName:&quot;liveperson chat&quot;,ibmEvModule:&quot;reactive&quot;,ibmEvAction:&quot;click&quot;});return false;" target="chat" href="#" class="ibm-chat-link">Chat now</a></li></li>
+				<li class="ibm-access" id="lpbutton">
+				<!--LP dyn button-->
+				</li>
 			</ul>                         
 		</div>
 	</div>
