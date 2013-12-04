@@ -270,7 +270,8 @@ ul li:hover, .ibm-bullet:hover{
 #ibm-content .top3Col .ibm-columns h4 {
 	font-size:16px;
 	color:#000;
-	margin-top:0px;
+	margin-top:4px;
+	line-height:24px;
 }
 
 .role-select-panel {
@@ -790,6 +791,10 @@ ul li:hover, .ibm-bullet:hover{
 	margin:0 0 12px 0;
 }
 
+#ibm-content .lg-slider p.bio {
+	padding-top:10px;
+}
+
 .bx-wrapper .bx-viewport {
 	box-shadow:none;
 	border:0;
@@ -943,11 +948,11 @@ ul li:hover, .ibm-bullet:hover{
 }*/
 
 #ibm-content .ibm-columns .ibm-pull-quote.rightCol {
-	margin-top:110px;
+	margin-top:115px;
 }
 
 #ibm-content .results .ibm-columns .ibm-pull-quote.rightCol {
-	margin-top:146px;
+	margin-top:151px;
 }
 
 #ibm-top .ibm-pullquote-source, #ibm-top .ibm-pullquote-source-alternate {
@@ -1388,7 +1393,7 @@ ul li:hover, .ibm-bullet:hover{
 	}
 	
 	#ibm-content .results .ibm-columns .ibm-pull-quote.rightCol {
-		margin-top:180px;
+		margin-top:185px;
 	}
 	/*
 	#ibm-content .ibm-columns .ibm-pull-quote.left blockquote p{
@@ -1632,6 +1637,16 @@ ul li:hover, .ibm-bullet:hover{
 	
 	#ibm-content .inspiration .ibm-columns h4 {
 		margin-top:15px;
+	}
+	
+	/* header space logo and tool for mobile */
+	.ibm-link-list.ibm-top-cta {
+	    float: left;
+	    margin-top: 0;
+	}
+	
+	#ibm-top h1.ibm-brand {
+		padding-bottom:0px;
 	}
 
 	/*	.role-module-selected .role-container {
