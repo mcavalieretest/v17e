@@ -1714,7 +1714,7 @@ ul li:hover, .ibm-bullet:hover{
 	}
 }
 
-@media all and (max-width:320px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+@media all and (max-device-width:320px) and (-webkit-min-device-pixel-ratio: 2), (max-device-width: 320px) and (min-resolution: 192dpi){
 	.ibm-landing-page #ibm-leadspace-head {
 		background:url("../i/ottawa/ibm-mf-header-mobile320@2x.png") no-repeat 50% 0px;
 		background-size:320px;
