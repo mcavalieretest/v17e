@@ -17,6 +17,7 @@ var mDeviceCheck = /(android|iPad|iPhone|iPod|playbook)/g.test( navigator.userAg
 
 if(!mDeviceCheck) {
 	jQuery.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
+	jQuery("span.phone a").attr("href","#");
 }
 
 });
