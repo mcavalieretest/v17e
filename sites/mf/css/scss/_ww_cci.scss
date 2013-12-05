@@ -57,16 +57,18 @@
 }
 
 #ibm-leadspace-head.ibm-alternate-background {
-	background: #000 url(#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg) no-repeat 50% 50%;
-	background-size: cover;
+	background: #000 url(#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg) no-repeat 100% 100%;
+//	background-size: cover;
 }
 
+/*
 .no-backgroundsize #ibm-leadspace-head.ibm-alternate-background {
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-bg.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg', sizingMethod='scale')";
 	min-height: 100%;
 	min-width: 100%;
 }
+*/
 
 #ibm-leadspace-head.ibm-alternate-two #ibm-leadspace-body {
 	min-height: 300px;
@@ -78,9 +80,6 @@
 
 
 #ibm-top h1.ibm-brand {
-/*	font-size: 5.5rem;
-	line-height: 5.5rem;
-*/
 	padding: 10px 0 25px;
 	font-family: $sectionHeaderFont;
 }
