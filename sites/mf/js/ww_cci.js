@@ -13,12 +13,17 @@
 
 jQuery(function() {
 
-var mDeviceCheck = /(android|iPad|iPhone|iPod|playbook)/g.test( navigator.userAgent );
+var mDeviceCheck = /(Mobile|iPhone|Blackberry)/gi.test( navigator.userAgent );
 
 if(!mDeviceCheck) {
 	jQuery.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
 	jQuery("span.phone a").attr("href","#");
 }
+
+if(mDeviceCheck) {
+	jQuery("body").addClass('callingEnabled');
+}
+
 
 });
 

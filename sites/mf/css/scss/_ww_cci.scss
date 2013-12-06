@@ -399,6 +399,20 @@ span.phone a {
 	text-decoration: none;
 }
 
+#ibm-top a.ibm_cci-btn {
+	background-color: $blue-5;
+}
+
+
+.callingEnabled .ibm_cci-call {
+	display: block;
+}
+.ibm_cci-call,
+.callingEnabled .ibm_cci-nocall {
+	display: none;
+}
+
+
 @media only screen and (min-width: 0) and (max-width: 800px) {
 
 	#ibm-leadspace-head.ibm-alternate-background {
