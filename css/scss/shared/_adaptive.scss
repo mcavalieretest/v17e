@@ -279,7 +279,18 @@ a.ibm-thumbnail-module h3 {
 		margin: 0 10px;
 	}
 	// mobile / tablet specific styles (default template)
-
+	
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+		margin-top: 8px;
+	}
+	
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+		padding: 8px;
+	}
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+		padding-bottom:8px;
+	}
+	
 }
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
 
@@ -510,8 +521,7 @@ a.ibm-thumbnail-module h3 {
 	}
 	// primary mobile tabs end	
 	
-		
-	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+	#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
 		width: 280px;
 	}
 	
