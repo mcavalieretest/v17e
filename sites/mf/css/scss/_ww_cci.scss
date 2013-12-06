@@ -263,6 +263,11 @@ h1.ibm-brand strong {
 	width: 33px;
 }
 
+.ibm-card .ibm-media .ibm-pdf-icon:before {
+	color: #FFF;
+	@include text-shadow($emboss-dark);
+}
+
 .ibm-card .ibm-media .ibm-pdf-icon {
 	position: absolute;
 	bottom: 10px;
