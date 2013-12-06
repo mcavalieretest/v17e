@@ -173,6 +173,7 @@ h1.ibm-brand strong {
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
 //	min-height: 200px;
+	max-width: 300px;
 	margin-bottom: 20px;
 	float: left;
 }
