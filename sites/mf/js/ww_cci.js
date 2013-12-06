@@ -17,7 +17,7 @@ var mDeviceCheck = /(Mobile|iPhone|Blackberry)/gi.test( navigator.userAgent );
 
 if(!mDeviceCheck) {
 	jQuery.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
-	jQuery("span.phone a").attr("href","#");
+	jQuery("span.phone a").replaceWith(jQuery("span.phone a").text());
 }
 
 if(mDeviceCheck) {
