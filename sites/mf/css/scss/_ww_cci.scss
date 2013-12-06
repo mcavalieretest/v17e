@@ -190,8 +190,8 @@ h1.ibm-brand strong {
 	@include box-shadow(0 1px 5px $k40);
 }
 
-.ibm-card:hover h2 a,
-.ibm-card:hover h3 a {
+.ibm-card h2 a:hover,
+.ibm-card h3 a:hover {
 	color: $red-1;
 }
 
