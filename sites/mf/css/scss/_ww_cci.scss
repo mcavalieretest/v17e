@@ -448,7 +448,9 @@ span.phone a {
 		float: none;
 	}
 	
-	.ibm-card {width: 280px;}
+	.ibm-card {
+		width: 280px;
+	}
 	
 }
 
@@ -466,7 +468,9 @@ span.phone a {
 		display: none;
 	}
 	
-	.ibm-card {width: 160px;}
+	.ibm-card {
+		width: 160px;
+	}
 }
 
 @media only screen and (min-width: 801px) {
@@ -474,10 +478,12 @@ span.phone a {
 	.ibm-card .ibm-featured,
 	.ibm-card .ibm-category {
 		@include px-to-rem(font-size,14px);
-		}
+	}
 
 }
 
 @media only screen and (min-width: 641px) and (max-width: 800px) {
-	.ibm-card {width: 200px;}
+	.ibm-card {
+		width: 200px;
+	}
 }
