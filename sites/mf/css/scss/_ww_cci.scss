@@ -168,12 +168,10 @@ h1.ibm-brand strong {
 	line-height: 40px;
 }
 
-.ibm-sortable .ibm-col-1-1 {position: relative;}
 .ibm-card {
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
 //	min-height: 200px;
-	width: 300px;
 	margin-bottom: 20px;
 	float: left;
 }
@@ -308,8 +306,6 @@ h1.ibm-brand strong {
 #lpbutton a.ibm-chat-link:focus {
 	text-decoration: underline;
 }
-
-
 
 
 .ibm-connect-bar { 
@@ -448,10 +444,6 @@ span.phone a {
 		float: none;
 	}
 	
-	.ibm-card {
-		width: 280px;
-	}
-	
 }
 
 @media only screen and (min-width: 569px) and (max-width: 640px) {
@@ -467,10 +459,7 @@ span.phone a {
 	.ibm_cci-no-tab {
 		display: none;
 	}
-	
-	.ibm-card {
-		width: 160px;
-	}
+
 }
 
 @media only screen and (min-width: 801px) {
@@ -480,10 +469,4 @@ span.phone a {
 		@include px-to-rem(font-size,14px);
 	}
 
-}
-
-@media only screen and (min-width: 641px) and (max-width: 800px) {
-	.ibm-card {
-		width: 200px;
-	}
 }

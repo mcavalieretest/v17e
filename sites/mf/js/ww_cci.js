@@ -23,10 +23,9 @@
 		} else {
 			$("body").addClass('callingEnabled');
 		}
-		
 		$sortable.masonry({
 			 columnWidth: '.ibm-card'
-			,gutter: 20
+			,gutter: 0
 			,itemSelector: '.ibm-card'
 			,transitionDuration: mDeviceCheck ? 0 : '0.4s'
 		});		
