@@ -281,15 +281,14 @@ a.ibm-thumbnail-module h3 {
 	// mobile / tablet specific styles (default template)
 	
 	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
-		margin-top: 8px;
+		margin-top: 12px;
 	}
 	
-	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
-		padding: 8px;
-	}
+	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a,
 	#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
-		padding-bottom:8px;
+		padding: 8px 6px;
 	}
+	
 	
 }
 // -------------------------------------------------------------- media query to be shared between iPad and iPhone viewport --------------------------------------------------------------
