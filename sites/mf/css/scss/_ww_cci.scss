@@ -168,7 +168,7 @@ h1.ibm-brand strong {
 	line-height: 40px;
 }
 
-
+.ibm-sortable .ibm-col-1-1 {position: relative;}
 .ibm-card {
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
