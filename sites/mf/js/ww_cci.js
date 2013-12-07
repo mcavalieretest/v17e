@@ -18,10 +18,10 @@
 			,filter;
 		
 		if (!mDeviceCheck) {
-			jQuery.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
-			jQuery("span.phone a").attr("href","#");
+			$.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
+			$("span.phone a").replaceWith($("span.phone a").text());
 		} else {
-			jQuery("body").addClass('callingEnabled');
+			$("body").addClass('callingEnabled');
 		}
 		
 		$sortable.masonry({
