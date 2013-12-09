@@ -579,11 +579,17 @@ div.ibm-text ul.ibm-tabs span.ibm-sep {
 	color: #000;
 }
 
+#ibm-content-nav #ibm-expand-container.ibm-columns {
+text-align:right;
+}
+
 #ibm-content-nav #ibm-expand-container p.ibm-expand-text {
 	position: absolute;
-	bottom: 0 !important;
-	right: 280px;
-	float: right;
+	right: 190px;
+	top:50px;
+	/*bottom: 0 !important;
+	
+	float: right;*/
 }
 
 #ibm-content-nav #ibm-expand-container p.ibm-expand-text,

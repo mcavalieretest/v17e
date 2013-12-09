@@ -427,6 +427,22 @@ a.ibm-thumbnail-module h3 {
 		width: auto;
 	}
 	
+	#ibm-content-nav #ibm-secondary-tabs {
+		padding-left: 10px;
+	}
+	
+	#ibm-secondary-tabs.ibm-list-view {
+		height: auto !important;
+	}
+	
+	#ibm-content-nav #ibm-expand-container.ibm-columns {
+    	position: absolute;
+    }
+	
+	#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+		position: relative;
+	}
+	
 	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs,
 	#ibm-top.ibm-landing-page #ibm-secondary-tabs .ibm-columns.ibm-dynamic-subtabs ul.ibm-tabs {
 		padding: 0;
@@ -519,6 +535,16 @@ a.ibm-thumbnail-module h3 {
 		float: none;
 	}
 	// primary mobile tabs end	
+	
+	#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+		top: -20px;
+		right: 0;
+	}
+	
+	#ibm-secondary-tabs.ibm-dropdown-view span,
+	#ibm-secondary-tabs.ibm-dropdown-view input {
+		width: auto !important;
+	}
 	
 	#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
 		width: 280px;
@@ -726,6 +752,11 @@ a.ibm-thumbnail-module h3 {
 	a.ibm-ribbon-prev {
 		left: -40px;
 	}
+	
+	#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+		top: -20px;
+		right: -60px;
+	}
 
 }
 // -------------------------------------------------------------- media query to be used on iPhone landspace viewport --------------------------------------------------------------
@@ -761,6 +792,18 @@ a.ibm-thumbnail-module h3 {
 	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
 		padding-right: 40px;
 		padding-left: 40px;
+	}
+	
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs.ibm-list-view,
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	
+	#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+    	right: 25px;
+    	top: -20px;
 	}
 	
 	.ibm-landing-page #ibm-content-head,
@@ -1100,9 +1143,21 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	.ibm-landing-page ul#ibm-navigation-trail,
-	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs {
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs, 
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs.ibm-list-view .ibm-dynamic-subtabs {
 		padding-right: 64px;
 		padding-left: 64px;
+	}
+	
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs.ibm-list-view,
+	.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+    	right: 20px;
+    	top: -25px;
 	}
 	
 	.ibm-landing-page #ibm-content-head {
