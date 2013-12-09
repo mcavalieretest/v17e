@@ -22,25 +22,32 @@
 	<meta name="Robots" content="index,follow"/>
 	<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
 	<meta name="Description" content="REPLACE"/>
+
 	<!-- Please ensure appropriate meta tag values are aligned with the standards -->
+
 	<title>IBM Social Business Insights Blog</title>
-	<link rel="stylesheet" href="//205.186.160.10/v17e/css/ww.css" type="text/css">
-	<link rel="stylesheet" href="css/ww_cci.css" type="text/css"/ >	
-	<script type="text/javascript" src="//1.www.s81c.com/common/js/dojo/www.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="//205.186.160.10/v17e/css/ww.css" type="text/css"> -->
+	<link rel="stylesheet" href="//1.www.s81c.com/common/v17e/css/ww.css" type="text/css">
+	<link rel="stylesheet" href="css/ww_cci.css" type="text/css"/ >
+	
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="css/ie-only.css"/>
+	<![endif]-->
+	<script type="text/javascript" src="//1.www.s81c.com/common/v17e/js/ww.js"></script>
 	<script type="text/javascript" src="js/code.js"></script>
 
 	</head>
 	<body id="ibm-com" class="ibm-type">
 		<div id="ibm-top" class="ibm-landing-page">
 			<!-- MASTHEAD_BEGIN -->
-			<div id="ibm-masthead">
+			<div id="ibm-masthead">	
 				<div id="ibm-mast-options">
 					<ul>
 						<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
 					</ul>
-				</div>
+				</div>			
 				<div id="ibm-universal-nav">
+				
 					<ul id="ibm-unav-links">
 						<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></li>
 					</ul>
@@ -63,56 +70,22 @@
 						</form>
 					</div>
 				</div>
-			</div>
-			<!-- MASTHEAD_END -->
-			<div class="ibm-access-cntr">
+			</div><!-- MASTHEAD_END -->
+			<div id="ibm-access-cntr" role="main">
 				<div id="ibm-leadspace-head" class="ibm_cc__sbi_ls">
 					<div id="ibm-leadspace-body">
-						<div class="ibm-columns">
-							<div class="ibm-col-6-4">
-								<div class="ibm_cci--ls--social">
-									<ul>
-										<li><a href="#" class="sbi_smarterplanet"></a></li>
-										<li><a href="#" class="sbi_socialbusiness"></a></li>
-										<li><a href="#" class="sbi_facebook"></a></li>
-										<li><a href="#" class="sbi_twitter"></a></li>
-										<li><a href="#" class="sbi_linkedin"></a></li>
-										<li><a href="#" class="sbi_youtube"></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="ibm-col-6-2">
-								<form class="ibm_cci--sbi-form">
-									<input type="text" class="ibm_cci--sbi-form--input" placeholder="Search this blog" />
-									<input value="Submit" class="ibm-btn-search ibm_cci--sbi-form--search" id="ibm-search" type="submit">
-								</form>
-							</div>
-							<div class="ibm-col-1-1">
-								<div class="ibm_cci--ls--branding">
-									<h1 class="ibm_cci--h1__modifier"><span>Social <span>Business</span></span> Insights Blog</h1>
-								</div>	
-							</div>
-						</div>		
+						<ul class="ibm_cci--ls--social">
+							<li><a href="#" class="sbi_smarterplanet"></a></li>
+							<li><a href="#" class="sbi_socialbusiness"></a></li>
+							<li><a href="#" class="sbi_facebook"></a></li>
+							<li><a href="#" class="sbi_twitter"></a></li>
+							<li><a href="#" class="sbi_linkedin"></a></li>
+							<li><a href="#" class="sbi_youtube"></a></li>
+						</ul>
+						<h1 class="ibm_cci--h1__modifier"><span>Social <span>Business</span></span> Insights Blog</h1>
 					</div>
 				</div><!-- LEADSPACE_END -->
-
-				<!-- CONTENT_NAV_BEGIN -->
-				<div id="ibm-content-nav">
-					<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-mobile-tabs">
-						<div>
-							<select>
-								<option value="layouts.html">Analytics</option>
-								<option value="patterns.html">Marketing</option>
-								<option value="faqs.html">Human Resources</option>
-								<option value="faqs.html">Sales</option>
-								<option value="faqs.html">Solutions</option>
-								<option selected="selected" value="faqs.html">All</option>
-							</select>
-						</div>
-					</form>
-				</div><!--CONTENT NAV END-->
-
-				<div id="ibm-pcon">
+				<div id="ibm-pcon" class="" >
 					<div id="ibm-content" class="ibm_cci--sbi-content">
 						<div id="ibm-content-body">
 							<div id="ibm-content-main">
@@ -303,6 +276,10 @@
 														<li class="ibm-active cci_active last"><a href="#">All</a></li>
 													</ul>
 												</div>
+												<form class="ibm_cci--sbi-form">
+													<input type="text" class="ibm_cci--sbi-form--input" placeholder="Search this blog" />
+													<input value="Submit" class="ibm-btn-search ibm_cci--sbi-form--search" id="ibm-search" type="submit">
+												</form>
 											</div>
 											<div class="ibm-col-6-2">
 												<!-- CUSTOM SUBSCRIBE MODULE -->
@@ -325,23 +302,24 @@
 
 
 											<div class="ibm-container-body">
+												<h4>Similar Blogs</h4>
 												<ul class="ibm-portrait-module-list ibm_cci--blog-list" >
 													<li>
-													<img alt="ibm-feature-link" height="50" width="50" src="i/no_image_50x50.png"/>
-														<h3><a href="http://www.ibm.com/connect" class="ibm-feature-link" style="cursor: pointer;">IBM Software Community</a></h3> 
-														<p>Lorem ipsum dolor sit amet</p>
+													<img alt="ibm-feature-link" height="50" width="50" src="i/softwareblog.jpg"/>
+														<h3><a href="https://www-304.ibm.com/connections/blogs/bcde08b8-816c-42a8-aa37-5f1ce02470a9/?lang=en_us" class="ibm-feature-link" style="cursor: pointer;" title="IBM Software Community">IBM Software Community</a></h3> 
+														<p>Discussions and perspectives on how software is changing the way we live and do business.</p>
 														
 													</li>
 													<li>
-													<img alt="ibm-feature-link" height="50" width="50" src="i/no_image_50x50.png"/>
-														<h3><a href="http://www.ibm.com/connect" class="ibm-feature-link" style="cursor: pointer;">IBM Impact Blog</a></h3> 
-														<p>Cras aliquet venenatis augue at egestas</p>
+													<img alt="ibm-feature-link" height="50" width="50" src="i/impactblog.jpg"/>
+														<h3><a href="https://www-304.ibm.com/connections/blogs/aim/?lang=en_us" class="ibm-feature-link" style="cursor: pointer;" title="IBM Impact Blog">IBM Impact Blog</a></h3> 
+														<p>Promoting discussiones and perspectives.</p>
 														
 													</li>
 													<li>
-													<img alt="ibm-feature-link" height="50" width="50" src="i/no_image_50x50.png"/>
-														<h3><a href="http://www.ibm.com/connect" class="ibm-feature-link" style="cursor: pointer;">Blue Blog</a></h3> 
-														<p>Nam quis justo sed tellus mattis aliquet in sed ante</p>
+													<img alt="ibm-feature-link" height="50" width="50" src="i/blueblog.jpg"/>
+														<h3><a href="https://www-304.ibm.com/connections/blogs/ea06c2de-ad40-4ec6-8a9c-8fd8d5e0b938/?lang=en_us" class="ibm-feature-link" style="cursor: pointer;" title="IBM Blue Blog">Blue Blog</a></h3> 
+														<p>The blog of IBM expersts.</p>
 													</li>
 												</ul>	
 												<ul class="ibm-twisty ibm_cci--sbi-twisty-list">
