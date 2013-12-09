@@ -1,3 +1,15 @@
+/*! 
+ * Name: ibm.com v17e JS file
+ * Version: 1.3
+ * Owner: Corporate Webmaster (NUS_N_NIWWW)
+ * Copyright (c) 2013 IBM Corporation
+ */
+ 
+// URI: www.ibm.com/common/v17e/js/ww.js
+// Description: Official JS file for v17e project
+// Date: Dec 9, 2013
+//
+
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-flexboxlegacy-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-mq-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
  */
