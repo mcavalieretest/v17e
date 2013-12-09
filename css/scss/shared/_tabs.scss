@@ -580,25 +580,20 @@ div.ibm-text ul.ibm-tabs span.ibm-sep {
 }
 
 #ibm-content-nav #ibm-expand-container.ibm-columns {
-text-align:right;
+	text-align: right;
 }
 
 #ibm-content-nav #ibm-expand-container p.ibm-expand-text {
 	position: absolute;
 	right: 190px;
 	top:50px;
-	/*bottom: 0 !important;
 	
-	float: right;*/
 }
 
 #ibm-content-nav #ibm-expand-container p.ibm-expand-text,
 #ibm-content-nav #ibm-dropdown-content p.ibm-expand-text {
 	cursor: pointer;
 	color: #00649D;
-	font-family: Georgia;
-	font-style: italic;
-	font-size: 0.8em;
 }
 
 #ibm-content-nav #ibm-secondary-tabs p.ibm-expand-text:hover {
