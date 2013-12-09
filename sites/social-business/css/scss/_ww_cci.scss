@@ -12,8 +12,8 @@
 	padding-top: 0 !important;
 }
 
-
 // LEADSPACE *********************************************************//
+
 div#ibm-leadspace-head.ibm_cc__sbi_ls {
 	background: $dark-blue;
 	#ibm-leadspace-body {
@@ -21,69 +21,60 @@ div#ibm-leadspace-head.ibm_cc__sbi_ls {
 		width: 940px;
 		padding-bottom: 0px;
 		min-height: 150px;
-				// .ibm_cci--ls--branding {
 
-					h1.ibm_cci--h1__modifier {
-						 font-family: "LubalinGraphStdBookIBM";
-						 color: #fff;
-						 // font-size: 3.438rem;
-						 width: 100%;
-						 @include px-to-rem(font-size, 55px);
-						 padding-top: 70px;
-						 span {
-						 	word-spacing:-15px;
-						 	span {
-						 		font-weight: bold;
-						 	}
-						 }
-
-					} 
-			
-			
+		h1.ibm_cci--h1__modifier {
+			 font-family: "LubalinGraphStdBookIBM";
+			 color: #fff;
+			 width: 100%;
+			 @include px-to-rem(font-size, 45px);
+			 padding-top: 75px;
+			 span {
+			 	word-spacing:-12px;
+			 	span {
+			 		font-weight: bold;
+			 	}
+			 }
+		} 
 				
-				ul.ibm_cci--ls--social li:before  { content: none;}
+		ul.ibm_cci--ls--social li:before  { content: none;}
 
-				ul.ibm_cci--ls--social {
-					list-style-type: none;
-					float: right !important;
-					padding-top: 12px;
-					
-					li {
-						display:inline-block;
-						background-image: none !important;
-						padding: 0px;
-
-						a {
-							width: 24px;
-							height: 24px;
-							margin:2px;
-							display:block;					
-						}
-
-						a.sbi_smarterplanet{
-							background-image: url(../i/sbsm_smarterplanet.png);
-						}
-						a.sbi_facebook{
-							background-image: url(../i/sbsm_facebook.png);
-						}
-						a.sbi_twitter{
-							background-image: url(../i/sbsm_twitter.png);
-						}
-						a.sbi_socialbusiness{
-							background-image: url(../i/sbsm_socialbiz.png);
-						}
-						a.sbi_linkedin{
-							background-image: url(../i/sbsm_linkedin.png);
-						}
-						a.sbi_youtube{
-							background-image: url(../i/sbsm_youtube.png);
-						}
-					}
-				
-				
+		ul.ibm_cci--ls--social {
+			list-style-type: none;
+			float: right !important;
+			padding-top: 12px;
 			
+			li {
+				display:inline-block;
+				background-image: none !important;
+				padding: 0px;
+
+				a {
+					width: 24px;
+					height: 24px;
+					margin:2px;
+					display:block;					
+				}
+
+				a.sbi_smarterplanet{
+					background-image: url(../i/sbsm_smarterplanet.png);
+				}
+				a.sbi_facebook{
+					background-image: url(../i/sbsm_facebook.png);
+				}
+				a.sbi_twitter{
+					background-image: url(../i/sbsm_twitter.png);
+				}
+				a.sbi_socialbusiness{
+					background-image: url(../i/sbsm_socialbiz.png);
+				}
+				a.sbi_linkedin{
+					background-image: url(../i/sbsm_linkedin.png);
+				}
+				a.sbi_youtube{
+					background-image: url(../i/sbsm_youtube.png);
+				}
+			}	
 		}
-
 	}
 }
 
