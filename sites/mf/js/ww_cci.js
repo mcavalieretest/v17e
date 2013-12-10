@@ -18,26 +18,27 @@
 			,filter;
 		
 		if (!mDeviceCheck) {
-			$.getScript("//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js");
-			$("span.phone a").replaceWith($("span.phone a").text());
+			$.getScript('//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js');
+			$('span.phone a').replaceWith($('span.phone a').text());
 		} else {
-			$("body").addClass('callingEnabled');
+			$('body').addClass('callingEnabled');
 		}
 		$sortable.masonry({
 			 columnWidth: '.ibm-card'
 			,gutter: 0
-			,itemSelector: '.ibm-card'
+			,itemSelector: '.ibm-card.visible'
 			,transitionDuration: mDeviceCheck ? 0 : '0.4s'
 		});		
 		
 		$('.ibm_cci-sort').on('change', 'select', function (e) {
 			filter = e.currentTarget.value;
 			if (filter == '') {
-				$masonryItems.show();
+				$masonryItems.show().addClass('visible');
 			} else {
-				$masonryItems.not('.' + filter).hide()
-				$masonryItems.filter('.' + filter).show();
+				$masonryItems.not('.' + filter).hide().removeClass('visible');
+				$masonryItems.filter('.' + filter).show().addClass('visible');
 			}
+			$sortable.masonry('reloadItems');
 			$sortable.masonry();
 		});
 	});
