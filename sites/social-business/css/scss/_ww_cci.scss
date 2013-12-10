@@ -229,7 +229,7 @@ a:visited {
 // HIDE ARCHIVE LIST ***********************************************//
 
 ul#archive-list {
-	display:none; 
+	// display:none; 
 }
 .ibm-col-6-4 h3.ibm_cci--post-h3--related {
 	margin-top:40px;
@@ -463,32 +463,47 @@ form.ibm_cci--sbi-comment-form{
 }
 
 
-
 .ibm_cci--toggle-widget-content {display: none;}
 .ibm_cci--toggle-widget-content.selected {display: block;}
 ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !important; }
 
 @media only screen and (max-width: 568px) and (min-width: 0) {
-	#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body  h1.ibm_cci--h1__modifier { 
-		padding-top:18px;
-		padding-bottom: 20px;
-		@include px-to-rem(font-size, 48px);
+
+	a.ibm-btn-small.ibm_cci-subscribe-button{ 
+		margin: 5px 0px 5px;
+	
+	}
+
+	div#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body  h1.ibm_cci--h1__modifier { 
+		
+
 		span{
 				word-spacing:-8px;
+				
 			}
 	}
+
+
+
 	#ibm-content.ibm_cci--sbi-content {
 		margin-top: 0px;
 	}
+
 	#ibm-navigation.ibm_cci--nav {
 		display:none;
 	}
+
 	form.ibm_cci--sbi-form{
 		display:none;
 	}
+
 	.ibm-container-alt.ibm_cci--rss-subscribe {
 		margin-bottom: 20px;
 		width: 248px;
+		img {
+			margin-left: 5px;
+			margin-right: 2px;
+		}
 	}
 	.ibm-col-1-1.ibm_cci--author-col {
 		display: none;
@@ -505,10 +520,9 @@ ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !importan
 	border-top: 1px solid #cccccc;
 
 	span.ibm_cci--sbi--archive-item--date {
-	
 	float:left;
+		
 		}
-	
 	}
 
 	.ibm_cci--sbi-youtube-playlist {
@@ -529,13 +543,14 @@ ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !importan
 	}
 
 
-	#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body h1.ibm_cci--h1__modifier { 
+	div#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body h1.ibm_cci--h1__modifier { 
 		
 		@include px-to-rem(font-size, 45px);
 		padding-top: 40px;
 		
 		span{
 			word-spacing:-10px;
+
 		}		
 	}
 	
@@ -585,9 +600,11 @@ ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !importan
 	.ibm_cci--rss-subscribe p img {
 		display:none;
 	}
+
 	a.ibm-btn-small.ibm_cci-subscribe-button{ 
 		margin: 5px 5px;
 		width: 75px;
+		font-size: .6em !important;
 	}
 
 
