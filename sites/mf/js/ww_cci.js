@@ -23,6 +23,9 @@
 		} else {
 			$('body').addClass('callingEnabled');
 		}
+
+		$masonryItems.addClass('visible');
+
 		$sortable.masonry({
 			 columnWidth: '.ibm-card'
 			,gutter: 0
