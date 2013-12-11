@@ -166,6 +166,14 @@ a:visited {
 		font-family: "LubalinGraphStdBookIBM";
 		@include px-to-rem(font-size, 31px);
 		@include px-to-rem(line-height, 32px * $smallLineHeight);
+		a {
+			color: #00649d;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #05386b;
+			text-decoration: none;
+		} 
 	}			
 }
 
@@ -310,11 +318,6 @@ ul.ibm_cci--post-share {
 }
 
 
-.ibm-col-6-4.ibm_cci__sbi_post {
-	
-
-}
-
 
 .ibm-col-6-4.ibm_cci--sbi--post-excerpt,
 .ibm-col-6-4.ibm_cci--sbi--archive-item {
@@ -352,6 +355,17 @@ ul.ibm_cci--post-share {
 		a {
 			display:inline-block;
 			text-indent:-9999px;
+		}
+	}
+
+	h3 {
+		a {
+			color: #00649d;
+		}
+		a:hover {
+			color: #05386b;
+
+
 		}
 	}
 
