@@ -13,7 +13,6 @@
 }
 
 // LEADSPACE *********************************************************//
-
 div#ibm-leadspace-head.ibm_cc__sbi_ls {
 	background: $dark-blue;
 	#ibm-leadspace-body {
@@ -465,7 +464,11 @@ form.ibm_cci--sbi-comment-form{
 
 .ibm_cci--toggle-widget-content {display: none;}
 .ibm_cci--toggle-widget-content.selected {display: block;}
-ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !important; }
+.ibm_cci--sbi--show-hide {
+	h2 {
+		padding-top: 8px;
+	}
+}
 
 @media only screen and (max-width: 568px) and (min-width: 0) {
 
@@ -474,13 +477,26 @@ ul.ibm-twisty.ibm_cci--sbi-twisty-list li { border-top: 2px solid #666 !importan
 	
 	}
 
+	#ibm-top #ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body {
+		width: auto;
+	}
+
 	div#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body  h1.ibm_cci--h1__modifier { 
-		
+			width: 280px;
+			margin: 0 auto;
+			padding-top:60px;
+			padding-bottom: 20px;
 
 		span{
 				word-spacing:-8px;
 				
 			}
+	}
+
+	div#ibm-leadspace-head.ibm_cc__sbi_ls #ibm-leadspace-body  h1.ibm_cci--h1__modifier > span {
+		white-space: nowrap;
+		@include px-to-rem(font-size, 40px);
+
 	}
 
 
