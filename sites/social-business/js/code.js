@@ -3,16 +3,15 @@ sbi.hp = sbi.hp || {};
 sbi.twitterWidget || {};
 sbi.listView || {};
 sbi.detailView || {};
-
 sbi.doSidebar || {};
+sbi.closeDisclaimer || {};
 
 
 sbi.hp = {
 	init : function(){
 		sbi.twitterWidget.getTweets();
 		this.contentWidget();
-		sbi.doArchives.init();
-	
+		sbi.closeDisclaimer.init();
 	},
 
 	contentWidget : function(){
@@ -42,15 +41,16 @@ sbi.hp = {
 sbi.listView = {
 	init :function (){
 		sbi.twitterWidget.getTweets();
+		sbi.closeDisclaimer.init();
 	}
 }
 
 sbi.detailView = {
 	init :function (){
 		sbi.twitterWidget.getTweets();
+		sbi.closeDisclaimer.init();
 	}
 }
-
 
 sbi.twitterWidget = {
 	getTweets : function(){
@@ -59,15 +59,12 @@ sbi.twitterWidget = {
 	}
 }
 
-sbi.doArchives = {
-	init : function (){
-		dojo.query(".ibm_cci--sbi-show-hide").onclick(function(e){
-			e.preventDefault();
-			console.info(this.parentNode.childNodes);
-
-		});
+sbi.closeDisclaimer = {
+	init : function(){
+		document.getElementById('disclaimer_button').click();
 	}
 }
+
 
 
 
