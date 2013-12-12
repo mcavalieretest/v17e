@@ -512,6 +512,118 @@ form.ibm_cci--sbi-comment-form{
 	}
 }
 
+.ibm_cci--sbi-youtube-playlist {
+	
+	.ibm-portrait .ibm-media-thumb.ibm-media-active h3 a {
+		color: #000;
+	}
+
+	.ibm-columns {
+		.ibm-col-6-4 {
+			.ibm-container.ibm-video {
+				border-top: 1px solid #cccccc !important;
+			}
+
+		}
+		.ibm-col-6-2.ibm-container-hide{
+			.ibm-container.ibm-playlist {
+				ul.ibm-container-controls {
+
+
+					li  {
+
+						a.ibm-show-hide.ibm-active:after {
+			
+						}
+					}
+				}
+			}
+
+		}
+		.ibm-col-6-2 {
+			.ibm-container.ibm-playlist {
+				border-top: 1px solid #cccccc !important;
+				ul.ibm-container-controls {
+
+							li {
+								
+								a {
+									background:none;
+									position:relative;
+									width: 20px !important;
+						height: 20px !important;
+								}
+								a.ibm-show-hide:after,
+								a.ibm-show-hide.ibm-active:after
+								 {
+									background:none;
+									font-family: 'iconsIBM';
+									font-variant: normal;
+									text-transform: none;
+									display: inline-block;
+									letter-spacing: 4px;
+									position: absolute;
+									top: 0px;
+									left: -10px;
+									text-decoration: none;
+									font-size: 1.4em;
+									
+									color: #00649d;
+									text-indent: 0px;
+								}
+								a.ibm-show-hide:hover:after{
+									color:#DF3A01;
+								}
+
+								a.ibm-show-hide:after {
+									content:"\00a0\f152\00a0";
+								}
+								a.ibm-show-hide.ibm-active:after {
+									content:"\00a0\f151\00a0";
+								}
+
+
+								
+								a.ibm-show-hide.ibm-active:hover:after {
+									color: #A5DF00;
+								}
+
+
+							}
+						}
+				.ibm-container-body{
+					.ibm-media-list {
+
+						div ul {
+							margin-top: 10px;
+							li {
+								div {
+									p {
+										display :none;
+									}
+
+									h3 {
+										@include px-to-rem(font-size, 14px);
+										@include px-to-rem(line-height, 15px * $smallLineHeight);
+										font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
+										
+										a {
+											font-weight: normal;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+
 @media only screen and (max-width: 568px) and (min-width: 0) {
 
 	a.ibm-btn-small.ibm_cci-subscribe-button{ 
