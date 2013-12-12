@@ -436,6 +436,7 @@ h3.ibm_cci--h3__modifier {
 		margin-bottom: 0px;
 		padding-bottom: 0px;
 		margin: 0 0 4px 60px;
+		@include px-to-rem(line-height, 12px * $smallLineHeight);
 	}
 	p{
 		@include px-to-rem(font-size, 14px);
