@@ -54,6 +54,7 @@ css/
 |   |   |-- _print.scss			# print
 |   |   |-- _social-toolbar.scss# social-toolbar
 |   |   |-- _rating.scss		# rating
+|   |   |-- _expert-locator.scss# expertise locater module
 |   |   |-- _adaptive.scss		# adaptive styles
 |   |   ...
 |   |-- direct/					# directly loaded CSS files
@@ -117,6 +118,7 @@ css/
 		"scss/shared/print",
 		"scss/shared/social-toolbar",
 		"scss/shared/rating",
+		"scss/shared/expert-locator",
 //		"scss/ww/localeselector",
 
 		"scss/ww/masthead",
