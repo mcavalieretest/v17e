@@ -7,21 +7,23 @@
 }
 
 div.ibm-scroll-wrapper {
-	position: relative; 
+	position: relative;
+	width: auto !important;
 	overflow: hidden; 
 	z-index: 1;
 	padding-bottom: 15px;
-	*padding-bottom: 0px;
-	_padding-bottom: 0px;
+	*padding-bottom: 0;
+	_padding-bottom: 0;
 	padding-bottom: 20px\9;
 }
 
 div.ibm-scroll-container {
 	height: auto;
+	width: auto !important;
 	overflow: visible;
-	padding-right: 5px;
+	padding-right: 20px;
 	position: absolute;
-	top: 0px;
+	top: 0;
 }
 
 /* Added to work fine on IE7 */
