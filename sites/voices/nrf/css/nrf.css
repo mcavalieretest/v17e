@@ -36,7 +36,7 @@ img { -ms-interpolation-mode: bicubic; }
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after {clear: both; }
 .hide {display: none; }
-.antialiased {-webkit-font-smoothing: antialiased; }
+.antialiased {-webkit-font-smoothing: antialiased !important; }
 img {display: inline-block;vertical-align: middle; }
 #row {width:1962px;float:left;margin:15px;padding:0;}
 .row_384, .row_778 {float:left;width: 384px;margin-right: 10px;margin-top: 0;margin-bottom: 0;*zoom: 1; }
