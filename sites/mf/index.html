@@ -158,22 +158,22 @@ var editskill = "websphere-english";
 
 <div class="ibm-col-1-1">
 <h2 class="section-header ibm_cci-small">View case studies by:</h2>
-<form action="http://www.ibm.com/links" class="ibm_cci-sort">
+<form action="http://www.ibm.com/links" class="ibm-dropdown-sort">
 
 <div class="ibm-columns">
 <div class="ibm-col-5-2">
 <div class="ibm-menu-list">
 <div>
-<select name="roles" id="roles" size="1">
+<select name="dd_needs" id="dd_needs" size="1">
 <option selected="selected" value="">All business needs</option>
-<option value="transform">Transform strategy and operations</option>
-<option value="build">Build and deploy multi-platform mobile apps</option>
-<option value="optimize">Optimize mobile experience to build loyalty</option>
-<option value="turn">Turn information into insights</option>
-<option value="extend">Data, service, and application integration</option>
-<option value="manage">Manage and optimize devices, data, expenses</option>
-<option value="support">Support BYOD and a smarter workforce</option>
-<option value="oversee">Oversee security, risk, compliance</option>
+<option value="ddn_transform">Transform strategy and operations</option>
+<option value="ddn_build">Build and deploy multi-platform mobile apps</option>
+<option value="ddn_optimize">Optimize mobile experience to build loyalty</option>
+<option value="ddn_turn">Turn information into insights</option>
+<option value="ddn_extend">Data, service, and application integration</option>
+<option value="ddn_manage">Manage and optimize devices, data, expenses</option>
+<option value="ddn_support">Support BYOD and a smarter workforce</option>
+<option value="ddn_oversee">Oversee security, risk, compliance</option>
 </select>
 
 </div>
@@ -185,20 +185,20 @@ var editskill = "websphere-english";
 <div class="ibm-col-5-2">
 <div class="ibm-menu-list">
 <div>                                                   
-<select name="firms" size="1" id="firms">
+<select name="dd_ind" id="dd_ind" size="1">
 <option selected="selected" value="">All industries</option>
-<option value="industry_automotive">Automotive</option>
-<option value="industry_banking">Banking</option>
-<option value="industry_construction">Construction</option>
-<option value="industry_education">Education</option>
-<option value="industry_energy">Energy and utilities</option>
-<option value="industry_government">Government</option>
-<option value="industry_healthcare">Healthcare</option>
-<option value="industry_insurance">Insurance</option>
-<option value="industry_media">Media and entertainment</option>
-<option value="industry_technology">Technology</option>
-<option value="industry_telecommunications">Telecommunications</option>
-<option value="industry_travel">Travel and transportation</option>
+<option value="ddi_automotive">Automotive</option>
+<option value="ddi_banking">Banking</option>
+<option value="ddi_construction">Construction</option>
+<option value="ddi_education">Education</option>
+<option value="ddi_energy">Energy and utilities</option>
+<option value="ddi_government">Government</option>
+<option value="ddi_healthcare">Healthcare</option>
+<option value="ddi_insurance">Insurance</option>
+<option value="ddi_media">Media and entertainment</option>
+<option value="ddi_technology">Technology</option>
+<option value="ddi_telecommunications">Telecommunications</option>
+<option value="ddi_travel">Travel and transportation</option>
 </select>
 
 </div>
@@ -236,7 +236,7 @@ var editskill = "websphere-english";
 <p><strong>6-2 grid</strong></p>
 -->
 
-<div id="air_canada" class="ibm-col-6-2 ibm-card video study transform build optimize turn extend industry_travel">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_build ddn_optimize ddn_turn ddn_extend ddi_travel">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Travel and transportation</p> 
 <a href="http://www.youtube.com/watch?v=dyXuheNcJDs" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/aircanada-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -250,7 +250,7 @@ var editskill = "websphere-english";
 </div>
 </div>
                                             
-<div id="ani" class="ibm-col-6-2 ibm-card study transform extend manage support oversee industry_insurance">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_extend ddn_manage ddn_support ddn_oversee ddi_insurance">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Insurance</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14423usen/WSC14423USEN.PDF">American National Insurance</a></h3>
@@ -263,7 +263,7 @@ Saving time in the field with rapid, highly secure access to data from mobile de
 </div>
 </div>
 
-<div id="avea" class="ibm-col-6-2 ibm-card study transform build extend manage industry_telecommunications">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_extend ddn_manage ddi_telecommunications">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Telecommunications</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/rac14271usen/RAC14271USEN.PDF">Avea</a></h3>
@@ -276,7 +276,7 @@ Cutting deployment problems almost 30 percent and reducing deployment time for m
 </div>
 </div>                                           
 
-<div id="centerbeam" class="ibm-col-6-2 ibm-card study transform extend manage support oversee industry_technology">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_extend ddn_manage ddn_support ddn_oversee ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/tic14231usen/TIC14231USEN.PDF">CenterBeam</a></h3>
@@ -290,7 +290,7 @@ Delivering 98 percent policy compliance across all enterprise devices
 </div>
 
                                     
-<div id="cincom" class="ibm-col-6-2 ibm-card video study transform build extend industry_technology">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_build ddn_extend ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <a href="http://www.youtube.com/watch?v=afLDjYRtr3s" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/cincom-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -305,7 +305,7 @@ Projecting a 20 percent reduction in time to market for new software, while fixi
 </div>
 </div>
 
-<div id="eindhoven" class="ibm-col-6-2 ibm-card video study transform turn extend industry_government">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_turn ddn_extend ddi_government">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Government</p>
 <a href="http://www.youtube.com/watch?v=6TqkoJQHAvw" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/city-eindhoven-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -320,7 +320,7 @@ A traffic management solution that collects and analyzes data from car and road 
 </div>
 </div>
                                             
-<div id="daeghu" class="ibm-col-6-2 ibm-card video study transform build optimize extend industry_education">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_build ddn_optimize ddn_extend ddi_education">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Education</p>
 <a href="http://www.youtube.com/watch?v=F2eDeSqq6Os" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/daegu-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -335,7 +335,7 @@ Cutting the cost of development with faster software coding of mobile applicatio
 </div>
 </div>
 
-<div id="Fortune500" class="ibm-col-6-2 ibm-card study transform manage industry_healthcare">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_manage ddi_healthcare">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Healthcare</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/zzc03214usen/ZZC03214USEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/fortune-500-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -349,7 +349,7 @@ Managed services help this company reduce overall telecom spend by nearly $4M an
 </div>
 </div>
 
-<div id="Fortune200" class="ibm-col-6-2 ibm-card study transform manage industry_healthcare">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_manage ddi_healthcare">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Healthcare</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/zzc03214usen/ZZC03214USEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/fortune-200-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -363,7 +363,7 @@ Saves $1.9M and reduces overall mobile spend to achieve an ROI of over 700 perce
 </div>
 </div>
                                             
-<div id="fmg" class="ibm-col-6-2 ibm-card study transform turn extend manage oversee industry_healthcare">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_turn ddn_extend ddn_manage ddn_oversee ddi_healthcare">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Healthcare</p>
 <a target="_blank" href="http://www.ibm.com/common/ssi/cgi-bin/ssialias?subtype=AB&amp;infotype=PM&amp;appname=SWGE_LO_LN_GBEN&amp;htmlfid=LOC14325GBEN&amp;attachment=LOC14325GBEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/frontier-3x2.png" alt="" class="ibm-resize" /></a>
@@ -377,7 +377,7 @@ Reducing the time taken to complete hospital audits from weeks to a few days
 </div>
 </div>
                                             
-<div id="tennis" class="ibm-col-6-2 ibm-card study transform build optimize turn industry_media">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_optimize ddn_turn ddi_media">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Media and entertainment</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/rac14265usen/RAC14265USEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/grandslam-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -391,7 +391,7 @@ Improving app quality and increasing productivity by 10 percent with visual mode
 </div>
 </div>
                                             
-<div id="ibm" class="ibm-col-6-2 ibm-card study transform extend manage support oversee industry_technology">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_extend ddn_manage ddn_support ddn_oversee ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/enc03011usen/ENC03011USEN.PDF">IBM</a></h3>
@@ -404,7 +404,7 @@ Enabling flexible access to enterprise data and applications
 </div>
 </div>                                           
                                             
-<div id="lotte" class="ibm-col-6-2 ibm-card study transform build optimize extend manage industry_banking">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_optimize ddn_extend ddn_manage ddi_banking">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Banking</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14400usen/WSC14400USEN.PDF">Lotte Credit Card</a></h3>
@@ -417,7 +417,7 @@ Deploying one of the region&apos;s most advanced financial mobile applications
 </div>
 </div>
 
-<div id="openlogix" class="ibm-col-6-2 ibm-card study transform build extend industry_technology">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_extend ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14463usen/WSC14463USEN.PDF">OpenLogix</a></h3>
@@ -430,7 +430,7 @@ Developing enterprise mobile applications in half the time with simplified codin
 </div>
 </div>
                                             
-<div id="phs" class="ibm-col-6-2 ibm-card study transform extend manage support industry_energy">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_extend ddn_manage ddn_support ddi_energy">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Energy and utilities</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/enc03009usen/ENC03009USEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/phs-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -445,7 +445,7 @@ Streamlining operations while significantly decreasing unnecessary costs
 </div>
 
 
-<div id="red_funnel" class="ibm-col-6-2 ibm-card study transform optimize turn extend industry_travel">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_optimize ddn_turn ddn_extend ddi_travel">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Travel and transportation</p>
 <h3><a target="_blank" href="http://www-935.ibm.com/services/uk/cio/pdf/final_red_funnel_lic14001-gben-00.pdf">Red Funnel</a></h3>
@@ -458,7 +458,7 @@ Improving customer service by better predicting actual arrival and departure tim
 </div>
 </div>
                                             
-<div id="rohde" class="ibm-col-6-2 ibm-card study transform build extend manage industry_technology">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_extend ddn_manage ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14464usen/WSC14464USEN.PDF">Rohde &amp; Schwarz</a></h3>
@@ -471,7 +471,7 @@ Cutting the cost of multiplatform development by 60 percent while supporting fiv
 </div>
 </div>
                                             
-<div id="tbc" class="ibm-col-6-2 ibm-card video study transform build optimize extend industry_automotive">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_build ddn_optimize ddn_extend ddi_automotive">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Automotive</p>
 <a href="http://www.youtube.com/watch?v=KSIQFSy_4uU" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/tbc-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -486,7 +486,7 @@ Reducing time-to-market for mobile applications &#8212; from ideas to platform i
 </div>
 </div>
                                             
-<div id="tube_lines" class="ibm-col-6-2 ibm-card study transform turn extend manage support industry_construction">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_turn ddn_extend ddn_manage ddn_support ddi_construction">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Construction</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/tic14232gben/TIC14232GBEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/tubelines-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -500,7 +500,7 @@ Delivering efficient job scheduling and reducing duplication with realtime acces
 </div>
 </div>
 											
-<div id="vcc" class="ibm-col-6-2 ibm-card study transform extend manage support industry_construction">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_extend ddn_manage ddn_support ddi_construction">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Construction</p>
 <a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/ivc03007usen/IVC03007USEN.PDF" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/vcc-3x2.jpg" alt="" class="ibm-resize" /></a>
@@ -514,7 +514,7 @@ Reducing processing time for inbound customer service inquiries by 30 to 50 perc
 </div>
 </div>
                                             
-<div id="wimbledon" class="ibm-col-6-2 ibm-card video study transform build optimize turn extend industry_media">
+<div class="ibm-col-6-2 ibm-card video study ddn_transform ddn_build ddn_optimize ddn_turn ddn_extend ddi_media">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Media and entertainment</p>
 <a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=-tQ_mJwVSjI" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/wimbledon-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -529,7 +529,7 @@ Bringing spectators an enriched experience with realtime updates and information
 </div>
 </div>
 
-<div id="zions" class="ibm-col-6-2 ibm-card video transform optimize turn industry_banking">
+<div class="ibm-col-6-2 ibm-card video ddn_transform ddn_optimize ddn_turn ddi_banking">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Banking</p>
 <a href="http://www.youtube.com/watch?v=_IufRmRIebA" rel="width=560&amp;height=315" class="ibm-media ibm-no-margin crop-small"><img src="//1.www.s81c.com/common/v17e/mobilefirst/i/case-studies/cards/zions-3x2.jpg" alt="" class="ibm-resize" /><span class="ibm-video-play"></span></a>
@@ -543,7 +543,7 @@ Creating user interfaces — for both Web and mobile — that are easier to use,
 </div>
 </div>
 											
-<div id="zsl" class="ibm-col-6-2 ibm-card study transform build extend industry_technology">
+<div class="ibm-col-6-2 ibm-card study ddn_transform ddn_build ddn_extend ddi_technology">
 <div class="ibm-inner-margin">
 <p class="ibm-category">Technology</p>
 <h3><a target="_blank" href="http://public.dhe.ibm.com/common/ssi/ecm/en/wsc14461usen/WSC14461USEN.PDF">ZSL</a></h3>

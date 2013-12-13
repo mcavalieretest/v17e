@@ -31,9 +31,9 @@
 			,gutter: 0
 			,itemSelector: '.ibm-card.visible'
 			,transitionDuration: mDeviceCheck ? 0 : '0.4s'
-		});		
+		});
 		
-		$('.ibm_cci-sort').on('change', 'select', function (e) {
+		$('.ibm-dropdown-sort').on('change', 'select', function (e) {
 			filter = e.currentTarget.value;
 			if (filter == '') {
 				$masonryItems.show().addClass('visible');
