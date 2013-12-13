@@ -1,8 +1,8 @@
 // button styles begin ==============================================
 
-.ibm-button-link,
-.ibm-button-link-alternate {
-	display: inline;
+[class*="ibm-col-"] .ibm-button-link,
+[class*="ibm-col-"] .ibm-button-link-alternate {
+	padding: 0;
 }
 
 a.ibm-btn-pri,
