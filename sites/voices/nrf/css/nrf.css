@@ -31,7 +31,7 @@ font-weight:bold;
 font-style:normal;
 }
 
-*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; outline:1px solid rgb(0,255,0);}
 
 html, body { font-size: 100%;}
 body {background: white;color: #222222;padding: 0;margin: 0;font-family: HelvLightIBM;font-weight: normal;font-style: normal;line-height: 1;position: relative;cursor: default; float:left;}
