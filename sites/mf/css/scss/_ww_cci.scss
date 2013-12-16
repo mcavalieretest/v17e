@@ -20,7 +20,7 @@
 }
 
 .ibm_cci-background .ibm-band {
-	min-height: inherit;
+	min-height: 0;
 	padding-top: 40px;
 }
 
@@ -150,6 +150,7 @@ h1.ibm-brand strong {
 
 #ibm-com #ibm-top .section-header.ibm_cci-small {
 	@include px-to-rem(font-size,24px);
+	@include px-to-rem(line-height,48.6px);
 	padding-bottom: 0;
 }
 
@@ -173,7 +174,7 @@ h1.ibm-brand strong {
 	background-color: #FFF;
 //	min-height: 200px;
 	margin-bottom: 20px;
-	float: left;
+	float: none;
 }
 
 .ibm-card * {
