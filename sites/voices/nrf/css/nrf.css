@@ -1,4 +1,12 @@
 
+
+@font-face {
+font-family:BodoniIBM;
+src:url(../font/BodoniBertholdBQ-Italic.otf);
+font-weight:normal;
+font-style:italic;
+}
+
 @font-face {
 font-family:HelvLightIBM;
 src:url(//1.www.s81c.com/common/fonts/helvneueforibm-light-webfont.eot);
@@ -93,18 +101,19 @@ img {display: inline-block;vertical-align: middle;}
 #row span.block187 {font-size: 24px;left:153px;padding:5px 0 0 0;width:34px;height:34px;}
 #row p.nobg {background-color: #ef4e37;zoom:1;filter: alpha(opacity=100);opacity: 1;}
 
-
-#row .col_384_alternate, #row .col_187_alternate {display:table; vertical-align: middle;}
-#row .col_384_alternate p.desc384, #row .col_187_alternate p.desc187 {display:table-cell; vertical-align: middle; color:#000;}
-
+#row .col_384_alternate p.desc384, #row .col_187_alternate p.desc187 {padding:0 15px; color:#000; overflow:hidden;}
 #row .col_384_alternate {background:#fff url("../img/quo_bg_384.png");}
 #row .col_187_alternate {background:#fff url("../img/quo_bg_187.png");}
+#row .col_384_alternate p.desc384 {font:italic 30px/35px "BodoniIBM"; margin-top:65px; min-height:250px;}
+#row .col_187_alternate p.desc187 {font:italic 14px/21px "BodoniIBM"; margin-top:35px; min-height:90px;}
 
-#row .col_384_alternate p.desc384 {font:italic 30px/35px "serif";}
-#row .col_187_alternate p.desc187 {font:italic 14px/21px "serif";}
+#row ul.tw_iconblock {list-style:none; margin:0px; float:left;}
+#row h6.tw_name, #row h6.tw_handle { float: right; margin:0 15px 0 0;; padding:0; width:275px; text-align: right; padding:2px 0;}
+#row img.tw_icon {float:right; margin-right: 15px;}
 
 
 
+ 
 
 
 
