@@ -73,8 +73,19 @@ IBMMobileFirst.Tracking = function() { this.init(); };
 	
 			$('.roleSelection ul li a').on("click", function(){
 				var selfa = $(this);
+				var moduleIndex = $( ".roleSelection" ).index( selfa.parent().parent().parent().parent().parent() ) + 1;
+				var evgroup = 'ottawa',
+					ev = 'mod' + moduleIndex,
+					evaction = 'select',
+				 	evname = 'ott_'+ ev +'_'+ evaction +'_' + $(this).attr('name');
+				if(currentRole !='/') {			
+				}else{
+					evaction = 'switch';
+				}
+				IBMMobileFirst.tracking.trackCustomEvent(evgroup, ev, evaction, evname);
+				
 				$.address.value($(this).attr('name'));  
-
+				
 				setTimeout(function(){
 					$('html, body').animate({
 							scrollTop: selfa.parent().parent().parent().parent().parent().next('.role-module').offset().top -100
@@ -126,8 +137,6 @@ IBMMobileFirst.Tracking = function() { this.init(); };
 								$('#roleModule' + x).parent().parent().parent().prev('.roleSelection').addClass('roleExpanded');
 							}
 						}
-						
-
 						
 					}else{
 						self.roleModules.hide();
@@ -216,7 +225,16 @@ IBMMobileFirst.Tracking = function() { this.init(); };
 						touchEnabled: true,
 						swipeThreshold: 50,
 						oneToOneTouch: false,
-						adaptiveHeight: false
+						adaptiveHeight: false,
+						onSlideAfter:  function($slideElement, oldIndex, newIndex){		
+							var el = $slideElement,
+							 	evgroup = el.data('evgroup'),
+								ev = el.data('ev'),
+								evaction = el.data('evaction'),
+							 	evname = el.data('evname');
+							
+							IBMMobileFirst.tracking.trackCustomEvent(evgroup, ev, evaction, evname);
+						}
 					});
 			});
 		

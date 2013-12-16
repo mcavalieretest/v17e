@@ -158,12 +158,19 @@ p.quote{
 	font-style:italic;
 }
 
-ul li:before, .ibm-bullet:before{
+.ibm-col-6-4 ul li, .role-container .col2 ul li{
+	color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 0 0 1.4em;
+}
+
+.ibm-col-6-4 ul li:before, .ibm-col-6-4 .ibm-bullet:before, .role-container .col2 ul li:before, .role-container .col2 .ibm-bullet:before{
 	content:'•';
 	color: #666;
 }
 
-ul li:hover, .ibm-bullet:hover{
+.ibm-col-6-4 ul li:hover:before, .ibm-col-6-4 .ibm-bullet:hover:before, .role-container .col2 ul li:hover:before, .role-container .col2 .ibm-bullet:hover:before{
 	content:'•';
 	color: #666;
 }
@@ -212,7 +219,7 @@ ul li:hover, .ibm-bullet:hover{
     padding-left: 25px;
     position: relative;
     text-decoration: none;
-    top: -27px;
+    top: -22px;
 }
 
 #ibm-content .intro .ibm-col-1-1 h2 {

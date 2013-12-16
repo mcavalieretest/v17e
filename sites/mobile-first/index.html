@@ -38,6 +38,25 @@
 	<script type='text/javascript' src='js/picturefill.js'></script>
 	<script type='text/javascript' src='js/waypoints.min.js'></script>
 	<script type='text/javascript' src='js/ww_cci-casestudies.js'></script>
+	
+	<!-- GRID overlay files - can be removed for production -->
+	<link href="grid/grid-overlay.css" type="text/css" rel="stylesheet" />
+	<script src="grid/grid-overlay.js"></script>
+
+	<script type="text/javascript">
+		jQuery(function($){
+			$(function() {
+			    $(document).ready(function() {
+					definegrid();
+					setgridonload();
+			    });    
+			    $(window).resize(function() {
+					definegrid();
+			        setgridonresize();
+			    });
+		    });
+		});
+	</script>
 
 </head>
 
@@ -133,12 +152,11 @@
 					<div id="ibm-content-main">
 
 	<!--! COLUMN VARIATIONS START -->
-	
 						<div class="ibm-container ibm-no-rule intro">
 							<div class="ibm-container-body">
 								<div class="ibm-columns">
 									<div class="ibm-col-1-1">
-										<div class="waypoint" data-evgroup="ottawa" data-ev="intro" data-evaction="scroll" data-evname="ott_intro_scroll_beg"></div>
+										<div class="waypoint" data-evgroup="ottawa" data-ev="intro" data-evaction="scroll" data-evname="ott_intro_scroll_beg"></div>	
 										<a href="http://www.ibm.com/mobilefirst/us/en/see-it-in-action/" class="backLink" data-ev="" data-evaction="" data-evname="">Case Studies Index</a>
 										<h2><strong>The Ottawa Hospital: </strong><br/>Transforming healthcare with mobile</h2>
 										<p>Several years ago, The Ottawa Hospital determined that its traditional workflow process could not keep pace with today's medical advances and increasingly complex health conditions.
@@ -149,7 +167,7 @@
 								</div>
 							</div>
 						</div>
-					
+						
 					
 
 
@@ -180,22 +198,25 @@
 								</div>
 							</div>		
 						</div>
-						<div class="waypoint" data-evgroup="ottawa" data-ev="mod1" data-evaction="scroll" data-evname="ott_mod1_scroll_beg"></div>
+						<div class="waypoint" data-evgroup="ottawa" data-ev="intro" data-evaction="scroll" data-evname="ott_intro_scroll_end"></div>
+						
+						
 						<div class="full-container role-select-panel">
 							<div class="ibm-container-body">
 								<div class="ibm-columns">
 									<div class="ibm-col-1-1">
 										<div class="ibm-container ibm-no-rule">
+										<div class="waypoint" data-evgroup="ottawa" data-ev="mod1" data-evaction="scroll" data-evname="ott_mod1_scroll_beg"></div>
 										<h3 class="roleHeading">To learn what mobile can do for your organization, select your role here.</h3>
 									
 										<div class="ibm-role-link">
-											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="select" data-evname="ott_mod1_select_marketer" class="ibm-blk-btn roleSelector marketers" href="javascript:void(0)" name="Marketers">CMO<span class="desc"><span class="specialSize">/</span><br/>Marketer</span></a>
+											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_marketer" class="ibm-blk-btn roleSelector marketers" href="javascript:void(0)" name="Marketers">CMO<span class="desc"><span class="specialSize">/</span><br/>Marketer</span></a>
 										</div>	
 										<div class="ibm-role-link">
-											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="select" data-evname="ott_mod1_select_it" class="ibm-blk-btn roleSelector it" href="javascript:void(0)" name="IT">CIO<span class="desc"><span class="specialSize">/</span><br/>IT Manager</span></a>
+											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_it" class="ibm-blk-btn roleSelector it" href="javascript:void(0)" name="IT">CIO<span class="desc"><span class="specialSize">/</span><br/>IT Manager</span></a>
 										</div>
 										<div class="ibm-role-link last">
-											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="select" data-evname="ott_mod1_select_operations" class="ibm-blk-btn roleSelector operations" href="javascript:void(0)" name="Operations">COO<span class="desc"><span class="specialSize">/</span><br/>LOB</span></a>	
+											<a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_operations" class="ibm-blk-btn roleSelector operations" href="javascript:void(0)" name="Operations">COO<span class="desc"><span class="specialSize">/</span><br/>LOB</span></a>	
 										</div>	
 										</div>								
 									</div>
@@ -207,15 +228,14 @@
 							<div class="ibm-columns">
 								<div class="ibm-col-1-1">
 									<ul>
-										<li><a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_marketer" class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_it" class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod1" data-evaction="switch" data-evname="ott_mod1_switch_operations" class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
+										<li><a class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
+										<li><a class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
+										<li><a class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
 									</ul>
 									<p class="label">Change role</p>
 								</div>
 							</div>
 						</div>
-					
 						<div class="full-container role-module-selected Marketers">
 							<div class="ibm-container-body">
 								<div class="ibm-columns">
@@ -263,7 +283,7 @@
 								</div>
 							</div>
 						</div-->
-					<div class="waypoint" data-evgroup="ottawa" data-ev="intro" data-evaction="scroll" data-evname="ott_intro_scroll_end"></div>
+					
 					
 						<div class="full-container situation">			
 							<div class="ibm-container-body">
@@ -336,31 +356,27 @@
 										<p>To address these workflow roadblocks and support the hospital's goal of providing a better experience for every patient, Potter envisioned a mobile approach for managing and automating the clinical process.
 										</p>
 									
-										<!--div class="videoContent">
-											<iframe width="auto" height="376" frameborder="0" src="http://www.youtube.com/embed/imvFHEl3Af4?controls=1&amp;enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;wmode=opaque" type="text/html" class="youtube-player"></iframe>
-										</div>
-										<p class="videoCaption">Introducing BPM into healthcare</p-->
-										<!-- Pull quote normal, with source -->
+										
+										
+										
 										<div class="ibm-pull-quote">
 										 	<blockquote>
 												<span class="ibm-pullquote-open">&#8220;</span><p>Delivering care to the bedside and being able to retrieve information in real-time wherever a physician happens to be are two elements that led us towards adopting mobile as aggressively as we did.<span class="ibm-pullquote-close">&#8221;</span></p>
 											</blockquote>
 										 	<p class="ibm-pullquote-source">&mdash;Dale Potter, Senior Vice President–Strategy and Transformation, The Ottawa Hospital
 											</p>
-										</div>						
+										</div>
+												
+										<!-- talking heads -->
+										<div class="videoContent">
+											<iframe width="auto" height="376" frameborder="0" src="http://www.youtube.com/embed/imvFHEl3Af4?controls=1&amp;enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;wmode=opaque" type="text/html" class="youtube-player"></iframe>
+										</div>
+										<p class="videoCaption">Introducing BPM into healthcare</p>
+										<!-- Pull quote normal, with source -->
+														
 									</div>
 												
 									<div class="ibm-col-6-2">
-										<!--span class="" data-picture data-alt="">
-											<span data-src="i/ottawa/challenge-right-graphic.png"></span>
-											<span data-src="i/ottawa/challenge-right-graphic.png" data-media="(min-width: 641px)"></span>
-											<span data-src="i/ottawa/challenge-right-graphic_x2.png" data-media="all and (min-width: 768px) and (-webkit-min-device-pixel-ratio:2), all and (min-width: 768px) and (min--moz-device-pixel-ratio:2), all and (min-width: 768px) and (-o-min-device-pixel-ratio:2/1), all and (min-width: 768px)and (min-device-pixel-ratio:2), all and (min-width: 768px) and (min-resolution:192dpi), all and (min-width: 768px) and (min-resolution:2dppx)"></span>
-											<span data-src="i/ottawa/challenge-right-graphic-mobile.png"></span>
-	                						<span data-src="i/ottawa/challenge-right-graphic-mobile_x2.png" data-media="(max-width: 640px) and (-webkit-min-device-pixel-ratio: 2.0), (max-device-width: 640px) and (min-resolution: 192dpi)"></span>
-											<noscript>
-												<img src="i/ottawa/challenge-right-graphic.png" alt="">
-											</noscript-->
-										</span>
 										<img class="responsive" src="i/ottawa/challenge-right-graphic.png" />
 									</div>				
 								</div>				
@@ -371,11 +387,12 @@
 							<div class="ibm-columns">
 								<div class="ibm-col-1-1">
 									<ul>
-										<li><a data-evgroup="ottawa" data-ev="mod2" data-evaction="switch" data-evname="ott_mod2_switch_marketer" class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod2" data-evaction="switch" data-evname="ott_mod2_switch_it" class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod2" data-evaction="switch" data-evname="ott_mod1_switch_operations" class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
+										<li><a class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
+										<li><a class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
+										<li><a class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
 									</ul>
 									<p class="label">Change role</p>
+									<div class="waypoint" data-evgroup="ottawa" data-ev="mod2" data-evaction="scroll" data-evname="ott_mod2_scroll_beg"></div>
 								</div>
 							</div>
 						</div>
@@ -717,20 +734,20 @@
 										  <a href="javascript:void(0)">Transportation</a>
 										</div-->
 										<div class="industrySlider">
-										  	<div class="slide">
+										  	<div class="slide" data-evgroup="ottawa" data-ev="ind1" data-evaction="click" data-evname="ott_ind1_select_show">
 												<img src="i/ottawa/Manufacturing.png" width="298" height="192" />
 												<h4>The manufacturing model</h4>
 													<p>“Lean manufacturing” is an industry concept that aims for value creation in every dollar spent in the manufacturing process. Being familiar with this construct, Potter recognized inefficiencies in wasted physician time: high-value staff performing low-value tasks, such as transcribing information. Engagement in manual, low-value tasks also prevented physicians from accessing real-time patient information.
 													</p>
 											</div>
-										  	<div class="slide">	
+										  	<div class="slide" data-evgroup="ottawa" data-ev="ind2" data-evaction="click" data-evname="ott_ind2_select_show">	
 												<img src="i/ottawa/Banking.png" width="298" height="192" />
 												<h4>The banking model</h4>
 													<p>In banking, an online transaction passes through as many as 15 systems before it reaches a customer. A similar process was happening in the hospital with resource assignment requests. Following the bank’s example, Potter introduced a system that sent physicians’ resource requests directly to the right specialist group—replacing an inefficient, error-prone process using phones and faxes.
 													</p>
 											
 										 	</div>
-										  	<div class="slide">	
+										  	<div class="slide" data-evgroup="ottawa" data-ev="ind3" data-evaction="click" data-evname="ott_ind3_select_show">	
 												<img src="i/ottawa/Transportation.png" width="298" height="192" />
 												<h4>The transportation model</h4>
 													<p>Looking outside the healthcare industry for process management success, Potter learned from a global transportation company whose key priorities for an airport ground-control solution were flow, security and safety. The hospital's senior management also focused on those factors to develop its process model, improving accuracy in discharge scheduling, patient data security and error reduction.
@@ -825,10 +842,10 @@
 										<p>The “Circle of Care” is a simple visual interface that gives caregivers the ability to view and manage the Clinical Mobile Application. It’s designed to give care team members an understanding in real time of which caregivers and which services are involved in the patient’s care. It also facilitates communication and collaboration among the caregivers.
 										</p>
 										
-										<!--div class="videoContent">
+										<div class="videoContent">
 											<iframe width="auto" height="376" frameborder="0" src="http://www.youtube.com/embed/imvFHEl3Af4?controls=1&amp;enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;color=white&amp;wmode=opaque" type="text/html" class="youtube-player"></iframe>
 										</div>
-										<p class="videoCaption">Watch how mobility brought the Circle of Care to life</p-->
+										<p class="videoCaption">Watch how mobility brought the Circle of Care to life</p>
 											
 										<h4>A Multi-Disciplinary Activity Plan</h4>
 										<p>A Multi-Disciplinary Activity Plan gives care providers the ability to assign tasks, monitor activities and offer a complete view of the care process for each patient. It also saves time by allowing physicians to enter electronic orders from anywhere, at any time.</p>
@@ -851,23 +868,25 @@
 							</div>
 			            </div>
 						<!-- end solution module -->
+						<div class="waypoint" data-evgroup="ottawa" data-ev="solution" data-evaction="scroll" data-evname="ott_solution_scroll_end"></div>
 				
 						<div class="full-container roleSelection ibm-no-rule">
 							<div class="ibm-columns">
 								<div class="ibm-col-1-1">
 									<ul>
-										<li><a data-evgroup="ottawa" data-ev="mod3" data-evaction="switch" data-evname="ott_mod3_switch_marketer" class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod3" data-evaction="switch" data-evname="ott_mod3_switch_it"class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod3" data-evaction="switch" data-evname="ott_mod3_switch_operations"class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
+										<li><a class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
+										<li><a class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
+										<li><a class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
 									</ul>
 									<p class="label">Change role</p>
+									<div class="waypoint" data-evgroup="ottawa" data-ev="mod3" data-evaction="scroll" data-evname="ott_mod3_scroll_beg"></div>
 								</div>
 							</div>
-						</div>
+						</div>	
 						<div class="full-container role-module">
 							<div class="ibm-container-body">
 								<div class="ibm-columns">
-									<div class="ibm-col-1-1" id="roleModule2">
+									<div class="ibm-col-1-1" id="roleModule2">					
 									</div>
 								</div>
 							</div>
@@ -938,11 +957,12 @@
 							<div class="ibm-columns">
 								<div class="ibm-col-1-1">
 									<ul>
-										<li><a data-evgroup="ottawa" data-ev="mod4" data-evaction="switch" data-evname="ott_mod4_switch_marketer" class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod4" data-evaction="switch" data-evname="ott_mod4_switch_it" class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod4" data-evaction="switch" data-evname="ott_mod4_switch_operations" class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
+										<li><a class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
+										<li><a class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
+										<li><a class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
 									</ul>
 									<p class="label">Change role</p>
+									<div class="waypoint" data-evgroup="ottawa" data-ev="mod4" data-evaction="scroll" data-evname="ott_mod4_scroll_beg"></div>
 								</div>
 							</div>
 						</div>
@@ -974,18 +994,19 @@
 							<div class="ibm-columns">
 								<div class="ibm-col-1-1">
 									<ul>
-										<li><a data-evgroup="ottawa" data-ev="mod5" data-evaction="switch" data-evname="ott_mod5_switch_marketer" class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod5" data-evaction="switch" data-evname="ott_mod5_switch_it" class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
-										<li><a data-evgroup="ottawa" data-ev="mod5" data-evaction="switch" data-evname="ott_mod5_switch_operations" class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
+										<li><a class="Marketers active" href="javascript:void(0)" name="Marketers">CMO</a></li>
+										<li><a class="IT" href="javascript:void(0)" name="IT">CIO</a></li>
+										<li><a class="Operations" href="javascript:void(0)" name="Operations">COO</a></li>
 									</ul>
 									<p class="label">Change role</p>
+									<div class="waypoint" data-evgroup="ottawa" data-ev="mod5" data-evaction="scroll" data-evname="ott_mod5_scroll_beg"></div>
 								</div>
 							</div>
-						</div>
+						</div>	
 						<div class="full-container role-module">
 							<div class="ibm-container-body">
 								<div class="ibm-columns">
-									<div class="ibm-col-1-1" id="roleModule4">
+									<div class="ibm-col-1-1" id="roleModule4">				
 									</div>
 								</div>
 							</div>
@@ -1065,17 +1086,18 @@
 												<p class="bio">Brickell leads the IBM software team in Ontario, Canada, to help transform the publicly funded provincial healthcare system. The team has had success in world leading technology wins in province wide Health Information Access Layer, Social Business for Patient Care and Health Analytics to increase hospital operations.
 												</p>
 										  </div>
-										 <!--div class="slide">
-										  		<img src=""><h4>Name of IBM Rep</h4>
-												<p class="title">Position IBM<br/>IBM</p>
+										 <div class="slide">
+										  		<img src="i/ottawa/who_valerie.png"><h4>Valerie Gamache-O'Leary</h4>
+												<p class="title">Chief Information Officer, the Ottawa Hospital</p>
 												<div class="ibm-share-this ibm-alternate-medium ibm-no-rule">
 														<ul class="sa-expert-social-icon sa-expert-header-item-2">
-														<li><a title="Linked In" rel="linkedin" target="_blank" class="ibm-share-linkedin" href="http://www.linkedin.com/groups/IBM-big-data-4014567?trk=myg_ugrp_ovr" data-homepers-ind="undefined">Linked In</a></li>
-														<li><a title="Twitter" rel="twitter" target="_blank" class="ibm-share-twitter" href="http://www.twitter.com/ibmmobilefirst" data-homepers-ind="undefined">Twitter</a></li>
+														<li><a title="Linked In" rel="linkedin" target="_blank" class="ibm-share-linkedin" href="http://ca.linkedin.com/pub/valerie-gamache-o-leary/3/886/b46" data-homepers-ind="undefined">Linked In</a></li>
+														<!--li><a title="Twitter" rel="twitter" target="_blank" class="ibm-share-twitter" href="http://www.twitter.com/ibmmobilefirst" data-homepers-ind="undefined">Twitter</a></li-->
 														</ul>
 												</div>
-												<p>[background] Ut hicilis minullor aspera conse volorro vitassim voluptatem qui consequi re moluptione volore consed ut ulpa sitas sequam...</p>
-										  </div-->
+												<p class="bio">Gamache-O’Leary is a Business and Information Systems Executive with
+a track record of delivering effective business solutions that leverage state-of-the-art technology in the Healthcare IT space. Val also has more than 10 years experience leading large, complex Regional and Provincial Healthcare IT projects.</p>
+										  </div>
 									</div>	
 								</div>
 							</div>
@@ -1119,7 +1141,6 @@
 					</div>
 				</div>		
 				<!-- end of product module -->
-			
 			
 			
 				<!-- gallery slide module -->
@@ -1218,6 +1239,7 @@
 <script>
 jQuery(function($){
 	$(function() {
+		
         var IBMMobileFirstSite = new IBMMobileFirst.Site();
         var IBMMobileFirstTimeline = new IBMMobileFirst.Timeline();
     });
