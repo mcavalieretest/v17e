@@ -40,6 +40,7 @@
 			}
 			$sortable.masonry('reloadItems');
 			$sortable.masonry();
+			{ibmStats.event({'ibmEV' : 'dropdown', 'ibmEvAction' : this.getAttribute('id'), 'ibmEvTarget' : filter});return true;}
 		});
 	});
 })(jQuery, window, document);
