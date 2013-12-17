@@ -144,7 +144,8 @@ h1.ibm-brand strong {
 	@include text-shadow($emboss-dark);
 }
 
-.ibm-alternate-background h2 {
+.ibm-alternate-background h2,
+.ibm-alternate-background p {
 	color: #FFF;
 }
 
