@@ -138,10 +138,11 @@ img {display: inline-block;vertical-align: middle;}
 #row span.numpos_orange {margin: 0;color: #fff;position: absolute;top: 0; left: 0; width:88px; height:88px;}
 
 #row span.numpos_orange_bottom, 
-#row span.numpos_grey_bottom  {margin: 0;color: #fff;position: absolute;width:88px; height:88px;}
+#row span.numpos_grey_bottom, #row span.numpos_grey_bottom_right  {margin: 0;color: #fff;position: absolute;width:88px; height:88px;}
 #row span.numpos_orange_bottom { top: 0; left: 99px;}
 #row span.numpos_grey_bottom { bottom:0; left: 0;}
-#row span.numpos_grey, #row span.numpos_grey_bottom {background-color: #cecece;} 
+#row span.numpos_grey_bottom_right {bottom:0; left:99px;} 
+#row span.numpos_grey, #row span.numpos_grey_bottom, #row span.numpos_grey_bottom_right {background-color: #cecece;} 
 #row span.numpos_orange, #row span.numpos_orange_bottom {background-color: #ef4e37;} 
 
 
