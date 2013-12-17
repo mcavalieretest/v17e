@@ -31,7 +31,7 @@ font-weight:bold;
 font-style:normal;
 }
 
-*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; outline: 1px solid rgb(0,255,0)}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; /*outline: 1px solid rgb(0,255,0);*/}
 
 html, body { font-size: 100%;}
 body {background: white;color: #222222;padding: 0;margin: 0;font-family: HelvLightIBM;font-weight: normal;font-style: normal;line-height: 1;position: relative;cursor: default; float:left;}
@@ -71,6 +71,7 @@ img {display: inline-block;vertical-align: middle;}
 .no-bottom{margin-bottom:0! important;} 
 .columns.no-right, .row_384.no-right{margin-right:0! important;} 
 .column, .columns {position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;}
+.column, .columns_grey {background-color: #cecece;}
 .columns.col_187 {float:left;width:187px;height:187px;margin-right: 10px;max-width: 187px;}
 .columns.col_384 {float:left;width:384px;height:384px;max-width: 384px;}
 .columns.col_778 {width:778px;height:778px;max-width: 778px;}
@@ -132,9 +133,16 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_187_alternate h6.tw_name, 
 #row .col_187_alternate h6.tw_handle { font-size: 9px; margin:0 5px 0 0; width:125px; padding:0;}
 
+#row .whitebg {background-color: rgba(255, 255, 255, 1);}
+#row span.numpos_grey, 
+#row span.numpos_orange {margin: 0;color: #fff;position: absolute;top: 0; left: 0; width:88px; height:88px;}
 
-
- 
+#row span.numpos_orange_bottom, 
+#row span.numpos_grey_bottom  {margin: 0;color: #fff;position: absolute;width:88px; height:88px;}
+#row span.numpos_orange_bottom { top: 0; left: 99px;}
+#row span.numpos_grey_bottom { bottom:0; left: 0;}
+#row span.numpos_grey, #row span.numpos_grey_bottom {background-color: #cecece;} 
+#row span.numpos_orange, #row span.numpos_orange_bottom {background-color: #ef4e37;} 
 
 
 
