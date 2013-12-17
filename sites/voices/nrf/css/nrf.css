@@ -115,6 +115,13 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_778_alternate img.tw_icon,  
 #row .col_187_alternate img.tw_icon {float:right;}
 
+#row .col_384_alternate img.bird_icon {position:absolute;}
+#row .col_778_alternate img.bird_icon {position:absolute;}  
+#row .col_187_alternate img.bird_icon {position:absolute;}
+
+#row .col_384_alternate img.bird_icon, #row .col_187_alternate img.bird_icon {left:15px;}
+#row .col_778_alternate img.bird_icon {left:40px;}  
+
 #row .col_384_alternate ul.tw_iconblock,
 #row .col_778_alternate ul.tw_iconblock, 
 #row .col_187_alternate ul.tw_iconblock {list-style:none; float:left;}
@@ -131,11 +138,12 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_187_alternate h6.tw_handle {float: right; text-align:right;}
 
 #row .col_384_alternate h6.tw_name, 
-#row .col_384_alternate h6.tw_handle { font-size: 12px;  margin:0 10px 0 0;  width:240px; padding:2px 0;}
+#row .col_384_alternate h6.tw_handle { font-size: 12px;  margin:0 10px 0 0;  width:190px; padding:2px 0;}
 #row .col_778_alternate h6.tw_name, 
-#row .col_778_alternate h6.tw_handle { font-size: 24px; margin:0 10px 0 0; width:635px; padding:2px 0;}
+#row .col_778_alternate h6.tw_handle { font-size: 24px; margin:0 10px 0 0; width:565px; padding:2px 0;}
 #row .col_187_alternate h6.tw_name, 
 #row .col_187_alternate h6.tw_handle { font-size: 9px; margin:0 5px 0 0; width:105px; padding:0;}
+
 
 #row .whitebg {background-color: rgba(255, 255, 255, 1);}
 #row span.numpos_grey, 
