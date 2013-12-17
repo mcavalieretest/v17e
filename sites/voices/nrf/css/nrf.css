@@ -81,7 +81,7 @@ img {display: inline-block;vertical-align: middle;}
 
 #row .desc {float:left;margin:0;/*background-color:rgba(255,0,0,0.7);zoom: 1;filter: alpha(opacity=70);opacity: 0.7;*/position:absolute;bottom:0;text-align: left;
 	background:rgb(0,0,0);
-    background:rgba(0,0,0,.5);
+    background:rgba(0,0,0,.45);
     *background:transparent;
     *filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#BF000000,endColorStr=#BF000000);
     *-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000)";
