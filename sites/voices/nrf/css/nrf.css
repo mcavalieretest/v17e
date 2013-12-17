@@ -144,8 +144,7 @@ img {display: inline-block;vertical-align: middle;}
 #row span.numpos_grey_bottom_right {bottom:0; left:99px;} 
 #row span.numpos_grey, #row span.numpos_grey_bottom, #row span.numpos_grey_bottom_right {background-color: #cecece;} 
 #row span.numpos_orange, #row span.numpos_orange_bottom {background-color: #ef4e37;} 
-
-
+#row .logo {margin:0 0 12px 0; outline:none; border:0;} 
 
 
 
