@@ -42,7 +42,9 @@
 			$sortable.masonry();
 			{ibmStats.event({'ibmEV' : 'dropdown', 'ibmEvAction' : this.getAttribute('id'), 'ibmEvTarget' : filter});return true;}
 		});
-		
+		$(window).on('resize', function () {
+			$sortable.masonry();
+		}).trigger('resize');
 		// make sure featured solutions cards are shown on page load
 		$('#dd_solutions').trigger('change');
 	});
