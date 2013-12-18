@@ -56,6 +56,11 @@
 //	background-size: cover;
 }
 
+#ibm-leadspace-head.ibm-solutions-background {
+	background: #02243D url(#{$imagePath}/mobilefirst/i/solutions/lead-solutions.jpg) no-repeat 100% 100%;
+//	background-size: cover;
+}
+
 /*
 .no-backgroundsize #ibm-leadspace-head.ibm-alternate-background {
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg', sizingMethod='scale');
