@@ -14,6 +14,7 @@
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
+#ibm-top .ibm-has-secondary-nav + #ibm-pcon {margin-top: 0;}
 
 .ibm_cci-background {
 	background-color: #F5F5F5;
@@ -33,6 +34,11 @@
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
 	border-top: 1px solid $k01;
+}
+#ibm-content-nav #ibm-secondary-tabs {
+	background: none;
+	border: none;
+	padding-bottom: 5px;
 }
 
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
