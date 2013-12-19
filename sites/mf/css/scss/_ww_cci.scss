@@ -181,6 +181,16 @@ h1.ibm-brand strong {
 	line-height: 40px;
 }
 
+// will need to move this style to common css
+.ibm-dropdown-sort  .ibm-menu-list select::-ms-expand {
+	display: none;
+}
+
+// will need to update once we replace dojo script
+.dj_ie7 .ibm-view-section {
+	display: none;
+}
+
 .ibm-card {
 	@include box-shadow(0 1px 3px $k20);
 	background-color: #FFF;
@@ -226,6 +236,7 @@ h1.ibm-brand strong {
 
 
 // Card image to apply video play button
+
 .ibm-card img {
 	margin: 2px 0 0;
 	display: block;
