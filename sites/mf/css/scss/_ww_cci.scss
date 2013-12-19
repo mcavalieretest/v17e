@@ -293,6 +293,11 @@ h1.ibm-brand strong {
 }
 
 
+// using dojo check for webkit.  when we migration from dojo we'll need to update this class reference 
+.dj_webkit .ibm-card .ibm-description em {
+	font-family: "HelvLightIBM", Arial, sans-serif;
+}
+
 .ibm-card .ibm-inner-margin .ibm-featured {
 	position: relative;
 	margin: -15px -10px 5px;
