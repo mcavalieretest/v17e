@@ -292,9 +292,12 @@ h1.ibm-brand strong {
 	margin: 10px -15px;
 }
 
+.dj_safari.no-touch .ibm-card .ibm-description em {
+	font-style: normal;
+}
 
 // using dojo check for webkit.  when we migration from dojo we'll need to update this class reference 
-.dj_webkit .ibm-card .ibm-description em {
+.dj_webkit.touch .ibm-card .ibm-description em {
 	font-family: "HelvLightIBM", Arial, sans-serif;
 }
 
