@@ -46,9 +46,9 @@
 			{ibmStats.event({'ibmEV' : 'dropdown', 'ibmEvAction' : this.getAttribute('id'), 'ibmEvTarget' : filter});return true;}
 		});
 		
-		// make sure featured solutions cards are shown on page load
+		// make sure featured solutions and needs cards are shown on page load
 		$(window).bind('load', function(){
-			$('#dd_solutions').trigger('change');
+			$('#dd_solutions,#dd_needs').trigger('change');
 		});
 		
 	});
