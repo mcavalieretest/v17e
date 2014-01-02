@@ -70,10 +70,18 @@ img {display: inline-block;vertical-align: middle;}
 
 .no-bottom{margin-bottom:0! important;} 
 .columns.no-right, .row_384.no-right{margin-right:0! important;} 
-.column, .columns {position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
+
+/* TRANSITION (BEGIN) */
+
+/*.column, .columns*/ 
+
+.col_187, .col_384, .col_778{
+	position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
 	transition: width 2s, height 2s, transform 2s;
 	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
 }
+
+/* TRANSITION (END) */
 .column, .columns_grey {background-color: #cecece;}
 .columns_orange {background-color: #facac3;}
 .columns.col_187 {float:left;width:187px;height:187px;margin-right: 10px;max-width: 187px;}
