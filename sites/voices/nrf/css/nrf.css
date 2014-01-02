@@ -185,7 +185,7 @@ img {display: inline-block;vertical-align: middle;}
 
 
 /*TRANSITION (BEGIN)*/
-/*.column, .columns,
+.column, .columns,
 .col_187, .col_384, .col_778,  
 #row p.desc187, 
 #row p.desc384, 
@@ -202,7 +202,7 @@ span.block187, span.block384, span.block778 {
 
 	-webkit-animation: blur-anim 0.5s linear;
 	-webkit-animation-direction: alternate;
-	-webkit-animation-iteration-count: infinite;
+	/*-webkit-animation-iteration-count: infinite;*/
 }
 
 #row p.desc187, 
@@ -215,14 +215,14 @@ span.block187, span.block384, span.block778 {
     -webkit-transition-delay: 2s;
 }
 
-img { filter: blur(5px) brightness(0.5) ; -webkit-filter:blur(5px) brightness(0.7); }*/
+img { filter: blur(5px) brightness(0.5) ; -webkit-filter:blur(5px) brightness(0.7); }
 
 
 body
 {
 	opacity: 0;
 	transition-property: opacity;
-    transition-duration: 8s;
+    transition-duration: 15s;
 
 }
 
