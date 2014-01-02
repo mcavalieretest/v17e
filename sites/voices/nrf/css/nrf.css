@@ -208,6 +208,7 @@ span.block187, span.block384, span.block778 {
 #row .col_778_alternate p.desc187, 
 #row .col_778_alternate p.desc384, 
 #row .col_778_alternate p.desc778 {
+	color: #000;
 	-webkit-transition-property: color;
    -webkit-transition-duration: 3s;
    -webkit-transition-timing-function: ease-in;
