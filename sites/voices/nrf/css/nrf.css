@@ -189,7 +189,7 @@ body
 {
 	opacity: 0;
 	transition-property: opacity;
-    transition-duration: 3s;
+    transition-duration: 10s;
 
 }
 
