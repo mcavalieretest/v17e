@@ -186,13 +186,6 @@ img {display: inline-block;vertical-align: middle;}
 
 /*TRANSITION (BEGIN)*/
 .column, .columns,
-.col_187, .col_384, .col_778,  
-#row p.desc187, 
-#row p.desc384, 
-#row p.desc778, 
-{filter: blur(5px) brightness(0);}
-
-.column, .columns,
 .col_187, .col_384, .col_778,   {
 	opacity: 0;
 	transition-property: opacity;
