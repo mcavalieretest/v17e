@@ -192,18 +192,20 @@ span.block187, span.block384, span.block778,
 #row p.desc384, 
 #row p.desc778
 {
-	opacity: 0;
+	opacity: 1;
 }
 .column, .columns,
 .col_187, .col_384, .col_778,
 span.block187, span.block384, span.block778, 
 #row p.desc187, 
 #row p.desc384, 
-#row p.desc778
+#row p.desc778,
+img
 {
+	opacity: 0;
 	transition-property: opacity;
     transition-duration: 5s;
-    opacity: 1;
+
 }
 
 
