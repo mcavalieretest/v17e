@@ -48,9 +48,9 @@
 		
 		// make sure featured solutions and needs cards are shown on page load
 		$(window).bind('load', function(){
-			$('#dd_solutions,#dd_needs').trigger('change');
+			console.log('window load');
+			$('#dd_solutions').trigger('change');
 		});
-		
 	});
 })(jQuery, window, document);
 
