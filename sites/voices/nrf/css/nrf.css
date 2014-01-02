@@ -190,15 +190,6 @@ img {display: inline-block;vertical-align: middle;}
 span.block187, span.block384, span.block778, 
 #row p.desc187, 
 #row p.desc384, 
-#row p.desc778
-{
-	opacity: 1;
-}
-.column, .columns,
-.col_187, .col_384, .col_778,
-span.block187, span.block384, span.block778, 
-#row p.desc187, 
-#row p.desc384, 
 #row p.desc778,
 img
 {
