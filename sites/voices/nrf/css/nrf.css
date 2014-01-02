@@ -125,7 +125,7 @@ span.block187, span.block384, span.block778 {
 	-webkit-font-smoothing: antialiased !important;
     /*text-shadow: 1px 1px 1px rgba(0,0,0,0.2);*/
 }
-#row p.desc384 {font-size:30px;font-weight:bold;padding:17px 15px;max-width:384px;line-height:35px;max-height: 384px;}
+#row p.desc384 {font-size:30px;font-weight:bold;padding:17px 20px;max-width:384px;line-height:35px;max-height: 384px;}
 #row p.desc778 {font-size:46px;font-weight:bold;padding:32px 40px;max-width:778px;line-height:50px;max-height: 778px;font-family: HelvBoldIBM;}
 #row p.desc187 {font-size:16px;font-weight:bold;padding:7px 15px;max-width:187px;line-height:19px;max-height: 187px;}
 #row span.numpos {margin:0;color:#fff;background-color: #ef4e37;position:absolute;top:0;text-align: center; 
@@ -137,7 +137,7 @@ span.block187, span.block384, span.block778 {
 #row span.block187 {font-size: 24px;left:153px;padding:9px 0 0 0;width:34px;height:34px;}
 #row p.nobg {background-color: #ef4e37;zoom:1;filter: alpha(opacity=100);opacity: 1;}
 
-#row .col_384_alternate p.desc384, #row .col_187_alternate p.desc187, #row .col_187_alternate p.desc778 {padding:0 15px; color:#000; overflow:hidden;}
+#row .col_384_alternate p.desc384, #row .col_187_alternate p.desc187, #row .col_187_alternate p.desc778 {padding:0 20px; color:#000; overflow:hidden;}
 #row .col_384_alternate {background:#fff url("../img/quot_bg_384.png")no-repeat;}
 #row .col_187_alternate {background:#fff url("../img/quo_bg_187.png")no-repeat;}
 #row .col_778_alternate {background:#fff url("../img/quot_bg_778.png")no-repeat;}
