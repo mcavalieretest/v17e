@@ -78,9 +78,14 @@ img {display: inline-block;vertical-align: middle;}
 .column, .columns, img,
 .col_187, .col_384, .col_778,  
 .desc187, .desc384, .desc778, 
+span.block187, span.block384, span.block778 {opacity: 0;}
+
+.column, .columns, img,
+.col_187, .col_384, .col_778,  
+.desc187, .desc384, .desc778, 
 span.block187, span.block384, span.block778 {
-	transition: width 6s, height 6s, transform 6s; opacity 6s ease-in-out;
-	-webkit-transition: width 6s, height 6s, -webkit-transform 6s; opacity 6s ease-in-out;
+	transition: width 5s, height 5s, transform 5s; opacity 5s ease-in-out;
+	-webkit-transition: width 5s, height 5s, -webkit-transform 5s; opacity 6s ease-in-out;
 	opacity: 1;
 }
 /*TRANSITION (END)*/
