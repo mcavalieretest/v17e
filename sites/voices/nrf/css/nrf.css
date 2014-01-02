@@ -84,8 +84,8 @@ span.block187, span.block384, span.block778 {opacity: 0;}
 .col_187, .col_384, .col_778,  
 .desc187, .desc384, .desc778, 
 span.block187, span.block384, span.block778 {
-	transition: all 3s ease;	opacity 3s ease;
-	-webkit-transition: all 3s ease; opacity 3s easet;
+	transition: all 2s ease; opacity 2s ease-in-out;
+	-webkit-transition: all 2s ease; opacity 2s ease-in-out;
 	opacity: 1;
 }
 
