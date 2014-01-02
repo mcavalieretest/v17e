@@ -192,7 +192,7 @@ span.block187, span.block384, span.block778,
 #row p.desc384, 
 #row p.desc778
 {
-	opacity: 0;
+	opacity: 1;
 	transition-property: opacity;
     transition-duration: 5s;
 }
