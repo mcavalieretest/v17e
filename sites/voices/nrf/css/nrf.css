@@ -71,8 +71,8 @@ img {display: inline-block;vertical-align: middle;}
 .no-bottom{margin-bottom:0! important;} 
 .columns.no-right, .row_384.no-right{margin-right:0! important;} 
 .column, .columns {position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
-	transition: width 5s, height 5s, transform 5s;
-	-webkit-transition: width 5s, height 5s, -webkit-transform 5s;
+	transition: width 2s, height 2s, transform 2s;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
 }
 .column, .columns_grey {background-color: #cecece;}
 .columns_orange {background-color: #facac3;}
@@ -166,7 +166,10 @@ img {display: inline-block;vertical-align: middle;}
 #row span.numpos_orange {margin: 0;color: #fff;position: absolute;top: 0; left: 99px; width:88px; height:88px;}
 
 #row span.numpos_orange_bottom, 
-#row span.numpos_grey_bottom, #row span.numpos_grey_bottom_right, #row span.numpos_orange_bottom_left  {margin: 0;color: #fff;position: absolute;width:88px; height:88px;}
+#row span.numpos_grey_bottom, 
+#row span.numpos_grey_bottom_right,
+#row span.numpos_orange_bottom_left 
+	{margin: 0;color: #fff;position: absolute;width:88px; height:88px;}
 #row span.numpos_orange_bottom { top: 0; left: 99px;}
 #row span.numpos_orange_bottom_left {left: 0; bottom:0;}
 #row span.numpos_grey_bottom { bottom:0; left: 0;}
