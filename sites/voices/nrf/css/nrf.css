@@ -70,10 +70,15 @@ img {display: inline-block;vertical-align: middle;}
 
 .no-bottom{margin-bottom:0! important;} 
 .columns.no-right, .row_384.no-right{margin-right:0! important;} 
-.column, .columns {position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
+
+/*TRANSITION (BEGIN)*/
+.column, .columns {
+	position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
 	transition: width 5s, height 5s, transform 5s;
 	-webkit-transition: width 5s, height 5s, -webkit-transform 5s;
 }
+/*TRANSITION (END)*/
+
 .column, .columns_grey {background-color: #cecece;}
 .columns_orange {background-color: #facac3;}
 .columns.col_187 {float:left;width:187px;height:187px;margin-right: 10px;max-width: 187px;}
