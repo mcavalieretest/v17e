@@ -81,14 +81,18 @@ img {display: inline-block;vertical-align: middle;}
 span.block187, span.block384, span.block778 {opacity: 0;}
 
 .column, .columns, img,
-.col_187, .col_384, .col_778,  
-.desc187, .desc384, .desc778, 
+.col_187, .col_384, .col_778,   
 span.block187, span.block384, span.block778 {
 	transition: all 2s ease; opacity 2s ease-in-out;
 	-webkit-transition: all 2s ease; opacity 2s ease-in-out;
 	opacity: 1;
 }
 
+.desc187, .desc384, .desc778 {
+	transition: opacity 2s ease-in-out;
+	-webkit-transition: opacity 2s ease-in-out;
+	opacity: 1;
+}
 	/*transition: width 5s, height 5s, transform 5s; opacity 5s ease-in-out;
 	-webkit-transition: width 5s, height 5s, -webkit-transform 5s; opacity 5s ease-in-out;*/
 /*TRANSITION (END)*/
