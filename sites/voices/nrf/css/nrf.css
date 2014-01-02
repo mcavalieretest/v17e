@@ -194,9 +194,9 @@ span.block778,
 #row p.desc187, 
 #row p.desc384, 
 #row p.desc778 {
-	opacity: 0;
+	opacity: 1;
 	transition-property: opacity;
-	transition-duration: 30s;
+	transition-duration: 5s;
 	/*-webkit-animation-iteration-count: infinite;*/
 }
 
