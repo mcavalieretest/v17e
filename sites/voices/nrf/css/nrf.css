@@ -74,8 +74,8 @@ img {display: inline-block;vertical-align: middle;}
 /*TRANSITION (BEGIN)*/
 .column, .columns {
 	position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37;
-	transition: width 2s, height 2s, transform 2s; opacity .55s ease-in-out;
-	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; opacity .55s ease-in-out;
+	transition: width 2s, height 2s, transform 2s; opacity .3s ease-in-out;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; opacity .3s ease-in-out;
 }
 /*TRANSITION (END)*/
 
