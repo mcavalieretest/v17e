@@ -190,7 +190,7 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_778_alternate p.desc187, 
 #row .col_778_alternate p.desc384, 
 #row .col_778_alternate p.desc778, 
-span.block187, span.block384, span.block778 {opacity: 0; filter: blur(5px) brightness(0);}
+{opacity: 0; filter: blur(5px) brightness(0);}
 
 .column, .columns,
 .col_187, .col_384, .col_778,   
