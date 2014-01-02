@@ -220,7 +220,7 @@ span.block187, span.block384, span.block778 {
 
 body
 {
-	opacity: 0;
+	opacity: 1;
 	transition-property: opacity;
     transition-duration: 30s;
 
