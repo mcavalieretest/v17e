@@ -48,8 +48,9 @@
 		
 		// make sure featured solutions and needs cards are shown on page load
 		$(window).bind('load', function(){
-			$('#dd_solutions').trigger('change');
+			$('.dd-auto-sort').trigger('change');
 		});
+		
 	});
 })(jQuery, window, document);
 
