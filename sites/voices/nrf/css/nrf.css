@@ -73,30 +73,6 @@ img {display: inline-block;vertical-align: middle;}
 
 .column, .columns { position: relative;margin-bottom: 10px;padding:0;float: left;background-color: #ef4e37; }
 
-/*TRANSITION (BEGIN)*/
-
-.column, .columns, img,
-.col_187, .col_384, .col_778,  
-.desc187, .desc384, .desc778, 
-span.block187, span.block384, span.block778 {opacity: 0;}
-
-.column, .columns,
-.col_187, .col_384, .col_778,   
-span.block187, span.block384, span.block778 {
-	transition: all 2s ease; opacity 2s ease-in-out;
-	-webkit-transition: all 2s ease; opacity 2s ease-in-out;
-	opacity: 1;
-}
-
-.desc187, .desc384, .desc778 {
-	transition: opacity 2s ease-in-out;
-	-webkit-transition: opacity 2s ease-in-out;
-	opacity: 1;
-}
-	/*transition: width 5s, height 5s, transform 5s; opacity 5s ease-in-out;
-	-webkit-transition: width 5s, height 5s, -webkit-transform 5s; opacity 5s ease-in-out;*/
-/*TRANSITION (END)*/
-
 .column, .columns_grey {background-color: #f0f0f0;}
 .columns_orange {background-color: #facac3;}
 .columns.col_187 {float:left;width:187px;height:187px;margin-right: 10px;max-width: 187px;}
@@ -206,7 +182,36 @@ span.block187, span.block384, span.block778 {
 #row span.numpos_orange_bottom, 
 #row span.numpos_orange_bottom_left {background-color: #facac3;} 
 .logo {margin:0 0 12px 0; outline:none; border:0;} 
-img { filter: blur(5px) brightness(0.5) ;}
+
+
+/*TRANSITION (BEGIN)*/
+
+.column, .columns,
+.col_187, .col_384, .col_778,  
+.desc187, .desc384, .desc778, 
+span.block187, span.block384, span.block778 {filter: blur(5px) brightness(0);}
+
+.column, .columns,
+.col_187, .col_384, .col_778,   
+span.block187, span.block384, span.block778 {
+	transition: all 2s ease; opacity 2s ease-in-out;
+	-webkit-transition: all 2s ease; opacity 2s ease-in-out;
+	opacity: 1;
+	filter: blur(5px) brightness(1) ;
+}
+
+.desc187, .desc384, .desc778 {
+	transition: opacity 2s ease-in-out;
+	-webkit-transition: opacity 2s ease-in-out;
+	opacity: 1;
+}
+
+img {filter: blur(5px) brightness(0.5) ;}
+
+	/*transition: width 5s, height 5s, transform 5s; opacity 5s ease-in-out;
+	-webkit-transition: width 5s, height 5s, -webkit-transform 5s; opacity 5s ease-in-out;*/
+/*TRANSITION (END)*/
+
 
 
 
