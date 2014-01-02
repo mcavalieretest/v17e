@@ -75,7 +75,7 @@ img {display: inline-block;vertical-align: middle;}
 
 /*TRANSITION (BEGIN)*/
 
-.column, .columns,
+.column, .columns, img,
 .col_187, .col_384, .col_778,  
 .desc187, .desc384, .desc778 {
 	transition: width 1s, height 1s, transform 3s; opacity .3s ease-in-out;
