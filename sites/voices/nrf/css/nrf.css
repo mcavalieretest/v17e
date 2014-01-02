@@ -185,6 +185,39 @@ img {display: inline-block;vertical-align: middle;}
 
 
 /*TRANSITION (BEGIN)*/
+/*.column, .columns,
+.col_187, .col_384, .col_778,  
+#row p.desc187, 
+#row p.desc384, 
+#row p.desc778, 
+{filter: blur(5px) brightness(0);}
+
+.column, .columns,
+.col_187, .col_384, .col_778,   
+span.block187, span.block384, span.block778 {
+	transition: 2s ease; opacity 2s ease-in-out;
+	-webkit-transition: 2s ease; opacity 2s ease-in-out;
+	opacity: 1;
+	filter: blur(5px) brightness(1);
+
+	-webkit-animation: blur-anim 0.5s linear;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#row p.desc187, 
+#row p.desc384, 
+#row p.desc778 {
+	opacity: 1;
+	-webkit-transition-property: opacity;
+   	-webkit-transition-duration: 3s;
+   	-webkit-transition-timing-function: ease-in;
+    -webkit-transition-delay: 2s;
+}
+
+img { filter: blur(5px) brightness(0.5) ; -webkit-filter:blur(5px) brightness(0.7); }*/
+
+
 body
 {
 	opacity: 0;
@@ -192,9 +225,6 @@ body
     transition-duration: 8s;
 
 }
-
-
-/*img { filter: blur(5px) brightness(0.5) ; -webkit-filter:blur(5px) brightness(0.7); }*/
 
 	/*transition: width 5s, height 5s, transform 5s; opacity 5s ease-in-out;
 	-webkit-transition: width 5s, height 5s, -webkit-transform 5s; opacity 5s ease-in-out;*/
