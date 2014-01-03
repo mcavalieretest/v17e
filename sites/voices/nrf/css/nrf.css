@@ -128,7 +128,7 @@ img {display: inline-block;vertical-align: middle;}
 
 #row .col_384_alternate img.tw_icon,
 #row .col_778_alternate img.tw_icon,  
-#row .col_187_alternate img.tw_icon {float:right;}
+#row .col_187_alternate img.tw_icon, #row img.tagline {float:right;}
 
 #row .col_384_alternate img.bird_icon {position:absolute;}
 #row .col_778_alternate img.bird_icon {position:absolute;}  
