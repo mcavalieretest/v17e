@@ -218,11 +218,19 @@ span.block187, span.block384, span.block778 {
 /*img { filter: blur(5px) brightness(0.5) ; -webkit-filter:blur(5px) brightness(0.7); }
 */
 
-body
+.fadein
 {
 	opacity: 0;
 	transition-property: opacity;
-    transition-duration: 15s;
+    transition-duration: 10s;
+
+}
+
+.fadeout
+{
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 10s;
 
 }
 
