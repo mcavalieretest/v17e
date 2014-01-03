@@ -122,9 +122,9 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_187_alternate {background:#fff url("../img/quo_bg_187.png")no-repeat;}
 #row .col_778_alternate {background:#fff url("../img/quot_bg_778.png")no-repeat;}
 
-#row .col_384_alternate p.desc384 {font:italic 30px/35px "serif"; margin-top:65px; min-height:270px; max-height: 285px; }
-#row .col_778_alternate p.desc778 {font:italic 60px/70px "serif"; margin-top:125px; min-height:545px; color:#000; max-height: 569px;}
-#row .col_187_alternate p.desc187 {font:italic 15px/17px "serif"; margin-top:35px; min-height:90px; max-height:120px;}
+#row .col_384_alternate p.desc384 {font:italic bold 30px/35px "serif"; margin-top:65px; min-height:270px; max-height: 285px; }
+#row .col_778_alternate p.desc778 {font:italic bold 60px/70px "serif"; margin-top:125px; min-height:545px; color:#000; max-height: 569px;}
+#row .col_187_alternate p.desc187 {font:italic bold 15px/17px "serif"; margin-top:35px; min-height:90px; max-height:120px;}
 
 #row .col_384_alternate img.tw_icon,
 #row .col_778_alternate img.tw_icon,  
