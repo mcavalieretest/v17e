@@ -50,8 +50,9 @@ img {display: inline-block;vertical-align: middle;}
 
 #row {width:1920px;float:left;margin:15px;padding:0;}
 .row_384, .row_778 {float:left;width: 374px;margin-right: 10px;margin-top: 0;margin-bottom: 0;*zoom: 1;}
+.row_386 {float:left;width: 376px;margin-right: 10px;margin-top: 0;margin-bottom: 0;*zoom: 1;}
 .row_778 {width: 768px !important;}
-
+#row.nomargin{margin:0;} 
 /*OPTIONAL CSS WILL DECIDE LATER IF WE NEED IT HERE (BEGIN)*/
 .row_384:after, .row_778:after { clear: both;}
 .row_384.collapse > .column, .row_778.collapse > .column,
@@ -69,7 +70,7 @@ img {display: inline-block;vertical-align: middle;}
 /*OPTIONAL CSS WILL DECIDE LATER IF WE NEED IT HERE (END)*/
 
 .no-bottom{margin-bottom:0! important;} 
-.columns.no-right, .row_384.no-right{margin-right:0! important;} 
+.columns.no-right, .row_384.no-right, .row_386.no-right{margin-right:0! important;} 
 
 .column, .columns { position:relative; margin-bottom:10px; padding:0; float:left; background-color: #ef4e37; }
 
@@ -131,9 +132,9 @@ img {display: inline-block;vertical-align: middle;}
 #row .col_187_alternate {background:#fff url("../img/quo_bg_187.png")no-repeat;}
 #row .col_778_alternate {background:#fff url("../img/quot_bg_778.png")no-repeat;}
 
-#row .col_384_alternate p.desc384 {font:italic bold 30px/35px "serif"; margin-top:65px; min-height:270px; max-height: 285px; }
-#row .col_778_alternate p.desc778 {font:italic bold 60px/70px "serif"; margin-top:125px; min-height:545px; color:#000; max-height: 569px;}
-#row .col_187_alternate p.desc187 {font:italic bold 15px/17px "serif"; margin-top:35px; min-height:90px; max-height:120px;}
+#row .col_384_alternate p.desc384 {font:italic 30px/35px "serif"; margin-top:65px; min-height:270px; max-height: 285px; }
+#row .col_778_alternate p.desc778 {font:italic 60px/70px "serif"; margin-top:125px; min-height:545px; color:#000; max-height: 569px;}
+#row .col_187_alternate p.desc187 {font:italic 15px/17px "serif"; margin-top:35px; min-height:90px; max-height:120px;}
 
 #row .col_384_alternate img.tw_icon,
 #row .col_778_alternate img.tw_icon,  
