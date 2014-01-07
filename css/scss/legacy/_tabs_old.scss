@@ -1,0 +1,687 @@
+// tabs styles begin ============================================
+
+/* LEADSPACE TABS START */
+#ibm-content-nav {
+	position: relative;
+	margin-top: -40px;
+	padding-bottom: 0px;
+	min-height: 40px;
+    _zoom: 1; /* ie6 fix for disappearing tabs */
+}
+
+#ibm-content-nav #ibm-primary-tabs {
+	height: 40px;
+	overflow: hidden;
+	@include background-gradient(background,(top, rgba(0,0,0,0), rgba(0,0,0,0.05)));
+}
+
+#ibm-content-nav #ibm-secondary-tabs {
+	/*padding: 20px 0px;*/
+	text-align: center;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
+	margin: 0px auto;
+	padding: 0px 20px;
+    width: 940px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs {
+	margin: 0 auto;
+    width: 940px;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
+	height: 1%;
+	float: left;
+	display: block;
+	opacity: .90;
+	filter: alpha(opacity = 90);
+	border-top: 1px solid rgba(0,0,0,0.5);
+	border-right: 1px solid rgba(125,125,125,0.25);
+	border-left: 1px solid rgba(125,125,125,0.25);
+	margin-right: 3px;
+	margin-top: -3px;
+	@include background-gradient(background,(top, rgba(0,0,0,0), rgba(0,0,0,0.05)));
+	@include transition(opacity 0.3s);
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li {
+	opacity: .80;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li {
+	opacity: .70;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li:hover,
+#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li:hover {
+	@include transition(opacity 0.3s);
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li {
+	display: inline;
+	height: 1%;
+	float: left;
+	border-right: 1px solid #E5E5E5;
+	padding: 3px 15px;
+    text-align: center;
+	margin-bottom: 7px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:first-child {
+	border-left: 0 none;
+	margin-left: 0;
+}
+
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:last-child {
+	border-right: 0 none;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs a {
+	padding: 0;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active a {
+	padding-bottom: 1px;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+	display: block;
+	color: #FFF;
+	min-height: 15px;
+	padding: 15px 16px 12px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	text-shadow: 0 0 4px rgba(0,0,0,0.2);
+	text-decoration: none;
+	@include transition(background-color 0.3s);
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
+	background-color: #CCC;
+	background-color: rgba(255,255,255,0.55);
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+	background-color: #FFF;
+}
+
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
+	background-color: #CCC;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-small-labels ul.ibm-tabs a {
+	padding: 10px 25px;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-medium-labels ul.ibm-tabs a {
+	padding: 10px 15px;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-large-labels ul.ibm-tabs a {
+	padding: 10px 10px;
+}
+
+/* added focus for static-tab links - Hemang P*/
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover, 
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:focus {
+    background-color: #000;
+}
+ 
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
+	background-color: #999;
+	text-shadow: none;
+} 
+
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs a {
+	text-decoration: none;
+	color: #666;
+	padding: 0px;
+}
+
+#ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+	background: #FFF;
+	color: #000;
+	text-shadow: none;
+	padding-bottom: 12px;
+	position: relative;
+	top: 1px;
+}
+
+/* added focus for static-tab links -Hemang P*/
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs a:hover,
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs a:focus,
+#ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li.ibm-active a {
+	color: #000;
+}
+
+/* added styles for dynamic-tab lists */
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li {
+	display: block;
+	color: #000;
+	padding: 10px 25px;
+	background-color: #DDD;
+	background-color: rgba(216,216,216,0.9);
+	text-shadow:0px 1px 0px #FFF;
+	text-decoration: none;
+	cursor:pointer;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:hover, 
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:focus {
+	background-color: #EEE;
+    background-color: rgba(229,229,229,0.95);
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:active, 
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
+	background-color: #999;
+	background-color: rgba(153,153,153,0.8);
+	color: #000;
+	text-shadow: none;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li {
+	text-decoration: none;
+	color: #666;
+	margin: 0px 15px;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:focus {
+	border-color: #D5D5D5;
+	outline: thin dotted;
+}
+
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
+	background: #FFF;
+	padding-bottom: 11px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li:hover,
+#ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
+	color: #000;
+}
+/* LEADSPACE TABS END */
+
+
+/* CONTENT TABS START */
+div.ibm-tab-section {
+	clear: both;	
+	float: left;
+	width: 100%;
+}
+
+div.ibm-tab-section {
+	border-bottom: 1px solid #CCC; 
+	
+}
+
+div.ibm-tab-section.ibm-text,
+.ibm-container.ibm-graphic-tabs {
+	border-top:0 none;
+}
+
+.ibm-graphic-tabs.ibm-dyntabs .ibm-container-body {
+    padding-top: 5px;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text {
+	margin-top: -25px;
+	text-align: center;
+	border-top: 0 none;
+	border-bottom:0 none;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text.ibm-alternate-align {
+	text-align: left;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-tabs {
+	margin-bottom:-10px;
+	margin-left: $iconSpaceLeft;
+}
+
+.ibm-tab-section.ibm-text ul.ibm-tabs.ibm-link-list.ibm-inner-list {
+	margin-left: $iconSpaceLeft;	
+}
+
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li.ibm-highlight-tab,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li.ibm-highlight-link {
+	font-weight:bold;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul li {
+	background: none repeat 0 0 transparent;
+    border-left: 0 none !important;
+    border-right: 1px solid #CCC !important;
+    border-top: 0 none !important;
+    float: none;
+    margin-left: 0;
+    display: inline;
+    font-weight: normal;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list {
+	text-align: left;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li {
+	line-height:1em;
+}
+ 
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li {
+	border-right: 0 none !important;
+	padding-right: 0 !important;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-bullet-list li a {
+	text-decoration:none;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a {
+	display:block;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column ul,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul {
+	padding-top:12px;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column ul.ibm-link-list li a,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul.ibm-link-list li a {
+	padding-bottom:10px;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column ul.ibm-bullet-list li,
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column ul.ibm-bullet-list li {
+	display:block;
+}
+
+#{$ie7Selector} .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-link-list li a {
+	padding-bottom:10px !important;
+}
+
+#{$ie7Selector} .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-first,
+#{$ie7Selector} .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-two-column .ibm-column.ibm-second,
+#{$ie7Selector} .ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text .ibm-three-column {
+	padding-top:20px;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li,
+div.ibm-text ul.ibm-tabs li a {
+	color: #666;
+	display: inline;
+	padding: 0;
+}
+
+div.ibm-text ul.ibm-tabs li a:active,
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li.ibm-active,
+div.ibm-text ul.ibm-tabs li.ibm-highlight-tab a {
+	color: #454545 !important;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li:hover, 
+div.ibm-text ul.ibm-tabs li a:hover,
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li:focus, 
+div.ibm-text ul.ibm-tabs li a:focus { 
+	color: #000 !important; 
+}
+
+.ibm-columns.ibm-graphic-tabs .ibm-col-1-1 {
+	margin: 0;
+}
+
+.ibm-columns.ibm-graphic-tabs,
+.ibm-container.ibm-graphic-tabs {
+	margin: 0 10px;
+	padding-bottom: 40px;
+	border-top: 0 none !important;
+}
+
+.ibm-container.ibm-graphic-tabs ul.ibm-tabs {
+	top: 2px;
+}
+
+.ibm-container > div.ibm-tab-section.ibm-text {
+    border-top: 2px solid #CCC;
+    margin-top: -2px;
+    padding-top: 6px;
+}
+
+ul.ibm-tabs a,
+.ibm-dyntabs ul.ibm-tabs li a {
+	display: block;
+	padding: 6px 12px 4px;
+	color: #454545;
+	text-decoration: none;
+}
+
+.ibm-graphic-tabs div.ibm-tab-section {
+	margin-bottom: 22px;
+}
+
+ul.ibm-tabs {
+	clear: left;
+	display: block;
+	padding: 0px;
+	position: relative;
+}
+
+ul.ibm-tabs:after {
+	@include aslett-clearing;
+}
+
+ul.ibm-tabs li {
+	padding: 0px;
+	float: left;
+}
+
+ul.ibm-tabs li a:hover,
+ul.ibm-tabs li a:visited {
+	text-decoration:none !important;
+	color:#000;
+}
+
+.ibm-graphic-tabs ul.ibm-tabs li {
+	background: #DEDEDE;
+	@include background-gradient(background,(bottom, #cdcdcd 3%, rgba(222, 222, 222, 0) 58%));
+	margin-right:1px;
+	margin-bottom: 1px;
+	color: #000;
+	text-shadow: 0px 1px 0px #FFF;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	border-left: 1px solid #E8E8E8;
+    border-right:1px solid #E8E8E8;
+    border-top:1px solid #E8E8E8;
+}
+
+.ibm-graphic-tabs  ul.ibm-tabs li.ibm-active,
+.ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab {
+    background: none repeat 0 0 #FFF;
+    border-left: 1px solid #CCC !important;
+    border-right:1px solid #CCC !important;
+    border-top:1px solid #CCC !important;
+    color: #000;
+}
+
+.ibm-graphic-tabs  ul.ibm-tabs li.ibm-active:hover,
+.ibm-graphic-tabs  ul.ibm-tabs li.ibm-highlight-tab:hover,
+div.ibm-text ul.ibm-tabs li:first-child.ibm-active:hover {
+	background: none repeat 0 0 #FFF;
+}
+
+.ibm-graphic-tabs ul.ibm-tabs li:hover {
+	color: #000;
+	text-decoration: none;
+	background:#C6C6C6;
+}
+
+div.ibm-text ul.ibm-tabs li {
+    border-bottom: 0 none !important;
+    border-right: 1px solid #E5E5E5;
+    margin-bottom: 7px;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.ibm-text ul.ibm-tabs.ibm-inner-list li {
+	border-right: 0 none;
+}
+
+div.ibm-text ul.ibm-tabs.ibm-link-list li {
+    border-left: 0 none;
+    float: none;
+    margin-bottom: 10px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.ibm-graphic-tabs.ibm-combo-tabs div.ibm-tab-section.ibm-text ul.ibm-tabs li.ibm-last-tab,
+div.ibm-text ul.ibm-tabs li.ibm-last-tab {
+	border-right: 0px none !important;
+}
+
+div.ibm-tab-section.ibm-text {
+	margin-bottom:22px;
+	padding-bottom:5px;
+}
+
+#{$ie7Selector} div.ibm-tab-section.ibm-text {
+	padding-bottom:10px;
+}
+
+div.ibm-text ul.ibm-tabs li:first-child,
+.ibm-graphic-tabs ul.ibm-tabs li:first-child {
+	margin-left: 0px;
+
+}
+
+div.ibm-text div.ibm-rule {
+	display: none;
+}
+
+div.ibm-text ul.ibm-tabs {
+	color: #000;
+	display: block;
+	padding: 6px 0px;
+}
+
+div.ibm-text ul.ibm-tabs li,
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li,
+div.ibm-text ul.ibm-tabs li.ibm-last-tab {
+	 padding-left: 14px;
+    padding-right: 13px;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li.ibm-highlighed-tab, 
+.ibm-dyntabs.ibm-graphic-tabs ul.ibm-tabs li.ibm-active, 
+.ibm-graphic-tabs .ibm-dyntabs ul.ibm-tabs li.ibm-active {
+	height: 17px;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li.ibm-highlighed-tab:focus, 
+.ibm-dyntabs.ibm-graphic-tabs ul.ibm-tabs li.ibm-active:focus, 
+.ibm-graphic-tabs .ibm-dyntabs ul.ibm-tabs li.ibm-active:focus {
+	outline: thin dotted;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li,
+.ibm-dyntabs.ibm-graphic-tabs ul.ibm-tabs li,
+.ibm-graphic-tabs .ibm-dyntabs ul.ibm-tabs li {
+    height: 16px;
+}
+
+.ibm-dyntabs.ibm-graphic-tabs ul.ibm-tabs li,
+.ibm-graphic-tabs .ibm-dyntabs ul.ibm-tabs li {
+    padding: 6px 8px;
+}
+
+.ibm-combo-tabs div.ibm-text ul.ibm-tabs li,
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li {
+	*zoom: 1;
+	_zoom: 0;
+}
+
+div.ibm-text ul.ibm-tabs li,
+.ibm-text ul.ibm-tabs li.ibm-active,
+.ibm-text ul.ibm-tabs li.ibm-highlight-tab {
+	border-bottom: 0px none;
+}
+ 
+div.ibm-text ul.ibm-tabs li.ibm-active:visited, 
+div.ibm-text ul.ibm-tabs li.ibm-active:hover,
+div.ibm-text ul.ibm-tabs li.ibm-highlight-tab:visited, 
+div.ibm-text ul.ibm-tabs li.ibm-highlight-tab:hover {
+	background:#FFF;
+	color: #000;
+}
+
+div.ibm-text ul.ibm-tabs span.ibm-sep {
+	display: none;
+}
+/* CONTENT TABS END */
+
+
+
+/* Secondary Tabs and subtab lists */
+#ibm-content-nav #ibm-secondary-tabs {
+	background-image: linear-gradient(bottom, #F3F3F3 0px, #FFF 15xp);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F3F3F3',GradientType=0 );
+	@include background-gradient(background,(bottom, #F3F3F3 0px, #FFF 15%));
+	padding: 8px 20px 2px;
+	*padding: 8px 20px 8px;
+	border-bottom: 1px solid #EEE;
+	text-align: center;
+}
+
+#ibm-content-nav #ibm-secondary-tab-list {
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#ibm-content-nav #ibm-secondary-tabs #ibm-secondary-tab-list h2 {
+	@include px-to-rem(font-size,14px);
+	padding: 0;
+}
+
+#ibm-content-nav #ibm-secondary-tab-list ul li {
+	padding: 2px 0 0 15px;
+	height: 1%;
+	clear: left;
+}
+
+#ibm-content-nav #ibm-secondary-tabs ul li a {
+	color: #666;
+	text-decoration: none;
+}
+
+#ibm-content-nav #ibm-secondary-tab-list ul li a:hover {
+	color: #333;
+}
+
+#ibm-content-nav #ibm-secondary-tab-list ul li a:active,
+#ibm-content-nav #ibm-secondary-tab-list ul li.ibm-active a{
+	color: #000;
+}
+
+#ibm-content-nav #ibm-expand-container.ibm-columns {
+	text-align: right;
+}
+
+#ibm-content-nav #ibm-expand-container p.ibm-expand-text {
+	position: absolute;
+	right: 190px;
+	top:50px;
+	
+}
+
+#ibm-content-nav #ibm-expand-container p.ibm-expand-text,
+#ibm-content-nav #ibm-dropdown-content p.ibm-expand-text {
+	cursor: pointer;
+	color: #00649D;
+}
+
+#ibm-content-nav #ibm-secondary-tabs p.ibm-expand-text:hover {
+	color: #008ABF;
+	text-decoration: underline;
+}
+
+#ibm-content-nav #ibm-secondary-tabs p.ibm-expand-text:active {
+	text-decoration: none;
+}
+
+/* DROPDOWN OVERLAYS */
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view {
+    overflow: hidden;
+    padding: 10px 20px 20px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view input {
+	cursor: pointer;
+	width: 300px;
+	background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -3px;
+	border: 0px none;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view span {
+	display: block;
+	float: left;
+	width: 300px;
+	padding: 3px 3px 5px 9px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFCFC', endColorstr='#ECECEC');
+	@include background-gradient(background,(top,  #FCFCFC,  #ECECEC));
+	@include border-radius(2px);
+	border: 1px solid #DDD;
+	color: #000;
+	text-decoration: none;	
+}
+
+#ibm-content-nav #ibm-secondary-tabs #ibm-dropdown-content p.ibm-expand-text {
+	padding-left: 20px;
+	position: relative;
+    top: 7px;
+	float: left;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view #ibm-expand-container {
+	display: none;	
+}
+
+#ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	z-index: 800;
+	@include background-gradient(background,(top, #FFF 30%, #CCC 100%));
+	@include border-radius(8px);
+	@include box-shadow(0px 1px 5px #333);
+	margin-top:35px;
+	border: 5px solid #666;
+}
+
+#{$ie7Selector} #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay {
+	left: 320px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay ul {
+	float: left;
+	padding: 15px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay ul li {
+	padding: 0 4px;
+	
+}
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay ul li a {
+	padding: 2px;
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay ul li:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
+	background: #595C64;
+	@include background-gradient(background,(top, #595C64,  #1B1B1C));
+}
+
+#ibm-content-nav #ibm-secondary-tabs.ibm-dropdown-view .ibm-tab-overlay ul li a:hover {
+	color: #FFF;
+}
+/* DROPDOWN OVERLAYS */
+
+
