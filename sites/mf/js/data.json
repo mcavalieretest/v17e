@@ -1,0 +1,382 @@
+{
+  "acquisitions": {
+    "header": "Acquisition",
+    "body": [
+      {
+        "link": "http://ibm.co/JyGcQJ",
+        "title": "Fiberlink",
+        "image": "/mobilefirst/us/en/bin/images/fiberlink_258x142.png",
+        "textlink": "Press release",
+        "blurb": "On December 18, IBM closed on the acquisition of Fiberlink Communications, a provider of cloud-based mobile management and security capabilities, to help organizations fully embrace mobility."
+      },
+      {
+        "link": "http://www-03.ibm.com/press/us/en/pressrelease/41927.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/41927.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20The%20Now%20Factory&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100113_Acquisition_TheNowFactory&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-01",
+        "title": "Now Factory",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_thenowfactory.jpg",
+        "textlink": "See the press release",
+        "blurb": "On October 1, IBM announced the acquisition of The Now Factory, a provider of analytics software that helps communications service providers (CSPs) deliver better customer experiences and drive new revenue."
+      },
+      {
+        "link": "http://www-03.ibm.com/press/us/en/pressrelease/41852.wss",
+        "title": "Trusteer",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_trusteer.png",
+        "textlink": "See the press release",
+        "blurb": "On September 3, IBM announced the acquisition of Trusteer, a leading provider of software that helps protect organizations against fraud and advanced security threats, and helps secure mobile transactions."
+      }
+    ]
+  },
+  "announcements": {
+    "header": "Announcement",
+    "body": [
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/worklight/",
+        "title": "IBM Worklight v6.1",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_worklight.png",
+        "textlink": "Learn more",
+        "blurb": "Now you can significantly reduce the time and amount of coding required for backend data and services integration, producing robust, services-driven mobile apps. With immediate support for iOS7."
+      },
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/conn/",
+        "title": "IBM Connections 4.5",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_connections.jpg",
+        "textlink": "Learn more",
+        "blurb": "Now a stronger, enterprise-grade social and document collaboration solution, including sync and share &mdash; both in the on-premises Connections and in the IBM SmartCloud Connections."
+      },
+      {
+        "link": "https://www.ibm.com/developerworks/community/blogs/mobilequalitybeta/entry/what_is_mobile_quality_assurance?lang=en_us",
+        "title": "IBM Mobile Quality Assurance Open Beta",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_mobile-assurance-beta.jpg",
+        "textlink": "Learn more",
+        "blurb": "Helps you focus on fixing what delivers the most value to end users, and more quickly improve apps by capturing end-user testing data and providing a comprehensive view of quality."
+      },
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/cx-mobile/",
+        "title": "IBM Tealeaf CX Mobile 8.8",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_tealeaf.jpg",
+        "textlink": "Learn more",
+        "blurb": "Delivers comprehensive improvements in performance while reducing the size of the capture libraries, including faster replays with higher quality and improved DOM rendering for Android devices accessing mobile Web."
+      },
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/rtw/",
+        "title": "IBM Rational Test Workbench 8.5.1",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_rational-test.jpg",
+        "textlink": "Learn more",
+        "blurb": "Mobile app functional testing has been enhanced with support for HTML5 and playback of tests on different platform types. You can now record tests on iOS, and playback on Android and vice versa."
+      },
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/samcm/",
+        "title": "IBM Security Access Manager Mobile",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_samcm.jpg",
+        "textlink": "Learn more",
+        "blurb": "Delivers strong authentication where you can define policies that allow or deny access based on request criteria, including user credentials, location of the mobile device, time of day, and the network."
+      },
+      {
+        "link": "http://www-01.ibm.com/software/rational/welcome/urbancode/",
+        "title": "IBM UrbanCode Deploy plugin for IBM Worklight",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_urbancode.jpg",
+        "textlink": "Learn more",
+        "blurb": "Automates mobile app development so you can deploy continuously, quickly, and accurately &mdash; and speed delivery. Now you can easily include Worklight apps in your automated deployment scenarios."
+      },
+      {
+        "link": "http://www-935.ibm.com/services/us/gbs/application-management/cloud-application-management/",
+        "title": "IBM Cloud Mobile Managed Services",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_cloud-mobile-manage-services.jpg",
+        "textlink": "Learn more",
+        "blurb": "Leave it to us. Our market-leading application management services will build, maintain and continually enhance mobile applications for you, including mobile application testing and mobile device management."
+      },
+      {
+        "link": "http://www-03.ibm.com/software/products/us/en/application-performance-management/",
+        "title": "IBM SmartCloud Application Performance Management 7.7",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_smartcloud-apm.jpg",
+        "textlink": "Learn more",
+        "blurb": "Discovers mobile app performance issues before they impact end users.  Brings you end-user response time metrics, and monitors the performance and availability of applications and infrastructure."
+      }
+    ]
+  },
+  "insights": {
+    "header": "Emerging insights",
+    "body": [
+      {
+        "link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8871&S_TACT=109KA5TW&S_CMP=?",
+        "title": "IDC Report",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_IDC-report.png",
+        "textlink": "Get the white paper",
+        "blurb": "Addresses the complexities and growing requirements of the future mobile enterprise. IT and lines of business (LOBs) need to build a strategy to manage the complexities of a <i>bring your own device</i> (BYOD) enterprise."
+      },
+      {
+        "link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov18165&S_TACT=109KA5TW",
+        "title": "IBV Report",
+        "image": "/mobilefirst/us/en/bin/images/news_IDC-report.png",
+        "textlink": "Get the report",
+        "blurb": "The &#8220;Upwardly Mobile&#8221; Enterprise: a new study from the IBM Institute for Business Value (IBV). Learn how leading enterprises rise to the top, including ROI, analytics, integration, and security."
+      },
+      {
+        "link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW",
+        "title": "Customer experience management in the new era of mobility",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_IDC-report.png",
+        "textlink": "Get the white paper",
+        "blurb": "The business case for understanding and optimizing your mobile customer experience today."
+      },
+      {
+        "link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13717",
+        "title": "Building the mobile enterprise: integrated, secure and productive",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_IDC-report.png",
+        "textlink": "Get the white paper",
+        "blurb": "Will your organization simply use mobile devices, or will it be an integrated mobile enterprise? This paper provides a checklist of critical items to consider when designing a mobile enterprise."
+      },
+      {
+        "link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=gts-LITS-desktop-cloud-NA&S_PKG=ov14088&S_TACT=601CA21W",
+        "title": "IBM study: Is your IT infrastructure ready for mobile?",
+        "image": "/mobilefirst/us/en/bin/images/news_IDC-report.png",
+        "textlink": "Get the study",
+        "blurb": "We interviewed IT leaders worldwide to gain new insights to help improve your organization's mobile IT strategy, implementation and management."
+      }
+    ]
+  },
+  "news": {
+    "header": "IBM in the news",
+    "body": [
+      {
+        "link": "http://www.businesscloudnews.com/2013/12/16/ibm-scores-secure-mobile-virtual-machine-launcher-patent/",
+        "title": "IBM scores secure mobile virtual machine launcher patent",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_arsenal.jpg",
+        "textlink": "See article",
+        "blurb": "From <i>Business Cloud News</i>: IT incumbent IBM has been awarded a patent for launching virtual machine instances that authenticates the applications running within the virtual environment before launching it. The company said the approach could be used to..."
+      }
+    ]
+  },
+  "social": {
+    "header": "Trends",
+    "body": [
+      {
+        "title": "IBM 2013 Holiday Benchmark Reports",
+        "image": "/mobilefirst/us/en/bin/images/Benchmark_holiday_hub_module_258x142.jpg",
+        "blurb": "<i>IBM Digital Analytics Benchmark</i>: Mobile traffic grew to 31.7 percent of all online traffic, increasing by 45 percent over 2012. See more holiday shopping trends.",
+        "textlink": "Read the full report",
+        "link": "http://www-01.ibm.com/software/marketing-solutions/benchmark-reports/cyber-monday-2013.html"
+      },
+      {
+        "title": "Successful habits of the upwardly mobile enterprise",
+        "image": "http://www.ibm.com/mobilefirst/us/en/bin/images/news_interconnect.jpg",
+        "blurb": "In our previous #P4SPchat, we discussed the IBM Institute for Business Value study, &#8220;The &apos;Upwardly Mobile&apos; Enterprise: Setting the Strategic Agenda.&#8221; This recap highlights point of views from participants.",
+        "textlink": "Read the recap",
+        "link": "http://storify.com/smarterplanet/p4spchat-recap-successful-habits-of-the-upwardly"
+      }
+    ]
+  },
+  "experts": {
+    "header": "Forward Thinkers",
+    "body": [
+      {
+        "image": "/mobilefirst/us/en/bin/images/caleb-barlow.jpg",
+        "name": "Caleb Barlow",
+        "title": "Director - Mobile Security, Application Security, Data Security, Critical Infrastructure Security",
+        "twitter_link": "http://twitter.com/calebbarlow",
+        "linked_link": "http://www.linkedin.com/in/calebbarlow",
+        "about": "Caleb Barlow has overall responsibility for IBM's Unified Communications and Collaboration software business unit. In this role he is responsible for building a solution portfolio that is designed to provide real-time communications using voice, video, web conferencing, instant messaging and social business communications. This is accomplished thru a combination of strategic partnerships, industry alliances and IBM software product development under the IBM Sametime brand. Caleb has spent most of his career focused on designing and building businesses around alternative software delivery models that are simple, fast and inexpensive to consume. In his last role, Caleb was an M&A Integration Executive where he led the acquisition of Net Integration Technologies for IBM. This acquisition became the Lotus Foundations appliance platform which under Caleb's leadership positioned IBM with a new channel into the smallest of businesses. First joining IBM in 1992, Caleb was part of Integrated Systems Solutions Corp."
+      },
+      {
+        "image": "TO BE FILLED",
+        "name": "Bill Bodin",
+        "title": "IBM Distinguished Engineer, CTO Mobility, CIO Office",
+        "twitter_link": "https://twitter.com/BillBodin",
+        "linked_link": "http://www.linkedin.com/in/billbodin",
+        "about": "Bill Bodin, CTO of Mobility for IBM's Internal Mobility efforts, is both a Distinguished Engineer and a recognized Master Inventor. He holds over 160 issued US and International Patents, with over 100 additional patents pending. He leads the internal mobile strategy efforts for IBM's CIO Office. Bill's current focus is on the creation and deployment of IBM's comprehensive mobile ecosystem, delivering mobile capabilities to our employees, increasing client intimacy and productivity, and creating a reference implementation of IBM products and services which will place IBM within industry analyst leadership quadrants as a Mobile Enterprise Platform provider. Bill is a member of the IBM Academy of Technology and Academy Leadership Team. He also represents the CIO organization in the Center for Innovation Leadership (CIL), championing Innovation and Invention in the IBM Corporation. Bill holds B.S. and Graduate Degrees from the University of Georgia and Florida Atlantic University respectively."
+      },
+      {
+        "image": "TO BE FILLED",
+        "name": "Christopher Pepin",
+        "title": "IBM MobileFirst Services Executive",
+        "twitter_link": "http://twitter.com/chrispepin",
+        "fb_link": "http://www.facebook.com/chrispepin",
+        "linked_link": "http://www.linkedin.com/in/chrispepin",
+        "about": "I am a mobility offering manager and evangelist for IBM Global Technology Services. In this role, I have responsibility for developing mobility offerings for both Strategic Outsourcing and Integrated Technology Services. My particular area of focus is mobile enterprise services including smartphones, laptops, tablets collaboration, mobile applications, middleware, mobile device management, infrastructure and cloud. My prior work experience includes 19 years in various technical roles at IBM including the IBM Office of the CIO, Global Technology Services, Software Services for Lotus and Global Financing. I live in Connecticut with my wife and three children."
+      },
+      {
+        "image": "/mobilefirst/us/en/bin/images/ed-brill.jpg",
+        "name": "Ed Brill",
+        "title": "Director, Mobile Enterprise Marketing - IBM MobileFirst",
+        "twitter_link": "http://twitter.com/edbrill",
+        "fb_link": "http://www.facebook.com/edbrilldotcom",
+        "linked_link": "http://www.linkedin.com/in/edbrill",
+        "about": "Ed Brill is Director, Mobile Enterprise Marketing at IBM. Brill is responsible for IBM MobileFirst, the industry's most comprehensive portfolio of solutions for enterprise mobility -- \" the business of mobile \". Brill recently authored the IBM Press book Opting In: Lessons in Social Business, an Amazon bestseller endorsed by industry analysts, social media pundits, and software executives. Committed to understanding the global marketplace, Brill has visited IBM customers in over forty countries during his 19-year IBM career, and is a frequent speaker at IBM and industry events worldwide."
+      },
+      {
+        "image": "/mobilefirst/us/en/bin/images/vijay-dheap.jpg",
+        "name": "Vijay Dheap",
+        "title": "Global Solutions Manager - Big Data Security Intelligence &amp; Mobile Security, IBM Master Inventor",
+        "e_mail": "mailto:vdheap@us.ibm.com",
+        "twitter_link": "http://twitter.com/dheap",
+        "linked_link": "http://www.linkedin.com/in/dheap",
+        "about": "Experienced as a researcher, technologist and a global product manager. I currently lead IBM&apos;s Mobile Security Solutions and well versed in helping customers develop a holistic mobile security posture. Additionally, as a contributor to the IBM Mobile Enterprise initiative I consult for customers in exploring the business potential mobile affords across industries. Prior to my current role, I championed Web 2.0, Cloud, Big Data, and Watson technologies as part of the IBM Emerging Technologies team. My experiences, which includes having engaged customers on five continents, give me a solid global perspective. I hold an International MBA from Duke Fuqua School of Business and a Masters in Computer Engineering from University of Waterloo. Armed with a core competency in technology and a passion for business how can I help you?"
+      },
+      {
+        "image": "/mobilefirst/us/en/bin/images/miku.jpg",
+        "name": "Miku Jha",
+        "title": "Product Manager For IBM Mobile",
+        "e_mail": "mailto:mjha@us.ibm.com",
+        "linked_link": "http://www.linkedin.com/in/mikujha",
+        "about": "Software and mobile executive with 12-year track record of progressive impact and results at highly successful public and private companies including IBM , Worklight (acquired by IBM), VMware, ArioData(acquired by Xyratex) and Savvion. Specialties Software and Mobile solutions for consumer, enterprise, SMB (small-to-medium business), service provider and developer segments. Mobile Virtualization solutions, Server Virtualization, System Services, Appliance Servers and and Operating Systems.middleware, backup, security, web technologies running on servers, desktops, tablets, smartphones and other devices. MBA, Business Administration at Cornell University - S.C. Johnson Graduate School of Management."
+      },
+      {
+        "image": "/mobilefirst/us/en/bin/images/dirk.jpg",
+        "name": "Dirk B. Nicol",
+        "title": "Director, Practitioner Outreach And DeveloperWorks",
+        "twitter_link": "https://twitter.com/dirknicol",
+        "fb_link": "https://www.facebook.com/dirk.nicol?ref=tn_tnmn",
+        "linked_link": "http://www.linkedin.com/in/dirknicol",
+        "about": "Dirk is the Program Director for IBM Mobile Strategy and Product Management responsible for IBM&apos;s mobile platform. Prior to his current position, Dirk led IBM's Cloud standards program and was a founder of the Cloud Standards Customer Council initiative. Dirk also conceived and led the development of the developerWorks project. Dirk holds a masters degree in electrical engineering and an MBA at the University of North Carolina."
+      }
+    ]
+  },
+  "tweets": {
+    "header": "Tweets (TBD)",
+    "body": [
+      {
+        "text": "Experience is the name everyone gives to their mistakes.",
+        "author": "Oscar Wilde",
+        "link": "http://www.google.com"
+      }
+    ]
+  },
+  "recent": {
+    "acquisitions": {
+      "header": "Acquisitions",
+      "body": [
+        {
+          "title": "Xtify push notification services deliver personalized marketing offers",
+          "link": "http://www-03.ibm.com/press/us/en/pressrelease/42064.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/42064.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20Xtify&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100313_XtifyAquisition&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-03"
+        },
+        {
+          "title": "Now Factory analytics software helps improve the customer experience",
+          "link": "http://www-03.ibm.com/press/us/en/pressrelease/41927.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/41927.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20The%20Now%20Factory&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100113_Acquisition_TheNowFactory&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-01"
+        },
+        {
+          "title": "Trusteer software helps secure mobile transactions",
+          "link": "http://www-03.ibm.com/press/us/en/pressrelease/41852.wss"
+        }
+      ]
+    },
+    "announcements": {
+      "header": "Announcements",
+      "body": [
+        {
+          "title": "IBM Connections 4.5 enterprise-grade collaboration software",
+          "link": "http://www-03.ibm.com/software/products/us/en/conn/"
+        },
+        {
+          "title": "IBM Moblie Quality Assurance Open Beta captures end-user testing data",
+          "link": "https://www.ibm.com/developerworks/community/blogs/mobilequalitybeta/entry/what_is_mobile_quality_assurance?lang=en_us"
+        },
+        {
+          "title": "IBM Tealeaf CX Mobile 8.8 for faster Web app development",
+          "link": "http://www-03.ibm.com/software/products/us/en/cx-mobile"
+        },
+        {
+          "title": "IBM Rational Test Workbench 8.5.1 for mobile app functional testing",
+          "link": "http://www-03.ibm.com/software/products/us/en/rtw"
+        },
+        {
+          "title": "IBM Security Access Manager Mobile for strong authentication",
+          "link": "http://www-03.ibm.com/software/products/us/en/samcm/"
+        },
+        {
+          "title": "IBM UrbanCode Deploy plugin for IBM Worklight to help speed delivery",
+          "link": "http://pic.dhe.ibm.com/infocenter/ucdeploy/v6r0/index.jsp?topic=%2Fcom.ibm.udeploy.doc%2Ftopics%2Fwhatsnew.html"
+        },
+        {
+          "title": "IBM Cloud Mobile Managed Services build and maintain apps for you",
+          "link": "http://www-935.ibm.com/services/us/gbs/application-management/cloud-application-management/"
+        },
+        {
+          "title": "IBM SmartCloud Application Performance Management 7.7",
+          "link": "http://www-03.ibm.com/software/products/us/en/application-performance-management/"
+        },
+        {
+          "title": "IBM Worklight v6.1 can significantly reduce the coding for backend integration",
+          "link": "http://www-03.ibm.com/software/products/us/en/worklight/"
+        }
+      ]
+    },
+    "insights": {
+      "header": "Emerging insights",
+      "body": [
+        {
+          "title": "IBV study: The Upwardly Mobile Enterprise",
+          "link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW"
+        },
+        {
+          "title": "Customer experience management in the new era of mobility",
+          "link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW"
+        },
+        {
+          "title": "Building the mobile enterprise: integrated, secure and productive",
+          "link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13717"
+        },
+        {
+          "title": "IBM study: Is your IT infrastructure ready for mobile?",
+          "link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=gts-LITS-desktop-cloud-NA&S_PKG=ov14088&S_TACT=601CA21W"
+        },
+        {
+          "title": "IDC Report: Build a strategy to manage the complexities of BYOD",
+          "link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8871&S_TACT=109KA5TW&S_CMP=?"
+        }
+      ]
+    },
+    "news": {
+      "header": "IBM in the news",
+      "body": [
+        {
+          "title": "<i>MarketWatch</i>: Online shopping brings mall retailers no holiday cheer",
+          "link": "http://www.marketwatch.com/story/online-shopping-brings-mall-retailers-no-holiday-cheer-2013-12-04"
+        },
+        {
+          "title": "<i>MediaPostNEWS</i>: A week before Cyber Monday, a clear picture ... is already taking shape...",
+          "link": "http://www.mediapost.com/publications/article/214329/2013-is-the-year-for-mobile-ecommerce.html"
+        },
+        {
+          "title": "<i>The Neflix Tech Blog</i>: IBM wins Netflix Open Source Software Cloud Prize",
+          "link": "http://techblog.netflix.com/2013/11/netflix-open-source-software-cloud.html"
+        },
+        {
+          "title": "<i>SC Magazine UK</i>: Mobile security case study: Higher calling",
+          "link": "http://www.scmagazineuk.com/mobile-security-case-study-higher-calling/article/319818/"
+        }
+      ]
+    },
+    "social": {
+      "header": "In the social sphere",
+      "body": [
+        {
+          "title": "Blog: IBM Worklight certification mini-study guide",
+          "link": "https://www.ibm.com/developerworks/community/blogs/mobileblog/entry/ibm_worklight_certification_mini_study_guide?lang=en_us"
+        },
+        {
+          "title": "Blog: IBM InterConnect conference 2013: A new era of smart",
+          "link": "http://asmarterplanet.com/mobile-enterprise/blog/2013/10/ibm-interconnect-conference-2013-a-new-era-of-smart.html"
+        },
+        {
+          "title": "Infographic: The upwardly mobile enterprise",
+          "link": "http://asmarterplanet.com/mobile-enterprise/blog/2013/10/infographic-the-upwardly-mobile-enterprise.html"
+        }
+      ]
+    },
+    "webinars": {
+      "header": "Webinars",
+      "body": [
+        {
+          "title": "InformationWeek: Create a Mobile First Customer Experience",
+          "link": "https://webinar.informationweek.com/16836?keycode=CAA1DC"
+        },
+        {
+          "title": "InformationWeek: Deploying IBM MobileFirst Applications",
+          "link": "https://webinar.informationweek.com/16835?keycode=CAA1DC"
+        },
+        {
+          "title": "IBM Institute for Business Value study: The upwardly mobile enterprise",
+          "link": "http://www.youtube.com/watch?v=Y86KDl5cOCI"
+        }
+      ]
+    }
+  }
+}
