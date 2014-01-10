@@ -149,11 +149,11 @@
     "header": "Trends",
     "body": [
       {
-        "title": "IBM 2013 Holiday Benchmark Reports",
+        "title": "Final Holiday Benchmark Report",
         "image": "/mobilefirst/us/en/bin/images/Benchmark_holiday_hub_module_258x142.jpg",
-        "blurb": "<i>IBM Digital Analytics Benchmark</i>: Mobile traffic grew to 31.7 percent of all online traffic, increasing by 45 percent over 2012. See more holiday shopping trends.",
-        "textlink": "Read the full report",
-        "link": "http://www-01.ibm.com/software/marketing-solutions/benchmark-reports/cyber-monday-2013.html"
+        "blurb": "<i>IBM Digital Analytics Benchmark: US Online Retail Holiday Shopping Recap Report 2013</i>: Mobile set new records on Christmas Day when 48.1 percent of all online traffic came from mobile devices. See more holiday shopping trends.",
+        "textlink": "Read the full holiday 2013 report",
+        "link": "http://www-01.ibm.com/software/marketing-solutions/benchmark-hub/"
       },
       {
         "title": "Successful habits of the upwardly mobile enterprise",
@@ -168,7 +168,7 @@
     "header": "Forward Thinkers",
     "body": [
       {
-        "image": "TO BE FILLED",
+        "image": "/mobilefirst/us/en/bin/images/bill-bodin.jpg",
         "name": "Bill Bodin",
         "title": "IBM Distinguished Engineer, CTO Mobility, CIO Office",
         "twitter_link": "https://twitter.com/BillBodin",
@@ -176,7 +176,7 @@
         "about": "Bill Bodin, CTO of Mobility for IBM's Internal Mobility efforts, is both a Distinguished Engineer and a recognized Master Inventor. He holds over 160 issued US and International Patents, with over 100 additional patents pending. He leads the internal mobile strategy efforts for IBM's CIO Office. Bill's current focus is on the creation and deployment of IBM's comprehensive mobile ecosystem, delivering mobile capabilities to our employees, increasing client intimacy and productivity, and creating a reference implementation of IBM products and services which will place IBM within industry analyst leadership quadrants as a Mobile Enterprise Platform provider. Bill is a member of the IBM Academy of Technology and Academy Leadership Team. He also represents the CIO organization in the Center for Innovation Leadership (CIL), championing Innovation and Invention in the IBM Corporation. Bill holds B.S. and Graduate Degrees from the University of Georgia and Florida Atlantic University respectively."
       },
       {
-        "image": "TO BE FILLED",
+        "image": "/mobilefirst/us/en/bin/images/chris-pepin.jpg",
         "name": "Christopher Pepin",
         "title": "IBM MobileFirst Services Executive",
         "twitter_link": "http://twitter.com/chrispepin",
