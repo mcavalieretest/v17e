@@ -289,7 +289,7 @@ p a[class*="ibm-chevron"] {
 #{$ie7Selector} li.ibm-symp-spreadsheet a,
 #{$ie7Selector} li.ibm-community a,
 #{$ie7Selector} li.ibm-usergroup a,
-#{$ie7Selector} li a[class*="-link"],
+#{$ie7Selector} li a[class$="-link"],
 #{$ie7Selector} li a.ibm-call-info,
 #{$ie7Selector} li a.ibm-symp-doc,
 #{$ie7Selector} li a.ibm-symp-presentation,
