@@ -1,0 +1,187 @@
+// button styles begin ==============================================
+
+.ibm-dropdown-sort .ibm-menu-list > div {
+	padding: 0;
+}
+
+.ibm-dropdown-sort .ibm-menu-list div:after {
+	top: 12px;
+}
+
+#ibm-top .ibm-dropdown-sort .ibm_cci-separator {
+	float: left;
+	padding: 0;
+	margin: 0 10px;
+	line-height: 40px;
+}
+
+// will need to move this style to common css
+.ibm-dropdown-sort  .ibm-menu-list select::-ms-expand {
+	display: none;
+}
+
+// will need to update once we replace dojo script
+.dj_ie7 .ibm-view-section {
+	display: none;
+}
+
+.ibm-card {
+	@include box-shadow(0 1px 3px $k20);
+	background-color: #FFF;
+//	min-height: 200px;
+	margin-bottom: 20px;
+}
+
+.ibm-card * {
+	word-wrap: break-word;
+}
+
+.ibm-card h2 a,
+.ibm-card h3 a  {
+	color: #000;
+}
+
+.ibm-card:hover {
+	@include box-shadow(0 1px 5px $k40);
+}
+
+.ibm-card h2 a:hover,
+.ibm-card h3 a:hover {
+	color: $red-1;
+}
+
+#ibm-content .ibm-card:hover p {
+	color: #666;
+}
+
+#ibm-com .ibm-card .ibm-category {
+	color: #999;
+	margin-top: -5px;
+}
+
+.ibm-card h2,
+.ibm-card h3 {
+	font-family: $sectionHeaderFont;
+	font-weight: 300;
+	@include px-to-rem(font-size,28px);
+	line-height: 1em;
+	padding-bottom: 8px !important;
+}
+
+
+// Card image to apply video play button
+
+.ibm-card img {
+	margin: 2px 0 0;
+	display: block;
+}
+
+.ibm-card .ibm-no-margin {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.ibm-card > .ibm-media,
+.ibm-card .ibm-inner-margin > .ibm-media {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+// crop-small and crop-large removes top and bottom margins fom card images
+.ibm-card .ibm-media.crop-small img {
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+.ibm-card .ibm-media.crop-large img {
+	margin-top: -40px;
+	margin-bottom: -40px;
+}
+
+/*
+.ibm-card h2 a.ibm-media,
+.ibm-card h3 a.ibm-media,
+.ibm-card .ibm-ind-link a.ibm-media {
+	display: inline-block;
+	overflow: inherit;
+	margin-bottom: 0;
+}
+*/
+
+.ibm-card .ibm-media .ibm-video-play {
+	background: url(#{$imagePath}/i/icons/icn-video-play.svg) no-repeat;
+	bottom: 10px;
+	top: auto;
+	left: 15px;
+	height: 24px;
+	width: 33px;
+}
+
+.ibm-card .ibm-media .ibm-no-margin .ibm-video-play {
+	left: 0px;
+}
+
+.no-svg .ibm-card .ibm-media .ibm-video-play {
+	background-image: url(#{$imagePath}/i/icons/icn-video-play.png);
+}
+
+#ibm-top #ibm-content-main .ibm-card p.ibm-ind-link {
+	padding-bottom: 5px;
+	color: #999;
+}
+
+
+#ibm-com .ibm-inner-margin .ibm-rule {
+	margin: 10px -15px;
+}
+
+.dj_safari.no-touch .ibm-card .ibm-description em {
+	font-style: normal;
+}
+
+// using dojo check for webkit.  when we migration from dojo we'll need to update this class reference 
+.dj_webkit.touch .ibm-card .ibm-description em {
+	font-family: "HelvLightIBM", Arial, sans-serif;
+}
+
+.ibm-card .ibm-inner-margin .ibm-featured {
+	position: relative;
+	margin: -15px -10px 5px;
+	padding: 10px 10px 2px;
+	font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+	
+	.ibm_cci-divider {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 569px) and (max-width: 640px) {
+
+	.ibm-card h2, 
+	.ibm-card h3 {
+		@include px-to-rem(font-size,24px);
+		line-height: 1.2em;
+	}
+	
+	.ibm_cci-no-tab {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 801px) {
+
+	.ibm-card .ibm-featured,
+	.ibm-card .ibm-category {
+		@include px-to-rem(font-size,14px);
+	}
+
+}
