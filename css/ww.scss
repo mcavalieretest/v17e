@@ -55,6 +55,7 @@ css/
 |   |   |-- _social-toolbar.scss# social-toolbar
 |   |   |-- _rating.scss		# rating
 |   |   |-- _expert-locator.scss# expertise locater module
+|   |   |-- _cards.scss 		# cards
 |   |   |-- _adaptive.scss		# adaptive styles
 |   |   ...
 |   |-- direct/					# directly loaded CSS files
@@ -119,8 +120,9 @@ css/
 		"scss/shared/social-toolbar",
 		"scss/shared/rating",
 		"scss/shared/expert-locator",
-//		"scss/ww/localeselector",
+		"scss/shared/cards",		
 
+//		"scss/ww/localeselector",
 		"scss/ww/masthead",
 		"scss/ww/merchandising",
 
