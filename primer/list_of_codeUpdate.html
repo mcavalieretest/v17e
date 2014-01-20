@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<!-- 
+	NOTE:
+	This file is the master landing page template.
+	All comments starting with NOTE can also be removed!
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<!-- Add meta tag to consistently detect the width on an iPad at 768px -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--
+<meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+-->
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Copyright IBM Corp. 2011"/>
+		<meta name="Keywords" content="REPLACE"/>
+		<meta name="DC.Date" scheme="iso8601" content="2012-09-19"/>
+		<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM  authoring:IBM"/> <!-- Kindly change the values for "delivery" and "authoring" as per what is appropriate.  -->
+		<meta name="Security" content="Public"/>
+		<meta name="Abstract" content="REPLACE"/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="2012-09-19"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
+		<meta name="Owner" content="Replace"/>
+		<meta name="DC.Language" scheme="rfc1766" content="en"/>
+		<meta name="IBM.Country" content="ZZ"/>
+		<meta name="Robots" content="index,follow"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+		<meta name="Description" content="REPLACE"/>
+
+		<!-- Please ensure appropriate meta tag values are aligned with the standards -->
+<!--! PageTitle -->	
+<title>IBM v17e updated code and examples</title>
+<link href="../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/module.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/documentation.css" rel="stylesheet" title="www" type="text/css" />
+<script src="../js/ww.js" type="text/javascript"></script>
+<script type="text/javascript" src="../templates/template_elements/code-highlighter/sh/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../templates/template_elements/code-highlighter/sh/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="../templates/template_elements/code-highlighter/sh/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="../templates/template_elements/code-highlighter/sh/scripts/shBrushXml.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script type="text/javascript">
+
+// Show hide function 
+jQuery(document).ready(function () {
+      jQuery('.toggle-view dt').click(function () {
+      	var text = jQuery(this).next('dd.answer');
+        if (text.is(':hidden')) {
+            text.slideDown('200');
+            jQuery(this).children('span').addClass('ibm-delete-link').removeClass('ibm-add1-link');
+            } 
+        else {
+            text.slideUp('200');
+            jQuery(this).children('span').removeClass('ibm-delete-link').addClass('ibm-add1-link');
+            }
+         });
+ });
+ 
+ 
+// Dropdown select function
+jQuery(function() {
+	function filterList(sortVal){
+	jQuery('dt, dd').css('display','none')
+ 		if(sortVal == 'all') {
+ 		jQuery('dt').css('display','block')
+ 		}
+ 		else {
+ 		jQuery('dt[data-sort*="' + sortVal + '"]').css('display', 'block')
+ 		}
+	};
+jQuery('.ibm-menu-list#ibm-sort select').change(function () {
+ 	filterList(this.value);
+ 	});
+ 	
+ 	
+
+ //Expand collapse toggle
+jQuery(".header").click(function () {
+	$header = jQuery(this);
+	 //getting the next element
+	$content = $header.next().children('dt:visible').next('dd');
+	
+	 //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+	$content.slideToggle(500, function () {
+	  //execute this after slideToggle is done
+	  //change text of header based on visibility of content div
+	  $header.text(function () {
+	    //change text based on condition
+	        return $content.is(":visible") ? "Collapse All" : "Expand All";
+	          
+	        });
+	 
+	   $content.is(":visible")?$header.next().children('dt').children('span').addClass('ibm-delete-link').removeClass('ibm-add1-link')
+	  							:$header.next().children('dt').children('span').removeClass('ibm-delete-link').addClass('ibm-add1-link');
+	    });
+		
+	});
+
+ });
+ 
+
+</script>
+<style type="text/css">
+.container dd.answer {
+	display:none;
+}
+dt.question{
+	cursor:pointer;
+	padding-bottom: 10px;
+}
+.toggle-view {
+padding-top:20px;
+}
+
+.toggle-view span.ibm-add1-link,
+.toggle-view span.ibm-delete-link {
+     float: right;
+     margin-right:25px;
+     
+}
+span.ibm-add1-link:hover:before {
+   color:#A5Df00;
+}
+span.ibm-delete-link:hover:before {
+   color:#fd0202;
+}
+.container .header {
+    color:#00649D;
+    padding: 2px;
+    cursor: pointer;
+    text-align:right;
+    
+}
+#deisa {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 500px;
+    position: relative;
+}
+#deisa {
+    background: url("assets/fpo/DEISA-Supercomputer.jpg") no-repeat scroll center 50% / cover rgba(0, 0, 0, 0);
+}
+</style>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!--! MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<p>
+<label for="q">
+<span class="ibm-access">Search</span>
+</label>
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input name="v" type="hidden" value="17"/>
+<input type="hidden" name="en" value="utf"/>
+<input name="lang" type="hidden" value="en"/>
+<input name="cc" type="hidden" value="us"/>
+<input value="Submit" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+<!--! LEADSPACE_BEGIN -->
+<div id="ibm-leadspace-head" class="ibm-alternate">
+<div id="ibm-leadspace-body">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<h1>Expereince First</h1>
+<p><em><span>v17e code updates</span> Information and resources to help build and modify content.</em>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- LEADSPACE_END -->
+
+
+<!--! CONTENT_NAV_BEGIN -->
+<div id="ibm-content-nav">
+
+<div id="ibm-primary-tabs">
+<ul class="ibm-tabs">
+	<li class="ibm-active"><a href="index.html">v17e Code Update</a></li>
+	<li><a href="banded.html">Page Layouts</a></li>
+	<li><a href="patterns.html">Design Patterns</a></li>
+	<li><a href="faqs.html">FAQ's</a></li>
+</ul>
+</div>
+
+</div>
+
+
+
+<!-- CONTENT_NAV_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+
+
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+<h2 class="section-header center">Updated Code and Example</h2>
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+
+<p><h3>Introduction</h3>
+This document describes developer-level features that were introduced in Atlas v17e. For different page element exisiting with v17, this document list the new classes and changed HTML code that were introduced.
+</p>
+
+<h2>Mandotory update on base template</h2>
+<ul>
+<li>Add viewport meta tag below content type meta tag:</li></ul>
+<pre class="brush: html;">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</pre>
+<ul><li>Replace current v17 www.css file with new v17e version</li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+
+<ul>
+<li>
+Replace current v17 www.js file with v17e version. <strong>jQuery</strong> and <strong>Modernizr</strong> are included as part of the common v17e JS
+</li>
+</ul>
+<pre class="brush: html;">
+&lt;script src="//1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+
+<h2>Optional CSS : Add to the template based on requirement</h2>
+<p>For v17e to make the css load faster , few CSS can be included separtely in the page based on the requirement</p>
+<ul><li>Application/Slim Masthead</li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/application.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+<ul><li>Tables </li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/data.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+<ul><li>Forms </li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/forms.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+<ul><li>Social Icons for the content area</li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/social.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+<ul>
+<li>Modules : This CSS file can be used for the listed modules
+	<ul>
+	<li>anchor link A-Z (.ibm-link-list-az)</li>
+	<li>directory link list (.ibm-directory-link-list)</li>
+	<li>list container (.ibm-list-container)</li>
+	<li>article list (.ibm-article-list)</li>
+	<li>twitter list and modules (.ibm-twitter-list / .ibm-twitter-module)</li>
+	<li>twisties (.ibm-twisty)</li>
+	<li>RSS module (.ibm-rss-module)</li>
+	<li>step indication and container (.ibm-step-indicator / .ibm-step-container)</li>
+	</ul>
+</li></ul>
+<pre class="brush: html;">
+&lt;link href="//1.www.s81c.com/common/v17e/css/module.css" rel="stylesheet" title="www" type="text/css" /&gt;
+</pre>
+
+
+<h2><i>New</i> classes introduced for base template</h2>
+<div class="container">
+	<div class="header"><span>Expand All</span> </div>
+	<dl class="toggle-view toggle_container">
+    	
+	<dt class="question">.ibm-default<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-default">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-default">Result</a></li>
+					<li><a href="#html-default">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-default" class="ibm-tabs-content">
+					
+						<p>
+						This class is a mandtory class required for 5-column layout(page with left nav).
+						There is no change in the UI with this class. This class is introduced to make the 5 column 
+						layout responsive
+						
+						</p>
+					
+				</div>
+				<div id="result-default" class="ibm-tabs-content">
+					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp"/>
+				</div>
+				<div id="html-default" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					&lt;body id="ibm-com" class="ibm-default"&gt;
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">.ibm-type<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-type">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-type">Result</a></li>
+					<li><a href="#html-type">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-type" class="ibm-tabs-content">
+				<p>This class is used for latin based templates / languages (this class applies the custom fonts)</p>
+					
+				</div>
+				<div id="result-type" class="ibm-tabs-content">
+					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp"/>
+				</div>
+				<div id="html-type" class="ibm-tabs-content">
+					<pre class="brush:html;">&lt;body id="ibm-com" class="ibm-type"&gt;</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">.ibm-band<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-band">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-band">Result</a></li>
+					<li><a href="#html-band">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-band" class="ibm-tabs-content">
+				
+				<ul>
+				<li>ibm-band is a new container used as a wrap around to the exisiting container.</li> 
+				<li>This container has a light grey background color. <br />
+					Note: To change the container color please refer the section Colors.
+				</li>
+				<li>If ibm-band is preceeded by another ibm-band container , the band will not have a grey background</li>
+				<li>Use of this class helps strech the layout to full width of the page</li>
+				<li>This can be used only with 6 column layout (landing pages) </li>
+				
+				</ul> 
+				
+					
+				</div>
+				<div id="result-band" class="ibm-tabs-content">
+					<img src="assets/codeExampleImg/ibm-band.png" alt="left_nav_temp"/>
+				</div>
+				<div id="html-band" class="ibm-tabs-content">
+				<pre class="brush:html;">
+				&lt;div class=&quot;ibm-band&quot;&gt;
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;h2&gt;sample code of ibm-band&lt;/h2&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;h2&gt;sample code&lt;/h2&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;h2&gt;sample code&lt;/h2&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">.ibm-no-rule<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-norule">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-norule">Result</a></li>
+					<li><a href="#html-norule">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-norule" class="ibm-tabs-content">
+				<p>Applied to remove the 2px black border on top of every container having .ibm-contianer class</p> 
+				</div>
+				<div id="result-norule" class="ibm-tabs-content">
+					<div class="ibm-columns">
+					<div class="ibm-col-6-3">
+						<div class="ibm-container">
+						<h2>Section without ibm-no-rule</h2>
+						<div class="ibm-container-body">
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+						</div>
+						</div>
+					</div>
+					<div class="ibm-col-6-3">
+						<div class="ibm-container ibm-no-rule">
+						<h2>Section with ibm-no-rule</h2>
+						<div class="ibm-container-body">
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div id="html-norule" class="ibm-tabs-content">
+				<pre class="brush:html;">
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-col-6-3&quot;&gt;
+				&lt;div class=&quot;ibm-container ibm-no-rule&quot;&gt;
+				&lt;h2&gt;Section with ibm-no-rule&lt;/h2&gt;
+				&lt;div class=&quot;ibm-container-body&quot;&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">.ibm-resize<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-resize">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-resize">Result</a></li>
+					<li><a href="#html-resize">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-resize" class="ibm-tabs-content">
+				<p>Applied to images to allow resize based on parent container width</p> 
+				</div>
+				<div id="result-resize" class="ibm-tabs-content">
+					<div class="ibm-columns">
+					<div class="ibm-col-6-2">
+						
+						<h2>Image without ibm-resize in 6-2 column</h2>
+						
+						<img alt="" src="assets/codeExampleImg/cocomac-spiral-full.jpg" />
+					
+					</div>
+					<div class="ibm-col-6-2">
+						
+						<h2>Image with ibm-resize in 6-2 column</h2>
+						
+						<img class="ibm-resize" alt="" src="assets/codeExampleImg/cocomac-spiral-full.jpg" />
+						
+					</div>
+					</div>
+				</div>
+				<div id="html-resize" class="ibm-tabs-content">
+				<pre class="brush:html;">
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+					&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+						&lt;h2&gt;Image with ibm-resize in 6-2 column&lt;/h2&gt;
+						&lt;img class=&quot;ibm-resize&quot; alt=&quot;&quot; src=&quot;assets/codeExampleImg/cocomac-spiral-full.jpg&quot; /&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">.ibm-w-gutter<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-wgutter">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-wgutter">Result</a></li>
+					<li><a href="#html-wgutter">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-wgutter" class="ibm-tabs-content">
+				<ul>
+				<li>Applied to ibm-col-6-3 and ibm-col-4-2 containers for additional 30px margin between columns</li>
+				<li>Added in between .ibm-columns and .ibm-col-6-3/.ibm-col-4-2 class</li>
+				<li>Used only in 6 column layout</li>
+				</ul>
+				 
+				</div>
+				<div id="result-wgutter" class="ibm-tabs-content">
+				<div class="ibm-columns">
+				<div class="ibm-w-gutter">
+				<div class="ibm-col-4-2">
+				<h3>Half Columns 1</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum. </p>
+				</div>		
+				<div class="ibm-col-4-2">
+				<h3>Half Columns 2</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum. </p>
+				</div>		
+				</div>
+				</div>
+				</div>
+				<div id="html-wgutter" class="ibm-tabs-content">
+				<pre class="brush:html;">
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-w-gutter&quot;&gt;
+				&lt;div class=&quot;ibm-col-4-2&quot;&gt;
+				&lt;h3&gt;Half Columns 1&lt;/h3&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum. &lt;/p&gt;
+				&lt;/div&gt;		
+				&lt;div class=&quot;ibm-col-4-2&quot;&gt;
+				&lt;h3&gt;Half Columns 2&lt;/h3&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum. &lt;/p&gt;
+				&lt;/div&gt;		
+				&lt;/div&gt;
+				&lt;/div&gt;
+				</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">.ibm-thumbnail-module, .ibm-thumbnail-smaill, .ibm-thumbnail-swap, .ibm-sprite<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-thumbModule">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-thumbModule">Result</a></li>
+					<li><a href="#html-thumbModule">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-thumbModule" class="ibm-tabs-content">
+				<ul>
+				<li><strong>.ibm-thumbnail-module</strong> - Applied within columns to allow hover / click states on sprites. This container also changes the layout under the 480 grid</li>
+				<li><strong>.ibm-thumbnail-small</strong> - Applying "ibm-thumbnail-small" calss to the "ibm-columns" container will automatically convert a 4 col large image into 2 x 2 rows of smaller thumnails</li>
+				<li><strong>.ibm-thumbnail-swap</strong> - Applied to ibm-thumbnail-module to swap image to right side. This applies to mobile (480) grid.</li>
+				<li><strong>.ibm-sprite</strong> - Applied to container to add image sprites for mousehover states</li>
+				</ul>
+				 
+				</div>
+				<div id="result-thumbModule" class="ibm-tabs-content">
+				<h3>.ibm-thumbnail-module with ibm-sprite container</h3>
+				<div class="ibm-columns">
+				<div class="ibm-col-6-2">
+				<a href="#" class="ibm-thumbnail-module">
+					<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+					<h2>Lorem ipsum: ibm-col-6-2</h2>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+				</a>
+				</div>
+				<div class="ibm-col-6-2">
+				<a href="#" class="ibm-thumbnail-module">
+					<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+					<h2>Lorem ipsum: ibm-col-6-2</h2>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+				</a>
+				</div>
+				</div>
+				<div class="ibm-rule"><hr /></div>
+				<h3>ibm-thumnail-module with in ibm-thumbnail-small container</h3>
+				<div class="ibm-columns">
+				<div class="ibm-thumbnail-small">
+					<div class="ibm-col-6-2">
+					<a href="#" class="ibm-thumbnail-module">
+						<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+						<h2>Lorem ipsum: ibm-col-6-2</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+					</a>
+					</div>
+					<div class="ibm-col-6-2">
+					<a href="#" class="ibm-thumbnail-module">
+						<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+						<h2>Lorem ipsum: ibm-col-6-2</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+					</a>
+					</div>
+				</div>
+				</div>
+				<div class="ibm-rule"><hr /></div>
+				<h3>ibm-thumnail-module with ibm-thumbnail-swap</h3>
+				<div class="ibm-columns">
+				<div class="ibm-thumbnail-small">
+					<div class="ibm-col-6-2">
+					<a href="#" class="ibm-thumbnail-module ibm-thumbnail-swap">
+						<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+						<h2>Lorem ipsum: ibm-col-6-2</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+					</a>
+					</div>
+					<div class="ibm-col-6-2">
+					<a href="#" class="ibm-thumbnail-module ibm-thumbnail-swap">
+						<div class="ibm-sprite"><img src="../i/fpo/thm-sprite-test.png" alt="" /></div>
+						<h2>Lorem ipsum: ibm-col-6-2</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+					</a>
+					</div>
+				</div>
+				</div>
+				</div>
+				<div id="html-thumbModule" class="ibm-tabs-content">
+				<pre class="brush:html;">
+				&lt;h3&gt;.ibm-thumbnail-module&lt;/h3&gt;
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module&quot;&gt;
+				&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+				&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module&quot;&gt;
+				&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+				&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/a&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-rule&quot;&gt;&lt;hr /&gt;&lt;/div&gt;
+				&lt;h3&gt;ibm-thumnail-module with in ibm-thumbnail-small container&lt;/h3&gt;
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-thumbnail-small&quot;&gt;
+					&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+					&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module&quot;&gt;
+						&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+						&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+						&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+					&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+					&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module&quot;&gt;
+						&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+						&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+						&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+					&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-rule&quot;&gt;&lt;hr /&gt;&lt;/div&gt;
+				&lt;h3&gt;ibm-thumnail-module with ibm-thumbnail-swap&lt;/h3&gt;
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-thumbnail-small&quot;&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module ibm-thumbnail-swap&quot;&gt;
+					&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+					&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+					&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;ibm-col-6-2&quot;&gt;
+				&lt;a href=&quot;#&quot; class=&quot;ibm-thumbnail-module ibm-thumbnail-swap&quot;&gt;
+					&lt;div class=&quot;ibm-sprite&quot;&gt;&lt;img src=&quot;../i/fpo/thm-sprite-test.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+					&lt;h2&gt;Lorem ipsum: ibm-col-6-2&lt;/h2&gt;
+					&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.&lt;/p&gt;
+				&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+
+				</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">.ibm-inner-margin<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-margin">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-margin">Result</a></li>
+					<li><a href="#html-margin">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-margin" class="ibm-tabs-content">
+				<p>Applied to columns to provide extra 10px padding</p>
+					
+				</div>
+				<div id="result-margin" class="ibm-tabs-content">
+				<div class="ibm-columns">
+					<div class="ibm-col-4-2">
+					<h2>ibm-col-4-2 without ibm-inner-margin</h2>
+					<img src="http://placehold.it/320x117" alt="placeholder"/>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+					</div>
+					<div class="ibm-col-4-2">
+					<div class="ibm-inner-margin">
+					<h2>ibm-col-4-2 with ibm-inner-margin</h2>
+					<img src="http://placehold.it/320x117" alt="placeholder"/>
+					<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+					</div>
+					</div>
+				</div>
+				</div>
+				<div id="html-margin" class="ibm-tabs-content">
+					<pre class="brush:html;">
+				&lt;div class=&quot;ibm-columns&quot;&gt;
+				&lt;div class=&quot;ibm-col-4-2&quot;&gt;
+				&lt;div class=&quot;ibm-inner-margin&quot;&gt;
+				&lt;h2&gt;ibm-col-4-2 with ibm-inner-margin&lt;/h2&gt;
+				&lt;img src=&quot;http://placehold.it/32ė&quot; alt=&quot;placeholder&quot;/&gt;
+				&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. &lt;/p&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;/div&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">Text treatment classes<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-textTreat">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-textTreat">Result</a></li>
+					<li><a href="#html-textTreat">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-textTreat" class="ibm-tabs-content">
+					V17e introduced few classes to achive different size and alignment for text.
+						<ul>
+						<li><strong>.large:</strong> Applied to column grid (4-2,4-3,5-2,5-3,5-4,6-3,6-4,6-5)</li>
+						<li><strong>.small:</strong> Applied to column grid (4-2,4-3,5-2,5-3,5-4,6-3,6-4,6-5)</li>
+						<li><strong>.center:</strong> Applied to align the content , headers to the center </li>
+						<li><strong>.bottom:</strong> Applied to align the content at the bottom, when full width image is used </li>
+						<li><strong>.section-header:</strong> Applied to section headers</li>
+						</ul>
+				</div>
+						
+				<div id="result-textTreat" class="ibm-tabs-content">
+					<div class="ibm-columns">
+					<div class="ibm-col-4-2 large">
+					<h3>Large</h3>
+					<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+					</div>
+					<div class="ibm-col-4-2 small">
+					<h3>Small</h3>
+					<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+					</div>
+					</div>
+					<div class="ibm-columns">
+					<div class="ibm-col-4-2 center">
+					<h3>Center</h3>
+					<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+					</div>
+					<div class="ibm-col-4-2 center">
+					<h3 class="section-header">Header</h3>
+					<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+					</div>
+					</div>
+					<div class="ibm-band" id="deisa">
+					<h2 class="section-header large center">Full image</h2>
+					<div class="ibm-columns">
+					<div class="ibm-col-1-1 center bottom">
+					<h3>Text aligned center bottom </h3>
+					<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis.</p>
+					</div>
+					</div>
+					</div>
+
+					
+				</div>
+				<div id="html-textTreat" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					&lt;div class=&quot;ibm-columns&quot;&gt;
+					&lt;div class=&quot;ibm-col-4-2 large&quot;&gt;
+					&lt;h3&gt;Large&lt;/h3&gt;
+					&lt;p&gt;Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;ibm-col-4-2 small&quot;&gt;
+					&lt;h3&gt;Small&lt;/h3&gt;
+					&lt;p&gt;Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;ibm-columns&quot;&gt;
+					&lt;div class=&quot;ibm-col-4-2 center&quot;&gt;
+					&lt;h3&gt;Center&lt;/h3&gt;
+					&lt;p&gt;Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;ibm-col-4-2 center&quot;&gt;
+					&lt;h3 class=&quot;section-header&quot;&gt;Header&lt;/h3&gt;
+					&lt;p&gt;Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	<dt class="question">New classes for color treatment<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-color">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-color">Result</a></li>
+					<li><a href="#html-color">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-color" class="ibm-tabs-content">
+					
+						
+						Few new classes for effects are introduced with v17e design system. This classes can be appplied
+						for shadow effect on text,sections etc 
+						
+						<ul>
+						<li><strong>.section-shadow:</strong></li>
+						<li><strong>.shadow-soft:</strong></li>
+						<li><strong>.shadow-hard:</strong>  </li>
+						<li><strong>.emboss-light:</strong> Dark text is against light background </li>
+						
+						<li><strong>.emboss-dark:</strong> Light text is against dark background </li>
+						<li><strong>.glow:</strong> Used when white text needs to glow </li>
+						<li><strong>.grad-k95-85:</strong> Applied for gradient effect</li>
+						<li><strong>.grad-k85-75:</strong> Applied for gradient effect</li>
+						<li><strong>.grad-k75-65:</strong> Applied for gradient effect</li>
+						<li><strong>.grad-k05-02:</strong> Applied for gradient effect</li>
+						<li><strong>.bg-white:</strong> Applied for color background</li>
+						<li><strong>.bg-w90:</strong></li>
+						<li><strong>.bg-k01:</strong></li>
+						<li><strong>.bg-k02:</strong></li>
+						<li><strong>.bg-k03:</strong></li>
+						<li><strong>.bg-k05:</strong></li>
+						<li><strong>.bg-k10:</strong></li>
+						<li><strong>.bg-blue:</strong></li>
+						<li><strong>.white-box:</strong></li>
+						<li><strong>.fade-up-sharp:</strong> Applied for section shadows </li>
+						<li><strong>.shad-sm:</strong> Applied for section shadows</li>
+						<li><strong>.shad-med:</strong> Applied for section shadows</li>
+						<li><strong>.shad-wid:</strong> Applied for section shadows</li>
+						<li><strong>.exdent-sm:</strong> Exdenting???-tablet 5px	phone 5px</li>
+						<li><strong>.exdent-md:</strong> Exdenting???-tablet 10px	phone 5px </li>
+						<li><strong>.exdent-lg:</strong> Exdenting???-tablet 20px	phone 10px </li>
+						</ul>
+				
+									
+				</div>
+				<div id="result-color" class="ibm-tabs-content">
+					Need idea to incorporate all the examples
+				</div>
+				<div id="html-color" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					Need idea to incorporate all code examples
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">HTML update added on eleemnts<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description-html">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result-html">Result</a></li>
+					<li><a href="#html-html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description-html" class="ibm-tabs-content">
+					
+						HTML update was done to make the code more flexible and structured
+						<ul><li><strong>Leadspace:</strong> Leadspace HTML code is udpated to introduce the grid system</li></ul>
+					
+				</div>
+				<div id="result-html" class="ibm-tabs-content">
+					<img  alt="" src="assets/codeExampleImg/leadspace.jpg" />
+				</div>
+				<div id="html-html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					&lt;div id=&quot;ibm-leadspace-head&quot; class=&quot;ibm-alternate ibm-no-tabs&quot;&gt;
+					&lt;div id=&quot;ibm-leadspace-body&quot;&gt;
+					&lt;div class=&quot;ibm-columns&quot;&gt;
+					&lt;div class=&quot;ibm-col-1-1&quot;&gt;
+					&lt;h1&gt;Single line title &lt;/h1&gt;
+					&lt;p&gt;&lt;em&gt;&lt;span&gt;Subtitle text header.&lt;/span&gt; This is the body copy below the subtitle text.&lt;/em&gt;&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;/div&gt;
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	
+	</dl>
+</div>
+<!-- End of base container -->
+
+</div>
+</div>
+
+
+
+
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+<div id="ibm-merchandising-module">
+<!--IBM Web Merchandising Module-->
+</div>
+</div>
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
