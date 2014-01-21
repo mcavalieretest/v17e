@@ -9,14 +9,14 @@
 // Description: JS Customization for MobileFirst project
 // Author: Jefferson D Florentino/New York/IBM@IBMUS
 // Date: Nov 25, 2013
-//
+// 
 ;(function ($, window, document, undefined) {
 	$(function () {
 		var  mDeviceCheck = /(Mobile|iPhone|Blackberry)/gi.test( navigator.userAgent )
 			,$sortable = $('.ibm-sortable')
 			,$masonryItems = $sortable.find('.ibm-card')
 			,filter;
-		
+
 		if (!mDeviceCheck) {
 			$.getScript('//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js');
 			$('span.phone a').replaceWith($('span.phone a').text());
