@@ -59,6 +59,85 @@
 
 //SMA overrides
 
+@media (-webkit-min-device-pixel-ratio: 1.3),
+       (-o-min-device-pixel-ratio: 2.6/2),
+       (min--moz-device-pixel-ratio: 1.3),
+       (min-device-pixel-ratio: 1.3),
+       (min-resolution: 1.3dppx) {
+ 
+        .actions {
+            font-size: 14px;
+            overflow: hidden;
+
+            a {
+                line-height: 28px;
+            }
+
+            a.retweet, a.reply, a.fav {
+                padding: 0 0 0 28px;
+                background: url('../i/beta/twitter-spritev2_300.png') no-repeat -32px center;
+                background-size: 249px 28px;
+            }
+
+            a.retweet {
+                background-position: -154px 0;
+
+                &:hover {
+                    background-position: -186px 0;
+                }
+            }
+
+            a.reply {
+                background-position: 8px 0;
+
+                &:hover {
+                    background-position: -24px 0;
+                }
+            }
+
+            a.fav {
+                background-position: -59px 0;
+
+                &:hover {
+                    background-position: -91px 0;
+                }
+            }
+        } 
+
+
+        .smaShareBubble {
+
+            width: 170px;
+
+            span {
+                height: 32px;
+                width: 34px;
+
+                &.digg {
+                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 0 transparent;
+                }
+
+                &.facebook {
+                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -420px transparent;
+                }
+
+                &.twitter {
+                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -840px transparent;
+                }
+
+                &.delicious {
+                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -210px transparent;
+                }
+
+                &.linkedin {
+                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -630px transparent;
+                }
+            }
+             
+
+        }  
+}
+
 
 .smaEmbedded.dijitContainer {
     width: 100% !important;
