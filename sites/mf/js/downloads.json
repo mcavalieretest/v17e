@@ -1,0 +1,954 @@
+{
+  "Downloads page content": {
+    "title": "IBM MobileFirst",
+    "hero-copy": "Download software trials, demos, videos, white papers, and more.",
+    "tiles": [
+      {
+        "eyebrow": "Mobile enterprise",
+        "title": "Fast track to the future",
+        "image": "../i/downloads/64_fasttrack.jpg",
+        "description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW",
+            "text": "Download report",
+            "icon": "pdf",
+            "size": "(2.1 MB)"
+          }
+        ],
+        "tag": "reports"
+      },
+      {
+        "eyebrow": "Strategy & Design Services",
+        "title": "Capitalizing on mobile moments for smarter commerce",
+        "image": "../i/downloads/58_capitalizingon.jpg",
+        "description": "Determining how to build systems of engagement from vision through execution.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov7103&S_TACT=109KA5T ",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.9 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Strategy & Design Services",
+        "title": "Creating a compelling mobile user experience",
+        "image": "../i/downloads/59_creatingacompelling.jpg",
+        "description": "How a business makes its mobile offering stand out from the crowd.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov10857&S_TACT=109KA5TW&S_CMP=?",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "A mobile application development primer",
+        "image": "",
+        "description": "A guide for enterprise teams working on mobile application projects.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov3310&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobilebc",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.1 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Forrester Report: The Total Economic Impact of the IBM Worklight Platform",
+        "image": "../i/downloads/35_forresterreport.jpg",
+        "description": "The cost savings in the development and maintenance of multiplatform mobile apps.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov14244&S_TACT=109KA5TW",
+            "text": "Download report",
+            "icon": "pdf",
+            "size": "(336 KB)"
+          }
+        ],
+        "tag": "reports"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Are you ready for BYOD?",
+        "image": "",
+        "description": "Find out in the <em>Mobility is moving fast</em> white paper. ",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mobile_byod_wp&S_TACT=109KA5TW&S_CMP=web_ibm_ws_mobile_hr_mobilesol",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.7 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "IBM Endpoint Manager for Mobile Devices 30-day trial",
+        "image": "",
+        "description": "Built on BigFix&reg; technology, IBM Endpoint Manager helps you achieve smarter, faster endpoint management by combining endpoint management and security into a single solution.",
+        "featured": true,
+        "link": [
+          {
+            "url": "http://www.ibm.com/developerworks/downloads/tiv/endpoint/?S_TACT=109HJ0CW",
+            "text": "Download software",
+            "icon": "external",
+            "size": ""
+          }
+        ],
+        "tag": "software-trials"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "Ensuring application security in mobile device environments",
+        "image": "../i/downloads/15_ensuringapplication.jpg",
+        "description": "Learn how to identify and prevent mobile application vulnerabilities.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=swg-Tivoli_Organic&S_PKG=500029205",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.6 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Analytics",
+        "title": "Customer experience management in the new era of mobility",
+        "image": "",
+        "description": "Help protect your brand while moving to market as quickly as possible.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(302 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Analytics",
+        "title": "Native application software develolpment kit (SDK) for IBM Tealeaf CX Mobile",
+        "image": "",
+        "description": "Logging framework captures customer behavior, error detail, detects customer struggle and quantifies business impact.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13966&S_TACT=109KA5TW",
+            "text": "Download software",
+            "icon": "external",
+            "size": ""
+          }
+        ],
+        "tag": "software-trials"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "Bring ROI to your BYOD",
+        "image": "../i/downloads/1_bringroi.jpg",
+        "description": "Forrester documents <em>The Total Economic Impact of IBM Managed Mobility for BYOD.</em>",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=gts-LITS-desktop-cloud-NA&S_PKG=ov14067&S_TACT=109KA5TW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(4.3 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "Developing more effective mobile enterprise programs",
+        "image": "../i/downloads/2_developingmore.jpg",
+        "description": "A practical how-to guide on developing a strategy for implementing more effective mobile enterprise programs for your employees.",
+        "featured": true,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov10025&S_TACT=109KA5TW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(900 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Mobile enterprise",
+        "title": "IBM MobileFirst Industry Overview",
+        "image": "../i/downloads/65_IBMmobilefirstindustry.jpg",
+        "description": "The personal and continuous access of mobile devices is enabling enterprises to transform how they do business.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=6hkv0dPHgkM&list=PLRrOvPN-xqYNy2rxCcMmqIGAFt70XoBCT&index=4",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Mobile enterprise",
+        "title": "How a mobile enterprise works",
+        "image": "../i/downloads/66_howamobile.jpg",
+        "description": "The promise and possibilities of a becoming a mobile enterprise.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=MGgPUQklrxI&feature=youtu.be",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Strategy & Design Services",
+        "title": "Accelerating your business through mobile engagement",
+        "image": "../i/downloads/60_acceleratingyour.jpg",
+        "description": "How businesses interact with customers using this unique platform to build greater intimacy.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=HFpXSwt4qQo",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Strategy & Design Services",
+        "title": "Establishing an effective application strategy for your mobile enterprise",
+        "image": "",
+        "description": "How to enable, develop and deploy mobile-based applications in an end-user environment.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov9251&S_TACT=109KA5TW&S_CMP=?",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(605 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Collaboration in the mobile device industry",
+        "image": "../i/downloads/38_collaborationin.jpg",
+        "description": "How to partner, produce and stay competitive.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov3303&S_TACT=109KA5TW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Native, web or hybrid mobile-app development",
+        "image": "../i/downloads/32_nativeweb.jpg",
+        "description": "The pros and cons of each approach, considering the impacts of budget, project timeframe, target audience, and app functionality.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mobile_appdev_wp&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobileo",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(864 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Integrating Worklight Studio for developing mobile application with Rational Team Concert",
+        "image": "../i/downloads/41_integratingworklight.jpg",
+        "description": "Integrating Worklight Studio for developing mobile application with Rational Team Concert.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www-01.ibm.com/software/mobile-solutions/worklight/videos/team-concert/",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "WebSphere Cast Iron Cloud Integration",
+        "image": "../i/downloads/42_IBMwebsphere.jpg",
+        "description": "See how WebSphere Cast Iron Express helps you quickly and easily integrate your resources.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www-01.ibm.com/software/integration/cast-iron-cloud-integration/demos/rapid-connect/",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM WebSphere MQ Evaluation",
+        "image": "",
+        "description": "Transform the way you interact with your customers using mobile technology.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?pkgid=&S_SRCID=ESD-WSMQ-EVAL&source=ESD-WSMQ-EVAL&S_TACT=109J84RW&S_CMP=web_ibm_ws_appint_ct_messaging&S_PKG=CR9H9ML ",
+            "text": "Download software",
+            "icon": "external",
+            "size": ""
+          }
+        ],
+        "tag": "software-trials"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM Worklight Developer Edition",
+        "image": "",
+        "description": "A self-contained, easy-to-install plugin for the Eclipse IDE.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=swg-worklight&S_TACT=109KA6TW&S_CMP=web_ibm_ws_mobile_bd_worklight",
+            "text": "Download software",
+            "icon": "external",
+            "size": ""
+          }
+        ],
+        "tag": "software-trials"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM Worklight -- Technology overview  ",
+        "image": "../i/downloads/46_IBMworklighttechnology.jpg",
+        "description": "Extend your business with HTML5, hybrid, and native apps that reach a variety of mobile devices. IBM Worklight supports you from development to post-deployment management.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13223&S_TACT=109KA5TW&S_CMP=1617-1-119389",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.8 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Improve your mobile applications security with IBM Worklight",
+        "image": "../i/downloads/47_improveyour.jpg",
+        "description": "Intgrates with your existing security infrastructure to create and deliver security-rich mobile applications that help protect ondevice data.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8045&S_TACT=109KA5TW&S_CMP=1617-1-119398",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.5 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Enterprise Caching in a Mobile Environment",
+        "image": "../i/downloads/48_enterprisecaching.jpg",
+        "description": "Accelerate your mobile business and provide a better user experience by integrating the elastic cache capabilities of WebSphere eXtreme Scale with IBM Worklight.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.redbooks.ibm.com/abstracts/tips0953.html?Open",
+            "text": "Download Redbook",
+            "icon": "pdf",
+            "size": "(714 KB)"
+          }
+        ],
+        "tag": "redbooks"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Six ways to accelerate Android mobile application development",
+        "image": "../i/downloads/57_sixways.jpg",
+        "description": "Creating an integrated solution for collaboration among development teams.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov3250",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(390 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "WebSphere MQ Telemetry realtime access with mobile devices",
+        "image": "../i/downloads/45_webspheremq.jpg",
+        "description": "Learn how WebSphere MQ Telemetry's Universal Information Framework (UIF)can transform the way you can interact with your customers.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mqtt_mobile_demo&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobileconnect ",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "How to create and connect mobile apps using WebSphere Cast Iron and IBM Worklight",
+        "image": "../i/downloads/40_howtocreate.jpg",
+        "description": "Reach the widest range of devices and consumers.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=swg-castiron&S_PKG=castiron_demo_mobile&S_TACT=109KA5IW& ",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Mobile Infrastructure Matters - IBM Worklight Overview (Part 1)",
+        "image": "../i/downloads/49_mobileinfrastructure.jpg",
+        "description": "How an insurance company ports an existing mobile app to a new mobile platform, and also adds new features, in order to give it a competitive edge.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=R1k4cDEnitk",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos redbooks reports software-trials thought-leadership videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Mobile Infrastructure Matters - Cross-Platform Development (Part 2)",
+        "image": "../i/downloads/50_mobilefranstructure2.jpg",
+        "description": "How a senior developer ports an app to a new mobile platform, adds a new recording feature, and validates functionality on both iPhone and Android platforms.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=9JIUlTnhohI",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos redbooks reports software-trials thought-leadership videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Opening the mainframe to mobile devices",
+        "image": "../i/downloads/51_openingthemainframe.jpg",
+        "description": "The IBM Mobile Enterprise solution: integrating end-to-end application lifecycle management with both mobile and mainframe development features into one package.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=tqdVsGd6jrc",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts "
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Creating mobile applications with the IBM Customer Experience Suite",
+        "image": "../i/downloads/52_creatingmobile.jpg",
+        "description": "Quickly optimizes Web experiences for smart devices. You can write once and support many devices.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=TiwheJn5_CE",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "Lifecycle management in mobile application development",
+        "image": "../i/downloads/53_lifecyclemanagement.jpg",
+        "description": "Application lifecycle management (ALM) solutions, with collaborative capabilities, help align the development and delivery of mobile applications with your business objectives.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=qeGM_MHPHN4",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM Worklight - Direct Update",
+        "image": "../i/downloads/54_IBMworklightdirect.jpg",
+        "description": "See how Worklight offers optimal application version control, for faster, easier support and enables you to push updates directly to your application on end-user devices.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=NvNzJtfub4Y",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM Worklight - Hybrid Applications ",
+        "image": "../i/downloads/55_IBMworklighthybrid.jpg",
+        "description": "Learn how deliver the best of native and Web apps with fast hybrid app development.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=uPFoT_MqLY4",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Platform",
+        "title": "IBM WebSphere Cast Iron WebAPI Builder - 90-day trial",
+        "image": "",
+        "description": "Assemble and expose APIs with just a few clicks, using a configuration, not a coding approach.",
+        "featured": false,
+        "link": [
+          {
+            "url": "bit.ly/CastIronTrial",
+            "text": "Download software",
+            "icon": "external",
+            "size": ""
+          }
+        ],
+        "tag": "software-trials"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Getting a better grip on mobile devices",
+        "image": "",
+        "description": "Value and control for the global enterprise.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mobile_wp_devices&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobilesecurity",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(820 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "IBM Endpoint Manager for Mobile Devices",
+        "image": "../i/downloads/25_IBMendpoint.jpg",
+        "description": "Extend IBM's Big Fix&reg; technology for managing and securing servers, desktops and laptops to iOS, Android, Blackberry, Symbian and Windows smartphones and tablets.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?feature=player_embedded&v=dmqf8xo1Mlo",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos "
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Select the right solution for endpoint management",
+        "image": "",
+        "description": "Enhance visibility and control for hundreds of thousands of distributed endpoints.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mobile_solution_endpoint_mgmt&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobilemanage\n ",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(291 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Netcool Network Management Overview",
+        "image": "",
+        "description": "Solutions help you gain visibility, control, and automation over your network infrastructure by enabling you to discover, visualize, detect, configure, secure, activate, integrate, and remediate across your network.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://ibmtvdemo.edgesuite.net/software/tivoli/demos/Netcool_Network_Mgmt/index.html ",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Integrating TEM and Netcool to provide a Mobile Device Management solution",
+        "image": "../i/downloads/31_integratingtem.jpg",
+        "description": "How to use IBM Endpoint Manager to gather network information from wireless connected workstations and handheld devices to automatical integrate that information into your traditional network management systems.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://ibmtvdemo.edgesuite.net/software/tivoli/demos/TEM-Netcool_demo/index.html",
+            "text": "See demo",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "demos"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Native, web or hybrid mobile-app development",
+        "image": "../i/downloads/32_nativeweb.jpg",
+        "description": "The pros and cons of each approach, considering the impacts of budget, project timeframe, target audience, and app functionality.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=mobile_appdev_wp&S_TACT=109KA5TW&S_CMP=web_ibm_xx_mobile_rn_mobileo)",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(864 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Use endpoints as sensors to help optimize your wireless network",
+        "image": "../i/downloads/33_useendpoints.jpg",
+        "description": "Integrated network and device management can keep mobile devices connected and employees productive.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov7693&S_TACT=109KA8JW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.3 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "Next-generation Telecom Expense Management (TEM)",
+        "image": "../i/downloads/34_nextgeneration.jpg",
+        "description": "Generate greater value and control over your mobile enterprise by expanding TEM beyond invoicing alone.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov16133",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(230 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Management",
+        "title": "IBM MobileFirst Management and Security Overview",
+        "image": "../i/downloads/29_IBMmobilefirstmanagement.jpg",
+        "description": "How we can help you manage and secure mobile devices, services and applications.  Key capabilities include mobile lifecycle management, device analytics and control, and secure networkc ommunications.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=GDbQtILsoGU",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "Accelerating the deployment of a secure mobile enterprise",
+        "image": "../i/downloads/17_acceleratingthe.jpg",
+        "description": "Maturing the mobile enterprise security posture to mitigate risk while in pursuit of business potential.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov9250&S_TACT=109KA5TW&S_CMP=?",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.6 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "Delivering confidence to seize the mobile opportunity",
+        "image": "../i/downloads/18_deliveringconfidence.jpg",
+        "description": "Embracing mobile by putting the right security solutions in place.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=yhWx9il3YzU",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "IBM integration of mobile cloud computing and mobile cloud security",
+        "image": "../i/downloads/19_IBMsintegration.jpg",
+        "description": "Adapting to the dynamic nature of the Internet and mobile cloud computing to provide added mobile security for data stored in the cloud.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=UZGLcnfshg0",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "WebSphere DataPower for mobile security",
+        "image": "../i/downloads/20_webspheredatapower.jpg",
+        "description": "The importance of harnessing mobile technology as an opportunity to extend relationships, build stronger brand loyalties, and grow your business.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=FNmqlXZi7Y8&list=PLRrOvPN-xqYNvGcNc8ziH5Q09F5uLGl2D",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Security",
+        "title": "Finding a strategic voice",
+        "image": "../i/downloads/21_findastrategic.jpg",
+        "description": "Insights from the 2012 IBM Chief Information Security Officer Assessment.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov3681",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.4 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Analytics",
+        "title": "Optimizing the Mobile Experience",
+        "image": "",
+        "description": "Seeing and overcoming the obstacles that customers encounter when using mobile channels.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.internetevolution.com/tutorial-optimizing-mobile.asp",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Analytics",
+        "title": "A report on the Mobile Customer Experience",
+        "image": "",
+        "description": "Based on a Harris Interactive 2011 Mobile Transactions Survey.",
+        "featured": false,
+        "link": [
+          {
+            "url": "IBM.com",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(136 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "Preparing your network for the mobile onslaught",
+        "image": "",
+        "description": "How networks can overcome the security and delivery challenges posed by mobile devices.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov7938",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(756 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "The new workplace: Are you ready?",
+        "image": "../i/downloads/5_thenew.jpg",
+        "description": "How to capture business value.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8850&S_TACT=109KA5TW&S_CMP",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(598 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "IBM Mobile Services - A Personal Journey",
+        "image": "",
+        "description": "Four senior IBM executives share their insights on the changes in mobile technology  and how to become a flexible, mobile enterprise, and enable a smarter, more productive workforce.",
+        "featured": false,
+        "link": [
+          {
+            "url": "http://www.youtube.com/watch?v=0sEaLyLjFag",
+            "text": "See video",
+            "icon": "video",
+            "size": ""
+          }
+        ],
+        "tag": "videos-webcasts"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "The new workplace: Supporting <em>bring your own</em>",
+        "image": "",
+        "description": "How you can derive business value from BYOD while still providing a \nsecurity-rich IT infra-structure and consistent service levels.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13524&S_TACT=109KA5TW",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(900 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "Building the mobile enterprise: integrated, secure and productive",
+        "image": "../i/downloads/8_buildingthe.jpg",
+        "description": "A checklist for putting mobile into your organization first.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13717",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(284 KB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      },
+      {
+        "eyebrow": "Development & Integration Services",
+        "title": "Achieving success with a flexible workplace",
+        "image": "../i/downloads/9_achievingsuccess.jpg",
+        "description": "Provisioning a flexible workplace pushes the boundaries of IT and drives a search for outside help.",
+        "featured": false,
+        "link": [
+          {
+            "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov16129",
+            "text": "Download white paper",
+            "icon": "pdf",
+            "size": "(1.9 MB)"
+          }
+        ],
+        "tag": "thought-leadership"
+      }
+    ],
+    "tileTemplate" : [
+      {
+        "eyebrow": "Pillar name",
+        "title": "Download name",
+        "image": "../i/downloads/",
+        "description": "blah blah",
+        "featured": false,
+        "link": [
+          {
+            "url": "IBM.com",
+            "text": "Download white paper",
+            "icon": "pdf video external",
+            "size": "(000 KB)"
+          }
+        ],
+        "tag": "demos redbooks reports software-trials thought-leadership videos-webcasts"
+      }
+    ]
+  }
+}
