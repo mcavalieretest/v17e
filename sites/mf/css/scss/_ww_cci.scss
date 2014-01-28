@@ -62,6 +62,8 @@
 //	background-size: cover;
 }
 
+#ibm-leadspace-head.ibm-news-background {background: #018ac0 url(../i/news/lead-news.jpg) no-repeat 100% 100%;}
+
 /*
 .no-backgroundsize #ibm-leadspace-head.ibm-alternate-background {
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/mobilefirst/i/case-studies/lead-ottawa.jpg', sizingMethod='scale');
@@ -337,6 +339,38 @@ h1.ibm-brand strong {
 	text-decoration: underline;
 }
 
+.ibm-news-item,
+.ibm-event {
+	margin: 0 0 20px;
+	& .ibm-category,
+	& .ibm-date {font-weight: bold; font-size: 0.9em; padding: 0;}
+	& h3 {
+		font: normal 1.5em/1.583em "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
+		padding: 0;
+		& a {color: #333}
+	}
+	& p {font-size: 0.875em; line-height: 1.429em;}
+}
+.ibm-event .ibm-media {margin: 0 0 10px; display: block;}
+.ibm-landing-page #ibm-leadspace-head  {
+	& .ibm-ribbon-pane p {padding-bottom: 10px;}
+	& .ibm-ribbon-nav {
+		margin: 0 auto !important;
+		text-align: center;
+		top: auto;
+		bottom: 50px;
+		width: 100% !important;
+		& a {
+			background: #fff !important;
+			border-radius: 6px;
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+		}
+		& a.ibm-active {background: #001C26 !important}
+	}
+}
+#RecentNewsList .ibm-col-6-2:nth-child(2n+1) {clear: both;}
 
 .ibm-connect-bar { 
 	display: block; 
@@ -437,7 +471,18 @@ span.phone a {
 .callingEnabled .ibm_cci-nocall {
 	display: none;
 }
-
+#ibm-leadspace-body {position: relative;}
+#ibm-leadspace-body .ibm-columns .ibm-ribbon .ibm-ribbon-section .ibm-columns {
+	margin: 0 -10px;
+	clear:  none;
+	float:  left;
+	padding-top: 121px !important;
+}
+#ibm-leadspace-body .ibm-columns.ibm-leadspace-slider-overlay {
+	position: absolute;
+	left: 0;
+	top:  0;
+}
 
 @media only screen and (min-width: 0) and (max-width: 800px) {
 

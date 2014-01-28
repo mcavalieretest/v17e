@@ -1,0 +1,167 @@
+{
+	"news" : {
+		 "headline" : "NEWS HEADLINE"
+		,"description" : "NEWS DESCRIPTION"
+		,"tiles" : [
+			{
+				 "eyebrow": "Mobile enterprise"
+				,"title": "Fast track to the future (hero)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": true
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "Something Else (hero)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": true
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "A different category"
+				,"title": "A third thing (featured)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": true
+				,"hero": false
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "A different category"
+				,"title": "A fourth thing (not featured)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": false
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "A fifth thing (not featured)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": false
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "Mobile enterprise"
+				,"title": "A sixth thing (not featured)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": false
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+			,{
+				 "eyebrow": "Mobile enterprise"
+				,"title": "A seventh thing (not featured)"
+				,"image": "http://placekitten.com/300/200"
+				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				,"featured": false
+				,"hero": false
+				,"link": [
+					{
+						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
+						,"text": "Download report"
+						,"icon": "pdf"
+						,"size": "(2.1 MB)"
+					}
+				]
+				,"tag": "reports"
+			}
+		]
+	}
+	,"events" : {
+		 "tiles" : [
+			{
+				 "title" : "An event (featured)"
+				,"image" : "http://placekitten.com/300/200"
+				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
+				,"location" : "Paris, France"
+				,"date" : "February 1, 2014"
+				,"link" : "http://www.google.com"
+				,"featured": true
+			}
+			,{
+				 "title" : "An event not featured)"
+				,"image" : "http://placekitten.com/300/200"
+				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
+				,"location" : "Paris, France"
+				,"date" : "January 31, 2014"
+				,"link" : "http://www.google.com"
+				,"featured": false
+			}
+			,{
+				 "title" : "An event (not featured)"
+				,"image" : "http://placekitten.com/300/200"
+				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
+				,"location" : "Paris, France"
+				,"date" : "January 30, 2014"
+				,"link" : "http://www.google.com"
+				,"featured": false
+			}
+			,{
+				 "title" : "An event (not featured)"
+				,"image" : "http://placekitten.com/300/200"
+				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
+				,"location" : "Paris, France"
+				,"date" : "January 25, 2014"
+				,"link" : "http://www.google.com"
+				,"featured": false
+			}
+		]
+	}
+}
