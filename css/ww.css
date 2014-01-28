@@ -6670,7 +6670,7 @@ markup:
 
   .ibm-el-six2CoverImage .ibm-el-hdthumbV17.Six2Col {
     margin-left: 14px !important; } }
-@media (-webkit-min-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (min--moz-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+@media only screen and (max-width: 568px) and (min-width: 0) {
   .actions {
     font-size: 14px;
     overflow: hidden; }
