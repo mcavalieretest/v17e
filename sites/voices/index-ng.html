@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US" ng-app="myApp">
 <head>
 <!-- 
 	NOTE:
@@ -31,14 +31,17 @@
 <!-- Please ensure appropriate meta tag values are aligned with the standards -->
 
 <title>IBM v17 TEMPLATE--Column Grid Example</title>
-<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
-<link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://205.186.160.10/v17e/css/ww.css" type="text/css">
+<link href="http://205.186.160.10/v17e/sites/voices/css/ww_cci.css" rel="stylesheet" type="text/css" />
 
 <script src="http://1.www.s81c.com/common/js/dojo/www.js" type="text/javascript"></script>
-<script src="js/ww_cci.source.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/angular.min.js" type="text/javascript"></script>
+<script src="js/angular-route.min.js" type="text/javascript"></script>
+<script src="js/ww_cci.min.js" type="text/javascript"></script>
 
 </head>
-<body id="ibm-com" class="ibm-type">
+<body id="ibm-com" class="ibm-type" >
 	<div id="ibm-top" class="ibm-landing-page">
 		<!-- MASTHEAD_BEGIN -->
 		<div id="ibm-masthead">
@@ -72,24 +75,24 @@
 		<!-- MASTHEAD_END -->
 		
 		<!-- LEADSPACE_BEGIN -->
-		<div id="ibm-leadspace-head" class="ibm_cc__voices_ls">
+		<div id="ibm-leadspace-head" class="ibm_cc__voices_ls" >
 			<div id="ibm-leadspace-body">
 				<div class="ibm_cci--ls--logo">
 					<h1 class="ibm_cci--h1__modifyer">
-						<a href="ibm-voices-index-grid.html">IBM Voices</a>
+						<a href="index-ng.html">IBM Voices</a>
 					</h1>
-					<p class="ibm_cci_aboutlinkarrow">
-						<a href="#" class="ibm_cci_aboutlink">
-							About us
+					<p class="ibm_cci-about">
+						<a class="ibm_cci_aboutlink" href="aboutus.html" >
+							About Voices
 						</a>
 					</p>
 				</div>
 				<div class="ibm_cci--ls--search">
-				<form action="#">
-					<!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label> -->
-					<input name="ibm-cc-search--field" id="ibm-cc-search--field" type="text" class="ibm-cc-search--field" value="" />
-					<input type="image" src='i/ibm_search_icon.png' class="ibm-cc-search--icon" name="search button" value="search" />
-				</form>
+					<form action="#">
+						<!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label> -->
+						<input name="ibm-cc-search--field" id="ibm-cc-search--field" type="text" class="ibm-cc-search--field" value="" />
+						<input type="image" src='i/ibm_search_icon.png' class="ibm-cc-search--icon" name="search button" value="search" />
+					</form>
 				</div>
 				<div class="ibm_cci--ls--toggle" id="ibm_cci--toggle-js">
 					<ul class="ibm_cci--ls--toggle--ul">
@@ -101,73 +104,42 @@
 						</li>
 					</ul>
 				</div>
-				<!-- For testing media query. Delete once testing is complete-->
-				<p style="padding-left:20px"></p>
-				<!-- For testing media query. Delete once testing is complete -->
-
-				<div class="ibm_cci--sk ibm_cci--sk__mt">
-					<ul class="ibm_cci__ml">
-						<li class="ibm_cci__ml_t">
-							<p class="ibm_cci-clicked">
-								<span><a href="#">All trending topics : </a></span>
-							</p>
-						</li>
-						<li>
-							<p class="ibm_cci-clicked">
-								<span><a href="#">watson</a></span>
-								<a class="ibm_cci-close" href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">smartcloud</a></span><a href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">cloud</a></a></span><a href="#"></a></p>
-						</li>
-						<li>
-							<p class="ibm_cci-clicked"><span><a href="#">tesla</a></span><a class="ibm_cci-close" href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">ibm puresystems</a></span><a href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">sass</a></span><a href="#"></a></p>
-						</li>
-						<li>
-							<p class="ibm_cci-clicked"><span><a href="#">forbes</a></span><a class="ibm_cci-close" href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">nyc election</a></span><a href="#"></a></p>
-						</li>
-						<li>
-							<p><span><a href="#">ibm watson</a></span><a href="#"></a></p>
-						</li>																			
-					</ul>
+				<!-- Trendign topics (START) with Module -->
+				<div class="ibm_cci--sk ibm_cci--sk__mt" ng-view >					
+					
+					
 				</div>
-				<div class="ibm_cci--sr">
-					<p>Results found: 1588</p>
-				</div>
+				<!-- Trendign topics (END) with Module -->
 
+
+
+
+
+					<div class="ibm_cci--sr">
+						<p style="visibility: hidden;">Results found: 1588</p>
+					</div>
+
+				</div>
 			</div>
-		</div>
-		<!-- LEADSPACE_END -->
+			<!-- LEADSPACE_END -->
 
-		<!-- CONTENT_NAV_BEGIN -->
-		<!-- CONTENT_NAV_END -->
+			<!-- CONTENT_NAV_BEGIN -->
+			<!-- CONTENT_NAV_END -->
 
-		<div id="ibm-pcon" class="ibm_cci__ibm-pcon">
-			<!-- CONTENT_BEGIN -->
-			<div id="ibm-content" class="ibm_cci__ibm-content">
-				<!-- TITLE_BEGIN -->
+			<div id="ibm-pcon" class="ibm_cci__ibm-pcon">
+				<!-- CONTENT_BEGIN -->
+				<div id="ibm-content" class="ibm_cci__ibm-content">
+					<!-- TITLE_BEGIN -->
 
-				<!-- <div id="ibm-content-head"></div> -->
-				
-				<!-- TITLE_END -->
-				<!-- CONTENT_BODY -->
-				<div id="ibm-content-body">
-					<div id="ibm-content-main">
+					<!-- <div id="ibm-content-head"></div> -->
 
-						<!-- IBM VOICES SEARCH RESULTS DIV (BEGIN)  -->
-						<div class="ibm-band ibm_cci__ibm-band">
+					<!-- TITLE_END -->
+					<!-- CONTENT_BODY -->
+					<div id="ibm-content-body">
+						<div id="ibm-content-main">
+
+							<!-- IBM VOICES SEARCH RESULTS DIV (BEGIN)  -->
+							<div class="ibm-band ibm_cci__ibm-band">
 							<!-- <div class="ibm-columns">
 								<div class="ibm-col-1-1 ibm_cci--sk ibm_cci--sk__mt">
 									<ul>
@@ -197,13 +169,13 @@
 						 **************************** 
 						 * VOICES LIST VIEW (START) *
 						 ****************************
-					-->
+						-->
 						<div id="ibm_cci-widget-js" class="ibm-columns ibm_cci-gv__modifier">
-					
-						<!-- RESOLVED TWEETS WITH CONVERSATION 1 (BEGIN) -->
+
+							<!-- RESOLVED TWEETS WITH CONVERSATION 1 (BEGIN) -->
 							<div class="ibm-col-1-1">
 
-							<!-- LEFT BLOCK (START) -->	
+								<!-- LEFT BLOCK (START) -->	
 								<div class="ibm-col-6-4">
 									<!-- REA SCORE BLOCK (START) -->
 									<div class="ibm_cci--rea-block">
@@ -294,9 +266,9 @@
 									</div>
 									<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
 								</div>
-							<!-- LEFT BLOCK (END) -->
+								<!-- LEFT BLOCK (END) -->
 
-							<!-- RIGHT BLOCK (START)  -->
+								<!-- RIGHT BLOCK (START)  -->
 								<div class="ibm-col-6-2">
 									<ul>
 										<li>
@@ -349,13 +321,13 @@
 									<div class="ibm_cci--lv-rc-th" >
 										<h3 class="ibm_cci--lv-rc-title">
 											<a href="#" alt="">IBM Accessibility</a>
-											</h3>
+										</h3>
 										<p class="ibm_cci--lv-rc-h"><a href="#">@IBMAccess</a></p>
 									</div>
 									<div class="ibm_cci--time-stamp">
-											<p class="ibm_cci-tts">
-												<span></span>
-												<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
+										<p class="ibm_cci-tts">
+											<span></span>
+											<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
 										</p>
 									</div>									
 									<div class="ibm_cci--lv-rc-description">
@@ -380,402 +352,402 @@
 											</li>
 										</ul>
 <!-- 										<p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
-										</p> -->
-									</div>
-									<!-- TWEET CONVERSATION DIV (END) -->
+</p> -->
+</div>
+<!-- TWEET CONVERSATION DIV (END) -->
+</div>
+<!-- RIGHT BLOCK (END)  -->
+</div>
+<!-- RESOLVED TWEETS WITH CONVERSATION 1 (END)-->
+
+
+<!-- RESOLVED TWEETS WITH CONVERSATION 2 (BEGIN) -->
+<div class="ibm-col-1-1">
+
+	<!-- LEFT BLOCK (START) -->	
+	<div class="ibm-col-6-4">
+		<!-- REA SCORE BLOCK (START) -->
+		<div class="ibm_cci--rea-block">
+			<ul>
+				<li>
+					<p class="ibm_cci--rea-rank">02</p>
+				</li>
+				<li class="ibm_cci__padding-top">
+					<div class="ibm_cci--rea-b">
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b"></div>
+						</div>
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b"></div>
+						</div>
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- REA SCORE BLOCK (END) -->
+
+		<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+		<div class="ibm_cci--rcb">
+			<div class="ibm_cci-fav-ihb">
+				<p class="ibm_cci--feed-icon">
+					<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16" alt="abstract favorite icon"/>
+				</p>
+				<a class="ibm_cci--feed-title" href="#">Forbes</a>
+			</div>
+			<div class="ibm_cci-sib">
+				<ul class="ibm_cci-sie">
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
+							<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
+							<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
+							<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ibm_cci--ttb">
+				<h2 class="ibm_cci--tweet-title">
+					One Year Later and IBM's Social Business is Still Superior to Apple’s
+				</h2>
+				<p class="ibm_cci--tweet-description">
+					Consumer products, but in the digital era it’s empowered consumers who rule. The most successful manufacturing... <span class="ibm_cci--tweet-description-readmore"><a href="#">READ MORE</a></span>
+					<img class="ibm_cci--tweet-image" src="#" alt="Image with the tweet feed" width="270" />
+				</p>
+			</div>
+			<!-- SOCIAL FOR GRID VIEW -->
+			<div class="ibm_cci-gv-sib">
+				<ul class="ibm_cci-sie">
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
+							<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
+							<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" alt="">
+							<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
+							<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- SOCIAL FOR GRID VIEW -->										
+		</div>
+		<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+	</div>
+	<!-- LEFT BLOCK (END) -->
+
+	<!-- RIGHT BLOCK (START)  -->
+	<div class="ibm-col-6-2">
+		<ul>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img class="selected" src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+			<li>
+				<a href="#" alt="Need description text for this link!">
+					<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+				</a>
+			</li>
+		</ul>
+		<!-- TWEET CONVERSATION DIV (BEGIN) -->
+		<div class="ibm_cci--lv-rc-th" >
+			<h3 class="ibm_cci--lv-rc-title">
+				<a href="#" alt="">IBM Accessibility</a>
+			</h3>
+			<p class="ibm_cci--lv-rc-h"><a href="#">@IBMAccess</a></p>
+		</div>
+		<div class="ibm_cci--time-stamp">
+			<p class="ibm_cci-tts">
+				<span></span>
+				<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
+			</p>
+		</div>										
+		<div class="ibm_cci--lv-rc-description">
+			<p>How health tech can support the <a href="#">#aging</a> baby <a href="#">#boomer</a> population <a href="#">http://t.co/5ydmFhh70w f#healthcare</a></p>
+		</div>
+		<div class="ibm_cci--lv-rc-sharing">
+			<ul>
+				<li>
+					<a href="#" alt="">
+						<img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" alt="">
+						<img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" alt="">
+						<img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16" />
+					</a>
+				</li>
+			</ul>
+										<!-- <p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
+									</p> -->
 								</div>
-							<!-- RIGHT BLOCK (END)  -->
+								<!-- TWEET CONVERSATION DIV (END) -->
 							</div>
-							<!-- RESOLVED TWEETS WITH CONVERSATION 1 (END)-->
+							<!-- RIGHT BLOCK (END)  -->
+						</div>
+						<!-- RESOLVED TWEETS WITH CONVERSATION 2 (END)-->							
 
 
-						<!-- RESOLVED TWEETS WITH CONVERSATION 2 (BEGIN) -->
-							<div class="ibm-col-1-1">
 
+
+
+						<!-- RESOLVED TWEETS WITHOUT CONVERSATION (BEGIN) -->
+						<div class="ibm-col-1-1">
 							<!-- LEFT BLOCK (START) -->	
-								<div class="ibm-col-6-4">
-									<!-- REA SCORE BLOCK (START) -->
-									<div class="ibm_cci--rea-block">
-										<ul>
-											<li>
-												<p class="ibm_cci--rea-rank">02</p>
-											</li>
-											<li class="ibm_cci__padding-top">
-												<div class="ibm_cci--rea-b">
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
+							<div class="ibm-col-6-4">
+								<!-- REA SCORE BLOCK (START) -->
+								<div class="ibm_cci--rea-block">
+									<ul>
+										<li>
+											<p class="ibm_cci--rea-rank">03</p>
+										</li>
+										<li class="ibm_cci__padding-top">
+											<div class="ibm_cci--rea-b">
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
 												</div>
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- REA SCORE BLOCK (END) -->
+
+								<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+								<div class="ibm_cci--rcb">
+									<div class="ibm_cci-fav-ihb">
+										<p class="ibm_cci--feed-icon">
+											<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16" alt="abstract favorite icon"/>
+										</p>
+										<a class="ibm_cci--feed-title" href="#">Forbes</a>
+									</div>
+									<div class="ibm_cci-sib">
+										<ul class="ibm_cci-sie">
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
+													<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
+												</a>
+											</li>
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
+													<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
+												</a>
+											</li>
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
+													<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+												</a>
 											</li>
 										</ul>
 									</div>
-									<!-- REA SCORE BLOCK (END) -->
-									
-									<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
-									<div class="ibm_cci--rcb">
-										<div class="ibm_cci-fav-ihb">
-											<p class="ibm_cci--feed-icon">
-												<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16" alt="abstract favorite icon"/>
-											</p>
-											<a class="ibm_cci--feed-title" href="#">Forbes</a>
-										</div>
-										<div class="ibm_cci-sib">
-											<ul class="ibm_cci-sie">
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
-														<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
-														<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
-														<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<div class="ibm_cci--ttb">
-											<h2 class="ibm_cci--tweet-title">
-												One Year Later and IBM's Social Business is Still Superior to Apple’s
-											</h2>
-											<p class="ibm_cci--tweet-description">
-												Consumer products, but in the digital era it’s empowered consumers who rule. The most successful manufacturing... <span class="ibm_cci--tweet-description-readmore"><a href="#">READ MORE</a></span>
-												<img class="ibm_cci--tweet-image" src="#" alt="Image with the tweet feed" width="270" />
-											</p>
-										</div>
-										<!-- SOCIAL FOR GRID VIEW -->
-										<div class="ibm_cci-gv-sib">
-											<ul class="ibm_cci-sie">
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
-														<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
-														<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
-														<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<!-- SOCIAL FOR GRID VIEW -->										
+									<div class="ibm_cci--ttb">
+										<h2 class="ibm_cci--tweet-title">
+											One Year Later and IBM's Social Business is Still Superior to Apple’s
+										</h2>
+										<p class="ibm_cci--tweet-description">
+											Consumer products sales organizations have traditionally focused on satisfying retailers. The most successful manufacturing... <span class="ibm_cci--tweet-description-readmore"><a href="#">READ MORE</a></span>
+											<img class="ibm_cci--tweet-image" src="#" alt="Image with the tweet feed" width="270" />
+										</p>
 									</div>
-									<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+									<!-- SOCIAL FOR GRID VIEW -->
+									<div class="ibm_cci-gv-sib">
+										<ul class="ibm_cci-sie">
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
+													<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
+												</a>
+											</li>
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
+													<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
+												</a>
+											</li>
+											<li>
+												<a href="#" alt="">
+													<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
+													<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- SOCIAL FOR GRID VIEW -->										
 								</div>
+								<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+							</div>
 							<!-- LEFT BLOCK (END) -->
 
 							<!-- RIGHT BLOCK (START)  -->
-								<div class="ibm-col-6-2">
+							<div class="ibm-col-6-2">
+								<!-- TWEET CONVERSATION DIV (BEGIN) -->
+								<div class="ibm_cci--lv-rc-th ibm_cci--lv-rc-th__rm" >
+									<img class="ibm_cci--lv-rc-avatar" src="" width="25" height="25">
+									<h3 class="ibm_cci--lv-r-wct">
+										<a href="#" alt="">IBM Accessibility</a>
+									</h3>
+									<p class="ibm_cci--lv-r-wch"><a href="#">@IBMAccess</a></p>
+								</div>
+								<div class="ibm_cci--time-stamp ibm_cci--lv-rc-th__rm">
+									<p class="ibm_cci-tts">
+										<span></span>
+										<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
+									</p>
+								</div>										
+								<div class="ibm_cci--lv-rc-description">
+									<p>How health tech can support the <a href="#">#aging</a> baby <a href="#">#boomer</a> population <a href="#">http://t.co/5ydmFhh70w f#healthcare</a></p>
+								</div>
+								<div class="ibm_cci--lv-rc-sharing">
 									<ul>
 										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img class="selected" src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+											<a href="#" alt="">
+												<img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"/>
 											</a>
 										</li>
 										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+											<a href="#" alt="">
+												<img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"/>
 											</a>
 										</li>
 										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
-											</a>
-										</li>
-										<li>
-											<a href="#" alt="Need description text for this link!">
-												<img src="" alt="Abstract IBM Tweet Avataar" class="" width="25" height="25" />
+											<a href="#" alt="">
+												<img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16" />
 											</a>
 										</li>
 									</ul>
-									<!-- TWEET CONVERSATION DIV (BEGIN) -->
-									<div class="ibm_cci--lv-rc-th" >
-										<h3 class="ibm_cci--lv-rc-title">
-											<a href="#" alt="">IBM Accessibility</a>
-											</h3>
-										<p class="ibm_cci--lv-rc-h"><a href="#">@IBMAccess</a></p>
-									</div>
-									<div class="ibm_cci--time-stamp">
-											<p class="ibm_cci-tts">
-												<span></span>
-												<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
-										</p>
-									</div>										
-									<div class="ibm_cci--lv-rc-description">
-										<p>How health tech can support the <a href="#">#aging</a> baby <a href="#">#boomer</a> population <a href="#">http://t.co/5ydmFhh70w f#healthcare</a></p>
-									</div>
-									<div class="ibm_cci--lv-rc-sharing">
-										<ul>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"/>
-												</a>
-											</li>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"/>
-												</a>
-											</li>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16" />
-												</a>
-											</li>
-										</ul>
 										<!-- <p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
-										</p> -->
-									</div>
-									<!-- TWEET CONVERSATION DIV (END) -->
+									</p> -->
 								</div>
-							<!-- RIGHT BLOCK (END)  -->
+								<!-- TWEET CONVERSATION DIV (END) -->
 							</div>
-							<!-- RESOLVED TWEETS WITH CONVERSATION 2 (END)-->							
+							<!-- RIGHT BLOCK (END)  -->
+						</div>
+						<!-- RESOLVED TWEETS WITHOUT CONVERSATION (END) -->
 
 
 
 
 
-							<!-- RESOLVED TWEETS WITHOUT CONVERSATION (BEGIN) -->
-							<div class="ibm-col-1-1">
-							<!-- LEFT BLOCK (START) -->	
-								<div class="ibm-col-6-4">
-									<!-- REA SCORE BLOCK (START) -->
-									<div class="ibm_cci--rea-block">
-										<ul>
-											<li>
-												<p class="ibm_cci--rea-rank">03</p>
-											</li>
-											<li class="ibm_cci__padding-top">
-												<div class="ibm_cci--rea-b">
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
+						<!-- UNRESOLVED TWEETS (BEGIN) -->
+						<div class="ibm-col-1-1">
+
+							<!-- TWEET BLOCK (START) -->	
+							<div class="ibm_cci--lv-unro-b">
+								<!-- REA SCORE BLOCK (START) -->
+								<div class="ibm_cci--rea-block">
+									<ul>
+										<li>
+											<p class="ibm_cci--rea-rank">04</p>
+										</li>
+										<li class="ibm_cci__padding-top">
+											<div class="ibm_cci--rea-b">
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
 												</div>
-											</li>
-										</ul>
-									</div>
-									<!-- REA SCORE BLOCK (END) -->
-									
-									<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
-									<div class="ibm_cci--rcb">
-										<div class="ibm_cci-fav-ihb">
-											<p class="ibm_cci--feed-icon">
-												<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16" alt="abstract favorite icon"/>
-											</p>
-											<a class="ibm_cci--feed-title" href="#">Forbes</a>
-										</div>
-										<div class="ibm_cci-sib">
-											<ul class="ibm_cci-sie">
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
-														<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
-														<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
-														<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<div class="ibm_cci--ttb">
-											<h2 class="ibm_cci--tweet-title">
-												One Year Later and IBM's Social Business is Still Superior to Apple’s
-											</h2>
-											<p class="ibm_cci--tweet-description">
-												Consumer products sales organizations have traditionally focused on satisfying retailers. The most successful manufacturing... <span class="ibm_cci--tweet-description-readmore"><a href="#">READ MORE</a></span>
-												<img class="ibm_cci--tweet-image" src="#" alt="Image with the tweet feed" width="270" />
-											</p>
-										</div>
-										<!-- SOCIAL FOR GRID VIEW -->
-										<div class="ibm_cci-gv-sib">
-											<ul class="ibm_cci-sie">
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_twitter_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon twitter"/> -->
-														<img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_facebook_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon facebook"/> -->
-														<img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
-													</a>
-												</li>
-												<li>
-													<a href="#" alt="">
-														<!-- <img src="i/ibm_social_linkedin_icon_16x16.png" alt="" width="16" height="16" alt="abstract social icon linkedin"/> -->
-														<img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-													</a>
-												</li>
-											</ul>
-										</div>
-										<!-- SOCIAL FOR GRID VIEW -->										
-									</div>
-									<!-- RESOLVED URL WITH MULTIPLE TWEETS CONTENT BLOCK (START) -->
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
 								</div>
-							<!-- LEFT BLOCK (END) -->
+								<!-- REA SCORE BLOCK (END) -->
 
-							<!-- RIGHT BLOCK (START)  -->
-								<div class="ibm-col-6-2">
-									<!-- TWEET CONVERSATION DIV (BEGIN) -->
-									<div class="ibm_cci--lv-rc-th ibm_cci--lv-rc-th__rm" >
+								<!-- UNRESOLVED URL BLOCK (START) -->
+								<div class="ibm_cci--unr-cb">								
+									<div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th">
 										<img class="ibm_cci--lv-rc-avatar" src="" width="25" height="25">
 										<h3 class="ibm_cci--lv-r-wct">
-											<a href="#" alt="">IBM Accessibility</a>
-											</h3>
-										<p class="ibm_cci--lv-r-wch"><a href="#">@IBMAccess</a></p>
-									</div>
-									<div class="ibm_cci--time-stamp ibm_cci--lv-rc-th__rm">
-											<p class="ibm_cci-tts">
-												<span></span>
-												<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
+											<a href="#" alt="">IBM Cloud</a>
+										</h3>
+										<p class="ibm_cci--lv-r-wch">
+											<a href="#">@IBMCloud </a>
 										</p>
-									</div>										
-									<div class="ibm_cci--lv-rc-description">
-										<p>How health tech can support the <a href="#">#aging</a> baby <a href="#">#boomer</a> population <a href="#">http://t.co/5ydmFhh70w f#healthcare</a></p>
 									</div>
-									<div class="ibm_cci--lv-rc-sharing">
-										<ul>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"/>
-												</a>
-											</li>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"/>
-												</a>
-											</li>
-											<li>
-												<a href="#" alt="">
-													<img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16" />
-												</a>
-											</li>
-										</ul>
-										<!-- <p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
-										</p> -->
-									</div>
-									<!-- TWEET CONVERSATION DIV (END) -->
-								</div>
-							<!-- RIGHT BLOCK (END)  -->
-							</div>
-							<!-- RESOLVED TWEETS WITHOUT CONVERSATION (END) -->
-							
-
-
-
-
-							<!-- UNRESOLVED TWEETS (BEGIN) -->
-							<div class="ibm-col-1-1">
-
-								<!-- TWEET BLOCK (START) -->	
-								<div class="ibm_cci--lv-unro-b">
-									<!-- REA SCORE BLOCK (START) -->
-									<div class="ibm_cci--rea-block">
-										<ul>
-											<li>
-												<p class="ibm_cci--rea-rank">04</p>
-											</li>
-											<li class="ibm_cci__padding-top">
-												<div class="ibm_cci--rea-b">
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<!-- REA SCORE BLOCK (END) -->
-									
-									<!-- UNRESOLVED URL BLOCK (START) -->
-									<div class="ibm_cci--unr-cb">								
-										<div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th">
-											<img class="ibm_cci--lv-rc-avatar" src="" width="25" height="25">
-											<h3 class="ibm_cci--lv-r-wct">
-												<a href="#" alt="">IBM Cloud</a>
-												</h3>
-											<p class="ibm_cci--lv-r-wch">
-												<a href="#">@IBMCloud </a>
-											</p>
-										</div>
 										<!-- <div class="ibm_cci--lv-tsb">
 											<span></span>
 											<p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
 											</p>
 										</div> -->
-									<div class="ibm_cci--time-stamp">
+										<div class="ibm_cci--time-stamp">
 											<p class="ibm_cci-tts">
 												<span></span>
 												<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
-										</p>
-									</div>										
+											</p>
+										</div>										
 										<div class="ibm_cci--ttb">
 											<h2 class="ibm_cci--tweet-title">
 												Far away, in a forest next to a river beneath the mountains, there lived a small, fast otter called Philip. Philip liked sausages. The End.
@@ -800,63 +772,63 @@
 												</li>
 											</ul>
 											<!-- <p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
-											</p> -->
-										</div>
+										</p> -->
 									</div>
-									<!-- UNRESOLVED URL BLOCK (START) -->
 								</div>
-								<!-- TWEET BLOCK (END) -->
+								<!-- UNRESOLVED URL BLOCK (START) -->
 							</div>
-							<!-- UNRESOLVED TWEETS (END) -->
+							<!-- TWEET BLOCK (END) -->
+						</div>
+						<!-- UNRESOLVED TWEETS (END) -->
 
 
 
-							<!-- YOUTUBE TYPE (BEGIN) -->
-							<div class="ibm-col-1-1">
+						<!-- YOUTUBE TYPE (BEGIN) -->
+						<div class="ibm-col-1-1">
 
-								<!-- TWEET BLOCK (START) -->	
-								<div class="ibm_cci--lv-unro-b">
-									<!-- REA SCORE BLOCK (START) -->
-									<div class="ibm_cci--rea-block">
-										<ul>
-											<li>
-												<p class="ibm_cci--rea-rank">05</p>
-											</li>
-											<li class="ibm_cci__padding-top">
-												<div class="ibm_cci--rea-b">
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
-													<div class="ibm_cci--rea-b-e">
-														<div class="ibm_cci--rea-b"></div>
-													</div>
+							<!-- TWEET BLOCK (START) -->	
+							<div class="ibm_cci--lv-unro-b">
+								<!-- REA SCORE BLOCK (START) -->
+								<div class="ibm_cci--rea-block">
+									<ul>
+										<li>
+											<p class="ibm_cci--rea-rank">05</p>
+										</li>
+										<li class="ibm_cci__padding-top">
+											<div class="ibm_cci--rea-b">
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
 												</div>
-											</li>
-										</ul>
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+												<div class="ibm_cci--rea-b-e">
+													<div class="ibm_cci--rea-b"></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!-- REA SCORE BLOCK (END) -->
+
+								<!-- YOUTUBE BLOCK (START) -->
+								<div class="ibm_cci--unr-cb">								
+									<div class="ibm_cci-fav-ihb">
+										<p class="ibm_cci--feed-icon">
+											<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16">
+										</p>
+										<a class="ibm_cci--feed-title" href="#">YouTube</a>
 									</div>
-									<!-- REA SCORE BLOCK (END) -->
-									
-									<!-- YOUTUBE BLOCK (START) -->
-									<div class="ibm_cci--unr-cb">								
-										<div class="ibm_cci-fav-ihb">
-											<p class="ibm_cci--feed-icon">
-												<img src="i/ibm_spacer_16x16.png" alt="abstract  image" width="16" height="16">
-											</p>
-											<a class="ibm_cci--feed-title" href="#">YouTube</a>
-										</div>
 										<!-- <div class="ibm_cci--lv-tsb">
 											<span></span>
 											<p class="ibm_cci-tts">06d</p>											
 										</div> -->
-									<div class="ibm_cci--time-stamp">
+										<div class="ibm_cci--time-stamp">
 											<p class="ibm_cci-tts">
 												<span></span>
 												<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16">11d</a>
-										</p>
-									</div>										
+											</p>
+										</div>										
 										<div class="ibm_cci--ttb">
 											<h2 class="ibm_cci--tweet-title">
 												Lowering administration cost wth Use Dead-Letter Queue (USEDLQ) channel attribute in WebSphere MQ V7.1
@@ -885,590 +857,43 @@
 												</li>
 											</ul>
 											<!-- <p class="ibm_cci-tts"><a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
-											</p> -->
-										</div>
+										</p> -->
 									</div>
-									<!-- YOUTUBE BLOCK (START) -->
 								</div>
-								<!-- TWEET BLOCK (END) -->
+								<!-- YOUTUBE BLOCK (START) -->
 							</div>
-							<!-- YOUTUBE TYPE (END) -->							
+							<!-- TWEET BLOCK (END) -->
 						</div>
+						<!-- YOUTUBE TYPE (END) -->							
+					</div>
 					<!-- VOICES LIST VIEW (END) -->
 
 
-
-
-
-
-
-
-
-						<!-- COLUMN VARIATIONS START -->
-						<!-- 6 2-2-2 grid -->
-							<!-- <div class="ibm-columns">
-								<p><strong>6-2 grid</strong></p>
-								<div class="ibm-col-6-2">
-
-									<a href="#" class="ibm-thumbnail-module">
-										<div class="ibm-sprite"><img src="../../i/fpo/thm-sprite-test.png" alt="" /></div>
-										<h2>Lorem ipsum: ibm-col-6-2</h2>
-										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
-									</a>
-
-								</div>
-
-								<div class="ibm-col-6-2">
-
-									<a href="#" class="ibm-thumbnail-module">
-										<div class="ibm-sprite"><img src="../../i/fpo/thm-sprite-test.png" alt="" /></div>
-										<h2>Lorem ipsum: ibm-col-6-2</h2>
-										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
-									</a>
-
-								</div>
-
-								<div class="ibm-col-6-2">
-
-									<a href="#" class="ibm-thumbnail-module">
-										<div class="ibm-sprite"><img src="../../i/fpo/thm-sprite-test.png" alt="" /></div>
-										<h2>Lorem ipsum: ibm-col-6-2</h2>
-										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
-									</a>
-
-								</div>
-
-							</div> -->
-						<!-- 6 2-2-2 grid -->
-
-
-						<!-- 4 2-1-1 grid -->
-
-							<!-- <div class="ibm-columns ibm-adapt">
-								<p><strong>4-2 grid</strong></p>
-								<div class="ibm-col-4-2">
-									<h2>Lorem ipsum: ibm-col-4-2</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.
-									</p>
-								</div>
-
-								<div class="ibm-col-4-2">
-									<h2>Lorem ipsum: ibm-col-4-2</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p>
-								</div>
-
-							</div> -->
-
-						<!-- 4 2-1-1 grid -->
-
-						<!-- 4 2-1-1 grid -->
-
-
-							<!-- <div class="ibm-columns ibm-adapt">
-								<p><strong>4-2 grid alt</strong></p>
-								<div class="ibm-col-4-2">
-									<h2>Lorem ipsum: ibm-col-4-2</h2>
-									<img src="http://placehold.it/320x117" style="margin-left: -74px;" />
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.
-									</p>
-								</div>
-
-								<div class="ibm-col-4-2">
-									<h2>Lorem ipsum: ibm-col-4-2</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p>
-								</div>
-
-							</div> -->
-
-						<!-- 4 2-1-1 grid -->
-
-
-
-						<!-- <div class="ibm-columns">
-							<div class="ibm-col-1-1">
-								<p><strong>4 column grid</strong></p>
-							</div>
-						</div> -->
-
-						<!-- 4 1-1-1-1 grid -->
-
-							<!-- <div class="ibm-columns">
-								<p><strong>1-1-1-1 grid</strong></p>
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-									</p>
-								</div>
-
-							</div> -->
-
-						<!-- 4 1-1-1-1 grid -->
-
-						<!-- 4 2-1-1 grid -->
-
-							<!-- <div class="ibm-columns">
-								<p><strong>2-1-1 grid</strong></p>
-								<div class="ibm-col-4-2">
-									<h2>Lorem ipsum: ibm-col-4-2</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-									</p>
-								</div>
-
-							</div> -->
-
-						<!-- 4 2-1-1 grid -->
-
-
-						<!-- 4 3-1 grid -->
-							<!-- <div class="ibm-columns">
-								<p><strong>3-1 grid</strong></p>
-								<div class="ibm-col-4-3">
-									<h2>Lorem ipsum: ibm-col-4-3</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.
-									</p>
-								</div>
-
-								<div class="ibm-col-4-1">
-									<h2>Lorem ipsum: ibm-col-4-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
-									</p>
-								</div>
-
-							</div> -->
-						<!-- 4 3-1 grid -->
-
-						<!-- <div class="ibm-columns">
-							<div class="ibm-col-1-1">
-								<p><strong>5 column grid</strong></p>
-							</div>
-						</div> -->
-
-						<!-- 5 1-1-1-1-1 grid -->
-
-							<!-- <div class="ibm-columns">
-								<p><strong>1-1-1-1-1 grid</strong></p>
-								<div class="ibm-col-5-1">
-
-									<img src="http://placehold.it/172x117" class="ibm-resize" />
-									<h2>Lorem ipsum: ibm-col-5-1</h2>
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-									</p></div>
-
-									<div class="ibm-col-5-1">
-
-										<img src="http://placehold.it/172x117" class="ibm-resize" />
-										<h2>Lorem ipsum: ibm-col-5-1</h2>
-										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-										</p></div>
-
-										<div class="ibm-col-5-1">
-
-											<img src="http://placehold.it/172x117" class="ibm-resize" />
-											<h2>Lorem ipsum: ibm-col-5-1</h2>
-											<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-											</p></div>
-
-											<div class="ibm-col-5-1">
-
-												<img src="http://placehold.it/172x117" class="ibm-resize" />
-												<h2>Lorem ipsum: ibm-col-5-1</h2>
-												<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-												</p></div>
-
-												<div class="ibm-col-5-1">
-
-													<img src="http://placehold.it/172x117" class="ibm-resize" />
-													<h2>Lorem ipsum: ibm-col-5-1</h2>
-													<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-													</p></div>
-
-												</div> -->
-
-											<!-- 5 1-1-1-1-1 grid -->
-
-
-											<!--5 2-1-1-1 grid -->
-												<!-- <div class="ibm-columns">
-													<p><strong>2-1-1-1 grid</strong></p>
-													<div class="ibm-col-5-2">
-														<h2>Lorem ipsum: ibm-col-5-2</h2>
-														<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-														</p></div>
-
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-5-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-														</div>
-
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-5-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-														</div>
-
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-5-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-														</div>
-
-													</div> -->
-												<!-- 5 2-1-1-1 grid -->
-
-
-												<!-- 5 3-1-1 grid -->
-
-													<!-- <div class="ibm-columns">
-														<p><strong>3-1-1 grid</strong></p>
-														<div class="ibm-col-5-3">
-															<h2>Lorem ipsum: ibm-col-5-3</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-														</div>
-
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-51</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-														</div>
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-51</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-														</div>
-
-													</div> -->
-
-												<!-- 5 3-1-1 grid -->
-
-
-												<!-- 5 4-1 grid -->
-
-													<!-- <div class="ibm-columns">
-														<p><strong>4-1 grid</strong></p>
-														<div class="ibm-col-5-4">
-															<h2>Lorem ipsum: ibm-col-5-4</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.</p>
-														</div>
-
-														<div class="ibm-col-5-1">
-															<h2>Lorem ipsum: ibm-col-5-1</h2>
-
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit ame.
-															</p></div>
-
-														</div> -->
-													<!-- 5 4-1 grid -->
-
-
-													<!-- <div class="ibm-rule"><hr /></div>
-
-
-													<p><strong>6 column grid</strong></p> -->
-
-													<!-- 6 1-1-1-1-1-1 grid -->
-
-													<!-- <div class="ibm-columns">
-														<p><strong>1-1-1-1-1-1 grid</strong></p>
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-
-															<img src="http://placehold.it/140x94" class="ibm-resize" />
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-													</div> -->
-													<!-- 6 1-1-1-1-1-1 grid -->
-
-
-													<!-- 6- 2-1-1-1-1 grid -->
-
-													<!-- <div class="ibm-columns">
-														<p><strong>2-1-1-1-1 grid</strong></p>
-														<div class="ibm-col-6-2">
-
-															<h2>Lorem ipsum: ibm-col-6-2</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-
-														</div>
-
-														<div class="ibm-col-6-1">
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-														<div class="ibm-col-6-1">
-															<h2>Lorem ipsum: ibm-col-6-1</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-														</div>
-
-													</div> -->
-
-													<!-- 6- 2-1-1-1-1 grid -->
-
-
-													<!-- 6- 3-1-1-1 grid -->
-
-													<!-- <div class="ibm-columns">
-														<p><strong>3-1-1-1 grid</strong></p>
-														<div class="ibm-col-6-3">
-															<h2>Lorem ipsum: ibm-col-6-3</h2>
-															<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum.
-															</p></div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-															</div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-															</div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-															</div>
-
-														</div> -->
-														<!-- 6- 3-1-1-1 grid -->
-
-
-														<!-- 6- 4-1-1 grid -->
-
-														<!-- <div class="ibm-columns">
-															<p><strong>4-1-1 grid</strong></p>
-															<div class="ibm-col-6-4">
-																<h2>Lorem ipsum: ibm-col-6-4</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-															</div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-															</div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempo.</p>
-															</div>
-
-														</div> -->
-														<!-- 6- 4-1-1 grid -->
-
-
-														<!-- 6- 5-1 grid -->
-<!-- 
-														<div class="ibm-columns">
-															<p><strong>5-1 grid</strong></p>
-															<div class="ibm-col-6-5">
-																<h2>Lorem ipsum: ibm-col-6-5</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. </p>
-
-																<div class="ibm-columns">
-																	<div class="ibm-col-6-1">
-																		<h2>Lorem ipsum: inner ibm-col-6-1</h2>
-
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-																	</div>
-
-																	<div class="ibm-col-6-4">
-																		<h2 class="ibm-rule">Lorem ipsum: inner ibm-col-6-4</h2>
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-
-
-																		<div class="ibm-container">
-																			<h2>Section container</h2>
-																			<div class="ibm-container-body">
-
-																				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-																			</div>
-																		</div>
-
-																	</div>
-																</div>
-
-
-																<div class="ibm-columns">
-																	<div class="ibm-col-6-3">
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-																	</div>
-
-																	<div class="ibm-col-6-2">
-
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.</p>
-																	</div>
-
-																</div>
-
-
-															</div>
-
-															<div class="ibm-col-6-1">
-																<h2>Lorem ipsum: ibm-col-6-1</h2>
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi.</p>
-
-																<div class="ibm-container">
-																	<h2>Section container</h2>
-
-																	<div class="ibm-container-body">
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
-																	</div>
-																</div>
-
-															</div>
-
-														</div> -->
-														<!-- 6- 5-1 grid -->
-
-														<!-- 1- 1 grid -->
-
-														<!-- <div class="ibm-columns">
-															<p><strong>1 grid</strong></p>
-															<div class="ibm-col-1-1">
-																<h2>Lorem ipsum: ibm-col-1-1</h2>
-
-																<ul class="ibm-link-list">
-																	<li><a class="ibm-forward-link" href="REPLACE.HTML">Lorem ipsum</a></li>
-																	<li><a class="ibm-email-link" href="REPLACE.HTML">Lorem ipsum</a></li>
-																	<li><a class="ibm-download-link" href="REPLACE.HTML">Lorem ipsum</a></li>
-																	<li><a class="ibm-anchor-down-link" href="REPLACE.HTML">Lorem ipsum</a></li>
-																</ul>
-
-																<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus.</p>
-
-															</div>
-
-														</div> -->
-														<!-- 1- 1 grid -->
-
-<!-- 														<div class="ibm-columns">
-															<div class="ibm-col-1-1">
-																<div class="ibm-container">
-																	<h2>Section container</h2>
-																	<div class="ibm-container-body">
-																		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-																	</div>
-																</div>
-															</div>
-														</div> -->
-
-
-
-
-														<!-- COLUMN VARIATIONS END -->
-
-
-													</div>
-													<!-- FEATURES_BEGIN -->
-													<div id="ibm-content-sidebar">
-														<div id="ibm-contact-module">
-															<!--IBM Contact Module-->
-														</div>
-													</div>
-													<!-- FEATURES_END -->
-													<!-- CONTENT_BODY_END -->
-												</div>
-											</div>
-											<!-- CONTENT_END -->
-											<!-- NAVIGATION_BEGIN -->
-											<div id="ibm-navigation"></div>
-											<!-- NAVIGATION_END -->
-										</div>
-										<div id="ibm-related-content">
-											<div id="ibm-merchandising-module">
-												<!--IBM Web Merchandising Module-->
-											</div>
-										</div>
-										<!-- FOOTER_BEGIN -->
-										<div id="ibm-footer-module"></div>
-										<div id="ibm-footer">
-											<h2 class="ibm-access">Footer links</h2>
-											<ul>
-												<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
-												<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
-												<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
-												<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
-											</ul>
-										</div>
-										<!-- FOOTER_END -->
-									</div>
-									<div id="ibm-metrics">
-										<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
-									</div>
-								</body>
-								</html>
+				</div>
+				<!-- CONTENT_BODY_END -->
+			</div>
+		</div>
+		<!-- CONTENT_END -->
+		<!-- NAVIGATION_BEGIN -->
+		<div id="ibm-navigation"></div>
+		<!-- NAVIGATION_END -->
+	</div>
+
+	<!-- FOOTER_BEGIN -->
+	<div id="ibm-footer-module"></div>
+	<div id="ibm-footer">
+		<h2 class="ibm-access">Footer links</h2>
+		<ul>
+			<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+			<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+			<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+			<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+		</ul>
+	</div>
+	<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+	<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>

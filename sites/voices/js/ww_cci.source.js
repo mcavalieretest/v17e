@@ -11,17 +11,27 @@
 // Date: [Date of file edits] (e.g. July 30, 2013)
 //
 
-dojo.ready(function(){
-	var toggleButton = dojo.query("#ibm_cci--toggle-js ul li");
-		console.log(toggleButton);
 
-		toggleButton.forEach(function(node){
-			dojo.connect(node, 'onclick', function(t){
-				dojo.stopEvent(t);
-				console.log(t);
-		})
-	})
+$(document).ready(function(){
+	console.log("ready");
+	var ibmVoices = angular.module('ibmVoices', ['ngRoute']); //[if you have supporting modules dependencies add it inside the square brackets] 
+		
+		ibmVoices.config(['$routeProvider',function($routeProvider){
+					$routeProvider
+						.when('/',
+						{
+							templateUrl: 'partials/tt.html',
+							controller: 'vTrendingTopics'
+						})
+						.otherwise({redirectTo: 'index-ng.html'});
+				}]);
+		
+		
+		ibmVoices.controller('vTrendingTopics', ['$scope', '$http', function($scope, $http){
+			$http.get('tt.json').success(function(data) {
+		      $scope.tt = data;
+		    });
 
-
+		}]);
 
 });
