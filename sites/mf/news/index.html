@@ -73,17 +73,17 @@
 					<div class="ibm-columns">
 						<div class="ibm-col-1-1">
 							<div class="ibm-container ibm-ribbon2 ibm-alternate">
-								<div class="ibm-container-body ibm-dynamic ibm-slider" id="NewsSlider" data-IBMDynamo='{"source":"../js/news.json", "section":"news", "template":".news-slider-template", "filter":"hero", "limit":"3"}'></div>
+								<div class="ibm-container-body ibm-dynamic ibm-slider" id="NewsSlider" data-IBMDynamo='{"source":"../js/news.json", "section":"news", "template":".news-slider-template", "filter":"hero", "limit":3}'></div>
 								<script class="news-slider-template" type="text/x-ibm-template">
 									'\
 									<div class="ibm-columns">\
 										<div class="ibm-col-5-3">\
 											<h2 class="section-header">' + tile.title +'</h2>\
 											<p class="ibm-description">' + tile.description + '</p>\
-											<p class="ibm-button-link-alternate"><a href="' + tile.link[0].url + '">' + tile.link[0].text + '</a></p>\
+											<p class="ibm-button-link-alternate"><a href="' + tile.link + '">' + tile.linkText + '</a></p>\
 										</div>\
 										<div class="ibm-col-5-2">\
-											<a href="' + tile.link[0].url + '"><img src="' + tile.image + '"></a>\
+											<a href="' + tile.link + '"><img src="' + tile.image + '"></a>\
 										</div>\
 									</div>\
 									'
@@ -131,17 +131,17 @@
 							<div class="ibm-columns">
 								<div class="ibm-col-6-4">
 									<h2 class="section-header ibm_cci-small">MobileFirst News</h2>
-									<div class="ibm-container-body ibm-dynamic" id="NewsList" data-IBMDynamo='{"source":"../js/news.json", "section":"news", "template":".news-list-template", "filter":"all", "limit":"10"}'></div>
+									<div class="ibm-container-body ibm-dynamic" id="NewsList" data-IBMDynamo='{"source":"../js/news.json", "section":"news", "template":".news-list-template", "filter":"featured"}'></div>
 									<script class="news-list-template" type="text/x-ibm-template">
 										(!tile.hero ? '\
 										<div class="ibm-news-item">\
 											<div class="ibm-columns">\
-												<div class="ibm-col-6-' + (tile.featured ? '2' : '1') + '"><a class="ibm-media" href="' + tile.link[0].url + '"><img class="thumbnail ibm-resize" src="' + tile.image + '" alt="' + tile.title + '"></a></div>\
-												<div class="ibm-col-6-' + (tile.featured ? '2' : '3') + '">\
+												<div class="ibm-col-6-' + (index == 0 ? '2' : '1') + '">' + (tile.image && tile.image != "" ? '<a class="ibm-media" href="' + tile.link + '"><img class="thumbnail ibm-resize" src="' + tile.image + '" alt="' + tile.title + '"></a>' : '') + '</div>\
+												<div class="ibm-col-6-' + (index == 0 ? '2' : '3') + '">\
 													<p class="ibm-category">' + tile.eyebrow + '</p>\
-													<h3><a href="' + tile.link[0].url + '" target="_blank">' + tile.title + '</a></h3>\
-													<p class="ibm-description">' + tile.description + '</p>\
-													<p class="ibm-ind-link"><a href="' + tile.link[0].url + '" class="ibm-' + tile.link[0].icon + '-link">' + tile.link[0].text + '</a></p>\
+													<h3><a href="' + tile.link + '" target="_blank">' + tile.title + '</a></h3>\
+													' + (tile.description && tile.description != "" ? '<p class="ibm-description">' + tile.description + '</p>' : '') + '\
+													<p class="ibm-ind-link"><a href="' + tile.link + '" class="ibm-forward-link">' + (tile.linkText && tile.linkText != "" ? tile.linkText : 'Learn more') + '</a></p>\
 												</div>\
 											</div>\
 										</div>' : '')
@@ -155,9 +155,15 @@
 												<h3>' + index + '</h3>\
 												' +
 													(function () {
-														var item = '';
+														var  item = ''
+															,limit = 4
+															,count = 1;
 														for (i in tile) {
-															item += '<p class="ibm-description"><a href="' + tile[i].link[0].url + '">' + tile[i].title + '</a></p>';
+															if (count >= limit) { break; }
+															if (!tile.featured && !tile.hero) {
+																item += '<p class="ibm-description"><a href="' + tile[i].link + '">' + tile[i].title + '</a></p>';
+																count++
+															}
 														}
 														return item;
 													})() + '\
@@ -167,13 +173,13 @@
 								</div>
 								<div class="ibm-col-6-2">
 									<h2 class="section-header ibm_cci-small">MobileFirst Events</h2>
-									<div class="ibm-container-body ibm-dynamic" id="EventsList" data-IBMDynamo='{"source":"../js/news.json", "section":"events", "template":".events-list-template", "filter":"all", "limit":"10", "expire": true}'></div>
+									<div class="ibm-container-body ibm-dynamic" id="EventsList" data-IBMDynamo='{"source":"../js/events.json", "section":"events", "template":".events-list-template", "filter":"all", "limit":10, "expire": true}'></div>
 									<script class="events-list-template" type="text/x-ibm-template">
 										'\
 										<div class="ibm-event">\
 											<div class="ibm-columns">\
 												<div class="ibm-col-6-2">\
-													' + (tile.featured ? '<a class="ibm-media" href="' + tile.link + '"><img class="thumbnail ibm-resize" src="' + tile.image + '" alt="' + tile.title + '"></a>' : '') + '\
+													' + (count == 0 ? '<a class="ibm-media" href="' + tile.link + '"><img class="thumbnail ibm-resize" src="' + tile.image + '" alt="' + tile.title + '"></a>' : '') + '\
 													<p class="ibm-description ibm-date"><strong>' + tile.location + '</strong> &bull; ' + tile.date + '</p>\
 													<h3><a href="' + tile.link + '">' + tile.title + '</a></h3>\
 													<p class="ibm-description">' + tile.description + '</p>\

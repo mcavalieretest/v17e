@@ -4,164 +4,524 @@
 		,"description" : "NEWS DESCRIPTION"
 		,"tiles" : [
 			{
-				 "eyebrow": "Mobile enterprise"
-				,"title": "Fast track to the future (hero)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				 "eyebrow": "Forrester Report"
+				,"title": "Fiberlink Acquired To Bolster IBM MobileFirst Portfolio"
+				,"image" : "/mobilefirst/us/en/tempImage/news/maas360-slider.jpg"
+				,"description": "\"With this move, IBM makes a smart acquisition to shore up its mobile management and security capabilities and to build out its software-as-a-service (SaaS) offerings around mobile.\""
 				,"featured": false
 				,"hero": true
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "http://www.forrester.com/pimages/rws/reprints/document/108241/oid/1-O3GQC7"
+				,"linkText": "Get the report"
 			}
 			,{
-				 "eyebrow": "Announcements"
-				,"title": "Something Else (hero)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				 "eyebrow": "InformationWeek Webcast"
+				,"title": "Create a Mobile First Customer Experience"
+				,"image" : "/mobilefirst/us/en/i/news/loller.png"
+				,"description": "Bill Loller, VP of Product Management for Mobile at Tealeaf, discusses how to leverage mobile to connect with customers through a broader set of contextual, value-added experiences."
 				,"featured": false
 				,"hero": true
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "https://webinar.informationweek.com/16836?keycode=CAA1DC"
+				,"linkText": "Available on demand"
 			}
 			,{
-				 "eyebrow": "A different category"
-				,"title": "A third thing (featured)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				 "eyebrow": "InformationWeek Webcast"
+				,"title": "Deploying IBM MobileFirst Applications"
+				,"image" : "/mobilefirst/us/en/i/news/deploying.png"
+				,"description": "Leigh Williamson, Distinguished Engineer, Mobile Development Strategy at IBM, discusses how to cost-effectively design, develop, test, deploy and manage a portfolio of mobile applications."
+				,"featured": false
+				,"hero": true
+				,"link": "https://webinar.informationweek.com/16835?keycode=CAA1DC"
+				,"linkText": "Available on demand"
+			}
+			,{
+				 "eyebrow": "Acquisitions"
+				,"title": "Fiberlink"
+				,"image" : "/mobilefirst/us/en/bin/images/fiberlink_258x142.png"
+				,"description": "On December 18, IBM closed on the acquisition of Fiberlink Communications, a provider of cloud-based mobile management and security capabilities, to help organizations fully embrace mobility."
 				,"featured": true
 				,"hero": false
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "http://ibm.co/JyGcQJ"
+				,"linkText": "Press release"
 			}
 			,{
-				 "eyebrow": "A different category"
-				,"title": "A fourth thing (not featured)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				 "eyebrow": "Acquisitions"
+				,"title": "Now Factory"
+				,"image" : "/mobilefirst/us/en/bin/images/news_thenowfactory.jpg"
+				,"description": "On October 1, IBM announced the acquisition of The Now Factory, a provider of analytics software that helps communications service providers (CSPs) deliver better customer experiences and drive new revenue."
+				,"featured": true
+				,"hero": false
+				,"link": "http://www-03.ibm.com/press/us/en/pressrelease/41927.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/41927.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20The%20Now%20Factory&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100113_Acquisition_TheNowFactory&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-01"
+				,"linkText": "See the press release"
+			}
+			,{
+				 "eyebrow": "Acquisitions"
+				,"title": "Trusteer"
+				,"image" : "/mobilefirst/us/en/bin/images/news_trusteer.png"
+				,"description": "On September 3, IBM announced the acquisition of Trusteer, a leading provider of software that helps protect organizations against fraud and advanced security threats, and helps secure mobile transactions."
 				,"featured": false
 				,"hero": false
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "http://www-03.ibm.com/press/us/en/pressrelease/41852.wss"
+				,"linkText": "See the press release"
+			}
+			,{
+				 "eyebrow": "Acquisitions"
+				,"title": "Xtify push notification services deliver personalized marketing offers"
+				,"link": "http://www-03.ibm.com/press/us/en/pressrelease/42064.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/42064.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20Xtify&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100313_XtifyAquisition&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-03"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Acquisitions"
+				,"title": "Now Factory analytics software helps improve the customer experience"
+				,"link": "http://www-03.ibm.com/press/us/en/pressrelease/41927.wss?lc=http://www-03.ibm.com/press/us/en/pressrelease/41927.wss&ecLink=announced&ecwtmsite=Emailcmp&ecGroup=SWGWSCOMM&ecTitle=9b1ab866-5783-46a9-bfa3-f21cffc5b8df:%20IBM%20Acquires%20The%20Now%20Factory&ecAuthor=IBM_MobileFirst_Community&ecCampaign=100113_Acquisition_TheNowFactory&ecDistlist=Individual_Names%20--%20Members%20=%201&ecDLsize=1&ecDate=2013-10-01"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Acquisitions"
+				,"title": "Trusteer software helps secure mobile transactions"
+				,"link": "http://www-03.ibm.com/press/us/en/pressrelease/41852.wss"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
 			}
 			,{
 				 "eyebrow": "Announcements"
-				,"title": "A fifth thing (not featured)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
-				,"featured": false
+				,"title": "IBM Connections 4.5"
+				,"image" : "/mobilefirst/us/en/bin/images/news_connections.jpg"
+				,"description": "Now a stronger, enterprise-grade social and document collaboration solution, including sync and share &mdash; both in the on-premises Connections and in the IBM SmartCloud Connections."
+				,"featured": true
 				,"hero": false
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "http://www-03.ibm.com/software/products/us/en/conn/"
+				,"linkText": "Learn more"
 			}
 			,{
-				 "eyebrow": "Mobile enterprise"
-				,"title": "A sixth thing (not featured)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
-				,"featured": false
+				 "eyebrow": "Announcements"
+				,"title": "IBM Mobile Quality Assurance Open Beta"
+				,"image" : "/mobilefirst/us/en/bin/images/news_mobile-assurance-beta.jpg"
+				,"description": "Helps you focus on fixing what delivers the most value to end users, and more quickly improve apps by capturing end-user testing data and providing a comprehensive view of quality."
+				,"featured": true
 				,"hero": false
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "https://www.ibm.com/developerworks/community/blogs/mobilequalitybeta/entry/what_is_mobile_quality_assurance?lang=en_us"
+				,"linkText": "Learn more"
 			}
 			,{
-				 "eyebrow": "Mobile enterprise"
-				,"title": "A seventh thing (not featured)"
-				,"image": "http://placekitten.com/300/200"
-				,"description": "The 2012 IBM Tech Trends Report: Analytics and mobile connections are driving realtime decision making."
+				 "eyebrow": "Announcements"
+				,"title": "IBM Tealeaf CX Mobile 8.8"
+				,"image" : "/mobilefirst/us/en/bin/images/news_tealeaf.jpg"
+				,"description": "Delivers comprehensive improvements in performance while reducing the size of the capture libraries, including faster replays with higher quality and improved DOM rendering for Android devices accessing mobile Web."
 				,"featured": false
 				,"hero": false
-				,"link": [
-					{
-						 "url": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13967&S_TACT=109KA5TW"
-						,"text": "Download report"
-						,"icon": "pdf"
-						,"size": "(2.1 MB)"
-					}
-				]
-				,"tag": "reports"
+				,"link": "http://www-03.ibm.com/software/products/us/en/cx-mobile/"
+				,"linkText": "Learn more"
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Rational Test Workbench 8.5.1"
+				,"image" : "/mobilefirst/us/en/bin/images/news_rational-test.jpg"
+				,"description": "Mobile app functional testing has been enhanced with support for HTML5 and playback of tests on different platform types. You can now record tests on iOS, and playback on Android and vice versa."
+				,"featured": false
+				,"hero": false
+				,"link": "http://www-03.ibm.com/software/products/us/en/rtw/"
+				,"linkText": "Learn more"
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Security Access Manager Mobile"
+				,"image": ""
+				,"description": "Delivers strong authentication where you can define policies that allow or deny access based on request criteria, including user credentials, location of the mobile device, time of day, and the network."
+				,"featured": false
+				,"hero": false
+				,"link": "http://www-03.ibm.com/software/products/us/en/samcm/"
+				,"linkText": "Learn more"
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"link": "http://www-01.ibm.com/software/rational/welcome/urbancode/"
+				,"title": "IBM UrbanCode Deploy plugin for IBM Worklight"
+				,"image" : "/mobilefirst/us/en/bin/images/news_urbancode.jpg"
+				,"linkText": "Learn more"
+				,"description": "Automates mobile app development so you can deploy continuously, quickly, and accurately &mdash; and speed delivery. Now you can easily include Worklight apps in your automated deployment scenarios."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"link": "http://www-935.ibm.com/services/us/gbs/application-management/cloud-application-management/"
+				,"title": "IBM Cloud Mobile Managed Services"
+				,"image" : "/mobilefirst/us/en/bin/images/news_cloud-mobile-manage-services.jpg"
+				,"linkText": "Learn more"
+				,"description": "Leave it to us. Our market-leading application management services will build, maintain and continually enhance mobile applications for you, including mobile application testing and mobile device management."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"link": "http://www-03.ibm.com/software/products/us/en/application-performance-management/"
+				,"title": "IBM SmartCloud Application Performance Management 7.7"
+				,"image" : "/mobilefirst/us/en/bin/images/news_smartcloud-apm.jpg"
+				,"linkText": "Learn more"
+				,"description": "Discovers mobile app performance issues before they impact end users.  Brings you end-user response time metrics, and monitors the performance and availability of applications and infrastructure."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"link": "http://www-03.ibm.com/software/products/us/en/worklight/"
+				,"title": "IBM Worklight v6.1"
+				,"image" : "/mobilefirst/us/en/bin/images/news_worklight.png"
+				,"linkText": "Learn more"
+				,"description": "Now you can significantly reduce the time and amount of coding required for backend data and services integration, producing robust, services-driven mobile apps. With immediate support for iOS7."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Moblie Quality Assurance Open Beta captures end-user testing data"
+				,"link": "https://www.ibm.com/developerworks/community/blogs/mobilequalitybeta/entry/what_is_mobile_quality_assurance?lang=en_us"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Tealeaf CX Mobile 8.8 for faster Web app development"
+				,"link": "http://www-03.ibm.com/software/products/us/en/cx-mobile"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Rational Test Workbench 8.5.1 for mobile app functional testing"
+				,"link": "http://www-03.ibm.com/software/products/us/en/rtw"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Security Access Manager Mobile for strong authentication"
+				,"link": "http://www-03.ibm.com/software/products/us/en/samcm/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM UrbanCode Deploy plugin for IBM Worklight to help speed delivery"
+				,"link": "http://pic.dhe.ibm.com/infocenter/ucdeploy/v6r0/index.jsp?topic=%2Fcom.ibm.udeploy.doc%2Ftopics%2Fwhatsnew.html"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Cloud Mobile Managed Services build and maintain apps for you"
+				,"link": "http://www-935.ibm.com/services/us/gbs/application-management/cloud-application-management/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM SmartCloud Application Performance Management 7.7"
+				,"link": "http://www-03.ibm.com/software/products/us/en/application-performance-management/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Worklight v6.1 can significantly reduce the coding for backend integration"
+				,"link": "http://www-03.ibm.com/software/products/us/en/worklight/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Announcements"
+				,"title": "IBM Connections 4.5 enterprise-grade collaboration software"
+				,"link": "http://www-03.ibm.com/software/products/us/en/conn/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov18165&S_TACT=109KA5TW"
+				,"title": "IBV Report"
+				,"image" : "/mobilefirst/us/en/bin/images/news_IDC-report.png"
+				,"linkText": "Get the report"
+				,"description": "The &#8220;Upwardly Mobile&#8221; Enterprise: a new study from the IBM Institute for Business Value (IBV). Learn how leading enterprises rise to the top, including ROI, analytics, integration, and security."
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW"
+				,"title": "Customer experience management in the new era of mobility"
+				,"image" : "/mobilefirst/us/en/bin/images/news_IDC-report.png"
+				,"linkText": "Get the white paper"
+				,"description": "The business case for understanding and optimizing your mobile customer experience today."
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13717"
+				,"title": "Building the mobile enterprise: integrated, secure and productive"
+				,"image" : "/mobilefirst/us/en/bin/images/news_IDC-report.png"
+				,"linkText": "Get the white paper"
+				,"description": "Will your organization simply use mobile devices, or will it be an integrated mobile enterprise? This paper provides a checklist of critical items to consider when designing a mobile enterprise."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=gts-LITS-desktop-cloud-NA&S_PKG=ov14088&S_TACT=601CA21W"
+				,"title": "IBM study: Is your IT infrastructure ready for mobile?"
+				,"image" : "/mobilefirst/us/en/bin/images/news_IDC-report.png"
+				,"linkText": "Get the study"
+				,"description": "We interviewed IT leaders worldwide to gain new insights to help improve your organization's mobile IT strategy, implementation and management."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8871&S_TACT=109KA5TW&S_CMP=?"
+				,"title": "IDC Report"
+				,"image" : "/mobilefirst/us/en/bin/images/news_IDC-report.png"
+				,"linkText": "Get the white paper"
+				,"description": "Addresses the complexities and growing requirements of the future mobile enterprise. IT and lines of business (LOBs) need to build a strategy to manage the complexities of a <i>bring your own device</i> (BYOD) enterprise."
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"title": "Customer experience management in the new era of mobility"
+				,"link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"title": "Building the mobile enterprise: integrated, secure and productive"
+				,"link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov13717"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"title": "IBM study: Is your IT infrastructure ready for mobile?"
+				,"link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=gts-LITS-desktop-cloud-NA&S_PKG=ov14088&S_TACT=601CA21W"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"title": "IDC Report: Build a strategy to manage the complexities of BYOD"
+				,"link": "https://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov8871&S_TACT=109KA5TW&S_CMP=?"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Emerging insights"
+				,"title": "IBV study: The Upwardly Mobile Enterprise"
+				,"link": "http://www14.software.ibm.com/webapp/iwm/web/signup.do?source=sw-app&S_PKG=ov11942&S_TACT=109KA5TW"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "IBM in the news"
+				,"link": "http://www.eweek.com/small-business/smartphones-drive-holiday-retail-traffic-tablets-drive-sales-ibm.html/"
+				,"title": "Smartphones Drive Holiday Retail Traffic, Tablets Drive Sales"
+				,"image" : "/mobilefirst/us/en/bin/images/news_arsenal.jpg"
+				,"linkText": "See article"
+				,"description": "From <i>eWeek</i>: When it comes to making the sale, tablets drove 19.4 percent of online sales, more than twice that of smartphones, which accounted for 9.3 percent..."
+				,"featured": true
+				,"hero": false
+			}			,{
+				 "eyebrow": "IBM in the news"
+				,"title": "<i>MarketWatch</i>: Online shopping brings mall retailers no holiday cheer"
+				,"link": "http://www.marketwatch.com/story/online-shopping-brings-mall-retailers-no-holiday-cheer-2013-12-04"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "IBM in the news"
+				,"title": "<i>MediaPostNEWS</i>: A week before Cyber Monday, a clear picture ... is already taking shape..."
+				,"link": "http://www.mediapost.com/publications/article/214329/2013-is-the-year-for-mobile-ecommerce.html"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "IBM in the news"
+				,"title": "<i>The NeTflix Tech Blog</i>: IBM wins Netflix Open Source Software Cloud Prize"
+				,"link": "http://techblog.netflix.com/2013/11/netflix-open-source-software-cloud.html"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "IBM in the news"
+				,"title": "<i>SC Magazine UK</i>: Mobile security case study: Higher calling"
+				,"link": "http://www.scmagazineuk.com/mobile-security-case-study-higher-calling/article/319818/"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Trends"
+				,"title": "Final Holiday Benchmark Report"
+				,"image" : "/mobilefirst/us/en/bin/images/Benchmark_holiday_hub_module_258x142.jpg"
+				,"description": "<i>IBM Digital Analytics Benchmark: US Online Retail Holiday Shopping Recap Report 2013</i>: Mobile set new records on Christmas Day when 48.1 percent of all online traffic came from mobile devices. See more holiday shopping trends."
+				,"linkText": "Read the full holiday 2013 report"
+				,"link": "http://www-01.ibm.com/software/marketing-solutions/benchmark-hub/"
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Trends"
+				,"title": "Successful habits of the upwardly mobile enterprise"
+				,"image" : "/mobilefirst/us/en/bin/images/news_interconnect.jpg"
+				,"description": "In our previous #P4SPchat, we discussed the IBM Institute for Business Value study, &#8220;The &apos;Upwardly Mobile&apos; Enterprise: Setting the Strategic Agenda.&#8221; This recap highlights point of views from participants."
+				,"linkText": "Read the recap"
+				,"link": "http://storify.com/smarterplanet/p4spchat-recap-successful-habits-of-the-upwardly"
+				,"featured": true
+				,"hero": false
+			}
+						,{
+				 "eyebrow": "Trends"
+				,"title": "Blog: IBM Worklight certification mini-study guide"
+				,"link": "https://www.ibm.com/developerworks/community/blogs/mobileblog/entry/ibm_worklight_certification_mini_study_guide?lang=en_us"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Trends"
+				,"title": "Blog: IBM InterConnect conference 2013: A new era of smart"
+				,"link": "http://asmarterplanet.com/mobile-enterprise/blog/2013/10/ibm-interconnect-conference-2013-a-new-era-of-smart.html"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Trends"
+				,"title": "Infographic: The upwardly mobile enterprise"
+				,"link": "http://asmarterplanet.com/mobile-enterprise/blog/2013/10/infographic-the-upwardly-mobile-enterprise.html"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Webinars"
+				,"title": "InformationWeek: How To Institute A Mobile First IT Infrastructure"
+				,"link": "https://webinar.informationweek.com/16837?keycode=CAA1DC"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Webinars"
+				,"title": "InformationWeek: Create a Mobile First Customer Experience"
+				,"link": "https://webinar.informationweek.com/16836?keycode=CAA1DC"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": true
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Webinars"
+				,"title": "InformationWeek: Deploying IBM MobileFirst Applications"
+				,"link": "https://webinar.informationweek.com/16835?keycode=CAA1DC"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
+			}
+			,{
+				 "eyebrow": "Webinars"
+				,"title": "IBM Institute for Business Value study: The upwardly mobile enterprise"
+				,"link": "http://www.youtube.com/watch?v=Y86KDl5cOCI"
+				,"image": ""
+				,"description": ""
+				,"linkText": ""
+				,"featured": false
+				,"hero": false
 			}
 		]
 	}
-	,"events" : {
-		 "tiles" : [
-			{
-				 "title" : "An event (featured)"
-				,"image" : "http://placekitten.com/300/200"
-				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
-				,"location" : "Paris, France"
-				,"date" : "February 1, 2014"
-				,"link" : "http://www.google.com"
-				,"featured": true
-			}
-			,{
-				 "title" : "An event not featured)"
-				,"image" : "http://placekitten.com/300/200"
-				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
-				,"location" : "Paris, France"
-				,"date" : "January 31, 2014"
-				,"link" : "http://www.google.com"
-				,"featured": false
-			}
-			,{
-				 "title" : "An event (not featured)"
-				,"image" : "http://placekitten.com/300/200"
-				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
-				,"location" : "Paris, France"
-				,"date" : "January 30, 2014"
-				,"link" : "http://www.google.com"
-				,"featured": false
-			}
-			,{
-				 "title" : "An event (not featured)"
-				,"image" : "http://placekitten.com/300/200"
-				,"description" : "Lorem ipsum dolor sit amet consectetuer dolor amet sit. Adipiscing elit, sed nibh eulamod tincidunt ut lacreet dolor magna amet ipsum."
-				,"location" : "Paris, France"
-				,"date" : "January 25, 2014"
-				,"link" : "http://www.google.com"
-				,"featured": false
-			}
-		]
+	,"newsItemTemplate" : {
+		 "eyebrow": ""
+		,"title": ""
+		,"image": ""
+		,"description": ""
+		,"featured": false
+		,"hero": false
+		,"link": ""
+		,"linkText": ""
 	}
 }

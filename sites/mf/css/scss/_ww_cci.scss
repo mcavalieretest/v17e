@@ -345,9 +345,9 @@ h1.ibm-brand strong {
 	& .ibm-category,
 	& .ibm-date {font-weight: bold; font-size: 0.9em; padding: 0;}
 	& h3 {
-		font: normal 1.5em/1.583em "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
-		padding: 0;
-		& a {color: #333}
+		font: normal 1.5em/1em "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
+		padding: 0 0 10px;
+		& a {color: #333;}
 	}
 	& p {font-size: 0.875em; line-height: 1.429em;}
 }
@@ -369,6 +369,10 @@ h1.ibm-brand strong {
 		}
 		& a.ibm-active {background: #001C26 !important}
 	}
+	&:hover a.ibm-ribbon-prev,
+	&:hover a.ibm-ribbon-next {display: block;}
+	& .ibm-container-body a.ibm-ribbon-prev {left: -30px;}
+	& .ibm-container-body a.ibm-ribbon-next {right: -30px;}
 }
 #RecentNewsList .ibm-col-6-2:nth-child(2n+1) {clear: both;}
 
