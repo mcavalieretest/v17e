@@ -61,8 +61,8 @@
 	background: #02243D url(#{$imagePath}/mobilefirst/i/solutions/lead-solutions.jpg) no-repeat 100% 100%;
 //	background-size: cover;
 }
-
-#ibm-leadspace-head.ibm-news-background {background: #018ac0 url(../i/news/lead-news.jpg) no-repeat 100% 100%;}
+#ibm-leadspace-head.ibm-downloads-background {background: #007670 url(../i/downloads/lead-news.jpg) no-repeat 100% 100%;}
+#ibm-leadspace-head.ibm-news-background {background: #018ac0;}
 
 /*
 .no-backgroundsize #ibm-leadspace-head.ibm-alternate-background {
@@ -342,6 +342,7 @@ h1.ibm-brand strong {
 .ibm-news-item,
 .ibm-event {
 	margin: 0 0 20px;
+	position: relative;
 	& .ibm-category,
 	& .ibm-date {font-weight: bold; font-size: 0.9em; padding: 0;}
 	& h3 {
@@ -375,6 +376,14 @@ h1.ibm-brand strong {
 	& .ibm-container-body a.ibm-ribbon-next {right: -30px;}
 }
 #RecentNewsList .ibm-col-6-2:nth-child(2n+1) {clear: both;}
+@media only screen and (min-width: 0) and (max-width: 570px) {
+	.ibm-news-item .ibm-media {display: none;}
+	.ibm-news-item:first-child {
+		padding-top: 28px;
+		& .ibm-category {position: absolute; top: 5px;}
+		& .ibm-media {display: block;}
+	}
+}
 
 .ibm-connect-bar { 
 	display: block; 
