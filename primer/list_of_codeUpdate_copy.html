@@ -209,23 +209,20 @@
 <h2>New Classes and Containers</h2>
 </div></div>
 <p>V17e enhancement include several new classes and containers to improve the page appearance across devices. Listed below is the class name, overview and code examples.</p>
-<div class="small ibm-container ibm-show-hide ibm-alternate">
+<div class="small ibm-container ibm-show-hide">
 <h2><a>.ibm-default</a></h2>
 <div class="ibm-container-body">
 	<p>This class is a mandatory class required for 5-column layout(page with left navigation). There is no change in the UI with this class. This class is introduced to make the 5 column layout responsive.</p>
-
-	<div class="ibm-band">
 	<div class="ibm-columns">
 			<div class="ibm-col-4-2">
-					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp"/>
+					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp" alt class="ibm-resize"/>
 			</div>
 			<div class="ibm-col-4-2"
-					<pre class="brush:html;">
+					<p><pre class="brush:html;">
 					&lt;body id="ibm-com" class="ibm-default"&gt;
-					</pre>
+					</pre></p>
 			</div>
-	</div>
-</div>		
+	</div>	
 </div>
 
 
@@ -235,24 +232,15 @@
 <h2><a class="ibm-show-hide-link" href="#">.ibm-type</a></h2>
 <div class="ibm-container-body">
 <p>This class is used for latin based templates / languages (this class applies the custom fonts)</p>
-
-<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
-			<div class="ibm-tab-section">
-				<ul class="ibm-tabs">
-					<li class="ibm-first-tab"><a href="#result-type">Result</a><span class="ibm-access">- selected tab,</span></li>
-					<li><a href="#html-type">Code</a></li>
-				</ul>
-			</div>
-			<div class="ibm-container-body">
-
-				<div id="result-type" class="ibm-tabs-content">
-					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp"/>
-				</div>
-				<div id="html-type" class="ibm-tabs-content">
-					<pre class="brush:html;">&lt;body id="ibm-com" class="ibm-type"&gt;</pre>
-				</div>
-			</div>
+<div class="ibm-columns">
+		<div class="ibm-col-4-3">
+			<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp" alt class="ibm-resize"/>
 		</div>
+		<div class="ibm-col-4-1">
+			<p><pre class="brush:html;">&lt;body id="ibm-com" class="ibm-type"&gt;</pre><p>
+		</div>
+	</div>
+</div>
 </div>
 <h2><a class="ibm-show-hide-link" href="#">.ibm-band</a></h2>
 <div class="ibm-container-body">
