@@ -244,19 +244,16 @@
 <h2><a class="ibm-show-hide-link" href="#">.ibm-band</a></h2>
 <div class="ibm-container-body">
 	<ul>
-		<li>ibm-band is a new container used as a wrap around to the exisiting container.</li> 
+		<li>ibm-band is a new container used as a wrap around to the existing container.</li> 
 		<li>This container has a light grey background color. <br />
 			Note: To change the container color please refer the section Colors.</li>
-		<li>If ibm-band is preceeded by another ibm-band container , the band will not have a grey background.</li>
-		<li>Use of this class helps strech the layout to full width of the page.</li>
+		<li>If ibm-band is preceded by another ibm-band container , the band will not have a grey background.</li>
+		<li>Use of this class helps stretch the layout to full width of the page.</li>
 		<li>This can be used only with 6 column layout (landing pages).</li>
 	
 	</ul> 
-	<div class="ibm-columns">
-		<div class="ibm-col-4-2">
 			<img src="assets/codeExampleImg/ibm-band.png" alt="left_nav_temp" alt class="ibm-resize"/>
-		</div>
-		<div class="ibm-col-4-2">
+
 			<pre class="brush:html;">
 			&lt;div class=&quot;ibm-band&quot;&gt;
 			&lt;div class=&quot;ibm-columns&quot;&gt;
@@ -275,8 +272,7 @@
 			&lt;/div&gt;
 			&lt;/div&gt;
 			</pre>
-		</div>
-	</div>
+	
 </div>
 
 
@@ -284,29 +280,28 @@
 <h2><a class="ibm-show-hide-link" href="#">.ibm-no-rule</a></h2>
 <div class="ibm-container-body">
 	<p>Applied to remove the 2px black border on top of every container having .ibm-container class.</p> 
-<div class="ibm-columns">
-			<div class="ibm-container-body">
-				<div id="result-norule" class="ibm-tabs-content">
-					<div class="ibm-columns">
+		<div class="ibm-container">
+			<div id="result-norule" class="ibm-tabs-content">
+				<div class="ibm-columns">
 					<div class="ibm-col-6-3">
 						<div class="ibm-container">
-						<h3>Section without ibm-no-rule</h3>
-						<div class="ibm-container-body">
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
-						</div>
+							<h3>Section without ibm-no-rule</h3>
+							<div class="ibm-container-body">
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+							</div>
 						</div>
 					</div>
 					<div class="ibm-col-6-3">
 						<div class="ibm-container ibm-no-rule">
-						<h3>Section with ibm-no-rule</h3>
+							<h3>Section with ibm-no-rule</h3>
 						<div class="ibm-container-body">
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
 						</div>
 						</div>
-					</div>
 					</div>
 				</div>
-				<div id="html-norule" class="ibm-tabs-content">
+			</div>
+			<div id="html-norule" class="ibm-tabs-content">
 				<pre class="brush:html;">
 				&lt;div class=&quot;ibm-columns&quot;&gt;
 				&lt;div class=&quot;ibm-col-6-3&quot;&gt;
@@ -319,15 +314,15 @@
 				&lt;/div&gt;
 				&lt;/div&gt;
 				</pre>
-				</div>
 			</div>
 		</div>
-		</div>
+</div>
+
 
 <h2><a class="ibm-show-hide-link" href="#">.ibm-resize</a></h2>
 <div class="ibm-container-body">
 	<p>Applied to images to allow resize based on parent container width.</p> 
-<div class="ibm-columns">
+<div class="ibm-container">
 			<div class="ibm-container-body">
 				<div id="result-resize" class="ibm-tabs-content">
 					<div class="ibm-columns">
@@ -375,7 +370,7 @@
 		<li>Added in between .ibm-columns and .ibm-col-6-3/.ibm-col-4-2 class</li>
 		<li>Used only in 6 column layout</li>
 	</ul>
-<div class="ibm-columns">
+<div class="ibm-container">
 			<div class="ibm-container-body">
 				<div id="result-wgutter" class="ibm-tabs-content">
 				<div class="ibm-columns">
@@ -425,7 +420,7 @@
 		<li><strong>.ibm-thumbnail-swap</strong> - Applied to ibm-thumbnail-module to swap image to right side. This applies to mobile (480) grid.</li>
 		<li><strong>.ibm-sprite</strong> - Applied to container to add image sprites for mouse hover states</li>
 	</ul>
-<div class="ibm-columns">
+<div class="ibm-container">
 			<div class="ibm-container-body">
 				<div id="result-thumbModule" class="ibm-tabs-content">
 				<h3>.ibm-thumbnail-module with ibm-sprite container</h3>
@@ -555,10 +550,8 @@
 
 <h2><a class="ibm-show-hide-link" href="#">.ibm-inner-margin</a></h2>
 <div class="ibm-container-body">
-		<p>Applied to columns to provide extra 10px padding</p>
-	<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
-		<div class="ibm-container-body">
-
+	<p>Applied to columns to provide extra 10px padding</p>
+		<div class="ibm-container">
 				<div class="ibm-columns">
 					<div class="ibm-col-4-2">
 						<h3>ibm-col-4-2 without ibm-inner-margin</h3>
@@ -573,7 +566,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="ibm-columns">
+				<div id="html-margin" class="ibm-tabs-content">
 					<pre class="brush:html;">
 						&lt;div class=&quot;ibm-columns&quot;&gt;
 						&lt;div class=&quot;ibm-col-4-2&quot;&gt;
@@ -587,7 +580,6 @@
 					</pre>
 				</div>
 		</div>
-	</div>
 </div>
 
 <h2><a class="ibm-show-hide-link" href="#">Text treatment classes</a></h2>
@@ -601,7 +593,7 @@
 		<li><strong>.section-header:</strong> Applied to section headers</li>
 		</ul>
 	</p>
-	<div class="ibm-container-body">
+	<div class="ibm-container ibm-alternate-rule">
 		<div class="ibm-columns"			
 			<div class="ibm-col-4-2">
 					
