@@ -1,1 +1,1 @@
-Redirect /v17e/ /v17e/primer/
+RedirectMatch ^/v17e/$ /v17e/primer/index.html
