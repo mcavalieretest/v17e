@@ -274,7 +274,6 @@ a.ibm-share-dogear {
 a.ibm-share-stumble {
 	background-position: -52px -208px;
 }
-
 a.ibm-share-googleplus {
 	background-position: -52px -234px;
 }
@@ -309,7 +308,6 @@ ul:hover a.ibm-share-dogear {
 ul:hover a.ibm-share-stumble {
 	background-position: -26px -208px;
 }
-
 ul:hover a.ibm-share-googleplus {
 	background-position: -26px -234px;
 }
@@ -362,7 +360,6 @@ ul a.ibm-share-googleplus:focus {
 ul:hover a.ibm-share-active-email:hover {
 	background-position: 0 -52px;
 }
-
 ul:hover a.ibm-share-active-print:hover {
 	background-position: 0 -130px;
 }
@@ -392,7 +389,8 @@ ul:hover a.ibm-share-active-googleplus:hover {
 }
 
 /* share tool icons specific to PT PL and PT FR locale ================*/
-a.ibm-share-blip,a.ibm-share-wykop {
+a.ibm-share-blip,
+a.ibm-share-wykop {
 background:url(#{$imagePath}/i/icons/sprites-pt-pl.png) no-repeat;
 }
 a.ibm-share-blip {background-position:-52px  0;}
