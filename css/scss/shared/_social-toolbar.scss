@@ -175,31 +175,6 @@
 
 /* End of Highcontrast mode code */
 
-#ibm-content .ibm-share-this {
-	border-top: 2px solid #666;
-}
-
-#ibm-content .ibm-share-this ul {
-	padding: 10px 0px 16px;
-}
-#ibm-content .ibm-share-this ul li {
-	background-image: none !important;
-	float: left;
-	clear: none;
-	padding: 0 10px 0px 0px;
-}
-#ibm-content .ibm-share-this ul li a {
-	display: block;
-	height: 15px;
-	width: 16px;
-    /* we have now a text that we do not want to show */
-    text-indent: -9999px;
-	overflow:hidden;
-}
-#ibm-content .ibm-share-this ul li a:focus {
-    outline: none;
-}
-
 #ibm-social-tools {
     position: absolute;
     top: 160px;

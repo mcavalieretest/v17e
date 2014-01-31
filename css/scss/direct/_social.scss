@@ -1,5 +1,29 @@
+// social content space styles begin ============================================
 
-/* Connect to IBM Module---icons used in content space with ibm-share-this class*/
+.ibm-share-this {
+	border-top: 2px solid #666;
+}
+.ibm-share-this ul {
+	padding: 10px 0px 16px;
+}
+.ibm-share-this li {
+	background-image: none !important;
+	float: left;
+	clear: none;
+	padding: 0 10px 0px 0px;
+}
+.ibm-share-this a {
+	display: block;
+	height: 15px;
+	width: 16px;
+    text-indent: -9999px;
+	overflow:hidden;
+}
+.ibm-share-this a:focus {
+    outline: none;
+}
+
+/* Connect to IBM Module---icons used in content space with ibm-share-this class */
 
 .ibm-share-this.ibm-alternate,
 .ibm-share-this.ibm-alternate-medium,
