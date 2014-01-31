@@ -12,26 +12,19 @@
 //
 
 
-$(document).ready(function(){
-	console.log("ready");
-	var ibmVoices = angular.module('ibmVoices', ['ngRoute']); //[if you have supporting modules dependencies add it inside the square brackets] 
-		
-		ibmVoices.config(['$routeProvider',function($routeProvider){
-					$routeProvider
-						.when('/',
-						{
-							templateUrl: 'partials/tt.html',
-							controller: 'vTrendingTopics'
-						})
-						.otherwise({redirectTo: 'index-ng.html'});
-				}]);
-		
-		
-		ibmVoices.controller('vTrendingTopics', ['$scope', '$http', function($scope, $http){
-			$http.get('tt.json').success(function(data) {
-		      $scope.tt = data;
-		    });
+$(document).load(function() {
+	/* Act on the event */	
+});
 
-		}]);
+$(function(){
+	var url = "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={\'siteId\':\'86\',\'searchCriteria\':{\'noFilter\':true,\'voices\':{\'noOfItems\':20},\'feeds\':null,\'fromDate\':null,\'filter\':null},\'action\':\'search\'}&dojo.preventCache=1391137396789&jsoncallback=handleCallBack";
+	
+	$.getJSON(url, function(data, error){
+		return (error) ? console.log("success") : console.log("fail");
+	});
 
+	var handleCallBack = function(data){
+		var dataLength = data.searchResponse.entries;
+		console.log(dataLength);
+	}
 });
