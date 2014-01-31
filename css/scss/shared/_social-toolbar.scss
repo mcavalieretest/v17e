@@ -212,14 +212,15 @@
     -moz-transition-duration: 0.5s;
 }
 
-#ibm-social-tools ul:hover,#ibm-social-tools ul.ibm-active {
+#ibm-social-tools ul:hover,
+#ibm-social-tools ul.ibm-active {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity = 100)";
 }
 
 #ibm-social-tools li {
     padding: 0;
-    float:left;
+    float: left;
     padding: 2px 0;
 }
 
@@ -230,7 +231,7 @@
     float: left;
     /* we have now a text that we do not want to show */
     text-indent: -9999px;
-	overflow:hidden;
+	overflow: hidden;
 	padding: 0;
 }
 
