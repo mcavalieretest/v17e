@@ -58,6 +58,30 @@
 #deisa {
     background: url("assets/fpo/DEISA-Supercomputer.jpg") no-repeat scroll center 50% / cover rgba(0, 0, 0, 0);
 }
+
+.ibm-show-hide h2 {
+	border-top:none !important;
+}
+.ibm-show-hide h2 a {
+	border-top: 2px solid #666; 
+	display: block;
+	color: #777;
+	padding-top:2px;
+}
+.ibm-show-hide h2 a:hover {
+color: #444;
+}
+
+.ibm-show-hide h2 a.ibm-show-active{
+border-top: 2px solid #000; 
+color: #000;
+}
+.ibm-container.ibm-show-hide {
+border-bottom: 1px solid #CCC;
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
+}
+
 </style>
 
 </head>
@@ -139,45 +163,39 @@
 <div class="ibm-columns">
 <div class="ibm-col-1-1">
 
-	<br>
 	<div class="ibm-columns">
-	<div class="ibm-col-1-1 large">
-	<h2>Requirements to Implement v17e</h2>
-	</div></div>
-
-	<div class="small ibm-container ibm-show-hide ibm-alternate ibm-no-rule">
+	<div class="ibm-col-6-4 large">
+		<h2>Requirements to Implement v17e</h2>
+	</div>
+	</div>
+	
+	<div class="ibm-container ibm-show-hide ibm-alternate">
 		<h2><a>For all pages</a></h2>
 		<div class="ibm-container-body">
-			<ul>
-				<li>Add viewport meta tag below content type meta tag:
-					<pre class="brush: html;">
-						&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-						</pre></li>
-						<li>Replace current v17 www.css file with new v17e version
-							<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" /&gt;
-							</pre>
-
-							</li>
-							<li>Replace current v17 www.js file with v17e version. <strong>jQuery</strong> and <strong>Modernizr</strong> are included as part of the common v17e JS
-							<pre class="brush: html;">&lt;script src="//1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript"&gt;&lt;/script&gt;
-							</pre>
-							</li></ul>
-		</div>
-
-
-<div class="small ibm-container ibm-show-hide ibm-alternate">
-	<h2><a>Optional Requirements</a></h2>
-	<div class="ibm-container-body">
-		<p>  To make the v17e CSS load faster, some of the CSS code has been removed from the main CSS file. As such some additional CSS file(s) may need to be called based on page content.</p>
 		<ul>
-			<li>Application/Slim Masthead
-				<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/application.css" rel="stylesheet" title="www" type="text/css"/&gt;
-				</pre>
-				</li>
-				<li>Tables 
-					<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/data.css" rel="stylesheet" title="www" type="text/css" /&gt;
-					</pre>
-					</li>
+		<li>Add viewport meta tag below content type meta tag:
+		<pre class="brush: html;">
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+		</pre>
+		</li>
+		<li>Replace current v17 www.css file with new v17e version
+		<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" /&gt;</pre>
+		</li>
+		<li>Replace current v17 www.js file with v17e version. <strong>jQuery</strong> and <strong>Modernizr</strong> are included as part of the common v17e JS
+		<pre class="brush: html;">&lt;script src="//1.www.s81c.com/common/v17e/js/ww.js" type="text/javascript"&gt;&lt;/script&gt;</pre>
+		</li>
+		</ul>
+		</div>
+	<h2 class="ibm-show-hide-link"><a>Optional Requirements</a></h2>
+	<div class="ibm-container-body">
+		<p> To make the v17e CSS load faster, some of the CSS code has been removed from the main CSS file. As such some additional CSS file(s) may need to be called based on page content.</p>
+		<ul>
+		<li>Application/Slim Masthead
+		<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/application.css" rel="stylesheet" title="www" type="text/css"/&gt;</pre>
+		</li>
+		<li>Tables 
+		<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/data.css" rel="stylesheet" title="www" type="text/css" /&gt;</pre>
+		</li>
 					<li>Forms 
 						<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/forms.css" rel="stylesheet" title="www" type="text/css" /&gt;
 						</pre>
@@ -201,15 +219,21 @@
 						<pre class="brush: html;">&lt;link href="//1.www.s81c.com/common/v17e/css/module.css" rel="stylesheet" title="www" type="text/css" /&gt;
 						</pre>
 						</li></ul>
-	</div>
-</div>
+				</div>
+			</div>
+
+
+<br /><br />
 
 <div class="ibm-columns">
-<div class="ibm-col-1-1 large">
-<h2><br>New Classes and Containers</h2>
-</div></div>
+ <div class="ibm-col-6-4 large">
+<h2>New Classes and Containers</h2>
+</div>
+</div>
+
 <p>V17e enhancement include several new classes and containers to improve the page appearance across devices. Listed below is the class name, overview and code examples.</p>
 
+<div class="ibm-container ibm-show-hide ibm-alternate">
 	<h2><a class="ibm-show-hide-link" href="#">.ibm-default</a></h2>
 	<div class="ibm-container-body">
 		<p>This class is a mandatory class required for 5-column layout(page with left navigation). There is no change in the UI with this class. This class is introduced to make the 5 column layout responsive.</p>
@@ -217,10 +241,11 @@
 			<div class="ibm-col-4-2">
 					<img src="assets/codeExampleImg/left_nav_temp.png" alt="left_nav_temp" alt class="ibm-resize"/>
 			</div>
-			<div class="ibm-col-4-2"
-					<p><pre class="brush:html;">
+			<div class="ibm-col-4-2">
+					
+					<pre class="brush:html;">
 					&lt;body id="ibm-com" class="ibm-default"&gt;
-					</pre></p>
+					</pre>
 			</div>
 		</div>	
 	</div>
