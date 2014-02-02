@@ -81,7 +81,7 @@
 					<h1 class="ibm_cci--h1__modifyer">
 						<a href="ibm-voices-index-grid.html">IBM Voices</a>
 					</h1>
-					<p class="ibm_cci_aboutlinkarrow">
+					<p class="ibm_cci-about">
 						<a href="#" class="ibm_cci_aboutlink">
 							About us
 						</a>
@@ -97,10 +97,10 @@
 				<div class="ibm_cci--ls--toggle" id="ibm_cci--toggle-js">
 					<ul class="ibm_cci--ls--toggle--ul">
 						<li class="ibm_cci--ls--toggle--li--grid-icon">
-							<a href="#">Grid View</a>
+							<a class="selected" id="gridvie" href="javascript:void(0);">Grid View</a>
 						</li>
 						<li class="ibm_cci--ls--toggle--li--list-icon">
-							<a class="selected" href="#">List View</a>
+							<a href="javascript:void(0)" id="listvie">List View</a>
 						</li>
 					</ul>
 				</div>
@@ -113,15 +113,21 @@
 				<!-- TRENDING TOPICS (START) -->
 
 				<div class="ibm_cci--sk ibm_cci--sk__mt">
-					
-					<!-- INSERT TRENDING TOPICS DATA TEMPLATE HERE (template/trendingtopics.html) -->
+					<ul class="ibm_cci__ml">
+						<li class="ibm_cci__ml_t">
+							<!-- add class="ibm_cci-clicked" on click in <p> and  -->
+							<p class="ibm_cci-clicked">
+								<span><a href="#" class="ibm_cci-voices-tt-text">All trending topics : </a></span>
+							</p>
+						</li>																		
+					</ul>
 
 				</div>
 				
 				<!-- TRENDING TOPICS (END) -->
 
 					<div class="ibm_cci--sr">
-						<p>Results found: {%totalCount%} </p>
+						<p style="visibility:hidden">Results found: </p>
 					</div>
 
 				</div>
