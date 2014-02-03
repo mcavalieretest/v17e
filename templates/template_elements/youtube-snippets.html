@@ -21,13 +21,69 @@
 <meta name="Robots" content="index,follow"/>
 <meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="ezse"/>
 <meta name="Description" content="esdes"/>
-
+<meta name="DC.Subject" content="IN.F" scheme="IBM_SubjectTaxonomy">
+<meta name="IBM.WTMCategory" content="TESTAEEN" scheme="IBM_WTMCategory">
+<meta name="DC.Type" content="" scheme="IBM_ContentClassTaxonomy">
+<meta name="DataSource" content="IConS : SP_TOPIC_PAGE_TAB : O383022S52163R93">
+<meta name="Owner" content="Nathalie Chamas/United Arab Emirates/IBM">
+<link href="http://purl.org/DC/elements/1.0/" rel="schema.DC">
+<link href="http://www.ibm.com/favicon.ico" rel="SHORTCUT ICON">
 <title>IBM </title>
-
 <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="http://ecmpreview.webmaster.ibm.com/smarterplanet/global/files/sp-screen.css" rel="stylesheet" title="www" type="text/css">
+<link type="text/css" href="//www.ibm.com/smarterplanet/css/sp-mobile.css" rel="IBM.Mobile.stylesheet">
+<link type="text/css" title="www" rel="stylesheet" href="//1.www.s81c.com/smarterplanet/css/ae/en/sp-screen-fonts.css">
+<script type="text/javascript" src="//www.ibm.com/common/js/sp-common.js">//</script>
+<link type="text/javascript" href="/smarterplanet/global/files/sp-global-mobile.js" rel="IBM.Mobile.script">
+<script type="text/javascript" src="/smarterplanet/global/files/sp-mobile.js">//</script>
+
+<script type="text/javascript" src="//1.www.s81c.com/common/js/dojo/www.js">//</script>
+
+
 <script src="../../js/ww.js" type="text/javascript">
-//
+	ibmweb.config.set({opinionlab: {floating: {enabled: true, type: 'overlay', hide: 3600}}});
 </script>
+<script src="../../js/ww.js" type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery('#ibm-language>a').each(function(){
+var link = jQuery(this)
+var next_step = link.attr('href').split('/');
+var country = next_step[3];
+var lang = next_step[4];
+
+var url_spilt = document.location.toString().split('smarterplanet');
+var url = url_spilt[0]+'smarterplanet';
+
+var url_split_dash = url_spilt[1].split('/');
+var split_length = url_split_dash.length;
+for(var i = 1; i <split_length; i ++){
+	if(i== 2){
+		url=url+'/'+lang;
+	}
+	else{
+		url = url+'/'+url_split_dash[i]
+	}
+}
+jQuery.ajax( {  
+       url : url,
+        dataType : "",  
+        type : 'GET',  
+        jsonpCallback : "",  
+        success : function(data,textStatus) {  
+            link.attr('href',url);
+        },  
+        error : function() {  
+            link.attr('href',url_spilt[0]+"smarterplanet/"+country+"/"+lang+"/");
+        }  
+    });  
+
+});
+							});
+</script>
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style>
+
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
@@ -297,13 +353,13 @@ ccTestOverrides={
 	</div>
 </div>
 
-<!-- Overlay Begins -->
+<!-- Overlay Begins 
 
 <div class="ibm-body">
 <div class="ibm-main" style="height:355px;">
 <div class="ibm-container ibm-alternate">
 <div class="ibm-container-body">
-<a class="ibm-access"><!-- Accessibility anchor --></a>
+<a class="ibm-access"><!-- Accessibility anchor </a>
 
 <div class="ibm-embed-video">
 <script type="text/javascript" src="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/embedIframeJs/uiconf_id/11601134/partner_id/102"></script><object id="kaltura_player_52c6c9f2a1e08" name="kaltura_player_52c6c9f2a1e08" type="application/x-shockwave-flash" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" height="330" width="740" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134" data="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><param name="allowFullScreen" value="true"><param name="allowNetworking" value="all"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#000000"><param name="flashVars" value="playlistAPI.autoContinue=true&amp;playlistAPI.autoInsert=true&amp;playlistAPI.autoPlay=1&amp;playlistAPI.kpl0Name=IBM Notes 8 Banking Composite&amp;playlistAPI.kpl0Url=http://smartcloudapi.ps.kaltura.com%2Findex.php%2Fpartnerservices2%2Fexecuteplaylist%3Fuid%3D%26partner_id%3D102%26subp_id%3D10200%26format%3D8%26ks%3D%7Bks%7D%26playlist_id%3D0_x6scfil6&amp;"><param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_fbjxmp20/uiconf_id/11601134"><a href="http://corp.kaltura.com">video platform</a> <a href="http://corp.kaltura.com/technology/video_management">video management</a> <a href="http://corp.kaltura.com/solutions/overview">video solutions</a><a href="http://corp.kaltura.com/technology/video_player">video player</a></object>
@@ -315,9 +371,34 @@ ccTestOverrides={
 
 <!-- Overlay Ends -->
 
-
-
 <!-- inline small 6 -->
+
+
+<!-- inline small 7 -->
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+	<div class="ibm-rule">
+		<hr>
+	</div>
+</div>
+</div>
+
+<div class="ibm-columns">
+<div class="ibm-col-5-2">
+<div class="ibm-anchor-pointer"><a name="market" class="vt-p"></a></div><h2 class="ibm-sp-header">Market: personalizing the message</h2>
+
+<p>A global financial services firm uses behavioral analytics to give its customers what they want: real-time, personalized promotions through their media of choice. Studying the way  customers use the web, email, phone and social networks to research and buy enables the firm to provide  instant, targeted offers that yield high response, conversion and revenue rates.</p>
+
+<p>With powerful analytics and coordinated cross-channel marketing, personalized campaigns have become even more precise, and can be delivered through the most effective channels for each customer. Marketers are closer than ever to speaking directly to customers about products and services and delivering the best offer, automatically, with a more complete understanding of how customers interact and respond to their brands.</p>
+
+<p>A 2011 IBV study, <a href="ftp://public.dhe.ibm.com/common/ssi/ecm/en/gbe03391usen/GBE03391USEN.PDF" class="vt-p">From Social Media to Social CRM</a> <span class="ibm-item-note">(PDF, 1.2MB)</span>, underscores a perception gap between marketers and their customers and why their customers interact with their brand, specifically through social media. Customers cite tangible value—discounts and purchasing—as the top two social media activities they seek out from their trusted brands. Just feeling connected to or interacting with a brand is not enough for customers.</p>
+</div>
+<div class="ibm-col-5-3">
+<script type="text/javascript" src="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/embedIframeJs/uiconf_id/11601132/partner_id/102"></script><object id="kaltura_player_52d4423bdc0f2" name="kaltura_player_52d4423bdc0f2" type="application/x-shockwave-flash" allowfullscreen="true" allownetworking="all" allowscriptaccess="always" height="402" width="608" xmlns:dc="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/searchmonkey/media/" rel="media:video" resource="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms" data="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms"><param name="allowFullScreen" value="true"><param name="allowNetworking" value="all"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#000000"><param name="flashVars" value="streamerType=rtmp&amp;streamerUrl=&amp;"><param name="movie" value="http://smartcloudapi.ps.kaltura.com/index.php/kwidget/wid/0_niqbs34h/uiconf_id/11601132/entry_id/0_jts0a3ms"><a href="http://corp.kaltura.com" class="vt-p">video platform</a> <a href="http://corp.kaltura.com/technology/video_management" class="vt-p">video management</a> <a href="http://corp.kaltura.com/solutions/overview" class="vt-p">video solutions</a><a href="http://corp.kaltura.com/technology/video_player" class="vt-p">video player</a> <a rel="media:thumbnail" href="http://smartcloudapi.ps.kaltura.com/p/102/sp/10200/thumbnail/entry_id/0_jts0a3ms/version/100000/width/120/height/90/bgcolor/000000/type/2" class="vt-p"></a> <span property="dc:description" content="Kaltura's proposed integration with IBM Connections"></span> <span property="media:title" content="Kaltura and IBM Connections (proposed)"></span> <span property="media:width" content="608"></span> <span property="media:height" content="402"> </span><span property="media:type" content="application/x-shockwave-flash"></span> <span property="media:duration" content="04:13"></span></object>
+</div>
+</div>
+
+<!-- inline small 7 -->
 
 <!-- RIBBONS ONLY END -->
 
