@@ -69,7 +69,7 @@
                 line-height: 28px;
             }
 
-            a.retweet, a.reply, a.fav {
+            a.retweet, a.reply, a.fav, a.info {
                 padding: 0 0 0 28px;
                 background: url('../i/beta/twitter-spritev2_300.png') no-repeat -32px center;
                 background-size: 249px 28px;
@@ -98,9 +98,14 @@
                     background-position: -91px 0;
                 }
             }
+
+            a.info {
+                background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_status_sm_lg.png) no-repeat 2px 2px transparent;
+                background-size: 24px 1200px;
+            }
         } 
 
-
+        //not needed anymore as it was removed from SMA
         .smaShareBubble {
 
             width: 170px;
@@ -110,23 +115,23 @@
                 width: 34px;
 
                 &.digg {
-                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 0 transparent;
+                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 0 transparent;
                 }
 
                 &.facebook {
-                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -420px transparent;
+                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -420px transparent;
                 }
 
                 &.twitter {
-                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -840px transparent;
+                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -840px transparent;
                 }
 
                 &.delicious {
-                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -210px transparent;
+                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -210px transparent;
                 }
 
                 &.linkedin {
-                   background: url(http://1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -630px transparent;
+                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -630px transparent;
                 }
             }
              
