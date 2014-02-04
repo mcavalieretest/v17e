@@ -65,6 +65,24 @@
 	background: #336CA6;
 }
 
+/* 
+
+
+#m-menu.m-local-menu-enable .m-menu {
+	@include transform(translate3d(-250px, 0px, 0px));
+}
+ 
+#m-menu #m-local-menu {
+	@include transform(translate3d(-250px, 0px, 0px));
+}
+
+*/
+
+#m-menu.m-local-menu-enable #m-local-menu {
+	@include transform(translate3d(0px, 0px, 0px));
+}
+
+
 
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {

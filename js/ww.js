@@ -307,6 +307,25 @@ var checkMLinksExist = setInterval(function() {
 					jQuery('#m-menu').removeClass('m-local-menu-enable');
 					jQuery('#m-main-menu').show();
 					jQuery('#m-local-menu').hide();
+
+          if (jQuery(self.el).is("#m-menu") 
+            && jQuery('#m-local-navigation').length
+            && !self.open) {
+            setTimeout(function() {
+              jQuery(self.el).addClass("m-local-menu-enable");
+              jQuery('#m-local-menu').show();              
+            }, 1500);
+
+
+          }
+
+          if (jQuery('#m-local-navigation').length) {
+            // setTimeout(function() {
+            //   jQuery('#m-menu').addClass('m-local-menu-enable');
+            //   jQuery('#m-local-menu').show();
+            //   jQuery('#m-main-menu').hide();              
+            // }, 1000);
+          }
 				}
 
 				ev.stopPropagation();
