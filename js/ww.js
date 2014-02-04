@@ -300,20 +300,20 @@ var checkMLinksExist = setInterval(function() {
 				
 				if (jQuery(this).attr('id') == 'm-local-navigation') {
 					jQuery('#m-menu').addClass('m-local-menu-enable');
-					jQuery('#m-local-menu').show();
-					jQuery('#m-main-menu').hide();
+					// jQuery('#m-local-menu').show();
+					// jQuery('#m-main-menu').hide();
 				}
 				else {
 					jQuery('#m-menu').removeClass('m-local-menu-enable');
-					jQuery('#m-main-menu').show();
-					jQuery('#m-local-menu').hide();
+					// jQuery('#m-main-menu').show();
+					// jQuery('#m-local-menu').hide();
 
           if (jQuery(self.el).is("#m-menu") 
             && jQuery('#m-local-navigation').length
             && !self.open) {
             setTimeout(function() {
               jQuery(self.el).addClass("m-local-menu-enable");
-              jQuery('#m-local-menu').show();              
+              // jQuery('#m-local-menu').show();              
             }, 1500);
 
 
