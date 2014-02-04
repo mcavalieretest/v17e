@@ -1,3 +1,5 @@
+$m_searchBoxHeight: 30px;
+
 
 #m-wrap {
 	position: relative;
@@ -33,6 +35,40 @@
 	position: relative;
 	right: 0;
 	height: 100%;
+}
+
+#m-main-menu {
+	input#m-q {
+		font-family: Arial, Helvetica;
+		@include px-to-rem(font-size,18px);
+		line-height: 14px;
+		@include box-shadow(0 1px 0 #555);
+		border: 1px solid #000;
+		padding: 3px 30px 2px 10px;
+		background: #0E0E0E;	
+		@include background-gradient(background,(top, rgba(14,14,14,1) 0px, rgba(50,50,50,1) 24px, rgba(225,225,225,1) 100px, rgba(238,238,238,1) 124px));
+		background-size: 222px 124px;
+		color: #888;
+		width: 100%; 
+		height: $m_searchBoxHeight;
+		@include transition(background .2s linear);
+	}
+	
+
+	#m-search {
+		background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
+		width: 24px;
+		height: 21px;
+		margin-left: -30px;
+		position: absolute;
+		top: 8px;
+		right: 5px;
+		color: transparent;
+		border: 0 none;
+		text-align: right;
+		text-indent: -999em;
+		cursor: pointer;
+	}
 }
 
 .m-menu {
@@ -77,7 +113,7 @@
 }
 
 #m-menu.m-local-menu-enable #m-local-menu {
-	@include transform(translate3d(0px, 0px, 0px));
+	@include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px));
 }
 
 

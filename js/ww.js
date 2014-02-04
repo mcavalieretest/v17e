@@ -151,7 +151,19 @@ if(jQuery('#ibm-top').length > 0) {
 var checkMLinksExist = setInterval(function() {
    if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
 	   var mastLinks = jQuery('#ibm-menu-links').html();
-      jQuery('#m-shift').prepend('<div id="m-menu" class="m-menu"><div id="m-main-menu"><h2>Menu</h2><ul>' + mastLinks + '</ul></div></div>');
+      jQuery('#m-shift').prepend(
+        '<div id="m-menu" class="m-menu">'
+        +'<div id="m-main-menu">'
+        +'<div id="m-search-module">'
+        +'<form id="m-search-form" action="http://www.ibm.com/Search/" method="get">'
+        +'<input id="m-q" value="" maxlength="100" name="q" type="text" placeholder="search ibm.com" />'
+        +'<input type="submit" id="m-search" class="ibm-btn-search" value="Submit"/>'
+        +'</form>'
+        +'</div>'
+        +'<ul>' + mastLinks + '</ul>'
+        +'</div>'
+        +'</div>'
+      );
       jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
       new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
       
