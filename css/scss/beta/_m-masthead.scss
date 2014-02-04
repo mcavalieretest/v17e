@@ -53,7 +53,7 @@ $m_searchBoxHeight: 30px;
 		height: $m_searchBoxHeight;
 		@include transition(background .2s linear);
 	}
-	
+
 
 	#m-search {
 		background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
@@ -105,6 +105,18 @@ $m_searchBoxHeight: 30px;
 	height: 100%;
 	@include transition(all 0.5s);	
 	@include transform(translate3d(0, 100%, 0px));
+
+	.menu-close {
+		position: absolute;
+		bottom: $m_searchBoxHeight;
+		display: block;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		color: #fff;
+		padding: 10px;
+		@include px-to-rem(font-size,20px);
+	}
 }
 
 #m-local-menu,
@@ -114,6 +126,15 @@ $m_searchBoxHeight: 30px;
 
 #m-menu.m-local-menu-enable #m-local-menu {
 	@include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px));
+
+	&.docked {
+		@include transform(translate3d(0px, 100%, 0px));
+		top: -45px;
+
+		h2.hide {
+			cursor: pointer;
+		}
+	}
 }
 
 

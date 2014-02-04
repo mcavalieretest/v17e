@@ -170,6 +170,20 @@ var checkMLinksExist = setInterval(function() {
       if (jQuery('#m-local-navigation').length) {
       	jQuery('#m-local-menu').appendTo("#m-menu");
       	new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-local-navigation' ) );
+
+        jQuery('#m-local-menu')
+          .find(".menu-close").click(function(e) {
+            e.preventDefault();
+
+            jQuery('#m-local-menu').addClass("docked");
+          }).end()
+          
+          .find("h2.hide").click(function(e) {
+            e.preventDefault();
+
+            jQuery('#m-local-menu').removeClass("docked");
+          }).end();
+
       }
       
       clearInterval(checkMLinksExist);
