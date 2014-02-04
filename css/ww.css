@@ -7647,21 +7647,6 @@ markup:
   -moz-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0); }
 
-#m-menu.m-local-menu-enable {
-  background: #336CA6; }
-
-/* 
-
-
-#m-menu.m-local-menu-enable .m-menu {
-	@include transform(translate3d(-250px, 0px, 0px));
-}
- 
-#m-menu #m-local-menu {
-	@include transform(translate3d(-250px, 0px, 0px));
-}
-
-*/
 #m-local-menu {
   position: absolute;
   top: 0;
@@ -7670,11 +7655,19 @@ markup:
   width: 250px;
   height: 100%;
   -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transform: translate3d(0, 100%, 0px);
   -moz-transform: translate3d(0, 100%, 0px);
   -o-transform: translate3d(0, 100%, 0px);
   -ms-transform: translate3d(0, 100%, 0px);
   transform: translate3d(0, 100%, 0px); }
+
+#m-local-menu,
+#m-local-menu .m-level {
+  background: #336CA6; }
 
 #m-menu.m-local-menu-enable #m-local-menu {
   -webkit-transform: translate3d(0px, 0px, 0px);
