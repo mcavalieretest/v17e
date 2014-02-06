@@ -62,7 +62,6 @@
 @media only screen and (max-width: 568px) and (min-width: 0) {
  
         .actions {
-            font-size: 14px;
             overflow: hidden;
 
             a {
@@ -105,38 +104,7 @@
             }
         } 
 
-        //not needed anymore as it was removed from SMA
-        .smaShareBubble {
 
-            width: 170px;
-
-            span {
-                height: 32px;
-                width: 34px;
-
-                &.digg {
-                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 0 transparent;
-                }
-
-                &.facebook {
-                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -420px transparent;
-                }
-
-                &.twitter {
-                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -840px transparent;
-                }
-
-                &.delicious {
-                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -210px transparent;
-                }
-
-                &.linkedin {
-                   background: url(//1.www.s81c.com/i/v17/icons/ibm_sprite_share_32x32_HOVER.png) no-repeat 0 -630px transparent;
-                }
-            }
-             
-
-        }  
 }
 
 
