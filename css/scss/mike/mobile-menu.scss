@@ -1,0 +1,332 @@
+/**
+ * This top chunk goes in _m-masthead.scss....
+ */
+
+$m_searchBoxHeight: 30px;
+
+
+#m-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+#m-open-link {
+  display: none;
+  float: right;
+}
+
+#m-open-link a {
+  display: block;
+  text-indent: -999em;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 30px;
+  padding: 0 40px;
+}
+
+#m-open-link a:before {
+  position: absolute;
+  top: 4px;
+  right: 20px;
+  width: 18px;
+  height: 3px;
+  box-shadow: 0 6px #FFF, 0 12px #FFF, 0 18px #FFF;
+  content: '';
+}
+
+.m-shift {
+  position: relative;
+  right: 0;
+  height: 100%;
+}
+
+
+#m-main-menu {
+  input#m-q {
+    font-family: Arial, Helvetica;
+    @include px-to-rem(font-size,18px);
+    line-height: 14px;
+    @include box-shadow(0 1px 0 #555);
+    border: 1px solid #000;
+    padding: 3px 30px 2px 10px;
+    background: #0E0E0E;  
+    @include background-gradient(background,(top, rgba(14,14,14,1) 0px, rgba(50,50,50,1) 24px, rgba(225,225,225,1) 100px, rgba(238,238,238,1) 124px));
+    background-size: 222px 124px;
+    color: #888;
+    width: 100%; 
+    height: $m_searchBoxHeight;
+    @include transition(background .2s linear);
+  }
+
+
+  #m-search {
+    background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
+    width: 24px;
+    height: 21px;
+    margin-left: -30px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    color: transparent;
+    border: 0 none;
+    text-align: right;
+    text-indent: -999em;
+    cursor: pointer;
+  }
+}
+
+.m-menu {
+  position: absolute; /* we can't use fixed here :( */
+  background: #000;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 250px;
+  height: 100%;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.m-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+#m-local-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 250px;
+  height: 100%;
+  @include transition(all 0.5s);  
+  @include transform(translate3d(0, 100%, 0px));
+
+  .menu-close {
+    position: absolute;
+    bottom: $m_searchBoxHeight;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    @include px-to-rem(font-size,20px);
+  }
+}
+
+#m-local-menu,
+#m-local-menu .m-level {
+  background: #336CA6;
+}
+
+#m-menu.m-local-menu-enable #m-local-menu {
+  @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px));
+
+  &.docked {
+    @include transform(translate3d(0px, 100%, 0px));
+    top: -45px;
+
+    h2.hide {
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+/* overlays for pusher and for level that gets covered */
+.m-shift:after {
+  z-index: 1000;
+}
+
+.m-shift:after,
+.m-level:after,
+.m-level:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  opacity: 0;
+}
+
+.m-shift:after,
+.m-level:after {
+  background: rgba(0,0,0,0.3);
+  -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  -moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+}
+
+.m-level:after {
+  z-index: -1;
+}
+
+.m-shift.m-enable:after,
+.m-level.m-level-overlay:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.m-level.m-level-overlay {
+  cursor: pointer;
+}
+
+.m-level.m-level-overlay.m-level:before {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 1;
+}
+
+
+.m-level {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/* First level */
+.m-menu #m-main-menu > .m-level,
+.m-menu #m-main-menu > .m-level.m-level-open,
+.m-menu #m-local-menu > .m-level,
+.m-menu #m-local-menu > .m-level.m-level-open {
+  box-shadow: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* cover */
+.m-cover .m-level.m-level-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.m-cover .m-level.m-level-open > ul > li > .m-level:not(.m-level-open) {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+/* content style */
+
+.m-menu h2 {
+  margin: 0;
+  padding: 1em;
+  color: rgba(255,255,255,0.4);
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  font-weight: 300;
+  font-size: 2em;
+}
+
+#m-menu.m-local-menu-enable h2 {
+  color: #CCC;  
+}
+
+.m-menu.m-cover h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.m-menu ul li > a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.7em 1em 0.7em 1.8em;
+  outline: none;
+  box-shadow: inset 0 -1px rgba(255,255,255,0.2);
+  text-shadow: 0 0 1px rgba(255,255,255,0.1);
+  font-size: 1.4em;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  -moz-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+#m-menu.m-local-menu-enable ul li > a {
+  box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+}
+
+.m-menu ul li {
+  padding: 0;
+}
+
+.m-menu ul li:before {
+  z-index: -1;
+  display: none;
+  line-height: 3.5;
+}
+
+.m-menu ul li.icon-arrow-left:before {
+  color: #FFF;
+  margin-left: 0;
+}
+
+.m-level > ul > li:first-child > a {
+  box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
+}
+
+.m-menu ul li a:hover,
+.m-level > ul > li:first-child > a:hover {
+  background: rgba(0,0,0,0.2);
+  box-shadow: inset 0 -1px rgba(0,0,0,0);
+}
+
+.m-menu .m-level.m-level-overlay > ul > li > a,
+.m-level.m-level-overlay > ul > li:first-child > a {
+  box-shadow: inset 0 -1px rgba(0,0,0,0);
+}
+
+.m-menu .m-back {
+  background: rgba(0,0,0,0.1);
+  outline: none;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: block;
+  font-size: 0.8em;
+  padding: 1em;
+  position: relative;
+  box-shadow: inset 0 1px rgba(0,0,0,0.1);
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.m-menu .m-back:after {
+  right: 10px;
+  color: rgba(0,0,0,0.3);
+}
+
+.m-menu .m-level.m-level-overlay > .m-back,
+.m-menu .m-level.m-level-overlay > .m-back:after {
+  background: transparent;
+  box-shadow: none;
+  color: transparent;
+}
+
+#m-menu,
+#m-local-link {
+  display: none;
+}
