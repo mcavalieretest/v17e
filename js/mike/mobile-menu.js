@@ -165,11 +165,11 @@ var checkMLinksExist = setInterval(function() {
         +'</div>'
       );
       jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
-      new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
+      window.mobileMenuMain = new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
       
       if (jQuery('#m-local-navigation').length) {
         jQuery('#m-local-menu').appendTo("#m-menu");
-        new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-local-navigation' ) );
+        window.mobileMenuLocal = new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-local-navigation' ) );
 
         jQuery('#m-local-menu')
           .find(".menu-close").click(function(e) {
@@ -178,7 +178,7 @@ var checkMLinksExist = setInterval(function() {
             jQuery('#m-local-menu').addClass("docked");
           }).end()
           
-          .find("h2.hide").click(function(e) {
+          .find("h2").click(function(e) {
             e.preventDefault();
 
             jQuery('#m-local-menu').removeClass("docked");
@@ -475,6 +475,9 @@ var checkMLinksExist = setInterval(function() {
       jQuery(this.wrapper).removeClass( 'm-enable' );
       this._toggleLevels();
       this.open = false;
+    },
+    _resetLocalMenu: function() {
+
     },
     // close sub menus
     _closeMenu : function() {
