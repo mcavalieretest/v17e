@@ -165,19 +165,30 @@ var checkMLinksExist = setInterval(function() {
         +'</div>'
       );
       jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
-      window.mobileMenuMain = new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-navigation' ) );
+      window.mobileMenuMain = new mlPushMenu( 
+        document.getElementById( 'm-menu' ), 
+        document.getElementById( 'm-main-menu' ), 
+        document.getElementById( 'm-navigation' ) 
+      );
       
       if (jQuery('#m-local-navigation').length) {
         jQuery('#m-local-menu').appendTo("#m-menu");
-        window.mobileMenuLocal = new mlPushMenu( document.getElementById( 'm-menu' ), document.getElementById( 'm-local-navigation' ) );
+        window.mobileMenuLocal = new mlPushMenu( 
+          document.getElementById( 'm-menu' ), 
+          document.getElementById( 'm-local-menu' ), 
+          document.getElementById( 'm-local-navigation' ) 
+        );
 
         jQuery('#m-local-menu')
+
+          // Close local nav when clicking 'close' link
           .find(".menu-close").click(function(e) {
             e.preventDefault();
 
             jQuery('#m-local-menu').addClass("docked");
           }).end()
           
+          // Dock local nav when clicking the docked heading
           .find("h2").click(function(e) {
             e.preventDefault();
 
@@ -259,8 +270,13 @@ var checkMLinksExist = setInterval(function() {
     return e.parentNode && closest( e.parentNode, classname );
   }
 
-  function mlPushMenu( el, trigger, options ) { 
-    this.el = el;
+  function mlPushMenu( el, container, trigger, options ) { 
+    this.el = el;                 // The element containing all menus on the page. 
+    this.container = container;   // The element containing only this particular menu. 
+                                  // Separating this.el and this.container allows us to have 
+                                  //   two menus overlapping each other that look like one, but 
+                                  //   behave a little differently. 
+
     this.trigger = trigger;
     this.options = extend( this.defaults, options );
     // support 3d transforms
@@ -309,7 +325,6 @@ var checkMLinksExist = setInterval(function() {
       this._initEvents();
     },
     _initEvents : function() {
-
       var self = this;
 
       // the menu should close if clicking somewhere on the body
@@ -317,6 +332,10 @@ var checkMLinksExist = setInterval(function() {
         self._resetMenu();
         jQuery('html').removeClass('m-menu-open');
         el.removeEventListener( self.eventtype, bodyClickFn );
+
+        if (window.mobileMenuLocal) {
+          window.mobileMenuLocal._resetLocalMenu();
+        }
       };
 
       // open (or close) the menu
@@ -326,41 +345,30 @@ var checkMLinksExist = setInterval(function() {
         
         if (jQuery(this).attr('id') == 'm-local-navigation') {
           jQuery('#m-menu').addClass('m-local-menu-enable');
-          // jQuery('#m-local-menu').show();
-          // jQuery('#m-main-menu').hide();
         }
         else {
           jQuery('#m-menu').removeClass('m-local-menu-enable');
-          // jQuery('#m-main-menu').show();
-          // jQuery('#m-local-menu').hide();
 
+          // If this is the local menu, open the local menu in a second
           if (jQuery(self.el).is("#m-menu") 
             && jQuery('#m-local-navigation').length
             && !self.open) {
             setTimeout(function() {
+              // Show local menu
               jQuery(self.el).addClass("m-local-menu-enable");
-              // jQuery('#m-local-menu').show();              
             }, 1500);
-
-
-          }
-
-          if (jQuery('#m-local-navigation').length) {
-            // setTimeout(function() {
-            //   jQuery('#m-menu').addClass('m-local-menu-enable');
-            //   jQuery('#m-local-menu').show();
-            //   jQuery('#m-main-menu').hide();              
-            // }, 1000);
           }
         }
 
         ev.stopPropagation();
         ev.preventDefault();
+
         if( self.open ) {
           self._resetMenu();
         }
         else {
-          self._openMenu();
+          self._openLevel();
+
           // the menu should close if clicking somewhere on the body (excluding clicks on the menu)
           document.addEventListener( self.eventtype, function( ev ) {
             if( self.open && !hasParent( ev.target, self.el.id ) ) {
@@ -383,7 +391,7 @@ var checkMLinksExist = setInterval(function() {
               
               jQuery(closest( el, 'm-level' )).addClass( 'm-level-overlay' );
               
-              self._openMenu( subLevel );
+              self._openLevel( subLevel );
             }
           } );
         }
@@ -415,9 +423,9 @@ var checkMLinksExist = setInterval(function() {
         } );
       } );  
     },
-    _openMenu : function( subLevel ) {
-    
-    
+
+    // Opens a single menu 'level'
+    _openLevel : function( subLevel ) {
       // check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
       var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
       var viewportHeight = jQuery(window).height();
@@ -452,9 +460,7 @@ var checkMLinksExist = setInterval(function() {
       }
       // add class m-enable to main wrapper if opening the first time
       if( this.level === 1 ) {
-
-
-      jQuery(this.wrapper).addClass( 'm-enable' );
+        jQuery(this.wrapper).addClass( 'm-enable' );
         this.open = true;
       }
       // add class m-level-open to the opening level element
@@ -462,8 +468,6 @@ var checkMLinksExist = setInterval(function() {
     },
     // close the menu
     _resetMenu : function() {
-    
-    
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
       if(iOSCheck){
         jQuery('#m-wrap').css("height", 'auto');  
@@ -477,7 +481,8 @@ var checkMLinksExist = setInterval(function() {
       this.open = false;
     },
     _resetLocalMenu: function() {
-
+      jQuery('#m-menu').removeClass('m-local-menu-enable');
+      jQuery(this.container).removeClass("docked");
     },
     // close sub menus
     _closeMenu : function() {
