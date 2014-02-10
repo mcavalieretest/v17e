@@ -1,5 +1,5 @@
 $(function(){
-
+	var myApp = {};
 	window.location.hash = "#gridview";
 	var vo,
 	// DEFAULTS (START)
@@ -19,10 +19,10 @@ $(function(){
 	    },	
 
 	    updateURLHash: function(value)	{
-				if (!window.location.hash && window.location.hash == "null" ) {
-					$(location).attr('hash') + "#" + value + "w";
-				}else {
-					window.location.hash = value + "w";
+			if (!window.location.hash && window.location.hash == "null" ) {
+				$(location).attr('hash') + "#" + value + "w";
+			}else {
+				window.location.hash = value + "w";
 			}
 		},
 
@@ -45,7 +45,7 @@ $(function(){
 		},
 
 		handleCallBack: function(data){
-			//console.log(data);
+			
 			if (typeof(data) !== "object") {
 				console.log("Not an Object" + data);
 			}else{
@@ -57,29 +57,41 @@ $(function(){
 				if(data.hasOwnProperty('trending')) {
 					var $data;
 					$data = data.trending.split(",");
+						$data.forEach(function(val, i){						
+							trendingli = "<li class='ibm_cci__ml-li'>";
+							trendingli += "<p>";
+							trendingli += "<span>";
+							trendingli += "<a href='javascript:void(0)' class='ibm_cci-voices-tt-text'>";
+							trendingli += val;
+							trendingli += " </a>";
+							trendingli += "</span>";
+							trendingli += "<a class='ibm_cci-voices-tt-close-container' href='javascript:void(0)'></a>";
+							
+							//append the li elements to the DOM
+							trendingUl.append(trendingli);
+							//console.log(new Date().getTime() - startTime);		
+						});						
 				}
 				else {				
 					$data = $.extend({}, data);
 					$data = $data[0].split(',');
-					//console.log($data);
-				}	 
-
-				// var startTime = new Date().getTime();
-				$data.forEach(function(val, i){						
-					trendingli = "<li class='ibm_cci__ml-li'>";
-					trendingli += "<p>";
-					trendingli += "<span>";
-					trendingli += "<a href='javascript:void(0)' class='ibm_cci-voices-tt-text'>";
-					trendingli += val;
-					trendingli += " </a>";
-					trendingli += "</span>";
-					trendingli += "<a class='ibm_cci-voices-tt-close-container' href='javascript:void(0)'></a>";
-					
-					//append the li elements to the DOM
-					trendingUl.append(trendingli);
-					//console.log(new Date().getTime() - startTime);		
-				});					
-			}	
+					// console.log(arguments.callee.caller.name == 'search');
+					$data.forEach(function(val, i){						
+						trendingli = "<li class='ibm_cci__ml-li'>";
+						trendingli += "<p class='ibm_cci-clicked'>";
+						trendingli += "<span>";
+						trendingli += "<a href='javascript:void(0)' class='ibm_cci-voices-tt-text ibm_cci-voices-search-term'>";
+						trendingli += val;
+						trendingli += " </a>";
+						trendingli += "</span>";
+						trendingli += "<a class='ibm_cci-voices-tt-close-container ibm_cci-close-black ibm_cci-close' href='javascript:void(0)'></a>";
+						
+						//append the li elements to the DOM
+						trendingUl.append(trendingli);
+						//console.log(new Date().getTime() - startTime);		
+					});						
+				}	 					
+			}
 		}
 	},
 	// DEFAULTS (END)
@@ -87,32 +99,25 @@ $(function(){
 	//SEARCH FORM (START)
 	SearchWidget = {
 		settings: {
-			searchInput: $('form')
+			searchInput: $('form'),
+			searchClass: {}
 		},
 		executeSearch: function(){
 			vo = SearchWidget.settings;
-			vo.searchInput.submit(function(event) {
+			vo.searchInput.submit(function search(event){
 				/* Act on the event */
 				event.preventDefault();
-				var searchObj = [$("#ibm-cc-search--field").val()];	
-				$("#ibm-cc-search--field").val('');
+				var searchObj = [$("#ibm-cc-search--field").val().trim()];
+				$("#ibm-cc-search--field").val('');	
 
-				if(searchObj.length > 0 && searchObj != "null") {
-					//Strip unwanted characters from the search Obj
-					
+				if(searchObj.length > 0 && searchObj != '') {
 					Defaults.handleCallBack(searchObj);
-				}		
 					
+				}						
 			});
 		}
 	},
 	//SEARCH FORM (END)
-	
-	//TRENDING TOPICS (START)
-	TrendingWidget = {
-
-	},
-	//TRENDING TOPICS (END)
 	
 	// MANAGE TOGGLE (START)
 	ManageToggle = {
@@ -130,8 +135,7 @@ $(function(){
 					event.preventDefault();
 					var target = $(event.target);
 					if(!target.hasClass('selected')) {
-						target.addClass('selected').parent().siblings().children().removeClass("selected");
-						console.log(vo);
+						target.addClass('selected').parent().siblings().children().removeClass("selected");						
 						if($("#ibm_cci-widget-js").hasClass('ibm_cci-gv__modifier')){
 							$("#ibm_cci-widget-js").removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
 						 } else {
@@ -157,10 +161,10 @@ $(function(){
 	// MANAGE TOGGLE (END)	
 	Defaults.manageTrendingTopics.requestJSON();
 
-
 	//Publish Toggle
 	$('.ibm_cci--ls--toggle ul.ibm_cci--ls--toggle--ul li').on('click', ManageToggle.toggleView());
 	$('form .ibm-cc-search--icon').on('click', SearchWidget.executeSearch());
-	
+	$('form .ibm-cc-search--icon').on('click', SearchWidget.executeSearch());
+
 });
 

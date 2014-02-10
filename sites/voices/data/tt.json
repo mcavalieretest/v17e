@@ -1,5 +1,14 @@
 
-	{
-		"trending":"ibmconnect,analytics,socbiz,computing,bigdata,searchsearch,connect,global,watson,app,insights,insights2, IanWhite"
-	}
+{
+	"0":"ibmconnect",
+	"1": "analytics",
+	"2": "socbiz",
+	"3": "computing",
+	"4": "bigdata",
+	"5": "searchsearch",
+	"6": "connect",
+	"7": "global",
+	"8": "watson",
+	"9": "app"
+}
 
