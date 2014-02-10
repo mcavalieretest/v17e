@@ -50,8 +50,8 @@ $(function() {
 		PASS THAT OBJECT TO CONSTRUCT THE URL
 */
 	VOICES.init_t({
-		// tt_url 		: "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','action':'rpc','rpc':{'method':'trending','type':'','id':''}}&callback=?", 
-		tt_url 		: "./data/tt.json", 
+		tt_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','action':'rpc','rpc':{'method':'trending','type':'','id':''}}&callback=?", 
+		// tt_url 		: "./data/tt.json", 
 		t_template 	: $('#tt_template'),
 		t_container	: $('#ibm_cci__ml')
 	});
@@ -60,8 +60,8 @@ $(function() {
 		f_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','searchCriteria':{'noFilter':true,'feeds':null,'fromDate':null,'filter':null},'action':'search'}&callback=?"
 	});	
 
-	$.when(VOICES.fetch_trending(), VOICES.fetch_feeds()).done(function(results, data){
-		console.log(results[0]);
+	$.when(VOICES.fetch_trending(), VOICES.fetch_feeds()).then(function(results, data){
+		console.log(results);
 		console.log(data[0].searchResponse.entries);
 	});
 
@@ -87,11 +87,17 @@ $(function() {
 		// FETCH TRENDING JSON OBJECT
 		fetch_trending: function(){	
 			var self = this;
-			return $.getJSON(this.t_url, function(data){
-				// RESULTS OF THE JSON DATA IS MAPPED AND STORED TO THE NEW ARRAY filter_tweets		
-				self.t_newlist = $.map(data, function( list ){
+			return $.getJSON(this.t_url, {
+				dataType: 'jsonp',
+				crossDomain: true
+			}, function(data){
+				// RESULTS OF THE JSON DATA IS MAPPED AND STORED TO THE NEW ARRAY filter_tweets
+				var rec_data = data.searchResponse.trending.split(",");
+					rec_data = $.extend({}, rec_data);
+				self.t_newlist = $.map(rec_data, function( list ){
 					return {
-						t_list : $.makeArray(list)
+						 // t_list : $.makeArray(list)
+						 t_list : list
 					};
 				});				
 				 self.t_attach_template();
@@ -106,8 +112,11 @@ $(function() {
 		// FETCH FEED JSON OBJECT
 		fetch_feeds: function( ){
 			var self = this;
-			return $.getJSON(this.f_url, function(data) {
-				data.searchResponse.entries;
+			return $.getJSON(this.f_url, {
+				dataType: 'jsonp',
+				crossDomain: true
+			}, function(data) {
+				
 			}).promise();
 
 		}
