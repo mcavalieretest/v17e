@@ -12,26 +12,6 @@
   var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
   'use strict';
 
-/*
-  function getHeight(el) {
-      var copied_elem = el.clone()
-                        .attr("id", false)
-                        .css({
-                          visibility:"hidden", 
-                          display:"block", 
-                          position:"absolute"
-                        });
-
-      jQuery("body").append(copied_elem);
-      var scroller_height = copied_elem.height();
-
-      console.warn('el height/copied height: ' + $(el).height() + "/" + scroller_height);
-
-
-      copied_elem.remove();
-      return scroller_height;
-  }*/
-
   function extend( a, b ) {
     for( var key in b ) { 
       if( b.hasOwnProperty( key ) ) {
@@ -148,11 +128,7 @@
 
       jQuery("#m-local-menu .m-level").each(function(i, el) { 
         var level_height = jQuery(el).height();
-/*
-        console.warn(el);
-        console.warn("...height(): " + jQuery(el).height());
-        console.warn("...outerHeight(): " + jQuery(el).outerHeight());
-*/
+
         heights.push(level_height);
       });
 
@@ -164,11 +140,13 @@
         $(this.container).css("height", jQuery("#m-local-menu .m-level").first().height() + "px");
       } else {
         $(this.container).css("height", max_height + "px");
+
+        $.each(this.levels, function(i, el) { 
+          $(el).css("height", max_height + "px");
+        });
       }
       
-      $.each(this.levels, function(i, el) { 
-        //$(el).css("height", max_height + "px");
-      });
+
     },
     _initEvents : function() {
       var self = this;
@@ -238,9 +216,6 @@
               
               jQuery(closest( el, 'm-level' )).addClass( 'm-level-overlay' );
 
-              console.warn('sublevel: ');
-              console.warn(subLevel);
-              
               self._openLevel( subLevel );
             }
           } );
@@ -276,7 +251,6 @@
 
     // Opens a single menu 'level'
     _openLevel : function( subLevel ) {
-      console.warn('_openLevel()');
       // check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
       var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
       var viewportHeight = jQuery(window).height();
@@ -319,15 +293,12 @@
       var levelElement = jQuery(subLevel || this.levels[0]);
       levelElement.addClass( 'm-level-open' );
 
-      console.warn('levelElement:');
-      console.warn(levelElement);
       this.levelElementStack.push(levelElement[0]);
 
       this._updateContainerHeight();
     },
     // close the menu
     _resetMenu : function() {
-      console.warn('_resetMenu');
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
       if(iOSCheck){
         jQuery('#m-wrap').css("height", 'auto');  
@@ -356,7 +327,6 @@
     },
     // close sub menus
     _closeMenu : function() {
-      console.warn('_closeMenu');
       var translateVal = this.el.offsetWidth;
     //  this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
       this.levelElementStack.pop();
@@ -375,7 +345,6 @@
     _updateContainerHeight: function() {
       if (this.options.animateContainerHeight) {
         var levelElement = $(this._getCurrentLevelElement());
-        console.warn('setting height to '+levelElement.height() + "px");
         $(this.container).css("height", levelElement.height() + "px")
       }
     },
