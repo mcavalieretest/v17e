@@ -7693,7 +7693,7 @@ input#m-q {
   height: 100%;
   overflow-y: auto; }
 
-#m-local-menu {
+#m-menu #m-local-menu {
   position: relative;
   top: 0;
   right: 0;
@@ -7702,7 +7702,9 @@ input#m-q {
   /*   @include transition(all 0.5s);  
     @include transform(translate3d(0, 100%, 0px));
    */ }
-  #m-local-menu .menu-close {
+  #m-menu #m-local-menu .m-level {
+    height: auto; }
+  #m-menu #m-local-menu .menu-close {
     position: absolute;
     bottom: 30px;
     display: block;

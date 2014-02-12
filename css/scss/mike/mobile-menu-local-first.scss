@@ -247,27 +247,33 @@ input#m-q {
   overflow-y: auto;
 }
 
-#m-local-menu {
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 250px;
-  
+#m-menu {
+  #m-local-menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 250px;
 
-/*   @include transition(all 0.5s);  
-  @include transform(translate3d(0, 100%, 0px));
- */
-  .menu-close {
-    position: absolute;
-    bottom: $m_searchBoxHeight;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    @include px-to-rem(font-size,20px);
+    .m-level {
+      height: auto;
+    }
+    
+
+  /*   @include transition(all 0.5s);  
+    @include transform(translate3d(0, 100%, 0px));
+   */
+    .menu-close {
+      position: absolute;
+      bottom: $m_searchBoxHeight;
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      @include px-to-rem(font-size,20px);
+    }
   }
 }
 

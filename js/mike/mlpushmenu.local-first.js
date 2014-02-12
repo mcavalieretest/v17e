@@ -1,5 +1,3 @@
-
-
 /**
  * mlpushmenu.js v1.0.0
  * http://www.codrops.com
@@ -13,6 +11,26 @@
 ;( function( window, $ ) {
   var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
   'use strict';
+
+/*
+  function getHeight(el) {
+      var copied_elem = el.clone()
+                        .attr("id", false)
+                        .css({
+                          visibility:"hidden", 
+                          display:"block", 
+                          position:"absolute"
+                        });
+
+      jQuery("body").append(copied_elem);
+      var scroller_height = copied_elem.height();
+
+      console.warn('el height/copied height: ' + $(el).height() + "/" + scroller_height);
+
+
+      copied_elem.remove();
+      return scroller_height;
+  }*/
 
   function extend( a, b ) {
     for( var key in b ) { 
@@ -116,11 +134,28 @@
       this._initLevelCss();
     },
     _initLevelCss: function() {
+      var heights = [],
+          max_height;
+
+      if (this.container.id != "m-local-menu") { return; }
+
+      jQuery("#m-local-menu .m-level").each(function(i, el) { 
+        var level_height = jQuery(el).height();
+/*
+        console.warn(el);
+        console.warn("...height(): " + jQuery(el).height());
+        console.warn("...outerHeight(): " + jQuery(el).outerHeight());
+*/
+        heights.push(level_height);
+      });
+
+      max_height = Math.max.apply(Math, heights);
+
+      $(this.container).css("height", max_height + "px");
+
       $.each(this.levels, function(i, el) { 
-        if ( $(el).data("level") == 1 ) {
-          $(el).css("position", "relative");
-        }
-      })
+        $(el).css("height", max_height + "px");
+      });
     },
     _initEvents : function() {
       var self = this;
