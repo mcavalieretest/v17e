@@ -7619,7 +7619,10 @@ markup:
   right: 0;
   height: 100%; }
 
-#m-main-menu input#m-q {
+/*
+ * Mobile search box
+ */
+input#m-q {
   font-family: Arial, Helvetica;
   font-size: 18px;
   font-size: 1.8rem;
@@ -7644,7 +7647,8 @@ markup:
   -o-transition: background 0.2s linear;
   -ms-transition: background 0.2s linear;
   transition: background 0.2s linear; }
-#m-main-menu #m-search {
+
+#m-search {
   background: url(//1.www.s81c.com/common/v17e/i/icons/search.png) 0px 3px no-repeat;
   width: 24px;
   height: 21px;
