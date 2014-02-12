@@ -304,7 +304,4 @@
 
   // add to global namespace
   window.mlPushMenu = mlPushMenu;
-
-  console.warn('end of mlPushMenu');
-
 } )( window );

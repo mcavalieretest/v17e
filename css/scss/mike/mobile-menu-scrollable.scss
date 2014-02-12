@@ -246,9 +246,10 @@ input#m-q {
   z-index: 1;
   width: 250px;
   height: 100%;
-  @include transition(all 0.5s);  
-  @include transform(translate3d(0, 100%, 0px));
 
+/*   @include transition(all 0.5s);  
+  @include transform(translate3d(0, 100%, 0px));
+ */
   .menu-close {
     position: absolute;
     bottom: $m_searchBoxHeight;
@@ -267,8 +268,12 @@ input#m-q {
   background: #336CA6;
 }
 
+#m-local-menu {
+  position: relative;
+}
+
 #m-menu.m-local-menu-enable #m-local-menu {
-  @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px));
+  /* @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px)); */
 
   &.docked {
     @include transform(translate3d(0px, 100%, 0px));

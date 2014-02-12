@@ -7693,16 +7693,9 @@ input#m-q {
   z-index: 1;
   width: 250px;
   height: 100%;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translate3d(0, 100%, 0px);
-  -moz-transform: translate3d(0, 100%, 0px);
-  -o-transform: translate3d(0, 100%, 0px);
-  -ms-transform: translate3d(0, 100%, 0px);
-  transform: translate3d(0, 100%, 0px); }
+  /*   @include transition(all 0.5s);  
+    @include transform(translate3d(0, 100%, 0px));
+   */ }
   #m-local-menu .menu-close {
     position: absolute;
     bottom: 30px;
@@ -7719,12 +7712,11 @@ input#m-q {
 #m-local-menu .m-level {
   background: #336CA6; }
 
+#m-local-menu {
+  position: relative; }
+
 #m-menu.m-local-menu-enable #m-local-menu {
-  -webkit-transform: translate3d(0px, 38px, 0px);
-  -moz-transform: translate3d(0px, 38px, 0px);
-  -o-transform: translate3d(0px, 38px, 0px);
-  -ms-transform: translate3d(0px, 38px, 0px);
-  transform: translate3d(0px, 38px, 0px); }
+  /* @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px)); */ }
   #m-menu.m-local-menu-enable #m-local-menu.docked {
     -webkit-transform: translate3d(0px, 100%, 0px);
     -moz-transform: translate3d(0px, 100%, 0px);
