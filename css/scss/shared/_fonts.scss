@@ -459,6 +459,22 @@ strong {
 }
 // section header spacing
 
+
+// header font size increase classes
+h2.large,
+h3.large,
+h4.large {
+	font-size: 120% !important;
+}
+
+h2.larger,
+h3.larger,
+h4.larger {
+	font-size: 135% !important;
+}
+// header font size increase classes
+
+
 #{$ie7Selector} #ibm-content #ibm-content-main *,
 #{$ie7Selector} #ibm-content-sidebar *,
 #{$ie7Selector} #ibm-common-menu *,
