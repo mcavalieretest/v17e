@@ -272,10 +272,9 @@
       this.open = false;
     },
     _resetLocalMenu: function() {
+      console.warn('_resetLocalMenu');
       jQuery('#m-menu').removeClass('m-local-menu-enable');
-      // jQuery("#m-menu-scroll").scrollTop(0);
-
-      //jQuery("#m-menu-scroll").animate({scrollTop: height}, 500);
+      jQuery("#m-menu-scroll").animate({scrollTop: 0}, 500);
             
       jQuery(this.container).removeClass("docked");
     },

@@ -182,12 +182,14 @@ jQuery(function() {
           if (jQuery('#m-local-navigation').length) {
             jQuery('#m-local-menu').appendTo("#m-menu-scroll");
 
-/*            
             window.mobileMenuLocal = new mlPushMenu( 
               document.getElementById( 'm-menu' ), 
               document.getElementById( 'm-local-menu' ), 
               document.getElementById( 'm-local-navigation' ) 
             );
+
+/*            
+
 
             jQuery('#m-local-menu')
 
