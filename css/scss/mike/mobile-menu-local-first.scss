@@ -254,13 +254,14 @@ input#m-q {
     right: 0;
     z-index: 1;
     width: 250px;
+    overflow: hidden;
 
     .m-level {
       height: auto;
     }
     
-
-  /*   @include transition(all 0.5s);  
+    @include transition(all 0.5s);  
+  /*   
     @include transform(translate3d(0, 100%, 0px));
    */
     .menu-close {

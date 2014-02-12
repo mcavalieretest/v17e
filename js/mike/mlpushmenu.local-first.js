@@ -106,7 +106,11 @@
       // space between each overlaped level
       levelSpacing : 40,
       // classname for the element (if any) that when clicked closes the current level
-      backClass : 'm-back'
+      backClass : 'm-back',
+
+      // Added by Mike Cavaliere. Set to true, and the container height will animate 
+      //  to the height of the selected level.
+      animateContainerHeight: false
     },
     _init : function() {
       // if menu is open or not
@@ -117,6 +121,9 @@
       this.wrapper = document.getElementById( 'm-shift' );
       // the m-level elements
       this.levels = Array.prototype.slice.call( this.el.querySelectorAll( 'div.m-level' ) );
+      // (Added by Mike Cavaliere) Keep track of the current element by pushing them onto an array.
+      // Start with the first level by default.
+      this.levelElementStack = [ this.levels[0] ];
       // save the depth of each of these m-level elements
       var self = this;
       this.levels.forEach( function( el, i ) { el.setAttribute( 'data-level', getLevelDepth( el, self.el.id, 'm-level' ) ); } );
@@ -151,10 +158,16 @@
 
       max_height = Math.max.apply(Math, heights);
 
-      $(this.container).css("height", max_height + "px");
-
+      // If we're animating the container height, default to the first element's height. Otherwise,
+      // make the container the same height as the tallest child level.
+      if (this.options.animateContainerHeight) {
+        $(this.container).css("height", jQuery("#m-local-menu .m-level").first().height() + "px");
+      } else {
+        $(this.container).css("height", max_height + "px");
+      }
+      
       $.each(this.levels, function(i, el) { 
-        $(el).css("height", max_height + "px");
+        //$(el).css("height", max_height + "px");
       });
     },
     _initEvents : function() {
@@ -224,6 +237,9 @@
               ev.stopPropagation();
               
               jQuery(closest( el, 'm-level' )).addClass( 'm-level-overlay' );
+
+              console.warn('sublevel: ');
+              console.warn(subLevel);
               
               self._openLevel( subLevel );
             }
@@ -260,6 +276,7 @@
 
     // Opens a single menu 'level'
     _openLevel : function( subLevel ) {
+      console.warn('_openLevel()');
       // check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
       var mNavHeightCheck = jQuery("#m-menu ul").height() + 100;
       var viewportHeight = jQuery(window).height();
@@ -287,6 +304,7 @@
         // need to reset the translate value for the level menus that have the same level depth and are not open
         for( var i = 0, len = this.levels.length; i < len; ++i ) {
           var levelEl = this.levels[i];
+
           if( levelEl != subLevel && !jQuery(levelEl).hasClass( 'm-level-open' ) ) {
           //  this._setTransform( 'translate3d(-100%,0,0) translate3d(' + -1*levelFactor + 'px,0,0)', levelEl );
           }
@@ -298,10 +316,18 @@
         this.open = true;
       }
       // add class m-level-open to the opening level element
-      jQuery(subLevel || this.levels[0]).addClass( 'm-level-open' );
+      var levelElement = jQuery(subLevel || this.levels[0]);
+      levelElement.addClass( 'm-level-open' );
+
+      console.warn('levelElement:');
+      console.warn(levelElement);
+      this.levelElementStack.push(levelElement[0]);
+
+      this._updateContainerHeight();
     },
     // close the menu
     _resetMenu : function() {
+      console.warn('_resetMenu');
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
       if(iOSCheck){
         jQuery('#m-wrap').css("height", 'auto');  
@@ -330,9 +356,14 @@
     },
     // close sub menus
     _closeMenu : function() {
+      console.warn('_closeMenu');
       var translateVal = this.el.offsetWidth;
     //  this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
+      this.levelElementStack.pop();
+
       this._toggleLevels();
+
+      this._updateContainerHeight();
     },
     // translate the el
     _setTransform : function( val, el ) {
@@ -340,6 +371,13 @@
       el.style.WebkitTransform = val;
       el.style.MozTransform = val;
       el.style.transform = val;
+    },
+    _updateContainerHeight: function() {
+      if (this.options.animateContainerHeight) {
+        var levelElement = $(this._getCurrentLevelElement());
+        console.warn('setting height to '+levelElement.height() + "px");
+        $(this.container).css("height", levelElement.height() + "px")
+      }
     },
     // removes classes m-level-open from closing levels
     _toggleLevels : function() {
@@ -353,6 +391,9 @@
           jQuery(levelEl).removeClass( 'm-level-overlay' );
         }
       }
+    },
+    _getCurrentLevelElement: function() {
+      return this.levelElementStack[this.levelElementStack.length-1];
     }
   }
 

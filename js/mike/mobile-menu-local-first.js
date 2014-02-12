@@ -185,7 +185,10 @@ jQuery(function() {
             window.mobileMenuLocal = new mlPushMenu( 
               document.getElementById( 'm-menu' ), 
               document.getElementById( 'm-local-menu' ), 
-              document.getElementById( 'm-local-navigation' ) 
+              document.getElementById( 'm-local-navigation' ),
+              {
+                animateContainerHeight: true
+              }
             );
 
 /*            
