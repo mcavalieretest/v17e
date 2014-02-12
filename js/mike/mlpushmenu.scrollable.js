@@ -259,6 +259,8 @@
     },
     // close the menu
     _resetMenu : function() {
+      console.warn('_resetMenu');
+      console.warn('container: '+this.container.id);
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
       if(iOSCheck){
         jQuery('#m-wrap').css("height", 'auto');  
@@ -273,8 +275,17 @@
     },
     _resetLocalMenu: function() {
       console.warn('_resetLocalMenu');
+      console.warn('container: '+this.container.id);
       jQuery('#m-menu').removeClass('m-local-menu-enable');
       jQuery("#m-menu-scroll").animate({scrollTop: 0}, 500);
+
+      this.level = 0;
+
+      var self = this;
+
+      setTimeout(function() {
+        self._toggleLevels();
+      }, 500);
             
       jQuery(this.container).removeClass("docked");
     },
