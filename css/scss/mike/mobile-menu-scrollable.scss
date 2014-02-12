@@ -239,6 +239,14 @@ input#m-q {
   transform: translate3d(100%, 0, 0);
 }
 
+/*
+ * Scrolling container. Contains both global and local menu containers. 
+ */
+#m-menu-scroll {
+  height: 100%;
+  overflow-y: auto;
+}
+
 #m-local-menu {
   position: absolute;
   top: 0;

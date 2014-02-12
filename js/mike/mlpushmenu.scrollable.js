@@ -143,9 +143,10 @@
           if (jQuery(self.el).is("#m-menu") 
             && jQuery('#m-local-navigation').length
             && !self.open) {
-            setTimeout(function() {
-              // Show local menu
-              // jQuery(self.el).addClass("m-local-menu-enable");
+            setTimeout(function() {            
+              var height = jQuery("#m-main-menu").height();
+
+              jQuery("#m-menu-scroll").animate({scrollTop: height}, 500);
             }, 500);
           }
         }
@@ -272,6 +273,10 @@
     },
     _resetLocalMenu: function() {
       jQuery('#m-menu').removeClass('m-local-menu-enable');
+      // jQuery("#m-menu-scroll").scrollTop(0);
+
+      //jQuery("#m-menu-scroll").animate({scrollTop: height}, 500);
+            
       jQuery(this.container).removeClass("docked");
     },
     // close sub menus

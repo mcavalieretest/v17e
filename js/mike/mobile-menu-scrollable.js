@@ -161,9 +161,11 @@ jQuery(function() {
             +'</form>'
             +'</div>'
 
-            +'<div id="m-main-menu">'
-            +'<ul>' + mastLinks + '</ul>'
-            +'</div>'
+            +'<div id="m-menu-scroll">'            
+              +'<div id="m-main-menu">'
+                +'<ul>' + mastLinks + '</ul>'
+              +'</div>'
+              +'</div>'
             +'</div>'
           );
 
@@ -178,8 +180,8 @@ jQuery(function() {
           );
           
           if (jQuery('#m-local-navigation').length) {
-            jQuery('#m-local-menu').appendTo("#m-menu");
-            
+            jQuery('#m-local-menu').appendTo("#m-menu-scroll");
+
 /*            
             window.mobileMenuLocal = new mlPushMenu( 
               document.getElementById( 'm-menu' ), 
