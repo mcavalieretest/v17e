@@ -154,9 +154,11 @@ $(function() {
 					atTag_count = [data.match(/@([^\s:]+)/g)],
 					newtemp, updated_content;
 
-				if(typeof(data) !== "undefined"){
-					for (var i = 0; i <= temp.length; i++) {
-						newtemp = temp.replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q='+hashtag_count[i]+'">'+hashtag_count[i]+'</a>');
+					console.log(hashtag_count[0]);
+
+				if(typeof(temp) !== "undefined"){
+					for (var i = 0; i <= hashtag_count.length; i++) {
+						newtemp = temp.replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q='+hashtag_count[0][i]+'">'+hashtag_count[0][i]+'</a>');
 							// .replace(/@([^\s:]+)/g, '<a href="//twitter.com/'+atTag_count[i]+'">'+atTag_count[i]+'</a>');
 					}
 				}
