@@ -49,7 +49,7 @@ $(function() {
 	});
 
 	VOICES.init_f({
-		f_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','searchCriteria':{'noFilter':false,'feeds':null,'fromDate':null,'filter':'search'},'action':'search'}&callback=?",
+		f_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','searchCriteria':{'noFilter':false,'feeds':null,'fromDate':null,'filter':'SimonPorter'},'action':'search'}&callback=?",
 		// f_url : "./data/voicesfeed.json", 
 		f_unro_template: $('#unro_template'),
 		f_container: $('#ibm_cci-widget-js'),
@@ -138,7 +138,8 @@ $(function() {
 				for(var i = 0; i <= unr_data_length; i++){
 					if(typeof(unr_data[i]) !== 'undefined'){
 						if(typeof(unr_data[i].content) !== 'undefined'){
-							unr_data[i].content = this.f_addcontent_links(unr_data[i].content);
+							unr_data[i].content = this.f_mod_content(unr_data[i].content);
+							unr_data[i].published = this.f_pretty_date(unr_data[i].published);
 							// unr_data[i].published = f_addcontent_links(unr_data[i].content);
 						}
 					}	
@@ -147,24 +148,49 @@ $(function() {
 		},
 
 		
-		f_addcontent_links: function(data){
+		f_mod_content: function(data){			
+			var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, "<a href=\"$1\">$1</a>")
+								.replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1">#$1</a>')
+								.replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1">@$1</a>');
+				return update_content;
+		},
+
+		f_pretty_date: function(timeVal){
 			
-			var temp = data,
-				hashtag_count = [data.match(/#([^\s]+)/g)],
-				atTag_count = data.match(/@([^\s:]+)/g),
-				newtemp =  new RegExp(/#([^\s]+)/g),
-				content_found, update_content;
-
-				// console.log(hashtag_count);
-
-			if(typeof(temp) !== "undefined" && temp.length > -1){
-				
-				for (var i = 0; i <= hashtag_count.length; i++) {
-				 	update_content = temp.replace(hashtag_count[0][i], '<a href="//twitter.com/search?q='+hashtag_count[0][i]+'">'+hashtag_count[0][i]+'</a>');
-				}
-			}
-			delete temp;
-			return update_content;
+			 var monthTxt = new Array();
+			  monthTxt[0] = "Jan";
+			  monthTxt[1] = "Feb";
+			  monthTxt[2] = "Mar";
+			  monthTxt[3] = "Apr";
+			  monthTxt[4] = "May";
+			  monthTxt[5] = "Jun";
+			  monthTxt[6] = "Jul";
+			  monthTxt[7] = "Aug";
+			  monthTxt[8] = "Sep";
+			  monthTxt[9] = "Oct";
+			  monthTxt[10] = "Nov";
+			  monthTxt[11] = "Dec";
+			  monthTxt[12] = "December";
+			  timeVal = timeVal+"";
+			 
+			 var date = new Date((parseInt(timeVal.trim()) || "")),
+			  diff = (((new Date()).getTime() - date.getTime()) / 1000),
+			  day_diff = Math.floor(diff / 86400);
+			   
+			 if ( isNaN(day_diff) || day_diff < 0  )
+			  return;
+			
+			  var retVal =  day_diff == 0 && (
+					   diff < 60 && "just now" ||
+					   diff < 120 && "1m" ||
+					   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
+					   diff < 7200 && "1h" ||
+					   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
+					//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
+					   day_diff >= 1 && day_diff + "d";
+					   
+			  
+			  return retVal;
 		},
 
 		// FETCH FEED JSON OBJECT
