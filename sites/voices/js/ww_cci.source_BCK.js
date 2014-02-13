@@ -152,7 +152,7 @@ $(function(){
 
 		// doesExist(searchObj);
 		
-		if(searchObj.length > 0 && searchObj != "null") {
+		if(searchObj.length > 0 && searchObj != null) {
 			console.log(searchObj);
 			handleCallBack(searchObj);
 		}		
