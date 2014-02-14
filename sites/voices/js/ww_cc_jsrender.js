@@ -34,7 +34,7 @@ $(function() {
 				})
 		});			
 	// MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (END)
- 
+
 
 /*
 	1. 	INITIALIZATION OF TRENDING TOPICS
@@ -57,29 +57,34 @@ $(function() {
 	});	
 
 	$.when(VOICES.fetch_trending(), VOICES.fetch_feeds()).done(function(results, data){		
-		var self = VOICES, f_unresolved = [], f_resolved = [], f_resolved_urlref;
+		var self = VOICES, f_unresolved = [], f_resolved = [];
 		self.feed = data[0].searchResponse.entries;	
 		self.feed_length = data[0].searchResponse.entries.length;
+
 		try{
-			for(var i = 0; i < self.feed_length; i++){	
-				if(typeof(self.feed[i]) !== 'undefined') {		
-					if(self.feed[i].rank == i && self.feed[i].refTweets > -1){	
+			if(typeof(self.feed)){
+				for(var i = 0; i < self.feed_length; i++){		
+					if(self.feed[i].type && self.feed[i].type === "URLREF"){	
 							// For unresolved Tweets
-							f_resolved.push(self.feed[i]);
-							// VOICES.f_attach_unro_temp(f_unresolved);
-						}else {
+							console.log(self.feed[i].type);
+							self.f_attach_reso_temp(self.feed[i]);	
+					}
+					else if(self.feed[i].type && self.feed[i].type === "TWEET"){
 							// For resolved Tweets you need to store the Object
-							f_unresolved.push(self.feed[i]);
+							console.log(self.feed[i].type);	
+							self.f_attach_unro_temp(self.feed[i]);
 						}
-				}	
+					}	
 			}
+				// before sending it to template attach sanitize the data
+				// self.f_attach_unro_temp(self.f_resolved);
+				// self.f_attach_reso_temp(self.feed[i]);	
+				// console.log(f_unresolved);
+
 		}catch(e){
 			console.log('Error logged in the DOM ready $.when' + e);
 		}
-			// before sending it to template attach sanitize the data
-			self.f_attach_unro_temp(f_unresolved);
-			self.f_attach_reso_temp(f_resolved);
-			// console.log(f_unresolved);
+	
 	});
 
 
@@ -131,17 +136,18 @@ $(function() {
 
 		f_attach_reso_temp: function(reso_data) {
 			//Modify the timestamp and the content attr and wrap href
-			// console.log(unro_data[i]);
+			// console.log("Resolved tweet function triggered");
 			this.f_container.append(this.f_reso_template.render(this.f_modify_datafeed(reso_data)));		
 		},		
 
 		f_attach_unro_temp: function(unro_data) {
 			//Modify the timestamp and the content attr and wrap href
-			// console.log(unro_data[i]);
+			// console.log("Unresolved tweet function triggered");
 			this.f_container.append(this.f_unro_template.render(this.f_modify_datafeed(unro_data)));		
 		},
 
 		f_modify_datafeed: function(data){
+		try{	
 			var self = this,
 				data_length = data.length,
 				feed_data = data;
@@ -156,6 +162,9 @@ $(function() {
 					}	
 				}				
 				return feed_data;
+			}catch(e){
+				console.log("Error inside the modify_datafeed" + e);
+			}	
 		},
 
 		
@@ -192,15 +201,14 @@ $(function() {
 			  return;
 			
 			  var retVal =  day_diff == 0 && (
-					   diff < 60 && "just now" ||
-					   diff < 120 && "1m" ||
-					   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
-					   diff < 7200 && "1h" ||
-					   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
-					//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
-					   day_diff >= 1 && day_diff + "d";
+				   diff < 60 && "just now" ||
+				   diff < 120 && "1m" ||
+				   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
+				   diff < 7200 && "1h" ||
+				   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
+				//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
+				   day_diff >= 1 && day_diff + "d";
 					   
-			  
 			  return retVal;
 		},
 
