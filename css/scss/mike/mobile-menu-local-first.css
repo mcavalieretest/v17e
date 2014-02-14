@@ -4888,7 +4888,7 @@ div#ibm-overlay-top h2 {
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs a {
   text-decoration: none;
   color: #666;
-  padding: 0px; }
+  padding: 0; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
   background: #FFF;
