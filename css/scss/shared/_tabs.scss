@@ -50,19 +50,6 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($gray-80)}', endColorstr='#{ie-hex-str($k75)}');
 }
 
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li {
-	opacity: .80;
-}
-
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li {
-	opacity: .70;
-}
-
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li:hover,
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li:hover {
-	@include transition(opacity 0.3s);
-}
-
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
 	opacity: 1;
 	top: 0;
