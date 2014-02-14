@@ -4765,7 +4765,10 @@ div#ibm-overlay-top h2 {
   background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05)); }
 
 #ibm-content-nav #ibm-secondary-tabs {
-  /*padding: 20px 0px;*/
+  background-color: #EFEFEF;
+  padding: 8px 20px 2px;
+  *padding: 8px 20px 8px;
+  border-bottom: 1px solid #CCC;
   text-align: center; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs {
@@ -4802,20 +4805,6 @@ div#ibm-overlay-top h2 {
   -ms-transition: opacity 0.3s;
   transition: opacity 0.3s;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF333333', endColorstr='#BF000000'); }
-
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li {
-  opacity: .80; }
-
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li {
-  opacity: .70; }
-
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-80 ul.ibm-tabs li:hover,
-#ibm-content-nav #ibm-primary-tabs.ibm-transparency-70 ul.ibm-tabs li:hover {
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
   opacity: 1;
@@ -4915,48 +4904,68 @@ div#ibm-overlay-top h2 {
   border-bottom: 2px solid #000;
   padding-bottom: 10px; }
 
-/* added styles for dynamic-tab lists */
+/* added styles for dynamic-tab lists 
+* COMMENTING OUT THIS CODE TO CONFIRM WHY THE DYNTABS OPTION IS REMOVING THE ANCHOR <A> TAGS FROM THE TABS
+
+
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li {
-  display: block;
-  color: #000;
-  padding: 10px 25px;
-  background-color: #DDD;
-  background-color: rgba(216, 216, 216, 0.9);
-  text-shadow: 0px 1px 0px #FFF;
-  text-decoration: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 0.9em; }
+	display: block;
+	color: #000;
+	padding: 10px 25px;
+	background-color: #DDD;
+	background-color: rgba(216,216,216,0.9);
+	text-shadow:0px 1px 0px #FFF;
+	text-decoration: none;
+	cursor:pointer;
+	font-weight: bold;
+	font-size: 0.9em;
+}
 
-#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:hover,
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:hover, 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:focus {
-  background-color: #EEE;
-  background-color: rgba(229, 229, 229, 0.95); }
+	background-color: #EEE;
+    background-color: rgba(229,229,229,0.95);
+}
 
-#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:active,
+#ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:active, 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
-  background-color: #999;
-  background-color: rgba(153, 153, 153, 0.8);
-  color: #000;
-  text-shadow: none; }
+	background-color: #999;
+	background-color: rgba(153,153,153,0.8);
+	color: #000;
+	text-shadow: none;
+}
 
 #ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li {
-  text-decoration: none;
-  color: #666;
-  margin: 0px 15px; }
+	text-decoration: none;
+	color: #666;
+	margin: 0px 15px;
+}
 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li:focus {
-  border-color: #D5D5D5;
-  outline: thin dotted; }
+	border-color: #D5D5D5;
+	outline: thin dotted;
+}
 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
-  background: #FFF;
-  padding-bottom: 11px; }
+	background: #FFF;
+	padding-bottom: 11px;
+}
 
 #ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li:hover,
 #ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
-  color: #000; }
+	color: #000;
+}
 
+.dj_ie7 .ibm-container.ibm-dyntabs .ibm-tab-section.ibm-text,
+.dj_ie7 .ibm-columns.ibm-dyntabs .ibm-tab-section.ibm-text {
+	padding-bottom: 0;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li {
+	*zoom: 1;
+	_zoom: 0;
+}
+*/
 /* LEADSPACE TABS END */
 /* CONTENT TABS START */
 /* Graphic tabs  ======*/
@@ -5041,7 +5050,7 @@ ul.ibm-tabs:after {
   visibility: hidden; }
 
 ul.ibm-tabs li {
-  padding: 0px;
+  padding: 0;
   float: left; }
 
 ul.ibm-tabs a {
@@ -5054,10 +5063,10 @@ ul.ibm-tabs a:visited {
 
 /* Text tabs ====== */
 .ibm-text ul.ibm-tabs li {
-  background: none repeat 0 0 transparent;
-  border-left: 0 none !important;
+  background: none;
+  border-left: none;
   border-right: 1px solid #CCC;
-  border-top: 0 none !important;
+  border-top: none;
   float: none;
   display: inline;
   line-height: 2em;
@@ -5080,7 +5089,7 @@ ul.ibm-tabs a:visited {
 .ibm-text ul.ibm-bullet-list li,
 .ibm-text ul.ibm-link-list li {
   display: block;
-  border-right: 0 none;
+  border-right: none;
   text-align: left; }
 
 .ibm-text ul.ibm-bullet-list li a,
@@ -5092,10 +5101,9 @@ ul.ibm-tabs a:visited {
   border-right: 0 none; }
 
 .ibm-text ul.ibm-tabs li.ibm-last-tab {
-  border-right: 0px none !important; }
+  border-right: 0 none !important; }
 
-.ibm-combo-tabs div.ibm-text ul.ibm-tabs li,
-.ibm-dyntabs div.ibm-text ul.ibm-tabs li {
+.ibm-combo-tabs div.ibm-text ul.ibm-tabs li {
   *zoom: 1;
   _zoom: 0; }
 
@@ -5111,19 +5119,8 @@ ul.ibm-tabs a:visited {
   min-height: 10px;
   line-height: 1.8em !important; }
 
-.dj_ie7 .ibm-container.ibm-dyntabs .ibm-tab-section.ibm-text,
-.dj_ie7 .ibm-columns.ibm-dyntabs .ibm-tab-section.ibm-text {
-  padding-bottom: 0; }
-
 /* CONTENT TABS END */
 /* Secondary Tabs and subtab lists */
-#ibm-content-nav #ibm-secondary-tabs {
-  background-color: #EFEFEF;
-  padding: 8px 20px 2px;
-  *padding: 8px 20px 8px;
-  border-bottom: 1px solid #CCC;
-  text-align: center; }
-
 #ibm-content-nav #ibm-secondary-tab-list {
   padding-bottom: 20px;
   text-align: left; }
@@ -5181,7 +5178,7 @@ ul.ibm-tabs a:visited {
   cursor: pointer;
   width: 300px;
   background: url(//1.www.s81c.com/common/v17e/i/icons/dropdown_sprite.png) no-repeat 100% -3px;
-  border: 0px none;
+  border: 0 none;
   font-size: 0.8em;
   font-weight: bold; }
 
@@ -5225,9 +5222,9 @@ ul.ibm-tabs a:visited {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  -webkit-box-shadow: 0px 1px 5px #333333;
-  -moz-box-shadow: 0px 1px 5px #333333;
-  box-shadow: 0px 1px 5px #333333;
+  -webkit-box-shadow: 0 1px 5px #333333;
+  -moz-box-shadow: 0 1px 5px #333333;
+  box-shadow: 0 1px 5px #333333;
   margin-top: 35px;
   border: 5px solid #666; }
 

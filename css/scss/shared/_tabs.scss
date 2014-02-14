@@ -16,7 +16,10 @@
 }
 
 #ibm-content-nav #ibm-secondary-tabs {
-	/*padding: 20px 0px;*/
+	background-color: #EFEFEF;
+	padding: 8px 20px 2px;
+	*padding: 8px 20px 8px;
+	border-bottom: 1px solid #CCC;
 	text-align: center;
 }
 
@@ -163,7 +166,10 @@
 	padding-bottom: 10px;
 }
 
-/* added styles for dynamic-tab lists */
+/* added styles for dynamic-tab lists 
+* COMMENTING OUT THIS CODE TO CONFIRM WHY THE DYNTABS OPTION IS REMOVING THE ANCHOR <A> TAGS FROM THE TABS
+
+
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs li {
 	display: block;
 	color: #000;
@@ -211,7 +217,25 @@
 #ibm-content-nav #ibm-secondary-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active {
 	color: #000;
 }
+
+#{$ie7Selector} .ibm-container.ibm-dyntabs .ibm-tab-section.ibm-text,
+#{$ie7Selector} .ibm-columns.ibm-dyntabs .ibm-tab-section.ibm-text {
+	padding-bottom: 0;
+}
+
+.ibm-dyntabs div.ibm-text ul.ibm-tabs li {
+	*zoom: 1;
+	_zoom: 0;
+}
+*/
+
 /* LEADSPACE TABS END */
+
+
+
+
+
+
 
 
 /* CONTENT TABS START */
@@ -306,7 +330,7 @@ ul.ibm-tabs:after {
 }
 
 ul.ibm-tabs li {
-	padding: 0px;
+	padding: 0;
 	float: left;
 }
 
@@ -317,15 +341,21 @@ ul.ibm-tabs a {
 
 ul.ibm-tabs a:hover,
 ul.ibm-tabs a:visited {
-	color:#000;
+	color: #000;
 }
+
+
+
+
+
+
 
 /* Text tabs ====== */
 .ibm-text ul.ibm-tabs li {
-	background: none repeat 0 0 transparent;
-    border-left: 0 none !important;
+	background: none;
+    border-left: none;
     border-right: 1px solid #CCC;
-    border-top: 0 none !important;
+    border-top: none;
     float: none;
     display: inline;  
     line-height: 2em;
@@ -352,8 +382,8 @@ ul.ibm-tabs a:visited {
 
 .ibm-text ul.ibm-bullet-list li,
 .ibm-text ul.ibm-link-list li {
-	display:block;
-	border-right: 0 none;
+	display: block;
+	border-right: none;
 	text-align: left;
 }
 
@@ -368,11 +398,10 @@ ul.ibm-tabs a:visited {
 }
 
 .ibm-text ul.ibm-tabs li.ibm-last-tab {
-	border-right: 0px none !important;
+	border-right: 0 none !important;
 }
 
-.ibm-combo-tabs div.ibm-text ul.ibm-tabs li,
-.ibm-dyntabs div.ibm-text ul.ibm-tabs li {
+.ibm-combo-tabs div.ibm-text ul.ibm-tabs li {
 	*zoom: 1;
 	_zoom: 0;
 }
@@ -392,24 +421,11 @@ ul.ibm-tabs a:visited {
 	line-height: 1.8em !important;
 }
 
-#{$ie7Selector} .ibm-container.ibm-dyntabs .ibm-tab-section.ibm-text,
-#{$ie7Selector} .ibm-columns.ibm-dyntabs .ibm-tab-section.ibm-text {
-	padding-bottom: 0;
-}
-
 /* CONTENT TABS END */
 
 
 
 /* Secondary Tabs and subtab lists */
-#ibm-content-nav #ibm-secondary-tabs {
-	background-color: #EFEFEF;
-	padding: 8px 20px 2px;
-	*padding: 8px 20px 8px;
-	border-bottom: 1px solid #CCC;
-	text-align: center;
-}
-
 #ibm-content-nav #ibm-secondary-tab-list {
 	padding-bottom: 20px;
 	text-align: left;
@@ -451,7 +467,7 @@ ul.ibm-tabs a:visited {
 #ibm-content-nav #ibm-expand-container p.ibm-expand-text {
 	position: absolute;
 	right: 190px;
-	top:50px;
+	top: 50px;
 	
 }
 
@@ -480,7 +496,7 @@ ul.ibm-tabs a:visited {
 	cursor: pointer;
 	width: 300px;
 	background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -3px;
-	border: 0px none;
+	border: 0 none;
 	font-size: 0.8em;
 	font-weight: bold;
 }
@@ -516,8 +532,8 @@ ul.ibm-tabs a:visited {
 	z-index: 800;
 	@include background-gradient(background,(top, #FFF 30%, #CCC 100%));
 	@include border-radius(8px);
-	@include box-shadow(0px 1px 5px #333);
-	margin-top:35px;
+	@include box-shadow(0 1px 5px #333);
+	margin-top: 35px;
 	border: 5px solid #666;
 }
 
