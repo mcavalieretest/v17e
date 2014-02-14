@@ -49,7 +49,7 @@ $(function() {
 	});
 
 	VOICES.init_f({
-		f_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','searchCriteria':{'noFilter':false,'feeds':null,'fromDate':null,'filter':'SimonPorter'},'action':'search'}&callback=?",
+		f_url : "https://www-304.ibm.com/social/aggregator/voices/comet.json?siteId=86&cometRequest={'siteId':'86','searchCriteria':{'noFilter':false,'feeds':null,'fromDate':null,'filter':null},'action':'search'}&callback=?",
 		// f_url : "./data/voicesfeed.json", 
 		f_unro_template: $('#unro_template'),
 		f_container: $('#ibm_cci-widget-js'),
@@ -60,21 +60,25 @@ $(function() {
 		var self = VOICES, f_unresolved = [], f_resolved = [];
 		self.feed = data[0].searchResponse.entries;	
 		self.feed_length = data[0].searchResponse.entries.length;
-			
+		try{
 			for(var i = 0; i < self.feed_length; i++){	
 				if(typeof(self.feed[i]) !== 'undefined') {		
-					if(typeof(self.feed[i].refTweets) == 'undefined') {
-						// For unresolved Tweets
-						f_unresolved.push(self.feed[i]);
-						// VOICES.f_attach_unro_temp(f_unresolved);
-					}else {
-						// For resolved Tweets you need to store the Object
-						f_resolved.push(self.feed[i]);
-					}
-				}
+					if(self.feed[i].rank == i && self.feed[i].refTweets){	
+							// For unresolved Tweets
+							f_resolved.push(self.feed[i]);
+							// VOICES.f_attach_unro_temp(f_unresolved);
+						}else {
+							// For resolved Tweets you need to store the Object
+							f_unresolved.push(self.feed[i]);
+						}
+				}	
 			}
+		}catch(e){
+			console.log('Error logged in the DOM ready $.when' + e);
+		}
 			// before sending it to template attach sanitize the data
 			self.f_attach_unro_temp(f_unresolved);
+			self.f_attach_reso_temp(f_resolved);
 			// console.log(f_unresolved);
 	});
 
@@ -124,27 +128,33 @@ $(function() {
 			this.f_container = f_config.f_container;
 		},		
 
+		f_attach_reso_temp: function(reso_data) {
+			//Modify the timestamp and the content attr and wrap href
+			// console.log(unro_data[i]);
+			this.f_container.append(this.f_unro_template.render(this.f_modify_unro(reso_data)));		
+		},		
+
 		f_attach_unro_temp: function(unro_data) {
 			//Modify the timestamp and the content attr and wrap href
 			// console.log(unro_data[i]);
 			this.f_container.append(this.f_unro_template.render(this.f_modify_unro(unro_data)));		
 		},
 
-		f_modify_unro: function(unro_data){
+		f_modify_unro: function(data){
 			var self = this,
-				unr_data_length = unro_data.length,
-				unr_data = unro_data;
+				data_length = data.length,
+				feed_data = data;
 
-				for(var i = 0; i <= unr_data_length; i++){
-					if(typeof(unr_data[i]) !== 'undefined'){
-						if(typeof(unr_data[i].content) !== 'undefined'){
-							unr_data[i].content = this.f_mod_content(unr_data[i].content);
-							unr_data[i].published = this.f_pretty_date(unr_data[i].published);
+				for(var i = 0; i <= data_length; i++){
+					if(typeof(feed_data[i]) !== 'undefined'){
+						if(typeof(feed_data[i].content) !== 'undefined'){
+							feed_data[i].content = this.f_mod_content(feed_data[i].content);
+							feed_data[i].published = this.f_pretty_date(feed_data[i].published);
 							// unr_data[i].published = f_addcontent_links(unr_data[i].content);
 						}
 					}	
 				}				
-				return unr_data;
+				return feed_data;
 		},
 
 		
