@@ -5062,7 +5062,7 @@ ul.ibm-tabs a:visited {
   color: #000; }
 
 /* Text tabs ====== */
-.ibm-text ul.ibm-tabs li {
+#ibm-com .ibm-text ul.ibm-tabs li {
   background: none;
   border-left: none;
   border-right: 1px solid #CCC;
