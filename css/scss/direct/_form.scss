@@ -24,12 +24,12 @@
 }
 
 .claro form.ibm-column-form p span span {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 .claro form.ibm-column-form p span {
     display: inline-block ;
-    margin-left: 0px !important;
-    margin-top: 0px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
 }
 form.ibm-column-form .dijitTextBox INPUT{
 	top:0 !important;
@@ -41,7 +41,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     background-color: #fff#{$ie9Hack};
 }
 .v17.dijit_a11y #ibm-content select, .v17.dijit_a11y .dijitDialog select {
-	border:1px inset #DDDDDD;
+	border: 1px inset #DDD;
 }
 
 .v17 #ibm-content select:hover,.v17 .dijitDialog select:hover {
@@ -58,10 +58,14 @@ form.ibm-column-form .dijitTextBox INPUT{
 
 
 /* tag:crosstheme -  required in all themes */
-#ibm-top textarea {border: 1px solid #aaaaaa}
+#ibm-top textarea {border: 1px solid #AAA;}
 
-.v17 #ibm-content input[type="text"]:hover,.v17 #ibm-content input[type="password"]:hover,.v17 #ibm-content textarea:hover,
-.v17 .dijitDialog input[type="text"]:hover,.v17 .dijitDialog input[type="password"]:hover,.v17 .dijitDialog textarea:hover {
+.v17 #ibm-content input[type="text"]:hover,
+.v17 #ibm-content input[type="password"]:hover,
+.v17 #ibm-content textarea:hover,
+.v17 .dijitDialog input[type="text"]:hover,
+.v17 .dijitDialog input[type="password"]:hover,
+.v17 .dijitDialog textarea:hover {
     border: 1px solid #CCC;
     color: #333;
 }
@@ -103,8 +107,14 @@ form.ibm-column-form .dijitTextBox INPUT{
 
 
 
-.v17.dijit_a11y #ibm-content input[type="text"]:focus,.v17.dijit_a11y #ibm-content input[type="password"]:focus,.v17.dijit_a11y #ibm-content textarea:focus, .v17.dijit_a11y #ibm-content select:focus,
-.v17.dijit_a11y .dijitDialog input[type="text"]:focus,.v17.dijit_a11y .dijitDialog input[type="password"]:focus,.v17.dijit_a11y .dijitDialog textarea:focus, .v17.dijit_a11y .dijitDialog select:focus {
+.v17.dijit_a11y #ibm-content input[type="text"]:focus,
+.v17.dijit_a11y #ibm-content input[type="password"]:focus,
+.v17.dijit_a11y #ibm-content textarea:focus,
+.v17.dijit_a11y #ibm-content select:focus,
+.v17.dijit_a11y .dijitDialog input[type="text"]:focus,
+.v17.dijit_a11y .dijitDialog input[type="password"]:focus,
+.v17.dijit_a11y .dijitDialog textarea:focus,
+.v17.dijit_a11y .dijitDialog select:focus {
 	filter: none;
 }
 
@@ -1727,7 +1737,7 @@ form .ibm-checkbox-layout input {
 .v17 #ibm-content input[disabled="disabled"]:hover, 
 .v17 #ibm-content input[disabled="disabled"]:focus, 
 .v17 #ibm-content input[disabled="disabled"]:active {
-    color: #aaa;
+    color: #AAA;
     cursor: default;
     border: 1px solid #CBCBCB;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
