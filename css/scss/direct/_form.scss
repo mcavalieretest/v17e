@@ -38,7 +38,7 @@ form.ibm-column-form .dijitTextBox INPUT{
     border: 1px solid #DDD;
     color: #838383;
     padding: 2px;
-    background-color: #fff#{$ie9Hack};
+    background-color: #FFF#{$ie9Hack};
 }
 .v17.dijit_a11y #ibm-content select, .v17.dijit_a11y .dijitDialog select {
 	border: 1px inset #DDD;
@@ -72,8 +72,12 @@ form.ibm-column-form .dijitTextBox INPUT{
 
 
 
-.v17 #ibm-content input[type="text"]:focus,.v17 #ibm-content input[type="password"]:focus,.v17 #ibm-content textarea:focus,
-.v17 .dijitDialog input[type="text"]:focus,.v17 .dijitDialog input[type="password"]:focus,.v17 .dijitDialog textarea:focus {
+.v17 #ibm-content input[type="text"]:focus,
+.v17 #ibm-content input[type="password"]:focus,
+.v17 #ibm-content textarea:focus,
+.v17 .dijitDialog input[type="text"]:focus,
+.v17 .dijitDialog input[type="password"]:focus,
+.v17 .dijitDialog textarea:focus {
     border: 1px solid #CCC;
     color: #333;
     background: #E5E5E5;
@@ -216,7 +220,7 @@ form.ibm-column-form .dijitTextBox INPUT{
 
 .v17 .dijitSelect .dijitArrowButton {
     background: url(#{$imagePath}/i/icons/dropdown_sprite.png) no-repeat 100% -4px;
-    *background-position: 100% 0px;
+    *background-position: 100% 0;
     padding: 0;
     width: 20px;
 }
@@ -284,7 +288,7 @@ form.ibm-column-form .dijitTextBox INPUT{
 }
 
 .v17 .dijitSelectDisabled .dijitArrowButton .dijitArrowButtonInner {
-    background-position: 0px 70%
+    background-position: 0 70%
 
 }
 
@@ -362,7 +366,7 @@ There are three areas of styling for the Menu:
     border: 5px solid #FFF\9;
 	@include border-radius(5px);
 	@include box-shadow(0 1px 5px rgba(0,0,0,0.4));
-    *border-width: 0px;
+    *border-width: 0;
 }
 /* FF only */
 @-moz-document url-prefix() {
@@ -392,7 +396,7 @@ There are three areas of styling for the Menu:
     background: #1B2125;
     background-color: transparent#{$ie9Hack}; /* IE8 gradient fix */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63686E', endColorstr='#1B2125');
-	@include background-gradient(background,(top, #63686E 0px, #1B2125 56px));
+	@include background-gradient(background,(top, #63686E 0, #1B2125 56px));
 }
 
 /* hover over a MenuBarItem */
@@ -405,7 +409,7 @@ There are three areas of styling for the Menu:
 }
 
 .v17 .dijitMenuPassive .dijitMenuItemActive{
-    background-position: 0px -177px;
+    background-position: 0 -177px;
 }
 
 /* MenuBarItem that has been selected and menu drops down from it */
@@ -447,19 +451,18 @@ There are three areas of styling for the Menu:
     margin-right: 5px;
 }
 .v17 .dijitCheckedMenuItemChecked .dijitCheckedMenuItemIcon {
-    background-position: 0px 50%;
-
+    background-position: 0 50%;
 }
 
 .v17 .dijitMenuSeparatorTop {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #FFF;
 }
 
 .v17 .dijitPopup {
     position: absolute;
     background-color: transparent;
     margin: 0;
-    border: 0px;
+    border: 0;
     padding: 0;
 
 }
