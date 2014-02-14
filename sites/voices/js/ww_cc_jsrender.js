@@ -53,17 +53,17 @@ $(function() {
 		// f_url : "./data/voicesfeed.json", 
 		f_unro_template: $('#unro_template'),
 		f_container: $('#ibm_cci-widget-js'),
-
+		f_reso_template: $('#reso_template')
 	});	
 
 	$.when(VOICES.fetch_trending(), VOICES.fetch_feeds()).done(function(results, data){		
-		var self = VOICES, f_unresolved = [], f_resolved = [];
+		var self = VOICES, f_unresolved = [], f_resolved = [], f_resolved_urlref;
 		self.feed = data[0].searchResponse.entries;	
 		self.feed_length = data[0].searchResponse.entries.length;
 		try{
 			for(var i = 0; i < self.feed_length; i++){	
 				if(typeof(self.feed[i]) !== 'undefined') {		
-					if(self.feed[i].rank == i && self.feed[i].refTweets){	
+					if(self.feed[i].rank == i && self.feed[i].refTweets > -1){	
 							// For unresolved Tweets
 							f_resolved.push(self.feed[i]);
 							// VOICES.f_attach_unro_temp(f_unresolved);
@@ -126,21 +126,22 @@ $(function() {
 			this.f_url = f_config.f_url;
 			this.f_unro_template = f_config.f_unro_template;
 			this.f_container = f_config.f_container;
+			this.f_reso_template = f_config.f_reso_template;
 		},		
 
 		f_attach_reso_temp: function(reso_data) {
 			//Modify the timestamp and the content attr and wrap href
 			// console.log(unro_data[i]);
-			this.f_container.append(this.f_unro_template.render(this.f_modify_unro(reso_data)));		
+			this.f_container.append(this.f_reso_template.render(this.f_modify_datafeed(reso_data)));		
 		},		
 
 		f_attach_unro_temp: function(unro_data) {
 			//Modify the timestamp and the content attr and wrap href
 			// console.log(unro_data[i]);
-			this.f_container.append(this.f_unro_template.render(this.f_modify_unro(unro_data)));		
+			this.f_container.append(this.f_unro_template.render(this.f_modify_datafeed(unro_data)));		
 		},
 
-		f_modify_unro: function(data){
+		f_modify_datafeed: function(data){
 			var self = this,
 				data_length = data.length,
 				feed_data = data;
