@@ -187,12 +187,14 @@ All comments starting with NOTE can also be removed!
     </div>
 
     <div class="ibm-col-6-2">
-      <ul>
+      <ul class="ibm_cci-relatedTweetContainer">
+      {{for refTweets}}
         <li>
           <a href="#" alt="User Avatar">
-            <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" class="" width="25" height="25" />
+            <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
           </a>
         </li>
+       {{/for}} 
       </ul>
 
       <div class="ibm_cci--lv-rc-th" >

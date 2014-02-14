@@ -66,12 +66,12 @@ $(function() {
 				for(var i = 0; i < self.feed_length; i++){		
 					if(self.feed[i].type && self.feed[i].type === "URLREF"){	
 							// For unresolved Tweets
-							console.log(self.feed[i].type);
+							// console.log(self.feed[i].type);
 							self.f_attach_reso_temp(self.feed[i]);	
 					}
 					else if(self.feed[i].type && self.feed[i].type === "TWEET"){
 							// For resolved Tweets you need to store the Object
-							console.log(self.feed[i].type);	
+							// console.log(self.feed[i].type);	
 							self.f_attach_unro_temp(self.feed[i]);
 						}
 					}	
@@ -147,17 +147,23 @@ $(function() {
 		},
 
 		f_modify_datafeed: function(data){
-		try{	
 			var self = this,
-				data_length = data.length,
-				feed_data = data;
+				feed_data = data;		
+			try{
+				if(typeof(feed_data)){
+					if(feed_data.content && feed_data.content !== null){
+						feed_data.content = this.f_mod_content(feed_data.content);
+						feed_data.published = this.f_pretty_date(feed_data.published);
 
-				for(var i = 0; i <= data_length; i++){
-					if(typeof(feed_data[i]) !== 'undefined'){
-						if(typeof(feed_data[i].content) !== 'undefined'){
-							feed_data[i].content = this.f_mod_content(feed_data[i].content);
-							feed_data[i].published = this.f_pretty_date(feed_data[i].published);
-							// unr_data[i].published = f_addcontent_links(unr_data[i].content);
+						if(feed_data.refTweets && feed_data.refTweets !== null){								
+
+							for(var i = 0; i < feed_data.refTweets.length; i++){	
+								if(feed_data.refTweets[i].content){
+									console.log("feed_data. refTweets .content");
+									feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content);
+									feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published);
+								}	
+							}
 						}
 					}	
 				}				
