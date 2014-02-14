@@ -1,12 +1,17 @@
 // tabs styles begin ============================================
 
-/* LEADSPACE TABS START */
+/* ==============================================================
+ * Module name: Primary and secondary leadspace tabs
+ * Description: Tab navigation that appears below leadspace module
+ * Code test URL: http://205.186.160.10/v17e/templates/basic_layout_1_tabs.html
+ * Standards page URL: none
+*/ 
+
 #ibm-content-nav {
 	position: relative;
 	margin-top: -40px;
 	padding-bottom: 0px;
 	min-height: 40px;
-    _zoom: 1; /* ie6 fix for disappearing tabs */
 }
 
 #ibm-content-nav #ibm-primary-tabs {
@@ -87,10 +92,10 @@
 }
 
 #{$ie7Selector} #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    margin-top:-1px;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    margin-top: -1px;
 }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
@@ -166,6 +171,10 @@
 	padding-bottom: 10px;
 }
 
+/* ==============================================================
+*/
+
+
 /* added styles for dynamic-tab lists 
 * COMMENTING OUT THIS CODE TO CONFIRM WHY THE DYNTABS OPTION IS REMOVING THE ANCHOR <A> TAGS FROM THE TABS
 
@@ -229,13 +238,14 @@
 }
 */
 
-/* LEADSPACE TABS END */
 
 
-
-
-
-
+/* ==============================================================
+ * Module name: Content space graphic tabs
+ * Description: Thick tab navigation within content space.  Very similar to leadspace tabs, except they are in the content.
+ * Code test URL:
+ * Standards page URL: none
+*/ 
 
 
 /* CONTENT TABS START */
@@ -344,7 +354,8 @@ ul.ibm-tabs a:visited {
 	color: #000;
 }
 
-
+/* ==============================================================
+*/
 
 
 
@@ -424,7 +435,7 @@ ul.ibm-tabs a:visited {
 
 
 
-/* Secondary Tabs and subtab lists */
+/* Secondary subtab lists */
 #ibm-content-nav #ibm-secondary-tab-list {
 	padding-bottom: 20px;
 	text-align: left;

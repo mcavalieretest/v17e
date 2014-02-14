@@ -4746,14 +4746,17 @@ div#ibm-overlay-top h2 {
 .dj_ie .claro .dojoxGridFDPaneRulePane .dijitAccordionContainer-child {
   max-height: 150px; }
 
-/* LEADSPACE TABS START */
+/* ==============================================================
+ * Module name: Primary and secondary leadspace tabs
+ * Description: Tab navigation that appears below leadspace module
+ * Code test URL: http://205.186.160.10/v17e/templates/basic_layout_1_tabs.html
+ * Standards page URL: none
+*/
 #ibm-content-nav {
   position: relative;
   margin-top: -40px;
   padding-bottom: 0px;
-  min-height: 40px;
-  _zoom: 1;
-  /* ie6 fix for disappearing tabs */ }
+  min-height: 40px; }
 
 #ibm-content-nav #ibm-primary-tabs {
   height: 40px;
@@ -4834,9 +4837,9 @@ div#ibm-overlay-top h2 {
   padding-bottom: 1px; }
 
 .dj_ie7 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active {
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-top: 1px solid #CCC;
   margin-top: -1px; }
 
 #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a {
@@ -4904,6 +4907,8 @@ div#ibm-overlay-top h2 {
   border-bottom: 2px solid #000;
   padding-bottom: 10px; }
 
+/* ==============================================================
+*/
 /* added styles for dynamic-tab lists 
 * COMMENTING OUT THIS CODE TO CONFIRM WHY THE DYNTABS OPTION IS REMOVING THE ANCHOR <A> TAGS FROM THE TABS
 
@@ -4966,7 +4971,12 @@ div#ibm-overlay-top h2 {
 	_zoom: 0;
 }
 */
-/* LEADSPACE TABS END */
+/* ==============================================================
+ * Module name: Content space graphic tabs
+ * Description: Thick tab navigation within content space.  Very similar to leadspace tabs, except they are in the content.
+ * Code test URL:
+ * Standards page URL: none
+*/
 /* CONTENT TABS START */
 /* Graphic tabs  ======*/
 .ibm-columns.ibm-graphic-tabs {
@@ -5061,6 +5071,8 @@ ul.ibm-tabs a:hover,
 ul.ibm-tabs a:visited {
   color: #000; }
 
+/* ==============================================================
+*/
 /* Text tabs ====== */
 #ibm-com .ibm-text ul.ibm-tabs li {
   background: none;
@@ -5120,7 +5132,7 @@ ul.ibm-tabs a:visited {
   line-height: 1.8em !important; }
 
 /* CONTENT TABS END */
-/* Secondary Tabs and subtab lists */
+/* Secondary subtab lists */
 #ibm-content-nav #ibm-secondary-tab-list {
   padding-bottom: 20px;
   text-align: left; }
