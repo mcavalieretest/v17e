@@ -4821,11 +4821,11 @@ div#ibm-overlay-top h2 {
   margin-bottom: 7px; }
 
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:first-child {
-  border-left: 0 none;
+  border-left: 0;
   margin-left: 0; }
 
 #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li:last-child {
-  border-right: 0 none; }
+  border-right: 0; }
 
 #ibm-content-nav #ibm-primary-tabs.ibm-dyntabs ul.ibm-tabs a {
   padding: 0; }
@@ -4979,13 +4979,13 @@ div#ibm-overlay-top h2 {
 
 #ibm-content .ibm-container.ibm-graphic-tabs,
 .ibm-tab-section.ibm-text {
-  border-top: 0 none; }
+  border-top: 0; }
 
 .ibm-tab-section {
   margin-bottom: 20px; }
 
 .ibm-graphic-tabs .ibm-tab-section {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #CCC; }
 
 .ibm-graphic-tabs ul.ibm-tabs li {
   background: #DEDEDE;
@@ -4994,8 +4994,8 @@ div#ibm-overlay-top h2 {
   background: -o-linear-gradient(bottom, #cdcdcd, #dedede);
   background: -ms-linear-gradient(bottom, #cdcdcd, #dedede);
   background: linear-gradient(bottom, #cdcdcd, #dedede);
-  border-left: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
   border-top: 1px solid #E8E8E8;
   min-height: 35px;
   padding: 15px 10px 0;
@@ -5008,16 +5008,16 @@ div#ibm-overlay-top h2 {
   background: #C6C6C6; }
 
 .ibm-graphic-tabs ul.ibm-tabs li.ibm-active {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border-color: #CCCCCC #CCCCCC #FFFFFF;
+  background: none;
+  border-color: #CCC #CCC #FFF;
   border-style: solid;
   border-width: 1px;
-  color: #000000;
+  color: #000;
   margin-bottom: -2px; }
 
 .ibm-graphic-tabs.ibm-combo-tabs .ibm-tab-section.ibm-text {
-  border-bottom: 0 none;
-  border-top: 0 none;
+  border-bottom: 0;
+  border-top: 0;
   padding-top: 0;
   margin-top: -10px;
   text-align: center; }
@@ -5034,8 +5034,8 @@ div#ibm-overlay-top h2 {
 
 .ibm-container .ibm-tab-section.ibm-text,
 .ibm-columns .ibm-tab-section.ibm-text {
-  border-top: 2px solid #CCCCCC;
-  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
   padding-top: 5px;
   padding-bottom: 5px; }
 
@@ -5064,9 +5064,9 @@ ul.ibm-tabs a:visited {
 /* Text tabs ====== */
 #ibm-com .ibm-text ul.ibm-tabs li {
   background: none;
-  border-left: none;
+  border-left: 0;
   border-right: 1px solid #CCC;
-  border-top: none;
+  border-top: 0;
   float: none;
   display: inline;
   line-height: 2em;
@@ -5089,7 +5089,7 @@ ul.ibm-tabs a:visited {
 .ibm-text ul.ibm-bullet-list li,
 .ibm-text ul.ibm-link-list li {
   display: block;
-  border-right: none;
+  border-right: 0;
   text-align: left; }
 
 .ibm-text ul.ibm-bullet-list li a,
@@ -5098,10 +5098,10 @@ ul.ibm-tabs a:visited {
   color: #00649d; }
 
 .ibm-text ul.ibm-tabs.ibm-inner-list li {
-  border-right: 0 none; }
+  border-right: 0; }
 
 .ibm-text ul.ibm-tabs li.ibm-last-tab {
-  border-right: 0 none !important; }
+  border-right: 0 !important; }
 
 .ibm-combo-tabs div.ibm-text ul.ibm-tabs li {
   *zoom: 1;
@@ -5178,7 +5178,7 @@ ul.ibm-tabs a:visited {
   cursor: pointer;
   width: 300px;
   background: url(//1.www.s81c.com/common/v17e/i/icons/dropdown_sprite.png) no-repeat 100% -3px;
-  border: 0 none;
+  border: 0;
   font-size: 0.8em;
   font-weight: bold; }
 
