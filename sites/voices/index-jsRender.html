@@ -38,7 +38,7 @@ All comments starting with NOTE can also be removed!
 <script src="../../js/ww.js" type="text/javascript"></script>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="js/jsrender.min.js" type="text/javascript"></script>
+<script src="js/jsviews.min.js" type="text/javascript"></script>
 >
 <script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
 </head>
@@ -48,7 +48,7 @@ All comments starting with NOTE can also be removed!
 <script id="tt_template" type="text/x-jsrender">	
 	{{props t_list}}
 		<li class="ibm_cci__ml-li">
-		  <p> <span> <a href="javascript:void(0)" class="ibm_cci-voices-tt-text"> {{>prop}} </a> </span> <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{>prop}}"></a> </p>
+		  <p> <span> <a href="javascript:void(0)" class="ibm_cci-voices-tt-text"> {{:prop}} </a> </span> <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}"></a> </p>
 		</li>
 	{{/props}}
 	</script> 
@@ -80,8 +80,8 @@ All comments starting with NOTE can also be removed!
     </div>
     <div class="ibm_cci--unr-cb">
       <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
-        <h3 class="ibm_cci--lv-r-wct"> <a href="https://twitter.com/intent/user?user_id="+{{:userId}}+"&dnt=true&count=none" alt="twitter user name">{{:username}}</a> </h3>
-        <p class="ibm_cci--lv-r-wch"> <a href="https://twitter.com/intent/user?user_id="+{{:userId}}+"&dnt=true&count=none" alt="twitter user screen name">@ {{:userScreenName}} </a> </p>
+        <h3 class="ibm_cci--lv-r-wct"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a> </h3>
+        <p class="ibm_cci--lv-r-wch"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@{{:userScreenName}} </a> </p>
       </div>
       <div class="ibm_cci--time-stamp">
         <p class="ibm_cci-tts"> <span></span> <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> </p>
@@ -139,25 +139,25 @@ All comments starting with NOTE can also be removed!
       <div class="ibm_cci-sib">
         <ul class="ibm_cci-sie">
           <li>
-            <a href="#" alt="">
-              <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon twitter"/>
-            </a>
-          </li>
-          <li>
-            <a href="#" alt="">
-              <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon facebook"/>
-            </a>
-          </li>
-          <li>
-            <a href="#" alt="">
-              <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-            </a>
-          </li>
-        </ul>
+            <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link">
+                <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link">
+                <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link">
+                <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+              </a>
+            </li>
+          </ul>
       </div>
       <div class="ibm_cci--ttb">
         <h2 class="ibm_cci--tweet-title">
-          <a data-action="new-tab" href="{{:link}}" class="urlhrefval urltitleval">{{:title}}</a>
+          <a href="{{:link}}" class="urltitleval">{{:title}}</a>
         </h2>
        <div class="ibm_cci--tweet-description">
           <div class="ibm_cci--tweet-content-text">{{:content}}</div>
@@ -188,42 +188,60 @@ All comments starting with NOTE can also be removed!
 
     <div class="ibm-col-6-2">
       <ul class="ibm_cci-relatedTweetContainer">
-      {{for refTweets}}
-        <li>
-          <a href="#" alt="User Avatar">
-            <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+      {{range refTweets start=0 end=9}}
+        <li data-userID="{{:userId}}">
+          <a href="#" alt="User Avatar" data-userID="{{:userId}}">
+              <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
           </a>
         </li>
-       {{/for}} 
+       {{/range}} 
       </ul>
 
-      <div class="ibm_cci--lv-rc-th" >
+
+    {{range refTweets start=0 end=9}}
+      <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
+      <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
         <h3 class="ibm_cci--lv-rc-title">
-          <a href="https://twitter.com/intent/user?user_id="+{{:userId}}+"&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
+          <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
         </h3>
-        <p class="ibm_cci--lv-rc-h"><a href="https://twitter.com/intent/user?user_id="+{{:userId}}+"&dnt=true&count=none" alt="twitter user screen name">@
+        <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@
         {{:userScreenName}} </a></p>
       </div>
+      <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
+         <p class="ibm_cci-tts"> 
+         <span></span> 
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
+        </p>  
+      </div>
+    </div> 
 
-      <div class="ibm_cci--time-stamp">
-         <p class="ibm_cci-tts"> <span></span> <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> </p>
-      </div>                  
-      <div class="ibm_cci--lv-rc-description">
+    <div style="float:left" data-userID="{{:userId}}">
+      <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
         <p>{{:content}}</p>
       </div>
+  
 
-      <div class="ibm_cci--lv-rc-sharing">
+
+      <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
         <ul>
           <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
           <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
+          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
         </ul>
       </div>
-      
+  
+  </div>
+  {{/range}}     
+
     </div>
   </div>
 </script> 
 <!-- JSRender Resolved template (END) -->
+
+
+<!-- 
+  // START OF THE MAIN DIV
+ -->
 
 <div id="ibm-top" class="ibm-landing-page"> 
   <!-- MASTHEAD_BEGIN -->
