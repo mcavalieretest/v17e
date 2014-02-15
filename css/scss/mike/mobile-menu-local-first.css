@@ -5035,6 +5035,8 @@ div#ibm-overlay-top h2 {
 .ibm-graphic-tabs.ibm-dyntabs ul.ibm-tabs li.ibm-active:focus {
   outline: thin dotted; }
 
+.ibm-graphic-tabs.ibm-combo-tabs .ibm-tab-section.ibm-text ul.ibm-link-list,
+.ibm-graphic-tabs.ibm-combo-tabs .ibm-tab-section.ibm-text ul.ibm-bullet-list,
 .ibm-tab-section.ibm-text.ibm-alternate-align {
   text-align: left; }
 

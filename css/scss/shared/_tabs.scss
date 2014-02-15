@@ -306,7 +306,7 @@
 	border-bottom: 0;
 	border-top: 0;
 	padding-top: 0;
-	margin-top:-10px;
+	margin-top: -10px;
 	text-align: center;
 }
 
@@ -314,6 +314,8 @@
 	outline: thin dotted;
 }
 
+.ibm-graphic-tabs.ibm-combo-tabs .ibm-tab-section.ibm-text ul.ibm-link-list, 
+.ibm-graphic-tabs.ibm-combo-tabs .ibm-tab-section.ibm-text ul.ibm-bullet-list,
 .ibm-tab-section.ibm-text.ibm-alternate-align {
 	text-align: left;
 }
