@@ -5115,7 +5115,8 @@ ul.ibm-tabs a:visited {
   margin: 0; }
 
 #ibm-content-nav #ibm-secondary-tab-list a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 #ibm-content-nav #ibm-secondary-tab-list li {
   padding: 2px 0 0 15px;
