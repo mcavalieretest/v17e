@@ -5114,16 +5114,19 @@ ul.ibm-tabs a:visited {
 .dj_ie7 #ibm-secondary-tab-list.ibm-columns [class*="ibm-col-"] {
   margin: 0; }
 
-#ibm-content-nav #ibm-secondary-tab-list ul li {
+#ibm-content-nav #ibm-secondary-tab-list a {
+  text-decoration: none; }
+
+#ibm-content-nav #ibm-secondary-tab-list li {
   padding: 2px 0 0 15px;
   height: 1%;
   clear: left; }
 
-#ibm-content-nav #ibm-secondary-tab-list ul li a:hover {
+#ibm-content-nav #ibm-secondary-tab-list a:hover {
   color: #333; }
 
-#ibm-content-nav #ibm-secondary-tab-list ul li a:active,
-#ibm-content-nav #ibm-secondary-tab-list ul li.ibm-active a {
+#ibm-content-nav #ibm-secondary-tab-list a:active,
+#ibm-content-nav #ibm-secondary-tab-list li.ibm-active a {
   color: #000; }
 
 #ibm-content-nav #ibm-expand-container.ibm-columns {
