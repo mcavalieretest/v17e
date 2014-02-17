@@ -4818,6 +4818,9 @@ div#ibm-overlay-top h2 {
   background-color: #CCC;
   background-color: rgba(255, 255, 255, 0.55); }
 
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+  background-color: #FFF; }
+
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
   background-color: #CCC; }
@@ -8046,7 +8049,7 @@ a.ibm-thumbnail-module h3 {
     margin: 0 10px; }
 
   #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li {
-    margin-top: 12px; }
+    margin-top: 10px; }
 
   #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a,
   #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {

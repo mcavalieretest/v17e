@@ -76,6 +76,10 @@
 	background-color: rgba(255,255,255,0.55);
 }
 
+#ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs li.ibm-active a {
+	background-color: #FFF;
+}
+
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:hover,
 #ibm-leadspace-head.ibm-alternate-background + #ibm-content-nav #ibm-primary-tabs ul.ibm-tabs a:active {
 	background-color: #CCC;
