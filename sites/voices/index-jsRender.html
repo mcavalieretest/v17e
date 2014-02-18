@@ -193,8 +193,14 @@ All comments starting with NOTE can also be removed!
       <ul class="ibm_cci-relatedTweetContainer">
       {{range refTweets start=0 end=9}}
         <li data-userID="{{:userId}}">
-          <a href="#" alt="User Avatar" data-userID="{{:userId}}">
-              <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+          <a href="javascript:void(0);" alt="User Avatar" data-userID="{{:userId}}">
+              {{:~addClass(#getIndex(#parent))}}
+              
+              {{if #getIndex(#parent) == 0}}
+                <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+              {{else}}  
+                <img src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+              {{/if}}  
           </a>
         </li>
        {{/range}} 
@@ -202,8 +208,11 @@ All comments starting with NOTE can also be removed!
 
 
     {{range refTweets start=0 end=9}}
+    
+    {{if #getIndex(#parent) == 0}}
+    
       <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
-      <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
+        <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
         <h3 class="ibm_cci--lv-rc-title">
           <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
         </h3>
@@ -223,8 +232,6 @@ All comments starting with NOTE can also be removed!
         <p>{{:content}}</p>
       </div>
   
-
-
       <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
         <ul>
           <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
@@ -233,7 +240,42 @@ All comments starting with NOTE can also be removed!
         </ul>
       </div>
   
-  </div>
+    </div>
+
+  {{else}}
+
+    <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}" style="display: none;">
+      <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
+      <h3 class="ibm_cci--lv-rc-title">
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
+      </h3>
+      <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@
+      {{:userScreenName}} </a></p>
+    </div>
+    <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
+       <p class="ibm_cci-tts"> 
+       <span></span> 
+       <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
+      </p>  
+    </div>
+    </div> 
+
+    <div style="float:left; display:none;" data-userID="{{:userId}}">
+    
+      <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
+        <p>{{:content}}</p>
+      </div>
+
+      <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
+        <ul>
+          <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+          <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+        </ul>
+      </div>
+
+    </div>  
+  {{/if}}
   {{/range}}     
 
     </div>

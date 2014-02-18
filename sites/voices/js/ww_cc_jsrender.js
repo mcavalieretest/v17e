@@ -1,7 +1,7 @@
-$(function() {
+$(function(){
 
 	// DEFAULT URL HASH (START)
-		window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr('id');
+		window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr('id');		
 	// DEFAULT URL HASH (END)
 
 	// UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (START)
@@ -25,8 +25,10 @@ $(function() {
 						target.addClass('selected').parent().siblings().children().removeClass("selected");						
 						if($("#ibm_cci-widget-js").hasClass('ibm_cci-gv__modifier')){
 							$("#ibm_cci-widget-js").removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
+							$(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'block');
 						 } else {
 						 	$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
+						 	$(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'none');
 						 }
 					
 					}
@@ -76,19 +78,27 @@ $(function() {
 						}
 					}	
 			}
-				// before sending it to template attach sanitize the data
-				// self.f_attach_unro_temp(self.f_resolved);
-				// self.f_attach_reso_temp(self.feed[i]);	
-				// console.log(f_unresolved);
+			//NEED TO FIND A PLACE FOR THIS WHEN THE DOCUMENT IS RENDERED TO REMOVE TWEET CONTENT FROM GRID VIEW
+			$("#ibm_cci-widget-js.ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'none');
 
 		}catch(e){
 			console.log('Error logged in the DOM ready $.when' + e);
 		}
-	
 	});
 
+// HELPER FUNCTIONS FOR THE TEMPALTES
+$.views.helpers({addClass:retweetAddClass});
 
-});
+	function retweetAddClass(value){
+		console.log(value);
+
+	}
+
+
+
+
+
+}); //CLOSE ON DOM READY
 
 (function($, a) {			
 	var VOICES = {			
@@ -156,9 +166,8 @@ $(function() {
 					
 					if(feed_data.refTweets && feed_data.refTweets.length > 0){								
 						for(var i = 0; i < feed_data.refTweets.length; i++){	
-							console.log(feed_data.rank);
 							if(feed_data.refTweets[i].content && feed_data.refTweets[i].published){
-								feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content);				
+								feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content);
 								feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published);
 							}
 
