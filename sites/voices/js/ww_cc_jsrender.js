@@ -148,28 +148,26 @@ $(function() {
 
 		f_modify_datafeed: function(data){
 			var self = this,
-				feed_data = data;		
+				feed_data = data;
 			try{
 				if(typeof(feed_data)){
-					if(feed_data.content && feed_data.content !== null){
-						feed_data.content = this.f_mod_content(feed_data.content);
-						feed_data.published = this.f_pretty_date(feed_data.published);
-
-						if(feed_data.refTweets && feed_data.refTweets !== null){								
-
-							for(var i = 0; i < feed_data.refTweets.length; i++){	
-								if(feed_data.refTweets[i].content){
-									console.log("feed_data. refTweets .content");
-									feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content);
-									feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published);
-								}	
+					feed_data.content = this.f_mod_content(feed_data.content || "");
+					feed_data.published = this.f_pretty_date(feed_data.published);
+					
+					if(feed_data.refTweets && feed_data.refTweets.length > 0){								
+						for(var i = 0; i < feed_data.refTweets.length; i++){	
+							console.log(feed_data.rank);
+							if(feed_data.refTweets[i].content && feed_data.refTweets[i].published){
+								feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content);				
+								feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published);
 							}
+
 						}
 					}	
-				}				
+				}			
 				return feed_data;
 			}catch(e){
-				console.log("Error inside the modify_datafeed" + e);
+				console.log("Error inside the modify_datafeed" + e );
 			}	
 		},
 
@@ -182,41 +180,52 @@ $(function() {
 		},
 
 		f_pretty_date: function(timeVal){
-			
-			 var monthTxt = new Array();
-			  monthTxt[0] = "Jan";
-			  monthTxt[1] = "Feb";
-			  monthTxt[2] = "Mar";
-			  monthTxt[3] = "Apr";
-			  monthTxt[4] = "May";
-			  monthTxt[5] = "Jun";
-			  monthTxt[6] = "Jul";
-			  monthTxt[7] = "Aug";
-			  monthTxt[8] = "Sep";
-			  monthTxt[9] = "Oct";
-			  monthTxt[10] = "Nov";
-			  monthTxt[11] = "Dec";
-			  monthTxt[12] = "December";
-			  timeVal = timeVal+"";
-			 
-			 var date = new Date((parseInt(timeVal.trim()) || "")),
-			  diff = (((new Date()).getTime() - date.getTime()) / 1000),
-			  day_diff = Math.floor(diff / 86400);
-			   
-			 if ( isNaN(day_diff) || day_diff < 0  )
-			  return;
-			
-			  var retVal =  day_diff == 0 && (
-				   diff < 60 && "just now" ||
-				   diff < 120 && "1m" ||
-				   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
-				   diff < 7200 && "1h" ||
-				   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
-				//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
-				   day_diff >= 1 && day_diff + "d";
-					   
-			  return retVal;
+			try{	
+				 var monthTxt = new Array();
+				  monthTxt[0] = "Jan";
+				  monthTxt[1] = "Feb";
+				  monthTxt[2] = "Mar";
+				  monthTxt[3] = "Apr";
+				  monthTxt[4] = "May";
+				  monthTxt[5] = "Jun";
+				  monthTxt[6] = "Jul";
+				  monthTxt[7] = "Aug";
+				  monthTxt[8] = "Sep";
+				  monthTxt[9] = "Oct";
+				  monthTxt[10] = "Nov";
+				  monthTxt[11] = "Dec";
+				  monthTxt[12] = "December";
+				  timeVal = timeVal+"";
+				 
+				 var date = new Date((parseInt(timeVal.trim()) || "")),
+				  diff = (((new Date()).getTime() - date.getTime()) / 1000),
+				  day_diff = Math.floor(diff / 86400);
+				   
+				 if ( isNaN(day_diff) || day_diff < 0  )
+				  return;
+				
+				  var retVal =  day_diff == 0 && (
+					   diff < 60 && "just now" ||
+					   diff < 120 && "1m" ||
+					   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
+					   diff < 7200 && "1h" ||
+					   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
+					//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
+					   day_diff >= 1 && day_diff + "d";
+				
+				// console.log(timeVal +" : "+ retVal);
+				return retVal;
+			}catch(e){
+				console.log("error inside the f_pretty_data function: " + e );
+			}	
 		},
+
+	    f_correctRank : function(){
+	    	var rankPObj = dojo.query(".ibm_cci--rea-rank",this.domNode)[0];
+	    	if(rankPObj.innerHTML.trim().length > 2){
+	    		dojo.addClass(rankPObj,"ibm_cci-reducedFont");
+	    	}
+	    },		
 
 		// FETCH FEED JSON OBJECT
 		fetch_feeds: function( ){

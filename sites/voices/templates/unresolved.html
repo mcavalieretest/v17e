@@ -1,0 +1,92 @@
+<script id="unro_template" type="text/x-jsrender">
+<!-- UNRESOLVED TWEETS (BEGIN) -->
+<div class="ibm-col-1-1" data-rank="{{rank}}" data-score="{{score}}" data-id="{{id}}">
+
+	<!-- TWEET BLOCK (START) -->	
+	<div class="ibm_cci--lv-unro-b">
+		<!-- REA SCORE BLOCK (START) -->
+		<div class="ibm_cci--rea-block">
+			<ul>
+				<li>
+					<p class="ibm_cci--rea-rank">{{rank}}</p>
+				</li>
+				<li class="ibm_cci__padding-top">
+					<div class="ibm_cci--rea-b">
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b" style="width:{{reachPct}}"></div>
+						</div>
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b" style="width:{{engPct}}"></div>
+						</div>
+						<div class="ibm_cci--rea-b-e">
+							<div class="ibm_cci--rea-b" style="width:{{ampPct}}"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- REA SCORE BLOCK (END) -->
+
+		<!-- UNRESOLVED URL BLOCK (START) -->
+		<div class="ibm_cci--unr-cb">								
+			
+			<div data-user-id="{{userId}}" class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th">
+				<img class="ibm_cci--lv-rc-avatar" data-user-id="{{userId}}" src="{{userAvatar}}" width="25" height="25">
+				
+				<h3 data-user-id="{{userId}}" class="ibm_cci--lv-r-wct">
+					<a href="https://twitter.com/intent/user?user_id="+{{userId}}+"&dnt=true&count=none" alt="">{{username}}</a>
+				</h3>
+				<p class="ibm_cci--lv-r-wch">
+					<a data-user-id="{{userId}}" href="https://twitter.com/intent/user?user_id="+{{userId}}+"&dnt=true&count=none">@{{userScreenname}} </a>
+				</p>
+			</div>
+				/*
+					<div class="ibm_cci--lv-tsb">
+						<span></span>
+						<p class="ibm_cci-tts"><a href="#" alt="twitter timestamp"><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
+						</p>
+					</div>				
+				*/
+				<div class="ibm_cci--time-stamp">
+					<p class="ibm_cci-tts">
+						<span></span>
+						<img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12">
+						<a href="{{link}}" alt="twitter timestamp image">{{published}}</a>
+					</p>
+				</div>										
+				<div class="ibm_cci--ttb">
+					<h2 class="ibm_cci--tweet-title">
+						{{content}}
+					</h2>
+				</div>
+				<div class="ibm_cci--lv-rc-sharing">
+					<ul>
+						<li>
+							<a href="https://twitter.com/intent/reply?tweet_id="+{{id}}+"&dnt=true&count=none" alt="twitter favorite">
+								<img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16">
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/intent/retweet?tweet_id="+{{id}}+"&dnt=true&count=none" alt="twitter retweet">
+								<img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16">
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/intent/favorite?tweet_id="+{{id}}+"&dnt=true&count=none" alt="">
+								<img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16">
+							</a>
+						</li>
+					</ul>
+					/*
+					<p class="ibm_cci-tts">
+						<a href="#" alt=""><img src="i/ibm_twitter_timestamp_icon_16x16.png" alt="" height="16" width="16"></a>11d
+					</p>
+					 */
+			</div>
+		</div>
+		<!-- UNRESOLVED URL BLOCK (START) -->
+	</div>
+	<!-- TWEET BLOCK (END) -->
+</div>
+<!-- UNRESOLVED TWEETS (END) -->
+</script>

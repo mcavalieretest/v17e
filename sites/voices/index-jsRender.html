@@ -162,6 +162,9 @@ All comments starting with NOTE can also be removed!
        <div class="ibm_cci--tweet-description">
           <div class="ibm_cci--tweet-content-text">{{:content}}</div>
           <div class="ibm_cci-media-container"></div>
+          {{if mediaURL}}
+              <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}">
+          {{/if}}
         </div>
       </div>
       <div class="ibm_cci-gv-sib">
