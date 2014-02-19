@@ -48,8 +48,11 @@ sites/
   font-size: 1.4em;
   content: "\00a0\f10b\00a0"; }
 
-#ibm-content .ibm-ind-link-after a {
+#ibm-top .ibm-ind-link-after a {
   padding-left: 0; }
 
-#ibm-content .ibm-ind-link-after .ibm-cta-chevron-link:before {
+#ibm-top .ibm-ind-link-after a:hover {
+  text-decoration: underline; }
+
+#ibm-top .ibm-ind-link-after .ibm-cta-chevron-link:before {
   display: none; }
