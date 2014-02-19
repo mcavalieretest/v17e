@@ -24,6 +24,10 @@ sites/
 |   |-- ww_cci.scss				# Build file that pulls in all components (this file)
 `
 */
+#ibm-top #ibm-masthead,
+#ibm-top #ibm-universal-nav {
+  border-bottom: 0; }
+
 #ibm-content .ibm_cci-site-band {
   background-image: -webkit-linear-gradient(left, #021428, #082342);
   background-image: -moz-linear-gradient(left, #021428, #082342);
