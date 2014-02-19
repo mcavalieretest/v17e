@@ -212,7 +212,7 @@ jQuery(function() {
     };
 
     Modernizr.load({
-      load: "/js/mike/mlpushmenu.scrollable.js",
+      load: "../js/mike/mlpushmenu.scrollable.js",
       complete: function() {
         // Loop till masthead links are available.  When available, prepend them to #m-shift
         window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms

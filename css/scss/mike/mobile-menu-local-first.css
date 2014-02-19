@@ -7670,10 +7670,19 @@ input#m-q {
   height: 100%;
   overflow-y: auto; }
 
+/*
+ * Hide initially. 
+ */
+#m-local-menu {
+  top: -10000px;
+  left: -10000px;
+  right: auto; }
+
 #m-menu #m-local-menu {
-  position: relative;
   top: 0;
   right: 0;
+  left: auto;
+  position: relative;
   z-index: 1;
   width: 250px;
   overflow: hidden;
