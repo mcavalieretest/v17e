@@ -24,14 +24,15 @@ sites/
 |   |-- ww_cci.scss				# Build file that pulls in all components (this file)
 `
 */
-#ibm-content .ibm_cci-site-band,
-#ibm-content .ibm_cci-site-band p,
-#ibm-content .ibm_cci-site-band h2 {
+#ibm-content .ibm_cci-site-band {
   background-image: -webkit-linear-gradient(left, #021428, #082342);
   background-image: -moz-linear-gradient(left, #021428, #082342);
   background-image: -o-linear-gradient(left, #021428, #082342);
   background-image: -ms-linear-gradient(left, #021428, #082342);
-  background-image: linear-gradient(left, #021428, #082342);
+  background-image: linear-gradient(left, #021428, #082342); }
+
+#ibm-content .ibm_cci-site-band p,
+#ibm-content .ibm_cci-site-band h2 {
   text-shadow: none;
   color: #FFF; }
 
