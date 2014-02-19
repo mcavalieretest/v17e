@@ -28,17 +28,71 @@ sites/
 #ibm-top #ibm-universal-nav {
   border-bottom: 0; }
 
+#ibm-content .ibm_cci-header-band {
+  margin-top: -1px; }
+
 #ibm-content .ibm_cci-site-band {
+  background: #021428;
   background-image: -webkit-linear-gradient(left, #021428, #082342);
   background-image: -moz-linear-gradient(left, #021428, #082342);
   background-image: -o-linear-gradient(left, #021428, #082342);
   background-image: -ms-linear-gradient(left, #021428, #082342);
-  background-image: linear-gradient(left, #021428, #082342); }
+  background-image: linear-gradient(left, #021428, #082342);
+  padding: 0; }
+
+.ibm-landing-page #ibm-pcon {
+  padding: 0;
+  margin-bottom: 0; }
 
 #ibm-content .ibm_cci-site-band p,
+#ibm-content .ibm_cci-site-band h1,
 #ibm-content .ibm_cci-site-band h2 {
   text-shadow: none;
   color: #FFF; }
+
+#ibm-content .ibm_cci-site-band h1 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+  margin-top: 45px; }
+
+#ibm-content .ibm_cci-site-band h1 span {
+  font-family: "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif; }
+
+#ibm-top p.ibm_cci-subtitle {
+  padding-bottom: 15px; }
+
+.ibm_cci-subtitle em {
+  font-family: "LubalinGraphStdBookIBM";
+  font-size: 95px;
+  font-size: 9.5rem;
+  line-height: 80px;
+  letter-spacing: 3px;
+  font-style: normal;
+  color: #FDB42B;
+  text-transform: uppercase; }
+
+.ibm_cci-header {
+  background: url(../i/header-bg.png) no-repeat 100% 0;
+  min-height: 835px; }
+
+#ibm-top a.ibm_cci-btn {
+  background: #4B77A6; }
+
+#ibm-content .ibm_cci-site-band h2 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+#ibm-content .ibm_cci-site-band h2 span {
+  display: block;
+  font-size: 44px;
+  font-size: 4.4rem;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: "LubalinGraphStdBookIBM";
+  color: #FDB42B; }
+
+#ibm-content p {
+  padding-bottom: 30px;
+  line-height: 30px; }
 
 .ibm-cta-chevron-link:after {
   color: #00649d;
