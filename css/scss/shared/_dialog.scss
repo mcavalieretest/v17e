@@ -315,6 +315,12 @@
         *padding-left: 10px;
         
 	}
+.dijitDialogPaneContent p a.ibm-error-link {
+		padding-left: 0;
+}
+.dijitDialogPaneContent form.ibm-column-form p span a.ibm-error-link:before {
+	margin-left: -12px;
+}
 /*================== End of form styles */ 
     
     

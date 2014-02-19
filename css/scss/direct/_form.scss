@@ -704,13 +704,13 @@ form.ibm-column-form label {
 }
 
 
-form.ibm-column-form span input[type="text"],
+/*form.ibm-column-form span input[type="text"],
 form.ibm-column-form span input[type="password"], 
 form.ibm-column-form #ibm-content span textarea{
 	
     position:relative;
     top:-5px;
-}
+}*/
 
 form.ibm-column-form span.ibm-input-group input[type="text"]{
 top:0px;
@@ -736,6 +736,7 @@ form.ibm-column-form span.ibm-error-link {
     margin-left: 200px;
     margin-top: 5px;
 }
+
 form.ibm-row-form span.ibm-error-link {
 	display:block;
 	margin-top:10px;
@@ -800,12 +801,11 @@ form p span a.ibm-information-link,
 form p span a.ibm-error-link,
 form p span a.ibm-help-link {
     display: inline-block;
-    width: 24px;
+    
     text-decoration: none;
     color: transparent;
-    margin: 0px 0px 0px 5px;
-    padding: 0px !important;
-    overflow:hidden;
+   margin-left: 10px;
+
 }
 form p span a.ibm-calculator-link:before,
 form p span a.ibm-calendar-link:before,
@@ -854,6 +854,7 @@ table .ibm-standalone-acc {
 form.ibm-column-form p {
     clear:both;
     display:inline-block;
+    padding-top: 6px;
     *display: inline;
     *zoom: 1;
     width:100%;
@@ -1056,18 +1057,20 @@ form .ibm-checkbox-layout input {
 /*
     adding more space for Email this page span - because otherwise validation error links went beneath input. It looked bad
 */
-#etpForm a.ibm-error-link {
+/*#etpForm a.ibm-error-link {
     position: relative;
     left: -30px;
     top: -25px;
-}
+}*/
+
 
 /*
     overwrite hover behaviour - do not allow link to jump up
 */
+/*
 #etpForm a.ibm-error-link:hover {
     background: url(#{$imagePath}/i/icons/sprites-form.gif) no-repeat 0px -126px transparent;
-}
+}*/
 
 
 
