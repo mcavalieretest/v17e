@@ -1,0 +1,40 @@
+// URI: www.ibm.com/common/v17e/[Site]/css/ww_cci.css
+// Description: Mainframe50 v17e customization CSS file
+// Author: jeffdos@us.ibm.com
+// Date: February 19, 2014
+//
+// Notes:
+//   Add "ibm-adapt" class to modules that change under different viewport
+//   Use ".ibm_cci-" class prefix for site specific custom code
+
+
+#ibm-content .ibm_cci-site-band,
+#ibm-content .ibm_cci-site-band p,
+#ibm-content .ibm_cci-site-band h2 {
+	@include background-gradient(background-image,(left, #021428, #082342));
+	text-shadow: none;
+	color: #FFF;
+}
+
+
+.ibm-cta-chevron-link:after {
+	color: $linkColor;
+	font-family: 'iconsIBM';
+	font-variant: normal;
+	text-transform: none;
+	// -webkit-font-smoothing: antialiased;   Disabled since this setting caused a font size issue between FF and webkit
+	display: inline-block;
+	letter-spacing: 4px;
+	position: absolute;
+	text-decoration: none;
+	font-size: $iconSpaceLeft;
+	content: "\00a0\f10b\00a0" ;
+}
+
+#ibm-content .ibm-ind-link-after a {
+	padding-left: 0;
+}
+
+#ibm-content .ibm-ind-link-after .ibm-cta-chevron-link:before {
+	display: none;
+}
