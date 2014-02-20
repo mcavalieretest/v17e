@@ -205,3 +205,18 @@
 #ibm-top .ibm-ind-link-after .ibm-cta-chevron-link:before {
 	display: none;
 }
+
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+	.ibm_cci-header,
+	.ibm_cci-section-z {
+		background: none;
+		min-height: inherit;
+	}
+	
+	.ibm_cci-ey {
+		padding-top: 0;
+	}
+
+}
+
