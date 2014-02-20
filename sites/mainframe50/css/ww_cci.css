@@ -28,16 +28,18 @@ sites/
 #ibm-top #ibm-universal-nav {
   border-bottom: 0; }
 
-#ibm-content .ibm_cci-header-band {
-  margin-top: -1px; }
-
-#ibm-content .ibm_cci-site-band {
+#ibm-content {
   background: #021428;
   background-image: -webkit-linear-gradient(left, #021428, #082342);
   background-image: -moz-linear-gradient(left, #021428, #082342);
   background-image: -o-linear-gradient(left, #021428, #082342);
   background-image: -ms-linear-gradient(left, #021428, #082342);
-  background-image: linear-gradient(left, #021428, #082342);
+  background-image: linear-gradient(left, #021428, #082342); }
+
+#ibm-content .ibm_cci-header-band {
+  margin-top: -1px; }
+
+#ibm-content .ibm_cci-site-band {
   padding: 0; }
 
 .ibm-landing-page #ibm-pcon {
@@ -74,7 +76,7 @@ sites/
   text-transform: uppercase; }
 
 .ibm_cci-header {
-  background: url(../i/header-bg.png) no-repeat 100% 0;
+  background: url(../i/header-bg.png) no-repeat 0 0;
   min-height: 835px; }
 
 #ibm-top a.ibm_cci-btn {
@@ -93,9 +95,18 @@ sites/
   font-family: "LubalinGraphStdBookIBM";
   color: #FDB42B; }
 
-#ibm-content p {
-  padding-bottom: 30px;
+#ibm-content .ibm_cci-site-band.ibm_cci-z-band .ibm-col-4-2 h2 span {
+  text-transform: none; }
+
+#ibm-content .ibm_cci-header p {
   line-height: 30px; }
+
+#ibm-content .ibm_cci-header p.ibm-button-link {
+  line-height: 21.6px;
+  line-height: 2.16rem; }
+
+#ibm-content p {
+  padding-bottom: 30px; }
 
 #ibm-content p.ibm_cci-intro {
   font-family: "LubalinGraphStdBookIBM";
@@ -131,6 +142,7 @@ sites/
 #ibm-content .ibm_cci-progress-band .ibm-inner-margin h3 ~ p {
   padding-bottom: 20px; }
 
+#ibm-content .ibm_cci-progress-band .ibm-columns.ibm-cloned,
 #ibm_cci-progress1 {
   background: url(../i/progress1.jpg) no-repeat 50% 0; }
 
@@ -139,6 +151,16 @@ sites/
 
 #ibm_cci-progress3 {
   background: url(../i/progress1.jpg) no-repeat 50% 0; }
+
+#ibm-content .ibm_cci-z-band {
+  padding-top: 20px; }
+
+.ibm_cci-section-z {
+  background: url(../i/z-bg.png) no-repeat 0 100%;
+  min-height: 880px; }
+
+.ibm_cci-ey {
+  padding-top: 300px; }
 
 .ibm-cta-chevron-link:after {
   color: #00649d;

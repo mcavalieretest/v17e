@@ -13,13 +13,16 @@
 	border-bottom: 0;
 }
 
+#ibm-content {
+	background: #021428;
+	@include background-gradient(background-image,(left, #021428, #082342));	
+}
+
 #ibm-content .ibm_cci-header-band {
 	margin-top: -1px;
 }
 
 #ibm-content .ibm_cci-site-band {
-	background: #021428;
-	@include background-gradient(background-image,(left, #021428, #082342));
 	padding: 0;
 }
 
@@ -63,7 +66,7 @@
 }
 
 .ibm_cci-header {
-	background: url(../i/header-bg.png) no-repeat 100% 0;
+	background: url(../i/header-bg.png) no-repeat 0 0;
 	min-height: 835px;
 }
 
@@ -85,9 +88,20 @@
 	color: #FDB42B;
 }
 
+#ibm-content .ibm_cci-site-band.ibm_cci-z-band .ibm-col-4-2 h2 span {
+	text-transform: none;
+}
+
+#ibm-content .ibm_cci-header p {
+	line-height: 30px;
+}
+
+#ibm-content .ibm_cci-header p.ibm-button-link {
+	@include px-to-rem(line-height,21.6px);
+}
+
 #ibm-content p {
 	padding-bottom: 30px;
-	line-height: 30px;
 }
 
 #ibm-content p.ibm_cci-intro {
@@ -135,6 +149,7 @@
 }
 
 // progress ribbon images
+#ibm-content .ibm_cci-progress-band .ibm-columns.ibm-cloned,
 #ibm_cci-progress1 {
 	background: url(../i/progress1.jpg) no-repeat 50% 0;
 }
@@ -147,6 +162,19 @@
 	background: url(../i/progress1.jpg) no-repeat 50% 0;
 }
 
+
+#ibm-content .ibm_cci-z-band {
+	padding-top: 20px;
+}
+
+.ibm_cci-section-z {
+	background: url(../i/z-bg.png) no-repeat 0 100%;
+	min-height: 880px;
+}
+
+.ibm_cci-ey {
+	padding-top: 300px;
+}
 
 
 
