@@ -42,6 +42,9 @@ sites/
 #ibm-content .ibm_cci-site-band {
   padding: 0; }
 
+.ibm-band {
+  background-color: transparent; }
+
 .ibm-landing-page #ibm-pcon {
   padding: 0;
   margin-bottom: 0; }
