@@ -46,7 +46,10 @@ sites/
 
 #ibm-content .ibm_cci-site-band p,
 #ibm-content .ibm_cci-site-band h1,
-#ibm-content .ibm_cci-site-band h2 {
+#ibm-content .ibm_cci-site-band h2,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body p,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body h2,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body h3 {
   text-shadow: none;
   color: #FFF; }
 
@@ -93,6 +96,22 @@ sites/
 #ibm-content p {
   padding-bottom: 30px;
   line-height: 30px; }
+
+.ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-next,
+.ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-prev {
+  display: none; }
+
+#ibm-content .ibm-ribbon-nav a {
+  background: url(../i/pagination.png) no-repeat 0 0; }
+
+#ibm-content .ibm-ribbon-nav a:hover {
+  background-position: 0 -11px; }
+
+#ibm-content .ibm-ribbon-nav a.ibm-active {
+  background-position: 0 -23px; }
+
+#ibm_cci-progress1 {
+  background: url(../i/progress1.jpg) no-repeat 50% 0; }
 
 .ibm-cta-chevron-link:after {
   color: #00649d;
