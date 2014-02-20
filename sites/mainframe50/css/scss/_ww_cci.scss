@@ -218,5 +218,14 @@
 		padding-top: 0;
 	}
 
+	.ibm_cci-subtitle em {
+		@include px-to-rem(font-size,70px);
+		line-height: 50px;
+	}
+	
+	#ibm-content .ibm_cci-site-band h2 span {
+		@include px-to-rem(font-size,40px);		
+	}
+	
 }
 

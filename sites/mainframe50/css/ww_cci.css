@@ -193,4 +193,13 @@ sites/
     min-height: inherit; }
 
   .ibm_cci-ey {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .ibm_cci-subtitle em {
+    font-size: 70px;
+    font-size: 7rem;
+    line-height: 50px; }
+
+  #ibm-content .ibm_cci-site-band h2 span {
+    font-size: 40px;
+    font-size: 4rem; } }
