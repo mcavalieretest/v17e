@@ -90,7 +90,20 @@
 	line-height: 30px;
 }
 
+#ibm-content p.ibm_cci-intro {
+	font-family: $LubalinBook;
+	padding-bottom: 10px;
+}
 
+#ibm-content p.ibm_cci-intro span {
+	font-family: $LubalinDemi;
+}
+
+#ibm-content p.ibm_cci-call {
+	@include px-to-rem(font-size,22px);
+}
+
+// ribbon updates
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-next,
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-prev {
 	display: none;
@@ -107,11 +120,33 @@
 #ibm-content .ibm-ribbon-nav a.ibm-active {
 	background-position: 0 -23px;
 }
+// ribbon updates
 
 
+.ibm_cci-progress-band h3 {
+	font-family: $LubalinDemi;
+	@include px-to-rem(font-size,40px);
+	line-height: 50px;
+	padding: 30px 0 20px;
+}
+
+#ibm-content .ibm_cci-progress-band .ibm-inner-margin h3 ~ p {
+	padding-bottom: 20px;
+}
+
+// progress ribbon images
 #ibm_cci-progress1 {
 	background: url(../i/progress1.jpg) no-repeat 50% 0;
 }
+
+#ibm_cci-progress2 {
+	background: url(../i/progress1.jpg) no-repeat 50% 0;
+}
+
+#ibm_cci-progress3 {
+	background: url(../i/progress1.jpg) no-repeat 50% 0;
+}
+
 
 
 
