@@ -204,8 +204,8 @@
 
 
 @media only screen and (min-width: 0) and (max-width: 568px) {
-	.ibm_cci-header-band,
-	.ibm_cci-z-band {
+	#ibm-content .ibm_cci-header-band,
+	#ibm-content .ibm_cci-z-band {
 		background: none;
 		min-height: inherit;
 	}
@@ -225,3 +225,9 @@
 	
 }
 
+
+@media only screen and (min-width: 569px) and (max-width: 800px) {
+	#ibm-content .ibm_cci-header-band {
+		background-position: 0 100%;
+	}
+}
