@@ -45,17 +45,25 @@ dojo.addOnLoad(function(){
 		
 	s.startup();
     
-    
     // ------- custom carousel ------------------
     //  - user clicks thumbnail image, we show correct panel and hide others
     /// contact:adestefa@ibm.com
-    // show first panel in custom carousel
-    showPanel("p1");
-    // set event listeners for each thumbnail image using shared class name
-    dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
-    dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
-    dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
-    dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    var viewportHeight = jQuery(window).height();
+    // filter iphones
+    if ((iOSCheck) && (viewportHeight < 768)) {
+        // show full version of each for mobile
+        showPanel("p5");
+    // show small image thumbs    
+    } else {
+        // show first panel in custom carousel
+        showPanel("p1");
+        // set event listeners for each thumbnail image using shared class name
+        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
+        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
+        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
+        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    }
     // custom carousel controller driven by thumbnail image links 
     function showPanel (id) {
         // hide all panels 
@@ -64,6 +72,12 @@ dojo.addOnLoad(function(){
         dojo.style(dojo.byId(id), "display", "block");
     }    
 });
+ 
+
+
+
+		
+
 </script>
 <!-- hand pointer when hover over thumbnail images -->
 <style>.panel > .ibm-col-6-1 > img { cursor: pointer; cursor: hand;}</style>
@@ -124,7 +138,7 @@ dojo.addOnLoad(function(){
 <h1>Make the <span>Extraordinary</span></h1>
 <p class="ibm_cci-subtitle"><em>possible</em></p>
 
-<p class="ibm_cci-intro"><span>IBM Mainframe50</span><br/>
+<p><strong>IBM Mainframe50</strong><br/>
 The mainframe is a revolutionary computing system that is transforming business, whole industries, and the world as we know it. </p>
  
 <p>By continually adapting to trends and evolving IT, we’re driving new approaches to cloud, analytics, security and mobile computing to help tackle challenges never before thought possible. We do that by collaborating with our clients to build better technology every day.</p>
@@ -171,7 +185,6 @@ The mainframe is a revolutionary computing system that is transforming business,
 				<div class="ibm-inner-margin">
 				<h3>First National Bank</h3>
 				<p>Critical financial services to Africa’s unbanked 80 percent</p>
-				<p>FNB’s “bank in a box” enables millions of individuals across Africa to startup new businesses, save for college and improve lives. </p>
 				</div>
 				</div>
 				<div class="ibm-col-4-2">
@@ -267,78 +280,103 @@ The mainframe is a revolutionary computing system that is transforming business,
             <!-- Sabre -->
             <div id="p1" class="ibm-columns panel">
 				<div class="ibm-col-6-3">
-				<img src="i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
 				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
                 <h2>Sabre reservation system</h2>
 				<p>The world’s first automated passenger reservation system, Sabre, is the basis for today’s web-based travel industry. Launched on two IBM 7090 mainframes, the application written in the 60s is able to process billions of transactions a week today.</p>
 				</div>
 				<div class="ibm-col-6-1">
-					<img src="i/50-bet-sm.jpg" width="140" title="The Big Bet to Big Insights" height="93" alt="" class="ibm-resize panel_link_2" />
+					<img src="i/bet.jpg" width="140" title="The Big Bet to Big Insights" height="93" alt="" class="ibm-resize panel_link_2" />
 				</div>		
 				<div class="ibm-col-6-1">
-					<img src="i/50-apollo-sm.jpg" title="Apollo 11 moon landing" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+					<img src="i/apollo.jpg" title="Apollo 11 moon landing" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
 				</div>		
 				<div class="ibm-col-6-1">
-					<img src="i/50-zenterprise-sm.jpg" title="The zEnterprise System" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+					<img src="i/zenterprise.jpg" title="The zEnterprise System" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
 				</div>		
             </div>
             
             <!-- Watson -->
             <div id="p2" class="ibm-columns panel">
 				<div class="ibm-col-6-1">
-					<img src="i/50-sabre-sm.jpg" width="140" title="Sabre reservation system" height="93" alt="" class="ibm-resize panel_link_1" />
+					<img src="i/apollo.jpg" width="140" title="Sabre reservation system" height="93" alt="" class="ibm-resize panel_link_1" />
 				</div>	
 				<div class="ibm-col-6-3">
-				<img src="i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
 				<h2>The Big Bet to Big Insights </h2>
 				<p>April 7, 1964, IBM CEO Thomas J. Watson Jr. literally bets the business on the System/360 mainframe—shutting down all other product lines for this new vision for the future of computing. Today, IBM runs the world’s largest private cloud on the mainframe. It provides analytic insights from nearly 100 different data warehouses enabling over 200,000 IBM employees to make better decisions.</p>
 				</div>
 				<div class="ibm-col-6-1">
-					<img src="i/50-apollo-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+					<img src="i/apollo.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
 				</div>		
 				<div class="ibm-col-6-1">
-					<img src="i/50-zenterprise-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+					<img src="i/zenterprise.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
 				</div>		
             </div>
             
             <!-- apollo -->
             <div id="p3" class="ibm-columns panel">
 				<div class="ibm-col-6-1">
-					<img src="i/50-sabre-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+					<img src="i/bet.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
 				</div>	
 				<div class="ibm-col-6-1">
-					<img src="i/50-bet-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+					<img src="i/bet.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
 				</div>		
-					<div class="ibm-col-6-3">
-				<img src="i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<div class="ibm-col-6-3">
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
 				<h2>Apollo 11 moon landing</h2>
 				<p>In 1969, Americans Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon, forever changing our view of the universe and our own perception of what’s possible. The IBM System/360 mainframe processed the data for the lunar landing and liftoff.</p>
 				</div>	
 				<div class="ibm-col-6-1">
-					<img src="i/50-zenterprise-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+					<img src="i/zenterprise.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
 				</div>		
             </div>
 
             <!-- z enterprise -->
              <div id="p4" class="ibm-columns panel">
 				<div class="ibm-col-6-1">
-					<img src="i/50-sabre-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+					<img src="i/bet.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
 				</div>	
 				<div class="ibm-col-6-1">
-					<img src="i/50-bet-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+					<img src="i/bet.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
 				</div>	
                 <div class="ibm-col-6-1">
-					<img src="i/50-apollo-sm.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+					<img src="i/zenterprise.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
 				</div>		                
 				<div class="ibm-col-6-3">
-				<img src="i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
 				<h2>The zEnterprise System</h2>
 				<p>The mainframe has been constantly reinvented over its first 50 years. Performance has improved over 78,000%. Memory capacity has increased over 786,000 times. If the mainframe was a sports car it could travel at almost 12 million miles an hour—getting you to the moon in under two seconds. Imagine what it can do for your business.</p>
 				</div>	
 				
             </div>
      
-            
+             <!-- mobile version -->
+             <div id="p5" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sabre reservation system</h2>
+				<p>The world’s first automated passenger reservation system, Sabre, is the basis for today’s web-based travel industry. Launched on two IBM 7090 mainframes, the application written in the 60s is able to process billions of transactions a week today.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>The Big Bet to Big Insights </h2>
+				<p>April 7, 1964, IBM CEO Thomas J. Watson Jr. literally bets the business on the System/360 mainframe—shutting down all other product lines for this new vision for the future of computing. Today, IBM runs the world’s largest private cloud on the mainframe. It provides analytic insights from nearly 100 different data warehouses enabling over 200,000 IBM employees to make better decisions.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Apollo 11 moon landing</h2>
+				<p>In 1969, Americans Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon, forever changing our view of the universe and our own perception of what’s possible. The IBM System/360 mainframe processed the data for the lunar landing and liftoff.</p>
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="i/sabre.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>The zEnterprise System</h2>
+				<p>The mainframe has been constantly reinvented over its first 50 years. Performance has improved over 78,000%. Memory capacity has increased over 786,000 times. If the mainframe was a sports car it could travel at almost 12 million miles an hour—getting you to the moon in under two seconds. Imagine what it can do for your business.</p>
+				</div>	
+				
+            </div>
+                
             
 </div>
 </div>
@@ -382,7 +420,7 @@ The mainframe is a revolutionary computing system that is transforming business,
 <img src="i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
 	<h2>What’s your zIQ?</h2>
 	<p>Increase your mainframe knowledge with this animated video series. </p>
-	<p class="ibm-ind-link-after"><a class="ibm-media ibm-cta-chevron-link" href="https://www.youtube.com/watch?v=afwcIBj80hs">Watch the video</a></p>
+	<p class="ibm-ind-link"><a class="ibm-external-link" href="">Watch the videos</a></p>
 </div>
 
 <div class="ibm-col-6-1 small">
