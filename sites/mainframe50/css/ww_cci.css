@@ -145,13 +145,13 @@ sites/
 
 #ibm-content .ibm_cci-progress-band .ibm-columns.ibm-cloned,
 #ibm_cci-progress1 {
-  background: url(../i/progress1.jpg) }
+  background: url(../i/progress3.jpg) no-repeat 50% 0; }
 
 #ibm_cci-progress2 {
-  background: url(../i/progress2.jpg) }
+  background: url(../i/progress2.jpg) no-repeat 50% 0; }
 
 #ibm_cci-progress3 {
-  background: url(../i/progress3.jpg) }
+  background: url(../i/progress1.jpg) no-repeat 50% 0; }
 
 #ibm-content .ibm_cci-z-band {
   padding-top: 20px;
