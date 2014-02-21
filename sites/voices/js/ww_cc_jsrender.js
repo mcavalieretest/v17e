@@ -82,6 +82,7 @@ $(function(){
 	$.when(VOICES.fetch_trending(), VOICES.f_init_feeds()).done(function(results, data){		
 			// console.log(self.feed_length);
 		var self = VOICES;
+		console.log(data);
 		self.f_distribute(data);
 	});	
 	
@@ -253,22 +254,29 @@ $(function(){
 
 		// FETCH FEED JSON OBJECT
 		f_init_feeds: function(){
-			var count = 0;
 			var self = this;
 			this.f_rank = 20;
-			console.log(this.f_url);
-			return $.getJSON(self.f_url, function(data) {
-				//f_feed : data.searchResponse.entries
-			}).promise();
+			// return $.getJSON(self.f_url, function(data) {
+			// 	//f_feed : data.searchResponse.entries
+			// }).promise();
+			
+			return $.ajax({
+					url: self.f_url,
+					contentType: "application/json; charset=utf-8",
+					type: 'GET',
+					dataType: 'jsonp',
+					cache: false
+				}).promise();
+			
 		},
 
 		f_distribute: function(data){
+			console.log(data);
 			var self = this, f_unresolved = [], f_resolved = [];
 			self.feed = data[0];	
 			self.feed_length = data[0].length || 0;
 			try{
 				if(self.feed){
-					console.log(self.feed);
 					for(var i = 0; i < self.feed_length; i++){		
 						if(self.feed[i].type && self.feed[i].type === "URLREF"){	
 								// For unresolved Tweets
@@ -304,13 +312,14 @@ $(function(){
 			// });
 			
 			$.ajax({
-				url: url,
-				contentType: "application/json",
 				type: 'POST',
+				url: url,
+				contentType: "application/json; charset=utf-8",
+				crossDomain: true,
 				dataType: 'json',
 				cache: false,
 				data: {filter: param, rank:0, noOfItems:20},
-				success: function(data){console.log(data)}
+				success: function(data){console.log("SUCCESS")}
 			})
 			.done(function(data) {
 				self.f_distribute(data);
