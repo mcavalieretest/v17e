@@ -37,7 +37,9 @@ sites/
   background-image: linear-gradient(left, #021428, #082342); }
 
 #ibm-content .ibm_cci-header-band {
-  margin-top: -1px; }
+  margin-top: -1px;
+  background: url(../i/header-bg.png) no-repeat 100% 0;
+  min-height: 835px; }
 
 #ibm-content .ibm_cci-site-band {
   padding: 0; }
@@ -78,10 +80,6 @@ sites/
   color: #FDB42B;
   text-transform: uppercase; }
 
-.ibm_cci-header {
-  background: url(../i/header-bg.png) no-repeat 0 0;
-  min-height: 835px; }
-
 #ibm-top a.ibm_cci-btn {
   background: #4B77A6; }
 
@@ -101,10 +99,10 @@ sites/
 #ibm-content .ibm_cci-site-band.ibm_cci-z-band .ibm-col-4-2 h2 span {
   text-transform: none; }
 
-#ibm-content .ibm_cci-header p {
+#ibm-content .ibm_cci-header-band p {
   line-height: 30px; }
 
-#ibm-content .ibm_cci-header p.ibm-button-link {
+#ibm-content .ibm_cci-header-band p.ibm-button-link {
   line-height: 21.6px;
   line-height: 2.16rem; }
 
@@ -156,10 +154,9 @@ sites/
   background: url(../i/progress1.jpg) no-repeat 50% 0; }
 
 #ibm-content .ibm_cci-z-band {
-  padding-top: 20px; }
-
-.ibm_cci-section-z {
-  background: url(../i/z-bg.png) no-repeat 0 100%;
+  padding-top: 20px;
+  background: url(../i/z-bg.png) no-repeat 50% 100%;
+  background: url(../i/z-bg1.png) no-repeat 0 100%, url(../i/z-bg2.png) no-repeat 100% 100%;
   min-height: 880px; }
 
 .ibm_cci-ey {
@@ -187,8 +184,8 @@ sites/
   display: none; }
 
 @media only screen and (min-width: 0) and (max-width: 568px) {
-  .ibm_cci-header,
-  .ibm_cci-section-z {
+  .ibm_cci-header-band,
+  .ibm_cci-z-band {
     background: none;
     min-height: inherit; }
 
