@@ -135,7 +135,7 @@
 }
 
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm_cci-rel-tweet-details-container{
-	min-width:246px;
+	min-width:247px;
 }
 
 #{$ibm-widget-js} .ibm_cci--lv-rc-th{
@@ -324,6 +324,21 @@
 	a img:hover {
 		opacity:1;
 	}						
+}
+
+#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card {
+	margin:0;
+}
+
+#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card, #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card {
+	background-color: inherit;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+
+#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:hover {
+	box-shadow: none;
+	-webkit-box-shadow:none;
 }
 
 #{$ibm-widget-js} .ibm-card img {
