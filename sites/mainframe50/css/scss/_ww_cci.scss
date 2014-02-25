@@ -100,9 +100,11 @@
 	@include px-to-rem(line-height,21.6px);
 }
 
-#ibm-content p.ibm-last {
-	padding-bottom: 30px;
-}
+#ibm-content p {
+  padding-bottom: 10px; }
+
+#ibm-content p.ibm-last{
+  padding-bottom: 30px; }
 
 #ibm-content p.ibm_cci-intro {
 	font-family: $LubalinBook;
