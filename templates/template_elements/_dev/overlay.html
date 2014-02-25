@@ -1,0 +1,837 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<!-- Add meta tag to consistently detect the width on an iPad at 768px -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+<link rel="shortcut icon" href="http://www.ibm.com/favicon.ico"/>
+<meta name="Description" content="REPLACE"/>
+<meta name="Keywords" content="REPLACE"/>
+<meta name="Robots" content="index,follow"/>
+<meta name="Owner" content="REPLACE_ME@US.IBM.COM"/>
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+<meta name="DC.Language" scheme="rfc1766" content="en-US"/>
+<meta name="DC.Date" scheme="iso8601" content="REPLACE"/>
+<meta name="DC.Rights" content="� Copyright IBM Corp. 2011"/>
+<meta name="IBM.Country" content="US"/>
+
+<meta name="Source" content="REPLACE"/>
+<title>IBM Web Design Standards - Overlays</title>
+<link href="../../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../../css/data.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../../css/form.css" rel="stylesheet" title="www" type="text/css" />
+
+<script src="../../../js/ww.js" type="text/javascript"></script>
+
+<style type="text/css">
+/* LEADSPACE STYLES */
+
+#ibm-leadspace-head #ibm-leadspace-body {
+     background: url(http://pokgsa.ibm.com/~uxguy/public/Standards/Site/v17_Cov_Draft_WS/images/alpha_states/alp_3_blue.png) no-repeat 100% 50%;
+}
+/* LEADSPACE STYLES */
+
+
+.dijitDialogCloseIcon, .closeText {
+  z-index: 9999999 !important;
+}
+
+
+.dijitDialogUnderlayWrapper {
+  display:none !important;
+}
+
+</style>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+<!-- MASTHEAD_BEGIN -->
+
+<div class="ibm-access"><a href="#ibm-content">Skip to main content</a></div>
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
+
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM�</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<p>
+<label for="q">
+<span class="ibm-access">Search</span>
+
+</label>
+
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input name="v" type="hidden" value="17"/>
+<input type="hidden" name="en" value="utf"/>
+<input name="lang" type="hidden" value="en"/>
+<input name="cc" type="hidden" value="us"/>
+<input value="Submit" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+
+</form>
+
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+<!-- LEADSPACE_BEGIN -->
+
+<div id="ibm-leadspace-head" class="ibm-alternate">
+<div id="ibm-leadspace-body">
+
+<ul id="ibm-navigation-trail">
+
+<li><a href="http://pokgsa.ibm.com/~uxguy/public/Standards/Site/v17_Cov_Draft_WS/index_LIST.htm">v17 Web design standards</a></li>
+<li><a href="http://pokgsa.ibm.com/~uxguy/public/Standards/Site/v17_Cov_Draft_WS/Page%20elements/page_elements.htm">Page Elements</a></li>
+
+
+</ul>
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+
+<h1>Overlays</h1>
+</div>
+</div>
+</div>
+</div>
+<!-- LEADSPACE_END -->
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+<!-- TITLE_BEGIN -->
+<!--
+<div id="ibm-content-head"></div>-->
+<!-- TITLE_END -->
+
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<!-- #### SECTION START #### -->
+
+        <div class="ibm-columns">
+			<div class="ibm-col-6-4">
+
+			<h2 class="ibm-alternate">Overview</h2>
+  <p>Overlays should not be confused with secondary browsers or pop-up windows,though all three  are supported under v17.</p>
+  <ul class="ibm-bullet-list ibm-no-links">
+    <li><strong>Overlays </strong>are <span dojoattachpoint="_commentBodySPAN">modal panels that are activated from within an HTML page. Overlays are produced with a simple Javascript script. When the user clicks a link, the overlay is generated and displays information</span> that is contained in that HTML page. <strong>Note:</strong> As of 25-January-2013 the &lt;h1&gt; tag for overlay titles has been replaced with the &lt;h2&gt; to improve SEO ratings. </li>
+    <li><strong><a href="http://w3.the.ibm.com/ibmweb/standards/v17/us/en/pageelements/secondary_browsers.htm">Secondary browsers</a></strong> (also known as secondary windows) are second instances of an Internet browser window that, when the user clicks a link, opens and displays information from a separate HTML file. </li>
+    <li><strong>Pop-up windows also known as Secondary windows</strong>are also second instances of an Internet browser window that, when the user clicks a link, opens and displays information from a separate HTML file.However, the second instance of the browser displays a modified masthead and footer. </li>
+  </ul>
+  <p>Secondary browsers and pop-up windows  can be confusing and frustrating to users when implemented without proper care. Whenever possible, designers should use an <a href="http://w3.the.ibm.com/ibmweb/standards/v17/us/en/pageelements/overlays.htm">overlay</a> instead. </p>
+  <p><strong>Example overlay:</strong></p>
+<p><img src="http://w3.the.ibm.com/ibmweb/image/960-overlay.png" alt="" width="620" height="228" /></p>
+<p><strong>Example LiveChat overlay:</strong></p>
+<p><strong>Note:</strong> Go to the <a href="http://w3.ibm.com/connections/communities/service/html/communityview?communityUuid=d879c7c5-1785-4a5e-8f37-4f14c1f2b51a">LiveChat Program Community</a> for more information about LiveChat overlay implementation.</p>
+<p><img src="http://w3.the.ibm.com/ibmweb/image/960-overlay.png" alt="" width="620" height="238" /></p>
+<div class="ibm-rule"><hr /></div>
+                         <h3>Overlay limitations
+
+   <!--BEGIN MIXED LIST -->		</h3>
+                      <ul class="ibm-bullet-list"><li class="ibm-no-links">Overlays cannot be printed, emailed or bookmarked.</li>
+                           <li class="ibm-no-links">Overlays do not stay open between pages.</li>
+                         <li class="ibm-no-links">Overlays limit users' ability to access content on the underlying page.</li>
+                         <li class="ibm-no-links">Browser security constraints make multi-step transactions in overlays   difficult. For example, the page must reload an e-mail this page   application to show another overlay with the response.</li>
+                      </ul>
+
+          
+
+   <h3>Requirements<!--BEGIN MIXED LIST -->		</h3>
+   <p>Pages that do not adhere to the following requirements may be delayed or disallowed. </p>
+                      <ul class="ibm-bullet-list">
+                        <li class="ibm-no-links">Do not open overlays or secondary windows automatically unless they contribute directly to task completion, such as with error messages or instructions for how to proceed to the next step in a process. </li>
+                           <li class="ibm-no-links">Do not use automatically opening overlays or secondary windows for advertisements without prior approval. To request approval, please contact the <a href="mailto:ibmweb3@us.ibm.com">UED Standards team</a>.</li>
+            </ul>
+</div>
+        </div>
+ <div class="ibm-columns"> 
+                <div class="ibm-col-6-4">
+
+<!-- OUTLINED SUBHEAD MODULE 2 BEGIN -->
+<div class="ibm-container">
+<h2>Approved overlays and code examples</h2>
+<div class="ibm-container-body">
+<p>The code below illustrates how to create a link that, when selected, launches a specific overlay. In the example code, replace the string &quot;overlay-1&quot; with the name of your overlay.  Note there are two instances of the overlay name in the code sample.</p>
+
+
+<p>Below are several examples of approved overlay designs and their associated HTML code.  The code can be placed anywhere within the &lt;body&gt; tag of the page.  For each overlay, the first line of code has a generic id value listed (e.g., id=&quot;overlay-1&quot;).  Replace the id value with the name of the overlay you want to call.  You can have multiple overlays on one page as long as each overlay name is unique. Also, you may have links within overlays, but those links must not launch overlays. </p>
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Click here to view overlay example</a></li>
+</ul>
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-1">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>390 pixel overlay example</h2>
+
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 570 pixel overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+
+<div class="ibm-common-overlay ibm-overlay-alt" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>570 pixel overlay example</h2>
+
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 750 pixel overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-3" onclick="ibmweb.overlay.show('overlay-3', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-3">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>750 pixel overlay example</h2>
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 980 pixel Application overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-10" onclick="ibmweb.overlay.show('overlay-10', this);return false;">Click here to view Application overlay example</a></li>
+</ul>
+
+
+
+
+
+
+<div class="ibm-common-overlay ibm-overlay-alt-three" id="overlay-10">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title"><h2>980 pixel overlay example</h2></div>
+<div class="ibm-columns">
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+<div class="ibm-col-6-1"><h2>ibm-col-6-1</h2><p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue</p></div>
+</div>
+
+
+
+
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<h3>Data table with alternate rows</h3>
+    <table cellspacing="0" cellpadding="0" border="0" summary="Data table with alternating column example" class="ibm-data-table ibm-sortable-table ibm-alternating">
+        <caption>
+            <em>Table with alternate row color</em>
+            </caption>
+        <thead>
+            <tr>
+                <th scope="col"><input type="checkbox" class="ibm-styled" /></th>
+                <th scope="col" class="ibm-numeric">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Color</th>
+                <th scope="col">Date</th>
+                <th scope="col">Active</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col" class="ibm-sort"><a href="#sort"><span>Price</span><span class="ibm-icon">&nbsp;</span></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric"><a href="#">18739</a></td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>Red</td>
+                <td>Dec 2, 2010</td>
+                <td>yes</td>
+                <td>Berkeley</td>
+                <td>CA</td>
+                <td>$1,234.56</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">98302</td>
+                <td>Tellus at vehicula viverra</td>
+                <td>Blue</td>
+                <td>Nov 10, 2010</td>
+                <td>no</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>$25,000</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">87302</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>Green</td>
+                <td>June 2, 2010</td>
+                <td>may be</td>
+                <td>Los Angels</td>
+                <td>CA</td>
+                <td>$18,000</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">602408</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>Yellow</td>
+                <td>June 2, 2010</td>
+                <td>may be</td>
+                <td>Berkely</td>
+                <td>CA</td>
+                <td>$10,000</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">18739</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>Red</td>
+                <td>Dec 2, 2010</td>
+                <td>yes</td>
+                <td>Berkeley</td>
+                <td>CA</td>
+                <td>$1,234.56</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">98302</td>
+                <td>Tellus at vehicula viverra</td>
+                <td>Blue</td>
+                <td>Nov 10, 2010</td>
+                <td>no</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>$25,000</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">18739</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>Red</td>
+                <td>Dec 2, 2010</td>
+                <td>yes</td>
+                <td>Berkeley</td>
+                <td>CA</td>
+                <td>$1,234.56</td>
+            </tr>
+            <tr>
+                <th scope="row" class="ibm-table-row"><input type="checkbox" class="ibm-styled" /></th>
+                <td class="ibm-numeric">98302</td>
+                <td>Tellus at vehicula viverra</td>
+                <td>Blue</td>
+                <td>Nov 10, 2010</td>
+                <td>no</td>
+                <td>New York</td>
+                <td>NY</td>
+                <td>$25,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="ibm-first"><input type="submit" value="Action" name="ibm-submit" class="ibm-btn-arrow-pri" /></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+
+<!-- #### SECTION END #### -->
+
+
+
+
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel subtitle overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-4" onclick="ibmweb.overlay.show('overlay-4', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-4">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title ibm-subtitle">
+<h2>390 pixel subtitle overlay</h2>
+<p><em>Duis diam sed magna vulpate</em></p>
+
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel dialog overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-5" onclick="ibmweb.overlay.show('overlay-5', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-5">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>390 pixel dialog overlay example</h2>
+
+</div>
+<div class="ibm-container ibm-alternate ibm-buttons-last">
+<div class="ibm-container-body">
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisi.</p>
+<div class="ibm-overlay-rule"><hr /></div>
+<div class="ibm-buttons-row">
+<form><p><input class="ibm-btn-arrow-pri" name="ibm-continue" value="Continue" type="submit"/><span class="ibm-sep">&nbsp;</span>
+<input value="Cancel" type="submit" name="ibm-cancel" class="ibm-btn-cancel-sec" /></p></form></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel form overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-6" onclick="ibmweb.overlay.show('overlay-6', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-6">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title ibm-subtitle">
+<h2>390 pixel form overlay example</h2>
+
+</div>
+<div class="ibm-container ibm-alternate ibm-buttons-last">
+<div class="ibm-container-body">
+<p class="ibm-overlay-intro">Complete the following fields to save this module to your personal storage area. Required fields are indicated with an asterisk (<span class="ibm-required">*</span>).</p>
+
+<!-- ========================================== -->
+<!-- EXAMPLE FORM - DO NOT ACTUALLY SUBMIT FORM -->
+<!-- ========================================== -->
+<form action="[REPLACE]" class="ibm-column-form" enctype="multipart/form-data" method="post">
+<p><label for="Display_name">Display name:<span class="ibm-required">*</span></label><span><input name="Display_name" size="25" value="" style="width: 200px;" class="required" type="text" /></span></p>
+<p><label for="Brief_description">Brief description:</label><span><textarea name="Brief_description" cols="22" rows="3" style="width: 200px;"></textarea></span></p>
+
+<p><label for="Keywords">Keywords:</label><span><textarea name="Keywords" cols="22" rows="3" style="width: 200px;"></textarea></span><span class="ibm-form-note">(Separate keywords with spaces)</span></p>
+<p>
+<label for="Share_module">Share module:</label><span><input name="Share_module" value="1" class="noReset" type="checkbox" /> Yes</span></p>
+
+<div class="ibm-overlay-rule"><hr />
+</div>
+<p class="ibm-first"><input class="ibm-btn-arrow-pri" name="ibm-submit" value="Save" type="submit" /></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel form error overlay</strong></p>
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-7" onclick="ibmweb.overlay.show('overlay-7', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-7">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<a class="ibm-access"><!-- Accessibility anchor --></a>
+<div class="ibm-title ibm-subtitle">
+<h2>390 pixel form error overlay example</h2>
+<p class="ibm-error">Please input a valid e-mail address</p>
+
+</div>
+<div class="ibm-container ibm-alternate ibm-buttons-last">
+<div class="ibm-container-body">
+<p>Required fields are indicated with an asterisk (<span class="ibm-required">*</span>).</p>
+<a class="ibm-error-link" href="#">Alert</a>
+<!-- ========================================== -->
+
+<!-- EXAMPLE FORM - DO NOT ACTUALLY SUBMIT FORM -->
+<!-- ========================================== -->
+<form action="[REPLACE]" class="ibm-row-form" enctype="multipart/form-data" method="post">
+<p><label for="Salutation">Salutation:<span class="ibm-required">*</span> <span class="ibm-form-note">(e.g., Mr., Mrs.)</span></label>
+<span><select name="salutation" id="Salutation">
+
+<option value="" selected="selected">Select one</option>
+<option value="Mr.">Mr.</option>
+<option value="Mrs.">Mrs.</option>
+<option value="Ms">Ms.</option>
+
+<option value="Miss">Miss</option>
+<option value="Dr.">Dr.</option>
+</select></span></p>
+<p><label for="First_name">First name:<span class="ibm-required">*</span></label><span><input name="first_name" id="First_name" size="40" type="text" value=""/></span></p>
+<p><label for="Last_name">Last name:<span class="ibm-required">*</span></label>
+
+<span><input name="last_name" id="Last_name" size="40" type="text" value=""/></span></p>
+
+<p class="ibm-error"><label for="E_mail_address">E-mail address:<span class="ibm-required">*</span></label><span><input name="email" id="E_mail_address" size="40" type="text" value=""/></span></p>
+
+<p><label for="Subject">Subject:</label><span><input name="subject" id="Subject" size="40" type="text" value=""/></span></p>
+<p><label for="Message">Message:<span class="ibm-required">*</span></label><span><textarea name="message" rows="6" cols="40" id="Message"></textarea>
+</span></p>
+<div class="ibm-overlay-rule"><hr />
+</div>
+<p class="ibm-first"><input class="ibm-btn-arrow-pri" name="ibm-submit" value="Save" type="submit" /></p>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel image overlay</strong></p>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-8" onclick="ibmweb.overlay.show('overlay-8', this);return false;">Click here to view overlay example</a></li>
+</ul>
+<p><strong>Note:</strong> Image overlays should be used sparingly; as they may increase download times for pages, and require images to preload prior to being viewable in an overlay.</p>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-8">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+
+<div class="ibm-body">
+<div class="ibm-main">
+<a class="ibm-access"><!-- Accessibility anchor --></a>
+
+
+<div class="ibm-title">
+<h2>390 pixel image overlay example</h2>
+</div>
+
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<img src="/i/v17/overlay_image_350x300.png" alt="Example" width="350" height="300" />
+</div>
+</div>
+
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+<div class="ibm-rule"><hr /></div>
+
+
+
+
+<!-- #### SECTION START #### -->
+<p><strong>Example: 390 pixel module overlay</strong></p>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-popup-link" href="#overlay-9" onclick="ibmweb.overlay.show('overlay-9', this);return false;">Click here to view overlay example</a></li>
+</ul>
+
+<!-- OVERLAY STARTS HERE -->
+<div class="ibm-common-overlay" id="overlay-9">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Close [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<a class="ibm-access"><!-- Accessibility anchor --></a>
+
+<div class="ibm-title">
+<h2>390 pixel module overlay example</h2>
+
+</div>
+<div class="ibm-container">
+<div class="ibm-container-body">
+<h2>Lorem ipsum dolor</h2>
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+<h2>Magna sed amet</h2>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+</div>
+
+
+</div>
+
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY ENDS HERE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></div>
+<!-- OUTLINE MODULE 2 END -->
+
+                    </div></div>
+        <!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+
+<div id="ibm-merchandising-module">
+<!--IBM Web Merchandising Module-->
+
+</div>
+
+
+</div>
+<!-- FEATURES_END -->
+
+<!-- CONTENT_BODY_END -->
+</div>
+
+</div>
+
+<!-- CONTENT_END -->
+
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation">
+<h2 class="ibm-access">Content navigation</h2>
+<ul id="ibm-primary-links">
+<li id="ibm-overview"><a href="replace.html">REPLACE</a></li>
+<li><a href="replace.html">REPLACE 2</a></li>
+
+<li><a href="replace.html">REPLACE 3</a></li>
+<li><a href="replace.html">REPLACE 4</a></li>
+</ul>
+
+<div id="ibm-secondary-navigation">
+<!-- SECONDARY NAVIGATION SECTION -->
+</div>
+
+</div>
+<!-- NAVIGATION_END -->
+
+</div>
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer">
+  <h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+</ul>
+</div>
+
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+<!-- CommentR -->
+<script type='text/javascript'>
+function CommenterOptions() {}
+
+     CommenterOptions.ITEMS =
+     [{
+          element: 'CommenterDiv',
+          enableCommenter: 'true'
+     }]
+
+</script>
+<script type='text/javascript' src='http://eps.tap.ibm.com/eps/commenter/load.js'></script>
+<!-- End Commentr -->
+</div>
+
+
+
+</body>
+</html>
