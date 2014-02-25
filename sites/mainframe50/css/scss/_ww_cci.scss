@@ -100,7 +100,7 @@
 	@include px-to-rem(line-height,21.6px);
 }
 
-#ibm-content p {
+#ibm-content p.ibm-last {
 	padding-bottom: 30px;
 }
 

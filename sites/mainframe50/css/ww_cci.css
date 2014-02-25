@@ -106,7 +106,7 @@ sites/
   line-height: 21.6px;
   line-height: 2.16rem; }
 
-#ibm-content p {
+#ibm-content p.ibm-last {
   padding-bottom: 30px; }
 
 #ibm-content p.ibm_cci-intro {
