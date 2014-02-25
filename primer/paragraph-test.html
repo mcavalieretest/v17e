@@ -48,35 +48,6 @@
 	<script type="text/javascript" src="../templates/template_elements/code-highlighter/sh/scripts/shBrushXml.js"></script>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 
-<style type="text/css">
-
-.ibm-show-hide h2, .ibm-show-hide .ibm-container {
-	border-top:none !important;
-}
-.ibm-show-hide h2 a {
-	border-top: 2px solid #666; 
-	display: block;
-	color: #777;
-	padding-top:2px;
-}
-.ibm-show-hide h2 a:hover {
-color: #444;
-}
-
-.ibm-show-hide h2 a.ibm-show-active{
-border-top: 2px solid #000; 
-color: #000;
-}
-.ibm-container.ibm-show-hide {
-border-bottom: 1px solid #CCC;
-padding-bottom: 0 !important;
-margin-bottom: 0 !important;
-}
-
-</style>
-
-
-
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
@@ -171,11 +142,10 @@ margin-bottom: 0 !important;
 
 <h2 class="section-header center">Col 1-1</h2>
 <h2 class="section-header large center">Column size variations</h2>
-<div class="ibm-container-body">
 <div class="ibm-columns">
 	<div class="ibm-col-1-1 large">
 		<h3>Large</h3>
-		<p>Apply "large" and "small" classes to ibm-col-1-1 to change the font size of all text contained in the column. This changes all headers and paragraphs.</p>
+		<p>Apply "large" class to ibm-col-1-1, or any other column variation, to change the font size of all text contained in the column. This applies to all headers and paragraphs.</p>
 			<pre class="brush: html;">
 			&lt;div class=&quot;ibm-columns&quot;&gt;
 			&lt;div class=&quot;ibm-col-1-1 large&quot;&gt;
@@ -188,8 +158,11 @@ margin-bottom: 0 !important;
 
 	<div class="ibm-col-1-1">
 		<h3>Default</h3>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+		<p>Do not apply an additional class to ibm-col-1-1, or any other column variation, to keep the default font size of all text contained in the column. This retains font size of all headers and paragraphs.</p>
+			<pre class="brush: html;">
+			&lt;div class=&quot;ibm-columns&quot;&gt;
+			&lt;div class=&quot;ibm-col-1-1&quot;&gt;
+			</pre>
 	</div>
 
 </div>
@@ -197,8 +170,12 @@ margin-bottom: 0 !important;
 <div class="ibm-columns">
 	<div class="ibm-col-1-1 small">
 	<h3>Small</h3>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+		<p>Apply "small" class to ibm-col-1-1, or any other column variation, to change the font size of all text contained in the column. This applies to all headers and paragraphs.</p>
+			<pre class="brush: html;">
+			&lt;div class=&quot;ibm-columns&quot;&gt;
+			&lt;div class=&quot;ibm-col-1-1 small&quot;&gt;
+			</pre>
+
 	</div>
 
 </div>
@@ -215,7 +192,10 @@ margin-bottom: 0 !important;
 	<div class="ibm-col-1-1">
 		<h3 class="larger">Larger Header</h3>
 
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+		<p>Apply "larger" class to h1, h2, or h3 tags to change only the header size.</p>
+			<pre class="brush: html;">
+			&lt;h3 class=&quot;larger&quot;&gt;
+			</pre>
 	</div>
 
 </div>
@@ -223,8 +203,11 @@ margin-bottom: 0 !important;
 <div class="ibm-columns">
 
 	<div class="ibm-col-1-1">
-		<h3 class="large">Large Header</h3>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+		<h2 class="large">Large Header</h2>
+		<p>Apply "large" class to h1, h2, or h3 tags to change only the header size.</p>
+			<pre class="brush: html;">
+			&lt;h2 class=&quot;large&quot;&gt;
+			</pre>
 	</div>
 
 </div>
@@ -232,7 +215,10 @@ margin-bottom: 0 !important;
 <div class="ibm-columns">
 	<div class="ibm-col-1-1">
 	<h3>Default Header</h3>
-		<p>Lorizzle ipsizzle dolor sit amizzle, dang adipiscing crackalackin. Nullam sapien velizzle, boom shackalack volutpizzle, bling bling check out this, gravida vel, fizzle. Pellentesque eget tortor. Sizzle erizzle. Get down get down at cool dapibus turpis tempizzle bow wow wow. Maurizzle owned nibh crunk turpis. Cool izzle tortizzle.</p>
+		<p>Do not apply an additional class to h1, h2, or h3 tags to retain the default header size.</p>
+			<pre class="brush: html;">
+			&lt;h3&gt;
+			</pre>
 	</div>
 
 </div>
