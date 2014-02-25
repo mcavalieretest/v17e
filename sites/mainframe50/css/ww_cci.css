@@ -109,7 +109,7 @@ sites/
 #ibm-content p {
   padding-bottom: 10px; }
 
-#ibm-content p .ibm-last {
+#ibm-content p.ibm_last {
   padding-bottom: 30px; }
 
 #ibm-content p.ibm_cci-intro {
