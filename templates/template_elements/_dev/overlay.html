@@ -36,13 +36,18 @@
 /* LEADSPACE STYLES */
 
 
-.dijitDialogCloseIcon, .closeText {
-  z-index: 9999999 !important;
+#ibm-content {
+  width: 100% !important;
 }
 
+#ibm-top {
+  min-width: 100%;
+}
 
-.dijitDialogUnderlayWrapper {
-  display:none !important;
+@media only screen and (max-width: 568px) and (min-width: 0) {
+  #ibm-top {
+    min-width: 320px;
+  }
 }
 
 </style>
