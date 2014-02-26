@@ -187,19 +187,9 @@ jQuery(function() {
             jQuery('#m-local-menu').appendTo("#m-menu-scroll");
 
             // Create the accordion
-            var a = new IBM.Common.Widget.Accordion({
-              container: "#m-local-menu"
+            window.a = new IBM.Common.Widget.Accordion({
+              container: "#m-menu-scroll"
             });
-
-/*            window.mobileMenuLocal = new mlPushMenu( 
-              document.getElementById( 'm-menu' ), 
-              document.getElementById( 'm-local-menu' ), 
-              document.getElementById( 'm-local-navigation' ),
-              {
-                animateContainerHeight: true
-              }
-            );*/
-
           }
        }
     };
@@ -207,7 +197,7 @@ jQuery(function() {
     Modernizr.load({
       load: [
         "../js/mike/mlpushmenu.accordion.js",
-        "../js/mike/mobile-menu-accordion.accordion.js"
+        "../js/mike/mobile-menu-accordion.accordion.js",
       ],
       complete: function() {
         // Loop till masthead links are available.  When available, prepend them to #m-shift

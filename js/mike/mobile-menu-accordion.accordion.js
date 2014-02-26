@@ -62,31 +62,38 @@ Company.data.CustomStore = function(config) { ... }
       this.options = $.extend({}, defaults, opts);
       this.container = $(this.options.container);
 
-      // this.container.css({
-      //   height: "200px"
-      // })
+      // this.container.find("ul").hide();
 
-
-      this.container.on("click", "a", function(e) {
+      this.container.on("click", "h2,a", function(e) {
+        console.warn('accordion container click()');
         e.preventDefault();
 
-        
+        // Some other events on top of this are making this respond slowly;
+        // calling stopPropagation() partially resolves this. 
+        e.stopPropagation(); 
 
-        // debugger;
+        var start = window.performance.now();
+
+        console.warn(start);
+
+        // $(this).next("ul").slideToggle("fast");
+        $(this).next("ul").toggleClass("active");
+
+        var end = window.performance.now();
+        var time = end - start;
+
+        console.warn(end);
+
+        console.warn(time);
+
+
+
       });
 
     }
 
     
   };
-
-/*
-  $.extend(IBM.Common.Widget.Accordion.prototype, {
-
-  });
-
-*/
-
 
 })(jQuery);
 
