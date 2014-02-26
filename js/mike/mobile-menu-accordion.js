@@ -151,6 +151,7 @@ jQuery(function() {
        if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
          clearInterval(checkMLinksExist);
 
+         // Inject the mobile menu html
          var mastLinks = jQuery('#ibm-menu-links').html();
           jQuery('#m-shift').prepend(
             '<div id="m-menu" class="m-menu">'
@@ -163,6 +164,7 @@ jQuery(function() {
 
             +'<div id="m-menu-scroll">'            
               +'<div id="m-main-menu">'
+                +'<h2>IBM.com</h2>'
                 +'<ul>' + mastLinks + '</ul>'
               +'</div>'
               +'</div>'
@@ -172,7 +174,7 @@ jQuery(function() {
           // Hamburger icon, for toggling mobile nav.
           jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
 
-
+          // Push menu for showing/hiding container
           window.mobileMenuMain = new mlPushMenu( 
             document.getElementById( 'm-menu' ), 
             document.getElementById( 'm-main-menu' ), 
@@ -180,42 +182,33 @@ jQuery(function() {
           );
           
           if (jQuery('#m-local-navigation').length) {
-            jQuery('#m-local-menu').prependTo("#m-menu-scroll");
 
-            window.mobileMenuLocal = new mlPushMenu( 
+            // Inject the local nav html
+            jQuery('#m-local-menu').appendTo("#m-menu-scroll");
+
+            // Create the accordion
+            var a = new IBM.Common.Widget.Accordion({
+              container: "#m-local-menu"
+            });
+
+/*            window.mobileMenuLocal = new mlPushMenu( 
               document.getElementById( 'm-menu' ), 
               document.getElementById( 'm-local-menu' ), 
               document.getElementById( 'm-local-navigation' ),
               {
                 animateContainerHeight: true
               }
-            );
+            );*/
 
-/*            
-
-
-            jQuery('#m-local-menu')
-
-              // Close local nav when clicking 'close' link
-              .find(".menu-close").click(function(e) {
-                e.preventDefault();
-
-                jQuery('#m-local-menu').addClass("docked");
-              }).end()
-              
-              // Dock local nav when clicking the docked heading
-              .find("h2").click(function(e) {
-                e.preventDefault();
-
-                jQuery('#m-local-menu').removeClass("docked");
-              }).end();
-*/
           }
        }
     };
-
+  
     Modernizr.load({
-      load: "../js/mike/mlpushmenu.accordion.js",
+      load: [
+        "../js/mike/mlpushmenu.accordion.js",
+        "../js/mike/mobile-menu-accordion.accordion.js"
+      ],
       complete: function() {
         // Loop till masthead links are available.  When available, prepend them to #m-shift
         window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms

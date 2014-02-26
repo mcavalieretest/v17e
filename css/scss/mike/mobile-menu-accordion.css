@@ -7659,11 +7659,13 @@ input#m-q {
   transform: translate3d(100%, 0, 0); }
 
 .m-level {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  /*   position: absolute;
+    top: 0;
+    left: 0;
+    
+    height: 100%; */
   background: #000;
   -webkit-transform: translate3d(100%, 0, 0);
   -moz-transform: translate3d(100%, 0, 0);
@@ -7680,29 +7682,27 @@ input#m-q {
  * Hide initially. 
  */
 #m-local-menu {
+  position: absolute;
   top: -10000px;
   left: -10000px;
   right: auto; }
 
 #m-menu #m-local-menu {
+  position: static;
   top: 0;
   right: 0;
-  left: auto;
-  position: relative;
-  z-index: 1;
-  width: 250px;
-  overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  /*   
+  left: auto; }
+
+#m-local-menu {
+ /* position: absolute;
+ z-index: 1;
+ width: 250px;
+ height: 100%;
+*/
+  /*   @include transition(all 0.5s);  
     @include transform(translate3d(0, 100%, 0px));
    */ }
-  #m-menu #m-local-menu .m-level {
-    height: auto; }
-  #m-menu #m-local-menu .menu-close {
+  #m-local-menu .menu-close {
     position: absolute;
     bottom: 30px;
     display: block;
@@ -7717,6 +7717,9 @@ input#m-q {
 #m-local-menu,
 #m-local-menu .m-level {
   background: #336CA6; }
+
+#m-local-menu {
+  position: relative; }
 
 #m-menu.m-local-menu-enable #m-local-menu {
   /* @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px)); */ }
@@ -7777,9 +7780,6 @@ input#m-q {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
-
-#m-main-menu {
-  height: 100%; }
 
 /* First level */
 .m-menu #m-main-menu > .m-level,
