@@ -1,0 +1,14 @@
+.golden-forms .tooltip,
+.golden-forms .info-tip {
+	text-shadow: none;
+}
+
+.golden-forms .tooltip .ibm-item-note{
+	display: block;
+	font-size: 12px;
+}
+
+.ibm-container .form-section{
+	padding-left: 0;
+	padding-right: 0;
+}
