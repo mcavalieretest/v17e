@@ -57,39 +57,37 @@ Company.data.CustomStore = function(config) { ... }
 
   IBM.Common.Widget.Accordion.prototype = {
     init: function(opts) {
-      var defaults = {};
+      var defaults = {},
+          self     = this;
 
       this.options = $.extend({}, defaults, opts);
       this.container = $(this.options.container);
 
-      // this.container.find("ul").hide();
+      this.container.on("click", "h2", function(e) {
+        var target = $(this).next("ul");
 
-      this.container.on("click", "h2,a", function(e) {
-        console.warn('accordion container click()');
+
+
+        if (target.hasClass("active")) {
+          console.warn('next <ul> has active class, removing');
+          target.removeClass("active");
+        } else {
+          console.warn('removing active class from all <ul>');
+          self.container.children("ul").removeClass("active");
+          target.addClass("active");
+        }
+      });
+
+      this.container.on("click", "a", function(e) {
         e.preventDefault();
 
         // Some other events on top of this are making this respond slowly;
         // calling stopPropagation() partially resolves this. 
         e.stopPropagation(); 
 
-        var start = window.performance.now();
-
-        console.warn(start);
-
         // $(this).next("ul").slideToggle("fast");
         $(this).next("ul").toggleClass("active");
-
-        var end = window.performance.now();
-        var time = end - start;
-
-        console.warn(end);
-
-        console.warn(time);
-
-
-
       });
-
     }
 
     
