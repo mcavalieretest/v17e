@@ -7804,7 +7804,8 @@ input#m-q {
   color: rgba(255, 255, 255, 0.4);
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   font-weight: 300;
-  font-size: 2em; }
+  font-size: 2em;
+  cursor: pointer; }
 
 #m-menu.m-local-menu-enable h2 {
   color: #CCC; }
@@ -7824,10 +7825,11 @@ input#m-q {
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2);
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   font-size: 1.4em;
-  -webkit-transition: background 0.3s, box-shadow 0.3s;
-  -moz-transition: background 0.3s, box-shadow 0.3s;
-  transition: background 0.3s, box-shadow 0.3s;
-  padding-left: 1em; }
+  /*  -webkit-transition: background 0.3s, box-shadow 0.3s;
+    -moz-transition: background 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;*/
+  padding-left: 1em;
+  cursor: pointer; }
 
 .m-menu ul li ul li > a {
   padding-left: 2em; }
@@ -7845,11 +7847,11 @@ input#m-q {
   display: block;
   max-height: 0px;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s; }
   .m-menu ul.active {
     max-height: 500px; }
 

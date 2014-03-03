@@ -63,19 +63,25 @@ Company.data.CustomStore = function(config) { ... }
       this.options = $.extend({}, defaults, opts);
       this.container = $(this.options.container);
 
+      function toggleList(list) {
+        var target = list;
+
+        // If we're closing this list, close my children too. 
+        if (target.hasClass("active")) {
+          target = target.find("ul").andSelf();
+          target.removeClass("active");
+        } else {
+          target.addClass("active");
+        }
+
+
+        
+      }
+
       this.container.on("click", "h2", function(e) {
         var target = $(this).next("ul");
 
-
-
-        if (target.hasClass("active")) {
-          console.warn('next <ul> has active class, removing');
-          target.removeClass("active");
-        } else {
-          console.warn('removing active class from all <ul>');
-          self.container.children("ul").removeClass("active");
-          target.addClass("active");
-        }
+        toggleList(target);
       });
 
       this.container.on("click", "a", function(e) {
@@ -85,9 +91,14 @@ Company.data.CustomStore = function(config) { ... }
         // calling stopPropagation() partially resolves this. 
         e.stopPropagation(); 
 
-        // $(this).next("ul").slideToggle("fast");
-        $(this).next("ul").toggleClass("active");
+        var target = $(this).next("ul");
+
+        toggleList(target);
       });
+    },
+
+    reset: function() {
+      this.container.find("ul").removeClass("active");
     }
 
     

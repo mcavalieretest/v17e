@@ -178,7 +178,12 @@ jQuery(function() {
           window.mobileMenuMain = new mlPushMenu( 
             document.getElementById( 'm-menu' ), 
             document.getElementById( 'm-main-menu' ), 
-            document.getElementById( 'm-navigation' ) 
+            document.getElementById( 'm-navigation' ),
+            {
+            	onClose: function() {
+            		window.accordion.reset();
+            	}
+            }
           );
           
           if (jQuery('#m-local-navigation').length) {
@@ -187,7 +192,7 @@ jQuery(function() {
             jQuery('#m-local-menu').appendTo("#m-menu-scroll");
 
             // Create the accordion
-            window.a = new IBM.Common.Widget.Accordion({
+            window.accordion = new IBM.Common.Widget.Accordion({
               container: "#m-menu-scroll"
             });
           }

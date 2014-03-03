@@ -310,6 +310,10 @@
       jQuery(this.wrapper).removeClass( 'm-enable' );
       this._toggleLevels();
       this.open = false;
+
+      if (this.options.onClose) {
+        this.options.onClose();
+      }
     },
     _resetLocalMenu: function() {
       jQuery('#m-menu').removeClass('m-local-menu-enable');
