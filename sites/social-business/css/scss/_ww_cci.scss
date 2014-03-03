@@ -576,14 +576,13 @@ form.ibm_cci--sbi-comment-form{
 								}
 
 								a.ibm-show-hide:after {
-									content:"\00a0\f152\00a0";
-								}
-								a.ibm-show-hide.ibm-active:after {
 									content:"\00a0\f151\00a0";
 								}
-
-
 								
+								a.ibm-show-hide.ibm-active:after {
+									content:"\00a0\f152\00a0";
+								}
+
 								a.ibm-show-hide.ibm-active:hover:after {
 									color: #A5DF00;
 								}
@@ -754,12 +753,10 @@ form.ibm_cci--sbi-comment-form{
 	.ibm_cci--rss-subscribe {
 		width: 142px;
 	}
-	.ibm-col-6-2 form.ibm_cci--sbi-form {
-		width: 160px;
 
-		input.ibm_cci--sbi-form--input  {
-			width: 133px;
-		}
+	form.ibm_cci--sbi-form,
+	#ibm-navigation.ibm_cci--nav {
+		display: none;
 	}
 	.ibm_cci--sbi--post-item--byline {
 		display: block;
