@@ -26,49 +26,41 @@ module.exports = function(grunt) {
       src: 'src',
       dist: 'dist'
     },
-    compass : {
-      options : {
-        outputStyle : 'compressed'      },
-
-      dist: {
-        options : {
-        sassDir : '<%= config.src %>/assets/scss',
-        cssDir : '<%= config.src %>/assets/css',
-        }
-      }
-
-    },
-
     watch: {
       assemble: {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
-      livereload: {
-        options: {
-          livereload: '<%= connect.options.livereload %>'
-        },
-        files: [
-          '<%= config.dist %>/{,*/}*.html',
-          'assets/{,*/}*.css',
-          'assets/{,*/}*.js',
-          'assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
+      css: {
+        files: 'css/scss/_ww_cci.scss',
+        tasks: ['sass']
       }
     },
     
     copy: {
-      assets: {
-        cwd: 'src/assets',
-        src: ['css/**/*', 'js/**/*', '!**/*.scss'],
-        dest: 'dist',
+      styles: {
+        cwd: 'css',
+        src: ['**/*', '!**/*.scss', '!scss'],
+        dest: '<%= config.dist %>/css',
         expand: true
       },
+    },
+
+    sass: {                        
+      dist: {                           
+        options: {                       
+          style: 'expanded'
+        },
+        files: {                        
+          'css/ww_cci.css': 'css/ww_cci.scss'      
+        }
+      }
     },
 
     assemble: {
       options: {
         flatten: true,
+        expand: true,
         assets: '<%= config.dist %>',
         layout: '<%= config.src %>/templates/layouts/default.hbs',
         data: '<%= config.src %>/data/*.{json,yml}',
@@ -94,6 +86,16 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    prettify: {
+      all: {
+        expand: true,
+        cwd: 'dist/ugly/', 
+        ext: '.html',
+        src: ['**/*.html'],
+        dest: 'dist/'
+      }
+    },
     clean: ['<%= config.dist %>/**/*.{html,xml, hbs}','<%= config.dist %>/css', '<%= config.dist %>/js','<%= config.dist %>/**/*'  ]
 
   });
@@ -104,6 +106,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-prettify');
 
 
   grunt.registerTask('server', [
@@ -119,7 +122,6 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'build', 'copy:assets'
+    'build', 'sass', 'copy', 'watch'
   ]);
-
 };
