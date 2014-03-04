@@ -262,3 +262,12 @@ sites/
     background-position: 0 100%;
   }
 }
+#ibm-content .ibm-media .ibm-container {
+  border-top: none !important;
+}
+
+#ibm-content .ibm_story-header-band {
+  margin-top: -1px;
+  background: url(../i/story-header-bg.png) no-repeat 100% 0;
+  min-height: 835px;
+}

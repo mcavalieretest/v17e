@@ -5,7 +5,8 @@
 //
 // Notes:
 //   Add "ibm-adapt" class to modules that change under different viewport
-//   Use ".ibm_cci-" class prefix for site specific custom code
+//   Use ".ibm_cci-" class prefix for site main page custom code
+//   Use ".ibm_story-" class prefix for story page custom code
 
 
 #ibm-top #ibm-masthead,
@@ -243,4 +244,16 @@
 	#ibm-content .ibm_cci-header-band {
 		background-position: 0 100%;
 	}
+}
+
+// Story page starts here
+
+#ibm-content .ibm-media .ibm-container {
+	border-top: none !important;
+}
+	
+#ibm-content .ibm_story-header-band {
+	margin-top: -1px;
+	background: url(../i/story-header-bg.png) no-repeat 100% 0;
+	min-height: 835px;
 }
