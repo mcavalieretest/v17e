@@ -144,8 +144,7 @@ if(jQuery('#ibm-top').length > 0) {
 	jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
 }
 
-// 
-<script type="text/javascript">
+// User clicks thumbnail image, we show correct panel and hide others
 dojo.addOnLoad(function(){
 	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
 	var s = new ibmweb.ribbon({
@@ -162,7 +161,6 @@ dojo.addOnLoad(function(){
 	s.startup();
     
     // ------- custom carousel ------------------
-    //  - user clicks thumbnail image, we show correct panel and hide others
     /// contact:adestefa@ibm.com
     var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
     var viewportHeight = jQuery(window).height();
