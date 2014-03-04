@@ -272,3 +272,10 @@ sites/
   min-height: 835px;
   width: 1074px;
 }
+
+#ibm-content .ibm_story-bottom-band {
+  margin-top: -1px;
+  background: url(../i/story-header-bg2.png) no-repeat 100% 0;
+  min-height: 270px;
+  width: 1074px;
+}
