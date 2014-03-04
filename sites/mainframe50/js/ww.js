@@ -145,7 +145,6 @@ if(jQuery('#ibm-top').length > 0) {
 }
 
 // User clicks thumbnail image, we show correct panel and hide others
-dojo.addOnLoad(function(){
 	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
 	var s = new ibmweb.ribbon({
 		srcNodeRef: ribbon[0],
@@ -185,7 +184,6 @@ dojo.addOnLoad(function(){
         // show target panel by id
         dojo.style(dojo.byId(id), "display", "block");
     }    
-});
  
 <!-- hand pointer when hover over thumbnail images -->
 <style>.panel > .ibm-col-6-1 > img { cursor: pointer; cursor: hand;}</style>
