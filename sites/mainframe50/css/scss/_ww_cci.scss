@@ -13,22 +13,18 @@
 	border-bottom: 0;
 }
 
-#ibm-content-cci {
-  background: #021428;
-  background-image: -webkit-linear-gradient(left, #021428, #082342);
-  background-image: -moz-linear-gradient(left, #021428, #082342);
-  background-image: -o-linear-gradient(left, #021428, #082342);
-  background-image: -ms-linear-gradient(left, #021428, #082342);
-  background-image: linear-gradient(left, #021428, #082342);
+#ibm-content {
+	background: #021428;
+	@include background-gradient(background-image,(left, #021428, #082342));	
 }
 
-#ibm-content-cci .ibm_cci-header-band {
+#ibm-content .ibm_cci-header-band {
 	margin-top: -1px;
 	background: url(../i/header-bg.png) no-repeat 100% 0;
 	min-height: 835px;
 }
 
-#ibm-content-cci .ibm_cci-site-band {
+#ibm-content .ibm_cci-site-band {
 	padding: 0;
 }
 
@@ -41,22 +37,22 @@
 	margin-bottom: 0;
 }
 
-#ibm-content-cci .ibm_cci-site-band p,
-#ibm-content-cci .ibm_cci-site-band h1,
-#ibm-content-cci .ibm_cci-site-band h2,
-#ibm-content-cci .ibm_cci-site-band .ibm-ribbon .ibm-container-body p,
-#ibm-content-cci .ibm_cci-site-band .ibm-ribbon .ibm-container-body h2,
-#ibm-content-cci .ibm_cci-site-band .ibm-ribbon .ibm-container-body h3 {
+#ibm-content .ibm_cci-site-band p,
+#ibm-content .ibm_cci-site-band h1,
+#ibm-content .ibm_cci-site-band h2,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body p,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body h2,
+#ibm-content .ibm_cci-site-band .ibm-ribbon .ibm-container-body h3 {
 	text-shadow: none;
 	color: #FFF;	
 }
 
-#ibm-content-cci .ibm_cci-site-band h1 {
+#ibm-content .ibm_cci-site-band h1 {
 	font-family: $defaultFont;
 	margin-top: 45px;
 }
 
-#ibm-content-cci .ibm_cci-site-band h1 span {
+#ibm-content .ibm_cci-site-band h1 span {
 	font-family: $defaultHeaderFont;
 }
 
@@ -79,11 +75,11 @@
 	background: #4B77A6;
 }
 
-#ibm-content-cci .ibm_cci-site-band h2 {
+#ibm-content .ibm_cci-site-band h2 {
 	@include px-to-rem(font-size,24px);
 }
 
-#ibm-content-cci .ibm_cci-site-band h2 span {
+#ibm-content .ibm_cci-site-band h2 span {
 	display: block;
 	@include px-to-rem(font-size,44px);
 	line-height: 50px;
@@ -92,36 +88,36 @@
 	color: #FDB42B;
 }
 
-#ibm-content-cci .ibm_cci-site-band.ibm_cci-z-band .ibm-col-4-2 h2 span {
+#ibm-content .ibm_cci-site-band.ibm_cci-z-band .ibm-col-4-2 h2 span {
 	text-transform: none;
 }
 
-#ibm-content-cci .ibm_cci-header-band p {
+#ibm-content .ibm_cci-header-band p {
 	line-height: 30px;
 }
 
-#ibm-content-cci .ibm_cci-header-band p.ibm-button-link {
+#ibm-content .ibm_cci-header-band p.ibm-button-link {
 	@include px-to-rem(line-height,21.6px);
 }
 
-#ibm-content-cci p {
+#ibm-content p {
   padding-bottom: 10px;
 }
 
-#ibm-content-cci p.ibm_last {
+#ibm-content p.ibm_last {
   padding-bottom: 30px;
 }
 
-#ibm-content-cci p.ibm_cci-intro {
+#ibm-content p.ibm_cci-intro {
 	font-family: $LubalinBook;
 	padding-bottom: 10px;
 }
 
-#ibm-content-cci p.ibm_cci-intro span {
+#ibm-content p.ibm_cci-intro span {
 	font-family: $LubalinDemi;
 }
 
-#ibm-content-cci p.ibm_cci-call {
+#ibm-content p.ibm_cci-call {
 	@include px-to-rem(font-size,22px);
 }
 
@@ -131,15 +127,15 @@
 	display: none;
 }
 
-#ibm-content-cci .ibm-ribbon-nav a {
+#ibm-content .ibm-ribbon-nav a {
 	background: url(../i/pagination.png) no-repeat 0 0;
 }
 
-#ibm-content-cci .ibm-ribbon-nav a:hover {
+#ibm-content .ibm-ribbon-nav a:hover {
 	background-position: 0 -11px;
 }
 
-#ibm-content-cci .ibm-ribbon-nav a.ibm-active {
+#ibm-content .ibm-ribbon-nav a.ibm-active {
 	background-position: 0 -23px;
 }
 // ribbon updates
@@ -152,12 +148,12 @@
 	padding: 30px 0 20px;
 }
 
-#ibm-content-cci .ibm_cci-progress-band .ibm-inner-margin h3 ~ p {
+#ibm-content .ibm_cci-progress-band .ibm-inner-margin h3 ~ p {
 	padding-bottom: 20px;
 }
 
 // progress ribbon images
-#ibm-content-cci .ibm_cci-progress-band .ibm-columns.ibm-cloned,
+#ibm-content .ibm_cci-progress-band .ibm-columns.ibm-cloned,
 #ibm_cci-progress1 {
 	background: url(../i/progress3.jpg) no-repeat 50% 0;
 	min-height: 415px;
@@ -174,7 +170,7 @@
 }
 
 
-#ibm-content-cci .ibm_cci-z-band {
+#ibm-content .ibm_cci-z-band {
 	padding-top: 20px;
 	background: url(../i/z-bg.png) no-repeat 50% 100%;
 	background: url(../i/z-bg1.png) no-repeat 0 100%,
@@ -184,14 +180,6 @@
 
 .ibm_cci-ey {
 	padding-top: 400px;
-}
-
-#ibm-related-content .ibm-col-6-1 h2 {
-	font-size: 12px
-}
-
-.panel > .ibm-col-6-1 > img { 
-	cursor: pointer; cursor: hand;
 }
 
 .ibm-cta-chevron-link:after {
@@ -218,39 +206,6 @@
 #ibm-top .ibm-ind-link-after .ibm-cta-chevron-link:before {
 	display: none;
 }
-
-
-#ibm-content .ibm_story-header-band {
-	margin-top: -1px;
-	background: url(../i/story-header-bg.png) no-repeat 100% 0;
-	min-height: 660px;
-	width: 1074px;
-}
-
-#ibm-content .ibm_story-bottom-band {
-	padding-top: 20px;
-	background: url(../i/story-header-bg2.png) no-repeat 100% 0;
-	min-height: 270px;
-}
-
-#ibm-content .ibm_story-band p,
-#ibm-content .ibm_story-band h1,
-#ibm-content .ibm_story-band h2,
-#ibm-content .ibm_story-band .ibm-ribbon .ibm-container-body p,
-#ibm-content .ibm_story-band .ibm-ribbon .ibm-container-body h2,
-#ibm-content .ibm_story-band .ibm-ribbon .ibm-container-body h3 {
-	text-shadow: none;
-}
-
-#ibm-content .ibm_story-band {
-	padding: 0;
-}
-
-#ibm-content .ibm_story-band h1 {
-	font-family: $defaultFont;
-	margin-top: 45px;
-}
-
 
 
 @media only screen and (min-width: 0) and (max-width: 568px) {
