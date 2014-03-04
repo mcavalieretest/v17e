@@ -29,53 +29,8 @@
 
 <script src="../js/ww.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-dojo.addOnLoad(function(){
-	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
-	var s = new ibmweb.ribbon({
-		srcNodeRef: ribbon[0],
-		autoscroll: true, 
-		freeScroll: true,
-		interval: 5000
-	});
-
-	dojo.query('.ibm-ribbon2').forEach(function(i){
-		dojo.addClass(i, 'ibm-ribbon');
-	});
-		
-	s.startup();
-    
-    // ------- custom carousel ------------------
-    //  - user clicks thumbnail image, we show correct panel and hide others
-    /// contact:adestefa@ibm.com
-    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
-    var viewportHeight = jQuery(window).height();
-    // filter iphones
-    if ((iOSCheck) && (viewportHeight < 768)) {
-        // show full version of each for mobile
-        showPanel("p5");
-    // show small image thumbs    
-    } else {
-        // show first panel in custom carousel
-        showPanel("p1");
-        // set event listeners for each thumbnail image using shared class name
-        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
-        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
-        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
-        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
-    }
-    // custom carousel controller driven by thumbnail image links 
-    function showPanel (id) {
-        // hide all panels 
-        dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
-        // show target panel by id
-        dojo.style(dojo.byId(id), "display", "block");
-    }    
-});
-
-</script>
-
 </head>
+
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
 
@@ -119,290 +74,45 @@ dojo.addOnLoad(function(){
 
 <!--! COLUMN VARIATIONS START -->
 
-<!--! 4 2 grid -->
+<!--! 6 4 top grid -->
 
-<div class="ibm-band ibm_cci-site-band ibm_cci-header-band">
-
-<div class="ibm-columns">
-
-<div class="ibm-col-4-2">
-
-
-<h1>Make the <span>Extraordinary</span></h1>
-<p class="ibm_cci-subtitle"><em>possible</em></p>
-
-<p class="ibm_cci-intro"><span>IBM Mainframe50</span>
-<p>The mainframe is a revolutionary computing system that is transforming business, whole industries, and the world as we know it. </p>
- 
-<p>By continually adapting to trends and evolving IT, we’re driving new approaches to cloud, analytics, security and mobile computing to help tackle challenges never before thought possible. We do that by collaborating with our clients to build better technology every day.</p>
- 
-<p class="ibm_last">But the pioneering innovations of the mainframe all serve one enduring mission: Deliver game-changing technology that makes the extraordinary possible and improves the way the world works.</p>
-
-<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=0tgt4VSrPso&feature=youtu.be">Play video</a></p>
-
-</div>
-
-</div>
-
-</div>
-<!-- 4 2 grid end-->
-
-
-<!--! Ribbon grid -->
-
-<div class="ibm-band ibm_cci-site-band ibm_cci-progress-band">
+<div class="ibm-band ibm_cci-site-band ibm_story-header-band">
+<img src="../i/story-hero1.jpg" />
 
 <div class="ibm-columns">
 
-<div class="ibm-col-1-1">
-<h2>The Engines 
-<span>of Progress</span></h2>
+<div class="ibm-col-6-4">
 
-<p class="ibm_cci-intro"><span>They transform our lives.</span> Their visionary endeavors make our world smarter and more connected.</p>
-
-<p class="ibm_cci-intro ibm_cci-call">Come back often to see more extraordinary stories.</p>
-
-
-
-<!-- Carousel START -->
-<div class="ibm-container ibm-ribbon2 ibm-no-rule ibm-no-mobile">
-<div class="ibm-container-body">
-			
-<!--! 4-2 in carousel -->            
-            <div class="ibm-columns" id="ibm_cci-progress1">
-				<div class="ibm-col-4-2">
-				<div class="ibm-inner-margin">
-				<h3>First National Bank</h3>
-				<p>Critical financial services to Africa’s unbanked 80 percent</p>
-				<p>FNB's "bank in a box" enables millions of individuals across Africa to startup new businesses, save for college and improve lives</p>
-				</div>
-				</div>
-				<div class="ibm-col-4-2">
-					&nbsp;
-				</div>			
-            </div>
-            
-<!--! 4-2 in carousel -->            
-            <div class="ibm-columns" id="ibm_cci-progress2">
-				<div class="ibm-col-4-2">
-				<div class="ibm-inner-margin">
-				<h3>Met Office</h3>
-				<p>Vital reports to empower industries and save lives</p>
-				<p>The Met Office generates thousands of weather forecasts a day to help global industries and governments make crucial decisions</p>
-				</div>		
-				</div>
-				<div class="ibm-col-4-2">
-					&nbsp;
-				</div>		
-            </div>
-
-<!--! 4-2 in carousel -->            
-            <div class="ibm-columns" id="ibm_cci-progress3">
-				<div class="ibm-col-4-2">
-				<div class="ibm-inner-margin">
-				<h3>Rheumatoid Arthritis Responder DREAM Challenge</h3>
-				<p>Cutting edge research to help millions with chronic pain</p>
-				<p>This international competition uses analytics on the mainframe to take the guesswork out of patient response to Rheumatoid Arthritis treatment.</p>
-				</div>		
-				</div>
-				<div class="ibm-col-4-2">
-					&nbsp;
-				</div>		
-            </div>
-            
-</div>
+<div class="ibm-media">
+<a rel="format=inline_small" href="http://www.youtube.com/watch?v=J-3ZmtSQiQ8"></a>
 </div>
 
-             <!-- mobile version -->
-             <div id="progress-mobile" class="ibm-columns panel ibm-mobile">
-				<div class="ibm-col-6-3">
-				<img src="../i/progress3.jpg" width="940" height="415" alt="" class="ibm-resize" />
-				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
-                <h2>First National Bank</h2>
-				<p>Critical financial services to Africa’s unbanked 80 percent</p>
-				<p>FNB's "bank in a box" enables millions of individuals across Africa to startup new businesses, save for college and improve lives</p>
-				</div>
-				<div class="ibm-col-6-3">
-				<img src="../i/progress2.jpg" width="940" height="415" alt="" class="ibm-resize" />
-				<h2>Met Office</h2>
-				<p>Vital reports to empower industries and save lives</p>
-				<p>The Met Office generates thousands of weather forecasts a day to help global industries and governments make crucial decisions</p>
-				</div>
-				<div class="ibm-col-6-3">
-				<img src="../i/progress1.jpg" width="940" height="415" alt="" class="ibm-resize" />
-				<h2>Rheumatoid Arthritis Responder DREAM Challenge</h2>
-				<p>Cutting edge research to help millions with chronic pain</p>
-				<p>This international competition uses analytics on the mainframe to take the guesswork out of patient response to Rheumatoid Arthritis treatment.</p>
-				</div>		                
-								
-            </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<!-- Carousel END -->
+<p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+
+<img src="..i/story-infographic1.jpg" />
+
+<p class="ibm-ind-link"><a class="ibm-outside-link" href="http://www.ibm.com">View the infographic</a></p>
+
+<p>Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.</p>
+
+<div class="ibm-pull-quote" >
+
+<blockquote>
+<p><em><span class="ibm-pullquote-open">&#8220;</span>Sed nec nisl massa vulputate feugiat a sit amet lacus lorem dolor set amet et ecuismod sei, exdent right<span class="ibm-pullquote-close">&#8221;</span></em></p>
+</blockquote>
+
+<p class="ibm-pullquote-source">Source First Last , Company Name</p>
 
 </div>
 
-</div>
-
-</div>
-<!--! Ribbon grid -->
-
-
-
-
-<!--! 4 2 grid -->
-
-<div class="ibm-band ibm_cci-site-band ibm_cci-z-band">
-
-<div class="ibm-columns">
-
-<div class="ibm-col-4-2">
-&nbsp;
-</div>
-<div class="ibm-col-4-2">
-
-<h2><span style="padding-top: 40px">GENERATION z</span></h2>
-<p class="ibm_cci-intro"><span>They will create the future.</span></p>
-
-<p class="ibm_last">Every year, students at over 1,000 universities across 67 countries are learning to solve tomorrow’s grand challenges with the mainframe. </p>
-<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=wAU5kCIGBNQ">Play video</a></p>
-
-<p class="ibm_last">On April 7th, 2014, the top 40 students from around the globe will meet in New York City for the first ever Master the Mainframe World Championship.</p>
-<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.ibm.com/systems/z/masterthemainframe">Learn about the World Championship</a></p>
-</div>
-
-
-<div class="ibm-col-6-5 ibm_cci-ey">
-<h2><span>50 extraordinary years</span></h2>
-
-<p class="ibm_cci-intro"><span>They invented the modern world.</span> Organizations and leaders have reinvented business, transformed industries and helped solve some of the world’s greatest challenges with the world’s most innovative and trusted platform. These achievements are woven into the fabric of industry and society.</p>
+<p>Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.</p>
 
 </div>
 
-</div>
-</div>
+<div class="ibm-col-6-2">
 
-
-
-<!-- custom carousel control -->
-<div class="ibm-band ibm_cci-site-band">
-<div class="ibm-columns">
-<div class="ibm-col-1-1">
-<div class="ibm-container ibm-no-rule">
-<div class="ibm-container-body">
-
-            <!-- Sabre -->
-            <div id="p1" class="ibm-columns panel">
-				<div class="ibm-col-6-3">
-				<img src="../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
-                <h2>Sabre reservation system</h2>
-				<p>The world’s first automated passenger reservation system, Sabre, is the basis for today’s web-based travel industry. Launched on two IBM 7090 mainframes, the application written in the 60s is able to process billions of transactions a week today.</p>
-				</div>
-				<div class="ibm-col-6-1">
-					<img src="../i/50-bet-bg.jpg" width="140" title="The Big Bet to Big Insights" height="93" alt="" class="ibm-resize panel_link_2" />
-				</div>		
-				<div class="ibm-col-6-1">
-					<img src="../i/50-apollo-bg.jpg" title="Apollo 11 moon landing" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
-				</div>		
-				<div class="ibm-col-6-1">
-					<img src="../i/50-zenterprise-bg.jpg" title="The zEnterprise System" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
-				</div>		
-            </div>
-            
-            <!-- Watson -->
-            <div id="p2" class="ibm-columns panel">
-				<div class="ibm-col-6-1">
-					<img src="../i/50-sabre-bg.jpg" width="140" title="Sabre reservation system" height="93" alt="" class="ibm-resize panel_link_1" />
-				</div>	
-				<div class="ibm-col-6-3">
-				<img src="../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>The Big Bet to Big Insights </h2>
-				<p>April 7, 1964, IBM CEO Thomas J. Watson Jr. literally bets the business on the System/360 mainframe—shutting down all other product lines for this new vision for the future of computing. Today, IBM runs the world’s largest private cloud on the mainframe. It provides analytic insights from nearly 100 different data warehouses enabling over 200,000 IBM employees to make better decisions.</p>
-				</div>
-				<div class="ibm-col-6-1">
-					<img src="../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
-				</div>		
-				<div class="ibm-col-6-1">
-					<img src="../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
-				</div>		
-            </div>
-            
-            <!-- apollo -->
-            <div id="p3" class="ibm-columns panel">
-				<div class="ibm-col-6-1">
-					<img src="../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
-				</div>	
-				<div class="ibm-col-6-1">
-					<img src="../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
-				</div>		
-				<div class="ibm-col-6-3">
-				<img src="../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>Apollo 11 moon landing</h2>
-				<p>In 1969, Americans Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon, forever changing our view of the universe and our own perception of what’s possible. The IBM System/360 mainframe processed the data for the lunar landing and liftoff.</p>
-				</div>	
-				<div class="ibm-col-6-1">
-					<img src="../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
-				</div>		
-            </div>
-
-            <!-- z enterprise -->
-             <div id="p4" class="ibm-columns panel">
-				<div class="ibm-col-6-1">
-					<img src="../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
-				</div>	
-				<div class="ibm-col-6-1">
-					<img src="../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
-				</div>	
-                <div class="ibm-col-6-1">
-					<img src="../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
-				</div>		                
-				<div class="ibm-col-6-3">
-				<img src="../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>The zEnterprise System</h2>
-				<p>The mainframe has been constantly reinvented over its first 50 years. Performance has improved over 78,000%. Memory capacity has increased over 786,000 times. If the mainframe was a sports car it could travel at almost 12 million miles an hour—getting you to the moon in under two seconds. Imagine what it can do for your business.</p>
-				</div>	
-				
-            </div>
-     
-             <!-- mobile version -->
-             <div id="p5" class="ibm-columns panel">
-				<div class="ibm-col-6-3">
-				<img src="../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
-                <h2>Sabre reservation system</h2>
-				<p>The world’s first automated passenger reservation system, Sabre, is the basis for today’s web-based travel industry. Launched on two IBM 7090 mainframes, the application written in the 60s is able to process billions of transactions a week today.</p>
-				</div>
-				<div class="ibm-col-6-3">
-				<img src="../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>The Big Bet to Big Insights </h2>
-				<p>April 7, 1964, IBM CEO Thomas J. Watson Jr. literally bets the business on the System/360 mainframe—shutting down all other product lines for this new vision for the future of computing. Today, IBM runs the world’s largest private cloud on the mainframe. It provides analytic insights from nearly 100 different data warehouses enabling over 200,000 IBM employees to make better decisions.</p>
-				</div>
-				<div class="ibm-col-6-3">
-				<img src="../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>Apollo 11 moon landing</h2>
-				<p>In 1969, Americans Neil Armstrong and Buzz Aldrin became the first humans to walk on the moon, forever changing our view of the universe and our own perception of what’s possible. The IBM System/360 mainframe processed the data for the lunar landing and liftoff.</p>
-				</div>		                
-				<div class="ibm-col-6-3">
-				<img src="../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
-				<h2>The zEnterprise System</h2>
-				<p>The mainframe has been constantly reinvented over its first 50 years. Performance has improved over 78,000%. Memory capacity has increased over 786,000 times. If the mainframe was a sports car it could travel at almost 12 million miles an hour—getting you to the moon in under two seconds. Imagine what it can do for your business.</p>
-				</div>	
-				
-            </div>
-                
-            
-</div>
-</div>
-<!-- Carousel END -->
-
-
-</div>
-</div>
-</div>
-
-
-
-</div>
 <!-- FEATURES_BEGIN -->
 <div id="ibm-content-sidebar">
 <div id="ibm-contact-module">
@@ -410,6 +120,25 @@ dojo.addOnLoad(function(){
 </div>
 </div>
 <!-- FEATURES_END -->
+
+</div>
+
+</div>
+
+</div>
+<!-- 6 4 top grid end-->
+
+<!-- 6 4 bottom grid-->
+
+<div class="ibm-band ibm_cci-site-band ibm_story-bottom-band">
+
+<p>Aliquam vehicula sem ut pede. Cras purus lectus, egestas eu, vehicula at, imperdiet sed, nibh. Morbi consectetuer luctus felis. Donec vitae nisi. Aliquam tincidunt feugiat elit. Duis sed elit ut turpis ullamcorper feugiat. Praesent pretium, mauris sed fermentum hendrerit, nulla lorem iaculis magna, pulvinar scelerisque urna tellus a justo. Suspendisse pulvinar massa in metus. Duis quis quam. Proin justo. Curabitur ac sapien. Nam erat. Praesent ut quam.</p>
+
+<p class="ibm-button-link"><a href="http://www.ibm.com/systems/z/masterthemainframe">Download the case study</a></p>
+
+<!-- 6 4 bottom grid end-->
+
+</div>
 <!-- CONTENT_BODY_END -->
 </div>
 </div>

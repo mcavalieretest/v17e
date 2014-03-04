@@ -215,6 +215,19 @@
 	display: none;
 }
 
+#ibm-content .ibm_story-header-band {
+	margin-top: -1px;
+	background: url(../i/story-header-bg.png) no-repeat 100% 0;
+	min-height: 660px;
+}
+
+#ibm-content .ibm_story-bottom-band {
+	padding-top: 20px;
+	background: url(../i/story-header-bg2.png) no-repeat 100% 0;
+	min-height: 270px;
+}
+
+
 
 @media only screen and (min-width: 0) and (max-width: 568px) {
 	#ibm-content .ibm_cci-header-band,
