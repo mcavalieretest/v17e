@@ -186,6 +186,10 @@
 	font-size: 12px
 }
 
+.panel > .ibm-col-6-1 > img { 
+	cursor: pointer; cursor: hand;
+}
+
 .ibm-cta-chevron-link:after {
 	color: $linkColor;
 	font-family: 'iconsIBM';
