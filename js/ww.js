@@ -54,13 +54,13 @@ jQuery(function() {
 			else {
 				selectedLink = '';
 				}
-		
+			var isSubPage = this.parentNode.parentNode.tagName.toLowerCase() === 'li';
 			jQuery('#ibm-mobile-tabs select').append('<option ' + 
 			
 				selectedLink + 
 
-				' value="' + jQuery(this).find("a").attr('href') + '">' + 
-				jQuery(this).find("a").text() + 
+				' value="' + jQuery(this).find("a").eq(0).attr('href') + '">' + 
+					( isSubPage ? '&emsp;&#x21b3; ' : '' ) + jQuery(this).find("a").eq(0).text() + 
 				'</option>');
 			
 			// check for change on dropdown list and submit value to window.location
