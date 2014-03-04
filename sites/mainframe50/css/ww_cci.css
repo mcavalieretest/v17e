@@ -38,6 +38,11 @@ sites/
   background-image: linear-gradient(left, #021428, #082342);
 }
 
+.panel > .ibm-col-6-1 > img {
+  cursor: pointer;
+  cursor: hand;
+}
+
 #ibm-content .ibm_cci-header-band {
   margin-top: -1px;
   background: url(../i/header-bg.png) no-repeat 100% 0;
