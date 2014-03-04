@@ -13,7 +13,7 @@
 	border-bottom: 0;
 }
 
-#ibm-content {
+#ibm-content-cci {
 	background: #021428;
 	@include background-gradient(background-image,(left, #021428, #082342));	
 }
@@ -214,6 +214,7 @@
 #ibm-top .ibm-ind-link-after .ibm-cta-chevron-link:before {
 	display: none;
 }
+
 
 #ibm-content .ibm_story-header-band {
 	margin-top: -1px;
