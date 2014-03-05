@@ -264,14 +264,25 @@ sites/
 }
 .ibm-landing-page #ibm-leadspace-body {
   background: transparent url(../i/story-hero1.jpg) no-repeat 100% 0;
-  padding: 0 0 0 0 !important;
+  padding: 0 !important;
+  min-height: 300px;
 }
 
 .ibm-landing-page #ibm-leadspace-body h1 {
   font-family: LubalinBook;
   font-size: 4.6rem;
   color: white;
-  padding: 220px 0 10px 20px;
+  padding: 230px 0 10px 30px;
+}
+
+#ibm-content .ibm-columns.ibm-story p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+
+#ibm-pull-quote {
+  padding: 0 20px 0 20px;
 }
 
 #ibm-content .ibm_story-header-band {
