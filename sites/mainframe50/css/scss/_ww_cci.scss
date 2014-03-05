@@ -248,21 +248,10 @@
 
 // Story page starts here
 
-#lead-image {
-	background: url("../i/story-hero1.jpg") no-repeat scroll center 50% / cover
+div.ibm-landing-page div#ibm-leadspace-body {
+	background: transparent url(../i/story-hero1.jpg) no-repeat scroll 50% 0;
 }
 
-#lead-image {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	height: 300px;
-	position: relative;
-}
-
-#ibm-content .ibm-media .ibm-container {
-	border-top: none !important;
-}
-	
 #ibm-content .ibm_story-header-band {
 	margin-top: -1px;
 	background: url(../i/story-header-bg.png) no-repeat 100% 0;
