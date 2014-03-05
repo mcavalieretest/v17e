@@ -67,7 +67,7 @@
 	}
 }
 
-.ibm-columns.ibm_cci-gv__modifier p.ibm_cci--tweet-description {
+.ibm-columns.ibm_cci-gv__modifier .ibm_cci--tweet-description {
 		// font: italic 1.4rem/20px "HelvLightIBM";
 		display:block;
 		font-size:0;
@@ -75,11 +75,16 @@
 		line-height:0;
 		padding-bottom:0;
 
-		span.ibm_cci--tweet-description-readmore a {
+		// span.ibm_cci--tweet-description-readmore a {
+		// 	// color: #F04E37;
+		// 	// text-decoration: none;
+		// 	display:none;
+		// }
+		div.ibm_cci--tweet-content-text {
 			// color: #F04E37;
 			// text-decoration: none;
 			display:none;
-		}
+		}		
 		
 		img.ibm_cci--tweet-image {
 			display:block;

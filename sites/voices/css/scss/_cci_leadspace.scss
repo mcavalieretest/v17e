@@ -29,13 +29,12 @@
 			display: inline-block;
 			padding: 0 10px 0 0;							
 			margin: 0 0 10px 2px;
-		p {
+		p {			
 			display:inline;
 			font-size:1.8rem;
 			line-height:2.0rem;
 			width:auto;
 			padding:0;
-
 			a {
 				font-size:1.8rem;
 				line-height:2.0rem;
@@ -62,16 +61,16 @@
 				opacity: 0.5;
 			}
 			
-			> span a{
+			> a{
 				// font-size:1.8rem;
 				// line-height:2.0rem;
 				color: #ccc;
 				float:left;
 			}							
-			> span a:link, span a:visited {
+			> a:link, a:visited {
 				color: #ccc;
 			}
-			> span a:hover, span a:active {
+			> a:hover, a:active {
 				color: #adadad;
 				text-decoration: none;
 			}																											
@@ -85,10 +84,10 @@
 		}
 
 		p.ibm_cci-clicked {
-			> span a.ibm_cci-voices-tt-text {
+			> a.ibm_cci-voices-tt-text {
 				color: #f04e37;
 			}
-			> span a.ibm_cci-voices-tt-text.ibm_cci-voices-search-term {
+			> a.ibm_cci-voices-tt-text.ibm_cci-voices-search-term {
 				color: #000;
 			}
 			>a.ibm_cci-close:not(:first-child){
@@ -129,16 +128,17 @@
 		padding: 0 20px 0 0;							
 		display:inline;
 		float:left;
-		p {
+		p.ibm_cci-clicked {
 			float:left;
-			display:inline;
-			font-size:1.8rem;
-			line-height:2.0rem;
+			// display:inline;
+			// font-size:1.8rem;
+			// line-height:2.0rem;
 			a {
 				font-size:1.8rem;
 				line-height:2.0rem;
 				color: #f04e37;
 				margin:0;
+				text-decoration: none;
 			}															
 		}
 	}			
@@ -157,6 +157,10 @@
 		padding: 0 0 15px 0;
 		float:left;
 		margin:0;
+	}
+
+	p.ibm_cci-toggleDisplay {
+		visibility:hidden;
 	}
 }
 
