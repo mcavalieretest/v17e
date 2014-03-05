@@ -248,6 +248,17 @@
 
 // Story page starts here
 
+#lead-image {
+	background: url("../i/story-hero1.jpg") no-repeat scroll center 50% / cover
+}
+
+#lead-image {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	height: 300px;
+	position: relative;
+}
+
 #ibm-content .ibm-media .ibm-container {
 	border-top: none !important;
 }
@@ -270,3 +281,5 @@
 	border-top: none !important;
 	padding-top: 30px;
 }
+
+
