@@ -262,8 +262,8 @@ sites/
     background-position: 0 100%;
   }
 }
-div.ibm-landing-page div#ibm-leadspace-body {
-  background: transparent url(../i/story-hero1.jpg) no-repeat scroll 100% 0;
+.ibm-landing-page #ibm-leadspace-body {
+  background: transparent url(../i/story-hero1.jpg) no-repeat 100% 0;
 }
 
 #ibm-content .ibm_story-header-band {
