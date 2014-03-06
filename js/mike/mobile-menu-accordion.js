@@ -202,7 +202,7 @@ jQuery(function() {
     Modernizr.load({
       load: [
         "../js/mike/mlpushmenu.accordion.js",
-        "../js/mike/mobile-menu-accordion.accordion.js",
+        "../js/mike/accordion.js",
       ],
       complete: function() {
         // Loop till masthead links are available.  When available, prepend them to #m-shift
