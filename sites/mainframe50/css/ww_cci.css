@@ -262,6 +262,16 @@ sites/
     background-position: 0 100%;
   }
 }
+#ibm-pcon {
+  background: url("../i/story-header-bg.png") no-repeat scroll right top transparent;
+  margin-top: -1px;
+  padding-top: 16px;
+}
+
+#ibm-content {
+  background: url("../i/story-header-bg2.png") no-repeat scroll left bottom transparent;
+}
+
 .ibm-live-assistance-list {
   font-size: 1.5rem !important;
 }
