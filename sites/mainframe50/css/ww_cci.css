@@ -286,6 +286,11 @@ sites/
   padding: 25px 50px;
 }
 
+.ibm-portrait-module-list ul {
+  font-family: HelvLightIBM;
+  font-size: 1.5rem;
+}
+
 #ibm-content .ibm_story-header-band {
   margin-top: -1px;
   background: url(../i/story-header-bg.png) no-repeat 100% 0;
