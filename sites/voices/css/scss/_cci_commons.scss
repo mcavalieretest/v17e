@@ -325,9 +325,34 @@
 		opacity:1;
 	}						
 }
+// LIST AND GRID UNRESOLVED TWEETS (Begin)
+
+// #{$ibm-widget-js}.ibm_cci-gv__modifier .ibm-card {
+// 	 -webkit-transition-duration: 0.3s;
+//      -moz-transition-duration: 0.3s;
+//       -ms-transition-duration: 0.3s;
+//        -o-transition-duration: 0.3s;
+//           transition-duration: 0.3s;
+// }
+
+// #{$ibm-widget-js}.ibm_cci-gv__modifier.ibm-sortable {
+// 	-webkit-transition-property: height, width;
+//      -moz-transition-property: height, width;
+//       -ms-transition-property: height, width;
+//        -o-transition-property: height, width;
+//           transition-property: height, width;
+// }
+
+// #{$ibm-widget-js}.ibm_cci-gv__modifier .ibm-card {
+// 	-webkit-transition-property: left, right, top;
+// 	     -moz-transition-property: left, right, top;
+// 	      -ms-transition-property: left, right, top;
+// 	       -o-transition-property: left, right, top;
+// 	          transition-property: left, right, top;
+// }
 
 #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card {
-	margin:0;
+	margin:0;      
 }
 
 #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card, #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card {
@@ -345,4 +370,3 @@
 	display: inline;
 }
 
-// LIST AND GRID UNRESOLVED TWEETS (Begin)

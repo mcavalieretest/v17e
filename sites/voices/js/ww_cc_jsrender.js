@@ -20,7 +20,7 @@ $(function(){
 			.each(function(){
 				$this = $(this);				
 				$this.on('click', 'a', function(event){
-					//event.stopPropagation();
+					event.stopPropagation();
 					var target = $(event.target);
 					if(!target.hasClass('selected')){
 						target.addClass('selected').parent().siblings().children().removeClass("selected");						
@@ -28,12 +28,19 @@ $(function(){
 							$("#ibm_cci-widget-js").removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
 							$(".ibm_cci-lv__modifier .ibm_cci--tweet-content-text").css('display', 'block');
 							$(".ibm_cci-lv__modifier .ibm-video").css('display', 'none');
-								// vo.f_constructURL();
+								
+								// REBULILD MASONRY TILES FOR LIST VIEW
+								$("#ibm_cci-widget-js").masonry("reload");
+
 						 } else {
 						 	$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
 						 	$(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'none');
-								// vo.f_buildtiles();
-
+								
+								// REBULILD MASONRY TILES GRID VIEW
+								$("#ibm_cci-widget-js").masonry('reloadItems');
+								setTimeout(function(){ 
+									$("#ibm_cci-widget-js").masonry();
+								 }, 800);
 						 }
 					}
 					updateURLHash(target.attr('id'));
@@ -92,20 +99,18 @@ $(function(){
 
 		//ALL TRENDING FUNCTION (START)
 		$("li.ibm_cci__ml_t a[name='all']").on('click', function(event){
-			event.preventDefault();
+			// event.preventDefault();
 			if($("p#ibm_cci__ml_t-js").hasClass('ibm_cci-clicked')){
 				console.log("return false");
-				return;
 			}else{
 				//REMOVE ALL STYLES
 				$("li.ibm_cci__ml-li p a").removeClass("ibm_cci-close-black, ibm_cci-close");
 				$("li.ibm_cci__ml-li p[class='ibm_cci-clicked']").removeClass("ibm_cci-clicked");
 				$("p#ibm_cci__ml_t-js").addClass("ibm_cci-clicked");
-				
+				$(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
+
 				//REMOVE ALL SEARCH NODES
-				vo.f_removeNodes($(".ibm_cci-tsearch-js"));
-				
-				$(".ibm_cci--sr > p").addClass('ibm_cci-resultdisplay');
+				vo.f_removeNodes($(".ibm_cci-tsearch-js"));				
 				
 				//EMPTY VO.DIFFERENCE AND VO.SIMILAR
 				vo.difference = [];
@@ -119,9 +124,14 @@ $(function(){
 					vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 					var newData = data;
 					vo.search = true;
-					vo.f_distribute(newData);			
+					vo.f_distribute(newData);
+
+					$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+						setTimeout(function(){
+							$('#ibm_cci-widget-js').masonry();
+						}, 400);								
 				});			
-			}
+			}	
 			
 		});
 		//ALL TRENDING FUNCTION (END)
@@ -171,7 +181,6 @@ $(function(){
 							$(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
 							vo.f_constructURL(vo.f_searchterms.toString());
 							vo.checkedCount = 0;
-
 						}
 					}
 
@@ -211,37 +220,41 @@ $(function(){
 
 
 	// INFINITE SCROLL (START)
-	var win = $(window), winHeight = win.height(), widgetHeight = $("#ibm_cci-widget-js").height();
-		win.data("ajaxReq", true).on("scroll", function(e){
-			var scrollLock = false;
-			if(win.data("ajaxReq") == false) return;
+		$(window).data("ajaxReq", true).on("scroll", function(e){
+			if( $(window).data("ajaxReq") == false ) return;
+
+			console.log($(window).data('ajaxReq'));
+			// console.log($("#ibm_cci-widget-js").height());
 			
 			// checkedCount is to verify if any search or trending list has been selected
 			// checkedCount == 0 it means load more data for all filters
-			if (vo.checkedCount == 0) {
-				try{
-					if ($(window).scrollTop() >= $("#ibm_cci-widget-js").height() - $(window).height()) {
-
+			// if (vo.checkedCount == 0) {
+				try{		    
+					var prevDocumentHeight = ($(document).height() - 900);
+					console.log("prev Document Height: "+prevDocumentHeight);
+		    		if ( ($(window).scrollTop()+$(window).height()) >= ($(document).height() - 900) && $(window).data("ajaxReq",true)) {  
 
 						console.log($(window).scrollTop());
 						console.log($(window).height());
-						console.log($("#ibm_cci-widget-js").height());
-
+						console.log($(document).height());
+						
 						// Set Flag to false
-						win.data("ajaxReq", false);
+						$(window).data("ajaxReq", false);
+						console.log("inside scrolltop if " + $(window).data('ajaxReq'));
+						// Call Ajax
+						var rank = $("#ibm_cci-widget-js .ibm-card").last().attr("data-rank");
 						$.ajax({
 							url: vo.f_url + "?callback=?",
 							type: 'GET',
 							contentType: 'application/json',
 							dataType: 'jsonp',
 							data:{ 
-								rank: $("#ibm_cci-widget-js .ibm-col-1-1").last().attr('data-rank'), 
+								rank: rank, 
 								noOfItems:20,
 								filter: null,
 							},
 							success: function(){
-								win.data("ajaxReq", true);
-								scrollLock = true;
+								console.log("inside success" + $(window).data('ajaxReq'));
 							}
 						})
 						.done(function(data) {
@@ -250,7 +263,23 @@ $(function(){
 							if(data.entries){
 								vo.search = false;
 								vo.f_distribute(data);
-								vo.f_buildAppendedTiles();
+
+								$('.ibm-sortable').imagesLoaded(function(){
+									$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+									// $('.ibm-sortable').masonry('reloadItems');
+									$('.ibm-sortable').masonry('reload');
+								});
+
+								setTimeout(function(){
+									// console.log("prevDoc height in done before if: "+prevDocumentHeight);
+									// console.log("current doc height in done before if: "+prevDocumentHeight);
+									// console.log(($(document).height() - 900) > prevDocumentHeight);
+										// if(data.entries >= 20 && $(".ibm-card").last().attr('data-rank') == rank) 
+											$(window).data("ajaxReq", true);
+
+								}, 2000);
+								
+								
 							}
 						})
 						.fail(function() {
@@ -264,7 +293,7 @@ $(function(){
 				}catch(e){
 					console.log("infinite all trending scroll error" + e);
 				}	
-			}	
+			// }	
 
 		}).on("resize", function(){
 			winHeight = $(window).height();
@@ -285,6 +314,12 @@ $(function(){
 		return value;
 	}
 	// HELPER FUNCTIONS FOR THE TEMPALTES (END)		
+
+	// $(document).bind("DOMNodeInserted", function(e){
+	// 	var ele = e.target;
+	// 	console.log($(ele).attr("data-rank"));
+		
+	// });
 
 }); //CLOSE ON DOM READY
 
@@ -461,7 +496,7 @@ $(function(){
 					dataType: 'jsonp',
 					data:{ 
 						rank: self.f_rank, 
-						noOfItems:20,
+						noOfItems:40,
 						filter: self.f_searchterms.toString() || null,
 				}
 				}).promise();
@@ -508,6 +543,7 @@ $(function(){
 			}catch(e){
 				console.log('Error logged in the DOM ready $.when' + e);
 			}
+
 		},
 
 		f_removeNodes: function(nodes){
@@ -520,25 +556,29 @@ $(function(){
 			searchResultNode.text("Results found: " + count).removeClass('ibm_cci-toggleDisplay');
 		},
 
-	//MASONRY HELPER
 		f_buildtiles: function(){
+		//MASONRY HELPER
 			var $sortable = $('.ibm-sortable'), masonryItems = $sortable.find('.ibm-card');		
 
 				$sortable.imagesLoaded(function(){
 					$sortable.masonry({
 							gutter: 0,
 							itemSelector: '.ibm-card',
-							transitionDuration: '5s',
-							isAnimated: true
+							transitionDuration: '7s'
 						}, true);
 				});
 		},
 
-		//check searchTrendingList ? array : object
-		//Append the search terms to the searchTrendingList (may need to make this global so it can be updated on close)
-		//SearchTerms to lowercase
-		//Check similar ? array or object
-		//
+		f_rebuildAppendedTiles: function(){
+			$('.ibm-sortable').imagesLoaded(function(){
+					// $('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+					// $('.ibm-sortable').masonry('reloadItems');
+					// $('.ibm-sortable').masonry('reload');
+					setTimeout(function(){
+						$('.ibm-sortable').masonry('');
+					}, 400);
+			});
+		},
 		f_appendTrendinglist: function(searchterms){
 			var self = this;
 			self.sTerms = [];			
@@ -612,7 +652,7 @@ $(function(){
 				self.search = false;
 			}			 
 
-		},
+		},	
 
 		f_constructURL: function(searchterms){			
 			var self = this; 
@@ -643,11 +683,12 @@ $(function(){
 					filter: self.f_searchterms.toString(),
 				},
 				success: function(){
-					// console.log("SUCCESS");
+					// 
 				}
 			}).done(function(data, textStatus, jqXHR) {
 				var self = vo;
-				console.log(data.terms);
+				self.fetchedDataArray = $(window).data('vofeed', data);
+				console.log(self.fetchedDataArray);
 				// Update this function to distribute loadmore and search terms
 				if(data.terms){
 					if(data.terms.length > 0){
@@ -657,6 +698,12 @@ $(function(){
 						vo.f_appendTrendinglist($.makeArray(data.terms.split(',')));
 						vo.checkedCount = data.terms.split(',').length;
 						vo.f_removeNodes($("#ibm_cci-widget-js > span"));
+
+						$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+						setTimeout(function(){
+							$('#ibm_cci-widget-js').masonry();
+						}, 400);
+
 					} else {
 						return;
 					}
@@ -665,7 +712,13 @@ $(function(){
 						vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 						vo.search = true;
 						vo.f_distribute(data);
-						$("#ibm_cci__ml_t-js").addClass('ibm_cci-clicked');			
+						$("#ibm_cci__ml_t-js").addClass('ibm_cci-clicked');
+
+						$('#ibm_cci-widget-js').masonry("reload");
+						setTimeout(function(){
+							$('#ibm_cci-widget-js').masonry();
+						}, 400);
+
 					});
 				}	
 			})
@@ -675,7 +728,6 @@ $(function(){
 			.always(function() {
 				// console.log("complete");
 			});
-			
 		}
 
 	}; //vo (END)
@@ -683,3 +735,6 @@ $(function(){
 	a.vo = vo;
 
 })(jQuery, window);
+
+
+(function(e,t,n,v){"use strict";var r=t.event,i;r.special.smartresize={setup:function(){t(this).bind("resize",r.special.smartresize.handler)},teardown:function(){t(this).unbind("resize",r.special.smartresize.handler)},handler:function(e,t){var n=this,s=arguments;e.type="smartresize",i&&clearTimeout(i),i=setTimeout(function(){r.dispatch.apply(n,s)},t==="execAsap"?0:100)}},t.fn.smartresize=function(e){return e?this.bind("smartresize",e):this.trigger("smartresize",["execAsap"])},t.Mason=function(e,n){this.element=t(n),this._create(e),this._init()},t.Mason.settings={isResizable:!0,isAnimated:!1,animationOptions:{queue:!1,duration:500},gutterWidth:0,isRTL:!1,isFitWidth:!1,containerStyle:{position:"relative"}},t.Mason.prototype={_filterFindBricks:function(e){var t=this.options.itemSelector;return t?e.filter(t).add(e.find(t)):e},_getBricks:function(e){var t=this._filterFindBricks(e).css({position:"absolute"}).addClass("masonry-brick");return t},_create:function(n){this.options=t.extend(!0,{},t.Mason.settings,n),this.styleQueue=[];var r=this.element[0].style;this.originalStyle={height:r.height||""};var i=this.options.containerStyle;for(var s in i)this.originalStyle[s]=r[s]||"";this.element.css(i),this.horizontalDirection=this.options.isRTL?"right":"left";var o=this.element.css("padding-"+this.horizontalDirection),u=this.element.css("padding-top");this.offset={x:o?parseInt(o,10):0,y:u?parseInt(u,10):0},this.isFluid=this.options.columnWidth&&typeof this.options.columnWidth=="function";var a=this;setTimeout(function(){a.element.addClass("masonry")},0),this.options.isResizable&&t(e).bind("smartresize.masonry",function(){a.resize()}),this.reloadItems()},_init:function(e){this._getColumns(),this._reLayout(e)},option:function(e,n){t.isPlainObject(e)&&(this.options=t.extend(!0,this.options,e))},layout:function(e,t){for(var n=0,r=e.length;n<r;n++)this._placeBrick(e[n]);var i={};i.height=Math.max.apply(Math,this.colYs);if(this.options.isFitWidth){var s=0;n=this.cols;while(--n){if(this.colYs[n]!==0)break;s++}i.width=(this.cols-s)*this.columnWidth-this.options.gutterWidth}this.styleQueue.push({$el:this.element,style:i});var o=this.isLaidOut?this.options.isAnimated?"animate":"css":"css",u=this.options.animationOptions,a;for(n=0,r=this.styleQueue.length;n<r;n++)a=this.styleQueue[n],a.$el[o](a.style,u);this.styleQueue=[],t&&t.call(e),this.isLaidOut=!0},_getColumns:function(){var e=this.options.isFitWidth?this.element.parent():this.element,t=e.width();this.columnWidth=this.isFluid?this.options.columnWidth(t):this.options.columnWidth||this.$bricks.outerWidth(!0)||t,this.columnWidth+=this.options.gutterWidth,this.cols=Math.floor((t+this.options.gutterWidth)/this.columnWidth),this.cols=Math.max(this.cols,1)},_placeBrick:function(e){var n=t(e),r,i,s,o,u;r=Math.ceil(n.outerWidth(!0)/this.columnWidth),r=Math.min(r,this.cols);if(r===1)s=this.colYs;else{i=this.cols+1-r,s=[];for(u=0;u<i;u++)o=this.colYs.slice(u,u+r),s[u]=Math.max.apply(Math,o)}var a=Math.min.apply(Math,s),f=0;for(var l=0,c=s.length;l<c;l++)if(s[l]===a){f=l;break}var h={top:a+this.offset.y};h[this.horizontalDirection]=this.columnWidth*f+this.offset.x,this.styleQueue.push({$el:n,style:h});var p=a+n.outerHeight(!0),d=this.cols+1-c;for(l=0;l<d;l++)this.colYs[f+l]=p},resize:function(){var e=this.cols;this._getColumns(),(this.isFluid||this.cols!==e)&&this._reLayout()},_reLayout:function(e){var t=this.cols;this.colYs=[];while(t--)this.colYs.push(0);this.layout(this.$bricks,e)},reloadItems:function(){this.$bricks=this._getBricks(this.element.children())},reload:function(e){this.reloadItems(),this._init(e)},appended:function(e,t,n){if(t){this._filterFindBricks(e).css({top:this.element.height()});var r=this;setTimeout(function(){r._appended(e,n)},1)}else this._appended(e,n)},_appended:function(e,t){var n=this._getBricks(e);this.$bricks=this.$bricks.add(n),this.layout(n,t)},remove:function(e){this.$bricks=this.$bricks.not(e),e.remove()},destroy:function(){this.$bricks.removeClass("masonry-brick").each(function(){this.style.position="",this.style.top="",this.style.left=""});var n=this.element[0].style;for(var r in this.originalStyle)n[r]=this.originalStyle[r];this.element.unbind(".masonry").removeClass("masonry").removeData("masonry"),t(e).unbind(".masonry")}},t.fn.imagesLoaded=function(e){function u(){e.call(n,r)}function a(e){var n=e.target;n.src!==s&&t.inArray(n,o)===-1&&(o.push(n),--i<=0&&(setTimeout(u),r.unbind(".imagesLoaded",a)))}var n=this,r=n.find("img").add(n.filter("img")),i=r.length,s="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",o=[];return i||u(),r.bind("load.imagesLoaded error.imagesLoaded",a).each(function(){var e=this.src;this.src=s,this.src=e}),n};var s=function(t){e.console&&e.console.error(t)};t.fn.masonry=function(e){if(typeof e=="string"){var n=Array.prototype.slice.call(arguments,1);this.each(function(){var r=t.data(this,"masonry");if(!r){s("cannot call methods on masonry prior to initialization; attempted to call method '"+e+"'");return}if(!t.isFunction(r[e])||e.charAt(0)==="_"){s("no such method '"+e+"' for masonry instance");return}r[e].apply(r,n)})}else this.each(function(){var n=t.data(this,"masonry");n?(n.option(e||{}),n._init()):t.data(this,"masonry",new t.Mason(e,this))});return this}})(window,jQuery,vo);
