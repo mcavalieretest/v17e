@@ -266,6 +266,7 @@ sites/
   background: url(../i/story-hero1.jpg) repeat-x 50% 0px;
   padding: 0 !important;
   min-height: 202px;
+  width: auto !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body h1 {
