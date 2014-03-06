@@ -263,9 +263,7 @@ sites/
   }
 }
 .ibm-landing-page #ibm-leadspace-body {
-  background: transparent url(../i/story-hero1.jpg) no-repeat 100% 0;
-  padding: 0 !important;
-  min-height: 300px;
+  background: url(../i/story-hero1.jpg) repeat-x 50% 0px;
 }
 
 .ibm-landing-page #ibm-leadspace-body h1 {
