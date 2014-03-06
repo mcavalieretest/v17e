@@ -187,6 +187,7 @@ jQuery(function() {
           );
           
           if ($('#ibm-primary-tabs').length) {
+          	// Duplicate & inject the local nav html
           	var tabContent = $(
           						'<div id="m-local-menu">'
           							+ '<h2>' + $("h1").html() + '</h2>'
@@ -195,8 +196,6 @@ jQuery(function() {
 			          		).clone();
 
           	tabContent.find("ul").removeClass("ibm-tabs");
-
-            // Inject the local nav html
             tabContent.appendTo("#m-menu-scroll");
 
             // Create the accordion

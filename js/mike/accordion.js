@@ -85,7 +85,7 @@ Company.data.CustomStore = function(config) { ... }
       });
 
       this.container.on("click", "a", function(e) {
-        e.preventDefault();
+/*        e.preventDefault();
 
         // Some other events on top of this are making this respond slowly;
         // calling stopPropagation() partially resolves this. 
@@ -93,7 +93,7 @@ Company.data.CustomStore = function(config) { ... }
 
         var target = $(this).next("ul");
 
-        toggleList(target);
+        toggleList(target);*/
       });
     },
 
