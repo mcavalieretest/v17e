@@ -286,7 +286,7 @@ sites/
   padding: 25px 50px;
 }
 
-.ibm-portrait-module-list ul {
+#ibm-content ul.ibm-portrait-module-list p {
   font-family: HelvLightIBM;
   font-size: 1.5rem;
 }
