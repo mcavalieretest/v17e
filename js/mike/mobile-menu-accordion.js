@@ -186,10 +186,18 @@ jQuery(function() {
             }
           );
           
-          if (jQuery('#m-local-navigation').length) {
+          if ($('#ibm-primary-tabs').length) {
+          	var tabContent = $(
+          						'<div id="m-local-menu">'
+          							+ '<h2>' + $("h1").html() + '</h2>'
+				          			+ $('#ibm-primary-tabs').html()					          		
+				          		+ '</div>'
+			          		).clone();
+
+          	tabContent.find("ul").removeClass("ibm-tabs");
 
             // Inject the local nav html
-            jQuery('#m-local-menu').appendTo("#m-menu-scroll");
+            tabContent.appendTo("#m-menu-scroll");
 
             // Create the accordion
             window.accordion = new IBM.Common.Widget.Accordion({
