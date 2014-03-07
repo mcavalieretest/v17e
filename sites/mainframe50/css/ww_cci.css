@@ -262,13 +262,13 @@ sites/
     background-position: 0 100%;
   }
 }
-#ibm-pcon.ibm-story-pcon {
+#ibm-pcon .ibm-story-pcon {
   background: url("../i/story-header-bg.png") no-repeat scroll right top transparent;
   margin-top: -1px !important;
   padding-top: 16px !important;
 }
 
-#ibm-content.ibm-story-content {
+#ibm-content .ibm-story-content {
   background: url("../i/story-header-bg2.png") no-repeat scroll left bottom transparent;
 }
 
