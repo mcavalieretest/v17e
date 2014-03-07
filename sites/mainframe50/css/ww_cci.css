@@ -278,6 +278,7 @@ sites/
 
 #ibm-com #ibm-top .section-header.title {
   font-size: 2.6rem !important;
+  padding-bottom: none !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body {
