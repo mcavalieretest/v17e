@@ -247,7 +247,7 @@
 }
 
 // Story page starts here
-#ibm-leadspace-head {
+#ibm-leadspace-pcon {
 	background: url("../i/story-header-bg.png") no-repeat scroll right top transparent;
 	margin-top: -1px !important;
 	padding-top: 16px !important;
@@ -297,18 +297,4 @@
 
 #ibm-content li.ibm-portrait-module-list {
 	padding-bottom: 60px;
-}
-
-#ibm-content .ibm_story-header-band {
-	margin-top: -1px;
-	background: url(../i/story-header-bg.png) no-repeat 100% 0;
-	min-height: 835px;
-	width: 1074px;
-}
-
-#ibm-content .ibm_story-bottom-band {
-	margin-top: -1px;
-	background: url(../i/story-header-bg2.png) no-repeat 100% 0;
-	min-height: 270px;
-	width: 1074px;
 }
