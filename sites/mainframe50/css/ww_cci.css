@@ -354,3 +354,8 @@ sites/
   top: 260px;
   width: 335px;
 }
+
+#story .ibm-columns .ibm-col-4-2 {
+  padding: 0 !important;
+  border: solid 1px;
+}
