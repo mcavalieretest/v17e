@@ -198,6 +198,12 @@ jQuery(function() {
           	tabContent.find("ul").removeClass("ibm-tabs");
             tabContent.appendTo("#m-menu-scroll");
 
+            $("#m-menu-scroll")
+            	.find("h2").addClass("icon-arrow-right")
+            	// .each(function(i,el) {
+            	// 	$(this).html( '<a href="#">' + $(this).text() + '</a>' );
+            	// });
+
             // Create the accordion
             window.accordion = new IBM.Common.Widget.Accordion({
               container: "#m-menu-scroll"

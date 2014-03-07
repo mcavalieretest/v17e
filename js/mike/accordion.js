@@ -50,8 +50,6 @@ Company.data.CustomStore = function(config) { ... }
 
 (function($) {
   IBM.Common.Widget.Accordion = function(opts) {
-    // var defaults = {};
-
     this.init(opts);
   };
 
@@ -64,18 +62,18 @@ Company.data.CustomStore = function(config) { ... }
       this.container = $(this.options.container);
 
       function toggleList(list) {
-        var target = list;
+        var target  = list,
+            heading = target.prev("h2");
 
         // If we're closing this list, close my children too. 
         if (target.hasClass("active")) {
           target = target.find("ul").andSelf();
           target.removeClass("active");
+          heading.removeClass("active");
         } else {
           target.addClass("active");
+          heading.addClass("active");
         }
-
-
-        
       }
 
       this.container.on("click", "h2", function(e) {
