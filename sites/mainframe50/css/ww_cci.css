@@ -310,7 +310,7 @@ sites/
   font-size: 1.4rem;
 }
 
-#ibm-content ul.ibm-portrait-module-list li {
+#ibm-content li.ibm-portrait-module-list {
   padding-bottom: 60px;
 }
 
