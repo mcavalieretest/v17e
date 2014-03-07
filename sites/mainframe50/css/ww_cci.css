@@ -144,8 +144,7 @@ sites/
   font-family: "LubalinDemiIBM";
 }
 
-#ibm-content .ibm-last em {
-  font-family: "LubalinGraphStdBookIBM";
+#ibm-content p.ibm-last em {
   font-weight: bold;
   color: #FDB42B;
 }
