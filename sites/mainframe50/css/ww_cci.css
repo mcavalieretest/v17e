@@ -29,10 +29,6 @@ sites/
   border-bottom: 0;
 }
 
-#ibm-content #story-col-4-2 {
-  width: 480px;
-}
-
 .blueback {
   background: #021428;
   background-image: -webkit-linear-gradient(left, #021428, #082342);
@@ -278,6 +274,14 @@ sites/
 
 .ibm-live-assistance-list {
   font-size: 1.5rem !important;
+}
+
+#ibm-content #story-col-4-2 {
+  width: 480px;
+}
+
+.dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-two {
+  width: 660px;
 }
 
 #ibm-com #ibm-top .section-header.title {
