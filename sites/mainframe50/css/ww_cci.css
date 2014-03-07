@@ -281,14 +281,14 @@ sites/
   padding-bottom: none !important;
 }
 
-.ibm-landing-page #ibm-leadspace-body {
+.ibm-landing-page #ibm-leadspace-body.story {
   background: url(../i/story-hero1.jpg) repeat-x 50% 0px;
   padding: 0 !important;
   min-height: 202px;
   width: auto !important;
 }
 
-.ibm-landing-page #ibm-leadspace-body h1 {
+.ibm-landing-page #ibm-leadspace-body.story h1 {
   font-family: LubalinBook;
   font-size: 4.6rem;
   color: white;
