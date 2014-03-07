@@ -313,3 +313,11 @@ sites/
 #ibm-content li.ibm-portrait-module-list {
   padding-bottom: 60px;
 }
+
+.ibm-story-leadspace-head {
+  background: #06172B !important;
+}
+
+.ibm-story-leadspace-body {
+  background: #06172B !important;
+}
