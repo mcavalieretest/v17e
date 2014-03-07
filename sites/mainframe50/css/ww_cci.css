@@ -86,13 +86,12 @@ sites/
 }
 
 .ibm_cci-subtitle em {
-  font-family: "LubalinGraphStdBookIBM";
-  font-size: 95px;
-  font-size: 9.5rem;
-  line-height: 80px;
-  letter-spacing: 3px;
-  font-style: normal;
   color: #FDB42B;
+  font-family: "LubalinGraphStdBookIBM";
+  font-size: 9.5rem;
+  font-style: normal;
+  letter-spacing: 3px;
+  line-height: 80px;
   text-transform: uppercase;
 }
 
@@ -143,6 +142,11 @@ sites/
 
 #ibm-content p.ibm_cci-intro span {
   font-family: "LubalinDemiIBM";
+}
+
+#ibm-content p.ibm_cci-intro em {
+  font-weight: bold;
+  color: #FDB42B;
 }
 
 #ibm-content p.ibm_cci-call {
