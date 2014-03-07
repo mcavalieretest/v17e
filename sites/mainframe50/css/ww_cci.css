@@ -29,6 +29,10 @@ sites/
   border-bottom: 0;
 }
 
+#ibm-content .ibm-col-4-2 {
+  width: 480;
+}
+
 .blueback {
   background: #021428;
   background-image: -webkit-linear-gradient(left, #021428, #082342);
