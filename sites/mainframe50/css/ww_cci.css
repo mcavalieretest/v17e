@@ -358,6 +358,7 @@ sites/
 #story .ibm-columns {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
+  padding-bottom: 0 !important;
 }
 
 #story .ibm-columns .ibm-col-4-2 {
