@@ -144,7 +144,7 @@ sites/
   font-family: "LubalinDemiIBM";
 }
 
-#ibm-content p.ibm_cci-intro.ibm-last em {
+#ibm-content p.ibm-last em {
   font-weight: bold;
   color: #FDB42B;
 }
