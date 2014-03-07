@@ -29,7 +29,7 @@ sites/
   border-bottom: 0;
 }
 
-#ibm-content .ibm-col-4-2 {
+#ibm-content #story-col-4-2 {
   width: 480px;
 }
 
@@ -384,6 +384,11 @@ sites/
 
 #story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link {
   color: #FFFFFF !important;
+  text-shadow: none !important;
+}
+
+#story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link spam {
+  color: #CDAF3F !important;
   text-shadow: none !important;
 }
 
