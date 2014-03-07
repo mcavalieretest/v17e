@@ -342,7 +342,7 @@ sites/
 }
 
 .ibm-story {
-  background: url("../i/story-header-bg.png") no-repeat scroll right top transparent !important;
+  background: url("../i/story-header-bg.png") no-repeat scroll right center transparent !important;
   margin-top: -1px !important;
   padding-top: 16px !important;
 }
