@@ -92,7 +92,6 @@ $(function(){
 				// vo.sTerms.push(searchVal.toString());
 				console.log(searchVal);
 				vo.f_constructURL(searchVal.toString());
-
 		});
 		//SEARCH FUNCTION (END)
 		
@@ -129,7 +128,9 @@ $(function(){
 					$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
 						setTimeout(function(){
 							$('#ibm_cci-widget-js').masonry();
-						}, 400);								
+						}, 400);
+
+					if(vo.searchterms.length == 0) $(window).data("ajaxReq", true);									
 				});			
 			}	
 			
@@ -151,6 +152,8 @@ $(function(){
 							$(event.target).siblings('a').addClass('ibm_cci-close');
 							$("#ibm_cci__ml_t-js").removeClass('ibm_cci-clicked');
 							vo.f_constructURL(clickedTrendingName.toString());
+
+							// if(vo.searchterms.length > 0) $(window).data("ajaxReq", true);	
 					}
 					else if( $(parentP).hasClass('ibm_cci-clicked') ) {	
 							console.log("else if triggered parent has class clicked");
@@ -180,7 +183,6 @@ $(function(){
 							vo.similar = [];
 							$(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
 							vo.f_constructURL(vo.searchterms.toString());
-							vo.checkedCount = 0;
 						}
 					}
 
@@ -740,6 +742,7 @@ $(function(){
 					} else {
 						return;
 					}
+					if(vo.searchterms.length > 0) $(window).data("ajaxReq", true);	
 				}else {
 					vo.f_fetch_feeds().done(function(data){
 						vo.f_removeNodes($("#ibm_cci-widget-js > span"));
@@ -753,6 +756,8 @@ $(function(){
 						}, 400);
 
 					});
+
+					if(vo.searchterms.length == 0) $(window).data("ajaxReq", true);	
 				}	
 			})
 			.fail(function() {
