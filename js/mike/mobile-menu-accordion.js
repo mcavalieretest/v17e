@@ -34,6 +34,195 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
 jQuery.noConflict();
 
+
+
+  var IBM = {};
+
+
+ /**
+   * Creates namespaces to be used for scoping variables and classes so that they are not global.
+   * Specifying the last node of a namespace implicitly creates all other nodes.
+   * Taken from ExtJS. Usage:
+   * <pre><code>
+IBM.namespace('Company', 'Company.data');
+IBM.namespace('Company.data'); // equivalent and preferable to above syntax
+Company.Widget = function() { ... }
+Company.data.CustomStore = function(config) { ... }
+     </code></pre>
+   * @param {String} namespace1
+   * @param {String} namespace2
+   * @param {String} etc
+   * @return {Object} The namespace object. (If multiple arguments are passed, this will be the last namespace created)
+   * @method namespace
+   */
+  IBM.namespace = function() {
+      var ln = arguments.length,
+          i, value, split, x, xln, parts, object;
+
+      for (i = 0; i < ln; i++) {
+          value = arguments[i];
+          parts = value.split(".");
+          object = window[parts[0]] = Object(window[parts[0]]);
+          for (x = 1, xln = parts.length; x < xln; x++) {
+              object = object[parts[x]] = Object(object[parts[x]]);
+          }
+      }
+      return object;
+  };
+
+  // Shortcut
+  IBM.ns = IBM.namespace;
+
+  IBM.ns(
+    "IBM.Common", 
+    "IBM.Common.Widget",
+    "IBM.Common.Util",
+    "IBM.Common.Vendor",
+    "IBM.W3",
+    "IBM.W3.Widget",
+    "IBM.W3.Util",
+    "IBM.WWW",
+    "IBM.WWW.Widget",
+    "IBM.WWW.Util",
+    "IBM.Common.Widget.Accordion",
+    "IBM.Common.Widget.MobileMenu"
+  );
+
+  (function($, IBM) {
+
+
+/**
+	* link check function     (Widget.MobileMenu.whenMastheadLinksAvailable)
+	* insert hamburger html   (Widget.MobileMenu.insertHamburgerHtml)
+	* insert mobile menu html (Widget.MobileMenu.insertMobileMenuHtml)
+	* init the push menu      (Widget.MobileMenu.initPushMenu)
+	* insert local menu html  (Widget.MobileMenu.insertLocalMenuHtml)
+	* init the local menu     (Widget.MobileMenu.initLocalMenu)
+*/
+
+	  IBM.Common.Widget.MobileMenu = (function() {
+	  	function whenMastheadLinksAvailable() {}
+
+	  	function insertPushMenuWrapperHtml() {
+		  if(jQuery('#ibm-top').length > 0) {
+		    jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
+		  }
+	  	}
+
+	  	function insertHamburgerHtml() {
+          // Hamburger icon, for toggling mobile nav.
+          jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
+	  	}
+
+	  	function insertMobileMenuHtml() {
+         // Inject the mobile menu html
+         var mastLinks = jQuery('#ibm-menu-links').html();
+	     
+	      jQuery('#m-shift').prepend(
+	        '<div id="m-menu" class="m-menu">'
+	        +'<div id="m-search-module">'
+	        +'<form id="m-search-form" action="http://www.ibm.com/Search/" method="get">'
+	        +'<input id="m-q" value="" maxlength="100" name="q" type="text" placeholder="search ibm.com" />'
+	        +'<input type="submit" id="m-search" class="ibm-btn-search" value="Submit"/>'
+	        +'</form>'
+	        +'</div>'
+
+	        +'<div id="m-menu-scroll">'            
+	          +'<div id="m-main-menu">'
+	            +'<h2>IBM.com</h2>'
+	            +'<ul>' + mastLinks + '</ul>'
+	          +'</div>'
+	          +'</div>'
+	        +'</div>'
+	      );	  		
+	  	}
+
+	  	function initPushMenu() {
+          // Push menu for showing/hiding container
+          window.mobileMenuMain = new mlPushMenu( 
+            document.getElementById( 'm-menu' ), 
+            document.getElementById( 'm-main-menu' ), 
+            document.getElementById( 'm-navigation' ),
+            {
+            	onClose: function() {
+            		window.accordion.reset();
+            	}
+            }
+          );
+	  	}
+
+	  	function insertLocalMenuHtml() {
+          	// Duplicate & inject the local nav html
+          	var tabContent = $(
+          						'<div id="m-local-menu">'
+          							+ '<h2>' + $("h1").html() + '</h2>'
+				          			+ $('#ibm-primary-tabs').html()					          		
+				          		+ '</div>'
+			          		).clone();
+
+          	tabContent.find("ul").removeClass("ibm-tabs");
+            tabContent.appendTo("#m-menu-scroll");
+
+            $("#m-menu-scroll")
+            	.find("h2").addClass("icon-arrow-right")
+            	// .each(function(i,el) {
+            	// 	$(this).html( '<a href="#">' + $(this).text() + '</a>' );
+            	// });
+
+	  	}
+
+	  	function initLocalMenu() {
+	        // Create the accordion
+	        window.accordion = new IBM.Common.Widget.Accordion({
+	          container: "#m-menu-scroll"
+	        });	  		
+	  	}
+
+	  	return {
+	  		insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
+	  		insertHamburgerHtml: insertHamburgerHtml,
+	  		insertMobileMenuHtml: insertMobileMenuHtml,
+	  		initPushMenu: initPushMenu,
+	  		insertLocalMenuHtml: insertLocalMenuHtml,
+	  		initLocalMenu: initLocalMenu
+	  	};
+	  })();
+
+      var mLinksCheckFunction = function() {
+       if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
+         clearInterval(checkMLinksExist);
+
+		  IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
+		  IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
+          IBM.Common.Widget.MobileMenu.initPushMenu();
+          
+          if ($('#ibm-primary-tabs').length) {
+          	IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
+          	IBM.Common.Widget.MobileMenu.initLocalMenu();
+
+          }
+       }
+    };
+  
+    Modernizr.load({
+      load: [
+        "../js/mike/mlpushmenu.accordion.js",
+        "../js/mike/accordion.js",
+      ],
+      complete: function() {
+      	$(function() {
+      		IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
+	        // Loop till masthead links are available.  When available, prepend them to #m-shift
+	        window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms      		
+      	})
+
+      }
+    });
+
+  })(jQuery, IBM);
+
+
+
 jQuery(function() {
 
   var ibmcom = {
@@ -140,91 +329,6 @@ jQuery(function() {
     }; 
 
   ibmcom.init();
-
-
-  if(jQuery('#ibm-top').length > 0) {
-    jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
-  }
-
-  (function($) {
-      var mLinksCheckFunction = function() {
-       if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
-         clearInterval(checkMLinksExist);
-
-         // Inject the mobile menu html
-         var mastLinks = jQuery('#ibm-menu-links').html();
-          jQuery('#m-shift').prepend(
-            '<div id="m-menu" class="m-menu">'
-            +'<div id="m-search-module">'
-            +'<form id="m-search-form" action="http://www.ibm.com/Search/" method="get">'
-            +'<input id="m-q" value="" maxlength="100" name="q" type="text" placeholder="search ibm.com" />'
-            +'<input type="submit" id="m-search" class="ibm-btn-search" value="Submit"/>'
-            +'</form>'
-            +'</div>'
-
-            +'<div id="m-menu-scroll">'            
-              +'<div id="m-main-menu">'
-                +'<h2>IBM.com</h2>'
-                +'<ul>' + mastLinks + '</ul>'
-              +'</div>'
-              +'</div>'
-            +'</div>'
-          );
-
-          // Hamburger icon, for toggling mobile nav.
-          jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
-
-          // Push menu for showing/hiding container
-          window.mobileMenuMain = new mlPushMenu( 
-            document.getElementById( 'm-menu' ), 
-            document.getElementById( 'm-main-menu' ), 
-            document.getElementById( 'm-navigation' ),
-            {
-            	onClose: function() {
-            		window.accordion.reset();
-            	}
-            }
-          );
-          
-          if ($('#ibm-primary-tabs').length) {
-          	// Duplicate & inject the local nav html
-          	var tabContent = $(
-          						'<div id="m-local-menu">'
-          							+ '<h2>' + $("h1").html() + '</h2>'
-				          			+ $('#ibm-primary-tabs').html()					          		
-				          		+ '</div>'
-			          		).clone();
-
-          	tabContent.find("ul").removeClass("ibm-tabs");
-            tabContent.appendTo("#m-menu-scroll");
-
-            $("#m-menu-scroll")
-            	.find("h2").addClass("icon-arrow-right")
-            	// .each(function(i,el) {
-            	// 	$(this).html( '<a href="#">' + $(this).text() + '</a>' );
-            	// });
-
-            // Create the accordion
-            window.accordion = new IBM.Common.Widget.Accordion({
-              container: "#m-menu-scroll"
-            });
-          }
-       }
-    };
-  
-    Modernizr.load({
-      load: [
-        "../js/mike/mlpushmenu.accordion.js",
-        "../js/mike/accordion.js",
-      ],
-      complete: function() {
-        // Loop till masthead links are available.  When available, prepend them to #m-shift
-        window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms
-      }
-    });
-
-  })(jQuery);
-
 
 
 

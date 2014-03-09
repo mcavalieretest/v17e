@@ -8104,6 +8104,26 @@ a.ibm-thumbnail-module h3 {
   .ibm-landing-page #ibm-related-content .ibm-ribbon-section {
     margin-left: -10px; }
 
+  /* graphic tab style for mobile device: Temporary fix */
+  .ibm-graphic-tabs .ibm-tab-section {
+    border-bottom: none; }
+
+  .ibm-graphic-tabs .ibm-tab-section ul.ibm-tabs li {
+    min-height: 30px;
+    padding: 10px 0 0;
+    text-indent: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    clear: both; }
+
+  .ibm-graphic-tabs .ibm-tab-section ul.ibm-tabs.ibm-link-list li {
+    text-indent: 0;
+    border: 0; }
+
+  /* Will be removed after new design is implemented */
+  .ibm-combo-tabs div.ibm-text ul.ibm-tabs li {
+    text-indent: none; }
+
   #ibm-footer ul {
     width: auto;
     padding: 0; } }
