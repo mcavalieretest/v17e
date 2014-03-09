@@ -101,7 +101,18 @@ Company.data.CustomStore = function(config) { ... }
 */
 
 	  IBM.Common.Widget.MobileMenu = (function() {
-	  	function whenMastheadLinksAvailable() {}
+	  	function whenMastheadLinksAvailable(callback) {
+	      var mLinksCheckFunction = function() {
+	        if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
+	          clearInterval(checkMLinksExist);
+
+	          callback();
+	        }
+	      };
+
+      	  // Loop till masthead links are available.  When available, prepend them to #m-shift
+          window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms      		
+	  	}
 
 	  	function insertPushMenuWrapperHtml() {
 		  if(jQuery('#ibm-top').length > 0) {
@@ -179,6 +190,7 @@ Company.data.CustomStore = function(config) { ... }
 	  	}
 
 	  	return {
+	  		whenMastheadLinksAvailable: whenMastheadLinksAvailable,
 	  		insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
 	  		insertHamburgerHtml: insertHamburgerHtml,
 	  		insertMobileMenuHtml: insertMobileMenuHtml,
@@ -187,7 +199,7 @@ Company.data.CustomStore = function(config) { ... }
 	  		initLocalMenu: initLocalMenu
 	  	};
 	  })();
-
+/*
       var mLinksCheckFunction = function() {
        if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
          clearInterval(checkMLinksExist);
@@ -203,6 +215,8 @@ Company.data.CustomStore = function(config) { ... }
           }
        }
     };
+       */
+
   
     Modernizr.load({
       load: [
@@ -212,10 +226,18 @@ Company.data.CustomStore = function(config) { ... }
       complete: function() {
       	$(function() {
       		IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
-	        // Loop till masthead links are available.  When available, prepend them to #m-shift
-	        window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms      		
-      	})
 
+      		IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
+			  IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
+			  IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
+	          IBM.Common.Widget.MobileMenu.initPushMenu();
+	          
+	          if ($('#ibm-primary-tabs').length) {
+	          	IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
+	          	IBM.Common.Widget.MobileMenu.initLocalMenu();
+	          }
+      		});
+      	});
       }
     });
 
