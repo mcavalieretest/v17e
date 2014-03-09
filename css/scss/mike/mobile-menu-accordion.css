@@ -7880,11 +7880,16 @@ input#m-q {
   position: absolute;
   text-decoration: none;
   font-size: 1em;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s; }
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center; }
 .m-menu .icon-arrow-right.active:after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);

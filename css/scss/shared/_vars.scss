@@ -140,6 +140,15 @@ $glow :	0 0 5px rgba(255,255,255,.75);
 	-ms-transform: $transforms;
 	transform: $transforms;
 }
+// Apply browser prefix for transform-origin
+// e.g. @include transform-origin(20%, 40%);
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	transform-origin: $origin;
+}
 
 // Float reset
 // e.g. @include aslett-clearing;

@@ -489,8 +489,9 @@ $mMenuLevelIndent: 1em;
     letter-spacing: 4px;
     position: absolute;
     text-decoration: none;
-    font-size: 1em;
-    @include transition(all 0.5s);   
+    font-size: 1em; 
+    @include transition(all 0.25s);   
+    @include transform-origin(center center);
   }
 
   &.active:after {
