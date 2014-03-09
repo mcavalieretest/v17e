@@ -34,71 +34,64 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 
 jQuery.noConflict();
 
-
-
-  var IBM = {};
-
-
- /**
-   * Creates namespaces to be used for scoping variables and classes so that they are not global.
-   * Specifying the last node of a namespace implicitly creates all other nodes.
-   * Taken from ExtJS. Usage:
-   * <pre><code>
-IBM.namespace('Company', 'Company.data');
-IBM.namespace('Company.data'); // equivalent and preferable to above syntax
-Company.Widget = function() { ... }
-Company.data.CustomStore = function(config) { ... }
-     </code></pre>
-   * @param {String} namespace1
-   * @param {String} namespace2
-   * @param {String} etc
-   * @return {Object} The namespace object. (If multiple arguments are passed, this will be the last namespace created)
-   * @method namespace
-   */
-  IBM.namespace = function() {
-      var ln = arguments.length,
-          i, value, split, x, xln, parts, object;
-
-      for (i = 0; i < ln; i++) {
-          value = arguments[i];
-          parts = value.split(".");
-          object = window[parts[0]] = Object(window[parts[0]]);
-          for (x = 1, xln = parts.length; x < xln; x++) {
-              object = object[parts[x]] = Object(object[parts[x]]);
-          }
-      }
-      return object;
-  };
-
-  // Shortcut
-  IBM.ns = IBM.namespace;
-
-  IBM.ns(
-    "IBM.Common", 
-    "IBM.Common.Widget",
-    "IBM.Common.Util",
-    "IBM.Common.Vendor",
-    "IBM.W3",
-    "IBM.W3.Widget",
-    "IBM.W3.Util",
-    "IBM.WWW",
-    "IBM.WWW.Widget",
-    "IBM.WWW.Util",
-    "IBM.Common.Widget.Accordion",
-    "IBM.Common.Widget.MobileMenu"
-  );
+  var CHICKENFEED = {};
 
   (function($, IBM) {
+	 /**
+	   * Creates namespaces to be used for scoping variables and classes so that they are not global.
+	   * Specifying the last node of a namespace implicitly creates all other nodes.
+	   * Taken from ExtJS and tailored. Usage:
+	   * <pre><code>
+	IBM.namespace('Company', 'Company.data');
+	IBM.namespace('Company.data'); // equivalent and preferable to above syntax
+	Company.Widget = function() { ... }
+	Company.data.CustomStore = function(config) { ... }
+	     </code></pre>
+	   * @param {String} namespace1
+	   * @param {String} namespace2
+	   * @param {String} etc
+	   * @return {Object} The namespace object. (If multiple arguments are passed, this will be the last namespace created)
+	   * @method namespace
+	   */
+	  IBM.namespace = function() {
+	      var scope = arguments[0],
+	      	  ln = arguments.length,
+	          i, value, split, x, xln, parts, object;
+
+	          // debugger
+
+	      for (i = 1; i < ln; i++) {
+	          value = arguments[i];
+	          parts = value.split(".");
+	          console.warn('parts: ');
+	          console.warn(parts);
+	          object = scope[parts[0]] = Object(scope[parts[0]]);
+	          for (x = 1, xln = parts.length; x < xln; x++) {
+	              object = object[parts[x]] = Object(object[parts[x]]);
+	          }
+	      }
+	      return object;
+	  };
 
 
-/**
-	* link check function     (Widget.MobileMenu.whenMastheadLinksAvailable)
-	* insert hamburger html   (Widget.MobileMenu.insertHamburgerHtml)
-	* insert mobile menu html (Widget.MobileMenu.insertMobileMenuHtml)
-	* init the push menu      (Widget.MobileMenu.initPushMenu)
-	* insert local menu html  (Widget.MobileMenu.insertLocalMenuHtml)
-	* init the local menu     (Widget.MobileMenu.initLocalMenu)
-*/
+	  // Shortcut
+	  IBM.ns = IBM.namespace;
+
+	  IBM.ns(
+	  	IBM,
+	    "Common", 
+	    "Common.Widget",
+	    "Common.Util",
+	    "Common.Vendor",
+	    "W3",
+	    "W3.Widget",
+	    "W3.Util",
+	    "WWW",
+	    "WWW.Widget",
+	    "WWW.Util",
+	    "Common.Widget.Accordion",
+	    "Common.Widget.MobileMenu"
+	  );
 
 	  IBM.Common.Widget.MobileMenu = (function() {
 	  	function whenMastheadLinksAvailable(callback) {
@@ -199,24 +192,6 @@ Company.data.CustomStore = function(config) { ... }
 	  		initLocalMenu: initLocalMenu
 	  	};
 	  })();
-/*
-      var mLinksCheckFunction = function() {
-       if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
-         clearInterval(checkMLinksExist);
-
-		  IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
-		  IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
-          IBM.Common.Widget.MobileMenu.initPushMenu();
-          
-          if ($('#ibm-primary-tabs').length) {
-          	IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
-          	IBM.Common.Widget.MobileMenu.initLocalMenu();
-
-          }
-       }
-    };
-       */
-
   
     Modernizr.load({
       load: [
@@ -241,7 +216,7 @@ Company.data.CustomStore = function(config) { ... }
       }
     });
 
-  })(jQuery, IBM);
+  })(jQuery, CHICKENFEED);
 
 
 

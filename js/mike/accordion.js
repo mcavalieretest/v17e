@@ -1,5 +1,5 @@
 
-(function($) {
+(function($, IBM) {
   IBM.Common.Widget.Accordion = function(opts) {
     this.init(opts);
   };
@@ -53,5 +53,5 @@
     
   };
 
-})(jQuery);
+})(jQuery, CHICKENFEED);
 
