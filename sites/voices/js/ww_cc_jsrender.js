@@ -457,23 +457,23 @@ $(function(){
 		    // console.log("Preload Images: "+((new Image()).src = imgURL));
 		    // return (new Image()).src = imgURL || "";
 		    var img = new Image();
-		     	img.src = imgURL;
+		     	imgsrc = imgURL;
 			 
-			if(img.onerror !== null){
-				console.log("img success "+img.src);
-				return img.src;
+			// if(img.onerror !== null){
+			// 	console.log("img success "+img.src);
+			// 	return img.src;
+			// }
+			img.onerror = function (evt){
+				console.log(this.src + "not loaded");
+				return null
 			}
-			// img.onerror = function (evt){
-			// 	// console.log(this.src + "not loaded");
-			// 	// return null value
-			// }
-			// img.onload = function (evt){
-			// 	// console.log(this.src + " is loaded.");
-			// 	// return imgURL
-			// }
+			img.onload = function (evt){
+				console.log(this.src + " is loaded.");
+				return imgURL
+			}
 
 			//Return NULL if onerror fails
-			// return img.src = imgsrc;
+			return img.src = imgsrc;
 		},
 
 		f_mod_content: function(data){			
