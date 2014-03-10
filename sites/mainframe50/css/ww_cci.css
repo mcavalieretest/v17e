@@ -396,7 +396,7 @@ sites/
   text-shadow: none !important;
 }
 
-#story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link spam {
+#story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link span {
   color: #CDAF3F !important;
   text-shadow: none !important;
 }
