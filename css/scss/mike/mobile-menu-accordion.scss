@@ -138,7 +138,7 @@ css/
  * This chunk goes in _m-masthead.scss....
  */
 
-$m_searchBoxHeight: 30px;
+$mSearchBoxHeight: 30px;
 $mMenuLevelIndent: 1em;
 
 
@@ -194,7 +194,7 @@ input#m-q {
   background-size: 222px 124px;
   color: #888;
   width: 100%; 
-  height: $m_searchBoxHeight;
+  height: $mSearchBoxHeight;
   @include transition(background .2s linear);
 }
 
@@ -267,17 +267,9 @@ input#m-q {
 }
 
 #m-local-menu {
-  /* position: absolute;
-  z-index: 1;
-  width: 250px;
-  height: 100%;
- */
-/*   @include transition(all 0.5s);  
-  @include transform(translate3d(0, 100%, 0px));
- */
   .menu-close {
     position: absolute;
-    bottom: $m_searchBoxHeight;
+    bottom: $mSearchBoxHeight;
     display: block;
     width: 100%;
     text-align: center;
@@ -298,8 +290,6 @@ input#m-q {
 }
 
 #m-menu.m-local-menu-enable #m-local-menu {
-  /* @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px)); */
-
   &.docked {
     @include transform(translate3d(0px, 100%, 0px));
     top: -45px;

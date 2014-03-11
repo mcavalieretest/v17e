@@ -7687,26 +7687,17 @@ input#m-q {
   right: 0;
   left: auto; }
 
-#m-local-menu {
- /* position: absolute;
- z-index: 1;
- width: 250px;
- height: 100%;
-*/
-  /*   @include transition(all 0.5s);  
-    @include transform(translate3d(0, 100%, 0px));
-   */ }
-  #m-local-menu .menu-close {
-    position: absolute;
-    bottom: 30px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    font-size: 20px;
-    font-size: 2rem; }
+#m-local-menu .menu-close {
+  position: absolute;
+  bottom: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  font-size: 2rem; }
 
 #m-local-menu,
 #m-local-menu .m-level {
@@ -7715,17 +7706,15 @@ input#m-q {
 #m-local-menu {
   position: relative; }
 
-#m-menu.m-local-menu-enable #m-local-menu {
-  /* @include transform(translate3d(0px, $m_searchBoxHeight+8px, 0px)); */ }
-  #m-menu.m-local-menu-enable #m-local-menu.docked {
-    -webkit-transform: translate3d(0px, 100%, 0px);
-    -moz-transform: translate3d(0px, 100%, 0px);
-    -o-transform: translate3d(0px, 100%, 0px);
-    -ms-transform: translate3d(0px, 100%, 0px);
-    transform: translate3d(0px, 100%, 0px);
-    top: -45px; }
-    #m-menu.m-local-menu-enable #m-local-menu.docked h2.hide {
-      cursor: pointer; }
+#m-menu.m-local-menu-enable #m-local-menu.docked {
+  -webkit-transform: translate3d(0px, 100%, 0px);
+  -moz-transform: translate3d(0px, 100%, 0px);
+  -o-transform: translate3d(0px, 100%, 0px);
+  -ms-transform: translate3d(0px, 100%, 0px);
+  transform: translate3d(0px, 100%, 0px);
+  top: -45px; }
+  #m-menu.m-local-menu-enable #m-local-menu.docked h2.hide {
+    cursor: pointer; }
 
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
@@ -7824,9 +7813,6 @@ input#m-q {
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2);
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   font-size: 1.4em;
-  /*  -webkit-transition: background 0.3s, box-shadow 0.3s;
-    -moz-transition: background 0.3s, box-shadow 0.3s;
-    transition: background 0.3s, box-shadow 0.3s;*/
   padding-left: 1em;
   cursor: pointer; }
 

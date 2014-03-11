@@ -18,7 +18,7 @@
 (function() {
  document.write('<script type="text/javascript" src="' +
    '//1.www.s81c.com/common/js/dojo/www.js'+
-   	'"></' + 'script>');
+    '"></' + 'script>');
 })('loadDojo');
 
 /*! jQuery v1.11.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
@@ -431,7 +431,7 @@ Company.data.CustomStore = function(config) { ... }
    */
   IBM.namespace = function() {
       var scope = arguments[0],
-      	  ln = arguments.length,
+          ln = arguments.length,
           i, value, split, x, xln, parts, object;
 
           // debugger
@@ -452,7 +452,7 @@ Company.data.CustomStore = function(config) { ... }
   IBM.ns = IBM.namespace;
 
   IBM.ns(
-  	IBM,
+    IBM,
     "Common", 
     "Common.Widget",
     "Common.Util",
@@ -521,7 +521,7 @@ Company.data.CustomStore = function(config) { ... }
   };
 
   IBM.Common.Widget.MobileMenu = (function() {
-  	function whenMastheadLinksAvailable(callback) {
+    function whenMastheadLinksAvailable(callback) {
       var mLinksCheckFunction = function() {
         if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
           clearInterval(checkMLinksExist);
@@ -530,22 +530,22 @@ Company.data.CustomStore = function(config) { ... }
         }
       };
 
-  	  // Loop till masthead links are available.  When available, prepend them to #m-shift
-      window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms      		
-  	}
+      // Loop till masthead links are available.  When available, prepend them to #m-shift
+      window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms             
+    }
 
-  	function insertPushMenuWrapperHtml() {
-	  if(jQuery('#ibm-top').length > 0) {
-	    jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
-	  }
-  	}
+    function insertPushMenuWrapperHtml() {
+      if(jQuery('#ibm-top').length > 0) {
+        jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
+      }
+    }
 
-  	function insertHamburgerHtml() {
+    function insertHamburgerHtml() {
       // Hamburger icon, for toggling mobile nav.
       jQuery('#ibm-universal-nav').append('<p id="m-open-link"><a href="#" id="m-navigation">Mobile navigation</a></p>');
-  	}
+    }
 
-  	function insertMobileMenuHtml() {
+    function insertMobileMenuHtml() {
      // Inject the mobile menu html
      var mastLinks = jQuery('#ibm-menu-links').html();
      
@@ -565,117 +565,104 @@ Company.data.CustomStore = function(config) { ... }
           +'</div>'
           +'</div>'
         +'</div>'
-      );	  		
-  	}
+      );            
+    }
 
-  	function initPushMenu() {
+    function initPushMenu() {
       // Push menu for showing/hiding container
       window.mobileMenuMain = new mlPushMenu( 
         document.getElementById( 'm-menu' ), 
         document.getElementById( 'm-main-menu' ), 
         document.getElementById( 'm-navigation' ),
         {
-        	onClose: function() {
-        		if (window.accordion) {
-        			window.accordion.reset();
-        		}
-        		
-        	}
+            onClose: function() {
+                if (window.accordion) {
+                    window.accordion.reset();
+                }
+                
+            }
         }
       );
-  	}
+    }
 
-  	function insertLocalMenuHtml() {
-      	// Duplicate & inject the local nav html
-      	var tabContent = $(
-      						'<div id="m-local-menu">'
-      							+ '<h2>' + $("h1").html() + '</h2>'
-			          			+ $('#ibm-primary-tabs').html()					          		
-			          		+ '</div>'
-		          		).clone();
+    function insertLocalMenuHtml() {
+        // Duplicate & inject the local nav html
+        var tabContent = $(
+                            '<div id="m-local-menu">'
+                                + '<h2>' + $("h1").html() + '</h2>'
+                                + $('#ibm-primary-tabs').html()                                 
+                            + '</div>'
+                        ).clone();
 
-      	tabContent.find("ul").removeClass("ibm-tabs");
+        tabContent.find("ul").removeClass("ibm-tabs");
         tabContent.appendTo("#m-menu-scroll");
-  	}
+    }
 
-  	function initAccordion() {
-  		$("#m-menu-scroll").find("h2").addClass("icon-arrow-right");
+    function initAccordion() {
+        $("#m-menu-scroll").find("h2").addClass("icon-arrow-right");
 
         // Create the accordion
         window.accordion = new IBM.Common.Widget.Accordion({
           container: "#m-menu-scroll"
-        });	  		
-  	}
+        });         
+    }
 
-  	return {
-  		whenMastheadLinksAvailable: whenMastheadLinksAvailable,
-  		insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
-  		insertHamburgerHtml: insertHamburgerHtml,
-  		insertMobileMenuHtml: insertMobileMenuHtml,
-  		initPushMenu: initPushMenu,
-  		insertLocalMenuHtml: insertLocalMenuHtml,
-  		initAccordion: initAccordion
-  	};
+    return {
+        whenMastheadLinksAvailable: whenMastheadLinksAvailable,
+        insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
+        insertHamburgerHtml: insertHamburgerHtml,
+        insertMobileMenuHtml: insertMobileMenuHtml,
+        initPushMenu: initPushMenu,
+        insertLocalMenuHtml: insertLocalMenuHtml,
+        initAccordion: initAccordion
+    };
   })();
-
-  	$(function() {
-  		IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
-
-  		IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
-		  IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
-		  IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
-          IBM.Common.Widget.MobileMenu.initPushMenu();
-          
-          if ($('#ibm-primary-tabs').length) {
-          	IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
-          }
-
-          IBM.Common.Widget.MobileMenu.initAccordion();
-  		});
-  	});
 
 })(jQuery, CHICKENFEED);
 
 
 jQuery(function() {
 
-	var ibmcom = {
+  // Tracking code for v17e pages
+  ibmStats.event({"ibmEV":"page load","ibmEvAction":"v17e page"});
+
+    var ibmcom = {
     
         mobTabs: function () {
         
         // Check if primary tabs exists
         if(jQuery('#ibm-primary-tabs').length)
 
-		jQuery("#ibm-primary-tabs").addClass("ibm-no-mobile").after('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-mobile-tabs"><div><select></select></div></form>');
+        jQuery("#ibm-primary-tabs").addClass("ibm-no-mobile").after('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-mobile-tabs"><div><select></select></div></form>');
 
-		// Loop through each link under primary tabs and convert it to a dropdown list
-		jQuery('#ibm-primary-tabs li').each(function(){
-		
-			var selectedLink = jQuery(this).hasClass('ibm-active');
-			
-			if(selectedLink) {
-				selectedLink = 'selected="selected"'
-				}
-			else {
-				selectedLink = '';
-				}
-			var isSubPage = this.parentNode.parentNode.tagName.toLowerCase() === 'li';
-			jQuery('#ibm-mobile-tabs select').append('<option ' + 
-			
-				selectedLink + 
+        // Loop through each link under primary tabs and convert it to a dropdown list
+        jQuery('#ibm-primary-tabs li').each(function(){
+        
+            var selectedLink = jQuery(this).hasClass('ibm-active');
+            
+            if(selectedLink) {
+                selectedLink = 'selected="selected"'
+                }
+            else {
+                selectedLink = '';
+                }
+            var isSubPage = this.parentNode.parentNode.tagName.toLowerCase() === 'li';
+            jQuery('#ibm-mobile-tabs select').append('<option ' + 
+            
+                selectedLink + 
 
-				' value="' + jQuery(this).find("a").eq(0).attr('href') + '">' + 
-					( isSubPage ? '&emsp;&#x21b3; ' : '' ) + jQuery(this).find("a").eq(0).text() + 
-				'</option>');
-			
-			// check for change on dropdown list and submit value to window.location
-			jQuery('#ibm-mobile-tabs select').change(
-			
-			function(){
-				window.location = jQuery(this).val();
-			 });
-			
-		});
+                ' value="' + jQuery(this).find("a").eq(0).attr('href') + '">' + 
+                    ( isSubPage ? '&emsp;&#x21b3; ' : '' ) + jQuery(this).find("a").eq(0).text() + 
+                '</option>');
+            
+            // check for change on dropdown list and submit value to window.location
+            jQuery('#ibm-mobile-tabs select').change(
+            
+            function(){
+                window.location = jQuery(this).val();
+             });
+            
+        });
         
         },
         
@@ -684,65 +671,82 @@ jQuery(function() {
         // Check if left nav links exists
         if(jQuery('#ibm-primary-links').length)
 
-		jQuery("#ibm-content-main").prepend('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-leftnav-links"><div><select></select></div></form>');
+        jQuery("#ibm-content-main").prepend('<form class="ibm-menu-list ibm-mobile" action="http://www.ibm.com/links" id="ibm-leftnav-links"><div><select></select></div></form>');
 
-		// Loop through each link under primary tabs and convert it to a dropdown list
-		jQuery('#ibm-primary-links a').each(function(){
-		
-			var selectedLink = jQuery(this).parent().hasClass('ibm-active');
-			var depth = jQuery(this).parents('ul').length;
-			var depthIndicator = '';
-	
-			if (depth == '2') {
-				depthIndicator = '- ';
-				}
-			if (depth == '3') {
-				depthIndicator = '-- ';
-				}
-			if (depth == '4') {
-				depthIndicator = '--- ';
-				}
-			
-			if(selectedLink) {
-				selectedLink = 'selected="selected"'
-				}
-			else {
-				selectedLink = '';
-				}
-		
-			jQuery('#ibm-leftnav-links select').append('<option ' + 
-			
-				selectedLink + 
+        // Loop through each link under primary tabs and convert it to a dropdown list
+        jQuery('#ibm-primary-links a').each(function(){
+        
+            var selectedLink = jQuery(this).parent().hasClass('ibm-active');
+            var depth = jQuery(this).parents('ul').length;
+            var depthIndicator = '';
+    
+            if (depth == '2') {
+                depthIndicator = '- ';
+                }
+            if (depth == '3') {
+                depthIndicator = '-- ';
+                }
+            if (depth == '4') {
+                depthIndicator = '--- ';
+                }
+            
+            if(selectedLink) {
+                selectedLink = 'selected="selected"'
+                }
+            else {
+                selectedLink = '';
+                }
+        
+            jQuery('#ibm-leftnav-links select').append('<option ' + 
+            
+                selectedLink + 
 
-				' value="' + jQuery(this).attr('href') + '">' + 
-				depthIndicator + 
-				jQuery(this).text() + 
-				'</option>');
-			
-			// check for change on dropdown list and submit value to window.location
-			jQuery('#ibm-leftnav-links select').change(
-			
-			function(){
-				window.location = jQuery(this).val();
-			 });
-			
-		});
+                ' value="' + jQuery(this).attr('href') + '">' + 
+                depthIndicator + 
+                jQuery(this).text() + 
+                '</option>');
+            
+            // check for change on dropdown list and submit value to window.location
+            jQuery('#ibm-leftnav-links select').change(
+            
+            function(){
+                window.location = jQuery(this).val();
+             });
+            
+        });
         
         },
 
         init: function () {
         
-        	// init primary tabs to dropdown list function
-			ibmcom.mobTabs();
-			
-        	// init convert the left nav links (default template) into a dropdown list
-			ibmcom.leftNavTabs();
-			
+            // init primary tabs to dropdown list function
+            ibmcom.mobTabs();
+            
+            // init convert the left nav links (default template) into a dropdown list
+            ibmcom.leftNavTabs();
+            
         }
 
     }; 
 
 ibmcom.init();
+
+  (function($, IBM) {
+    IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
+
+    IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
+        IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
+        IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
+        IBM.Common.Widget.MobileMenu.initPushMenu();
+          
+        if ($('#ibm-primary-tabs').length) {
+          IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
+        }
+
+        IBM.Common.Widget.MobileMenu.initAccordion();
+    });
+  })(jQuery, CHICKENFEED);
+
 
 });
 
