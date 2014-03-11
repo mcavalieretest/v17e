@@ -332,6 +332,10 @@ sites/
   background: url("../i/mainframe50_index_header.jpg") no-repeat 48% 0 !important;
 }
 
+.ibm-story-leadspace-body {
+  padding: 0 0 35px !important;
+}
+
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 {
   font-size: 3.6rem;
   color: white;
