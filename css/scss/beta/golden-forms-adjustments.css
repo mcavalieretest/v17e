@@ -24,7 +24,14 @@
 	font-style: normal;
 }
 
+.golden-forms .rating label i{
+	font-style: normal;
+}
 
+/*
+.icon-star:before{content:"\f005";}
+.icon-star-empty:before{content:"\f006";}
+*/
 
 
 /**** ie8 ****/
