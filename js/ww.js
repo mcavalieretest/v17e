@@ -514,7 +514,8 @@ Company.data.CustomStore = function(config) { ... }
     },
 
     reset: function() {
-      this.container.find("ul").removeClass("active");
+      this.container
+        .find("h2,ul").removeClass("active");
     }
 
     
