@@ -596,16 +596,11 @@ Company.data.CustomStore = function(config) { ... }
 
       	tabContent.find("ul").removeClass("ibm-tabs");
         tabContent.appendTo("#m-menu-scroll");
-
-        $("#m-menu-scroll")
-        	.find("h2").addClass("icon-arrow-right")
-        	// .each(function(i,el) {
-        	// 	$(this).html( '<a href="#">' + $(this).text() + '</a>' );
-        	// });
-
   	}
 
-  	function initLocalMenu() {
+  	function initAccordion() {
+  		$("#m-menu-scroll").find("h2").addClass("icon-arrow-right");
+
         // Create the accordion
         window.accordion = new IBM.Common.Widget.Accordion({
           container: "#m-menu-scroll"
@@ -619,7 +614,7 @@ Company.data.CustomStore = function(config) { ... }
   		insertMobileMenuHtml: insertMobileMenuHtml,
   		initPushMenu: initPushMenu,
   		insertLocalMenuHtml: insertLocalMenuHtml,
-  		initLocalMenu: initLocalMenu
+  		initAccordion: initAccordion
   	};
   })();
 
@@ -633,8 +628,9 @@ Company.data.CustomStore = function(config) { ... }
           
           if ($('#ibm-primary-tabs').length) {
           	IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
-          	IBM.Common.Widget.MobileMenu.initLocalMenu();
           }
+
+          IBM.Common.Widget.MobileMenu.initAccordion();
   		});
   	});
 
