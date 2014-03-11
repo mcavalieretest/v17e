@@ -576,7 +576,10 @@ Company.data.CustomStore = function(config) { ... }
         document.getElementById( 'm-navigation' ),
         {
         	onClose: function() {
-        		window.accordion.reset();
+        		if (window.accordion) {
+        			window.accordion.reset();
+        		}
+        		
         	}
         }
       );
