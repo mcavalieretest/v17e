@@ -323,6 +323,9 @@ jQuery.noConflict();
       if( this.level === 1 ) {
         jQuery(this.wrapper).addClass( 'm-enable' );
         this.open = true;
+        if (this.options.onOpen) {
+          this.options.onOpen();
+        }
       }
       // add class m-level-open to the opening level element
       var levelElement = jQuery(subLevel || this.levels[0]);
@@ -576,11 +579,15 @@ Company.data.CustomStore = function(config) { ... }
         document.getElementById( 'm-main-menu' ), 
         document.getElementById( 'm-navigation' ),
         {
+            onOpen: function() {
+                if (window.accordion) {
+                    IBM.Common.Widget.MobileMenu.expandDefaultMenu();
+                }
+            },
             onClose: function() {
                 if (window.accordion) {
                     window.accordion.reset();
                 }
-                
             }
         }
       );
@@ -608,6 +615,21 @@ Company.data.CustomStore = function(config) { ... }
         });         
     }
 
+    function expandDefaultMenu() {
+      setTimeout(function(){
+        var targets;
+
+        if ( $("#m-local-menu").length ) {
+          targets = $("#m-local-menu").children("h2,ul");
+        } else {
+          targets = $("#m-main-menu").children("h2,ul");
+        }
+
+        targets.addClass("active");
+      }, 250);
+
+    }
+
     return {
         whenMastheadLinksAvailable: whenMastheadLinksAvailable,
         insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
@@ -615,7 +637,8 @@ Company.data.CustomStore = function(config) { ... }
         insertMobileMenuHtml: insertMobileMenuHtml,
         initPushMenu: initPushMenu,
         insertLocalMenuHtml: insertLocalMenuHtml,
-        initAccordion: initAccordion
+        initAccordion: initAccordion,
+        expandDefaultMenu: expandDefaultMenu
     };
   })();
 
