@@ -394,8 +394,9 @@ p.ibm-p-story {
 }
 
 .ibm-story-a{
-	color: #FFFFFF !important;
-	text-shadow: none !important;
+	background: url("../i/arrow.png") no-repeat right;
+	padding-left: 0 !important;
+	padding-right: 30px !important;
 }
 
 #story .ibm-columns .ibm-col-4-2.text-left {
