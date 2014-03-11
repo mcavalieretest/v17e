@@ -439,8 +439,6 @@ Company.data.CustomStore = function(config) { ... }
       for (i = 1; i < ln; i++) {
           value = arguments[i];
           parts = value.split(".");
-          console.warn('parts: ');
-          console.warn(parts);
           object = scope[parts[0]] = Object(scope[parts[0]]);
           for (x = 1, xln = parts.length; x < xln; x++) {
               object = object[parts[x]] = Object(object[parts[x]]);
