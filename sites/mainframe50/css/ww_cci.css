@@ -407,7 +407,7 @@ p.ibm-p-story {
   text-shadow: none !important;
 }
 
-#story .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link a, #story .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link a {
+.ibm-story-a {
   color: #FFFFFF !important;
   text-shadow: none !important;
 }
