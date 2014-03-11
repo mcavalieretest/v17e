@@ -8467,7 +8467,7 @@ a.ibm-thumbnail-module h3 {
     right: -60px; } }
 @media only screen and (min-width: 569px) and (max-width: 640px) {
   #ibm-top {
-    min-width: 600px; }
+    min-width: 569px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8637,7 +8637,7 @@ a.ibm-thumbnail-module h3 {
       min-height: 200px; } }
 @media only screen and (min-width: 601px) and (max-width: 640px) {
   #ibm-top {
-    min-width: 640px; }
+    min-width: 600px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8678,7 +8678,7 @@ a.ibm-thumbnail-module h3 {
     padding-top: 10px; } }
 @media only screen and (min-width: 641px) and (max-width: 800px) {
   #ibm-top {
-    min-width: 768px; }
+    min-width: 641px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8858,7 +8858,7 @@ a.ibm-thumbnail-module h3 {
       min-height: 200px; } }
 @media only screen and (min-width: 769px) and (max-width: 800px) {
   #ibm-top {
-    min-width: 800px; }
+    min-width: 769px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
