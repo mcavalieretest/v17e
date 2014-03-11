@@ -419,13 +419,13 @@ sites/
   text-shadow: none !important;
 }
 
-#story .ibm-columns .ibm-col-4-2.ibm-p-story p {
+#story .ibm-p-story p {
   color: #FFFFFF !important;
   text-shadow: none !important;
   font-family: "LubalinGraphStdBookIBM";
 }
 
-#story .ibm-columns .ibm-col-4-2.ibm-story-a {
+#story .ibm-story-a {
   background: url("../i/arrow.png") no-repeat right;
   padding-left: 0 !important;
   padding-right: 30px !important;
