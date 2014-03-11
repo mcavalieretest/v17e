@@ -313,12 +313,15 @@
 }
 
 //Story index page start here
-.ibm-story-leadspace-head{
+
+.ibm-story-leadspace-head {
 	background-color: #06172B !important;
-	background: url("../i/mainframe50_index_header.jpg") no-repeat 48% 0 !important
+	background: url("../i/eop-header-bg.jpg") no-repeat 48% 0 !important;
+	border-bottom: none !important;
+	padding: 20px 0 !important;
 }
 
-.ibm-story-leadspace-body{
+.ibm-story-leadspace-body {
 	padding: 0 0 35px !important;
 }
 
@@ -329,7 +332,7 @@
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
 }
 
-.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span{
+.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
 	font-family: "LubalinGraphStdBookIBM";
 	font-size: 8rem; 
 	color: #FDB42B;
@@ -342,20 +345,21 @@
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
 	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
-	font-size: 1.6rem; 
+	font-size: 2.0rem; 
 	color: white; 
+	line-height: 2.5rem;
 	text-shadow: none !important;
-	width: 500px;
+	width: 650px;
 }
 
-.ibm-story-LP {
+.ibm-story-lp {
 	background: url("../i/story-lp-bg.png") no-repeat scroll right center transparent !important;
 	//margin-top: -1px !important;
 	//padding-top: 16px !important;
 }
 
 #ibm-story-graphic {
-	background: url("../i/mainframe50_leftbg_index.png") no-repeat transparent !important;
+	background: url("../i/eop-leftbg.png") no-repeat transparent !important;
     height: 388px;
 	width: 164px;
     position: absolute;
@@ -400,16 +404,17 @@
 }
 
 #story .ibm-columns .ibm-col-4-2 p span.highlight{
-	color: #CDAF3F !important;
+	color: #FDB42B !important;
 	text-shadow: none !important;
 }
 
-p.ibm-p-story {
+#story .ibm-columns .ibm-col-4-2.ibm-p-story p {
 	color: #FFFFFF !important;
 	text-shadow: none !important;
+	font-family: "LubalinGraphStdBookIBM";
 }
 
-.ibm-story-a{
+#story .ibm-columns .ibm-col-4-2.ibm-story-a {
 	background: url("../i/arrow.png") no-repeat right;
 	padding-left: 0 !important;
 	padding-right: 30px !important;
