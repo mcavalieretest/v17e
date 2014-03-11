@@ -139,6 +139,7 @@ css/
  */
 
 $m_searchBoxHeight: 30px;
+$mMenuLevelIndent: 1em;
 
 
 #m-wrap {
@@ -416,7 +417,7 @@ input#m-q {
   font-size: 1em;
 }
 
-$mMenuLevelIndent: 1em;
+
 
 .m-menu ul li > a {
   display: block;
