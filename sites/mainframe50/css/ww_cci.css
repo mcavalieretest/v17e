@@ -421,7 +421,8 @@ p.ibm-p-story {
 }
 
 #story .ibm-columns .ibm-col-4-2.image-right {
-  width: 500px !important;
+  width: 500px;
+  height: 185px;
 }
 
 #story .ibm-columns .ibm-col-4-2.text-right {
@@ -430,7 +431,8 @@ p.ibm-p-story {
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left {
-  width: 500px !important;
+  width: 500px;
+  height: 185px;
 }
 
 .eop1-image {
