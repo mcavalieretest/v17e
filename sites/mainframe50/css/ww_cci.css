@@ -402,7 +402,7 @@ sites/
   text-shadow: none !important;
 }
 
-#story .ibm-columns .ibm-col-4-2 p {
+p.ibm-p-story {
   color: #FFFFFF !important;
   text-shadow: none !important;
 }
