@@ -324,14 +324,21 @@
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 {
 	font-size: 3.6rem; 
+	font-weight: 300;
 	color: white; 
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
 }
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span{
+	font-family: "LubalinGraphStdBookIBM";
 	font-size: 8rem; 
-	color: #CDAF3F;
+	color: #FDB42B;
 	text-shadow: none !important;	
+	font-size: 9.5rem;
+	font-style: normal;
+	letter-spacing: 3px;
+	line-height: 80px;
+	text-transform: uppercase;
 }
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
