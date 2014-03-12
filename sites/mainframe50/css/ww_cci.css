@@ -520,6 +520,11 @@ sites/
   background: url("../i/eop-02.jpg") no-repeat;
 }
 
+.style1 {
+  padding: 0px;
+  margin: 0px;
+}
+
 .ibm-columns.purple {
   background-color: #811D7D;
 }
