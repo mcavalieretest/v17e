@@ -563,6 +563,10 @@
 
 //Adjusting the page to work on < width 785px 
 @media only screen and (max-width : 785px) {
+	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+		width: 760px !important;
+	}
+	
 	#story .ibm-columns{
 		width: 735px !important;
 		margin-left: 15px;
