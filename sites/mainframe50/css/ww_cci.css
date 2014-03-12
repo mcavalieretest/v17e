@@ -525,5 +525,5 @@ sites/
 }
 
 .ibm-col-4-2.image-right {
-  margin-right: 0px;
+  margin: 0px !important;
 }
