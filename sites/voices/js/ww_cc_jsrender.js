@@ -1,9 +1,13 @@
 $(function(){
 
+// dojo.require("ext.media.abstractwidget");
+// dojo.require("ext.media.largewidget");
+// dojo.require("ext.media._base");
+
 
 	// DEFAULT URL HASH (START)
 		window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr('id');		
-	// DEFAULT URL HASH (END)
+	// DEFAULT URL HASH (END)	
 
 	// UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (START)
 		var updateURLHash = function(value){
@@ -26,16 +30,22 @@ $(function(){
 						target.addClass('selected').parent().siblings().children().removeClass("selected");						
 						if($("#ibm_cci-widget-js").hasClass('ibm_cci-gv__modifier')){
 							$("#ibm_cci-widget-js").removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
+
 							$(".ibm_cci-lv__modifier .ibm_cci--tweet-content-text").css('display', 'block');
 							$(".ibm_cci-lv__modifier .ibm-video").css('display', 'none');
-								
-								// REBULILD MASONRY TILES FOR LIST VIEW
-								$("#ibm_cci-widget-js").masonry("reload");
+
+							
+
+							// REBULILD MASONRY TILES FOR LIST VIEW
+							$("#ibm_cci-widget-js").masonry("reload");
 
 						 } else {
 						 	$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
+
+						 	$(".ibm_cci-gv__modifier .ibm-col-1-1").css('position', 'absolute');
 						 	$(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'none');
-								
+							$(".ibm_cci-gv__modifier .ibm-video").removeAttr('style');
+
 								// REBULILD MASONRY TILES GRID VIEW
 								$("#ibm_cci-widget-js").masonry('reloadItems');
 								setTimeout(function(){ 
@@ -75,9 +85,30 @@ $(function(){
 		
 		//INITIAL BUILD MASONRY TILES
 		vo.f_buildtiles();
-
+		//REMOVE THE SPINNER 
 		vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 		
+		// RELOAD THE WIDGET TO BIND MEDIA JS TO THE DYNAMIC VIDEO
+		dojo.require("ext.media._base");
+		$('.ibm-media').on("click", function(event){
+			event.preventDefault();
+			var src = $(event.target).attr('href');
+			var widget = new ext.media.overlaywidget();
+			widget.startup(
+				[
+					{
+						'type':'youtube',
+						'url':
+							{
+								'youtube': "'"+src+"'"
+							},
+						'width':640,
+						'height':360,
+						'isVideo':true
+					}
+				],true);
+		});
+
 		//SEARCH FUNCTION (START)
 		$('form').on('submit', function(){
 			var searchVal = $("#ibm-cc-search--field").val().toLowerCase();
@@ -92,6 +123,7 @@ $(function(){
 				// vo.sTerms.push(searchVal.toString());
 				console.log(searchVal);
 				vo.f_constructURL(searchVal.toString());
+
 		});
 		//SEARCH FUNCTION (END)
 		
@@ -267,23 +299,24 @@ $(function(){
 								vo.search = false; // SEARCH FALSE
 								vo.f_distribute(data);
 
+								vo.f_addspinner();
+
 								$('.ibm-sortable').imagesLoaded(function(){
 									console.log("masonry triggered");
 									$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
 									// $('.ibm-sortable').masonry('reloadItems');
 									$('.ibm-sortable').masonry('reload');
 								});
-
+						
 								setTimeout(function(){
-										if(data.entries.length == 20) {
+										if(data.entries.length >= 20) {
 											console.log("if Trriggered");
 											$(window).data("ajaxReq", true);
 										}else{
 											$(window).data("ajaxReq", false);
 										}
 
-								}, 3000);
-								
+								}, 3000);							
 								
 							}
 						})
@@ -301,29 +334,50 @@ $(function(){
 			// }	
 
 		}).on("resize", function(){
-			winHeight = $(window).height();
-			// f_buildtiles();
+			
+			winHeight = $(window).height();			
+			
+			if($(window).width() <= 500 || $(window).width() <= 800) {
+				$('.ibm-sortable').imagesLoaded(function(){
+					console.log("masonry triggered");
+					// $('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+					// $('.ibm-sortable').masonry('reloadItems');
+					$('.ibm-sortable').masonry('reload');
+				});
+			}		
+			
+			if($(window).width() <= 500 && $("#ibm_cci-widget-js").hasClass('ibm_cci-lv__modifier')){
+				$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
+				$(".ibm_cci--ls--toggle--li--list-icon a").removeClass('selected');
+				$(".ibm_cci--ls--toggle--li--grid-icon a").addClass('selected');
+			}
+			
 		});
 	// // INFINITE SCROLL (END)
 
 	// HELPER FUNCTIONS FOR THE TEMPALTES (START)
 	$.views.helpers({
-		addClass:retweetAddClass,
+		mediaURL:YTmediaURL,
+		truncateDesc:truncateDescription,
 	});
 	
-	function retweetAddClass(value, val){
+	function YTmediaURL(value, val){
 		if (value.indexOf("youtube") > -1){
 			value = val;
 		}
 		return value;
 	}
-	// HELPER FUNCTIONS FOR THE TEMPALTES (END)		
 
-	// $(document).bind("DOMNodeInserted", function(e){
-	// 	var ele = e.target;
-	// 	console.log($(ele).attr("data-rank"));
-		
-	// });
+	function truncateDescription(content){
+	var trimmedContent = "";	
+		if(content.length > 172){
+			trimmedContent = content.substring(0, 170);
+		}else {
+			trimmedContent = content;
+		}
+		return trimmedContent;
+	}	
+	// HELPER FUNCTIONS FOR THE TEMPALTES (END)		
 
 }); //CLOSE ON DOM READY
 
@@ -425,8 +479,12 @@ $(function(){
 				if(feed_data){
 					feed_data.content = this.f_mod_content(feed_data.content || "");
 					feed_data.published = this.f_pretty_date(feed_data.published);
+					
+					console.log(feed_data.content);
+					
+					feed_data.domain = this.f_truncateDomain(feed_data.domain || "");				
 
-					if(feed_data.mediaURL || feed_data.altMediaURL || feed_data.userAvatar){
+					if(feed_data.mediaURL || feed_data.altMediaURL){
 						feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
 						feed_data.altMediaURL = this.f_preloadImages(feed_data.altMediaURL || "");
 					}										
@@ -435,7 +493,7 @@ $(function(){
 						for(var i = 0; i < feed_data.refTweets.length; i++){	
 							if(feed_data.refTweets[i].content){
 								feed_data.refTweets[i].content = this.f_mod_content(feed_data.refTweets[i].content || "");
-								feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published || "");	
+								feed_data.refTweets[i].published = this.f_pretty_date(feed_data.refTweets[i].published || "");
 							}
 
 							if(feed_data.userAvatar || feed_data.refTweets.userAvatar){
@@ -464,16 +522,36 @@ $(function(){
 			// 	return img.src;
 			// }
 			img.onerror = function (evt){
-				console.log(this.src + "not loaded");
-				return null
+				// console.log(this.src + "not loaded");
+				// return null
 			}
 			img.onload = function (evt){
-				console.log(this.src + " is loaded.");
-				return imgURL
+				// console.log(this.src + " is loaded.");
+				// return imgURL
 			}
 
 			//Return NULL if onerror fails
 			return img.src = imgsrc;
+		},
+
+		f_truncateDomain:function(domain){			
+			if (domain.indexOf(".com") > -1){
+				domain = domain.replace(".com","");
+			}				
+			if (domain.indexOf("www.") > -1){
+				domain = domain.replace("www.","");
+			}				
+			if (domain.indexOf(".net") > -1){
+				domain = domain.replace(".net.","");
+			}				
+			if (domain.indexOf(".org") > -1){
+				domain = domain.replace(".org","");
+			}
+			
+			if (domain.length > 20){
+				domain=  domain.substring(0,20);
+			}
+			return domain;
 		},
 
 		f_mod_content: function(data){			
@@ -753,7 +831,7 @@ $(function(){
 						$('#ibm_cci-widget-js').masonry("reload");
 						setTimeout(function(){
 							$('#ibm_cci-widget-js').masonry();
-						}, 400);
+						}, 400);					
 
 					});
 
@@ -767,6 +845,15 @@ $(function(){
 				// console.log("complete");
 			});
 		}
+
+		// checkListView: function(){
+		// 	// TIMEOUT TO TRIGGER THIS AFTER MASONRY BUILD
+		// 	if($("#ibm_cci-widget-js").hasClass('ibm_cci-lv__modifier')){
+		// 		setTimeout(function(){
+		// 			$(".ibm_cci-lv__modifier .ibm-col-1-1").removeAttr('style');
+		// 		}, 800);
+		// 	}
+		// }
 
 	}; //vo (END)
 

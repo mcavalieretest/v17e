@@ -56,7 +56,7 @@ All comments starting with NOTE can also be removed!
 
 
 </head>
-<body id="ibm-com" class="ibm-type">  
+<body id="ibm-com" class="ibm-type" >  
 
 <!-- JSRender TT template (START) --> 
 <script id="tt_template" type="text/x-jsrender">	
@@ -201,13 +201,15 @@ All comments starting with NOTE can also be removed!
           <a href="{{:link}}" class="urltitleval">{{:title}}</a>
         </h2>
        <div class="ibm_cci--tweet-description">
-          <div class="ibm_cci--tweet-content-text">{{:content}}</div>
+          <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
+          <span class="ibm_cci--tweet-description-readmore"><a href="{{:link}}" alt="read more link">&hellip;Read More</a></span>
+          </div>
           <div class="ibm_cci-media-container">
           {{if altMediaURL && altMediaURL.length > -1 }}
              <div class="ibm-video">
                 <div class="ibm-video-container">
                   <a href="{{:mediaURL}}" rel="width=640&amp;height=360" class="ibm-media"> <span class="ibm-play-button-medium"></span>
-                  <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:~addClass(#parent.data.mediaURL, #parent.data.altMediaURL)}}"></a>
+                  <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:~mediaURL(#parent.data.mediaURL, #parent.data.altMediaURL)}}"></a>
                 </div>
               </div>             
               {{else mediaURL}}
@@ -256,7 +258,7 @@ All comments starting with NOTE can also be removed!
 
 
     {{range refTweets start=0 end=9}}
-    {{if #getIndex(#parent) == 0}}
+    {{if #getIndex() == 0}}
       <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
         <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
         <h3 class="ibm_cci--lv-rc-title">
@@ -370,7 +372,7 @@ All comments starting with NOTE can also be removed!
   <div id="ibm-leadspace-head" class="ibm_cc__voices_ls">
     <div id="ibm-leadspace-body">
       <div class="ibm_cci--ls--logo">
-        <h1 class="ibm_cci--h1__modifyer"> <a href="ibm-voices-index-grid.html">IBM Voices</a> </h1>
+        <h1 class="ibm_cci--h1__modifyer"> <a href="index-jsRender.html">IBM Voices</a> </h1>
         <p class="ibm_cci-about"> <a href="#" class="ibm_cci_aboutlink"> About us </a> </p>
       </div>
       <div class="ibm_cci--ls--search">
@@ -437,6 +439,8 @@ All comments starting with NOTE can also be removed!
           
 <!-- VOICES LIST/GRID VIEW (START) -->
           <div id="ibm_cci-widget-js" class="ibm-columns ibm-sortable ibm_cci-gv__modifier"> 
+                  
+                  <!-- JSRENDER TEMPLATE INJECTED HERE -->
 
           </div>
 <!-- VOICES LIST/GRID VIEW (END) --> 
