@@ -523,3 +523,12 @@ sites/
 .ibm-columns.purple {
   background-color: #811D7D;
 }
+
+.ibm-col-4-2.text-left {
+  width: 428px;
+}
+
+.ibm-col-4-2.image-right {
+  margin-right: 0px;
+  width: 499px;
+}
