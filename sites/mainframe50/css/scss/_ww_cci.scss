@@ -529,3 +529,10 @@
 	//width: 470px;
 	min-height: 187px;
 }
+
+@media only screen
+and (max-device-width : 1285px) {
+    #ibm-story-graphic{
+		display: none;
+	}
+}
