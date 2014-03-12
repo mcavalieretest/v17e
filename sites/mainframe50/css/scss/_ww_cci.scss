@@ -530,8 +530,16 @@
 	min-height: 187px;
 }
 
+//Remove the left background
 @media only screen and (max-width : 1285px) {
     #ibm-story-graphic{
+		display: none;
+	}
+}
+
+//Remove the top image to no overlap the text
+@media only screen and (max-width : 960px) {
+    #ibm-story-hero-graphic{
 		display: none;
 	}
 }
