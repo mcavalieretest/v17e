@@ -531,7 +531,5 @@ sites/
 .ibm-col-4-2.image-right {
   margin: 0px !important;
   padding: 0px !important;
-  max-width: 100% !important;
-  width: 100% !important;
-  height: auto !important;
+  background: url(../i/eop-01.jpg) no-repeat;
 }
