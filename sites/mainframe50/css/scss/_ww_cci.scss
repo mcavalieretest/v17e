@@ -527,6 +527,6 @@
 //Adjusting the page to work on < width 900px 
 @media only screen and (max-width : 900px) {
 	#story .ibm-columns{
-		width: 800px;
+		width: 800px !important;
 	}
 }
