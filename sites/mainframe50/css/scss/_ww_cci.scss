@@ -446,67 +446,67 @@
 }
 
 .eop1-image{
-	background: url("../i/eop-01.jpg") no-repeat;
+	background: url("../i/eop-01.jpg") no-repeat center;
 }
 
 .eop3-image{
-	background: url("../i/eop-03.jpg") no-repeat;
+	background: url("../i/eop-03.jpg") no-repeat center;
 }
 
 .eop4-image{
-	background: url("../i/eop-04.jpg") no-repeat;
+	background: url("../i/eop-04.jpg") no-repeat center;
 }
 
 .eop5-image{
-	background: url("../i/eop-05.jpg") no-repeat;
+	background: url("../i/eop-05.jpg") no-repeat center;
 }
 
 .eop6-image{
-	background: url("../i/eop-06.jpg") no-repeat;
+	background: url("../i/eop-06.jpg") no-repeat center;
 }
 
 .eop7-image{
-	background: url("../i/eop-07.jpg") no-repeat;
+	background: url("../i/eop-07.jpg") no-repeat center;
 }
 
 .eop8-image{
-	background: url("../i/eop-08.jpg") no-repeat;
+	background: url("../i/eop-08.jpg") no-repeat center;
 }
 
 .eop9-image{
-	background: url("../i/eop-09.jpg") no-repeat;
+	background: url("../i/eop-09.jpg") no-repeat center;
 }
 
 .eop10-image{
-	background: url("../i/eop-10.jpg") no-repeat;
+	background: url("../i/eop-10.jpg") no-repeat center;
 }
 
 .eop11-image{
-	background: url("../i/eop-11.jpg") no-repeat;
+	background: url("../i/eop-11.jpg") no-repeat center;
 }
 
 .eop12-image{
-	background: url("../i/eop-12.jpg") no-repeat;
+	background: url("../i/eop-12.jpg") no-repeat center;
 }
 
 .eop13-image{
-	background: url("../i/eop-13.jpg") no-repeat;
+	background: url("../i/eop-13.jpg") no-repeat center;
 }
 
 .eop14-image{
-	background: url("../i/eop-14.jpg") no-repeat;
+	background: url("../i/eop-14.jpg") no-repeat center;
 }
 
 .eop15-image{
-	background: url("../i/eop-15.jpg") no-repeat;
+	background: url("../i/eop-15.jpg") no-repeat center;
 }
 
 .eop16-image{
-	background: url("../i/eop-16.jpg") no-repeat;
+	background: url("../i/eop-16.jpg") no-repeat center;
 }
 
 .eop2-image{
-	background: url("../i/eop-02.jpg") no-repeat;
+	background: url("../i/eop-02.jpg") no-repeat center;
 }
 
 //---------------------------------Test styles
@@ -526,6 +526,10 @@
 
 //Adjusting the page to work on < width 930px 
 @media only screen and (max-width : 930px) {
+	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+		width: 900px !important;
+	}
+	
 	#story .ibm-columns{
 		width: 855px !important;
 		margin-left: 15px;
