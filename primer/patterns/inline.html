@@ -33,9 +33,6 @@
 <title>IBM v17e Upcoming Patterns</title>
 
 <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
-
-<script src="../../js/ww.js" type="text/javascript"></script>
-
 <link href="//1.www.s81c.com/common/v17e/css/social.css" rel="stylesheet" title="www" type="text/css" />
 <link href="//1.www.s81c.com/common/v17e/css/data.css" rel="stylesheet" title="www" type="text/css" />
 <link href="//1.www.s81c.com/common/v17e/css/module.css" rel="stylesheet" title="www" type="text/css" />
@@ -48,17 +45,49 @@
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
 
 <style type="text/css">
+#deisa {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 500px;
+    position: relative;
+}
+#deisa {
+    background: url("assets/fpo/DEISA-Supercomputer.jpg") no-repeat scroll center 50% / cover rgba(0, 0, 0, 0);
+}
+
+.ibm-show-hide h2, .ibm-show-hide .ibm-container {
+	border-top:none !important;
+}
+.ibm-show-hide h2 a {
+	border-top: 2px solid #666; 
+	display: block;
+	color: #777;
+	padding-top:2px;
+}
+.ibm-show-hide h2 a:hover {
+color: #444;
+}
+
+.ibm-show-hide h2 a.ibm-show-active{
+border-top: 2px solid #000; 
+color: #000;
+}
+.ibm-container.ibm-show-hide {
+border-bottom: 1px solid #CCC;
+padding-bottom: 0 !important;
+margin-bottom: 0 !important;
+}
 
 /* LEADSPACE STYLES */
 
 /* Leadspace foreground */
 #ibm-leadspace-head #ibm-leadspace-body {
-	background: url(../assets/bg-front.gif) no-repeat 100% 50%;
+	background: url(assets/bg-front.gif) no-repeat 100% 50%;
 }
 
 /* Leadspace background */
 #ibm-leadspace-head.ibm-alternate-background {
-	background: url(../assets/bg-back.png);}
+	background: url(assets/bg-back.png);}
 
 /* END LEADSPACE STYLES */
 
@@ -191,12 +220,13 @@
 				<p>Colored icons in the tab, minimized inactive tab + hover-state effect, bold effect on the summary line/pull-quote, taller sub-tabs, left-aligned body content, left-panel PDFs & Downloads – offers column.</p>
 
 			<h2 class="large">Code Snippet</h3>
-				<pre class="brush:html;">sample</pre>
-				
+				<p><pre class="brush:html;">&lt;body id="ibm-com" class="ibm-default"&gt;</pre></p>
+
 			<h2 class="large">See Also</h3>
+				<div class="ibm-container-body">
 				<ul>
 					<li><a href="http://205.186.160.10/v17e/templates/template_elements/text_tabs.html">Text Tabs and Graphic Tabs</a></li>
-				
+				</div>
 		</div>
 	</div> 
 </div>
