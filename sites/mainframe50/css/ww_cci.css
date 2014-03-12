@@ -533,5 +533,6 @@ sites/
 @media only screen and (max-width: 900px) {
   #story .ibm-columns {
     width: 800px !important;
+    margin-left: 15px;
   }
 }
