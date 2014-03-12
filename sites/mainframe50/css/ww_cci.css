@@ -520,10 +520,6 @@ sites/
   background: url("../i/eop-02.jpg") no-repeat;
 }
 
-.style1 {
-  padding-right: 0;
-}
-
 .ibm-columns.purple {
   background-color: #811D7D;
 }
@@ -533,6 +529,5 @@ sites/
 }
 
 .ibm-col-4-2.image-right {
-  margin-right: 0px;
   width: 499px;
 }
