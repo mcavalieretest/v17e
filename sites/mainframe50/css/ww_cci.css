@@ -530,7 +530,7 @@ sites/
     display: none;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 930px) {
   #story .ibm-columns {
     width: 855px !important;
     margin-left: 15px;
@@ -561,7 +561,7 @@ sites/
     font-size: 1.8rem !important;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 785px) {
   #story .ibm-columns {
     width: 735px !important;
     margin-left: 15px;
