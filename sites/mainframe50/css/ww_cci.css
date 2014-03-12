@@ -521,7 +521,7 @@ sites/
 }
 
 .style1 {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .ibm-columns.purple {
