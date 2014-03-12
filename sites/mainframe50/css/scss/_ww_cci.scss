@@ -525,5 +525,7 @@
 .ibm-col-4-2.image-right{
 	margin: 0px !important;
 	padding: 0px !important;
-	width: 470px;
+	max-width: 100% !important;
+	width: 100% !important;
+	height: auto !important;
 }
