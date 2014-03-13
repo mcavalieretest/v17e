@@ -207,17 +207,6 @@ jQuery.noConflict();
         }
         else {
           jQuery('#m-menu').removeClass('m-local-menu-enable');
-
-          // If this is the local menu, open the local menu in a second
-          if (jQuery(self.el).is("#m-menu") 
-            && jQuery('#m-local-navigation').length
-            && !self.open) {
-            setTimeout(function() {            
-              var height = jQuery("#m-main-menu").height();
-
-              // jQuery("#m-menu-scroll").animate({scrollTop: height}, 500);
-            }, 500);
-          }
         }
 
         ev.stopPropagation();
@@ -321,7 +310,11 @@ jQuery.noConflict();
       }
       // add class m-enable to main wrapper if opening the first time
       if( this.level === 1 ) {
-        jQuery(this.wrapper).addClass( 'm-enable' );
+
+        jQuery(this.wrapper)
+        	.addClass( 'm-shift' )
+        	.addClass( 'm-enable' );
+        jQuery("#m-menu").show(); 	
         this.open = true;
         if (this.options.onOpen) {
           this.options.onOpen();
@@ -345,7 +338,19 @@ jQuery.noConflict();
       //this._setTransform('translate3d(0,0,0)');
       this.level = 0;
       // remove class m-enable from main wrapper
-      jQuery(this.wrapper).removeClass( 'm-enable' );
+      jQuery(this.wrapper)
+      	// .removeClass( 'm-shift' )
+      	.removeClass( 'm-enable' );
+
+      jQuery(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() { 
+      	setTimeout(function() {
+      		jQuery(this).removeClass("m-shift"); 	
+      		jQuery("#m-menu").hide(); 	
+
+      	}, 200);
+      	
+  	  });
+      
       this._toggleLevels();
       this.open = false;
 
@@ -540,7 +545,7 @@ Company.data.CustomStore = function(config) { ... }
 
     function insertPushMenuWrapperHtml() {
       if(jQuery('#ibm-top').length > 0) {
-        jQuery('#ibm-top').wrap('<div id="m-wrap"><div class="m-shift" id="m-shift"><div class="m-content"></div></div></div>');
+        jQuery('#ibm-top').wrap('<div id="m-wrap"><div id="m-shift"><div class="m-content"></div></div></div>');
       }
     }
 

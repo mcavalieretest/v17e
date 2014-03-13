@@ -1,7 +1,6 @@
-
-#m-wrap {
-  position: relative;
-  overflow: hidden;
+html.m-menu-open #m-wrap {
+    position: relative;
+    overflow: hidden;    
 }
 
 #m-open-link {

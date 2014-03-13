@@ -8096,9 +8096,11 @@ a.ibm-thumbnail-module h3 {
     display: none; }
 
   #m-open-link,
-  #m-local-link,
-  #m-menu {
+  #m-local-link {
     display: block; }
+
+  #m-menu {
+    display: none; }
 
   html.m-menu-open,
   html.m-menu-open body,
@@ -8127,7 +8129,9 @@ a.ibm-thumbnail-module h3 {
     -ms-transform: translate3d(-250px, 0px, 0px);
     transform: translate3d(-250px, 0px, 0px); }
 
-  .m-content {
+  html.m-menu-open #m-wrap {
+    overflow-y: hidden; }
+  html.m-menu-open .m-content {
     overflow-y: hidden;
     position: relative; }
 

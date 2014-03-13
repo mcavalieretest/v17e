@@ -344,9 +344,11 @@ a.ibm-thumbnail-module h3 {
 	}
 	
 	#m-open-link,
-	#m-local-link,
-	#m-menu {
+	#m-local-link {
 		display: block;
+	}
+	#m-menu {
+		display: none;
 	}
 	
 	html.m-menu-open, 
@@ -372,9 +374,14 @@ a.ibm-thumbnail-module h3 {
 		@include transform(translate3d(-250px, 0px, 0px));
 	}
 
-	.m-content {
-		overflow-y: hidden;
-		position: relative;
+	html.m-menu-open {
+		#m-wrap {
+			overflow-y: hidden;
+		}
+		.m-content {
+			overflow-y: hidden;
+			position: relative;
+		}
 	}
 	
 	/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
