@@ -635,9 +635,9 @@
 }
 
 //Adjusting the page to work on < width 510px 
-@media only screen and (max-width : 510px) {
+@media only screen and (min-device-width : 340px) and (max-device-width : 510px) {
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
-		width: 480px !important; 
+		width: 90% !important; 
 		font-size: 1.9rem;
 	}
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
