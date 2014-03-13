@@ -525,7 +525,7 @@
 }
 
 //Adjusting the page to work on < width 240px 
-@media (max-width: 240px) and (min-width: 0){
+@media (max-width: 255px) and (min-width: 0){
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
 		font-size: 5.5rem;
 	}
