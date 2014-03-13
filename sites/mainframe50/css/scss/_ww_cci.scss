@@ -598,6 +598,43 @@
 	}
 }
 
+//Adjusting the page to work on < width 745px 
+@media only screen and (max-width : 745px) {
+	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+		width: 720px !important;
+	}
+	
+	#story .ibm-columns{
+		width: 720px !important;
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	
+	#story .ibm-columns .ibm-col-4-2.text-left {
+		width: 42% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-right {
+		width: 52.5% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.text-right {
+		width: 42% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-left {
+		width: 52.5% !important;
+	}
+	
+	#story .ibm-story-a {
+		font-size: 1.3rem !important;
+	}
+	
+	#story .ibm-p-story {
+		font-size: 1.3rem !important;
+	}
+}
+
 // Add to calendar
 .cal-menu ul li:before, .ibm-bullet:before {
   content: "";
