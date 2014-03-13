@@ -635,6 +635,45 @@ sites/
     font-size: 1.7rem !important;
   }
 }
+@media only screen and (max-width: 500px) {
+  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+    width: 480px !important;
+    font-size: 1.9rem;
+  }
+
+  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
+    font-size: 8.3rem;
+  }
+
+  #story .ibm-columns {
+    width: 100% !important;
+    margin: 15px 0 !important;
+  }
+
+  #story .ibm-columns .ibm-col-4-2.text-left {
+    width: 90% !important;
+  }
+
+  #story .ibm-columns .ibm-col-4-2.image-right {
+    width: 100% !important;
+  }
+
+  #story .ibm-columns .ibm-col-4-2.text-right {
+    width: 90% !important;
+  }
+
+  #story .ibm-columns .ibm-col-4-2.image-left {
+    width: 100% !important;
+  }
+
+  #story .ibm-story-a {
+    font-size: 1.7rem !important;
+  }
+
+  #story .ibm-p-story {
+    font-size: 1.7rem !important;
+  }
+}
 @media only screen and (max-width: 340px) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 320px !important;
