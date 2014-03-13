@@ -75,6 +75,23 @@ dojo.addOnLoad(function(){
 
 </script>
 
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+</script>
+
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
@@ -139,9 +156,20 @@ dojo.addOnLoad(function(){
 
 <p class="ibm_last"><em>Tune in on Tuesday, April 8, at 2 p.m. ET for the Mainframe50 event live from NYC.</em></p>
 
-<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Click to watch live on April 8</strong></a> &nbsp; <span class="vevent" ><a class="ibm_cci-btn ibm-no-mobile" href="#"><strong>Add to calendar</strong></a></p>
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Click to watch live on April 8</strong></a> &nbsp; 
+<a class="ibm_cci-btn ibm-no-mobile addthisevent" href="http://www.livestream.com/ibmsystemz"><strong>Add to calendar</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">05-08-2014 15:00:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">Summary of the event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">DD/MM/YYYY</span>
+</a></p>
 
-<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Click to go to Livestream</strong></a> &nbsp; <a class="ibm_cci-btn ibm-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Add to calendar</strong></a></p>
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Click to go to Livestream</strong></a> &nbsp; 
+<a class="ibm_cci-btn ibm-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Add to calendar</strong></a></p>
 
 </div>
 
