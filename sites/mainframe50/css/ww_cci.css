@@ -520,7 +520,17 @@ sites/
   background: url("../i/eop-02.jpg") no-repeat center;
 }
 
-@media only screen and (max-width: 320px) and (min-width: 0) {
+@media only screen and (max-width: 1285px) {
+  #ibm-story-graphic {
+    display: none;
+  }
+}
+@media only screen and (max-width: 960px) {
+  #ibm-story-hero-graphic {
+    display: none;
+  }
+}
+@media (max-width: 320px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 90% !important;
     font-size: 1.3rem;

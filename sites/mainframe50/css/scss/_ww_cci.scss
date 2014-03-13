@@ -510,8 +510,22 @@
 }
 
 //---------------------------------Test styles
+//Remove the left background
+@media only screen and (max-width : 1285px) {
+    #ibm-story-graphic{
+		display: none;
+	}
+}
+
+//Remove the top image to no overlap the text
+@media only screen and (max-width : 960px) {
+    #ibm-story-hero-graphic{
+		display: none;
+	}
+}
+
 //Adjusting the page to work on < width 320px 
-@media only screen and (max-width: 320px) and (min-width: 0){
+@media (max-width: 320px) and (min-width: 0){
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
 		width: 90% !important; 
 		font-size: 1.3rem;
