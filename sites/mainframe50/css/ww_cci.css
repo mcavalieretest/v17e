@@ -555,11 +555,6 @@ sites/
   }
 }
 @media (max-width: 1295px) and (min-width: 0) {
-  #story .ibm-columns {
-    width: 100% !important;
-    margin: 15px 0 !important;
-  }
-
   #story .ibm-columns .ibm-col-4-2.text-left {
     width: 46% !important;
     padding: 20px 1px !important;
