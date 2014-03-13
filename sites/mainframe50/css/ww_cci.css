@@ -395,13 +395,6 @@ sites/
   padding: 0 !important;
 }
 
-/* OLD
-#story .ibm-columns {
-	margin-top: 25px !important;
-	margin-bottom: 25px !important;
-	padding: 0 !important;
-}
-*/
 #story .ibm-columns .ibm-col-4-2 {
   margin: 0 !important;
   padding: 0 !important;
@@ -559,31 +552,6 @@ sites/
 @media only screen and (max-width: 960px) {
   #ibm-story-hero-graphic {
     display: none;
-  }
-}
-@media (max-width: 1295px) and (min-width: 0) {
-  #story .ibm-columns {
-    width: 100% !important;
-    margin: 15px 0 !important;
-  }
-
-  #story .ibm-columns .ibm-col-4-2.text-left {
-    width: 45% !important;
-    padding: 20px 1px !important;
-  }
-
-  #story .ibm-columns .ibm-col-4-2.image-right {
-    width: 51% !important;
-  }
-
-  #story .ibm-columns .ibm-col-4-2.text-right {
-    width: 45% !important;
-    padding: 20px 1px !important;
-  }
-
-  #story .ibm-columns .ibm-col-4-2.image-left {
-    width: 51% !important;
-    height: 178px;
   }
 }
 @media (max-width: 1295px) and (min-width: 0) {
