@@ -452,8 +452,8 @@ sites/
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left {
-  width: 500px;
-  height: 185px;
+  width: 483px;
+  height: 178px;
 }
 
 .eop1-image {
@@ -599,4 +599,19 @@ sites/
   #story .ibm-p-story {
     font-size: 1.8rem !important;
   }
+}
+.cal-menu ul li:before, .ibm-bullet:before {
+  content: "";
+}
+
+.cal-menu .cal-title {
+  font-family: "HelveticaNeue-Bold","HelvBoldIBM",Arial,sans-serif;
+}
+
+.cal-menu a.cal-list-link {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",HelvLightIBM,Arial,sans-serif;
+}
+
+.cal-menu .cal-learn-more {
+  display: none;
 }
