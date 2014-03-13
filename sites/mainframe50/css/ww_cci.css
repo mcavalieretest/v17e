@@ -530,14 +530,14 @@ sites/
     display: none;
   }
 }
-@media (max-width: 335px) and (min-width: 0) {
-  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
-    width: 90% !important;
-    font-size: 1.3rem;
+@media (max-width: 240px) and (min-width: 0) {
+  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
+    font-size: 5.5rem;
   }
 
-  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
-    font-size: 7.5rem;
+  .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+    width: 230px !important;
+    font-size: 1.1rem;
   }
 
   #story .ibm-columns {
@@ -546,7 +546,7 @@ sites/
   }
 
   #story .ibm-columns .ibm-col-4-2.text-left {
-    width: 90% !important;
+    width: 230px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-right {
@@ -554,7 +554,7 @@ sites/
   }
 
   #story .ibm-columns .ibm-col-4-2.text-right {
-    width: 90% !important;
+    width: 230px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-left {
