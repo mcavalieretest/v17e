@@ -529,6 +529,8 @@ Company.data.CustomStore = function(config) { ... }
   };
 
   IBM.Common.Widget.MobileMenu = (function() {
+  	var minViewportWidth = 800;
+
     function whenMastheadLinksAvailable(callback) {
       var mLinksCheckFunction = function() {
         if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
@@ -595,6 +597,13 @@ Company.data.CustomStore = function(config) { ... }
             }
         }
       );
+
+      // Close the menu automatically when the viewport gets too wide. 
+      $(window).resize(function() {
+      	if ( $(window).width() > minViewportWidth ) {
+      		window.mobileMenuMain._resetMenu();
+      	}
+      });
     }
 
     function insertLocalMenuHtml() {
