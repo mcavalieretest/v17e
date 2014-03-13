@@ -675,7 +675,7 @@
 }
 
 //Adjusting the page to work on < width 320px 
-@media only screen and (min-width : 0px) and (max-width : 320px) {
+@media only screen and (max-width : 320px) {
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
 		width: 90% !important; 
 		font-size: 1.3rem;
