@@ -627,11 +627,51 @@
 	}
 	
 	#story .ibm-story-a {
-		font-size: 1.3rem !important;
+		font-size: 1.7rem !important;
 	}
 	
 	#story .ibm-p-story {
-		font-size: 1.3rem !important;
+		font-size: 1.7rem !important;
+	}
+}
+
+//Adjusting the page to work on < width 340px 
+@media only screen and (max-width : 340px) {
+	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
+		width: 320px !important; 
+		font-size: 1.4rem;
+	}
+	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
+		font-size: 7.5rem;
+	}
+	
+	#story .ibm-columns{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	
+	#story .ibm-columns .ibm-col-4-2.text-left {
+		width: 90% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-right {
+		width: 100% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.text-right {
+		width: 90% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-left {
+		width: 100% !important;
+	}
+	
+	#story .ibm-story-a {
+		font-size: 1.7rem !important;
+	}
+	
+	#story .ibm-p-story {
+		font-size: 1.7rem !important;
 	}
 }
 
