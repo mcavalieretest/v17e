@@ -675,7 +675,7 @@ sites/
 }
 @media only screen and (max-width: 340px) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
-    width: 320px !important;
+    width: 90% !important;
     font-size: 1.4rem;
   }
 
