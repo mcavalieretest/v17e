@@ -606,10 +606,7 @@
 }
 
 //Adjusting the page to work on < width 853px 
-@media (max-width: 548px) and (min-width: 0){
-	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p{
-		width: 515px !important;
-	}
+@media (max-width: 869px) and (min-width: 0){
 	
 	#story .ibm-columns{
 		width: 100% !important;
