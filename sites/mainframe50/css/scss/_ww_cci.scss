@@ -527,7 +527,7 @@
 //Adjusting the page to work on < width 240px 
 @media (max-width: 255px) and (min-width: 0){
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
-		font-size: 5.5rem;
+		font-size: 3.5rem;
 	}
 
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
@@ -551,7 +551,7 @@
 
 	#story .ibm-columns .ibm-col-4-2.text-right {
 		width: 230px !important;
-		padding: 20px 1px;
+		padding: 20px 1px !important;
 	}
 
 	#story .ibm-columns .ibm-col-4-2.image-left {
