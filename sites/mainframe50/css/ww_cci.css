@@ -390,8 +390,16 @@ sites/
   margin-top: 25px !important;
   margin-bottom: 25px !important;
   padding: 0 !important;
+  width: 100% !important;
 }
 
+/* OLD
+#story .ibm-columns {
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
+	padding: 0 !important;
+}
+*/
 #story .ibm-columns .ibm-col-4-2 {
   margin: 0 !important;
   padding: 0 !important;
@@ -457,67 +465,67 @@ sites/
 }
 
 .eop1-image {
-  background: url("../i/eop-01.jpg") no-repeat center;
+  background: url("../i/eop-01.jpg") repeat center;
 }
 
 .eop3-image {
-  background: url("../i/eop-03.jpg") no-repeat center;
+  background: url("../i/eop-03.jpg") repeat center;
 }
 
 .eop4-image {
-  background: url("../i/eop-04.jpg") no-repeat center;
+  background: url("../i/eop-04.jpg") repeat center;
 }
 
 .eop5-image {
-  background: url("../i/eop-05.jpg") no-repeat center;
+  background: url("../i/eop-05.jpg") repeat center;
 }
 
 .eop6-image {
-  background: url("../i/eop-06.jpg") no-repeat center;
+  background: url("../i/eop-06.jpg") repeat center;
 }
 
 .eop7-image {
-  background: url("../i/eop-07.jpg") no-repeat center;
+  background: url("../i/eop-07.jpg") repeat center;
 }
 
 .eop8-image {
-  background: url("../i/eop-08.jpg") no-repeat center;
+  background: url("../i/eop-08.jpg") repeat center;
 }
 
 .eop9-image {
-  background: url("../i/eop-09.jpg") no-repeat center;
+  background: url("../i/eop-09.jpg") repeat center;
 }
 
 .eop10-image {
-  background: url("../i/eop-10.jpg") no-repeat center;
+  background: url("../i/eop-10.jpg") repeat center;
 }
 
 .eop11-image {
-  background: url("../i/eop-11.jpg") no-repeat center;
+  background: url("../i/eop-11.jpg") repeat center;
 }
 
 .eop12-image {
-  background: url("../i/eop-12.jpg") no-repeat center;
+  background: url("../i/eop-12.jpg") repeat center;
 }
 
 .eop13-image {
-  background: url("../i/eop-13.jpg") no-repeat center;
+  background: url("../i/eop-13.jpg") repeat center;
 }
 
 .eop14-image {
-  background: url("../i/eop-14.jpg") no-repeat center;
+  background: url("../i/eop-14.jpg") repeat center;
 }
 
 .eop15-image {
-  background: url("../i/eop-15.jpg") no-repeat center;
+  background: url("../i/eop-15.jpg") repeat center;
 }
 
 .eop16-image {
-  background: url("../i/eop-16.jpg") no-repeat center;
+  background: url("../i/eop-16.jpg") repeat center;
 }
 
 .eop2-image {
-  background: url("../i/eop-02.jpg") no-repeat center;
+  background: url("../i/eop-02.jpg") repeat center;
 }
 
 @media only screen and (max-width: 1285px) {
