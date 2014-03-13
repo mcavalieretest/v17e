@@ -547,6 +547,7 @@ sites/
 
   #story .ibm-columns .ibm-col-4-2.text-left {
     width: 230px !important;
+    padding: 20px 1px;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-right {
@@ -555,6 +556,7 @@ sites/
 
   #story .ibm-columns .ibm-col-4-2.text-right {
     width: 230px !important;
+    padding: 20px 1px;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-left {
