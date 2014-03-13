@@ -530,7 +530,7 @@ sites/
     display: none;
   }
 }
-@media (max-width: 320px) and (min-width: 0) {
+@media (max-width: 335px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 90% !important;
     font-size: 1.3rem;
