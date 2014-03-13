@@ -554,7 +554,32 @@
 	}
 }
 
-//Adjusting the page to work on < width 900px 
+//Adjusting the page to work on < width 1024px 
+@media (max-width: 1039px) and (min-width: 0){	
+	#story .ibm-columns{
+		width: 100% !important;
+		margin: 15px 0 !important;
+	}
+	
+	#story .ibm-columns .ibm-col-4-2.text-left {
+		width: 46% !important;
+		padding: 20px 1px !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-right {
+		width: 51% !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.text-right {
+		width: 46% !important;
+		padding: 20px 1px !important;
+	}
+
+	#story .ibm-columns .ibm-col-4-2.image-left {
+		width: 51% !important;
+	}
+}
+
 @media (max-width: 915px) and (min-width: 0){	
 	#story .ibm-columns{
 		width: 100% !important;
