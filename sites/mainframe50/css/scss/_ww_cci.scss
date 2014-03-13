@@ -891,18 +891,3 @@
 		font-size: 1.7rem !important;
 	}
 }
-
-// Add to calendar
-.cal-menu ul li:before, .ibm-bullet:before {
-  content: "";
-}
-.cal-menu .cal-title {
-  font-family: "HelveticaNeue-Bold","HelvBoldIBM",Arial,sans-serif;
-}
-.cal-menu a.cal-list-link {
-  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",HelvLightIBM,Arial,sans-serif;
-  font-size: 1.5rem;
-}
-.cal-menu .cal-learn-more {
-  display: none;
-}
