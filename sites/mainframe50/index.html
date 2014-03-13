@@ -75,6 +75,13 @@ dojo.addOnLoad(function(){
 
 </script>
 
+<script type="text/javascript">
+    IBM_version = 'v16'
+    IBM_EMAIL_ENABLED = false
+</script>
+
+<script type="text/javascript" src="//www.ibm.com/webaccessories/addtomycalendar/js/addtomycalendar-min.js"></script>
+
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
@@ -139,7 +146,18 @@ dojo.addOnLoad(function(){
 
 <p class="ibm_last"><em>Tune in on Tuesday, April 8, at 2 p.m. ET for the Mainframe50 event live from NYC.</em></p>
 
-<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Click to watch live on April 8</strong></a> &nbsp; <a class="ibm_cci-btn ibm-no-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Add to calendar</strong></a></p>
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Click to watch live on April 8</strong></a> &nbsp; <a class="ibm_cci-btn ibm-no-mobile bluecalendar-menu-context" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Add to calendar</strong></a>
+
+	<span class="vevent" >
+	<span style="display:none;">
+		<span class="summary description">Mainframe Anniversary Livestream</span>
+		<span title="20140407T140000-0500" class="dtstart">04/07/2014 14:00</span>
+		<span title="20140407T150000-0500" class="dtend">04/07/2014 15:00</span>
+		<span class="location">http://www.livestream.com/ibmsystemz</span>
+	</span>	
+	</span>
+	</p>
+
 <p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Click to go to Livestream</strong></a> &nbsp; <a class="ibm_cci-btn ibm-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Add to calendar</strong></a></p>
 
 </div>
@@ -457,15 +475,6 @@ dojo.addOnLoad(function(){
 	<h2>Mainframe50 event Livestream</h2>
 	<p>Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live from NYC.</p>
 	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Watch the Livestream</a> 
-	<!--span class="vevent" >
-	<img class="bluecalendar-menu-context" src="http://www.ibm.com/i/v16/icons/calendar.gif">
-	<span style="display:none;">
-		<span class="summary description">Mainframe Anniversary Livestream</span>
-		<span title="20140407T140000-0500" class="dtstart">04/07/2014 14:00</span>
-		<span title="20140407T150000-0500" class="dtend">04/07/2014 15:00</span>
-		<span class="location">http://www.livestream.com/ibmsystemz</span>
-	</span>	
-	</span-->
 	</p>
 </div>
 
