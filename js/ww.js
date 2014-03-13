@@ -310,6 +310,7 @@ jQuery.noConflict();
       }
       // add class m-enable to main wrapper if opening the first time
       if( this.level === 1 ) {
+		this._disableDrag();
 
         jQuery(this.wrapper)
         	.addClass( 'm-shift' )
@@ -345,9 +346,7 @@ jQuery.noConflict();
       	setTimeout(function() {
       		jQuery(this).removeClass("m-shift"); 	
       		jQuery("#m-menu").hide(); 	
-
       	}, 200);
-      	
   	  });
       
       this._toggleLevels();
@@ -409,6 +408,15 @@ jQuery.noConflict();
     },
     _getCurrentLevelElement: function() {
       return this.levelElementStack[this.levelElementStack.length-1];
+    },
+    _emptyFunc: function (ev) { 
+	  ev.preventDefault();
+	},
+    _enableDrag: function() {
+    	$('body').unbind('touchmove', this._emptyFunc);    	
+    },
+    _disableDrag: function() {
+		$('body').bind('touchmove', this._emptyFunc);    	
     }
   }
 
