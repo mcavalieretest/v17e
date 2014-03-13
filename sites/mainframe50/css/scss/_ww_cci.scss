@@ -612,3 +612,11 @@
 .cal-menu .cal-learn-more {
   display: none;
 }
+
+.ibm-email-link, .ibm-chat-link, .ibm-call-link, .ibm-call-info, .ibm-phone-link, .ibm-callme-link, .ibm-requestquote-link, .ibm-digg-link, .ibm-delicious-link, .ibm-facebook-link, .ibm-flickr-link, .ibm-friendfeed-link, .ibm-linkedin-link, .ibm-stumbleupon-link, .ibm-twitter-link, .ibm-youtube, .ibm-youtube-link, .ibm-livedoor-link, .ibm-hatena-link, .ibm-yahoojapan-link, .ibm-baidu-link, .ibm-renren-link, .ibm-kaixn-link, .ibm-wykop-link, .ibm-blip-link, .ibm-vaideo-link, .ibm-xing-link, .ibm-livestream-link, .ibm-calculator-link, .ibm-calendar-link, .ibm-print-link, .ibm-wireless-link, .ibm-dogear, .ibm-dogear-link, .ibm-community, .ibm-community-link, .ibm-blog, .ibm-blog-link, .ibm-forum-link, .ibm-usergroup, .ibm-usergroup-link, .ibm-tag-link {
+    background-image: none !important;
+}
+
+.cal-list gmi {
+    overflow: hidden;
+}
