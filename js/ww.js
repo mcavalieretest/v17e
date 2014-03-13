@@ -413,10 +413,10 @@ jQuery.noConflict();
 	  ev.preventDefault();
 	},
     _enableDrag: function() {
-    	$('body').unbind('touchmove', this._emptyFunc);    	
+    	// $('body').unbind('touchmove', this._emptyFunc);    	
     },
     _disableDrag: function() {
-		$('body').bind('touchmove', this._emptyFunc);    	
+		// $('body').bind('touchmove', this._emptyFunc);    	
     }
   }
 
