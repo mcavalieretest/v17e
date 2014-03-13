@@ -647,7 +647,7 @@ sites/
 
   #story .ibm-columns {
     width: 100% !important;
-    margin: 0 !important;
+    margin: 15px 0 !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.text-left {
