@@ -390,8 +390,9 @@ sites/
   margin-top: 25px !important;
   margin-bottom: 25px !important;
   padding: 0 !important;
-  width: 100% !important;
+  width: 1080px !important;
   max-width: 1080px !important;
+  padding: 0 !important;
 }
 
 /* OLD
