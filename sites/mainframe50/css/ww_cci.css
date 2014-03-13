@@ -1155,3 +1155,7 @@ sites/
 .addthisevent_dropdown .frs:hover {
   color: #6d84b4;
 }
+
+.addthisevent {
+  visibility: hidden;
+}
