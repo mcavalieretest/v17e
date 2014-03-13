@@ -445,25 +445,46 @@ sites/
 }
 
 #story .ibm-columns .ibm-col-4-2.text-left {
-  width: 420px !important;
+  width: 42% !important;
   padding: 20px 20px !important;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-right {
-  width: 500px;
+  width: 55% !important;
   height: 185px;
 }
 
 #story .ibm-columns .ibm-col-4-2.text-right {
-  width: 420px !important;
+  width: 42%px !important;
   padding: 20px 20px !important;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left {
-  width: 483px;
+  width: 55% !important;
   height: 178px;
 }
 
+/* OLD
+#story .ibm-columns .ibm-col-4-2.text-left {
+	width: 420px !important;
+	padding: 20px 20px!important;
+}
+
+#story .ibm-columns .ibm-col-4-2.image-right {
+	width: 500px;
+	height: 185px;
+}
+
+#story .ibm-columns .ibm-col-4-2.text-right {
+	width: 420px !important;
+	padding: 20px 20px!important;
+}
+
+#story .ibm-columns .ibm-col-4-2.image-left {
+	width: 483px;
+	height: 178px;
+}
+*/
 .eop1-image {
   background: url("../i/eop-01.jpg") repeat center;
 }
