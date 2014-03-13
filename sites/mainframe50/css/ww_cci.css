@@ -673,7 +673,7 @@ sites/
     font-size: 1.7rem !important;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 90% !important;
     font-size: 1.3rem;
