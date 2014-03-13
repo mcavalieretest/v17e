@@ -547,7 +547,7 @@ sites/
 
   #story .ibm-columns .ibm-col-4-2.text-left {
     width: 230px !important;
-    padding: 20px 1px;
+    padding: 20px 1px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-right {
