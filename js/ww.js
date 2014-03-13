@@ -339,7 +339,6 @@ jQuery.noConflict();
       this.level = 0;
       // remove class m-enable from main wrapper
       jQuery(this.wrapper)
-      	// .removeClass( 'm-shift' )
       	.removeClass( 'm-enable' );
 
       jQuery(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() { 
@@ -545,7 +544,7 @@ Company.data.CustomStore = function(config) { ... }
 
     function insertPushMenuWrapperHtml() {
       if(jQuery('#ibm-top').length > 0) {
-        jQuery('#ibm-top').wrap('<div id="m-wrap"><div id="m-shift"><div class="m-content"></div></div></div>');
+        jQuery('#ibm-top').wrap('<div id="m-wrap"><div id="m-shift" class="m-shift"><div class="m-content"></div></div></div>');
       }
     }
 
