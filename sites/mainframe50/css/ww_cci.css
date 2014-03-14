@@ -328,7 +328,7 @@ sites/
 }
 
 .ibm-story-leadspace-head {
-  background: #060b11 url("../i/eop-header-bg.jpg") no-repeat 50% 0 !important;
+  background: #060b11 url("../i/eop-header-bg.jpg") no-repeat 50% 100% !important;
   border-bottom: none !important;
 }
 
