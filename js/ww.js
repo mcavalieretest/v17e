@@ -104,8 +104,8 @@ jQuery.noConflict();
     this.options = extend( this.defaults, options );
     // support 3d transforms
     this.support = Modernizr.csstransforms3d;
-        // need to catch IE9 - while it doesn't support CSS transform 3d, id does support CSS for possible fallback - see adaptive.scss - selectors with .no-csstransforms3d
-        this.isIE9 = jQuery.support.cssFloat; 
+    // need to catch IE9 - while it doesn't support CSS transform 3d, id does support CSS for possible fallback - see adaptive.scss - selectors with .no-csstransforms3d
+    this.isIE9 = jQuery.support.cssFloat; 
     if(( this.support ) || (this.isIE9)) {
       this._init();
     }
@@ -199,18 +199,10 @@ jQuery.noConflict();
 
       // open (or close) the menu
       this.trigger.addEventListener( this.eventtype, function( ev ) {
-
-        jQuery('html').addClass('m-menu-open');
-        
-        if (jQuery(this).attr('id') == 'm-local-navigation') {
-          jQuery('#m-menu').addClass('m-local-menu-enable');
-        }
-        else {
-          jQuery('#m-menu').removeClass('m-local-menu-enable');
-        }
-
         ev.stopPropagation();
         ev.preventDefault();
+
+        jQuery('html').addClass('m-menu-open');
 
         if( self.open ) {
           self._resetMenu();
@@ -226,51 +218,6 @@ jQuery.noConflict();
           } );
         }
       } );
-
-      // opening a sub level menu
-      this.menuItems.forEach( function( el, i ) {
-        // check if it has a sub level
-        var subLevel = el.querySelector( 'div.m-level' );
-        if( subLevel ) {
-          el.querySelector( 'a' ).addEventListener( self.eventtype, function( ev ) {
-            ev.preventDefault();
-            var level = closest( el, 'm-level' ).getAttribute( 'data-level' );
-            if( self.level <= level ) {
-              ev.stopPropagation();
-              
-              jQuery(closest( el, 'm-level' )).addClass( 'm-level-overlay' );
-
-              self._openLevel( subLevel );
-            }
-          } );
-        }
-      } );
-
-      // closing the sub levels :
-      // by clicking on the visible part of the level element
-      this.levels.forEach( function( el, i ) {
-        el.addEventListener( self.eventtype, function( ev ) {
-          ev.stopPropagation();
-          var level = el.getAttribute( 'data-level' );
-          if( self.level > level ) {
-            self.level = level;
-            self._closeMenu();
-          }
-        } );
-      } );
-
-      // by clicking on a specific element
-      this.levelBack.forEach( function( el, i ) {
-        el.addEventListener( self.eventtype, function( ev ) {
-          ev.preventDefault();
-          var level = closest( el, 'm-level' ).getAttribute( 'data-level' );
-          if( self.level <= level ) {
-            ev.stopPropagation();
-            self.level = closest( el, 'm-level' ).getAttribute( 'data-level' ) - 1;
-            self.level === 0 ? self._resetMenu() : self._closeMenu();
-          }
-        } );
-      } );  
     },
 
     // Opens a single menu 'level'
@@ -285,7 +232,6 @@ jQuery.noConflict();
       if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
         jQuery('#m-wrap').css("height", mNavHeightCheck); 
       }
-    
     
       // increment level depth
       ++this.level;
@@ -357,7 +303,6 @@ jQuery.noConflict();
       }
     },
     _resetLocalMenu: function() {
-      jQuery('#m-menu').removeClass('m-local-menu-enable');
       jQuery("#m-menu-scroll").animate({scrollTop: 0}, 500);
 
       this.level = 0;
@@ -368,7 +313,6 @@ jQuery.noConflict();
         self._toggleLevels();
       }, 500);
             
-      jQuery(this.container).removeClass("docked");
     },
     // close sub menus
     _closeMenu : function() {

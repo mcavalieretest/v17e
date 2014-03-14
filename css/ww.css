@@ -7706,16 +7706,6 @@ input#m-q {
 #m-local-menu {
   position: relative; }
 
-#m-menu.m-local-menu-enable #m-local-menu.docked {
-  -webkit-transform: translate3d(0px, 100%, 0px);
-  -moz-transform: translate3d(0px, 100%, 0px);
-  -o-transform: translate3d(0px, 100%, 0px);
-  -ms-transform: translate3d(0px, 100%, 0px);
-  transform: translate3d(0px, 100%, 0px);
-  top: -45px; }
-  #m-menu.m-local-menu-enable #m-local-menu.docked h2.hide {
-    cursor: pointer; }
-
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000; }

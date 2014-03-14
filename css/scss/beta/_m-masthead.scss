@@ -145,19 +145,6 @@ input#m-q {
   position: relative;
 }
 
-#m-menu.m-local-menu-enable #m-local-menu {
-  &.docked {
-    @include transform(translate3d(0px, 100%, 0px));
-    top: -45px;
-
-    h2.hide {
-      cursor: pointer;
-    }
-  }
-}
-
-
-
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000;
