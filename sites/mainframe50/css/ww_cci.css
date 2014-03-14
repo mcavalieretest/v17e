@@ -388,9 +388,7 @@ sites/
 #story .ibm-columns {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
-  padding: 0 !important;
   width: 1080px !important;
-  max-width: 1080px !important;
   padding: 0 !important;
 }
 
@@ -439,22 +437,22 @@ sites/
 }
 
 #story .ibm-columns .ibm-col-4-2.text-left {
-  width: 45% !important;
+  width: 480px !important;
   padding: 20px 20px !important;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-right {
-  width: 51% !important;
+  width: 560px !important;
   height: 185px;
 }
 
 #story .ibm-columns .ibm-col-4-2.text-right {
-  width: 45% !important;
+  width: 480px !important;
   padding: 20px 20px !important;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left {
-  width: 51% !important;
+  width: 560px !important;
   height: 178px;
 }
 
