@@ -1,10 +1,5 @@
 $(function(){
 
-// dojo.require("ext.media.abstractwidget");
-// dojo.require("ext.media.largewidget");
-// dojo.require("ext.media._base");
-
-
 	// DEFAULT URL HASH (START)
 		window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr('id');		
 	// DEFAULT URL HASH (END)	
@@ -22,14 +17,15 @@ $(function(){
 	// MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)				
 		$('.ibm_cci--ls--toggle ul.ibm_cci--ls--toggle--ul').children()
 			.each(function(){
-				$this = $(this);				
-				$this.on('click', 'a', function(event){
-					event.stopPropagation();
-					var target = $(event.target);
+				var toggleButton = $(this);				
+				toggleButton.on('click', 'a', function(event){
+					event.preventDefault();
+					var target = $(event.target), widgetJS = $("#ibm_cci-widget-js");
+
 					if(!target.hasClass('selected')){
 						target.addClass('selected').parent().siblings().children().removeClass("selected");						
-						if($("#ibm_cci-widget-js").hasClass('ibm_cci-gv__modifier')){
-							$("#ibm_cci-widget-js").removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
+						if(widgetJS.hasClass('ibm_cci-gv__modifier')){
+							widgetJS.removeClass('ibm_cci-gv__modifier').addClass('ibm_cci-lv__modifier');
 
 							$(".ibm_cci-lv__modifier .ibm_cci--tweet-content-text").css('display', 'block');
 							$(".ibm_cci-lv__modifier .ibm-video").css('display', 'none');
@@ -37,91 +33,82 @@ $(function(){
 							
 
 							// REBULILD MASONRY TILES FOR LIST VIEW
-							$("#ibm_cci-widget-js").masonry("reload");
+							widgetJS.masonry("reload");
 
 						 } else {
-						 	$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
+						 	widgetJS.removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
 
-						 	$(".ibm_cci-gv__modifier .ibm-col-1-1").css('position', 'absolute');
 						 	$(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css('display', 'none');
 							$(".ibm_cci-gv__modifier .ibm-video").removeAttr('style');
 
 								// REBULILD MASONRY TILES GRID VIEW
-								$("#ibm_cci-widget-js").masonry('reloadItems');
-								setTimeout(function(){ 
-									$("#ibm_cci-widget-js").masonry();
-								 }, 800);
+								widgetJS.masonry('reloadItems');
+									setTimeout(function(){ 
+										widgetJS.masonry();
+									 }, 800);
 						 }
 					}
 					updateURLHash(target.attr('id'));
 				})
 		});			
 	
-/*
-	1. 	INITIALIZATION OF TRENDING TOPICS
-	2. 	LATER WE CAN CHANGE THE URL INTO AN OBJECT AND 
-		PASS THAT OBJECT TO CONSTRUCT THE URL
-*/
+
+	// INITIALIZATION OF TRENDING TOPICS
 	vo.init_t({
 		tt_url : "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES/trending", 
-		// tt_url 		: "./data/tt.json", 
 		t_template 	: $('#tt_template'),
 		t_container	: $('#ibm_cci__ml')
 	});
 
+	// INITIALIZATION OF FEEDS
 	vo.init_f({
 		f_url : "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES",
-		// f_url : "./data/voicesfeed.json", 
-		// f_url : vo.f_constructURL("cloud"),
 		f_container: $('#ibm_cci-widget-js'),
 		f_unro_template: $('#unro_template'),
 		f_reso_template: $('#reso_template')
 	});	
 
 	$.when(vo.f_fetch_trending(), vo.f_fetch_feeds()).done(function(results, data){
-		// console.log(self.feed_length);
 		var self = vo;
 		self.f_distribute(data);
 		
 		//INITIAL BUILD MASONRY TILES
 		vo.f_buildtiles();
-		//REMOVE THE SPINNER 
-		vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 		
-		// RELOAD THE WIDGET TO BIND MEDIA JS TO THE DYNAMIC VIDEO
-		dojo.require("ext.media._base");
-		$('.ibm-media').on("click", function(event){
-			event.preventDefault();
-			var src = $(event.target).attr('href');
-			var widget = new ext.media.overlaywidget();
-			widget.startup(
-				[
-					{
-						'type':'youtube',
-						'url':
-							{
-								'youtube': "'"+src+"'"
-							},
-						'width':640,
-						'height':360,
-						'isVideo':true
-					}
-				],true);
-		});
+		//REMOVE THE SPINNER 
+		vo.f_removeNodes($("#ibm_cci-widget-js > span"));	
+// // RELOAD THE WIDGET TO BIND MEDIA JS TO THE DYNAMIC VIDEO
+		// dojo.require("ext.media._base");
+		// $('.ibm-media').on("click", function(event){
+		// 	event.preventDefault();
+		// 	var src = $(event.target).attr('href');
+		// 	var widget = new ext.media.overlaywidget();
+		// 	widget.startup(
+		// 		[
+		// 			{
+		// 				'type':'youtube',
+		// 				'url':
+		// 					{
+		// 						'youtube': "'"+src+"'"
+		// 					},
+		// 				'width':640,
+		// 				'height':360,
+		// 				'isVideo':true
+		// 			}
+		// 		],true);
+		// });
 
 		//SEARCH FUNCTION (START)
 		$('form').on('submit', function(){
-			var searchVal = $("#ibm-cc-search--field").val().toLowerCase();
+			var search = $("#ibm-cc-search--field");
+				searchVal = $("#ibm-cc-search--field").val().toLowerCase();
 				searchVal = searchVal.split(',');
-				console.log(searchVal);
 
 				for (var i = searchVal.length - 1; i >= 0; i--) {
 					searchVal[i] = searchVal[i].trim();
 				}
 
-			$("#ibm-cc-search--field").val('');
-				// vo.sTerms.push(searchVal.toString());
-				console.log(searchVal);
+				search.val('');
 				vo.f_constructURL(searchVal.toString());
 
 		});
@@ -130,7 +117,7 @@ $(function(){
 
 		//ALL TRENDING FUNCTION (START)
 		$("li.ibm_cci__ml_t a[name='all']").on('click', function(event){
-			// event.preventDefault();
+			event.preventDefault();
 			if($("p#ibm_cci__ml_t-js").hasClass('ibm_cci-clicked')){
 				console.log("return false");
 			}else{
@@ -172,7 +159,9 @@ $(function(){
 
 		// TRENDING TOPICS ELEMENTS (START)
 			$(".ibm_cci__ml-li").on("click", function(event){
+				
 				vo.f_addspinner();
+				
 				// VARIABLES DECLARED
 				var clickedTrendingName = $(event.target).attr('name').trim(),
 					parentP = $(event.target).parent();
@@ -185,7 +174,6 @@ $(function(){
 							$("#ibm_cci__ml_t-js").removeClass('ibm_cci-clicked');
 							vo.f_constructURL(clickedTrendingName.toString());
 
-							// if(vo.searchterms.length > 0) $(window).data("ajaxReq", true);	
 					}
 					else if( $(parentP).hasClass('ibm_cci-clicked') ) {	
 							console.log("else if triggered parent has class clicked");
@@ -224,9 +212,8 @@ $(function(){
 		// SEARCH TOPICS ELEMENTS (START)
 		$(".ibm_cci__ml").on("click", ".ibm_cci__ml-li.ibm_cci-tsearch-js", function(event) {
 			if ( $(event.target).hasClass('ibm_cci-close-black') || $(event.target).hasClass('ibm_cci-voices-search-term')) {
-				// TARGET IS SEARCH
-				console.log("if target has close black");
 				
+				// TARGET IS SEARCH
 				var clickedTrendingName = $(event.target).attr('name').trim();
 
 				// ADD THIS PEICE AS FUNCTION TO AVOID REPETITION
@@ -249,20 +236,14 @@ $(function(){
 				vo.checkedCount = 0;
 			}			
 		});
-		// SEARCH TOPICS ELEMENTS (END)	
-	});	//WHEN	
+		//SEARCH TOPICS ELEMENTS (END)	
+	});	//WHEN(END)
 		
 
-	// INFINITE SCROLL (START)
+	//INFINITE SCROLL (START)
 		$(window).data("ajaxReq", true).on("scroll", function(e){
 			if( $(window).data("ajaxReq") == false ) return;
 
-			console.log($(window).data('ajaxReq'));
-			// console.log($("#ibm_cci-widget-js").height());
-			
-			// checkedCount is to verify if any search or trending list has been selected
-			// checkedCount == 0 it means load more data for all filters
-			// if (vo.checkedCount == 0) {
 				try{		    
 					var prevDocumentHeight = ($(document).height() - 900);
 					// console.log("prev Document Height: "+prevDocumentHeight);
@@ -298,16 +279,16 @@ $(function(){
 							if(data.entries){
 								vo.search = false; // SEARCH FALSE
 								vo.f_distribute(data);
-
-								vo.f_addspinner();
-
+								
 								$('.ibm-sortable').imagesLoaded(function(){
 									console.log("masonry triggered");
 									$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
 									// $('.ibm-sortable').masonry('reloadItems');
 									$('.ibm-sortable').masonry('reload');
+									
 								});
-						
+								
+
 								setTimeout(function(){
 										if(data.entries.length >= 20) {
 											console.log("if Trriggered");
@@ -325,14 +306,11 @@ $(function(){
 						})
 						.always(function() {
 							console.log("complete");
-						});
-						
+						});						
 					}
 				}catch(e){
 					console.log("infinite all trending scroll error: "+e);
 				}	
-			// }	
-
 		}).on("resize", function(){
 			
 			winHeight = $(window).height();			
@@ -340,34 +318,41 @@ $(function(){
 			if($(window).width() <= 500 || $(window).width() <= 800) {
 				$('.ibm-sortable').imagesLoaded(function(){
 					console.log("masonry triggered");
-					// $('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
+					$('.ibm-sortable').append( $(".ibm-card") ).masonry('appended', $(".ibm-card"));
 					// $('.ibm-sortable').masonry('reloadItems');
 					$('.ibm-sortable').masonry('reload');
 				});
+				vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 			}		
 			
 			if($(window).width() <= 500 && $("#ibm_cci-widget-js").hasClass('ibm_cci-lv__modifier')){
 				$("#ibm_cci-widget-js").removeClass('ibm_cci-lv__modifier').addClass('ibm_cci-gv__modifier');
 				$(".ibm_cci--ls--toggle--li--list-icon a").removeClass('selected');
 				$(".ibm_cci--ls--toggle--li--grid-icon a").addClass('selected');
+
+				vo.f_removeNodes($("#ibm_cci-widget-js > span"));
 			}
 			
 		});
-	// // INFINITE SCROLL (END)
+	// INFINITE SCROLL (END)
+	
 
-	// HELPER FUNCTIONS FOR THE TEMPALTES (START)
+	// HELPER FUNCTIONS FOR JSRender TEMPALTES (START)
+	// DEFINE THE HELPERS
 	$.views.helpers({
 		mediaURL:YTmediaURL,
 		truncateDesc:truncateDescription,
 	});
-	
+
+	// DEFINED HELPER FUNCTIONS
 	function YTmediaURL(value, val){
 		if (value.indexOf("youtube") > -1){
 			value = val;
 		}
 		return value;
 	}
-
+	
+	// DEFINED HELPER FUNCTIONS
 	function truncateDescription(content){
 	var trimmedContent = "";	
 		if(content.length > 172){
@@ -377,7 +362,7 @@ $(function(){
 		}
 		return trimmedContent;
 	}	
-	// HELPER FUNCTIONS FOR THE TEMPALTES (END)		
+	// HELPER FUNCTIONS FOR JSRender TEMPALTES (END)		
 
 }); //CLOSE ON DOM READY
 
@@ -431,15 +416,17 @@ $(function(){
 				contentType: 'application/json'
 			}, function(data){
 				// RESULTS OF THE JSON DATA IS MAPPED AND STORED TO THE NEW ARRAY filter_tweets
-				// add if condition
 				if (data && data.trending && data.trending.indexOf(',') > -1) {				
 					var rec_data = data.trending.trim() || null;
+						
 						// rec_data is an array, need to convert it into an object self.t_newlist
 						rec_data = $.makeArray(rec_data);
+						
 						// rec_data = $.extend({}, rec_data);
 						self.trendinglist = rec_data[0].split(",");
 				}
 				self.t_newlist = $.map(rec_data[0].split(','), function(list, index ){
+					
 					//returns an object to the trending template
 					return {
 						 t_list : $.makeArray(list)
@@ -461,14 +448,14 @@ $(function(){
 		},		
 
 		f_attach_reso_temp: function(reso_data) {
+			
 			//Modify the timestamp and the content attr and wrap href
-			// console.log("Resolved tweet function triggered");
 			this.f_container.append(this.f_reso_template.render(this.f_modify_datafeed(reso_data)));		
 		},		
 
 		f_attach_unro_temp: function(unro_data) {
+			
 			//Modify the timestamp and the content attr and wrap href
-			// console.log("Unresolved tweet function triggered");
 			this.f_container.append(this.f_unro_template.render(this.f_modify_datafeed(unro_data)));		
 		},
 
@@ -479,8 +466,6 @@ $(function(){
 				if(feed_data){
 					feed_data.content = this.f_mod_content(feed_data.content || "");
 					feed_data.published = this.f_pretty_date(feed_data.published);
-					
-					console.log(feed_data.content);
 					
 					feed_data.domain = this.f_truncateDomain(feed_data.domain || "");				
 
@@ -511,27 +496,16 @@ $(function(){
 		},
 
 		f_preloadImages: function(imgURL){		    
-		    // var imgloaded = $('<img>').src = imgData;
-		    // console.log("Preload Images: "+((new Image()).src = imgURL));
-		    // return (new Image()).src = imgURL || "";
-		    var img = new Image();
-		     	imgsrc = imgURL;
-			 
-			// if(img.onerror !== null){
-			// 	console.log("img success "+img.src);
-			// 	return img.src;
-			// }
-			img.onerror = function (evt){
-				// console.log(this.src + "not loaded");
-				// return null
-			}
-			img.onload = function (evt){
-				// console.log(this.src + " is loaded.");
-				// return imgURL
-			}
+		    var img = new Image(), imgWidth = 0;
+		     	img.src = imgURL;
+		     
+		    img.onload = function(){
+		    	console.log("inside onload: "+img.naturalWidth);
+		    	imgWidth = img.naturalWidth;
+		    }
 
-			//Return NULL if onerror fails
-			return img.src = imgsrc;
+		    // console.log("outside onload: "+img.naturalWidth);
+		    return imgURL;
 		},
 
 		f_truncateDomain:function(domain){			
@@ -579,10 +553,15 @@ $(function(){
 				  monthTxt[12] = "December";
 				  timeVal = timeVal+"";
 				 
+				 // create new Date
 				 var date = new Date((parseInt(timeVal.trim()) || "")),
-				  diff = (((new Date()).getTime() - date.getTime()) / 1000),
-				  day_diff = Math.floor(diff / 86400);
-				   
+				 
+				 // get difference from current time
+				 diff = (((new Date()).getTime() - date.getTime()) / 1000),
+				 
+				 //get day difference
+				 day_diff = Math.floor(diff / 86400);
+
 				 if ( isNaN(day_diff) || day_diff < 0  )
 				  return;
 				
@@ -591,11 +570,10 @@ $(function(){
 					   diff < 120 && "1m" ||
 					   diff < 3600 && Math.floor( diff / 60 ) + "m" ||
 					   diff < 7200 && "1h" ||
-					   diff < 86400 && Math.floor( diff / 3600 ) + "h") ||
-					//day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
+					   diff < 86400 && Math.floor( diff / 3600 ) + "h" ) ||
+					// day_diff >= 1 && date.getDate() + " " + monthTxt[parseInt(date.getMonth(), 10)];
 					   day_diff >= 1 && day_diff + "d";
-				
-				// console.log(timeVal +" : "+ retVal);
+			
 				return retVal;
 			}catch(e){
 				console.log("error inside the f_pretty_data function: " + e );
@@ -603,7 +581,6 @@ $(function(){
 		},
 		
 		f_addspinner: function(){
-			// console.log("ibm-spinner-small triggered");
 			$("#ibm_cci-widget-js").append('<span class="ibm-spinner-small"></span>');
 		},
 
@@ -624,6 +601,7 @@ $(function(){
 				}).promise();
 		},
 
+		// FETCH DISTRIBUTE DATA
 		f_distribute: function(data){
 			console.log("f_distribute triggered");
 			var self = this;
@@ -690,6 +668,7 @@ $(function(){
 						}, true);
 				});
 		},
+
 		f_appendTrendinglist: function(searchterms){
 			var self = this;
 			self.sTerms = [];			
@@ -760,7 +739,7 @@ $(function(){
 				
 				$("#ibm_cci__ml_t-js").removeClass("ibm_cci-clicked");
 					self.st_attach_template(self.newSearchTermList);
-				self.search = false;
+					self.search = false;
 			}			 
 
 		},	
@@ -842,18 +821,9 @@ $(function(){
 				console.log("error");
 			})
 			.always(function() {
-				// console.log("complete");
+				console.log("complete");
 			});
 		}
-
-		// checkListView: function(){
-		// 	// TIMEOUT TO TRIGGER THIS AFTER MASONRY BUILD
-		// 	if($("#ibm_cci-widget-js").hasClass('ibm_cci-lv__modifier')){
-		// 		setTimeout(function(){
-		// 			$(".ibm_cci-lv__modifier .ibm-col-1-1").removeAttr('style');
-		// 		}, 800);
-		// 	}
-		// }
 
 	}; //vo (END)
 

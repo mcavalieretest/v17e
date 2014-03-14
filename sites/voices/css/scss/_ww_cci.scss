@@ -426,6 +426,12 @@ a.ibm_cci-gototop {
 		.ibm-col-1-1 {
 			width:730px;
 			margin:0;
+			position: relative !important;
+			top: 0 !important;
+		}
+
+		.ibm-card {
+			margin-bottom:0;
 		}
 	}
 
