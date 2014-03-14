@@ -268,7 +268,11 @@ sites/
   }
 }
 #lpinvite {
-  font-size: 1.4rem !important;
+  font-size: 1.5rem !important;
+}
+
+#lpinvite .ibm-body .ibm-main .ibm-title h1 {
+  font-size: 17px !important;
 }
 
 .ibm-story-pcon {
