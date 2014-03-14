@@ -240,8 +240,6 @@ jQuery.noConflict();
       var levelFactor = ( this.level - 1 ) * this.options.levelSpacing,
         translateVal = this.el.offsetWidth;
       
-      //this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
-
       if( subLevel ) {
         // reset transform for sublevel
         this._setTransform( '', subLevel );
@@ -249,9 +247,6 @@ jQuery.noConflict();
         for( var i = 0, len = this.levels.length; i < len; ++i ) {
           var levelEl = this.levels[i];
 
-          if( levelEl != subLevel && !jQuery(levelEl).hasClass( 'm-level-open' ) ) {
-          //  this._setTransform( 'translate3d(-100%,0,0) translate3d(' + -1*levelFactor + 'px,0,0)', levelEl );
-          }
         }
       }
       // add class m-enable to main wrapper if opening the first time
@@ -281,20 +276,25 @@ jQuery.noConflict();
       if(iOSCheck){
         jQuery('#m-wrap').css("height", 'auto');  
       }
-    
-      //this._setTransform('translate3d(0,0,0)');
+
       this.level = 0;
       // remove class m-enable from main wrapper
-      jQuery(this.wrapper)
-      	.removeClass( 'm-enable' );
 
-      jQuery(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() { 
-      	setTimeout(function() {
-      		jQuery(this).removeClass("m-shift"); 	
-      		jQuery("#m-menu").hide(); 	
-      	}, 200);
-  	  });
-      
+      var closeFunc = function() {
+  		jQuery(this).removeClass("m-shift"); 	
+  		jQuery("#m-menu").hide(); 	
+      };
+
+      if ( Modernizr.csstransforms3d ) {
+	      jQuery(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function() { 
+	      	setTimeout(closeFunc, 200);
+	  	  });
+	      jQuery(this.wrapper).removeClass( 'm-enable' );
+      } else {
+	      jQuery(this.wrapper).removeClass( 'm-enable' );
+	      closeFunc();
+      }
+
       this._toggleLevels();
       this.open = false;
 

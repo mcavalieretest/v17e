@@ -393,14 +393,19 @@ a.ibm-thumbnail-module h3 {
 
 	.no-csstransforms3d #m-menu {
 		margin-right: -250px;
+		display: none;
+	}
+
+	.no-csstransforms3d .m-shift {
+		left: 0px;
 	}
 
 	.no-csstransforms3d .m-shift.m-enable {
-		padding-right: 250px;
+		left: -250px;
 	}
 
 	.no-csstransforms3d .m-shift.m-enable #m-menu {
-		margin-right: 0;
+		display: block;
 	}
 	
 	// .no-csstransforms3d .m-menu .m-level {
