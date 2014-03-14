@@ -534,7 +534,7 @@
 	}
 	
 	#story .ibm-columns .ibm-col-4-2.text-left {
-		width: 44.3% !important;
+		width: 44.2% !important;
 	}
 
 	#story .ibm-columns .ibm-col-4-2.image-right {
@@ -542,31 +542,7 @@
 	}
 
 	#story .ibm-columns .ibm-col-4-2.text-right {
-		width: 44.3% !important;
-	}
-
-	#story .ibm-columns .ibm-col-4-2.image-left {
-		width: 51.7% !important;
-	}
-}
-
-//Adjusting the page to work on < width 9990px 
-@media (max-width: 999px) and (min-width: 0){	
-	#story .ibm-columns{
-		width: 100% !important;
-		margin: 15px 0 !important;
-	}
-	
-	#story .ibm-columns .ibm-col-4-2.text-left {
-		width: 44.2%  !important;
-	}
-
-	#story .ibm-columns .ibm-col-4-2.image-right {
-		width: 51.7% !important;
-	}
-
-	#story .ibm-columns .ibm-col-4-2.text-right {
-		width: 44.2%  !important;
+		width: 44.2% !important;
 	}
 
 	#story .ibm-columns .ibm-col-4-2.image-left {
