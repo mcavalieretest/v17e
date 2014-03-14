@@ -540,19 +540,19 @@ sites/
   }
 
   #story .ibm-columns .ibm-col-4-2.text-left {
-    width: 450px !important;
+    width: 443px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-right {
-    width: 534px !important;
+    width: 526px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.text-right {
-    width: 450px !important;
+    width: 443px !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-left {
-    width: 534px !important;
+    width: 526px !important;
   }
 }
 @media (max-width: 915px) and (min-width: 0) {
