@@ -550,8 +550,8 @@
 	}
 }
 
-//Adjusting the page to work on < width 1000px 
-@media (max-width: 1000px) and (min-width: 0){	
+//Adjusting the page to work on < width 9990px 
+@media (max-width: 999px) and (min-width: 0){	
 	#story .ibm-columns{
 		width: 100% !important;
 		margin: 15px 0 !important;
