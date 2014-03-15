@@ -351,6 +351,10 @@
 // 	          transition-property: left, right, top;
 // }
 
+#{$ibm-widget-js} .ibm-card {
+	box-shadow: none;
+	webkit-box-shadow: none;
+}
 
 #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card, #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card {
 	background-color: inherit;

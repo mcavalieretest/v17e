@@ -1,56 +1,82 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+
 <head>
-<!-- 
-NOTE:
-This file is the master landing page template.
-All comments starting with NOTE can also be removed!
--->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-<!-- Add meta tag to consistently detect the width on an iPad at 768px -->
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
-<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
-<meta name="DC.Rights" content="© Copyright IBM Corp. 2011"/>
-<meta name="Keywords" content="REPLACE"/>
-<meta name="DC.Date" scheme="iso8601" content="2012-09-19"/>
-<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM  authoring:IBM"/>
-<!-- Kindly change the values for "delivery" and "authoring" as per what is appropriate.  -->
-<meta name="Security" content="Public"/>
-<meta name="Abstract" content="REPLACE"/>
-<meta name="IBM.Effective" scheme="W3CDTF" content="2012-09-19"/>
-<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
-<meta name="Owner" content="Replace"/>
-<meta name="DC.Language" scheme="rfc1766" content="en"/>
-<meta name="IBM.Country" content="ZZ"/>
-<meta name="Robots" content="index,follow"/>
-<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
-<meta name="Description" content="REPLACE"/>
+  <!-- NOTE: Metatags copied from the current IBM/Voices site (Remove this note before launch) -->
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta http-equiv="Pragma" content="no-cache"/>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta content="(PICS-1.1 &quot;http://www.icra.org/ratingsv02.html&quot; l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) &quot;http://www.rsac.org/ratingsv01.html&quot; l gen true r (n 0 s 0 v 0 l 0) &quot;http://www.classify.org/safesurf/&quot; l gen true r (SS~~000 1))" http-equiv="PICS-Label">
+  <link href="http://purl.org/DC/elements/1.0/" rel="schema.DC">
+  <link href="http://www.ibm.com/favicon.ico" rel="SHORTCUT ICON">
 
-<!-- Please ensure appropriate meta tag values are aligned with the standards -->
+    <link rel="IBM.Mobile.redirect" href="http://www.ibm.com/social/aggregator/voices/voices" />
 
-<title>IBM v17 TEMPLATE--Column Grid Example</title>
+    <meta content="v17 ECM/ibm.com - S734638V15397V06 - 06/20/2011 02:50:00 PM" name="Source" />  
+    <meta content="public" name="Security" />
+    <meta content="IBM Corporation" name="DC.Publisher" />
 
-<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
-<link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
-<script src="../../js/ww.js" type="text/javascript"></script>
-<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<!-- <script src="js/masonry.js" type="text/javascript"></script>
-<script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script> -->
-<script src="js/jsviews.min.js" type="text/javascript"></script>
-<script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
+    <meta name="Robots" content="index,nofollow"/>
+    <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE"> 
+    <meta name="Owner" content="ethnmcrt@us.ibm.com"/>
+    <meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="IBM000"/>
+    <meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="CT002"/>
+    <meta name="DC.Date" scheme="iso8601" content="2013-06-14"/>
+    <meta name="DC.Rights" content="© Copyright IBM Corp. 2013"/>
 
-<!-- <script src="http://1.www.s81c.com/common/js/dojo/www.js" type="text/javascript"></script> -->
+    <meta name="DC.Language" scheme="rfc1766" content="en-US"/>
+    <meta name="IBM.Country" content="us"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-<!-- FOR ESL002 TESTING (START) -->
+    <meta name="__RMSBETA" value="newYT">
+
+    <meta name="Description" content="IBM Voices - What our company is saying right now."/>
+    <title>IBM Voices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <meta property="og:title" content="IBM Voices" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www-304.ibm.com/social/aggregator/voices/voices" />
+    <meta property="og:image" content="https://www-304.ibm.com/social/aggregator/static/external/86/misc/voices_share.png" />
+    <meta property="og:site_name" content="IBM Voices" />
+    <meta property="fb:admins" content="1156380084" />
+    <meta property="og:description" content="IBM Voices - the most valuable social content shared, created and discussed by IBMers."/>
+
+
+    <html itemscope itemtype="http://schema.org/Product">
+    <meta itemprop="name" content="IBM Voices">
+    <meta itemprop="description" content="IBM Voices - the most valuable social content shared, created and discussed by IBMers">
+    <meta itemprop="image" content="https://www-304.ibm.com/social/aggregator/static/external/86/misc/Voices-shareimage.png">
+
+    <link rel="apple-touch-icon" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple.jpg" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple1.jpg" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple2.jpg" />
+    <link rel="image_src" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/imgsrc.jpg">
+
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+    <link rel="SHORTCUT ICON" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/favicon.ico">
+
+    <!-- Please ensure appropriate meta tag values are aligned with the standards -->
+
+    <title>IBM v17 TEMPLATE--Column Grid Example</title>
+
+    <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+    <link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/ww.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jsviews.min.js" type="text/javascript"></script>
+    <script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
+
+    <!-- FOR ESL002 TESTING (START) -->
 <!-- <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/css/ww.css" rel="stylesheet" title="www" type="text/css" />
 <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/css/ww_cci.css" rel="stylesheet" type="text/css" />
+
 <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/ww.js" type="text/javascript"></script>
 <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/jsviews.min.js" type="text/javascript"></script>
-<script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/masonry.min.js" type="text/javascript"></script>
-<script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/ww_cc_jsrender.js" type="text/javascript"></script> -->
+<script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jq/js/ww_cc_jsrender.min.js" type="text/javascript"></script> -->
 
 <!-- FOR ESL002 TESTING (END) -->
 
@@ -58,283 +84,283 @@ All comments starting with NOTE can also be removed!
 </head>
 <body id="ibm-com" class="ibm-type" >  
 
-<!-- JSRender TT template (START) --> 
-<script id="tt_template" type="text/x-jsrender">	
-	{{props t_list}}
-		<li class="ibm_cci__ml-li">
-		  <p>
-        <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}"> {{:prop.trim()}} </a>
-        <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}"></a>
-        </p>
-		</li>
-	{{/props}}
-	</script> 
+  <!-- JSRender TT template (START) --> 
+  <script id="tt_template" type="text/x-jsrender">	
+   {{props t_list}}
+   <li class="ibm_cci__ml-li">
+    <p>
+      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}"> {{:prop.trim()}} </a>
+      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}"></a>
+    </p>
+  </li>
+  {{/props}}
+</script> 
 <!-- JSRender TT template (END)  --> 
 
 <!-- JSRender ST template (START) --> 
 <script id="st_template" type="text/x-jsrender">  
   {{props t_list}}
-    <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
-      <p class="ibm_cci-clicked">
-        <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term"> {{:prop.trim()}} </a>
-        <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}"></a> </p>
+  <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
+    <p class="ibm_cci-clicked">
+      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term"> {{:prop.trim()}} </a>
+      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}"></a> </p>
     </li>
-  {{/props}}
+    {{/props}}
   </script> 
-<!-- JSRender ST template (END)  --> 
+  <!-- JSRender ST template (END)  --> 
 
-<!-- JSRender Unresolved template (START) --> 
-<script id="unro_template" type="text/x-jsrender">
-<div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
-  <div class="ibm_cci--lv-unro-b">
-    <div class="ibm_cci--rea-block">
-      <ul>
-        <li>
-          {{if rank.toString().length > 2}}
-            <p class="ibm_cci--rea-rank ibm_cci-reducedFont">{{:rank)}}</p>
-          {{else}}
-            <p class="ibm_cci--rea-rank">{{:rank)}}</p>
-          {{/if}}
-        </li>
-        <li class="ibm_cci__padding-top">
-          <div class="ibm_cci--rea-b">
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:reachPct}}%"></div>
-            </div>
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:engmtPct}}%"></div>
-            </div>
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:ampPct}}%"></div>
-            </div>
-          </div>
-        </li>
-      </ul>
+  <!-- JSRender Unresolved template (START) --> 
+  <script id="unro_template" type="text/x-jsrender">
+    <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
+      <div class="ibm_cci--lv-unro-b">
+        <div class="ibm_cci--rea-block">
+          <ul>
+            <li>
+              {{if rank.toString().length > 2}}
+              <p class="ibm_cci--rea-rank ibm_cci-reducedFont">{{:rank)}}</p>
+{{else}}
+<p class="ibm_cci--rea-rank">{{:rank)}}</p>
+{{/if}}
+</li>
+<li class="ibm_cci__padding-top">
+  <div class="ibm_cci--rea-b">
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:reachPct}}%"></div>
     </div>
-    <div class="ibm_cci--unr-cb">
-      <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
-        <h3 class="ibm_cci--lv-r-wct"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a> </h3>
-        <p class="ibm_cci--lv-r-wch"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@{{:userScreenName}} </a> </p>
-      </div>
-      <div class="ibm_cci--time-stamp">
-        <p class="ibm_cci-tts"> <span></span> <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> </p>
-      </div>
-      <div class="ibm_cci--ttb">
-        <h2 class="ibm_cci--tweet-title"> {{:content}} </h2>
-      </div>
-      <div class="ibm_cci--lv-rc-sharing">
-        <ul>
-          <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
-        </ul>
-      </div>
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:engmtPct}}%"></div>
+    </div>
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:ampPct}}%"></div>
     </div>
   </div>
+</li>
+</ul>
+</div>
+<div class="ibm_cci--unr-cb">
+  <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
+    <h3 class="ibm_cci--lv-r-wct"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a> </h3>
+    <p class="ibm_cci--lv-r-wch"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@{{:userScreenName}} </a> </p>
+  </div>
+  <div class="ibm_cci--time-stamp">
+    <p class="ibm_cci-tts"> <span></span> <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> </p>
+  </div>
+  <div class="ibm_cci--ttb">
+    <h2 class="ibm_cci--tweet-title"> {{:content}} </h2>
+  </div>
+  <div class="ibm_cci--lv-rc-sharing">
+    <ul>
+      <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+      <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+      <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
+    </ul>
+  </div>
+</div>
+</div>
 </div>
 </script> 
 <!-- JSRender Unresolved template (END) -->
 
 <!-- JSRender Resolved template (START) --> 
 <script id="reso_template" type="text/x-jsrender">
-<div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
-  <div class="ibm-col-6-4">
-    <div class="ibm_cci--rea-block">
-      <ul>
-        <li>
-          {{if rank.toString().length > 2}}
-            <p class="ibm_cci--rea-rank ibm_cci-reducedFont">{{:rank)}}</p>
-          {{else}}
-           <p class="ibm_cci--rea-rank">{{:rank)}}</p>
-          {{/if}}          
-        </li>
-        <li class="ibm_cci__padding-top">
-          <div class="ibm_cci--rea-b">
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:reachPct}}%"></div>
-            </div>
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:engmtPct}}%"></div>
-            </div>
-            <div class="ibm_cci--rea-b-e">
-              <div class="ibm_cci--rea-b" style="width:{{:ampPct}}%"></div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="ibm_cci--rcb">
-      <div class="ibm_cci-fav-ihb">
-      <p class="ibm_cci--feed-icon">
-        <a href="{{:link}}">
-          {{if icon == null}}
-            <img alt="user avatar icon" src="{{:icon}}" style="display:none;"/>
-          {{else}}
-            <img alt="user avatar icon" src="{{:icon}}"/>
-          {{/if}}
-        </a>
-      </p>
-        <a class="ibm_cci--feed-title" href="{{:link}}">{{:domain}}</a>
-      </div>
-
-      <div class="ibm_cci-sib">
-        <ul class="ibm_cci-sie">
+  <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
+    <div class="ibm-col-6-4">
+      <div class="ibm_cci--rea-block">
+        <ul>
           <li>
-            <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link">
-                <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link">
-                <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link">
-                <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-              </a>
-            </li>
-          </ul>
+            {{if rank.toString().length > 2}}
+            <p class="ibm_cci--rea-rank ibm_cci-reducedFont">{{:rank)}}</p>
+{{else}}
+<p class="ibm_cci--rea-rank">{{:rank)}}</p>
+{{/if}}          
+</li>
+<li class="ibm_cci__padding-top">
+  <div class="ibm_cci--rea-b">
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:reachPct}}%"></div>
+    </div>
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:engmtPct}}%"></div>
+    </div>
+    <div class="ibm_cci--rea-b-e">
+      <div class="ibm_cci--rea-b" style="width:{{:ampPct}}%"></div>
+    </div>
+  </div>
+</li>
+</ul>
+</div>
+<div class="ibm_cci--rcb">
+  <div class="ibm_cci-fav-ihb">
+    <p class="ibm_cci--feed-icon">
+      <a href="{{:link}}">
+        {{if icon == null}}
+        <img alt="user avatar icon" src="{{:icon}}" style="display:none;"/>
+        {{else}}
+        <img alt="user avatar icon" src="{{:icon}}"/>
+        {{/if}}
+      </a>
+    </p>
+    <a class="ibm_cci--feed-title" href="{{:link}}">{{:domain}}</a>
+  </div>
+
+  <div class="ibm_cci-sib">
+    <ul class="ibm_cci-sie">
+      <li>
+        <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link">
+          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link">
+          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link">
+          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="ibm_cci--ttb">
+    <h2 class="ibm_cci--tweet-title">
+      <a href="{{:link}}" class="urltitleval">{{:title}}</a>
+    </h2>
+    <div class="ibm_cci--tweet-description">
+      <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
+        <span class="ibm_cci--tweet-description-readmore"><a href="{{:link}}" alt="read more link">&hellip;Read More</a></span>
       </div>
-      <div class="ibm_cci--ttb">
-        <h2 class="ibm_cci--tweet-title">
-          <a href="{{:link}}" class="urltitleval">{{:title}}</a>
-        </h2>
-       <div class="ibm_cci--tweet-description">
-          <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
-          <span class="ibm_cci--tweet-description-readmore"><a href="{{:link}}" alt="read more link">&hellip;Read More</a></span>
-          </div>
-          <div class="ibm_cci-media-container">
-            {{if altMediaURL && altMediaURL.length > -1 }}
-               <div class="ibm-video">
-                  <div class="ibm-video-container">
-                    <a href="{{:mediaURL}}" rel="width=640&amp;height=360" class="ibm-media"> <span class="ibm-play-button-medium"></span>
-                    <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:~mediaURL(#parent.data.mediaURL, #parent.data.altMediaURL)}}"></a>
-                  </div>
-                </div>             
-                {{else mediaURL}}
-                <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}"/>
-            {{/if}}
-          </div>
+      <div class="ibm_cci-media-container">
+        {{if altMediaURL && altMediaURL.length > -1 }}
+        <div class="ibm-video">
+          <div class="ibm-video-container">
+            <a href="{{:mediaURL}}" rel="width=640&amp;height=360" class="ibm-media"> <span class="ibm-play-button-medium"></span>
+              <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:~mediaURL(#parent.data.mediaURL, #parent.data.altMediaURL)}}"></a>
+            </div>
+          </div>             
+          {{else mediaURL}}
+          <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}"/>
+          {{/if}}
         </div>
       </div>
-      <div class="ibm_cci-gv-sib">
-        <ul class="ibm_cci-sie">
-          <li>
-            <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link">
-                <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link">
-                <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
-              </a>
-            </li>
-            <li>
-              <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link">
-                <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
-              </a>
-            </li>
-          </ul>
-        </div>                   
-      </div>
     </div>
-
-
-    <div class="ibm-col-6-2">
-      <ul class="ibm_cci-relatedTweetContainer">
-      {{range refTweets start=0 end=9}}
-        <li data-userID="{{:userId}}">
-          <a href="javascript:void(0);" alt="User Avatar" data-userID="{{:userId}}">
-              {{if #getIndex() == 0}}
-                <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
-              {{else}}  
-                <img src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
-              {{/if}}  
+    <div class="ibm_cci-gv-sib">
+      <ul class="ibm_cci-sie">
+        <li>
+          <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link">
+            <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
           </a>
         </li>
-       {{/range}} 
+        <li>
+          <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link">
+            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link">
+            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+          </a>
+        </li>
       </ul>
+    </div>                   
+  </div>
+</div>
 
 
+<div class="ibm-col-6-2">
+  <ul class="ibm_cci-relatedTweetContainer">
     {{range refTweets start=0 end=9}}
-    {{if #getIndex() == 0}}
-      <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
-        <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
-        <h3 class="ibm_cci--lv-rc-title">
-          <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
-        </h3>
-        <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@
-        {{:userScreenName}} </a></p>
-      </div>
-      <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
-         <p class="ibm_cci-tts"> 
-         <span></span> 
-         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
-        </p>  
-      </div>
-    </div> 
+    <li data-userID="{{:userId}}">
+      <a href="javascript:void(0);" alt="User Avatar" data-userID="{{:userId}}">
+        {{if #getIndex() == 0}}
+        <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+        {{else}}  
+        <img src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+        {{/if}}  
+      </a>
+    </li>
+    {{/range}} 
+  </ul>
 
-    <div style="float:left" data-userID="{{:userId}}">
-      <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
-        <p>{{:content}}</p>
-      </div>
-  
-      <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
-        <ul>
-          <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
-        </ul>
-      </div>
-  
-    </div>
 
-  {{else}}
-
-    <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}" style="display: none;">
-      <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
+  {{range refTweets start=0 end=9}}
+  {{if #getIndex() == 0}}
+  <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
+    <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
       <h3 class="ibm_cci--lv-rc-title">
         <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
       </h3>
       <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@
-      {{:userScreenName}} </a></p>
-    </div>
-    <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
+        {{:userScreenName}} </a></p>
+      </div>
+      <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
        <p class="ibm_cci-tts"> 
-       <span></span> 
-       <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
-      </p>  
+         <span></span> 
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
+       </p>  
+     </div>
+   </div> 
+
+   <div style="float:left" data-userID="{{:userId}}">
+    <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
+      <p>{{:content}}</p>
     </div>
-    </div> 
 
-    <div style="float:left; display:none;" data-userID="{{:userId}}">
-    
-      <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
-        <p>{{:content}}</p>
+    <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
+      <ul>
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+      </ul>
+    </div>
+
+  </div>
+
+  {{else}}
+
+  <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}" style="display: none;">
+    <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
+      <h3 class="ibm_cci--lv-rc-title">
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name">{{:username}}</a>
+      </h3>
+      <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name">@
+        {{:userScreenName}} </a></p>
       </div>
+      <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
+       <p class="ibm_cci-tts"> 
+         <span></span> 
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
+       </p>  
+     </div>
+   </div> 
 
-      <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
-        <ul>
-          <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-          <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
-        </ul>
-      </div>
+   <div style="float:left; display:none;" data-userID="{{:userId}}">
 
-    </div>  
+    <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
+      <p>{{:content}}</p>
+    </div>
+
+    <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
+      <ul>
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+      </ul>
+    </div>
+
+  </div>  
   {{/if}}
   {{/range}}     
 
-    </div>
-  </div>
+</div>
+</div>
 </script> 
 <!-- JSRender Resolved template (END) -->
 
 
 <!-- 
   // START OF THE MAIN DIV
- -->
+-->
 
 <div id="ibm-top" class="ibm-landing-page"> 
   <!-- MASTHEAD_BEGIN -->
@@ -432,18 +458,18 @@ All comments starting with NOTE can also be removed!
       <!-- CONTENT_BODY -->
       <div id="ibm-content-body">
         <div id="ibm-content-main"> 
-          
+
           <!-- IBM VOICES SEARCH RESULTS DIV (BEGIN)  -->
           <div class="ibm-band ibm_cci__ibm-band"> </div>
           <!-- IBM VOICES SEARCH RESULTS DIV (END) --> 
           
-<!-- VOICES LIST/GRID VIEW (START) -->
+          <!-- VOICES LIST/GRID VIEW (START) -->
           <div id="ibm_cci-widget-js" class="ibm-columns ibm-sortable ibm_cci-gv__modifier"> 
-                  
-                  <!-- JSRENDER TEMPLATE INJECTED HERE -->
+
+            <!-- JSRENDER TEMPLATE INJECTED HERE -->
 
           </div>
-<!-- VOICES LIST/GRID VIEW (END) --> 
+          <!-- VOICES LIST/GRID VIEW (END) --> 
           
         </div>
         <!-- CONTENT_BODY_END --> 
