@@ -192,8 +192,8 @@ jQuery.noConflict();
         jQuery('html').removeClass('m-menu-open');
         el.removeEventListener( self.eventtype, bodyClickFn );
 
-        if (window.mobileMenuLocal) {
-          window.mobileMenuLocal._resetLocalMenu();
+        if (IBM.CurrentPage.mobileMenuLocal) {
+          IBM.CurrentPage.mobileMenuLocal._resetLocalMenu();
         }
       };
 
@@ -423,7 +423,8 @@ Company.data.CustomStore = function(config) { ... }
     "WWW.Widget",
     "WWW.Util",
     "Common.Widget.Accordion",
-    "Common.Widget.MobileMenu"
+    "Common.Widget.MobileMenu",
+    "CurrentPage"
   );
 
   IBM.Common.Widget.Accordion = function(opts) {
@@ -486,14 +487,14 @@ Company.data.CustomStore = function(config) { ... }
     function whenMastheadLinksAvailable(callback) {
       var mLinksCheckFunction = function() {
         if (jQuery('#ibm-menu-links').children('li').eq(1).length) {
-          clearInterval(checkMLinksExist);
+          clearInterval(IBM.CurrentPage.checkMLinksExist);
 
           callback();
         }
       };
 
       // Loop till masthead links are available.  When available, prepend them to #m-shift
-      window.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms             
+      IBM.CurrentPage.checkMLinksExist = setInterval(mLinksCheckFunction, 200); // check every 200ms             
     }
 
     function insertPushMenuWrapperHtml() {
@@ -532,19 +533,19 @@ Company.data.CustomStore = function(config) { ... }
 
     function initPushMenu() {
       // Push menu for showing/hiding container
-      window.mobileMenuMain = new mlPushMenu( 
+      IBM.CurrentPage.mobileMenuMain = new mlPushMenu( 
         document.getElementById( 'm-menu' ), 
         document.getElementById( 'm-main-menu' ), 
         document.getElementById( 'm-navigation' ),
         {
             onOpen: function() {
-                if (window.accordion) {
+                if (IBM.CurrentPage.accordion) {
                     IBM.Common.Widget.MobileMenu.expandDefaultMenu();
                 }
             },
             onClose: function() {
-                if (window.accordion) {
-                    window.accordion.reset();
+                if (IBM.CurrentPage.accordion) {
+                    IBM.CurrentPage.accordion.reset();
                 }
             }
         }
@@ -553,7 +554,7 @@ Company.data.CustomStore = function(config) { ... }
       // Close the menu automatically when the viewport gets too wide. 
       $(window).resize(function() {
       	if ( $(window).width() > minViewportWidth ) {
-      		window.mobileMenuMain._resetMenu();
+      		IBM.CurrentPage.mobileMenuMain._resetMenu();
       	}
 
         // Reposition the hamburger when resizing the page. 
@@ -584,7 +585,7 @@ Company.data.CustomStore = function(config) { ... }
         $("#m-menu-scroll").find("h2").addClass("icon-arrow-right");
 
         // Create the accordion
-        window.accordion = new IBM.Common.Widget.Accordion({
+        IBM.CurrentPage.accordion = new IBM.Common.Widget.Accordion({
           container: "#m-menu-scroll"
         });         
     }
