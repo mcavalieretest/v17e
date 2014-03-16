@@ -7568,7 +7568,7 @@ html.m-menu-open #m-wrap {
 
 #m-open-link {
   display: none;
-  float: right; }
+  position: absolute; }
 
 #m-open-link a {
   display: block;
@@ -8463,7 +8463,8 @@ a.ibm-thumbnail-module h3 {
     right: -60px; } }
 @media only screen and (min-width: 569px) and (max-width: 640px) {
   #ibm-top {
-    min-width: 569px; }
+    min-width: 569px;
+    min-width: 600px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8633,7 +8634,8 @@ a.ibm-thumbnail-module h3 {
       min-height: 200px; } }
 @media only screen and (min-width: 601px) and (max-width: 640px) {
   #ibm-top {
-    min-width: 600px; }
+    min-width: 600px;
+    min-width: 640px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8674,7 +8676,8 @@ a.ibm-thumbnail-module h3 {
     padding-top: 10px; } }
 @media only screen and (min-width: 641px) and (max-width: 800px) {
   #ibm-top {
-    min-width: 641px; }
+    min-width: 641px;
+    min-width: 768px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {
@@ -8854,7 +8857,8 @@ a.ibm-thumbnail-module h3 {
       min-height: 200px; } }
 @media only screen and (min-width: 769px) and (max-width: 800px) {
   #ibm-top {
-    min-width: 769px; }
+    min-width: 769px;
+    min-width: 800px; }
 
   .ibm-landing-page #ibm-content,
   .ibm-landing-page #ibm-related-content {

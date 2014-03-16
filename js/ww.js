@@ -555,7 +555,16 @@ Company.data.CustomStore = function(config) { ... }
       	if ( $(window).width() > minViewportWidth ) {
       		window.mobileMenuMain._resetMenu();
       	}
+
+        // Reposition the hamburger when resizing the page. 
+        // TODO - handle with CSS when megamenu.js has been ported
+        //  to jQuery. Currently impossible since the dojo version 
+        //  repositions the #ibm-masthead when scrolling.
+        setHamburgerPosition();
       });
+
+      // Set the initial position
+      setHamburgerPosition();
     }
 
     function insertLocalMenuHtml() {
@@ -592,7 +601,13 @@ Company.data.CustomStore = function(config) { ... }
 
         targets.addClass("active");
       }, 250);
+    }
 
+    function setHamburgerPosition() {
+      var hamb   = $("#m-open-link"),
+          offset = Math.abs( $(window).width() - hamb.offsetParent().width() );
+
+      hamb.css("right", offset + "px");
     }
 
     return {
