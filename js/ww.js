@@ -193,7 +193,6 @@ var CHICKENFEED = {};
       // the menu should close if clicking somewhere on the body
       var bodyClickFn = function( el ) {
         self._resetMenu();
-        jQuery('html').removeClass('m-menu-open');
         el.removeEventListener( self.eventtype, bodyClickFn );
 
         if (IBM.CurrentPage.mobileMenuLocal) {
@@ -295,6 +294,7 @@ var CHICKENFEED = {};
       this.level = 0;
 
       var closeFunc = function() {
+        $('html').removeClass('m-menu-open');
     		$("#m-menu").hide(); 	
       };
 
@@ -309,6 +309,8 @@ var CHICKENFEED = {};
       } else {
         $(this.wrapper).animate({
           left: "0px"
+        }, function() {
+          $('html').removeClass('m-menu-open');
         });
       }
 
