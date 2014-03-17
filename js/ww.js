@@ -154,6 +154,10 @@ var CHICKENFEED = {};
       // initialize / bind the necessary events
       this._initEvents();
       this._initLevelCss();
+
+      if ( !Modernizr.csstransforms3d || $.browser.firefox ) {
+        $("#m-menu").show();
+      }
     },
     _initLevelCss: function() {
       var heights = [],
@@ -265,7 +269,6 @@ var CHICKENFEED = {};
           $(self.wrapper).animate({
             left: "-250px"
           }, function() {
-            $("#m-menu").show();  
             self.open = true;
             if (self.options.onOpen) {
               self.options.onOpen();
@@ -306,10 +309,7 @@ var CHICKENFEED = {};
       } else {
         $(this.wrapper).animate({
           left: "0px"
-        }, function() {
-          closeFunc();
         });
-
       }
 
       this._toggleLevels();
