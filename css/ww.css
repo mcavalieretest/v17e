@@ -8185,6 +8185,10 @@ a.ibm-thumbnail-module h3 {
   .no-csstransforms3d .m-shift.m-enable {
     left: -250px; }
 
+  .no-cssgradients #m-q {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#4b4b4b');
+    zoom: 1; }
+
   .ibm-landing-page #ibm-content-head {
     width: auto; }
 
