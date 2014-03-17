@@ -211,9 +211,12 @@ var CHICKENFEED = {};
 
           // the menu should close if clicking somewhere on the body (excluding clicks on the menu)
           document.addEventListener( self.eventtype, function( ev ) {
-            if( self.open && !hasParent( ev.target, self.el.id ) ) {
+            // console.warn('body click');
+            // console.warn('event target: '+ ev.target.id + "#" + ev.target.tagName);
+
+            if( self.open && !hasParent( ev.target, self.el.id) ) {
               // Avoid 300ms touch delay on mobile browsers
-              ev.preventDefault()
+              ev.preventDefault() 
               ev.stopPropagation();
 
               bodyClickFn( this );
@@ -265,16 +268,27 @@ var CHICKENFEED = {};
             self.options.onOpen();
           }
         } else {
+          /* Margin/padding version
           $("#m-menu").show();
+          $(self.wrapper).addClass( 'm-enable' ); 
+          self.open = true;
+          if (self.options.onOpen) {
+            self.options.onOpen();
+          }            
+           */
 
+          /* relative positioning version*/
+          $("#m-menu").show();
           $(self.wrapper).animate({
             left: "-250px"
           }, function() {
             self.open = true;
             if (self.options.onOpen) {
               self.options.onOpen();
-            }            
+            }        
           });
+          
+          
 
         }
       }
@@ -300,20 +314,25 @@ var CHICKENFEED = {};
     		$("#m-menu").hide(); 	
       };
 
-      // Open using a css transition. If they're unavailable, animate the css left: property.
-      // Note that we're currently doing this for firefox as well, since it has a bug which causes it 
-      //  to inconsistently fire the transitionend event. 
       if ( Modernizr.csstransforms3d ) {
 	      $(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd mozTransitionEnd", function() { 
 	      	setTimeout(closeFunc, 200);
 	  	  });
 	      $(this.wrapper).removeClass( 'm-enable' );
       } else {
+        /* margin/padding version
+        $('html').removeClass('m-menu-open');
+        $(this.wrapper).removeClass( 'm-enable' );
+        closeFunc();
+        */
+
+        /* relative positioning version*/
         $(this.wrapper).animate({
           left: "0px"
         }, function() {
           $('html').removeClass('m-menu-open');
         });
+        
       }
 
       this._toggleLevels();
@@ -789,8 +808,8 @@ jQuery(function() {
     }; 
 
 ibmcom.init();
-
-/*  (function($, IBM) {
+/*
+  (function($, IBM) {
     IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
 
     IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {

@@ -8175,6 +8175,24 @@ a.ibm-thumbnail-module h3 {
     position: relative; }
 
   /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+  	/* Margin/padding version
+  	.no-csstransforms3d #m-menu {
+  		margin-right: -250px;
+  	}
+  
+  	.no-csstransforms3d .m-shift {
+  		
+  	}
+  
+  	.no-csstransforms3d .m-shift.m-enable {
+  		padding-right: 250px;
+  	}
+  
+  	.no-csstransforms3d .m-shift.m-enable #m-menu {
+  		margin-right: 0;
+  	}
+  	 */
+  /* Relative positioning version */
   .no-csstransforms3d #m-menu {
     margin-right: -250px;
     display: block; }
