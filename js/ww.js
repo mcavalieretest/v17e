@@ -809,7 +809,7 @@ jQuery(function() {
     }; 
 
 ibmcom.init();
-/*
+
   (function($, IBM) {
     IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
 
@@ -826,7 +826,6 @@ ibmcom.init();
     });
   })(jQuery, CHICKENFEED);
 
-*/
 });
 
 
