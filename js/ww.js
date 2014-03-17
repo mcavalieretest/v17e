@@ -790,7 +790,7 @@ jQuery(function() {
 
 ibmcom.init();
 
-  (function($, IBM) {
+/*  (function($, IBM) {
     IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
 
     IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
@@ -805,7 +805,7 @@ ibmcom.init();
         IBM.Common.Widget.MobileMenu.initAccordion();
     });
   })(jQuery, CHICKENFEED);
-
+*/
 
 });
 
