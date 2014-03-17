@@ -331,6 +331,7 @@ var CHICKENFEED = {};
           left: "0px"
         }, function() {
           $('html').removeClass('m-menu-open');
+          $("#m-menu").hide();  
         });
         
       }
@@ -808,7 +809,7 @@ jQuery(function() {
     }; 
 
 ibmcom.init();
-/*
+
   (function($, IBM) {
     IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
 
@@ -824,7 +825,7 @@ ibmcom.init();
         IBM.Common.Widget.MobileMenu.initAccordion();
     });
   })(jQuery, CHICKENFEED);
-*/
+
 
 });
 
