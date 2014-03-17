@@ -519,12 +519,13 @@ addthisevent.settings({
 </div>
 <div class="ibm-container ibm-alternate">
 <div class="ibm-container-body">
-<object width="620" height="385" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="lsplayer">
-<param value="http://cdn.livestream.com/embed/ibmsystemz?layout=4&amp;height=340&amp;width=560&amp;autoplay=false" name="movie" />
-<param value="always" name="allowScriptAccess" />
-<param value="true" name="allowFullScreen" />
 
-<embed width="620" height="385" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" src="http://cdn.livestream.com/embed/ibmsystemz?layout=4&amp;height=340&amp;width=560&amp;autoplay=false" wmode="transparent" name="lsplayer" />
+<object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+<param name="movie" value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false"></param>
+<param name="allowScriptAccess" value="always"></param>
+<param name="allowFullScreen" value="true"></param>
+
+<embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object>
 
 </object>
 </div>
