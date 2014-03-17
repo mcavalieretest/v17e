@@ -154,10 +154,6 @@ var CHICKENFEED = {};
       // initialize / bind the necessary events
       this._initEvents();
       this._initLevelCss();
-
-      if ( !Modernizr.csstransforms3d || $.browser.firefox ) {
-        $("#m-menu").show();
-      }
     },
     _initLevelCss: function() {
       var heights = [],
@@ -265,6 +261,8 @@ var CHICKENFEED = {};
             self.options.onOpen();
           }
         } else {
+          $("#m-menu").show();
+
           $(self.wrapper).animate({
             left: "-250px"
           }, function() {
