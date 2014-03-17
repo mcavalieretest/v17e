@@ -8117,17 +8117,13 @@ a.ibm-thumbnail-module h3 {
 
   /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
   .no-csstransforms3d #m-menu {
-    margin-right: -250px;
-    display: none; }
+    margin-right: -250px; }
 
   .no-csstransforms3d .m-shift {
     left: 0px; }
 
   .no-csstransforms3d .m-shift.m-enable {
     left: -250px; }
-
-  .no-csstransforms3d .m-shift.m-enable #m-menu {
-    display: block; }
 
   .ibm-landing-page #ibm-content-head {
     width: auto; }
