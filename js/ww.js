@@ -257,7 +257,7 @@ var CHICKENFEED = {};
       if( this.level === 1 ) {
   		  this._disableDrag();
 
-        if ( Modernizr.csstransforms3d && !$.browser.firefox ) {
+        if ( Modernizr.csstransforms3d ) {
           $(self.wrapper).addClass( 'm-enable' );
           $("#m-menu").show(); 	
           self.open = true;
@@ -303,7 +303,7 @@ var CHICKENFEED = {};
       // Open using a css transition. If they're unavailable, animate the css left: property.
       // Note that we're currently doing this for firefox as well, since it has a bug which causes it 
       //  to inconsistently fire the transitionend event. 
-      if ( Modernizr.csstransforms3d && !$.browser.firefox ) {
+      if ( Modernizr.csstransforms3d ) {
 	      $(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd mozTransitionEnd", function() { 
 	      	setTimeout(closeFunc, 200);
 	  	  });
