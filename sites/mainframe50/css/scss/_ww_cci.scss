@@ -437,6 +437,12 @@
 #story .ibm-columns .ibm-col-4-2.text-left {
 	width: 480px !important;
 	padding: 20px 20px!important;
+	position: relative;
+}
+
+#story .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link{
+	position: absolute;
+	top: 100%;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-right {
@@ -447,6 +453,12 @@
 #story .ibm-columns .ibm-col-4-2.text-right {
 	width: 480px !important;
 	padding: 20px 20px!important;
+	position: relative;
+}
+
+#story .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link{
+	position: absolute;
+	top: 100%;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left {
