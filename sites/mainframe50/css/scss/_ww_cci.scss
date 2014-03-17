@@ -520,14 +520,14 @@
 
 //Other Devices Style
 //Remove the left background
-@media only screen and (max-width : 1285px) {
+@media only screen and (max-width : 1080px) {
     #ibm-story-graphic{
 		display: none;
 	}
 }
 
 //Remove the top image to no overlap the text
-@media only screen and (max-width : 1080px) {
+@media only screen and (max-width : 960px) {
     #ibm-story-hero-graphic{
 		display: none;
 	}

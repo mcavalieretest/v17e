@@ -532,12 +532,12 @@ sites/
   background: url("../i/eop-02.jpg") repeat center;
 }
 
-@media only screen and (max-width: 1285px) {
+@media only screen and (max-width: 1080px) {
   #ibm-story-graphic {
     display: none;
   }
 }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 960px) {
   #ibm-story-hero-graphic {
     display: none;
   }
