@@ -590,6 +590,32 @@ Company.data.CustomStore = function(config) { ... }
         setHamburgerPosition();
       });
 
+      // Search placeholder text polyfill for IE9.
+      if(!Modernizr.input.placeholder){
+        $('#m-q').focus(function() {
+          var input = $(this);
+          if (input.val() == input.attr('placeholder')) {
+            input.val('');
+            input.removeClass('placeholder');
+          }
+        }).blur(function() {
+          var input = $(this);
+          if (input.val() == '' || input.val() == input.attr('placeholder')) {
+            input.addClass('placeholder');
+            input.val(input.attr('placeholder'));
+          }
+        }).blur();
+
+        $('#m-q').parents('form').submit(function() {
+          $(this).find('[placeholder]').each(function() {
+          var input = $(this);
+          if (input.val() == input.attr('placeholder')) {
+            input.val('');
+          }
+          });
+        });
+      }
+
       // Set the initial position
       setHamburgerPosition();
     }
