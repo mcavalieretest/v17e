@@ -616,8 +616,7 @@ sites/
   }
 
   #story .ibm-columns .ibm-col-4-2.text-left {
-    width: 43% !important;
-    padding: 20px 1px !important;
+    width: 39% !important;
   }
 
   #story .ibm-columns .ibm-col-4-2.image-right {
@@ -625,7 +624,7 @@ sites/
   }
 
   #story .ibm-columns .ibm-col-4-2.text-right {
-    width: 41% !important;
+    width: 39% !important;
     padding: 20px 1px !important;
   }
 
