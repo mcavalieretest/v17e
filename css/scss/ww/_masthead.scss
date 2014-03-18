@@ -3,7 +3,9 @@
 #ibm-masthead {
 	width: 100%;
 	min-width: 980px;
-	left: 0;
+
+	/* Needed to override JS-based horizontal scrolling of masthead in Dojo code. TODO - Remove eventually. */
+	left: 0 !important; 
 	top: 0;
 	position: fixed;
 	z-index: 900;
