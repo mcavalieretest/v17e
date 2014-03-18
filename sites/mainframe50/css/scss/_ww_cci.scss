@@ -530,6 +530,13 @@
 	background: url("../i/eop-02.jpg") repeat center;
 }
 
+#story{
+	display: none;
+}
+#story-mobile{
+	display: block;
+}
+
 //Other Devices Style
 //Remove the left background
 @media only screen and (max-width : 1080px) {
@@ -669,6 +676,13 @@
 
 //Adjusting the page to work on < width 720px 
 @media (max-width: 735px) and (min-width: 0){
+	#story{
+		display: none;
+	}
+	#story-mobile{
+		display: block;
+	}
+
 	.ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
 		width: 705px !important; 
 	}

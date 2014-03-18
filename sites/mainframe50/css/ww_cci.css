@@ -544,6 +544,14 @@ sites/
   background: url("../i/eop-02.jpg") repeat center;
 }
 
+#story {
+  display: none;
+}
+
+#story-mobile {
+  display: block;
+}
+
 @media only screen and (max-width: 1080px) {
   #ibm-story-graphic {
     display: none;
@@ -666,6 +674,14 @@ sites/
   }
 }
 @media (max-width: 735px) and (min-width: 0) {
+  #story {
+    display: none;
+  }
+
+  #story-mobile {
+    display: block;
+  }
+
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 705px !important;
   }
