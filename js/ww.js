@@ -268,15 +268,6 @@ var CHICKENFEED = {};
             self.options.onOpen();
           }
         } else {
-          /* Margin/padding version
-          $("#m-menu").show();
-          $(self.wrapper).addClass( 'm-enable' ); 
-          self.open = true;
-          if (self.options.onOpen) {
-            self.options.onOpen();
-          }            
-           */
-
           /* relative positioning version*/
           $("#m-menu").show();
           $(self.wrapper).animate({
@@ -320,12 +311,6 @@ var CHICKENFEED = {};
 	  	  });
 	      $(this.wrapper).removeClass( 'm-enable' );
       } else {
-        /* margin/padding version
-        $('html').removeClass('m-menu-open');
-        $(this.wrapper).removeClass( 'm-enable' );
-        closeFunc();
-        */
-
         /* relative positioning version*/
         $(this.wrapper).animate({
           left: "0px"

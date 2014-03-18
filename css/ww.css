@@ -6896,7 +6896,8 @@ markup:
 #ibm-masthead {
   width: 100%;
   min-width: 980px;
-  left: 0;
+  /* Needed to override JS-based horizontal scrolling of masthead in Dojo code. TODO - Remove eventually. */
+  left: 0 !important;
   top: 0;
   position: fixed;
   z-index: 900;
@@ -8175,23 +8176,6 @@ a.ibm-thumbnail-module h3 {
     position: relative; }
 
   /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-  	/* Margin/padding version
-  	.no-csstransforms3d #m-menu {
-  		margin-right: -250px;
-  	}
-  
-  	.no-csstransforms3d .m-shift {
-  		
-  	}
-  
-  	.no-csstransforms3d .m-shift.m-enable {
-  		padding-right: 250px;
-  	}
-  
-  	.no-csstransforms3d .m-shift.m-enable #m-menu {
-  		margin-right: 0;
-  	}
-  	 */
   /* Relative positioning version */
   .no-csstransforms3d #m-menu {
     margin-right: -250px;

@@ -391,25 +391,6 @@ a.ibm-thumbnail-module h3 {
 	
 	/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 
-	/* Margin/padding version
-	.no-csstransforms3d #m-menu {
-		margin-right: -250px;
-	}
-
-	.no-csstransforms3d .m-shift {
-		
-	}
-
-	.no-csstransforms3d .m-shift.m-enable {
-		padding-right: 250px;
-	}
-
-	.no-csstransforms3d .m-shift.m-enable #m-menu {
-		margin-right: 0;
-	}
-	 */
-
-
 	/* Relative positioning version */
 	.no-csstransforms3d #m-menu {
 		margin-right: -250px;
@@ -424,10 +405,6 @@ a.ibm-thumbnail-module h3 {
 		left: -250px;
 	}
 	 
-
-
-
-
 	.no-cssgradients #m-q {
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#4b4b4b');
 	  zoom: 1;
