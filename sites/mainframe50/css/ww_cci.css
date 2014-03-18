@@ -544,6 +544,10 @@ sites/
   background: url("../i/eop-02.jpg") repeat center;
 }
 
+#story-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   #ibm-story-graphic {
     display: none;
