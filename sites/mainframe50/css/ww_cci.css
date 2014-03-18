@@ -880,6 +880,7 @@ sites/
 @media (max-width: 495px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     font-size: 1.9rem;
+    width: 460px !important;
   }
 
   #story-mobile .ibm-columns {
