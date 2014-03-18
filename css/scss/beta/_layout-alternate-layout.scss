@@ -1,0 +1,65 @@
+// layout styles begin ============================================
+
+#ibm-top {
+    background: #FFF;
+    margin-top: 74px;
+    /* min-width: 980px; */
+    width: 100%;
+}
+
+#ibm-pcon {
+    width: 778px;
+    margin: 20px auto;
+    padding: 0 0 10px 202px;
+    background: #FFF;
+   	@include text-shadow($emboss-light);
+}
+
+#ibm-pcon:after {
+	@include aslett-clearing;
+}
+
+#ibm-content {
+    float: left;
+    width: 100%;
+}
+
+#ibm-content-body {
+    padding-top: 20px;
+	background: #FFF; /* T  4904-AFE - bad bkground colors on select elements in w3 v17 form elems which are not 'ibm-styled' */
+}
+
+#ibm-top.ibm-content-expand #ibm-content-body {
+    padding-right: 20px;
+}
+
+#ibm-content-main {
+    clear: left;
+    float: left;
+    width: 576px;
+}
+
+#ibm-top.ibm-content-expand #ibm-content-main {
+    width: auto;
+}
+
+/* high definition styles - remove left and right nav to allow wider template */
+.ibm-content-expand #ibm-content-sidebar,
+.ibm-landing-page #ibm-content-sidebar,
+.ibm-landing-page #ibm-navigation,
+.ibm-landing-page #ibm-media {
+    display: none;
+}
+
+.ibm-landing-page #ibm-pcon {
+    padding-left: 0;
+    width: $landingGrid;
+}
+
+#{$ie7Selector} div#interceptDiv {
+    height: 1%;
+}
+
+.ibm-embed-video {
+    height: 355px;
+}
