@@ -597,6 +597,10 @@ Company.data.CustomStore = function(config) { ... }
         setHamburgerPosition();
       });
 
+      $(window).scroll(function() {
+        setHamburgerPosition();
+      });
+
       // Search placeholder text polyfill for IE9.
       if(!Modernizr.input.placeholder){
         $('#m-q').focus(function() {
@@ -665,7 +669,7 @@ Company.data.CustomStore = function(config) { ... }
 
     function setHamburgerPosition() {
       var hamb   = $("#m-open-link"),
-          offset = Math.abs( $(window).width() - hamb.offsetParent().width() );
+          offset = Math.abs( $(window).width() - hamb.offsetParent().width() ) - $("body").scrollLeft();
 
       hamb.css("right", offset + "px");
     }
