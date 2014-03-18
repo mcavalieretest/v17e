@@ -696,6 +696,14 @@ sites/
   }
 }
 @media (max-width: 655px) and (min-width: 0) {
+  #story {
+    display: none !important;
+  }
+
+  #story-mobile {
+    display: block !important;
+  }
+
   .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
     width: 525px !important;
     font-size: 2.0rem;
@@ -731,8 +739,7 @@ sites/
   #story .ibm-p-story {
     font-size: 1.7rem !important;
   }
-}
-@media (max-width: 655px) and (min-width: 0) {
+
   #story .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link {
     position: static !important;
     top: 0 !important;
