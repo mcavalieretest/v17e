@@ -678,18 +678,18 @@ Company.data.CustomStore = function(config) { ... }
       // Allow site owners to disable the menu via html.
       if ( $("html").hasClass("m-menu-disabled") ) { return; }
 
-      IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
+      insertPushMenuWrapperHtml();
 
-      IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
-          IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
-          IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
-          IBM.Common.Widget.MobileMenu.initPushMenu();
-            
-          if ($('#ibm-primary-tabs').length) {
-            IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
-          }
+      whenMastheadLinksAvailable(function() {
+        insertMobileMenuHtml();
+        insertHamburgerHtml();
+        initPushMenu();
+          
+        if ($('#ibm-primary-tabs').length) {
+          insertLocalMenuHtml();
+        }
 
-          IBM.Common.Widget.MobileMenu.initAccordion();
+        initAccordion();
       });
     }
 
