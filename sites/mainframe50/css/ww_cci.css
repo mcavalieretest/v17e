@@ -314,7 +314,7 @@ sites/
   font-family: LubalinGraphStdBookIBM;
   font-size: 4rem;
   letter-spacing: 1px;
-  padding: 200px 0 10px 178px;
+  padding-top: 200px;
 }
 
 #ibm-content .ibm-story p {
