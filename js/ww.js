@@ -675,6 +675,9 @@ Company.data.CustomStore = function(config) { ... }
     }
 
     function init() {
+      // Allow site owners to disable the menu via html.
+      if ( $("html").hasClass("m-menu-disabled") ) { return; }
+
       IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
 
       IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
