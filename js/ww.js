@@ -669,7 +669,7 @@ Company.data.CustomStore = function(config) { ... }
 
     function setHamburgerPosition() {
       var hamb   = $("#m-open-link"),
-          offset = Math.abs( $(window).width() - hamb.offsetParent().width() ) - $("body").scrollLeft();
+          offset = Math.abs( $(window).width() - hamb.offsetParent().width() ) - $(window).scrollLeft();
 
       hamb.css("right", offset + "px");
     }
