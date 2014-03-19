@@ -293,6 +293,9 @@ var CHICKENFEED = {};
     },
     // close the menu
     _resetMenu : function() {
+      // Override close animation. Used when auto-closing on window resize in IE9.
+      var animate = (arguments.length > 0 ? arguments[0] : true);
+
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
       if(iOSCheck){
         $('#m-wrap').css("height", 'auto');  
@@ -305,20 +308,24 @@ var CHICKENFEED = {};
     		$("#m-menu").hide(); 	
       };
 
+      // Good browsers
       if ( Modernizr.csstransforms3d ) {
 	      $(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd mozTransitionEnd", function() { 
 	      	setTimeout(closeFunc, 200);
 	  	  });
 	      $(this.wrapper).removeClass( 'm-enable' );
       } else {
-        /* relative positioning version*/
-        $(this.wrapper).animate({
-          left: "0px"
-        }, function() {
-          $('html').removeClass('m-menu-open');
-          $("#m-menu").hide();  
-        });
-        
+
+        if (animate) {
+          // IE9 fallback animation
+          $(this.wrapper).animate({
+            left: "0px"
+          }, closeFunc);
+        } else {
+          // IE9, hide without animation when auto-closing menu, to avoid choppiness. 
+          $(this.wrapper).css("left", "0px");
+          closeFunc();
+        }
       }
 
       this._toggleLevels();
@@ -587,7 +594,7 @@ Company.data.CustomStore = function(config) { ... }
       // Close the menu automatically when the viewport gets too wide. 
       $(window).resize(function() {
       	if ( $(window).width() > minViewportWidth ) {
-      		IBM.CurrentPage.mobileMenuMain._resetMenu();
+      		IBM.CurrentPage.mobileMenuMain._resetMenu(false);
       	}
 
         // Reposition the hamburger when resizing the page. 
