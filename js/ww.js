@@ -674,6 +674,22 @@ Company.data.CustomStore = function(config) { ... }
       hamb.css("right", offset + "px");
     }
 
+    function init() {
+      IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
+
+      IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
+          IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
+          IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
+          IBM.Common.Widget.MobileMenu.initPushMenu();
+            
+          if ($('#ibm-primary-tabs').length) {
+            IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
+          }
+
+          IBM.Common.Widget.MobileMenu.initAccordion();
+      });
+    }
+
     return {
         whenMastheadLinksAvailable: whenMastheadLinksAvailable,
         insertPushMenuWrapperHtml: insertPushMenuWrapperHtml,
@@ -682,7 +698,8 @@ Company.data.CustomStore = function(config) { ... }
         initPushMenu: initPushMenu,
         insertLocalMenuHtml: insertLocalMenuHtml,
         initAccordion: initAccordion,
-        expandDefaultMenu: expandDefaultMenu
+        expandDefaultMenu: expandDefaultMenu,
+        init: init
     };
   })();
 
@@ -800,19 +817,7 @@ jQuery(function() {
 ibmcom.init();
 
   (function($, IBM) {
-    IBM.Common.Widget.MobileMenu.insertPushMenuWrapperHtml();
-
-    IBM.Common.Widget.MobileMenu.whenMastheadLinksAvailable(function() {
-        IBM.Common.Widget.MobileMenu.insertMobileMenuHtml();
-        IBM.Common.Widget.MobileMenu.insertHamburgerHtml();
-        IBM.Common.Widget.MobileMenu.initPushMenu();
-          
-        if ($('#ibm-primary-tabs').length) {
-          IBM.Common.Widget.MobileMenu.insertLocalMenuHtml();
-        }
-
-        IBM.Common.Widget.MobileMenu.initAccordion();
-    });
+    IBM.Common.Widget.MobileMenu.init();
   })(jQuery, CHICKENFEED);
 
 });
