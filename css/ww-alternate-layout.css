@@ -7670,37 +7670,41 @@ input#m-q {
 /*
  * Hide initially. 
  */
-#m-local-menu {
+/* #m-local-menu {
   position: absolute;
   top: -10000px;
   left: -10000px;
-  right: auto; }
-
-#m-menu #m-local-menu {
+  right: auto;
+} */
+/* #m-menu #m-local-menu {
   position: static;
   top: 0;
   right: 0;
-  left: auto; }
-
-#m-local-menu .menu-close {
-  position: absolute;
-  bottom: 30px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  font-size: 20px;
-  font-size: 2rem; }
-
-#m-local-menu,
-#m-local-menu .m-level {
+  left: auto;
+} */
+/* 
+#m-local-menu {
+  .menu-close {
+    position: absolute;
+    bottom: $mSearchBoxHeight;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    @include px-to-rem(font-size,20px);
+  }
+} */
+/* #m-local-menu .m-level { */
+#m-local-menu {
   background: #336CA6; }
 
+/* 
 #m-local-menu {
-  position: relative; }
-
+  position: relative;
+}
+ */
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000; }
@@ -7721,13 +7725,14 @@ input#m-q {
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
   -moz-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  -o-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
+  -ms-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
   transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s; }
 
 .m-level:after {
   z-index: -1; }
 
-.m-shift.m-enable:after,
-.m-level.m-level-overlay:after {
+.m-shift.m-enable:after {
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -7735,41 +7740,29 @@ input#m-q {
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
-.m-level.m-level-overlay {
-  cursor: pointer; }
-
-.m-level.m-level-overlay.m-level:before {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  opacity: 1; }
-
-.m-level {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s; }
-
 /* First level */
-.m-menu #m-main-menu > .m-level,
+/* .m-menu #m-main-menu > .m-level,
 .m-menu #m-main-menu > .m-level.m-level-open,
 .m-menu #m-local-menu > .m-level,
 .m-menu #m-local-menu > .m-level.m-level-open {
   box-shadow: none;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-
+  transform: translate3d(0, 0, 0);
+} */
 /* cover */
-.m-cover .m-level.m-level-open {
+/* .m-cover .m-level.m-level-open {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+}
 
 .m-cover .m-level.m-level-open > ul > li > .m-level:not(.m-level-open) {
   -webkit-transform: translate3d(100%, 0, 0);
   -moz-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0); }
-
+  transform: translate3d(100%, 0, 0);
+}
+ */
 /* content style */
 .m-menu h2 {
   margin: 0;
@@ -7962,6 +7955,7 @@ input#m-q {
     display: block; }
 
   .no-csstransforms3d .m-shift {
+    position: relative;
     left: 0px; }
 
   .no-csstransforms3d .m-shift.m-enable {
