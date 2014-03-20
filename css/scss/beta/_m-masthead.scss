@@ -36,6 +36,25 @@ html.m-menu-open #m-wrap {
 /*
  * Mobile search box
  */
+
+#m-search-module {
+  position: fixed;
+}
+
+#m-search {
+  background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
+  width: 24px;
+  height: 21px;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: transparent;
+  border: 0 none;
+  text-align: right;
+  text-indent: -999em;
+  cursor: pointer;
+}
+
 input#m-q {
   font-family: Arial, Helvetica;
   @include px-to-rem(font-size,18px);
@@ -52,20 +71,6 @@ input#m-q {
   @include transition(background .2s linear);
 }
 
-
-#m-search {
-  background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
-  width: 24px;
-  height: 21px;
-  position: absolute;
-  top: 8px;
-  right: 5px;
-  color: transparent;
-  border: 0 none;
-  text-align: right;
-  text-indent: -999em;
-  cursor: pointer;
-}
 
 
 .m-menu {
@@ -88,6 +93,10 @@ input#m-q {
 #m-menu-scroll {
   height: 100%;
   overflow-y: auto;
+}
+
+#m-main-menu {
+  padding-top: $mScrollContainerVerticalOffset;
 }
 
 #m-local-menu {

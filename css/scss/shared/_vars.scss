@@ -47,7 +47,7 @@ $ie9Hack : "\0/";
 $mMenuWidth: 250px;
 $mMenuLevelIndent:  1em;
 $mSearchBoxHeight: 30px;
-
+$mScrollContainerVerticalOffset: $mSearchBoxHeight + 5px + 2px;
 
 
 // !Shadow effects ============================================

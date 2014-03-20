@@ -7591,6 +7591,22 @@ html.m-menu-open #m-wrap {
 /*
  * Mobile search box
  */
+#m-search-module {
+  position: fixed; }
+
+#m-search {
+  background: url(//1.www.s81c.com/common/v17e/i/icons/search.png) 0px 3px no-repeat;
+  width: 24px;
+  height: 21px;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: transparent;
+  border: 0 none;
+  text-align: right;
+  text-indent: -999em;
+  cursor: pointer; }
+
 input#m-q {
   font-family: Arial, Helvetica;
   font-size: 18px;
@@ -7618,19 +7634,6 @@ input#m-q {
   -ms-transition: background 0.2s linear;
   transition: background 0.2s linear; }
 
-#m-search {
-  background: url(//1.www.s81c.com/common/v17e/i/icons/search.png) 0px 3px no-repeat;
-  width: 24px;
-  height: 21px;
-  position: absolute;
-  top: 8px;
-  right: 5px;
-  color: transparent;
-  border: 0 none;
-  text-align: right;
-  text-indent: -999em;
-  cursor: pointer; }
-
 .m-menu {
   position: absolute;
   /* we can't use fixed here :( */
@@ -7654,6 +7657,9 @@ input#m-q {
 #m-menu-scroll {
   height: 100%;
   overflow-y: auto; }
+
+#m-main-menu {
+  padding-top: 37px; }
 
 #m-local-menu {
   background: #336CA6; }
