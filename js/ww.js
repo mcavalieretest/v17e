@@ -328,7 +328,6 @@ var CHICKENFEED = {};
         }
       }
 
-      this._toggleLevels();
       this.open = false;
 
       if (this.options.onClose) {
@@ -340,21 +339,13 @@ var CHICKENFEED = {};
 
       this.level = 0;
 
-      var self = this;
-
-      setTimeout(function() {
-        self._toggleLevels();
-      }, 500);
-            
+      var self = this;            
     },
     // close sub menus
     _closeMenu : function() {
       var translateVal = this.el.offsetWidth;
     //  this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
       this.levelElementStack.pop();
-
-      this._toggleLevels();
-
       this._updateContainerHeight();
     },
     // translate the el
@@ -368,19 +359,6 @@ var CHICKENFEED = {};
       if (this.options.animateContainerHeight) {
         var levelElement = $(this._getCurrentLevelElement());
         $(this.container).css("height", levelElement.height() + "px")
-      }
-    },
-    // removes classes m-level-open from closing levels
-    _toggleLevels : function() {
-      for( var i = 0, len = this.levels.length; i < len; ++i ) {
-        var levelEl = this.levels[i];
-        if( levelEl.getAttribute( 'data-level' ) >= this.level + 1 ) {
-          jQuery(levelEl).removeClass( 'm-level-open' );
-          jQuery(levelEl).removeClass( 'm-level-overlay' );
-        }
-        else if( Number( levelEl.getAttribute( 'data-level' ) ) == this.level ) {
-          jQuery(levelEl).removeClass( 'm-level-overlay' );
-        }
       }
     },
     _getCurrentLevelElement: function() {
