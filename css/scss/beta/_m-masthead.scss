@@ -1,6 +1,6 @@
 html.m-menu-open #m-wrap {
-    position: relative;
-    overflow: hidden;    
+/*     position: relative; */
+  overflow: hidden;    
 }
 
 #m-open-link {
@@ -29,8 +29,7 @@ html.m-menu-open #m-wrap {
 }
 
 .m-shift {
-  position: relative;
-  right: 0;
+  /* Allows mobile menu to scroll vertically when its content is taller than the viewport. */
   height: 100%;
 }
 
@@ -59,7 +58,7 @@ input#m-q {
   background: url(#{$imagePath}/i/icons/search.png) 0px 3px no-repeat;
   width: 24px;
   height: 21px;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   position: absolute;
   top: 8px;
   right: 5px;
@@ -405,11 +404,11 @@ input#m-q {
   html.m-menu-open .m-content {
     height: 100%;
   } 
-
+/* 
   html.m-menu-open, 
   html.m-menu-open body {
     overflow-x: hidden;
-  }
+  } */
 
   /* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
   .dj_safari.touch #m-wrap {
@@ -417,10 +416,8 @@ input#m-q {
   }
 
   .m-shift {
+    @include transition(all 0.5s);   
     @include transform(translate3d(0px, 0px, 0px));
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
   }
   
   .m-shift.m-enable {
