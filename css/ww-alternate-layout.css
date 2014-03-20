@@ -7565,7 +7565,6 @@ markup:
   margin-bottom: 30px; }
 
 html.m-menu-open #m-wrap {
-  /*     position: relative; */
   overflow: hidden; }
 
 #m-open-link {
@@ -7627,7 +7626,6 @@ input#m-q {
   background: url(//1.www.s81c.com/common/v17e/i/icons/search.png) 0px 3px no-repeat;
   width: 24px;
   height: 21px;
-  /* margin-left: -30px; */
   position: absolute;
   top: 8px;
   right: 5px;
@@ -7652,15 +7650,6 @@ input#m-q {
   /* Prevent flicker when tapped on iOS Safari */
   -webkit-tap-highlight-color: transparent; }
 
-/* .m-level {
-  width: 100%;
-  height: auto;
-  background: #000;
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
- */
 /*
  * Scrolling container. Contains both global and local menu containers. 
  */
@@ -7668,44 +7657,9 @@ input#m-q {
   height: 100%;
   overflow-y: auto; }
 
-/*
- * Hide initially. 
- */
-/* #m-local-menu {
-  position: absolute;
-  top: -10000px;
-  left: -10000px;
-  right: auto;
-} */
-/* #m-menu #m-local-menu {
-  position: static;
-  top: 0;
-  right: 0;
-  left: auto;
-} */
-/* 
-#m-local-menu {
-  .menu-close {
-    position: absolute;
-    bottom: $mSearchBoxHeight;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    @include px-to-rem(font-size,20px);
-  }
-} */
-/* #m-local-menu .m-level { */
 #m-local-menu {
   background: #336CA6; }
 
-/* 
-#m-local-menu {
-  position: relative;
-}
- */
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000; }
@@ -7727,9 +7681,6 @@ input#m-q {
   -ms-transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s;
   transition: opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s; }
 
-/* .m-level:after {
-  z-index: -1;
-} */
 .m-shift.m-enable:after {
   width: 100%;
   height: 100%;
@@ -7738,29 +7689,6 @@ input#m-q {
   -moz-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
-/* First level */
-/* .m-menu #m-main-menu > .m-level,
-.m-menu #m-main-menu > .m-level.m-level-open,
-.m-menu #m-local-menu > .m-level,
-.m-menu #m-local-menu > .m-level.m-level-open {
-  box-shadow: none;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-} */
-/* cover */
-/* .m-cover .m-level.m-level-open {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.m-cover .m-level.m-level-open > ul > li > .m-level:not(.m-level-open) {
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
- */
 /* content style */
 .m-menu h2 {
   margin: 0;
@@ -7855,50 +7783,10 @@ input#m-q {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-/* 
-
-.m-level > ul > li:first-child > a {
-  box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
-} */
 .m-menu ul li a:hover {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px transparent; }
 
-/* 
-.m-menu .m-level.m-level-overlay > ul > li > a,
-.m-level.m-level-overlay > ul > li:first-child > a {
-  box-shadow: inset 0 -1px rgba(0,0,0,0);
-}
- */
-/* .m-menu .m-back {
-  background: rgba(0,0,0,0.1);
-  outline: none;
-  color: #FFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: 700;
-  display: block;
-  font-size: 0.8em;
-  padding: 1em;
-  position: relative;
-  box-shadow: inset 0 1px rgba(0,0,0,0.1);
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
-} */
-/* 
-.m-menu .m-back:after {
-  right: 10px;
-  color: rgba(0,0,0,0.3);
-}
-
-.m-menu .m-level.m-level-overlay > .m-back,
-.m-menu .m-level.m-level-overlay > .m-back:after {
-  background: transparent;
-  box-shadow: none;
-  color: transparent;
-} */
 #m-menu,
 #m-local-link {
   display: none; }
@@ -7917,11 +7805,6 @@ input#m-q {
   html.m-menu-open .m-content {
     height: 100%; }
 
-  /* 
-    html.m-menu-open, 
-    html.m-menu-open body {
-      overflow-x: hidden;
-    } */
   /* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
   .dj_safari.touch #m-wrap {
     height: auto; }
