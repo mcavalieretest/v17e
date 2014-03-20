@@ -86,7 +86,7 @@ input#m-q {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.m-level {
+/* .m-level {
   width: 100%;
   height: auto;
   background: #000;
@@ -94,7 +94,7 @@ input#m-q {
   -moz-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
-
+ */
 /*
  * Scrolling container. Contains both global and local menu containers. 
  */
@@ -150,9 +150,7 @@ input#m-q {
   z-index: 1000;
 }
 
-.m-shift:after,
-.m-level:after,
-.m-level:before {
+.m-shift:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -162,15 +160,14 @@ input#m-q {
   opacity: 0;
 }
 
-.m-shift:after,
-.m-level:after {
+.m-shift:after {
   background: rgba(0,0,0,0.3);
   @include transition(opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s);   
 }
 
-.m-level:after {
+/* .m-level:after {
   z-index: -1;
-}
+} */
 
 .m-shift.m-enable:after {
   width: 100%;
@@ -308,24 +305,23 @@ input#m-q {
 }
 
 
-
+/* 
 
 .m-level > ul > li:first-child > a {
   box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
-}
+} */
 
-.m-menu ul li a:hover,
-.m-level > ul > li:first-child > a:hover {
+.m-menu ul li a:hover {
   background: rgba(0,0,0,0.2);
   box-shadow: inset 0 -1px rgba(0,0,0,0);
 }
-
+/* 
 .m-menu .m-level.m-level-overlay > ul > li > a,
 .m-level.m-level-overlay > ul > li:first-child > a {
   box-shadow: inset 0 -1px rgba(0,0,0,0);
 }
-
-.m-menu .m-back {
+ */
+/* .m-menu .m-back {
   background: rgba(0,0,0,0.1);
   outline: none;
   color: #FFF;
@@ -341,8 +337,9 @@ input#m-q {
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
   transition: background 0.3s;
-}
+} */
 
+/* 
 .m-menu .m-back:after {
   right: 10px;
   color: rgba(0,0,0,0.3);
@@ -353,7 +350,7 @@ input#m-q {
   background: transparent;
   box-shadow: none;
   color: transparent;
-}
+} */
 
 #m-menu,
 #m-local-link {
