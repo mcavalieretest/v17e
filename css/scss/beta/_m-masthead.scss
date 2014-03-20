@@ -47,7 +47,7 @@ input#m-q {
   @include background-gradient(background,(top, rgba(14,14,14,1) 0px, rgba(50,50,50,1) 24px, rgba(225,225,225,1) 100px, rgba(238,238,238,1) 124px));
   background-size: 222px 124px;
   color: #888;
-  width: 100%; 
+  width: $mMenuWidth - 40; 
   height: $mSearchBoxHeight;
   @include transition(background .2s linear);
 }
