@@ -74,7 +74,7 @@ input#m-q {
   top: 0;
   right: 0;
   z-index: 1;
-  width: 250px;
+  width: $mMenuWidth;
   height: 100%;
   -webkit-transform: translate3d(100%, 0, 0);
   -moz-transform: translate3d(100%, 0, 0);
@@ -270,7 +270,7 @@ input#m-q {
   }
   
   .m-shift.m-enable {
-    @include transform(translate3d(-250px, 0px, 0px));
+    @include transform(translate3d(-$mMenuWidth, 0px, 0px));
   }
 
   html.m-menu-open {
@@ -287,7 +287,7 @@ input#m-q {
 
   /* Relative positioning version */
   .no-csstransforms3d #m-menu {
-    margin-right: -250px;
+    margin-right: -$mMenuWidth;
     display: block;
   }
 
@@ -297,7 +297,7 @@ input#m-q {
   }
 
   .no-csstransforms3d .m-shift.m-enable {
-    left: -250px;
+    left: -$mMenuWidth;
   }
    
   .no-cssgradients #m-q {
