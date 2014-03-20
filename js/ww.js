@@ -652,8 +652,6 @@ Company.data.CustomStore = function(config) { ... }
     }
 
     function initAccordion() {
-        $("#m-menu-scroll").find("h2").addClass("icon-arrow-right");
-
         // Create the accordion
         IBM.CurrentPage.accordion = new IBM.Common.Widget.Accordion({
           container: "#m-menu-scroll"

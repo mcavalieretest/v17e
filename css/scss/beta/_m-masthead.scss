@@ -196,12 +196,7 @@ input#m-q {
   line-height: 3.5;
 }
 
-.m-menu ul li.icon-arrow-left:before {
-  color: #FFF;
-  margin-left: 0;
-}
-
-.m-menu .icon-arrow-right {
+.m-menu h2 {
   &:after {
     content: "\00a0\f130\00a0";
     color: rgba(255,255,255,0.4); 

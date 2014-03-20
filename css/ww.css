@@ -3652,8 +3652,6 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-logo-sp:before,
 .ibm-media-play:before,
 .ibm-nav-search:before,
-.m-menu .m-back:after,
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-setting-link-alt:before,
@@ -3695,7 +3693,6 @@ ul li:before {
 .ibm-bullet:before,
 #ibm-navigation-trail li:after,
 #ibm-top ul li.ibm-highlight-link:before,
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-close:before {
@@ -3946,7 +3943,6 @@ li.ibm-chevron-alternate-link a:after {
 .ibm-reset-link:before {
   content: "\00a0\f11b\00a0"; }
 
-.m-menu .m-back:after,
 #ibm-parent-link a:before,
 .ibm-forward-link:before,
 .ibm-callaction-link:before {
@@ -4009,7 +4005,6 @@ a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before {
   content: "\00a0\f12c\00a0"; }
 
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before {
   content: "\00a0\f12d\00a0"; }
 
@@ -7756,11 +7751,7 @@ input#m-q {
   display: none;
   line-height: 3.5; }
 
-.m-menu ul li.icon-arrow-left:before {
-  color: #FFF;
-  margin-left: 0; }
-
-.m-menu .icon-arrow-right:after {
+.m-menu h2:after {
   content: "\00a0\f130\00a0";
   color: rgba(255, 255, 255, 0.4);
   font-family: 'iconsIBM';
@@ -7780,7 +7771,7 @@ input#m-q {
   -ms-transform-origin: center center;
   -o-transform-origin: center center;
   transform-origin: center center; }
-.m-menu .icon-arrow-right.active:after {
+.m-menu h2.active:after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);

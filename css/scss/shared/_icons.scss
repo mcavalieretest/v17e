@@ -122,8 +122,6 @@ li.ibm-chevron-alternate-link a:after,
 .ibm-logo-sp:before,
 .ibm-media-play:before,
 .ibm-nav-search:before,
-.m-menu .m-back:after,
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-setting-link-alt:before,
@@ -168,7 +166,6 @@ ul li:before {
 .ibm-bullet:before,
 #ibm-navigation-trail li:after,
 #ibm-top ul li.ibm-highlight-link:before,
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before,
 a.ibm-ribbon-next:before,
 .ibm-close:before {
@@ -374,7 +371,6 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-confirm-link:before { content: "\00a0\f119\00a0" ; }
 .ibm-form-error-link:before { content: "\00a0\f11a\00a0" ; }
 .ibm-reset-link:before { content: "\00a0\f11b\00a0" ; }
-.m-menu .m-back:after,
 #ibm-parent-link a:before,
 .ibm-forward-link:before,
 .ibm-callaction-link:before { content: "\00a0\f11c\00a0" ; }
@@ -403,7 +399,6 @@ li.ibm-chevron-alternate-link a:after { content: "\00a0\f109\00a0"; }
 .ibm-nav-search:before { content: "\00a0\f12b\00a0" ; }
 a.ibm-ribbon-prev:active:before,
 a.ibm-ribbon-prev:focus:before { content: "\00a0\f12c\00a0"; }
-.m-menu .icon-arrow-left:before,
 a.ibm-ribbon-prev:before { content: "\00a0\f12d\00a0"; }
 a.ibm-ribbon-prev:hover:before { content: "\00a0\f12e\00a0"; }
 a.ibm-ribbon-next:active:before,
