@@ -388,7 +388,7 @@
 
 //Adjusting the page to work on < width 480px 
 @media (max-width: 495px) and (min-width: 0){
-	#ibm-leadspace-body.story .ibm-columns, #ibm-leadspace-body.story .ibm-columns.ibm-col-1-1{
+	#ibm-leadspace-body.story .ibm-columns, #ibm-leadspace-body.story .ibm-columns .ibm-col-1-1{
 		width: 400px !important;
 	}
 }
