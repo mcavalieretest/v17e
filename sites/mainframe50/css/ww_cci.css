@@ -336,14 +336,15 @@ sites/
   padding-bottom: 60px;
 }
 
-@media (max-width: 1295px) and (min-width: 0) {
-  /*Nada*/
-}
 @media (max-width: 915px) and (min-width: 0) {
-  /*AQUI*/
+  #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
+    width: 550px !important;
+  }
 }
 @media (max-width: 869px) and (min-width: 0) {
-  /*AQUI*/
+  #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
+    width: 500px !important;
+  }
 }
 @media (max-width: 815px) and (min-width: 0) {
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
