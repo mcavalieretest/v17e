@@ -355,6 +355,10 @@ sites/
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
     width: 85% !important;
   }
+
+  #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2 {
+    width: 85% !important;
+  }
 }
 .ibm-story-leadspace-head {
   background: #060b11 url("../i/eop-header-bg.jpg") no-repeat 50% 100% !important;
