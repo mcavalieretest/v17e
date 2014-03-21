@@ -337,6 +337,9 @@
 
 //Adjusting the page to work on < width 800px 
 @media (max-width: 815px) and (min-width: 0){
+	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns{
+		padding: 0 !important;
+	}
 	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4{
 		width: 500px !important;
 	}
