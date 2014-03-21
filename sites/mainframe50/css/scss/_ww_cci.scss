@@ -358,17 +358,12 @@
 
 //Adjusting the page to work on < width 640px 
 @media (max-width: 655px) and (min-width: 0){
-	/*AQUI*/
-}
-
-//Adjusting the page to work on < width 600px 
-@media (max-width: 615px) and (min-width: 0){
-
-}
-
-//Adjusting the page to work on < width 568px 
-@media (max-width: 593px) and (min-width: 0){	
-
+	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4{
+		width: 350px !important;
+	}
+	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2{
+		width: 200px !important;
+	}
 }
 
 //Adjusting the page to work on < width 533px 
