@@ -346,13 +346,6 @@
 	/*AQUI*/
 }
 
-//Change the images to div to adjust on mobile
-@media (max-width: 800px) and (min-width: 0){
-	a.ibm-no-mobile, img.ibm-no-mobile{
-		display: none; 
-	}
-}
-
 //Adjusting the page to work on < width 768px 
 @media (max-width: 783px) and (min-width: 0){
 
