@@ -320,6 +320,80 @@
 	padding-bottom: 60px;
 }
 
+//Other Devices Style
+//Remove the left background
+@media only screen and (max-width : 1080px) {
+
+}
+
+//Remove the top image to no overlap the text
+@media only screen and (max-width : 975px) {
+
+}
+
+//Adjusting the page to work on < width 1280px 
+@media (max-width: 1295px) and (min-width: 0){		
+	/*Nada*/
+}
+
+//Adjusting the page to work on < width 1024px 
+@media (max-width: 1039px) and (min-width: 0){	
+
+}
+
+//Adjusting the page to work on < width 900px 
+@media (max-width: 915px) and (min-width: 0){	
+
+}
+
+//Adjusting the page to work on < width 853px 
+@media (max-width: 869px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 800px 
+@media (max-width: 815px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 768px 
+@media (max-width: 783px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 720px 
+@media (max-width: 735px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 640px 
+@media (max-width: 655px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 600px 
+@media (max-width: 615px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 568px 
+@media (max-width: 593px) and (min-width: 0){	
+
+}
+
+//Adjusting the page to work on < width 533px 
+@media (max-width: 548px) and (min-width: 0){
+
+}
+
+//Adjusting the page to work on < width 480px 
+@media (max-width: 495px) and (min-width: 0){
+	#ibm-leadspace-body.story .ibm-columns,  #ibm-leadspace-body.story .ibm-columns .ibm-col-1-1{
+		width: 400px !important;
+	}
+}
+
+
 //Story index page start here
 
 .ibm-story-leadspace-head {
