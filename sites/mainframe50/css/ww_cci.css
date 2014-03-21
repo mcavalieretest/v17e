@@ -362,7 +362,8 @@ sites/
 }
 @media (max-width: 255px) and (min-width: 0) {
   #ibm-leadspace-body.story .ibm-columns, #ibm-leadspace-body.story .ibm-columns .ibm-col-1-1 {
-    width: 100% !important;
+    width: 200px !important;
+    margin: 0 !important;
   }
 
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns {
