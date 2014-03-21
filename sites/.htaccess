@@ -1,0 +1,4 @@
+AuthName "v17e project site"
+AuthType Basic
+AuthUserFile /var/www/vhosts/think-mktg.com/.htpasswd
+require valid-user
