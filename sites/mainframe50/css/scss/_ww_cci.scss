@@ -321,16 +321,6 @@
 }
 
 //Other Devices Style
-//Remove the left background
-@media only screen and (max-width : 1080px) {
-
-}
-
-//Remove the top image to no overlap the text
-@media only screen and (max-width : 975px) {
-
-}
-
 //Adjusting the page to work on < width 1280px 
 @media (max-width: 1295px) and (min-width: 0){		
 	/*Nada*/
@@ -343,17 +333,24 @@
 
 //Adjusting the page to work on < width 900px 
 @media (max-width: 915px) and (min-width: 0){	
-
+	/*AQUI*/
 }
 
 //Adjusting the page to work on < width 853px 
 @media (max-width: 869px) and (min-width: 0){
-
+	/*AQUI*/
 }
 
 //Adjusting the page to work on < width 800px 
 @media (max-width: 815px) and (min-width: 0){
+	/*AQUI*/
+}
 
+//Change the images to div to adjust on mobile
+@media (max-width: 783px) and (min-width: 0){
+	a.ibm-no-mobile, img.ibm-no-mobile{
+		display: none; 
+	}
 }
 
 //Adjusting the page to work on < width 768px 
@@ -368,7 +365,7 @@
 
 //Adjusting the page to work on < width 640px 
 @media (max-width: 655px) and (min-width: 0){
-
+	/*AQUI*/
 }
 
 //Adjusting the page to work on < width 600px 
@@ -406,17 +403,9 @@
 		width: 100% !important;
 	}
 	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-1-1{
+	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-1-1, #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4, #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2{
 		width: 85% !important;
 	}
-	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4{
-		width: 85% !important;
-	}
-	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2{
-		width: 85% !important;
-	}	
 }
 
 //Adjusting the page to work on < width 240px 
@@ -430,15 +419,7 @@
 		width: 100% !important;
 	}
 	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-1-1{
-		width: 60% !important;
-	}
-	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4{
-		width: 60% !important;
-	}
-	
-	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2{
+	#ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-1-1, #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4, #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-2{
 		width: 60% !important;
 	}
 }
