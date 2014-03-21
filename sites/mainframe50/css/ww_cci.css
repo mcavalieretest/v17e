@@ -343,6 +343,14 @@ sites/
   #ibm-leadspace-body.story .ibm-columns, #ibm-leadspace-body.story .ibm-columns .ibm-col-1-1 {
     width: 100% !important;
   }
+
+  .ibm-story-content .ibm-columns {
+    width: 100% !important;
+  }
+
+  .ibm-story-content .ibm-columns .ibm-col-1-1 {
+    width: 85% !important;
+  }
 }
 .ibm-story-leadspace-head {
   background: #060b11 url("../i/eop-header-bg.jpg") no-repeat 50% 100% !important;
