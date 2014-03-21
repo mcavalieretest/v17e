@@ -336,6 +336,11 @@ sites/
   padding-bottom: 60px;
 }
 
+@media (max-width: 981px) and (min-width: 915px) {
+  #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
+    margin-left: 0 !important;
+  }
+}
 @media (max-width: 915px) and (min-width: 0) {
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
     width: 550px !important;
