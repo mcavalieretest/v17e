@@ -56,15 +56,15 @@ html.m-menu-open #m-wrap {
 }
 
 input#m-q {
-  font-family: Arial, Helvetica;
+  font-family: $defaultFont-dbcs;
   @include px-to-rem(font-size,18px);
   line-height: 14px;
   @include box-shadow(0 1px 0 #555);
-  border: 1px solid #000;
-  padding: 3px 30px 2px 10px;
+  border: $mSearchBoxBorder solid #000;
+  padding: 0 30px 0 10px;
   background: #0E0E0E;  
   @include background-gradient(background,(top, rgba(14,14,14,1) 0px, rgba(50,50,50,1) 24px, rgba(225,225,225,1) 100px, rgba(238,238,238,1) 124px));
-  background-size: 222px 124px;
+  //background-size: 222px 124px;  Mike > Please confirm if this style is used.
   color: #888;
   width: $mMenuWidth - 40; /* subtract horizontal padding */
   height: $mSearchBoxHeight;
@@ -96,7 +96,7 @@ input#m-q {
 }
 
 #m-main-menu {
-  padding-top: $mScrollContainerVerticalOffset;
+  padding-top: $mSearchBoxHeight + ($mSearchBoxBorder*2);
 }
 
 #m-local-menu {
