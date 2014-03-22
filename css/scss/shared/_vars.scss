@@ -46,8 +46,10 @@ $ie9Hack : "\0/";
 // !mobile menu
 $mMenuWidth: 250px;
 $mMenuLevelIndent:  1em;
-$mSearchBoxHeight: 30px;
-$mScrollContainerVerticalOffset: $mSearchBoxHeight + 5px + 2px;
+$mSearchBoxHeight: 35px;
+$mSearchBoxBorder: 1px;
+
+//$mScrollContainerVerticalOffset: $mSearchBoxHeight + 5px + 2px;
 
 
 // !Shadow effects ============================================
