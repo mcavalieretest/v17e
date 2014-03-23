@@ -1,6 +1,6 @@
-AuthName "v17e project site"
-AuthType Basic
-AuthUserFile /var/www/vhosts/think-mktg.com/.htpasswd
-require valid-user
+# AuthName "v17e project site"
+# AuthType Basic
+# AuthUserFile /var/www/vhosts/think-mktg.com/.htpasswd
+# require valid-user
 
 RedirectMatch ^/v17e/$ /v17e/primer/index.html
