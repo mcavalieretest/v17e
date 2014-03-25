@@ -278,8 +278,13 @@
 }
 
 .dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-two {
-    width: 660px;
+    width: 980px;
 }
+
+.dijitDialog .ibm-common-overlay.ibm-overlay-alt-two {
+    left: 40px;
+}
+
 
 #ibm-com #ibm-top .section-header.title {
 	font-size: 2.6rem !important;
