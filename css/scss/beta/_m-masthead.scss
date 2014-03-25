@@ -39,6 +39,7 @@ html.m-menu-open #m-wrap {
 
 #m-search-module {
   position: fixed;
+  z-index: 10;
 }
 
 #m-search {
@@ -190,7 +191,7 @@ input#m-q {
   @include transition(all 1s);   
 
   &.active {
-    max-height:  500px;
+    max-height: 500px;
   }
 }
 
@@ -206,6 +207,7 @@ input#m-q {
 }
 
 .m-menu h2 {
+
   &:after {
     content: "\00a0\f130\00a0";
     color: rgba(255,255,255,0.4); 
@@ -216,7 +218,7 @@ input#m-q {
     letter-spacing: 4px;
     text-decoration: none;
     font-size: 1em; 
-    @include transition(all 0.25s);   
+    @include transition(none 0);   
     @include transform-origin(center center);
   }
 

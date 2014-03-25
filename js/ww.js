@@ -153,36 +153,8 @@ var CHICKENFEED = {};
 
       // initialize / bind the necessary events
       this._initEvents();
-      this._initLevelCss();
     },
-    _initLevelCss: function() {
-      var heights = [],
-          max_height;
 
-      if (this.container.id != "m-local-menu") { return; }
-
-      jQuery("#m-local-menu .m-level").each(function(i, el) { 
-        var level_height = jQuery(el).height();
-
-        heights.push(level_height);
-      });
-
-      max_height = Math.max.apply(Math, heights);
-
-      // If we're animating the container height, default to the first element's height. Otherwise,
-      // make the container the same height as the tallest child level.
-      if (this.options.animateContainerHeight) {
-        $(this.container).css("height", jQuery("#m-local-menu .m-level").first().height() + "px");
-      } else {
-        $(this.container).css("height", max_height + "px");
-
-        $.each(this.levels, function(i, el) { 
-          $(el).css("height", max_height + "px");
-        });
-      }
-      
-
-    },
     _initEvents : function() {
       var self = this;
 
@@ -190,10 +162,6 @@ var CHICKENFEED = {};
       var bodyClickFn = function( el ) {
         self._resetMenu();
         el.removeEventListener( self.eventtype, bodyClickFn );
-
-        if (IBM.CurrentPage.mobileMenuLocal) {
-          IBM.CurrentPage.mobileMenuLocal._resetLocalMenu();
-        }
       };
 
       // open (or close) the menu
@@ -289,7 +257,7 @@ var CHICKENFEED = {};
 
       this.levelElementStack.push(levelElement[0]);
 
-      this._updateContainerHeight();
+      // this._updateContainerHeight();
     },
     // close the menu
     _resetMenu : function() {
@@ -334,20 +302,7 @@ var CHICKENFEED = {};
         this.options.onClose();
       }
     },
-    _resetLocalMenu: function() {
-      jQuery("#m-menu-scroll").animate({scrollTop: 0}, 500);
 
-      this.level = 0;
-
-      var self = this;            
-    },
-    // close sub menus
-    _closeMenu : function() {
-      var translateVal = this.el.offsetWidth;
-    //  this._setTransform( 'translate3d(' + translateVal + 'px,0,0)' );
-      this.levelElementStack.pop();
-      this._updateContainerHeight();
-    },
     // translate the el
     _setTransform : function( val, el ) {
       el = el || this.wrapper;
@@ -355,12 +310,7 @@ var CHICKENFEED = {};
       el.style.MozTransform = val;
       el.style.transform = val;
     },
-    _updateContainerHeight: function() {
-      if (this.options.animateContainerHeight) {
-        var levelElement = $(this._getCurrentLevelElement());
-        $(this.container).css("height", levelElement.height() + "px")
-      }
-    },
+
     _getCurrentLevelElement: function() {
       return this.levelElementStack[this.levelElementStack.length-1];
     },

@@ -7876,7 +7876,8 @@ html.m-menu-open #m-wrap {
  * Mobile search box
  */
 #m-search-module {
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
 
 #m-search {
   background: url(//1.www.s81c.com/common/v17e/i/icons/search.png) 0px 3px no-repeat;
@@ -8051,11 +8052,11 @@ input#m-q {
   letter-spacing: 4px;
   text-decoration: none;
   font-size: 1em;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: none 0;
+  -moz-transition: none 0;
+  -o-transition: none 0;
+  -ms-transition: none 0;
+  transition: none 0;
   -webkit-transform-origin: center center;
   -moz-transform-origin: center center;
   -ms-transform-origin: center center;
@@ -8152,6 +8153,7 @@ input#m-q {
 
 .ibm-resize {
   max-width: 100% !important;
+  width: 100% !important;
   height: auto !important; }
 
 a.ibm-thumbnail-module {
