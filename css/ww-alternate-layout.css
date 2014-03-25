@@ -8033,7 +8033,7 @@ input#m-q {
   -ms-transition: all 1s;
   transition: all 1s; }
   .m-menu ul.active {
-    max-height: 500px; }
+    max-height: 700px; }
 
 .m-menu ul li {
   padding: 0; }

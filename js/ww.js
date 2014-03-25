@@ -47,15 +47,6 @@ var CHICKENFEED = {};
   var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
   'use strict';
 
-  function extend( a, b ) {
-    for( var key in b ) { 
-      if( b.hasOwnProperty( key ) ) {
-        a[key] = b[key];
-      }
-    }
-    return a;
-  }
-
   // taken from https://github.com/inuyaksa/jquery.nicescroll/blob/master/jquery.nicescroll.js
   function hasParent( e, id ) {
     if (!e) return false;
@@ -101,7 +92,7 @@ var CHICKENFEED = {};
                                   //   behave a little differently. 
 
     this.trigger = trigger;
-    this.options = extend( this.defaults, options );
+    this.options = $.extend( this.defaults, options );
     // support 3d transforms
     this.support = Modernizr.csstransforms3d;
     // need to catch IE9 - while it doesn't support CSS transform 3d, id does support CSS for possible fallback - see adaptive.scss - selectors with .no-csstransforms3d
