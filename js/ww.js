@@ -694,13 +694,8 @@ Company.data.CustomStore = function(config) { ... }
 
 jQuery(function() {
 
-  try {
     // Tracking code for v17e pages
     ibmStats.event({"ibmEV":"page load","ibmEvSection":jQuery("script[src$='/ww.js']").attr("src"),"ibmEvAction":"v17e page"});
-  }
-  catch (e) {
-    
-  }
 
     var ibmcom = {
     
