@@ -156,10 +156,12 @@ var CHICKENFEED = {};
       };
 
       // open (or close) the menu
-      this.trigger.addEventListener( this.eventtype, function( ev ) {
+      $(this.trigger).on( this.eventtype, function( ev ) {
         ev.stopPropagation();
         ev.preventDefault();
 
+        console.warn("$('html').addClass('m-menu-open');");
+        
         $('html').addClass('m-menu-open');
 
         if( self.open ) {
@@ -170,8 +172,6 @@ var CHICKENFEED = {};
 
           // the menu should close if clicking somewhere on the body (excluding clicks on the menu)
           document.addEventListener( self.eventtype, function( ev ) {
-            // console.warn('body click');
-            // console.warn('event target: '+ ev.target.id + "#" + ev.target.tagName);
 
             if( self.open && !hasParent( ev.target, self.el.id) ) {
               // Avoid 300ms touch delay on mobile browsers
@@ -220,12 +220,17 @@ var CHICKENFEED = {};
   		  this._disableDrag();
 
         if ( Modernizr.csstransforms3d ) {
-          $(self.wrapper).addClass( 'm-enable' );
-          $("#m-menu").show(); 	
-          self.open = true;
-          if (self.options.onOpen) {
-            self.options.onOpen();
-          }
+          $("#m-menu").show();  
+          
+          setTimeout(function() {
+            $(self.wrapper).addClass( 'm-enable' );
+            
+            self.open = true;
+            if (self.options.onOpen) {
+              self.options.onOpen();
+            }
+          }, 50)
+
         } else {
           /* relative positioning version*/
           $("#m-menu").show();
