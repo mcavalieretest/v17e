@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" xml:lang="ko-KR">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Copyright IBM Corp. 2014"/>
+		<meta name="Keywords" content="IBM, 메인프레임 서버, 메인프레임 시스템, 메인프레임, Mainframe50, 진보의 동력, System z, zEnterprise, 메인프레임 기념일, 마스터 더 메인프레임, Generation z, Sabre 예약 시스템, 아폴로 11호 달 착륙, System/360, 혁신적, IT 혁신, 혁신"/>
+		<meta name="DC.Date" scheme="iso8601" content="2014-02-24"/>
+		<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM  authoring:IBM"/>
+		<meta name="Security" content="Public"/>
+		<meta name="Abstract" content="IBM 메인프레임은 비즈니스와 전체 산업 그리고 우리가 알던 기존의 세상을 변화시키는 혁신적인 컴퓨팅 시스템입니다."/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="2014-02-24"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
+		<meta name="Owner" content="Kevin T Clark/Raleigh/IBM"/>
+		<meta name="DC.Language" scheme="rfc1766" content="ko-KR"/>
+		<meta name="IBM.Country" content="KR"/>
+		<meta name="Robots" content="index,follow"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+		<meta name="Description" content="IBM 메인프레임은 비즈니스와 전체 산업 그리고 우리가 알던 기존의 세상을 변화시키는 혁신적인 컴퓨팅 시스템입니다."/>
+		
+<!--! PageTitle -->	
+<title>IBM Mainframe50 - 혁신을 촉진하는 솔루션</title>
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../css/ww_cci.css" rel="stylesheet" type="text/css" />
+
+<script src="../../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+dojo.addOnLoad(function(){
+	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
+	var s = new ibmweb.ribbon({
+		srcNodeRef: ribbon[0],
+		autoscroll: true, 
+		freeScroll: true,
+		interval: 5000
+	});
+
+	dojo.query('.ibm-ribbon2').forEach(function(i){
+		dojo.addClass(i, 'ibm-ribbon');
+	});
+		
+	s.startup();
+    
+    // ------- custom carousel ------------------
+    //  - user clicks thumbnail image, we show correct panel and hide others
+    /// contact:adestefa@ibm.com
+    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    var viewportHeight = jQuery(window).height();
+    // filter iphones
+    if ((iOSCheck) && (viewportHeight < 768)) {
+        // show full version of each for mobile
+        showPanel("p5");
+    // show small image thumbs    
+    } else {
+        // show first panel in custom carousel
+        showPanel("p1");
+        // set event listeners for each thumbnail image using shared class name
+        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
+        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
+        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
+        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    }
+    // custom carousel controller driven by thumbnail image links 
+    function showPanel (id) {
+        // hide all panels 
+        dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
+        // show target panel by id
+        dojo.style(dojo.byId(id), "display", "block");
+    }    
+});
+
+</script>
+
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+</script>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!--! MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">국가/지역 선택:  </span>대한민국</a></li>
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/kr/ko/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/kr/ko/">사이트맵</a></li>
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<p>
+<label for="q">
+<span class="ibm-access">검색</span>
+</label>
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input name="v" type="hidden" value="17"/>
+<input type="hidden" name="ko" value="utf"/>
+<input name="lang" type="hidden" value="ko"/>
+<input name="cc" type="hidden" value="kr"/>
+<input value="제출" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content" class="blueback">
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+<!--! COLUMN VARIATIONS START -->
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-header-band">
+
+<div class="ibm-columns">
+
+<div id="story-col-4-2" class="ibm-col-4-2">
+
+<h1>혁신을 촉진하는</h1>
+<p class="ibm_cci-subtitle"><em>솔루션</em></p>
+
+<p class="ibm_cci-intro"><span>IBM Mainframe50</span></p>
+<p>메인프레임은 비즈니스와 전체 산업 그리고 우리가 알던 기존의 세상을 변화시키는 혁신적인 컴퓨팅 시스템입니다. </p>
+ 
+<p>IBM은 지속적으로 트렌드를 도입하고 IT를 발전시킴으로써, 이전에는 결코 가능하다고 생각하지 못했던 여러 과제를 해결하기 위해 클라우드, 분석, 보안 및 모바일 컴퓨팅에 대한 새로운 접근 방식을 취하고 있습니다.  IBM은 매일 더 나은 기술을 구축하기 위해 고객과 협력함으로써 이를 수행합니다.</p>
+ 
+<p>하지만 메인프레임의 혁신을 선도한다는 것은 결국 한 가지 확고한 사명을 이루는 것입니다. 바로 탁월함을 추구하고 세상이 움직이는 방식을 변화시킬 혁신적인 기술을 제공하는 것입니다. </p>
+
+<p class="ibm_last"><em>4월 8일 화요일 오후 2시(ET), NYC에서 라이브로 진행되는 Mainframe50 이벤트에 채널을 고정하십시오.</em></p>
+
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>클릭하여 4월 8일 라이브 이벤트 보기 </strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>달력에 추가</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">DD/MM/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>클릭하여 라이브스트림으로 이동 </strong></a></p>
+
+</div>
+
+</div>
+
+</div>
+<!-- 4 2 grid end-->
+
+
+<!--! Ribbon grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-progress-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-1-1">
+<h2>진보의 엔진</h2>
+
+<p class="ibm_cci-intro"><span>혁신은 우리의 삶을 변화시킵니다. </span> 그러한 선지적인 노력은 우리 세상을 더 스마트하게 만들고 연결성을 높여줍니다.</p>
+
+<p class="ibm_cci-intro ibm_cci-call">보다 흥미로운 사례를 확인하려면 종종 다시 방문하십시오.</p>
+
+
+
+<!-- Carousel START -->
+<div class="ibm-container ibm-ribbon2 ibm-no-rule ibm-no-mobile">
+<div class="ibm-container-body">
+			
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress1">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>First National Bank</h3>
+				<p>아프리카 국민의 80%에 달하는 금융 소외 계층에게 중요한 금융 서비스</p>
+				<p>FNB의 "bank in a box"는 아프리카 전역에서 수백만 명의 사람들이 신규 비즈니스를 시작하고 대학 진학을 위해 저축하며 삶의 질을 향상하도록 지원함</p>
+				</div>
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>			
+            </div>
+            
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress2">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>Met Office</h3>
+				<p>산업의 역량을 강화하고 생명을 구하는 데 중요한 보고서</p>
+				<p>Met Office는 하루에 수천 건의 날씨 예보 데이터를 생성하여 글로벌 산업을 지원하고 정부가 중요한 결정을 내리도록 도와줌</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress3">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>Rheumatoid Arthritis Responder DREAM Challenge</h3>
+				<p>만성 통증으로 고통받는 수백만 명의 사람들에게 도움을 주는 최첨단 연구</p>
+				<p>이 국제 경연에서는 메인프레임에 대한 분석 기술을 활용하여 류머티스성 관절염 치료에 대한 환자의 반응으로 어림짐작하는 과정을 없애고 정확도를 향상함</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+            
+</div>
+</div>
+
+             <!-- mobile version -->
+             <div id="progress-mobile" class="ibm-columns panel ibm-mobile">
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress3.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>First National Bank</h2>
+				<p>아프리카 국민의 80%에 달하는 금융 소외 계층에게 중요한 금융 서비스</p>
+				<p>FNB의 "bank in a box"는 아프리카 전역에서 수백만 명의 사람들이 신규 비즈니스를 시작하고 대학 진학을 위해 저축하며 삶의 질을 향상하도록 지원함</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress2.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>Met Office</h2>
+				<p>산업의 역량을 강화하고 생명을 구하는 데 중요한 보고서</p>
+				<p>Met Office는 하루에 수천 건의 날씨 예보 데이터를 생성하여 글로벌 산업을 지원하고 정부가 중요한 결정을 내리도록 도와줌</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress1.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>Rheumatoid Arthritis Responder DREAM Challenge</h2>
+				<p>만성 통증으로 고통받는 수백만 명의 사람들에게 도움을 주는 최첨단 연구</p>
+				<p>이 국제 경연에서는 메인프레임에 대한 분석 기술을 활용하여 류머티스성 관절염 치료에 대한 환자의 반응으로 어림짐작하는 과정을 없애고 정확도를 향상함</p>
+				</div>		                
+								
+            </div>
+
+<!-- Carousel END -->
+
+</div>
+
+</div>
+
+</div>
+<!--! Ribbon grid -->
+
+
+
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-z-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-4-2">
+&nbsp;
+</div>
+<div class="ibm-col-4-2">
+
+<h2><span style="padding-top: 40px">GENERATION z</span></h2>
+<p class="ibm_cci-intro"><span>학생은 미래 창조의 역군입니다.</span></p>
+
+<p class="ibm_last">67개 국가에 걸쳐 1,000곳이 넘는 대학의 학생들은 매년 메인프레임을 통해 미래의 중대한 과제를 해결하기 위해 학업에 매진하고 있습니다.  </p>
+<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=wAU5kCIGBNQ">비디오 재생</a></p>
+
+<p class="ibm_last">2014년 4월 7일, 43명의 우수한 전 세계 학생들을 선별하여 뉴욕에서 제1회 마스터 더 메인프레임 월드 챔피언십(Master the Mainframe World Championship)을 개최할 예정입니다.</p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.ibm.com/systems/z/masterthemainframe">챔피언십 자세히 보기</a></p>
+</div>
+
+
+<div class="ibm-col-6-5 ibm_cci-ey">
+<h2><span>50년간의 특별한 시간</span></h2>
+
+<p class="ibm_cci-intro"><span>IBM은 현대의 세상을 창조했습니다. </span> 조직과 리더는 세계에서 가장 혁신적이고 신뢰할 수 있는 플랫폼을 통해 비즈니스를 혁신하고 산업을 변화시키며 지상 최대의 과제 중 일부를 해결하도록 도왔습니다. 이러한 성과는 산업과 사회에 통합되었습니다.</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- custom carousel control -->
+<div class="ibm-band ibm_cci-site-band">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<div class="ibm-container ibm-no-rule">
+<div class="ibm-container-body">
+
+            <!-- Sabre -->
+            <div id="p1" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sabre 예약 시스템</h2>
+				<p>세계 최초의 자동 탑승객 예약 시스템인 Sabre는 오늘날의 웹 기반 여행 산업의 기초입니다. 두 IBM 7090 메인프레임을 기반으로 실행되며 60년대 개발된 이 애플리케이션은 주당 수십억 건의 트랜잭션을 처리할 수 있습니다.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" title="The Big Bet to Big Insights" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" title="Apollo 11 moon landing" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" title="The zEnterprise System" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- Watson -->
+            <div id="p2" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" title="Sabre reservation system" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>큰 통찰력에 대한 담대한 도전 </h2>
+				<p>1964년 4월 7일, IBM CE0인 Thomas J. Watson Jr.는 컴퓨팅의 미래를 위한 새로운 비전을 실현하기 위해 다른 모든 제품 라인을 종료하고 System/360 메인프레임 비즈니스에 사활을 걸었습니다.  오늘날 IBM은 메인프레임을 기반으로 세계 최대의 프라이빗 클라우드를 운영하고 있습니다. 이 프라이빗 클라우드는 거의 100여 가지 데이터 웨어하우스를 바탕으로 분석 통찰력을 제공함으로써 200,000명 이상의 IBM 직원이 더 나은 의사결정을 내릴 수 있도록 지원합니다.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- apollo -->
+            <div id="p3" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>아폴로 11호 달 착륙 </h2>
+				<p>1969년 미국인 Neil Armstrong과 Buzz Aldrin은 달에 최초로 발자국을 남겼으며, 이는 우주에 대한 사람들의 견해와 가능성에 대한 인식을 완전히 바꿔 놓았습니다.  IBM System/360 메인프레임의 데이터 처리 능력은 달 착륙과 이륙에 비견될 수 있습니다.</p>
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+
+            <!-- z enterprise -->
+             <div id="p4" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>	
+                <div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>zEnterprise System </h2>
+				<p>메인프레임은 50년에 걸쳐 끊임없이 발전해 오고 있습니다. 성능은 78,000% 이상 향상되고, 메모리 용량은 786,000배 이상 증가했습니다. 메인프레임을 스포츠카라고 가정한다면 시간당 거의 1,200만 마일을 주행할 수 있는 셈이므로 2초 안에 달에 도달할 수 있습니다. 이러한 메인프레임을 비즈니스에 이용한다고 생각해 보십시오.</p>
+				</div>	
+				
+            </div>
+     
+             <!-- mobile version -->
+             <div id="p5" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sabre 예약 시스템</h2>
+				<p>세계 최초의 자동 탑승객 예약 시스템인 Sabre는 오늘날의 웹 기반 여행 산업의 기초입니다. 두 IBM 7090 메인프레임을 기반으로 실행되며 60년대 개발된 이 애플리케이션은 주당 수십억 건의 트랜잭션을 처리할 수 있습니다.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>큰 통찰력에 대한 담대한 도전</h2>
+				<p>1964년 4월 7일, IBM CE0인 Thomas J. Watson Jr.는 컴퓨팅의 미래를 위한 새로운 비전을 실현하기 위해 다른 모든 제품 라인을 종료하고 System/360 메인프레임 비즈니스에 사활을 걸었습니다. 오늘날 IBM은 메인프레임을 기반으로 세계 최대의 프라이빗 클라우드를 운영하고 있습니다. 이 프라이빗 클라우드는 거의 100여 가지 데이터 웨어하우스를 바탕으로 분석 통찰력을 제공함으로써 200,000명 이상의 IBM 직원이 더 나은 의사결정을 내릴 수 있도록 지원합니다.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>아폴로 11호 달 착륙</h2>
+				<p>1969년 미국인 Neil Armstrong과 Buzz Aldrin은 달에 최초로 발자국을 남겼으며, 이는 우주에 대한 사람들의 견해와 가능성에 대한 인식을 완전히 바꿔 놓았습니다. IBM System/360 메인프레임의 데이터 처리 능력은 달 착륙과 이륙에 비견될 수 있습니다.</p>
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>zEnterprise System</h2>
+				<p>메인프레임은 50년에 걸쳐 끊임없이 발전해 오고 있습니다. 성능은 78,000% 이상 향상되고, 메모리 용량은 786,000배 이상 증가했습니다. 메인프레임을 스포츠카라고 가정한다면 시간당 거의 1,200만 마일을 주행할 수 있는 셈이므로 2초 안에 달에 도달할 수 있습니다. 이러한 메인프레임을 비즈니스에 이용한다고 생각해 보십시오.</p>
+				</div>	
+				
+            </div>
+                
+            
+</div>
+</div>
+<!-- Carousel END -->
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+
+
+<div class="ibm-columns">
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-systemz.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>System z 검토</h2>
+	<p>클라우드를 위한 메인프레임의 새로운 zEnterprise 오퍼링에 대해 알아보십시오.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www-03.ibm.com/systems/z/">자세히 보기</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>zIQ란?</h2>
+	<p>이 애니메이션 비디오 시리즈를 통해 메인프레임에 대해 더 알아보십시오.  </p>
+	<p class="ibm-ind-link-after"><a class="ibm-media ibm-cta-chevron-link" href="https://www.youtube.com/watch?v=afwcIBj80hs">비디오 시청</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-tumblr.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Mainframe50 Tumblr</h2>
+	<p>매일 업데이트되는 이 Tumblr를 통해 메인프레임의 혁신을 확인하십시오.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://mainframe50.tumblr.com">자세히 알아보기</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-mtm.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>월드 챔피언십</h2>
+	<p>전 세계에서 온 40여명의 학생들이 처음 개최되는 이 엔터프라이즈 컴퓨팅 행사에서 기량을 겨룹니다.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www.ibm.com/systems/z/masterthemainframe">자세히 보기</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Mainframe50 이벤트 라이브스트림</h2>
+	<p>4월 8일 화요일 오후 2시(ET), NYC에서 라이브로 진행되는 System z 이벤트에 채널을 고정하십시오.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">라이브스트림 보기 </a> 
+	</p>
+</div>
+
+<div class="ibm-col-6-1">
+	<h2>대화 참여</h2>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">Twitter</a></li>
+<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">Facebook</a></li>
+<li><a class="ibm-youtube-link" href="http://www.youtube.com/user/IBMSystemZ">YouTube</a></li>
+<li><a class="ibm-livedoor-link" href="http://paper.li/IBM_System_z/1386866312">Paper.li</a></li>
+<li><a class="ibm-blog-link" href="https://www-304.ibm.com/connections/blogs/systemz/?lang=en_us">블로그</a></li>
+<li><a class="ibm-linkedin-link" href="http://www.linkedin.com/groups/IBM-System-z-4065367">LinkedIn</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OVERLAY BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">닫기 [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>Watch System z live!</h2>
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+<param name="movie" value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false"></param>
+<param name="allowScriptAccess" value="always"></param>
+<param name="allowFullScreen" value="true"></param>
+
+<embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object>
+
+</object>
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY END -->
+
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">바닥글 링크 </h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/kr/ko/">문의</a></li>
+<li><a href="http://www.ibm.com/privacy/kr/ko/">개인정보 보호정책</a></li>
+<li><a href="http://www.ibm.com/legal/kr/ko/">이용약관</a></li>
+<li><a href="http://www.ibm.com/accessibility/kr/ko/">접근성</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
