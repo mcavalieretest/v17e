@@ -305,6 +305,14 @@ sites/
   font-size: 1.5rem;
 }
 
+.ibm-mainframe50-overlay .ibm-body .ibm-main .ibm-container .ibm-container-body .ibm-columns .ibm-col-6-4 {
+  width: 560px !important;
+}
+
+.ibm-mainframe50-overlay .ibm-body .ibm-main .ibm-container .ibm-container-body .ibm-columns .ibm-col-6-2 {
+  width: 340px !important;
+}
+
 #ibm-com #ibm-top .section-header.title {
   font-size: 2.6rem !important;
   padding-bottom: none !important;
