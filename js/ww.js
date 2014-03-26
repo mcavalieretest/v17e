@@ -149,36 +149,17 @@ var CHICKENFEED = {};
     _initEvents : function() {
       var self = this;
 
-      // the menu should close if clicking somewhere on the body
-      var bodyClickFn = function( el ) {
-        self._resetMenu();
-        el.removeEventListener( self.eventtype, bodyClickFn );
-      };
-
       // open (or close) the menu
       $(this.trigger).on( this.eventtype, function( ev ) {
         ev.stopPropagation();
         ev.preventDefault();
         
-        $('html').addClass('m-menu-open');
-
         if( self.open ) {
           self._resetMenu();
         }
         else {
           self._openLevel();
 
-          // the menu should close if clicking somewhere on the body (excluding clicks on the menu)
-          document.addEventListener( self.eventtype, function( ev ) {
-
-            if( self.open && !hasParent( ev.target, self.el.id) ) {
-              // Avoid 300ms touch delay on mobile browsers
-              ev.preventDefault() 
-              ev.stopPropagation();
-
-              bodyClickFn( this );
-            }
-          } );
         }
       } );
 
@@ -228,8 +209,31 @@ var CHICKENFEED = {};
 
     // Opens a single menu 'level'
     _openLevel : function( subLevel ) {
+      console.warn('_openLevel');
+
+      var self = this;
+
+      // the menu should close if clicking somewhere on the body
+      var bodyClickFn = function( el ) {
+        self._resetMenu();
+        el.removeEventListener( self.eventtype, bodyClickFn );
+      };
+
+      // the menu should close if clicking somewhere on the body (excluding clicks on the menu)
+      document.addEventListener( self.eventtype, function( ev ) {
+        if( self.open && !hasParent( ev.target, self.el.id) ) {
+          // Avoid 300ms touch delay on mobile browsers
+          ev.preventDefault() 
+          ev.stopPropagation();
+
+          bodyClickFn( this );
+        }
+      } );
+
       // check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
       var self = this;
+
+      $('html').addClass('m-menu-open');
 
       this._setHeight(true);
     
@@ -291,6 +295,7 @@ var CHICKENFEED = {};
     },
     // close the menu
     _resetMenu : function() {
+      console.warn('_resetMenu');
       // Override close animation. Used when auto-closing on window resize in IE9.
       var animate = (arguments.length > 0 ? arguments[0] : true);
 
