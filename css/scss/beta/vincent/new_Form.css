@@ -603,6 +603,36 @@ olden-forms .textarea.auto { height: auto !important }
     z-index: 3;
 }
 
+.golden-forms .rating { overflow: hidden }
+.golden-forms .rating.block {
+    display: block;
+    margin-top: 5px;
+}
+.golden-forms .rating label { color: #d0d0d0 }
+.golden-forms .rating label i {
+    font-size: 17px;
+    text-align: center;
+    color: inherit;
+}
+.golden-forms .rating-star { margin-left: 4px }
+.golden-forms .rating-input {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+.golden-forms .rating:hover .rating-star:hover,
+.golden-forms .rating:hover .rating-star:hover ~ .rating-star,
+.golden-forms .rating-input:checked ~ .rating-star { color: #ffb400 }
+.golden-forms .rating-star,
+.golden-forms .rating:hover .rating-star {
+    width: 18px;
+    height: 18px;
+    float: right;
+    display: block;
+    cursor: pointer;
+    color: #d0d0d0;
+}
+
 .golden-forms .button i { font-size: 14px }
 .golden-forms .button,
 .golden-forms a.button {
@@ -1076,8 +1106,42 @@ olden-forms .textarea.auto { height: auto !important }
     margin-top: 10px;
 }
 
-
 .golden-forms .tooltip,
 .golden-forms .info-tip {
     text-shadow: none;
+}
+
+.golden-forms .ibm-email-link:before,
+.golden-forms .ibm-phone-link:before,
+.golden-forms .ibm-external-link:before,
+.golden-forms .ibm-chat-link:before{
+    position: inherit;
+}
+@media screen and (max-width:600px) {
+    .golden-forms .ibm-col-6-1, 
+    .golden-forms .ibm-col-6-2,
+    .golden-forms .ibm-col-6-3,
+    .golden-forms .ibm-col-6-4,
+    .golden-forms .ibm-col-6-5 {
+        width: 100%;
+        min-height: 1px;
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
+    }
+    .golden-forms .lbl-text.tleft { padding-top: 0 }
+    .golden-forms .lbl-valign,
+    .golden-forms .lbl-valign.long { padding-top: 8px }
+}
+@media screen and (max-width:380px) { 
+    .golden-forms .form-buttons { text-align: center }
+    .golden-forms .form-buttons .button {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .golden-forms span.lbl-text {
+        width: 100%;
+        text-align: right;
+    }
 }
