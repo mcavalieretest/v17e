@@ -4827,7 +4827,6 @@ div#ibm-overlay-top h2 {
   background-color: #CCC; }
 
 #ibm-content-nav #ibm-secondary-tabs {
-  background-color: #EFEFEF;
   padding: 5px 20px 0;
   border-bottom: 1px solid #CCC;
   text-align: center; }
@@ -4839,7 +4838,6 @@ div#ibm-overlay-top h2 {
 
 .ibm-landing-page #ibm-content-nav #ibm-secondary-tabs ul.ibm-tabs li {
   display: block;
-  border-right: 1px solid #E5E5E5;
   padding: 0 15px;
   margin: 4px 0 10px;
   text-align: center; }
@@ -8153,7 +8151,6 @@ input#m-q {
 
 .ibm-resize {
   max-width: 100% !important;
-  width: 100% !important;
   height: auto !important; }
 
 a.ibm-thumbnail-module {
