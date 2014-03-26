@@ -7846,7 +7846,8 @@ html.m-menu-open #m-wrap {
 
 #m-open-link {
   display: none;
-  position: absolute; }
+  position: absolute;
+  right: 0px; }
 
 #m-open-link a {
   display: block;
@@ -8151,6 +8152,7 @@ input#m-q {
 
 .ibm-resize {
   max-width: 100% !important;
+  width: 100% !important;
   height: auto !important; }
 
 a.ibm-thumbnail-module {

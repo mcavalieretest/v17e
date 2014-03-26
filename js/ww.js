@@ -159,8 +159,6 @@ var CHICKENFEED = {};
       $(this.trigger).on( this.eventtype, function( ev ) {
         ev.stopPropagation();
         ev.preventDefault();
-
-        console.warn("$('html').addClass('m-menu-open');");
         
         $('html').addClass('m-menu-open');
 
@@ -183,21 +181,57 @@ var CHICKENFEED = {};
           } );
         }
       } );
+
+      $(window).on("resize", function() {
+        self._setHeight();
+      });
+
+    },
+
+    _getActualMenuHeight: function() {
+      var copy = $("#m-menu").clone(), 
+          height;
+
+      copy.css({
+        position: "absolute",
+        top: "-10000px"
+      });
+
+      copy.appendTo( $(document.body) );
+
+      height = copy.height();
+
+      copy.remove();
+
+      return height;
+    },
+
+    _setHeight: function(open) {
+      if (!iOSCheck) { return; }
+
+      var height,
+          mNavHeightCheck = this._getActualMenuHeight(),
+          viewportHeight = jQuery(window).height();
+
+      if (open === true) {
+        if ( mNavHeightCheck > viewportHeight ) {
+          height = mNavHeightCheck;
+        } else {
+          height = '100%';
+        }
+      } else if (open === false) {
+        height = 'auto';
+      }
+
+      $('#m-wrap').css("height", height);  
     },
 
     // Opens a single menu 'level'
     _openLevel : function( subLevel ) {
       // check height of menu contents.  need to do this to prevent the choppy scrolling on iPad / iPhone. this is enabled to force a taller view on iPhone landscape mode.
-      var mNavHeightCheck = jQuery("#m-menu ul").height() + 100,
-          viewportHeight = jQuery(window).height(),
-          self = this;
+      var self = this;
 
-      if(iOSCheck) {
-        $('#m-wrap').css("height", '100%');
-      }
-      if((iOSCheck) && (mNavHeightCheck > viewportHeight)){
-        $('#m-wrap').css("height", mNavHeightCheck); 
-      }
+      this._setHeight(true);
     
       // increment level depth
       ++this.level;
@@ -261,9 +295,7 @@ var CHICKENFEED = {};
       var animate = (arguments.length > 0 ? arguments[0] : true);
 
       // reset left mobile menu height.  need to do this to prevent the choppy scrolling on iPad / iPhone.
-      if(iOSCheck){
-        $('#m-wrap').css("height", 'auto');  
-      }
+      this._setHeight(false);
 
       this.level = 0;
 
