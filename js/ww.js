@@ -209,7 +209,11 @@ var CHICKENFEED = {};
 
     // Opens a single menu 'level'
     _openLevel : function( subLevel ) {
-      console.warn('_openLevel');
+      var self = this;
+
+      if ( self.operationInProgress ) { return; }
+
+      self.operationInProgress = true;
 
       var self = this;
 
@@ -264,6 +268,8 @@ var CHICKENFEED = {};
             $(self.wrapper).addClass( 'm-enable' );
             
             self.open = true;
+            self.operationInProgress = false;
+
             if (self.options.onOpen) {
               self.options.onOpen();
             }
@@ -276,6 +282,8 @@ var CHICKENFEED = {};
             left: "-250px"
           }, function() {
             self.open = true;
+            self.operationInProgress = false;
+
             if (self.options.onOpen) {
               self.options.onOpen();
             }        
@@ -286,16 +294,21 @@ var CHICKENFEED = {};
         }
       }
       // add class m-level-open to the opening level element
-      var levelElement = jQuery(subLevel || this.levels[0]);
-      levelElement.addClass( 'm-level-open' );
+      // var levelElement = jQuery(subLevel || this.levels[0]);
+      // levelElement.addClass( 'm-level-open' );
 
-      this.levelElementStack.push(levelElement[0]);
+      // this.levelElementStack.push(levelElement[0]);
 
       // this._updateContainerHeight();
     },
     // close the menu
     _resetMenu : function() {
-      console.warn('_resetMenu');
+      var self = this;
+
+      if ( self.operationInProgress ) { return; }
+
+      self.operationInProgress = true;
+
       // Override close animation. Used when auto-closing on window resize in IE9.
       var animate = (arguments.length > 0 ? arguments[0] : true);
 
@@ -307,6 +320,8 @@ var CHICKENFEED = {};
       var closeFunc = function() {
         $('html').removeClass('m-menu-open');
     		$("#m-menu").hide(); 	
+
+        self.operationInProgress = false;
       };
 
       // Good browsers
