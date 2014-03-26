@@ -78,30 +78,30 @@ dojo.addOnLoad(function(){
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
 
-<!--! MASTHEAD_BEGIN -->
+<!-- MASTHEAD_BEGIN -->
 <div id="ibm-masthead">
-<div id="ibm-mast-options"><ul>
-<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Vælg et land/område: </span>USA</a></li>
-</ul></div>
+<div id="ibm-mast-options">
+<ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Vælg land/område: </span>Danmark</a></li>
+</ul>
+</div>
 <div id="ibm-universal-nav">
 <ul id="ibm-unav-links">
-<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></li>
+<li id="ibm-home"><a href="http://www.ibm.com/dk/da/">IBM®</a></li>
 </ul>
 <ul id="ibm-menu-links">
-<li><a href="http://www.ibm.com/sitemap/us/en/">Webstedsoversigt</a></li>
+<li><a href="http://www.ibm.com/sitemap/dk/da/">Webstedskort</a></li>
 </ul>
 <div id="ibm-search-module">
-<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
 <p>
-<label for="q">
-<span class="ibm-access">Søg</span>
-              </label>
-<input id="q" value="" maxlength="100" name="q" type="text"/>
-<input name="v" type="hidden" value="17"/>
-<input type="hidden" name="en" value="utf"/>
-<input name="lang" type="hidden" value="en"/>
-<input name="cc" type="hidden" value="dk"/>
-<input value="Send" class="ibm-btn-search" id="ibm-search" type="submit"/>
+<label for="q"><span class="ibm-access">Søg</span></label>
+<input type="text" maxlength="100" value="" name="q" id="q"/>
+<input type="hidden" value="17" name="v"/>
+<input type="hidden" value="utf" name="en"/>
+<input type="hidden" value="da" name="lang"/>
+<input type="hidden" value="dk" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="Afsend"/>
 </p>
 </form>
 </div>
