@@ -613,6 +613,7 @@ olden-forms .textarea.auto { height: auto !important }
     font-size: 17px;
     text-align: center;
     color: inherit;
+    font-style: normal;
 }
 .golden-forms .rating-star { margin-left: 4px }
 .golden-forms .rating-input {
@@ -631,6 +632,33 @@ olden-forms .textarea.auto { height: auto !important }
     display: block;
     cursor: pointer;
     color: #d0d0d0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    color: #00649d;
+font-family: 'iconsIBM';
+font-variant: normal;
+text-transform: none;
+display: inline-block;
+position: absolute;
+text-decoration: none;
+font-size: 1.4em;
+    /*
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+text-decoration: inherit;
+-webkit-font-smoothing: antialiased;
+*/
+}
+
+.icon-star:before { 
+    content: "\00a0\f139\00a0";
+    
+}
+
+.golden-forms .rating-input:checked ~ .rating-star .icon-star:before{
+    content: "\00a0\f13a\00a0";
 }
 
 .golden-forms .button i { font-size: 14px }
@@ -1117,6 +1145,10 @@ olden-forms .textarea.auto { height: auto !important }
 .golden-forms .ibm-chat-link:before{
     position: inherit;
 }
+
+
+
+
 @media screen and (max-width:600px) {
     .golden-forms .ibm-col-6-1, 
     .golden-forms .ibm-col-6-2,
