@@ -7875,7 +7875,7 @@ html.m-menu-open #m-wrap {
  * Mobile search box
  */
 #m-search-module {
-  position: fixed;
+  position: absolute;
   z-index: 10; }
 
 #m-search {
@@ -8152,7 +8152,6 @@ input#m-q {
 
 .ibm-resize {
   max-width: 100% !important;
-  width: 100% !important;
   height: auto !important; }
 
 a.ibm-thumbnail-module {
