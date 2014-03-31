@@ -15,7 +15,7 @@
 		<meta name="Abstract" content="Het IBM mainframe is een revolutionair computersysteem dat bedrijven, hele sectoren en zelfs de wereld zoals we die kennen, volkomen verandert."/>
 		<meta name="IBM.Effective" scheme="W3CDTF" content="2014-02-24"/>
 		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
-		<meta name="Owner" content="Iromie Weeramantry/White Plains/IBM"/>
+		<meta name="Owner" content="Kevin T Clark/Raleigh/IBM"/>
 		<meta name="DC.Language" scheme="rfc1766" content="nl"/>
 		<meta name="IBM.Country" content="BE"/>
 		<meta name="Robots" content="index,follow"/>
@@ -80,6 +80,23 @@ dojo.addOnLoad(function(){
     }    
 });
 
+</script>
+
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
 </script>
 
 </head>
@@ -152,8 +169,19 @@ dojo.addOnLoad(function(){
 
 <p class="ibm_last"><em>Kijk op dinsdag 8 april om 20.OO CET naar het Mainframe50 event, live vanuit New York.</em></p>
 
-<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Klik hier om op 8 april live te kijken</strong></a> &nbsp; <a class="ibm_cci-btn ibm-no-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Toevoegen aan agenda</strong></a></p>
-<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Klik hier om naar Livestream te gaan</strong></a> &nbsp; <a class="ibm_cci-btn ibm-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Toevoegen aan agenda</strong></a></p>
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Klik hier om op 8 april live te kijken</strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="#"><strong>Toevoegen aan agenda</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">MM/DD/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz">Klik hier om naar Livestream te gaan</a></p>
 
 </div>
 
@@ -448,7 +476,7 @@ dojo.addOnLoad(function(){
 <img src="../../i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
 	<h2>Wat is uw zIQ?</h2>
 	<p>Vergroot uw kennis van het mainframe met deze animatiereeks. </p>
-	<p class="ibm-ind-link-after"><a class="ibm-media ibm-cta-chevron-link" href="https://www.youtube.com/watch?v=afwcIBj80hs">Bekijk de video</a></p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2',this);return false;">Bekijk de video</a></p>
 </div>
 
 <div class="ibm-col-6-1 small">
@@ -469,18 +497,15 @@ dojo.addOnLoad(function(){
 <img src="../../i/foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
 	<h2>Livestream van Mainframe50</h2>
 	<p>Kijk op dinsdag 8 april om 20.OO CET naar het System z event, live vanuit New York.</p>
-	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Bekijk de Livestream</a>
-	</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Bekijk de Livestream</a></p>
 </div>
 
 <div class="ibm-col-6-1">
 	<h2>Neem deel aan het gesprek</h2>
 
 <ul class="ibm-link-list">
-<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">Twitter
-</a></li>
-<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">Facebook
-</a></li>
+<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">Twitter</a></li>
+<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">Facebook</a></li>
 <li><a class="ibm-youtube-link" href="http://www.youtube.com/user/IBMSystemZ">YouTube</a></li>
 <li><a class="ibm-livedoor-link" href="http://paper.li/IBM_System_z/1386866312">Paper.li</a></li>
 <li><a class="ibm-blog-link" href="https://www-304.ibm.com/connections/blogs/systemz/?lang=en_us">Blog</a></li>
@@ -493,7 +518,7 @@ dojo.addOnLoad(function(){
 
 </div>
 
-<!-- OVERLAY BEGIN -->
+<!-- OVERLAY 1 BEGIN -->
 <div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
 <div class="ibm-head">
 <p><a class="ibm-common-overlay-close" href="#close">Sluiten [x]</a></p>
@@ -519,7 +544,27 @@ dojo.addOnLoad(function(){
 </div>
 <div class="ibm-footer"></div>
 </div>
-<!-- OVERLAY END -->
+<!-- OVERLAY 1 END -->
+
+<!-- OVERLAY 2 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Sluiten [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/afwcIBj80hs?list=PLezLS0Tuqb-5n8R-JtYVqa-wVYYs49TbB" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 2 END -->
 
 <!--! FOOTER_BEGIN -->
 <div id="ibm-footer-module"></div>
