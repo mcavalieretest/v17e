@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sl-SI" xml:lang="sl-SI">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Copyright IBM Corp. 2014"/>
+		<meta name="Keywords" content="IBM, Mainframe strežniki, Mainframe sistemi, Mainframeračunalniki, Mainframe50, gonila napredka, System z, zEnterprise, obletnica Mainframeračunalnika, Master the Mainframe, Generation z, sistem rezervacij Sabre, pristanek Apolla 11 na Luni, System/360, revolucionarno, inovacije informacijske tehnologije, inovacije"/>
+		<meta name="DC.Date" scheme="iso8601" content="24/02/2014"/>
+		<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM authoring:IBM"/>
+		<meta name="Security" content="Javno"/>
+		<meta name="Abstract" content="IBM Mainframe računalnik je revolucionaren računalniški sistem, ki spreminja načine poslovanja, celotno industrijo in svet, kot ga poznamo."/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="24/02/2014"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
+		<meta name="Owner" content="Iromie Weeramantry/White Plains/IBM"/>
+		<meta name="DC.Language" scheme="rfc1766" content="sl-SI"/>
+		<meta name="IBM.Country" content="ZZ"/>
+		<meta name="Robots" content="indeks,spremljaj"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+		<meta name="Description" content="IBM Mainframe računalnik je revolucionaren računalniški sistem, ki spreminja načine poslovanja, celotno industrijo in svet, kot ga poznamo."/>
+		
+<!--! PageTitle -->	
+<title>IBM Mainframe50</title>
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../css/ww_cci.css" rel="stylesheet" type="text/css" />
+
+<script src="../../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+dojo.addOnLoad(function(){
+	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
+	var s = new ibmweb.ribbon({
+		srcNodeRef: ribbon[0],
+		autoscroll: true, 
+		freeScroll: true,
+		interval: 5000
+	});
+
+	dojo.query('.ibm-ribbon2').forEach(function(i){
+		dojo.addClass(i, 'ibm-ribbon');
+	});
+		
+	s.startup();
+    
+    // ------- custom carousel ------------------
+    //  - user clicks thumbnail image, we show correct panel and hide others
+    /// contact:adestefa@ibm.com
+    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    var viewportHeight = jQuery(window).height();
+    // filter iphones
+    if ((iOSCheck) && (viewportHeight < 768)) {
+        // show full version of each for mobile
+        showPanel("p5");
+    // show small image thumbs    
+    } else {
+        // show first panel in custom carousel
+        showPanel("p1");
+        // set event listeners for each thumbnail image using shared class name
+        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
+        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
+        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
+        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    }
+    // custom carousel controller driven by thumbnail image links 
+    function showPanel (id) {
+        // hide all panels 
+        dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
+        // show target panel by id
+        dojo.style(dojo.byId(id), "display", "block");
+    }    
+});
+
+</script>
+
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+</script>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!-- MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options">
+<ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Izberite državo/regijo: </span>Slovenija</a></li>
+</ul>
+</div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/si/sl/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/si/sl/">Zemljevid strani</a></li>
+</ul>
+<div id="ibm-search-module">
+<form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
+<p>
+<label for="q"><span class="ibm-access">Išči</span></label>
+<input type="text" maxlength="100" value="" name="q" id="q"/>
+<input type="hidden" value="17" name="v"/>
+<input type="hidden" value="utf" name="en"/>
+<input type="hidden" value="sl" name="lang"/>
+<input type="hidden" value="si" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="Pošlji"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content" class="blueback">
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<!--! COLUMN VARIATIONS START -->
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-header-band">
+
+<div class="ibm-columns">
+
+<div id="story-col-4-2" class="ibm-col-4-2">
+
+<h1>Naj <span>izjemno</span></h1>
+<p class="ibm_cci-subtitle"><em>postane mogoče</em></p>
+
+<p class="ibm_cci-intro"><span>IBM Mainframe50</span></p>
+<p>Mainframe računalnik je revolucionaren računalniški sistem, ki spreminja načine poslovanja, celotno industrijo in svet, kot ga poznamo.</p>
+ 
+<p>S stalnim prilagajanjem trendom in razvoju informacijske tehnologije ubiramo nove pristope k računalništvu v oblaku, analitiki, varnosti in mobilnemu računalništvu ter iščemo rešitve za izzive, ki so se doslej zdeli nemogoči. To uresničujemo v sodelovanju s svojimi strankami, da lahko vsak dan ustvarjamo boljšo tehnologijo.</p>
+ 
+<p>Pionirske inovacije Mainframe računalnika pravzaprav služijo enemu samemu trajnemu cilju: ustvariti revolucionarno tehnologijo, ki uresničuje nemogoče in izboljšuje načine, kako deluje svet.</p>
+
+<p class="ibm_last"><em>Pridružite se nam  v torek, 8. aprila, ob 20. uri po srednjeevropskem času, ko bomo dogodek Mainframe50 v živo prenašali iz New Yorka.</em></p>
+
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Kliknite za ogled v živo (8. april)</strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="#"><strong>Dodaj v koledar</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">MM/DD/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz">Kliknite za prenos v živo</a></p>
+
+</div>
+
+</div>
+
+</div>
+<!-- 4 2 grid end-->
+
+
+<!--! Ribbon grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-progress-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-1-1">
+<h2>Gonila
+<span>napredka</span></h2>
+
+<p class="ibm_cci-intro"><span>Spreminjajo naše življenje.</span> Zaradi njihovih vizionarnih dosežkov je naš svet modrejši in bolj povezan.</p>
+
+<p class="ibm_cci-intro ibm_cci-call">Pridite še in si oglejte še bolj izjemne zgodbe.</p>
+
+
+
+<!-- Carousel START -->
+<div class="ibm-container ibm-ribbon2 ibm-no-rule ibm-no-mobile">
+<div class="ibm-container-body">
+			
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress1">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>First National Bank</h3>
+				<p>Nujne bančne storitve za 80 odstotkov Afričanov, ki nimajo bančnega računa</p>
+				<p>Storitev FNB "banka na dlani" omogoča milijonom ljudem v Afriki, da zaženejo nova podjetja, prihranijo denar za študij in izboljšajo svoja življenja.</p>
+				</div>
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>			
+            </div>
+            
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress2">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>Met Office</h3>
+				<p>Nujna poročila, ki pomagajo podjetjem in rešujejo življenja</p>
+				<p>Storitev Met Office vsak dan izda na tisoče vremenskih poročil, kar globalnim podjetjem in vladam pomaga pri pomembnih odločitvah.</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress3">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>Rheumatoid Arthritis Responder DREAM Challenge</h3>
+				<p>Vrhunske raziskave za pomoč milijonom ljudem, ki se spopadajo s kroničnimi bolečinami</p>
+				<p>Pri tem mednarodnem tekmovanju se s pomočjo analitike prek Mainframe računalnika zbirajo odzivi bolnikov na zdravljenje revmatičnega artritisa.</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+            
+</div>
+</div>
+
+             <!-- mobile version -->
+             <div id="progress-mobile" class="ibm-columns panel ibm-mobile">
+				<div class="ibm-col-6-3">
+				<img src="i@@progress3.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>First National Bank</h2>
+				<p>Nujne bančne storitve za 80 odstotkov Afričanov, ki nimajo bančnega računa</p>
+				<p>Storitev FNB "banka na dlani" omogoča milijonom ljudi v Afriki, da zaženejo nova podjetja, prihranijo denar za študij in izboljšajo svoja življenja.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i@@progress2.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>Met Office</h2>
+				<p>Nujna poročila, ki pomagajo podjetjem in rešujejo življenja</p>
+				<p>Storitev Met Office vsak dan izda na tisoče vremenskih poročil, ki globalnim podjetjem in vladam pomaga pri pomembnih odločitvah.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i@@progress1.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>Rheumatoid Arthritis Responder DREAM Challenge</h2>
+				<p>Vrhunske raziskave za pomoč milijonom ljudem, ki se spopadajo s kroničnimi bolečinami</p>
+				<p>Pri tem mednarodnem tekmovanju se s pomočjo analitike prek Mainframe računalnika zbirajo odzivi bolnikov na zdravljenje revmatičnega artritisa.</p>
+				</div>		                
+								
+            </div>
+
+<!-- Carousel END -->
+
+</div>
+
+</div>
+
+</div>
+<!--! Ribbon grid -->
+
+
+
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-z-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-4-2">
+&nbsp;
+</div>
+<div class="ibm-col-4-2">
+
+<h2><span style="padding-top: 40px">GENERACIJA z</span></h2>
+<p class="ibm_cci-intro"><span>Ustvarila bo prihodnost.</span></p>
+
+<p class="ibm_last">Vsako leto se študentje na več kot 1000 univerzah v 67 državah s pomočjo Mainframe računalnikov učijo iskanja rešitev za velike izzive prihodnosti. </p>
+<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=wAU5kCIGBNQ">Predvajaj video</a></p>
+
+<p class="ibm_last">7. aprila 2014 se bo 43 najboljših študentov z vsega sveta zbralo v New Yorku na prvem mednarodnem prvenstvu Master the Mainframe.</p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.ibm.com/systems/z/masterthemainframe">Več informacij o prvenstvu (US)</a></p>
+</div>
+
+
+<div class="ibm-col-6-5 ibm_cci-ey">
+<h2><span>50 izjemnih let</span></h2>
+
+<p class="ibm_cci-intro"><span>Ustvarili so sodobni svet.</span> Organizacije in voditelji so ustvarili nove načine poslovanja, spremenili industrije in pripomogli k rešitvi najpomembnejših svetovnih izzivov z najinovativnejšo platformo, ki uživa tudi največje zaupanje. Njihovi dosežki so vpeti v tkivo industrije in družbe.</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- custom carousel control -->
+<div class="ibm-band ibm_cci-site-band">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<div class="ibm-container ibm-no-rule">
+<div class="ibm-container-body">
+
+            <!-- Sabre -->
+            <div id="p1" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="i@@50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sistem rezervacij Sabre</h2>
+				<p>Sabre je prvi sistem samodejne rezervacije potnikov na svetu in predstavlja osnovo današnjim potovanjem prek spleta. Aplikacija, katere začetki segajo v šestdeseta leta prejšnjega stoletja, je najprej delovala na dveh Mainframe računalnikih IBM 7090 in lahko danes obdeluje več milijard transakcij na teden.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="i@@50-bet-bg.jpg" width="140" title="Veliko tveganje z veliko vizijo" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="i@@50-apollo-bg.jpg" title="Pristanek Apolla 11 na Luni" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="i@@50-zenterprise-bg.jpg" title="Sistem zEnterprise" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- Watson -->
+            <div id="p2" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="i@@50-sabre-bg.jpg" width="140" title="Sistem rezervacij Sabre" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-3">
+				<img src="i@@50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Veliko tveganje z veliko vizijo </h2>
+				<p>7. aprila 1964 se je izvršilni direktor Thomas J. Watson Jr. odločil tvegati in ukinil vse linije izdelkov razen Mainframe računalnika System/360, ki naj bi predstavljal novo vizijo računalništva prihodnosti. Danes družba IBM upravlja največji zasebni oblak v Mainframe računalniku. Ta računalnik zagotavlja analitične podatke iz okoli 100 različnih podatkovnih baz, s pomočjo katerih lahko več kot 200.000 IBM-ovih uslužbencev sprejema boljše odločitve.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="i@@50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="i@@50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- apollo -->
+            <div id="p3" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="i@@50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="i@@50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-3">
+				<img src="i@@50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Pristanek Apolla 11 na Luni</h2>
+				<p>Leta 1969 sta Američana Neil Armstrong in Buzz Aldrin kot prva človeka stopila na površje Lune in tako za vedno spremenila naš pogled na vesolje in naše razumevanje mogočega. Podatke o pristajanju na luni in vzletanju z njenega površja je obdeloval Mainframe računalnik IBM System/360.</p>
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="i@@50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+
+            <!-- z enterprise -->
+             <div id="p4" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="i@@50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="i@@50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>	
+                <div class="ibm-col-6-1">
+					<img src="i@@50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="i@@50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Sistem zEnterprise</h2>
+				<p>Mainframe računalnik je v prvih 50-ih letih svojega delovanja doživljal nenehne posodobitve. Njegova zmogljivost se je izboljšala za 78 000 %. Pomnilniška kapaciteta se je povečala več kot  786.000-krat. Če bi si Mainframe računalnik predstavljali kot športni avtomobil, bi lahko potoval s hitrostjo skoraj 12 milijonov milj na uro, kar pomeni, da bi z njim lahko v manj kot dveh sekundah prišli do Lune. Predstavljajte si sedaj, kaj vse lahko ta računalnik stori za vaše poslovanje.</p>
+				</div>	
+				
+            </div>
+     
+             <!-- mobile version -->
+             <div id="p5" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="i@@50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sistem rezervacij Sabre</h2>
+				<p>Sabre je prvi sistem samodejne rezervacije potnikov na svetu in predstavlja podlago današnji spletni industriji potovanj. Aplikacija, katere začetki segajo v šestdeseta leta prejšnjega stoletja, je najprej delovala na dveh Mainframe računalnikih IBM 7090 in lahko danes obdeluje več milijard transakcij na teden.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i@@50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Veliko tveganje z veliko vizijo </h2>
+				<p>7. aprila 1964 se je izvršilni direktor Thomas J. Watson Jr. odločil tvegati in ukinil vse linije izdelkov razen Mainframe računalnika System/360, ki naj bi predstavljal novo vizijo računalništva prihodnosti. Danes družba IBM upravlja največji zasebni Mainframe računalnik v oblaku. Ta računalnik zagotavlja analitične podatke iz okoli 100 različnih podatkovnih baz, s pomočjo katerih lahko več kot 200 000 uslužbencev IBM sprejema boljše odločitve.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="i@@50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Pristanek Apolla 11 na luni</h2>
+				<p>Leta 1969 sta Američana Neil Armstrong in Buzz Aldrin kot prva človeka stopila na površje lune in tako za vedno spremenila naš pogled na vesolje in naše razumevanje mogočega. Podatke od pristajanju na luni in vzletanju z njenega površja je obdeloval Mainframe računalnik IBM System/360.</p>
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="i@@50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Sistem zEnterprise</h2>
+				<p>Mainframe računalnik je v prvih 50-ih letih svojega delovanja doživljal nenehne posodobitve. Njegova zmogljivost se je izboljašala za 78 000 %. Zmogljivost spomina se je povečala več kot  786 000-krat. Če bi si Mainframe računalnik predstavljali kot športni avtomobil, bi lahko potoval s hitrostjo 12 milijonov milj na uro, kar pomeni, da bi z njim lahko v manj kot dveh sekundah prišli do lune. Predstavljajte si sedaj, kaj vse lahko ta računalnik stori za vaše poslovanje.</p>
+				</div>	
+				
+            </div>
+                
+            
+</div>
+</div>
+<!-- Carousel END -->
+
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+
+
+<div class="ibm-columns">
+<div class="ibm-col-6-1 small">
+<img src="i@@foot-systemz.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Odkrijte System z</h2>
+	<p>Spoznajte več o Mainframe računalniku in preverite našo novo ponudbo zEnterprise za računalništvo v oblaku.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www-03.ibm.com/systems/si/z/">Spoznajte več</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="i@@foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Kakšen je vaš zIQ?</h2>
+	<p>Izboljšajte svoje znanje o Mainframe računalniku s serijo animiranih videov.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2',this);return false;">Oglejte si video</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="i@@foot-tumblr.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Mainframe50 Tumblr</h2>
+	<p>Mainframe50 Tumblr je vozlišče inovacij, ki jih omogoča Mainframe računalnik, in se vsakodnevno posodablja.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://mainframe50.tumblr.com">Odkrijte več</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="i@@foot-mtm.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Svetovno prvenstvo</h2>
+	<p>Na prvem tovrstnem računalniškem prvenstvu bo tekmovalo več kot 40 študentov z vsega sveta.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www.ibm.com/systems/z/masterthemainframe">Spoznajte več (US)</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="i@@foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Dogodek Mainframe50 (prenos v živo)</h2>
+	<p>Pridružite se nam v torek, 8. aprila, od 20. uri po srednjeevropskem času, ko bo dogodek System z predvajan v živo iz New Yorka.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Ogled prenosa v živo</a></p>
+</div>
+
+<div class="ibm-col-6-1">
+	<h2>Pridružite se pogovoru</h2>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">Twitter</a></li>
+<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">Facebook</a></li>
+<li><a class="ibm-youtube-link" href="http://www.youtube.com/user/IBMSystemZ">YouTube</a></li>
+<li><a class="ibm-livedoor-link" href="http://paper.li/IBM_System_z/1386866312">Paper.li</a></li>
+<li><a class="ibm-blog-link" href="https://www-304.ibm.com/connections/blogs/systemz/?lang=en_us">Spletni dnevnik</a></li>
+<li><a class="ibm-linkedin-link" href="http://www.linkedin.com/groups/IBM-System-z-4065367">LinkedIn</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OVERLAY 1 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Zapri [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>Ogled v živo</h2>
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<object width="620" height="385" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="lsplayer">
+<param value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" name="movie" />
+<param value="always" name="allowScriptAccess" />
+<param value="true" name="allowFullScreen" />
+
+<embed width="620" height="385" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsoftware&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" wmode="transparent" name="lsplayer" />
+
+</object>
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 1 END -->
+
+<!-- OVERLAY 2 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Zapri [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/afwcIBj80hs?list=PLezLS0Tuqb-5n8R-JtYVqa-wVYYs49TbB" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 2 END -->
+
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Povezave v nogi</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Stik</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Zasebnost</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Pogoji uporabe</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Pripomočki za osebe s posebnimi potrebami</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
