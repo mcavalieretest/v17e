@@ -75,6 +75,23 @@ dojo.addOnLoad(function(){
 
 </script>
 
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+</script>
+
 </head>
 <body id="ibm-com" class="ibm-type">
 <div id="ibm-top" class="ibm-landing-page">
@@ -139,8 +156,19 @@ dojo.addOnLoad(function(){
 
 <p class="ibm_last"><em>Sintonize terça-feira, 8 de abril, às 14h ET para acompanhar o evento ao vivo do Mainframe50 diretamente da cidade de Nova York.</em></p>
 
-<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Clique para assistir ao vivo em 8 de abril</strong></a> &nbsp; <a class="ibm_cci-btn ibm-no-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Incluir ao calendário</strong></a></p>
-<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Clique para acessar o Livestream</strong></a> &nbsp; <a class="ibm_cci-btn ibm-mobile" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Inclua ao calendário</strong></a></p>
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Clique para assistir ao vivo em 8 de abril</strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="#"><strong>Incluir ao calendário</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">MM/DD/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz">Clique para acessar o Livestream</a></p>
 
 </div>
 
@@ -436,7 +464,7 @@ Essas conquistas são tecidas na indústria e na sociedade.</p>
 <img src="../../i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
 	<h2>O que é o seu zIQ?</h2>
 	<p>Aumente o seu conhecimento de mainframe com esta série de vídeos de animação. </p>
-	<p class="ibm-ind-link-after"><a class="ibm-media ibm-cta-chevron-link" href="https://www.youtube.com/watch?v=afwcIBj80hs">Assista o vídeo</a></p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2',this);return false;">Assista os vídeos</a></p>
 </div>
 
 <div class="ibm-col-6-1 small">
@@ -457,17 +485,7 @@ Essas conquistas são tecidas na indústria e na sociedade.</p>
 <img src="../../i/foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
 	<h2>Livestream do evento Mainframe50</h2>
 	<p>Sintonize terça-feira, 8 de abril, às 14h ET para acompanhar o evento ao vivo do System z diretamente da cidade de Nova York.</p>
-	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Assista o Livestream</a>
-	<!--span class="vevent" >
-	<img class="bluecalendar-menu-context" src="http://www.ibm.com/i/v16/icons/calendar.gif">
-	<span style="display:none;">
-		<span class="summary description">Mainframe Anniversary Livestream</span>
-		<span title="20140407T140000-0500" class="dtstart">04/07/2014 14:00</span>
-		<span title="20140407T150000-0500" class="dtend">04/07/2014 15:00</span>
-		<span class="location">http://www.livestream.com/ibmsystemz</span>
-	</span>	
-	</span-->
-	</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Assista o Livestream</a></p>
 </div>
 
 <div class="ibm-col-6-1">
@@ -488,7 +506,7 @@ Essas conquistas são tecidas na indústria e na sociedade.</p>
 
 </div>
 
-<!-- OVERLAY BEGIN -->
+<!-- OVERLAY 1 BEGIN -->
 <div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
 <div class="ibm-head">
 <p><a class="ibm-common-overlay-close" href="#close">Fechar [x]</a></p>
@@ -514,7 +532,27 @@ Essas conquistas são tecidas na indústria e na sociedade.</p>
 </div>
 <div class="ibm-footer"></div>
 </div>
-<!-- OVERLAY END -->
+<!-- OVERLAY 1 END -->
+
+<!-- OVERLAY 2 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Fechar [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/afwcIBj80hs?list=PLezLS0Tuqb-5n8R-JtYVqa-wVYYs49TbB" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 2 END -->
 
 <!--! FOOTER_BEGIN -->
 <div id="ibm-footer-module"></div>
