@@ -231,12 +231,24 @@
       </div>
       <div class="ibm_cci-media-container">
         {{if altMediaURL && altMediaURL.length > -1 }}
-        <div class="ibm-video">
-          <div class="ibm-video-container">
-            <a href="{{:mediaURL}}" rel="width=640&amp;height=360" class="ibm-media"> <span class="ibm-play-button-medium"></span>
-              <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:~mediaURL(#parent.data.mediaURL, #parent.data.altMediaURL)}}"></a>
-            </div>
-          </div>             
+        
+      <div class="ibm-video">
+        <div class="ibm-video-container">
+          <a href="{{:mediaURL}}">
+            <object width="270" height="293">
+            <param name="movie"
+                   value="{{:mediaURL}}"></param>
+            <param name="allowScriptAccess" value="always"></param>
+            <embed src="{{:mediaURL}}"
+                   type="application/x-shockwave-flash"
+                   playsinline="1"
+                   allowscriptaccess="always"
+                   width="270" height="293"></embed>
+          </object>
+            </a>
+        </div>
+      </div>
+
           {{else mediaURL}}
           <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}"/>
           {{/if}}

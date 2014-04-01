@@ -441,7 +441,11 @@ a.ibm_cci-gototop {
 		padding:0;
 	}
 
-	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-6-4, #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-6-4{
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-6-4{
+		width:270px;
+	} 
+	
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-6-4{
 		width:730px;
 	}
 
