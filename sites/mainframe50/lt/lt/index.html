@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt-LT" xml:lang="lt-lt">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Autoriaus teisės „IBM Corp.“, 2014 m."/>
+		<meta name="Keywords" content="IBM, superkompiuterių serveriai, superkompiuterių sistemos, superkompiuteriai, „Mainframe50“, „Engines of Progress“, „System z“, „zEnterprise“, superkompiuterių metinės, „Master the Mainframe“, „Generation z“, „Sabre“ rezervavimo sistema, „Apollo 11“ nusileidimas Mėnulyje, „System/360“, revoliucinis, IT inovacijos, inovacija"/>
+		<meta name="DC.Date" scheme="iso8601" content="2014-02-24"/>
+		<meta name="Source" content="„v17“ šablonų generatorius, šablono 17.02 pateikimas:IBM  kūrimas:IBM"/>
+		<meta name="Security" content="Viešasis"/>
+		<meta name="Abstract" content="IBM superkompiuteris yra revoliucinė kompiuterių sistema, kuri pakeis verslą, pramonės šakas ir mums pažįstamą pasaulį."/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="2014-02-24"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
+		<meta name="Owner" content="Kevin T Clark/Raleigh/IBM"/>
+		<meta name="DC.Language" scheme="rfc1766" content="lt"/>
+		<meta name="IBM.Country" content="LT"/>
+		<meta name="Robots" content="indeksas,vykdyti"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="PAKEISTI"/>
+		<meta name="Description" content="IBM superkompiuteris yra revoliucinė kompiuterių sistema, kuri pakeis verslą, pramonės šakas ir mums pažįstamą pasaulį."/>
+		
+<!--! PageTitle -->	
+<title>„IBM Mainframe50“</title>
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../css/ww_cci.css" rel="stylesheet" type="text/css" />
+<script src="../../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+dojo.addOnLoad(function(){
+	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
+	var s = new ibmweb.ribbon({
+		srcNodeRef: ribbon[0],
+		autoscroll: true, 
+		freeScroll: true,
+		interval: 5000
+	});
+
+	dojo.query('.ibm-ribbon2').forEach(function(i){
+		dojo.addClass(i, 'ibm-ribbon');
+	});
+		
+	s.startup();
+    
+    // ------- custom carousel ------------------
+    //  - user clicks thumbnail image, we show correct panel and hide others
+    /// contact:adestefa@ibm.com
+    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    var viewportHeight = jQuery(window).height();
+    // filter iphones
+    if ((iOSCheck) && (viewportHeight < 768)) {
+        // show full version of each for mobile
+        showPanel("p5");
+    // show small image thumbs    
+    } else {
+        // show first panel in custom carousel
+        showPanel("p1");
+        // set event listeners for each thumbnail image using shared class name
+        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
+        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
+        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
+        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    }
+    // custom carousel controller driven by thumbnail image links 
+    function showPanel (id) {
+        // hide all panels 
+        dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
+        // show target panel by id
+        dojo.style(dojo.byId(id), "display", "block");
+    }    
+});
+
+</script>
+
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+
+</script>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!-- MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options">
+<ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Pasirinkite šalį/regioną: </span>Lietuva</a></li>
+</ul>
+</div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/lt/lt/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/lt/lt/">Svetainės struktūra</a></li>
+</ul>
+<div id="ibm-search-module">
+<form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
+<p>
+<label for="q"><span class="ibm-access">Paieška</span></label>
+<input type="text" maxlength="100" value="" name="q" id="q"/>
+<input type="hidden" value="17" name="v"/>
+<input type="hidden" value="utf" name="en"/>
+<input type="hidden" value="lt" name="lang"/>
+<input type="hidden" value="lt" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="Pateikti"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content" class="blueback">
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<!--! COLUMN VARIATIONS START -->
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-header-band">
+
+<div class="ibm-columns">
+
+<div id="story-col-4-2" class="ibm-col-4-2">
+
+<h1>Padarykite <span>nepaprastus dalykus</span></h1>
+<p class="ibm_cci-subtitle"><em>įmanomais</em></p>
+
+<p class="ibm_cci-intro"><span>„IBM Mainframe50“</span></p>
+<p>Superkompiuteris yra revoliucinė kompiuterių sistema, kuri pakeis verslą, pramonės šakas ir mums pažįstamą pasaulį.</p>
+ 
+<p>Nuolat prisitaikome prie pasaulinių tendencijų ir plėtojame IT, todėl mūsų skatinamas naujas požiūris į debesų technologijas, saugą ir mobiliąją kompiuteriją padės įveikti iššūkius, kurie iki šiol atrodė neįveikiami. To siekiame nuolat bendradarbiaudami su savo klientais, kad sukurtume geresnes technologijas.</p>
+ 
+<p>Tačiau visų superkompiuterio inovacijų tikslas yra bendras: pateikti ypač pažangią technologiją, kuri neįmanomus dalykus padarys įmanomais ir pakeis pasaulį.</p>
+
+<p class="ibm_last"><em>Prisijunkite antradienį, balandžio 8 d., 14 val. Europos laiku ir žiūrėkite iš Niujorko gyvai transliuojamą „Mainframe50“ renginį.</em></p>
+
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Spustelėkite, kad peržiūrėtumėte tiesioginę transliaciją balandžio 8 d.</strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="#"><strong>Įtraukti į kalendorių</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">MM/DD/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Spustelėkite norėdami pereiti prie „Livestream“</strong></a></p>
+
+</div>
+
+</div>
+
+</div>
+<!-- 4 2 grid end-->
+
+
+<!--! Ribbon grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-progress-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-1-1">
+<h2>„The Engines
+<span>of Progress“</span></h2>
+
+<p class="ibm_cci-intro"><span>Jie keičia mūsų gyvenimus.</span> Jų siekis įgyvendinti vizijas daro mūsų pasaulį protingesnį ir glaudžiau bendradarbiaujantį.</p>
+
+<p class="ibm_cci-intro ibm_cci-call">Grįžkite dažniau, kad susipažintumėte su daugiau išskirtinių istorijų.</p>
+
+
+
+<!-- Carousel START -->
+<div class="ibm-container ibm-ribbon2 ibm-no-rule ibm-no-mobile">
+<div class="ibm-container-body">
+			
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress1">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>„First National Bank“</h3>
+				<p>Ypač svarbių finansinių paslaugų teikimas 80 proc. Afrikos populiacijos, nesinaudojančios bankų paslaugoms</p>
+				<p>FNB „bankas dėžėje“ leidžia milijonams Afrikos gyventojų pradėti naują verslą, taupyti lėšas išsilavinimui įgyti ir pagerinti savo gyvenimą</p>
+				</div>
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>			
+            </div>
+            
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress2">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>„Met Office“</h3>
+				<p>Ypač svarbios ataskaitos, padedančios gerinti pramonės šakų pasiekimus ir gelbėti gyvybes</p>
+				<p>„Met Office“ kasdien generuoja tūkstančius orų prognozių, kad padėtų viso pasaulio pramonėms ir vyriausybėms priimti gyvybiškai svarbius sprendimus</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress3">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>Reumatinio artrito gydymo DREAM iššūkis</h3>
+				<p>Pažangus tyrimas, padedantis milijonams lėtinių skausmų kankinamų žmonių</p>
+				<p>Šio tarptautinis konkurso metu naudojama superkompiuterio analizės funkcija, eliminuojanti spėliojimo elementą iš numanomo pacientų reagavimo į gydymą nuo reumatinio artrito.</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+            
+</div>
+</div>
+
+             <!-- mobile version -->
+             <div id="progress-mobile" class="ibm-columns panel ibm-mobile">
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress3.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>„First National Bank“</h2>
+				<p>Ypač svarbių finansinių paslaugų teikimas 80 proc. Afrikos populiacijos, nesinaudojančios bankų paslaugoms</p>
+				<p>FNB „bankas dėžėje“ leidžia milijonams Afrikos gyventojų pradėti naują verslą, taupyti lėšas išsilavinimui įgyti ir pagerinti savo gyvenimą</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress2.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>„Met Office“</h2>
+				<p>Ypač svarbios ataskaitos, padedančios gerinti pramonės šakų pasiekimus ir gelbėti gyvybes</p>
+				<p>„Met Office“ kasdien generuoja tūkstančius orų prognozių, kad padėtų viso pasaulio pramonėms ir vyriausybėms priimti gyvybiškai svarbius sprendimus</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress1.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>Reumatinio artrito gydymo DREAM iššūkis</h2>
+				<p>Pažangus tyrimas, padedantis milijonams lėtinių skausmų kankinamų žmonių</p>
+				<p>Šio tarptautinis konkurso metu naudojama superkompiuterio analizės funkcija, eliminuojanti spėliojimo elementą iš numanomo pacientų reagavimo į gydymą nuo reumatinio artrito.</p>
+				</div>		                
+								
+            </div>
+
+<!-- Carousel END -->
+
+</div>
+
+</div>
+
+</div>
+<!--! Ribbon grid -->
+
+
+
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-z-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-4-2">
+&nbsp;
+</div>
+<div class="ibm-col-4-2">
+
+<h2><span style="padding-top: 40px">„GENERATION z“</span></h2>
+<p class="ibm_cci-intro"><span>Jie sukurs ateitį.</span></p>
+
+<p class="ibm_last">Kasmet daugiau nei 1 000 universitetų studentai 67-ose šalyse mokosi, kaip spręsti būsimus iššūkius naudojant  superkompiuterį. </p>
+<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=wAU5kCIGBNQ">Paleisti vaizdo įrašą</a></p>
+
+<p class="ibm_last">2014 m. balandžio 7 d. viso pasaulio geriausi 43 studentai susitiks Niujorke ir dalyvaus pirmajame „Master the Mainframe“ pasaulio čempionate.</p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.ibm.com/systems/z/masterthemainframe">Sužinokite apie čempionatą (US)</a></p>
+</div>
+
+
+<div class="ibm-col-6-5 ibm_cci-ey">
+<h2><span>50 ypatingų metų</span></h2>
+
+<p class="ibm_cci-intro"><span>Jie išrado modernųjį pasaulį.</span> Organizacijos ir lyderiai iš naujo išrado verslą, transformavo pramonės šakas ir padėjo įveikti kai kuriuos didžiausius pasaulio iššūkius naudodami pažangiausią ir patikimiausią platformą. Šie pasiekimai yra sudėtinė pramonės ir visuomenės pažangos dalis.</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- custom carousel control -->
+<div class="ibm-band ibm_cci-site-band">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<div class="ibm-container ibm-no-rule">
+<div class="ibm-container-body">
+
+            <!-- Sabre -->
+            <div id="p1" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>„Sabre“ rezervavimo sistema</h2>
+				<p>Pirmoji pasaulyje automatinė keleivių vietų rezervavimo sistema „Sabre“ yra šiuolaikinės internetinės kelionių pramonės pagrindas. Programa, parašyta 7-ajame dešimtmetyje ir paleista dviejuose IBM 7090 superkompiuteriuose, šiandien per savaitę gali apdoroti milijardus operacijų.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" title="Didelės lažybos siekiant didelių įžvalgų" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" title="„Apollo 11“ nusileidimas Mėnulyje" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" title="„zEnterprise System“" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- Watson -->
+            <div id="p2" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" title="„Sabre“ rezervavimo sistema" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Didelės lažybos siekiant didelių įžvalgų</h2>
+				<p>1964 m. balandžio 7 d. IBM vykdomasis direktorius Thomas J. Watsonas jaunesnysis tiesiogine to žodžio prasme patikėjo visos įmonės ateitį  „System/360“ superkompiuteriui, nutraukdamas visų kitų produktų gamybą, kad įgyvendintų šią naująją kompiuterių ateities viziją. Šiandien IBM superkompiuteryje veikia pasaulio didžiausias privatus debesis. Jis teikia analitines įžvalgas iš daugiau nei 100 skirtingų duomenų saugyklų ir leidžia daugiau nei 200 tūkstančių IBM darbuotojų priimti geresnius sprendimus.</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- apollo -->
+            <div id="p3" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>„Apollo 11“ nusileidimas Mėnulyje</h2>
+				<p>1969 m. amerikiečiai Neilas Armstrongas ir Buzzas Aldrinas tapo pirmaisiais žmonėmis, žengusiais ant Mėnulio paviršiaus ir amžiams pakeitusiais mūsų požiūrį į visatą ir įmanomus bei neįmanomus dalykus. IBM „System/360“ superkompiuteris apdorojo nusileidimo Mėnulyje ir pakilimo nuo jo paviršiaus duomenis.</p>
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+
+            <!-- z enterprise -->
+             <div id="p4" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>	
+                <div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>„zEnterprise System“</h2>
+				<p>Per pirmuosius 50 savo gyvavimo metų superkompiuteris buvo nuolat perkuriamas. Jo našumas padidėjo daugiau nei 78 000 proc. Atminties talpa padidėjo daugiau nei 786 000 kartų. Jei superkompiuteris būtų lenktyninis automobilis, jis galėtų važiuoti beveik 12 milijonų mylių per valandą greičiu ir nugabenti jus į Mėnulį greičiau nei per 2 sekundes. Įsivaizduokite, kaip jis gali paveikti jūsų verslą.</p>
+				</div>	
+				
+            </div>
+     
+             <!-- mobile version -->
+             <div id="p5" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>„Sabre“ rezervavimo sistema</h2>
+				<p>Pirmoji pasaulyje automatinė keleivių vietų rezervavimo sistema „Sabre“ yra šiuolaikinės internetinės kelionių pramonės pagrindas. Programa, parašyta 7-ajame dešimtmetyje ir paleista dviejuose IBM 7090 superkompiuteriuose, šiandien per savaitę gali apdoroti milijardus operacijų.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>Didelės lažybos siekiant didelių įžvalgų</h2>
+				<p>1964 m. balandžio 7 d. IBM vykdomasis direktorius Thomas J. Watsonas jaunesnysis tiesiogine to žodžio prasme patikėjo visos įmonės ateitį  „System/360“ superkompiuteriui, nutraukdamas visų kitų produktų gamybą, kad įgyvendintų šią naująją kompiuterių ateities viziją. Šiandien IBM superkompiuteryje veikia pasaulio didžiausias privatus debesis. Jis teikia analitines įžvalgas iš daugiau nei 100 skirtingų duomenų saugyklų ir leidžia daugiau nei 200 tūkstančių IBM darbuotojų priimti geresnius sprendimus.</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>„Apollo 11“ nusileidimas Mėnulyje</h2>
+				<p>1969 m. amerikiečiai Neilas Armstrongas ir Buzzas Aldrinas tapo pirmaisiais žmonėmis, žengusiais ant Mėnulio paviršiaus ir amžiams pakeitusiais mūsų požiūrį į visatą ir įmanomus bei neįmanomus dalykus. IBM „System/360“ superkompiuteris apdorojo nusileidimo Mėnulyje ir pakilimo nuo jo paviršiaus duomenis.</p>
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>„zEnterprise System“</h2>
+				<p>Per pirmuosius 50 savo gyvavimo metų superkompiuteris buvo nuolat perkuriamas. Jo našumas padidėjo daugiau nei 78 000 proc. Atminties talpa padidėjo daugiau nei 786 000 kartų. Jei superkompiuteris būtų lenktyninis automobilis, jis galėtų važiuoti beveik 12 milijonų mylių per valandą greičiu ir nugabenti jus į Mėnulį greičiau nei per 2 sekundes. Įsivaizduokite, kaip jis gali paveikti jūsų verslą.</p>
+				</div>	
+				
+            </div>
+                
+            
+</div>
+</div>
+<!-- Carousel END -->
+
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+
+
+<div class="ibm-columns">
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-systemz.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Atraskite „System z“</h2>
+	<p>Sužinokite apie superkompiuterį ir mūsų naujausius „zEnterprise“ debesų technologijos pasiūlymus.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www-03.ibm.com/systems/lt/z/">Sužinokite daugiau</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Koks jūsų „zIQ“?</h2>
+	<p>Pagilinkite savo žinias apie superkompiuterį – peržiūrėkite šiuos animuotus vaizdo įrašus. </p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2',this);return false;">Žiūrėti vaizdo įrašą</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-tumblr.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>„Mainframe50“ „Tumblr“</h2>
+	<p>Šis kasdien atnaujinamas „Tumblr“ informuos jus apie superkompiuterio inovacijas.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://mainframe50.tumblr.com">Sužinokite daugiau</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-mtm.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Pasaulinis čempionatas</h2>
+	<p>Daugiau nei 40 studentų iš viso pasaulio varžysis šiame pirmajame įmonių kompiuterijos renginyje.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www.ibm.com/systems/z/masterthemainframe">Sužinokite daugiau (US)</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>„Mainframe50“ renginio „Livestream“</h2>
+	<p>Prisijunkite antradienį, balandžio 8 d., 14 val. Europos laiku ir žiūrėkite iš Niujorko gyvai transliuojamą „System z“ renginį.</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">Žiūrėti „Livestream“ transliaciją</a></p>
+</div>
+
+<div class="ibm-col-6-1">
+	<h2>Prisijunkite prie pokalbio</h2>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">„Twitter“</a></li>
+<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">„Facebook“</a></li>
+<li><a class="ibm-youtube-link" href="http://www.youtube.com/user/IBMSystemZ">„YouTube“</a></li>
+<li><a class="ibm-livedoor-link" href="http://paper.li/IBM_System_z/1386866312">„Paper.li“</a></li>
+<li><a class="ibm-blog-link" href="https://www-304.ibm.com/connections/blogs/systemz/?lang=en_us">Interneto dienoraštis</a></li>
+<li><a class="ibm-linkedin-link" href="http://www.linkedin.com/groups/IBM-System-z-4065367">„LinkedIn“</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OVERLAY 1 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Uždaryti [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>Žiūrėti tiesioginę transliaciją</h2>
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<object width="620" height="385" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="lsplayer">
+<param value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" name="movie" />
+<param value="always" name="allowScriptAccess" />
+<param value="true" name="allowFullScreen" />
+
+<embed width="620" height="385" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsoftware&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" wmode="transparent" name="lsplayer" />
+
+</object>
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 1 END -->
+
+<!-- OVERLAY 2 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">Uždaryti [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/afwcIBj80hs?list=PLezLS0Tuqb-5n8R-JtYVqa-wVYYs49TbB" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 2 END -->
+
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Poraštės nuorodos</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Kontaktai</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Slaptumas</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Naudojimo sąlygos</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Pasiekiamumas</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
