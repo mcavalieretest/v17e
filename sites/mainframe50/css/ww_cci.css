@@ -95,7 +95,7 @@ sites/
   text-transform: uppercase;
 }
 
-#ibm-top a.ibm_cci-btn {
+a.ibm_cci-btn {
   background: #4B77A6;
 }
 
