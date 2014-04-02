@@ -141,9 +141,9 @@
                         <div class="row">
                         	<div class="ibm-col-6-4 first">
                              	<div class="section">
-        	                    	<label for="UPDATE_Salutation_id1" class="lbl-text required">Salutation:</label>
+        	                    	<label id="form_label_salutation" for="UPDATE_Salutation_id1" class="lbl-text required">Salutation:</label>
         	                        <div class="lbl-ui select">
-        								<select id="UPDATE_Salutation_id1" name="Salutation">
+        								<select id="UPDATE_Salutation_id1" name="Salutation" aria-labelledby="form_label_salutation">
         								    <option value="" selected="selected">Select one</option>
         									<option value="Mr.">Mr.</option>
         									<option value="Mrs.">Mrs.</option>
@@ -155,23 +155,23 @@
         	                        <span class="small-caption">(e.g., Mr., Mrs.) </span>
     	                        </div>
 	                        <div class="section">
-                                <label for="fnames" class="lbl-text">First Name:<span class="ibm-required">*</span></label>
+                                <label id="form_label_fnames" for="fnames" class="lbl-text">First Name:<span class="ibm-required">*</span></label>
                                 <div class="lbl-ui">
-                                	<input type="text" name="fnames" id="fnames" class="input" aria-required="true">
+                                	<input type="text" name="fnames" id="fnames" class="input" aria-required="true" aria-labelledby="form_label_fnames">
                                 	<b class="tooltip right-top"><em>First name is mandatory</em></b>
                                 </div>
                             </div>
                        		<div class="section">
-                                <label for="lnames" class="lbl-text">Last Name:<span class="ibm-required">*</span></label>
+                                <label id="form_label_lnames" for="lnames" class="lbl-text">Last Name:<span class="ibm-required">*</span></label>
                                 <div class="lbl-ui">
-                                	<input type="text" name="lnames" id="lnames" class="input" aria-required="true">
+                                	<input type="text" name="lnames" id="lnames" class="input" aria-required="true" aria-labelledby="form_label_lnames">
                                 	<b class="tooltip right-top"><em>Last name is mandatory</em></b>
                                 </div>
                             </div>
                             <div class="section">
-		                    	<label for="Job_role" class="lbl-text">Job role:</label>
+		                    	<label id="form_label_roles" for="Job_role" class="lbl-text">Job role:</label>
 		                        <label for="Job_role" class="lbl-ui select">
-									<select id="Job_role" name="Job_role">
+									<select id="Job_role" name="Job_role" aria-labelledby="form_label_roles">
 									    <option selected="selected" value="">Which best describes you?</option>
 										<option value="Business_user">Business user</option>
 										<option value="Consultant">Consultant</option>
@@ -191,9 +191,9 @@
                            </div><!-- end .col8 section -->
                            <div class="ibm-col-6-2 last">                     
                            		<div class="section">
-	                                <label for="email" class="lbl-text">Email Address:<span class="ibm-required">*</span></label>
+	                                <label id="form_label_email"  for="email" class="lbl-text">Email Address:<span class="ibm-required">*</span></label>
 	                                <label class="lbl-ui append-icon">
-	                                	<input type="email" name="email" id="email" class="input" placeholder="Email Address" aria-required="true">
+	                                	<input type="email" name="email" id="email" class="input" placeholder="Email Address" aria-required="true" aria-labelledby="form_label_email">
 	                                	<b class="tooltip right-bottom"><em>
 	                                	Email field is mandatory.You can fill in your personal email address also</em>
 	                                	</b>
@@ -202,9 +202,9 @@
 	                                <span class="small-caption">(e.g.,abc@in.ibm.com)</span>
 	                            </div>
 	                            <div class="section">
-		                       		<label for="tele" class="lbl-text">Telephone / Mobile:</label>
+		                       		<label id="form_label_tele" for="tele" class="lbl-text">Telephone / Mobile:</label>
 		                            <label class="lbl-ui append-icon art">
-		                            	<input type="tel" name="tele" id="tele" class="input" placeholder="+44 772" aria-label="Telephone">
+		                            	<input type="tel" name="tele" id="tele" class="input" placeholder="+44 772" aria-labelledby="form_label_tele">
 		                                <b class="tooltip right-top"><em>When a form control receives focus a cool tooltip appears :-) </em></b> 
 		                                <span><i class="ibm-phone-link"></i></span>
 		                            </label>                            
@@ -212,15 +212,15 @@
                                 <div class="section">
  									<div class="row">
                                     	<div class="ibm-col-6-1 first">
-                                        	<label for="zip" class="lbl-text">Zip:</label>
+                                        	<label id="form_label_zip" for="zip" class="lbl-text">Zip:</label>
                                             <label class="lbl-ui">
-                                            	<input type="text" name="zip" id="zip" class="input" aria-label="Zipcode">
+                                            	<input type="text" name="zip" id="zip" class="input" aria-labelledby="form_label_zip">
                                             </label>   
                                         </div><!-- end .col6 section -->                                        
                                     	<div class="ibm-col-6-1 last">
-                                        	<label for="city" class="lbl-text">City:</label>
+                                        	<label id="form_label_city" for="city" class="lbl-text">City:</label>
                                             <label class="lbl-ui">
-                                            	<input type="text" name="city" id="city" class="input" aria-label="City">
+                                            	<input type="text" name="city" id="city" class="input" aria-labelledby="form_label_city">
                                             </label>   
                                         </div><!-- end .col5 section -->
                                     	
@@ -228,9 +228,9 @@
                                 </div>
                                 <div class="section">
                                     
-                                            <label for="states" class="lbl-text">State:</label>
+                                            <label id="form_label_states" for="states" class="lbl-text">State:</label>
                                                   <label for="states" class="lbl-ui select">
-                                                      <select id="states" name="states">
+                                                      <select id="states" name="states" aria-labelledby="form_label_states">
                                                         <option value="Select a State">Select a State</option>
                                                         <option value="AL">Alabama</option>
                                                         <option value="AK">Alaska</option>
@@ -288,9 +288,9 @@
                                                                           
                                 </div>
 	                       		<div class="section">
-	                            	<label for="country" class="lbl-text">Country / region:<span class="ibm-required">*</span></label>
+	                            	<label id="form_label_country" for="country" class="lbl-text">Country / region:<span class="ibm-required">*</span></label>
 									<label for="country" class="lbl-ui select">
-	                                    <select id="country" name="country">
+	                                    <select id="country" name="country" aria-labelledby="form_label_country">
 	                                    	<option selected="selected" value="">Please select one</option>
 											<option value="us">United States</option>
 											<option value="ar">Argentina</option>
@@ -385,14 +385,14 @@
 	                                </label>                                     
 	                            </div> 
 	                            <div class="section">
-                                    <label for="check1"  class="lbl-text ext">Save information</label>
+                                    <label id="form_label_saveinfo" for="check1"  class="lbl-text ext">Save information</label>
                                     <div class="option-group block">
                                             <span class="goption">
                                                 <label class="options">
-                                                    <input type="checkbox" id="check1" name="complaint" value="Yes">
+                                                    <input type="checkbox" id="check1" name="complaint" value="Yes" aria-labelledby="form_label_saveinfo form_label_saveinfo_yes">
                                                     <span class="checkbox"></span>
                                                 </label>
-                                                <label for="check1">Yes</label>
+                                                <label id="form_label_saveinfo_yes" for="check1">Yes</label>
                                            </span><!-- end .goption section -->
                                        </div><!-- end .option-group section -->
                                       
@@ -405,9 +405,9 @@
 	                        	<div class="section">
 		                        	<div class="row">
 		                        		<div class="ibm-col-6-3 first">
-					                    	<label for="UPDATE_category_id" class="lbl-text tleft">Message category:<span class="ibm-required">*</span></label>
+					                    	<label id="form_label_category" for="UPDATE_category_id" class="lbl-text tleft">Message category:<span class="ibm-required">*</span></label>
 						                        <label for="UPDATE_category_id" class="lbl-ui select">
-													<select id="category" name="UPDATE_category_id" aria-required="true">
+													<select id="category" name="UPDATE_category_id" aria-required="true" aria-labelledby="form_label_category">
 													    <option value="">Select one</option>
 														<option value="Government and Education">Government and Education</option>
 														<option value="IBM Business Partners">IBM Business Partners</option>
@@ -432,7 +432,7 @@
 				                        </div>
 				                        <div class="ibm-col-6-1 last">
 				                            <label class="lbl-valign long">
-		                                            <a href="javascript:void(0);" class="info-tip" aria-describedby="helptooltip"> ?
+		                                            <a href="javascript:void(0);" class="info-tip"> !
 		                                                <span role="tooltip">Message category is mandatory.</span>
 		                                            </a>​​​​​                                        
 		                                    </label>
@@ -440,9 +440,9 @@
 				                    </div>
 			                    </div>
 		                        <div class="section">
-	                            	<label for="UPDATE_Message_id" class="lbl-text ext">Is this a complaint?</label>
+	                            	<label id="form_label_complaint" for="UPDATE_Message_id" class="lbl-text ext">Is this a complaint?</label>
 	                                	
-	                                   <div class="option-group float" role="radiogroup">
+	                                   <div class="option-group float" role="radiogroup" aria-labelledby="form_label_complaint">
 	                                        <span class="goption">
 	                                            <label class="options">
 	                                                <input type="radio" id="option1" name="complaint1" value="Yes" role="radio" aria-checked="false">
@@ -463,33 +463,33 @@
                             <div class="row">
 	                            <div class="ibm-col-6-2 first">
 		                            <div class="section">
-		                                <label for="UPDATE_Subject_id" class="lbl-text">Subject:</label>
+		                                <label id="form_label_subject" for="UPDATE_Subject_id" class="lbl-text">Subject:</label>
 		                                <label class="lbl-ui">
-		                                	<input type="text" name="subject" id="UPDATE_Subject_id" class="input" aria-label="Subject line">
+		                                	<input type="text" name="subject" id="UPDATE_Subject_id" class="input" aria-labelledby="form_label_subject">
 		                                </label>
 		                            </div>
 	                            </div>
                             </div>
 							<div class="section">
-							    <label for="UPDATE_Message_id" class="lbl-text">Message:<span class="ibm-required">*</span></label>
+							    <label id="form_label_message" for="UPDATE_Message_id" class="lbl-text">Message:<span class="ibm-required">*</span></label>
 							    <label class="lbl-ui append-icon art">
-							    	<textarea id="UPDATE_Message_id" name="UPDATE_Message_id" class="textarea mini no-resize" aria-required="true"></textarea>
+							    	<textarea id="UPDATE_Message_id" name="UPDATE_Message_id" class="textarea mini no-resize" aria-required="true" aria-labelledby="form_label_message"></textarea>
 							    	<span><i class="ibm-chat-link"></i></span>
 							    </label>                          
 							</div>                  
 							<div class="section">
-							    <label for="weburl" class="lbl-text">Include your url</label>
+							    <label id="form_label_url" for="weburl" class="lbl-text">Include your url</label>
 							    <label class="lbl-ui append-icon art">
-							    	<input type="url" name="weburl" id="weburl" class="input" placeholder="http://www" aria-label="Include you url">
+							    	<input type="url" name="weburl" id="weburl" class="input" placeholder="http://www" aria-labelledby="form_label_url">
 							    	<span><i class="ibm-external-link"></i></span>
 							    </label>
 							    <span class="small-caption">(e.g., http://www.yoursite.com)</span>                        
 							</div>
 							<div class="section">
-							    <label for="file" class="lbl-text">Upload file:</label>
+							    <label id="form_label_upload" for="file" class="lbl-text">Upload file:</label>
 							    <label for="file" class="lbl-ui file-input">
 							    <span class="button">
-							    <input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Choose File 
+							    <input aria-labelledby="form_label_upload file" type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Choose File 
 							    </span><input type="text" class="input" placeholder="no file selected" readonly="">
 							    </label>                          
 							</div>
