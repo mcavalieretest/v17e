@@ -653,7 +653,8 @@ p.ibm-table-scroll-caption {
 }
 
 .ibm-additional-info,
-.ibm-item-note {
+.ibm-item-note,
+.ibm-inset-img-caption {
 	@include px-to-rem(font-size,12px);
 }
 .ibm-item-note {
@@ -665,6 +666,7 @@ p.ibm-table-scroll-caption {
 .ibm-legal {
 	@include px-to-rem(font-size,11px);
 }
+
 // Content styles =======================
 
 
