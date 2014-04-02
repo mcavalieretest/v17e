@@ -469,7 +469,7 @@ var checkMLinksExist = setInterval(function() {
 	});
 
 	/*--------*/
-	dojo.addOnLoad(function(){
+	dojo.ready(function(){
 		var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
 		var s = new ibmweb.ribbon({
 			srcNodeRef: ribbon[0],
