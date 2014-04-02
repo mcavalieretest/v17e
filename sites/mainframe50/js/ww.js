@@ -469,7 +469,16 @@ var checkMLinksExist = setInterval(function() {
 	});
 
 	/*--------*/
-	dojo.ready(function(){
+	//wait page be ready
+	var check = setInterval(function(){checkPage()},1000);
+	function checkPage(){
+		var elem = document.getElementById('ibm-footer');
+		if(elem != null){
+			clearTimeout(check);
+			pageIsReady();
+		}
+	}
+	function pageIsReady(){
 		var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
 		var s = new ibmweb.ribbon({
 			srcNodeRef: ribbon[0],
@@ -509,7 +518,7 @@ var checkMLinksExist = setInterval(function() {
 			dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
 			// show target panel by id
 			dojo.style(dojo.byId(id), "display", "block");
-		}    
-	});
+		} 
+	}   
 	
 } )( window );
