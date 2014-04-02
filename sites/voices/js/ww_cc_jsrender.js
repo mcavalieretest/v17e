@@ -10,6 +10,7 @@ $(function() {
             window.location.hash = "#voices-" + value;
         }
     };
+
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (END)
     // MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)				
         $("ul.ibm_cci--ls--toggle--ul li").on("click", "a", function(event) {
@@ -96,7 +97,7 @@ $(function() {
                     vo.search = true;
                     // SEARCH TRUE
                     vo.f_distribute(newData);
-                    vo.reTweetToggle();
+                    vo.f_reTweetToggle();
                     $(".ibm-sortable").append($(".ibm-card")).masonry("appended", $(".ibm-card"));
                     setTimeout(function() {
                         $("#ibm_cci-widget-js").masonry();
@@ -167,7 +168,7 @@ $(function() {
             }
         });
         //SEARCH TOPICS ELEMENTS (END)	
-        vo.reTweetToggle();
+        vo.f_reTweetToggle();
     });
     //WHEN(END)	
     //INFINITE SCROLL (START)
@@ -203,7 +204,7 @@ $(function() {
                         vo.search = false;
                         // SEARCH FALSE
                         vo.f_distribute(data);
-                        vo.reTweetToggle();
+                        vo.f_reTweetToggle();
                         $(".ibm-sortable").imagesLoaded(function() {
                             console.log("infinite scroll done condition: masonry triggered");
                             $(".ibm-sortable").append($(".ibm-card")).masonry("appended", $(".ibm-card"));
@@ -384,10 +385,14 @@ $(function() {
         },
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
-            img.src = imgURL;
-            img.onload = function() {
-                imgWidth = img.naturalWidth;
-            };
+            var self = this;
+            
+            if(imgURL == "" && imgURL.length === 0) return imgURL;
+            
+            if(imgURL != "" && imgURL.length > 0){
+                img.src = imgURL;
+                img.onload = self.f_imgOnloadfunc(args);
+            }
             // console.log("outside onload: "+img.naturalWidth);
             return imgURL;
         },
@@ -410,7 +415,7 @@ $(function() {
             return domain;
         },
         f_mod_content: function(data) {
-            var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, '<a href="$1">$1</a>').replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1">#$1</a>').replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1">@$1</a>');
+            var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, '<a href="$1" target="_blank">$1</a>').replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1" target="_blank">#$1</a>').replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1" target="_blank">@$1</a>');
             return update_content;
         },
         f_pretty_date: function(timeVal) {
@@ -588,7 +593,7 @@ $(function() {
                             vo.search = true;
                             // SEARCH TRUE
                             vo.f_distribute(data);
-                            vo.reTweetToggle();
+                            vo.f_reTweetToggle();
                             $("#ibm_cci__ml_t-js").addClass("ibm_cci-clicked");
                             $("#ibm_cci-widget-js").masonry("reload");
                             setTimeout(function() {
@@ -628,7 +633,7 @@ $(function() {
                                 vo.search = true;
                                 // SEARCH TRUE
                                 vo.f_distribute(data);
-                                vo.reTweetToggle();
+                                vo.f_reTweetToggle();
                                 vo.totalSearchCountNum = data.totalCount || 0;
                                 vo.f_totalSearchCount(data.totalCount);
                                 vo.f_appendTrendinglist($.makeArray(data.terms.split(",")));
@@ -654,7 +659,7 @@ $(function() {
             }
         },
         // RETWEET TOGGLE (START)
-        reTweetToggle: function() {
+        f_reTweetToggle: function() {
             try{
 	            $("#ibm_cci-widget-js ul.ibm_cci-relatedTweetContainer li").on("click", "a", function(event) {
 	                // DISABLE DEFAULT ACTION
@@ -675,7 +680,7 @@ $(function() {
 	            });
 	        }
 	        catch(e){
-        		console.log("error in reTweetToggle function: "+e);
+        		console.log("error in f_reTweetToggle function: "+e);
         	}
         }
     };
