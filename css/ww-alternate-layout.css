@@ -7876,7 +7876,7 @@ html.m-menu-open #m-wrap {
  * Mobile search box
  */
 #m-search-module {
-  position: fixed;
+  position: absolute;
   z-index: 10; }
 
 #m-search {
@@ -7933,7 +7933,9 @@ input#m-q {
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
   /* Prevent flicker when tapped on iOS Safari */
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  /* Prevent shaky animation on iOS Safari; only happens when content is taller than viewport. */
+  overflow-y: hidden; }
 
 /*
  * Scrolling container. Contains both global and local menu containers. 

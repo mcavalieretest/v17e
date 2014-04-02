@@ -87,6 +87,9 @@ input#m-q {
 
   /* Prevent flicker when tapped on iOS Safari */
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  /* Prevent shaky animation on iOS Safari; only happens when content is taller than viewport. */
+  overflow-y: hidden;
 }
 
 /*
