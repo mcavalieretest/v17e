@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+
+<head>
+	{{> head}}
+</head>
+
+<body id="ibm-com" class="ibm-type">
+
+	<div id="ibm-top" class="ibm-landing-page">
+
+		<!-- CONTENT_BEGIN -->
+		<div id="ibm-content">
+
+			<!-- CONTENT_BODY -->
+			<div id="ibm-content-body">
+
+				{{> side_nav}}
+
+				<div id="ibm-content-main" class="watson-about">
+
+					<!--menu & logo-->
+					<nav class="menu" id="menu">
+						<p>Menu</p>
+						<div class="bars">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="logo"></div>
+					</nav>
+					
+					<div class="ibm-band hero scene" id="about-hero" data-ev="section1">
+						<div class="ibm-columns">
+							<div class="ibm-col-6-5">
+								<h1>About Us</h1>
+							</div>
+						</div>								
+					</div>	
+
+					<div class="ibm-band scene" id="next">
+						<div class="ibm-columns">
+							<div class="ibm-col-1-1">
+								<h2>The Evolution of Watson</h2>
+
+								<div class="body">
+									<p>IBM Watson signals a critical turning point in the evolution of information technology. The era of cognitive computing, where computers can learn, reason and help us make better decisions, has arrived.
+									</p>
+									<p>To make the most of this opportunity, IBM CEO Ginni Rometty formed the IBM Watson Group, to boost the development and adoption of cloud-delivered cognitive applications and services. These innovations span industries, and help drive progress for businesses and society.
+									</p>
+									<p>We believe that the creativity of academic scientists, students, startup entrepreneurs and tech companies are required to fulfill the potential of cognitive computing technologies. That’s why we created the Watson Ecosystem of organizations that share our goals.
+									</p>
+									<p>Watson technology is one of the most significant inventions in IBM’s history. Along with mobile, social and big data analytics technologies, it’s capable of transforming whole industries and improving the performance of the professionals who are essential to them.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="ibm-band scene" id="headquarters" data-ev="section2">
+						<div class="ibm-columns">
+							<div class="ibm-col-2-1">
+								<h2>Watson’s New Headquarters</h2>
+						
+								<h3>Our New Digs</h3>
+								<p>Watson’s now in NYC’s Silicon Alley as part of a $1 billion investment in Watson technology. Learn more about Watson’s new home and how this initiative will help developers and entrepreneurs build new applications powered by Watson.
+								</p>
+								<p><a data-evname="home" href="watson-hq.html?cmp=usbrb&cm=s&csr=watson.site_20140319&cr=abouthome&ct=usbrb301&cn=sec2home">Learn More</a></p>
+							</div>
+						</div>
+
+					</div>
+					
+					
+					<div class="ibm-band scene" id="team" data-ev="section3">
+						<div class="ibm-columns">
+							<div class="ibm-col-4-2">
+								<img src="assets/img/about/team.png" />
+							</div>							
+							<div class="ibm-col-4-2">
+								<h2>The Watson Team</h2>
+						
+								<h3>Meet the brains behind Watson</h3>
+								<p>Michael Rhodin, Leanne LeBlanc and Adam Zacharski are a few of the IBMers who brought Watson technology to life. Learn more about them and follow the latest conversations.
+								</p>
+								<p><a data-evname="team" href="team.html?cmp=usbrb&cm=s&csr=watson.site_20140319&cr=abouthome&ct=usbrb301&cn=sec3team">Learn More</a></p>
+							</div>
+						</div>
+
+					</div>
+					
+					
+					
+					<div class="ibm-band scene" id="about-careers" data-ev="section4">
+						<div class="ibm-columns">
+							<div class="ibm-col-1-1">
+								<h2>Want a Career With Watson?</h2>
+									<p>Like to be a part of putting Watson to work in the real world? Join our team of researchers, developers, consultants, sales and marketing professionals.</p>
+									<a data-evname="careers" class="btn-black" href="http://www-03.ibm.com/employment/watson/?cmp=usbrb&cm=s&csr=watson.site_20140110&cr=team&ct=usbrb301&cn=learnmore" target="_blank">Visit our Careers page for current openings.
+									</a>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="ibm-band scene" id="about-voices" data-ev="section5">
+						<div class="ibm-columns">
+							<div class="ibm-col-1-1">
+								<h2>Who’s Saying<br />What About Watson?</h2>
+								<a href="http://www.ibm.com/voices" target="_blank">Content created and curated by the minds at IBM. </a>
+		
+									<div class="voices-wrap" id="ibm-voices">
+										<iframe src="assets/iframe/voices.html" scrolling="no" frameborder="no"></iframe>
+									</div>
+							</div>
+						</div>
+					</div>
+				
+					{{> footer}}
+				</div>
+			</div>
+			<!-- CONTENT_BODY_END -->
+
+		</div>
+		<!-- CONTENT_END -->
+
+	</div>
+
+	{{> scripts}}
+	{{> grid_overlay}}
+
+	<script>
+		jQuery(function() {
+			new IBM.watson.About();
+		})
+	</script>
+
+</body>
+</html>

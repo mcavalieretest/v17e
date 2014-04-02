@@ -1,0 +1,41 @@
+.ie-lt10 {
+  .ibm-landing-page {
+    #ibm-content {
+      .watson-news {
+        #news-digs {
+          height: 800px;
+        }
+      }
+
+      .watson-tech {
+        #tech-hero {
+          height: 850px;
+
+          .sprite-row {
+            position: relative;
+
+            #watsonLogoSpriteAnimation {
+              background-position: -21360px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ie-lt9 {
+	#home-hero {
+		#hero-video {
+			.yt-btn {
+				background-image: none !important;
+			}
+		}
+	}
+
+	.hero {
+		.yt-btn {
+			background-image: none !important;
+		}
+	}
+}

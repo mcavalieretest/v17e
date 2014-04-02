@@ -1,0 +1,11 @@
+.watson-demos {
+  .scene {
+    position: relative;
+    height: 500px;
+  }
+
+  .scene > * {
+    position: absolute;
+  }
+}
+

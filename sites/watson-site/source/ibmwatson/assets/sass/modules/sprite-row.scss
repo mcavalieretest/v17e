@@ -1,0 +1,47 @@
+.sprite-row {
+	position: relative;
+
+	h2 {
+		font: 100px/1 $font-bold-italic;
+		text-align: center;
+	}
+	/**
+	 * sprite callout base styles
+	 */
+	.sprite-callout {
+		opacity: 1;
+		position: absolute;
+		z-index: 5;
+
+		h3 {
+			font-family: $font-bold-italic;
+			color: #69cefe;
+			margin-bottom: 7px;
+			font-size: 18px;
+		}
+		p {
+			font: 16px/ 19px $font-regular;
+			color: #ffffff;
+			strong {
+				color: #a0e958;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+/**
+ * break points
+ */
+
+@media screen and (max-width: 640px) {
+	.sprite-row {
+		.sprite-callout {
+			position: relative !important;
+			top: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			bottom: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,319 @@
+.watson-tech {
+
+	/*global to tech*/
+	.content {
+		max-width: 980px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 72px;
+		margin-bottom: 45px;
+		line-height: 72px;
+	}
+
+	/*tech-hero*/
+	#tech-hero {
+		height: 2500px;
+		background: black;
+
+		/*cascading from sprite-row.scss*/
+		.sprite-row {
+			position: fixed;
+			height: 715px;
+			width: 100%;
+			max-width: none;
+			color: #fff;
+			h2 {
+				color: #fff;
+				padding-bottom: 60px;
+			}
+			.icon-arrow-down-bounce {
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				background: url('../img/tech/arrow-down-bounce.gif') no-repeat;
+				left: 50%;
+				margin-top: 120px;
+				margin-left: -60px;
+				z-index: 0;
+			}
+			#watsonLogoSpriteAnimation {
+				background: url('../img/sprites/logo.jpg') no-repeat;
+				background-size: 21716px 330px;
+				width: 356px;
+				height: 372px;
+				margin: 0 auto;
+				position: relative;
+				z-index: 1;
+			}
+			.sprite-callout {
+				width: 215px;
+				position: absolute;
+				opacity: 1;
+			}
+		}
+	}
+	#tech-hero.no-fixed {
+		height: auto;
+		.sprite-row {
+			position: relative !important;
+			#watsonLogoSpriteAnimation {
+				width: 256px;
+				height: 256px;
+				background: url('../img/tech/logo-mobile.jpg') no-repeat;
+				background-size: contain;
+				background-position: center top !important;
+			}
+		}
+	}
+
+	#tech-hero #hypothesisGenerationCallout {
+		top: 313px;
+		left: 10%;
+	}
+	#tech-hero #naturalLanguageCallout {
+		top: 223px;
+		right: 10%;
+	}
+	#tech-hero #dynamicLearningCallout {
+		top: 430px;
+		right: 10%;
+	}
+	#tech-hero #watsonIsCallout {
+		top: 600px;
+		width: 550px;
+		left: 50%;
+		margin-left: -275px;
+	}
+	#tech-hero #watsonIsCallout p {
+		font-size: 18px;
+	}
+
+	#tech-video-a {
+		background-color: #000;
+	}
+
+	/*tech-video */
+	.scene.youtube-scene {
+		height: auto;
+	}
+
+	#tech-cog-apps {
+		background: #3d3d3d;
+		padding: 64px 0 0;
+
+		h2, h3 {
+			color: #52b7ef;
+		}
+
+		h3 {
+			font-size: 40px;
+			line-height: 48px;
+		}
+
+		p {
+			font: 18px/1.4em "HelvRegularIBM", Arial, sans-serif;
+			color: white;
+			margin-bottom: 20px;
+		}
+	}
+
+	#tech-video-b {
+		background: #3d3d3d;
+		padding: 64px 0 0;
+
+		.yt-wrap {
+			.yt-poster-holder {
+				.yt-player-wrap {
+					.yt-content {
+						.ibm-columns {
+							.ibm-col-6-2 {
+
+								h1 {
+									text-align: left;
+									font-size: 47px;
+									line-height: 49px;
+									color: #52b7ef;
+								}
+								a.yt-btn {
+									margin-top: 75px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.video-columns {
+			position: relative;
+			margin-top: 45px;
+		}
+	}
+
+	#jeopardy-challenge-body {
+		background: #1e96fc;
+		background-image: -webkit-gradient(linear, 160deg, from(#69cefe), to(#1e96fc));
+		background-image: -webkit-linear-gradient(160deg, #69cefe, #1e96fc);
+		background-image: -moz-linear-gradient(160deg, #69cefe, #1e96fc);
+		background-image: -o-linear-gradient(160deg, #69cefe, #1e96fc);
+		background-image: -ms-linear-gradient(160deg, #69cefe, #1e96fc);
+		background-image: linear-gradient(160deg, #69cefe, #1e96fc);
+	}
+
+	/*tech-bio */
+	#tech-bio {
+		.column.context {
+			overflow: hidden;
+		}
+		.column.text {
+			display: table;
+			padding-left: 5%;
+			padding-right: 5%;
+			.text-wrap {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	#tech-caption {
+		h2 {
+			max-width: 980px;
+			margin: 0 auto;
+		}
+	}
+
+}
+
+/**
+ * break points
+ */
+@media screen and (max-width: 800px) {
+	.watson-tech {
+		.content {
+			max-width: 640px;
+		}
+		h2 {
+			font-size: 52px;
+			line-height: 50px;
+		}
+
+		#tech-hero {
+			.sprite-row {
+				h2 {
+					font-size: 75px;
+				}
+
+				#watsonIsCallout {
+					p {
+						font: 16px/ 19px $font-regular;
+					}
+				}
+			}
+		}
+
+		#tech-video-b {
+			.yt-wrap {
+				.yt-poster-holder {
+					.yt-player-wrap {
+						.yt-content {
+							.ibm-columns {
+								.ibm-col-6-2 {
+
+									h1 {
+										font-size: 24px;
+										line-height: 28px;
+									}
+									a.yt-btn {
+										margin-top: 75px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.watson-tech {
+		.content {
+			max-width: 600px;
+		}
+		#tech-hero {
+			height: auto;
+
+			.sprite-row {
+				position: relative;
+				height: auto;
+
+				h2 {
+					font-size: 50px;
+				}
+				.sprite-callout {
+					margin: 0 auto;
+					padding-bottom: 20px;
+					width: 70% !important;
+				}
+				#watsonIsCallout {
+					left: 0;
+					margin-left: auto;
+
+					p {
+						padding: 0 !important;
+						strong {
+							display: block;
+						}
+					}
+				}
+			}
+
+		}
+		#tech-video-b {
+			.yt-wrap {
+				.yt-poster-holder {
+					.yt-player-wrap {
+
+						.yt-content {
+
+							.ibm-columns {
+								.ibm-col-6-2 {
+									h1 {
+										font-size: 20px;
+										text-align: center;
+										color: #fff;
+									}
+									a.yt-btn {
+										margin-top: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 579px) {
+	.watson-tech {
+		h2.quote {
+			font-size: 24px;
+			line-height: 24px;
+		}
+		/*tech-hero*/
+		#tech-hero {
+			.sprite-row {
+				.icon-arrow-down-bounce {
+					display: none;
+				}
+			}
+		}
+	}
+}
+

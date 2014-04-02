@@ -1,0 +1,297 @@
+.watson-about {
+
+	background: #000;
+
+	h2 {
+		font-size: 65px !important;
+		margin: 0 0 20px 0px;
+		line-height: 0.95em;
+	}
+
+	h3 {
+		font-size: 35px;
+		line-height: 1.2em;
+	}
+
+	p {
+		font-size: 20px;
+		margin-left: 0px;
+		line-height: 1.2em;
+	}
+
+	ul {
+		li {
+			list-style: none;
+			padding: 0;
+		}
+	}
+
+	ul li:before, .ibm-bullet:before {
+		content: none;
+	}
+
+	/** SCENES **/
+	#headquarters {
+		background: url('../img/about/building-hq.jpg') no-repeat center 0;
+		background-size: cover;
+
+		padding-bottom: 15%;
+		color: #ffffff;
+
+		img {
+			width: 100%;
+		}
+		h2 {
+			font-size: 40px;
+			margin: 60px 0 25px;
+			line-height: 0.95em;
+		}
+		p, h3 {
+			margin-bottom: 20px;
+			color: #ffffff;
+		}
+		h3 {
+			font-size: 20px;
+			line-height: 1.1em;
+			margin-bottom: 5px;
+		}
+		a {
+			text-decoration: none;
+			font-family: 'helvneue_for_ibmbold_italic';
+			font-size: 17px;
+			color: #c1f435;
+		}
+		a:after {
+			content: url("../img/about/headquarters_arrow.png");
+			margin-left: 5px;
+		}
+	}
+	#team {
+		background: url('../img/about/bg-team.jpg') no-repeat center 0;
+		background-size: cover;
+		img {
+			width: 100%;
+			margin-top: 70px;
+		}
+		h2 {
+			color: #62cdff;
+			font-size: 40px;
+			margin-top: 60px;
+			line-height: 0.95em;
+		}
+		p, h3 {
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+		h3 {
+			font-size: 20px;
+			line-height: 1.1em;
+			margin-bottom: 20px;
+		}
+		a {
+			text-decoration: none;
+			font-family: 'helvneue_for_ibmbold_italic';
+			font-size: 17px;
+			color: #62cdff;
+		}
+		a:after {
+			content: url("../img/about/team_arrow.png");
+			margin-left: 5px;
+		}
+	}
+
+	#about-hero {
+		height: 644px;
+		position: relative;
+		overflow: hidden;
+		background: #000000 url('../img/about/about-hero.jpg') no-repeat center 0;
+		background-size: cover;
+		color: #fff;
+
+		h1 {
+			font: 121px/1 $font-bold-italic;
+			letter-spacing: 1.4px;
+			font-weight: 300;
+			margin-top: 284px;
+			line-height: 118px;
+		}
+	}
+
+	#next {
+		background: #ccc url('../img/developer/changes_bg.jpg') no-repeat;
+		background-size: cover;
+
+		h2 {
+			text-align: left;
+			font-size: 40px;
+			color: #12B5DC;
+			margin-top: 40px;
+		}
+		p {
+			text-align: left;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	#about-voices {
+		background: #333;
+		padding: 0;
+		.ibm-columns {
+			h2 {
+				font: 40px/1 $font-bold-italic;
+				color: #b5dc2e;
+				padding-bottom: 10px;
+				margin: 62px 0 0 0;
+				line-height: 0.95em;
+			}
+			a {
+				color: #FFF;
+				text-decoration: none;
+			}
+		}
+
+		.voices-wrap {
+			max-width: 980px;
+			overflow: hidden;
+			margin: 0 auto;
+			padding: 30px 0;
+
+			iframe {
+				height: 0px;
+				width: 100%;
+				overflow: hidden;
+				border: 0;
+			}
+		}
+	}
+	#about-careers {
+		background: #ee2515;
+		background: -o-linear-gradient(right, #F15C53 0%, #D62374 100%);
+		background: -moz-linear-gradient(right, #F15C53 0%, #D62374 100%);
+		background: -webkit-linear-gradient(right, #F15C53 0%, #D62374 100%);
+		background: -ms-linear-gradient(right, #F15C53 0%, #D62374 100%);
+		background: linear-gradient(to right, #F15C53 0%, #E54362 50%, #D62374 100%) repeat scroll 0 0 transparent !important;
+
+		padding: 40px 0;
+		a {
+			text-decoration: none;
+			font-family: 'helvneue_for_ibmbold_italic';
+			font-size: 17px;
+			color: #000;
+		}
+		a:after {
+			content: url("../img/developer/dev_resource_arrow.png");
+			margin-left: 5px;
+		}
+		h2 {
+			font-size: 40px;
+		}
+		h3 {
+			font-size: 20px;
+		}
+		p {
+			font-family: $font-regular;
+			width: 100%;
+			display: inline-block;
+			font-size: 21px;
+			margin: 20px 0;
+			color: #FFF;
+			a {
+				color: white;
+				text-decoration: none;
+			}
+			a:hover {
+				color: black;
+			}
+			.link-out {
+				background: url('../img/mdc/white-linkout-arrow.png');
+				display: inline-block;
+				margin: 0 0 -.1em .2em;
+				width: 10px;
+				height: 18px;
+			}
+			a:hover span.link-out {
+				background: url('../img/mdc/black-linkout-arrow.png');
+			}
+		}
+
+	}
+}
+
+/**
+ * break points
+ */
+
+@media screen and (max-width: 800px) {
+	.watson-about {
+		h2 {
+			font-size: 58px !important;
+		}
+		h3 {
+			font-size: 25px !important;
+		}
+		p {
+			font-size: 16px !important;
+		}
+
+		#about-hero {
+			height: 452px;
+			h1 {
+				font-size: 98px !important;
+				margin-top: 234px;
+				line-height: 70px;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.watson-about {
+		#about-hero {
+			height: 352px;
+			h1 {
+				font-size: 88px !important;
+				margin-top: 160px;
+			}
+		}
+		#team {
+			img {
+				margin-top: 170px;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 579px) {
+	.watson-about {
+
+		h2 {
+			font-size: 38px !important;
+		}
+		h3 {
+			font-size: 20px !important;
+		}
+		p {
+			font-size: 15px !important;
+		}
+
+		#about-hero {
+			height: 232px;
+			h1 {
+				font-size: 58px !important;
+				margin-top: 100px;
+			}
+		}
+		#team {
+			h2 {
+				margin-top: 20px;
+			}
+			img {
+				margin-top: 20px;
+			}
+		}
+	}
+}
