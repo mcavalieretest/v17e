@@ -470,10 +470,20 @@
 <br/>
 <object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
 <param name="movie" value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" />
+
+		<!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340">
+        <!--<![endif]-->
+          <p>Alternative content</p>
+        <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+
 <param name="allowScriptAccess" value="always"/>
 <param name="allowFullScreen" value="true"/>
 
-<embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object>
+<!--<embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed>-->
+</object>
 
 <p class="ibm-button-link"><a href="//livestream.com/ibmsystemz" class="ibm_cci-btn">Mobile users watch on Livestream.com</a></p>
 </div>
