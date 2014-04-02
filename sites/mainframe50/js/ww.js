@@ -472,7 +472,7 @@ var checkMLinksExist = setInterval(function() {
 	//wait page be ready
 	var check = setInterval(function(){checkPage()},1000);
 	function checkPage(){
-		var elem = document.getElementById('ibm-footer');
+		var elem = document.getElementById('ibm_cci-progress1');
 		if(elem != null){
 			clearTimeout(check);
 			pageIsReady();
