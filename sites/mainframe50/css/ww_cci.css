@@ -290,7 +290,7 @@ sites/
   font-size: 1.5rem !important;
 }
 
-@media (max-width: 1115px) and (min-width: 0) {
+@media (min-width: 1115px) {
   #ibm-content #story-col-4-2 {
     width: 520px;
   }
