@@ -274,7 +274,12 @@
 	font-size: 1.5rem !important;
 }
 
-
+//Adjusting the page to work on < width 1100px 
+@media (max-width: 1115px) and (min-width: 0){
+	#ibm-content #story-col-4-2 {
+		width: 520px;
+	}
+}
 
 .dijitDialogPaneContent .ibm-common-overlay.ibm-overlay-alt-two.ibm-mainframe50-overlay {
     width: 980px;
