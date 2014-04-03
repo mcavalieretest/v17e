@@ -472,7 +472,7 @@ var checkMLinksExist = setInterval(function() {
 	//wait page be ready
 	var check = setInterval(function(){checkPage()},1000);
 	function checkPage(){
-		var elem = document.getElementById('p4');
+		var elem = document.getElementById('ibm-pcon');
 		if(elem != null){
 			clearTimeout(check);
 			pageIsReady();
