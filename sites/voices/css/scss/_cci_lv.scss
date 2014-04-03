@@ -45,6 +45,8 @@
 		// font: italic 1.4rem/20px "HelvLightIBM";
 		// display:none;
 		.ibm_cci--tweet-content-text {
+			margin-top:5px;
+
 			span.ibm_cci--tweet-description-readmore a {
 				color: #000;
 				font: italic 1.4rem/20px "HelvLightIBM";
@@ -128,8 +130,7 @@
 }
 
 .ibm-columns.ibm_cci-lv__modifier #{$ibm-listview-unro} .ibm_cci--ttb {
-	//
-	p.ibm_cci--tweet-description {
+	.ibm_cci--tweet-description {
 		font: italic 1.4rem/20px "HelvLightIBM";
 		display:none;
 

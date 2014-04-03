@@ -10,7 +10,6 @@ $(function() {
             window.location.hash = "#voices-" + value;
         }
     };
-
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (END)
     // MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)				
         $("ul.ibm_cci--ls--toggle--ul li").on("click", "a", function(event) {
@@ -357,11 +356,16 @@ $(function() {
         f_modify_datafeed: function(data) {
             var self = this, feed_data = data || null;
             try {
-                if (feed_data) {
+                if(feed_data == "" || feed_data == undefined) {
+                    var $result = $('.ibm_cci--sr p');
+                    $result.append("Data not available");
+                }
+                if (feed_data){
+                    feed_data.rank = this.f_mod_rank(feed_data.rank || "");
                     feed_data.content = this.f_mod_content(feed_data.content || "");
-                    feed_data.published = this.f_pretty_date(feed_data.published);
+                    feed_data.published = this.f_pretty_date(feed_data.published || "");
                     feed_data.domain = this.f_truncateDomain(feed_data.domain || "");
-                    if (feed_data.mediaURL || feed_data.altMediaURL) {
+                    if (feed_data.mediaURL || feed_data.altMediaURL || "") {
                         feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
                         feed_data.altMediaURL = this.f_preloadImages(feed_data.altMediaURL || "");
                     }
@@ -380,20 +384,25 @@ $(function() {
                 }
                 return feed_data;
             } catch (e) {
-                console.log("Error inside the modify_datafeed" + e);
+                console.log("Error inside the modify_datafeed: "+e);
             }
+        },
+        f_mod_rank: function(rank){
+            var newRank = 0;
+            if(rank < 10) {
+                newRank = '0'+rank;
+            }else{
+                newRank = rank;
+            }
+            return newRank;
         },
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
             var self = this;
-            
-            if(imgURL == "" && imgURL.length === 0) return imgURL;
-            
-            if(imgURL != "" && imgURL.length > 0){
-                img.src = imgURL;
-                img.onload = self.f_imgOnloadfunc(args);
+            img.onload = function(){
+                console.log("inside onload: "+img.naturalWidth);    
             }
-            // console.log("outside onload: "+img.naturalWidth);
+            console.log("outside onload: "+img.naturalWidth);
             return imgURL;
         },
         f_truncateDomain: function(domain) {
@@ -415,7 +424,7 @@ $(function() {
             return domain;
         },
         f_mod_content: function(data) {
-            var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, '<a href="$1" target="_blank">$1</a>').replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1" target="_blank">#$1</a>').replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1" target="_blank">@$1</a>');
+            var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, '<a href="$1">$1</a>').replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1">#$1</a>').replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1">@$1</a>');
             return update_content;
         },
         f_pretty_date: function(timeVal) {
@@ -499,7 +508,7 @@ $(function() {
                     }
                 }
             } catch (e) {
-                console.log("Error logged in the DOM ready $.when" + e);
+                console.log("Error logged in the DOM ready $.when: "+e);
             }
         },
         f_removeNodes: function(nodes) {

@@ -245,8 +245,8 @@
 	h2.ibm_cci--tweet-title{
 		font: normal 2.4rem/30px "HelvBoldIBM";
 		color: #000;
-		margin:10px 0 0 0;
-		padding:0;				
+		margin:5px 0 0 0;
+		padding:0 !important;				
 	}
 }
 
@@ -370,5 +370,6 @@
 
 #{$ibm-widget-js} .ibm-card img {
 	display: inline;
+	margin-top:0;
 }
 
