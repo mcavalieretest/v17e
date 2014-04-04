@@ -36,12 +36,18 @@
 
 <script src="../js/ww.js" type="text/javascript"></script>
 
-<style>
+<style type="text/css">
 	
-.emboss{
-	text-shadow:0px 1px 0px rgba(255,255,255,.95) ;}
+.emboss {
+	text-shadow:0px 1px 0px rgba(255,255,255,.95) ;
 }
 
+#ibm-leadspace-head.ibm-alternate-background {
+    background: url("assets/bg-back.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#ibm-leadspace-head #ibm-leadspace-body {
+    background: url("assets/bg-front.gif") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+}
 .what-is-v17e {background: url(assets/bg-shad-right-half.png) no-repeat center 90%;}
 .fade-up-sharp {background: url(assets/gradient-bg-a.png) repeat-x center 100%;}
 .fade-up {background: url(assets/gradient-bg-b.png) repeat-x center 100%;}
@@ -87,18 +93,20 @@
 </div>
 <!-- MASTHEAD_END -->
 <!--! LEADSPACE_BEGIN -->
-<div id="ibm-leadspace-head" class="ibm-alternate emboss ">
+
+<div id="ibm-leadspace-head" class="ibm-alternate-background emboss"> 
 <div id="ibm-leadspace-body">
 <div class="ibm-columns">
-<div class="ibm-col-6-4">
-<h1 class="text-wemb">v17e Grid Options</h1>
-<p><em><span>Subtitle text header.</span> This is the body copy below the subtitle text.</em></p>
-<p><a href="REPLACE.HTML">Learn more</a></p>
+<div class="ibm-col-6-3">
+<h1>Experience First</h1>
+<p class="ibm-no-mobile"><em><span>v17e Primer site</span> What you need to know to get started with the v17e design system</em></p>
 </div>
 </div>
 </div>
 </div>
+
 <!-- LEADSPACE_END -->
+
 
 
 <!--! CONTENT_NAV_BEGIN -->
@@ -106,10 +114,11 @@
 
 <div id="ibm-primary-tabs">
 <ul class="ibm-tabs">
-	<li><a href="index.html">v17e Overview</a></li>
-	<li><a href="layouts.html">Page Layouts</a></li>
+	<li><a href="index.html">Overview</a></li>
+	<li><a href="layouts.html">Layouts</a></li>
 	<li class="ibm-active"><a href="patterns.html">Design Patterns</a></li>
-	<li><a href="faqs.html">FAQ's</a></li>
+	<li><a href="list_of_codeUpdate.html">Getting Started</a></li>
+	<li><a href="upcoming.html">Upcoming Patterns</a></li>
 </ul>
 </div>
 
@@ -233,6 +242,7 @@
 					<li><a class="ibm-forward-link" href="paragraph-test.html">Paragraph</a></li>
 					<li><a class="ibm-forward-link" href="../templates/template_elements/pullquote.html">Pullquote</a></li>
 					<li><a class="ibm-forward-link" href="../templates/spacing.html">Spacing</a></li>
+					
 				</ul>
 		</div>					
 	</div>
