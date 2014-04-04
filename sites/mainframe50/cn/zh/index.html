@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Copyright IBM Corp. 2014"/>
+		<meta name="Keywords" content="IBM, 大型机服务器, 大型机系统, 大型机, Mainframe50, 进步的动力, System z, zEnterprise, 大型机周年纪念, 大型机大师, z 代, Sabre 订票系统, 阿波罗 11 号登月, System/360, 改革, IT 创新, 创新"/>
+		<meta name="DC.Date" scheme="iso8601" content="2014-03-14"/>
+		<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM  authoring:IBM"/>
+		<meta name="Security" content="Public"/>
+		<meta name="Abstract" content="IBM 大型机是一款革命性的的计算系统，正在促使已知的企业、整个行业乃至全世界发生翻天覆地的变化。"/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="2014-03-13"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
+		<meta name="Owner" content="Kevin T Clark/Raleigh/IBM"/>
+		<meta name="DC.Language" scheme="rfc1766" content="zh"/>
+		<meta name="IBM.Country" content="CN"/>
+		<meta name="Robots" content="index,follow"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+		<meta name="Description" content="IBM 大型机是一款革命性的的计算系统，正在促使已知的企业、整个行业乃至全世界发生翻天覆地的变化。"/>
+		
+<!--! PageTitle -->	
+<title>IBM Mainframe50</title>
+<link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../../css/ww_cci.css" rel="stylesheet" type="text/css" />
+<script src="../../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+dojo.addOnLoad(function(){
+	var ribbon = dojo.query('.ibm-ribbon2 .ibm-container-body'); 
+	var s = new ibmweb.ribbon({
+		srcNodeRef: ribbon[0],
+		autoscroll: true, 
+		freeScroll: true,
+		interval: 5000
+	});
+
+	dojo.query('.ibm-ribbon2').forEach(function(i){
+		dojo.addClass(i, 'ibm-ribbon');
+	});
+		
+	s.startup();
+    
+    // ------- custom carousel ------------------
+    //  - user clicks thumbnail image, we show correct panel and hide others
+    /// contact:adestefa@ibm.com
+    var iOSCheck = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
+    var viewportHeight = jQuery(window).height();
+    // filter iphones
+    if ((iOSCheck) && (viewportHeight < 768)) {
+        // show full version of each for mobile
+        showPanel("p5");
+    // show small image thumbs    
+    } else {
+        // show first panel in custom carousel
+        showPanel("p1");
+        // set event listeners for each thumbnail image using shared class name
+        dojo.query('.panel_link_1').onclick( function(evt) {showPanel("p1");});
+        dojo.query('.panel_link_2').onclick( function(evt) {showPanel("p2");});
+        dojo.query('.panel_link_3').onclick( function(evt) {showPanel("p3");});
+        dojo.query('.panel_link_4').onclick( function(evt) {showPanel("p4");});
+    }
+    // custom carousel controller driven by thumbnail image links 
+    function showPanel (id) {
+        // hide all panels 
+        dojo.query('.panel').forEach(function(i) {dojo.style(i, "display", "none");});
+        // show target panel by id
+        dojo.style(dojo.byId(id), "display", "block");
+    }    
+});
+
+</script>
+
+<!-- AddThisEvent -->
+<script type="text/javascript" src="http://js.addthisevent.com/atemay.js"></script>
+    
+<!-- AddThisEvent Settings -->
+<script type="text/javascript">
+addthisevent.settings({
+	mouse		: false,
+	css			: false,
+	outlook		: {show:true, text:"Outlook Calendar"},
+	google		: {show:true, text:"Google Calendar"},
+	yahoo		: {show:true, text:"Yahoo Calendar"},
+	ical		: {show:true, text:"iCal Calendar"},
+	hotmail		: {show:true, text:"Hotmail Calendar"},
+	facebook	: {show:true, text:"Facebook Calendar"}
+});
+</script>
+
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!-- MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options">
+<ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">选择国家/地区: </span>中国</a></li>
+</ul>
+</div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/cn/zh/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/cn/zh/">站点地图</a></li>
+</ul>
+<div id="ibm-search-module">
+<form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
+<p>
+<label for="q"><span class="ibm-access">搜索</span></label>
+<input type="text" maxlength="100" value="" name="q" id="q"/>
+<input type="hidden" value="17" name="v"/>
+<input type="hidden" value="utf" name="en"/>
+<input type="hidden" value="zh" name="lang"/>
+<input type="hidden" value="cn" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="提交"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content" class="blueback">
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<!--! COLUMN VARIATIONS START -->
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-header-band">
+
+<div class="ibm-columns">
+
+<div id="story-col-4-2" class="ibm-col-4-2">
+
+<h1>让<span>脱颖而出</span></h1>
+<p class="ibm_cci-subtitle"><em>成为可能</em></p>
+
+<p class="ibm_cci-intro"><span>IBM Mainframe50</span></p>
+<p>大型机是一款革命性的的计算系统，正在促使已知的企业、整个行业乃至全世界发生翻天覆地的变化。</p>
+ 
+<p>我们不断发展 IT，与时俱进，在云、分析、安全和移动计算领域开发新方法，帮助解决前所未有的挑战。我们与客户精诚合作，每天都在致力于技术的精益求精。</p>
+ 
+<p>但大型机的所有开拓创新都是为了完成一个永久的使命：交付全新的技术，让脱颖而出成为可能，并改善世界的运作模式。</p>
+
+<p class="ibm_last"><em>请收看美国东部时间 4 月 8 日星期二下午 2 点 NYC 的 Mainframe50 现场直播。</em></p>
+
+<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>点击观看 4 月 8 日的现场直播</strong></a> &nbsp; 
+<span class="addthisevent"><a class="ibm_cci-btn" href="#"><strong>添加到日程表</strong>
+    <span class="_start">04-08-2014 14:00:00</span>
+    <span class="_end">04-08-2014 16:30:00</span>
+    <span class="_zonecode">15</span>
+    <span class="_summary">System Z Livestream event</span>
+    <span class="_description">Tune in on Tuesday, April 8 at 2 p.m. ET for the System z event live.</span>
+    <span class="_location">New York City</span>
+    <span class="_all_day_event">false</span>
+    <span class="_date_format">MM/DD/YYYY</span>
+</a></span></p>
+
+<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>点击转至直播</strong></a></p>
+
+</div>
+
+</div>
+
+</div>
+<!-- 4 2 grid end-->
+
+
+<!--! Ribbon grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-progress-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-1-1">
+<h2><span>进步</span>的动力</h2>
+
+<p class="ibm_cci-intro"><span>他们改变了我们的生活。</span>他们富有远见卓识的工作让我们的世界变得更加智慧，更加互联互通。</p>
+
+<p class="ibm_cci-intro ibm_cci-call">经常浏览该站点，了解更多不同凡响的故事。</p>
+
+
+
+<!-- Carousel START -->
+<div class="ibm-container ibm-ribbon2 ibm-no-rule ibm-no-mobile">
+<div class="ibm-container-body">
+			
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress1">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>第一国民银行</h3>
+				<p>面向非洲 80% 的无银行账户人群的关键金融服务</p>
+				<p>FNB 的“一体化银行”使得非洲数百万的人能够启动新业务、存钱念大学并提高生活质量。</p>
+				</div>
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>			
+            </div>
+            
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress2">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>英国气象局</h3>
+				<p>为增强企业效益和拯救生命提供重要报告</p>
+				<p>英国气象局每天都会生成数以千计的天气预报，帮助全球行业和政府作出重大决策</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+
+<!--! 4-2 in carousel -->            
+            <div class="ibm-columns" id="ibm_cci-progress3">
+				<div class="ibm-col-4-2">
+				<div class="ibm-inner-margin">
+				<h3>类风湿关节炎梦想挑战赛</h3>
+				<p>旨在为长期受病痛折磨的数百万人提供帮助的尖端研究</p>
+				<p>本次国际大赛在大型机上运用分析，从病患的反应判断如何治疗类风湿关节炎。</p>
+				</div>		
+				</div>
+				<div class="ibm-col-4-2">
+					&nbsp;
+				</div>		
+            </div>
+            
+</div>
+</div>
+
+             <!-- mobile version -->
+             <div id="progress-mobile" class="ibm-columns panel ibm-mobile">
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress3.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>第一国民银行</h2>
+				<p>面向非洲 80% 的无银行账户人群的关键金融服务</p>
+				<p>FNB 的“一体化银行”使得非洲数百万的人能够启动新业务、存钱念大学并提高生活质量。</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress2.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>英国气象局</h2>
+				<p>为增强企业效益和拯救生命提供重要报告</p>
+				<p>英国气象局每天都会生成数以千计的天气预报，帮助全球行业和政府作出重大决策</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/progress1.jpg" width="940" height="415" alt="" class="ibm-resize" />
+				<h2>类风湿关节炎梦想挑战赛</h2>
+				<p>旨在为长期受病痛折磨的数百万人提供帮助的尖端研究</p>
+				<p>本次国际大赛在大型机上运用分析，从病患的反应判断如何治疗类风湿关节炎。</p>
+				</div>		                
+								
+            </div>
+
+<!-- Carousel END -->
+
+</div>
+
+</div>
+
+</div>
+<!--! Ribbon grid -->
+
+
+
+
+<!--! 4 2 grid -->
+
+<div class="ibm-band ibm_cci-site-band ibm_cci-z-band">
+
+<div class="ibm-columns">
+
+<div class="ibm-col-4-2">
+&nbsp;
+</div>
+<div class="ibm-col-4-2">
+
+<h2><span style="padding-top: 40px">z 代</span></h2>
+<p class="ibm_cci-intro"><span>它们将创造未来。</span></p>
+
+<p class="ibm_last">每一年，遍布 67 个国家或地区的 1000 多所大学的学生都在学习如何利用大型机来解决未来的重大挑战。</p>
+<p class="ibm-button-link"><a class="ibm-media ibm_cci-btn" href="https://www.youtube.com/watch?v=wAU5kCIGBNQ">播放视频</a></p>
+
+<p class="ibm_last">2014 年 4 月 7 日，来自世界各地的 43 名优秀学生将齐聚纽约，参加首届“大型机大师世界冠军赛”。</p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.ibm.com/systems/z/masterthemainframe">了解该赛事</a></p>
+</div>
+
+
+<div class="ibm-col-6-5 ibm_cci-ey">
+<h2><span>50 年辉煌</span></h2>
+
+<p class="ibm_cci-intro"><span>他们造就了现代世界。</span> 各个组织和领导者利用世界上最具创新意义的可信平台来彻底改造业务、改变行业，帮助解决一些全球最大的挑战。这些成就已融入到行业和社会结构中。</p>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- custom carousel control -->
+<div class="ibm-band ibm_cci-site-band">
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<div class="ibm-container ibm-no-rule">
+<div class="ibm-container-body">
+
+            <!-- Sabre -->
+            <div id="p1" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sabre 订票系统</h2>
+				<p>Sabre 是全球第一款自动化旅客订票系统，已成为当今网络旅游业的奠石。这款 60 年代编写的应用程序在两台 IBM 7090 大型机上启动，目前依然能够一星期处理数十亿起交易。</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" title="大赌注到大智慧" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" title="阿波罗 11 号登月" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" title="zEnterprise 系统" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- Watson -->
+            <div id="p2" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" title="Sabre 订票系统" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>大赌注到大智慧</h2>
+				<p>1964 年 4 月 7 日，IBM CEO Thomas J. Watson Jr 为 System/360 大型机业务孤注一掷 - 关闭了其他所有生产线，坚信这就是未来计算的新境界。今天，IBM 在大型机上运行着世界上最大的私有云。它通过近 100 个不同数据仓库提供分析洞察，使超过 20 万的 IBM 员工能够做出更好的决策。</p>
+				</div>
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+            
+            <!-- apollo -->
+            <div id="p3" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>		
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>阿波罗 11 号登月</h2>
+				<p>1969 年，美国人 Neil Armstrong 和 Buzz Aldrin 成为首批在月球上行走的人类，永远地改变了我们对宇宙和自身能力的看法。正是 IBM System/360 大型机处理了登月和升空的数据。</p>
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-zenterprise-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_4" />
+				</div>		
+            </div>
+
+            <!-- z enterprise -->
+             <div id="p4" class="ibm-columns panel">
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-sabre-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_1" />
+				</div>	
+				<div class="ibm-col-6-1">
+					<img src="../../i/50-bet-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_2" />
+				</div>	
+                <div class="ibm-col-6-1">
+					<img src="../../i/50-apollo-bg.jpg" width="140" height="93" alt="" class="ibm-resize panel_link_3" />
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>zEnterprise 系统</h2>
+				<p>大型机在最初的 50 年中一直在不断改造。性能已提升超过 78000%。内存容量已增加了 786000 多倍。如果把大型机比作一台跑车，那么它的开动速度几乎达到 1200 万英里/小时 - 以此速度，两秒钟内就能到达月球。想象一下，这能为您的企业带来什么。</p>
+				</div>	
+				
+            </div>
+     
+             <!-- mobile version -->
+             <div id="p5" class="ibm-columns panel">
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-sabre-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<!-- removed <h3 class="large"> which was giving drop shadow for carousel -->
+                <h2>Sabre 订票系统</h2>
+				<p>Sabre 是全球第一款自动化旅客订票系统，已成为当今网络旅游业的奠石。这款 60 年代编写的应用程序在两台 IBM 7090 大型机上启动，目前依然能够一星期处理数十亿起交易。</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-bet-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>大赌注到大智慧</h2>
+				<p>1964 年 4 月 7 日，IBM CEO Thomas J. Watson Jr 为 System/360 大型机业务孤注一掷 - 关闭了其他所有生产线，坚信这就是未来计算的新境界。今天，IBM 在大型机上运行着世界上最大的私有云。它通过近 100 个不同数据仓库提供分析洞察，使超过 20 万的 IBM 员工能够做出更好的决策。</p>
+				</div>
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-apollo-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>阿波罗 11 号登月</h2>
+				<p>1969 年，美国人 Neil Armstrong 和 Buzz Aldrin 成为首批在月球上行走的人类，永远地改变了我们对宇宙和自身能力的看法。正是 IBM System/360 大型机处理了登月和升空的数据。</p>
+				</div>		                
+				<div class="ibm-col-6-3">
+				<img src="../../i/50-zenterprise-bg.jpg" width="460" height="253" alt="" class="ibm-resize" />
+				<h2>zEnterprise 系统</h2>
+				<p>大型机在最初的 50 年中一直在不断改造。性能已提升超过 78000%。内存容量已增加了 786000 多倍。如果把大型机比作一台跑车，那么它的开动速度几乎达到 1200 万英里/小时 - 以此速度，两秒钟内就能到达月球。想象一下，这能为您的企业带来什么。</p>
+				</div>	
+				
+            </div>
+                
+            
+</div>
+</div>
+<!-- Carousel END -->
+
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+
+
+<div class="ibm-columns">
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-systemz.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>发现 System z</h2>
+	<p>了解用于云的大型机和全新 zEnterprise 产品的更多信息。</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www-03.ibm.com/systems/cn/z/">了解更多</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-ziq.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>什么是 zIQ？</h2>
+	<p>利用该动画系列片来增加您的大型机知识。</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-2" onclick="ibmweb.overlay.show('overlay-2',this);return false;">观看视频</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-tumblr.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Mainframe50 Tumblr</h2>
+	<p>每日更新，这个 Tumblr 可用作支持大型机创新的中心。</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://mainframe50.tumblr.com">浏览更多</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-mtm.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>世界冠军赛</h2>
+	<p>来自世界各地的 40 多名学生角逐首届企业级计算赛事的冠军。</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="http://www.ibm.com/systems/z/masterthemainframe">了解更多</a></p>
+</div>
+
+<div class="ibm-col-6-1 small">
+<img src="../../i/foot-livestream.jpg" width="140" height="64" alt="" class="ibm-resize" />
+	<h2>Mainframe50 活动直播</h2>
+	<p>请收看美国东部时间 4 月 8 日星期二下午 2 点 NYC 的 System z 活动现场直播。</p>
+	<p class="ibm-ind-link-after"><a class="ibm-cta-chevron-link" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;">观看直播</a></p>
+</div>
+
+<div class="ibm-col-6-1">
+	<h2>加入谈话</h2>
+
+<ul class="ibm-link-list">
+<li><a class="ibm-twitter-link" href="https://twitter.com/IBM_System_z">Twitter</a></li>
+<li><a class="ibm-facebook-link" href="https://www.facebook.com/IBMsystemz">Facebook</a></li>
+<li><a class="ibm-youtube-link" href="http://www.youtube.com/user/IBMSystemZ">YouTube</a></li>
+<li><a class="ibm-livedoor-link" href="http://paper.li/IBM_System_z/1386866312">Paper.li</a></li>
+<li><a class="ibm-blog-link" href="https://www-304.ibm.com/connections/blogs/systemz/?lang=en_us">博客</a></li>
+<li><a class="ibm-linkedin-link" href="http://www.linkedin.com/groups/IBM-System-z-4065367">LinkedIn</a></li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- OVERLAY 1 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">关闭 [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-title">
+<h2>实时观看</h2>
+</div>
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+<object width="620" height="385" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="lsplayer">
+<param value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" name="movie" />
+<param value="always" name="allowScriptAccess" />
+<param value="true" name="allowFullScreen" />
+
+<embed width="620" height="385" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsoftware&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777" wmode="transparent" name="lsplayer" />
+
+</object>
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 1 END -->
+
+<!-- OVERLAY 2 BEGIN -->
+<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
+<div class="ibm-head">
+<p><a class="ibm-common-overlay-close" href="#close">关闭 [x]</a></p>
+</div>
+<div class="ibm-body">
+<div class="ibm-main">
+<div class="ibm-container ibm-alternate">
+<div class="ibm-container-body">
+
+<iframe width="640" height="360" src="//www.youtube.com/embed/afwcIBj80hs?list=PLezLS0Tuqb-5n8R-JtYVqa-wVYYs49TbB" frameborder="0"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ibm-footer"></div>
+</div>
+<!-- OVERLAY 2 END -->
+
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">页脚链接</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">联系 IBM</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">隐私条约</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">使用条款</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">辅助功能选项</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
