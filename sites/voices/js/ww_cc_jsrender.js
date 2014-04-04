@@ -84,7 +84,7 @@ $(function() {
                             // console.log("TRUE Condition: "+searchVal[i]);
                         }else{
                             // console.log("FALSE Condition: "+regex.test(searchVal[i]));
-                            alertText.addClass('ibm-cci-alert').html('').append('illegal characters in search string'+' : '+searchVal[i++]);
+                            alertText.addClass('ibm-cci-alert').html('').append('illegal characters in search string'+' : '+searchVal[i]);
                             search.val('').blur();
                         }
                     }
