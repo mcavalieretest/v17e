@@ -1,6 +1,7 @@
 $(function() {
     // DEFAULT URL HASH (START)
     window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr("id");
+    var defaultValue = "comma,separated,values";
     // DEFAULT URL HASH (END)	
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (START)
     var updateURLHash = function(value) {
@@ -57,16 +58,43 @@ $(function() {
         vo.f_buildtiles();
         //REMOVE THE SPINNER 
         vo.f_removeNodes($("#ibm_cci-widget-js > span"));
+        
         //SEARCH FUNCTION (START)
-        $("form").on("submit", function() {
-            var search = $("#ibm-cc-search--field");
-            searchVal = $("#ibm-cc-search--field").val().toLowerCase();
-            searchVal = searchVal.split(",");
-            for (var i = searchVal.length - 1; i >= 0; i--) {
-                searchVal[i] = searchVal[i].trim();
-            }
-            search.val("");
-            vo.f_constructURL(searchVal.toString());
+         $("#ibm-cc-search--field").focusin(function(event){
+            event.preventDefault();
+            $('.ibm_cci--ls--search p').removeClass('ibm-cci-alert').html('');
+            $(this).val('');
+         });
+        
+        $("form").on("submit", function(event) {
+            // /^[a-zA-Z0-9]*$/ : /[^\w\s]/gi;
+            
+            var search = $("#ibm-cc-search--field"), 
+                regex = /^[a-zA-Z0-9 ]*$/,
+                searchVal = $("#ibm-cc-search--field").val().toLowerCase();
+                searchVal = searchVal.split(","),
+                filterVal = [],
+                alertText = $('.ibm_cci--ls--search p');
+
+                if(searchVal != '' && searchVal.length != 0 && searchVal[0] != "comma"){
+                    for(var i = searchVal.length - 1; i >= 0; i--) {
+                        if(regex.test(searchVal[i])){
+                            filterVal[i] = searchVal[i].trim();
+                            // console.log("TRUE Condition: "+regex.test(searchVal[i]));
+                            // console.log("TRUE Condition: "+searchVal[i]);
+                        }else{
+                            // console.log("FALSE Condition: "+regex.test(searchVal[i]));
+                            alertText.addClass('ibm-cci-alert').html('').append('illegal characters in search string'+' : '+searchVal[i++]);
+                            search.val('').blur();
+                        }
+                    }
+                }else{
+                    $('.ibm_cci--ls--search p').addClass('ibm-cci-alert').html('').append('Sorry! Search value entered is not valid!');
+                    search.blur().val(defaultValue);
+                }
+                search.val("");
+                console.log("before f_constructURL: "+searchVal);
+                vo.f_constructURL(filterVal.toString());                        
         });
         //SEARCH FUNCTION (END)
         //ALL TRENDING FUNCTION (START)
@@ -398,11 +426,11 @@ $(function() {
         },
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
-            var self = this;
+                img.src = imgURL;
             img.onload = function(){
-                console.log("inside onload: "+img.naturalWidth);    
+                // console.log("inside onload: "+img.naturalWidth);    
             }
-            console.log("outside onload: "+img.naturalWidth);
+            // console.log("outside onload: "+img.naturalWidth);
             return imgURL;
         },
         f_truncateDomain: function(domain) {

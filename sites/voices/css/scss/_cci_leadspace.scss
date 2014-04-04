@@ -262,6 +262,15 @@
 			opacity:1;
 		}
 	}
+
+	p.ibm-cci-alert{
+		font-family: $default-font-family;
+		font-size:10px;
+		color:#f00;
+		content: 'search field is empty';
+		float:left;
+		margin-top:11px;
+	}
 }
 /* LEADSPACE SEARCH BLOCK (END) */
 
