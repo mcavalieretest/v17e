@@ -1224,6 +1224,10 @@ sites/
     font-size: 1.7rem !important;
   }
 }
+#ibm-leadspace-body.story h1 {
+  padding-bottom: 0 !important;
+}
+
 /* AddThisEvent */
 .addthisevent-drop {
   display: inline-block;

@@ -1266,6 +1266,10 @@
 	}
 }
 
+#ibm-leadspace-body.story h1{
+	padding-bottom: 0 !important;
+}
+
 /* AddThisEvent */
 .addthisevent-drop 						{display:inline-block;position:relative;z-index:999998;font-family:arial;color:#333;text-decoration:none;text-decoration:none;}
 .addthisevent-drop:hover 				{color:#555;text-decoration:none;}
