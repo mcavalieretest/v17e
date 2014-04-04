@@ -1,0 +1,1245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<!-- 
+	NOTE:
+	This file is the master landing page template.
+	All comments starting with NOTE can also be removed!
+ -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<!-- Add meta tag to consistently detect the width on an iPad at 768px -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--
+<meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+-->
+
+		<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+		<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+		<meta name="DC.Rights" content="© Copyright IBM Corp. 2011"/>
+		<meta name="Keywords" content="REPLACE"/>
+		<meta name="DC.Date" scheme="iso8601" content="2012-09-19"/>
+		<meta name="Source" content="v17 template generator, template 17.02 delivery:IBM  authoring:IBM"/> <!-- Kindly change the values for "delivery" and "authoring" as per what is appropriate.  -->
+		<meta name="Security" content="Public"/>
+		<meta name="Abstract" content="REPLACE"/>
+		<meta name="IBM.Effective" scheme="W3CDTF" content="2012-09-19"/>
+		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
+		<meta name="Owner" content="Replace"/>
+		<meta name="DC.Language" scheme="rfc1766" content="en"/>
+		<meta name="IBM.Country" content="ZZ"/>
+		<meta name="Robots" content="index,follow"/>
+		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+		<meta name="Description" content="REPLACE"/>
+
+		<!-- Please ensure appropriate meta tag values are aligned with the standards -->
+<!--! PageTitle -->	
+<title>IBM v17e FAQs</title>
+<link href="../css/ww.css" rel="stylesheet" title="www" type="text/css" />
+<link href="../css/module.css" rel="stylesheet" title="www" type="text/css" />
+<!-- <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" /> -->
+
+<script src="../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+// Show hide function 
+jQuery(document).ready(function () {
+      jQuery('#toggle-view dt').click(function () {
+      	var text = jQuery(this).next('dd.answer');
+        if (text.is(':hidden')) {
+            text.slideDown('200');
+            jQuery(this).children('span').addClass('ibm-delete-link').removeClass('ibm-add1-link');
+            } 
+        else {
+            text.slideUp('200');
+            jQuery(this).children('span').removeClass('ibm-delete-link').addClass('ibm-add1-link');
+            }
+         });
+ });
+ 
+ 
+// Dropdown select function
+jQuery(function() {
+	function filterList(sortVal){
+	jQuery('dt, dd').css('display','none')
+ 		if(sortVal == 'all') {
+ 		jQuery('dt').css('display','block')
+ 		}
+ 		else {
+ 		jQuery('dt[data-sort*="' + sortVal + '"]').css('display', 'block')
+ 		}
+	};
+jQuery('.ibm-menu-list#ibm-sort select').change(function () {
+ 	filterList(this.value);
+ 	});
+ 	
+ 	
+
+ //Expand collapse toggle
+jQuery(".header").click(function () {
+	$header = jQuery(this);
+	 //getting the next element
+	$content = $header.next().children('dt:visible').next('dd');
+	
+	 //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+	$content.slideToggle(500, function () {
+	  //execute this after slideToggle is done
+	  //change text of header based on visibility of content div
+	  $header.text(function () {
+	    //change text based on condition
+	        return $content.is(":visible") ? "Collapse All" : "Expand All";
+	          
+	        });
+	 
+	   $content.is(":visible")?$header.next().children('dt').children('span').addClass('ibm-delete-link').removeClass('ibm-add1-link')
+	  							:$header.next().children('dt').children('span').removeClass('ibm-delete-link').addClass('ibm-add1-link');
+	    });
+		
+	});
+
+ });
+ 
+
+</script>
+<style type="text/css">
+.container dd.answer {
+	display:none;
+}
+dt.question{
+	cursor:pointer;
+	padding-bottom: 10px;
+}
+#toggle-view {
+padding-top:20px;
+}
+
+#toggle-view span.ibm-add1-link,
+#toggle-view span.ibm-delete-link {
+     float: right;
+     margin-right:25px;
+     
+}
+span.ibm-add1-link:hover:before {
+   color:#A5Df00;
+}
+span.ibm-delete-link:hover:before {
+   color:#fd0202;
+}
+.container .header {
+    color:#00649D;
+    padding: 2px;
+    cursor: pointer;
+    text-align:right;
+    
+}
+</style>
+</head>
+<body id="ibm-com" class="ibm-type">
+<div id="ibm-top" class="ibm-landing-page">
+
+<!--! MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM®</a></li>
+</ul>
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="http://www.ibm.com/Search/" id="ibm-search-form">
+<p>
+<label for="q">
+<span class="ibm-access">Search</span>
+</label>
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input name="v" type="hidden" value="17"/>
+<input type="hidden" name="en" value="utf"/>
+<input name="lang" type="hidden" value="en"/>
+<input name="cc" type="hidden" value="us"/>
+<input value="Submit" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+<!--! LEADSPACE_BEGIN -->
+<div id="ibm-leadspace-head" class="ibm-alternate v17e-height">
+<div id="ibm-leadspace-body">
+<h1>v17e Grid Options</h1>
+<p><em><span>Subtitle text header.</span> This is the body copy below the subtitle text. <a href="REPLACE.HTML">Learn more</a></em></p>
+</div>
+</div>
+<!-- LEADSPACE_END -->
+
+
+<!--! CONTENT_NAV_BEGIN -->
+<div id="ibm-content-nav">
+
+<div id="ibm-primary-tabs">
+<ul class="ibm-tabs">
+	<li class="ibm-active"><a href="index.html">v17e Overview</a></li>
+	<li><a href="banded.html">Page Layouts</a></li>
+	<li><a href="patterns.html">Design Patterns</a></li>
+	<li><a href="faqs.html">FAQ's</a></li>
+</ul>
+</div>
+
+</div>
+
+
+
+<!-- CONTENT_NAV_END -->
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+<!-- TITLE_BEGIN -->
+<div id="ibm-content-head">
+</div>
+<!-- TITLE_END -->
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<!--! COLUMN VARIATIONS START -->
+
+<div class="ibm-columns">
+<div class="ibm-col-1-1">
+<h1 class="center small">Updated Code</h1>
+<br></br>
+<h2>Template updates to enable v17e</h2>
+
+<ol>
+<li>Add viewport meta tag below content type:<br />
+
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"/><br /><br />
+	
+</li>
+<li>Replace current v17 ww.css file with new v17e version:<br /><br />
+
+<strong>Old:</strong><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17/css/www.css"</span> rel="stylesheet" title="www" type="text/css"/><br /><br />
+
+<strong>New:</strong><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/ww.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+
+</li>
+<li>Add new ibm-type class to &lt;body> tag for latin based templates / languages (this class applies the custom fonts)<br /><br />
+	
+<strong>e.g.</strong><br />
+&lt;body id="ibm-com" class="ibm-type">
+
+</li>
+
+<li>If need, the data tables, forms, application, social icons for the content space and modules are now loaded separately.<br /><br />
+
+<strong>e.g.</strong><br />
+
+
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/data.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/form.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/social.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/application.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+&lt;link <span style="word-wrap: break-word">href="//1.www.s81c.com/common/v17e/css/module.css"</span> rel="stylesheet" title="www" type="text/css" /><br /><br />
+
+</li>
+
+<li>The separate module.css file covers: <br /><br />
+-- anchor link A-Z (.ibm-link-list-az)<br />
+-- directory link list (.ibm-directory-link-list)<br />
+-- list container (.ibm-list-container)<br />
+-- article list (.ibm-article-list)<br />
+-- twitter list and modules (.ibm-twitter-list / .ibm-twitter-module)<br />
+-- twisties (.ibm-twisty)<br />
+-- RSS module (.ibm-rss-module)<br />
+-- step indication and container (.ibm-step-indicator / .ibm-step-container)<br /><br />
+</li>
+
+
+<li>jQuery and Modernizr are included as part of the common v17e JS<br /><br />
+<span style="word-wrap: break-word">1.www.s81c.com/common/v17e/js/ww.js</span>
+</li>
+
+</ol>
+<br /><br />
+
+<h2>New v17e containers / modules</h2>
+<div class="container">
+    <div class="header"><span>Expand All</span> </div>
+    	<dl id="toggle-view" class="toggle_container">
+    	
+	<dt class="question">.ibm-band<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Band container around .ibm-columns</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">.ibm-no-rule<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Remove top rule from ibm-container</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">.ibm-resize<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied to images to allow resize based on parent container width</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>		
+		
+	</dd>
+
+	<dt class="question">.ibm-w-gutter<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied to 6-3 and 4-2 containers for additional 30px margin between columns</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">.ibm-thumbnail-small<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied to ibm-columns and turns all ibm-thumbnail-modules into 4-2 columns with image next to text.  This applies to all layouts</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">.ibm-thumbnail-module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied within columns to allow hover / click states on sprites.  This container also changes the layout under the 480 grid</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">.ibm-sprite<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Container to add image sprites for mouse states</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">.ibm-thumbnail-swap<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied to ibm-thumbnail-module to swap image to right side.  This applies to mobile (480) grid</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">.ibm-inner-margin<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Applied to columns to provide extra 10px padding</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+
+	<br /><br />
+	
+<h2>v17e rules</h2>
+<div class="container">
+    <div class="header"><span>Expand All</span> </div>
+    	<dl id="toggle-view" class="toggle_container">	
+
+	<dt class="question">"ibm-adapt"<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Add "ibm-adapt" class to modules that change under different viewports</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">"ibm_cci-"<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Use "ibm_cci-" class prefix for site specific custom code</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+
+	<br /><br />
+
+<h2>New v17e Elements</h2>
+<div class="container">
+    <div class="header"><span>Expand All</span> </div>
+    	<dl id="toggle-view" class="toggle_container">	
+
+	<dt class="question">Buttons<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>	
+	</dd>
+
+	<dt class="question">Card Module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Carousel<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Adjust carousel page to work with v17e. Replacement assets.</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Colors options<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Connect with IBM Module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Contact Module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Feature Module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Fonts and Typescale<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Forward Thinkers Widget / Expertise Locator<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Icons<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Leadspaces and Titles<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Live Chat<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Mobile Version of tabs<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>dropdown vs. design approach</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Overlay<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Page Layouts<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Pagination Controls<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">Portrait Module<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Social Media Aggregator<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>sample text</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Tabs<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Darker version of tabs</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+	
+	<dt class="question">Video<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Darker version of tabs</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+	<dt class="question">ww (DBCS) testing<span class="ibm-add1-link"></span></dt>
+	<dd class="answer">
+		<div class="ibm-container ibm-graphic-tabs ibm-dyntabs">
+			<div class="ibm-tab-section">
+				<ul class="ibm-tabs">
+					<li class="ibm-first-tab"><a href="#description">Description</a><span class="ibm-access">- selected tab,</span></li>
+					<li><a href="#result">Result</a></li>
+					<li><a href="#html">HTML</a></li>
+				</ul>
+			</div>
+			<div class="ibm-container-body">
+				<div id="description" class="ibm-tabs-content">
+					<div class="ibm-pull-quote">
+						<p>Darker version of tabs</p>
+					</div>
+				</div>
+				<div id="result" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+				<div id="html" class="ibm-tabs-content">
+					<pre class="brush:html;">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</dd>
+
+
+	<br /><br />
+	
+<p><strong>Note: * = First deploy of v17e (8/26/2013)</strong></p>
+
+<p>Deployed URL for v17e CSS file: <span style="word-wrap: break-word">1.www.s81c.com/common/v17e/css/ww.css</span></p>
+
+<p>IE6 support has been removed from this prototype release</p>
+
+
+</div>
+</div>
+
+<!-- COLUMN VARIATIONS END -->
+
+
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation"></div>
+<!-- NAVIGATION_END -->
+</div>
+<div id="ibm-related-content">
+<div id="ibm-merchandising-module">
+<!--IBM Web Merchandising Module-->
+</div>
+</div>
+<!--! FOOTER_BEGIN -->
+<div id="ibm-footer-module"></div>
+<div id="ibm-footer">
+<h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+</ul>
+</div>
+<!-- FOOTER_END -->
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>
