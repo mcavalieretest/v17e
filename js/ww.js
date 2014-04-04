@@ -621,9 +621,11 @@ Company.data.CustomStore = function(config) { ... }
         var tabContent = $(
                             '<div id="m-local-menu">'
                                 + '<h2>' + $("h1").html() + '</h2>'
-                                + $('#ibm-primary-tabs').html()                                 
+                                + '<ul>'
+                                  + $('#ibm-primary-tabs .ibm-tabs').html()
+                                + '</ul>'
                             + '</div>'
-                        ).clone();
+                        );
 
         tabContent.find("ul").removeClass("ibm-tabs");
         tabContent.appendTo("#m-menu-scroll");
