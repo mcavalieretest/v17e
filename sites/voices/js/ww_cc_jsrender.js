@@ -205,9 +205,6 @@ $(function() {
         try {
             var prevDocumentHeight = $(document).height() - 900;
             if ($(window).scrollTop() + $(window).height() >= $(document).height() - 900 && $(window).data("ajaxReq", true)) {
-                // console.log($(window).scrollTop());
-                // console.log($(window).height());
-                // console.log($(document).height());
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
                 // Call Ajax
@@ -226,7 +223,6 @@ $(function() {
                         // console.log("error");
                     }
                 }).done(function(data) {
-                    console.log("success inside done function");
                     vo.dataCards = $(".ibm-card");
                     if (data.entries) {
                         vo.search = false;
@@ -234,13 +230,12 @@ $(function() {
                         vo.f_distribute(data);
                         vo.f_reTweetToggle();
                         $(".ibm-sortable").imagesLoaded(function() {
-                            console.log("infinite scroll done condition: masonry triggered");
+                            // console.log("infinite scroll done condition: masonry triggered");
                             $(".ibm-sortable").append($(".ibm-card")).masonry("appended", $(".ibm-card"));
                             $(".ibm-sortable").masonry("reload");
                         });
                         setTimeout(function() {
                             if (data.entries.length >= 20) {
-                                console.log("if Trriggered");
                                 $(window).data("ajaxReq", true);
                             } else {
                                 $(window).data("ajaxReq", false);
@@ -248,9 +243,9 @@ $(function() {
                         },100);
                     }
                 }).fail(function() {
-                    console.log("error");
+                    // console.log("error");
                 }).always(function() {
-                    console.log("inside infinite scroll complete");
+                    // console.log("inside infinite scroll complete");
                 });
             }
         } catch (e) {
@@ -329,7 +324,6 @@ $(function() {
         },
         // CHECK SEARCH STATUS
         f_checkSearchstatus: function(status) {
-            console.log("inside check searchStatus");
             try {
                 if (status == true) {
                     console.log(status == true);
@@ -427,15 +421,19 @@ $(function() {
         },
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
-                img.src = imgURL;
-
+            
             if(imgURL.length > 0 && imgURL != ''){
-                $.get(imgURL).done(function(event){
-                    console.log(event);
-                    if(imgURL.naturalWidth > 0){
-                        imgWidth = imgURL.naturalWidth;
+                img.src = imgURL;
+                img.onload = function(event){
+                    console.log(img.naturalWidth);
+                    if(img.src.naturalWidth > 0){
+                        imgWidth = img.naturalWidth;
                     }
-                });
+                }
+
+                return img.src = imgURL;                
+            }else {
+                return img.src = '';
             }
 
             // console.log('outside if executed');
@@ -628,11 +626,9 @@ $(function() {
         },
         f_constructURL: function(searchterms) {
             // if searchterm is empty condition need to be considered
-            console.log(searchterms+" : "+searchterms.length);
             var self = this;
             try{
                 if(searchterms.length === 0){
-                    console.log("inside f_constructURL function else statement");
                         vo.f_fetch_feeds().done(function(data) {
                             vo.f_removeNodes($("#ibm_cci-widget-js > span"));
                             vo.search = true;
@@ -657,9 +653,6 @@ $(function() {
                         if($.inArray(e, self.searchterms) === -1) self.searchterms.push(e);
                     });
                     $.unique(self.searchterms);
-                    
-                    console.log("searchterms inside f_constructURL: "+searchterms);
-
                     $.ajax(self.f_url + "?callback=?", {
                         type: "GET",
                         dataType: "jsonp",
@@ -669,7 +662,9 @@ $(function() {
                             noOfItems: 20,
                             filter: self.searchterms.toString()
                         },
-                        success: function() {console.log("inside f_constructURL ajax request with 20 noOfItems");}
+                        success: function(){
+                            // console.log("inside f_constructURL ajax request with 20 noOfItems");
+                        }
                     }).done(function(data, textStatus, jqXHR) {
                         var self = vo;
                         // Update this function to distribute loadmore and search terms
@@ -694,9 +689,9 @@ $(function() {
                             if (vo.searchterms.length > 0) $(window).data("ajaxReq", true);
                         } 
                     }).fail(function() {
-                        console.log("error");
+                        // console.log("error");
                     }).always(function() {
-                        console.log("complete");
+                        // console.log("complete");
                     });
                 }
             }catch(e){
