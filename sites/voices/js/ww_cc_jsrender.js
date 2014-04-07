@@ -421,23 +421,22 @@ $(function() {
         },
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
-            
-            if(imgURL.length > 0 && imgURL != ''){
-                img.src = imgURL;
-                img.onload = function(event){
-                    console.log(img.naturalWidth);
-                    if(img.src.naturalWidth > 0){
-                        imgWidth = img.naturalWidth;
+
+            try{
+                if(imgURL.length > 0 && imgURL != '' && img.readyState !== 4){
+                    img.src = imgURL;
+                    img.onload = function(){
+                        if(img.naturalWidth > 0){
+                            imgWidth = img.naturalWidth;
+                        }
+                        console.log("inside: "+imgWidth);
                     }
+                    console.log("outside: "+imgWidth);
+                    return img.src = imgURL;
                 }
-
-                return img.src = imgURL;                
-            }else {
-                return img.src = '';
+            }catch(e){
+                console.log('error inside preload images: '+e);    
             }
-
-            // console.log('outside if executed');
-
         },
         f_truncateDomain: function(domain) {
             if (domain.indexOf(".com") > -1) {

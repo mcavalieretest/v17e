@@ -103,6 +103,9 @@
            if (window.focus) {this.window.focus()}
               return false;
       };
+
+    document.addEventListener("touchstart", function(){}, true);
+
   </script>
 
 </head>
@@ -231,17 +234,17 @@
     <ul class="ibm_cci-sie">
       <li>
         <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
+          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
         </a>
       </li>
       <li>
         <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16" alt="abstract social icon linkedin"/>
         </a>
       </li>
     </ul>
@@ -273,9 +276,10 @@
             </a>
         </div>
       </div>
-
+          
           {{else mediaURL}}
-          <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}"/>
+          <img width="270" class="ibm_cci--tweet-image" alt="tweet media" src="{{:mediaURL}}" onerror="this.style.display='none';" />      
+
           {{/if}}
         </div>
       </div>
@@ -289,12 +293,12 @@
         </li>
         <li>
           <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
           </a>
         </li>
         <li>
-          <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="" width="16" height="16" alt="abstract social icon linkedin"/>
+          <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="{{:rank}} share on linkedin link" onclick="return openPopup(this.href)">
+            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linked in" width="16" height="16" alt="abstract social icon linkedin"/>
           </a>
         </li>
       </ul>
@@ -432,11 +436,11 @@
         <h1 class="ibm_cci--h1__modifyer"> <a href="index-jsRender.html">IBM Voices</a> </h1>
         <p class="ibm_cci-about"> <a href="//www.ibm.com" onclick="window.open(this.href, '_blank'); return false;" class="ibm_cci_aboutlink"> About us </a> </p>
       </div>
-      <div class="ibm_cci--ls--search">
+      <div class="ibm_cci--ls--search" role="search">
         <form action="javascript:void(0);">
           <!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label> -->
-          <input name="ibm-cc-search--field" id="ibm-cc-search--field" type="text" class="ibm-cc-search--field defaultcolor" value="comma,separated,values" />
-          <input type="image" src='i/ibm_search_icon.png' class="ibm-cc-search--icon" name="search button" value="search" />
+          <input name="ibm-cc-search--field" id="ibm-cc-search--field" tabindex="1" alt="search field" type="text" class="ibm-cc-search--field defaultcolor" value="comma,separated,values" />
+          <input type="image" src='i/ibm_search_icon.png' tabindex="2" alt="search icon" class="ibm-cc-search--icon" name="search button" value="search" />
         </form>
         <p></p>
       </div>
