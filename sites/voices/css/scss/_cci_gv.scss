@@ -124,7 +124,7 @@
 		margin: 0 0 10px 0;
 	}
 
-	li a img:hover{
+	li a img:hover, li a img:focus{
 		// outline:1px solid #000;
 		opacity:0.5;
 	}

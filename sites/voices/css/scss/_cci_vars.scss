@@ -214,7 +214,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			width:16px;
 			height:16px;
 		}
-		li:hover {
+		li:hover, li:focus {
 			outline:0 !important;
 		}
 		li:not(:nth-child(1)) {
@@ -288,7 +288,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			color:#ccc;
 		}
 
-		a:hover, a:active {
+		a:hover, a:focus, a:active {
 			color:#000;
 			opacity: 1;
 		}
@@ -298,12 +298,12 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			padding: 0 0 0 0;
 			vertical-align: top;
 		}
-		img:hover {
+		img:hover, img:focus {
 			opacity:1;
 		}						
 	}
 	// p.ibm_cci-tts:hover a
-	p.ibm_cci-tts:hover img {
+	p.ibm_cci-tts:hover img, p.ibm_cci-tts:focus img {
 		opacity:1;
 		color:#000;
 	}				

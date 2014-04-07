@@ -57,7 +57,7 @@
 				opacity: 1;
 				visibility:visible;	
 			}
-			a.ibm_cci-close:not(:first-child):hover{
+			a.ibm_cci-close:not(:first-child):hover, a.ibm_cci-close:not(:first-child):focus{
 				opacity: 0.5;
 			}
 			
@@ -70,12 +70,12 @@
 			> a:link, a:visited {
 				color: #ccc;
 			}
-			> a:hover, a:active {
+			> a:hover, a:focus, a:active {
 				color: #adadad;
 				text-decoration: none;
 			}																											
 		}
-		p:hover{
+		p:hover, p:focus{
 			>a:not(:first-child){
 				background-position: -205px -50px;
 				opacity: 1;
@@ -101,12 +101,13 @@
 				opacity: 1;
 				visibility:visible;
 			}
-			>a.ibm_cci-close-black:not(:first-child):hover{
+			>a.ibm_cci-close-black:not(:first-child):hover,
+			>a.ibm_cci-close-black:not(:first-child):focus{
 				opacity: 0.5;
 			}
 		}		
 	}
-	li:hover {
+	li:hover, li:focus {
 		.ibm_cci__bg-color.ibm_cci__ml {
 			background-color:#f1f1f1;
 			-webkit-box-shadow: 1px 1px 1px 1px #dedede;
@@ -215,7 +216,8 @@
 				color:#ccc;
 			} 
 
-		a.ibm_cci_aboutlink:active, a.ibm_cci_aboutlink:hover{
+		a.ibm_cci_aboutlink:active, a.ibm_cci_aboutlink:hover,
+		a.ibm_cci_aboutlink:active, a.ibm_cci_aboutlink:focus{
 				color:#f04e37;
 			}
 	}
@@ -258,7 +260,7 @@
 		left:-30px;
 		opacity:0.5;
 
-		&:hover {
+		&:hover, &:focus {
 			opacity:1;
 		}
 	}
@@ -297,7 +299,7 @@
 			&.selected {
 				background-position: -128px -50px;
 			}
-			&:hover {
+			&:hover, &:focus {
 				background-position: -128px -50px;
 			}
 		}
@@ -306,7 +308,7 @@
 			&.selected {
 				background-position: -43px -50px;
 			}
-			&:hover {
+			&:hover, &:focus {
 				background-position: -43px -50px;
 			}
 		}				

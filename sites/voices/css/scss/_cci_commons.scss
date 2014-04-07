@@ -57,7 +57,7 @@
 			height:16px;									 
 		}
 	}
-	a:hover {
+	a:hover, a:focus {
 		opacity:0.3;
 	}
 
@@ -184,7 +184,7 @@
 		outline:0;
 		}
 
-		li a img:hover{
+		li a img:hover, li a img:focus{
 			// outline:1px solid #000;
 			opacity:0.5;
 		}
@@ -294,7 +294,7 @@
 			opacity:0.2;
 		}
 
-		li a img:hover{
+		li a img:hover, li a img:focus{
 			// outline:1px solid #000;
 			opacity:1;
 		}						
@@ -304,7 +304,7 @@
 		margin-left:5px;
 	}
 
-	li a img:hover{
+	li a img:hover, li a img:focus{
 		// outline:1px solid #000;
 		opacity:1;
 	}
@@ -320,7 +320,7 @@
 		opacity:0.1;
 		padding: 2px 0 0 0;
 	}
-	a img:hover {
+	a img:hover, a img:focus {
 		opacity:1;
 	}						
 }
@@ -362,7 +362,7 @@
 	margin-bottom:0;
 }
 
-#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:hover {
+#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:hover, #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:focus {
 	box-shadow: none;
 	-webkit-box-shadow:none;
 }

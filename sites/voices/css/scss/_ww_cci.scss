@@ -145,19 +145,23 @@ body ul li:before, body ul li:after {
 /* HOVER EFFECTS BEGIN */
 @each $view in ibm_cci-lv__modifier, ibm_cci-gv__modifier {
 	@if $view == ibm_cci-lv__modifier {
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:first-child:hover + .ibm-col-1-1
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:first-child:hover + .ibm-col-1-1,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:first-child:focus + .ibm-col-1-1
 		{
 			border-top:1px solid $hover-color;
 		}
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):focus
 		{
 			border-top:1px solid $hover-color;
 		}
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover + .ibm-col-1-1
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):hover + .ibm-col-1-1,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:not(:nth-child(1)):focus + .ibm-col-1-1
 		{
 			border-top:1px solid $hover-color;
 		}
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:last-child:hover
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:last-child:hover,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:last-child:focus
 		{
 			border-top:1px solid $hover-color;
 			border-bottom:1px solid $hover-color;
@@ -165,18 +169,28 @@ body ul li:before, body ul li:after {
 
 	}
 	@else if $view == ibm_cci-gv__modifier{
-		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover,
+		#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:focus
 		{
 			outline:1px solid $hover-color;
 		}
 	} 
 	
+	//HOVER
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
 	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,		
 	#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
 	#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib,
+	
+	//FOCUS
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm-col-6-2 .ibm_cci--lv-rc-sharing > ul,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,
+	#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--lv-rc-sharing > ul,		
+	#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-sib,
+	#{$ibm-widget-js}.ibm-columns.#{$view} .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci-gv-sib
 		{
 			visibility:visible;
 		}
@@ -184,7 +198,9 @@ body ul li:before, body ul li:after {
 
 	
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
-#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm_cci--rea-block ul li .ibm_cci--rea-b .ibm_cci--rea-b-e .ibm_cci--rea-b
 	{
 		background-color:$hover-color;
 	}
@@ -196,11 +212,22 @@ body ul li:before, body ul li:after {
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb .ibm_cci--tweet-description .ibm_cci--tweet-content-text span.ibm_cci--tweet-description-readmore a,
 
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm_cci--lv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb .ibm_cci--tweet-description .ibm_cci--tweet-content-text span.ibm_cci--tweet-description-readmore a,
+
 //GRID VIEW
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rea-block ul li p.ibm_cci--rea-rank,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm_cci--gv-unro-b .ibm_cci--rea-block ul li p.ibm_cci--rea-rank, 
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb h2.ibm_cci--tweet-title a,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb h2.ibm_cci--tweet-title a
 	{
 		color:$hover-color;
 	}
@@ -209,12 +236,19 @@ body ul li:before, body ul li:after {
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb p.ibm_cci--tweet-description,
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2,
+
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-4 .ibm_cci--rcb .ibm_cci--ttb p.ibm_cci--tweet-description,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus #{$ibm-listview-unro} .ibm_cci--unr-cb .ibm_cci--ttb p.ibm_cci--tweet-description,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-2
 	{
 		display:block;
 	}
 
 #{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a,
-#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:hover .ibm-col-6-2 .ibm_cci--lv-rc-description p a,
+
+#{$ibm-widget-js}.ibm-columns.ibm_cci-lv__modifier .ibm-col-1-1:focus .ibm-col-6-2 .ibm_cci--lv-rc-description p a,
+#{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1:focus .ibm-col-6-2 .ibm_cci--lv-rc-description p a
 	{
 		text-decoration:none;
 		color: $hover-color;
