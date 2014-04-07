@@ -427,11 +427,15 @@ $(function() {
         f_preloadImages: function(imgURL) {
             var img = new Image(), imgWidth = 0;
                 img.src = imgURL;
-            img.onload = function(){
-                // console.log("inside onload: "+img.naturalWidth);    
-            }
-            // console.log("outside onload: "+img.naturalWidth);
-            return imgURL;
+                
+                if(imgURL != undefined && imgURL.length > 0){
+                    img.onload = function(evt){
+                       if(this.naturalWidth > 0){
+                            return true;
+                       }
+                    }
+                }
+            // return img.src = imgURL;
         },
         f_truncateDomain: function(domain) {
             if (domain.indexOf(".com") > -1) {
