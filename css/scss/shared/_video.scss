@@ -269,35 +269,32 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 .ibm-play-button-small {	
 	background-image: url(#{$imagePath}/i/video-play-button-small.png);
 }
-	.ibm-play-button-small:hover {	
+.ibm-play-button-small:hover {	
 		background-image: url(#{$imagePath}/i/video-play-button-small-hover.png);
 	}
 
 .ibm-play-button-medium {	
 	background-image: url(#{$imagePath}/i/video-play-button-medium.png);
 }
-	.ibm-play-button-medium:hover {	
+.ibm-play-button-medium:hover {	
 		background-image: url(#{$imagePath}/i/video-play-button-medium-hover.png);
 	}
 
 .ibm-play-button-large {	
 	background-image: url(#{$imagePath}/i/video-play-button-large.png);
 }
-	.ibm-play-button-large:hover {	
+.ibm-play-button-large:hover {	
 		background-image: url(#{$imagePath}/i/video-play-button-large-hover.png);
 	}
 
 
 /* CSS For Video End Here ===================================================== */
 
-
-
-
-.video-control-bar div{
+.video-control-bar div {
 	display:inline-block;
 }
 
-body.yt-video-fullscreen{
+body.yt-video-fullscreen {
 	overflow:hidden;
 }
 
@@ -311,7 +308,7 @@ body.yt-video-fullscreen{
 	z-index: 998;
 }
 
-.video-control-bar{
+.video-control-bar {
 	background: #4f525a; /* Old browsers */
 	background: -moz-linear-gradient(top,  #4f525a 0%, #1c1d1e 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f525a), color-stop(100%,#1c1d1e)); /* Chrome,Safari4+ */
@@ -320,8 +317,7 @@ body.yt-video-fullscreen{
 	background: -ms-linear-gradient(top,  #4f525a 0%,#1c1d1e 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #4f525a 0%,#1c1d1e 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f525a', endColorstr='#1c1d1e',GradientType=0 ); /* IE6-9 */
-
-	color:white;
+    color:white;
 	
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -340,7 +336,7 @@ body.yt-video-fullscreen{
 	text-align:left;
 }
 
-.video-control-bar .icon{
+.video-control-bar .icon {
 	display: inline-block;
 	margin: auto;
 	background-repeat:no-repeat;
@@ -450,25 +446,25 @@ body.yt-video-fullscreen{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55575A', endColorstr='#4B4B4E',GradientType=0 ); /* IE6-9 */
 }
 
-.video-control-bar .sound{
+.video-control-bar .sound {
 	float:right;
 	margin-right:10px;
 }
 
-.video-control-bar .sound a{
+.video-control-bar .sound a {
 	float:left;
 }
 
-.video-control-bar .sound.mute .volume-marker{
+.video-control-bar .sound.mute .volume-marker {
 	left:0px !important;
 }
 
-.video-control-bar .volume{
+.video-control-bar .volume {
 	/*margin-top:5px;*/
 	padding-right:5px;
 }
 
-.video-control-bar .volume-bar{
+.video-control-bar .volume-bar {
 	height: 3px;
 	width: 30px;
 	background-color: #777777;
@@ -476,7 +472,7 @@ body.yt-video-fullscreen{
 	vertical-align:middle;
 }
 
-.video-control-bar .volume-marker{
+.video-control-bar .volume-marker {
 	width: 4px;
 	height: 7px;
 	background: #7C7D7F; /* Old browsers */
@@ -507,25 +503,25 @@ body.yt-video-fullscreen{
 	cursor: pointer;
 }
 
-.video-control-bar .caption{
+.video-control-bar .caption {
 	float:right;
 	margin-right:5px;
 }
 
-.video-control-bar .post-progress-bar{
+.video-control-bar .post-progress-bar {
 	float:right;
 }
 
-.dj_ie8 .video-control-bar .fullscreen{
+.dj_ie8 .video-control-bar .fullscreen {
 	display:none;
 }
 
-.video-control-bar .fullscreen{
+.video-control-bar .fullscreen {
 	float:right;
 	margin-right:15px;
 }
 
-.video-control-bar .speaker{
+.video-control-bar .speaker {
 	height:23px;
 }
 
@@ -564,100 +560,92 @@ body.yt-video-fullscreen{
 	border-radius:20px;
 	text-align:center;
 }
-.video-control-bar .fullscreen-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -25px;
+.video-control-bar .fullscreen-image,
+.video-control-bar .fullscreen-image:hover,
+.video-control-bar .pause-image, 
+.video-control-bar .fullscreen-image,
+.video-control-bar .pause-image:hover,
+.video-control-bar .play-image,
+.video-control-bar .play-image:hover,
+.video-control-bar .progress-bar-arrow {
+	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
 	height: 23px;
 	width: 23px;
 }
-
-.video-control-bar .fullscreen-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -97px;
-	height: 23px;
-	width: 23px;
+.video-control-bar .play-image {
+	background-position: -24px -49px;
+}
+.video-control-bar .play-image:hover {
+	background-position: -24px 0;
+}
+.video-control-bar .fullscreen-image {
+	background-position: -24px -25px;
+}
+.video-control-bar .fullscreen-image:hover {
+	background-position:-24px -97px;
+}
+.video-control-bar .pause-image {
+	background-position: -24px -73px;
+}
+.video-control-bar .pause-image:hover {
+	background-position: -24px -121px;
+}
+.video-control-bar .progress-bar-arrow {
+	background-position: -24px -145px;
 }
 
-.video-control-bar .pause-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -73px;
-	height: 23px;
-	width: 23px;
-}
 
-.video-control-bar .pause-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -121px;
-	height: 23px;
-	width: 23px;
-}
-
-.video-control-bar .play-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -49px;
-	height: 23px;
-	width: 23px;
-}
-
-.video-control-bar .play-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px 0;
-	height: 23px;
-	width: 23px;
-}
-
-.video-control-bar .speaker-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 -118px;
+.video-control-bar .speaker-image,
+.video-control-bar .speaker-image:hover,
+.video-control-bar .mute-image:hover,
+.video-control-bar .mute-image,
+.video-control-bar .mute-image:hover,
+.video-control-bar .caption-image,
+.video-control-bar .caption-image:hover {
+	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
 	height:23px;
 	width:15px;
 }
+.video-control-bar .caption-image {
+	background-position: 0 0;
+}
 
-.video-control-bar .speaker-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 -48px;
-	height:23px;
-	width:15px;
+.video-control-bar .caption-image:hover {
+	background-position: 0 -24px;
+}
+
+.video-control-bar .speaker-image {
+	background-position: 0 -48px;
+}
+.video-control-bar .speaker-image:hover {
+	background-position: 0 -118px;
+}
+
+.video-control-bar .mute-image {
+	background-position: 0 -94px;
 }
 
 .video-control-bar .mute-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 -72px;
-	height:23px;
-	width:15px;
+	background-postion: 0 -72px;
 }
 
-.video-control-bar .mute-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 -94px;
-	height:23px;
-	width:15px;
-}
-
-.video-control-bar .caption-image{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 0;
-	height:23px;
-	width:23px;
-}
-
-.video-control-bar .caption-image:hover{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat 0 -24px;
-	height:23px;
-	width:23px;
-}
-
-.video-control-bar .progress-bar-arrow{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -24px -145px;
-	height:23px;
-	width:23px;
-}
-
-.video-share-email{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -49px -110px;
+.video-share-email,
+.video-share-twitter,
+.video-share-facebook {
+	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
 	height:54px;
 	width:52px;
 }
+.video-share-email {
+	background-position: -49px -110px;
+}
 
-.video-share-twitter{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -49px -55px;
-	height:54px;
-	width:52px;
+.video-share-twitter {
+	background-position: -49px -55px;
 }
 
 .video-share-facebook{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -49px 0;
-	height:54px;
-	width:52px;
+	background-position: -49px 0;
 }
 
 .ibm-video-close-overlay{
