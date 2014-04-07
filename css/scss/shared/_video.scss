@@ -568,7 +568,7 @@ body.yt-video-fullscreen {
 .video-control-bar .play-image,
 .video-control-bar .play-image:hover,
 .video-control-bar .progress-bar-arrow {
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height: 23px;
 	width: 23px;
 }
@@ -602,7 +602,7 @@ body.yt-video-fullscreen {
 .video-control-bar .mute-image:hover,
 .video-control-bar .caption-image,
 .video-control-bar .caption-image:hover {
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height:23px;
 	width:15px;
 }
@@ -632,7 +632,7 @@ body.yt-video-fullscreen {
 .video-share-email,
 .video-share-twitter,
 .video-share-facebook {
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height:54px;
 	width:52px;
 }
@@ -649,7 +649,7 @@ body.yt-video-fullscreen {
 }
 
 .ibm-video-close-overlay{
-	background: url('/i/v17/icons/ytplayersprite.png') no-repeat -49px -165px;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat -49px -165px;
 	height:47px;
 	width:45px;
 }
