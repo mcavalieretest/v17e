@@ -310,8 +310,7 @@
 	}
 }
 
-
-#{$ibm-widget-js}  p.ibm_cci-tts {
+#{$ibm-widget-js} p.ibm_cci-tts {
 	float:right;
 	font: normal 12px/16px "HelvLightIBM";
 	vertical-align: top;
@@ -319,7 +318,7 @@
 
 	a img {
 		opacity:0.1;
-		padding: 0 0 0 0;
+		padding: 2px 0 0 0;
 	}
 	a img:hover {
 		opacity:1;
