@@ -345,6 +345,11 @@ sites/
     padding-top: 180px !important;
   }
 }
+@media (max-width: 380px) and (min-width: 0) {
+  .ibm-landing-page #ibm-leadspace-body.story h1 {
+    padding-top: 155px !important;
+  }
+}
 #ibm-content .ibm-story p {
   font-family: HelvLightIBM;
   font-size: 1.7rem;
