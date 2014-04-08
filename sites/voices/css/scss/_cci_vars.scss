@@ -104,7 +104,8 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 @mixin ibm_cci--rea-block {
 	float:left;
 	width:70px;
-	margin:0 10px 0 0; //added 10px top to offset the position for IE in p.ibm_cci--rea-rank 
+	margin:0 10px 0 0; //added 10px top to offset the position for IE in 
+	// p.ibm_cci--rea-rank 
 
 	ul {
 		@include ibm_cci-ul__modifier;
@@ -120,12 +121,11 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			}	
 			p.ibm_cci--rea-rank {
 				display:block;
-				// font: normal 5.2rem/40px "HelvLightIBM";
 				font-family: "HelvLightIBM";
 				font-size:5.2rem;
 				line-height:52px;
 				font-weight:normal;
-				color:#dfdfdf;
+				color:#dfdfdf !important;
 				padding:0; 
 				vertical-align:top;
 					// Changed padding-bottom:0 !important for IE issue
@@ -214,7 +214,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			width:16px;
 			height:16px;
 		}
-		li:hover, li:focus {
+		li:hover {
 			outline:0 !important;
 		}
 		li:not(:nth-child(1)) {
@@ -258,7 +258,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 	}	
 
 }
-
+ 
 @mixin feed-no-icon {
 	a img{
 		display:none;
@@ -288,7 +288,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			color:#ccc;
 		}
 
-		a:hover, a:focus, a:active {
+		a:hover, a:active {
 			color:#000;
 			opacity: 1;
 		}
@@ -298,12 +298,12 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 			padding: 0 0 0 0;
 			vertical-align: top;
 		}
-		img:hover, img:focus {
+		img:hover {
 			opacity:1;
 		}						
 	}
 	// p.ibm_cci-tts:hover a
-	p.ibm_cci-tts:hover img, p.ibm_cci-tts:focus img {
+	p.ibm_cci-tts:hover img {
 		opacity:1;
 		color:#000;
 	}				

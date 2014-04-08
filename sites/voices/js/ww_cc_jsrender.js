@@ -27,6 +27,9 @@ $(function() {
                     $(".ibm_cci-lv__modifier .ibm-video").css("display", "none");
                     // REBULILD MASONRY TILES FOR LIST VIEW
                     widgetJS.masonry("reload");
+                    setTimeout(function() {
+                        widgetJS.masonry('reloadItems');
+                    }, 800);
                 } else {
                     widgetJS.removeClass("ibm_cci-lv__modifier").addClass("ibm_cci-gv__modifier");
                     $(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css("display", "none");
@@ -34,7 +37,7 @@ $(function() {
                     // REBULILD MASONRY TILES GRID VIEW
                     widgetJS.masonry("reloadItems");
                     setTimeout(function() {
-                        widgetJS.masonry();
+                        widgetJS.masonry({fromBottom: true});
                     }, 800);
                 }
             }

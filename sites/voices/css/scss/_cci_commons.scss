@@ -57,23 +57,25 @@
 			height:16px;									 
 		}
 	}
-	a:hover, a:focus {
+	a:hover {
 		opacity:0.3;
 	}
 
 }
 
-#{$ibm-widget-js} .ibm_cci--ttb{
+#{$ibm-widget-js} .ibm_cci--unr-cb .ibm_cci--ttb{
 	@extend .ibm_cci--rcb;
 	clear:both;
 	border:0;
 	// padding-bottom:5px;
-}
+	
+	h2.ibm_cci--tweet-title{
+		font: normal 2.4rem/30px "HelvLightIBM";
+		color: #000;
+		margin:10px 0 0 0;
+	}
+}	
 
-#{$ibm-widget-js} h2.ibm_cci--tweet-title{
-	font: bold 2.4rem/30px "HelvBoldIBM";
-	color: #000;
-}
 // 6-4 Grid COMMONS (END)
 
 // 6-2 Grid COMMONS (START)
@@ -120,7 +122,7 @@
 
 	li:not(:nth-child(1)){
 		// margin-left:5px;
-		margin-left:0;
+		margin-left:1px;
 	}
 }
 
@@ -184,7 +186,7 @@
 		outline:0;
 		}
 
-		li a img:hover, li a img:focus{
+		li a img:hover{
 			// outline:1px solid #000;
 			opacity:0.5;
 		}
@@ -294,7 +296,7 @@
 			opacity:0.2;
 		}
 
-		li a img:hover, li a img:focus{
+		li a img:hover{
 			// outline:1px solid #000;
 			opacity:1;
 		}						
@@ -304,7 +306,7 @@
 		margin-left:5px;
 	}
 
-	li a img:hover, li a img:focus{
+	li a img:hover{
 		// outline:1px solid #000;
 		opacity:1;
 	}
@@ -318,9 +320,9 @@
 
 	a img {
 		opacity:0.1;
-		padding: 2px 0 0 0;
+		padding: 0 0 0 0;
 	}
-	a img:hover, a img:focus {
+	a img:hover {
 		opacity:1;
 	}						
 }
@@ -362,7 +364,7 @@
 	margin-bottom:0;
 }
 
-#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:hover, #{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:focus {
+#{$ibm-widget-js}.ibm_cci-lv__modifier .ibm-card:hover {
 	box-shadow: none;
 	-webkit-box-shadow:none;
 }

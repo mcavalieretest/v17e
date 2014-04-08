@@ -124,7 +124,7 @@
 		margin: 0 0 10px 0;
 	}
 
-	li a img:hover, li a img:focus{
+	li a img:hover{
 		// outline:1px solid #000;
 		opacity:0.5;
 	}
@@ -205,7 +205,7 @@
 }	
 
 //FOR YOUTUBE BLOCK (END)					
-.ibm-columns.ibm_cci-gv__modifier #{$ibm-listview-unro} .ibm_cci--ttb{
+#{$ibm-widget-js} .ibm-columns.ibm_cci-gv__modifier #{$ibm-listview-unro} .ibm_cci--ttb{
 	clear:both;
 	float:left;
 
