@@ -149,22 +149,30 @@ var CHICKENFEED = {};
     _initEvents : function() {
       var self = this;
 
+
       // open (or close) the menu
-      $(this.trigger).on( this.eventtype, function( ev ) {
+     // $(this.trigger).on( this.eventtype, function( ev ) {
+        $(this.trigger).on( 'click', function( ev )  {
+
+
         ev.stopPropagation();
         ev.preventDefault();
+
+       
         
         if( self.open ) {
           self._resetMenu();
         }
         else {
           self._openLevel();
-
+          
         }
       } );
 
       $(window).on("resize", function() {
         self._setHeight();
+     
+
       });
 
     },
@@ -467,8 +475,11 @@ Company.data.CustomStore = function(config) { ... }
         } else {
           target.addClass("active");
           heading.addClass("active");
+
         }
       }
+
+
 
       this.container.on("click", "h2", function(e) {
         var target = $(this).next("ul");
@@ -697,7 +708,7 @@ Company.data.CustomStore = function(config) { ... }
 jQuery(function() {
 
     // Tracking code for v17e pages
-    ibmStats.event({"ibmEV":"page load","ibmEvSection":jQuery("script[src$='/ww.js']").attr("src"),"ibmEvAction":"v17e page"});
+   // ibmStats.event({"ibmEV":"page load","ibmEvSection":jQuery("script[src$='/ww.js']").attr("src"),"ibmEvAction":"v17e page"});
 
     var ibmcom = {
     
@@ -805,9 +816,11 @@ jQuery(function() {
 ibmcom.init();
 
   (function($, IBM) {
-    IBM.Common.Widget.MobileMenu.init();
+   IBM.Common.Widget.MobileMenu.init();
+
+    window.scrollTo(1,1);
+    window.scrollTo(0,0);
   })(jQuery, CHICKENFEED);
 
 });
-
 
