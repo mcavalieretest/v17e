@@ -82,7 +82,7 @@ body ul li:before, body ul li:after {
 	text-decoration:none !important;
 	color:#000;
 	// line-height: 2.16rem;
-	word-break: break-all;
+	word-break: break-word;
 }
 
 #{$ibm-widget-js}.ibm-columns.ibm_cci-gv__modifier .ibm_cci-voicesLoader, 
