@@ -291,8 +291,9 @@ $(function() {
         }else if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
             $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
         }else if(window.location.hash === "#voices-grid" && window.innerWidth < 1280){
-            $("#ibm_cci-widget-js.ibm-columns").css("width", "980");
-            // widgetJS.masonry("reload");
+            $("#ibm_cci-widget-js.ibm-columns").css("width", "");
+            $("#ibm_cci-widget-js.ibm-columns").css("margin-left", "");
+            widgetJS.masonry("reload");
         }
       
     });
