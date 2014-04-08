@@ -42,6 +42,12 @@ $(function() {
                 }
             }
             updateURLHash(target.attr("id"));
+                if(window.location.hash === "#voices-list" && window.innerWidth > 1280){
+                    $("#ibm_cci-widget-js.ibm-columns").css("width", "");
+                    widgetJS.masonry("reload");
+                }else if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
+                    $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
+                }                        
         });
     // INITIALIZATION OF TRENDING TOPICS
     vo.init_t({
@@ -59,11 +65,12 @@ $(function() {
     // WHEN JSON FEEDS ARE FETCHED DO THE FOLLOWING
     $.when(vo.f_fetch_trending(), vo.f_fetch_feeds()).done(function(results, data) {
         var self = vo;
+        self.f_checkBrowserWidth();
         self.f_distribute(data);
         //INITIAL BUILD MASONRY TILES
-        vo.f_buildtiles();
+        self.f_buildtiles();
         //REMOVE THE SPINNER 
-        vo.f_removeNodes($("#ibm_cci-widget-js > span"));
+        self.f_removeNodes($("#ibm_cci-widget-js > span"));
         
         //SEARCH FUNCTION (START)
          $("#ibm-cc-search--field").focusin(function(event){
@@ -255,12 +262,15 @@ $(function() {
             console.log("infinite all trending scroll error: "+e);
         }
     }).on("resize", function() {
-        winHeight = $(window).height();
+        var winHeight = $(window).height();
+            ibmsortable = $(".ibm-sortable");
+            // ibmcolumn = $("#ibm_cci-widget-js.ibm-columns");
+
         if ($(window).width() <= 500 || $(window).width() <= 800) {
-            $(".ibm-sortable").imagesLoaded(function() {
-                console.log("masonry triggered");
-                $(".ibm-sortable").append($(".ibm-card")).masonry("appended", $(".ibm-card"));
-                $(".ibm-sortable").masonry("reload");
+            ibmsortable.imagesLoaded(function() {
+                // console.log("masonry triggered");
+                ibmsortable.append($(".ibm-card")).masonry("appended", $(".ibm-card"));
+                ibmsortable.masonry("reload");
             });
             vo.f_removeNodes($("#ibm_cci-widget-js > span"));
         }
@@ -270,6 +280,18 @@ $(function() {
             $(".ibm_cci--ls--toggle--li--grid-icon a").addClass("selected");
             vo.f_removeNodes($("#ibm_cci-widget-js > span"));
         }
+
+        // FOR FLUID LAYOUT
+        if(window.location.hash === "#voices-list" && window.innerWidth > 1280){
+            $("#ibm_cci-widget-js.ibm-columns").css("width", "");
+            widgetJS.masonry("reload");
+        }else if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
+            $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
+        }else if(window.location.hash === "#voices-grid" && window.innerWidth < 1280){
+            $("#ibm_cci-widget-js.ibm-columns").css("width", "980");
+            // widgetJS.masonry("reload");
+        }
+      
     });
     // INFINITE SCROLL (END)
     
@@ -432,9 +454,9 @@ $(function() {
                         if(img.naturalWidth > 0){
                             imgWidth = img.naturalWidth;
                         }
-                        console.log("inside: "+imgWidth);
+                        // console.log("inside: "+imgWidth);
                     }
-                    console.log("outside: "+imgWidth);
+                    // console.log("outside: "+imgWidth);
                     return img.src = imgURL;
                 }
             }catch(e){
@@ -724,6 +746,14 @@ $(function() {
 	        catch(e){
         		console.log("error in f_reTweetToggle function: "+e);
         	}
+        },
+        f_checkBrowserWidth: function(){
+            var self = vo, 
+                browserinnerWidth = window.innerWidth,
+                winHash = window.location.hash;
+            if(window.location.hash === "#voices-grid" && window.innerWidth > 1300){
+                $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
+            }
         }
     };
     //vo (END)
