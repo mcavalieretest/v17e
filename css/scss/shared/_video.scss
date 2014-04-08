@@ -79,13 +79,13 @@ img.ibm-video-background {
 
 
 #{$ie7Selector} .ibm-col-6-2 .ibm-video-play {
-	top: 0px;
+	top: 0;
 	margin-top: 35px;
 }
 
 #{$ie7Selector} .ibm-col-1-1 .ibm-video-play,
 #{$ie7Selector} .ibm-col-6-4 .ibm-video-play {
-	top: 0px;
+	top: 0;
 	margin-top: 100px;
 }
 
@@ -166,11 +166,12 @@ img.ibm-video-background {
 
 #ibm-content .ibm-columns .ibm-col-1-1 .ibm-media-beneath h3,
 #ibm-content .ibm-columns .ibm-col-6-4 .ibm-media-beneath h3 {
-	margin: 0px;
+	margin: 0;
 }
+
 #ibm-content .ibm-columns .ibm-col-1-1 .ibm-media-beneath p,
 #ibm-content .ibm-columns .ibm-col-6-4 .ibm-media-beneath p {
-	padding: 2px 0px;
+	padding: 2px 0;
 }
 
 /* container-controls for video section */
@@ -255,8 +256,8 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 .ibm-play-button-medium,
 .ibm-play-button-large {
 	position: absolute;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -291,91 +292,83 @@ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);*/
 /* CSS For Video End Here ===================================================== */
 
 .video-control-bar div {
-	display:inline-block;
+	display: inline-block;
 }
 
 body.yt-video-fullscreen {
-	overflow:hidden;
+	overflow: hidden;
 }
 
 .yt-fullscreen-blocker{
 	background-color: black;
 	height: 100%;
 	width: 100%;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	position: absolute;
 	z-index: 998;
 }
 
 .video-control-bar {
 	background: #4f525a; /* Old browsers */
-	background: -moz-linear-gradient(top,  #4f525a 0%, #1c1d1e 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f525a), color-stop(100%,#1c1d1e)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #4f525a 0%,#1c1d1e 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #4f525a 0%,#1c1d1e 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #4f525a 0%,#1c1d1e 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #4f525a 0%,#1c1d1e 100%); /* W3C */
+	@include background-gradient(background,(top, #4f525a, #1c1d1e));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f525a', endColorstr='#1c1d1e',GradientType=0 ); /* IE6-9 */
-    color:white;
-	
+    color: #FFF;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	
-	
-	width:100%;
-	position:relative;
-	top:-8px;
-	font-size:10px;
-	border-left:10px;
-	border-right:10px;
-	text-align:left;
+	width: 100%;
+	position: relative;
+	top: -8px;
+	font-size: 10px;
+	border-left: 10px;
+	border-right: 10px;
+	text-align: left;
 }
 
 .video-control-bar .icon {
 	display: inline-block;
 	margin: auto;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
 
 .video-control-bar a{
 	display: inline-block;
-	height:100%;
+	height: 100%;
 }
 
 .video-control-bar .elapsed-time-wrapper{
-	width:30px;
-	padding-left:5px;
+	width: 30px;
+	padding-left: 5px;
 }
 
 .video-control-bar .play-pause{
-	padding-left:10px;
+	padding-left: 10px;
 }
 
 .video-control-bar .elapsed-time{
-	float:right;
+	float: right;
 }
 
 .video-control-bar .total-time{
-	float:right;
-	width:35px;
+	float: right;
+	width: 35px;
 }
 
 .iDevice .video-control-bar .time-progress-bar {
-	right:0px;
+	right: 0;
 }
 
 .video-control-bar .time-progress-bar {
 	position: absolute;
 	left: 33px;
 	right: 120px;
-	top:4px;
+	top: 4px;
 	margin-top: 2px;
-	line-height:12px;
+	line-height: 12px;
 }
 
 .video-control-bar .progress-bar-container {	
@@ -389,35 +382,25 @@ body.yt-video-fullscreen {
 }
 
 .video-control-bar .progress-bar-background {
-	width:100%;
-	border-top:1px solid #202224;
-	border-bottom:1px solid #161818;
-	height:8px;
-	position:relative;
+	width: 100%;
+	border-top: 1px solid #202224;
+	border-bottom: 1px solid #161818;
+	height: 8px;
+	position: relative;
 	background: #2C2E31; /* Old browsers */
-	background: -moz-linear-gradient(top,  #2C2E31 0%, #222326 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2C2E31), color-stop(100%,#222326)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #2C2E31 0%,#222326 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #2C2E31 0%,#222326 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #2C2E31 0%,#222326 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #2C2E31 0%,#222326 100%); /* W3C */
+	@include background-gradient(background,(top, #2C2E31, #222326));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2C2E31', endColorstr='#222326',GradientType=0 ); /* IE6-9 */
 }
 
 .video-control-bar .progress-bar{
 	height: 100%;
 	vertical-align: top;
-	margin-top:-1px;
-	position:relative;
-	border-top:1px solid #AFAFAF;
-	border-bottom:1px solid #7D7D7D;
+	margin-top: -1px;
+	position: relative;
+	border-top: 1px solid #AFAFAF;
+	border-bottom: 1px solid #7D7D7D;
 	background: #F3F3F3; /* Old browsers */
-	background: -moz-linear-gradient(top,  #F3F3F3 0%, #C7C7C7 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3F3F3), color-stop(100%,#C7C7C7)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #F3F3F3 0%,#C7C7C7 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #F3F3F3 0%,#C7C7C7 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #F3F3F3 0%,#C7C7C7 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #F3F3F3 0%,#C7C7C7 100%); /* W3C */
+	@include background-gradient(background,(top, #F3F3F3, #C7C7C7));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3F3', endColorstr='#C7C7C7',GradientType=0 ); /* IE6-9 */
 }
 
@@ -426,62 +409,52 @@ body.yt-video-fullscreen {
 	top: -9px;
 	left: 100%;
 	margin-left: -12px;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .video-control-bar .loaded-bar{
 	height: 100%;
 	margin-top: -13px;
-	width:0%;
+	width: 0;
 	display:block;
-	border-top:1px solid #3D3E40;
-	border-bottom:1px solid #323434;
+	border-top: 1px solid #3D3E40;
+	border-bottom: 1px solid #323434;
 	background: #55575A; /* Old browsers */
-	background: -moz-linear-gradient(top,  #55575A 0%, #4B4B4E 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#55575A), color-stop(100%,#4B4B4E)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #55575A 0%,#4B4B4E 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #55575A 0%,#4B4B4E 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #55575A 0%,#4B4B4E 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #55575A 0%,#4B4B4E 100%); /* W3C */
+	@include background-gradient(background,(top, #55575A, #4B4B4E));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55575A', endColorstr='#4B4B4E',GradientType=0 ); /* IE6-9 */
 }
 
 .video-control-bar .sound {
-	float:right;
-	margin-right:10px;
+	float: right;
+	margin-right: 10px;
 }
 
 .video-control-bar .sound a {
-	float:left;
+	float: left;
 }
 
 .video-control-bar .sound.mute .volume-marker {
-	left:0px !important;
+	left: 0 !important;
 }
 
 .video-control-bar .volume {
 	/*margin-top:5px;*/
-	padding-right:5px;
+	padding-right: 5px;
 }
 
 .video-control-bar .volume-bar {
 	height: 3px;
 	width: 30px;
-	background-color: #777777;
+	background-color: #777;
 	position: relative;
-	vertical-align:middle;
+	vertical-align: middle;
 }
 
 .video-control-bar .volume-marker {
 	width: 4px;
 	height: 7px;
 	background: #7C7D7F; /* Old browsers */
-	background: -moz-linear-gradient(top,  #7C7D7F 0%, #777777 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7C7D7F), color-stop(100%,#777777)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #7C7D7F 0%,#777777 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #7C7D7F 0%,#777777 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #7C7D7F 0%,#777777 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #7C7D7F 0%,#777777 100%); /* W3C */
+	@include background-gradient(background,(top, #7C7D7F, #777777));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7C7D7F', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
 	position: relative;
 	vertical-align:top;
@@ -493,49 +466,44 @@ body.yt-video-fullscreen {
 
 .video-control-bar .volume-marker:hover, .video-control-bar .volume-marker.selected{
 	background: #eaeaea; /* Old browsers */
-	background: -moz-linear-gradient(top,  #eaeaea 0%, #c1c1c1 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eaeaea), color-stop(100%,#c1c1c1)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #eaeaea 0%,#c1c1c1 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #eaeaea 0%,#c1c1c1 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #eaeaea 0%,#c1c1c1 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #eaeaea 0%,#c1c1c1 100%); /* W3C */
+	@include background-gradient(background,(top, #eaeaea, #c1c1c1));
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
 	cursor: pointer;
 }
 
 .video-control-bar .caption {
-	float:right;
-	margin-right:5px;
+	float: right;
+	margin-right: 5px;
 }
 
 .video-control-bar .post-progress-bar {
-	float:right;
+	float: right;
 }
 
 .dj_ie8 .video-control-bar .fullscreen {
-	display:none;
+	display: none;
 }
 
 .video-control-bar .fullscreen {
-	float:right;
-	margin-right:15px;
+	float: right;
+	margin-right: 15px;
 }
 
 .video-control-bar .speaker {
-	height:23px;
+	height: 23px;
 }
 
 .yt-share-links{
 	position: absolute;
-	margin-left:15px;
-	margin-top:35px;
-	z-index:2;
+	margin-left: 15px;
+	margin-top: 35px;
+	z-index: 2;
 }
 
 .yt-share-links a{
 	display: block;
 	float: left;
-	margin-right:7px;
+	margin-right: 7px;
 }
 
 .videoOverlay{
@@ -543,22 +511,22 @@ body.yt-video-fullscreen {
 }
 
 :-webkit-full-screen.yt-widget{
-	background-color:black;
+	background-color: #000;
 }
 
 :-moz-full-screen.yt-widget{
-	background-color: black;
+	background-color: #000;
 };
 
 .yt-fullscreen-text{
 	position: absolute;
 	font-size: 2em;
 	width: 320px;
-	color: white;
-	background-color: black;
-	padding:.2em;
-	border-radius:20px;
-	text-align:center;
+	color: #FFF;
+	background-color: #000;
+	padding: .2em;
+	border-radius: 20px;
+	text-align: center;
 }
 .video-control-bar .fullscreen-image,
 .video-control-bar .fullscreen-image:hover,
@@ -568,7 +536,7 @@ body.yt-video-fullscreen {
 .video-control-bar .play-image,
 .video-control-bar .play-image:hover,
 .video-control-bar .progress-bar-arrow {
-	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
+	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
 	height: 23px;
 	width: 23px;
 }
@@ -602,9 +570,9 @@ body.yt-video-fullscreen {
 .video-control-bar .mute-image:hover,
 .video-control-bar .caption-image,
 .video-control-bar .caption-image:hover {
-	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
-	height:23px;
-	width:15px;
+	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
+	height: 23px;
+	width: 15px;
 }
 .video-control-bar .caption-image {
 	background-position: 0 0;
@@ -632,9 +600,9 @@ body.yt-video-fullscreen {
 .video-share-email,
 .video-share-twitter,
 .video-share-facebook {
-	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
-	height:54px;
-	width:52px;
+	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
+	height: 54px;
+	width: 52px;
 }
 .video-share-email {
 	background-position: -49px -110px;
@@ -649,7 +617,7 @@ body.yt-video-fullscreen {
 }
 
 .ibm-video-close-overlay{
-	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat -49px -165px;
-	height:47px;
-	width:45px;
+	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat -49px -165px;
+	height: 47px;
+	width: 45px;
 }
