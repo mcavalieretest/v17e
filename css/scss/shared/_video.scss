@@ -117,7 +117,6 @@ img.ibm-video-background {
 	display: none;
 }
 
-
 .ibm-media-list .ibm-media-thumb p .show_more {
 	display: none;
 }
@@ -144,13 +143,11 @@ img.ibm-video-background {
 	margin-top: -63px;
 	left: -14px;
 }
+
 .ibm-col-5-1 .ibm-thumbnail:hover .ibm-video-play,
 .ibm-col-6-1 .ibm-thumbnail:hover .ibm-video-play {
-
 	background-position: -14px -360px;
 }
-
-
 
 .ibm-col-5-1 .ibm-media .ibm-thumbnail-widget span.ibm-thumbnail {
 	width: 172px;
@@ -158,6 +155,7 @@ img.ibm-video-background {
 	height: 108px;
 	margin-top: 10px;	
 }
+
 .ibm-col-5-1 .ibm-media .ibm-thumbnail-widget .ibm-thumbnail img {
 	width: 172px;
 	height: 108px;
@@ -536,7 +534,7 @@ body.yt-video-fullscreen {
 .video-control-bar .play-image,
 .video-control-bar .play-image:hover,
 .video-control-bar .progress-bar-arrow {
-	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height: 23px;
 	width: 23px;
 }
@@ -570,7 +568,7 @@ body.yt-video-fullscreen {
 .video-control-bar .mute-image:hover,
 .video-control-bar .caption-image,
 .video-control-bar .caption-image:hover {
-	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height: 23px;
 	width: 15px;
 }
@@ -600,7 +598,7 @@ body.yt-video-fullscreen {
 .video-share-email,
 .video-share-twitter,
 .video-share-facebook {
-	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat;
 	height: 54px;
 	width: 52px;
 }
@@ -617,7 +615,7 @@ body.yt-video-fullscreen {
 }
 
 .ibm-video-close-overlay{
-	background: url(#{$imagePath}/common/v17e/i/icons/ytplayersprite.png) no-repeat -49px -165px;
+	background: url(#{$imagePath}/i/icons/ytplayersprite.png) no-repeat -49px -165px;
 	height: 47px;
 	width: 45px;
 }
