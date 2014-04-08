@@ -26,6 +26,7 @@ $(function() {
                     $(".ibm_cci-lv__modifier .ibm_cci--tweet-content-text").css("display", "block");
                     $(".ibm_cci-lv__modifier .ibm-video").css("display", "none");
                     // REBULILD MASONRY TILES FOR LIST VIEW
+                    vo.f_checkBrowserWidth();
                     widgetJS.masonry("reload");
                     setTimeout(function() {
                         widgetJS.masonry('reloadItems');
@@ -35,6 +36,7 @@ $(function() {
                     $(".ibm_cci-gv__modifier .ibm_cci--tweet-content-text").css("display", "none");
                     $(".ibm_cci-gv__modifier .ibm-video").removeAttr("style");
                     // REBULILD MASONRY TILES GRID VIEW
+                    vo.f_checkBrowserWidth();
                     widgetJS.masonry("reloadItems");
                     setTimeout(function() {
                         widgetJS.masonry({fromBottom: true});
@@ -281,6 +283,7 @@ $(function() {
             vo.f_removeNodes($("#ibm_cci-widget-js > span"));
         }
 
+        vo.f_checkBrowserWidth();
         // FOR FLUID LAYOUT
         if(window.location.hash === "#voices-list" && window.innerWidth > 1280){
             $("#ibm_cci-widget-js.ibm-columns").css("width", "");
@@ -750,10 +753,19 @@ $(function() {
         f_checkBrowserWidth: function(){
             var self = vo, 
                 browserinnerWidth = window.innerWidth,
-                winHash = window.location.hash;
-            if(window.location.hash === "#voices-grid" && window.innerWidth > 1300){
+                winHash = window.location.hash,
+                marginLeft = self.f_calculateFluidMargin();
+
+            if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
+                $("#ibm_cci-widget-js.ibm-columns").css("margin-left", marginLeft);
                 $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
             }
+        },
+        f_calculateFluidMargin: function(lm){
+            console.log("triggered calculateFluidMargin");
+            var widgetJSWidth = $("#ibm_cci-widget-js").outerWidth(true);
+
+                return ((widgetJSWidth % 320)/2)-10;
         }
     };
     //vo (END)

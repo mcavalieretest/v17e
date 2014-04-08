@@ -119,9 +119,15 @@ body ul li:before, body ul li:after {
 
 /* GRID VIEW UNRESOLVED AND RESOLVED (BEGIN) ***/
 .ibm-columns.ibm_cci-gv__modifier {
+	margin:40px auto;
+	// padding: 0 0 10px !important;
+}
+
+.ibm-columns.ibm_cci-lv__modifier {
 	margin:40px auto !important;
 	// padding: 0 0 10px !important;
 }
+
 
 .ibm-columns.ibm_cci-gv__modifier .ibm-col-1-1 {
 	float:left;
