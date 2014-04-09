@@ -2,7 +2,8 @@
 
 #ibm-top {
     background: #FFF;
-    margin-top: 74px;
+    /* Needed to override JS-based scrolling of masthead in Dojo code. TODO - Remove eventually. */
+    margin-top: 0 !important;
     min-width: 980px;
 }
 
