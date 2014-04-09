@@ -4,7 +4,8 @@ $(function() {
     // DEFAULT URL HASH (END)   
     
     var defaultValue = "comma,separated,values", 
-        alertText = $('.ibm_cci--ls--search p');
+        alertText = $('.ibm_cci--ls--search p'),
+        widgetJS = $("#ibm_cci-widget-js");
     
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (START)
     var updateURLHash = function(value) {
@@ -18,7 +19,7 @@ $(function() {
     // MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)				
         $("ul.ibm_cci--ls--toggle--ul li").on("click", "a", function(event) {
             event.preventDefault();
-            var target = $(event.target), widgetJS = $("#ibm_cci-widget-js");
+            var target = $(event.target);
             if (!target.hasClass("selected")) {
                 target.addClass("selected").parent().siblings().children().removeClass("selected");
                 if (widgetJS.hasClass("ibm_cci-gv__modifier")) {
@@ -217,6 +218,7 @@ $(function() {
         try {
             var prevDocumentHeight = $(document).height() - 900;
             if ($(window).scrollTop() + $(window).height() >= $(document).height() - 900 && $(window).data("ajaxReq", true)) {
+                vo.f_gotoTop();
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
                 // Call Ajax
@@ -588,7 +590,7 @@ $(function() {
                 $sortable.masonry({
                     gutter: 0,
                     itemSelector: ".ibm-card",
-                    transitionDuration: "7s"
+                    transitionDuration: "10s"
                 }, true);
             });
         },
@@ -756,17 +758,35 @@ $(function() {
                 browserinnerWidth = window.innerWidth,
                 winHash = window.location.hash,
                 marginLeft = self.f_calculateFluidMargin();
+                
+                if(marginLeft !== 0){
+                    marginLeft = marginLeft - 10;
+                }else if(marginLeft === 0){
+                    marginLeft = marginLeft + 150;
+                }
 
             if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
                 $("#ibm_cci-widget-js.ibm-columns").css("margin-left", marginLeft);
                 $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
             }
-        },
-        f_calculateFluidMargin: function(lm){
-            console.log("triggered calculateFluidMargin");
-            var widgetJSWidth = $("#ibm_cci-widget-js").outerWidth(true);
 
-                return ((widgetJSWidth % 320)/2)-10;
+            // $("#ibm_cci-widget-js").masonry("reload");
+        },
+        f_calculateFluidMargin: function(){
+            var widgetJSWidth = $("#ibm_cci-widget-js").outerWidth(true);
+                return ((widgetJSWidth % 320)/2); 
+        },
+        f_gotoTop: function(){
+            var gotoTop = $("#ibm_cci-gototop-js"),
+                winScrollTop = $(window).scrollTop(),
+                winHeight = $(window).height(),
+                documentHeight = $(document).height() - 900;
+
+            if(winScrollTop + winHeight >= documentHeight){
+                $(gotoTop).css({"opacity": 1, "visibility": "visible"});
+            }else if(winScrollTop + winHeight <= documentHeight){
+                $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
+            }
         }
     };
     //vo (END)
