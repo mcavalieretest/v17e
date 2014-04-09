@@ -218,7 +218,6 @@ $(function() {
         try {
             var prevDocumentHeight = $(document).height() - 900;
             if ($(window).scrollTop() + $(window).height() >= $(document).height() - 900 && $(window).data("ajaxReq", true)) {
-                vo.f_gotoTop();
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
                 // Call Ajax
@@ -261,8 +260,11 @@ $(function() {
                 }).always(function() {
                     // console.log("inside infinite scroll complete");
                 });
-            }else {
-                if ($(window).scrollTop() <= 200){
+            }else if ($(window).scrollTop() > 800){
+                    vo.f_gotoTop();
+                }
+            else {
+                if ($(window).scrollTop() < 200){
                     vo.f_gotoTop();
                 }
             }
@@ -785,16 +787,19 @@ $(function() {
                 winScrollTop = $(window).scrollTop(),
                 winHeight = $(window).height(),
                 documentHeight = $(document).height() - 900;
-
-            if(winScrollTop + winHeight >= documentHeight){
-                $(gotoTop).css({"opacity": 1, "visibility": "visible"});
+                // winScrollTop + winHeight >= documentHeight
+            if(winScrollTop > 400){
+                $(gotoTop).css({"opacity": 1, "visibility": "visible"}).animate("slow");
             }else if(winScrollTop < 200){
-                console.log("trigerred inside else scrolltop"+winScrollTop);
-                $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
+                console.log("trigerred inside else scrolltop: "+winScrollTop);
+                $(gotoTop).css({"opacity": 0, "visibility": "hidden"}).animate("slow");
             }
 
-            gotoTop.on("click", function(){
-                $("html, body").animate({ scrollTop: 0 }, "slow");
+            gotoTop.on("click", function(event){
+                event.preventDefault();
+                // $("html, body").({ scrollTop: 0 });
+                $("html, body").stop(true).animate({ scrollTop: 0 }, "slow");
+                // $(window).data("ajaxReq", true);
             });
         }
     };
