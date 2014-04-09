@@ -216,7 +216,9 @@ $(function() {
         //SEARCH TOPICS ELEMENTS (END)	
         
         self.f_reTweetToggle();
-        // self.f_checkBrowserWidth();
+
+        // ADDED THE CHECKBROWSERWIDTH AGAIN TO TEST FIREFOX
+        self.f_checkBrowserWidth();
     });
     //WHEN(END)	
     //INFINITE SCROLL (START)
