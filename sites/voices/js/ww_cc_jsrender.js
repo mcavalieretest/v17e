@@ -261,6 +261,10 @@ $(function() {
                 }).always(function() {
                     // console.log("inside infinite scroll complete");
                 });
+            }else {
+                if ($(window).scrollTop() <= 200){
+                    vo.f_gotoTop();
+                }
             }
         } catch (e) {
             console.log("infinite all trending scroll error: "+e);
@@ -784,9 +788,14 @@ $(function() {
 
             if(winScrollTop + winHeight >= documentHeight){
                 $(gotoTop).css({"opacity": 1, "visibility": "visible"});
-            }else if(winScrollTop + winHeight <= documentHeight){
+            }else if(winScrollTop < 200){
+                console.log("trigerred inside else scrolltop"+winScrollTop);
                 $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
             }
+
+            gotoTop.on("click", function(){
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
         }
     };
     //vo (END)
