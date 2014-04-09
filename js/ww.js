@@ -707,19 +707,22 @@ Company.data.CustomStore = function(config) { ... }
 
 jQuery(function() {
 
-  // Tracking code for v17e pages
-  var csses = ["application","data","forms","module","social"],
-        cssUsed = "",
-        jsUsed = jQuery("script[src$='/ww.js']").length == 1 ? jQuery("script[src$='/ww.js']").attr("src") : jQuery("script[src$='/w3.js']").length > 0 ? jQuery("script[src$='/w3.js']").attr("src") : "NA";
+    try {
+      // Tracking code for v17e pages
+      var csses = ["application","data","forms","module","social"],
+            cssUsed = "",
+            jsUsed = jQuery("script[src$='/ww.js']").length == 1 ? jQuery("script[src$='/ww.js']").attr("src") : jQuery("script[src$='/w3.js']").length > 0 ? jQuery("script[src$='/w3.js']").attr("src") : "NA";
 
-  jQuery.each(csses, function(k, cssFileName){
-    if (jQuery("link[href$='/"+cssFileName+".css']").length > 0) {
-      cssUsed += ","+cssFileName;
+      jQuery.each(csses, function(k, cssFileName){
+        if (jQuery("link[href$='/"+cssFileName+".css']").length > 0) {
+          cssUsed += ","+cssFileName;
+        }
+      });
+
+      cssUsed = cssUsed.substr(1);
+      ibmStats.event({"ibmEV":"page load","ibmEvSection":jsUsed,"ibmEvAction":"v17e page","ibmEvModule":cssUsed});
     }
-  });
-
-  cssUsed = cssUsed.substr(1);
-  ibmStats.event({"ibmEV":"page load","ibmEvSection":jsUsed,"ibmEvAction":"v17e page","ibmEvModule":cssUsed});
+    catch (e) {}
 
     var ibmcom = {
     
