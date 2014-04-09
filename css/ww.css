@@ -7376,7 +7376,7 @@ markup:
   background: -o-linear-gradient(top, #595c64, #1b1b1c);
   background: -ms-linear-gradient(top, #595c64, #1b1b1c);
   background: linear-gradient(top, #595c64, #1b1b1c);
-  height: 50px;
+  height: 50px !important;
   border-top: 1px solid #999;
   border-bottom: 1px solid #666; }
 

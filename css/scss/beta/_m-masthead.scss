@@ -268,7 +268,7 @@ html.m-menu-open {
 }
 
 .m-shift {
-  
+  @include transition(all 0.5s);   
   @include transform(translate3d(0px, 0px, 0px));
 }
 
