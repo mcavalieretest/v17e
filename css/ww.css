@@ -7932,8 +7932,7 @@ html.m-menu-open #m-wrap {
 
 input#m-q {
   font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 14px;
   line-height: 14px;
   -webkit-box-shadow: 0 1px 0 #555555;
   -moz-box-shadow: 0 1px 0 #555555;
@@ -7988,6 +7987,25 @@ input#m-q {
 #m-local-menu {
   background: #336CA6; }
 
+.m-shift {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px); }
+
+.m-shift.m-enable {
+  -webkit-transform: translate3d(-250px, 0px, 0px);
+  -moz-transform: translate3d(-250px, 0px, 0px);
+  -o-transform: translate3d(-250px, 0px, 0px);
+  -ms-transform: translate3d(-250px, 0px, 0px);
+  transform: translate3d(-250px, 0px, 0px); }
+
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000; }
@@ -8026,7 +8044,7 @@ input#m-q {
   color: rgba(255, 255, 255, 0.4);
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   font-weight: 300;
-  font-size: 2em;
+  font-size: 13px;
   cursor: pointer; }
 
 #m-menu.m-local-menu-enable h2 {
@@ -8035,8 +8053,7 @@ input#m-q {
 .m-menu.m-cover h2 {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 1em; }
+  letter-spacing: 1px; }
 
 .m-menu ul li > a {
   display: block;
@@ -8046,7 +8063,7 @@ input#m-q {
   outline: none;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.2);
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
-  font-size: 1.4em;
+  font-size: 18px;
   padding-left: 1em;
   cursor: pointer; }
 
@@ -8132,25 +8149,6 @@ html.m-menu-open .m-content {
 /* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
 .dj_safari.touch #m-wrap {
   height: auto; }
-
-.m-shift {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate3d(0px, 0px, 0px);
-  -ms-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px); }
-
-.m-shift.m-enable {
-  -webkit-transform: translate3d(-250px, 0px, 0px);
-  -moz-transform: translate3d(-250px, 0px, 0px);
-  -o-transform: translate3d(-250px, 0px, 0px);
-  -ms-transform: translate3d(-250px, 0px, 0px);
-  transform: translate3d(-250px, 0px, 0px); }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 /* Relative positioning version */

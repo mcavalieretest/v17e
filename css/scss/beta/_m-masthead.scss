@@ -59,7 +59,7 @@ html.m-menu-open #m-wrap {
 
 input#m-q {
   font-family: $defaultFont-dbcs;
-  @include px-to-rem(font-size,18px);
+  font-size: 14px;
   line-height: 14px;
   @include box-shadow(0 1px 0 #555);
   border: $mSearchBoxBorder solid #000;
@@ -108,6 +108,15 @@ input#m-q {
   background: #336CA6;
 }
 
+.m-shift {
+  @include transition(all 0.5s);   
+  @include transform(translate3d(0px, 0px, 0px));
+}
+
+.m-shift.m-enable {
+  @include transform(translate3d(-$mMenuWidth, 0px, 0px));
+}
+
 /* overlays for pusher and for level that gets covered */
 .m-shift:after {
   z-index: 1000;
@@ -143,7 +152,7 @@ input#m-q {
   color: rgba(255,255,255,0.4);
   text-shadow: 0 0 1px rgba(0,0,0,0.1);
   font-weight: 300;
-  font-size: 2em;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -155,7 +164,6 @@ input#m-q {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 1em;
 }
 
 .m-menu ul li > a {
@@ -165,8 +173,8 @@ input#m-q {
   padding: 0.7em 1em 0.7em 0;
   outline: none;
   box-shadow: inset 0 -1px rgba(255,255,255,0.2);
-  text-shadow: 0 0 1px rgba(255,255,255,0.1);
-  font-size: 1.4em;
+  text-shadow: 0 0 1px rgba(255,255,255,0.1); 
+  font-size: 18px;
   padding-left: $mMenuLevelIndent;
   cursor: pointer;
 }
@@ -265,15 +273,6 @@ html.m-menu-open {
 /* Prevent choppy scrolling in iPad / iPhone.  when converting from dojo we'll need to replace dj_safari */
 .dj_safari.touch #m-wrap {
   height: auto;
-}
-
-.m-shift {
-  @include transition(all 0.5s);   
-  @include transform(translate3d(0px, 0px, 0px));
-}
-
-.m-shift.m-enable {
-  @include transform(translate3d(-$mMenuWidth, 0px, 0px));
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
