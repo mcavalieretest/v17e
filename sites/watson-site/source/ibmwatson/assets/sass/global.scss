@@ -381,6 +381,17 @@ body {
 /**
  * footer
  */
+
+#ibm-content ul.ibm-live-assistance-list a{
+ 	color: black;
+	font-family: "HelvBoldIBM", Arial, sans-serif;
+	font-size: 1.2em;
+ 	}
+ 	#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:before {
+ 		content: "";
+ 		}
+
+
 #watson-footer {
 	background: transparent none no-repeat center top;
 
