@@ -1,0 +1,1370 @@
+[
+{
+    "id" : 5,
+    "company" : "Leyou",
+    "title": "X made with y",
+    "color1" : "#0c408d",
+    "short-description" : "Blizzard is predicting ski demand with data",
+    "filterTechnology": "data",
+    "filterIndustry": "media-and-entertainment",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s5/s5-t5-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "copy" : "Blizzard is predicting ski demand with data",
+                "capability" : "How to optimize a supply chain",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s5/s5-t31-bg.png",
+        "template_background_color" : "#0c408d",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>Every year, Blizzard Skis manufactures roughly 400,000 skis, some requiring as many as 18 different materials and taking up to 16 weeks to build. Using data, Blizzard Skis has increased efficiency by forecasting trends, weather patterns, and other short-term shifts in the market that affect their business, and tailor production to meet changing demands in specific parts of the world. Data has also given them the ability to monitor their supplies so that no matter how demands change, they always have the materials to meet them. Now production cycles are closer to 8 weeks, making Blizzard Skis more nimble than ever.</p><p>Learn about how IBM Big Data & Analytics can transform your business →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "IBM is also helping us look at how weather patterns influence ski demand.",
+                "attribution" : "Eric-Jan Kaak, CIO, Blizzard Skis"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-t32-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-tv-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "more accurate at predicting demand for skis."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#0c408d",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  }
+  ,
+
+  {
+    "id" : 1,
+    "company" : "Blizzard Skis",
+    "title": "Skis made with data",
+    "color1" : "#0c408d",
+    "filterTechnology": "data",
+    "filterIndustry": "media-and-entertainment",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s1/s1-t51-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-t51-mA.png",
+                "hyperlink": "",
+                "quote": "With real-time data, we can produce what the market needs, when it needs them. A few years ago that wasn't possible.",
+                "attribution" : "Eric-Jan Kaak, CIO, Blizzard Skis"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s1/s1-t31-bg.png",
+        "template_background_color" : "#0c408d",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>Every year, Blizzard Skis manufactures roughly 400,000 skis, some requiring as many as 18 different materials and taking up to 16 weeks to build. Using data, Blizzard Skis has increased efficiency by forecasting trends, weather patterns, and other short-term shifts in the market that affect their business, and tailor production to meet changing demands in specific parts of the world. Data has also given them the ability to monitor their supplies so that no matter how demands change, they always have the materials to meet them. Now production cycles are closer to 8 weeks, making Blizzard Skis more nimble than ever.</p><p>Learn about how IBM Big Data & Analytics can transform your business →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "./assets/images/s1/s1-t32-mD.jpg",
+                "hyperlink": "",
+                "quote": "IBM is also helping us look at how weather patterns influence ski demand.",
+                "attribution" : "Eric-Jan Kaak, CIO, Blizzard Skis"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-t32-mE.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-t52-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 1"
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#0c408d",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  },
+{
+    "id" : 3,
+    "company" : "Data Symphony",
+    "title": "X made with y",
+    "color1" : "#d13670",
+    "short-description" : "lorem ipsum",
+    "filterTechnology": "cloud",
+    "filterIndustry": "media-and-entertainment",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s3/s3-t5-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "copy" : "lorem ipsum",
+                "capability" : "How to ...",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s3/s3-t31-bg.png",
+        "template_background_color" : "#d13670",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>On average, 8,300 high school student sdrop out each day in the US. Gwinnett County Public Schools, the 14th largest school district in the US, is pursuing and initiative in personalized education using IBM analytics. The project applies predictive modeling, deep content analytics and advanced case management to identify how students learn and recommends personalized learning strategies. The eventual goal is to transform education by finding ways to motivate learners, and enhance teacher effectiveness using data.</p><p>Learn more about IBM Education technology solutions →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "Lorem ipsum",
+                "attribution" : "someone"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s3/s3-t32-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s3/s3-tv-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s3/s3-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "more accurate at predicting demand for skis."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s3/s3-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#d13670",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  }
+  ,
+{
+    "id" : 4,
+    "company" : "Food Truck",
+    "title": "X made with y",
+    "color1" : "#eb6f33",
+    "short-description" : "Blizzard is predicting ski demand with data",
+    "filterTechnology": "data",
+    "filterIndustry": "media-and-entertainment",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s4/s4-t5-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "copy" : "Blizzard is predicting ski demand with data",
+                "capability" : "How to optimize a supply chain",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s4/s4-t31-bg.png",
+        "template_background_color" : "#eb6f33",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>Every year, Blizzard Skis manufactures roughly 400,000 skis, some requiring as many as 18 different materials and taking up to 16 weeks to build. Using data, Blizzard Skis has increased efficiency by forecasting trends, weather patterns, and other short-term shifts in the market that affect their business, and tailor production to meet changing demands in specific parts of the world. Data has also given them the ability to monitor their supplies so that no matter how demands change, they always have the materials to meet them. Now production cycles are closer to 8 weeks, making Blizzard Skis more nimble than ever.</p><p>Learn about how IBM Big Data & Analytics can transform your business →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "IBM is also helping us look at how weather patterns influence ski demand.",
+                "attribution" : "Eric-Jan Kaak, CIO, Blizzard Skis"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s4/s4-t32-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s4/s4-tv-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s4/s4-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "more accurate at predicting demand for skis."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s4/s4-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#eb6f33",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  }
+  ,
+{
+    "id" : 5,
+    "company" : "Leyou",
+    "title": "Happy kids made with data",
+    "color1" : "#ff9900",
+    "short-description" : "Leyou short description missing",
+    "filterTechnology": "data",
+    "filterIndustry": "retail",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s5/s5-t5-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "copy" : "Leyou short description missing",
+                "capability" : "TK",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s5/s5-t31-bg.jpg",
+        "template_background_color" : "#ff9900",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>As it grew froma traditional chain store to include online and direct marketing, Leyou, a store with products for mom, babies and kids, knew that intuition was not enough to sustain growth. By integrating analytics at the core of the business, IBM identifies the what, when and where behind the millions of transactions by Leyou memebers. With 4 million online customers and store sin 13 ciites, analytics has played a key role in making Leyou one of the largest retailers that actually understands the needs of a growing Chinese middle-class.</p><p>Learn about how Smarter Commerce for Retail →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "We have millions of members and millions o transactions we need ot put to use, and this is when we turned to IBM.",
+                "attribution" : "Larry Gong, Executive Chairman, Leyou"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-t32-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-tv-mA.jpg",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "Retailers reporting that big data and analytics is creating a competitive advantage for their organizations."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s5/s5-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#ff9900",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "TK",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "SoftLayer",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  }
+  ,
+{
+        "id": 6,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s6/s6-t31-bg.png",
+        "template_background_color" : "#6c2f79",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>Music Mastermind developed a first-of-a-kind mobile game that allows fans to compose and share original songs created, in part, from a library of pre-licensed samples. They needed robust, globally dispersed infrastructure for its active users, hosting and application development.</p><p>With the help of SoftLayer, and IBM compnay, Music Mastermind created a cloud-based solution that provides a seamless gaming experience to over 250,000 active users in 155 countries. And that is music to everybody's ears.</p><p>Learn about how IBM Cloud could transform your business →</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "With cloud you're able to ship a product and instantly know what's working great and what you need to fix.",
+                "attribution" : "Matt Serletic, Co-Founder & President, Music Mastermind"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s6/s6-t32-mE.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s6/s6-t52-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s6/s6-cf-stat1.jpg",
+                "hyperlink": "",
+                "copy": "slide 1"
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s6/s6-cf-stat1.jpg",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#0c408d",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  },
+{
+    "id" : 2,
+    "company" : "Sky Italia",
+    "title": "X made with y",
+    "color1" : "#f1003c",
+    "short-description" : "Blizzard is predicting ski demand with data",
+    "filterTechnology": "data",
+    "filterIndustry": "media-and-entertainment",
+    "filterCapability": "supply-chain-solutions",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_background_image_url": "./assets/images/s1/s1-t51-bg.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "copy" : "Blizzard is predicting ski demand with data",
+                "capability" : "How to optimize a supply chain",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-3",
+        "template_background_image_url": "./assets/images/s1/s1-t31-bg.png",
+        "template_background_color" : "#f1003c",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "copy": "<p>Every year, Blizzard Skis manufactures roughly 400,000 skis, some requiring as many as 18 different materials and taking up to 16 weeks to build. Using data, Blizzard Skis has increased efficiency by forecasting trends, weather patterns, and other short-term shifts in the market that affect their business, and tailor production to meet changing demands in specific parts of the world. Data has also given them the ability to monitor their supplies so that no matter how demands change, they always have the materials to meet them. Now production cycles are closer to 8 weeks, making Blizzard Skis more nimble than ever.</p><p>Learn about how IBM Big Data & Analytics can transform your business →</p> "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "quote": "IBM is also helping us look at how weather patterns influence ski demand.",
+                "attribution" : "Eric-Jan Kaak, CIO, Blizzard Skis"
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-t32-mE.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-5",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "video",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-t52-mA.png",
+                "hyperlink": "url-to-youtube-video-file",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "more accurate at predicting demand for skis."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s1/s1-cf-stat1.png",
+                "hyperlink": "",
+                "copy": "slide 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-4",
+        "template_background_image_url": "",
+        "template_background_color" : "#f1003c",
+        "template_title" : "How is this made?",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D",
+            "module_type": "copy",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Bob Pulver",
+                "copy": "Senior Analyst, Social Insights<br/>IBM Market Development & Insights at IBM",
+                "social_twitter" : "twitter.com",
+                "social_linkedin" : "linkedin.com"
+              }
+            ]
+          },
+          {
+	            "wrapper_class": "t4-mE",
+	            "module_class": "module-E",
+	            "module_type": "copy",
+	            "module_background_image": "",
+	            "assets": [
+	              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "ibm.com",
+	                "title" : "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence",
+	                "copy": "IBM<sup>&reg;</sup> Cognos<sup>&reg;</sup> Business Intelligence provides reporting, analysis and dashboards to help key stakeholders understand business performance, collaborate, and make data-driven decisions. "
+	              }
+	            ]
+	        }
+          
+        ]
+      }
+    ]
+
+  }
+  
+]

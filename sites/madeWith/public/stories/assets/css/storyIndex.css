@@ -1,0 +1,115 @@
+#story-index ul {
+	margin:0px auto;
+	width:70%;
+}
+#story-index li {
+	position:relative;
+	padding:0px 100px 0px 0px;
+}
+#story-index li:before {
+	content: "";
+}
+#story-index li img {
+	background-color:#c9c9c9;
+	position:absolute;
+	right:0px;
+	top:50%;	
+}
+
+#story-index h2 {
+ 	font-size: 24px;
+ 	color: #c9c9c9;
+ 	font-weight: bold;
+ 	line-height: 20px;
+ 	margin-bottom: 10px;
+ 	padding-left:195px;
+ 	letter-spacing:normal;
+}
+#story-index h3 {
+ 	font-size: 40px;
+ 	line-height:37px;
+	font-family: 'LubalinGraphStdBookIBM',Helvetica,sans-serif;
+	font-weight: 100;
+	margin-bottom:40px;
+	border-left :5px solid red;
+	padding-left: 190px;	
+}
+
+.story-list-container{
+margin-top: 47px;
+}
+
+.story-title a:hover{
+	text-decoration: underline;
+}
+
+#story-index h3:hover {
+	padding-left: 40px;
+	border-left-width:155px;
+	text-decoration: underline;
+}
+@media screen and (max-width:1024px) {
+	#story-index h2 {
+		padding-left:40px;
+	}
+	#story-index h3, #story-index h3:hover {
+		padding-left:35px;
+		border-left-width:5px;
+	}
+	#story-index ul {
+		width:100%;
+	}
+}
+@media screen and (max-width:640px) {
+	#story-index .header h1{
+		font-size: 50px;
+	}
+	#story-index .header{
+		height: 260px;
+	}
+}
+
+@media screen and (max-width:580px) {
+
+	#story-index .header h1{
+		font-size: 42px;
+		margin: 93px auto 40px auto;
+		line-height: 53px;
+	}
+	#story-index h3 {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width:480px) {
+	#story-index .header{
+		height: 260px;
+	}	
+	#story-index h3 {
+		font-size: 33px;
+	}
+	#story-index .header h1{
+		margin-left: 0;	
+		margin: 70px auto 40px auto;
+	}
+	#story-index .header h1 br{
+		display: none;
+	}
+}
+
+
+
+
+@media screen and (max-width:380px) {
+	#story-index h3 {
+ 		font-size: 30px;		
+	}
+	#story-index .header h1 {
+		font-size: 35px;
+		line-height: 46px;
+	}	
+	#story-index h3 {
+		font-size: 27px;
+		line-height: 30px;
+	}		
+}

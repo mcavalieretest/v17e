@@ -1,0 +1,245 @@
+{
+    "id" : 36,
+    
+    "company" : "Princess Cruises",
+    "title": "collaboration made with social",
+    "color1" : "#00a9e0",
+    "color2" : "#00a9e0",
+    "short-description" : "Princess Cruises is optimizing their operations with social",
+    "filterTechnology": "social",
+    "filterIndustry": "hospitality",
+    "filterCapability": "workforce",
+    "filterCapabilityLabel": "Workforce Empowerment",
+    "share_twitter_url" : "http://bit.ly/1eaBI0z",
+    "share_twitter_copy" : "Princess%20Cruises%20is%20optimizing%20their%20operations%20with%20social.%20See%20how.%20%23madewithIBM",
+    "share_fb_url" : "http%3A%2F%2Fwww.ibm.com%2Fsmarterplanet%2Fus%2Fen%2Fmadewithibm%2Fstories%2F%23!story%2F36%3Fcmp%3Dusbrb%26cm%3Dh%26csr%3Dagus_madewith_140407%26cr%3Dfacebook%26ct%3Dusbrb301%26cn%3Ds36_princesscruises",
+    "share_fb_copy" : "Princess%20Cruises%20is%20optimizing%20their%20operations%20with%20social.%20See%20how.%20%23madewithIBM",
+    "share_li_url" : "http%3A%2F%2Fwww.ibm.com%2Fsmarterplanet%2Fus%2Fen%2Fmadewithibm%2Fstories%2F%23!story%2F36%3Fcmp%3Dusbrb%26cm%3Dh%26csr%3Dagus_madewith_140407%26cr%3Dlinkedin%26ct%3Dusbrb301%26cn%3Ds36_princesscruises",
+    "share_li_copy" : "Princess%20Cruises%20is%20optimizing%20their%20operations%20with%20social.%20See%20how%20new%20value%20is%20made%20with%20IBM.",
+    "thumbnail" : "stories/assets/images/s36/s36-thumb.jpg",
+    "story_background_image_url": "",
+    "templates": [
+      {
+        "id": 1,
+        "template_class": "template-5",
+        "template_tracking": "t5",
+        "template_background_image_url": "./assets/images/s36/s36-t5-bg.jpg",
+        "template_background_image_url_mobile": "./assets/images/s36/s36-t5-bg_mobile.jpg",
+        "modules": [
+          {
+            "wrapper_class": "t5-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "",
+                "hyperlink": "",
+                "color1" : "#00a9e0",
+                "copy" : "Princess Cruises is optimizing their operations with social",
+                "capability" : "How to empower a workforce",
+                "quote": "",
+                "attribution" : ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "template_class": "template-4",
+        "template_tracking": "t4",
+        "template_background_image_url": "./assets/images/s36/s36-t4-bg.png",
+        "template_background_color" : "#00a9e0",
+        "template_type" : "summary-row",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD summary",
+            "module_class": "module-D",
+            "module_type": "image",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url_tablet": "./assets/images/s36/s36-t4-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          },
+          {
+            "wrapper_class": "t4-mE summary",
+            "module_class": "module-E",
+            "module_type": "text",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "http://www-03.ibm.com/press/us/en/pressrelease/43035.wss",
+                "title" : "Summary",
+                "copy": "<p>On average, Princess Cruises has 1.7 million passengers and 30,000 employees sailing around the world every year. The organization needed an integrated global communications system that connected all of their assets. Now with IBM® Cloud, messaging, calendar and IM services have transformed 17 ships — spread across five oceans — into a single fleet. </p><p>Sudden weather delays and coordinating the movement of thousands of passengers are now facilitated in real time with social, which can help transform the customer experience and ultimately increase loyalty.</p>",
+                "cta_copy": "Learn more about Princess Cruises"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "template_class": "template-3",
+        "template_tracking": "t3",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "t3-mD",
+            "module_class": "module-D",
+            "module_type": "quote",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                 "color" : "#00a9e0",
+                "quote": "Collaboration tools come in to play when curve balls are thrown our way — a deviation from the ship’s schedule or a weather delay, for example.",
+                "attribution" : "Norm Ayers<br>Director of Emergency Response, Princess Cruises"
+              },
+	            {
+		            "asset_class": "",
+		            "image_url": "",
+		            "hyperlink": "",
+		            "color" : "#00a9e0",
+		            "quote": "Employees who may have in the past felt like they were largely unheard can now contribute and communicate.",
+		            "attribution" : "Norm Ayers<br>Director of Emergency Response, Princess Cruises"
+	            }
+            ]
+          },
+          {
+            "wrapper_class": "t3-mE",
+            "module_class": "module-E",
+            "module_type": "image",
+            "module_background_image": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-t32-mD.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "template_class": "template-video",
+        "template_tracking": "tV",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "s36-tV-mA",
+            "module_class": "module-D",
+            "module_type": "",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-tv-mA.jpg",
+                "image_url_mobile": "./assets/images/s36/s36-tv-mA_mobile.jpg",
+                "hyperlink": "",
+                "copy": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "template_class": "carousel-full",
+        "template_tracking": "tC",
+        "template_background_image_url": "",
+        "modules": [
+          {
+            "wrapper_class": "",
+            "module_class": "",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-cf-stat-1.jpg",
+                "hyperlink": "",
+                "copy": "Passengers sailing with Princess in a year."
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-cf-stat-2.jpg",
+                "hyperlink": "",
+                "copy": "Number of employees at Princess Cruises"
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-cf-stat-3.jpg",
+                "hyperlink": "",
+                "copy": "Employees sailing at any time "
+              },
+              {
+                "asset_class": "image",
+                "image_url": "./assets/images/s36/s36-cf-stat-4.jpg",
+                "hyperlink": "",
+                "copy": "Ships (each with the resource requirements of a small town)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "template_class": "template-footer",
+        "template_tracking": "tF",
+        "template_background_image_url": "",
+        "template_background_color" : "#00a9e0",
+        "template_title" : "How is this made?",
+        "template_desc" : "Get to know the people and the solutions behind the transformation.",
+        "modules": [
+          {
+            "wrapper_class": "t4-mD",
+            "module_class": "module-D carousel-footer",
+            "module_type": "carousel",
+            "module_background_image_url": "",
+            "assets": [
+              
+              {
+	                "asset_class": "",
+	                "image_url": "",
+	                "hyperlink": "http://www.ibm.com/cloud-computing/social/us/en/benefits/",
+	                "title" : "IBM SmartCloud® for Social Business",
+	                "copy": "IBM has integrated tools for social business in the cloud by connecting individuals in efficient ways, providing line of sight across traditional boundaries and aligning actions to help anticipate and address evolving opportunities. By unlocking and facilitating the sharing of information that was previously siloed, organizations can empower each and every employee with social business."
+	              },
+	            {
+	              "asset_class": "",
+	              "image_url": "",
+	              "hyperlink": "http://www.ibm.com/cloud-computing/us/en/saas.html",
+	              "title" : "IBM Cloud - SaaS",
+	              "copy": "IBM Cloud offers over 100 software-as-a-service applications to help organizations accelerate business process innovation, deliver business analytics at point of impact and connect people with collaborative business networks."
+	            } ,
+	            {
+                "asset_class": "",
+                "image_url": "",
+                "hyperlink": "",
+                "title" : "Mark Harper IBM SmartCloud Technical Leader",
+                "copy": "Mark Harper has over 20 years of experience in messaging and collaboration system implementation and administration, focusing on Lotus Notes/Domino, cloud computing and social business. He spent 10 years in Software Services for Lotus before moving to Sales and Distribution in 2007.",
+                "social_twitter" : "https://twitter.com/k5tao",
+                "social_linkedin" : "http://www.linkedin.com/in/mlharper"
+              }                           
+
+            ]
+          }
+        ]
+      }
+    ]
+
+  }
+  
