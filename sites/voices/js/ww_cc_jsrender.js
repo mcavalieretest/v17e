@@ -273,7 +273,6 @@ $(function() {
                     }).done(function(data) {
                         vo.dataCards = $(".ibm-card");
                         if (data.entries) {
-                            console.log("Inside Infinite Scroll"+data.entries);
                             vo.search = false;
                             // SEARCH FALSE
                             vo.f_distribute(data);
