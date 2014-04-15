@@ -11,7 +11,7 @@
 		var my = this;
 		my.sceneManager = new IBM.watson.SceneManager(this);
 
-	    my.initBxSlider();
+	    // my.initBxSlider();
     },
 
 	  initBxSlider: function() {

@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 
 			// watch the rest of assets and run copy:dev if they change; some last-minute brute-forcing
 			assets: {
-				files: ['<%= config.src %>/assets/**/*', '!<%= config.src %>/assets/css/sass/**/*', '!<%= config.src %>/assets/templates/**/*.hbs'],
+				files: ['<%= config.src %>/assets/**/*', '!<%= config.src %>/assets//sass/**/*', '!<%= config.src %>/assets/templates/**/*.hbs'],
 				tasks: ['copy:dev']
 			}
 		},

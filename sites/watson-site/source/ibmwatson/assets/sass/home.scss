@@ -61,6 +61,11 @@
 			width: 100%;
 		}
 
+		ul li:before, 
+		.ibm-bullet:before {
+			content: "";
+		}
+
 		div.bx-prev,
 		div.bx-next {
 			position: absolute;
