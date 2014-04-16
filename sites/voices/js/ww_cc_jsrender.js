@@ -241,7 +241,7 @@ $(function() {
         event.preventDefault();
         var lastRankID = $("#ibm_cci-widget-js .ibm-card").last().attr("data-rank");
 
-        if($(window).data("ajaxReq") == false || vo.totalSearchCountNum <= 20 || lastRankID < 40) {
+        if($(window).data("ajaxReq") == false || vo.totalSearchCountNum <= 20 || lastRankID < 20) {
             return;
         }        
         try {
@@ -255,7 +255,7 @@ $(function() {
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
 
-                if(lastRankID >= 40 || vo.totalSearchCountNum >= 20){
+                if(lastRankID >= 20 || vo.totalSearchCountNum >= 20){
                     // Call Ajax
                     $.ajax({
                         url: vo.f_url + "?callback=?",
@@ -432,7 +432,7 @@ $(function() {
                 dataType: "jsonp",
                 data: {
                     rank: self.var_rank,
-                    noOfItems: 40,
+                    noOfItems: 20,
                     filter: self.searchterms.toString() || null
                 }
             }).promise();
