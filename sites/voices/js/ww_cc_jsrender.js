@@ -241,7 +241,7 @@ $(function() {
         event.preventDefault();
         var lastRankID = $("#ibm_cci-widget-js .ibm-card").last().attr("data-rank");
 
-        if($(window).data("ajaxReq") == false || vo.totalSearchCountNum <= 20 || lastRankID < 20) {
+        if($(window).data("ajaxReq") == false || vo.totalSearchCountNum < 20 || lastRankID < 20) {
             return;
         }        
         try {
