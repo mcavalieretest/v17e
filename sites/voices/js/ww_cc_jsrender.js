@@ -148,7 +148,7 @@ $(function() {
                     var newData = data;
                         vo.search = true;
                         vo.totalSearchCountNum = newData.entries.length;
-                    
+                    // if(data.entries.length < 20) $(window).data("ajaxReq", false);
                     // SEARCH TRUE
                     vo.f_distribute(newData); 
                     vo.f_reTweetToggle();
@@ -680,20 +680,21 @@ $(function() {
             var self = this;
             try{
                 if(searchterms.length === 0){
-                        vo.f_fetch_feeds().done(function(data) {
-                            vo.f_removeNodes($("#ibm_cci-widget-js > span"));
-                            vo.search = true;
+                        self.f_fetch_feeds().done(function(data) {
+                            self.f_removeNodes($("#ibm_cci-widget-js > span"));
+                            self.search = true;
                             // SEARCH TRUE
-                            vo.f_distribute(data);
                             self.totalSearchCountNum = data.entries.length;
-                            vo.f_reTweetToggle();
+                            self.f_distribute(data);
+                        // if(data.entries.length < 20) $(window).data("ajaxReq", false);                            
+                            self.f_reTweetToggle();
                             $("#ibm_cci__ml_t-js").addClass("ibm_cci-clicked");
                             $("#ibm_cci-widget-js").masonry("reload");
                             setTimeout(function() {
                                 $("#ibm_cci-widget-js").masonry();
                             }, 400);
                         });
-                        if (vo.searchterms.length == 0) $(window).data("ajaxReq", true);
+                        if (self.searchterms.length == 0) $(window).data("ajaxReq", true);
 
                 }else if(searchterms.length > 0){
                         self.filter_searchterms = [];
@@ -727,6 +728,7 @@ $(function() {
                                 self.totalSearchCountNum = data.totalCount || 0;
                                 self.f_totalSearchCount(self.totalSearchCountNum);
                                 self.f_distribute(data);
+                            // if(data.entries.length < 20) $(window).data("ajaxReq", false);
                                 self.f_reTweetToggle();
                                 self.f_appendTrendinglist($.makeArray(data.terms.split(",")));
                                 self.checkedCount = data.terms.split(",").length;
@@ -740,7 +742,7 @@ $(function() {
                                 self.totalSearchCountNum = data.totalCount || 0;
                                 self.f_totalSearchCount(self.totalSearchCountNum);
                                 self.f_removeNodes($("#ibm_cci-widget-js .ibm-card"));
-                                if (vo.searchterms.length > 0) $(window).data("ajaxReq", false);
+                                if (vo.searchterms.length == 0) $(window).data("ajaxReq", false);
                             }
                     }).fail(function() {
                         // console.log("error");
