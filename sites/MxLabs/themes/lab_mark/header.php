@@ -29,9 +29,8 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<!-- <link type="text/css" rel="stylesheet" href="//1.www.s81c.com/common/v17e/css/ww.css" title="www"> -->
-		<link type="text/css" rel="stylesheet" href="http://205.186.160.10/v17e/css/ww.css" title="www">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/fontcustom.css">
+		<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/ww.css" />
+		<link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/fontcustom.css" />
 		<?php wp_head(); ?>
 	</head>
 
