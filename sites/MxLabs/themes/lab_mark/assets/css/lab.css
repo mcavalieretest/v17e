@@ -167,6 +167,12 @@ ul li:before, .ibm-bullet:before {content:normal}
 /* Instagram list */
 .instag li {display:inline-block;padding:0 0 5px}
 
+/* Share buttons */
+#ssba, #ssba a {font-family:'icons-ibm-v1_2';font-size:24px !important;padding:0 10px 0 0;color:#000;text-decoration:none}
+#ssba a img {display:none}
+a#ssba_facebook_share:before {content: '\f142'}
+a#ssba_twitter_share:before {content: '\f148'}
+a#ssba_linkedin_share:before {content: '\f144'}
 
 /* CSS3 Eye Candy: Transitions, Animations, Border Radius, Box Shadows, Gradients
 =============================================================================*/
