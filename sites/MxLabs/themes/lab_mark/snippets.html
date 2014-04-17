@@ -1,0 +1,109 @@
+<!doctype html>
+<html <?php language_attributes(); ?> >
+    <head>
+        <meta charset="<?php bloginfo('charset'); ?>">
+        <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="<?php bloginfo('description'); ?>">
+        <?php wp_head(); ?>
+    </head>
+    <body id="ibm-com" <?php body_class('ibm-type v17'); ?>>
+                    
+            <div class="bar">
+                <!-- logo -->
+                <div class="logo" href="<?php echo home_url(); ?>">                     
+                    <a href="http://ibm.com/us/en/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ibm-logo-anim-sprite.png" alt="Logo" class="logo-img"></a>
+                </div>
+                <!-- menu toggle -->
+                <div class="nav-toggle">&#9776;</div>
+            </div>
+            <!-- nav -->
+            <!-- nav class="nav" role="navigation"></nav-->
+            <!-- /nav -->
+            <header class="masthead wrap" role="banner">
+                <hgroup>
+                    <a href="">
+                        <h1>IBM <em>M&amp;C Labs</em></h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.</h2>
+                    </a>
+                </hgroup>
+            </header>
+
+
+            <!-- article -->
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+                <!-- post title -->
+                <h1>
+                    <!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> -->
+                    <?php the_title(); ?>
+                </h1>
+                <!-- /post title -->
+
+                <!-- post details -->
+                <h4 class="post-details">
+                    <?php echo get_avatar( get_the_author_email(), '128', '/images/no_images.jpg', get_the_author() ); ?>  By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span>
+                </h4>
+                <!-- /post details -->
+
+                <!-- post thumbnail -->
+                <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+                    <!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> -->
+                        <?php the_post_thumbnail(array(940,529)); // Declare pixel size you need inside the array ?>
+                    <!-- </a> -->
+                <?php endif; ?>
+                <!-- /post thumbnail -->        
+
+                <?php the_content(); ?>
+
+            </article>
+            <!-- /article -->
+
+
+            <!-- footer -->
+            <footer class="footer" role="contentinfo">
+                <!-- wrapper -->
+                <nav>
+                    <a href="http://www.ibm.com/contact/us/en/?lnk=flg-cont-usen">Contact</a>
+                    <a href="http://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen">Privacy</a>
+                    <a href="http://www.ibm.com/legal/us/en/?lnk=flg-tous-usen">Terms of use</a>
+                    <a href="http://www.ibm.com/accessibility/us/en/?lnk=flg-acce-usen">Accessibility</a>                                           
+                </nav>
+                <!-- /wrap -->
+            </footer>
+            <!-- /footer -->
+
+        <?php wp_footer(); ?>
+        <script src="http://1.www.s81c.com/common/v17e/js/ww.js"></script>  
+
+        <!-- analytics -->
+        <script>
+        (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+        (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+        l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+        ga('send', 'pageview');
+        </script>   
+
+    </body>
+</html>
+
+
+<!-- index.php -->
+<?php get_header(); ?>
+
+    <section class="main-content wrap">
+        <!-- section -->
+
+            <?php get_template_part('loop'); ?>
+
+            <?php get_template_part('pagination'); ?>
+
+        </section>
+        <!-- /section -->        
+
+    </section>
+
+<?php get_footer(); ?>
