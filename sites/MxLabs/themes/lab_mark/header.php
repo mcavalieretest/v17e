@@ -42,7 +42,7 @@
 				<!-- <nav id="ibm-mast-options"></nav> -->
 				<nav id="ibm-universal-nav" role="navigation" aria-label="Site map">
 					<ul id="ibm-unav-links" role="presentation">
-						<li id="ibm-home" class=""><a href="http://www.ibm.com/us/en/" tabindex="0">IBM®</a></li>
+						<li id="ibm-home" class=""><a href="http://www.ibm.com/us/en/">IBM®</a></li>
 					</ul>
 					<ul id="ibm-menu-links" role="toolbar" aria-label="Site map" style="display:none"></ul>
 				</nav>             
