@@ -63,7 +63,14 @@ img {max-width:100%;border:0;vertical-align:middle;-ms-interpolation-mode:bicubi
 h1.mxlabs {margin:60px auto 80px;width:960px;font-size:320% !important;position:relative}
 h1.mxlabs span {font-family:HelveticaNeue-Light "HelvLightIBM" !important}
 
-.ibm-landing-page #ibm-leadspace-head.ibm-ribbon .ibm-columns [class*="ibm-col-"].feature-box {position:absolute;top:200px;padding:30px 40px 40px;color:#fff}
+.ibm-landing-page #ibm-leadspace-head.ibm-ribbon .ibm-columns [class*="ibm-col-"].feature-box {
+	position: absolute;
+	top: 240px;
+	padding: 40px 40px 60px;
+	color: #fff;
+	height: 160px;
+}
+
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h2 {padding:0;text-shadow: 0 1px 0 #fff}
 #ibm-com #ibm-top .section-header {line-height:1.1 !important}
 
