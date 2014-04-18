@@ -1,0 +1,21 @@
+{
+  "name": "v17e_git",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ibmmxlabs/v17e",
+  "authors": [
+    "Mike Cavaliere <mike@cavaliere.org>"
+  ],
+  "description": "lorem ipsum dolor sit amet.",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/ibmmxlabs/v17e.git"
+  }
+}
