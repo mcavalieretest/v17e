@@ -1,3 +1,9 @@
+<div class="ibm-band" id="mxl-img-band">
+	<div class="ibm-columns">
+
+	</div>
+</div>
+
 			<!--! FOOTER_BEGIN -->
 			<footer id="ibm-footer" role="contentinfo" aria-label="Footer">
 				<h2 class="ibm-access">Footer links</h2>

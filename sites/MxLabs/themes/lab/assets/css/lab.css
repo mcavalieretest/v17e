@@ -227,6 +227,11 @@ a#ssba_linkedin_share:before {content: '\f144'}
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
+#mxl-img-band {
+    background: url(../images/mxl-view-madison.jpg) no-repeat fixed center 50% / cover #000;
+    height: 400px;
+}
+
 #ibm-footer {
 	padding-top: 280px;
 	background: #0F161A url(../images/ibm-logo-37d.svg) 105% center no-repeat;
