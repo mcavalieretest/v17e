@@ -313,11 +313,11 @@
   <ul class="ibm_cci-relatedTweetContainer">
     {{range refTweets start=0 end=9}}
     <li data-userID="{{:userId}}">
-      <a href="javascript:void(0);" alt="User Avatar" data-userID="{{:userId}}">
+      <a href="javascript:void(0);" alt="user avatar {{:userScreenName}}" data-userID="{{:userId}}">
         {{if #getIndex() == 0}}
-        <img class="selected" src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+        <img class="selected" src="{{:userAvatar}}" alt="user avatar {{:userScreenName}} icon" width="25" height="25" />
         {{else}}  
-        <img src="{{:userAvatar}}" alt="User avatar icon" width="25" height="25" />
+        <img src="{{:userAvatar}}" alt="user avatar {{:userScreenName}} icon" width="25" height="25" />
         {{/if}}  
       </a>
     </li>
