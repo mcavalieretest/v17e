@@ -21,7 +21,10 @@
 =============================================================================*/
 
 /* Override title font per design */
-#ibm-top article h1,#ibm-top article h2,#ibm-top article h3,#ibm-top article h4,#ibm-top article h5 {font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif}
+#ibm-top article h1 {
+	font-family: "HelveticaNeue-Bold", "HelvBoldIBM", Arial, sans-serif;
+}
+#ibm-top article h2,#ibm-top article h3,#ibm-top article h4,#ibm-top article h5 {font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif}
 #ibm-top article h1 a,#ibm-top article h2 a,#ibm-top article h3 a,#ibm-top article h4 a,#ibm-top article h5 a {color:#000;text-decoration:none}
 
 /* Make images responsive */
