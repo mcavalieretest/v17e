@@ -59,7 +59,10 @@
                                                         $thumb = $images['thumb'];
                                                         $fullImage = $images['full'];
 
-                                                        $links[] = "<a href='{$fullImage}'><img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' /></a>";
+# REMOVE LINK FROM IMAGES
+#                                                        $links[] = "<a href='{$fullImage}'><img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' /></a>";
+
+														$links[] = "<img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' />";
                                                     }
 
                                                     foreach($links as $link){

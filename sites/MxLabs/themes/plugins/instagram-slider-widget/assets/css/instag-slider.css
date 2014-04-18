@@ -16,7 +16,7 @@
 .pllexislider .slides { zoom: 1; }
 
 /* Thumbnails Template */
-.instag ul.thumbnails > li { margin:0 auto; display: inline-block; *display:inline; float: none; width:24% !important; }
+.instag ul.thumbnails > li { margin:0 auto; display: inline-block; *display:inline; float: none; width:32% !important; }
 .instag ul.thumbnails img { width: 100%; }
 
 /* Control Nav */

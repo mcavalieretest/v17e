@@ -54,14 +54,29 @@ img {max-width:100%;border:0;vertical-align:middle;-ms-interpolation-mode:bicubi
 /* Override leadspace per design */
 .ibm-landing-page #ibm-pcon {margin:0;padding:4em 0 0;background:#f5f4f1}
 #ibm-leadspace-body #ibm-lead-1,#ibm-leadspace-body #ibm-lead-2,#ibm-leadspace-body #ibm-lead-3 {background-size:cover;background-position:50% 50%;background-repeat:no-repeat;height:100%;min-height:573px}
+
+#ibm-leadspace-body .ibm-columns {
+	cursor: pointer;
+}
 #ibm-leadspace-body #ibm-lead-1 {background-image:url(../images/01.jpg)}
 #ibm-leadspace-body #ibm-lead-2 {background-image:url(../images/02.jpg)}
 #ibm-leadspace-body #ibm-lead-3 {background-image:url(../images/03.jpg)}
+
+#ibm-leadspace-head.ibm-alternate-background p a {
+	text-decoration: none !important;
+	color: #FFF;
+}
+
+
 #ibm-leadspace-head.ibm-alternate-background {position:relative;height:100%;max-height:600px}
-#ibm-leadspace-head.ibm-alternate-background header {position:absolute;top:0;left:10px;width:100%;z-index:2000}
+#ibm-leadspace-head.ibm-alternate-background header {position:absolute;top:0;left:8px;width:100%;z-index:2000;pointer-events: none}
 .ibm-landing-page #ibm-leadspace-head.ibm-alternate-background.ibm-ribbon h1 {color:#fff;text-shadow: 0 -1px 0 rgba(0,0,0,0.75)}
-h1.mxlabs {margin:60px auto 80px;width:960px;font-size:320% !important;position:relative}
+h1.mxlabs {margin:60px auto 80px;width:960px;font-size:320% !important;position:relative;text-shadow: 0 0 5px rgba(0,0,0,0.5) !important}
 h1.mxlabs span {font-family:HelveticaNeue-Light "HelvLightIBM" !important}
+
+.ibm-landing-page #ibm-leadspace-head.ibm-ribbon h1 {
+	padding: 20px 0;
+}
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon .ibm-columns [class*="ibm-col-"].feature-box {
 	position: absolute;
@@ -94,7 +109,7 @@ ul li:before, .ibm-bullet:before {content:normal}
 
 
 /* WP styles */
-.post-details {margin-bottom:1em}
+.post-details {margin:.5em 0 1em;}
 .post-details span {text-transform:capitalize}
 .post-details img {margin-right:5px}
 .author {font-weight:bold}
@@ -210,4 +225,9 @@ a#ssba_linkedin_share:before {content: '\f144'}
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#ibm-footer {
+	padding-top: 280px;
+	background: #0F161A url(../images/ibm-logo-37d.svg) 105% center no-repeat;
 }
