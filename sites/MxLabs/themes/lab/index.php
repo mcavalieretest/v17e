@@ -4,7 +4,7 @@
             <section id="ibm-access-cntr" role="main">                
                 <div id="ibm-leadspace-head" class="ibm-container ibm-alternate-background ibm-ribbon">
                     <header>
-                        <h1 class="mxlabs"><span>IBM</span> MxLabs</h1>
+                        <h1 class="mxlabs"><span>IBM</span> Marketing Experience Labs</h1>
                     </header>
                     <div id="ibm-leadspace-body" class="ibm-container-body">
                         <div class="ibm-columns" id="ibm-lead-1">
