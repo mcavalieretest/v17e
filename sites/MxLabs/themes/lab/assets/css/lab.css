@@ -228,7 +228,7 @@ a#ssba_linkedin_share:before {content: '\f144'}
 }
 
 #mxl-img-band {
-    background: url(../images/mxl-view-madison.jpg) no-repeat fixed center 50% / cover #000;
+    background: url(../images/mxl-view-madison.jpg) no-repeat fixed center 0% / cover #000;
     height: 400px;
 }
 
