@@ -50,6 +50,8 @@
     <meta itemprop="description" content="IBM Voices - the most valuable social content shared, created and discussed by IBMers">
     <meta itemprop="image" content="https://www-304.ibm.com/social/aggregator/static/external/86/misc/Voices-shareimage.png">
 
+    <!-- META -->
+
     <link rel="apple-touch-icon" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple.jpg" />
     <link rel="apple-touch-icon" sizes="72x72" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple1.jpg" />
     <link rel="apple-touch-icon" sizes="114x114" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/apple2.jpg" />
@@ -118,7 +120,7 @@
    {{props t_list}}
    <li class="ibm_cci__ml-li">
     <p>
-      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}"> {{:prop.trim()}} </a>
+      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
       <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}"></a>
     </p>
   </li>
@@ -131,7 +133,7 @@
   {{props t_list}}
   <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
     <p class="ibm_cci-clicked">
-      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term"> {{:prop.trim()}} </a>
+      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
       <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}"></a> </p>
     </li>
     {{/props}}

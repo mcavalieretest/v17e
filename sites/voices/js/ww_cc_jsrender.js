@@ -363,6 +363,7 @@ $(function() {
 });
 //CLOSE ON DOM READY
 
+// VOICES OBJECT 
 (function($, a) {
     var vo = {
         //GLOBAL ARRAY VARIABLES (NOTE: SO THEY DON'T GET OVERWRITTEN WHEN YOU PUSH DATA)
@@ -373,7 +374,7 @@ $(function() {
         checkedCount: 0,
         var_rank: 0,
         search: true,
-        // f_unresolved : [], f_resolved : [],
+
         // INITIALIZATION FOR TRENDING		
         init_t: function(t_config) {
             this.t_url = t_config.tt_url;
@@ -445,6 +446,7 @@ $(function() {
             //Modify the timestamp and the content attr and wrap href
             this.f_container.append(this.f_unro_template.render(this.f_modify_datafeed(unro_data)));
         },
+        // MODIFY DATA AND PRELOAD IMAGES
         f_modify_datafeed: function(data) {
             var self = this, feed_data = data || null;
             try {
@@ -458,6 +460,10 @@ $(function() {
                     feed_data.published = this.f_pretty_date(feed_data.published || "");
                     feed_data.domain = this.f_truncateDomain(feed_data.domain || "");
                     if (feed_data.mediaURL || feed_data.altMediaURL || "") {
+                        // feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL, function(imgObj){
+                        //         console.log(imgObj);
+                        //         // return imgObj;
+                        // });
                         feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
                         feed_data.altMediaURL = this.f_preloadImages(feed_data.altMediaURL || "");
                     }
@@ -488,25 +494,31 @@ $(function() {
             }
             return newRank;
         },
-        f_preloadImages: function(imgURL) {
-            var img = new Image(), imgWidth = 0;
-            // if the ico url = http://www-01.ibm.com/favicon.ico && != "//www.ibm.com/favicon.ico"
-            try{
-                if(imgURL.length > 0 && imgURL != '' && img.readyState !== 4){
-                    img.src = imgURL;
-                    img.onload = function(){
-                        // if(img.naturalWidth > 0 && img.naturalWidth <= 1000 ){
-                        if(img.naturalWidth > 0){
-                            imgWidth = img.naturalWidth;
+        f_preloadImages: function(imgURL, callback) {
+            var img = new Image(), 
+                regex = /\.(jpeg|jpg|gif|png|ico|jpg:large)$/,
+                imgWidth = 0;
+                img.src = imgURL;
+
+                try{
+                    if(imgURL.indexOf("youtube") > -1){
+                        // console.log("*****YOUTUBE IF STATEMETNT CALLED****");
+                        return imgURL;
+                    }else if(imgURL.match(regex) != null && img.src.readyState != 4){
+                        // CODE DOES NOT WAIT FOR THE ONLOAD TO COMPETE BEFORE RETURNING
+                        img.onload = function(){
+                            imgWidth = img.naturalWidth;                            
+                            if(imgWidth > 1000){
+                                console.log("*****IMGONLOAD INSIDE****: "+imgWidth+" : "+img.src);
+                                //return img.src;   
+                            }
                         }
-                        // console.log("inside: "+imgWidth);
+                        console.log("*****IMGONLOAD OUTSIDE****: "+imgWidth+" : "+img.src);
+                        return img.src;
                     }
-                    // console.log("outside: "+imgWidth);
-                    return img.src = imgURL;
+                }catch(e){
+                    console.log('error inside preload images: '+e);    
                 }
-            }catch(e){
-                console.log('error inside preload images: '+e);    
-            }
         },
         f_truncateDomain: function(domain) {
             if (domain.indexOf(".com") > -1) {
