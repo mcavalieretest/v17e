@@ -43,7 +43,7 @@ img {max-width:100%;border:0;vertical-align:middle;-ms-interpolation-mode:bicubi
 #m-main-menu {padding:0}
 #m-open-link {display:block !important;z-index:5000}
 #m-open-link a:before {top:7px}
-#ibm-access-cntr {position:relative;padding-top:46px}
+#ibm-access-cntr {padding-top:46px}
 #ibm-top .ibm-container .ibm-columns {margin: 0 auto}
 #ibm-top .ibm-container.ibm-ribbon .ibm-ribbon-section .ibm-columns {padding:0}
 
@@ -156,7 +156,7 @@ ul li:before, .ibm-bullet:before {content:normal}
 .slick-next:before { content: '\f12f'; }
 
 /* Dots */
-.slick-slider { margin-bottom: 30px; padding:0 20px 0 0}
+.slick-slider { margin-bottom: 10px; padding:0 20px 0 0}
 .slick-dots { position: absolute; bottom: -5px; list-style: none; display: block; text-align: center; padding: 0px; width: 100%; }
 .slick-dots li { position: relative; display: inline-block; height: 10px; width: 10px; margin: 0px 5px; padding: 0px; cursor: pointer; }
 .slick-dots li button { border: 0; background:#ececec; display: block; height: 10px; width: 10px; outline: none; line-height: 0; font-size: 0; color: transparent; padding: 5px; cursor: pointer; outline: none; }

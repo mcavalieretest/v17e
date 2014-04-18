@@ -43,7 +43,7 @@
                     <div id="ibm-content-body">
                         <div id="ibm-content-main">
                             <div class="ibm-columns">
-                                <section class="ibm-col-6-4">
+                                <section class="ibm-col-6-4 large">
                                     <?php get_template_part('loop'); ?>
                                     <?php get_template_part('pagination'); ?>
                                 </section>                                

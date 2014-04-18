@@ -14,6 +14,9 @@
 
 								<!-- article -->
 								<article id="post-<?php the_ID(); ?>" <?php post_class('ibm-columns'); ?>>
+								<div class="ibm-col-1-1 large">
+								
+								
                                     <!-- post title -->
                                     <h1>
                                         <!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> -->
@@ -70,6 +73,7 @@
                                     </div>                                  
                                     <!-- /post slider -->
                                     <?php the_content(); ?>
+								</div>
                                 </article>      
 								<!-- /article -->
 								<?php endwhile; ?>
