@@ -34,7 +34,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body id="ibm-com" <?php body_class('ibm-type v17'); ?> aria-busy="false" screen_capture_injected="true" style="">        
+	<body id="ibm-com" <?php body_class('ibm-type v17'); ?> aria-busy="false" screen_capture_injected="true">        
 		<div id="ibm-top" class="ibm-landing-page" style="">        
 			<!--! MASTHEAD_BEGIN -->
 			<header id="ibm-masthead" role="banner">
