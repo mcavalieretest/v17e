@@ -18,6 +18,11 @@
 		
 		<!-- Slick carousel -->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js" type="text/javascript"></script>
+		
+		<!-- Analytics -->
+		<div id="ibm-metrics">
+			<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+		</div>
 
 		<!-- WP scripts -->
 		<?php wp_footer(); ?>
