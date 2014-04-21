@@ -115,32 +115,32 @@
 </head>
 <body id="ibm-com" class="ibm-type" >  
 
-  <!-- JSRender TT template (START) --> 
-  <script id="tt_template" type="text/x-jsrender">	
+  <!-- JSRender TT template (START) -->  
+  <script id="tt_template" type="text/x-jsrender">  
    {{props t_list}}
    <li class="ibm_cci__ml-li">
     <p>
-      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
-      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}"></a>
+      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}">{{:prop.trim()}} </a>
+      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending keyword"></a>
     </p>
   </li>
   {{/props}}
-</script> 
-<!-- JSRender TT template (END)  --> 
+</script>
+  <!-- JSRender TT template (END)  -->  
 
-<!-- JSRender ST template (START) --> 
-<script id="st_template" type="text/x-jsrender">  
+  <!-- JSRender ST template (START) -->  
+  <script id="st_template" type="text/x-jsrender">  
   {{props t_list}}
   <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
     <p class="ibm_cci-clicked">
-      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
-      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}"></a> </p>
+      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Search Keyword: {{:prop}}">{{:prop.trim()}} </a>
+      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending search keyword>"</a> </p>
     </li>
     {{/props}}
-  </script> 
-  <!-- JSRender ST template (END)  --> 
+  </script>
+  <!-- JSRender ST template (END)  -->  
 
-  <!-- JSRender Unresolved template (START) --> 
+  <!-- JSRender Unresolved template (START) -->  
   <script id="unro_template" type="text/x-jsrender">
     <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
       <div class="ibm_cci--lv-unro-b">
@@ -170,30 +170,46 @@
 </div>
 <div class="ibm_cci--unr-cb">
   <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
-    <h3 class="ibm_cci--lv-r-wct"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user name {{:username}}">{{:username}}</a> </h3>
-    <p class="ibm_cci--lv-r-wch"> <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a> </p>
+    <h3 class="ibm_cci--lv-r-wct">
+     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user name {{:username}}">{{:username}}</a> 
+     </h3>
+    <p class="ibm_cci--lv-r-wch"> 
+      <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a>
+    </p>
   </div>
   <div class="ibm_cci--time-stamp">
-    <p class="ibm_cci-tts"> <span></span> <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image" onclick="window.open(this.href, '_blank'); return false;">{{:published}}</a> </p>
+    <p class="ibm_cci-tts"> <span></span> 
+      <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> 
+        <a href="{{:link}}" alt="twitter timestamp image" onclick="window.open(this.href, '_blank'); return false;">{{:published}}</a>
+    </p>
   </div>
   <div class="ibm_cci--ttb">
-    <h2 class="ibm_cci--tweet-title"> {{:content}} </h2>
+    <h2 class="ibm_cci--tweet-title">{{:content}} </h2>
   </div>
   <div class="ibm_cci--lv-rc-sharing">
     <ul>
-      <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-      <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-      <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
+      <li>
+        <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)">
+          <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"></a>
+        </li>
+      <li> 
+        <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)">
+          <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"></a>
+      </li>
+      <li> 
+        <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)">
+          <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"></a>
+      </li>
     </ul>
   </div>
 </div>
 </div>
 </div>
-</script> 
-<!-- JSRender Unresolved template (END) -->
+</script>
+  <!-- JSRender Unresolved template (END) -->  
 
-<!-- JSRender Resolved template (START) --> 
-<script id="reso_template" type="text/x-jsrender">
+  <!-- JSRender Resolved template (START) -->  
+  <script id="reso_template" type="text/x-jsrender">
   <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
     <div class="ibm-col-6-4">
       <div class="ibm_cci--rea-block">
@@ -225,9 +241,9 @@
     <p class="ibm_cci--feed-icon">
       <a href="{{:link}}" alt="feed icon {{:domain}}" onclick="window.open(this.href, '_blank'); return false;">
         {{if icon == null}}
-        <img alt="user avatar icon" src="{{:icon}}" style="display:none;"/>
+          <img alt="user avatar icon {{:domain}}" src="{{:icon}}" style="display:none;"/>
         {{else}}
-        <img alt="user avatar icon" src="{{:icon}}"/>
+          <img alt="user avatar icon {{:domain}}" src="{{:icon}}"/>
         {{/if}}
       </a>
     </p>
@@ -238,24 +254,24 @@
     <ul class="ibm_cci-sie">
       <li>
         <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16" alt="abstract social icon twitter"/>
+          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16"/>
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16"/>
         </a>
       </li>
       <li>
         <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" onclick="return openPopup(this.href)">
-          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16" alt="abstract social icon linkedin"/>
+          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16"/>
         </a>
       </li>
     </ul>
   </div>
   <div class="ibm_cci--ttb">
     <h2 class="ibm_cci--tweet-title">
-      <a href="{{:link}}" alt="tweet title {{:title}}" onclick="window.open(this.href, '_blank'); return false;">{{:title}}</a>
+      <a href="{{:link}}" alt="tweet title: {{:title}}" onclick="window.open(this.href, '_blank'); return false;">{{:title}}</a>
     </h2>
     <div class="ibm_cci--tweet-description">
       <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
@@ -282,7 +298,7 @@
       </div>
           
           {{else mediaURL}}
-          <img width="270" class="ibm_cci--tweet-image" alt="tweet media image" src="{{:mediaURL}}" onerror="this.style.display='none';" />      
+          <img width="270" class="ibm_cci--tweet-image" alt="abstract media image" src="{{:mediaURL}}" onerror="this.style.display='none';" />      
 
           {{/if}}
         </div>
@@ -292,17 +308,17 @@
       <ul class="ibm_cci-sie">
         <li>
           <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="share on twitter" width="16" height="16" alt="abstract social icon twitter" />
+            <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16" />
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16" alt="abstract social icon facebook"/>
+            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16"/>
           </a>
         </li>
         <li>
           <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="{{:rank}} share on linkedin link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linked in" width="16" height="16" alt="abstract social icon linkedin"/>
+            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16"/>
           </a>
         </li>
       </ul>
@@ -330,7 +346,9 @@
       <h3 class="ibm_cci--lv-rc-title">
         <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" onclick="return openPopup(this.href)">{{:username}}</a>
       </h3>
-      <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" onclick="return openPopup(this.href)">@{{:userScreenName}}</a></p>
+      <p class="ibm_cci--lv-rc-h">
+        <a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" onclick="return openPopup(this.href)">@{{:userScreenName}}</a>
+      </p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
        <p class="ibm_cci-tts"> 
@@ -347,9 +365,9 @@
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
       <ul>
-        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"></a> </li>
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"></a> </li>
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"></a> </li> 
       </ul>
     </div>
 
@@ -381,9 +399,12 @@
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
       <ul>
-        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"></a> 
+        </li>
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"></a> 
+        </li>
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"></a> 
+        </li> 
       </ul>
     </div>
 
@@ -393,7 +414,7 @@
 
 </div>
 </div>
-</script> 
+</script>
 <!-- JSRender Resolved template (END) -->
 
 
