@@ -349,11 +349,11 @@ sites/
   padding-top: 5px;
 }
 
-li.ibm-container.ibm-ribbon.ibm-alternate.ibm-portrait-module-list {
+li#explore {
   padding-bottom: 35px;
 }
 
-a#ibm-back-link {
+a.ibm-back-link {
   text-decoration: none;
 }
 
