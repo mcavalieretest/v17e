@@ -349,14 +349,6 @@ sites/
   padding-top: 5px;
 }
 
-#explore p {
-  padding-bottom: 35px;
-}
-
-a.ibm-back-link {
-  text-decoration: none;
-}
-
 @media (max-width: 800px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.story h1 {
     padding-top: 180px !important;
