@@ -360,6 +360,10 @@ sites/
   padding: 10px  10px 10px 30px;
 }
 
+.ibm-portrait-module-list li {
+  padding-bottom: 35px;
+}
+
 @media (max-width: 800px) and (min-width: 0) {
   .ibm-landing-page #ibm-leadspace-body.story h1 {
     padding-top: 180px !important;
