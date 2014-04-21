@@ -338,7 +338,7 @@ sites/
   font-family: LubalinGraphStdBookIBM;
   font-size: 4rem;
   letter-spacing: 1px;
-  padding-top: 140px !important;
+  padding-top: 150px !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body.story p {
@@ -347,17 +347,6 @@ sites/
   font-size: 1.7rem;
   letter-spacing: 0.5px;
   padding-top: 5px;
-}
-
-#ibm-navigation-trail {
-  padding: 20px 0 0 0;
-}
-
-#ibm-navigation-trail a {
-  color: black;
-  font-size: 1.5rem;
-  background: white;
-  padding: 10px  10px 10px 30px;
 }
 
 .ibm-container.ibm-ribbon.ibm-alternate.ibm-portrait-module-list li {
