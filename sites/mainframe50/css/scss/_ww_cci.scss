@@ -309,7 +309,8 @@
 
 #ibm-com #ibm-top .section-header.subtitle {
 	font-size: 2.2rem !important;
-	padding: 0 0 0 0;
+	padding: 20px 0 10px 0;
+	line-height: 25px;
 }
 
 .ibm-landing-page #ibm-leadspace-body.story {
@@ -323,7 +324,7 @@
     font-family: LubalinGraphStdBookIBM;
     font-size: 4rem;
     letter-spacing: 1px;
-    padding-top: 150px !important;
+    padding-top: 140px !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body.story p {
@@ -332,6 +333,17 @@
     font-size: 1.7rem;
     letter-spacing: 0.5px;
     padding-top: 5px;
+}
+
+#ibm-navigation-trail {
+    padding: 20px 0 0 0;
+}
+
+#ibm-navigation-trail a {
+    color: black; 
+	font-size: 1.5rem; 
+	background: white; 
+	padding: 10px  10px 10px 30px;
 }
 
 //Adjusting the page to work on < width 785px 
