@@ -360,7 +360,7 @@ sites/
   padding: 10px  10px 10px 30px;
 }
 
-.ibm-portrait-module-list li {
+.ibm-container.ibm-ribbon.ibm-alternate.ibm-portrait-module-list li {
   padding-bottom: 35px;
 }
 
