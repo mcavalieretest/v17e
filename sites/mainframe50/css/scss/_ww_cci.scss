@@ -326,6 +326,14 @@
     padding-top: 200px;
 }
 
+ibm-landing-page #ibm-leadspace-body.story p {
+    color: #FFFFFF;
+    font-family: LubalinGraphStdBookIBM;
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+
 //Adjusting the page to work on < width 785px 
 @media (max-width: 800px) and (min-width: 0){
 	.ibm-landing-page #ibm-leadspace-body.story h1{
