@@ -37,15 +37,10 @@
 }
 </style>
 
+<script src='/systems/resources/stg-common2-norotatingbox.js'  language='JavaScript' type='text/javascript'></script>
+
 <script type="text/javascript">
 	
-//<![CDATA[
-jQuery(function() {
-	
-	ibmSCsearchdetect();
-	ibmPageExpandSection('ibmdatacard');
-//	ibmCardInit();
-
 jQuery('.newsticker-jcarousellite').jCarouselLite({
 		vertical: true,
 		hoverPause:true,
@@ -55,11 +50,6 @@ jQuery('.newsticker-jcarousellite').jCarouselLite({
 		speed:2500
 	});
 	
-
-	jQuery('#ibm-events-container').load(jQuery('#ibm-events-link').attr('href') + ' #ibm-events-table')
-	dojo.require('ibmweb.table');
-});
-//]]>
 </script>
 
 </head>
