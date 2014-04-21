@@ -69,13 +69,25 @@ $(function() {
         });
     // INITIALIZATION OF TRENDING TOPICS
     vo.init_t({
+        
+        // DEV REST URL
         tt_url: "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES/trending",
+        
+        // STAGING REST URL
+        // tt_url: "https://www-sso.toronto.ca.ibm.com/social/aggregator/rest/213/VOICES/trending",
+        
         t_template: $("#tt_template"),
         t_container: $("#ibm_cci__ml")
     });
     // INITIALIZATION OF FEEDS
     vo.init_f({
+        
+        // DEV REST URL
         f_url: "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES",
+        
+        // STAGING URL
+        // f_url: "https://www-sso.toronto.ca.ibm.com/social/aggregator/rest/213/VOICES/",
+        
         f_container: $("#ibm_cci-widget-js"),
         f_unro_template: $("#unro_template"),
         f_reso_template: $("#reso_template")
@@ -460,11 +472,11 @@ $(function() {
                     feed_data.published = this.f_pretty_date(feed_data.published || "");
                     feed_data.domain = this.f_truncateDomain(feed_data.domain || "");
                     if (feed_data.mediaURL || feed_data.altMediaURL || "") {
-                        // feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL, function(imgObj){
-                        //         console.log(imgObj);
+                        // feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL, function(){
+                        //         console.log('executed');
                         //         // return imgObj;
                         // });
-                        feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
+                        // feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
                         feed_data.altMediaURL = this.f_preloadImages(feed_data.altMediaURL || "");
                     }
                     if (feed_data.refTweets && feed_data.refTweets.length > 0) {
@@ -494,27 +506,32 @@ $(function() {
             }
             return newRank;
         },
+        // NEED TO IMPROVIZE THIS CODE
         f_preloadImages: function(imgURL, callback) {
             var img = new Image(), 
                 regex = /\.(jpeg|jpg|gif|png|ico|jpg:large)$/,
+                loaded = 0,
                 imgWidth = 0;
                 img.src = imgURL;
 
                 try{
-                    if(imgURL.indexOf("youtube") > -1){
-                        // console.log("*****YOUTUBE IF STATEMETNT CALLED****");
-                        return imgURL;
-                    }else if(imgURL.match(regex) != null && img.src.readyState != 4){
-                        // CODE DOES NOT WAIT FOR THE ONLOAD TO COMPETE BEFORE RETURNING
-                        img.onload = function(){
-                            imgWidth = img.naturalWidth;                            
-                            if(imgWidth > 1000){
-                                console.log("*****IMGONLOAD INSIDE****: "+imgWidth+" : "+img.src);
-                                //return img.src;   
+                    for(var i = 0; i < 1; i++){
+                        if(imgURL.indexOf("youtube") > -1){
+                            // console.log("*****YOUTUBE IF STATEMETNT CALLED****");
+                            return imgURL;
+                        }else if(imgURL.match(regex) != null && img.src.readyState != 4){
+
+                            // CODE DOES NOT WAIT FOR THE ONLOAD TO COMPETE BEFORE RETURNING
+                            img.onload = function(){
+                                imgWidth = img.naturalWidth;                            
+                                if(imgWidth > 1000){
+                                    // console.log("*****IMGONLOAD INSIDE****: "+imgWidth+" : "+img.src);
+                                    //return img.src;   
+                                }
                             }
+                            // console.log("*****IMGONLOAD OUTSIDE****: "+imgWidth+" : "+img.src);
+                            return img.src;
                         }
-                        console.log("*****IMGONLOAD OUTSIDE****: "+imgWidth+" : "+img.src);
-                        return img.src;
                     }
                 }catch(e){
                     console.log('error inside preload images: '+e);    
