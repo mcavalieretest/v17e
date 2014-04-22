@@ -233,7 +233,7 @@ $(function() {
         self.f_reTweetToggle();
 
         // ADDED THE CHECKBROWSERWIDTH AGAIN TO TEST FIREFOX
-        // self.f_checkBrowserWidth();
+        self.f_checkBrowserWidth();
     });
     //WHEN(END) 
     //INFINITE SCROLL (START)
