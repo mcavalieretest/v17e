@@ -156,6 +156,10 @@ sites/
   font-size: 2.2rem;
 }
 
+#story .ibm-columns, #story-mobile .ibm-columns {
+  cursor: pointer;
+}
+
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-next,
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-prev {
   display: none;

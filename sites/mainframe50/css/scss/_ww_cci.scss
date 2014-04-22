@@ -132,6 +132,10 @@
 	@include px-to-rem(font-size,22px);
 }
 
+#story .ibm-columns, #story-mobile .ibm-columns{
+	cursor: pointer;
+}
+
 // ribbon updates
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-next,
 .ibm_cci-progress-band .ibm-ribbon a.ibm-ribbon-prev {
