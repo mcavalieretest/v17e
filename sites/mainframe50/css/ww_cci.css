@@ -185,6 +185,10 @@ sites/
   padding-bottom: 20px;
 }
 
+.ibm-aligned {
+  width: 1075px;
+}
+
 #ibm-content .ibm_cci-progress-band .ibm-columns.ibm-cloned,
 #ibm_cci-progress1 {
   background: url(../i/progress3.jpg) no-repeat 50% 0;
