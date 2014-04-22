@@ -241,16 +241,16 @@ $(function() {
         event.preventDefault();
         var lastRankID = $("#ibm_cci-widget-js .ibm-card").last().attr("data-rank");
 
+        if ($(window).scrollTop() < 400){
+            $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
+        }else {
+            $(gotoTop).css({"opacity": 1, "visibility": "visible"});
+        }   
+
         if($(window).data("ajaxReq") == false || vo.totalSearchCountNum < 20 || lastRankID < 20) {
             return;
         }        
-        try {
-            if ($(window).scrollTop() < 400){
-                $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
-            }else {
-                $(gotoTop).css({"opacity": 1, "visibility": "visible"});
-            }            
-
+        try {         
             if ($(window).scrollTop() + $(window).height() >= (($(document).height()+72) - 900) && $(window).data("ajaxReq", true)) {
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
