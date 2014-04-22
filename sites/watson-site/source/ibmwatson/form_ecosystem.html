@@ -5,7 +5,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
 
 <head>
-	{{> head}}
+	{{> head_eco}}
 </head>
 
 <body id="ibm-com" class="ibm-type">
@@ -34,24 +34,28 @@
 					</nav>
 
 					<div class="ibm-band form" id="ecosystem-form">
-
+						
 						<div class="content">
 							<div class="ibm-columns">
+
 								<div class="ibm-col-6-6">
-									<h1>Apply to join the Watson Partner Ecosystem</h1>
+									<h1>Join the Watson Ecosystem</h1>
 									<!--<p><b>Who is participating?</b></p>-->
-									<p>
-										History was made when the Watson Ecosystem launched in November 2013. The program is designed for ISVs whose business or application can benefit from Watson’s cognitive capabilities, specifically those looking to dramatically disrupt and transform an existing market. Partners can leverage the Watson Developer Cloud to develop their Powered by Watson prototype application.
-									</p>
-
-									<p>
-										IBM is gradually expanding the program and access to the Watson Developer Cloud and experimenting with different ways to give access to ISVs that want to build a Powered by Watson application. If you're interested in learning more as the community expands, sign up for more information and tell us your Powered by Watson idea.
-									</p>
-
-
+									<p>The <a href="ecosystem.html">Watson Ecosystem</a> is designed for independent software vendors (ISVs) that plan to apply Watson’s cognitive capabilities to disrupting and transforming markets</p>
+									<h3>Get access to the Watson API</h3>
+									<p>Businesses matching Watson’s criteria for anticipated revenue, market size and launch date, and other standards can apply for access to the Watson API.</p>
+									<p>Technical qualifications for Watson Ecosystem application ideas:</p>
+									<dl>
+										<dd><span>Supported content formats:</span> unstructured documents in HTML, PDF, MS Word, or TXT</dd>
+										<dd><span>Unsupported content formats:</span> non-English; rich media including images, audio and video; Javascript; CSS; PDF scans</dd>
+										<dd><span>Preferred structure:</span> well-defined titles and sections, simple tabular data, non-encrypted/password protected</dd>
+										<dd><span>Data:</span> at least 50 percent of content is unstructured, and sufficient volume exists </dd>
+										<dd><span>Training questions:</span> at least 2,000 question-answer sets supporting intended use cases </dd>
+										<dd><span>Embedding:</span> application can embed Watson UI or invoke REST-styled APIs </dd>
+									</dl>
 									<form action="https://www-03.ibm.com/systems/campaignmail/campaignmail.wss" onsubmit="return validateForm();" method="post" id="form">
 										<legend>Your Details</legend>
-										<fieldset>
+										<fieldset class="section details">
 											<input type="hidden" value="watson_ecosystem" id="campaignid" name="campaignid">
 											<input type="hidden" value="http://ibm.com/smarterplanet/us/en/ibmwatson/ecosystem_thanks.html" id="thankyoupage" name="thankyoupage">
 											<input type="hidden" value="NELECADR,NFNAME,NLNAME,IDEA,IDEASUPPORT" id="REQUIREDFIELDS" name="REQUIREDFIELDS">
@@ -61,241 +65,330 @@
 
 											<ol>
 												<li>
-													<label for="NFNAME">Your name:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<input type="text" value="" maxlength="34" name="NFNAME" id="NFNAME" size="34" placeholder="First" required>
-													<input type="text" value="" maxlength="34" name="NLNAME" id="NLNAME" size="34" placeholder="Last" required></span>
+													<div class="field_col">
+														<label for="NFNAME">Your name:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<input type="text" value="" maxlength="34" name="NFNAME" id="NFNAME" size="34" placeholder="First" required>
+													</div>
+													<div class="field_col">
+														<label for="NFNAME">&nbsp;</label>
+														<input type="text" value="" maxlength="34" name="NLNAME" id="NLNAME" size="34" placeholder="Last" required></span>
+													</div>
 												</li>
 
 												<li>
-													<label for="NELECADR">E-mail address:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<span><input type="text" value="" size="34" id="NELECADR" name="NELECADR" placeholder="hello@example.com" required></span>
+													<div class="field_col">
+														<label for="NELECADR">E-mail address:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<span><input type="text" value="" size="34" id="NELECADR" name="NELECADR" placeholder="hello@example.com" required></span>
+													</div>
+													<div class="field_col">
+														<label for="NPHONE">Phone number:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<span><input type="text" value="" maxlength="31" name="NPHONE" id="NPHONE" size="34" placeholder="XXX-XXX-XXXX" required></span>
+													</div>
 												</li>
 
 												<li>
-													<label for="NPHONE">Phone number:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<span><input type="text" value="" maxlength="31" name="NPHONE" id="NPHONE" size="34" placeholder="XXX-XXX-XXXX" required></span>
+
 												</li>
 											</ol>
+											<p>
+												<input type="button" value="Continue" name="continue" class="continue_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</p>
 										</fieldset>
 										<legend>Company Details</legend>
-										<fieldset>
+										<fieldset class="section co_details">
 
 											<ol>
 
 												<li>
-													<label for="NCOMPANY">Company name:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<span><input type="text" value="" maxlength="34" name="NCOMPANY" id="NCOMPANY" size="34" placeholder="example company" required></span>
+													<div class="field_col">
+
+														<label for="NCOMPANY">Company Name:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<span><input type="text" value="" maxlength="34" name="NCOMPANY" id="NCOMPANY" size="34" placeholder="example company" required></span>
+													</div>
+													<div class="field_col">
+														<label for="COMPANYURL">Company URL:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<span><input type="text" value="" maxlength="34" name="COMPANYURL" id="COMPANYURL" size="34" placeholder="http://example.com" required></span>
+
+													</div>
+												</li>
+												<li>
+													<div class="field_col">
+
+														<label for="NCITY">City:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<span><input type="text" value="" maxlength="34" name="NCITY" id="NCITY" size="34" placeholder="example city" required></span>
+													</div>
+													<div class="field_col">
+														<label for="NSTATE">State:<span class="ibm-required">*<span class="ibm-access" required>required</span></span></label>
+														<select required name="NSTATE" id="nstate">
+															<option value="">Please select</option>
+															<option value="AL">Alabama</option>
+															<option value="AK">Alaska</option>
+															<option value="AZ">Arizona</option>
+															<option value="AR">Arkansas</option>
+															<option value="CA">California</option>
+															<option value="CO">Colorado</option>
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="DC">District Of Columbia</option>
+															<option value="FL">Florida</option>
+															<option value="GA">Georgia</option>
+															<option value="HI">Hawaii</option>
+															<option value="ID">Idaho</option>
+															<option value="IL">Illinois</option>
+															<option value="IN">Indiana</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+															<option value="LA">Louisiana</option>
+															<option value="ME">Maine</option>
+															<option value="MD">Maryland</option>
+															<option value="MA">Massachusetts</option>
+															<option value="MI">Michigan</option>
+															<option value="MN">Minnesota</option>
+															<option value="MS">Mississippi</option>
+															<option value="MO">Missouri</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NV">Nevada</option>
+															<option value="NH">New Hampshire</option>
+															<option value="NJ">New Jersey</option>
+															<option value="NM">New Mexico</option>
+															<option value="NY">New York</option>
+															<option value="NC">North Carolina</option>
+															<option value="ND">North Dakota</option>
+															<option value="OH">Ohio</option>
+															<option value="OK">Oklahoma</option>
+															<option value="OR">Oregon</option>
+															<option value="PA">Pennsylvania</option>
+															<option value="RI">Rhode Island</option>
+															<option value="SC">South Carolina</option>
+															<option value="SD">South Dakota</option>
+															<option value="TN">Tennessee</option>
+															<option value="TX">Texas</option>
+															<option value="UT">Utah</option>
+															<option value="VT">Vermont</option>
+															<option value="VA">Virginia</option>
+															<option value="WA">Washington</option>
+															<option value="WV">West Virginia</option>
+															<option value="WI">Wisconsin</option>
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
 												</li>
 
 												<li>
-													<label for="COMPANYURL">Company URL:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<span><input type="text" value="" maxlength="34" name="COMPANYURL" id="COMPANYURL" size="34" placeholder="http://example.com" required></span>
+													<div class="field_col clearfix">
+														<label for="ncountry">Country / region:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+
+														<select required name="ncountry" id="ncountry">
+															<option value="">Please select</option>
+
+															<option value="us">United States</option>
+															<option value="ar">Argentina</option>
+															<option value="au">Australia</option>
+															<option value="at">Austria</option>
+															<option value="bs">Bahamas</option>
+															<option value="bh">Bahrain</option>
+															<option value="bb">Barbados</option>
+															<option value="be">Belgium</option>
+															<option value="bm">Bermuda</option>
+															<option value="bo">Bolivia</option>
+															<option value="bw">Botswana</option>
+															<option value="br">Brazil</option>
+															<option value="bg">Bulgaria</option>
+															<option value="ca">Canada</option>
+															<option value="cl">Chile</option>
+															<option value="cn">China</option>
+															<option value="co">Columbia</option>
+															<option value="hr">Croatia</option>
+															<option value="cy">Cyprus</option>
+															<option value="cz">Czech Republic</option>
+															<option value="dk">Denmark</option>
+															<option value="do">Dominican Republic</option>
+															<option value="ec">Ecuador</option>
+															<option value="eg">Egypt</option>
+															<option value="sv">El Salvador</option>
+															<option value="ee">Estonia</option>
+															<option value="fi">Finland</option>
+															<option value="fr">France</option>
+															<option value="de">Germany</option>
+															<option value="gr">Greece</option>
+															<option value="gt">Guatemala</option>
+															<option value="hn">Honduras</option>
+															<option value="hk">Hong Kong S.A.R. of China</option>
+															<option value="hu">Hungary</option>
+															<option value="in">India</option>
+															<option value="id">Indonesia</option>
+															<option value="ie">Ireland</option>
+															<option value="il">Israel</option>
+															<option value="it">Italy</option>
+															<option value="jm">Jamaica</option>
+															<option value="jp">Japan</option>
+															<option value="jo">Jordan</option>
+															<option value="jo">Korea, Republic of</option>
+															<option value="kw">Kuwait</option>
+															<option value="lv">Latvia</option>
+															<option value="lb">Lebanon</option>
+															<option value="lt">Lithuania</option>
+															<option value="my">Malaysia</option>
+															<option value="mx">Mexico</option>
+															<option value="ma">Morocco</option>
+															<option value="nl">Netherlands</option>
+															<option value="an">Netherlands, Antilles</option>
+															<option value="nz">New Zealand</option>
+															<option value="ni">Nicaragua</option>
+															<option value="no">Norway</option>
+															<option value="om">Oman</option>
+															<option value="pk">Pakistan</option>
+															<option value="pa">Panama</option>
+															<option value="py">Paraguay</option>
+															<option value="pe">Peru</option>
+															<option value="ph">Philippines</option>
+															<option value="pl">Poland</option>
+															<option value="pt">Portugal</option>
+															<option value="qa">Qatar</option>
+															<option value="ro">Romania</option>
+															<option value="ru">Russian Federation</option>
+															<option value="sa">Saudi Arabia</option>
+															<option value="sn">Senegal</option>
+															<option value="yu">Serbia and Montenegro</option>
+															<option value="sg">Singapore</option>
+															<option value="sk">Slovakia</option>
+															<option value="si">Solvenia</option>
+															<option value="za">South Africa</option>
+															<option value="es">Spain</option>
+															<option value="lk">Sri Lanka</option>
+															<option value="sr">Suriname</option>
+															<option value="se">Sweden</option>
+															<option value="ch">Switzerland</option>
+															<option value="tw">Taiwan</option>
+															<option value="th">Thailand</option>
+															<option value="tt">Trinidad and Tobago</option>
+															<option value="tn">Tunisia</option>
+															<option value="tr">Turkey</option>
+															<option value="ae">United Arab Emirates</option>
+															<option value="uk">United Kingdom</option>
+															<option value="us">United States</option>
+															<option value="uy">Uruguay</option>
+															<option value="ve">Venezuela</option>
+															<option value="vn">Vietnam</option>
+														</select>
+													</div>
+													<div class="field_col">
+														<label for="INDUSTRY">Industry:<span class="ibm-required">*<span class="ibm-access" required>required</span></span></label>
+
+														<select required name="INDUSTRY" id="nindustry">
+															<option value="">Please select</option>
+															<option value="Aerospace_and_defense" name="INDUSTRY">Aerospace and Defense</option>
+															<option value="Automotive" name="INDUSTRY">Automotive</option>
+															<option value="Banking" name="INDUSTRY">Banking</option>
+															<option value="Chemicals_and_petroleum" name="INDUSTRY">Chemicals and petroleum</option>
+															<option value="Communications" name="INDUSTRY">Communications</option>
+															<option value="Consumer_products" name="INDUSTRY">Consumer products</option>
+															<option value="Cross_Industry-Sales" name="INDUSTRY">Cross Industry - Sales</option>
+															<option value="Cross_Industry-Marketing" name="INDUSTRY">Cross Industry - Marketing</option>
+															<option value="Cross_Industry-Finance" name="INDUSTRY">Cross Industry - Finance</option>
+															<option value="Cross_Industry-Operations" name="INDUSTRY">Cross Industry - Operations</option>
+															<option value="Cross_Industry-IT" name="INDUSTRY">Cross Industry - IT</option>
+															<option value="Education" name="INDUSTRY">Education</option>
+															<option value="Electronics" name="INDUSTRY">Electronics</option>
+															<option value="Energy_and_utilities" name="INDUSTRY">Energy and utilities</option>
+															<option value="Financial_Services" name="INDUSTRY">Financial Services</option>
+															<option value="Government" name="INDUSTRY">Government</option>
+															<option value="Healthcare" name="INDUSTRY">Healthcare</option>
+															<option value="Insurance" name="INDUSTRY">Insurance</option>
+															<option value="Life_sciences" name="INDUSTRY">Life sciences</option>
+															<option value="Media_and_entertainment" name="INDUSTRY">Media and entertainment</option>
+															<option value="Metals_and_mining" name="INDUSTRY">Metals and mining</option>
+															<option value="Retail" name="INDUSTRY">Retail</option>
+															<option value="Telecommunications" name="INDUSTRY">Telecommunications</option>
+															<option value="Travel_and_transportation" name="INDUSTRY">Travel and transportation</option>
+															<option value="Other" name="INDUSTRY">Other</option>
+
+														</select>
+
+													</div>
+
 												</li>
 
 												<li>
-													<label for="INDUSTRY">Industry:<span class="ibm-required">*<span class="ibm-access" required>required</span></span></label>
+													<div class="field_col">
+														<label for="Employees">Number of employees:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<select required name="Employees" id="nemployees">
+															<option value="">Please select</option>
+															<option value="0" name="Employees">0</option>
+															<option value="1-10" name="Employees">1-10</option>
+															<option value="11-25" name="Employees">11-25</option>
+															<option value="26-49" name="Employees">26-49</option>
+															<option value="50-100" name="Employees">50-100</option>
+															<option value="101-250" name="Employees">101-250</option>
+															<option value="250+" name="Employees">250+</option>
+														</select>
+													</div>
+													<div class="field_col">
 
-													<select required>
-														<option value="">Please select</option>
-														<option value="Aerospace_and_defense" name="INDUSTRY">Aerospace and Defense</option>
-														<option value="Automotive" name="INDUSTRY">Automotive</option>
-														<option value="Banking" name="INDUSTRY">Banking</option>
-														<option value="Chemicals_and_petroleum" name="INDUSTRY">Chemicals and petroleum</option>
-														<option value="Communications" name="INDUSTRY">Communications</option>
-														<option value="Consumer_products" name="INDUSTRY">Consumer products</option>
-														<option value="Cross_Industry-Sales" name="INDUSTRY">Cross Industry - Sales</option>
-														<option value="Cross_Industry-Marketing" name="INDUSTRY">Cross Industry - Marketing</option>
-														<option value="Cross_Industry-Finance" name="INDUSTRY">Cross Industry - Finance</option>
-														<option value="Cross_Industry-Operations" name="INDUSTRY">Cross Industry - Operations</option>
-														<option value="Cross_Industry-IT" name="INDUSTRY">Cross Industry - IT</option>
-														<option value="Education" name="INDUSTRY">Education</option>
-														<option value="Electronics" name="INDUSTRY">Electronics</option>
-														<option value="Energy_and_utilities" name="INDUSTRY">Energy and utilities</option>
-														<option value="Financial_Services" name="INDUSTRY">Financial Services</option>
-														<option value="Government" name="INDUSTRY">Government</option>
-														<option value="Healthcare" name="INDUSTRY">Healthcare</option>
-														<option value="Insurance" name="INDUSTRY">Insurance</option>
-														<option value="Life_sciences" name="INDUSTRY">Life sciences</option>
-														<option value="Media_and_entertainment" name="INDUSTRY">Media and entertainment</option>
-														<option value="Metals_and_mining" name="INDUSTRY">Metals and mining</option>
-														<option value="Retail" name="INDUSTRY">Retail</option>
-														<option value="Telecommunications" name="INDUSTRY">Telecommunications</option>
-														<option value="Travel_and_transportation" name="INDUSTRY">Travel and transportation</option>
-														<option value="Other" name="INDUSTRY">Other</option>
-
-													</select>
-
+														<label for="Customers">Number of customers:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<select required name="Customers" id="ncustomers">
+															<option value="">Please select</option>
+															<option value="0" name="Customers">0</option>
+															<option value="1-4" name="Customers">1-4</option>
+															<option value="5-10" name="Customers">5-10</option>
+															<option value="11-25" name="Customers">11-25</option>
+															<option value="26-100" name="Customers">26-100</option>
+															<option value="100+" name="Customers">100+</option>
+														</select>
+													</div>
 												</li>
 
 												<li>
-													<label for="ncountry">Country / region:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-
-													<select required name="ncountry" id="ncountry">
-														<option value="">Please select</option>
-
-														<option value="us">United States</option>
-														<option value="ar">Argentina</option>
-														<option value="au">Australia</option>
-														<option value="at">Austria</option>
-														<option value="bs">Bahamas</option>
-														<option value="bh">Bahrain</option>
-														<option value="bb">Barbados</option>
-														<option value="be">Belgium</option>
-														<option value="bm">Bermuda</option>
-														<option value="bo">Bolivia</option>
-														<option value="bw">Botswana</option>
-														<option value="br">Brazil</option>
-														<option value="bg">Bulgaria</option>
-														<option value="ca">Canada</option>
-														<option value="cl">Chile</option>
-														<option value="cn">China</option>
-														<option value="co">Columbia</option>
-														<option value="hr">Croatia</option>
-														<option value="cy">Cyprus</option>
-														<option value="cz">Czech Republic</option>
-														<option value="dk">Denmark</option>
-														<option value="do">Dominican Republic</option>
-														<option value="ec">Ecuador</option>
-														<option value="eg">Egypt</option>
-														<option value="sv">El Salvador</option>
-														<option value="ee">Estonia</option>
-														<option value="fi">Finland</option>
-														<option value="fr">France</option>
-														<option value="de">Germany</option>
-														<option value="gr">Greece</option>
-														<option value="gt">Guatemala</option>
-														<option value="hn">Honduras</option>
-														<option value="hk">Hong Kong S.A.R. of China</option>
-														<option value="hu">Hungary</option>
-														<option value="in">India</option>
-														<option value="id">Indonesia</option>
-														<option value="ie">Ireland</option>
-														<option value="il">Israel</option>
-														<option value="it">Italy</option>
-														<option value="jm">Jamaica</option>
-														<option value="jp">Japan</option>
-														<option value="jo">Jordan</option>
-														<option value="jo">Korea, Republic of</option>
-														<option value="kw">Kuwait</option>
-														<option value="lv">Latvia</option>
-														<option value="lb">Lebanon</option>
-														<option value="lt">Lithuania</option>
-														<option value="my">Malaysia</option>
-														<option value="mx">Mexico</option>
-														<option value="ma">Morocco</option>
-														<option value="nl">Netherlands</option>
-														<option value="an">Netherlands, Antilles</option>
-														<option value="nz">New Zealand</option>
-														<option value="ni">Nicaragua</option>
-														<option value="no">Norway</option>
-														<option value="om">Oman</option>
-														<option value="pk">Pakistan</option>
-														<option value="pa">Panama</option>
-														<option value="py">Paraguay</option>
-														<option value="pe">Peru</option>
-														<option value="ph">Philippines</option>
-														<option value="pl">Poland</option>
-														<option value="pt">Portugal</option>
-														<option value="qa">Qatar</option>
-														<option value="ro">Romania</option>
-														<option value="ru">Russian Federation</option>
-														<option value="sa">Saudi Arabia</option>
-														<option value="sn">Senegal</option>
-														<option value="yu">Serbia and Montenegro</option>
-														<option value="sg">Singapore</option>
-														<option value="sk">Slovakia</option>
-														<option value="si">Solvenia</option>
-														<option value="za">South Africa</option>
-														<option value="es">Spain</option>
-														<option value="lk">Sri Lanka</option>
-														<option value="sr">Suriname</option>
-														<option value="se">Sweden</option>
-														<option value="ch">Switzerland</option>
-														<option value="tw">Taiwan</option>
-														<option value="th">Thailand</option>
-														<option value="tt">Trinidad and Tobago</option>
-														<option value="tn">Tunisia</option>
-														<option value="tr">Turkey</option>
-														<option value="ae">United Arab Emirates</option>
-														<option value="uk">United Kingdom</option>
-														<option value="us">United States</option>
-														<option value="uy">Uruguay</option>
-														<option value="ve">Venezuela</option>
-														<option value="vn">Vietnam</option>
-													</select>
+													<div class="field_col">
+														<label for="Revenues">Revenues:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+														<select required name="Revenues" id="nrevenues">
+															<option value="">Please select</option>
+															<option value="<$1M" name="Revenues">&lt;$1M</option>
+															<option value="$1-$4.9M" name="Revenues">$1-$4.9M</option>
+															<option value="$5-$9.9M" name="Revenues">$5-$9.9M</option>
+															<option value="$10-$24M" name="Revenues">$10-$24M</option>
+															<option value="$25-$49.9M" name="Revenues">$25-$49.9M</option>
+															<option value="$50-$99M" name="Revenues">$50-$99M</option>
+															<option value="$100M+" name="Revenues">$100M+</option>
+														</select>
+													</div>
 												</li>
-
-												<li>
-
-													<label for="Employees">Number of employees:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<select required>
-														<option value="">Please select</option>
-														<option value="0" name="Employees">0</option>
-														<option value="1-10" name="Employees">1-10</option>
-														<option value="11-25" name="Employees">11-25</option>
-														<option value="26-100" name="Employees">26-100</option>
-														<option value="101-250" name="Employees">101-250</option>
-														<option value="250+" name="Employees">250+</option>
-													</select>
-												</li>
-
-												<li>
-													<label for="Customers">Number of customers:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<select required>
-														<option value="">Please select</option>
-														<option value="0" name="Customers">0</option>
-														<option value="1-10" name="Customers">1-10</option>
-														<option value="11-25" name="Customers">11-25</option>
-														<option value="26-100" name="Customers">26-100</option>
-														<option value="100+" name="Customers">100+</option>
-													</select>
-												</li>
-
-
-												<li>
-													<label for="Revenues">Revenues:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<select required>
-														<option value="">Please select</option>
-														<option value="<$1M" name="Revenues">&lt;$1M</option>
-														<option value="$1-$10M" name="Revenues">$1-$10M</option>
-														<option value="$10-25M" name="Revenues">$10-$25M</option>
-														<option value="$25-50M" name="Revenues">$25-$50M</option>
-														<option value="$50-100M" name="Revenues">$50-$100M</option>
-														<option value="$100M+" name="Revenues">$100M+</option>
-													</select>
-												</li>
-											</ol>
-										</fieldset>
-										<legend>Your Idea</legend>
-										<fieldset>
-
-											<ol>
 												<li>
 													<label for="BusinessPartner">Are you currently an IBM Business Partner?:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<input type="radio" dojoattachevent="onclick:_onClick" dojoattachpoint="focusNode" name="BusinessPartner" style="-moz-user-select: none;" value="Yes" id="dijit_form_RadioButton_0" required>Yes</input>
-													<input type="radio" dojoattachevent="onclick:_onClick" dojoattachpoint="focusNode" name="BusinessPartner" style="-moz-user-select: none;" value="No" id="dijit_form_RadioButton_1" >No</input>
+													<input type="radio" dojoattachevent="onclick:_onClick" dojoattachpoint="focusNode" name="BusinessPartner" style="-moz-user-select: none;" value="Yes" id="dijit_form_RadioButton_0" required><span class="radio">Yes</span></input>
+													<input type="radio" dojoattachevent="onclick:_onClick" dojoattachpoint="focusNode" name="BusinessPartner" style="-moz-user-select: none;" value="No" id="dijit_form_RadioButton_1" ><span class="radio">No</span></input>
 												</li>
+											</ol>
+											<p>
+												<input type="button" value="Continue" name="continue" class="continue_btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</p>
+										</fieldset>
+										<legend>Your Idea</legend>
+										<fieldset class="section desc">
+
+											<ol>
+
 
 												<li>
-													<label for="IDEA">Powered by Watson application idea:<span class="ibm-required">*<span class="ibm-access">required</span></span><span class="label-limit">limit: 800 words</span></label>
-													<span class="label-subtext">Please explain your idea in detail and how Watson's capabilities to interact in natural language, read and understand unstructured data, and its ability to learn would be applicable. What is the market potential? Who is the target customer? What experience in this area do you have?</span>
+													<span class="label-subtext">In 300 words or fewer, <span>explain your idea and any experience you have with it; its market potential and target customers</span>; and how it would use Watson’s abilities to interact in natural language, read and understand unstructured data, and learn.<span class="ibm-required">*<span class="ibm-access">required</span></span>
 													<span><textarea maxlength="800" value="" name="IDEA" id="IDEA" rows="4" cols="63" required></textarea></span>
 												</li>
 
 
 												<li>
-													<label for="IDEASUPPORT">Content needed for the application:<span class="ibm-required">*<span class="ibm-access">required</span></span><span class="label-limit">limit: 800 words</span></a></label>
-													<span class="label-subtext">Is the information to fuel your idea readily available, what is the source, and do you have access to it? What is the form of the content (e.g. structured/unstructured, books, webpages, etc)?</span>
+													<span class="label-subtext">In 300 words or fewer, <span>explain the source and availability of the text-based information driving your idea</span>; the format of that information (e.g., unstructured data, books, web pages); and whether you have access to it.<span class="ibm-required">*<span class="ibm-access">required</span></span>
 													<span><textarea maxlength="800" name="IDEASUPPORT" rows="5" cols="63" id="IDEASUPPORT" required></textarea></span>
 												</li>
 											</ol>
-
-											<p>
+											<div class="clearfix"></div>
+											<p class="terms-and-conditions">
 												<input type="checkbox" vlaue="" required>I accept IBM's <a target="_new" href="//www.ibm.com/privacy/us/en/">Privacy statement</a> and <a target="_new" href="//www.ibm.com/legal/us/en/?lnk=flg-tous-usen">Terms of use</a>.
 
 											</p>
 											<p>
-												<input type="submit" value="Submit" name="ibm-submit" class="btn-black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="submit" value="Apply" name="ibm-submit" class="btn-black" disabled="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 											</p>
 										</fieldset>

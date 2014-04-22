@@ -57,8 +57,8 @@
 			margin-top: 20px;
 		}
 		.btn-white:hover {
-			background-color: #000;
-			color: #fff;
+			background-color: #e6e6e6;
+			color: #000;
 		}
 
 		.next {
@@ -104,15 +104,12 @@
 				.slanted-header-inner {
 					h1 {
 						font: 74px/1 $font-bold-italic;
-						letter-spacing: 1.4px;
 						font-weight: 300;
 						margin: -17px 0 0 0px;
-						line-height: 78px;
 					}
 					h2 {
 						font: 29px $font-bold-italic;
 						margin: 21px 0 42px 0px;
-						letter-spacing: 1.4px;
 					}
 					p {
 						width: 70%;
@@ -128,7 +125,6 @@
 					p a.btn-white {
 						margin: -20px 0 0 0;
 						font: 22px/50px "helvneue_for_ibmbold_italic", Arial, sans-serif;
-						letter-spacing: 1.4px;
 					}
 				}
 			}
@@ -555,6 +551,25 @@ summary.no-touch:hover {
 	}
 }
 
+@media screen and (max-width: 960px) {
+	.watson-mdc {
+
+		#hero {
+			.content {
+				padding-top: 90px;
+				.slanted-header {
+					.slanted-header-inner {
+						h1 {
+							font-size: 48px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.watson-mdc {
 		h2 {
@@ -575,7 +590,6 @@ summary.no-touch:hover {
 					.slanted-header-inner {
 						h1 {
 							font-size: 48px;
-							line-height: 50px;
 							margin-right: 25px;
 						}
 						h2 {
@@ -622,7 +636,6 @@ summary.no-touch:hover {
 				.slanted-header-inner {
 					h1 {
 						font-size: 34px;
-						line-height: 42px;
 					}
 					A.btn-white {
 						font-size: 18px;
@@ -669,8 +682,6 @@ summary.no-touch:hover {
 		}
 		.content {
 			.btn-white {
-				/*height: 60px;*/
-				padding: 10px 20px;
 				font: 16px $font-bold-italic;
 			}
 
@@ -678,9 +689,12 @@ summary.no-touch:hover {
 
 		#hero, #hero.no-video {
 			/* height: 725px;*/
+			background: #000 url(../img/mdc/bg-mobile.jpg) no-repeat 0 0;
+			background-size: cover;
+
 
 			video {
-				/*display: none;*/
+				display: none;
 			}
 			.content {
 				.slanted-header {
@@ -688,7 +702,6 @@ summary.no-touch:hover {
 					.slanted-header-inner {
 						h1 {
 							font-size: 24px;
-							line-height: 30px;
 						}
 						p {
 							width: 90%;
