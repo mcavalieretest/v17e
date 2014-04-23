@@ -1,4 +1,16 @@
 module.exports = function(grunt) {
+  var BANNER = '/*! \n'
+              + ' * Name: ibm.com v17e JS file\n'
+              + ' * Version <%= pkg.version %>\n'
+              + ' * Built: <%= grunt.template.today("longTime") %>\n'
+              + ' * Owner: Corporate Webmaster (NUS_N_NIWWW)\n'
+              + ' * Copyright (c) 2013 IBM Corporation\n'
+              + ' */\n'
+              + '\n\n'
+              + '// URI: www.ibm.com/common/v17e/js/ww.js\n'
+              + '// Description: Official JS file for v17e project\n'
+              + '//\n';
+  
 
   // Project configuration.
   grunt.initConfig({
@@ -25,7 +37,7 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: BANNER
       },
       build: {
         files: {
@@ -42,6 +54,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify']);  //
+  grunt.registerTask('default', ['concat']);  //, 'uglify'
 
 };
