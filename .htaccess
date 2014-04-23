@@ -3,9 +3,4 @@
 # AuthUserFile /var/www/vhosts/think-mktg.com/.htpasswd
 # require valid-user
 
-RewriteEngine On
-
 RedirectMatch ^/v17e/$ /v17e/primer/index.html
-
-## Temp for dev stuff.
-RedirectMatch 301 ^/v17e/(.*) /$1
