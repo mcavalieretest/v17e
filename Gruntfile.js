@@ -8,10 +8,6 @@ module.exports = function(grunt) {
       options: {
         separator: ";\n\n"
       },
-      // sample: {
-      //   src: ['js/src/foo.js', 'js/src/bar.js', 'js/src/baz.js'],
-      //   dest: 'js/build/combined.js'
-      // },
       ww: {
         nonull: true,
         src: [
@@ -25,7 +21,6 @@ module.exports = function(grunt) {
         ],
         dest: 'js/build/ww.js'
       }
-
     },
 
     uglify: {
@@ -33,12 +28,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        // files: {
-        //     'js/build/ww.min.js': ['js/src/ww.js']
-        // }
         files: {
-          'js/ww.min.js': ['js/ww.js'],
-          'js/build/combined.min.js': ['js/build/combined.js']
+          'js/build/ww.min.js': ['js/build/ww.js']
         }
       }
     }
@@ -51,6 +42,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat']);  //, 'uglify'
+  grunt.registerTask('default', ['concat', 'uglify']);  //
 
 };
