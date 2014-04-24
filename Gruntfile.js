@@ -21,6 +21,12 @@ module.exports = function(grunt) {
     'js/src/ibm/ww/init.js'
   ];
 
+  var target = grunt.option("target");
+
+  if (typeof(target) == "undefined") {
+    grunt.fail.warn("A target must be specified using the --target=[target] option. Valid targets are \"dev\" and \"prod\".");
+  }
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -53,15 +59,7 @@ module.exports = function(grunt) {
     }
   });
 
-  var target = grunt.option("target");
-
-  if (typeof(target) == "undefined") {
-    grunt.fail.warn("A target must be specified using the --target=[target] option. Valid targets are \"dev\" and \"prod\".");
-  }
-
   grunt.loadNpmTasks('grunt-contrib-concat');
-
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   var taskList = ['concat:'+target];
