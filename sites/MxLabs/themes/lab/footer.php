@@ -19,7 +19,7 @@
 		<!-- IBM_TOP END -->
 
 		<!--! SCRIPTS_BEGIN -->		
-		<script src="/wp-content/themes/lab/assets/js/ww.js" type="text/javascript"></script>
+		<script src="/wp-content/themes/lab/assets/js/ww.min.js" type="text/javascript"></script>
 		<!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/ww.js" type="text/javascript"></script> -->
 		
 		<!-- Slick carousel -->

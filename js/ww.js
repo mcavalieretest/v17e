@@ -4289,7 +4289,7 @@ Company.data.CustomStore = function(config) { ... }
     };
 
     IBM.Common.Widget.MobileMenu = (function() {
-        var minViewportWidth = 800;
+        var maxViewportWidth = 800;
 
         function whenMastheadLinksAvailable(callback) {
             var mLinksCheckFunction = function() {
@@ -4326,7 +4326,7 @@ Company.data.CustomStore = function(config) { ... }
             );
         }
 
-        function initPushMenu() {
+        function initPushMenu(config) {
             // Push menu for showing/hiding container
             IBM.CurrentPage.mobileMenuMain = new mlPushMenu(
                 document.getElementById('m-menu'),
@@ -4347,7 +4347,7 @@ Company.data.CustomStore = function(config) { ... }
 
             // Close the menu automatically when the viewport gets too wide. 
             $(window).resize(function() {
-                if ($(window).width() > minViewportWidth) {
+                if (config.closeOnMaxWidth && $(window).width() > config.maxViewportWidth) {
                     IBM.CurrentPage.mobileMenuMain._resetMenu(false);
                 }
 
@@ -4431,6 +4431,18 @@ Company.data.CustomStore = function(config) { ... }
         }
 
         function init() {
+            //default config values
+            var defaults = {
+                closeOnMaxWidth: true,
+                maxViewportWidth: 800
+            };
+
+            if (typeof(options) === "undefined") {
+                var options = {};
+            }
+
+            this.config = $.extend({}, defaults, options);
+
             // Allow site owners to disable the menu via html.
             if ($("html").hasClass("m-menu-disabled")) {
                 return;
@@ -4441,7 +4453,7 @@ Company.data.CustomStore = function(config) { ... }
             whenMastheadLinksAvailable(function() {
                 insertMobileMenuHtml();
                 insertHamburgerHtml();
-                initPushMenu();
+                initPushMenu(IBM.Common.Widget.MobileMenu.config);
 
                 if ($('#ibm-primary-tabs').length) {
                     insertLocalMenuHtml();
