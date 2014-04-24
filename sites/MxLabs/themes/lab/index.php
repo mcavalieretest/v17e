@@ -11,7 +11,7 @@
                             <div class="ibm-col-1-1">                                
                                 <div class="ibm-col-6-3 feature-box">
                                     <h2 class="section-header">Welcome to the Labs</h2>
-                                    <p><a href="#post-25">We started as a single pilot team in 2011, and became the Design Lab in 2012. In 2013 we grew to 24 teams with 160 people; this year we are expanding globally with three new Labs in Tokyo, London, and Bangalore. We’re here to share our experiences with you—the successes, the failures, and the lessons we learn along the way. </a></p>
+                                    <p><a href="#post-25">We work at the intersection of marketing, design, data, and technology. We're here to share our experiences with you.</a></p>
                                 </div>
                             </div>
                         </div>
