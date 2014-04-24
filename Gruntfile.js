@@ -56,10 +56,23 @@ module.exports = function(grunt) {
           'js/build/ww.prod.min.js': ['js/build/ww.prod.js']
         }
       }
+    },
+
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'css',
+          src: ['*.scss'],
+          dest: 'css',
+          ext: '.css'
+        }]
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   var taskList = ['concat:'+target];
