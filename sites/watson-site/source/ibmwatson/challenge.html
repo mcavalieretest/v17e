@@ -41,32 +41,17 @@
                     <!-- SCENES -->
 
                     <!-- Hero video-->
-                    <div class="ibm-band hero scene" id="hero" data-ev="section1">
+                    <div class="ibm-band scene" id="hero" data-ev="section1">
 
-                        <div class="video-wrapper">
-                            <video data-src="assets/video/challenge2" poster="assets/video/challenge2.jpg" width="100%" height="100%" id="mdc-video-player" loop>
-                            </video>
 
-                            <div id="flashcontent">
-                                <div id="noflash">
-                                    <p>
-                                        <strong>Your flashplayer is too old.</strong>
-                                        <a href="http://www.adobe.com/products/flashplayer/">Click here to download a newer flash version.</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="content">
                             <div class="slanted-header">
                                 <div class="slanted-header-inner">
-                                    <h1>Thank you for your interest in the Watson Mobile Developer Challenge.</h1>
-                                    <p>Thousands expressed interest in the challenge and submissions are now closed. The 25 semifinalists will be announced <span>April 28, 2014.</span><br/><br/>
-                                    Still want to work with Watson? Apply to join the Watson Ecosystem program to access its API.</p>
-
-                                    <p>
-                                        <a data-evname="learnecosystem" href="ecosystem.html?cmp=usbrb&cm=s&csr=watson.site_20140226&cr=dev&ct=usbrb301&cn=sec1cta" class="btn-white submit-proposal">Learn about the Watson Ecosystem</a>
-                                    </p>
-
+                                    <h1>The Watson Mobile Developer Challenge</h1>
+                                    <h2>The Semi-Finalists</h2>
+                                    <p>In February, the IBM Watson Mobile Developer Challenge invited teams to design mobile apps using Watson’s cognitive computing capabilities to analyze, discover insights and learn from Big Data.</p>
+                                    <p>Several hundred submissions across a wide range of industries have been narrowed down to 25 semi-finalists who will use Watson to build, train, and test their apps. After the semi-finalists submit prototypes for judging, only five teams will present proposals to IBM. The three winners are awarded 90 days of access to the Watson APIs and consulting from IBM Interactive design services.</p>
+                                    <p>See how these teams are using Watson to build the next generation of mobile technology, follow their progress, and share their innovations with the world.</p>
                                 </div>
                             </div>
                         </div>
@@ -74,41 +59,12 @@
 
 
                     <!-- Timeline -->
-                    <div class="ibm-band scene" id="mdc-timeLine" data-ev="section2">
-                        <div class="content">
-                            <h2>Timeline</h2>
+                    <div class="ibm-band scene" id="mdc-finalists" data-ev="section2">
+                        <div class="ibm-columns finalists">
 
-                            <div class="line"></div>
-                            <ol>
-                                <li>
-                                    <h3>April 14</h3>
-
-                                    <p>Deadline for submitting your<br/>app proposal.</p>
-                                </li>
-                                <li>
-                                    <h3>April 28</h3>
-
-                                    <p>25 finalists are announced.</p>
-                                </li>
-                                <li>
-                                    <h3>April 29 – May 19</h3>
-
-                                    <p>Finalists will be assigned a period to access Watson and will have 5 days to build, train, and test their app. The final prototype and a short demonstration video is submitted for judging.</p>
-                                </li>
-                                <li class="mobile-timeline">
-                                    <h3>May 30</h3>
-                                    <p>The top five finalists present their app and business case to an IBM executive panel. The three winners will be announced and are awarded admittance to the Watson Ecosystem program which includes 90 days of access to the Watson APIs, and design consulting from IBM Interactive design services. The final announcement date is subject to change.</p>
-                                </li>
-                                <li class="last">
-                                    <img src="assets/img/logo.png" width="329" height="294" alt="Logo">
-
-                                    <h3 class="non-mobile-timeline">May 30</h3>
-
-                                    <p class="non-mobile-timeline">The top five finalists present their app and business case to an IBM executive panel. The three winners will be announced and are awarded admittance to the Watson Ecosystem program which includes 90 days of access to the Watson APIs, and design consulting from IBM Interactive design services. The final announcement date is subject to change. For full details on the competition timeline, please see the <a href="form_challenge.html#terms">full contest rules</a>.</p>
-                                </li>
-                            </ol>
                         </div>
-                    </div>
+
+                    </div>  
 
 
                         {{> footer}}
@@ -129,7 +85,7 @@
 
         <script>
         jQuery(function() {
-            new IBM.watson.Index();
+            new IBM.watson.Challenge();
         });
         </script>
 
