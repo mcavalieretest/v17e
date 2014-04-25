@@ -69,8 +69,11 @@
 		// .ibm-columns.info {
 		// 	width: inherit;
 		// }
+		.ibm-columns#details {
+			width: 100%;
+		}
 		.ibm-columns {
-			width: inherit;
+			// width: inherit;
 			padding: 0;
 			.ibm-col-6-2 {
 				height: 300px;
@@ -171,6 +174,7 @@
 			p {
 				color: #222;
 				line-height: 24px;
+				float: left;
 
 				A{
 					color: #222;
@@ -194,6 +198,8 @@
 				list-style: none;
 				float: right;
 				margin: 0;
+				padding-right: 55px;
+				padding-top: 10px;
 				li {
 					float: left;
 					margin-right: 10px;
@@ -290,7 +296,7 @@ summary.no-touch:hover {
 						}
 						p {
 							font-size: 16px;
-							width: 65%;
+							width: 80%;
 						}
 					}
 				}
