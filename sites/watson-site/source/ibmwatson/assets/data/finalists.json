@@ -1,0 +1,256 @@
+{
+	"finalists": [
+		{
+			"name": "Xoriant",
+			"industry": "Microfinance",
+			"short_desc": "Lets rural customers access microfinance organization and related data on the go.",
+			"long_desc": "Our app's concept has been developed on the basis of bridging the gap between microfinance service providers and customers with a freemium-based model. Technology is experiencing high demand, especially with the huge flow of mobile gadgets, to create apps from the bottom-of-the-pyramid perspective. This app serves as common virtual platform and helps prospective customers get access and information for relevant financial services. With the Watson API, we are providing a platform where customers can get information on features such as loans, self-help group committees, account-opening process, loan credit limits, contingency funding, and policies. Customers can get answers and app and banking benefits on the go through a standardized FAQ process and a virtual online advisor. Any microfinance institute can use the app as a common platform to address customer needs at any time, with the latest relevant financial information always available.",
+			"url": " http://www.xoriant.com",
+			"facebook": "",
+			"twitter": "https://twitter.com/xoriant",
+			"linkedin": "http://www.linkedin.com/company/166996",
+			"youtube": ""
+		},{
+			"name": "Kutir",
+			"industry": "Human Resources",
+			"short_desc": "Lets hiring managers and recruiters identify potential hires and alerts candidates to openings.",
+			"long_desc": "A simple dashboard that lets a hiring manager or recruiter identify pool of resources for filling full-time or contract positions. App users will query with details of skills sets required, experience levels preferred, location, budgets etc. App will tap into all available data sources: company’s current personnel database; social media like LinkedIn, Facebook, and user groups; and premium databases, depending on access. The app’s job-seeker component quickly alerts job cabinets to openings. This component will capture candidate data and add it to the database. Staffing professionals could be alerted to newly available candidates for the appropriate skills, and job seekers could learn about relevant positions. Companies and candidates could use generated analytics to help with hiring decisions and accepting positions.",
+			"url": "http://www.kutirtech.com",
+			"facebook": "",
+			"twitter": "https://twitter.com/kutirtech",
+			"linkedin": "https://www.linkedin.com/company/kutir-technologies",
+			"youtube": ""
+		},{
+			"name": "Unified Computer Intelligence Corp",
+			"industry": "Nutrition",
+			"short_desc": "Lets users quickly order fresh ingredients from best-priced sources for delivery within hours.",
+            "long_desc": "Ubi Food Fetcher lets users quickly order fresh ingredients for a recipe and get these ingredients delivered to their homes within hours from the best-priced sources. It runs as an app as part of Ubi—The Ubiquitous computer, a WiFi-connected, voice-operated computer that plugs into an outlet and and makes the surrounding environment internet-enabled. After a user has configured an account on the Ubi portal with payment information, address, delivery instructions, and typical serving sizes, the app can fetch the ingredients with a command: “OK Ubi…fetch me the ingredients for chicken korma.” Within two hours, the needed ingredients will be at the user’s doorstep. A user request, is first passed to Ubi’s natural-language understanding engine that determines it’s a request for ingredients. This is where Watson comes into play: the request “chicken korma” is sent to a Watson-powered system to search through a body of unstructured data to find the ingredients. Once the ingredients are extracted, the app can create a shopping list according to the servings preference. This shopping list is sent to another Watson-powered app that reads through supermarket flyers to find matches for ingredients and understand their sale prices. The ingredients price matches will be compared to find the supermarket that advertises the lowest prices for the most ingredients. This price match is ranked against location from the user’s delivery point to determine a target store for shopping for ingredients. Armed with a shopping list and a target store, the Ubi will employe virtual assistant concierges to source the pick-up and delivery of these ingredients using local task services such as TaskRabbit.",
+			"url": "http://www.theubi.com",
+			"facebook": "",
+			"twitter": "http://twitter.com/theubi",
+			"linkedin": "",
+			"youtube": "https://www.youtube.com/channel/UCBkFTcR4Hh04B1u4Ek5tGjg"
+		},{
+			"name": "Ontodia",
+			"industry": "Cities",
+			"short_desc": "Concierge service lets users ask detailed questions about local government and private resources.",
+			"long_desc": "Ontodia proposes to prototype an Answering People Interface City Intelligence Concierge service that lets users ask in-depth questions about the city. New York City is the first beta city. We will leverage Watson’s cognitive-computing abilities to extract knowledge about the city from open data sources at all levels of government, as well as from private sources. Watson’s natural-language parsing and big data analysis will let us provide on-the-fly answers to deep questions about the urban environment, such as “How is demand at this bike-share station affected by delays in subway service?” “Which blocks in my community have high concentrations of underwater mortgages?” “What are the risks for disinvestment or in this neighborhood, relative to other areas in the city?” “How fast is the gentrification process happening on this commercial corridor, and how many residents and local businesses are at risk of displacement?” The City Intelligence Concierge is built on a freemium model, providing hyperlocalized, hyperpersonalized answers to questions on a tiered model (free answers to simple questions, paid answers to complex answers that require powerful searches or access to historical data). This mobile app connects to Ontodia’s existing work on PediaCities, a normalized, semantically linked data encyclopedia about New York City. Answers served by Watson are linked to dynamic entity pages on PediaCities, providing a rich data context. The Answering People Interface City Intelligence Concierge provides answers to complex question asked by city officials, urban developers, and concerned citizens and their surroundings, delivered directly to their mobile devices, dramatically shortening the time that urban analysis can be applied in the field.",
+			"url": "http://www.ontodia.com",
+			"facebook": "",
+			"twitter": "https://twitter.com/pediacities",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Ringful Health",
+			"industry": "Health Services",
+			"short_desc": "Lets patients have informed conversations with their doctors on healthcare decisions.",
+			"long_desc": "The Ringful Health Better Screening application lets patients have informed conversations with their doctors on healthcare decisions. Medical evidence has indicated that healthcare screening tests, especially cancer screening tests such as the PSA test for prostate cancer and mammogram for breast cancer, can cause great patient harm through overdiagnosis and overtreatment if used inappropriately. However, the appropriate screen tests depend on each individual patient’s age, gender, race, family history, medical history, lifestyle, and even genetic profile. It’s very complex and time-consuming for individual patients to examine medical literature to determine their own best screening tests. In the limited time of an office encounter, doctors typically cannot explain risks and benefits of screening tests. The Better Screening application uses IBM Watson to aggregate evidence in current medical literature and give individual patient recommendations on screening tests. The answers provided by Watson give the patients efficient, to-the-point discussions with their doctors. Those shared decisions are based on medical evidence and fully incorporate the patients’ preferences. On a population level, the Better Screening solution has the potential to reduce the harm and enormous waste associated with overdiagnosis and overtreatment.",
+			"url": "http://ringfulhealth.com",
+			"facebook": "",
+			"twitter": "",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Biovideo",
+			"industry": "Health Services",
+			"short_desc": "Puts the most helpful information for new and expectant mothers at their fingertips.",
+			"long_desc": "This app provides the best help for new and expectant mothers at their fingertips. The Biovideo App incorporates the Baby 101 searchable database for the first time and becomes the ultimate parenting tool. It also eliminates geographic limitation, as the app and Baby 101 program are available to anyone, anywhere. Providing the power of Watson to the Baby 101 program provides unlimited information, insight and reach to new parents. A mother with a sick child at 4 a.m. can ask Dr. Watson what’s wrong with her baby and get a 100 percent accurate response from data Watson has pulled from trusted sources on the internet, including scientific journals.",
+			"url": "http://biovideo.com",
+			"facebook": "http://facebook.com/mybiovideo",
+			"twitter": "http://twitter.com/mybiovideo",
+			"linkedin": "https://www.linkedin.com/company/biovideo",
+			"youtube": ""
+		},{
+			"name": "GenieMD",
+			"industry": "Health Services",
+			"short_desc": "Lets users take a more active role in managing their health.",
+			"long_desc": "GenieMD empowers individuals to take a more active role in managing their own health and the health of their loved ones by delivering a holistic view of the individual’s health, making health data actionable and shareable, providing highly relevant and personalized recommendations, enabling family caregivers to have access to relevant patient data and enabling them to be more effective and efficient, and facilitating better communication between the individuals and their healthcare providers.",
+			"url": "http://geniemd.com",
+			"facebook": "https://www.facebook.com/pages/GenieMD/181378601947680",
+			"twitter": "https://twitter.com/geniemd",
+			"linkedin": "https://www.linkedin.com/company/geniemd-llc",
+			"youtube": ""
+		},{
+			"name": "Inteliwise",
+			"industry": "Cities",
+			"short_desc": "A user-friendly AI-powered app that connecting citizens and local city councils.",
+			"long_desc": "The Virtual Officer is the first truly user-friendly AI-powered app connecting citizens and local city councils.The challenge: with 70 percent of the world’s population expected to live in cities by 2050, city authorities need innovative, cost-effective approaches to connect with citizens. Our concept: the Virtual Officer, a virtual assistant for Citizens—an intuitive, easy to use, yet powerful mobile application, connecting citizens, city officers and information, and contributing to building smarter cities. Our existing Virtual Officer app has shown significant traction, having delivered more than 200,000 virtual interactions, and running on more than 10 municipal websites and a couple of ministry–level portals. But IBM Watson can bring this app to a whole new level. It will enhance its existing 20,000 Q&As about citizens’ problems with Watson big data analytics, and the app will have access to significantly broader knowledge and processes defined by government and municipal organizations, and solutions on social media. It will provide true connectivity between an individual and a city council or organization. It will also help city councilors first know about citizens’ issues, thanks to real-time decision-based reporting and analytics.",
+			"url": "http://www.inteliwise.com",
+			"facebook": "https://www.facebook.com/InteliwiseVirtualAgent",
+			"twitter": "",
+			"linkedin": "https://www.linkedin.com/company/inteliwise",
+			"youtube": ""
+		},{
+			"name": "Azoft",
+			"industry": "Entertainment",
+			"short_desc": "Lets users connect with any interesting and smart person, politician, scientist or celebrity.",
+			"long_desc": "We want to build an app for anyone who wants to talk to an interesting and smart person, politician, scientist or celebrity. We are proposing that find Watson answers to questions asked to users’ idols, superstars or geniuses, answers that can hide in publicly available materials like social account pages, publications, interviews and books but which are not easy to find through standard search engines. Because we can focus Watson on particular sets of source materials to prepare answers and make Watson learn, it will produce an ultimate product that gives everyone a gift of real-life communication through Q&A with someone they’d only dreamed of talking to. Users can immediately ask questions or initiate conversations with people of their interest as in a regular instant-message service. Mobility gives a momentum to initiate a session right away, not waiting for anything. At later stages, we can implement speech recognition and text-to-speech ability.",
+			"url": "http://www.azoft.com",
+			"facebook": "https://www.facebook.com/azoft.company",
+			"twitter": "https://twitter.com/azoft",
+			"linkedin": "https://www.linkedin.com/company/azoft",
+			"youtube": "https://www.youtube.com/user/azoft"
+		},{
+			"name": "Sense.ly",
+			"industry": "Health Services",
+			"short_desc": "Lets individuals and doctors quickly access information for unmatched healthcare.",
+			"long_desc": "We will use Watson to disrupt healthcare. Watson can give our members and doctors the tools they need to quickly access information and provide unmatched healthcare. The patients/members can access the app, speak to the avatar or manually input symptoms, prescriptions and medical history. Watson narrows down the assumed diagnosis, pharmacy interactions, medical history, lab tests, biometrics and insurance information. The app then drives members to our network of telemedicine physicians who can quickly diagnose and prescribe. Depending on Watson’s feedback, we can quickly drive the member to the most appropriate mode of care, from low acuity to high acuity. If the patient cannot be seen by a telemedicine physician, we harness Watson’s power to direct them depending on insurance information and specialty needed. By combining patient information and medical information for physicians, we can drive down costs and improve access for a broken healthcare system. The app combines a virtual avatar, medical-records integration, medical-device integration, eprescribe, lab tests, audio, video and telemedicine physician network. The app is unlimited in use cases from readmissions, behavioral health, dermatology, second opinions and many more.",
+			"url": "https://www.myidealdoctor.com",
+			"facebook": "https://www.facebook.com/Myidealdoctor",
+			"twitter": "https://twitter.com/Sense_ly",
+			"linkedin": "https://www.linkedin.com/in/adamodessky",
+			"youtube": ""
+		},{
+			"name": "Rumble",
+			"industry": "News",
+			"short_desc": "Newspaper and magazine apps with the highest level of user experience and personalization.",
+			"long_desc": "Our apps are newspaper and magazine apps. They provide the highest level of user experience and personalization for the reader who consumes the content. While the user is reading an article we envision the highlighting of core questions, which appear in the text and are related to the topic of the article. Once the user engages with a highlighted question, a pop-up will appear, presenting the text, “What Would Watson Say?,” and Watson’s answer to the question. Furthermore, we offer topic-related questions that may interest the user after reading the article, and also invite user questions. Watson will answer all these. Rumble is dedicated to enabling the delivery and consumption of high-quality content to the fastest growing form of media, mobile. We believe that as the media changes, so do consumers and their habits. Content consumption has become much more instant and on-the-fly since smartphones became common property. Therefore, an app’s ability to dig deeper into facts and expand one’s knowledge based on the content consumer should adapt. Providing the reader with such an in-app experience in an agnostic, fact-driven and natural-language form is the natural continuity to the change mobile has incorporated to the consumption of high-quality content.",
+			"url": "http://rumble.me",
+			"facebook": "https://www.facebook.com/Rumble.me",
+			"twitter": "https://twitter.com/rumblenews_",
+			"linkedin": "https://www.linkedin.com/company/rumble-news",
+			"youtube": ""
+		},{
+			"name": "BrightMinded",
+			"industry": "Fitness",
+			"short_desc": "A virtual personal trainer that follows users through all aspects of their fitness experience.",
+			"long_desc": "Almost by definition, this is a mobile experience. Watson can be the perfect fitness trainer, and to achieve that it needs to be with users during all aspects of their fitness journey: when they are at the gym, at the track or at the supplements shop. We want to use Watson’s cognitive abilities to learn from users’ daily data (gathered from manual entry and/or wearable sensor technology), latest medical research and available online fitness expertise to determine what works for a user’s metabolism, physical structure, fat distribution, and hormonal profile. We envision a Watson-powered app that changes its recommendation as a training progresses and/or the goal (e.g., bodybuilding competition) is approached, to maximize results. It recommends the best supplement products (e.g., whey protein) based on reviews, composition, pharmaceutical reports, compatibility with user requirements (e.g., avoid milk) and recalled-products information. As more users enter daily data, Watson can find statistical similarities and improve its hypotheses and recommendations.",
+			"url": "http://brightminded.com",
+			"facebook": "https://www.facebook.com/brightminded",
+			"twitter": "https://twitter.com/BrightMindedLtd",
+			"linkedin": "https://www.linkedin.com/company/brightminded-ltd",
+			"youtube": ""
+		},{
+			"name": "Activepackets",
+			"industry": "Automotive",
+			"short_desc": "A personalized automobile research app.",
+			"long_desc": "Auto Advisor is a personalized automobile research app powered by Watson that offers consumers empowering tools, content and information that increases their confidence in the car-buying process. The application offers natural dialogue-driven assistance to guide users, drawing data from sources such as manufacturers’ automotive information, reviews, blogs, auto magazines and publications to provide the most comprehensive, easy-to-understand shopping experience. A recent study found that 63 percent of car shoppers research vehicles and simultaneously shop competitive inventory, a practice other retail environments call “showrooming,” by which consumers buy products online while visiting brick-and-mortar retail outlets. But no existing automotive applications can answer simple queries such as “Show me all SUVs that have three rows of seating” or “Find me a used Honda Accord in black within 10 miles of my location and under $15,000.” Quick and simple access to the correct automobile information is essential for consumers making one of their biggest purchases of the year. The fact that consumers practice showrooming makes the use case for this application even more compelling, as a car dealership is often a high-pressure sales environment where efficient, quick access to information is highly valued, as it can be used to quickly arrive at a purchasing decision.",
+			"url": "http://activepackets.com",
+			"facebook": "",
+			"twitter": "",
+			"linkedin": "https://www.linkedin.com/profile/view?id=4052142",
+			"youtube": ""
+		},{
+			"name": "Red Ant",
+			"industry": "Fashion",
+			"short_desc": "A sales trainer that lets employees easily identify individual customers’ likely interests.",
+			"long_desc": "The ultimate sales trainer. Employees use mobile devices to identify each customer they interact with, and products they may be interested in, via email address, Bluetooth beacon or barcode scanner. By analyzing a customer’s demographics, purchase history and wish list, as well as product information, local pricing, customer reviews and tech specs, RetailOS and Watson provide customized selling points unique to that customer onscreen or via text-to-speech on an earpiece (and in the future, via wearables like glasses or smartwatches). Recommendations are scored on price, utility, luxury and fashion; dimension(s) to trend towards and exact selling points are analyzed to maximize a sale’s probability, making the app a cheat sheet for selling. Success, failure and upsell are captured and fed into the system to ensure that both Watson and employees learn and improve over time. Managers can tweak bias to each parameter, including product category, to test their own sales instincts and even compete with the app on sales strategy. The learnings from these sales can also apply to online retail.",
+			"url": "https://www.redant.com",
+			"facebook": "https://www.facebook.com/pages/Red-Ant/28977642329",
+			"twitter": "https://twitter.com/Red_Ant",
+			"linkedin": "https://www.linkedin.com/company/65131",
+			"youtube": ""
+		},{
+			"name": "9W Search",
+			"industry": "Finance",
+			"short_desc": "The next-generation approach to the consumption of financial information.",
+			"long_desc": "9W Search, created by the co-founders of EDGAR Online, is the next generation approach to the consumption of financial information. The art of financial investigation lies in asking the right question and receiving the one right answer. 9W leverages Watson’s cognitive capabilities to interpret questions and guide the discovery process. The ability to incorporate vast amounts of structured and unstructured primary source material into the 9W/Watson cloud lets users ask and answer billions of complex questions through a simple, familiar interface. The combination of 9W Search and Watson in the financial vertical opens vast new markets in an established industry. The expansion of this information has distinct advantages in the democratization of access to this critical information. While finance is the fourth-most heavily trafficked area on the web, there is very little use of mobile in Finance. 9W was developed as a mobile application to bring the advantages of business queries and curated information everywhere. 9W identifies relevant information within financial forms filed with the SEC. Watson enhances 9W’s ability to include related information from unstructured sources, address a wider range of questions and improve the turnaround and efficiency of curation providing unparalleled advantages over legacy financial sites. The first 9W/Watson application focuses on the energy industry as a prime example of the power that the 9W/Watson app can bring to an information-hungry marketplace.",
+			"url": "http://www.9wsearch.com",
+			"facebook": "https://www.facebook.com/9wSearch",
+			"twitter": "https://twitter.com/9WSearch",
+			"linkedin": "https://www.linkedin.com/company/9w-search-inc.",
+			"youtube": ""
+		},{
+			"name": "InXero",
+			"industry": "Business Services",
+			"short_desc": "Lets reseller businesses more efficiently reach customers on their offerings.",
+			"long_desc": "Our vision is to create economic opportunity for the 50 million reseller businesses in the world by empowering them with the go-to-market apps, content and trusted network they need to power up their engines of growth. InXero’s Mobile 1:1 Solution Selling Advisor Cognitive App is a new way for resellers to engage and educate their customers on the latest solutions and special promotions from all the brands they sell. This changes the way resellers market and sell solutions, automating the manual human process and delivering intuitive mass personalized experience at scale via a mobile device using IBM Watson’s technology and InXero’s BusinessLive B2B Reseller Marketing Automation platform.",
+			"url": "http://www.inxero.com",
+			"facebook": "https://www.facebook.com/InXeroLive",
+			"twitter": "https://twitter.com/AnandRajLive",
+			"linkedin": "https://www.facebook.com/InXeroLive",
+			"youtube": ""
+		},{
+			"name": "CrayonData",
+			"industry": "Retail",
+			"short_desc": "Helps consumers simplify choices in every aspect of life.",
+			"long_desc": "In a world with many options at every turn, Maya makes choices easier on the go, whether it’s what to eat, what to wear, or where to go on vacation. Maya suggests the most relevant and personalized choices, each with a confidence level based on the user’s taste, context, influence and behavior. The choices are led by a proprietary algorithm that helps in understanding user taste in a holistic way, not bound by traditional constraints of category, availability, costs, and locational proximity. Maya is developed as a two-sided platform: a direct-to-consumer app which helps consumers simplify choices in every aspect of life, as well as an enterprise that can tap the power of Maya to simplify choices for their consumers, leading to increased sales and conversion, higher usage of products and improved customer experience.",
+			"url": "http://www.crayondata.com",
+			"facebook": "https://www.facebook.com/crayondata",
+			"twitter": "",
+			"linkedin": "https://www.linkedin.com/company/2641300",
+			"youtube": ""
+		},{
+			"name": "Voyager Innovations",
+			"industry": "Retail",
+			"short_desc": "Lets users shop surely and quickly.",
+			"long_desc": "Our app, Shoperone, is a user’s personal smart assistant in shopping. Equipped with on-demand products, shopping and retailer data, it provides answers to all shopping queries based on product searches and recommendations using natural language. It leverages social media data, including Facebook and Twitter feeds, to provide results that match users’ preferences and interests, letting them quickly find where these items are available.",
+			"url": "http://www.voyagerinnovation.com",
+			"facebook": "",
+			"twitter": "",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Ultramatics",
+			"industry": "Health Services",
+			"short_desc": "Offers personalized answers to the  most important health questions.",
+			"long_desc": "Buying a health plan is a challenge. With 50 million new U.S. customers now eligible for health insurance, there is a daunting array of new choices across private and public marketplaces. If only product shopping in healthcare were easier. Now it is. The Health Plan Advisor App by Ultramatics dramatically simplifies choosing a health plan. Using the power of IBM Watson, this mobile and cognitive intelligence application securely presents personalized answers to your most important health questions. The app increases confidence that users have the right plan for their individual healthcare needs while making the overall decision process faster and easier. The app also helps customer service representatives and insurance agents better serve their customers. The Health Plan Advisor leverages the latest information and technology to create a high-quality consumer experience previously unavailable to healthcare consumers.",
+			"url": "http://www.ultramatics.com",
+			"facebook": "",
+			"twitter": "",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Instancy",
+			"industry": "Education",
+			"short_desc": "A revolutionary personal learning guide.",
+			"long_desc": "Instancy offers a revolutionary personal learning and career and job-skill learning guide that brings machine learning and human learning together. By providing access to the right information, Instancy empowers client-facing teams to educate and inform the customers, close deals faster, cut costs through productivity improvements, and increase customer satisfaction and retention rates. Instancy enables performance-driven companies to create, manage and deliver the right content, to the right person, within the right context, on the right device, anytime and anywhere. Also, the Instancy app for career-centric individuals and life-long learners offers an opportunity to identify the right employable skills and related knowledge and learning guidance to help meet the requirements of the job market.",
+			"url": "http://www.instancy.com",
+			"facebook": "",
+			"twitter": "https://twitter.com/instancy",
+			"linkedin": "http://www.linkedin.com/company/instancy",
+			"youtube": ""
+		},{
+			"name": "Majestyk Apps",
+			"industry": "Education",
+			"short_desc": "A cognitive companion that improves education.",
+			"long_desc": "The first iteration of the Friendly Anthropomorphic Networked Genome (Fang) is a cognitive, cuddly plush companion, beneath which IBM Watson powers a customized experience assisting each child in development through a series of contextual interactions. Fang can be used by engaging in an exploratory dialogue. Pairing Fang with a tablet forms a multisensory educational experience powered by a structured testing framework and custom Fang-­enabled mobile apps. In later iterations, a dashboard will let parents and teachers participate in and encourage a child’s growth. Graphed performance covering a child’s interaction with Fang, comprehension levels across topics, and metrics such as the number of words a child has been exposed to and used will provide invaluable feedback on the direction each child is predisposed to succeed. Fang devices and accompanying app ecosystem will disrupt and spur innovation in the U.S. education system by better preparing students for success in their life’s work.",
+			"url": "http://majestykapps.com",
+			"facebook": "http://facebook.com/MajestykApps",
+			"twitter": "http://twitter.com/MajestykApps",
+			"linkedin": "http://linkedin.com/company/majestyk-apps",
+			"youtube": ""
+		},{
+			"name": "Flexport",
+			"industry": "Information",
+			"short_desc": "Makes international trade more accessible and affordable.",
+			"long_desc": "Flexport uses the Watson API to classify products by their correct Harmonized Tariff Schedule (HTS) code, which is used to determine the duty rate, regulations, free trade agreements and quotas that apply to products imported into the U.S. Currently products can only be classified by skilled customs brokers with a detailed understanding of the HTS code. By using Watson to understand natural language descriptions of any product and have it guess the most relevant HTS code, we spare these employees many hours of tedious classification work and make it far easier for businesses to conduct trade globally. Our app can reduce friction in global commerce and make international trade more accessible and affordable.",
+			"url": "http://www.flexport.com",
+			"facebook": "",
+			"twitter": "https://twitter.com/flexportinc",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Acute Dynamics",
+			"industry": "Information",
+			"short_desc": "Lets users view, execute and track activities related to their work.",
+			"long_desc": "This mobile, personalized procedure-execution assistant lets users view, execute and track the activities related to their work. The solution uses handheld and wearable devices to deliver functionality with focus on complex procedures and tasks requiring lookup and reference of technical manuals. The current solutions are challenged with access and use of printed and PDF-based manuals that are difficult to search, navigate and interpret. The solution provides contextual assistance and guidance as well as real-time information retrieval and evaluation.",
+			"url": "http://www.acutedynamics.com",
+			"facebook": "",
+			"twitter": "",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "Wally",
+			"industry": "Finance",
+			"short_desc": "Gives people insights into their spending.",
+			"long_desc": "Wally is a personal finance app on the iPhone used by hundreds of thousands around the world. Users balance their income and expenses to set such goals as paying off debt, establishing a savings account or planning for a vacation. Wally offers insights on their spending. Users often get lost in finding actionable insights, but Watson''s ability to gather, crunch and analyze data will generate guidance from its cognitive intelligence.",
+			"url": "http://wallyapp.me/",
+			"facebook": "https://www.facebook.com/MeetWally",
+			"twitter": "https://twitter.com/wally_app",
+			"linkedin": "",
+			"youtube": ""
+		},{
+			"name": "GoGoHealth",
+			"industry": "Health Services",
+			"short_desc": "Lets doctors diagnose and treat patients remotely, using evidence-based protocols.",
+			"long_desc": "GoGoHealth lets primary care doctors and some specialists diagnose and treat their patients remotely, using evidence-based protocols. Patients log into their provider app, and the app makes a call to the Electronic Health Record system the doctor is using, pulls all history data, and asks the patients to specify their symptoms. Based on the symptoms and history, the app asks each patient questions that will accurately assess the condition. The result is compiled into a subjective-objective report and sent back into the EMR. The provider can then review the report and determine next steps.",
+			"url": "http://www.gogohealth.com",
+			"facebook": "https://www.facebook.com/pages/GoGoHealth-LLC/241361119320494",
+			"twitter": "https://twitter.com/GoGoHealthLLC",
+			"linkedin": "https://www.linkedin.com/company/2756625",
+			"youtube": ""
+		}
+		
+	]
+}
