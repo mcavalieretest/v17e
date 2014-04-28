@@ -332,7 +332,7 @@
     font-family: LubalinGraphStdBookIBM;
     font-size: 4rem;
     letter-spacing: 1px;
-    padding-top: 180px;
+    padding-top: 130px;
 	text-shadow: none;
 }
 
@@ -343,6 +343,16 @@
     letter-spacing: 0.5px;
 	text-shadow: none;
     padding-top: 5px;
+}
+
+.ibm-landing-page #ibm-leadspace-body.story .ibm-ind-link {
+    padding-top: 20px;
+}
+	
+.ibm-landing-page #ibm-leadspace-body.story .ibm-back-link {
+    background: white; 
+	padding: 5px 15px 5px 30px; 
+	font-size: 1.7rem;
 }
 
 //Adjusting the page to work on < width 785px 
