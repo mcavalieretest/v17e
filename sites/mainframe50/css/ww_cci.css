@@ -386,6 +386,10 @@ sites/
   padding-bottom: 60px;
 }
 
+.ibm-space-adjust {
+  padding-bottom: 25px !important;
+}
+
 @media (max-width: 981px) and (min-width: 915px) {
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
     margin-left: 0 !important;
