@@ -42,9 +42,18 @@
 
 <style type="text/css">
 .ibm-landing-page #ibm-leadspace-body.story {
-	background: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px;
+
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px; /* fallback */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px, -webkit-gradient(linear, left top, left bottom, from(#6cab26), to(#6ceb86)); /* Saf4+, Chrome */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px, -webkit-linear-gradient(top, #6cab26, #6ceb86); /* Chrome 10+, Saf5.1+ */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px,    -moz-linear-gradient(top, #6cab26, #6ceb86); /* FF3.6+ */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px,     -ms-linear-gradient(top, #6cab26, #6ceb86); /* IE10 */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px,      -o-linear-gradient(top, #6cab26, #6ceb86); /* Opera 11.10+ */
+background-image: url(../../i/story-business-connexion-hero.jpg) repeat-x 35% 0px,         linear-gradient(to bottom, #6cab26, #6ceb86); /* W3C */
+
 }
 </style>
+
 
 </head>
 
@@ -92,7 +101,7 @@
 <p class="ibm-ind-link"><a href="../" class="ibm-back-link">View all stories</a></p>
 
 <h1>The Engines of Progress</h1>
-<p>Enabled by the mainframe, they are making the extraordinary possible</p>
+<p>Stories of innovation enabled by the mainframe</p>
 </div>
 </div>
 </div>
