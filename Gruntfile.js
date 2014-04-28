@@ -41,6 +41,24 @@ module.exports = function(grunt) {
       }
     },
 
+
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'css/ww.css' : 'css/ww.scss'
+        }
+      }
+    },
+    watch: {
+      css: {
+        files: 'css/*.scss',
+        tasks: ['sass']
+      }
+    },
+
     uglify: {
       options: {
         banner: BANNER
@@ -51,6 +69,11 @@ module.exports = function(grunt) {
         }
       }
     }
+
+
+
+    
+ 
   });
 
   var target = grunt.option("target");
@@ -64,6 +87,10 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
+  //load sass stuff
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
   var taskList = ['concat:'+target];
 
   if (target == "prod") {
@@ -72,4 +99,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', taskList);  //, 'uglify'
+  grunt.registerTask('build-css', ['sass']);  //, 'sass update'
+  grunt.registerTask('watch-css', ['watch']);  //, 'sass watch'
 };
