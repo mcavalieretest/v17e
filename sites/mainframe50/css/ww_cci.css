@@ -347,13 +347,15 @@ sites/
   font-size: 4rem;
   letter-spacing: 1px;
   padding-top: 180px;
+  text-shadow: none;
 }
 
 .ibm-landing-page #ibm-leadspace-body.story p {
   color: #FFFFFF;
-  font-family: LubalinGraphStdBookIBM;
-  font-size: 1.7rem;
+  font-family: HelvLightIBM;
+  font-size: 16px;
   letter-spacing: 0.5px;
+  text-shadow: none;
   padding-top: 5px;
 }
 
