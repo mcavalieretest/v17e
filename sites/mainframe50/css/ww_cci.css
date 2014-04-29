@@ -338,7 +338,7 @@ sites/
 .ibm-landing-page #ibm-leadspace-body.story {
   padding: 0 !important;
   width: auto !important;
-  min-height: 270px !important;
+  min-height: 300px !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body.story h1 {
@@ -346,7 +346,7 @@ sites/
   font-family: LubalinGraphStdBookIBM;
   font-size: 4rem;
   letter-spacing: 1px;
-  padding-top: 130px;
+  padding-top: 155px;
   text-shadow: none;
 }
 
