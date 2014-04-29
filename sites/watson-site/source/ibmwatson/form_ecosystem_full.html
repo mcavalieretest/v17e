@@ -47,11 +47,11 @@
 									<form action="https://www-03.ibm.com/systems/campaignmail/campaignmail.wss" onsubmit="return validateForm();" method="post" id="form">
 										<legend>Your Details</legend>
 										<fieldset class="section details">
-											<input type="hidden" value="watson_ecosystem" id="campaignid" name="campaignid">
+											<input type="hidden" name="campaignid" id="campaignid" value="watson_ecosystem_application">
 											<input type="hidden" value="http://ibm.com/smarterplanet/us/en/ibmwatson/ecosystem_thanks.html" id="thankyoupage" name="thankyoupage">
-											<input type="hidden" value="NELECADR,NFNAME,NLNAME,IDEA,IDEASUPPORT" id="REQUIREDFIELDS" name="REQUIREDFIELDS">
-											<input type="hidden" value="Contact Email" id="ERROR_NELECADR" name="ERROR_NELECADR">
-											<input type="hidden" value="campaignid" id="sort" name="sort">
+											<input type="hidden" name="REQUIREDFIELDS" id="REQUIREDFIELDS" value="NELECADR,NFNAME,NLNAME,application_description">
+											<input type="hidden" name="ERROR_NELECADR" id="ERROR_NELECADR" value="Contact Email">
+											<input type="hidden" name="sort" id="sort" value="campaignid">
 
 
 											<ol>
@@ -94,12 +94,12 @@
 													</div>
 												</li>
 												<li class="addy">
-													<label for="Company_Address">Company Address:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
-													<span><input type="text" value="" maxlength="34" name="Company_Address" id="Company_Address" size="34" placeholder="Address Line 1" required class="input_row"></span>
+													<label for="NADLINE1">Company Address:<span class="ibm-required">*<span class="ibm-access">required</span></span></label>
+													<span><input type="text" value="" maxlength="34" name="NADLINE1" id="NADLINE1" size="34" placeholder="Address Line 1" required class="input_row"></span>
 
 												</li>
 												<li class="addy">
-													<span><input type="text" value="" maxlength="34" name="Company_Address_other" id="Company_Address_other" size="34" placeholder="Address Line 2" class="input_row"></span>
+													<span><input type="text" value="" maxlength="34" name="NADLINE2" id="NADLINE2" size="34" placeholder="Address Line 2" class="input_row"></span>
 													
 												</li>
 												<li class="addy">
@@ -164,14 +164,14 @@
 															</select>
 														</div>
 														<div class="mini">
-															<span><input type="text" value="" maxlength="34" name="PCODE" id="PCODE" size="34" placeholder="Postal Code" required></span>
+															<span><input type="text" value="" maxlength="34" name="NZIP" id="NZIP" size="34" placeholder="Postal Code" required></span>
 														</div>
 													</div>
 
 												</li>
 												<li>
 													<div class="field_col">
-														<select required name="ncountry" id="ncountry">
+														<select required name="NCOUNTRY" id="NCOUNTRY">
 															<option value="">Select a country/region…</option>
 
 															<option value="us">United States</option>

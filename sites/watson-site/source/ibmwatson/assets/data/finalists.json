@@ -73,7 +73,7 @@
 		},{
 			"name": "Inteliwise",
 			"industry": "Cities",
-			"short_desc": "A user-friendly AI-powered app that connecting citizens and local city councils.",
+			"short_desc": "A user-friendly AI-powered app that connects citizens and local city councils.",
 			"long_desc": "The Virtual Officer is the first truly user-friendly AI-powered app connecting citizens and local city councils.The challenge: with 70 percent of the world’s population expected to live in cities by 2050, city authorities need innovative, cost-effective approaches to connect with citizens. Our concept: the Virtual Officer, a virtual assistant for Citizens—an intuitive, easy to use, yet powerful mobile application, connecting citizens, city officers and information, and contributing to building smarter cities. Our existing Virtual Officer app has shown significant traction, having delivered more than 200,000 virtual interactions, and running on more than 10 municipal websites and a couple of ministry–level portals. But IBM Watson can bring this app to a whole new level. It will enhance its existing 20,000 Q&As about citizens’ problems with Watson big data analytics, and the app will have access to significantly broader knowledge and processes defined by government and municipal organizations, and solutions on social media. It will provide true connectivity between an individual and a city council or organization. It will also help city councilors first know about citizens’ issues, thanks to real-time decision-based reporting and analytics.",
 			"url": "http://www.inteliwise.com",
 			"facebook": "https://www.facebook.com/InteliwiseVirtualAgent",
@@ -91,7 +91,7 @@
 			"linkedin": "https://www.linkedin.com/company/azoft",
 			"youtube": "https://www.youtube.com/user/azoft"
 		},{
-			"name": "Sense.ly",
+			"name": "Sense.ly / MyIdealDoctor",
 			"industry": "Health Services",
 			"short_desc": "Lets individuals and doctors quickly access information for unmatched healthcare.",
 			"long_desc": "We will use Watson to disrupt healthcare. Watson can give our members and doctors the tools they need to quickly access information and provide unmatched healthcare. The patients/members can access the app, speak to the avatar or manually input symptoms, prescriptions and medical history. Watson narrows down the assumed diagnosis, pharmacy interactions, medical history, lab tests, biometrics and insurance information. The app then drives members to our network of telemedicine physicians who can quickly diagnose and prescribe. Depending on Watson’s feedback, we can quickly drive the member to the most appropriate mode of care, from low acuity to high acuity. If the patient cannot be seen by a telemedicine physician, we harness Watson’s power to direct them depending on insurance information and specialty needed. By combining patient information and medical information for physicians, we can drive down costs and improve access for a broken healthcare system. The app combines a virtual avatar, medical-records integration, medical-device integration, eprescribe, lab tests, audio, video and telemedicine physician network. The app is unlimited in use cases from readmissions, behavioral health, dermatology, second opinions and many more.",
@@ -231,13 +231,13 @@
 			"linkedin": "",
 			"youtube": ""
 		},{
-			"name": "Wally",
-			"industry": "Finance",
-			"short_desc": "Gives people insights into their spending.",
-			"long_desc": "Wally is a personal finance app on the iPhone used by hundreds of thousands around the world. Users balance their income and expenses to set such goals as paying off debt, establishing a savings account or planning for a vacation. Wally offers insights on their spending. Users often get lost in finding actionable insights, but Watson''s ability to gather, crunch and analyze data will generate guidance from its cognitive intelligence.",
-			"url": "http://wallyapp.me/",
-			"facebook": "https://www.facebook.com/MeetWally",
-			"twitter": "https://twitter.com/wally_app",
+			"name": "Strategia Tecnologia",
+			"industry": "Agriculture",
+			"short_desc": "Helps family farmers get answers to their questions about agriculture.",
+			"long_desc": "This mobile application is developed with a focus on family farms, allowing farmers to ask questions about their needs. For example, a farmer could ask the app about specific techniques to fight against crop disease or how the weather may impact their cultivation. Family farmers do not always have access to specialists who can help them with their daily activities - the app will take advantage of official information from agriculture sectors of government, university research, as well as other literature and trusted information on the web.",
+			"url": "http://www.strategiatec.com.br/",
+			"facebook": "",
+			"twitter": "",
 			"linkedin": "",
 			"youtube": ""
 		},{

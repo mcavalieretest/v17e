@@ -1,20 +1,47 @@
 .watson-work {
 	h4 {
-		font-size: 22px;
+		font-size: 32px;
 		font-weight: bold;
 		font-style: italic;
+		margin-bottom: 10px;
 	}
 	.accordion-body {
 		h5 {
-			margin: 0px 0 0;
+			margin: 0 0 10px 0;
 		}
 		p {
+			font-size: 17px;
 			margin: 0 0 20px;
+			span {
+				font-family: $font-bold;
+			}
+
+			a {
+				font-family: $font-bold;
+				color: #333;
+			}
 		}
 	}
 
+
+	
+
 	.ibm-col-6-2 {
 		margin-bottom: 25px;
+
+		h5 {
+			font-size: 17px;
+
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		.ibm-thumbnail {
+			outline: none;
+			margin-bottom: 10px;
+		}
 	}
 
 	#work-hero {
@@ -26,16 +53,33 @@
 			color: #fff;
 		}
 		h1 {
-			margin-top: 194px;
+			margin-top: 160px;
 			font-size: 172px;
 			line-height: .85;
 		}
 		p {
 			margin-top: 20px;
 			font: normal 22px/1.2em $font-light-italic;
+			color: #aaef32;
 			strong {
 				font-family: $font-bold-italic;
 			}
+
+			a {
+				font: normal 22px $font-bold;
+				text-decoration: none;
+				color: #aaef32;
+				line-height: 22px;
+				margin-bottom: 5px;
+				span {
+					font-size: 17px;
+				}
+			}
+
+			a:before {
+				color: #aaef32;
+			}
+				
 		}
 	}
 	ul li:before {
@@ -166,6 +210,11 @@
 		background-color: #12b5dc;
 	}
 
+	#work-customer-engagement-body { background: #d5f799;}
+	#work-healthcare-body { background: #c0f0b0;}
+	#work-finance-body{ background: #a0e3d4;}
+	#work-research-body{ background: #89daee;}
+
 	/*work-caption*/
 	#work-caption {
 		background: #000 url('../img/work/bg-smaller-faster.jpg') no-repeat scroll 50% 50%;
@@ -179,6 +228,8 @@
 		}
 		p {
 			color: #fff;
+			font: normal 20px $font-regular;
+
 		}
 		#quoteSlideShow {
 			padding-top: 30px;

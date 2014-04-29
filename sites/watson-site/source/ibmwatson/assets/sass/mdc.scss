@@ -21,7 +21,7 @@
 
 
 	p {
-		font: 18px/1 $font-regular;
+		font: 18px/1.3em $font-regular;
 		color: #fff;
 		margin: 30px 0 0 0px;
 	}
@@ -38,7 +38,7 @@
 	/** SCENES **/
 
 	#hero {
-		height: 650px;
+		// height: 650px;
 		position: relative;
 		overflow: hidden;
 		background: #000 url(../img/mdc/MDC-poster.jpg) no-repeat 0 0;
@@ -53,6 +53,7 @@
 				.slanted-header-inner {
 					h1 {
 						margin: -17px 0 0 0px;
+						font-family: $font-bold;
 					}
 					h2 {					
 						margin: 30px 0 0 0px;
@@ -64,16 +65,14 @@
 		}
 	}
 
+
+
 	#mdc-finalists {
 		overflow: hidden;
-		// .ibm-columns.info {
-		// 	width: inherit;
-		// }
 		.ibm-columns#details {
 			width: 100%;
 		}
 		.ibm-columns {
-			// width: inherit;
 			padding: 0;
 			.ibm-col-6-2 {
 				height: 300px;
@@ -95,20 +94,19 @@
 					font: normal 48px $font-light;
 					content: "+";
 					color: #b3b3b3;
-
-
 				}
 				.expand.open {
 					-webkit-transform: rotate(45deg);
 					-ms-transform: rotate(45deg);
 					transform: rotate(45deg);
-				}
+					}
+					.expand.open:before {
+						color: #FFF;
+					}
 				.ibm-container {
 					border: none;
 					margin: 0;
 					padding: 30px;
-					
-
 					h3 {
 						font-size: 14px;
 						margin-bottom: 10px;
@@ -162,10 +160,12 @@
 			h2 {
 				font-size: 18px;
 				color: #222;
+				margin-bottom: 20px;
 			}
 			h1 {
 				font: 60px $font-bold;
 				color: #222;
+				line-height: 1em;
 			}
 			.ibm-col-2-1 {
 				width: 450px;
@@ -185,7 +185,6 @@
 					
 					span.co_link {
 						font-family: $font-regular;
-						float: left;
 						text-decoration: underline;
 					}
 				}
@@ -199,7 +198,7 @@
 				float: right;
 				margin: 0;
 				padding-right: 55px;
-				padding-top: 10px;
+				padding-top: 14px;
 				li {
 					float: left;
 					margin-right: 10px;
@@ -282,7 +281,7 @@ summary.no-touch:hover {
 		}
 
 		#hero {
-			height: 552px;
+			// height: 552px;
 			.content {
 				.slanted-header {
 					padding-right: 0;
@@ -310,7 +309,7 @@ summary.no-touch:hover {
 @media screen and (max-width: 640px) {
 
 	.watson-mdc #hero {
-		height: 532px;
+		// height: 532px;
 		.content {
 			.slanted-header {
 				padding-right: 0;
@@ -325,14 +324,27 @@ summary.no-touch:hover {
 	}
 }
 
+@media screen and (max-width: 480px) {
+	.watson-mdc {
+
+		#mdc-finalists{
+			.ibm-columns{
+				padding: 0px;
+				width: inherit;
+				.ibm-col-6-2 {
+					height: 300px;
+					margin: 10px 0;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 579px) {
 
 	.watson-mdc {
 
-		.content {
-
-
-		}
 
 		#hero {
 

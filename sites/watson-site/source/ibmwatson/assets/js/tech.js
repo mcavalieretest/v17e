@@ -99,7 +99,7 @@
         .from(callout1, 40, {left: '-50%', opacity: 0}, 'start+=15')
         .from(callout2, 40, {right: '-50%', opacity: 0}, 'start')
         .from(callout3, 40, {right: '-50%', opacity: 0}, 'start+=30')
-        .from(callout4, 25, {top: 1000, opacity: 0}, 'start+=60')
+        .from(callout4, 25, {top: 1000, opacity: 0}, 'start+=40')
       ;
 
       var spriteManager = new IBM.watson.tweens.Sprite(scene);

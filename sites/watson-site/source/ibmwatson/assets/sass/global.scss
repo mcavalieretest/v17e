@@ -412,6 +412,8 @@ body {
 			float: left;
 			/*width: 33%;*/
 			padding: 0 10px;
+			font-size: 17px;
+
 		}
 
 		.watson-social-links {
@@ -491,7 +493,12 @@ body {
 			text-decoration: none;
 			color: #191919;
 			font-family: $font-bold;
-			font-weight: bold;
+			// font-weight: bold;
+			line-height: 22px;
+
+			span {
+				font-family: $font-regular;
+			}
 		}
 		.watson-footer-link:hover {
 			text-decoration: underline;

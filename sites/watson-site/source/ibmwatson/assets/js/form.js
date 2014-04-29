@@ -96,8 +96,8 @@
 			var cname     = $(".co_details #NCOMPANY", my.form );
 			var url       = $(".co_details #COMPANYURL", my.form );
 			var city      = $(".co_details #NCITY", my.form );
-			var state     = $(".co_details #nstate", my.form );
-			var country   = $(".co_details #ncountry", my.form );
+			var state     = $(".co_details #NSTATE", my.form );
+			var country   = $(".co_details #NCOUNTRY", my.form );
 			var industry  = $(".co_details #nindustry", my.form );
 			var employees = $(".co_details #nemployees", my.form );
 			var customers = $(".co_details #ncustomers", my.form );
@@ -139,9 +139,12 @@
 
 			var ready = false;
 
+
 			if(idea.val().length > 1 && support.val().length > 1){
-				if($(my.terms_check).is("checked")){
+				console.log("before ready", $(my.terms_check).is(":checked"))
+				if($(my.terms_check).is(":checked")){
 					ready = true;
+					console.log("ready")
 					my.submit_btn.addClass("enabled");
 					my.submit_btn.removeAttr("disabled")
 					

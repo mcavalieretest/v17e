@@ -129,11 +129,11 @@
 		}else if(index == 1){
 
 			var cname     = $(".co_details #NCOMPANY", my.form );
-			var address   = $(".co_details #Company_Address", my.form);
+			var address   = $(".co_details #NADLINE1", my.form);
 			var city      = $(".co_details #NCITY", my.form );
 			var state     = $(".co_details #NSTATE", my.form );
-			var postal    = $(".co_details #PCODE",  my.form );
-			var country   = $(".co_details #ncountry", my.form );
+			var postal    = $(".co_details #NZIP",  my.form );
+			var country   = $(".co_details #NCOUNTRY", my.form );
 			var url       = $(".co_details #COMPANY_URL", my.form );
 			var industry  = $(".co_details #INDUSTRY", my.form );
 			var employees = $(".co_details #Employees", my.form );
