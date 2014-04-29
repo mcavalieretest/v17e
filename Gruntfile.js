@@ -31,6 +31,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    bless: {
+      css: {
+        options: {
+          // Task-specific options go here.
+        },
+        dev: {
+          files: {
+            'css/testing.css': 'css/ww.css'
+          }
+        }
+      }
+    },
+
     concat: {
       options: {
         separator: ";\n\n"
@@ -78,6 +91,7 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-bless');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
