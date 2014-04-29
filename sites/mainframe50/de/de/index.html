@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-CH" xml:lang="de-CH">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -16,8 +16,8 @@
 		<meta name="IBM.Effective" scheme="W3CDTF" content="2014-02-24"/>
 		<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="HW187"/>
 		<meta name="Owner" content="Kevin T Clark/Raleigh/IBM"/>
-		<meta name="DC.Language" scheme="rfc1766" content="de-DE"/>
-		<meta name="IBM.Country" content="de"/>
+		<meta name="DC.Language" scheme="rfc1766" content="de-CH"/>
+		<meta name="IBM.Country" content="CH"/>
 		<meta name="Robots" content="index,follow"/>
 		<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="ERSETZEN"/>
 		<meta name="Description" content="Der IBM Mainframe ist ein bahnbrechendes IT-System, das Unternehmen, ganze Branchen und die Welt, wie wir sie kennen, verändert."/>
@@ -28,6 +28,13 @@
 <link href="../../css/ww_cci.css" rel="stylesheet" type="text/css" />
 
 <script src="../../js/ww.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+ibmweb.config.set({language:{
+'de-CH': '/mainframe50/ch/de/',
+'fr-CH': '/mainframe50/ch/fr/'
+}});
+</script>
 
 <script type="text/javascript">
 dojo.addOnLoad(function(){
@@ -83,15 +90,20 @@ dojo.addOnLoad(function(){
 <div id="ibm-masthead">
 <div id="ibm-mast-options">
 <ul>
-<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Land/Region auswählen: </span>Deutschland</a></li>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Wählen Sie ein Land/eine Region: </span>Schweiz</a></li>
+<li id="ibm-language">
+<span class="ibm-access">Wählen Sie Ihre Sprache aus: </span>
+<strong>Deutsch<span class="ibm-access"> - ausgewählte Sprache, </span></strong>
+<a href="http://www.ibm.com/mainframe50/ch/fr/" lang="fr-CH">Français</a>
+</li>
 </ul>
 </div>
 <div id="ibm-universal-nav">
 <ul id="ibm-unav-links">
-<li id="ibm-home"><a href="http://www.ibm.com/de/de/">IBM®</a></li>
+<li id="ibm-home"><a href="http://www.ibm.com/ch/de/">IBM®</a></li>
 </ul>
 <ul id="ibm-menu-links">
-<li><a href="http://www.ibm.com/sitemap/de/de/">Seitenübersicht</a></li>
+<li><a href="http://www.ibm.com/sitemap/ch/de/">Seitenübersicht</a></li>
 </ul>
 <div id="ibm-search-module">
 <form id="ibm-search-form" action="http://www.ibm.com/Search/" method="get">
@@ -101,8 +113,8 @@ dojo.addOnLoad(function(){
 <input type="hidden" value="17" name="v"/>
 <input type="hidden" value="utf" name="en"/>
 <input type="hidden" value="de" name="lang"/>
-<input type="hidden" value="de" name="cc"/>
-<input type="submit" id="ibm-search" class="ibm-btn-search" value="Senden"/>
+<input type="hidden" value="ch" name="cc"/>
+<input type="submit" id="ibm-search" class="ibm-btn-search" value="Sende"/>
 </p>
 </form>
 </div>
@@ -139,8 +151,7 @@ dojo.addOnLoad(function(){
 
 <p class="ibm_last"><em>Nehmen Sie am Dienstag, dem 8. April, um 14.00 Uhr ET an der Live-Veranstaltung für den Mainframe50 in New York teil.</em></p>
 
-<p class="ibm-button-link ibm-no-mobile"><a class="ibm_cci-btn" href="#overlay-1" onclick="ibmweb.overlay.show('overlay-1',this);return false;"><strong>Am 8. April live erleben</strong></a></p>
-<p class="ibm-button-link ibm-mobile"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Zum Livestream</strong></a></p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="http://www.livestream.com/ibmsystemz"><strong>Event Replay anschauen</strong></a></p>
 
 </div>
 
@@ -236,7 +247,7 @@ dojo.addOnLoad(function(){
 
 <!-- Carousel END -->
 
-<p class="ibm-button-link"><a class="ibm_cci-btn" href="../../enginesofprogress/">View all Engines of Progress (US)</a></p>
+<p class="ibm-button-link"><a class="ibm_cci-btn" href="enginesofprogress/">View all Engines of Progress (US)</a></p>
 
 </div>
 
@@ -469,35 +480,6 @@ dojo.addOnLoad(function(){
 </div>
 
 </div>
-
-<!-- OVERLAY 1 BEGIN -->
-<div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-1">
-<div class="ibm-head">
-<p><a class="ibm-common-overlay-close" href="#close">Schließen [x]</a></p>
-</div>
-<div class="ibm-body">
-<div class="ibm-main">
-<div class="ibm-title">
-<h2>Live System z Übertragung</h2>
-</div>
-<div class="ibm-container ibm-alternate">
-<div class="ibm-container-body">
-
-<object width="560" height="340" id="lsplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-<param name="movie" value="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false"></param>
-<param name="allowScriptAccess" value="always"></param>
-<param name="allowFullScreen" value="true"></param>
-
-<embed name="lsplayer" wmode="transparent" src="http://cdn.livestream.com/grid/LSPlayer.swf?channel=ibmsystemz&amp;autoPlay=false" width="560" height="340" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash"></embed></object>
-
-</object>
-</div>
-</div>
-</div>
-</div>
-<div class="ibm-footer"></div>
-</div>
-<!-- OVERLAY 1 END -->
 
 <!-- OVERLAY 2 BEGIN -->
 <div class="ibm-common-overlay ibm-overlay-alt-two" id="overlay-2">
