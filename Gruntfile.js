@@ -40,7 +40,6 @@ module.exports = function(grunt) {
         files: {
           'css/ww.css': 'css/ww.css'
         }
-        
       }
     },
 
@@ -88,7 +87,6 @@ module.exports = function(grunt) {
         }
       }
     }
-
   });
 
   grunt.loadNpmTasks('grunt-bless');
@@ -105,6 +103,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', taskList);  //, 'uglify'
-  grunt.registerTask('build-css', ['sass']);  //, 'sass update'
+  grunt.registerTask('build-css', ['sass', 'bless']);  //, 'sass update'
   grunt.registerTask('watch-css', ['watch']);  //, 'sass watch'
 };
