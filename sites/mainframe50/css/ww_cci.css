@@ -353,8 +353,8 @@ sites/
 .ibm-landing-page #ibm-leadspace-body.story p {
   color: #FFFFFF;
   font-family: HelvLightIBM;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-shadow: none;
   padding-top: 5px;
 }
