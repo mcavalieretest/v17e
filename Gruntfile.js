@@ -36,11 +36,11 @@ module.exports = function(grunt) {
         options: {
           // Task-specific options go here.
         },
-        dev: {
-          files: {
-            'css/testing.css': 'css/ww.css'
-          }
+        
+        files: {
+          'css/ww.css': 'css/ww.css'
         }
+        
       }
     },
 
