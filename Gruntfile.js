@@ -47,6 +47,24 @@ module.exports = function(grunt) {
       }
     },
 
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'css/ww.css' : 'css/ww.scss'
+        }
+      }
+    },
+
+    watch: {
+      css: {
+        files: 'css/*.scss',
+        tasks: ['sass']
+      }
+    },
+
     uglify: {
       options: {
         banner: BANNER
@@ -56,24 +74,14 @@ module.exports = function(grunt) {
           'js/build/ww.prod.min.js': ['js/build/ww.prod.js']
         }
       }
-    },
-
-    sass: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: 'css',
-          src: ['*.scss'],
-          dest: 'css',
-          ext: '.css'
-        }]
-      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   var taskList = ['concat:'+target];
 
@@ -83,4 +91,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', taskList);  //, 'uglify'
+  grunt.registerTask('build-css', ['sass']);  //, 'sass update'
+  grunt.registerTask('watch-css', ['watch']);  //, 'sass watch'
 };
