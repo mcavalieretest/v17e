@@ -1,12 +1,22 @@
-.ibm-carousel {
+#ibm-top .ibm-carousel {
   .ibm-container-body {
     position: relative;
   }
 
-  .ibm-ribbon-section .ibm-columns {
-    float: left;
-    clear: none;
-    width: auto;
+  .ibm-ribbon-section {
+    margin: 0 !important;
+
+    .ibm-columns {
+      float: left;
+      clear: none;
+      width: auto;
+      padding: 0 !important;
+
+      [class*="ibm-col-"] {
+        margin: 0;
+      }
+    }
   }
+
 }
 

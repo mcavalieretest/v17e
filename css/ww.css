@@ -9253,9 +9253,14 @@ a.ibm-thumbnail-module h3 {
 #ibm-content .exdent-lg {
   margin-left: -40px; }
 
-.ibm-carousel .ibm-container-body {
+#ibm-top .ibm-carousel .ibm-container-body {
   position: relative; }
-.ibm-carousel .ibm-ribbon-section .ibm-columns {
-  float: left;
-  clear: none;
-  width: auto; }
+#ibm-top .ibm-carousel .ibm-ribbon-section {
+  margin: 0 !important; }
+  #ibm-top .ibm-carousel .ibm-ribbon-section .ibm-columns {
+    float: left;
+    clear: none;
+    width: auto;
+    padding: 0 !important; }
+    #ibm-top .ibm-carousel .ibm-ribbon-section .ibm-columns [class*="ibm-col-"] {
+      margin: 0; }
