@@ -21,6 +21,7 @@
     this.nextButton = $(this.config.nextButtonSelector);
     this.scrollContainer = $(this.config.scrollContainerSelector);
 
+    this.browserDetect();
     this.initDimensions();
     this.initEvents();
 
@@ -52,6 +53,14 @@
       this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
     },
 
+    browserDetect: function() {
+      this.useTransitions = Modernizr.csstransforms3d;
+
+      if (this.useTransitions) {
+        this.element.addClass("ibm-carousel-css-transitions");
+      }
+    },
+
     getCurrentSlidePos: function() {
       return parseInt(this.scrollContainer.css("left").replace("px", ""));
     },
@@ -60,14 +69,24 @@
       var currentLeft = this.getCurrentSlidePos(),
           newLeft     = currentLeft - this.panelWidth;
 
-      this.scrollContainer.animate({"left": newLeft}, 1000);
+      if (this.useTransitions) {
+        this.scrollContainer.css({"left": newLeft});
+      } else {
+        this.scrollContainer.animate({"left": newLeft}, 1000);
+      }
+    
     },
 
     prev: function() {
       var currentLeft = this.getCurrentSlidePos(),
           newLeft     = currentLeft + this.panelWidth;
       
-      this.scrollContainer.animate({"left": newLeft}, 1000);
+      if (this.useTransitions) {
+        this.scrollContainer.css({"left": newLeft});
+      } else {
+        this.scrollContainer.animate({"left": newLeft}, 1000);
+      }
+      
     }
   });
 

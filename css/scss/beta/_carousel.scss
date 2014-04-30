@@ -1,4 +1,11 @@
 #ibm-top .ibm-carousel {
+  &.ibm-carousel-css-transitions {
+    
+    .ibm-ribbon-section {
+      @include transition(all 0.5s);  
+    }
+  }
+
   .ibm-container-body {
     position: relative;
   }
