@@ -4430,7 +4430,7 @@ Company.data.CustomStore = function(config) { ... }
             hamb.css("right", offset + "px");
         }
 
-        function init() {
+        function init(options) {
             //default config values
             var defaults = {
                 closeOnMaxWidth: true,
