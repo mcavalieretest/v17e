@@ -6,6 +6,33 @@
 
   };
 
+  IBM.Common.Util.transitionEndEventName = function() {
+    if (!Modernizr.csstransforms3d) {
+      return undefined;
+    }
+
+    var map = {
+      "transition": "transitionend",
+      "WebkitTransition": "webkitTransitionEnd",
+      "OTransition": "oTransitionEnd",
+      "MsTransition": "MSTransitionEnd"
+      // "MozTransition": "transitionend"
+    };
+
+    var thisBody = document.body || document.documentElement,
+        thisStyle = thisBody.style,
+        finalEventName;    
+
+    jQuery.each(map, function(property, eventName){ 
+      if (thisStyle[property] !== undefined) {
+        finalEventName = eventName;
+        return false;
+      }
+    });
+
+    return finalEventName;
+  };    
+
   IBM.Common.Widgets.Carousel = function(options) {
     var defaults = {
       prevButtonSelector: ".ibm-ribbon-prev",
