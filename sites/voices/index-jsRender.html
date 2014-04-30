@@ -14,12 +14,12 @@
 
     <link rel="IBM.Mobile.redirect" href="http://www.ibm.com/social/aggregator/voices/voices" />
 
-    <meta content="v17 ECM/ibm.com - S734638V15397V06 - 06/20/2011 02:50:00 PM" name="Source" />  
+    <meta content="v17 ECM/ibm.com - S734638V15397V06 - 06/20/2011 02:50:00 PM" name="Source" />
     <meta content="public" name="Security" />
     <meta content="IBM Corporation" name="DC.Publisher" />
 
     <meta name="Robots" content="index,nofollow"/>
-    <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE"> 
+    <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE">
     <meta name="Owner" content="ethnmcrt@us.ibm.com"/>
     <meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="IBM000"/>
     <meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="CT002"/>
@@ -64,11 +64,11 @@
 <!-- FOR LOCAL TESTING (START) -->
     <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" />
     <link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
-    
+
     <script src="../../js/ww.js" type="text/javascript"></script>
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="js/jsviews.min.js" type="text/javascript"></script>
-    <script src="js/ww_cc_jsrender.min.js" type="text/javascript"></script>
+    <script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
 <!-- FOR LOCAL TESTING (END) -->
 
 <!-- FOR ESL002 TESTING (START) -->
@@ -82,7 +82,7 @@
     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/jsviews.min.js" type="text/javascript"></script>
     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/ww_cc_jsrender.min.js" type="text/javascript"></script> -->
-  <!-- JS (END) --> 
+  <!-- JS (END) -->
 <!-- FOR ESL002 TESTING (END) -->
 
   <!-- for popup window -->
@@ -116,10 +116,10 @@
   </script>
 
 </head>
-<body id="ibm-com" class="ibm-type" >  
+<body id="ibm-com" class="ibm-type" >
 
-  <!-- JSRender TT template (START) --> 
-  <script id="tt_template" type="text/x-jsrender">	
+  <!-- JSRender TT template (START) -->
+  <script id="tt_template" type="text/x-jsrender">
    {{props t_list}}
    <li class="ibm_cci__ml-li">
     <p>
@@ -128,11 +128,11 @@
     </p>
   </li>
   {{/props}}
-</script> 
-<!-- JSRender TT template (END)  --> 
+</script>
+<!-- JSRender TT template (END)  -->
 
-<!-- JSRender ST template (START) --> 
-<script id="st_template" type="text/x-jsrender">  
+<!-- JSRender ST template (START) -->
+<script id="st_template" type="text/x-jsrender">
   {{props t_list}}
   <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
     <p class="ibm_cci-clicked">
@@ -140,10 +140,10 @@
       <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending search keyword"></a> </p>
     </li>
     {{/props}}
-  </script> 
-  <!-- JSRender ST template (END)  --> 
+  </script>
+  <!-- JSRender ST template (END)  -->
 
-  <!-- JSRender Unresolved template (START) --> 
+  <!-- JSRender Unresolved template (START) -->
   <script id="unro_template" type="text/x-jsrender">
     <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
       <div class="ibm_cci--lv-unro-b">
@@ -174,15 +174,15 @@
 <div class="ibm_cci--unr-cb">
   <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
     <h3 class="ibm_cci--lv-r-wct">
-     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user name {{:username}}">{{:username}}</a> 
+     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user name {{:username}}">{{:username}}</a>
      </h3>
-    <p class="ibm_cci--lv-r-wch"> 
+    <p class="ibm_cci--lv-r-wch">
       <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a>
     </p>
   </div>
   <div class="ibm_cci--time-stamp">
-    <p class="ibm_cci-tts"> <span></span> 
-      <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> 
+    <p class="ibm_cci-tts"> <span></span>
+      <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12">
         <a href="{{:link}}" alt="twitter timestamp image" onclick="window.open(this.href, '_blank'); return false;">{{:published}}</a>
     </p>
   </div>
@@ -195,11 +195,11 @@
         <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)">
           <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a>
         </li>
-      <li> 
+      <li>
         <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)">
           <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"></a>
       </li>
-      <li> 
+      <li>
         <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)">
           <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a>
       </li>
@@ -208,10 +208,10 @@
 </div>
 </div>
 </div>
-</script> 
+</script>
 <!-- JSRender Unresolved template (END) -->
 
-<!-- JSRender Resolved template (START) --> 
+<!-- JSRender Resolved template (START) -->
 <script id="reso_template" type="text/x-jsrender">
   <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
     <div class="ibm-col-6-4">
@@ -222,7 +222,7 @@
             <p class="ibm_cci--rea-rank ibm_cci-reducedFont">{{:rank)}}</p>
 {{else}}
 <p class="ibm_cci--rea-rank">{{:rank)}}</p>
-{{/if}}          
+{{/if}}
 </li>
 <li class="ibm_cci__padding-top">
   <div class="ibm_cci--rea-b">
@@ -282,7 +282,7 @@
       </div>
       <div class="ibm_cci-media-container">
         {{if altMediaURL && altMediaURL.length > -1 }}
-        
+
       <div class="ibm-video">
         <div class="ibm-video-container">
           <a href="{{:mediaURL}}" alt="video media image">
@@ -299,9 +299,9 @@
             </a>
         </div>
       </div>
-          
+
           {{else mediaURL}}
-          <img width="270" class="ibm_cci--tweet-image" alt="abstract media image" src="{{:mediaURL}}" onerror="this.style.display='none';" />      
+          <img width="270" class="ibm_cci--tweet-image" alt="abstract media image" src="{{:mediaURL}}" onerror="this.style.display='none';" />
 
           {{/if}}
         </div>
@@ -325,7 +325,7 @@
           </a>
         </li>
       </ul>
-    </div>                   
+    </div>
   </div>
 </div>
 <div class="ibm-col-6-2">
@@ -335,12 +335,12 @@
       <a href="javascript:void(0);" alt="user avatar {{:userScreenName}}" data-userID="{{:userId}}">
         {{if #getIndex() == 0}}
         <img class="selected" src="{{:userAvatar}}" alt="user avatar {{:userScreenName}} icon" width="25" height="25" />
-        {{else}}  
+        {{else}}
         <img src="{{:userAvatar}}" alt="user avatar {{:userScreenName}} icon" width="25" height="25" />
-        {{/if}}  
+        {{/if}}
       </a>
     </li>
-    {{/range}} 
+    {{/range}}
   </ul>
   {{range refTweets start=0 end=9}}
   {{if #getIndex() == 0}}
@@ -354,12 +354,12 @@
       </p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
-       <p class="ibm_cci-tts"> 
-         <span></span> 
-         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" onclick="window.open(this.href, '_blank'); return false;" alt="twitter timestamp image">{{:published}}</a> 
-       </p>  
+       <p class="ibm_cci-tts">
+         <span></span>
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" onclick="window.open(this.href, '_blank'); return false;" alt="twitter timestamp image">{{:published}}</a>
+       </p>
      </div>
-   </div> 
+   </div>
 
    <div style="float:left" data-userID="{{:userId}}">
     <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
@@ -370,7 +370,7 @@
       <ul>
         <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
         <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li> 
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
       </ul>
     </div>
 
@@ -387,12 +387,12 @@
         {{:userScreenName}}</a></p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
-       <p class="ibm_cci-tts"> 
-         <span></span> 
-         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a> 
-       </p>  
+       <p class="ibm_cci-tts">
+         <span></span>
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a>
+       </p>
      </div>
-   </div> 
+   </div>
 
    <div style="float:left; display:none;" data-userID="{{:userId}}">
 
@@ -402,30 +402,30 @@
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
       <ul>
-        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> 
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a>
         </li>
-        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> 
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a>
         </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> 
-        </li> 
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a>
+        </li>
       </ul>
     </div>
 
-  </div>  
+  </div>
   {{/if}}
-  {{/range}}     
+  {{/range}}
 
 </div>
 </div>
-</script> 
+</script>
 <!-- JSRender Resolved template (END) -->
 
 
-<!-- 
+<!--
   // START OF THE MAIN DIV
 -->
 
-<div id="ibm-top" class="ibm-landing-page"> 
+<div id="ibm-top" class="ibm-landing-page">
   <!-- MASTHEAD_BEGIN -->
   <div id="ibm-masthead">
     <div id="ibm-mast-options">
@@ -455,8 +455,8 @@
       </div>
     </div>
   </div>
-  <!-- MASTHEAD_END --> 
-  
+  <!-- MASTHEAD_END -->
+
   <!-- LEADSPACE_BEGIN -->
   <div id="ibm-leadspace-head" class="ibm_cc__voices_ls">
     <div id="ibm-leadspace-body">
@@ -478,76 +478,76 @@
           <li class="ibm_cci--ls--toggle--li--list-icon"> <a data-id="list" href="javascript:void(0);" id="list">List View</a> </li>
         </ul>
       </div>
-      
+
       <!-- For testing media query. Delete once testing is complete-->
       <p style="padding-left:20px"></p>
-      <!-- For testing media query. Delete once testing is complete --> 
-      
+      <!-- For testing media query. Delete once testing is complete -->
+
       <!-- TRENDING TOPICS (START) -->
-      
+
       <div class="ibm_cci--sk ibm_cci--sk__mt">
         <ul class="ibm_cci__ml" id="ibm_cci__ml">
-          <li class="ibm_cci__ml_t"> 
+          <li class="ibm_cci__ml_t">
             <!-- add class="ibm_cci-clicked" on click in <p> and  -->
             <p id="ibm_cci__ml_t-js" class="ibm_cci-clicked">
               <a href="#" name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>
             </p>
           </li>
-          
+
           <!-- Append the Trending List over here using jsRender -->
-          
+
         </ul>
       </div>
-      
+
       <!-- TRENDING TOPICS (END) -->
-      
+
       <div class="ibm_cci--sr">
         <p class="ibm_cci-toggleDisplay">Results found: </p>
       </div>
     </div>
   </div>
-  <!-- LEADSPACE_END --> 
-  
-  <!-- CONTENT_NAV_BEGIN --> 
+  <!-- LEADSPACE_END -->
+
+  <!-- CONTENT_NAV_BEGIN -->
   <!-- CONTENT_NAV_END -->
-  
-  <div id="ibm-pcon" class="ibm_cci__ibm-pcon"> 
+
+  <div id="ibm-pcon" class="ibm_cci__ibm-pcon">
     <!-- CONTENT_BEGIN -->
-    <div id="ibm-content" class="ibm_cci__ibm-content"> 
-      <!-- TITLE_BEGIN --> 
-      
-      <!-- <div id="ibm-content-head"></div> --> 
-      
-      <!-- TITLE_END --> 
+    <div id="ibm-content" class="ibm_cci__ibm-content">
+      <!-- TITLE_BEGIN -->
+
+      <!-- <div id="ibm-content-head"></div> -->
+
+      <!-- TITLE_END -->
       <!-- CONTENT_BODY -->
       <div id="ibm-content-body">
-        <div id="ibm-content-main"> 
+        <div id="ibm-content-main">
 
           <!-- IBM VOICES SEARCH RESULTS DIV (BEGIN)  -->
           <div class="ibm-band ibm_cci__ibm-band"> </div>
-          <!-- IBM VOICES SEARCH RESULTS DIV (END) --> 
-          
+          <!-- IBM VOICES SEARCH RESULTS DIV (END) -->
+
           <!-- VOICES LIST/GRID VIEW (START) -->
-          <div id="ibm_cci-widget-js" class="ibm-columns ibm-sortable ibm_cci-gv__modifier"> 
+          <div id="ibm_cci-widget-js" class="ibm-columns ibm-sortable ibm_cci-gv__modifier">
 
             <!-- JSRENDER TEMPLATE INJECTED HERE -->
 
           </div>
-          <!-- VOICES LIST/GRID VIEW (END) --> 
-          
+          <!-- VOICES LIST/GRID VIEW (END) -->
+
         </div>
-        <!-- CONTENT_BODY_END --> 
+        <!-- CONTENT_BODY_END -->
       </div>
     </div>
 
-    <!-- CONTENT_END --> 
+    <!-- CONTENT_END -->
     <!-- NAVIGATION_BEGIN -->
     <!-- <div id="ibm-navigation"></div> -->
-    <!-- NAVIGATION_END --> 
+    <!-- NAVIGATION_END -->
   </div>
-  <!--IBM Web Merchandising Module--> 
+  <!--IBM Web Merchandising Module-->
   <!-- <div id="ibm-related-content">
-    <div id="ibm-merchandising-module"> 
+    <div id="ibm-merchandising-module">
     </div>
   </div>  -->
   <!-- FOOTER_BEGIN -->
@@ -561,12 +561,12 @@
       <li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
     </ul>
   </div>
-  <!-- FOOTER_END --> 
+  <!-- FOOTER_END -->
 </div>
-<div id="ibm-metrics"> 
-  <script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script> 
+<div id="ibm-metrics">
+  <script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
 </div>
     <!-- GO TO TOP -->
-    <a href="javascript:void(0);" alt="go to top of the page" id="ibm_cci-gototop-js" class="ibm_cci-gototop">Back to Top</a>
+    <!-- <a href="javascript:void(0);" alt="go to top of the page" id="ibm_cci-gototop-js" class="ibm_cci-gototop">Back to Top</a> -->
 </body>
 </html>

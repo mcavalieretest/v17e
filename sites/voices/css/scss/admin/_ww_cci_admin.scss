@@ -1,0 +1,22 @@
+html, body, #ibm-pcon {
+  background: #333;
+}
+
+#ibm-pcon p.ibm_cci_welcometo {
+  font: normal normal 40px/40px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+  color: #fff;
+  text-shadow: none;
+  padding:0;
+  margin-bottom:7px;
+  clear: right;
+}
+
+#ibm-pcon	p.ibm-cci-alert{
+		font-family: $default-font-family;
+		font-size:16px;
+		color:#f00;
+		float:left;
+    text-shadow: none;
+    margin:45px 0 0 0;
+    padding: 0 0 0 14px;
+	}

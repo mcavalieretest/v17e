@@ -1,18 +1,18 @@
 $(function() {
     // ABOUT US PAGE API:
     // http://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES/about
-    
+
     // DEFAULT URL HASH (START)
     window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr("id");
-    // DEFAULT URL HASH (END)   
-    
+    // DEFAULT URL HASH (END)
+
     // console.log($("#ibm_cci-gototop-js").css("position"));
-    
-    var defaultValue = "comma,separated,values", 
+
+    var defaultValue = "comma,separated,values",
         alertText = $('.ibm_cci--ls--search p'),
         gotoTop = $("#ibm_cci-gototop-js"),
         widgetJS = $("#ibm_cci-widget-js");
-    
+
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (START)
     var updateURLHash = function(value) {
         if (!window.location.hash && window.location.hash == null) {
@@ -28,10 +28,10 @@ $(function() {
         event.preventDefault();
         $("html, body").stop(true).animate({ scrollTop: 0 }, "slow");
         // $(window).data("ajaxReq", true);
-    });    
+    });
 
     // UPDATE URL HASH ON CLICKED ELEMENTS FROM SEARCH AND TRENDING TOPICS (END)
-    // MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)              
+    // MANAGE TOGGLE EFFECTS ON GRID AND LIST VIEW (START)
         $("ul.ibm_cci--ls--toggle--ul li").on("click", "a", function(event) {
             event.preventDefault();
             var target = $(event.target);
@@ -65,17 +65,27 @@ $(function() {
                     widgetJS.masonry("reload");
                 }else if(window.location.hash === "#voices-grid" && window.innerWidth > 1280){
                     $("#ibm_cci-widget-js.ibm-columns").css("width", "auto");
-                }                        
+                }
         });
     // INITIALIZATION OF TRENDING TOPICS
     vo.init_t({
+        // ESL002 API
         tt_url: "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES/trending",
+
+        // STAGING API
+        // tt_url: "https://www-sso.toronto.ca.ibm.com/social/aggregator/rest/213/VOICES/trending",
+
         t_template: $("#tt_template"),
         t_container: $("#ibm_cci__ml")
     });
     // INITIALIZATION OF FEEDS
     vo.init_f({
+        // ESL002 API
         f_url: "https://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES",
+
+        // STAGING API
+        // f_url: "https://www-sso.toronto.ca.ibm.com/social/aggregator/rest/213/VOICES/",
+
         f_container: $("#ibm_cci-widget-js"),
         f_unro_template: $("#unro_template"),
         f_reso_template: $("#reso_template")
@@ -87,19 +97,19 @@ $(function() {
         self.f_distribute(data[0]);
         //INITIAL BUILD MASONRY TILES
         self.f_buildtiles();
-        //REMOVE THE SPINNER 
+        //REMOVE THE SPINNER
         self.f_removeNodes($("#ibm_cci-widget-js > span"));
-        
+
         //SEARCH FUNCTION (START)
          $("#ibm-cc-search--field").focusin(function(event){
             event.preventDefault();
             $('.ibm_cci--ls--search p').removeClass('ibm-cci-alert').html('');
             $(this).val('');
          });
-        
+
         $("form").on("submit", function(event) {
-            // /^[a-zA-Z0-9]*$/ : /[^\w\s]/gi; 
-            var search = $("#ibm-cc-search--field"), 
+            // /^[a-zA-Z0-9]*$/ : /[^\w\s]/gi;
+            var search = $("#ibm-cc-search--field"),
                 regex = /^[a-zA-Z0-9 ]*$/,
                 searchVal = $("#ibm-cc-search--field").val().toLowerCase();
                 searchVal = searchVal.split(","), filterVal = [];
@@ -117,12 +127,12 @@ $(function() {
                     $('.ibm_cci--ls--search p').addClass('ibm-cci-alert').html('').append('Sorry! Search value entered is not valid!');
                     search.blur().val(defaultValue);
                 }
-                
+
                 search.val("");
                 if(filterVal != '' && filterVal != 0 && filterVal.length > 0) vo.f_constructURL(filterVal.toString());
         });
         //SEARCH FUNCTION (END)
-        
+
         //ALL TRENDING FUNCTION (START)
         $("li.ibm_cci__ml_t a[name='all']").on("click", function(event) {
             event.preventDefault();
@@ -135,14 +145,14 @@ $(function() {
                 $("li.ibm_cci__ml-li p[class='ibm_cci-clicked']").removeClass("ibm_cci-clicked");
                 $("p#ibm_cci__ml_t-js").addClass("ibm_cci-clicked");
                 $(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
-                
+
                 //REMOVE ALL SEARCH NODES
                 vo.f_removeNodes($(".ibm_cci-tsearch-js"));
-                
+
                 //EMPTY VO.DIFFERENCE AND VO.SIMILAR
                 vo.difference = []; vo.similar = []; vo.searchterms = []; vo.sTerms = []; vo.checkedCount = 0;
                 vo.searchTrendingList = vo.searchTrendingList.slice(0, 11);
-                
+
                 vo.f_fetch_feeds().done(function(data) {
                     vo.f_removeNodes($("#ibm_cci-widget-js > span"));
                     var newData = data;
@@ -150,9 +160,9 @@ $(function() {
                         vo.totalSearchCountNum = newData.entries.length;
                     // if(data.entries.length < 20) $(window).data("ajaxReq", false);
                     // SEARCH TRUE
-                    vo.f_distribute(newData); 
+                    vo.f_distribute(newData);
                     vo.f_reTweetToggle();
-                    
+
                     $(".ibm-sortable").append($(".ibm-card")).masonry("appended", $(".ibm-card"));
                     setTimeout(function() {
                         $("#ibm_cci-widget-js").masonry();
@@ -163,13 +173,13 @@ $(function() {
             }
         });
         //ALL TRENDING FUNCTION (END)
-        
+
         // TRENDING TOPICS ELEMENTS (START)
         $(".ibm_cci__ml-li").on("click", function(event) {
             event.preventDefault();
             // vo.f_addspinner();
             // VARIABLES DECLARED
-            var clickedTrendingName = $(event.target).attr("name").trim(), 
+            var clickedTrendingName = $(event.target).attr("name").trim(),
                 parentP = $(event.target).parent();
             // CONDITIONS FULFILLED
             if (!$(parentP).hasClass("ibm_cci-clicked")) {
@@ -196,7 +206,7 @@ $(function() {
                     vo.difference = [];
                     vo.similar = [];
                     $(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
-                    
+
                     vo.f_constructURL(vo.searchterms.toString());
                     alertText.html('');
                 }
@@ -228,14 +238,14 @@ $(function() {
                 alertText.html('');
             }
         });
-        //SEARCH TOPICS ELEMENTS (END)  
-        
+        //SEARCH TOPICS ELEMENTS (END)
+
         self.f_reTweetToggle();
 
         // ADDED THE CHECKBROWSERWIDTH AGAIN TO TEST FIREFOX
         self.f_checkBrowserWidth();
     });
-    //WHEN(END) 
+    //WHEN(END)
     //INFINITE SCROLL (START)
     $(window).data("ajaxReq", true).on("scroll", function(event) {
         event.preventDefault();
@@ -245,12 +255,12 @@ $(function() {
             $(gotoTop).css({"opacity": 0, "visibility": "hidden"});
         }else {
             $(gotoTop).css({"opacity": 1, "visibility": "visible"});
-        }   
+        }
 
         if($(window).data("ajaxReq") == false || vo.totalSearchCountNum < 20 || lastRankID < 20) {
             return;
-        }        
-        try {         
+        }
+        try {
             if ($(window).scrollTop() + $(window).height() >= (($(document).height()+72) - 900) && $(window).data("ajaxReq", true)) {
                 // Set Flag to false
                 $(window).data("ajaxReq", false);
@@ -295,7 +305,7 @@ $(function() {
                     }).always(function() {
                         // console.log("inside infinite scroll complete");
                     });
-                }  
+                }
             }
         } catch (e) {
             console.log("infinite all trending scroll error: "+e);
@@ -333,10 +343,10 @@ $(function() {
             $("#ibm_cci-widget-js.ibm-columns").css("margin-left", "");
             widgetJS.masonry("reload");
         }
-      
+
     });
     // INFINITE SCROLL (END)
-    
+
     // HELPER FUNCTIONS FOR JSRender TEMPALTES (START)
     // DEFINE THE HELPERS
     $.views.helpers({
@@ -363,7 +373,7 @@ $(function() {
 });
 //CLOSE ON DOM READY
 
-// VOICES OBJECT 
+// VOICES OBJECT
 (function($, a) {
     var vo = {
         //GLOBAL ARRAY VARIABLES (NOTE: SO THEY DON'T GET OVERWRITTEN WHEN YOU PUSH DATA)
@@ -375,7 +385,7 @@ $(function() {
         var_rank: 0,
         search: true,
 
-        // INITIALIZATION FOR TRENDING      
+        // INITIALIZATION FOR TRENDING
         init_t: function(t_config) {
             this.t_url = t_config.tt_url;
             this.t_template = t_config.t_template;
@@ -387,7 +397,7 @@ $(function() {
             this.f_unro_template = f_config.f_unro_template;
             this.f_container = f_config.f_container;
             this.f_reso_template = f_config.f_reso_template;
-        },        
+        },
         t_attach_template: function(data) {
             var newData = data;
             this.t_container.append(this.t_template.render(newData));
@@ -437,7 +447,7 @@ $(function() {
                     filter: self.searchterms.toString() || null
                 }
             }).promise();
-        },        
+        },
         f_attach_reso_temp: function(reso_data) {
             //Modify the timestamp and the content attr and wrap href
             this.f_container.append(this.f_reso_template.render(this.f_modify_datafeed(reso_data)));
@@ -495,7 +505,7 @@ $(function() {
             return newRank;
         },
         f_preloadImages: function(imgURL, callback) {
-            var img = new Image(), 
+            var img = new Image(),
                 regex = /\.(jpeg|jpg|gif|png|ico|jpg:large)$/,
                 imgWidth = 0;
                 img.src = imgURL;
@@ -507,17 +517,17 @@ $(function() {
                     }else if(imgURL.match(regex) != null && img.src.readyState != 4){
                         // CODE DOES NOT WAIT FOR THE ONLOAD TO COMPETE BEFORE RETURNING
                         img.onload = function(){
-                            imgWidth = img.naturalWidth;                            
+                            imgWidth = img.naturalWidth;
                             if(imgWidth > 1000){
                                 // console.log("*****IMGONLOAD INSIDE****: "+imgWidth+" : "+img.src);
-                                //return img.src;   
+                                //return img.src;
                             }
                         }
                         // console.log("*****IMGONLOAD OUTSIDE****: "+imgWidth+" : "+img.src);
                         return img.src;
                     }
                 }catch(e){
-                    console.log('error inside preload images: '+e);    
+                    console.log('error inside preload images: '+e);
                 }
         },
         f_truncateDomain: function(domain) {
@@ -608,7 +618,7 @@ $(function() {
             }
         },
         f_removeNodes: function(nodes) {
-            // Need to add condition to only remove trending search nodes count > 9 
+            // Need to add condition to only remove trending search nodes count > 9
             nodes.remove();
         },
         f_totalSearchCount: function(count) {
@@ -699,7 +709,7 @@ $(function() {
                             // SEARCH TRUE
                             self.totalSearchCountNum = data.entries.length;
                             self.f_distribute(data);
-                        // if(data.entries.length < 20) $(window).data("ajaxReq", false);                            
+                        // if(data.entries.length < 20) $(window).data("ajaxReq", false);
                             self.f_reTweetToggle();
                             $("#ibm_cci__ml_t-js").addClass("ibm_cci-clicked");
                             $("#ibm_cci-widget-js").masonry("reload");
@@ -719,7 +729,7 @@ $(function() {
                         if($.inArray(e, self.searchterms) === -1) self.searchterms.push(e);
                     });
                     $.unique(self.searchterms);
-                    
+
                     $.ajax(self.f_url + "?callback=?", {
                         type: "GET",
                         dataType: "jsonp",
@@ -780,7 +790,7 @@ $(function() {
             } catch (e) {
                 console.log("check searchStatus error: " + e);
             }
-        },        
+        },
         // RETWEET TOGGLE (START)
         f_reTweetToggle: function() {
             try{
@@ -807,11 +817,11 @@ $(function() {
             }
         },
         f_checkBrowserWidth: function(){
-            var self = vo, 
+            var self = vo,
                 browserinnerWidth = window.innerWidth,
                 winHash = window.location.hash,
                 marginLeft = self.f_calculateFluidMargin();
-                
+
                 if(marginLeft !== 0){
                     marginLeft = marginLeft - 10;
                 }else if(marginLeft === 0){
@@ -827,7 +837,7 @@ $(function() {
         },
         f_calculateFluidMargin: function(){
             var widgetJSWidth = $("#ibm_cci-widget-js").outerWidth(true);
-                return ((widgetJSWidth % 320)/2); 
+                return ((widgetJSWidth % 320)/2);
         }
 
     };
