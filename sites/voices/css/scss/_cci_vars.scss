@@ -7,6 +7,7 @@ $sprite-url 							: "#{$imagePath}/voices/i/ibm-voices-sprite.png";
 $leadspace--logo 						: ".ibm_cci--ls--logo";
 $leadspace--search 						: ".ibm_cci--ls--search";
 $leadspace--toggle 						: ".ibm_cci--ls--toggle";
+$admin-login                  :  ".ibm_cci_admin_login";
 $leadspace__modifier 					: ".ibm_cci--h1__modifyer";
 $default-font-family 					: Arial, "serif", sans-serif, Helvetica;
 $search--field--shadow 					: 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
@@ -24,11 +25,11 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 // $ie9Hack 								: "\0/";
 
 @mixin h1-p-overrides {
-	h1 { 
-		float:left; width:auto; padding:0; 
+	h1 {
+		float:left; width:auto; padding:0;
 	}
-	p { 
-		float:left; width:auto; padding:0; 
+	p {
+		float:left; width:auto; padding:0;
 	}
 }
 
@@ -36,8 +37,8 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 
 /* LEADSPACE DEFAULTS (BEGIN) */
 @mixin leadspace--defaults{
-	float:left; 
-	margin:30px 0 20px 0; 
+	float:left;
+	margin:30px 0 20px 0;
 	// padding:0 0 0 20px;
 	padding:0;
 }
@@ -104,8 +105,8 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 @mixin ibm_cci--rea-block {
 	float:left;
 	width:70px;
-	margin:0 10px 0 0; //added 10px top to offset the position for IE in 
-	// p.ibm_cci--rea-rank 
+	margin:0 10px 0 0; //added 10px top to offset the position for IE in
+	// p.ibm_cci--rea-rank
 
 	ul {
 		@include ibm_cci-ul__modifier;
@@ -118,7 +119,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 
 			.ibm_cci--rea-b {
 				@include ibm_cci--rea-b;
-			}	
+			}
 			p.ibm_cci--rea-rank {
 				display:block;
 				font-family: "HelvLightIBM";
@@ -126,7 +127,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 				line-height:52px;
 				font-weight:normal;
 				color:#dfdfdf !important;
-				padding:0; 
+				padding:0;
 				vertical-align:top;
 					// Changed padding-bottom:0 !important for IE issue
 					// Added 3 properties below for IE issue
@@ -219,7 +220,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 		}
 		li:not(:nth-child(1)) {
 			padding: 0 0 0 15px;
-		}													
+		}
 	}
 
 	// p.ibm_cci-tts {
@@ -234,7 +235,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 	// 	}
 	// 	a img:hover {
 	// 		opacity:1;
-	// 	}						
+	// 	}
 	// }
 }
 
@@ -255,10 +256,10 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 		padding:0;
 		width:16px;
 		height:16px;
-	}	
+	}
 
 }
- 
+
 @mixin feed-no-icon {
 	a img{
 		display:none;
@@ -267,7 +268,7 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 
 
 @mixin cci-sib {
-	
+
 }
 @mixin ibm_cci--time-stamp {
 	float:left;
@@ -300,13 +301,13 @@ $ibm-widget-about						: "#ibm_cci-about-widget";
 		}
 		img:hover {
 			opacity:1;
-		}						
+		}
 	}
 	// p.ibm_cci-tts:hover a
 	p.ibm_cci-tts:hover img {
 		opacity:1;
 		color:#000;
-	}				
+	}
 	p.ibm_cci-tts span:before {
 		content: '\25CF';
 		font-size: 7px;
