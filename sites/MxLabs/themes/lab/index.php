@@ -11,7 +11,7 @@
                             <div class="ibm-col-1-1">                                
                                 <div class="ibm-col-6-3 feature-box">
                                     <h2 class="section-header">Welcome to the Labs</h2>
-                                    <p><a href="#post-25">We work at the intersection of marketing, design, data, and technology. We're here to share our experiences with you.</a></p>
+                                    <p><a href="#post-25">We rely on Design Thinking, Agile methodology, and our adaptive working environment in our pursuit of the best ways to fuse marketing, design, data, and technology.</a></p>
                                 </div>
                             </div>
                         </div>
@@ -19,7 +19,7 @@
                             <div class="ibm-col-1-1">
                                 <div class="ibm-col-6-3 feature-box">
                                     <h2 class="section-header">Moving in with Watson</h2>
-                                    <p><a href="#post-38">IBM doesn’t exactly see itself as the kind of company that belongs in an unconventional neighborhood. But as a monolith a little out of its comfort zone, it’s hard not to feel a kind of kinship with 51 Astor Place.</a></p>
+                                    <p><a href="#post-38">Located right in between the East Village and NYU, we'll be in a brand new twelve story glass and steel building. The new space is encircled by floor to ceiling windows, so there is no question of being relegated to a dark corner.</a></p>
                                 </div>
                             </div>
                         </div>
