@@ -38,7 +38,9 @@
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
-      panelContainerSelector:  ".ibm-columns"
+      panelContainerSelector:  ".ibm-columns",
+      paginationContainerSelector: ".ibm-ribbon-nav",
+      activePageClass: "ibm-active"
     };
 
     // Save the important elements
@@ -47,6 +49,7 @@
     this.prevButton = $(this.config.prevButtonSelector);
     this.nextButton = $(this.config.nextButtonSelector);
     this.scrollContainer = $(this.config.scrollContainerSelector);
+    this.paginationContainer = $(this.config.paginationContainerSelector);
 
     this.browserDetect();
     this.initDimensions();
@@ -80,8 +83,10 @@
 
     initMisc: function() {
       this.pages = this.element.find("[role=\"option\"]");
+      this.paginationLinks = this.paginationContainer.children();
       this.currentPage = 0;
       this.toggleArrowVisibility();
+      this.refreshPagination();
     },
 
     browserDetect: function() {
@@ -96,6 +101,13 @@
       return parseInt(this.scrollContainer.css("left").replace("px", ""));
     },
 
+    refreshPagination: function() {
+      this.paginationLinks
+        .removeClass(this.config.activePageClass)
+        .eq(this.currentPage)
+          .addClass(this.config.activePageClass);
+    },
+
     next: function() {
       var self = this,
           currentLeft = this.getCurrentSlidePos(),
@@ -107,6 +119,7 @@
 
       this.currentPage++;
       self.toggleArrowVisibility();
+      self.refreshPagination();
 
       if (this.useTransitions) {
         var eventName = IBM.Common.Util.transitionEndEventName();
@@ -128,6 +141,7 @@
 
       this.currentPage--;
       self.toggleArrowVisibility();
+      self.refreshPagination();
 
       if (this.useTransitions) {
         var eventName = IBM.Common.Util.transitionEndEventName();
