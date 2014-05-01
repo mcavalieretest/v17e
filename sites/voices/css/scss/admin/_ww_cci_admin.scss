@@ -2,21 +2,36 @@ html, body, #ibm-pcon {
   background: #333;
 }
 
+#ibm-pcon .ibm-col-1-1.ibm_cci_divCenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  margin-top:-300px;
+  margin-left:-300px;
+  z-index: 100;
+  padding: 0 100px;
+}
+
 #ibm-pcon p.ibm_cci_welcometo {
-  font: normal normal 40px/40px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
+/*   text-shadow: 0 0 1px rgba(0,0,0,0.3); */
+  font: normal normal 40px/40px "HelveticaNeue-Light", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: #fff;
   text-shadow: none;
   padding:0;
   margin-bottom:7px;
-  clear: right;
 }
 
 #ibm-pcon	p.ibm-cci-alert{
-		font-family: $default-font-family;
+		font-family:"HelveticaNeue-Light", Helvetica;
+    -webkit-font-smoothing: antialiased;
 		font-size:16px;
-		color:#f00;
-		float:left;
+		color:#ef4e38;
     text-shadow: none;
-    margin:45px 0 0 0;
-    padding: 0 0 0 14px;
-	}
+    margin:25px 0 0 14px;
+    visibility: visible;
+    line-height:normal;
+    padding:0;
+}

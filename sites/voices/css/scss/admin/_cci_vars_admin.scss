@@ -1,2 +1,11 @@
 $admin-login               : ".ibm_cci_admin_login";
 $search--field--shadow 		 : 2px 2px 8px 2px rgba(246, 246, 246, 1.0) inset;
+$fontPath                  : "../../fonts/neue-helvetica-35-thin-latin-1.ttf";
+
+/* @mixin HelveticaNeue-Thin {
+  @font-face {
+    font-family: HelveticaNeue-Thin;
+    src: #{$fontPath};
+    font-size:normal;
+  }
+} */
