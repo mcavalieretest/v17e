@@ -399,8 +399,13 @@ sites/
 }
 
 .ibm-space-adjust {
-  padding: 0 0 25px 0 !important;
+  padding-bottom: 25px !important;
   cursor: pointer;
+}
+
+.ibm-space-adjust ul li {
+  padding: 5px 0 5px 0;
+  content: none;
 }
 
 .ibm-space-adjust a {
