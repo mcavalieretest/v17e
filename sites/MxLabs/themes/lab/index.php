@@ -7,27 +7,28 @@
                         <h1 class="mxlabs"><span>IBM</span> Marketing <br />Experience Labs</h1>
                     </header>
                     <div id="ibm-leadspace-body" class="ibm-container-body">
-                        <div class="ibm-columns" id="ibm-lead-1">
-                            <div class="ibm-col-1-1">                                
+                     <div class="ibm-columns" id="ibm-lead-1">
+                            <div class="ibm-col-1-1">
                                 <div class="ibm-col-6-3 feature-box">
-                                    <h2 class="section-header">Welcome to the Labs</h2>
-                                    <p><a href="#post-25">We rely on Design Thinking, Agile methodology, and our adaptive working environment in our pursuit of the best ways to fuse marketing, design, data, and technology.</a></p>
+                                    <h2 class="section-header">Moving in with Watson</h2>
+                                    <p><a href="#post-38">Located right in between the East Village and NYU, we'll be in a brand new twelve story glass and steel building. The new space is encircled by floor to ceiling windows, so there is no question of being relegated to a dark corner. Read more...</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="ibm-columns" id="ibm-lead-2">
-                            <div class="ibm-col-1-1">
+                            <div class="ibm-col-1-1">                                
                                 <div class="ibm-col-6-3 feature-box">
-                                    <h2 class="section-header">Moving in with Watson</h2>
-                                    <p><a href="#post-38">Located right in between the East Village and NYU, we'll be in a brand new twelve story glass and steel building. The new space is encircled by floor to ceiling windows, so there is no question of being relegated to a dark corner.</a></p>
+                                    <h2 class="section-header">The Story of Our Lab</h2>
+                                    <p><a href="#post-25">We started as a single pilot team in 2011, and became the Design Lab in 2012. In 2013 we grew to 24 teams with 160 people; this year we are expanding globally with three new Labs in Tokyo, London, and Bangalore. We're here to share our experiences with you&#151the successes, the failures, and the lessons we learn along the way. Read more...</a></p>
                                 </div>
                             </div>
                         </div>
+                       
                         <div class="ibm-columns" id="ibm-lead-3">
                             <div class="ibm-col-1-1">
                                 <div class="ibm-col-6-3 feature-box">
                                     <h2 class="section-header">Building a Lab in Tokyo</h2>
-                                    <p><a href="#post-21">Carving out a space for a Marketing Experience Lab in a well established IBM facility is no small feat. This is especially true if you don’t speak the language, are unfamiliar with IBM outside of our rather unusual Lab setting, and have the added stress of not knowing where you are going to stay for the next six months. </a></p>
+                                    <p><a href="#post-21">Carving out a space for a Marketing Experience Lab in a well established IBM facility is no small feat. This is especially true if you don’t speak the language, are unfamiliar with IBM outside of our rather unusual Lab setting, and have the added stress of not knowing where you are going to stay for the next six months. Read more...</a></p>
                                 </div>
                             </div>
                         </div>
