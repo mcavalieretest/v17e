@@ -51,10 +51,8 @@
     this.browserDetect();
     this.initDimensions();
     this.initEvents();
+    this.initMisc();
 
-    //Temporary
-    this.prevButton.show();
-    this.nextButton.show();
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
@@ -80,6 +78,12 @@
       this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
     },
 
+    initMisc: function() {
+      this.pages = this.element.find("[role=\"option\"]");
+      this.currentPage = 0;
+      this.toggleArrowVisibility();
+    },
+
     browserDetect: function() {
       this.useTransitions = Modernizr.csstransforms3d;
 
@@ -93,27 +97,73 @@
     },
 
     next: function() {
-      var currentLeft = this.getCurrentSlidePos(),
+      var self = this,
+          currentLeft = this.getCurrentSlidePos(),
           newLeft     = currentLeft - this.panelWidth;
 
+      var complete = function() {
+        console.warn('currentPage: '+self.currentPage);
+      };
+
+      this.currentPage++;
+      self.toggleArrowVisibility();
+
       if (this.useTransitions) {
+        var eventName = IBM.Common.Util.transitionEndEventName();
+        this.scrollContainer.one(eventName, complete);
         this.scrollContainer.css({"left": newLeft});
       } else {
-        this.scrollContainer.animate({"left": newLeft}, 1000);
+        this.scrollContainer.animate({"left": newLeft}, 1000, complete);
       }
-    
     },
 
     prev: function() {
-      var currentLeft = this.getCurrentSlidePos(),
+      var self = this,
+          currentLeft = this.getCurrentSlidePos(),
           newLeft     = currentLeft + this.panelWidth;
       
+      var complete = function() {
+        console.warn('currentPage: '+self.currentPage);
+      };
+
+      this.currentPage--;
+      self.toggleArrowVisibility();
+
       if (this.useTransitions) {
+        var eventName = IBM.Common.Util.transitionEndEventName();
+        this.scrollContainer.one(eventName, complete);
         this.scrollContainer.css({"left": newLeft});
       } else {
-        this.scrollContainer.animate({"left": newLeft}, 1000);
+        this.scrollContainer.animate({"left": newLeft}, 1000, complete);
       }
-      
+    },
+
+    toggleArrowVisibility: function() {
+      console.warn('toggleArrowVisibility');
+      if (this.hasPrevPages()) {
+        console.warn('showing');
+        this.prevButton.show();
+      } else {
+        console.warn(this.prevButton);
+        console.warn('hiding');
+        this.prevButton.hide();
+        console.warn(this.prevButton);
+      }
+
+      if (this.hasNextPages()) {
+        this.nextButton.show();
+      } else {
+        this.nextButton.hide();
+      }
+    },
+
+    hasPrevPages: function() {
+      console.warn('hasPrevPages: '+ (this.currentPage > 0));
+      return (this.currentPage > 0);
+    },
+
+    hasNextPages: function() {
+      return (this.currentPage < this.pages.length - 1);
     }
   });
 
