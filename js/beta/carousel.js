@@ -55,7 +55,6 @@
     this.initDimensions();
     this.initEvents();
     this.initMisc();
-
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
@@ -71,6 +70,7 @@
       this.nextButton.on("click", function(e) {
         e.preventDefault();
         e.stopPropagation();
+
         self.next();
       });
 
@@ -81,12 +81,16 @@
         var index = self.paginationLinks.index(e.target);
         self.goToPage(index);
       });
+
+      $(window).resize(function() {
+        self.refreshPanelDimensions();
+      });
     },
 
     initDimensions: function() {
       this.scrollContainer.css("left", "0px");
 
-      this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+      this.refreshPanelDimensions();
     },
 
     initMisc: function() {
@@ -116,13 +120,17 @@
           .addClass(this.config.activePageClass);
     },
 
+    refreshPanelDimensions: function() {
+      this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+    },
+
     goToPage: function(index) {
       var self = this,
           newLeft;
 
       this.currentPage = index;
-      self.toggleArrowVisibility();
-      self.refreshPagination();
+      this.toggleArrowVisibility();
+      this.refreshPagination();
 
       newLeft = -(this.panelWidth * index);
 
