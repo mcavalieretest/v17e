@@ -39,17 +39,22 @@
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
       panelContainerSelector:  ".ibm-columns",
+      pagesContainerSelector: ".ibm-ribbon-pane",
       paginationContainerSelector: ".ibm-ribbon-nav",
       activePageClass: "ibm-active"
     };
 
     // Save the important elements
+    // TODO - get these to traverse from the individual element using $(this.element).find().
     this.config  = $.extend({}, defaults, options);
     this.element = $(this.config.selector);
     this.prevButton = $(this.config.prevButtonSelector);
     this.nextButton = $(this.config.nextButtonSelector);
     this.scrollContainer = $(this.config.scrollContainerSelector);
+    this.pagesContainer = $(this.config.pagesContainerSelector);
     this.paginationContainer = $(this.config.paginationContainerSelector);
+    this.pages = this.element.find("[role=\"option\"]");
+    this.paginationLinks = this.paginationContainer.children();
 
     this.browserDetect();
     this.initDimensions();
@@ -94,8 +99,6 @@
     },
 
     initMisc: function() {
-      this.pages = this.element.find("[role=\"option\"]");
-      this.paginationLinks = this.paginationContainer.children();
       this.currentPage = 0;
       this.toggleArrowVisibility();
       this.refreshPagination();
@@ -122,6 +125,13 @@
 
     refreshPanelDimensions: function() {
       this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+
+      var heights = this.pages.map(function(i, el) { 
+            return $(el).height(); 
+          }),
+          maxHeight = Math.max.apply(null, heights);
+
+      this.pagesContainer.height(maxHeight);
     },
 
     goToPage: function(index) {
