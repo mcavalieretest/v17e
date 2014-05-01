@@ -399,7 +399,7 @@ sites/
 }
 
 .ibm-space-adjust {
-  padding-bottom: 25px !important;
+  padding: 0 0 25px 0 !important;
   cursor: pointer;
 }
 
