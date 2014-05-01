@@ -53,7 +53,7 @@
     this.scrollContainer = $(this.config.scrollContainerSelector);
     this.pagesContainer = $(this.config.pagesContainerSelector);
     this.paginationContainer = $(this.config.paginationContainerSelector);
-    this.pages = this.element.find("[role=\"option\"]");
+    this.pages = this.scrollContainer.children();
     this.paginationLinks = this.paginationContainer.children();
 
     this.browserDetect();
@@ -142,7 +142,8 @@
       this.toggleArrowVisibility();
       this.refreshPagination();
 
-      newLeft = -(this.panelWidth * index);
+      // Note the 20 pixel offset to acommodate the margin on ibm-col-* items.
+      newLeft = -((this.panelWidth+20) * index);
 
       var complete = function() {
         console.warn('currentPage: '+self.currentPage);
