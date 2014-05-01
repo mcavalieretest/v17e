@@ -407,8 +407,8 @@ sites/
   padding: 5px 0;
 }
 
-.ibm-space-adjust p {
-  content: none;
+li:before, .ibm-bullet:before {
+  content: none !important;
 }
 
 .ibm-space-adjust a {
