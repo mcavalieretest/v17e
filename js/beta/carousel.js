@@ -73,6 +73,14 @@
         e.stopPropagation();
         self.next();
       });
+
+      this.paginationContainer.on("click", "a", function(e) {        
+        e.preventDefault();
+        e.stopPropagation();
+
+        var index = self.paginationLinks.index(e.target);
+        self.goToPage(index);
+      });
     },
 
     initDimensions: function() {
@@ -108,18 +116,19 @@
           .addClass(this.config.activePageClass);
     },
 
-    next: function() {
+    goToPage: function(index) {
       var self = this,
-          currentLeft = this.getCurrentSlidePos(),
-          newLeft     = currentLeft - this.panelWidth;
+          newLeft;
+
+      this.currentPage = index;
+      self.toggleArrowVisibility();
+      self.refreshPagination();
+
+      newLeft = -(this.panelWidth * index);
 
       var complete = function() {
         console.warn('currentPage: '+self.currentPage);
       };
-
-      this.currentPage++;
-      self.toggleArrowVisibility();
-      self.refreshPagination();
 
       if (this.useTransitions) {
         var eventName = IBM.Common.Util.transitionEndEventName();
@@ -128,40 +137,21 @@
       } else {
         this.scrollContainer.animate({"left": newLeft}, 1000, complete);
       }
+    },
+
+    next: function() {
+      this.goToPage(this.currentPage+1);
     },
 
     prev: function() {
-      var self = this,
-          currentLeft = this.getCurrentSlidePos(),
-          newLeft     = currentLeft + this.panelWidth;
-      
-      var complete = function() {
-        console.warn('currentPage: '+self.currentPage);
-      };
-
-      this.currentPage--;
-      self.toggleArrowVisibility();
-      self.refreshPagination();
-
-      if (this.useTransitions) {
-        var eventName = IBM.Common.Util.transitionEndEventName();
-        this.scrollContainer.one(eventName, complete);
-        this.scrollContainer.css({"left": newLeft});
-      } else {
-        this.scrollContainer.animate({"left": newLeft}, 1000, complete);
-      }
+      this.goToPage(this.currentPage-1);
     },
 
     toggleArrowVisibility: function() {
-      console.warn('toggleArrowVisibility');
       if (this.hasPrevPages()) {
-        console.warn('showing');
         this.prevButton.show();
       } else {
-        console.warn(this.prevButton);
-        console.warn('hiding');
         this.prevButton.hide();
-        console.warn(this.prevButton);
       }
 
       if (this.hasNextPages()) {
@@ -172,7 +162,6 @@
     },
 
     hasPrevPages: function() {
-      console.warn('hasPrevPages: '+ (this.currentPage > 0));
       return (this.currentPage > 0);
     },
 
