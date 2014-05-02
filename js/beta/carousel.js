@@ -44,6 +44,7 @@
 
   IBM.Common.Widgets.Carousel = function(element_or_selector, options) {
     var defaults = {
+      arrows: false,
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
@@ -76,11 +77,13 @@
       if (!this.bodyContainer.find(this.config.pagesContainerSelector).length) {
         this.bodyContainer.wrapInner('<div class="ibm-ribbon-pane"><div class="ibm-ribbon-section"></div></div>');
       }
-      if (!this.bodyContainer.find(this.config.prevButtonSelector).length) {
-        this.bodyContainer.prepend('<a class="ibm-ribbon-prev" role="button" href="#" title="Previous">Previous</a>');
-      }
-      if (!this.bodyContainer.find(this.config.nextButtonSelector).length) {
-        this.bodyContainer.append('<a class="ibm-ribbon-next"  role="button" href="#" title="Next">Next</a>');
+      if (this.config.arrows) {
+        if (!this.bodyContainer.find(this.config.prevButtonSelector).length) {
+          this.bodyContainer.prepend('<a class="ibm-ribbon-prev" role="button" href="#" title="Previous">Previous</a>');
+        }
+        if (!this.bodyContainer.find(this.config.nextButtonSelector).length) {
+          this.bodyContainer.append('<a class="ibm-ribbon-next"  role="button" href="#" title="Next">Next</a>');
+        }
       }
 
       this.scrollContainer = this.element.find(this.config.scrollContainerSelector);
@@ -96,28 +99,33 @@
         this.bodyContainer.append(html);
       }
 
-      this.prevButton = this.element.find(this.config.prevButtonSelector);
-      this.nextButton = this.element.find(this.config.nextButtonSelector);
-      this.pagesContainer = $(this.config.pagesContainerSelector);
-      this.paginationContainer = $(this.config.paginationContainerSelector);
+      if (this.config.arrows) {
+        this.prevButton = this.element.find(this.config.prevButtonSelector);
+        this.nextButton = this.element.find(this.config.nextButtonSelector);
+      }
+
+      this.pagesContainer = this.element.find(this.config.pagesContainerSelector);
+      this.paginationContainer = this.element.find(this.config.paginationContainerSelector);
       this.paginationLinks = this.paginationContainer.children();      
     },
 
     initEvents: function() {
       var self = this;
 
-      this.prevButton.on("click", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        self.prev();
-      });
+      if (this.config.arrows) {
+        this.prevButton.on("click", function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          self.prev();
+        });
 
-      this.nextButton.on("click", function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+        this.nextButton.on("click", function(e) {
+          e.preventDefault();
+          e.stopPropagation();
 
-        self.next();
-      });
+          self.next();
+        });
+      }
 
       this.paginationContainer.on("click", "a", function(e) {        
         e.preventDefault();
@@ -153,11 +161,10 @@
     },
 
     getMainElement: function(element_or_selector) {
-      console.warn('getMainElement()');
       if (element_or_selector instanceof jQuery) {
         return element_or_selector;
       }
-      if (element_or_selector instanceof String) {
+      if (typeof element_or_selector === "string") {
         return $(element_or_selector);
       }
         
@@ -220,6 +227,10 @@
     },
 
     toggleArrowVisibility: function() {
+      if (!this.config.arrows) {
+        return;
+      }
+
       if (this.hasPrevPages()) {
         this.prevButton.show();
       } else {
@@ -243,7 +254,22 @@
   });
 
   $(function() {
-    window.carousel = new IBM.Common.Widgets.Carousel($("#my-carousel"));
+
+    if ($("#my-carousel").length) {
+      window.carousel = new IBM.Common.Widgets.Carousel("#my-carousel", {
+        arrows: true
+      })
+    } else {
+      window.carousels = [];
+      $(".ibm-carousel").each(function(i, el) {
+        window.carousels.push(new IBM.Common.Widgets.Carousel($(el)))
+      });      
+    }
+
+
+
+
+    
   });
 })(jQuery, CHICKENFEED);
 
