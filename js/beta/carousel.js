@@ -42,7 +42,7 @@
     return finalEventName;
   };    
 
-  IBM.Common.Widgets.Carousel = function(options) {
+  IBM.Common.Widgets.Carousel = function(element_or_selector, options) {
     var defaults = {
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
@@ -57,8 +57,7 @@
     // Save the important elements
     // TODO - get these to traverse from the individual element using $(this.element).find().
     this.config  = $.extend({}, defaults, options);
-    this.element = $(this.config.selector);
-
+    this.element = this.getMainElement(element_or_selector);
 
     this.browserDetect();
     this.initHtml();
@@ -153,6 +152,19 @@
       }
     },
 
+    getMainElement: function(element_or_selector) {
+      console.warn('getMainElement()');
+      if (element_or_selector instanceof jQuery) {
+        return element_or_selector;
+      }
+      if (element_or_selector instanceof String) {
+        return $(element_or_selector);
+      }
+        
+      throw "Carousel constructor must be initialized with a jquery element or selector."
+      
+    },
+
     getCurrentSlidePos: function() {
       return parseInt(this.scrollContainer.css("left").replace("px", ""));
     },
@@ -231,9 +243,7 @@
   });
 
   $(function() {
-    window.carousel = new IBM.Common.Widgets.Carousel({
-      selector: "#my-carousel"
-    });
+    window.carousel = new IBM.Common.Widgets.Carousel($("#my-carousel"));
   });
 })(jQuery, CHICKENFEED);
 
