@@ -69,10 +69,10 @@
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
     initHtml: function() {
-      this.prevButton = $(this.config.prevButtonSelector);
-      this.nextButton = $(this.config.nextButtonSelector);
-      this.bodyContainer = this.element.find(this.config.bodyContainerSelector);
+      var self = this;
 
+      this.bodyContainer = this.element.find(this.config.bodyContainerSelector);
+      
       // Inject html if it doesn't exist. For easy backward compatibility
       if (!this.bodyContainer.find(this.config.pagesContainerSelector).length) {
         this.bodyContainer.wrapInner('<div class="ibm-ribbon-pane"><div class="ibm-ribbon-section"></div></div>');
@@ -84,10 +84,23 @@
         this.bodyContainer.append('<a class="ibm-ribbon-next"  role="button" href="#" title="Next">Next</a>');
       }
 
-      this.scrollContainer = $(this.config.scrollContainerSelector);
+      this.scrollContainer = this.element.find(this.config.scrollContainerSelector);
+      this.pages = this.scrollContainer.children();
+
+      if (!this.bodyContainer.find(this.config.paginationContainerSelector).length) {
+        // TODO - dynamically set aria attributes, tabindexes and content here
+        var html = '<div class="ibm-ribbon-nav"  role="toolbar">';
+        $.each(this.pages, function(i, el){
+          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="0">Show carousel 1</a>';
+        });
+        html += '</div>';
+        this.bodyContainer.append(html);
+      }
+
+      this.prevButton = this.element.find(this.config.prevButtonSelector);
+      this.nextButton = this.element.find(this.config.nextButtonSelector);
       this.pagesContainer = $(this.config.pagesContainerSelector);
       this.paginationContainer = $(this.config.paginationContainerSelector);
-      this.pages = this.scrollContainer.children();
       this.paginationLinks = this.paginationContainer.children();      
     },
 
