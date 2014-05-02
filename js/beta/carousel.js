@@ -5,16 +5,7 @@
   IBM.Common.Util.getMaxHeight = function() {
 
   };
-/*
-    templateString : "<div class='ibm-container-body' dojoAttachPoint='ribbonContainer'>" + 
-              "<a class='ibm-ribbon-prev' dojoAttachPoint='scrollLeftButton' role='button' href='#'></a>" +
-              "<div class='ibm-ribbon-pane' dojoAttachPoint='scrollContainer'>" +
-                "<div class='ibm-ribbon-section' dojoAttachPoint='scrollableNode' role='listbox'></div>" +
-              "</div>" +
-              "<a class='ibm-ribbon-next' dojoAttachPoint='scrollRightButton' role='button' href='#'></a>"+
-              "<div class='ibm-ribbon-nav' dojoAttachPoint='navNode' role='toolbar'></div>" +
-           "</div>",
-*/
+
   IBM.Common.Util.transitionEndEventName = function() {
     if (!Modernizr.csstransforms3d) {
       return undefined;
@@ -168,8 +159,7 @@
         return $(element_or_selector);
       }
         
-      throw "Carousel constructor must be initialized with a jquery element or selector."
-      
+      throw "Carousel constructor must be initialized with a jquery element or selector.";
     },
 
     getCurrentSlidePos: function() {

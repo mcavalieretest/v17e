@@ -611,55 +611,55 @@
 
 
 <script>
-dojo.addOnLoad(function() {
-    dojo['require']("ibmweb.ribbon");
-    dojo.addOnLoad(function() {
-    	//normal way of creating ribbon, without using autoAssignItemType or columns options
-        var s = new ibmweb.ribbon();
+// dojo.addOnLoad(function() {
+//     dojo['require']("ibmweb.ribbon");
+//     dojo.addOnLoad(function() {
+//     	//normal way of creating ribbon, without using autoAssignItemType or columns options
+//         var s = new ibmweb.ribbon();
         
-        // create 1 item add it to ribbon, slide will be created automatically
-        var item = s.addItem(new ibmweb.ribbonItem({
-            columns:1,
-            content:"<h2>dyn item 1</h2><p>item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item</p>"
-        }));
+//         // create 1 item add it to ribbon, slide will be created automatically
+//         var item = s.addItem(new ibmweb.ribbonItem({
+//             columns:1,
+//             content:"<h2>dyn item 1</h2><p>item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item</p>"
+//         }));
         
-        // create 3 items add it to second slide, note we have to specify slide index as 1, otherwise
-        // new slide will be created for each item we add.
-        var item = s.addItem(new ibmweb.ribbonItem({
-            columns:3,
-            content:"<h2>dyn item 2.1</h2><p>item item item item item item </p>"
-        }),1);
-        var item = s.addItem(new ibmweb.ribbonItem({
-            columns:3,
-            content:"<h2>dyn item 2.2</h2><p>item item item item item item </p>"
-        }),1);
-        var item = s.addItem(new ibmweb.ribbonItem({
-            columns:3,
-            content:"<h2>dyn item 2.3</h2><p>item item item item item item </p>"
-        }),1);
+//         // create 3 items add it to second slide, note we have to specify slide index as 1, otherwise
+//         // new slide will be created for each item we add.
+//         var item = s.addItem(new ibmweb.ribbonItem({
+//             columns:3,
+//             content:"<h2>dyn item 2.1</h2><p>item item item item item item </p>"
+//         }),1);
+//         var item = s.addItem(new ibmweb.ribbonItem({
+//             columns:3,
+//             content:"<h2>dyn item 2.2</h2><p>item item item item item item </p>"
+//         }),1);
+//         var item = s.addItem(new ibmweb.ribbonItem({
+//             columns:3,
+//             content:"<h2>dyn item 2.3</h2><p>item item item item item item </p>"
+//         }),1);
         
-        // create 5 items by copying existing node using ribbonItemAbstract
-        for( var i=1; i<= 5; i++ ) {
-        	var item = dojo.clone(dojo.query("div.ibm-col-5-1")[5]);
-            s.addItem(new ibmweb.ribbonItemAbstract({srcNodeRef: item}), 2);
-        }
-        s.placeAt('ribbon1');
-        s.startup();
+//         // create 5 items by copying existing node using ribbonItemAbstract
+//         for( var i=1; i<= 5; i++ ) {
+//         	var item = dojo.clone(dojo.query("div.ibm-col-5-1")[5]);
+//             s.addItem(new ibmweb.ribbonItemAbstract({srcNodeRef: item}), 2);
+//         }
+//         s.placeAt('ribbon1');
+//         s.startup();
     
-        // creating ribbon with options autoAssignItemType and column
-        // since we specify columns:5 every 6th item new slide will be created automatically
-        // also as we are using autoAssignItemType:true, no need to specify type, it will be assigned automatically
-        var s = new ibmweb.ribbon();
+//         // creating ribbon with options autoAssignItemType and column
+//         // since we specify columns:5 every 6th item new slide will be created automatically
+//         // also as we are using autoAssignItemType:true, no need to specify type, it will be assigned automatically
+//         var s = new ibmweb.ribbon();
         
-        for( var i=1; i<= 15; i++ ) {
-            var item = s.addItem(new ibmweb.ribbonItem({content:"<h2>dyn item " + i + "</h2><p>Dynamic item item item item item </p>"}));
-        }
+//         for( var i=1; i<= 15; i++ ) {
+//             var item = s.addItem(new ibmweb.ribbonItem({content:"<h2>dyn item " + i + "</h2><p>Dynamic item item item item item </p>"}));
+//         }
         
         
-        s.placeAt('ribbon2');
-        s.startup();
-    });
-});
+//         s.placeAt('ribbon2');
+//         s.startup();
+//     });
+// });
 </script>
 
 <!--  for dynamic creation this container has to be provided "by hand" by an outher shell widget! -->
