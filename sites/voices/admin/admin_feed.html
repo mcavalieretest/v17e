@@ -27,7 +27,7 @@
 
         <!-- Please ensure appropriate meta tag values are aligned with the standards -->
 
-        <title>Voices Admin: Search</title>
+        <title>Voices Admin: Feed</title>
 
         <link rel="SHORTCUT ICON" href="https://www-304.ibm.com/social/aggregator/static/external/86/misc/favicon.ico">
         <!-- Please ensure appropriate meta tag values are aligned with the standards -->
@@ -74,11 +74,11 @@
             <!-- MASTHEAD_END -->
 
             <!-- LEADSPACE_BEGIN -->
-            <div id="ibm-leadspace-head" class="ibm-alternate">
+            <div id="ibm-leadspace-head">
                 <div id="ibm-leadspace-body">
                     <div class="ibm-columns">
-                        <div class="ibm-col-1-1">
-                            <p>Cloud Admin</p>
+                        <div class="ibm-col-6-4">
+                            <h1 class="ibm_cci_clientTitles"><img src="../i/admin_voicesLeadspaceLogo.png" alt="IBM Voices Logo" width="177" height="39">Cloud Admin</h1>
                         </div>
                     </div>
                 </div>
@@ -86,6 +86,15 @@
             <!-- LEADSPACE_END -->
 
             <!-- CONTENT_NAV_BEGIN -->
+            <!-- CONTENT_NAV_BEGIN -->
+            <div id="ibm-content-nav">
+                <div id="ibm-primary-tabs">
+                    <ul class="ibm-tabs">
+                        <li class="ibm-active"><a href="#">Feed</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- CONTENT_NAV_END -->
 
             <div id="ibm-pcon" class="ibm_cci__ibm-pcon">
@@ -99,18 +108,20 @@
                     <!-- CONTENT_BODY -->
                     <div id="ibm-content-body">
                         <div id="ibm-content-main">
-
-                            <!-- IBM VOICES SEARCH RESULTS DIV (BEGIN)  -->
-                            <div class="ibm-band ibm_cci__ibm-band"> </div>
-                            <!-- IBM VOICES SEARCH RESULTS DIV (END) -->
-
-                            <!-- VOICES LIST/GRID VIEW (START) -->
-                            <div id="ibm_cci-widget-js" class="ibm-columns ibm-sortable ibm_cci-gv__modifier">
-
-                                <!-- JSRENDER TEMPLATE INJECTED HERE -->
-
+                            <!-- <div class="ibm-band ibm_cci__ibm-band"> </div> -->
+                            
+                            <div class="ibm-columns">
+                                <div class="ibm-col-6-2">
+                                <!-- add class to the p tag for clicked state ibm_cci-addnewAccClicked -->
+                                    <p class="ibm_cci-addnewAcc">
+                                    <img src="../i/addNewAcc.png" alt="add new account plus sign" width="25" height="25" />
+                                    <!-- <span>+</span> -->
+                                    <a href="#">Add new accounts</a>
+                                    </p>        
+                                </div> 
                             </div>
-                            <!-- VOICES LIST/GRID VIEW (END) -->
+                            <div class="ibm-band ibm_cci__ibm-band"> </div>
+
 
                         </div>
                         <!-- CONTENT_BODY_END -->
