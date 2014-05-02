@@ -1,6 +1,5 @@
 #ibm-top .ibm-carousel {
-  &.ibm-carousel-css-transitions {
-    
+  &.ibm-carousel-css-transitions {    
     .ibm-ribbon-section {
       @include transition(all 0.5s);  
     }
@@ -11,19 +10,15 @@
   }
 
   .ibm-ribbon-section {
-/*     margin: 0 !important; */
-
     .ibm-columns {
       float: left;
       clear: none;
       width: auto;
-/*       padding: 0 !important; */
-/* 
-      [class*="ibm-col-"] {
-        margin: 0;
-      } */
     }
   }
 
 }
 
+#ibm-top .ibm-container.ibm-carousel .ibm-ribbon-section .ibm-columns {
+  padding: 0 10px; 
+}

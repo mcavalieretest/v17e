@@ -9261,14 +9261,10 @@ a.ibm-thumbnail-module h3 {
   transition: all 0.5s; }
 #ibm-top .ibm-carousel .ibm-container-body {
   position: relative; }
-#ibm-top .ibm-carousel .ibm-ribbon-section {
-  /*     margin: 0 !important; */ }
-  #ibm-top .ibm-carousel .ibm-ribbon-section .ibm-columns {
-    float: left;
-    clear: none;
-    width: auto;
-    /*       padding: 0 !important; */
-    /* 
-          [class*="ibm-col-"] {
-            margin: 0;
-          } */ }
+#ibm-top .ibm-carousel .ibm-ribbon-section .ibm-columns {
+  float: left;
+  clear: none;
+  width: auto; }
+
+#ibm-top .ibm-container.ibm-carousel .ibm-ribbon-section .ibm-columns {
+  padding: 0 10px; }
