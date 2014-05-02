@@ -5,7 +5,16 @@
   IBM.Common.Util.getMaxHeight = function() {
 
   };
-
+/*
+    templateString : "<div class='ibm-container-body' dojoAttachPoint='ribbonContainer'>" + 
+              "<a class='ibm-ribbon-prev' dojoAttachPoint='scrollLeftButton' role='button' href='#'></a>" +
+              "<div class='ibm-ribbon-pane' dojoAttachPoint='scrollContainer'>" +
+                "<div class='ibm-ribbon-section' dojoAttachPoint='scrollableNode' role='listbox'></div>" +
+              "</div>" +
+              "<a class='ibm-ribbon-next' dojoAttachPoint='scrollRightButton' role='button' href='#'></a>"+
+              "<div class='ibm-ribbon-nav' dojoAttachPoint='navNode' role='toolbar'></div>" +
+           "</div>",
+*/
   IBM.Common.Util.transitionEndEventName = function() {
     if (!Modernizr.csstransforms3d) {
       return undefined;
@@ -38,6 +47,7 @@
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
+      bodyContainerSelector: ".ibm-container-body",
       panelContainerSelector:  ".ibm-columns",
       pagesContainerSelector: ".ibm-ribbon-pane",
       paginationContainerSelector: ".ibm-ribbon-nav",
@@ -48,21 +58,39 @@
     // TODO - get these to traverse from the individual element using $(this.element).find().
     this.config  = $.extend({}, defaults, options);
     this.element = $(this.config.selector);
-    this.prevButton = $(this.config.prevButtonSelector);
-    this.nextButton = $(this.config.nextButtonSelector);
-    this.scrollContainer = $(this.config.scrollContainerSelector);
-    this.pagesContainer = $(this.config.pagesContainerSelector);
-    this.paginationContainer = $(this.config.paginationContainerSelector);
-    this.pages = this.scrollContainer.children();
-    this.paginationLinks = this.paginationContainer.children();
+
 
     this.browserDetect();
+    this.initHtml();
     this.initDimensions();
     this.initEvents();
     this.initMisc();
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
+    initHtml: function() {
+      this.prevButton = $(this.config.prevButtonSelector);
+      this.nextButton = $(this.config.nextButtonSelector);
+      this.bodyContainer = this.element.find(this.config.bodyContainerSelector);
+
+      // Inject html if it doesn't exist. For easy backward compatibility
+      if (!this.bodyContainer.find(this.config.pagesContainerSelector).length) {
+        this.bodyContainer.wrapInner('<div class="ibm-ribbon-pane"><div class="ibm-ribbon-section"></div></div>');
+      }
+      if (!this.bodyContainer.find(this.config.prevButtonSelector).length) {
+        this.bodyContainer.prepend('<a class="ibm-ribbon-prev" role="button" href="#" title="Previous">Previous</a>');
+      }
+      if (!this.bodyContainer.find(this.config.nextButtonSelector).length) {
+        this.bodyContainer.append('<a class="ibm-ribbon-next"  role="button" href="#" title="Next">Next</a>');
+      }
+
+      this.scrollContainer = $(this.config.scrollContainerSelector);
+      this.pagesContainer = $(this.config.pagesContainerSelector);
+      this.paginationContainer = $(this.config.paginationContainerSelector);
+      this.pages = this.scrollContainer.children();
+      this.paginationLinks = this.paginationContainer.children();      
+    },
+
     initEvents: function() {
       var self = this;
 
