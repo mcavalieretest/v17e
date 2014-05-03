@@ -1,0 +1,222 @@
+
+/* LOGIN PAGE FORM (BEGIN) */
+#{$admin-login} {
+	// width:inherit;
+    form input.ibm_cci_loginField  {
+    	width:330px;
+    	height:40px;
+    	font-size:13px;
+    	font-family:$default-font-family;
+    	font-weight: normal;
+    	// padding-left: 10px;
+    	padding-right:30px;
+        margin:20px 0 0 14px;
+    	text-indent: 10px;
+        -webkit-box-shadow: $search--field--shadow;
+        -moz-box-shadow: $search--field--shadow;
+        box-shadow: $search--field--shadow;
+        border: 1px solid #DDD;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        color:#787878;        
+    }
+    form input.ibm_cci_loginButton{
+        padding: 10px 10px;
+        font-size: 17px;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        background-color: #ef4e38;
+        width: 150px;
+        margin-top: 40px;
+        margin-left: 120px;
+        font-family: "HelveticaNeue-Light" Helvetica;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+    }
+
+    form input.ibm_cci_loginButton:hover, form input.ibm_cci_loginButton:focus{
+        background-color: #868686;
+    }
+}
+/* LOGIN PAGE FORM (END) */
+
+/* ADD NEW ACCOUNT BUTTON (BEGIN) */ 
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc, p.ibm_cci-submitButt {
+    background-color:#f04e37;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    width: 195px;
+    height:40px;
+
+    img {
+        float:left;
+        margin:11px;
+    }
+
+    a {
+        line-height: 47px;
+        display: inline-block;
+        float:right;
+        padding-right: 10px;
+        text-decoration: none;
+        text-shadow: none;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        cursor: pointer;
+        // transition: color 0.3s;
+        // -webkit-transition: color 0.3s;
+        // -moz-transition: color 0.3s;              
+    }
+     
+} 
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc.ibm_cci-addnewAccClicked{
+    background-color:#cdcdcd;
+}
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc:hover, p.ibm_cci-submitButt:hover{
+    background-color:#cdcdcd;
+}
+.ibm_cci_marginTop {
+    margin-top:20px;
+}
+
+#ibm-pcon li.ibm_cci_addAccRadio {
+    display:inline;
+    float:left;
+    padding: 0 10px 0 0;
+    
+    label {
+        font-size:12px;
+        font-family:$default-font-family;
+        vertical-align: initial;
+        color:#666666;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        display: none;
+    }
+    input[type="radio"] + label span, input[type="checkbox"] + label span{
+        display:inline-block;
+        background: url("../../../i/spriteRadioBox.png") left top no-repeat;   
+        margin-right: 8px;
+        width:14px;
+        height:14px;
+        cursor:pointer;
+        vertical-align: text-top;
+
+    }
+    input[type="checkbox"] + label span{
+        background: url("../../../i/spriteCheckBox.png") left top no-repeat;   
+        width:16px;
+        height:16px;
+    }
+
+    input[type="checkbox"]:checked + label span{
+        background: url("../../../i/spriteCheckBox.png") -16px top no-repeat;
+    }
+
+    input[type="radio"]:checked + label span{
+        background: url("../../../i/spriteRadioBox.png") -14px top no-repeat;
+    }
+}
+body li:before{
+    content:none;
+}
+
+form.ibm_cci-addClassForm{
+    float:left;
+}
+
+#ibm-content-main .ibm-col-6-5.ibm_cci_marginTop {
+    textarea.ibm_cci-textArea {
+        border: 1px solid #c3c3c3;
+        overflow:auto;
+        resize:none;
+        padding:10px;
+        color: #333;
+        font-size: 14px;
+        -webkit-box-shadow: $search--field--shadow;
+        -moz-box-shadow: $search--field--shadow;
+        box-shadow: $search--field--shadow;
+        border: 1px solid #c3c3c3;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;  
+        width:678px;
+        height:192px;
+    }
+
+    a.ibm_cci_closeAddAcc {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 55px;
+        margin-top: 0px;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.5s;
+        -webkit-transition: opacity 0.5s;
+    }
+
+    a.ibm_cci_closeAddAcc:hover{
+        opacity: 0.4;
+    }
+}    
+
+
+form input.ibm_cci_classField {
+    width:130px;
+    height:20px;
+    font-size:12px;
+    font-family:$default-font-family;
+    font-weight: normal;
+    text-indent: 5px;
+    -webkit-box-shadow: $search--field--shadow;
+    -moz-box-shadow: $search--field--shadow;
+    box-shadow: $search--field--shadow;
+    border: 1px solid #c3c3c3;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    color:#787878; 
+    margin-left: 20px;
+}
+
+#ibm-pcon #ibm-content p.ibm_cci-submitButt {    
+    width: 140px;
+    height: 30px;
+    display: inline-block;
+    float:right;
+    margin-right:80px;
+    -webkit-margin-after: initial;
+    margin-right: -moz-calc(80px);
+    a {
+        line-height: 35px;
+        float:left;
+        padding: 0 45px;
+        text-align:center;
+    }
+}
+form input.ibm_cci_classFieldButt{
+        font-size: 0px;
+        color: #fff;
+        text-decoration: none;
+        line-height: none;
+        border: none;
+        background:#868686 url("../../../i/addNewClass.png") no-repeat 3px 2px;
+        background-color: #868686;
+        width: 24px;
+        height:24px;
+        cursor: pointer;
+        margin:0;
+        vertical-align: bottom;
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+        -moz-transition: background-color 0.5s; 
+}
+
+form input.ibm_cci_classFieldButt:hover {
+    background-color: #cdcdcd;    
+}
+/* ADD NEW ACCOUNT BUTTON (END) */ 
