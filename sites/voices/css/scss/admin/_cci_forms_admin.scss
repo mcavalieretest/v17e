@@ -99,7 +99,7 @@
     }
     input[type="radio"] + label span, input[type="checkbox"] + label span{
         display:inline-block;
-        background: url("../../../i/spriteRadioBox.png") left top no-repeat;   
+        background: url("../i/spriteRadioBox.png") left top no-repeat;   
         margin-right: 8px;
         width:14px;
         height:14px;
@@ -108,17 +108,17 @@
 
     }
     input[type="checkbox"] + label span{
-        background: url("../../../i/spriteCheckBox.png") left top no-repeat;   
+        background: url("../i/spriteCheckBox.png") left top no-repeat;   
         width:16px;
         height:16px;
     }
 
     input[type="checkbox"]:checked + label span{
-        background: url("../../../i/spriteCheckBox.png") -16px top no-repeat;
+        background: url("../i/spriteCheckBox.png") -16px top no-repeat;
     }
 
     input[type="radio"]:checked + label span{
-        background: url("../../../i/spriteRadioBox.png") -14px top no-repeat;
+        background: url("../i/spriteRadioBox.png") -14px top no-repeat;
     }
 }
 body li:before{
@@ -204,7 +204,7 @@ form input.ibm_cci_classFieldButt{
         text-decoration: none;
         line-height: none;
         border: none;
-        background:#868686 url("../../../i/addNewClass.png") no-repeat 3px 2px;
+        background:#868686 url("../i/addNewClass.png") no-repeat 3px 2px;
         background-color: #868686;
         width: 24px;
         height:24px;
