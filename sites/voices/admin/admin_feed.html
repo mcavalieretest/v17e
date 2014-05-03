@@ -107,9 +107,7 @@
                     <!-- TITLE_END -->
                     <!-- CONTENT_BODY -->
                     <div id="ibm-content-body">
-                        <div id="ibm-content-main">
-                            <!-- <div class="ibm-band ibm_cci__ibm-band"> </div> -->
-                            
+                        <div id="ibm-content-main">                            
                             <div class="ibm-columns">
                                 <div class="ibm-col-6-2">
                                 <!-- add class to the p tag for clicked state ibm_cci-addnewAccClicked -->
@@ -120,7 +118,67 @@
                                     </p>        
                                 </div> 
                             </div>
-                            <div class="ibm-band ibm_cci__ibm-band"> </div>
+
+                            <div class="ibm-band ibm_cci__ibm-band" style="display: none">
+                                <div class="ibm-columns"> 
+                                    <div class="ibm-col-6-1 ibm_cci_marginTop">
+                                        <p class="ibm_cci-accNameLabels">Enter account names separated by commas <br/> <span> Limit: 50</span></p>
+                                    </div>
+                                    <div class="ibm-col-6-5 ibm_cci_marginTop">
+                                        <textarea class="ibm_cci-textArea" name="account names" autofocus rows="10" cols="80" placeholder="Enter account names separated by commas"></textarea>
+                                        <a class="ibm_cci_closeAddAcc" href="javascript:void(0);" alt="Click to close"><img src="../i/closeAddAcc.png" alt="Close Add Account Block" width="20" height="20" /></a>
+                                    </div>
+                                    <div class="ibm-col-6-1 ibm_cci_marginTop">
+                                        <p class="ibm_cci-accNameLabels">Select a class</p>
+                                    </div>
+                                    <div class="ibm-col-6-5 ibm_cci_marginTop">
+                                        <ul>
+                                            <li class="ibm_cci_addAccRadio">
+                                                <input type="radio" name="addClassGroup" value="brand" checked="checked"/>
+                                                <label for="addClassGroup"><span></span>Brand</label>
+                                            </li>
+                                            <li class="ibm_cci_addAccRadio">
+                                                <input type="radio" name="addClassGroup" value="individual"/>
+                                                <label for="addClassGroup"><span></span>Individuals</label>
+                                            </li>
+                                            <li class="ibm_cci_addAccRadio">
+                                                <input type="radio" name="addClassGroup" value="competitors" />
+                                                <label for="addClassGroup"><span></span>Competitors</label>
+                                            </li>
+                                        </ul>
+                                        <form action="javascript:void(0);" class="ibm_cci-addClassForm">
+                                            <input name="ibm_cci_classField" id="ibm_cci_classField" tabindex="1" alt="add new class field" type="text" class="ibm_cci_classField"  placeholder="Add a new class"  />
+                                            <input name="ibm_cci_classFieldButt" id="ibm_cci_classFieldButt" tabindex="1" alt="add new class field button" type="button" class="ibm_cci_classFieldButt" value="" />
+                                        </form>
+                                        <p class="ibm_cci-submitButt">
+                                            <a href="#">Submit</a>
+                                        </p>                                                      
+                                    </div>                                    
+                                </div>    
+                            </div>
+
+                            <div class="ibm-columns" style="margin-top: 45px">
+                                <div class="ibm-col-6-3">
+                                     <ul>
+                                        <li class="ibm_cci_addAccRadio">
+                                            <input type="checkbox" name="addClassGroup" value="brand" checked="checked"/>
+                                            <label for="addClassGroup"><span></span>Brand</label>
+                                        </li>
+                                        <li class="ibm_cci_addAccRadio">
+                                            <input type="checkbox" name="addClassGroup" value="individual"/>
+                                            <label for="addClassGroup"><span></span>Individuals</label>
+                                        </li>
+                                        <li class="ibm_cci_addAccRadio">
+                                            <input type="checkbox" name="addClassGroup" value="competitors" />
+                                            <label for="addClassGroup"><span></span>Competitors</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ibm-col-6-1">
+                                    <p>1-20 of 568</p>
+                                </div>
+                                <div class="ibm-col-6-2"></div>
+                            </div>
 
 
                         </div>
