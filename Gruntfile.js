@@ -70,6 +70,26 @@ module.exports = function(grunt) {
       }
     },
 
+    verbosity: {
+      // Default
+      option1: {
+        options: { mode: 'hidden' },
+        tasks: ['sass', 'verbosity']
+      },
+
+      //Output is rewritten on the line to show progress but save space
+      option2: {
+        options: { mode: 'oneline' },
+        tasks: ['']
+      },
+
+      // Output is normal.  Useful for debugging without commenting out the whole block
+      option3: {
+        options: { mode: 'normal' },
+        tasks: ['bless']
+      }
+    },
+
     watch: {
       css: {
         files: 'css/*.scss',
@@ -94,6 +114,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-verbosity');
 
   var taskList = ['concat:'+target];
 
@@ -103,6 +124,8 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', taskList);  //, 'uglify'
+  grunt.registerTask('verbose-mode', ['verbosity:option1','verbosity:option2','verbosity:option3']);  //, 'verbosity'
+  grunt.registerTask('build-css-verbose', ['verbose-mode','sass', 'bless']);  //, 'cleaned up verbose css build, has to be run with --verbose'
   grunt.registerTask('build-css', ['sass', 'bless']);  //, 'sass update'
   grunt.registerTask('watch-css', ['watch']);  //, 'sass watch'
 };
