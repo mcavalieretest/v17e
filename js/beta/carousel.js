@@ -139,6 +139,13 @@
 
     initMisc: function() {
       this.currentPage = 0;
+
+      if (this.config.arrows) {
+        var top = (this.pagesContainer.height() / 2) - (this.prevButton.height() / 2);
+        this.prevButton.css("top", top+"px");
+        this.nextButton.css("top", top+"px");
+      }
+
       this.toggleArrowVisibility();
       this.refreshPagination();
     },
@@ -243,23 +250,5 @@
     }
   });
 
-  $(function() {
-
-    if ($("#my-carousel").length) {
-      window.carousel = new IBM.Common.Widgets.Carousel("#my-carousel", {
-        arrows: true
-      })
-    } else {
-      window.carousels = [];
-      $(".ibm-carousel").each(function(i, el) {
-        window.carousels.push(new IBM.Common.Widgets.Carousel($(el)))
-      });      
-    }
-
-
-
-
-    
-  });
 })(jQuery, CHICKENFEED);
 

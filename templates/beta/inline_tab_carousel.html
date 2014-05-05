@@ -335,5 +335,14 @@
 <div id="ibm-metrics">
 <script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
 </div>
+<script>
+  (function($, IBM) {
+    $(function() {
+      window.carousel = new IBM.Common.Widgets.Carousel("#my-carousel", {
+        arrows: true
+      });
+    });
+  })(jQuery, CHICKENFEED);
+</script>
 </body>
 </html>

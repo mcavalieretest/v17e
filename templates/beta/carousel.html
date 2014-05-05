@@ -819,5 +819,25 @@
 <div id="ibm-metrics">
 
 </div>
+<script type="text/javascript">
+
+
+  (function($, IBM) {
+  	window.carousels = [];
+
+		$(function() {
+      $(".ibm-carousel").each(function(i, el) {
+      	var options = {};
+
+      	if ( $(this).find(".ibm-ribbon-prev").length ) {
+      		options.arrows = true;
+      	}
+
+        window.carousels.push(new IBM.Common.Widgets.Carousel($(el), options));
+      });      
+    });
+  })(jQuery, CHICKENFEED);
+
+</script>
 </body>
 </html>
