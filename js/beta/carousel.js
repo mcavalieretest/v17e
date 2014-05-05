@@ -66,7 +66,7 @@
       
       // Inject html if it doesn't exist. For easy backward compatibility
       if (!this.bodyContainer.find(this.config.pagesContainerSelector).length) {
-        this.bodyContainer.wrapInner('<div class="ibm-ribbon-pane"><div class="ibm-ribbon-section"></div></div>');
+        this.bodyContainer.wrapInner('<div class="ibm-ribbon-pane"><div class="ibm-ribbon-section" role="listbox"></div></div>');
       }
       if (this.config.arrows) {
         if (!this.bodyContainer.find(this.config.prevButtonSelector).length) {
@@ -82,9 +82,17 @@
 
       if (!this.bodyContainer.find(this.config.paginationContainerSelector).length) {
         // TODO - dynamically set aria attributes, tabindexes and content here
-        var html = '<div class="ibm-ribbon-nav"  role="toolbar">';
+        var html = '<div class="ibm-ribbon-nav" role="toolbar">';
         $.each(this.pages, function(i, el){
-          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="0">Show carousel 1</a>';
+          var tabindex;
+
+          if (i == 0) {
+            tabindex = "0";
+          } else {
+            tabindex = "-1";
+          }
+
+          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="'+tabindex+'">Show carousel 1</a>';
         });
         html += '</div>';
         this.bodyContainer.append(html);
@@ -98,6 +106,27 @@
       this.pagesContainer = this.element.find(this.config.pagesContainerSelector);
       this.paginationContainer = this.element.find(this.config.paginationContainerSelector);
       this.paginationLinks = this.paginationContainer.children();      
+      this.panelContainer = this.element.find(this.config.panelContainerSelector);
+
+      $.each(this.pages, function(i, el){
+        var page = $(el);
+
+        page.attr("role", "option");
+
+      });
+
+      this.panelContainer.children("[class*=ibm-col-]").each(function(i, el) {
+        var tabindex;
+
+        if (i == 0) {
+          tabindex = "0";
+        } else {
+          tabindex = "-1";
+        }
+
+        $(el).attr("tabindex", tabindex);
+      });
+
     },
 
     initEvents: function() {
