@@ -4,6 +4,9 @@ $(function() {
 
     // DEFAULT URL HASH (START)
     window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr("id");
+    var pathName = window.location.pathname, 
+        voicesLogo = $("#ibm-leadspace-body h1.ibm_cci--h1__modifyer a");
+
     // DEFAULT URL HASH (END)
 
     // console.log($("#ibm_cci-gototop-js").css("position"));
@@ -21,6 +24,17 @@ $(function() {
             window.location.hash = "#voices-" + value;
         }
     };
+
+    // INDEXLOGO ONCLICK ONCLICK ACTION
+    voicesLogo.on("click", function(e){
+        e.preventDefault();
+        if (pathName === "/index.html") {
+            window.location.href= voicesLogo.attr('href', 'www.ibm.com');
+            // return;
+        } else {
+            window.location.href= voicesLogo.attr('href', 'index.html');
+        }
+    });
 
     // GO TO TOP ONCLICK ACTION
     gotoTop.on("click", function(event){
@@ -110,14 +124,15 @@ $(function() {
         $("form").on("submit", function(event) {
             // /^[a-zA-Z0-9]*$/ : /[^\w\s]/gi;
             var search = $("#ibm-cc-search--field"),
-                regex = /^[a-zA-Z0-9 ]*$/,
+                regex = /^[a-zA-Z0-9]*$/,
                 searchVal = $("#ibm-cc-search--field").val().toLowerCase();
                 searchVal = searchVal.split(","), filterVal = [];
 
                 if(searchVal != '' && searchVal.length != 0 && searchVal[0] != "comma"){
                     for(var i = searchVal.length - 1; i >= 0; i--) {
                         if(regex.test(searchVal[i])){
-                            filterVal[i] = searchVal[i].trim();
+                            // filterVal[i] = searchVal[i].trim();
+                            filterVal[i] = searchVal[i];
                         }else{
                             alertText.addClass('ibm-cci-alert').html('').append('illegal characters in search string'+' : '+searchVal[i]);
                             search.val('').blur();
