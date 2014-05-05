@@ -186,7 +186,7 @@
                             </div>
 
                             <div class="ibm-columns" style="margin-top: 45px; margin-bottom: 25px">
-                                <div class="ibm-col-6-2">
+                                <div class="ibm-col-6-2 ibm_cci-classCheckbox">
                                     <ul>
                                         <li class="ibm_cci_addAccRadio">
                                             <input type="checkbox" name="addClassGroup" value="brand" checked="checked"/>
@@ -222,8 +222,8 @@
                                         <img alt="later" type="button" class="ibm_cci_paginationRightButt" src="../i/spacer.png" />
                                     </p>
                                 </div>
-                                <div class="ibm-col-6-2">
-                                    <form action="javascript:void(0);" style="width: 320px">
+                                <div class="ibm-col-6-2 ibm_cci_feedsearch">
+                                    <form action="javascript:void(0);" style="width: 310px">
                                         <!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label>-->
                                         <input name="ibm-cc-search--field" id="ibm-cc-search--field" tabindex="1" alt="search field" type="text" class="ibm-cc-search--field defaultcolor" placeholder="Enter account name or handle" />
                                         <input type="image" src='../i/ibm_search_icon.png' tabindex="2" alt="search icon" class="ibm-cc-search--icon" name="search button" value="search" />
@@ -231,9 +231,70 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <!-- CONTENT_BODY_END -->
-                    </div>
+                            <div class="ibm-columns ibm_cci-tableView">
+                                <section style="display: table;">
+                                    <header style="display: table-row;">
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader ibm_cci-status">Status</div>
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader">Name</div>
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader">Handle</div>
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader">Class</div>
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader">Last tweet</div>
+                                        <div class="ibm-col-6-1 ibm_cci_tableHeader"></div>
+                                    </header>
+                                    
+                                    <!-- DATA CELL ROW 1 (BEGIN) -->
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">
+                                        <ul>
+                                            <li class="ibm_cci-datacellAvatarCell">
+                                                <img class="ibm_cci-datacellAvatar" src="../i/admin_feed_avatar.jpg" alt="user avatar" width="32" height="32" />
+                                            </li>
+                                            <li class="ibm_cci-datacellAvatarCell">
+                                                <img class="ibm_cci-datacellCheck" src="../i/adminFeed_datacellCheck.png" alt="abstract: check icon" width="32" height="32" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell ibm_cci-datacellName">Heather Fraser</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">@heatherfraser</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">Individual
+                                        <img class="ibm_cci-editIcon" src="../i/adminFeed_datacellEdit.png" alt="abstract: edit icon" width="16" height="16" /> 
+                                    </div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">04/15/2014</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">
+                                        <p class="ibm_cci-deleteButt">
+                                            <a href="#">Delete</a>
+                                        </p>
+                                    </div>
+                                    <!-- DATA CELL ROW 1 (END) -->
+
+                                    <!-- DATA CELL ROW 2 (BEGIN) -->
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">
+                                        <ul>
+                                            <li class="ibm_cci-datacellAvatarCell">
+                                                <img class="ibm_cci-datacellAvatar" src="../i/admin_feed_avatar1.jpg" alt="user avatar" width="32" height="32" />
+                                            </li>
+                                            <li class="ibm_cci-datacellAvatarCell">
+                                                <img class="ibm_cci-datacellEllipse" src="../i/adminFeed_datacellEllipse.png" alt="abstract: ellipse icon" width="32" height="32" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell ibm_cci-datacellName">Simon Porter</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">@SimonlPorter</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">Individual 
+                                        <img class="ibm_cci-editIcon ibm_cci-editIconHidden" src="../i/adminFeed_datacellEdit.png" alt="abstract: edit icon" width="16" height="16" /> 
+                                    </div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">04/15/2014</div>
+                                    <div class="ibm-col-6-1 ibm_cci-datacell">
+                                        <p class="ibm_cci-deleteButt">
+                                            <a href="#">Delete</a>
+                                        </p>
+                                    </div>
+                                    <!-- DATA CELL ROW 2 (END) -->
+
+                                </section>    
+                            </div>                                        
+
+                        </div> <!-- CONTENT_MAIN_END -->  
+                    </div><!-- CONTENT_BODY_END -->
                 </div>
 
             <!-- CONTENT_END -->

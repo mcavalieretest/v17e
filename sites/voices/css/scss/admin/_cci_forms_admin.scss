@@ -45,13 +45,14 @@
 /* LOGIN PAGE FORM (END) */
 
 /* ADD NEW ACCOUNT BUTTON (BEGIN) */ 
-#ibm-pcon #ibm-content p.ibm_cci-addnewAcc, p.ibm_cci-submitButt {
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc, p.ibm_cci-submitButt, p.ibm_cci-deleteButt {
     background-color:#f04e37;
     transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     width: 195px;
     height:40px;
+    cursor:pointer;
 
     img {
         float:left;
@@ -73,15 +74,17 @@
         // -moz-transition: color 0.3s;              
     }
      
-} 
+}
 #ibm-pcon #ibm-content p.ibm_cci-addnewAcc.ibm_cci-addnewAccClicked{
     background-color:#cdcdcd;
 }
 #ibm-pcon #ibm-content p.ibm_cci-addnewAcc:hover, p.ibm_cci-submitButt:hover{
     background-color:#cdcdcd;
 }
-.ibm_cci_marginTop {
+.ibm-col-6-5.ibm_cci_marginTop {
     margin-top:20px;
+    margin-right:0;
+    width:790px;
 }
 
 #ibm-pcon li.ibm_cci_addAccRadio {
@@ -94,6 +97,7 @@
         font-family:$default-font-family;
         vertical-align: initial;
         color:#666666;
+        cursor:pointer;
     }
     input[type="radio"], input[type="checkbox"] {
         display: none;
@@ -131,13 +135,14 @@ form.ibm_cci-addClassForm{
 }
 
 #ibm-content-main .ibm-col-6-5.ibm_cci_marginTop {
-    textarea.ibm_cci-textArea {
+    textarea.ibm_cci-textArea, textarea.ibm_cci-settingstextArea {
         border: 1px solid #c3c3c3;
         overflow:auto;
         resize:none;
         padding:10px;
         color: #333;
         font-size: 14px;
+        font-family: $default-font-family;
         -webkit-box-shadow: $search--field--shadow;
         -moz-box-shadow: $search--field--shadow;
         box-shadow: $search--field--shadow;
@@ -149,10 +154,15 @@ form.ibm_cci-addClassForm{
         height:192px;
     }
 
+    textarea.ibm_cci-settingstextArea{
+        width: 758px;
+        height:132px;
+    }
+
     a.ibm_cci_closeAddAcc {
         display: inline-block;
         vertical-align: top;
-        margin-left: 55px;
+        margin-left: 65px;
         margin-top: 0px;
         cursor: pointer;
         opacity: 1;
@@ -189,15 +199,37 @@ form input.ibm_cci_classField {
     height: 30px;
     display: inline-block;
     float:right;
-    margin-right:80px;
+    margin-right:90px;
     -webkit-margin-after: initial;
-    margin-right: -moz-calc(80px);
+    margin-right: -moz-calc(90px);
     a {
         line-height: 35px;
         float:left;
-        padding: 0 45px;
+        padding: 0 47px;
         text-align:center;
     }
+}
+
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt {    
+    width: 65px;
+    height: 23px;
+    display: inline-block;
+    float:right;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    // margin-right:80px;
+    -webkit-margin-after: initial;
+    margin-top: 10px;    
+    a {
+        line-height: 30px;
+        float:left;
+        padding: 0 15px;
+        text-align:center;
+    }
+}
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt:hover{
+    opacity:1;
 }
 form input.ibm_cci_classFieldButt{
         font-size: 0px;
@@ -205,7 +237,7 @@ form input.ibm_cci_classFieldButt{
         text-decoration: none;
         line-height: none;
         border: none;
-        background:#868686 url("../i/addNewClass.png") no-repeat 3px 2px;
+        background:#868686 url("../i/addNewClass.png") no-repeat 3px 3px;
         background-color: #868686;
         width: 24px;
         height:24px;
@@ -220,6 +252,11 @@ form input.ibm_cci_classFieldButt{
 form input.ibm_cci_classFieldButt:hover {
     background-color: #cdcdcd;    
 }
+
+// .ibm-col-6-2.ibm_cci-classCheckbox{
+//     width:310px;
+//     margin-left:0;
+// }
 
 p.ibm_cci-pagination, p.ibm_cci-prevNext {
     display:inline-block;
@@ -253,8 +290,16 @@ p.ibm_cci-prevNext{
     margin-left: 20px;
     display:inline-table;
 }
+
+.ibm-col-6-2.ibm_cci_feedsearch{
+    width: 310px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    position: relative;
+}
+
 .ibm-cc-search--field{
-    width: 266px;
+    width: 276px;
     height: 25px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -272,11 +317,35 @@ p.ibm_cci-prevNext{
 }
 
 input.ibm-cc-search--icon {
-width: 16px;
-height: 16px;
-position: relative;
-top: 3px;
-left: -30px;
-opacity: 0.5;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    opacity: 1;
+    transition:opacity 0.3s;
+    -webkit-transition: opaicity 0.3s;
 }
+
+input.ibm-cc-search--icon:hover{
+    opacity:0.5;
+}
+
+.ibm-col-6-5 input.ibm_cci-settingsInput  {
+        width:776px;
+        height:40px;
+        font-size:13px;
+        font-family:$default-font-family;
+        font-weight: normal;
+        // padding-left: 10px;
+        text-indent: 10px;
+        -webkit-box-shadow: $search--field--shadow;
+        -moz-box-shadow: $search--field--shadow;
+        box-shadow: $search--field--shadow;
+        border: 1px solid #c3c3c3;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        color:#787878;        
+    }
 /* ADD NEW ACCOUNT BUTTON (END) */ 

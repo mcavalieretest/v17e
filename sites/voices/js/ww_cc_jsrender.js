@@ -26,15 +26,15 @@ $(function() {
     };
 
     // INDEXLOGO ONCLICK ONCLICK ACTION
-    voicesLogo.on("click", function(e){
-        e.preventDefault();
-        if (pathName === "/indexx.html") {
-            return;
-        } else {
-            alert(voicesLogo.attr('href', 'index.html'));
-            window.location.href = voicesLogo.attr('href', 'index.html');
-        }
-    });
+    // voicesLogo.on("click", function(e){
+    //     e.preventDefault();
+    //     if (pathName === "/indexx.html") {
+    //         return;
+    //     } else {
+    //         console.log(voicesLogo.attr('href', 'index.html'));
+    //         window.location.href = voicesLogo.attr('href', 'index.html');
+    //     }
+    // });
 
     // GO TO TOP ONCLICK ACTION
     gotoTop.on("click", function(event){
