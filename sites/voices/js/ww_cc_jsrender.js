@@ -28,11 +28,11 @@ $(function() {
     // INDEXLOGO ONCLICK ONCLICK ACTION
     voicesLogo.on("click", function(e){
         e.preventDefault();
-        if (pathName === "/index.html") {
-            window.location.href= voicesLogo.attr('href', 'www.ibm.com');
-            // return;
+        if (pathName === "/indexx.html") {
+            return;
         } else {
-            window.location.href= voicesLogo.attr('href', 'index.html');
+            alert(voicesLogo.attr('href', 'index.html'));
+            window.location.href = voicesLogo.attr('href', 'index.html');
         }
     });
 
