@@ -24,6 +24,10 @@
         $(window).trigger('resize');
       }
 
+      // $( ".ibm-live-assistance-list " ).on( "change", function() {
+
+      // })
+
       // Show all anim elms now that we're loaded
       $('body').removeClass('loading-anims');
     },

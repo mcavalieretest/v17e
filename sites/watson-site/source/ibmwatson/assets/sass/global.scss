@@ -24,7 +24,7 @@ body {
 }
 
 #ibm-metrics {
-	display: none;
+	// display: none;
 }
 
 #flashcontent {
@@ -121,6 +121,24 @@ body {
 
 .icon-linkedin:before {
 	content: "\e603";
+}
+
+.ibm-live-assistance-list {
+	position: fixed;
+	
+	font-size: 0;
+	right: 22px;
+	bottom: 80px;
+	z-index: 30;
+	li{
+		a {color: #FFF;}
+		a:before {
+			color: #FFF;
+			font-size: 50px;
+		}
+
+	}
+	
 }
 
 /**
@@ -385,14 +403,14 @@ body {
  * footer
  */
 
-#ibm-content ul.ibm-live-assistance-list a{
- 	color: black;
-	font-family: "HelvBoldIBM", Arial, sans-serif;
-	font-size: 1.2em;
- 	}
- 	#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:before {
- 		content: "";
- 		}
+// #ibm-content ul.ibm-live-assistance-list a{
+//  	color: black;
+// 	font-family: "HelvBoldIBM", Arial, sans-serif;
+// 	font-size: 1.2em;
+//  	}
+//  	#ibm-content ul.ibm-live-assistance-list a.ibm-chat-link:before {
+//  		content: "";
+//  		}
 
 
 #watson-footer {
@@ -423,6 +441,15 @@ body {
 			float: left;
 			/*width: 33%;*/
 			padding: 0 10px;
+			.social_links { 
+				li:before {
+					content: "";
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
 			a.icon, a.ibm-call-info, a.ibm-email-link {
 				color: black;
 				font-family: $font-bold;
@@ -442,14 +469,15 @@ body {
 			h6 {
 				margin-top: 10px;
 			}
-			ul li {
-				padding: 6px 0 !important;
-			}
-			.ibm-live-assistance-list {
+
+			ul {
 				font-size: 14px;
 
-				.icon:before {
+				// .icon:before {
 
+				// }
+				li {
+					padding: 6px 0 !important;
 				}
 
 				.ibm-call-info:hover:before, .ibm-email-link:hover:before {
@@ -559,6 +587,10 @@ body {
 	background-image: url(../img/footer/bg-footer-4.jpg);
 }
 
+.advisor #watson-footer {
+	background-image: url(../img/footer/bg-footer-4.jpg);
+}
+
 @media screen and (max-width: 980px) {
 
 	.scene {
@@ -610,7 +642,10 @@ body {
 						color: #000;
 					}
 				}
-				.ibm-live-assistance-list {
+				.social_links {
+					li:before {
+						content: "";
+					}
 					.ibm-call-info:before, .ibm-email-link:before {
 						font-size: 32px;
 					}
@@ -704,6 +739,9 @@ body {
 		background-image: url(../img/footer/bg-footer-4-mobile.jpg);
 	}
 	.watson-work #watson-footer {
+		background-image: url(../img/footer/bg-footer-4-mobile.jpg);
+	}
+	.advisor #watson-footer {
 		background-image: url(../img/footer/bg-footer-4-mobile.jpg);
 	}
 	.watson-developers #watson-footer {

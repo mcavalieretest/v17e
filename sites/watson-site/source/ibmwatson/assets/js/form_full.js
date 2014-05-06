@@ -13,6 +13,7 @@
 
 		var my = this;
 		my.form = $(formSelector);
+		my.isReady = new Array(false, false, false, false);
 
 
 		my.continue_btn = $("input[type=button]", my.form);
@@ -28,12 +29,12 @@
 		my.idea_inputs = $(".desc textarea", my.form);
 		my.terms_check = $(".market input[type=checkbox]", my.form);
 
-
-
 		my.my_details.bind("blur", function(e){ my.validateSection(0)})
 
 		$(my.sections[0]).show();
 		$(my.legends[0]).addClass("current"); 
+
+		$(my.legends[0]).bind("click", function(e){my.sectionSelect(this)});
 
 
 		//show hide optional fields
@@ -42,7 +43,6 @@
 						$(".market #bussiness-model_monetization", my.form ),
 						$(".market #senior_sponsor", my.form )]
 
-		
 		$.each(otherbtns, function(index, val) {
 			 val.bind("change", function(e){
 			 	my.showHiddenField($(this), $(this).val())
@@ -80,6 +80,13 @@
 				}
 	}
 
+	IBM.watson.WatsonFormFull.prototype.sectionSelect = function(item){
+		var newIndex = $.inArray(item, $(this.legends));
+		$(this.sections).hide();
+		$(item).next().show();
+		this.validateSection(newIndex)
+	}
+
 	IBM.watson.WatsonFormFull.prototype.setSections = function(index){
 		var my = this;
 
@@ -105,26 +112,36 @@
 			var phoneRegex = /^[\s()+-]*([0-9][\s()+-]*){6,20}$/;
 			var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+			my.isReady[0] = false;
 
 			if(fname.val().length > 1 && lname.val().length > 1){
 				if(phoneRegex.test(phone.val()) && phone.val().length >= 10){
 					if(emailRegex.test(email.val())){
 						console.log("got here 3")
-						$(my.continue_btn[index]).addClass("enabled");
-						$(my.continue_btn[index]).bind("click", function(e){
-							e.preventDefault();
-							console.log("continue one")
-							$(this).unbind('click');
-							my.my_details.unbind('blur');
-							my.co_inputs.bind("blur", function(e){ my.validateSection(1)})
-							my.co_drop.bind("change", function(e){ my.validateSection(1)})
+						my.isReady[0] = true;
 
-							my.setSections(index)
-						})
 					}
-				}
-				
+				}		
 			} 
+
+			if(my.isReady[0]){
+				$(my.continue_btn[index]).addClass("enabled");
+				$(my.continue_btn[index]).bind("click", function(e){
+					e.preventDefault();							
+					console.log("continue one")
+					$(this).unbind('click');
+
+					my.co_inputs.bind("blur", function(e){ my.validateSection(1)})
+					my.co_drop.bind("change", function(e){ my.validateSection(1)})
+
+					my.setSections(index)
+				})
+				$(my.legends[1]).bind("click", function(e){my.sectionSelect(this)});
+			}else{
+				$(my.legends[1]).unbind("click");
+				$(my.continue_btn[index]).removeClass("enabled");
+				$(my.continue_btn[index]).unbind("click");
+			}
 
 		}else if(index == 1){
 
@@ -141,63 +158,80 @@
 
 			var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
 
+			my.isReady[1] = false;
 
 			if(cname.val().length > 1 && city.val().length > 1 && postal.val().length >= 5 && address.val().length > 5){
 				console.log("name city postal addy ok")
 				if(urlRegex.test(url.val())){
-					console.log("url ok")
-					console.log(state.val(), country.val(), industry.val(), employees.val(), revenues.val());
 					if(state.val() && country.val() && industry.val() && employees.val() && revenues.val()){
 						console.log("state country industry employees revenues ok")
-						if($(".co_details input[name=IBM_Partner_World_memeber]:checked").val() == "Yes"){
+						if($(".co_details input[name=IBM_Partner_World_memeber]:checked").val()){
 
-							$(my.continue_btn[index]).addClass("enabled");
-							$(my.continue_btn[index]).bind("click", function(e){
-								e.preventDefault();
-								$(this).unbind('click');
-								my.co_inputs.unbind("blur");
-								my.co_drop.unbind("change");
+							my.isReady[1] = true;
 
-								my.idea_inputs.on("blur", function(e){my.validateSection(2)})
-								// my.terms_check.bind("change", function(e){my.validateSection(2)})
-								// my.idea_radio.bind("change", function(e){my.validateSection(2)})
-
-								my.setSections(index);
-							});
 						}
 					}
 				}
+			}
+
+			if(my.isReady[1]){
+				$(my.continue_btn[index]).addClass("enabled");
+				$(my.continue_btn[index]).bind("click", function(e){
+					e.preventDefault();
+					$(this).unbind('click');
+
+					my.idea_inputs.on("blur", function(e){my.validateSection(2)})
+
+					my.setSections(index);
+				});
+				$(my.legends[2]).bind("click", function(e){my.sectionSelect(this)});
+			}else{
+				$(my.legends[2]).unbind("click");
+				$(my.continue_btn[index]).removeClass("enabled");
+				$(my.continue_btn[index]).unbind("click");
 			}
 
 		}else if(index == 2){
 
 			var idea    = $(".desc #application_description", my.form);
 
+			my.isReady[2] = false;
+
 			if(idea.val().length > 5){
-				console.log(my.continue_btn[index])
+				my.isReady[2] = true;
+			}
+
+			if(my.isReady[2]){
 				$(my.continue_btn[index]).addClass("enabled");
 				$(my.continue_btn[index]).bind("click", function(e){
+					e.preventDefault();
+					$(this).unbind('click');
 					$(my.terms_check).bind("change", function(){my.validateSection(3)});
 					my.setSections(index);
 				});
+				$(my.legends[3]).bind("click", function(e){my.sectionSelect(this)});
+			}else{
+				$(my.legends[3]).unbind("click");
+				$(my.continue_btn[index]).removeClass("enabled");
+				$(my.continue_btn[index]).unbind("click");
 			}
 
 
 		}else{
 
-			var ready = false;
+			my.isReady[3] = false;
+
 			if($(my.terms_check).is(":checked")){
-				ready = true;
+				my.isReady[3] = true;
+			}
+
+			if(my.isReady.indexOf(false) < 0){
 				my.submit_btn.addClass("enabled");
 				my.submit_btn.removeAttr("disabled")
-					
-			}
-			if(!ready ){
+			}else{
 				my.submit_btn.removeClass("enabled");
 				my.submit_btn.attr("disabled", "")
 			}
-	
-
 		}
 	};
 
