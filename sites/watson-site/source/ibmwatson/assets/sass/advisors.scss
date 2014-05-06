@@ -1,0 +1,34 @@
+.advisor {
+	#advisor-hero {
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		line-height: 0;
+		img {
+			width: 100%;
+		}
+
+		.full {
+			display: block;
+		}
+
+		.stacked {
+			display: none;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.advisor{
+		#advisor-hero {
+			.stacked {
+				display: block;
+			}
+			.full {
+				display: none;
+			}
+		}
+	}
+}
+
