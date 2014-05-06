@@ -397,9 +397,9 @@
 	padding: 5px 0;
 }
 
-li:before, .ibm-bullet:before {
-    content: none !important;
-}
+.ibm-space-adjust li:before, .ibm-space-adjust .ibm-bullet:before {
+	content: none !important;
+} 
 
 .ibm-space-adjust a {
 	text-decoration: none;
