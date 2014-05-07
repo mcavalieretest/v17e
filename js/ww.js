@@ -4328,6 +4328,8 @@ Company.data.CustomStore = function(config) { ... }
 
                 + '<div id="m-menu-scroll">' + '<div id="m-main-menu">' + '<h2>IBM.com</h2>' + '<ul>' + mastLinks + '</ul>' + '</div>' + '</div>' + '</div>'
             );
+
+            jQuery("#m-menu-scroll li").removeClass("ibm-access");
         }
 
         function initPushMenu(config) {
