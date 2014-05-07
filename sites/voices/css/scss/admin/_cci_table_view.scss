@@ -1,0 +1,69 @@
+#ibm-content-main {
+	.ibm-columns.ibm_cci-tableView {
+		.ibm-col-6-1 {
+			font-size:12px;
+			margin: 0;
+			width:160px;
+		}
+
+		.ibm-col-6-1.ibm_cci_tableHeader, .ibm-col-6-1.ibm_cci-datacell{
+			font-weight:bold;
+			border-top: 1px solid #666;
+			border-bottom: 1px solid #ccc;
+			height:30px;
+			line-height:30px;
+		}
+		.ibm-col-6-1.ibm_cci-datacell{
+			height:50px;
+			border-top: 0;
+			border-bottom: 1px solid #ccc;
+			font-weight:normal;
+			line-height:50px;
+
+			img.ibm_cci-editIcon {
+				opacity: 0.4;
+				padding: 0 5px 0px;
+				vertical-align: text-bottom;
+				transition: opacity 0.3s;
+				cursor: pointer;
+			}
+			img.ibm_cci-editIcon:hover{
+				opacity:1;
+			}
+
+			img.ibm_cci-editIcon.ibm_cci-editIconHidden {
+				visibility: hidden;
+			}
+		}
+		.ibm-col-6-1.ibm_cci-datacell.ibm_cci-datacellName {
+			font-weight:bold;
+		}
+		.ibm-col-6-1.ibm_cci-status {
+			text-indent: 75px;
+		}
+
+		.ibm-col-6-1 ul li.ibm_cci-datacellAvatarCell{
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			line-height: 0;
+				
+			img.ibm_cci-datacellAvatar, img.ibm_cci-datacellCheck, img.ibm_cci-datacellEllipse{	
+				padding: 8px 0;
+			}
+			img.ibm_cci-datacellAvatar{
+				outline: 1px soild #d2d2d2;
+			}
+			img.ibm_cci-datacellCheck, img.ibm_cci-datacellEllipse{		
+				opacity: 0.3;
+				margin-left:40px;
+			}
+			img.ibm_cci-datacellEllipse{		
+				opacity: 1;
+				margin-left:40px;
+			}	
+		}
+	
+
+	}
+}
