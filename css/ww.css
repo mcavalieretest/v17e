@@ -8423,6 +8423,10 @@ a.ibm-thumbnail-module h3 {
   #ibm-mast-options {
     display: none; }
 
+  /* fix for the leadsace as it is getting hidden behind the masthead - will confirm with Jeff*/
+  #ibm-top #ibm-leadspace-head {
+    clear: left; }
+
   #ibm-universal-nav {
     min-width: 100%;
     height: 35px !important; }
