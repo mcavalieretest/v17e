@@ -7253,6 +7253,7 @@ markup:
 #ibm-masthead {
   width: 100%;
   min-width: 980px;
+  position: fixed;
   /* Needed to override JS-based horizontal scrolling of masthead in Dojo code. TODO - Remove eventually. */
   left: 0 !important;
   top: 0;
@@ -7309,7 +7310,7 @@ markup:
   line-height: 1.3rem;
   float: left;
   width: 100%;
-  height: 21px !important;
+  /* height: 21px !important; */
   color: #A1A2A7; }
 
 #ibm-mast-options:hover {
@@ -7416,7 +7417,7 @@ markup:
   background: -o-linear-gradient(top, #595c64, #1b1b1c);
   background: -ms-linear-gradient(top, #595c64, #1b1b1c);
   background: linear-gradient(top, #595c64, #1b1b1c);
-  height: 50px !important;
+  /* height: 50px !important; */
   border-top: 1px solid #999;
   border-bottom: 1px solid #666; }
 
