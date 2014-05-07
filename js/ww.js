@@ -3990,8 +3990,10 @@ var CHICKENFEED = {};
 
         // Opens a single menu 'level'
         _openLevel: function(subLevel) {
+            // console.warn('_openLevel');
             var self = this;
-            $(this.wrapper).addClass('m-shift');
+            // console.warn('adding m-shift');
+            $(self.wrapper).addClass('m-shift');
             if (self.operationInProgress) {
                 return;
             }
@@ -4086,6 +4088,7 @@ var CHICKENFEED = {};
         },
         // close the menu
         _resetMenu: function() {
+            // console.warn('_resetMenu');
             var self = this;
 
             if (self.operationInProgress) {
@@ -4107,11 +4110,12 @@ var CHICKENFEED = {};
                 $("#m-menu").hide();
 
                 self.operationInProgress = false;
-                $(this.wrapper).removeClass('m-shift');
+                // console.warn('removing m-shift');
+                $(self.wrapper).removeClass('m-shift');
             };
 
             // Good browsers
-            if (Modernizr.csstransforms3d) {
+            if (Modernizr.csstransforms3d && animate) {
                 $(this.wrapper).one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd mozTransitionEnd", function() {
                     setTimeout(closeFunc, 200);
                 });
