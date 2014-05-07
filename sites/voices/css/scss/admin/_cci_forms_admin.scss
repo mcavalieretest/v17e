@@ -85,11 +85,15 @@
     margin-top:20px;
     margin-right:0;
     width:790px;
+
+    ul {
+        display: inline-block;
+    }
 }
 
-#ibm-pcon li.ibm_cci_addAccRadio {
+#ibm-pcon li.ibm_cci_addAccRadio, #ibm_cci-modalWin li.ibm_cci_addAccRadio {
     display:inline;
-    float:left;
+    // float:left;
     padding: 0 10px 0 0;
     
     label {
@@ -130,7 +134,7 @@ body li:before{
     content:none;
 }
 
-form.ibm_cci-addClassForm{
+form.ibm_cci_classField{
     float:left;
 }
 
@@ -176,22 +180,35 @@ form.ibm_cci-addClassForm{
 }    
 
 
-form input.ibm_cci_classField {
-    width:130px;
-    height:20px;
-    font-size:12px;
-    font-family:$default-font-family;
-    font-weight: normal;
-    text-indent: 5px;
-    -webkit-box-shadow: $search--field--shadow;
-    -moz-box-shadow: $search--field--shadow;
-    box-shadow: $search--field--shadow;
-    border: 1px solid #c3c3c3;
-    border-radius:2px;
-    -moz-border-radius:2px;
-    -webkit-border-radius:2px;
-    color:#787878; 
-    margin-left: 20px;
+form {
+    display: inline-block;
+
+    input.ibm_cci_classField {
+        width:130px;
+        height:20px;
+        font-size:12px;
+        font-family:$default-font-family;
+        font-weight: normal;
+        text-indent: 5px;
+        -webkit-box-shadow: $search--field--shadow;
+        -moz-box-shadow: $search--field--shadow;
+        box-shadow: $search--field--shadow;
+        border: 1px solid #c3c3c3;
+        border-radius:2px;
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        color:#787878; 
+        margin-left: 20px;
+    }
+}
+
+#ibm_cci-modalWin form { 
+    margin-top: 10px;
+
+    input.ibm_cci_classField{
+        margin:0;
+        width: 155px
+    }
 }
 
 #ibm-pcon #ibm-content p.ibm_cci-submitButt {    
@@ -210,7 +227,8 @@ form input.ibm_cci_classField {
     }
 }
 
-#ibm-pcon #ibm-content p.ibm_cci-deleteButt {    
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt, 
+#ibm_cci-modalWin p.ibm_cci-deleteButt {    
     width: 65px;
     height: 23px;
     display: inline-block;
@@ -219,7 +237,6 @@ form input.ibm_cci_classField {
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
     // margin-right:80px;
-    -webkit-margin-after: initial;
     margin-top: 10px;    
     a {
         line-height: 30px;
@@ -231,6 +248,31 @@ form input.ibm_cci_classField {
 #ibm-pcon #ibm-content p.ibm_cci-deleteButt:hover{
     opacity:1;
 }
+
+#ibm_cci-modalWin p.ibm_cci-deleteButt {
+    float: left;
+    width: 115px;
+    height: 23px;
+    opacity: 1;
+    font-size:12px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    // margin-top: 0;
+
+    a {
+        padding: 0 40px;
+    }
+
+}
+
+#ibm_cci-modalWin p.ibm_cci-deleteButt:hover{
+    background-color: #868686;
+}
+
+#ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign{
+    float: right;
+}
+
 form input.ibm_cci_classFieldButt{
         font-size: 0px;
         color: #fff;
@@ -331,7 +373,7 @@ input.ibm-cc-search--icon:hover{
     opacity:0.5;
 }
 
-.ibm-col-6-5 input.ibm_cci-settingsInput  {
+.ibm-col-6-5 input.ibm_cci-settingsInput, .ibm-col-6-5 input.ibm_cci-autoTweetField  {
         width:776px;
         height:40px;
         font-size:13px;
@@ -347,5 +389,73 @@ input.ibm-cc-search--icon:hover{
         -moz-border-radius:3px;
         -webkit-border-radius:3px;
         color:#787878;        
+}
+
+// #ibm-pcon #ibm-content .ibm-col-6-3.ibm_cci_marginTop{
+//     margin-right: 0;
+// }
+
+#ibm-pcon #ibm-content .ibm-col-6-3.ibm_cci_marginTop, 
+#ibm-pcon #ibm-content .ibm-col-6-2.ibm_cci_marginTop,
+#ibm-pcon #ibm-content .ibm-col-6-5.ibm_cci-autoTweet {
+    margin-top:20px;
+
+    p.ibm_cci-submitButt{
+        margin:0;
     }
-/* ADD NEW ACCOUNT BUTTON (END) */ 
+
+    p.ibm_cci-submitButt.ibm_cci-draftButt{
+        margin-right:10px;
+        background-color: #a3a3a3;
+
+        a {
+            padding: 0 35px;
+        }
+    }
+
+    p.ibm_cci-submitButt.ibm_cci-draftButt:hover{
+        background-color: #ccc;
+    }
+
+    p.ibm_cci-submitButt.ibm_cci-draftButt{
+        background-color: #ccc;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

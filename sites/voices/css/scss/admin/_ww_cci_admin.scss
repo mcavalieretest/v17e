@@ -62,9 +62,11 @@ html, body, #ibm-pcon.ibm_cci-pcon {
       padding-bottom:0;
       margin-top:25px;
       
-      span {
+      span.ibm_cci-fieldHint {
         display:inline-block;
         padding-top:10px;
+        text-align: right;
+        font-size: 11px;
       }
     }
 
@@ -77,7 +79,66 @@ html, body, #ibm-pcon.ibm_cci-pcon {
      background: none;
      box-shadow: none;
      border: none;
-    .ibm_cci-accNameLabels{
-      margin-top:25px;
-    }
+     
+      .ibm_cci-accNameLabels{
+        margin-top:25px;
+      }
   }
+
+  #ibm-content p.ibm_cci-settingsSiteURL {
+    display:inline-block;
+    font: normal normal 16px/16px "HelveticaNeue-Light", "Helvetica";
+    padding:0;
+    margin:7px 10px 0;
+    color: #ef4e38;
+}
+
+.ibm-col-6-5.ibm_cci-autoTweet{
+    border-top:1px solid #c3c3c3;  
+      
+    p.ibm_cci-autoTweetTitle, p.ibm_cci-autoTweetDescription {
+      font-weight:bold;
+      font-size:14px;
+      margin-top: 10px;
+    }
+    p.ibm_cci-autoTweetDescription{
+      font-weight: normal;
+    } 
+    
+    .ibm-col-6-3{
+      width: 390px;
+      margin:10px 0; 
+
+      input.ibm_cci-autoTweetField{
+        width: 380px;
+      }     
+    }
+    .ibm-col-6-3.ibm_cci-topMargin{
+      margin-top: 20px;
+    }
+
+    .ibm-col-6-3.ibm_cci-rightMargin{
+      margin-right: 0;
+        input.ibm_cci-autoTweetField{
+          float:right;
+        }
+    }     
+    .ibm-col-6-3.ibm_cci-topMargin.ibm_cci-rightMargin{
+        input.ibm_cci-autoTweetField {
+            float:right;
+        }    
+    }     
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

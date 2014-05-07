@@ -111,7 +111,7 @@
                 </div>
             </div>
             <!-- CONTENT_NAV_END -->
-
+           <!-- Add ibm_cci_modalIsOpen class to the ibm-pcon div when the Modal window is open -->
             <div id="ibm-pcon" class="ibm_cci__ibm-pcon">
                 <!-- CONTENT_BEGIN -->
                 <div id="ibm-content" class="ibm_cci__ibm-content">
@@ -138,7 +138,7 @@
                                         <p class="ibm_cci-accNameLabels">
                                             Enter account names separated by commas
                                             <br/>
-                                            <span>Limit: 50</span>
+                                            <span class="ibm_cci-fieldHint">Limit: 50</span>
                                         </p>
                                     </div>
                                     <div class="ibm-col-6-5 ibm_cci_marginTop">
@@ -302,6 +302,68 @@
             <!-- <div id="ibm-navigation"></div>-->
             <!-- NAVIGATION_END -->
             </div>
+
+            <!-- MODAL WINDOW FOR EDIT/ DELETE (BEGIN) -->
+            <div class="ibm-columns" id="ibm_cci-modalWin">
+                <div class="ibm-col-6-2">
+                    <ul>
+                        <li>
+                            <img src="../i/admin_feed_avatar.jpg" alt="" />
+                            <p class="ibm_cci-name">Heather Fraser 
+                                <span class="ibm_cci-handle">@heatherfraser</span>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="ibm-col-6-1 ibm_cci-selecClassLabel">
+                        <p class="ibm_cci-modalLabels">Select a class</p>
+                    </div>
+
+                    <div class="ibm-col-6-1 ibm_cci-selecClasses">
+                        <ul>
+                            <li class="ibm_cci_addAccRadio">
+                                <input type="radio" name="addClassGroup" value="brand" checked="checked">
+                                <label for="addClassGroup">
+                                    <span></span>
+                                    Brand
+                                </label>
+                            </li>
+                            <li class="ibm_cci_addAccRadio">
+                                <input type="radio" name="addClassGroup" value="individual">
+                                <label for="addClassGroup">
+                                    <span></span>
+                                    Individuals
+                                </label>
+                            </li>
+                            <li class="ibm_cci_addAccRadio">
+                                <input type="radio" name="addClassGroup" value="competitors">
+                                <label for="addClassGroup">
+                                    <span></span>
+                                    Competitors
+                                </label>
+                            </li>
+                        </ul>
+                        <form action="javascript:void(0);" class="ibm_cci-addClassForm">
+                            <input name="ibm_cci_classField" id="ibm_cci_classField" tabindex="1" alt="add new class field" type="text" class="ibm_cci_classField" placeholder="Add a new class">
+                            <input name="ibm_cci_classFieldButt" id="ibm_cci_classFieldButt" tabindex="1" alt="add new class field button" type="button" class="ibm_cci_classFieldButt" value="">
+                        </form>                                                
+                    </div>
+
+                    <div class="ibm-col-6-1">
+                        <p class="ibm_cci-deleteButt">
+                            <a href="javascript:void(0)">Cancel</a>
+                        </p>
+                    </div>
+                    <div class="ibm-col-6-1">
+                        <p class="ibm_cci-deleteButt ibm_cci_deleteButtRightAlign">
+                            <a href="javascript:void(0)">Submit</a>
+                        </p>
+                    </div>                    
+
+                </div>
+            </div>
+            <!-- MODAL WINDOW FOR EDIT/ DELETE (BEGIN) --> 
+
             <!--IBM Web Merchandising Module-->
             <!-- FOOTER_BEGIN -->
             <div id="ibm-footer-module"></div>
