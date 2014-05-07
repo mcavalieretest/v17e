@@ -38,14 +38,16 @@
     }
 
     form input.ibm_cci_loginButton:hover, form input.ibm_cci_loginButton:focus{
-        background-color: #868686;
+        background-color: #dd3e29;
 
     }
 }
 /* LOGIN PAGE FORM (END) */
 
 /* ADD NEW ACCOUNT BUTTON (BEGIN) */ 
-#ibm-pcon #ibm-content p.ibm_cci-addnewAcc, p.ibm_cci-submitButt, p.ibm_cci-deleteButt {
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc, 
+p.ibm_cci-submitButt, p.ibm_cci-deleteButt,
+p.ibm_cci-submitButt, p.ibm_cci-deleteButtGray {
     background-color:#f04e37;
     transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
@@ -63,7 +65,7 @@
         line-height: 47px;
         display: inline-block;
         float:right;
-        padding-right: 10px;
+        padding-right: 15px;
         text-decoration: none;
         text-shadow: none;
         color: #fff;
@@ -75,16 +77,21 @@
     }
      
 }
-#ibm-pcon #ibm-content p.ibm_cci-addnewAcc.ibm_cci-addnewAccClicked{
-    background-color:#cdcdcd;
-}
 #ibm-pcon #ibm-content p.ibm_cci-addnewAcc:hover, p.ibm_cci-submitButt:hover{
-    background-color:#cdcdcd;
+    background-color:#dd3e29;
 }
+
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc.ibm_cci-addnewAccClicked{
+    background-color:#cdcdcd;   
+}
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc.ibm_cci-addnewAccClicked:hover{
+    background-color:#cdcdcd;   
+}
+
 .ibm-col-6-5.ibm_cci_marginTop {
     margin-top:20px;
     margin-right:0;
-    width:790px;
+    // width:790px;
 
     ul {
         display: inline-block;
@@ -154,7 +161,7 @@ form.ibm_cci_classField{
         border-radius:3px;
         -moz-border-radius:3px;
         -webkit-border-radius:3px;  
-        width:678px;
+        width:668px;
         height:192px;
     }
 
@@ -166,7 +173,7 @@ form.ibm_cci_classField{
     a.ibm_cci_closeAddAcc {
         display: inline-block;
         vertical-align: top;
-        margin-left: 65px;
+        margin-left: 60px;
         margin-top: 0px;
         cursor: pointer;
         opacity: 1;
@@ -228,16 +235,18 @@ form {
 }
 
 #ibm-pcon #ibm-content p.ibm_cci-deleteButt, 
-#ibm_cci-modalWin p.ibm_cci-deleteButt {    
+#ibm_cci-modalWin p.ibm_cci-deleteButt, 
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray{    
     width: 65px;
     height: 23px;
     display: inline-block;
     float:right;
-    opacity: 0.3;
+    opacity: 0;
     transition: opacity 0.3s;
     -webkit-transition: opacity 0.3s;
     // margin-right:80px;
-    margin-top: 10px;    
+    margin-top: 10px;
+    // -webkit-filter:grayscale(100%);    
     a {
         line-height: 30px;
         float:left;
@@ -245,11 +254,17 @@ form {
         text-align:center;
     }
 }
-#ibm-pcon #ibm-content p.ibm_cci-deleteButt:hover{
-    opacity:1;
+
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray{
+    background-color: #cdcdcd;
 }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt {
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt:hover{
+    opacity:1;
+    background-color: #dd3e29;
+}
+
+#ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray {
     float: left;
     width: 115px;
     height: 23px;
@@ -266,11 +281,15 @@ form {
 }
 
 #ibm_cci-modalWin p.ibm_cci-deleteButt:hover{
-    background-color: #868686;
+    background-color: #dd3e29;
+}
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray:hover{
+    background-color: #868686;   
 }
 
 #ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign{
     float: right;
+    -webkit-filter:none;
 }
 
 form input.ibm_cci_classFieldButt{
@@ -292,7 +311,7 @@ form input.ibm_cci_classFieldButt{
 }
 
 form input.ibm_cci_classFieldButt:hover {
-    background-color: #cdcdcd;    
+    background-color: #dd3e29;    
 }
 
 // .ibm-col-6-2.ibm_cci-classCheckbox{
@@ -334,14 +353,13 @@ p.ibm_cci-prevNext{
 }
 
 .ibm-col-6-2.ibm_cci_feedsearch{
-    width: 310px;
     padding: 0 0 0 10px;
     margin: 0;
     position: relative;
 }
 
 .ibm-cc-search--field{
-    width: 276px;
+    width: 266px;
     height: 25px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -414,7 +432,7 @@ input.ibm-cc-search--icon:hover{
     }
 
     p.ibm_cci-submitButt.ibm_cci-draftButt:hover{
-        background-color: #ccc;
+        background-color: #d8d8d8;
     }
 
     p.ibm_cci-submitButt.ibm_cci-draftButt{

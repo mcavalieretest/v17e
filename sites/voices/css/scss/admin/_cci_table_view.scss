@@ -1,9 +1,30 @@
-#ibm-content-main {
+#ibm-pcon #ibm-content-main {
 	.ibm-columns.ibm_cci-tableView {
+		
+		.ibm-columns {
+			margin: 0 10px;
+		}
+
+		.ibm-columns:hover {
+			background-color: #f2f2f2;
+
+			.ibm-col-6-1.ibm_cci-datacell img.ibm_cci-editIcon{
+				visibility: visible;
+			}
+
+			.ibm-col-6-1.ibm_cci-datacell p.ibm_cci-deleteButt{
+				opacity: 1;
+				filter: none;
+				-webkit-filter: none;
+			}
+
+		}
+
 		.ibm-col-6-1 {
 			font-size:12px;
 			margin: 0;
-			width:160px;
+			// width:160px;
+			width:156px;
 		}
 
 		.ibm-col-6-1.ibm_cci_tableHeader, .ibm-col-6-1.ibm_cci-datacell{
@@ -12,6 +33,7 @@
 			border-bottom: 1px solid #ccc;
 			height:30px;
 			line-height:30px;
+
 		}
 		.ibm-col-6-1.ibm_cci-datacell{
 			height:50px;
@@ -26,6 +48,7 @@
 				vertical-align: text-bottom;
 				transition: opacity 0.3s;
 				cursor: pointer;
+				visibility: hidden;
 			}
 			img.ibm_cci-editIcon:hover{
 				opacity:1;

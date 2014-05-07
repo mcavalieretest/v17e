@@ -130,7 +130,26 @@ html, body, #ibm-pcon.ibm_cci-pcon {
     }     
 
 }
+#ibm-pcon li.ibm_cci-searchResultLabel{
+  font-weight: bold;
+}
+#ibm-pcon li.ibm_cci-searchResultKW {
+  color:#ef4e38;
+  font-size: 21px;
 
+  img {
+    vertical-align: top;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    cursor: pointer;
+  }
+  img:hover {
+    -webkit-filter: grayscale(100%);
+    opacity: 0.5;
+  }
+}
 
 
 
