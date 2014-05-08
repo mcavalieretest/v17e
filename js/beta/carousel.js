@@ -155,6 +155,10 @@
         self.goToPage(index);
       });
 
+      this.element.on("keydown", function(e) {
+        self.handleKeyDown(e);
+      });
+
       $(window).resize(function() {
         self.refreshPanelDimensions();
       });
@@ -185,6 +189,78 @@
       if (this.useTransitions) {
         this.element.addClass("ibm-carousel-css-transitions");
       }
+    },
+
+    handleKeyDown: function(e) {
+      var self = this,
+          LEFT_ARROW_CODE = 37,
+          RIGHT_ARROW_CODE = 39,
+          ENTER_CODE = 13;
+
+      switch(e.keyCode) {
+        case LEFT_ARROW_CODE:
+          self.handleLeftArrowKey();
+          break;
+
+        case RIGHT_ARROW_CODE:
+          self.handleRightArrowKey();
+          break; 
+
+        // case ENTER_CODE:
+        //   self.handleEnterKey();
+        //   break; 
+
+        default: 
+          // console.warn("key pressed, but who cares")
+          return;
+      }
+    },
+
+    handleLeftArrowKey: function() {
+      var self      = this,
+          $activeEl = $(document.activeElement);
+      
+      if ($activeEl.is(this.config.paginationContainerSelector + " > a")) {
+        var index = self.paginationLinks.index($activeEl);
+
+        self.focusPaginationLink(self.getPrevPaginationIndex(index));
+      }
+    },
+
+    handleRightArrowKey: function() {
+      var self      = this,
+          $activeEl = $(document.activeElement);
+
+      if ($activeEl.is(this.config.paginationContainerSelector + " > a")) {
+        var index = self.paginationLinks.index($activeEl);
+
+        self.focusPaginationLink(self.getNextPaginationIndex(index));
+      }
+    },
+
+    // handleEnterKey: function() {
+    //   var self      = this,
+    //       $activeEl = $(document.activeElement);
+    // },
+
+    focusPaginationLink: function(index) {
+      this.paginationLinks.eq(index).focus();
+    },
+
+    getPrevPaginationIndex: function(currentIndex) {
+      if (currentIndex <= 0) { 
+        return this.paginationLinks.length - 1;
+      }
+      
+      return currentIndex - 1;
+    },
+
+    getNextPaginationIndex: function(currentIndex) {
+      if (currentIndex >= this.paginationLinks.length - 1) { 
+        return 0;
+      }
+      
+      return currentIndex + 1;
     },
 
     getMainElement: function(element_or_selector) {
