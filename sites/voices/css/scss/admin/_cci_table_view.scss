@@ -4,7 +4,7 @@
 		.ibm-columns {
 			margin: 0 10px;
 		}
-
+		
 		.ibm-columns:hover {
 			background-color: #f2f2f2;
 
@@ -18,6 +18,10 @@
 				-webkit-filter: none;
 			}
 
+		}
+
+		.ibm-columns.ibm_cci-NoHover:hover{
+			background-color: #fff;
 		}
 
 		.ibm-col-6-1 {
@@ -89,4 +93,4 @@
 	
 
 	}
-}
+}	
