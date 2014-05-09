@@ -92,7 +92,7 @@
             tabindex = "-1";
           }
 
-          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="'+tabindex+'">Show carousel 1</a>';
+          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="'+tabindex+'">Show carousel '+(i+1)+'</a>';
         });
         html += '</div>';
         this.bodyContainer.append(html);
@@ -153,6 +153,7 @@
 
         var index = self.paginationLinks.index(e.target);
         self.goToPage(index);
+        self.focusPage(index);
       });
 
       this.element.on("keydown", function(e) {
@@ -206,12 +207,7 @@
           self.handleRightArrowKey();
           break; 
 
-        // case ENTER_CODE:
-        //   self.handleEnterKey();
-        //   break; 
-
         default: 
-          // console.warn("key pressed, but who cares")
           return;
       }
     },
@@ -238,13 +234,14 @@
       }
     },
 
-    // handleEnterKey: function() {
-    //   var self      = this,
-    //       $activeEl = $(document.activeElement);
-    // },
-
     focusPaginationLink: function(index) {
       this.paginationLinks.eq(index).focus();
+    },
+
+    focusPage: function(index) {
+      console.warn('focusPage()');
+      console.warn(this.pages.eq(index));
+      this.pages.eq(index).focus();
     },
 
     getPrevPaginationIndex: function(currentIndex) {
@@ -357,3 +354,11 @@
 
 })(jQuery, CHICKENFEED);
 
+jQuery(function() {
+
+
+  jQuery("*").focus(function() {
+    console.warn('focus:');
+    console.warn(this);
+  })
+})
