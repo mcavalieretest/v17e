@@ -16,7 +16,7 @@ try
 
     if ($payload->ref === 'refs/heads/hooktest') {
       // path to your site deployment script
-      echo exec('git pull origin stripped');
+      echo exec('git pull origin hooktest');
     }
   }
 }
