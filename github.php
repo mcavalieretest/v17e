@@ -35,6 +35,8 @@ try
     $payload = json_decode($_REQUEST['payload']);
     echo "$payload->ref: ".$payload->ref."\n";
 
+
+
     if ($payload->ref === 'refs/heads/hooktest') {
       // path to your site deployment script
       echo "<h2>YEAH, it's the right ref. </h2>\n\n";
@@ -46,4 +48,19 @@ try
 catch(Exception $e)
 {
   echo "Exception: <br>";
-  prin
+  print_r($e);
+  exit(0);
+}
+
+
+
+?>
+
+
+<h2>Request: </h2>
+
+<?php print_r($_REQUEST); ?>
+
+<h2>POST: </h2>
+
+<?php print_r($_POST); ?>
