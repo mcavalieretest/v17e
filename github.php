@@ -4,9 +4,10 @@
   error_reporting(E_ALL);
 ?>
 
-<h2>_REQUEST stuff</h2>
-
 <?php 
+/*
+
+<h2>_REQUEST stuff</h2>
 if (isset($_POST))
 {
    echo "it's set!<br>";
@@ -21,6 +22,10 @@ if (isset($_POST))
 } else {
   echo "It's not even set!<br>";
 } 
+*/
+
+      echo "<h2>Pulling from git repo...</h2>\n\n";
+      echo `git pull origin hooktest`;
 ?>
 
 <h2>Output: </h2>
@@ -34,7 +39,7 @@ try
     if ($payload->ref === 'refs/heads/hooktest') {
       // path to your site deployment script
       echo "<h2>Pulling from git repo...</h2>\n\n";
-      echo exec('git pull origin stripped');
+      echo `git pull origin hooktest`;
     }
 
   }
