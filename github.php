@@ -29,17 +29,11 @@ if (isset($_POST))
 try
 {
   if (array_key_exists("payload", $_REQUEST)) {
-    echo "Payload: <br>";
-    print_r($_REQUEST['payload']);
-    echo "<br><br>\n\nDecoded payload: <br>\n\n";
     $payload = json_decode($_REQUEST['payload']);
-    echo "$payload->ref: ".$payload->ref."\n";
-
-
-
+    
     if ($payload->ref === 'refs/heads/hooktest') {
       // path to your site deployment script
-      // echo "<h2>YEAH, it's the right ref. </h2>\n\n";
+      echo "<h2>Pulling from git repo...</h2>\n\n";
       echo exec('git pull origin stripped');
     }
 
