@@ -39,8 +39,8 @@ try
 
     if ($payload->ref === 'refs/heads/hooktest') {
       // path to your site deployment script
-      echo "<h2>YEAH, it's the right ref. </h2>\n\n";
-      //echo exec('git pull origin stripped');
+      // echo "<h2>YEAH, it's the right ref. </h2>\n\n";
+      echo exec('git pull origin stripped');
     }
 
   }
