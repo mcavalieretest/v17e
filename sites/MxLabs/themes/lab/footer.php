@@ -27,7 +27,7 @@
 		
 		<!-- Analytics -->
 		<div id="ibm-metrics">
-			<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+			<!--<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>-->
 		</div>
 
 		<!-- WP scripts -->
