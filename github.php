@@ -3,7 +3,7 @@
   ini_set('display_startup_errors', 1);
   error_reporting(E_ALL);
 
-  define("GIT_BRANCH", "hooktest");
+  define("GIT_BRANCH", "stripped");
 ?>
 
 <h2>Pulling from git repo.</h2>
