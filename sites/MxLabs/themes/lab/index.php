@@ -50,7 +50,6 @@
                                     <?php get_template_part('loop'); ?>
                                     <?php get_template_part('pagination'); ?>
                                 </section>                                
-                                <?php get_template_part('sidebar'); ?>
                             </div>
                         </div>
                     </div>

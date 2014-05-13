@@ -1,4 +1,15 @@
+							<?php $articleCount = 0; ?>
 							<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+								<?php $articleCount += 1; ?>
+									<?php if($articleCount == 3){ ?>
+									</section>
+									<?php get_template_part('sidebar'); ?>
+									</div>
+									
+									<div class="ibm-band" id="mxl-img-band"><div class="ibm-columns"></div></div>
+									<div class="ibm-columns">
+									<section class="ibm-col-6-4 large">
+								<?php } ?>
 								<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 									<!-- post title -->
 					                <h1>

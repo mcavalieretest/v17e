@@ -254,6 +254,10 @@ a#ssba_linkedin_share:before {content: '\f144'}
 #mxl-img-band {
     background: url(../images/mxl-view-madison.jpg) no-repeat fixed center 0% / cover #000;
     height: 400px;
+
+    float:left; 
+    margin-bottom: 4em; 
+    width:100%;
 }
 
 #ibm-footer {
@@ -264,3 +268,4 @@ a#ssba_linkedin_share:before {content: '\f144'}
 .static-instagram a img{
     margin-bottom: 4px;
 }
+
