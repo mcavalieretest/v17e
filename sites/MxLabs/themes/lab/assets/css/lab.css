@@ -260,3 +260,7 @@ a#ssba_linkedin_share:before {content: '\f144'}
 	padding-top: 280px;
 	background: #0F161A url(../images/ibm-logo-37d.svg) 105% center no-repeat;
 }
+
+.static-instagram a img{
+    margin-bottom: 4px;
+}
