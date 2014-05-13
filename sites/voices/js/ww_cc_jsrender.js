@@ -480,15 +480,15 @@ $(function() {
                     $result.append("Data not available");
                 }
                 if (feed_data){
-                    feed_data.rank = this.f_mod_rank(feed_data.rank || "");
+                    console.log("_____________________________________");
+                    console.log(decodeURI(feed_data.title));
+
+                    feed_date.title = unescape(feed_data.title);
+                    feed_data.rank = this.f_mod_rank(feed_data.rank || "");                    
                     feed_data.content = this.f_mod_content(feed_data.content || "");
                     feed_data.published = this.f_pretty_date(feed_data.published || "");
                     feed_data.domain = this.f_truncateDomain(feed_data.domain || "");
                     if (feed_data.mediaURL || feed_data.altMediaURL || "") {
-                        // feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL, function(imgObj){
-                        //         console.log(imgObj);
-                        //         // return imgObj;
-                        // });
                         feed_data.mediaURL = this.f_preloadImages(feed_data.mediaURL || "");
                         feed_data.altMediaURL = this.f_preloadImages(feed_data.altMediaURL || "");
                     }
@@ -565,7 +565,7 @@ $(function() {
         },
         f_mod_content: function(data) {
             var update_content = data.replace(/(http(s)*\:\/\/[^\s]+\s*)/g, '<a href="$1">$1</a>').replace(/#([^\s]+)/g, '<a href="//twitter.com/search?q=%23$1">#$1</a>').replace(/@([^\s:]+)/g, '<a href="//twitter.com/$1">@$1</a>');
-            return update_content;
+                return update_content;
         },
         f_pretty_date: function(timeVal) {
             try {
