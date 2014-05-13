@@ -192,6 +192,7 @@
 			padding: 0px;
 			margin: 0px;
 		}
+
 		ol li {
 			/*background: rgba(255, 255, 255, .3);
 			border-width: 2px;
@@ -479,8 +480,17 @@
 				line-height: 1.2em;
 			}
 		}
+
+		form {
+			ol li{
+				.field_col:first-child{
+					margin-bottom: 30px;
+				}
+			}
+		}
 		fieldset {
 			padding: 2px;
+
 
 			input:not([type=radio]), textarea {
 				width: 175px;

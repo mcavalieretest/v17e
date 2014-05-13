@@ -13,6 +13,10 @@
 
             var my = this;
 
+            if(IBM.watson.isMobile){
+                $(".ibm-live-assistance-list").remove();
+            }
+
             // Get query string key-value pairs
             my.oGetVars = new (function (sSearch) {
                 if (sSearch.length > 1) {

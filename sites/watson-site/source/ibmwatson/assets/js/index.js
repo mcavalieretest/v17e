@@ -16,6 +16,16 @@
 			if (!Modernizr.touch) {
 				$('summary').addClass('no-touch'); // 'summary' element doesn't inherit html.no-touch properly so we have to set something explicitly for css to reference
 			}
+
+
+			var pathArray = window.location.pathname.split( '/' );
+			var currentPage = pathArray[pathArray.length - 1];
+
+
+
+			if(IBM.watson.isMobile || currentPage=="ecosystem.html"){
+				$(".ibm-live-assistance-list").remove();
+			}
 		}
 
 

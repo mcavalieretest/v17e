@@ -1,6 +1,6 @@
 
 
-(function ($) { // reset V17e's noConflict
+(function ($) { // reset V17e's noConflict	
 	'use strict';
 
 	window.IBM = window.IBM || {};
@@ -15,6 +15,12 @@
 		my.form = $(formSelector);
 		my.isReady = new Array(false, false, false);
 
+		// if(IBM.watson.isMobile){
+			$(".ibm-live-assistance-list").remove();
+		// }
+
+
+
 
 		my.continue_btn = $("input[type=button]", my.form);
 		my.submit_btn = $("input[type=submit]", my.form);
@@ -26,11 +32,11 @@
 		my.co_drop = $(".co_details select", my.form);
 
 		my.idea_inputs = $(".desc textarea", my.form);
-		my.idea_radio = $(".desc input[type=radio]", my.form);
 		my.terms_check = $(".desc input[type=checkbox]", my.form);
 
 
 		my.my_details.bind("blur", function(e){ my.validateSection(0)})
+
 
 
 		$(my.sections[0]).show();
@@ -63,6 +69,8 @@
 	IBM.watson.WatsonForm.prototype.validateSection = function(index){
 
 		var my = this;
+
+		console.log($(".co_details input[type=radio]").is(":checked"))
 
 		if(index == 0){
 
@@ -120,49 +128,51 @@
 			var customers = $(".co_details #ncustomers", my.form );
 			var revenues  = $(".co_details #nrevenues", my.form );
 
-			var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+			var urlRegex = new RegExp("^([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?");
 
 			my.isReady[1] = false;
 
 
 			if(cname.val().length > 1 && city.val().length > 1){
 				if(urlRegex.test(url.val())){
-					if(state.val() && country.val() && industry.val() && employees.val() && customers.val() && revenues.val()){
-						if($(".co_details input[type=radio]:checked").val()){
+					if(country.val() && industry.val() && employees.val() && customers.val() && revenues.val()){
+						console.log("got here co 3")
+						if($(".co_details input[type=radio]").is(":checked")){
 							my.isReady[1] = true;
+						}
 					}
 				}
 			}
 
+
+
+			console.log("////////////////////////")
+
 			if(my.isReady[1]){
 				$(my.continue_btn[index]).addClass("enabled");
+				$(my.legends[2]).bind("click", function(e){my.sectionSelect(this)});
 				$(my.continue_btn[index]).bind("click", function(e){
 					e.preventDefault();
 					$(this).unbind('click');
-					// my.co_inputs.unbind("blur");
-					// my.co_drop.unbind("change");
-
 					my.idea_inputs.bind("blur", function(e){my.validateSection(2)})
 					my.terms_check.bind("change", function(e){my.validateSection(2)})
-					my.idea_radio.bind("change", function(e){my.validateSection(2)})
 
 					my.setSections(index)
-
-					});
-				$(my.legends[2]).bind("click", function(e){my.sectionSelect(this)});
-				}else{
-					$(my.legends[2]).unbind("click");
-					$(my.continue_btn[index]).removeClass("enabled");
-					$(my.continue_btn[index]).unbind("click");
-				}
-
+				});
+			}else{
+				$(my.legends[2]).unbind("click");
+				$(my.continue_btn[index]).removeClass("enabled");
+				$(my.continue_btn[index]).unbind("click");	
 			}
+
+
 
 		}else{
 			var idea    = $(".desc #IDEA", my.form);
 			var support = $(".desc #IDEASUPPORT", my.form);
 
 			my.isReady[2] = false;
+
 
 			if(idea.val().length > 1 && support.val().length > 1){
 				if($(my.terms_check).is(":checked")){
@@ -173,6 +183,8 @@
 					
 				}
 			}
+
+			console.log(my.isReady)
 
 			if(my.isReady.indexOf(false) < 0){
 				my.submit_btn.addClass("enabled");

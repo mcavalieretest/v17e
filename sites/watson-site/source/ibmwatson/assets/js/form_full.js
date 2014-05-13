@@ -15,6 +15,10 @@
 		my.form = $(formSelector);
 		my.isReady = new Array(false, false, false, false);
 
+		// if(IBM.watson.isMobile){
+			$(".ibm-live-assistance-list").remove();
+		// }
+
 
 		my.continue_btn = $("input[type=button]", my.form);
 		my.submit_btn = $("input[type=submit]", my.form);

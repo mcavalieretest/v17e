@@ -11,6 +11,10 @@
       var my = this;
 
       my.sceneManager = new IBM.watson.SceneManager(this);
+
+        if(IBM.watson.isMobile){
+          $(".ibm-live-assistance-list").remove();
+        }
     }
   };
 

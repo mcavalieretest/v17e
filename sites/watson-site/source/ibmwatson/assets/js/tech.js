@@ -1,140 +1,159 @@
 (function($) { // reset V17e's noConflict
-  'use strict';
+    'use strict';
 
-	window.IBM = window.IBM || {};
-  IBM.watson = IBM.watson || {};
+    window.IBM = window.IBM || {};
+    IBM.watson = IBM.watson || {};
 
-  IBM.watson.Tech = function() { this.init(); };
+    IBM.watson.Tech = function() {
+        this.init();
+    };
 
-  IBM.watson.Tech.prototype = {
-    init: function() {
-		var my = this;
-		my.$row = $('#tech-bio');
-		my.$photo = my.$row.find('img');
-		my.$textCol = my.$row.find('.column.text');
-		my.$photoCol = my.$row.find('.column.context');
-		my.sceneManager = new IBM.watson.SceneManager(this);
-		my.bindResize();
-		my.handleDualRow();
-	    my.browserString = window.navigator.userAgent.toLowerCase();
+    IBM.watson.Tech.prototype = {
+        init: function() {
 
-      /* Toggle animated header from fixed to relative during open/close to address IBMWM-326 */
-      $('body').on('OpenSideNav',function(){
-        $('.sprite-row').css('position','relative');
-      });
-      $('body').on('CloseSideNav',function(){
-        $('.sprite-row').css('position','fixed');
-      });
+            var my = this;
+            my.$row = $('#tech-bio');
+            my.$photo = my.$row.find('img');
+            my.$textCol = my.$row.find('.column.text');
+            my.$photoCol = my.$row.find('.column.context');
+            my.sceneManager = new IBM.watson.SceneManager(this);
+            my.bindResize();
+            my.handleDualRow();
+            my.browserString = window.navigator.userAgent.toLowerCase();
 
-	    if (IBM.watson.isMobile) {
-		    $('#tech-hero').addClass('no-fixed');
-	    }
-    },
+            /* Toggle animated header from fixed to relative during open/close to address IBMWM-326 */
+            $('body').on('OpenSideNav', function() {
+                $('.sprite-row').css('position', 'relative');
+            });
+            $('body').on('CloseSideNav', function() {
+                $('.sprite-row').css('position', 'fixed');
+            });
 
-      bindResize: function() {
-          var my = this;
-          my.$win = $(window);
+            if (IBM.watson.isMobile) {
+                $('#tech-hero').addClass('no-fixed');
+                $(".ibm-live-assistance-list").remove();
+            }
+        },
 
-          my.$win.on('resize', function() {
-              if (Modernizr.mq('(min-width: 580px)')) {
-                  my.handleDualRow();
-              }
-          });
-      },
+        bindResize: function() {
+            var my = this;
+            my.$win = $(window);
 
-	  /**
-	   * scale bio photo and text to maintain equal col height, set img size and position
-	   */
-	  handleDualRow: function() {
-          var my = this,
-              photoHeight, textHeight, offset;
+            my.$win.on('resize', function() {
+                if (Modernizr.mq('(min-width: 580px)')) {
+                    my.handleDualRow();
+                }
+            });
+        },
 
-	      //reset everything to natural
-		  my.$photo.css({
-		      width: '100%',
-		      height: 'auto',
-		      marginLeft: 0
-	      });
-	      my.$textCol.css({
-		      height: 'auto'
-	      });
+        /**
+         * scale bio photo and text to maintain equal col height, set img size and position
+         */
+        handleDualRow: function() {
+            var my = this,
+                photoHeight, textHeight, offset;
 
-	      //see which column is naturally taller
-		  photoHeight = my.$photo.outerHeight();
-	      textHeight = my.$textCol.outerHeight();
+            //reset everything to natural
+            my.$photo.css({
+                width: '100%',
+                height: 'auto',
+                marginLeft: 0
+            });
+            my.$textCol.css({
+                height: 'auto'
+            });
 
-	      if (photoHeight > textHeight) {
-		      my.$textCol.css({
-		          height: photoHeight
-	          });
-          }
-	      else {
+            //see which column is naturally taller
+            photoHeight = my.$photo.outerHeight();
+            textHeight = my.$textCol.outerHeight();
 
-	          my.$photo.css({
-		          width: 'auto',
-		          height: textHeight
-	          });
+            if (photoHeight > textHeight) {
+                my.$textCol.css({
+                    height: photoHeight
+                });
+            } else {
 
-		      //center photo if it's not fully revealed
-		      //must do after height is set
-		      offset = my.$photo.width() > my.$photoCol.outerWidth() ?
-				      (my.$photo.width() - my.$photoCol.outerWidth()) / -2 : '0';
+                my.$photo.css({
+                    width: 'auto',
+                    height: textHeight
+                });
 
-		      my.$photo.css({
-			      marginLeft: offset
-		      });
-          }
-      },
+                //center photo if it's not fully revealed
+                //must do after height is set
+                offset = my.$photo.width() > my.$photoCol.outerWidth() ?
+                    (my.$photo.width() - my.$photoCol.outerWidth()) / -2 : '0';
 
-    scene1: function(scene) {
-      var header = scene.elm.find('h1'),
-          sprite = scene.elm.find('#watsonLogoSpriteAnimation'),
-          callout1 = scene.elm.find('#hypothesisGenerationCallout'),
-          callout2 = scene.elm.find('#naturalLanguageCallout'),
-          callout3 = scene.elm.find('#dynamicLearningCallout'),
-          callout4 = scene.elm.find('#watsonIsCallout');
+                my.$photo.css({
+                    marginLeft: offset
+                });
+            }
+        },
 
-      scene.timeline
-        .from(sprite, 25, {opacity: 0}, 'start')
-        .from(callout1, 40, {left: '-50%', opacity: 0}, 'start+=15')
-        .from(callout2, 40, {right: '-50%', opacity: 0}, 'start')
-        .from(callout3, 40, {right: '-50%', opacity: 0}, 'start+=30')
-        .from(callout4, 25, {top: 1000, opacity: 0}, 'start+=40')
-      ;
+        scene1: function(scene) {
+            var header = scene.elm.find('h1'),
+                sprite = scene.elm.find('#watsonLogoSpriteAnimation'),
+                callout1 = scene.elm.find('#hypothesisGenerationCallout'),
+                callout2 = scene.elm.find('#naturalLanguageCallout'),
+                callout3 = scene.elm.find('#dynamicLearningCallout'),
+                callout4 = scene.elm.find('#watsonIsCallout');
 
-      var spriteManager = new IBM.watson.tweens.Sprite(scene);
-      spriteManager.buildSpriteTimeline(sprite, {width: 21716, height: 372}, 61, 1, 1);
-//
-      //scene.offset = -100;
-//
-      return scene;
-    },
+            scene.timeline
+                .from(sprite, 25, {
+                    opacity: 0
+                }, 'start')
+                .from(callout1, 40, {
+                    left: '-50%',
+                    opacity: 0
+                }, 'start+=15')
+                .from(callout2, 40, {
+                    right: '-50%',
+                    opacity: 0
+                }, 'start')
+                .from(callout3, 40, {
+                    right: '-50%',
+                    opacity: 0
+                }, 'start+=30')
+                .from(callout4, 25, {
+                    top: 1000,
+                    opacity: 0
+                }, 'start+=40');
 
-    scene2: function(scene) {
-      var youTube = new IBM.watson.tweens.YouTube(scene);
-      youTube.addTweens();
+            var spriteManager = new IBM.watson.tweens.Sprite(scene);
+            spriteManager.buildSpriteTimeline(sprite, {
+                width: 21716,
+                height: 372
+            }, 61, 1, 1);
+            //
+            //scene.offset = -100;
+            //
+            return scene;
+        },
 
-      // offset in parent timeline
-      scene.offset = -50;
+        scene2: function(scene) {
+            var youTube = new IBM.watson.tweens.YouTube(scene);
+            youTube.addTweens();
 
-      return scene;
-    },
+            // offset in parent timeline
+            scene.offset = -50;
 
-    scene3: function(scene) {
-      //var dualRow = new IBM.watson.tweens.DualRow(scene);
-      //dualRow.addTweens();
-      //scene.offset = -50;
+            return scene;
+        },
 
-      return scene;
-    },
+        scene3: function(scene) {
+            //var dualRow = new IBM.watson.tweens.DualRow(scene);
+            //dualRow.addTweens();
+            //scene.offset = -50;
 
-    scene4: function(scene) {
-      //var spanRow = new IBM.watson.tweens.SpanRow(scene);
-      //spanRow.addTweens();
+            return scene;
+        },
 
-      //scene.offset = +5;
+        scene4: function(scene) {
+            //var spanRow = new IBM.watson.tweens.SpanRow(scene);
+            //spanRow.addTweens();
 
-      return scene;
-    }
-  };
+            //scene.offset = +5;
+
+            return scene;
+        }
+    };
 }(jQuery));

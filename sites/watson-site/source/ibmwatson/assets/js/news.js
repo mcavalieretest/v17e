@@ -27,6 +27,7 @@
             if (IBM.watson.isMobile) {
                 $('#news-digs').addClass('no-fixed');
                 $('.slanted-header').addClass('always-show');
+                $(".ibm-live-assistance-list").remove();
             }
 
         },

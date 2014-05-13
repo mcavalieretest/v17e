@@ -78,8 +78,11 @@
 		//change nav link color for current page
 
 		$navLinks.each(function () {
-			var page = $(this).attr('href').match(/([^\/]+)\.html/i)[1];
-			pages.push(page);
+			if(!$(this).hasClass("ex")){
+				var page = $(this).attr('href').match(/([^\/]+)\.html/i)[1];
+				pages.push(page);
+			}
+
 		});
 
 		currentPage = document.location.pathname.match(/([^\/]+)\.html/i);
