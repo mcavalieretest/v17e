@@ -482,8 +482,9 @@ $(function() {
                 if (feed_data){
                     console.log("_____________________________________");
                     console.log(decodeURI(feed_data.title));
+                    
+                    feed_date.title = decodeURI(feed_data.title);
 
-                    feed_date.title = unescape(feed_data.title);
                     feed_data.rank = this.f_mod_rank(feed_data.rank || "");                    
                     feed_data.content = this.f_mod_content(feed_data.content || "");
                     feed_data.published = this.f_pretty_date(feed_data.published || "");
