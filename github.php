@@ -11,8 +11,8 @@
 <?php 
   try
   {
-    $cmd = "git pull origin ".GIT_BRANCH;
-    echo "<p>Executing command $cmd...</p>";
+    $cmd = "git pull origin ".GIT_BRANCH."  2>&1";
+    echo "<p>Executing command: <em>$cmd</em>...</p>";
     echo "<p>";
     echo shell_exec($cmd);
     echo "</p>";
