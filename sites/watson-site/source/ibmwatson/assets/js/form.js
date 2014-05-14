@@ -70,7 +70,6 @@
 
 		var my = this;
 
-		console.log($(".co_details input[type=radio]").is(":checked"))
 
 		if(index == 0){
 
@@ -136,7 +135,7 @@
 			if(cname.val().length > 1 && city.val().length > 1){
 				if(urlRegex.test(url.val())){
 					if(country.val() && industry.val() && employees.val() && customers.val() && revenues.val()){
-						console.log("got here co 3")
+						// console.log("got here co 3")
 						if($(".co_details input[type=radio]").is(":checked")){
 							my.isReady[1] = true;
 						}
@@ -146,7 +145,7 @@
 
 
 
-			console.log("////////////////////////")
+			// console.log("////////////////////////")
 
 			if(my.isReady[1]){
 				$(my.continue_btn[index]).addClass("enabled");
@@ -184,7 +183,7 @@
 				}
 			}
 
-			console.log(my.isReady)
+
 
 			if(my.isReady.indexOf(false) < 0){
 				my.submit_btn.addClass("enabled");

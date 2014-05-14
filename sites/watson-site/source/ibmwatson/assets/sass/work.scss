@@ -200,19 +200,18 @@
 	}
 
 	/*accordion modules*/
-	#work-healthcare-head {
-		background-color: #81e060;
-	}
-	#work-finance-head {
-		background-color: #40c6a8;
-	}
-	#work-research-head {
-		background-color: #12b5dc;
-	}
+	#work-healthcare-head { background-color: #aaef32;}
 
-	#work-customer-engagement-body { background: #d5f799;}
-	#work-healthcare-body { background: #c0f0b0;}
-	#work-finance-body{ background: #a0e3d4;}
+	#work-finance-head { background-color: #80e061;}
+	#work-retail-head { background-color: #55d191;}
+	#work-public-sector-head {background-color: #38c3b2;}
+	#work-research-head {background-color: #12b5dc;}
+
+	
+	#work-healthcare-body { background: #d5f799;}
+	#work-finance-body{ background: #c0f0b0;}
+	#work-retail-body{ background: #aae8c8;}
+	#work-public-sector-body{ background: #9ce1d9;}
 	#work-research-body{ background: #89daee;}
 
 	/*work-caption*/
