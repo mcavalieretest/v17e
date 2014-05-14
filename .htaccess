@@ -3,4 +3,4 @@ AuthType Basic
 AuthUserFile /var/www/vhosts/think-mktg.com/.htpasswd
 require valid-user
 
-RedirectMatch ^/v17e/$ /v17e/primer/index.html
+RedirectMatch ^/v17e_git/$ /v17e_git/primer/index.html
