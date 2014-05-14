@@ -124,7 +124,7 @@ $(function() {
         $("form").on("submit", function(event) {
             // /^[a-zA-Z0-9]*$/ : /[^\w\s]/gi;
             var search = $("#ibm-cc-search--field"),
-                regex = /^[a-zA-Z0-9]*$/,
+                regex = /^[a-zA-Z0-9 ]*$/,
                 searchVal = $("#ibm-cc-search--field").val().toLowerCase();
                 searchVal = searchVal.split(","), filterVal = [];
 
@@ -132,7 +132,7 @@ $(function() {
                     for(var i = searchVal.length - 1; i >= 0; i--) {
                         if(regex.test(searchVal[i])){
                             // filterVal[i] = searchVal[i].trim();
-                            filterVal[i] = searchVal[i];
+                            filterVal[i] = searchVal[i].trim();
                         }else{
                             alertText.addClass('ibm-cci-alert').html('').append('illegal characters in search string'+' : '+searchVal[i]);
                             search.val('').blur();
@@ -142,7 +142,7 @@ $(function() {
                     $('.ibm_cci--ls--search p').addClass('ibm-cci-alert').html('').append('Sorry! Search value entered is not valid!');
                     search.blur().val(defaultValue);
                 }
-
+                $.unique(filterVal);
                 search.val("");
                 if(filterVal != '' && filterVal != 0 && filterVal.length > 0) vo.f_constructURL(filterVal.toString());
         });
@@ -244,9 +244,9 @@ $(function() {
                 });
                 $(".ibm_cci--sr > p").addClass("ibm_cci-toggleDisplay");
                 vo.f_removeNodes($(event.target).parent().parent("li.ibm_cci__ml-li.ibm_cci-tsearch-js"));
-                vo.difference = [];
-                vo.similar = [];
-                vo.search = true;
+                    vo.difference = [];
+                    vo.similar = [];
+                    vo.search = true;
                 // SEARCH TRUE
                 vo.f_constructURL(vo.searchterms.toString());
                 vo.checkedCount = 0;
@@ -366,7 +366,8 @@ $(function() {
     // DEFINE THE HELPERS
     $.views.helpers({
         mediaURL: YTmediaURL,
-        truncateDesc: truncateDescription
+        truncateDesc: truncateDescription,
+        decodeText: unescapeFunc
     });
     // DEFINED HELPER FUNCTIONS
     function YTmediaURL(value, val) {
@@ -375,6 +376,7 @@ $(function() {
         }
         return value;
     }
+    
     // DEFINED HELPER FUNCTIONS
     function truncateDescription(content) {
         var trimmedContent = "";
@@ -384,7 +386,13 @@ $(function() {
             trimmedContent = content;
         }
         return trimmedContent;
-    }
+    };
+
+    function unescapeFunc(txt){        
+        var resolveTxt = unescape(txt.replace(/\\u/g,"%u"));
+        return resolveTxt; 
+    };
+
 });
 //CLOSE ON DOM READY
 
@@ -479,13 +487,8 @@ $(function() {
                     var $result = $('.ibm_cci--sr p');
                     $result.append("Data not available");
                 }
-                if (feed_data){
-                    console.log("_____________________________________");
-                    console.log(decodeURI(feed_data.title));
-                    
-                    feed_data.title = decodeURI(feed_data.title);
-
-                    feed_data.rank = this.f_mod_rank(feed_data.rank || "");                    
+                if (feed_data){                
+                    feed_data.rank = this.f_mod_rank(feed_data.rank);                    
                     feed_data.content = this.f_mod_content(feed_data.content || "");
                     feed_data.published = this.f_pretty_date(feed_data.published || "");
                     feed_data.domain = this.f_truncateDomain(feed_data.domain || "");

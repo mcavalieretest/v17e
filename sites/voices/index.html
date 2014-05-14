@@ -189,7 +189,7 @@
     </p>
   </div>
   <div class="ibm_cci--ttb">
-    <h2 class="ibm_cci--tweet-title"> {{:content}} </h2>
+    <h2 class="ibm_cci--tweet-title"> {{:~decodeText(content)}} </h2>
   </div>
   <div class="ibm_cci--lv-rc-sharing">
     <ul>
@@ -276,7 +276,7 @@
   </div>
   <div class="ibm_cci--ttb">
     <h2 class="ibm_cci--tweet-title">
-      <a href="{{:link}}" alt="tweet title: {{:title}}" onclick="window.open(this.href, '_blank'); return false;">{{:title}}</a>
+      <a href="{{:link}}" alt="tweet title: {{:~decodeText(title)}}" onclick="window.open(this.href, '_blank'); return false;">{{:~decodeText(title))}}</a>
     </h2>
     <div class="ibm_cci--tweet-description">
       <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
@@ -365,7 +365,7 @@
 
    <div style="float:left" data-userID="{{:userId}}">
     <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
-      <p>{{:content}}</p>
+      <p>{{:~decodeText(content)}}</p>
     </div>
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
@@ -464,7 +464,7 @@
     <div id="ibm-leadspace-body">
       <div class="ibm_cci--ls--logo">
         <h1 class="ibm_cci--h1__modifyer"> <a href="javascript:void(0);">IBM Voices</a> </h1>
-        <p class="ibm_cci-about"> <a href="//www-304.ibm.com/social/aggregator/voices/voices/about" target="_self" alt="link to voices about us page" class="ibm_cci_aboutlink"> About us </a> </p>
+        <p class="ibm_cci-about"> <a href="//www-304.ibm.com/social/aggregator/voices/voices/about" onclick="ibmStats.event({ 'ibmEV' : 'About Us Click', 'ibmEvAction' :'link to About us', 'ibmEvName' : 'About us'}); return true;"  target="_self" alt="link to voices about us page" class="ibm_cci_aboutlink"> About us </a> </p>
       </div>
       <div class="ibm_cci--ls--search" role="search">
         <form action="javascript:void(0);">
@@ -476,8 +476,12 @@
       </div>
       <div class="ibm_cci--ls--toggle" id="ibm_cci--toggle-js">
         <ul class="ibm_cci--ls--toggle--ul">
-          <li class="ibm_cci--ls--toggle--li--grid-icon"> <a class="selected" id="grid" data-id="grid" href="javascript:void(0);">Grid View</a> </li>
-          <li class="ibm_cci--ls--toggle--li--list-icon"> <a data-id="list" href="javascript:void(0);" id="list">List View</a> </li>
+          <li class="ibm_cci--ls--toggle--li--grid-icon"> 
+            <a class="selected" id="grid" data-id="grid" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'Grid View Button', 'ibmEvAction' :'Show Grid', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Click on Grid View'}); return true;">Grid View</a>
+          </li>
+          <li class="ibm_cci--ls--toggle--li--list-icon"> 
+              <a data-id="list" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'List View Button', 'ibmEvAction' :'Show List', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Click on List View'}); return true;" id="list">List View</a>
+            </li>
         </ul>
       </div>
 
