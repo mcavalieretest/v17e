@@ -12,7 +12,7 @@
   try
   {
     $cmd = "git pull origin ".GIT_BRANCH."  2>&1";
-    echo "<p>Executing command: <em>$cmd</em>...</p>";
+    echo "<p>Executing command: <em>$cmd</em>...</p>\n\n";
     echo "<p>";
     echo shell_exec($cmd);
     echo "</p>";
