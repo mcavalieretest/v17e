@@ -91,7 +91,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-6-4">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-1">
 		<h2>6/4 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -826,6 +826,9 @@
   	window.carousels = [];
 
 		$(function() {
+
+			window.carousels.push(new IBM.Common.Widgets.Carousel($("#carousel-1"), {}));
+
       $(".ibm-carousel").each(function(i, el) {
       	var options = {};
 
