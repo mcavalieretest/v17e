@@ -115,6 +115,8 @@
 
       });
 
+      this.pages.children().attr("role", "document");
+
       this.panelContainer.children("[class*=ibm-col-]").each(function(i, el) {
         var tabindex;
 
@@ -153,7 +155,6 @@
 
         var index = self.paginationLinks.index(e.target);
         self.goToPage(index);
-        self.focusPage(index);
       });
 
       this.element.on("keydown", function(e) {
@@ -236,12 +237,6 @@
 
     focusPaginationLink: function(index) {
       this.paginationLinks.eq(index).focus();
-    },
-
-    focusPage: function(index) {
-      console.warn('focusPage()');
-      console.warn(this.pages.eq(index));
-      this.pages.eq(index).focus();
     },
 
     getPrevPaginationIndex: function(currentIndex) {
