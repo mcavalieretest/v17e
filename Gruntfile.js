@@ -104,5 +104,4 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', taskList);  //, 'uglify'
   grunt.registerTask('build-css', ['sass', 'bless']);  //, 'sass update'
-  grunt.registerTask('watch-css', ['watch']);  //, 'sass watch'
 };
