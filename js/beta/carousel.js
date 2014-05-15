@@ -53,37 +53,15 @@
     this.element = this.getMainElement(element_or_selector);
 
 
-    this.data = {};
+    this.data = {slides: []};
 
     if (this.config.slides) {
       this.data.slides = $.extend(true, [], this.config.slides);
-      /*
-        
-
-        target slide position = ??
-
-
-
-
-       */
-      //this.buildSlides(this.config.slides, 0);
     }
     else if (this.config.items) {
       this.data.slides = [
         { items: $.extend(true, [], this.config.items) }
       ];
-      /*
-      
-        target slide = ??
-
-
-
-        for each item
-          add html to target slide
-       */
-      // this.buildSlides();
-
-      // calls this.addItemsToSlide(items, slideNum)
     }
 
     // Prevent multiple instantiations
@@ -102,14 +80,44 @@
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
-    buildSlidesHtml: function() {
-/*
-        for each slide in this.data.slides
-          inject slide html
-          for each item
-            inject item html      
+    buildHtml: function(items) {
+      var self = this,
+          html = '';
 
-*/          
+      html += '<div class="ibm-container-body">';
+
+      $.each(self.data.slides, function(i, slide) {
+        html += '<div class="ibm-columns">';
+          var columnClass = self.columnClass(slide.items);
+
+          $.each(slide.items, function(j, item) {
+            html += '<div class="' + columnClass + '">';
+            html += item.content;
+            html += '</div>';
+          });
+        html += '</div>';
+      });
+
+      html += '</div>';
+
+      self.data.html = html;
+
+      self.element.append(html);
+    },
+
+    columnClass: function(cols) {
+      switch(cols.length) {
+        case 1: 
+          return "ibm-col-1-1";
+        case 3:  
+          return "ibm-col-6-2";
+        case 5: 
+          return "ibm-col-5-1";
+        case 6:  
+          return "ibm-col-6-1";
+        default: 
+          return "ibm-col-6-2";
+      }
     },
 
     add: function(tree) {
