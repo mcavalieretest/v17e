@@ -52,6 +52,40 @@
     this.config  = $.extend({}, defaults, options);
     this.element = this.getMainElement(element_or_selector);
 
+
+    this.data = {};
+
+    if (this.config.slides) {
+      this.data.slides = $.extend(true, [], this.config.slides);
+      /*
+        
+
+        target slide position = ??
+
+
+
+
+       */
+      //this.buildSlides(this.config.slides, 0);
+    }
+    else if (this.config.items) {
+      this.data.slides = [
+        { items: $.extend(true, [], this.config.items) }
+      ];
+      /*
+      
+        target slide = ??
+
+
+
+        for each item
+          add html to target slide
+       */
+      // this.buildSlides();
+
+      // calls this.addItemsToSlide(items, slideNum)
+    }
+
     // Prevent multiple instantiations
     if (typeof this.element.data("carousel") != "undefined") {
       return undefined;
@@ -68,6 +102,50 @@
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
+    buildSlidesHtml: function() {
+/*
+        for each slide in this.data.slides
+          inject slide html
+          for each item
+            inject item html      
+
+*/          
+    },
+
+    add: function(tree) {
+      /*
+        if tree.slides
+          addSlides(tree.slides)
+        else if tree.items
+          addSlide(),
+          addItems(tree.items, lastSlideIndex())
+        else if tree.content
+          addSlide(),
+          addItem(tree, lastSlideIndex())
+
+       */
+    },
+
+    addItems: function(items, slide_index) {
+
+    },
+
+    addItem: function(item, slide_index) {
+      
+    },
+
+    addSlides: function(slides) {
+
+    },
+
+    addSlide: function(slide) {
+
+    },
+
+    lastSlideIndex: function() {
+      return (this.data.slides.length - 1);
+    },
+
     /**
      * Kickoff all initialization tasks. Called automatically by constructor unless config.init is false. 
      * Can be called at any time after changing the internal settings to build or re-build the widget; 
@@ -385,11 +463,11 @@
 
 })(jQuery, CHICKENFEED);
 
-jQuery(function() {
+/*jQuery(function() {
 
 
   jQuery("*").focus(function() {
     console.warn('focus:');
     console.warn(this);
   })
-})
+})*/
