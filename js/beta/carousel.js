@@ -36,6 +36,7 @@
   IBM.Common.Widgets.Carousel = function(element_or_selector, options) {
     var defaults = {
       arrows: false,
+      init: true,
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
@@ -51,14 +52,37 @@
     this.config  = $.extend({}, defaults, options);
     this.element = this.getMainElement(element_or_selector);
 
+    // Prevent multiple instantiations
+    if (typeof this.element.data("carousel") != "undefined") {
+      return undefined;
+    }
+    
+    // Save the object to the element for convenience
+    this.element.data("carousel", this);
+
     this.browserDetect();
-    this.initHtml();
-    this.initDimensions();
-    this.initEvents();
-    this.initMisc();
+
+    if (this.config.init) {
+      this.init();
+    }
   };
 
   $.extend(IBM.Common.Widgets.Carousel.prototype, {
+    /**
+     * Kickoff all initialization tasks. Called automatically by constructor unless config.init is false. 
+     * Can be called at any time after changing the internal settings to build or re-build the widget; 
+     *  this should only be used when building the content programmatically though. 
+     */
+    init: function() {
+      this.initHtml();
+      this.initDimensions();
+      this.initEvents();
+      this.initMisc();
+    },
+
+    /**
+     * Inject important html if it doesn't exist, and add accessibility attributes. 
+     */
     initHtml: function() {
       var self = this;
 
@@ -92,6 +116,7 @@
             tabindex = "-1";
           }
 
+          // TODO - set this aria-controls attribute correctly
           html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="'+tabindex+'">Show carousel '+(i+1)+'</a>';
         });
         html += '</div>';
@@ -131,6 +156,9 @@
 
     },
 
+    /**
+     * Attach DOM events.
+     */
     initEvents: function() {
       var self = this;
 
@@ -166,12 +194,20 @@
       });
     },
 
+    /**
+     * Do any necessary altering of any DOM element dimensions. 
+     */
     initDimensions: function() {
       this.scrollContainer.css("left", "0px");
 
       this.refreshPanelDimensions();
     },
 
+    /**
+     * Do any initialization that doesn't fall into the other buckets. 
+     * 
+     * @return {[type]}
+     */
     initMisc: function() {
       this.currentPage = 0;
 
