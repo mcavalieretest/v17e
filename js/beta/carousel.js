@@ -126,22 +126,51 @@
        */
     },
 
-    addItems: function(items, slide_index) {
-
-    },
-
+    /**
+     * Add a content item to the specified slide. 
+     * 
+     * @param {[type]} item
+     * @param {[type]} slide_index
+     */
     addItem: function(item, slide_index) {
-      
+      this.data.slides[slide_index].items.push(item);
     },
 
-    addSlides: function(slides) {
-
+    /**
+     * Add multiple content items to the specified slide. 
+     * 
+     * @param {[type]} items
+     * @param {[type]} slide_index
+     */
+    addItems: function(items, slide_index) {
+      for (var i=0; i < items.length; i++) {
+        this.addItem(items[i], slide_index);
+      }
     },
 
+    /**
+     * Add a slide and its content items. 
+     * 
+     * @param {[type]} slide
+     */
     addSlide: function(slide) {
 
     },
 
+    /**
+     * Add multiple slides and their content items.
+     * 
+     * @param {[type]} slides
+     */
+    addSlides: function(slides) {
+
+    },
+
+    /**
+     * Return the zero-based index of the last existing slide. 
+     * 
+     * @return {Number} the zero-based index of the last existing slide. 
+     */
     lastSlideIndex: function() {
       return (this.data.slides.length - 1);
     },
