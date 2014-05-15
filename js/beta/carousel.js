@@ -154,7 +154,7 @@
      * @param {[type]} slide
      */
     addSlide: function(slide) {
-
+      this.data.slides.push(slide);
     },
 
     /**
@@ -163,7 +163,9 @@
      * @param {[type]} slides
      */
     addSlides: function(slides) {
-
+      for (var i=0; i < slides.length; i++) {
+        this.addSlide(slides[i]);
+      }
     },
 
     /**
