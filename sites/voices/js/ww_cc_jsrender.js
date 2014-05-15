@@ -8,7 +8,6 @@ $(function() {
         voicesLogo = $("#ibm-leadspace-body h1.ibm_cci--h1__modifyer a");
 
     // DEFAULT URL HASH (END)
-
     // console.log($("#ibm_cci-gototop-js").css("position"));
 
     var defaultValue = "comma,separated,values",
@@ -254,7 +253,6 @@ $(function() {
             }
         });
         //SEARCH TOPICS ELEMENTS (END)
-
         self.f_reTweetToggle();
 
         // ADDED THE CHECKBROWSERWIDTH AGAIN TO TEST FIREFOX
@@ -535,13 +533,13 @@ $(function() {
                         return imgURL;
                     }else if(imgURL.match(regex) != null && img.src.readyState != 4){
                         // CODE DOES NOT WAIT FOR THE ONLOAD TO COMPETE BEFORE RETURNING
-                        img.onload = function(){
-                            imgWidth = img.naturalWidth;
-                            if(imgWidth > 1000){
-                                // console.log("*****IMGONLOAD INSIDE****: "+imgWidth+" : "+img.src);
-                                //return img.src;
-                            }
-                        }
+                            var imgOnload = img.onload;
+                            imgOnload = function(){
+                                if(img.naturalWidth < 1000){
+                                    console.log("IMGONLOAD INSIDE: "+img.naturalWidth+" : "+img.src);
+                                    return img.src;
+                                }
+                            };
                         // console.log("*****IMGONLOAD OUTSIDE****: "+imgWidth+" : "+img.src);
                         return img.src;
                     }

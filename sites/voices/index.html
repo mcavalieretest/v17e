@@ -477,10 +477,10 @@
       <div class="ibm_cci--ls--toggle" id="ibm_cci--toggle-js">
         <ul class="ibm_cci--ls--toggle--ul">
           <li class="ibm_cci--ls--toggle--li--grid-icon"> 
-            <a class="selected" id="grid" data-id="grid" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'Grid View Button', 'ibmEvAction' :'Show Grid', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Click on Grid View'}); return true;">Grid View</a>
+            <a class="selected" id="grid" data-id="grid" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'Grid View Button', 'ibmEvAction' :'Show Grid', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Grid View'}); return true;">Grid View</a>
           </li>
           <li class="ibm_cci--ls--toggle--li--list-icon"> 
-              <a data-id="list" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'List View Button', 'ibmEvAction' :'Show List', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Click on List View'}); return true;" id="list">List View</a>
+              <a data-id="list" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'List View Button', 'ibmEvAction' :'Show List', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'List View'}); return true;" id="list">List View</a>
             </li>
         </ul>
       </div>
@@ -496,7 +496,7 @@
           <li class="ibm_cci__ml_t">
             <!-- add class="ibm_cci-clicked" on click in <p> and  -->
             <p id="ibm_cci__ml_t-js" class="ibm_cci-clicked">
-              <a href="#" name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>
+              <a href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;"  name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>
             </p>
           </li>
 
