@@ -8,9 +8,15 @@
 }
 
 .ibm-columns.ibm_cci_modalWinToggle#ibm_cci-modalWin, 
+.ibm-band.ibm_cci__ibm-band,
 .ibm-columns.ibm_cci_modalWinDelete.ibm_cci_modalWinToggle#ibm_cci-modalWin{
-	// display: none;
+	display: none;
 }
+
+.ibm-band.ibm_cci__ibm-band.ibm_cci__ibm_bandShow{
+	display: block !important;
+}
+
 .ibm-columns#ibm_cci-modalWin{
 	position:fixed;
 	width: 300px;
