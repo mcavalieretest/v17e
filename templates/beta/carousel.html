@@ -482,7 +482,7 @@
 
 
 
-<div class="ibm-container ibm-carousel">
+<div class="ibm-container ibm-carousel" id="video-ribbon-example">
 
 <h2 class="ibm-show-hide">Video ribbon section</h2>
 
@@ -660,6 +660,54 @@
 //         s.startup();
 //     });
 // });
+
+
+  (function($, IBM) {
+  	window.carousels = [];
+
+		$(function() {
+
+			var c1 = new IBM.Common.Widgets.Carousel($("#ribbon1"), {
+				init: false
+			});
+
+      c1.addSlides([
+        {items: [
+        	{content: "<h2>dyn item 1</h2><p>item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item</p>"}
+        ]},
+        {items: [
+        	{content: "<h2>dyn item 2.1</h2><p>item item item item item item </p>"},
+        	{content: "<h2>dyn item 2.2</h2><p>item item item item item item </p>"},
+        	{content: "<h2>dyn item 2.3</h2><p>item item item item item item </p>"}
+        ]},
+      ]);
+
+      var items = [];
+      $("#video-ribbon-example .ibm-columns:first").children().each(function() {
+      	items.push({ content: $(this).html() });
+      });
+
+      c1.addSlide({ items: items });
+
+      // for( var i=1; i<= 5; i++ ) {
+      // 	c1.addItems([
+      // 	]);
+      // }
+
+
+			c1.buildHtml();
+			c1.init();
+
+			console.warn(c1);
+
+
+
+
+    });
+  })(jQuery, CHICKENFEED);
+
+
+
 </script>
 
 <!--  for dynamic creation this container has to be provided "by hand" by an outher shell widget! -->
@@ -820,7 +868,6 @@
 
 </div>
 <script type="text/javascript">
-
 
   (function($, IBM) {
   	window.carousels = [];
