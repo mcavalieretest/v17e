@@ -84,6 +84,7 @@
 
 
       describe("lastSlideIndex()", function() {
+        it("should return null if there are no slides")
         it("should return an accurate index", function() {
           expect(c1.lastSlideIndex()).toEqual(0);
           expect(c2.lastSlideIndex()).toEqual(1);
@@ -145,6 +146,47 @@
         });
       });
 
+      describe("addItemsSequentially()", function() {
+        beforeEach(function() {
+          $(document.body).append('<div id="carousel-sequence"></div>');
+        });
+
+        afterEach(function() {
+          $("#carousel-sequence").remove();
+        });
+
+        it("should add items in sequence", function() {
+          var cseq = new IBM.Common.Widgets.Carousel($("#carousel-sequence"), {
+            init: false,
+            columns: 3
+          });
+
+          for( var i=1; i<= 15; i++ ) {
+            var item = {content:"<h2>dyn item " + i + "</h2><p>Dynamic item item item item item </p>"};
+
+            cseq.addItemSequentially(item);
+
+            var numItems = $.map(cseq.data.slides, function(el, i) { return el.items; }).length;
+
+            expect(numItems).toEqual(i);
+          }
+
+          cseq.init();
+
+          expect(cseq.element.find(".ibm-columns").children().length).toEqual(15);
+        });
+
+        it("should raise an error if columns is not specified", function() {
+          var cseq = new IBM.Common.Widgets.Carousel($("#carousel-sequence"), {
+            init: false
+          });          
+          
+          expect( function(){ 
+            cseq.addItemSequentially({content: "foo"}); 
+          } ).toThrow();
+        });
+      });
+
       describe("addSlide()", function() {
         it("should add one slide", function() {
           var l = c3.data.slides.length;
@@ -177,7 +219,6 @@
           
           expect(c3.data.slides.length).toEqual(l+3);
         });
-
       });
     });
 

@@ -120,20 +120,6 @@
       }
     },
 
-    add: function(tree) {
-      /*
-        if tree.slides
-          addSlides(tree.slides)
-        else if tree.items
-          addSlide(),
-          addItems(tree.items, lastSlideIndex())
-        else if tree.content
-          addSlide(),
-          addItem(tree, lastSlideIndex())
-
-       */
-    },
-
     /**
      * Add a content item to the specified slide. 
      * 
@@ -154,6 +140,21 @@
       for (var i=0; i < items.length; i++) {
         this.addItem(items[i], slide_index);
       }
+    },
+
+    addItemSequentially: function(item) {
+      if (typeof this.config.columns == "undefined") {
+        throw "To use carousel.addItemSequentially(), you must specify a number of columns in the columns: property of your options object.";
+      }
+
+      if (
+        this.data.slides.length == 0
+        || this.data.slides[this.lastSlideIndex()].items.length >= this.config.columns
+      ) {
+        this.addSlide({ items: []})
+      }
+
+      this.addItem(item, this.lastSlideIndex());
     },
 
     /**
@@ -202,6 +203,10 @@
      */
     initHtml: function() {
       var self = this;
+
+      if (!this.config.init) {
+        this.buildHtml();
+      }
 
       this.bodyContainer = this.element.find(this.config.bodyContainerSelector);
       

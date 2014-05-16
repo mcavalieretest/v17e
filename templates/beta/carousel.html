@@ -688,17 +688,27 @@
       });
 
       c1.addSlide({ items: items });
-
-      // for( var i=1; i<= 5; i++ ) {
-      // 	c1.addItems([
-      // 	]);
-      // }
-
-
-			c1.buildHtml();
+			
 			c1.init();
 
-			console.warn(c1);
+
+
+
+
+
+			var c2 = new IBM.Common.Widgets.Carousel($("#ribbon2"), {
+				init: false,
+				columns: 3
+			});
+
+      for( var i=1; i<= 15; i++ ) {
+        var item = {content:"<h2>dyn item " + i + "</h2><p>Dynamic item item item item item </p>"};
+
+        c2.addItemSequentially(item);
+      }
+
+      c2.init();
+
 
 
 
