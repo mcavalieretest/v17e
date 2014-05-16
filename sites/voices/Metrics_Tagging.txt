@@ -1,0 +1,89 @@
+
+**GRID**
+onclick="ibmStats.event({ 'ibmEV' : 'Grid View Click', 'ibmEvAction' :'Show Grid', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Grid View'}); return true;"
+
+**LIST**
+onclick="ibmStats.event({ 'ibmEV' : 'List View Click', 'ibmEvAction' :'Show List', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'List View'}); return true;"
+
+**ALL TRENDING TOPIC**
+onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;"
+
+**ALL TRENDING TOPIC KEYWORD**
+onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"
+
+**ALL TRENDING TOPIC KEYWORD SEARCH**
+onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic ADDCLOSE', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"
+
+**ALL TRENDING TOPIC SEARCH KEYWORD**
+onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic', 'ibmEvGroup' : 'Search List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Search Topics'}); return true;"
+
+**ALL TRENDING TOPIC SEARCH KEYWORD**
+onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic ADDCLOSE', 'ibmEvGroup' : 'Search List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Search Topics'}); return true;"
+
+-------------------------------------------------------------------
+**Share actions (Twitter, Facebook, LinkedIn) + ID of tile**
+
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Facebook', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Linked IN', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+
+-------------------------------------------------------------------
+**Click on Twitter actions (Fav, Reply, Retweet) + ID of tile (rank) and tweet**
+
+**REPLY TWITTER**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Reply', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+**REPLY RETWEET**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Retweet', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+**Favorite**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Timestamp', 'ibmEvGroup' : 'Twitter RRF Timestamp', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+-------------------------------------------------------------------
+**Click on date stamp of tweet (Tweet) + ID of tile and tweet**
+
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter timestamp', 'ibmEvGroup' : 'Twitter Timestamp', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+-------------------------------------------------------------------
+**Click on Username and handler on tweet (Profile) + ID of tile and tweet**
+
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Userhandler', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+-------------------------------------------------------------------
+Load more scroll (More) + user
+JORDAN QUESTION - TECHNICAL
+
+-------------------------------------------------------------------
+**Clicks on avatars in URL objects to change the visibility or tweets referring to the same URL.**
+
+onclick="ibmStats.event({ 'ibmEV' : 'ReTweet Avatars', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter User Avatar', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+-------------------------------------------------------------------
+**External links keeping track of specific link (Titles, links on tweets or Read more clicks)  + ID of tile**
+
+**TITLE**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Feed Titles', 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+**READ MORE**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Read more', 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+
+**LINKS ON TWEETS**
+ - PENDING -
+ 
+-------------------------------------------------------------------
+**VIDEO PLAY? + RANK ID OF TITLE** 
+- TRIAL & ERROR
+onclick="ibmStats.event({ 'ibmEV' : 'Video', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'You Tube Video', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:rank}); return true;"
+
+-------------------------------------------------------------------
+**CLICK ON NAMES AND HANDLERS ON ABOUT PAGE DIRECTORY**
+onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name; return true;" 
+
+onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name Handle; return true;" 
+
+
+
+
+
