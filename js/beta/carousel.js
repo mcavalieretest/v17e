@@ -33,10 +33,14 @@
     return finalEventName;
   };    
 
+
   IBM.Common.Widgets.Carousel = function(element_or_selector, options) {
     var defaults = {
       arrows: false,
       init: true,
+      autoScroll: false,
+      autoScrollInterval: 5000,
+      freeScroll: false,
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
@@ -196,6 +200,7 @@
       this.initDimensions();
       this.initEvents();
       this.initMisc();
+      this.initAutoScroll();
     },
 
     /**
@@ -343,6 +348,42 @@
       this.refreshPagination();
     },
 
+    initAutoScroll: function() {
+      var self = this;
+
+      if (!this.config.autoScroll) { return; }
+
+      this.data.autoScrollInterval = setInterval(function() {
+        self.next();
+      }, this.config.autoScrollInterval);  
+
+      if (!this.config.freeScroll) {
+        if (!this.data.handlers) { this.data.handlers = {}; }
+
+        // if user moves mouse over ribbon area, we should disable interval - it should not circle on its own, give control to user
+        this.data.handlers.mouseenter = function(e) {
+          clearInterval(self.data.autoScrollInterval);
+        };
+        this.data.handlers.mouseleave = function(e) {
+          e.stopPropagation();
+
+          clearInterval(self.data.autoScrollInterval);
+          self.data.autoScrollInterval = setInterval(function(){
+            self.next();
+          }, self.config.autoScrollInterval);
+        };
+        this.data.handlers.resize = function(e) {
+          clearInterval(self.data.autoScrollInterval);
+        };
+
+        // when user moves out of ribbon area, we should enable interval again
+        this.element.hover(self.data.handlers.mouseenter, self.data.handlers.mouseleave);
+
+        // also, make sure we do not autoscroll while resizing window, it looks very ugly
+        $(window).resize(self.data.handlers.resize);
+      }
+    },
+
     browserDetect: function() {
       this.useTransitions = Modernizr.csstransforms3d;
 
@@ -458,7 +499,7 @@
       newLeft = -((this.panelWidth+20) * index);
 
       var complete = function() {
-        console.warn('currentPage: '+self.currentPage);
+        // console.warn('currentPage: '+self.currentPage);
       };
 
       if (this.useTransitions) {
@@ -471,11 +512,13 @@
     },
 
     next: function() {
-      this.goToPage(this.currentPage+1);
+      var page = (this.currentPage+1 > this.pages.length-1 ? 0 : this.currentPage+1);
+      this.goToPage(page);
     },
 
     prev: function() {
-      this.goToPage(this.currentPage-1);
+      var page = (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
+      this.goToPage(page);
     },
 
     toggleArrowVisibility: function() {
