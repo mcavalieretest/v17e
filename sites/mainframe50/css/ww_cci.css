@@ -303,11 +303,11 @@ sites/
     width: 520px;
   }
 }
-.ibm-sidebyside h2 {
+#ibm-sidebyside h2 {
   padding-top: 20px;
 }
 
-.ibm-sidebyside img {
+#ibm-sidebyside img {
   padding: 30px 0 20px 0;
 }
 
