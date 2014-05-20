@@ -11,7 +11,7 @@ onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Tr
 **ALL TRENDING TOPIC KEYWORD**
 onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"
 
-**ALL TRENDING TOPIC KEYWORD SEARCH**
+**ALL TRENDING TOPIC KEYWORD SEARCH CLOSE**
 onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic ADDCLOSE', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"
 
 **ALL TRENDING TOPIC SEARCH KEYWORD**
@@ -23,23 +23,24 @@ onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic
 -------------------------------------------------------------------
 **Share actions (Twitter, Facebook, LinkedIn) + ID of tile**
 
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return true;"
 
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Facebook', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Facebook', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return true;"
 
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Linked IN', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.alt}); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Linked IN', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return true;"
 
 -------------------------------------------------------------------
 **Click on Twitter actions (Fav, Reply, Retweet) + ID of tile (rank) and tweet**
+**IMPORTANT: FOR UNRESOLVED TWEETS THE IBMEVMODULE IS SET TO FEED LINKS**
 
 **REPLY TWITTER**
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Reply', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Reply', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank });"
 
 **REPLY RETWEET**
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Retweet', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Retweet', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank });"
 
 **Favorite**
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Timestamp', 'ibmEvGroup' : 'Twitter RRF Timestamp', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Timestamp', 'ibmEvGroup' : 'Twitter RRF Timestamp', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank });"
 
 -------------------------------------------------------------------
 **Click on date stamp of tweet (Tweet) + ID of tile and tweet**
@@ -49,7 +50,11 @@ onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter timestam
 -------------------------------------------------------------------
 **Click on Username and handler on tweet (Profile) + ID of tile and tweet**
 
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Userhandler', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+**IMPORTANT** ibmEvAction for Username and Handle
+"Twitter Username"
+"Twitter UserScreenName"
+
+ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Username', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} });
 
 -------------------------------------------------------------------
 Load more scroll (More) + user
@@ -64,26 +69,29 @@ onclick="ibmStats.event({ 'ibmEV' : 'ReTweet Avatars', 'ibmEvAction' :this.alt, 
 **External links keeping track of specific link (Titles, links on tweets or Read more clicks)  + ID of tile**
 
 **TITLE**
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Feed Titles', 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : {{:id}},'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return true;"
 
 **READ MORE**
-onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Read more', 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Read more', 'ibmEvGroup' : 'Read more', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:refTweets.id}}, 'ibmEvSection': {{:rank}} }); return true;"
 
-**LINKS ON TWEETS**
- - PENDING -
+**LINKS ON TWEET DESCRIPTION**
+ onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Description Link', 'ibmEvGroup' : 'Description LInk', 'ibmEvName' : {{:id}},  'ibmEvModule' : event.target, 'ibmEvSection': {{:rank}} }); return true;"
  
 -------------------------------------------------------------------
 **VIDEO PLAY? + RANK ID OF TITLE** 
 - TRIAL & ERROR
-onclick="ibmStats.event({ 'ibmEV' : 'Video', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'You Tube Video', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:rank}); return true;"
+onclick="ibmStats.event({ 'ibmEV' : 'Video', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'You Tube Video', 'ibmEvName' : {{:id}},  'ibmEvModule' : {{:rank}}, 'ibmEvSection':this.href  }); return true;"
 
 -------------------------------------------------------------------
 **CLICK ON NAMES AND HANDLERS ON ABOUT PAGE DIRECTORY**
-onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name; return true;" 
+onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name; }); return true;" 
 
-onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name Handle; return true;" 
+onclick="twitter(event, "citizenIBM")"; "ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.value, 'ibmEvGroup' : 'IBM BRANDS', 'ibmEvName' : Brand Name Handle; }); return true;" 
+-------------------------------------------------------------------
+**CLICK ON FEED ICON**
+onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Domain Icon', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return true;" 
 
 
 
-
-
+refId="{{:#parent.refTweets.id}}" drank="{{:#parent.parent.rank}}"
+'ibmEvModule' : this.refId, 'ibmEvSection': this.drank 

@@ -377,11 +377,12 @@ $(function() {
     
     // DEFINED HELPER FUNCTIONS
     function truncateDescription(content) {
-        var trimmedContent = "";
-        if (content.length > 172) {
-            trimmedContent = content.substring(0, 170);
+        var trimmedContent = unescape(content.replace(/\\u/g,"%u"));
+
+        if (trimmedContent.length > 172) {
+            trimmedContent = trimmedContent.substring(0, 170);
         } else {
-            trimmedContent = content;
+            trimmedContent;
         }
         return trimmedContent;
     };

@@ -90,7 +90,6 @@
   <!-- for popup window -->
     <script type="text/javascript">
       var openPopup = function(href){
-          console.log(href);
           event.preventDefault();
           var windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes',
             width = 600,
@@ -107,8 +106,14 @@
           window.open(href, 'intent', windowOptions + ',width=' + width +
               ',height=' + height + ',left=' + left + ',top=' + top);
 
-           if (window.focus) {this.window.focus()}
-              return false;
+          if (window.focus) {this.window.focus()}
+          return false;      
+      };
+
+      var openNewWin = function(href){
+        event.preventDefault();
+        window.open(href, "_blank");
+        return false;
       };
 
       // document.addEventListener("touchstart", function(event){
@@ -125,8 +130,9 @@
    {{props t_list}}
    <li class="ibm_cci__ml-li">
     <p>
-      <a href="javascript:void(0)" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
-      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending keyword"></a>
+      <a href="javascript:void(0)" onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
+      
+      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending keyword" onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic ADDCLOSE', 'ibmEvGroup' : 'Trending List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"></a>
     </p>
   </li>
   {{/props}}
@@ -138,8 +144,9 @@
   {{props t_list}}
   <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
     <p class="ibm_cci-clicked">
-      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Search Keyword: {{:prop}}"> {{:prop.trim()}} </a>
-      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending search keyword"></a> </p>
+      <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Search Keyword: {{:prop}}" onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic', 'ibmEvGroup' : 'Search List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Search Topics'}); return true;"> {{:prop.trim()}} </a>
+
+      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending search keyword" onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic ADDCLOSE', 'ibmEvGroup' : 'Search List', 'ibmEvName' : this.name,  'ibmEvModule' : 'Search Topics'}); return true;"></a> </p>
     </li>
     {{/props}}
   </script>
@@ -147,7 +154,7 @@
 
   <!-- JSRender Unresolved template (START) -->
   <script id="unro_template" type="text/x-jsrender">
-    <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-type="{{:type}}">
+    <div class="ibm-col-1-1 ibm-card masonry-brick" data-rank="{{:rank}}" data-id="{{:id}}" data-type="{{:type}}">
       <div class="ibm_cci--lv-unro-b">
         <div class="ibm_cci--rea-block">
           <ul>
@@ -176,33 +183,33 @@
 <div class="ibm_cci--unr-cb">
   <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
     <h3 class="ibm_cci--lv-r-wct">
-     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user name {{:username}}">{{:username}}</a>
+     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Username', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href); return true;" alt="twitter user name {{:username}}">{{:username}}</a>
      </h3>
     <p class="ibm_cci--lv-r-wch">
-      <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" onclick="window.open(this.href, '_blank'); return false;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a>
+      <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter UserScreenName', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href);return true;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a>
     </p>
   </div>
   <div class="ibm_cci--time-stamp">
     <p class="ibm_cci-tts"> <span></span>
       <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12">
-        <a href="{{:link}}" alt="twitter timestamp image" onclick="window.open(this.href, '_blank'); return false;">{{:published}}</a>
+        <a href="{{:link}}" alt="twitter timestamp image" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter timestamp', 'ibmEvGroup' : 'Twitter Timestamp', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href); return true;">{{:published}}</a>
     </p>
   </div>
   <div class="ibm_cci--ttb">
-    <h2 class="ibm_cci--tweet-title"> {{:~decodeText(content)}} </h2>
+    <h2 class="ibm_cci--tweet-title" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Description Link', 'ibmEvGroup' : 'Description Link', 'ibmEvName' : {{:id}},  'ibmEvModule' : event.target, 'ibmEvSection': {{:rank}} }); return openNewWin(event.target); return true;"> {{:~decodeText(content)}} </h2>
   </div>
   <div class="ibm_cci--lv-rc-sharing">
     <ul>
       <li>
-        <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)">
+        <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" did="{{:id}}" dlink="{{:link}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Reply', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
           <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a>
         </li>
       <li>
-        <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)">
+        <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" did="{{:id}}" dlink="{{:link}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Retweet', 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
           <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"></a>
       </li>
       <li>
-        <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)">
+        <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" did="{{:id}}" dlink="{{:link}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Timestamp', 'ibmEvGroup' : 'Twitter RRF Timestamp', 'ibmEvName' : this.did,  'ibmEvModule' : this.dlink, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
           <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a>
       </li>
     </ul>
@@ -244,7 +251,7 @@
 <div class="ibm_cci--rcb">
   <div class="ibm_cci-fav-ihb">
     <p class="ibm_cci--feed-icon">
-      <a href="{{:link}}" alt="feed icon {{:domain}}" onclick="window.open(this.href, '_blank'); return false;">
+      <a href="{{:link}}" alt="feed icon {{:domain}}" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Domain', 'ibmEvName' : this.did, 'ibmEvModule' : this.alt, 'ibmEvSection': this.drank }); return openNewWin(this.href); return true;">
         {{if icon == null}}
           <img alt="user avatar icon {{:domain}}" src="{{:icon}}" style="display:none;"/>
         {{else}}
@@ -252,23 +259,23 @@
         {{/if}}
       </a>
     </p>
-    <a class="ibm_cci--feed-title" href="{{:link}}" alt="link to {{:domain}}" onclick="window.open(this.href, '_blank'); return false;">{{:domain}}</a>
+    <a class="ibm_cci--feed-title" href="{{:link}}" alt="link to {{:domain}}" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Domain', 'ibmEvName' : this.did, 'ibmEvModule' : this.alt, 'ibmEvSection': this.drank }); return openNewWin(this.href); return true;">{{:domain}}</a>
   </div>
 
   <div class="ibm_cci-sib">
     <ul class="ibm_cci-sie">
       <li>
-        <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" onclick="return openPopup(this.href)">
+        <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
           <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16"/>
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
+        <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Facebook', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;" >
           <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16"/>
         </a>
       </li>
       <li>
-        <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" onclick="return openPopup(this.href)">
+        <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Linkedin', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;" >
           <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16"/>
         </a>
       </li>
@@ -276,28 +283,31 @@
   </div>
   <div class="ibm_cci--ttb">
     <h2 class="ibm_cci--tweet-title">
-      <a href="{{:link}}" alt="tweet title: {{:~decodeText(title)}}" onclick="window.open(this.href, '_blank'); return false;">{{:~decodeText(title))}}</a>
+      <a href="{{:link}}" alt="tweet title: {{:~decodeText(title)}}" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Feed Title', 'ibmEvName' : this.did,'ibmEvModule' : this.alt, 'ibmEvSection':this.drank }); return openNewWin(this.href); return true;">{{:~decodeText(title))}}</a>
     </h2>
     <div class="ibm_cci--tweet-description">
       <div class="ibm_cci--tweet-content-text">{{:~truncateDesc(content)}}
-        <span class="ibm_cci--tweet-description-readmore"><a href="{{:link}}" alt="read more link" onclick="window.open(this.href, '_blank'); return false;">&hellip;Read More</a></span>
+        <span class="ibm_cci--tweet-description-readmore">
+          <a href="{{:link}}" alt="read more link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Read more', 'ibmEvName' : this.did,'ibmEvModule' : this.alt, 'ibmEvSection':this.drank }); return openNewWin(this.href); return true;">&hellip;Read More</a>
+          </span>
       </div>
       <div class="ibm_cci-media-container">
         {{if altMediaURL && altMediaURL.length > -1 }}
 
       <div class="ibm-video">
         <div class="ibm-video-container">
-          <a href="{{:mediaURL}}" alt="video media image">
+          <a href="{{:mediaURL}}" style="display:block" alt="video media image" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'Video', 'ibmEvAction' :event.target, 'ibmEvGroup' : 'You Tube Video', 'ibmEvName' : this.id,  'ibmEvModule' : this.rank, 'ibmEvSection':this.href }); return true;">
             <object width="270" height="293">
-            <param name="movie"
-                   value="{{:mediaURL}}"></param>
-            <param name="allowScriptAccess" value="always"></param>
-            <embed src="{{:mediaURL}}"
-                   type="application/x-shockwave-flash"
-                   playsinline="1"
-                   allowscriptaccess="always"
-                   width="270" height="293"></embed>
-          </object>
+              <param name="movie"
+                     value="{{:mediaURL}}"></param>
+              <param name="allowScriptAccess" value="always"></param>
+              <embed src="{{:mediaURL}}"
+                     type="application/x-shockwave-flash"
+                     playsinline="1"
+                     allowscriptaccess="always"
+                     width="270" height="293">
+              </embed>
+            </object>
             </a>
         </div>
       </div>
@@ -311,21 +321,21 @@
     </div>
     <div class="ibm_cci-gv-sib">
       <ul class="ibm_cci-sie">
-        <li>
-          <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16"/>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="{{:rank}} share on linkedin link" onclick="return openPopup(this.href)">
-            <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16"/>
-          </a>
-        </li>
+      <li>
+        <a href="https://twitter.com/intent/tweet?text={{:title}}" alt="share on twitter link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+          <img src="i/ibm_social_twitter_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on twitter" width="16" height="16"/>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/login.php?next=https://www.facebook.com/sharer/sharer.php?u={{:link}}" alt="share on facebook link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Facebook', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;" >
+          <img src="i/ibm_social_facebook_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on facebook" width="16" height="16"/>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/shareArticle?summary={{:title}}&mini=true&url={{:link}}" alt="share on linkedin link" did="{{:id}}" drank="{{:rank}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Linkedin', 'ibmEvGroup' : 'Social Sharing', 'ibmEvName' : this.did,  'ibmEvModule' : this.href, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;" >
+          <img src="i/ibm_social_linkedin_icon_16x16.svg" type="image/svg+xml" alt="{{:rank}} share on linkedin" width="16" height="16"/>
+        </a>
+      </li>
       </ul>
     </div>
   </div>
@@ -334,7 +344,7 @@
   <ul class="ibm_cci-relatedTweetContainer">
     {{range refTweets start=0 end=9}}
     <li data-userID="{{:userId}}">
-      <a href="javascript:void(0);" alt="user avatar {{:userScreenName}}" data-userID="{{:userId}}">
+      <a href="javascript:void(0);" alt="user avatar {{:userScreenName}}" data-userID="{{:userId}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'ReTweet Avatars', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter User Avatar', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return true;">
         {{if #getIndex() == 0}}
         <img class="selected" src="{{:userAvatar}}" alt="user avatar {{:userScreenName}} icon" width="25" height="25" />
         {{else}}
@@ -349,30 +359,37 @@
   <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
     <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
       <h3 class="ibm_cci--lv-rc-title">
-        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" onclick="return openPopup(this.href)">{{:username}}</a>
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:username}}</a>
       </h3>
       <p class="ibm_cci--lv-rc-h">
-        <a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" onclick="return openPopup(this.href)">@{{:userScreenName}}</a>
+        <a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter UserScreenName', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">@{{:userScreenName}}</a>
       </p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
        <p class="ibm_cci-tts">
          <span></span>
-         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" onclick="window.open(this.href, '_blank'); return false;" alt="twitter timestamp image">{{:published}}</a>
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" height="12" width="12"> 
+         <a href="{{:link}}" target="_blank" alt="twitter timestamp image" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter Timestamp', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openNewWin(this.href); return true;">{{:published}}</a>
        </p>
      </div>
    </div>
 
    <div style="float:left" data-userID="{{:userId}}">
     <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
-      <p>{{:~decodeText(content)}}</p>
+      <p did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' : this.refTweetid, 'ibmEvGroup' : 'Description Link', 'ibmEvName' : this.did,  'ibmEvModule' : event.target, 'ibmEvSection': this.drank }); return openNewWin(event.target); return true;">{{:~decodeText(content)}}</p>
     </div>
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
       <ul>
-        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> </li>
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+        
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+        
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> 
+        </li>
       </ul>
     </div>
 
@@ -383,15 +400,16 @@
   <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}" style="display: none;">
     <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
       <h3 class="ibm_cci--lv-rc-title">
-        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" onclick="return openPopup(this.href)">{{:username}}</a>
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:username}}</a>
       </h3>
-      <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" onclick="return openPopup(this.href)">@
+      <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" odid="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter UserScreenName', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">@
         {{:userScreenName}}</a></p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
        <p class="ibm_cci-tts">
          <span></span>
-         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp" height="12" width="12"> <a href="{{:link}}" alt="twitter timestamp image">{{:published}}</a>
+         <img src="i/ibm_twitter_timestamp_icon_12x12.png" alt="twitter timestamp image" height="12" width="12"> 
+         <a href="{{:link}}" target="_blank" alt="twitter timestamp" target="_blank" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter Timestamp', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openNewWin(this.href); return true;">{{:published}}</a>
        </p>
      </div>
    </div>
@@ -399,16 +417,19 @@
    <div style="float:left; display:none;" data-userID="{{:userId}}">
 
     <div class="ibm_cci--lv-rc-description" data-userID="{{:userId}}">
-      <p>{{:content}}</p>
+      <p did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' : this.refTweetid, 'ibmEvGroup' : 'Description Link', 'ibmEvName' : this.did,  'ibmEvModule' : event.target, 'ibmEvSection': this.drank }); return openNewWin(event.target); return true;">{{:content}}</p>
     </div>
 
     <div class="ibm_cci--lv-rc-sharing" data-userID="{{:userId}}">
       <ul>
-        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" alt="twitter reply" onclick="return openPopup(this.href)"> <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a>
-        </li>
-        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" alt="twitter retweet" onclick="return openPopup(this.href)"> <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a>
-        </li>
-        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" alt="twitter favorite" onclick="return openPopup(this.href)"> <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a>
+        <li> <a href="https://twitter.com/intent/tweet?in_reply_to={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_reply_icon.png" alt="reply to tweet" width="16" height="16"> </a> </li>
+        
+        <li> <a href="https://twitter.com/intent/retweet?tweet_id={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_retweet_icon.png" alt="retweet button" width="16" height="16"> </a> </li>
+        
+        <li> <a href="https://twitter.com/intent/favorite?tweet_id={{:id}}&dnt=true&count=none" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.href, 'ibmEvGroup' : 'Twitter RRF Actions', 'ibmEvName' : this.did,  'ibmEvModule' : this.refTweetid , 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">
+        <img src="i/ibm_favorite_icon.png" alt="favorite button" width="16" height="16"> </a> 
         </li>
       </ul>
     </div>
@@ -470,7 +491,7 @@
         <form action="javascript:void(0);">
           <!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label> -->
           <input name="ibm-cc-search--field" id="ibm-cc-search--field" tabindex="1" alt="search field" type="text" class="ibm-cc-search--field defaultcolor" value="" placeholder="e.g: cloudcomputing, watson, IBMPulse. No special characters" />
-          <input type="image" src='i/ibm_search_icon.png' tabindex="2" alt="search icon" class="ibm-cc-search--icon" name="search button" value="search" />
+          <input type="image" src='i/ibm_search_icon.png' tabindex="2" alt="search icon" class="ibm-cc-search--icon" name="search button" value="search" onclick="ibmStats.event({ 'ibmEV' : 'Search Keywords', 'ibmEvAction' :'Search', 'ibmEvGroup' : 'Search Field', 'ibmEvName' : this.name,  'ibmEvModule' : 'Search'}); return true;" />
         </form>
         <p></p>
       </div>
@@ -496,7 +517,7 @@
           <li class="ibm_cci__ml_t">
             <!-- add class="ibm_cci-clicked" on click in <p> and  -->
             <p id="ibm_cci__ml_t-js" class="ibm_cci-clicked">
-              <a href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;"  name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>
+              <a href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;" name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>              
             </p>
           </li>
 
