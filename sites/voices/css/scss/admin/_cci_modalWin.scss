@@ -1,7 +1,7 @@
 .ibm_cci__ibm-pcon.ibm_cci_modalIsOpen {
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
-	-webkit-filter: blur(1px) grayscale(80%) opacity(30%);
+	-webkit-filter: blur(1px) grayscale(90%) opacity(10%);
 	transition: background-color 0.5s;
 	-webkit-transition: background-color 0.5s;
 	-moz-transition: background-color 0.5s;
@@ -9,7 +9,7 @@
 
 .ibm-columns.ibm_cci_modalWinToggle#ibm_cci-modalWin, 
 .ibm-band.ibm_cci__ibm-band,
-.ibm-columns.ibm_cci_modalWinDelete.ibm_cci_modalWinToggle#ibm_cci-modalWin{
+.ibm-columns.ibm_cci_modalWinDelete.ibm_cci_modalWinToggle#ibm_cci-modalDelWin{
 	display: none;
 }
 
@@ -17,7 +17,8 @@
 	display: block !important;
 }
 
-.ibm-columns#ibm_cci-modalWin{
+.ibm-columns#ibm_cci-modalWin,
+.ibm-columns#ibm_cci-modalDelWin{
 	position:fixed;
 	width: 300px;
 	height: auto;
@@ -81,7 +82,8 @@
 
 }
 
-.ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalWin{
+.ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalWin,
+.ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalDelWin{
 	height: auto;
 	min-height: 120px;
 	margin-top: -150px;

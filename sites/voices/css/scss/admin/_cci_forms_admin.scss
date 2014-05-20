@@ -98,7 +98,9 @@ p.ibm_cci-submitButt, p.ibm_cci-deleteButtGray {
     }
 }
 
-#ibm-pcon li.ibm_cci_addAccRadio, #ibm_cci-modalWin li.ibm_cci_addAccRadio {
+#ibm-pcon li.ibm_cci_addAccRadio, 
+#ibm_cci-modalWin li.ibm_cci_addAccRadio,
+#ibm_cci-modalDelWin li.ibm_cci_addAccRadio {
     display:inline;
     // float:left;
     padding: 0 10px 0 0;
@@ -209,7 +211,8 @@ form {
     }
 }
 
-#ibm_cci-modalWin form { 
+#ibm_cci-modalWin form,
+#ibm_cci-modalDelWin form { 
     margin-top: 10px;
 
     input.ibm_cci_classField{
@@ -236,7 +239,9 @@ form {
 
 #ibm-pcon #ibm-content p.ibm_cci-deleteButt, 
 #ibm_cci-modalWin p.ibm_cci-deleteButt, 
-#ibm_cci-modalWin p.ibm_cci-deleteButtGray{    
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray,
+#ibm_cci-modalDelWin p.ibm_cci-deleteButt, 
+#ibm_cci-modalDelWin p.ibm_cci-deleteButtGray{    
     width: 65px;
     height: 23px;
     display: inline-block;
@@ -255,7 +260,8 @@ form {
     }
 }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButtGray{
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray,
+#ibm_cci-modalDelWin p.ibm_cci-deleteButtGray{
     background-color: #cdcdcd;
 }
 
@@ -264,7 +270,10 @@ form {
     background-color: #dd3e29;
 }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray {
+#ibm_cci-modalWin p.ibm_cci-deleteButt, 
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray,
+#ibm_cci-modalDelWin p.ibm_cci-deleteButt, 
+#ibm_cci-modalDelWin p.ibm_cci-deleteButtGray {
     float: left;
     width: 115px;
     height: 23px;
@@ -280,14 +289,17 @@ form {
 
 }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt:hover{
+#ibm_cci-modalWin p.ibm_cci-deleteButt:hover
+#ibm_cci-modalDelWin p.ibm_cci-deleteButt:hover{
     background-color: #dd3e29;
 }
-#ibm_cci-modalWin p.ibm_cci-deleteButtGray:hover{
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray:hover
+#ibm_cci-modalDelWin p.ibm_cci-deleteButtGray:hover{
     background-color: #868686;   
 }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign{
+#ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign,
+#ibm_cci-modalDelWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign{
     float: right;
     -webkit-filter:none;
 }
@@ -318,6 +330,42 @@ form input.ibm_cci_classFieldButt:hover {
 //     width:310px;
 //     margin-left:0;
 // }
+
+.ibm-col-6-2.ibm_cci-select-style{
+    border: 1px solid #ddd;
+    width: 160px;
+    height: 27px;
+    border-radius: 3px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.3s;
+    background: #fafafa url("../i/icon-select.png") no-repeat 90% 50%;
+
+    select{
+        padding: 5px 8px;
+        width: 100%;
+        border: none;
+        font-size: 0.8em;
+        color: #666;
+        font-family: Arial, "serif", sans-serif, Helvetica;
+        font-weight: normal;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
+
+    // select:focus {
+    //     outline: none;
+    //     cursor: pointer;
+    // }    
+}
+
+.ibm-col-6-2.ibm_cci-select-style:hover{
+    opacity: 0.9;
+    background: #fafafa url("../i/icon-select-hover.png") no-repeat 90% 50%;
+}
 
 p.ibm_cci-pagination, p.ibm_cci-prevNext {
     display:inline-block;
@@ -439,6 +487,30 @@ input.ibm-cc-search--icon:hover{
         background-color: #ccc;
     }
 }
+
+    p.ibm_cci-submitButt input.ibm_cci_loginButton{
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        background-color: #ef4e38;
+        width: 140px;
+        height: 38px;
+        font-family: "HelveticaNeue-Light" Helvetica;
+        cursor: pointer;
+        float: right;
+        margin-right: 0;
+        -webkit-margin-after: initial;
+        margin-right: -moz-calc(0);
+        transition: background-color 0.5s;
+        -webkit-transition: background-color 0.5s;
+    }
+
+    p.ibm_cci-submitButt input.ibm_cci_loginButton:hover, p.ibm_cci-submitButt input.ibm_cci_loginButton:focus{
+        background-color: #dd3e29;
+
+    }
 
 
 

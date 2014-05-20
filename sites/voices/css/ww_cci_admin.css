@@ -234,18 +234,18 @@ html, body, #ibm-pcon.ibm_cci-pcon {
 .ibm-col-6-5.ibm_cci_marginTop ul {
   display: inline-block; }
 
-#ibm-pcon li.ibm_cci_addAccRadio, #ibm_cci-modalWin li.ibm_cci_addAccRadio {
+#ibm-pcon li.ibm_cci_addAccRadio, #ibm_cci-modalWin li.ibm_cci_addAccRadio, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio {
   display: inline;
   padding: 0 10px 0 0; }
-#ibm-pcon li.ibm_cci_addAccRadio label, #ibm_cci-modalWin li.ibm_cci_addAccRadio label {
+#ibm-pcon li.ibm_cci_addAccRadio label, #ibm_cci-modalWin li.ibm_cci_addAccRadio label, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio label {
   font-size: 12px;
   font-family: Arial, "serif", sans-serif, Helvetica;
   vertical-align: initial;
   color: #666666;
   cursor: pointer; }
-#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"], #ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"], #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"], #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"] {
+#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"], #ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"], #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"], #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"], #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="radio"], #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="checkbox"] {
   display: none; }
-#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"] + label span, #ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span {
+#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"] + label span, #ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="radio"] + label span, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span {
   display: inline-block;
   background: url("../i/spriteRadioBox.png") left top no-repeat;
   margin-right: 8px;
@@ -253,13 +253,13 @@ html, body, #ibm-pcon.ibm_cci-pcon {
   height: 14px;
   cursor: pointer;
   vertical-align: text-top; }
-#ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span {
+#ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="checkbox"] + label span {
   background: url("../i/spriteCheckBox.png") left top no-repeat;
   width: 16px;
   height: 16px; }
-#ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"]:checked + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"]:checked + label span {
+#ibm-pcon li.ibm_cci_addAccRadio input[type="checkbox"]:checked + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="checkbox"]:checked + label span, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="checkbox"]:checked + label span {
   background: url("../i/spriteCheckBox.png") -16px top no-repeat; }
-#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"]:checked + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"]:checked + label span {
+#ibm-pcon li.ibm_cci_addAccRadio input[type="radio"]:checked + label span, #ibm_cci-modalWin li.ibm_cci_addAccRadio input[type="radio"]:checked + label span, #ibm_cci-modalDelWin li.ibm_cci_addAccRadio input[type="radio"]:checked + label span {
   background: url("../i/spriteRadioBox.png") -14px top no-repeat; }
 
 body li:before {
@@ -319,9 +319,9 @@ form input.ibm_cci_classField {
   color: #787878;
   margin-left: 20px; }
 
-#ibm_cci-modalWin form {
+#ibm_cci-modalWin form, #ibm_cci-modalDelWin form {
   margin-top: 10px; }
-#ibm_cci-modalWin form input.ibm_cci_classField {
+#ibm_cci-modalWin form input.ibm_cci_classField, #ibm_cci-modalDelWin form input.ibm_cci_classField {
   margin: 0;
   width: 155px; }
 
@@ -339,7 +339,7 @@ form input.ibm_cci_classField {
   padding: 0 47px;
   text-align: center; }
 
-#ibm-pcon #ibm-content p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray {
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray, #ibm_cci-modalDelWin p.ibm_cci-deleteButt, #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray {
   width: 65px;
   height: 23px;
   display: inline-block;
@@ -348,20 +348,20 @@ form input.ibm_cci_classField {
   transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
   margin-top: 10px; }
-#ibm-pcon #ibm-content p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButtGray a {
+#ibm-pcon #ibm-content p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButtGray a, #ibm_cci-modalDelWin p.ibm_cci-deleteButt a, #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray a {
   line-height: 30px;
   float: left;
   padding: 0 15px;
   text-align: center; }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButtGray {
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray, #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray {
   background-color: #cdcdcd; }
 
 #ibm-pcon #ibm-content p.ibm_cci-deleteButt:hover {
   opacity: 1;
   background-color: #dd3e29; }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray {
+#ibm_cci-modalWin p.ibm_cci-deleteButt, #ibm_cci-modalWin p.ibm_cci-deleteButtGray, #ibm_cci-modalDelWin p.ibm_cci-deleteButt, #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray {
   float: left;
   width: 115px;
   height: 23px;
@@ -369,16 +369,16 @@ form input.ibm_cci_classField {
   font-size: 12px;
   transition: background-color 0.3s;
   -webkit-transition: background-color 0.3s; }
-#ibm_cci-modalWin p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButtGray a {
+#ibm_cci-modalWin p.ibm_cci-deleteButt a, #ibm_cci-modalWin p.ibm_cci-deleteButtGray a, #ibm_cci-modalDelWin p.ibm_cci-deleteButt a, #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray a {
   padding: 0 40px; }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt:hover {
+#ibm_cci-modalWin p.ibm_cci-deleteButt:hover #ibm_cci-modalDelWin p.ibm_cci-deleteButt:hover {
   background-color: #dd3e29; }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButtGray:hover {
+#ibm_cci-modalWin p.ibm_cci-deleteButtGray:hover #ibm_cci-modalDelWin p.ibm_cci-deleteButtGray:hover {
   background-color: #868686; }
 
-#ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign {
+#ibm_cci-modalWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign, #ibm_cci-modalDelWin p.ibm_cci-deleteButt.ibm_cci_deleteButtRightAlign {
   float: right;
   -webkit-filter: none; }
 
@@ -401,6 +401,33 @@ form input.ibm_cci_classFieldButt {
 
 form input.ibm_cci_classFieldButt:hover {
   background-color: #dd3e29; }
+
+.ibm-col-6-2.ibm_cci-select-style {
+  border: 1px solid #ddd;
+  width: 160px;
+  height: 27px;
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s;
+  background: #fafafa url("../i/icon-select.png") no-repeat 90% 50%; }
+.ibm-col-6-2.ibm_cci-select-style select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  font-size: 0.8em;
+  color: #666;
+  font-family: Arial, "serif", sans-serif, Helvetica;
+  font-weight: normal;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  cursor: pointer; }
+
+.ibm-col-6-2.ibm_cci-select-style:hover {
+  opacity: 0.9;
+  background: #fafafa url("../i/icon-select-hover.png") no-repeat 90% 50%; }
 
 p.ibm_cci-pagination, p.ibm_cci-prevNext {
   display: inline-block;
@@ -493,6 +520,27 @@ input.ibm-cc-search--icon:hover {
 #ibm-pcon #ibm-content .ibm-col-6-3.ibm_cci_marginTop p.ibm_cci-submitButt.ibm_cci-draftButt, #ibm-pcon #ibm-content .ibm-col-6-2.ibm_cci_marginTop p.ibm_cci-submitButt.ibm_cci-draftButt, #ibm-pcon #ibm-content .ibm-col-6-5.ibm_cci-autoTweet p.ibm_cci-submitButt.ibm_cci-draftButt {
   background-color: #ccc; }
 
+p.ibm_cci-submitButt input.ibm_cci_loginButton {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  background-color: #ef4e38;
+  width: 140px;
+  height: 38px;
+  font-family: "HelveticaNeue-Light" Helvetica;
+  cursor: pointer;
+  float: right;
+  margin-right: 0;
+  -webkit-margin-after: initial;
+  margin-right: -moz-calc(0);
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s; }
+
+p.ibm_cci-submitButt input.ibm_cci_loginButton:hover, p.ibm_cci-submitButt input.ibm_cci_loginButton:focus {
+  background-color: #dd3e29; }
+
 #ibm-top #ibm-leadspace-head {
   background-color: #333;
   background: -webkit-linear-gradient(top, #333333, #333333);
@@ -579,18 +627,18 @@ input.ibm-cc-search--icon:hover {
   /* Firefox 3.5+ */
   filter: gray;
   /* IE6-9 */
-  -webkit-filter: blur(1px) grayscale(80%) opacity(30%);
+  -webkit-filter: blur(1px) grayscale(90%) opacity(10%);
   transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s; }
 
-.ibm-columns.ibm_cci_modalWinToggle#ibm_cci-modalWin, .ibm-band.ibm_cci__ibm-band, .ibm-columns.ibm_cci_modalWinDelete.ibm_cci_modalWinToggle#ibm_cci-modalWin {
+.ibm-columns.ibm_cci_modalWinToggle#ibm_cci-modalWin, .ibm-band.ibm_cci__ibm-band, .ibm-columns.ibm_cci_modalWinDelete.ibm_cci_modalWinToggle#ibm_cci-modalDelWin {
   display: none; }
 
 .ibm-band.ibm_cci__ibm-band.ibm_cci__ibm_bandShow {
   display: block !important; }
 
-.ibm-columns#ibm_cci-modalWin {
+.ibm-columns#ibm_cci-modalWin, .ibm-columns#ibm_cci-modalDelWin {
   position: fixed;
   width: 300px;
   height: auto;
@@ -607,35 +655,35 @@ input.ibm-cc-search--icon:hover {
   -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   z-index: 99999;
   padding: 20px; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 {
   margin: 0;
   padding: 0; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 li {
   padding: 0;
   display: block; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li img {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li img, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 li img {
   float: left;
   outline: 1px solid #efefef; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li p.ibm_cci-name {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li p.ibm_cci-name, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 li p.ibm_cci-name {
   font-size: 14px;
   font-weight: bold;
   padding: 0;
   margin-left: 40px;
   line-height: 16px; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li p.ibm_cci-name span.ibm_cci-handle {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 li p.ibm_cci-name span.ibm_cci-handle, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 li p.ibm_cci-name span.ibm_cci-handle {
   font-weight: normal;
   display: block; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1 {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 .ibm-col-6-1 {
   margin: 15px 0 0 0;
   width: 150px; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1 p.ibm_cci-modalLabels {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1 p.ibm_cci-modalLabels, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 .ibm-col-6-1 p.ibm_cci-modalLabels {
   font-size: 14px; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClassLabel {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClassLabel, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClassLabel {
   width: 110px; }
-.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClasses {
+.ibm-columns#ibm_cci-modalWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClasses, .ibm-columns#ibm_cci-modalDelWin .ibm-col-6-2 .ibm-col-6-1.ibm_cci-selecClasses {
   width: 190px; }
 
-.ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalWin {
+.ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalWin, .ibm-columns.ibm_cci_modalWinDelete#ibm_cci-modalDelWin {
   height: auto;
   min-height: 120px;
   margin-top: -150px; }
