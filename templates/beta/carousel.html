@@ -116,7 +116,7 @@
 		</div>
 	</div>
 	<div class="ibm-col-6-2">
-		<div class="ibm-container ibm-carousel ibm-carousel-fixed ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-carousel-fixed ibm-alternate" id="carousel-2">
 		<h2>6/2 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -168,7 +168,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-6-3">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-3">
 		<h2>6/3 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -193,7 +193,7 @@
 		</div>
 	</div>
 	<div class="ibm-col-6-3">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-4">
 		<h2>6/3 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -226,7 +226,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-6-5">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-5">
 		<h2>6/5 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -251,7 +251,7 @@
 		</div>
 	</div>
 	<div class="ibm-col-6-1">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-6">
 		<h2>6/1 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -287,7 +287,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-1-1">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-7">
 		<h2>1/1 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -315,7 +315,7 @@
 
 
 
-<div class="ibm-container ibm-carousel ibm-carousel-fixed">
+<div class="ibm-container ibm-carousel ibm-carousel-fixed" id="carousel-arrows">
 <h2 class="ibm-show-hide">1/1 column ribbon (arrows) </h2>
 <div class="ibm-container-body">
 
@@ -352,7 +352,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-5-1">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-9">
 		<h2>5/1 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -377,7 +377,7 @@
 		</div>
 	</div>
 	<div class="ibm-col-5-4">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-10">
 		<h2>5/4 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -407,7 +407,7 @@
 
 <div class="ibm-columns">
 	<div class="ibm-col-5-3">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-11">
 		<h2>5/3 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -432,7 +432,7 @@
 		</div>
 	</div>
 	<div class="ibm-col-5-2">
-		<div class="ibm-container ibm-carousel ibm-alternate">
+		<div class="ibm-container ibm-carousel ibm-alternate" id="carousel-12">
 		<h2>5/4 column ribbon</h2>
 		<div class="ibm-container-body">
 			<div class="ibm-columns">
@@ -607,66 +607,11 @@
 
 
 
-
-
-
 <script>
-// dojo.addOnLoad(function() {
-//     dojo['require']("ibmweb.ribbon");
-//     dojo.addOnLoad(function() {
-//     	//normal way of creating ribbon, without using autoAssignItemType or columns options
-//         var s = new ibmweb.ribbon();
-        
-//         // create 1 item add it to ribbon, slide will be created automatically
-//         var item = s.addItem(new ibmweb.ribbonItem({
-//             columns:1,
-//             content:"<h2>dyn item 1</h2><p>item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item item</p>"
-//         }));
-        
-//         // create 3 items add it to second slide, note we have to specify slide index as 1, otherwise
-//         // new slide will be created for each item we add.
-//         var item = s.addItem(new ibmweb.ribbonItem({
-//             columns:3,
-//             content:"<h2>dyn item 2.1</h2><p>item item item item item item </p>"
-//         }),1);
-//         var item = s.addItem(new ibmweb.ribbonItem({
-//             columns:3,
-//             content:"<h2>dyn item 2.2</h2><p>item item item item item item </p>"
-//         }),1);
-//         var item = s.addItem(new ibmweb.ribbonItem({
-//             columns:3,
-//             content:"<h2>dyn item 2.3</h2><p>item item item item item item </p>"
-//         }),1);
-        
-//         // create 5 items by copying existing node using ribbonItemAbstract
-//         for( var i=1; i<= 5; i++ ) {
-//         	var item = dojo.clone(dojo.query("div.ibm-col-5-1")[5]);
-//             s.addItem(new ibmweb.ribbonItemAbstract({srcNodeRef: item}), 2);
-//         }
-//         s.placeAt('ribbon1');
-//         s.startup();
-    
-//         // creating ribbon with options autoAssignItemType and column
-//         // since we specify columns:5 every 6th item new slide will be created automatically
-//         // also as we are using autoAssignItemType:true, no need to specify type, it will be assigned automatically
-//         var s = new ibmweb.ribbon();
-        
-//         for( var i=1; i<= 15; i++ ) {
-//             var item = s.addItem(new ibmweb.ribbonItem({content:"<h2>dyn item " + i + "</h2><p>Dynamic item item item item item </p>"}));
-//         }
-        
-        
-//         s.placeAt('ribbon2');
-//         s.startup();
-//     });
-// });
-
-
   (function($, IBM) {
   	window.carousels = [];
 
 		$(function() {
-
 			var c1 = new IBM.Common.Widgets.Carousel($("#ribbon1"), {
 				init: false
 			});
@@ -691,11 +636,6 @@
 			
 			c1.init();
 
-
-
-
-
-
 			var c2 = new IBM.Common.Widgets.Carousel($("#ribbon2"), {
 				init: false,
 				columns: 3
@@ -708,11 +648,6 @@
       }
 
       c2.init();
-
-
-
-
-
     });
   })(jQuery, CHICKENFEED);
 
@@ -778,7 +713,7 @@
 	<!-- this adds a ribbon to the related content section.
 		Please NOTE: it is NOT possible to add merchandising modules here if you already use a ribbon!
 	 -->
-	<div class="ibm-container ibm-carousel">
+	<div class="ibm-container ibm-carousel" id="carousel-related-content">
 
 	<!-- this adds a ribbon to the related content section -->
 		<div class="ibm-container-body">
@@ -885,6 +820,10 @@
 		$(function() {
 
 			window.carousels.push(new IBM.Common.Widgets.Carousel($("#carousel-1"), {}));
+			window.carousels.push(new IBM.Common.Widgets.Carousel($("#carousel-arrows"), {
+				arrows: true
+			}));
+
 
       $(".ibm-carousel").each(function(i, el) {
       	var options = {};
