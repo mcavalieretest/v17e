@@ -26,7 +26,7 @@
 
                                     <!-- post details -->
                                     <h4 class="post-details">
-                                        By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span>
+                                        <!-- By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span> -->
                                     </h4>
                                     <!-- /post details -->
 

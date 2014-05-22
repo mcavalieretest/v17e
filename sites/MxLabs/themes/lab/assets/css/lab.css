@@ -17,6 +17,15 @@
 */
 
 
+/* Clearfix
+=============================================================================*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 /* #Base Styles
 =============================================================================*/
 
@@ -27,6 +36,9 @@
 #ibm-top article h2,#ibm-top article h3,#ibm-top article h4,#ibm-top article h5 {font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif}
 #ibm-top article h1 a,#ibm-top article h2 a,#ibm-top article h3 a,#ibm-top article h4 a,#ibm-top article h5 a {color:#000;text-decoration:none}
 
+#ibm-top article h4.subtext{
+    font-size: 22px;
+}
 /* Make images responsive */
 img {max-width:100%;border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
 
@@ -187,7 +199,7 @@ ul li:before, .ibm-bullet:before {content:normal}
 .slick-track:after { clear: both; }
 .slick-loading .slick-track { visibility: hidden; }
 .slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
-.slick-slide img { display: block; }
+.slick-slide img { display: block; width:100%;}
 .slick-slide img.slick-loading { background: white url(../images/ajax-loader.gif) center center no-repeat; padding-bottom: 100%; }
 .slick-slide.dragging img { pointer-events: none; }
 .slick-initialized .slick-slide { display: block; }
@@ -268,4 +280,231 @@ a#ssba_linkedin_share:before {content: '\f144'}
 .static-instagram a img{
     margin-bottom: 4px;
 }
+
+
+
+/* Playbook styles
+-----------------------------------------------------------------------------*/
+
+#ibm-playbook {
+    padding-top: 46px;
+    text-shadow: none;
+
+    transition: all 0.6s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+
+
+
+
+#ibm-playbook #ibm-leadspace-head.ibm-alternate-background {position:relative;height:100%;max-height:665px}
+
+#ibm-playbook #ibm-leadspace-head.ibm-alternate-background .hero_img{
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 665px;
+    width: 100%;
+    text-align: center;
+}
+
+#ibm-playbook .hero_img span{
+    display: inline-block;
+    margin-top: 526px;
+}
+
+#ibm-playbook .arrow{
+    background: url(../images/playbook/arrow.png);
+    display: block;
+    height: 25px;
+    width: 41px;
+    margin: 70px auto 0;
+}
+
+#ibm-playbook .arrow.black{
+    background: url(../images/playbook/arrow_blk.png);
+}
+
+#ibm-playbook #ibm-pcon {
+    padding:0;
+}
+
+#ibm-playbook .ibm-band{
+    padding-top: 100px;
+}
+
+#ibm-playbook #ibm-content-main section{
+    color: #747474;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+
+#ibm-playbook #ibm-content-main .posters section,
+#ibm-playbook #ibm-content-main .templates section,
+#ibm-playbook #ibm-content-main .page-brief section{
+    margin-bottom: 0px;
+}
+
+#ibm-playbook #ibm-content-main .posters section .arrow,
+#ibm-playbook #ibm-content-main .page-brief section .arrow{
+    margin-top: 75px;
+}
+
+#ibm-playbook #ibm-content-main .templates section .arrow{
+    margin-top: 40px;
+}
+
+
+#ibm-playbook #ibm-content-main section h2{
+    color: #444444;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 16px;
+    text-shadow: none;
+    font-family: 'HelvRegularIBM';
+}
+
+#ibm-playbook #ibm-content-main section p{
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+#ibm-playbook .page-brief{
+    background-color: #fff;
+
+}
+#ibm-playbook .posters{
+    background-color: #ebebeb;
+    /*background: url(../images/playbook/bg-pattern-g.jpg) repeat 0 0 #ebebeb;*/
+}
+
+#ibm-playbook .ibm-band section ul {
+    margin-top: 42px;
+    text-align: center;
+}
+
+#ibm-playbook .ibm-band section ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#ibm-playbook .ibm-band section ul li:last-child{
+    margin-right: 0 !important;
+}
+
+#ibm-playbook .ibm-band section ul li a div{
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 220px;
+    padding-bottom: 1em;
+}
+
+#ibm-playbook .ibm-band section ul li img{
+    display: none;
+    height: 220px;
+    width: 220px;
+}
+
+#ibm-playbook .ibm-band section ul li span{
+    color:#444;
+    font-size: 18px;
+    display: block;
+    text-shadow: none;
+}
+
+#ibm-playbook .ibm-band section ul li a:hover img{
+    display: block;
+}
+
+#ibm-playbook .ibm-band section ul li a{
+    color: #3bb1dc;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#ibm-playbook .templates{
+    background-color: #007670;
+    /*background: url(../images/playbook/bg-pattern-b.jpg) repeat 0 0 #7fb0c9;*/
+}
+
+#ibm-playbook .templates h2,
+#ibm-playbook .templates p{
+    color: #fff !important;
+    text-shadow: none;
+}
+
+
+#ibm-playbook .ibm-band.templates section {
+    margin-bottom: 20px;
+}
+
+#ibm-playbook .ibm-band.templates section ul li:nth-child(3n+3){
+    margin-right: 0;
+}
+
+#ibm-playbook .ibm-band.templates section ul li .template{
+    margin-bottom: 80px;
+    width: 300px;
+}
+
+#ibm-playbook .ibm-band.templates section ul li span{
+    color:#fff;
+}
+
+#ibm-playbook .ibm-band.templates section ul li a div{
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 140px;
+    width: 122px;
+}
+
+#ibm-playbook .ibm-band.templates section ul li img{
+    height: 140px;
+    width: 122px;
+    
+}
+
+#ibm-playbook .ibm-band.templates section ul li a{
+    color: #48fdf0;
+}
+
+#ibm-playbook .ibm-band.templates .arrow{
+    margin-top: 0;
+    display: none;
+}
+
+
+#ibm-playbook .references{
+    display: none;
+    background-color: #ecd343;
+    /*background: url(../images/playbook/bg-pattern-y.jpg) repeat 0 0 #ecd343;*/
+}
+
+#ibm-playbook .ibm-band.references  section ul li{
+    margin-right: 66px;
+}
+
+#ibm-playbook .ibm-band.references section ul li a div{
+    background-repeat: no-repeat;
+    height: 189px;
+    width: 218px;
+    margin-left: 0;
+}
+
+#ibm-playbook .ibm-band.references section ul li img{
+    display: none;
+    height: 189px;
+    width: 218px;
+   
+}
+
+#ibm-playbook .ibm-band.references section ul li a{
+    color: #018fc3;
+}
+
 

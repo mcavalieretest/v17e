@@ -18,8 +18,11 @@
 					                <!-- /post title -->
 
 					                <!-- post details -->
-					                <h4 class="post-details">
-					                    By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span>
+					                <h4 class="post-details subtext">
+					                <?php
+					                	echo get_post_meta( get_the_ID(), 'subtext', true ); 
+					                ?>
+					                   <!-- By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span> -->
 					                </h4>
 					                <!-- /post details -->
 
