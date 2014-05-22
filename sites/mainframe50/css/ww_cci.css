@@ -642,11 +642,19 @@ sites/
   font-family: "LubalinGraphStdBookIBM";
 }
 
-#story .ibm-story-a, #story-mobile .ibm-story-a, #story-geo .ibm-story-geo, #story-geo-mobile .ibm-story-geo {
+#story .ibm-story-a, #story-mobile .ibm-story-a {
   background: url("../i/arrow.png") no-repeat right;
   padding: 0px 30px 0 0;
   color: #FFFFFF;
   font-weight: bold;
+  text-shadow: none !important;
+}
+
+#story-geo .ibm-story-geo, #story-geo-mobile .ibm-story-geo {
+  background: url("../i/arrow.png") no-repeat scroll left center transparent;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0 30px;
   text-shadow: none !important;
 }
 
@@ -680,9 +688,14 @@ sites/
   position: relative;
 }
 
-#story .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-geo .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link {
+#story .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link {
   position: absolute;
   top: 135px;
+}
+
+#story-geo .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link {
+  position: absolute;
+  top: 110px;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-left, #story-mobile .ibm-columns .ibm-col-4-2.image-left, #story-geo .ibm-columns .ibm-col-4-2.image-left, #story-geo-mobile .ibm-columns .ibm-col-4-2.image-left {
