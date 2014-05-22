@@ -413,6 +413,25 @@
 	text-decoration: none;
 }
 
+#story-geo .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link {
+    position: absolute;
+    top: 110px;
+}
+
+#story-geo .ibm-story-geo, #story-geo-mobile .ibm-story-geo {
+    background: url("../i/arrow.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0 30px;
+    text-shadow: none !important;
+}
+
+#story-geo .ibm-columns .ibm-col-4-2.text-right, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right {
+    padding: 20px 20px 0 !important;
+    position: relative;
+    width: 480px !important;
+}
+
 //Other Devices Style
 //Adjusting the page to work on < width 966px 
 @media (max-width: 981px) and (min-width: 915px){	

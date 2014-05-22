@@ -423,6 +423,25 @@ sites/
   text-decoration: none;
 }
 
+#story-geo .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right p.ibm-ind-link {
+  position: absolute;
+  top: 110px;
+}
+
+#story-geo .ibm-story-geo, #story-geo-mobile .ibm-story-geo {
+  background: url("../i/arrow.png") no-repeat scroll left center transparent;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0 30px;
+  text-shadow: none !important;
+}
+
+#story-geo .ibm-columns .ibm-col-4-2.text-right, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-right {
+  padding: 20px 20px 0 !important;
+  position: relative;
+  width: 480px !important;
+}
+
 @media (max-width: 981px) and (min-width: 915px) {
   #ibm-content.ibm-story-content #ibm-content-body #ibm-content-main .ibm-columns .ibm-col-6-4 {
     margin-left: 0 !important;
