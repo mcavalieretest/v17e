@@ -647,7 +647,7 @@ sites/
 }
 
 #story-geo .ibm-item-note, #story-geo-mobile .ibm-item-note {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 #story .ibm-story-a, #story-mobile .ibm-story-a {
