@@ -622,46 +622,46 @@
 	right: 0;
 }
 
-#story,#story-mobile{
+#story,#story-mobile,#story-geo,#story-geo-mobile {
 	position: relative;
 }
 
-#story .ibm-columns,#story-mobile .ibm-columns {
+#story .ibm-columns,#story-mobile .ibm-columns,#story-geo .ibm-columns,#story-geo-mobile .ibm-columns {
 	margin-top: 25px !important;
 	margin-bottom: 25px !important;
 	width: 1080px !important;
 	padding: 0 !important;
 }
 
-#story .ibm-columns .ibm-col-4-2,#story-mobile .ibm-columns .ibm-col-4-2 {
+#story .ibm-columns .ibm-col-4-2,#story-mobile .ibm-columns .ibm-col-4-2,#story-geo .ibm-columns .ibm-col-4-2,#story-geo-mobile .ibm-columns .ibm-col-4-2 {
 	margin: 0 !important;
 	padding: 0 !important;
 }
 
-#story .ibm-columns.blue,#story-mobile .ibm-columns.blue {
+#story .ibm-columns.blue,#story-mobile .ibm-columns.blue,#story-geo .ibm-columns.blue,#story-geo-mobile .ibm-columns.blue {
 	background: #031730;
 }
 
-#story .ibm-columns.purple,#story-mobile .ibm-columns.purple {
+#story .ibm-columns.purple,#story-mobile .ibm-columns.purple,#story-geo .ibm-columns.purple,#story-geo-mobile .ibm-columns.purple {
 	background: #811D7D;
 }
 
-#story .ibm-columns.red,#story-mobile .ibm-columns.red {
+#story .ibm-columns.red,#story-mobile .ibm-columns.red,#story-geo .ibm-columns.red,#story-geo-mobile .ibm-columns.red {
 	background: #D91F2C;
 }
 
-#story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link,#story-mobile .ibm-columns .ibm-col-4-2 p a.ibm-forward-link {
+#story .ibm-columns .ibm-col-4-2 p a.ibm-forward-link,#story-mobile .ibm-columns .ibm-col-4-2 p a.ibm-forward-link,#story-geo .ibm-columns .ibm-col-4-2 p a.ibm-forward-link,#story-geo-mobile .ibm-columns .ibm-col-4-2 p a.ibm-forward-link {
 	color: #FFFFFF !important;
 	text-shadow: none !important;
 }
 
-#story .ibm-columns .ibm-col-4-2 p span.highlight,#story-mobile .ibm-columns .ibm-col-4-2 p span.highlight {
+#story .ibm-columns .ibm-col-4-2 p span.highlight,#story-mobile .ibm-columns .ibm-col-4-2 p span.highlight,#story-geo .ibm-columns .ibm-col-4-2 p span.highlight,#story-geo-mobile .ibm-columns .ibm-col-4-2 p span.highlight {
 	color: #FDB42B !important;
 	font-family: "LubalinDemiIBM";
 	text-shadow: none !important;
 }
 
-#story .ibm-p-story,#story-mobile .ibm-p-story,#story-mobile .ibm-p-story,#story-mobile .ibm-p-story {
+#story .ibm-p-story,#story-mobile .ibm-p-story,#story-geo .ibm-p-story,#story-geo-mobile .ibm-p-story {
 	color: #FFFFFF;
 	line-height: 2.4rem;
 	font-size: 2rem;
