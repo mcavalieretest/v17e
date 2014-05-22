@@ -672,9 +672,14 @@ sites/
   position: relative;
 }
 
-#story .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link, #story-mobile .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link, #story-geo .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link {
+#story .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link, #story-mobile .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link {
   position: absolute;
   top: 135px;
+}
+
+#story-geo .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link, #story-geo-mobile .ibm-columns .ibm-col-4-2.text-left p.ibm-ind-link {
+  position: absolute;
+  top: 110px;
 }
 
 #story .ibm-columns .ibm-col-4-2.image-right, #story-mobile .ibm-columns .ibm-col-4-2.image-right, #story-geo .ibm-columns .ibm-col-4-2.image-right, #story-geo-mobile .ibm-columns .ibm-col-4-2.image-right {
