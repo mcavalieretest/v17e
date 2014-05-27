@@ -1,7 +1,7 @@
 $(function() {
     // ABOUT US PAGE API:
     // http://esl002.somerslab.ibm.com/social/aggregator/rest/80/VOICES/about
-
+    
     // DEFAULT URL HASH (START)
     window.location.hash = "#voices-" + $("#ibm_cci--toggle-js li a").attr("id");
     var pathName = window.location.pathname, 
