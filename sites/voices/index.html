@@ -1,9 +1,8 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-
 <head>
-
   <!-- NOTE: Metatags copied from the current IBM/Voices site (Remove this note before launch) -->
   <meta http-equiv="Cache-Control" content="no-cache"/>
   <meta http-equiv="Pragma" content="no-cache"/>
@@ -63,27 +62,27 @@
 
 <!-- FOR LOCAL TESTING (START) -->
 <!--     <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" /> -->
-<!--     <link href="http://205.186.160.10/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" />
-    <link href="css/ww_cci.css" rel="stylesheet" type="text/css" /> -->
+    <link href="http://205.186.160.10/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" />
+    <link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
 
 <!-- <script src="../../js/ww.js" type="text/javascript"></script> -->
-<!--     <script src="http://205.186.160.10/v17e/js/ww.js" type="text/javascript"></script>
+    <script src="http://205.186.160.10/v17e/js/ww.js" type="text/javascript"></script>
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="js/jsviews.min.js" type="text/javascript"></script>
-    <script src="js/ww_cc_jsrender.js" type="text/javascript"></script> -->
+    <script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
 <!-- FOR LOCAL TESTING (END) -->
 
 <!-- FOR ESL002 TESTING (START) -->
   <!-- CSS (START) -->
-    <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/css/ww.css" rel="stylesheet" title="www" type="text/css" />
-    <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/css/ww_cci.css" rel="stylesheet" type="text/css" />
+<!--     <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/css/ww.css" rel="stylesheet" title="www" type="text/css" />
+    <link href="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/css/ww_cci.css" rel="stylesheet" type="text/css" /> -->
   <!-- CSS (END) -->
 
   <!-- JS (START) -->
-    <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/ww.js" type="text/javascript"></script>
+<!--     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/ww.js" type="text/javascript"></script>
     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/jsviews.min.js" type="text/javascript"></script>
-    <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/ww_cc_jsrender.min.js" type="text/javascript"></script>
+    <script src="https://esl002.somerslab.ibm.com/SMA/SMAStatic/voices-jsRender/js/ww_cc_jsrender.min.js" type="text/javascript"></script> -->
   <!-- JS (END) -->
 <!-- FOR ESL002 TESTING (END) -->
 
@@ -183,10 +182,10 @@
 <div class="ibm_cci--unr-cb">
   <div class="ibm_cci--lv-rc-th ibm_cci--gv-rc-th"> <img class="ibm_cci--lv-rc-avatar" src="{{:userAvatar}}" width="25" height="25">
     <h3 class="ibm_cci--lv-r-wct">
-     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Username', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href); return true;" alt="twitter user name {{:username}}">{{:username}}</a>
+     <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter Username', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href); return true;" alt="twitter user name {{:username}}">{{:~decodeText(username)}}</a>
      </h3>
     <p class="ibm_cci--lv-r-wch">
-      <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter UserScreenName', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href);return true;" alt="twitter user screen name {{:userScreenName}}">@{{:userScreenName}}</a>
+      <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :'Twitter UserScreenName', 'ibmEvGroup' : 'Twitter username and handle', 'ibmEvName' : {{:id}},  'ibmEvModule' : this.href, 'ibmEvSection': {{:rank}} }); return openNewWin(this.href);return true;" alt="twitter user screen name {{:userScreenName}}">@{{:~decodeText(userScreenName)}}</a>
     </p>
   </div>
   <div class="ibm_cci--time-stamp">
@@ -359,10 +358,10 @@
   <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}">
     <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
       <h3 class="ibm_cci--lv-rc-title">
-        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:username}}</a>
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:~decodeText(username)}}</a>
       </h3>
       <p class="ibm_cci--lv-rc-h">
-        <a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter UserScreenName', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">@{{:userScreenName}}</a>
+        <a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter UserScreenName', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">@{{:~decodeText(userScreenName)}}</a>
       </p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
@@ -400,10 +399,10 @@
   <div class="ibm_cci-rel-tweet-details-container" data-userID="{{:userId}}" style="display: none;">
     <div class="ibm_cci--lv-rc-th" data-userID="{{:userId}}">
       <h3 class="ibm_cci--lv-rc-title">
-        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:username}}</a>
+        <a href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user name {{:username}}" did="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter Username', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">{{:~decodeText(username)}}</a>
       </h3>
       <p class="ibm_cci--lv-rc-h"><a data-userID="{{:userId}}" href="https://twitter.com/intent/user?user_id={{:userId}}&dnt=true&count=none" alt="twitter user screen name {{:userScreenName}}" odid="{{:~root.id}}" drank="{{:~root.rank}}" refTweetid="{{:id}}"  target="_blank" onclick="ibmStats.event({ 'ibmEV' : 'External', 'ibmEvAction' :this.alt, 'ibmEvGroup' : 'Twitter UserScreenName', 'ibmEvName' : this.refTweetid, 'ibmEvModule' : this.refTweetid, 'ibmEvSection': this.drank }); return openPopup(this.href); return true;">@
-        {{:userScreenName}}</a></p>
+        {{:~decodeText(userScreenName)}}</a></p>
       </div>
       <div class="ibm_cci--time-stamp" data-userID="{{:userId}}">
        <p class="ibm_cci-tts">
