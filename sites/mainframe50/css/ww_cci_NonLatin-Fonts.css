@@ -618,7 +618,6 @@ sites/
 
 #story .ibm-columns .ibm-col-4-2 p span.highlight, #story-mobile .ibm-columns .ibm-col-4-2 p span.highlight, #story-geo .ibm-columns .ibm-col-4-2 p span.highlight, #story-geo-mobile .ibm-columns .ibm-col-4-2 p span.highlight {
   color: #FDB42B !important;
-  font-family: "LubalinDemiIBM";
   text-shadow: none !important;
 }
 
