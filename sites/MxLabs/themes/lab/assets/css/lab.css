@@ -38,6 +38,7 @@
 
 #ibm-top article h4.subtext{
     font-size: 22px;
+    margin-top: 2px;
 }
 /* Make images responsive */
 img {max-width:100%;border:0;vertical-align:middle;-ms-interpolation-mode:bicubic}
@@ -122,7 +123,17 @@ div.mxlabs.logo{
 }
 
 .ibm-landing-page #ibm-leadspace-head.ibm-ribbon h2 {padding:0;text-shadow: 0 1px 0 #fff}
-#ibm-com #ibm-top .section-header {line-height:1.1 !important}
+#ibm-com #ibm-top .section-header {
+    font-size: 2em;
+    line-height:1.1 !important}
+#ibm-com #ibm-top .section-subheader {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
+    font-weight: 300;
+    font-size:22px;
+}
+#ibm-com #ibm-top .readmore{
+    float:right;
+}
 
 /* Override arrow positions */
 .ibm-landing-page #ibm-leadspace-head a.ibm-ribbon-prev {left:20px !important}
@@ -281,7 +292,14 @@ a#ssba_linkedin_share:before {content: '\f144'}
     margin-bottom: 4px;
 }
 
+.back_btn{
+    margin-top: -20px;
+    margin-left: 140px;
+}
 
+.back_btn span{
+    margin-left: 23px;
+}
 
 /* Playbook styles
 -----------------------------------------------------------------------------*/

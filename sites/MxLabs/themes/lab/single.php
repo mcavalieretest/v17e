@@ -3,13 +3,17 @@
 	       <div id="ibm-access-cntr" role="main">
                 <!-- <div id="ibm-leadspace-head" class="ibm-container ibm-ribbon"> -->
                 <div id="ibm-leadspace-head" class="ibm-container"></div>
+
                 <div id="ibm-pcon">
                     <!-- CONTENT_BEGIN -->
+                    <?php $back =$_SERVER['HTTP_REFERER'];
+                        if(isset($back) && $back !='') echo "<a class='back_btn' href='{$back}'><i class='step ibm-a-back-link size-48'></i><span>Back</span></a>";
+                    ?>
                     <div id="ibm-content">
                         <!-- CONTENT_BODY -->
                         <div id="ibm-content-body">
                             <section id="ibm-content-main">
-
+                                
 								<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 								<!-- article -->
@@ -25,7 +29,10 @@
                                     <!-- /post title -->
 
                                     <!-- post details -->
-                                    <h4 class="post-details">
+                                   <h4 class="post-details subtext">
+                                    <?php
+                                        echo get_post_meta( get_the_ID(), 'subtext', true ); 
+                                    ?>
                                         <!-- By <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_time('F j, Y'); ?></span> -->
                                     </h4>
                                     <!-- /post details -->

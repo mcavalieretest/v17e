@@ -13,7 +13,7 @@
 								<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 									<!-- post title -->
 					                <h1>
-					                    <?php the_title(); ?>
+					                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					                </h1>
 					                <!-- /post title -->
 
