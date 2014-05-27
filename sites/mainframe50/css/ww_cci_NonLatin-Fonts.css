@@ -86,7 +86,6 @@ sites/
 
 .ibm_cci-subtitle em {
   color: #FDB42B;
-  font-family: "LubalinGraphStdBookIBM";
   font-size: 9.5rem;
   font-style: normal;
   letter-spacing: 3px;
@@ -110,7 +109,6 @@ sites/
   font-size: 4.4rem;
   line-height: 50px;
   text-transform: uppercase;
-  font-family: "LubalinGraphStdBookIBM";
   color: #FDB42B;
 }
 
@@ -136,12 +134,11 @@ sites/
 }
 
 #ibm-content p.ibm_cci-intro {
-  font-family: "LubalinGraphStdBookIBM";
   padding-bottom: 10px;
 }
 
 #ibm-content p.ibm_cci-intro span {
-  font-family: "LubalinDemiIBM";
+
 }
 
 .ibm_last em {
@@ -177,7 +174,6 @@ sites/
 }
 
 .ibm_cci-progress-band h3 {
-  font-family: "LubalinDemiIBM";
   font-size: 40px;
   font-size: 4rem;
   line-height: 50px;
@@ -350,7 +346,6 @@ sites/
 
 .ibm-landing-page #ibm-leadspace-body.story h1 {
   color: #FFFFFF;
-  font-family: LubalinGraphStdBookIBM;
   font-size: 3.5rem;
   letter-spacing: 1px;
   padding-top: 155px;
@@ -359,7 +354,6 @@ sites/
 
 .ibm-landing-page #ibm-leadspace-body.story p {
   color: #FFFFFF;
-  font-family: HelvLightIBM;
   font-size: 19px;
   letter-spacing: 0.5px;
   text-shadow: none;
@@ -387,7 +381,6 @@ sites/
   }
 }
 #ibm-content .ibm-story p {
-  font-family: HelvLightIBM;
   font-size: 1.7rem;
   padding: 10px 0 20px 0;
 }
@@ -397,7 +390,6 @@ sites/
 }
 
 #ibm-content ul.ibm-portrait-module-list p {
-  font-family: HelvLightIBM;
   font-size: 1.5rem;
 }
 
@@ -549,12 +541,10 @@ sites/
   font-size: 3.6rem;
   font-weight: 300;
   color: white;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelvLightIBM", Arial, sans-serif;
   padding: 20px 0 !important;
 }
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body h1 span {
-  font-family: "LubalinGraphStdBookIBM";
   font-size: 8rem;
   color: #FDB42B;
   text-shadow: none !important;
@@ -565,7 +555,6 @@ sites/
 }
 
 .ibm-landing-page #ibm-leadspace-body.ibm-story-leadspace-body p {
-  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","HelvLightIBM",Arial,sans-serif;
   font-size: 2.0rem;
   color: white;
   line-height: 2.5rem;
@@ -638,7 +627,6 @@ sites/
   line-height: 2.4rem;
   font-size: 2rem;
   text-shadow: none !important;
-  font-family: "LubalinGraphStdBookIBM";
 }
 
 #story-geo .ibm-ind-link, #story-geo-mobile .ibm-ind-link {
