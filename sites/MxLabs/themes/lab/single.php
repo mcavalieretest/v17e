@@ -6,9 +6,7 @@
 
                 <div id="ibm-pcon">
                     <!-- CONTENT_BEGIN -->
-                    <?php $back =$_SERVER['HTTP_REFERER'];
-                        if(isset($back) && $back !='') echo "<a class='back_btn' href='{$back}'><i class='step ibm-a-back-link size-48'></i><span>Back</span></a>";
-                    ?>
+                    
                     <div id="ibm-content">
                         <!-- CONTENT_BODY -->
                         <div id="ibm-content-body">
@@ -18,9 +16,11 @@
 
 								<!-- article -->
 								<article id="post-<?php the_ID(); ?>" <?php post_class('ibm-columns'); ?>>
-								<div class="ibm-col-1-1 large">
-								
-								
+								<?php $back =$_SERVER['HTTP_REFERER'];
+                                    if(isset($back) && $back !='') echo "<a class='back_btn' href='{$back}'><i class='step ibm-a-back-link size-48'></i><span>Back</span></a>";
+                                ?>
+                                <div class="ibm-col-1-1 large">
+                								
                                     <!-- post title -->
                                     <h1>
                                         <!-- <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> -->
