@@ -318,7 +318,7 @@
         e.preventDefault();
         e.stopPropagation();
 
-        var index = self.paginationLinks.index(e.target);
+        var target = self.paginationLinks.index();
         self.goToPage(index);
       });
 
@@ -541,7 +541,6 @@
         if (typeof callback != "undefined") {
           callback();
         }
-        // console.warn('currentPage: '+self.currentPage);
       };
 
       if (this.useTransitions) {
@@ -554,12 +553,12 @@
     },
 
     next: function(callback) {
-      var page = (this.currentPage+1 > this.pages.length-1 ? 0 : this.currentPage+1);
+      var page = this.nextPageIndex();
       this.goToPage(page, callback);
     },
 
     prev: function(callback) {
-      var page = (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
+      var page = this.prevPageIndex();
       this.goToPage(page, callback);
     },
 
@@ -568,6 +567,14 @@
       this.next(function() {
         self.rearrangePages();
       });
+    },
+
+    nextPageIndex: function() {
+      return (this.currentPage+1 > this.pages.length-1 ? 0 : this.currentPage+1);
+    },
+
+    prevPageIndex: function() {
+      return (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
     },
 
     /**
