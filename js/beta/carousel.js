@@ -544,6 +544,10 @@
       newLeft = this.newCssLeftPosition(index);
 
       var complete = function() {
+        var targetSlide = self.pages.eq(self.currentPage).find('[role=document]')[0];
+
+        targetSlide.focus();
+
         if (typeof callback != "undefined") {
           callback();
         }
