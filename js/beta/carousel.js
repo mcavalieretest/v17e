@@ -41,6 +41,7 @@
       autoScroll: false,
       autoScrollInterval: 5000,
       freeScroll: false,
+      wrapAround: false,  // Seamless autoscrolling (always scrolls in the same direction, even on the last slide)
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
@@ -56,8 +57,11 @@
     this.config  = $.extend({}, defaults, options);
     this.element = this.getMainElement(element_or_selector);
 
+    // Require an html ID on the container. We'll need this to generate unique IDs safely for other elements (like the scroll container, for aria attributes). 
+    if (!this.element.attr("id")) { throw "The Carousel widget requires that the element with the .ibm-carousel class have an ID attribute. Please add one."; }
 
-    this.data = {slides: []};
+    // Use the data object for dynamic temporary stuff: event handlers, slide content, etc. 
+    this.data = {slides: [], handlers: {}};
 
     if (this.config.slides) {
       this.data.slides = $.extend(true, [], this.config.slides);
@@ -229,7 +233,13 @@
       }
 
       this.scrollContainer = this.element.find(this.config.scrollContainerSelector);
-      this.pages = this.scrollContainer.children();
+
+      // The scroll container gets a unique id, based on the main element's id.
+      if (typeof(this.scrollContainer.attr("id")) == "undefined") {
+        this.scrollContainer.attr("id", this.element.attr("id") + "-scroll-container");
+      }
+
+      this.loadPages();
 
       if (!this.bodyContainer.find(this.config.paginationContainerSelector).length) {
         // TODO - dynamically set aria attributes, tabindexes and content here
@@ -244,7 +254,7 @@
           }
 
           // TODO - set this aria-controls attribute correctly
-          html += '<a href="#" role="button" aria-controls="ibmweb_ribbon_6_scrollable" tabindex="'+tabindex+'">Show carousel '+(i+1)+'</a>';
+          html += '<a href="#' + self.slideId(i) + '" role="button" aria-controls="'+self.scrollContainer.attr("id")+'" tabindex="'+tabindex+'">Show carousel '+(i+1)+'</a>';
         });
         html += '</div>';
         this.bodyContainer.append(html);
@@ -264,7 +274,7 @@
         var page = $(el);
 
         page.attr("role", "option");
-
+        page.attr("id", self.slideId(i));
       });
 
       this.pages.children().attr("role", "document");
@@ -354,12 +364,10 @@
       if (!this.config.autoScroll) { return; }
 
       this.data.autoScrollInterval = setInterval(function() {
-        self.next();
+        self.nextAuto();
       }, this.config.autoScrollInterval);  
 
       if (!this.config.freeScroll) {
-        if (!this.data.handlers) { this.data.handlers = {}; }
-
         // if user moves mouse over ribbon area, we should disable interval - it should not circle on its own, give control to user
         this.data.handlers.mouseenter = function(e) {
           clearInterval(self.data.autoScrollInterval);
@@ -369,7 +377,7 @@
 
           clearInterval(self.data.autoScrollInterval);
           self.data.autoScrollInterval = setInterval(function(){
-            self.next();
+            self.nextAuto();
           }, self.config.autoScrollInterval);
         };
         this.data.handlers.resize = function(e) {
@@ -396,23 +404,28 @@
       var self = this,
           LEFT_ARROW_CODE = 37,
           RIGHT_ARROW_CODE = 39,
-          ENTER_CODE = 13;
+          ENTER_CODE = 13,
+          SPACE_CODE = 32;
 
       switch(e.keyCode) {
         case LEFT_ARROW_CODE:
-          self.handleLeftArrowKey();
+          self.handleLeftArrowKey(e);
           break;
 
         case RIGHT_ARROW_CODE:
-          self.handleRightArrowKey();
+          self.handleRightArrowKey(e);
           break; 
+
+        case SPACE_CODE:
+          self.handleSpaceBar(e);
+          break;
 
         default: 
           return;
       }
     },
 
-    handleLeftArrowKey: function() {
+    handleLeftArrowKey: function(e) {
       var self      = this,
           $activeEl = $(document.activeElement);
       
@@ -423,7 +436,7 @@
       }
     },
 
-    handleRightArrowKey: function() {
+    handleRightArrowKey: function(e) {
       var self      = this,
           $activeEl = $(document.activeElement);
 
@@ -432,6 +445,23 @@
 
         self.focusPaginationLink(self.getNextPaginationIndex(index));
       }
+    },
+
+    handleSpaceBar: function(e) {
+      var self      = this,
+          $activeEl = $(document.activeElement);
+
+        if($activeEl.is(this.config.paginationContainerSelector + " > a")) {
+          e.preventDefault();
+
+          var index = self.paginationLinks.index($activeEl),
+              $controlEl = $("#"+$activeEl.attr("aria-controls"));
+
+          self.goToPage(index);
+
+          $activeEl.blur();
+          $controlEl.focus();
+        }
     },
 
     focusPaginationLink: function(index) {
@@ -469,6 +499,15 @@
       return parseInt(this.scrollContainer.css("left").replace("px", ""));
     },
 
+    /**
+     * Grab and save the list of slide elements. 
+     * 
+     * @return {[type]} [description]
+     */
+    loadPages: function() {
+      this.pages = this.scrollContainer.children();
+    },
+
     refreshPagination: function() {
       this.paginationLinks
         .removeClass(this.config.activePageClass)
@@ -487,7 +526,7 @@
       this.pagesContainer.height(maxHeight);
     },
 
-    goToPage: function(index) {
+    goToPage: function(index, callback) {
       var self = this,
           newLeft;
 
@@ -499,6 +538,9 @@
       newLeft = -((this.panelWidth+20) * index);
 
       var complete = function() {
+        if (typeof callback != "undefined") {
+          callback();
+        }
         // console.warn('currentPage: '+self.currentPage);
       };
 
@@ -511,14 +553,36 @@
       }
     },
 
-    next: function() {
+    next: function(callback) {
       var page = (this.currentPage+1 > this.pages.length-1 ? 0 : this.currentPage+1);
-      this.goToPage(page);
+      this.goToPage(page, callback);
     },
 
-    prev: function() {
+    prev: function(callback) {
       var page = (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
-      this.goToPage(page);
+      this.goToPage(page, callback);
+    },
+
+    nextAuto: function() {
+      var self = this;
+      this.next(function() {
+        self.rearrangePages();
+      });
+    },
+
+    /**
+     * Take the slide currently in the first position, and move it to the last position. 
+     * Used to support wraparound. 
+     * 
+     * @return {[type]} [description]
+     */
+    rearrangePages: function() {
+      this.pages.first().after(this.pages.last());
+      this.loadPages();
+    },
+
+    slideId: function(index) {
+      return this.element.attr("id") + "-slide-" + index;
     },
 
     toggleArrowVisibility: function() {
