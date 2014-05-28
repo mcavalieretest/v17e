@@ -35,6 +35,22 @@
 								                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 								                        <?php the_post_thumbnail(array(940,529)); // Declare pixel size you need inside the array ?>
 								                    </a>
+
+								                    <?php //get caption text for first feature image
+								                    	$thumb_id = get_post_thumbnail_id(get_the_ID());
+														$args = array(
+															'p' => $thumb_id,
+															'post_type' => 'attachment'
+															);
+														$thumb_images = get_posts($args);
+														foreach ($thumb_images as $thumb_image) {
+															$caption = $thumb_image->post_excerpt;
+
+															if(!empty($caption)){
+																echo "<span class='caption'>{$caption}</span>";
+														  	} 
+														 }
+								                    ?>
 							                	</div>
 						                <?php 
 						                	endif;
@@ -54,17 +70,22 @@
                                                     foreach($featuredImages as $images){
                                                         $thumb = $images['thumb'];
                                                         $fullImage = $images['full'];
+                                                        $caption = $dynamic_featured_image -> get_image_caption( $fullImage );
 # REMOVE LINK FROM IMAGES
 #                                                        $links[] = "<a href='{$fullImage}'><img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' /></a>";
                                                         
-                                                        $links[] = "<img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' />";
+                                                        #$links[] = "<img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' />";
+                                                    	echo "<div>";
+                                                    	echo "<img src='{$fullImage}' alt='' height='{$height}' width='{$width}' class='wp-post-image' />";
+                                                    	
+                                                    	if(!empty($caption)){
+															echo "<span class='caption'>{$caption}</span>";
+													  	} 
+                                                    	echo "</div>";
+
                                                     }
 
-                                                    foreach($links as $link){
-                                                    	echo "<div>";
-                                                    	echo $link;
-                                                    	echo "</div>";
-                                                    }	                                                    
+                                          
                                                  }
                                             }                                           
                                         ?>						                
