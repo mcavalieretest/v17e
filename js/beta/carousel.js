@@ -526,6 +526,13 @@
       this.pagesContainer.height(maxHeight);
     },
 
+    /**
+     * Animate to the selected page, toggle/refresh UI components. 
+     * 
+     * @param  {[type]}   index    [description]
+     * @param  {Function} callback [description]
+     * @return {[type]}            [description]
+     */
     goToPage: function(index, callback) {
       var self = this,
           newLeft;
@@ -534,7 +541,6 @@
       this.toggleArrowVisibility();
       this.refreshPagination();
 
-      // Note the 20 pixel offset to acommodate the margin on ibm-col-* items.
       newLeft = this.newCssLeftPosition(index);
 
       var complete = function() {
@@ -559,7 +565,7 @@
     nextAuto: function() {
       var self = this;
       this.next(function() {
-        self.rearrangePages();
+        // self.rearrangePages();
       });
     },
 
@@ -572,6 +578,7 @@
     },
 
     newCssLeftPosition: function(index) {
+      // Note the 20 pixel offset to acommodate the margin on ibm-col-* items.
       return -((this.panelWidth+20) * index);
     },
 
