@@ -318,7 +318,7 @@
         e.preventDefault();
         e.stopPropagation();
 
-        var target = self.paginationLinks.index();
+        var index = self.paginationLinks.index(e.target);
         self.goToPage(index);
       });
 
@@ -535,7 +535,7 @@
       this.refreshPagination();
 
       // Note the 20 pixel offset to acommodate the margin on ibm-col-* items.
-      newLeft = -((this.panelWidth+20) * index);
+      newLeft = this.newCssLeftPosition(index);
 
       var complete = function() {
         if (typeof callback != "undefined") {
@@ -543,13 +543,7 @@
         }
       };
 
-      if (this.useTransitions) {
-        var eventName = IBM.Common.Util.transitionEndEventName();
-        this.scrollContainer.one(eventName, complete);
-        this.scrollContainer.css({"left": newLeft});
-      } else {
-        this.scrollContainer.animate({"left": newLeft}, 1000, complete);
-      }
+      this.animateTo(newLeft, complete);
     },
 
     next: function(callback) {
@@ -575,6 +569,20 @@
 
     prevPageIndex: function() {
       return (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
+    },
+
+    newCssLeftPosition: function(index) {
+      return -((this.panelWidth+20) * index);
+    },
+
+    animateTo: function(newLeft, callback) {
+      if (this.useTransitions) {
+        var eventName = IBM.Common.Util.transitionEndEventName();
+        this.scrollContainer.one(eventName, callback);
+        this.scrollContainer.css({"left": newLeft});
+      } else {
+        this.scrollContainer.animate({"left": newLeft}, 1000, callback);
+      }
     },
 
     /**
