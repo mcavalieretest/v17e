@@ -1,0 +1,701 @@
+.watson-engagement-advisor {
+	/*Overrides*/
+	background: #000;
+	h1 {
+		font: 76px/1 $font-bold;
+		margin: 0px;
+		text-align: left;
+		line-height: normal;
+	}
+
+	h5 {
+		font-size: 16px;
+		font-family: $font-bold;
+		line-height: normal;
+	}
+
+	h2 {
+		font: 49px/1 $font-bold;
+		color: #FFF;
+		line-height: normal;
+	}
+
+	h4 {
+		font-size: 30px;
+		color: #00baea;
+	}
+
+	h3 {
+		font: 25px/1 $font-bold;
+		color: #FFF;
+		margin-bottom: 40px;
+	}
+
+
+
+	p {
+		font-size: 16px;
+		margin-left: 0px;
+		color: #000;
+		font-family: $font-regular;
+		line-height: normal;
+		span {
+			font-family: $font-bold;
+		}
+	}
+
+	.column {
+		width: 50%;
+		float: left;
+		overflow: hidden;
+	}
+
+	/** SCENES **/
+
+	#hero-video-mobile {
+		display: none;
+	}
+
+	#hero {
+		position: relative;
+		overflow: hidden;
+		background: #000;
+
+		.video-wrapper {
+			position: absolute;
+		}
+
+		video {
+			width: 100%;
+			height: 100%;
+		}
+
+		div#flashcontent {
+			display: none;
+		}
+		.hero-content {
+
+			.yt-poster-holder {
+				.yt-player-wrap {
+
+					.yt-content {
+						h1 {
+							text-align: left;
+						}
+						h1:first-child {
+							margin-bottom: 30px;
+						}
+						a.yt-btn {
+							margin: 40px 0 0;
+							height: 35px;
+							width: inherit;
+							padding-left: 43px;
+							background-size: 26px;
+							background-position: top left;
+							text-indent: 0;
+							font: normal 25px/1em $font-bold;
+							text-decoration: none;
+							color: white;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	#hero.no-video {
+		background: #000 url(../video/challenge1.jpg) no-repeat 0 0;
+		background-size: cover;
+		video {
+			display: none;
+		}
+		.hero-content {
+			.slanted-header {
+				display: block !important;
+			}
+		}
+	}
+
+	#intro {
+		// background: #FFF url(../img/engagementadvisor/intro_bck.png) no-repeat left top;
+		background: #061a33;
+		overflow: hidden;
+		padding: 80px 0;
+		clear: both;
+		h3 {
+			color: #FFF;
+			margin-bottom: 15px;
+		}
+
+		p {
+			color: #FFF;
+		}
+
+		.ibm-col-1-1 {
+			margin-bottom: 55px;
+			
+			p {
+				font-size: 25px;
+			}
+		}
+
+	}
+
+
+
+
+	#journey {
+		overflow: hidden;
+		clear: both;
+		.column {
+			background: #8bc34e url(../img/engagementadvisor/journey1.jpg) center center no-repeat;
+			background-size: cover;
+			height: 447px;
+			position: relative;
+
+			.txt {
+				padding: 40px 80px 40px;
+
+				h2 {
+					font-size: 43px;
+				}
+
+				a {
+					display: block;
+					font-size: 40px;
+					margin-left: 60px;
+				}
+
+				a.ibm-contrast-link:before {
+					color: #FFF;
+				}
+			}
+
+		}
+		.column:first-child {
+			.txt {
+				display: none;
+			}
+		}
+		.column:last-child {
+			background: #76a642;
+		}
+	}
+
+	#features {
+		// background: #FFF url(../img/engagementadvisor/features_bck.png) bottom right no-repeat;
+		background: #FFF;
+		padding: 60px 0;
+
+		.ibm-columns:nth-child(2) > .ibm-col-6-4{
+			float: right;
+		}
+
+
+		.ibm-col-6-4 {
+			height: 280px;
+			display: table;
+			p {
+				font-size: 25px;
+				display: table-cell;
+				vertical-align: middle;
+
+			}
+		}
+
+		.ibm-col-6-2 {
+			img {
+				max-width: 280px;
+				width: 100%;
+			}
+		}
+
+		.ibm-col-1-1 {
+
+			margin-top: 40px;
+
+			a {
+				font: 25px/1 $font-bold;
+				color: #00baea;
+				text-decoration: none;
+				display: block;
+
+			}
+			a.ibm-pdf-link:before {
+				position: relative;
+				color: #00baea;
+				margin-left: -13px;
+			}
+			h3 {
+				color: #000;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+	}
+
+
+
+	#case_studies {
+		background: #00baea;
+		clear: both;
+		overflow: hidden;
+		line-height: 0;
+		.content {
+			padding: 0;
+		}
+
+		#quoteSlideShow {
+
+
+			.next,
+			.prev {
+				display: none;
+				visibility: hidden;
+			}
+			ul {
+				li {
+					height: 460px;
+
+					span.pic {
+						width: 46%;
+						margin-right: 4%;
+						float: left;
+						overflow: hidden;
+					}
+					div.name {
+						width: 47%;
+						display: block;
+						float: left;
+						padding-top: 40px;
+						padding-right: 3%;
+						h3 {
+							color: #FFF;
+							font-size: 25px;
+							margin-bottom: 40px;
+							padding-bottom: 0;
+						}
+						p {
+							color: #FFF;
+							 font: normal 20px $font-regular;
+                        }
+						a {
+							display: inline-block;
+							text-decoration: none;
+							color: #FFF;
+							font: normal 20px/1em $font-bold;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	#more_watson {
+		background: #FFF;
+		padding: 80px 0;
+		clear: both;
+		h2 {
+			color: #000;
+			margin-bottom: 40px;
+		}
+
+		p {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		a {
+			font-size: 20px;
+			text-decoration: none;
+			color: #00baea;
+			font-family: $font-bold;
+		}
+
+		img {
+			margin-bottom: 40px;
+			// width: 100%;
+		}
+	}
+
+
+
+	#eco_dev{
+
+		p {
+			font-size: 20px;
+			color: #FFF
+		}
+		.column {
+			height: 396px;
+			.txt {
+				padding: 80px 40px;
+
+				a {
+					color: #FFF;
+					text-decoration: none;
+					font: 20px/1 $font-bold;
+					margin-top: 20px;
+					display: block;
+				}
+			}
+
+		}
+		.column.eco1 {
+			background: #00baea url(../img/engagementadvisor/eco_dev_bck1.jpg) 0 0 no-repeat;
+			background-size: cover;
+			// min-height: 312px;
+		}
+
+		.column.eco2 {
+			background: #76a642 url(../img/engagementadvisor/eco_dev_bck2.jpg) 0 0 no-repeat;
+			background-size: cover;
+			// min-height: 312px;
+		}
+	}
+
+	#made_with {
+		background: #001c31;
+		padding: 80px 0;
+		clear: both;
+
+		h4 {
+			line-height: normal;
+			margin-bottom: 10px
+		}
+	}
+
+	
+}
+
+/**
+ * break points
+ */
+
+ @media screen and (max-width: 960px) {
+	.watson-engagement-advisor{
+		h2 {
+			font-size: 39px;
+			padding-right: 30px;
+		}
+
+		h4 {
+			font-size: 25px;
+		}
+
+		#journey {
+			.column {
+				.txt {
+
+					h2 {
+						font-size: 31px;
+					}
+				}
+			}
+		}
+
+
+		#made_with{
+			h2 {
+				padding-right: 30px;
+			}
+		}
+		
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.watson-engagement-advisor{
+
+		// .ibm-columns{
+		// 	padding: 0 50px;
+		// }
+		h1 {
+			font-size: 61px;
+		}
+
+
+		#intro {
+			h2 {
+				font-size: 31px;
+			}
+
+			p {
+				font-size: 16px;
+				padding-right: 30px;
+			}
+
+			.ibm-col-1-1 {
+				p {
+					font-size: 20px;
+					
+				}
+			}
+			.ibm-col-6-2 {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}
+
+		#journey {
+			.column {
+				height: 288px;
+				.txt {
+					padding: 20px 40px 20px;
+					h2 {
+						font-size: 25px;
+					}
+
+					a {
+						font-size: 25px;
+						margin-left: 35px;
+					}
+				}
+			}
+		}
+
+		#features {
+			.ibm-columns {
+				padding: 0 50px;
+				.ibm-col-6-4 {
+					margin: 0;
+					height: 189px;
+					p {
+						font-size: 20px;
+					}
+				}
+
+
+
+				.ibm-col-1-1 {
+					// margin-top: 0;
+					h3 {
+						font-size: 20px;
+					}
+					a {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		#case_studies {
+			#quoteSlideShow {
+				ul{
+					li{
+
+						div.name {
+							h3 {
+												font-size: 16px;
+											}
+
+											h2 {
+												font-size: 31px;
+											}
+											p {
+												font-size: 16px;
+											}
+
+											a {
+												font-size: 16px;
+											}
+						}
+					}
+				}
+
+			}
+		}
+
+		#eco_dev {
+			h2 {
+				font-size: 31px;
+			}
+
+		}
+
+		#more_watson {
+			.ibm-col-6-3 {
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 760px){
+	.watson-engagement-advisor{
+		#features {
+			.ibm-columns {
+				margin-bottom: 40px;
+			}
+
+			.ibm-columns:nth-child(2) > .ibm-col-6-4{
+				float: left;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.watson-engagement-advisor{
+		#features {
+			.ibm-columns {
+				padding: 0 50px;
+			}
+		}
+
+		#case_studies {
+			#quoteSlideShow {
+				ul{
+					li {
+						span.pic {
+							display: none;
+						}
+						div.name {
+							width: 90%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 568px) and (min-width: 0){
+	.watson-engagement-advisor{
+		
+		#hero {
+			.hero-content {
+				.yt-poster-holder {
+					.yt-player-wrap {
+						.yt-content {
+							.ibm-columns {
+								.ibm-col-1-1 {
+									h1 {
+										font-size: 25px;
+										line-height: 1em;
+										margin-bottom: 15px;
+									}
+								}
+
+								.ibm-col-6-4 {
+									.yt-btn {
+										font-size: 20px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#intro {
+			.ibm-columns {
+				width: 96%;
+				.ibm-col-1-1 {
+					width: 100%;
+				}
+			}
+		}
+
+		#features {
+			.ibm-columns {
+				padding: 0 20px;
+				width: 90%;
+				.ibm-col-6-4 {
+					width: 100%;
+					display: block;
+					height: inherit;
+					margin-bottom: 40px;
+				}
+				.ibm-col-1-1 {
+					width: 100%;
+				}
+				.ibm-col-6-2 {
+					width: 100%;
+					margin-bottom: 40px;
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+
+
+		#journey{
+			.column {
+				width: 100%;
+				height: 480px;
+				background-position-y: -100px;
+
+				.txt {
+					position: absolute;
+					display: block;
+					bottom: 30px;
+					h2 {
+						font-size: 31px;
+						padding: 0;
+					}
+				}
+			}
+			.column:first-child {
+				.txt{
+					display: block;
+				}
+			}
+			.column:last-child {
+				display: none;
+			}
+		}
+
+		#more_watson {
+			padding: 0 0 40px 0;
+			.ibm-columns {
+				width: 100%;
+				padding: 0;
+				.ibm-col-6-3 {
+					width: 100%;
+					margin: 0 0 40px 0;
+				}
+			}
+
+			p {
+				padding: 10px;
+				font-size: 16px;
+			}
+			a {
+				padding: 10px;
+				font-size: 16px;
+			}
+		}
+		#eco_dev {
+			.column {
+				width: 100%;
+			}
+		}
+		
+		#made_with {
+			.ibm-columns {
+				width: 96%;
+				.ibm-col-1-1 {
+					width: 100%;
+					h4 {
+						font-size: 20px;
+					}
+					h2 {
+						font-size: 31px;
+					}
+				}
+			}
+		}
+		
+	}
+}
