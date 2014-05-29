@@ -1,0 +1,948 @@
+/** w3 masthead styles ********************************************************************** */
+
+/** w3 override the shared vars which points to www. **/
+$imagePath : "//1.w3.s81c.com";
+
+#ibm-top {
+    background: -moz-linear-gradient(center top , #D8D8D8 -1px, #fff 50px) repeat scroll 0 0 #fff;
+    margin-top: 90px;
+    padding-top: 0;
+    position: relative;
+}
+	
+#ibm-masthead {
+    border-bottom: medium none;
+    border-top: 0 none;
+	left: 0;
+	min-width: 980px;
+	*overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 900;
+}
+
+.dijit_a11y #ibm-masthead {
+	border: 0;
+}
+
+/* in case of a special class the masthead does not scroll */
+#ibm-top.ibm-no-scroll #ibm-masthead {
+	position: relative;
+}
+
+#ibm-top.ibm-no-scroll, 
+#ibm-top.ibm-no-scroll #ibm-leadspace-head {	
+	margin-top: 0;	
+}
+
+/* masthead close button style --------begin-----*/
+#ibm-masthead .ibm-dlg-close {
+	position: absolute;
+	float: right;
+	height: 25px;
+	width: 25px;
+	margin-left: 98%;
+	margin-top: 7px;
+	overflow: hidden;
+	z-index: 9;
+}
+
+#ibm-masthead .ibm-dlg-close span {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background: url(#{$imagePath}/i/buttons/www_closebtn_sprites.png) no-repeat 7px -795px;
+}
+
+#ibm-masthead .ibm-dlg-close span:hover, 
+#ibm-masthead .ibm-dlg-close span:focus {
+	height: 23px;
+	width: 23px;
+	border: 1px dotted gray;
+	background-position: 6px -996px;
+}
+
+/* masthead close button style --------end-----*/
+
+#ibm-mast-options {
+	background: #131623;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bebebe', endColorstr='#868686');
+   	@include background-gradient(background,(top, #bebebe, #868686));
+    float:left;
+    border-bottom: 1px solid #44474A;
+    border-top: 1px solid #F2F2F2;
+    color: #222;
+    float: none;
+    height: 38px;
+    overflow: hidden;
+    width: auto;
+}
+
+
+#ibm-mast-options:hover {
+	color: #D0D0D3;
+}
+
+/* #ibm-mast-options ul {
+	background-color: #131623;
+    float:right;
+	margin-right: 5%;
+	border-left: 1px solid #2b2d39;
+	border-right: 1px solid #02050E;
+} */
+
+#ibm-mast-options ul {
+    background-color: #131623;
+    border-left: 1px solid #2b2d39;
+    border-right: 1px solid #02050e;
+    float: none;
+    margin-right: 49px;
+    padding: 0;
+}
+	
+#ibm-mast-options li {
+	border-left: 1px solid #02050E;
+	border-right: 1px solid #2b2d39;
+	float: left;
+	padding: 4px 20px;
+}
+
+#ibm-mast-options:after {
+	@include aslett-clearing;
+}
+
+#ibm-mast-options p {
+	display: inline;
+}
+
+#ibm-related-links, 
+#ibm-esite-link {
+	display: block;
+}
+
+#ibm-mast-options li a {
+    color: #000000;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    line-height: 18px;
+    margin: 0 7px 0 0;
+    padding: 0;
+}
+
+.dijit_a11y #ibm-mast-options {
+	border: 0;
+}
+
+#ibm-mast-options li:hover {
+	color: #FFF;
+}
+
+#ibm-mast-options li#ibm-geo {
+	padding: 4px 0;
+}
+.dijit_a11y #ibm-mast-options li#ibm-geo {
+	padding: 4px 20px;
+}
+
+#ibm-mast-options li#ibm-geo a {
+	background: url(#{$imagePath}/i/icons/country-icons-sprite.png) no-repeat 10px 0px transparent;
+	padding: 3px 20px 3px 40px;
+}
+
+#ibm-mast-options li#ibm-geo a.ibm-back-country,
+#ibm-mast-options li#ibm-geo a.ibm-back-country:focus,
+#ibm-mast-options li#ibm-geo:hover a.ibm-back-country {
+	background: url(#{$imagePath}/i/icons/ibm_sprite_inter_country_nav.png) no-repeat 4px 4px transparent;
+	padding-left: 20px;
+    padding-top: 4px;
+}
+
+#ibm-mast-options li#ibm-geo a.ibm-back-country:hover {
+	background-position: 4px -212px;
+}
+
+/* on hover whole masthead bar changes the font color */
+#ibm-mast-options:hover a {
+	color: #D0D0D3;
+}
+
+/* highlight individual link on hover */
+#ibm-mast-options:hover li#ibm-geo a {
+	color: #D0D0D3;
+	background-position: 10px -20px;
+}
+
+#ibm-mast-options li#ibm-geo:hover a, 
+#ibm-mast-options li#ibm-geo a:focus {
+	background-position: 10px -40px;
+	color: #FFF;
+}
+
+#ibm-mast-options li#ibm-sso span span {
+	color: #666;
+}
+
+#ibm-mast-options li#ibm-sso a {
+	color: #929395;
+}
+
+#ibm-mast-options:hover li#ibm-sso a {
+	color: #A1A2A7;
+}
+
+#ibm-mast-options li#ibm-sso:hover a {
+	color: #BABBBD;
+}
+
+#ibm-mast-options a:hover, 
+#ibm-mast-options a:focus, 
+#ibm-mast-options li#ibm-sso a:focus {
+	color: #FFF;
+}
+
+#ibm-universal-nav {
+	background:#000;
+   	@include background-gradient(background,(top, #595C64, #1B1B1C));
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #999;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
+	height: 50px;
+	min-width: 980px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#ibm-universal-nav, #ibm-universal-nav:hover {
+    background: -moz-linear-gradient(center top , #333 1px, #414141 8px, #222 100%) repeat scroll 0 0 transparent;
+    border-bottom: 0 none;
+    border-top: medium none;
+    width: auto;
+}
+
+#ibm-universal-nav span.ibm-masthead-indicator {
+	position: absolute;
+	left: 50%;
+}
+
+#ibm-universal-nav #ibm-menu-links {
+    left: 80px;
+    margin: 1px 0 0;
+    padding: 0 40px 0 10px;
+    position: absolute;
+    right: auto;
+    text-shadow: 0 1px 0 #CCCCCC;
+    top: 0;
+}
+
+
+/**
+#ibm-universal-nav #ibm-unav-links, #ibm-universal-nav #ibm-menu-links {
+	margin: 0 20px;
+	float: left;
+}
+
+#ibm-universal-nav #ibm-menu-links {
+	margin-left: 130px;
+	*margin-left: 90px;
+}
+*/
+#ibm-universal-nav #ibm-unav-links li, #ibm-universal-nav #ibm-menu-links li {
+	float: left;
+}
+
+#ibm-universal-nav li {
+	padding: 0px;
+}
+
+#ibm-universal-nav li a {
+    color: #ccc;
+    display: block;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial;
+    letter-spacing: 0;
+    line-height: 13px;
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+#ibm-universal-nav #ibm-menu-links a {
+    color: #000;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0;
+    padding: 12px 10px 13px;
+}
+
+#ibm-masthead #ibm-universal-nav #ibm-menu-links a:after {
+    background: url(#{$imagePath}/i/v17/w3/w3_menu_sprites.png) no-repeat scroll 0 0 transparent;
+    content: " ";
+    display: inline-block;
+    height: 4px;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    width: 5px;
+}
+
+#ibm-masthead #ibm-universal-nav #ibm-menu-links a:hover:after {
+    background: url(#{$imagePath}/i/v17/w3/w3_menu_sprites.png) no-repeat scroll 0 -4px transparent;
+    content: " ";
+    display: inline-block;
+    height: 4px;
+    width: 5px;
+}
+
+/* #ibm-universal-nav li#ibm-home {
+	display: block;
+	overflow: hidden;
+	height: 50px;
+	position: absolute;
+	width: 100px;	
+} */
+
+#ibm-mast-options #ibm-home {
+    border: 0 none;
+    height: 33px;
+    margin-top: 0;
+    padding: 2px 28px 2px 30px;
+    width: 45px;
+}
+
+/* #ibm-universal-nav li#ibm-home a {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	background: url(#{$imagePath}/i/t/ibm-logo.png) 0px 0px no-repeat;
+	width: 100px;
+	float: left;
+	height: 50px;
+	text-indent: -999em;
+	padding: 0;
+} */
+
+
+#ibm-mast-options #ibm-home a {
+    background: url(#{$imagePath}/i/v17/w3/w3_logos_sprite.png) no-repeat scroll 0 5px transparent;
+    display: block;
+    line-height: 33px;
+    padding: 0;
+    position: absolute;
+    text-indent: -9999px;
+    width: 38px;
+}
+
+#ibm-mast-options #ibm-home.ibm-sm-logo a {
+    background-position: 0 -82px;
+    line-height: 30px;
+}
+
+#ibm-universal-nav #ibm-menu-links li:hover {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696c72', endColorstr='#333334');
+}
+
+#ibm-universal-nav #ibm-menu-links .ibm-active a, #ibm-universal-nav #ibm-menu-links li a:hover, #ibm-universal-nav #ibm-menu-links li a:focus {
+    background: -moz-linear-gradient(center top , #858585, #5F5F5F) repeat scroll 0 0 transparent;
+    color: #fff;
+    display: block;
+    text-shadow: 0 1px 1px #111;
+}
+
+
+#ibm-universal-nav li#ibm-home.ibm-sm-logo a:hover, 
+#ibm-universal-nav li#ibm-home.ibm-sm-logo a:focus {
+	background-position: 0 -100px;
+}
+
+#ibm-universal-nav li#ibm-home a:hover,
+#ibm-universal-nav li#ibm-home a:focus {
+	background-position: 0 -50px;
+}
+
+#ibm-universal-nav li.ibm-active {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595C64', endColorstr='#1B1B1C');
+   	@include background-gradient(background,(top, #595C64, #1B1B1C));
+	color: #FFF;
+	text-shadow: none;
+}
+
+/* minimized masthead icons */
+
+/* requires width:100% on #ibm-unav-links */
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo, 
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
+    text-indent: -9999px;
+    height: 20px;
+    width: 20px;  
+    position: absolute;
+    top: 12px; 
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo {
+	background: url(#{$imagePath}/i/minm_icons.png) no-repeat 3px -201px; 
+	right: 79px;
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo {
+	background: url(#{$imagePath}/i/minm_icons.png) no-repeat 3px -600px;
+	right: 47px;
+}
+
+/* if text needs to be visible */
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text, 
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text {
+	text-indent: 23px;  
+	width: 80px;
+	color: #FFF;
+	font-size: 0.8em;
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-search-logo.ibm-text { 
+	right: 112px;    
+}
+
+#ibm-universal-nav #ibm-unav-links #ibm-links-logo.ibm-text { 
+	right: 22px;    
+}
+
+#ibm-my-menu {
+	width: 100%;
+	background: #D2D2D0;
+	height: 160px;
+	display: none;
+}
+
+/* common menu area start */
+#ibm-common-menu {
+    background: none repeat scroll 0 0 #fff;
+    box-shadow: 0 2px 5px #B7B7B7 inset;
+    display: none;
+    font-size: 1em;
+    height: 160px;
+    width: 100%;
+}
+
+
+#ibm-common-menu h3 {
+    color: #333;
+    font-weight: bold;
+    padding-left: 0;
+    width: 140px;
+}
+
+#ibm-common-menu h3.ibm-access + ul {
+	margin-top: 23px !important;
+}
+
+
+#ibm-common-menu a {
+	color: #555;
+	text-shadow: none;
+	text-decoration:none;
+}
+
+#ibm-common-menu a:hover {
+	text-decoration: underline;
+	color: #222;
+}
+
+#ibm-common-menu a:active {
+	text-decoration: underline;
+	color: #555;
+}
+
+#ibm-common-menu .ibm-ribbon-pane li {
+	padding: 0 0 0 $iconSpaceLeft;
+	margin: 8px 0;
+}
+
+#ibm-common-menu .ibm-ribbon-pane li:before {
+	color: #999;
+	line-height: 1.1;
+}
+
+#{$ie7Selector} #ibm-common-menu .ibm-ribbon-pane li {
+    background: url(#{$imagePath}/i/bullets-alt.gif) no-repeat -2px 2px;
+}
+
+#ibm-common-menu .ibm-ribbon-pane li:hover:before,
+#ibm-common-menu .ibm-ribbon-pane li.ibm-active:before {
+    color: #F08F26;
+}
+
+#ibm-common-menu .ibm-mm-close {
+	height: 25px;
+	width: 940px;
+	overflow:hidden;
+	z-index: 9;
+	position: relative;
+    margin: -25px auto 0;
+	cursor: pointer;
+}
+#ibm-common-menu .ibm-mm-close span {
+	position:absolute;
+	display: block;
+	height: 25px;
+	width: 940px;
+	background: url(#{$imagePath}/i/v17/w3/w3_mm-sprite.png) 50% 0 no-repeat;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$imagePath}/i/v17/w3/w3_mm-sprite.png');
+	/* accessibility: HC MODE fix */	
+	text-align: center;
+	text-indent: -9999em; 
+}
+
+#ibm-common-menu .ibm-mm-close span:hover,
+#ibm-common-menu .ibm-mm-close span:active,
+#ibm-common-menu .ibm-mm-close span:focus {
+	background-position: 50% -200px;
+}
+
+#ibm-common-menu .ibm-menu-subtabs {
+	background-color: #CCC;
+	*background: none;
+	filter:progid:DXImageTransform.Microsoft.gradient(StartColorStr='#CCCCCC',EndColorStr='#EAEAEA');
+   	@include background-gradient(background,(top, #CCC, #EAEAEA));
+	border-bottom: 1px solid #BBB;
+	box-shadow: 0 1px 7px #C5C5C5;
+	height: 39px;
+	margin-top: -39px;
+	margin-bottom: 10px;
+	opacity: 0;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul {
+	width: 940px;
+	margin: 0 auto;
+	padding: 14px 10px 0;
+	margin-bottom: -1px;
+}
+#ibm-common-menu .ibm-menu-subtabs ul li {
+	margin: 0 20px 0 0;
+	background-image: none;
+	float: left;
+	padding: 0 10px 11px 5px;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li.ibm-active {
+	background: url(#{$imagePath}/i/buttons/mm-submenu-notch.gif) center 21px no-repeat transparent;
+}
+#ibm-common-menu .ibm-menu-subtabs ul li a {
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li a:hover {
+	text-decoration: none;
+}
+
+#ibm-common-menu .ibm-menu-subtabs ul li.ibm-active a {
+	font-weight: bold;
+	color: #222;
+}
+
+
+#ibm-common-menu .ibm-menu-static {
+	border-left: 1px solid #C8C8C8;
+	box-shadow: 1px 0 0 rgba(255,255,255,.5) inset;
+	width: 170px;
+	height: 282px;
+	*height: 232px;
+	padding-left: 10px;
+	margin: 0;
+}
+
+#ibm-common-menu .ibm-menu-static, 
+#ibm-common-menu .ibm-menu-dynamic {
+	padding-top: 20px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic {
+	margin: 0;
+	width: 758px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 {
+	width: 172px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1.ibm-col-last {
+	width: 162px;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3.ibm-access + ul li:first-child {
+	margin-top: 0;
+}
+
+#ibm-common-menu .ibm-menu-dynamic .ibm-col-4-1 h3 + ul li:first-child {
+	margin-top: 10px;
+}
+
+/* common menu area ends========================== */
+
+
+/* search field begin ============================== */
+#ibm-search-module {
+	float: right;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#{$ie7Selector} #ibm-search-module {
+	position: absolute;
+	right: 0;
+}
+
+.ibm-w3-masthead #ibm-search-module {
+    top: 45px;
+}
+
+#ibm-search-form {
+    border: 0 solid transparent;
+    display: inline-block;
+    float: right;
+    height: 24px;
+    margin: -37px 50px 12px 37px;
+}
+
+/* .scopeButton {
+    float: left;
+    height: 15px;
+    left: 45px;
+    margin: 2px 0 0;
+    padding: 2px 1px;
+    position: relative;
+}
+
+.scopeButton .arrow {
+    background: url(#{$imagePath}/i/v17/w3/w3_sprite_search.png) no-repeat scroll -1px -432px transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+ */
+
+#ibm-search-form select {
+	float: left;
+	margin: 0 4px 4px 0;
+}
+
+#ibm-search-form input#q {
+    background: -moz-linear-gradient(center top , #D5D5D5, #E2E2E2) repeat scroll 0 0 transparent;
+    border: 1px solid #121213;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 0 1px 0 #555555;
+    color: #454545;
+    float: left;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 0.75em;
+	font-style: italic;
+    height: 17px;
+    letter-spacing: 0;
+    padding: 2px 30px 2px 45px;
+	@include transition(background .2s linear);
+    width: 158px;
+}
+
+.ibm-w3-masthead #ibm-search-form input#q {
+    border-color: #666;
+    box-shadow: 0 1px 0 #aaa;
+    font-size: 13px;
+}
+
+#ibm-search-form:hover input#q,
+#ibm-search-form:focus input#q,
+#ibm-search-form input#q.ibm-active,
+#ibm-search-form input#q:focus {
+    background: -moz-linear-gradient(center top , #eee, #fff) repeat scroll 0 0 transparent;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px #86888A;
+    color: #000;
+}
+
+#ibm-search-form input#q.ibm-active,
+#ibm-search-form input#q:focus {
+	font-style: normal;
+}
+
+#ibm-search {
+    background: url(#{$imagePath}/i/v17/w3/w3_sprite_search.png) no-repeat scroll 0 0 transparent;
+    box-shadow: none;
+	color: transparent;
+	cursor: pointer;
+    filter: none;
+	float: left;
+	font-size: 0;
+	height: 21px;
+    margin: 4px 0 0 -24px;	border: 0 none;
+    min-width: 0;
+    padding: 0;
+	position: relative;
+	text-align: right;
+	text-indent: -999em;
+	width: 24px;
+}
+
+
+/* search field end ============================== */
+
+
+
+
+/************************************************************************************************************
+*************************************************************************************************************
+	Net new stuff below for w3 design that didn't exist for www.
+*************************************************************************************************************
+*************************************************************************************************************/
+
+
+
+
+/** Search scope select and popup menu ****************************************************************************/
+
+#ibm-scope-button_dropdown.dijitPopup {
+    z-index: 901 !important; /* overriding JS */
+	position: fixed; /* scope btn popup fixed*/ 
+}
+
+#ibm-scope-dropdown.dijitMenu {
+	background-color: #585a5e;
+	background:-moz-linear-gradient(center top , #585a5e, #434649) repeat scroll 0 0 transparent;
+	background:-o-linear-gradient(top , #585a5e, #434649) repeat scroll 0 0 transparent;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#585a5e), to(#434649));
+	background:-ms-linear-gradient(top , #585a5e, #434649) repeat scroll 0 0 transparent;
+	background:linear-gradient(top , #585a5e, #434649) repeat scroll 0 0 transparent;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 3px #333;
+	border: 1px solid #000;
+	border-collapse: separate; /* scope-menu fix for LC 3 */
+	font-size: 14px;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#585a5e', EndColorStr='#434649');
+	list-style-type: none;
+	min-width: 170px;
+	margin: 0px;
+	max-width: 600px;
+	padding: 3px;
+}
+
+#ibm-scope-dropdown.dijitMenu:before {
+	background-color: #333;
+	background:url(#{$imagePath}/i/v17/w3/w3_isp_pointer.png) no-repeat scroll 0 0 transparent;
+	content: " ";
+	display: block;
+	height: 10px;
+	overflow: visible;
+	position: absolute;
+	top: -9px;
+	width: 16px;
+}
+
+#ibm-scope-dropdown.dijitMenuTable{
+    border-spacing: 0 0;
+}
+
+#ibm-scope-dropdown img {
+	background-color: transparent;
+	background-image: url(#{$imagePath}/i/v17/w3/w3_sprite_search_scope_default.png);
+	background-position: 0px -1401px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 16px;
+	margin: 3px 6px 3px 3px;
+	width: 16px;
+}
+
+
+#ibm-scope-dropdown .w3-icon          { background-position: 0px 0px; }
+#ibm-scope-dropdown .profiles-icon    { background-position: 0px -201px; }
+#ibm-scope-dropdown .ibm-icon         { background-position: 0px -401px; }
+#ibm-scope-dropdown .connections-icon { background-position: 0px -601px; }
+#ibm-scope-dropdown .bluepages-icon   { background-position: 0px -801px;  }
+#ibm-scope-dropdown .ibmlearning-icon { background-position: 0px -1001px; }
+#ibm-scope-dropdown .ibmwwqa-icon     { background-position: 0px -1201px; }
+
+#ibm-scope-dropdown .dijitMenuItemLabel {
+    vertical-align: middle;
+}
+
+#ibm-scope-dropdown .dijitMenuSeparator {
+	border-top: 1px solid #cccccc;
+	display: block;
+}
+
+
+
+#ibm-scope-dropdown.dijitMenu .dijitMenuItem {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #fff;
+	color: #666;
+	display:block; /* menu item fix for LC 3 */
+	font-size: 0.8em;
+	font-weight: normal;
+	min-width: 170px;
+	padding: 5px 4px;
+	width: auto;
+}
+
+#ibm-scope-dropdown.dijitMenu .dijitMenuItem td {
+	padding: 0;
+}
+
+#ibm-scope-dropdown.dijitMenu .dijitMenuItemHover, #ibm-scope-dropdown.dijitMenu .dijitMenuItemSelected {
+	display: block;
+}
+
+#ibm-scope-dropdown.dijitMenu .dijitMenuItemHover, #ibm-scope-dropdown.dijitMenu .dijitMenuItemSelected {
+	background-color: #cce8f2;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+/** Search scope button and icons ****************************************************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+  #ibm-search-form { width:270px; }  /* without this, the scope and input box wrap in chrome */
+}  
+
+.scopeButton {
+	height:15px;	/*temp focus visibility Fix - Hemang */
+	margin: 2px 0 0;
+    float:left;
+    left: 45px;
+    padding: 2px 1px;
+    position:relative;
+}
+
+.scopeButton .arrow {
+    background:url(#{$imagePath}/i/v17/w3/w3_sprite_search.png) no-repeat scroll -1px -432px transparent;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+.scopeButton:hover .arrow, .scopeButton:focus .arrow{
+    background-position: -1px -648px;
+}
+
+#ibm-search-module .icon {
+	background: url(#{$imagePath}/i/v17/w3/w3_sprite_search_scope_default.png) no-repeat 0px -1401px transparent;
+	display: inline-block;
+	height: 16px;
+	width: 17px;
+}
+
+
+#ibm-search-module .w3-icon          { background-position: 0px 0px; }
+#ibm-search-module .profiles-icon    { background-position: 0px -201px; }
+#ibm-search-module .ibm-icon         { background-position: 0px -401px; }
+#ibm-search-module .connections-icon { background-position: 0px -601px; }
+#ibm-search-module .bluepages-icon   { background-position: 0px -801px;  }
+#ibm-search-module .ibmlearning-icon { background-position: 0px -1001px; }
+#ibm-search-module .ibmwwqa-icon     { background-position: 0px -1201px; }
+
+
+/* on focus */
+
+#ibm-search-module .scopeButton.ibm-active .icon, #ibm-search-module .scopeButton.ibm-active:hover .icon {
+	background: url(#{$imagePath}/i/v17/w3/w3_sprite_search_scope_selected.png) no-repeat 0px -1401px  transparent;
+}
+#ibm-search-module .scopeButton:focus .icon, #ibm-search-module .scopeButton:hover .icon {
+	background: url(#{$imagePath}/i/v17/w3/w3_sprite_search_scope_focus.png) no-repeat 0px -1401px  transparent;
+}
+
+#ibm-search-module .scopeButton.ibm-active .w3-icon, #ibm-search-module .scopeButton.ibm-active:hover .w3-icon, #ibm-search-module .scopeButton:focus .w3-icon, #ibm-search-module .scopeButton:hover .w3-icon { 
+	background-position: 0px 0px;
+}
+#ibm-search-module .scopeButton.ibm-active .profiles-icon, #ibm-search-module .scopeButton.ibm-active:hover  .profiles-icon, #ibm-search-module .scopeButton:focus .profiles-icon, #ibm-search-module .scopeButton:hover .profiles-icon {
+	background-position: 0px -201px;
+}
+#ibm-search-module .scopeButton.ibm-active .ibm-icon, #ibm-search-module .scopeButton.ibm-active:hover  .ibm-icon, #ibm-search-module .scopeButton:focus .ibm-icon, #ibm-search-module .scopeButton:hover .ibm-icon {
+	background-position: 0px -401px;
+}
+#ibm-search-module .scopeButton.ibm-active .connections-icon, #ibm-search-module .scopeButton.ibm-active:hover  .connections-icon, #ibm-search-module .scopeButton:focus .connections-icon, #ibm-search-module .scopeButton:hover .connections-icon {
+	background-position: 0px -601px;
+}
+#ibm-search-module .scopeButton.ibm-active .bluepages-icon, #ibm-search-module .scopeButton.ibm-active:hover  .bluepages-icon, #ibm-search-module .scopeButton:focus .bluepages-icon, #ibm-search-module .scopeButton:hover .bluepages-icon {
+	background-position: 0px -801px;
+}
+#ibm-search-module .scopeButton.ibm-active .ibmlearning-icon, #ibm-search-module .scopeButton.ibm-active:hover  .ibmlearning-icon, #ibm-search-module .scopeButton:focus .ibmlearning-icon, #ibm-search-module .scopeButton:hover .ibmlearning-icon {
+	background-position: 0px -1001px;
+}
+#ibm-search-module .scopeButton.ibm-active .ibmwwqa-icon, #ibm-search-module .scopeButton.ibm-active:hover  .ibmwwqa-icon, #ibm-search-module .scopeButton:focus .ibmwwqa-icon, #ibm-search-module .scopeButton:hover .ibmwwqa-icon {
+	background-position: 0px -1201px;
+}
+
+
+
+/** Misc stuff from w3 v17 that didn't exist for www ****************************************************************************/
+
+#ibm-universal-nav #ibm-site-title {
+	line-height: 45px;
+	padding: 2px 10px 2px 35px;
+}
+
+
+#ibm-universal-nav #ibm-site-title em {
+    color: #fff;
+    /* font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue","Helvetica","Arial"; */
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+.ibm-w3-masthead #ibm-profile-links {
+    float: right;
+    font-size: 0.8em;
+    height: 50px;
+    line-height: 50px;
+    margin: -50px 50px 0 0;
+}
+
+.ibm-w3-masthead #ibm-profile-links, #ibm-profile-links a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #111;
+}
+
+.ibm-w3-masthead #ibm-profile-links #ibm-sso, .ibm-w3-masthead #ibm-profile-links #ibm-portal-logout-link, .ibm-w3-masthead #ibm-profile-links .ibm-profile-custom-links {
+    float: left;
+}
+
+.ibm-w3-masthead .ibm-profile-links-divider {
+    margin: 0;
+}
+
+.ibm-w3-masthead .ibm-profile-links-divider:after {
+    background: none repeat scroll 0 0 #777777;
+    content: " ";
+    display: inline-block;
+    height: 20px;
+    margin: 5px 11px -5px 10px;
+    width: 1px;
+}
+
+.ibm-w3-masthead #ibm-profile-links .ibm-thumbnail {
+    border: 0 none;
+    float: left;
+    margin-bottom: -8px;
+    padding: 8px 10px 0 0;
+}
+
+span.ibm-thumbnail {
+    display: block;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1px;
+    overflow: hidden;
+}
+
+.ibm-thumbnail {
+    position: relative;
+}
+
+

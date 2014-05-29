@@ -1,0 +1,174 @@
+// social toolbar styles begin ============================================
+
+/** w3 override the shared vars which points to www. **/
+$imagePath : "//1.w3.s81c.com";
+
+/*
+ * Social toolbar icons that floats on the right hand side of the
+ * page...
+ */
+
+/* sbs Accessibility : HC mode */
+.dijit_a11y a[class^="ibm-share"][class$="email"] img.ibm-access {
+	left:-52px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="print"] img.ibm-access {
+	left:-52px;
+	top:-130px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="dogear"] img.ibm-access {
+	left:-52px;
+	top:-182px;
+	width:auto;
+}
+
+
+
+.dijit_a11y a[class^="ibm-share"][class$="email"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="email"]:focus img.ibm-access {
+	left:-78px;
+	top:-52px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="print"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="print"]:focus img.ibm-access {
+	left:-78px;
+	top:-130px;
+	width:auto;
+}
+.dijit_a11y a[class^="ibm-share"][class$="dogear"]:hover img.ibm-access, 
+.dijit_a11y a[class^="ibm-share"][class$="dogear"]:focus img.ibm-access {
+	left:-78px;
+	top:-182px;
+	width:auto;
+}
+
+
+/* End of Highcontrast mode code */
+
+#ibm-social-tools {
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    _right: -1px;
+    z-index: 500;
+    width: 25px;
+}
+
+#{$ie7Selector} #ibm-social-tools { 
+	position: fixed;
+}
+
+#ibm-social-tools ul {
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    padding: 3px 6px 3px 3px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px 0px 5px #888;
+    background-color: #fff;
+    background: -moz-linear-gradient(180deg, #e6e6e6 0, #fff 20%) no-repeat #fff;
+    border: 1px solid #fff;
+    border-right: 0;
+    float: right;
+    border-color: #aaa\9; /* IE 6,7,8 hack */
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity = 80)";
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: opacity;
+    -o-transition-duration: 0.5s;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 0.5s;
+}
+
+#ibm-social-tools ul:hover,
+#ibm-social-tools ul.ibm-active {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity = 100)";
+}
+
+#ibm-social-tools li {
+    padding: 0;
+    float: left;
+    padding: 2px 0;
+}
+
+#ibm-social-tools a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    float: left;
+    /* we have now a text that we do not want to show */
+    text-indent: -9999px;
+	overflow: hidden;
+	padding: 0;
+}
+
+/* no active state */
+
+a[class^="ibm-share"], 
+ul:hover a[class^="ibm-share"],
+ul:hover a[class^="ibm-share"]:hover,
+ul a[class^="ibm-share"]:focus {
+	background: url(#{$imagePath}/i/v17/icons/sprites-pt-all.png) no-repeat ;
+}
+
+/* #ibm-social-tools and .ibm-share-this ul:hover state */
+
+/* dynamically added class on hover state */
+
+ul:hover a.ibm-share-active-print:hover {
+	background-position: 0 -130px;
+}
+
+
+
+
+#ibm-com #ibm-social-tools a[class^="ibm-share"][class$="email"] {
+	background-position: -52px -52px;
+}
+#ibm-com #ibm-social-tools a[class^="ibm-share"][class$="print"] {
+	background-position: -52px -130px;
+}
+#ibm-com #ibm-social-tools a[class^="ibm-share"][class$="dogear"] {
+	background-position: -52px -182px;
+}
+
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="email"]{
+	background-position: -26px -52px;
+}
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="print"] {
+	background-position: -26px -130px;
+}
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="dogear"] {
+	background-position: -26px -182px;
+}
+
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="email"]:hover, 
+#ibm-com #ibm-social-tools ul a[class^="ibm-share"][class$="email"]:focus {
+	background-position: -78px -52px;
+}
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="print"]:hover, 
+#ibm-com #ibm-social-tools ul a[class^="ibm-share"][class$="print"]:focus {
+	background-position: -78px -130px;
+}
+
+#ibm-com #ibm-social-tools ul:hover a[class^="ibm-share"][class$="dogear"]:hover, 
+#ibm-com #ibm-social-tools ul a[class^="ibm-share"][class$="dogear"]:focus {
+	background-position: -78px -182px;
+}
+
+#ibm-com #ibm-social-tools ul:hover a[class$="active-email"]:hover {
+	background-position: 0 -52px;
+}
+#ibm-com #ibm-social-tools ul:hover a[class$="active-print"]:hover {
+	background-position: 0 -130px;
+}
+#ibm-com #ibm-social-tools ul:hover a[class$="active-ibm-dogear"]:hover {
+	background-position: 0 -182px;
+}

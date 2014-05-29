@@ -1,0 +1,309 @@
+#ibm-w3-notifications-icon {
+	height:19px;
+	padding:0 10px 0 18px;
+	border-right:1px solid #777;
+	position:absolute;
+	right:305px;
+	top:11px;
+	background:url(#{$imagePath}/i/v17/w3/notification_icon.png) no-repeat -2px;
+	cursor:pointer;
+}
+
+
+
+#ibm-w3-notifications-icon> span {
+	display:block;
+	min-width:12px;
+	height:12px;
+	line-height:12px;
+	margin-top:3px;
+	background:#00649d;
+	border-radius:2px;
+	box-shadow:0 1px 0 #e7e7e7;
+	font-size:11px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+}
+.ibm-w3-notifications {
+	display:none;
+	position:fixed;
+	z-index:902;
+	width:350px;
+	background-color:#444;
+	background-color:rgba(255,255,255,.2);
+	border-radius:7px;
+	padding:5px;
+	box-shadow:0px 0px 20px #333333;
+	margin-left:-65px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	top:43px;
+	right:275px;
+	font-size:12px;
+	-o-transition:width .3s;
+	-moz-transition:width .3s;
+	-webkit-transition:width .3s;
+	transition:width .3s;
+}
+/* ie9 double background fix */
+:root .ibm-w3-notifications {
+	filter:none;
+}
+.ibm-w3-notifications .ibm-scroll {
+	overflow-x:hidden !important;
+}
+.ibm-w3-notifications .no-record {
+	font-size:20px;
+	margin:25px;
+	text-align:center;
+}
+.ibm-w3-notifications--close {
+	position:absolute;
+	background:url(#{$imagePath}/i/v17/overlay/overlay-close.png) 0px 0px no-repeat transparent;
+	cursor:pointer;
+	display:block;
+	height:42px;
+	right:-20px;
+	text-indent:-999em;
+	top:-20px;
+	width:42px;
+	z-index:1000;
+}
+.ibm-w3-notifications--close:hover {
+	background-position:0px -42px;
+}
+.ibm-w3-notifications--inner {
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	/*overflow: hidden;*/
+	padding-bottom:20px;
+	position:relative;
+}
+.ibm-w3-notifications--inner:before, .ibm-w3-notifications--inner:after {
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+	position:absolute;
+	border-style:solid;
+	border-color:rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #fff;
+}
+.ibm-w3-notifications--inner:before {
+	border-width:10px;
+	right:48px;
+	top:-25px;
+	opacity:0.38;
+}
+.ibm-w3-notifications--inner:after {
+	border-width:8px;
+	right:50px;
+	top:-16px;
+}
+
+.dj_ie8 .ibm-w3-notifications--inner:before,
+.dj_ie8 .ibm-w3-notifications--inner:after {
+	background: transparent;
+	border-width: 18px;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.dj_ie8 .ibm-w3-notifications--inner:before {
+	border-bottom-color: rgb(68, 68, 68);
+	right: 50px;
+	top: -37px;
+}
+
+
+.dj_ie8 .ibm-w3-notifications--inner:after {
+	border-bottom-color: #fff;
+	top: -30px;
+}
+
+
+	
+.ibm-w3-notifications--head {
+	width:100%;
+	background-color:#fff;
+	display:block;
+	padding:13px 20px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.ibm-w3-notifications--heading {
+	display:inline-block;
+	float:left;
+	font-size:1.2em;
+}
+.ibm-w3-notifications--views {
+	float:right;
+	display:inline-block;
+	font-weight:normal;
+}
+.ibm-w3-notifications--views p {
+	display:inline-block;
+}
+.ibm-w3-notifications--view-link {
+	display:inline-block;
+	color:#00649D;
+	font-weight:normal;
+	line-height:16px;
+	text-decoration:none;
+}
+.ibm-w3-notifications--view-link:hover {
+	text-decoration:underline;
+}
+.ibm-w3-notifications--view-link:hover, .ibm-w3-notifications--view-link:focus {
+	color:#05386B;
+}
+.ibm-w3-notifications--view-link.ibm-active {
+	color:#111;
+	font-weight:bold;
+}
+.ibm-w3-notifications--body {
+	width:100% !important; /*needed, because javascript overrides this value when generating scrollbar*/
+}
+.ibm-w3-notifications--notificaction-list {
+	padding:0;
+	margin:0;
+}
+.ibm-w3-notifications--notificaction-list li {
+	width:100%;
+	font-size:12px;
+	line-height:16px;
+	border-bottom:1px solid #DDDDDD;
+	padding:7px 5px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	position:relative;
+	overflow:hidden;
+	color:#222;
+}
+.ibm-w3-notifications--notificaction-list li:hover {
+	background-color:#EEEEEE;
+}
+.ibm-w3-notifications--notificaction-list li:first-child {
+	border-top:1px solid #DDDDDD;
+}
+.ibm-w3-notifications--notificaction-list li.ibm-information-link, .ibm-w3-notifications--notificaction-list li.ibm-error-link {
+	padding-left:40px !important;
+	padding-right:20px;
+}
+.ibm-w3-notifications--notificaction-list li.ibm-information-link {
+	background-position:21px 5px !important;
+}
+.ibm-w3-notifications--notificaction-list li.ibm-error-link {
+	background-position:21px -194px !important;
+}
+.ibm-w3-notifications--body .ibm-w3-notifications--notificaction-list li a:link {
+	line-height:14px;
+	font-weight:normal;
+	color:#00649D;
+	text-decoration:underline;
+}
+.ibm-w3-notifications--body .ibm-w3-notifications--notificaction-list li a:hover {
+	color:#05386B;
+}
+.ibm-w3-notifications--notificaction-list li .ibm-item-note {
+	display:inline-block;
+	font-size:12px;
+}
+.ibm-w3-notifications--notificaction-list li .ibm-cancel-link {
+	position:absolute;
+	right:-12px;
+	top:4px;
+	width:15px;
+	height:15px;
+	display:none !important;
+	overflow:hidden;
+	text-indent:100%;
+	word-wrap:nowrap;
+}
+.ibm-w3-notifications--notificaction-list li:hover .ibm-cancel-link {
+	display:block !important;
+}
+.ibm-w3-notifications--body .ibm-w3-notifications--notificaction-list li .ibm-w3-notifications--moreless:link {
+	color:#00649D;
+	font-size:11px;
+}
+.ibm-w3-notifications.ibm-w3-notifications--full {
+	width:675px;
+	margin-left:-390px;
+	top:92px;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--head {
+	border-bottom:1px dotted #aaa;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--heading {
+	font-size:1.8em;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--views {
+	line-height:26px;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--view-link {
+	padding-right:10px;
+	padding-left:5px;
+	border-right:1px solid #ccc;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--view-link:last-child {
+	border:0;
+	padding-right:0;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--body {
+	height:190px;
+	width:665px !important; /*needed, because javascript overrides this value when generating scrollbar*/
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--notificaction-list li {
+	min-height:47px;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--notificaction-list li:first-child {
+	border-top:0
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--notificaction-list li .ibm-cancel-link {
+	right:-5px;
+}
+.ibm-w3-notifications--full .ibm-w3-notifications--notificaction-list li.ibm-information-link, .ibm-w3-notifications--full .ibm-w3-notifications--notificaction-list li.ibm-error-link {
+	padding-right:30px !important;
+}
+.updateStatus {
+	font-size:11px;
+	color:red;
+	font-style:italic;
+}
+
+
+#ibm-w3-notifications-broken-icon{
+	height:19px;
+	padding:0 10px 0 18px;
+	border-right:1px solid #777;
+	position:absolute;
+	right:305px;
+	top:11px;
+	background:url(#{$imagePath}/i/v17/w3/disabled_w3_notification_icon.png) no-repeat -2px;
+	cursor:pointer;
+}
+
+
+
+#ibm-w3b-notifications-broken-icon{
+	height:19px;
+	padding:0 10px 0 18px;
+	border-right:1px solid #777;
+	position:absolute;
+	right:305px;
+	top:11px;
+	background:url(#{$imagePath}/i/v17/w3/disabled_w3b_notification_icon.png) no-repeat -2px;
+	cursor:pointer;
+}
+
+#msgInformation{
+	margin-left: 115px;
+	color :red;
+	font-size: 10px
+}

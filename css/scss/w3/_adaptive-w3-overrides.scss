@@ -1,0 +1,46 @@
+/* Overrides for w3's masthead to make it compress correctly */
+
+@media only screen and (min-width: 0) and (max-width: 800px) {
+
+	#ibm-mast-options  {
+		display: block;
+		height: 30px !important;
+		#ibm-home a {
+			background-position: 0 -82px;
+		}
+	}
+	#ibm-universal-nav {
+		li#ibm-home a,
+		li#ibm-home a:hover,
+		li#ibm-home a:focus {
+			background-position: 0 -82px;
+		}
+		#ibm-site-title {
+			line-height: 2.2em;
+		}
+		#ibm-profile-links {
+			margin-top: -42px;
+		}
+		
+		#ibm-w3-notifications-icon {
+			right: 61px;
+			top: 7px;
+		}
+		
+	}
+}
+
+@media only screen and (min-width: 0) and (max-width: 568px) {
+	#ibm-universal-nav #ibm-profile-links {
+		display: none !important;
+	}
+	
+	#main_notification {
+		display: none;
+	}
+}
+
+/* Hamburger menu */
+#m-open-link {
+	top: 0;
+}
