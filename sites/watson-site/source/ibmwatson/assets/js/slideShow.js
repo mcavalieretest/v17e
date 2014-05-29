@@ -24,7 +24,7 @@
 		this.view = options.view;
 		this.ease = options.ease;
 		this.duration = options.duration;
-		this.delay = 3000;
+		this.delay = 10000;
 		this.isFullScreen = options.fullscreen;
 		this.transitioning = false;
 		this.playing = options.looping;
@@ -272,7 +272,7 @@
 		} else {
 			//set as height of li
 			this.view.style.height = this.slides[0].offsetHeight + 'px'; //get the offsetHeight
-
+			console.log("height", this.view.style.height)
 			var self = this;
 			//fix for orientation change, for some reason media queries load after above is set
 			setTimeout(function(){

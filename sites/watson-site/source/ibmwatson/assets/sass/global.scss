@@ -590,6 +590,9 @@ body {
 .advisor #watson-footer {
 	background-image: url(../img/footer/bg-footer-4.jpg);
 }
+.watson-engagement-advisor #watson-footer {
+	background-image: url(../img/footer/bg-footer-4.jpg);
+}
 
 @media screen and (max-width: 980px) {
 
@@ -750,7 +753,8 @@ body {
 	.watson-about #watson-footer {
 		background-image: url(../img/footer/bg-footer-4-mobile.jpg);
 	}
-	.watson-ecosystem #watson-footer {
+	.watson-ecosystem #watson-footer,
+	.watson-engagement-advisor #watson-footer{
 		background-image: url(../img/footer/bg-footer-4-mobile.jpg);
 	}
 

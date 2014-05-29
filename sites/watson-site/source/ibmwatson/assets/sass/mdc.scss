@@ -72,8 +72,30 @@
 		.ibm-columns#details {
 			width: 100%;
 		}
+		.ibm-columns.sort{
+			span {
+				font-family: $font-bold;
+				font-size: 24px;
+				color: #676967;
+				display: inline-block;
+				margin: 0 10px;
+				cursor: pointer;
+			}
+			span.active {
+				color: #FFF;
+			}
+		}
+
+		
 		.ibm-columns {
+
 			padding: 0;
+
+			.ibm-col-6-2.finalist {
+				background: #24b04b;
+				.expand:before { color: #168033; }
+				.expand.open:before { color: #168033; }
+			}
 			.ibm-col-6-2 {
 				height: 300px;
 				background: #222;
@@ -128,6 +150,7 @@
 			}
 		}
 	}
+
 
 	#co_details {
 		

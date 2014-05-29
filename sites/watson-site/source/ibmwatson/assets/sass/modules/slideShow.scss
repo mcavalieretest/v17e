@@ -90,6 +90,35 @@
 			}
 		}
 	}
+
+}
+.slideShow.product {
+		.indicator {
+			visibility: visible;
+			bottom: 10px;
+			ol{
+				margin-left: 50%;
+				li{
+					// width: 0.65em;
+					// height: 0.65em;
+					background: #80ddf5;
+				}
+				li.active {
+					background: #fff;
+				}
+
+			}
+		}
+	}
+
+@media screen and (max-width: 640px) {
+	.slideShow.product {
+		.indicator {
+			ol{
+				margin-left: 0%;
+			}
+		}
+	}
 }
 
 

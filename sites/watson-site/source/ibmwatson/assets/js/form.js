@@ -127,13 +127,15 @@
 			var customers = $(".co_details #ncustomers", my.form );
 			var revenues  = $(".co_details #nrevenues", my.form );
 
-			var urlRegex = new RegExp("^([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?");
+			var urlRegex = /(^|\s)((https?:\/\/)?[\w-]+(\.[\w-]+)+\.?(:\d+)?(\/\S*)?)/gi;
+
 
 			my.isReady[1] = false;
 
 
 			if(cname.val().length > 1 && city.val().length > 1){
 				if(urlRegex.test(url.val())){
+					console.log("got here")
 					if(country.val() && industry.val() && employees.val() && customers.val() && revenues.val()){
 						// console.log("got here co 3")
 						if($(".co_details input[type=radio]").is(":checked")){

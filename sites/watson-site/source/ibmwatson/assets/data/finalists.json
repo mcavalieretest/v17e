@@ -9,7 +9,8 @@
 			"facebook": "",
 			"twitter": "https://twitter.com/xoriant",
 			"linkedin": "http://www.linkedin.com/company/166996",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Kutir",
 			"industry": "Human Resources",
@@ -19,7 +20,8 @@
 			"facebook": "",
 			"twitter": "https://twitter.com/kutirtech",
 			"linkedin": "https://www.linkedin.com/company/kutir-technologies",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Unified Computer Intelligence Corp",
 			"industry": "Nutrition",
@@ -29,7 +31,8 @@
 			"facebook": "",
 			"twitter": "http://twitter.com/theubi",
 			"linkedin": "",
-			"youtube": "https://www.youtube.com/channel/UCBkFTcR4Hh04B1u4Ek5tGjg"
+			"youtube": "https://www.youtube.com/channel/UCBkFTcR4Hh04B1u4Ek5tGjg",
+			"finalist": false
 		},{
 			"name": "Ontodia",
 			"industry": "Cities",
@@ -39,7 +42,8 @@
 			"facebook": "",
 			"twitter": "https://twitter.com/pediacities",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Ringful Health",
 			"industry": "Health Services",
@@ -49,7 +53,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Biovideo",
 			"industry": "Health Services",
@@ -59,7 +64,8 @@
 			"facebook": "http://facebook.com/mybiovideo",
 			"twitter": "http://twitter.com/mybiovideo",
 			"linkedin": "https://www.linkedin.com/company/biovideo",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "GenieMD",
 			"industry": "Health Services",
@@ -69,7 +75,8 @@
 			"facebook": "https://www.facebook.com/pages/GenieMD/181378601947680",
 			"twitter": "https://twitter.com/geniemd",
 			"linkedin": "https://www.linkedin.com/company/geniemd-llc",
-			"youtube": ""
+			"youtube": "",
+			"finalist": true
 		},{
 			"name": "Inteliwise",
 			"industry": "Cities",
@@ -79,7 +86,8 @@
 			"facebook": "https://www.facebook.com/InteliwiseVirtualAgent",
 			"twitter": "",
 			"linkedin": "https://www.linkedin.com/company/inteliwise",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Azoft",
 			"industry": "Entertainment",
@@ -89,7 +97,8 @@
 			"facebook": "https://www.facebook.com/azoft.company",
 			"twitter": "https://twitter.com/azoft",
 			"linkedin": "https://www.linkedin.com/company/azoft",
-			"youtube": "https://www.youtube.com/user/azoft"
+			"youtube": "https://www.youtube.com/user/azoft",
+			"finalist": false
 		},{
 			"name": "Sense.ly / MyIdealDoctor",
 			"industry": "Health Services",
@@ -99,7 +108,8 @@
 			"facebook": "https://www.facebook.com/Myidealdoctor",
 			"twitter": "https://twitter.com/Sense_ly",
 			"linkedin": "https://www.linkedin.com/in/adamodessky",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Rumble",
 			"industry": "News",
@@ -109,7 +119,8 @@
 			"facebook": "https://www.facebook.com/Rumble.me",
 			"twitter": "https://twitter.com/rumblenews_",
 			"linkedin": "https://www.linkedin.com/company/rumble-news",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "BrightMinded",
 			"industry": "Fitness",
@@ -119,7 +130,8 @@
 			"facebook": "https://www.facebook.com/brightminded",
 			"twitter": "https://twitter.com/BrightMindedLtd",
 			"linkedin": "https://www.linkedin.com/company/brightminded-ltd",
-			"youtube": ""
+			"youtube": "",
+			"finalist": true
 		},{
 			"name": "Activepackets",
 			"industry": "Automotive",
@@ -129,7 +141,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "https://www.linkedin.com/profile/view?id=4052142",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Red Ant",
 			"industry": "Fashion",
@@ -139,7 +152,8 @@
 			"facebook": "https://www.facebook.com/pages/Red-Ant/28977642329",
 			"twitter": "https://twitter.com/Red_Ant",
 			"linkedin": "https://www.linkedin.com/company/65131",
-			"youtube": ""
+			"youtube": "",
+			"finalist": true
 		},{
 			"name": "9W Search",
 			"industry": "Finance",
@@ -149,7 +163,8 @@
 			"facebook": "https://www.facebook.com/9wSearch",
 			"twitter": "https://twitter.com/9WSearch",
 			"linkedin": "https://www.linkedin.com/company/9w-search-inc.",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "InXero",
 			"industry": "Business Services",
@@ -159,7 +174,8 @@
 			"facebook": "https://www.facebook.com/InXeroLive",
 			"twitter": "https://twitter.com/AnandRajLive",
 			"linkedin": "https://www.facebook.com/InXeroLive",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "CrayonData",
 			"industry": "Retail",
@@ -169,7 +185,8 @@
 			"facebook": "https://www.facebook.com/crayondata",
 			"twitter": "",
 			"linkedin": "https://www.linkedin.com/company/2641300",
-			"youtube": ""
+			"youtube": "",
+			"finalist": true
 		},{
 			"name": "Voyager Innovations",
 			"industry": "Retail",
@@ -179,7 +196,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Ultramatics",
 			"industry": "Health Services",
@@ -189,7 +207,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Instancy",
 			"industry": "Education",
@@ -199,7 +218,8 @@
 			"facebook": "",
 			"twitter": "https://twitter.com/instancy",
 			"linkedin": "http://www.linkedin.com/company/instancy",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Majestyk Apps",
 			"industry": "Education",
@@ -209,7 +229,8 @@
 			"facebook": "http://facebook.com/MajestykApps",
 			"twitter": "http://twitter.com/MajestykApps",
 			"linkedin": "http://linkedin.com/company/majestyk-apps",
-			"youtube": ""
+			"youtube": "",
+			"finalist": true
 		},{
 			"name": "Flexport",
 			"industry": "Information",
@@ -219,7 +240,8 @@
 			"facebook": "",
 			"twitter": "https://twitter.com/flexportinc",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Acute Dynamics",
 			"industry": "Information",
@@ -229,7 +251,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "Strategia Tecnologia",
 			"industry": "Agriculture",
@@ -239,7 +262,8 @@
 			"facebook": "",
 			"twitter": "",
 			"linkedin": "",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		},{
 			"name": "GoGoHealth",
 			"industry": "Health Services",
@@ -249,7 +273,8 @@
 			"facebook": "https://www.facebook.com/pages/GoGoHealth-LLC/241361119320494",
 			"twitter": "https://twitter.com/GoGoHealthLLC",
 			"linkedin": "https://www.linkedin.com/company/2756625",
-			"youtube": ""
+			"youtube": "",
+			"finalist": false
 		}
 		
 	]
