@@ -1,0 +1,136 @@
+/*! 
+ * Name: ibm.com v17e CSS file
+ * Version $Id$
+ * Owner: Corporate Webmaster (NUS_N_NIWWW)
+ * Copyright (c) 2014 IBM Corporation
+ */
+
+/**
+	URI: <???>/common/v17e/css/w3.css
+	
+	Description: Official SASS files for v17e project
+	
+	Notes:
+		Add "ibm-adapt" class to modules that change under different viewport
+		Use ".ibm_cci-" class prefix for site specific custom code
+		
+	The contents are auto-created from individual files listed below. Use a SASS compiler to create the ww.css file.
+
+	v17e SASS structure map...
+
+css/
+|
+|-- scss/
+|   |-- shared/					# shared modules
+|   |   |-- _vars.scss			# project variables and mixins
+|   |   |-- _font-load.scss		# external font loading
+|   |   |-- _reset.scss			# reset
+|   |   |-- _fonts.scss			# fonts
+|   |   |-- _accessibility.scss	# accessibility
+|   |   |-- _navigation.scss	# navigation
+|   |   |-- _scoped-search.scss	# scoped-search (could not find an example of this being used.  confirm with Minija / Vlad)
+|   |   |-- _related.scss		# related
+|   |   |-- _footer.scss		# footer
+|   |   |-- _common.scss		# common
+|   |   |-- _text.scss			# text (removed for testing new paragraph / header spacing)
+|   |   |-- _nav-trail.scss		# navigation trail
+|   |   |-- _buttons.scss		# buttons
+|   |   |-- _ribbon.scss		# ribbon
+|   |   |-- _layout.scss		# layout
+|   |   |-- _leadspace.scss		# leadspace
+|   |   |-- _liquid.scss		# liquid (not commonly used on ibm.com)
+|   |   |-- _grid.scss			# grid
+|   |   |-- _icons.scss			# icons
+|   |   |-- _dialog.scss		# dialog
+|   |   |-- _signin.scss		# signin (discontinued http://webdev.webmaster.ibm.com/common/testpages/misc_stuff/signin.html)
+|   |   |-- _tabs.scss			# tabs
+|   |   |-- _scroll.scss		# scroll
+|   |   |-- _video.scss			# video
+|   |   |-- _rightnav.scss		# rightnav
+|   |   |-- _landing.scss		# landing
+|   |   |-- _tooltip.scss		# tooltip
+|   |   |-- _popup.scss			# popup
+|   |   |-- _print.scss			# print
+|   |   |-- _rating.scss		# rating
+|   |   |-- _expert-locator.scss# expertise locater module
+|   |   |-- _cards.scss 		# cards
+|   |   |-- _adaptive.scss		# adaptive styles
+|   |   ...
+|   |-- direct/					# directly loaded CSS files
+|   |   |-- _data.scss			# data (loaded as a seperate data.css file)
+|   |   |-- _form.scss			# form (loaded as a seperate form.css file)
+|   |   |-- _social.scss		# social (loaded as a separate social.css file)
+|   |   |-- _application.scss	# application (loaded as a separate application.css file)
+|   |   ...
+|   |-- w3/						# ww modules
+|   |   |-- _masthead.scss		# masthead
+|   |   |-- _w3_notifications.scss	# masthead notification alert module
+|   |   |-- _social-toolbar.scss# social-toolbar
+   |   ...
+|   |-- beta/					# v17e modules (this is where all the v17e styles will be placed.  after review we can move these styles into the shared or ww folder.)
+|   |   |-- _colors.scss		# colors and gradient styles
+|   |   |-- _effects.scss		# shadow and emboss effects
+|   |   |-- _m-masthead.scss	# mobile masthead styles
+|   |   ...
+|   ...
+|
+-- w3.scss						# main SASS file
+
+
+
+	// The v17e output build (w3.css) can be controlled by adjusting the import references below...
+	// imports ============================================
+
+*/
+
+@import "scss/shared/vars",
+		"scss/beta/colors",
+		// "scss/beta/animate",
+
+		"scss/shared/font-load",
+		"scss/shared/reset",
+		"scss/shared/fonts",
+		"scss/shared/accessibility",
+		"scss/shared/navigation",
+		// "scss/shared/scoped-search",
+		"scss/shared/related",
+		"scss/shared/footer",
+		"scss/shared/common",
+		// "scss/shared/text",
+		"scss/shared/nav-trail",
+		"scss/shared/buttons",
+		"scss/shared/ribbon",
+		"scss/shared/layout",
+		"scss/shared/leadspace",
+		// "scss/shared/liquid",
+		"scss/shared/grid",
+		"scss/shared/icons",
+		"scss/shared/dialog",
+		// "scss/shared/signin",
+		"scss/shared/tabs",
+		"scss/shared/scroll",
+		"scss/shared/video",
+		"scss/shared/rightnav",
+		"scss/shared/landing",
+		"scss/shared/tooltip",
+		"scss/shared/popup",
+		"scss/shared/print",
+		"scss/shared/rating",
+		"scss/shared/expert-locator",
+		"scss/shared/cards",		
+
+		// "scss/ww/localeselector",
+		"scss/w3/masthead",
+		"scss/w3/w3_notifications",
+		"scss/w3/social-toolbar",
+		
+		"scss/ww/merchandising",
+
+		"scss/beta/m-masthead",
+
+		"scss/shared/adaptive",
+		"scss/w3/adaptive-w3-overrides",
+		"scss/beta/effects",
+		"scss/beta/carousel";
+		
+		
