@@ -500,7 +500,7 @@
     },
 
     currentSlideEl: function() {
-      return this.pages.eq(self.currentSlideIndex).find('[role=document]');
+      return this.pages.eq(this.currentSlideIndex).find('[role=document]');
     },
 
     /**
