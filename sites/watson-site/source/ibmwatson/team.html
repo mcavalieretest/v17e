@@ -230,19 +230,19 @@
                         </div>
                     </div>
                     <!--
-					<div class="ibm-band scene" id="team-voices">
-						<div class="ibm-columns">
-							<div class="ibm-col-1-1">
-								<h2>Who’s Saying<br />What About Watson?</h2>
-								<a href="http://www.ibm.com/voices" target="_blank">Content created and curated by the minds at IBM. </a>
-		
-									<div class="voices-wrap" id="ibm-voices">
-										<iframe src="assets/iframe/voices.html" scrolling="no" frameborder="no"></iframe>
-									</div>
-							</div>
-						</div>
-					</div>
-					-->
+                    <div class="ibm-band scene" id="team-voices">
+                        <div class="ibm-columns">
+                            <div class="ibm-col-1-1">
+                                <h2>Who’s Saying<br />What About Watson?</h2>
+                                <a href="http://www.ibm.com/voices" target="_blank">Content created and curated by the minds at IBM. </a>
+        
+                                    <div class="voices-wrap" id="ibm-voices">
+                                        <iframe src="assets/iframe/voices.html" scrolling="no" frameborder="no"></iframe>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
 
                     {{> footer}}
 
@@ -256,8 +256,7 @@
     </div>
 
 
-    {{> scripts}} 
-    {{> grid_overlay}}
+    {{> scripts}} {{> grid_overlay}}
 
     <script>
     jQuery(function() {
@@ -272,6 +271,14 @@
             looping: false,
             fullscreen: false
         });
+
+        if (!IBM.watson.isMobile) {
+
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js";
+            jQuery("body").append(s);
+        }
     })
     </script>
 

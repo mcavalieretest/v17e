@@ -135,6 +135,13 @@
 	<script>
 		jQuery(function() {
 			new IBM.watson.About();
+			if(!IBM.watson.isMobile){
+
+	            var s = document.createElement("script");
+	            s.type = "text/javascript";
+	            s.src = "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js";
+	            jQuery("body").append(s);
+	        }
 		})
 	</script>
 

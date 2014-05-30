@@ -61,11 +61,12 @@
                     <!-- Timeline -->
                     <div class="ibm-band scene" id="mdc-finalists" data-ev="section2">
                         <div class="ibm-columns sort">
-                            <span class="top_btn">View the top 5 teams</span><span href="#" class="all_btn">View all 25 finalists</span>
+                            <span class="top_btn">View the top 5 teams</span>
+                            <span href="#" class="all_btn">View all 25 finalists</span>
                         </div>
-                        
+
                         <div class="ibm-columns row_top"></div>
-                        
+
                         <div class="ibm-columns" id="details">
                             <div id="co_details">
                                 <div class="close_btn"></div>
@@ -74,37 +75,47 @@
                                     <h1></h1>
                                     <p class="desc"></p>
                                     <div class="ibm-col-1-1">
-                                        <p><a href='#' class='ibm-callaction-link' target='_blank'><span class='co_link'></span></a></p>
+                                        <p>
+                                            <a href='#' class='ibm-callaction-link' target='_blank'>
+                                                <span class='co_link'></span>
+                                            </a>
+                                        </p>
                                         <ol></ol>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="ibm-columns row_bot"></div>
-                    </div>  
-
-
-                        {{> footer}}
-                        <!-- END SCENES -->
-
                     </div>
-                </div>
-                <!-- CONTENT_BODY_END -->
 
+
+                    {{> footer}}
+                    <!-- END SCENES -->
+
+                </div>
             </div>
-            <!-- CONTENT_END -->
+            <!-- CONTENT_BODY_END -->
 
         </div>
+        <!-- CONTENT_END -->
 
-        {{> scripts}} 
-        {{> grid_overlay}}
+    </div>
+
+    {{> scripts}} {{> grid_overlay}}
 
 
-        <script>
-        jQuery(function() {
-            new IBM.watson.Challenge();
-        });
-        </script>
+    <script>
+    jQuery(function() {
+        new IBM.watson.Challenge();
+        if (!IBM.watson.isMobile) {
+
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js";
+            jQuery("body").append(s);
+        }
+    });
+    </script>
 
 </body>
 

@@ -18,14 +18,14 @@
 			}
 
 
-			var pathArray = window.location.pathname.split( '/' );
-			var currentPage = pathArray[pathArray.length - 1];
+			// var pathArray = window.location.pathname.split( '/' );
+			// var currentPage = pathArray[pathArray.length - 1];
 
 
 
-			if(IBM.watson.isMobile || currentPage=="ecosystem.html"){
-				$(".ibm-live-assistance-list").remove();
-			}
+			// if(IBM.watson.isMobile || currentPage=="ecosystem.html"){
+			// 	$(".ibm-live-assistance-list").remove();
+			// }
 		}
 
 

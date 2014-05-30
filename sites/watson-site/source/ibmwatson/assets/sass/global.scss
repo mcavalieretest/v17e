@@ -141,6 +141,15 @@ body {
 	
 }
 
+.ibm-live-assistance-list.product {
+	bottom: 46px;
+	li {
+		a:before {
+			font-size: 32px;
+		}
+	}
+}
+
 /**
  * main navigation
  */
@@ -399,6 +408,62 @@ body {
 	color: #fff;
 }
 
+/**floating bar**/
+
+
+#floater {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	display: none;
+	.fl_content {
+		width: 100%;
+		height: 60px;
+		top: 0;
+		position: absolute;
+		.fl_inner {
+			width: 94%;
+			margin-left: 20px;
+			.tag_line {float: left}
+			.email,
+			.tel {
+				float: right;
+			}
+			p {
+				font: 16px/1em normal $font-bold;
+				color: #FFF;
+				line-height: 60px;
+
+				a {
+				color: #FFF;
+				float: left;
+				display: inline-block;
+				margin-right: 30px;
+				}
+				a.ibm-email-link:before,
+				a.ibm-phone-link:before {
+					color: #FFF;
+					font-size: 32px;
+				}
+			}
+
+		}
+	}
+	.trans_bck {
+		background: #004266;
+		-webkit-opacity: 0.9;
+		-moz-opacity: 0.9;
+		filter:alpha(opacity=90);
+		width: 100%;
+		height: 60px;
+		top: 0;
+		position: absolute;
+
+	}
+}
+
 /**
  * footer
  */
@@ -614,6 +679,38 @@ body {
 
 @media screen and (max-width: 800px) {
 
+		/**floating bar**/
+
+	#floater {
+		.fl_content {
+			.fl_inner {
+				width: 94%;
+				.tag_line {display: none}
+				// .email{
+				// 	float: left;
+				// }
+				.tel {
+					float: left;
+				}
+				a.ibm-email-link span {
+					display: none;
+				}
+				// p {
+				// 	font: 16px/1em normal $font-bold;
+				// 	color: #FFF;
+				// 	line-height: 60px;
+
+				// 	a.ibm-email-link:before,
+				// 	a.ibm-phone-link:before {
+				// 		color: #FFF;
+				// 		font-size: 32px;
+				// 	}
+				// }
+
+			}
+		}
+	}
+
 	.scene {
 
 		.content {
@@ -631,6 +728,9 @@ body {
 			display: none;
 		}
 	}
+
+
+
 /**footer**/
 	#watson-footer {
 		.watson-footer-inner {
@@ -697,6 +797,14 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+
+	#floater {
+		.fl_content {
+			.fl_inner {
+				width: 93%;
+			}
+		}
+	}
 	.scene {
 
 		.content {
@@ -770,6 +878,8 @@ body {
 }
 
 @media screen and (max-width: 579px) {
+
+
 
 /*menu nav*/
 	.menu {

@@ -12,6 +12,8 @@
         init: function() {
             var my = this;
 
+
+
             my.sceneManager = new IBM.watson.SceneManager(this);
 
             if (IBM.watson.isMobile) {
@@ -30,6 +32,33 @@
                 duration: 1,
                 looping: true,
                 fullscreen: false
+            });
+        },
+
+
+
+        checkScroll: function() {
+
+            var chat_btn = $(".ibm-live-assistance-list");
+            var footer = $("#watson-footer");
+            var hero = $(".hero")
+
+            $(window).on('scroll', function() {
+                var scrollPos = $(window).scrollTop();
+                var footerPos = footer.offset().top - footer.height() - 220;
+                var heroOffset = hero.height() - $(window).height();
+                if(scrollPos > heroOffset && scrollPos < footerPos){
+                    if (!$("#floater").is(':visible')) {
+                        chat_btn.addClass('product')
+                        $("#floater").show();
+                    }
+                }else{
+                    if ($("#floater").is(':visible')) {
+                        $("#floater").hide();
+                        chat_btn.removeClass('product')
+                    }
+                }
+
             });
         }
     };

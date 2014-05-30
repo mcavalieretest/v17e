@@ -2,75 +2,79 @@
 
 <!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
 <!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
 
 <head>
-	{{> head_ea}}
+    {{> head_ea}}
 </head>
 
 <body id="ibm-com" class="ibm-type">
 
-	<div id="ibm-top" class="ibm-landing-page">
+    <div id="ibm-top" class="ibm-landing-page">
 
-		<!-- CONTENT_BEGIN -->
-		<div id="ibm-content">
+        <!-- CONTENT_BEGIN -->
+        <div id="ibm-content">
 
-			<!-- CONTENT_BODY -->
-			<div id="ibm-content-body">
+            <!-- CONTENT_BODY -->
+            <div id="ibm-content-body">
 
-				{{> side_nav}}
+                {{> side_nav}}
 
-				<div id="ibm-content-main" class="advisor">
-					<ul class="ibm-live-assistance-list"></ul>
-					
-					<!--menu & logo-->
-					<nav class="menu" id="menu">
-						<p>Menu</p>
-						<div class="bars">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<div class="logo"></div>
-					</nav>
-					
-					<div class="ibm-band" id="advisor-hero">
-						
-						<div class="full">
-							<img src="assets/img/engagementadvisor/engagementadvisor-wide.jpg"/>
-						</div>
-						<div class="stacked">
-							<img src="assets/img/engagementadvisor/engagementadvisor_01.jpg"/>
-							<img src="assets/img/engagementadvisor/engagementadvisor_02.jpg"/>
-							<img src="assets/img/engagementadvisor/engagementadvisor_03.jpg"/>
-							<img src="assets/img/engagementadvisor/engagementadvisor_04.jpg"/>
-						</div>
-					</div>
-					
+                <div id="ibm-content-main" class="advisor">
+                    <ul class="ibm-live-assistance-list"></ul>
 
-					{{> footer}}
+                    <!--menu & logo-->
+                    <nav class="menu" id="menu">
+                        <p>Menu</p>
+                        <div class="bars">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="logo"></div>
+                    </nav>
 
-				</div>
-			</div>
-			<!-- CONTENT_BODY_END -->
+                    <div class="ibm-band" id="advisor-hero">
 
-		</div>
-		<!-- CONTENT_END -->
+                        <div class="full">
+                            <img src="assets/img/engagementadvisor/engagementadvisor-wide.jpg" />
+                        </div>
+                        <div class="stacked">
+                            <img src="assets/img/engagementadvisor/engagementadvisor_01.jpg" />
+                            <img src="assets/img/engagementadvisor/engagementadvisor_02.jpg" />
+                            <img src="assets/img/engagementadvisor/engagementadvisor_03.jpg" />
+                            <img src="assets/img/engagementadvisor/engagementadvisor_04.jpg" />
+                        </div>
+                    </div>
 
-	</div>
 
-	{{> scripts}}
-	{{> grid_overlay}}
+                    {{> footer}}
 
-	<script>
-		jQuery(function () {
-			new IBM.watson.Index();
-		});
-		// console.log($(".ibm-chat-link a"))
-		// $(".ibm-chat-link a").html("")
+                </div>
+            </div>
+            <!-- CONTENT_BODY_END -->
 
-		// console.log($(".ibm-chat-link a"))
+        </div>
+        <!-- CONTENT_END -->
 
-	</script>
+    </div>
+
+    {{> scripts}} {{> grid_overlay}}
+
+    <script>
+    jQuery(function() {
+        new IBM.watson.Index();
+        if (!IBM.watson.isMobile) {
+
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js";
+            jQuery("body").append(s);
+        }
+    });
+    </script>
 </body>
+
 </html>

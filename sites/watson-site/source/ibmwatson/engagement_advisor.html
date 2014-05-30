@@ -20,7 +20,7 @@
 
             <!-- CONTENT_BODY -->
             <div id="ibm-content-body">
-
+                {{> floater_bar}}
                 {{> side_nav}}
 
                 <div id="ibm-content-main" class="watson-engagement-advisor">
@@ -170,44 +170,6 @@
 
 
                     <div class="ibm-band scene" id="case_studies" data-ev="section4">
-                        <!--               <div class="ibm-columns">
-                            <div class="ibm-col-1-1">
-
-                                <div class="ibm-container ibm-ribbon ibm-alternate">
-                                    <div class="ibm-container-body">
-                                        <div class="ibm-ribbon-nav"></div>
-                                        <div class="ibm-ribbon-pane">
-                                            <div class="ibm-ribbon-section">
-                                                <div class="ibm-columns">
-                                                    <div class="ibm-col-1-1">
-                                                        <img src="http://placehold.it/460x460"/>
-                                                        <div class="text">
-                                                            <h3>Public Sector</h3>
-                                                            <h2>Serving the public interest</h2>
-                                                            <p>By making sense of an ever-expanding data deluge, Watson can help cities, states and countries bring their citizens better service and cut through red tape.</p>
-                                                            <a href="#">Read more</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="ibm-columns">
-                                                    <div class="ibm-col-1-1">
-                                                        <img src="http://placehold.it/460x460" class="ibm-inset"/>
-                                                        <div class="text">
-                                                            <h3>Public Sector</h3>
-                                                            <h2>Serving the public interest</h2>
-                                                            <p>By making sense of an ever-expanding data deluge, Watson can help cities, states and countries bring their citizens better service and cut through red tape.</p>
-                                                            <a href="#">Read more</a>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="content">
 
                             <div id="quoteSlideShow" class="slideShow product">
@@ -316,12 +278,22 @@
 
 
     {{> scripts}} {{> grid_overlay}}
+    
 
 
     <script>
     jQuery(function() {
-        new IBM.watson.Work();
-        // new IBM.watson.Work();
+        var work = new IBM.watson.Work();
+        work.checkScroll();
+        
+        if(!IBM.watson.isMobile){
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//www.ibm.com/software/common-content/ssi/lp/lpdyn-common.js";
+            jQuery("body").append(s);
+
+            jQuery(".ibm-live-assistance-list").addClass("product");
+        }
     });
     </script>
 
