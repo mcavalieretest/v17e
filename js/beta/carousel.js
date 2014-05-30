@@ -239,7 +239,7 @@
         this.scrollContainer.attr("id", this.element.attr("id") + "-scroll-container");
       }
 
-      this.loadPages();
+      this.loadSlides();
 
       if (!this.bodyContainer.find(this.config.paginationContainerSelector).length) {
         // TODO - dynamically set aria attributes, tabindexes and content here
@@ -319,7 +319,7 @@
         e.stopPropagation();
 
         var index = self.paginationLinks.index(e.target);
-        self.goToPage(index);
+        self.goToSlide(index);
       });
 
       this.element.on("keydown", function(e) {
@@ -346,7 +346,7 @@
      * @return {[type]}
      */
     initMisc: function() {
-      this.currentPage = 0;
+      this.currentSlideIndex = 0;
 
       if (this.config.arrows) {
         var top = (this.pagesContainer.height() / 2) - (this.prevButton.height() / 2);
@@ -457,7 +457,7 @@
           var index = self.paginationLinks.index($activeEl),
               $controlEl = $("#"+$activeEl.attr("aria-controls"));
 
-          self.goToPage(index);
+          self.goToSlide(index);
 
           $activeEl.blur();
           $controlEl.focus();
@@ -499,19 +499,23 @@
       return parseInt(this.scrollContainer.css("left").replace("px", ""));
     },
 
+    currentSlideEl: function() {
+      return this.pages.eq(self.currentSlideIndex).find('[role=document]');
+    },
+
     /**
      * Grab and save the list of slide elements. 
      * 
      * @return {[type]} [description]
      */
-    loadPages: function() {
+    loadSlides: function() {
       this.pages = this.scrollContainer.children();
     },
 
     refreshPagination: function() {
       this.paginationLinks
         .removeClass(this.config.activePageClass)
-        .eq(this.currentPage)
+        .eq(this.currentSlideIndex)
           .addClass(this.config.activePageClass);
     },
 
@@ -533,18 +537,18 @@
      * @param  {Function} callback [description]
      * @return {[type]}            [description]
      */
-    goToPage: function(index, callback) {
+    goToSlide: function(index, callback) {
       var self = this,
           newLeft;
 
-      this.currentPage = index;
+      this.currentSlideIndex = index;
       this.toggleArrowVisibility();
       this.refreshPagination();
 
       newLeft = this.newCssLeftPosition(index);
 
       var complete = function() {
-        var targetSlide = self.pages.eq(self.currentPage).find('[role=document]')[0];
+        var targetSlide = self.currentSlideEl()[0];
 
         targetSlide.focus();
 
@@ -556,29 +560,47 @@
       this.animateTo(newLeft, complete);
     },
 
+    goToWraparoundPage: function() {
+      // clone current page at end
+      // this.currentSlideIndex = index;     // Change to element
+      // this.toggleArrowVisibility(); // Change hasNextSlides() and hasPrevSlides()
+      // this.refreshPagination();     // Maybe
+      // newLeft = this.newCssLeftPosition(index);
+      // 
+      // var complete = function() {
+      //   var targetSlide = self.pages.eq(self.currentSlideIndex).find('[role=document]')[0];
+      //   targetSlide.focus();
+      //   if (typeof callback != "undefined") {
+      //     callback();
+      //   }
+      // };
+
+      // this.animateTo(newLeft, complete); // Take element as param
+    },
+
     next: function(callback) {
-      var page = this.nextPageIndex();
-      this.goToPage(page, callback);
+      var page = this.nextSlideIndex();
+      this.goToSlide(page, callback);
     },
 
     prev: function(callback) {
-      var page = this.prevPageIndex();
-      this.goToPage(page, callback);
+      var page = this.prevSlideIndex();
+      this.goToSlide(page, callback);
     },
 
     nextAuto: function() {
       var self = this;
       this.next(function() {
-        // self.rearrangePages();
+        // self.rearrangeSlides();
       });
     },
 
-    nextPageIndex: function() {
-      return (this.currentPage+1 > this.pages.length-1 ? 0 : this.currentPage+1);
+    nextSlideIndex: function() {
+      return (this.currentSlideIndex+1 > this.pages.length-1 ? 0 : this.currentSlideIndex+1);
     },
 
-    prevPageIndex: function() {
-      return (this.currentPage-1 < 0 ? this.pages.length-1 : this.currentPage-1);
+    prevSlideIndex: function() {
+      return (this.currentSlideIndex-1 < 0 ? this.pages.length-1 : this.currentSlideIndex-1);
     },
 
     newCssLeftPosition: function(index) {
@@ -602,9 +624,9 @@
      * 
      * @return {[type]} [description]
      */
-    rearrangePages: function() {
+    rearrangeSlides: function() {
       this.pages.first().after(this.pages.last());
-      this.loadPages();
+      this.loadSlides();
     },
 
     slideId: function(index) {
@@ -616,25 +638,25 @@
         return;
       }
 
-      if (this.hasPrevPages()) {
+      if (this.hasPrevSlides()) {
         this.prevButton.show();
       } else {
         this.prevButton.hide();
       }
 
-      if (this.hasNextPages()) {
+      if (this.hasNextSlides()) {
         this.nextButton.show();
       } else {
         this.nextButton.hide();
       }
     },
 
-    hasPrevPages: function() {
-      return (this.currentPage > 0);
+    hasPrevSlides: function() {
+      return (this.currentSlideIndex > 0);
     },
 
-    hasNextPages: function() {
-      return (this.currentPage < this.pages.length - 1);
+    hasNextSlides: function() {
+      return (this.currentSlideIndex < this.pages.length - 1);
     }
   });
 
