@@ -42,6 +42,7 @@
       autoScrollInterval: 5000,
       freeScroll: false,
       wrapAround: false,  // Seamless autoscrolling (always scrolls in the same direction, even on the last slide)
+      autoWidth: false,   // Keep slide contents at 100% width. Useful for when container width will change (like in leadspace carousel).
       prevButtonSelector: ".ibm-ribbon-prev",
       nextButtonSelector: ".ibm-ribbon-next",
       scrollContainerSelector: ".ibm-ribbon-section",
@@ -219,6 +220,7 @@
       }
 
       this.bodyContainer = this.element.find(this.config.bodyContainerSelector);
+
       
       // Inject html if it doesn't exist. For easy backward compatibility
       if (!this.bodyContainer.find(this.config.pagesContainerSelector).length) {
@@ -521,7 +523,29 @@
     },
 
     refreshPanelDimensions: function() {
-      this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+      console.warn('refreshPanelDimensions');
+      if (this.config.autoWidth) {
+        // Set .ibm-ribbon-pane width  - this.pagesContainer
+        // Set .ibm-columns widths     - this.panelContainer
+        // Set .ibm-columns children widths      - this.pages.children()
+        // Set .ibm-ribbon-section left property - this.scrollContainer
+
+
+        var w = $(window).width();
+        this.panelWidth = w;
+        this.pagesContainer.width(w > 1030 ? w : 1030);
+        this.panelContainer.width(w + 30 > 1030 ? w + 30 : 1030);
+        this.pages.children().width(w > 1030 ? w : 1030);
+
+
+
+
+
+        
+      } else {
+        this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+      }
+      
 
       var heights = this.pages.map(function(i, el) { 
             return $(el).height(); 
@@ -529,6 +553,10 @@
           maxHeight = Math.max.apply(null, heights);
 
       this.pagesContainer.height(maxHeight);
+
+
+      
+      
     },
 
     /**
