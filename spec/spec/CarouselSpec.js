@@ -293,9 +293,84 @@
         expect(slides.eq(2).find(".ibm-col-5-1").length).toEqual(5);
         expect(slides.eq(3).find(".ibm-col-6-1").length).toEqual(6);
       });
+    });
 
+    describe("Slide navigation", function() {
+      describe("prev()", function() {
+
+      });
+      describe("next()", function() {
+        
+      });
+      describe("goToSlide()", function() {
+        
+      });
+    });
+
+    describe("Transition methods", function() {
+      var carousel_with_class,
+          carousel_without_class,
+          transitionClass = "ibm-carousel-css-transitions";
+
+      beforeEach(function() {
+        $(document.body).append('<div id="carousel_with_class" class="'+transitionClass+'"></div>');
+
+        carousel_with_class = new Carousel($("#carousel_with_class"), {
+          init: false, 
+          slides: [{items: [{content: "foo"}]}]
+        });
+        carousel_with_class.init();
+      });
+
+      afterEach(function() {
+        $("#carousel_with_class").remove();
+        $("#carousel_without_class").remove();
+      });
+
+      describe("toggleTransitions", function() {
+        it("should add the transition class", function() {
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(true);
+
+          carousel_with_class.toggleTransitions(true);
+
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(true);
+        });
+
+        it("should remove the transition class", function() {
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(true);
+
+          carousel_with_class.toggleTransitions(false);
+
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(false);
+        });
+
+        it("should toggle the transition class", function() {
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(true);
+
+          carousel_with_class.toggleTransitions();
+
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(false);
+
+          carousel_with_class.toggleTransitions();
+
+          expect(carousel_with_class.element.hasClass(transitionClass)).toBe(true);
+        });
+      });
+
+      describe("transitionsEnabled", function() {
+        it ("should return true if transition class is present", function() {
+          expect(carousel_with_class.transitionsEnabled()).toBe(true);
+        });
+
+        it ("should return false otherwise", function() {
+          carousel_with_class.toggleTransitions(false);
+          expect(carousel_with_class.transitionsEnabled()).toBe(false);
+        });
+      });
 
     });
+
+
 
 
   });

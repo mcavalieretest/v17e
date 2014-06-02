@@ -49,7 +49,8 @@
       panelContainerSelector:  ".ibm-columns",
       pagesContainerSelector: ".ibm-ribbon-pane",
       paginationContainerSelector: ".ibm-ribbon-nav",
-      activePageClass: "ibm-active"
+      activePageClass: "ibm-active",
+      transitionClass: "ibm-carousel-css-transitions"
     };
 
     // Save the important elements
@@ -364,7 +365,7 @@
       if (!this.config.autoScroll) { return; }
 
       this.data.autoScrollInterval = setInterval(function() {
-        self.nextAuto();
+        self.next();
       }, this.config.autoScrollInterval);  
 
       if (!this.config.freeScroll) {
@@ -377,7 +378,7 @@
 
           clearInterval(self.data.autoScrollInterval);
           self.data.autoScrollInterval = setInterval(function(){
-            self.nextAuto();
+            self.next();
           }, self.config.autoScrollInterval);
         };
         this.data.handlers.resize = function(e) {
@@ -396,7 +397,7 @@
       this.useTransitions = Modernizr.csstransforms3d;
 
       if (this.useTransitions) {
-        this.element.addClass("ibm-carousel-css-transitions");
+        this.element.addClass(this.config.transitionClass);
       }
     },
 
@@ -560,39 +561,70 @@
       this.animateTo(newLeft, complete);
     },
 
-    goToWraparoundPage: function() {
-      // clone current page at end
-      // this.currentSlideIndex = index;     // Change to element
-      // this.toggleArrowVisibility(); // Change hasNextSlides() and hasPrevSlides()
-      // this.refreshPagination();     // Maybe
-      // newLeft = this.newCssLeftPosition(index);
-      // 
-      // var complete = function() {
-      //   var targetSlide = self.pages.eq(self.currentSlideIndex).find('[role=document]')[0];
-      //   targetSlide.focus();
-      //   if (typeof callback != "undefined") {
-      //     callback();
-      //   }
-      // };
+    /**
+     * Variant of next() for infinite scroll. Only used when transitioning from the last slide back to the first
+     * when options.wraparound == true.
+     * 
+     * @return {[type]} [description]
+     */
+    wraparound: function() {
+      var self = this,
+          newLeft;
 
-      // this.animateTo(newLeft, complete); // Take element as param
+      // Duplicate the first slide temporarily; we'll remove it later. 
+      this.cloneFirstSlide();
+      this.loadSlides();
+      newLeft = this.newCssLeftPosition(this.pages.length-1);
+
+      // Animate to the cloned slide, then do a switcheroo by sliding back to the first without animation. 
+      this.animateTo(newLeft, function() {
+        self.toggleTransitions(false);
+        self.scrollContainer.css({"left": 0});
+        self.destroyClonedSlide();
+        self.currentSlideIndex = 0;
+        self.loadSlides();
+        setTimeout(function() {
+          self.toggleTransitions(true);  
+        }, 50);
+      });
+      
+    },
+
+    cloneFirstSlide: function() {
+      this.scrollContainer.append(this.pages.first().clone());
+      this.scrollContainer.children().last().addClass("ibm-cloned");
+    },
+
+    destroyClonedSlide: function() {
+      this.scrollContainer.children(".ibm-cloned").remove();
+    },
+
+    toggleTransitions: function(enable) {
+      if (typeof(enable) == "undefined") {
+        var enable = !this.transitionsEnabled();
+      }
+
+      this.element.toggleClass(this.config.transitionClass, enable);
+    },
+
+    transitionsEnabled: function() {
+      return this.element.hasClass(this.config.transitionClass);
     },
 
     next: function(callback) {
       var page = this.nextSlideIndex();
+      
+      if (page == 0 && this.config.wraparound == true) {
+        this.wraparound(callback);
+        return;
+      }
+
       this.goToSlide(page, callback);
     },
 
     prev: function(callback) {
       var page = this.prevSlideIndex();
       this.goToSlide(page, callback);
-    },
-
-    nextAuto: function() {
-      var self = this;
-      this.next(function() {
-        // self.rearrangeSlides();
-      });
     },
 
     nextSlideIndex: function() {
@@ -609,7 +641,7 @@
     },
 
     animateTo: function(newLeft, callback) {
-      if (this.useTransitions) {
+      if (this.useTransitions && this.transitionsEnabled()) {
         var eventName = IBM.Common.Util.transitionEndEventName();
         this.scrollContainer.one(eventName, callback);
         this.scrollContainer.css({"left": newLeft});
