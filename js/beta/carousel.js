@@ -582,10 +582,11 @@
         self.scrollContainer.css({"left": 0});
         self.destroyClonedSlide();
         self.currentSlideIndex = 0;
+        self.refreshPagination();
         self.loadSlides();
         setTimeout(function() {
           self.toggleTransitions(true);  
-        }, 50);
+        }, 25);
       });
       
     },
