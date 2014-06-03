@@ -63,13 +63,13 @@
 <!-- FOR LOCAL TESTING (START) -->
 <!--     <link href="../../css/ww.css" rel="stylesheet" title="www" type="text/css" /> -->
     <link href="http://205.186.160.10/v17e/css/ww.css" rel="stylesheet" title="www" type="text/css" />
-    <link href="css/ww_cci.css" rel="stylesheet" type="text/css" />
+    <link href="css/ww_cci_nl.css" rel="stylesheet" type="text/css" />
 
 <!-- <script src="../../js/ww.js" type="text/javascript"></script> -->
     <script src="http://205.186.160.10/v17e/js/ww.js" type="text/javascript"></script>
     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="js/jsviews.min.js" type="text/javascript"></script>
-    <script src="js/ww_cc_jsrender.js" type="text/javascript"></script>
+    <script src="js/ww_cc_jsrender_nl.js" type="text/javascript"></script>
 <!-- FOR LOCAL TESTING (END) -->
 
 <!-- FOR ESL002 TESTING (START) -->
@@ -79,7 +79,7 @@
   <!-- CSS (END) -->
 
   <!-- JS (START) -->
-<!--     <script src="../voicesJqVer/js/ww.js" type="text/javascript"></script>
+<!--<script src="../voicesJqVer/js/ww.js" type="text/javascript"></script>
     <script src="../voicesJqVer/js/jquery-1.11.0.min.js" type="text/javascript"></script>
     <script src="../voicesJqVer/js/jsviews.min.js" type="text/javascript"></script>
     <script src="../voicesJqVer/js/ww_cc_jsrender.min.js" type="text/javascript"></script> -->
@@ -130,8 +130,6 @@
    <li class="ibm_cci__ml-li">
     <p>
       <a href="javascript:void(0)" onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic', 'ibmEvGroup' : 'Trending List', 'ibmEvName' :this.name,  'ibmEvModule' : 'Trending Topics'}); return true;" class="ibm_cci-voices-tt-text" name="{{:prop}}" alt="Trending Keyword: {{:prop}}"> {{:prop.trim()}} </a>
-      
-      <a class="ibm_cci-voices-tt-close-container" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending keyword" onclick="ibmStats.event({ 'ibmEV' : 'Trending Topic', 'ibmEvAction' :'Trending Topic ADDCLOSE', 'ibmEvGroup' : 'Trending List', 'ibmEvName' :this.name,  'ibmEvModule' : 'Trending Topics'}); return true;"></a>
     </p>
   </li>
   {{/props}}
@@ -144,8 +142,7 @@
   <li class="ibm_cci__ml-li ibm_cci-tsearch-js">
     <p class="ibm_cci-clicked">
       <a href="javascript:void(0)" name="{{:prop}}" class="ibm_cci-voices-tt-text ibm_cci-voices-search-term" alt="Trending Search Keyword: {{:prop}}" onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic', 'ibmEvGroup' : 'Search List', 'ibmEvName' :this.name,  'ibmEvModule' : 'Search Topics'}); return true;"> {{:prop.trim()}} </a>
-
-      <a class="ibm_cci-voices-tt-close-container ibm_cci-close-black" href="javascript:void(0)" name="{{:prop}}" alt="add/close trending search keyword" onclick="ibmStats.event({ 'ibmEV' : 'Search Topic', 'ibmEvAction' :'Search Topic ADDCLOSE', 'ibmEvGroup' : 'Search List', 'ibmEvName' :this.name,  'ibmEvModule' : 'Search Topics'}); return true;"></a> </p>
+    </p>
     </li>
     {{/props}}
   </script>
@@ -479,59 +476,47 @@
   <div id="ibm-leadspace-head" class="ibm_cc__voices_ls">
     <div id="ibm-leadspace-body">
       <div class="ibm_cci--ls--logo">
-        <h1 class="ibm_cci--h1__modifyer"> <a href="javascript:void(0);">IBM Voices</a> </h1>
-        <p class="ibm_cci-about">
-          <a href="//www-304.ibm.com/social/aggregator/voices/voices/about" onclick="ibmStats.event({ 'ibmEV' : 'About Us Click', 'ibmEvAction' :'link to About us', 'ibmEvName' : 'About us'}); return true;"  target="_self" alt="link to voices about us page" class="ibm_cci_aboutlink">About us</a>
-        </p>
+        <h1 class="ibm_cci--h1__modifyer"> <a href="javascript:void(0);">IBM Voices</a> </h1>        
       </div>
-      <div class="ibm_cci--ls--search" role="search">
-        <form action="javascript:void(0);">
-          <!-- <label for="ibm-custom-search-field" class="ibm-custom-hide-label" tabindex="1">Search</label> -->
-          <input name="ibm-cc-search--field" id="ibm-cc-search--field" tabindex="1" alt="search field" type="text" class="ibm-cc-search--field defaultcolor" value="" placeholder="e.g: cloudcomputing, watson, IBMPulse. No special characters" />
-          <input type="image" src='i/ibm_search_icon.png' tabindex="2" alt="search icon" class="ibm-cc-search--icon" name="search button" value="search" onclick="ibmStats.event({ 'ibmEV' : 'Search Keywords', 'ibmEvAction' :'Search', 'ibmEvGroup' : 'Search Field', 'ibmEvName' :this.name,  'ibmEvModule' : 'Search'}); return true;" />
-        </form>
-        <p></p>
-      </div>
-      <div class="ibm_cci--ls--toggle" id="ibm_cci--toggle-js">
-        <ul class="ibm_cci--ls--toggle--ul">
-          <li class="ibm_cci--ls--toggle--li--grid-icon"> 
-            <a class="selected" id="grid" data-id="grid" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'Grid View Button', 'ibmEvAction' :'Show Grid', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'Grid View'}); return true;">Grid View</a>
-          </li>
-          <li class="ibm_cci--ls--toggle--li--list-icon"> 
-              <a data-id="list" href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'List View Button', 'ibmEvAction' :'Show List', 'ibmEvGroup' : 'Toggle View', 'ibmEvName' : 'List View'}); return true;" id="list">List View</a>
-            </li>
-        </ul>
-      </div>
-
       <!-- For testing media query. Delete once testing is complete-->
-      <p style="padding-left:20px"></p>
+        <!-- <p style="padding-left:20px"></p> -->
       <!-- For testing media query. Delete once testing is complete -->
-
-      <!-- TRENDING TOPICS (START) -->
-
-      <div class="ibm_cci--sk ibm_cci--sk__mt">
-        <ul class="ibm_cci__ml" id="ibm_cci__ml">
-          <li class="ibm_cci__ml_t">
-            <!-- add class="ibm_cci-clicked" on click in <p> and  -->
-            <p id="ibm_cci__ml_t-js" class="ibm_cci-clicked">
-              <a href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;" name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>              
-            </p>
+      
+      <div class="ibm_cci--ls--tabs">
+        <ul>
+        <li class="ibm_cci-tabs ibm_cci-SelectedTab">
+            <a href="#" alt="Top Stories">Top Stories</a>
           </li>
-
-          <!-- Append the Trending List over here using jsRender -->
-
+          <li class="ibm_cci-tabs">
+            <a href="#" alt="About Voices">About</a>
+          </li>
+          <li id="ibm_cci_search">
+            <a href="#" alt="Buttons"></a>
+            <span></span>
+          </li>
         </ul>
-      </div>
-
-      <!-- TRENDING TOPICS (END) -->
-
-      <div class="ibm_cci--sr">
-        <p class="ibm_cci-toggleDisplay">Results found: </p>
       </div>
     </div>
+
+    <!-- TRENDING TOPICS (START) -->
+
+    <div class="ibm_cci--sk ibm_cci--sk__mt">
+      <ul class="ibm_cci__ml" id="ibm_cci__ml">
+        <li class="ibm_cci__ml_t">
+          <!-- add class="ibm_cci-clicked" on click in <p> and  -->
+          <p id="ibm_cci__ml_t-js" class="ibm_cci-clicked">
+            <a href="javascript:void(0);" onclick="ibmStats.event({ 'ibmEV' : 'All Trending Topic', 'ibmEvAction' :'All Trending', 'ibmEvGroup' : 'Trending and Search', 'ibmEvName' : 'Trending',  'ibmEvModule' : 'Trending Topics'}); return true;" name="all" class="ibm_cci-voices-tt-text">All trending topics: </a>              
+          </p>
+        </li>
+
+        <!-- Append the Trending List over here using jsRender -->
+
+      </ul>
+    </div>
+    <!-- TRENDING TOPICS (END) -->
+
   </div>
   <!-- LEADSPACE_END -->
-
   <!-- CONTENT_NAV_BEGIN -->
   <!-- CONTENT_NAV_END -->
 
