@@ -77,6 +77,44 @@ module.exports = function(grunt) {
       }
     },
 
+
+    // example configuration for deploy over SFTP
+
+    // file with access specification - ignored by git
+    // acs: grunt.file.readJSON('acs.json'),
+
+    // task
+    // sftp: {
+    //   dist: {
+    //     files: {
+    //       './': ["_prod/**"]
+    //     },
+    //     options: {
+    //       path: './',
+    //       host: '<%= acs.host %>',
+    //       username: '<%= acs.username %>',
+    //       password: '<%= acs.password %>',
+    //       srcBasePath: "_prod/",
+    //       createDirectories: true,
+    //       showProgress: true
+    //     }
+    //   }
+    // },
+
+
+    // example configuration for running commads trough grunt over SSH, useful for publish after deploy
+
+    // sshexec: {
+    //   app: {
+    //     command: 'uptime',
+    //     options: {
+    //       host: '<%= acs.host %>',
+    //       username: '<%= acs.username %>',
+    //       password: '<%= acs.password %>'
+    //     }
+    //   }
+    // },
+
     uglify: {
       options: {
         banner: BANNER
