@@ -331,6 +331,7 @@
 
       $(window).resize(function() {
         self.refreshPanelDimensions();
+        // self.goToSlide(self.currentSlideIndex, false);
       });
     },
 
@@ -534,9 +535,24 @@
         this.pagesContainer.width(w > 1030 ? w : 1030);
         this.panelContainer.width(w + 30 > 1030 ? w + 30 : 1030);
         // this.pages.children().width(w > 1030 ? w : 1030);
+        
+        if(this.currentSlideIndex != 0){
+          // we need to adjust it a little
+          var dim = w;
+          if(dim < 1000){
+            dim = 1000;
+          } 
+
+          var index = this.currentSlideIndex;
+          var currentLeft = this.newCssLeftPosition(index);
+          var newLeft = '-' + ((index * dim) + (index * 30)) + 'px';
+          
+          this.scrollContainer.css("left", newLeft);
+        }
 
       } else {
         this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
+        // this.goToSlide(this.currentSlideIndex, false);
       }
 
       var heights = this.pages.map(function(i, el) { 
@@ -544,7 +560,7 @@
           }),
           maxHeight = Math.max.apply(null, heights);
 
-      this.pagesContainer.height(maxHeight);      
+      this.pagesContainer.height(maxHeight);    
     },
 
     /**
