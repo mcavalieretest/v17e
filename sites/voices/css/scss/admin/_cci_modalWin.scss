@@ -22,7 +22,7 @@
 	position:fixed;
 	width: 300px;
 	height: auto;
-	min-height: 200px;
+	min-height: 175px;
 	top:50%;
 	left:50%;
 	margin-left:-150px;
@@ -65,19 +65,21 @@
 		}
 
 		.ibm-col-6-1{
-			margin:15px 0 0 0;
+			margin:10px 0 0 0;
 			width: 150px;
 
 			p.ibm_cci-modalLabels{
 				font-size: 14px;
 				padding: 5px 0 0 0;
+				font-weight: bold;
 			}
 		}
 		.ibm-col-6-1.ibm_cci-selecClassLabel {
-			width: 98px;
+			width: 107px;
+			margin-top: 20px;
 		}
 		.ibm-col-6-1.ibm_cci-selecClasses {
-			width: 200px;
+			width: 191px;
 		}
 	
 	}
