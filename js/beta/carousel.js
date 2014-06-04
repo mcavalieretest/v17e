@@ -523,52 +523,55 @@
     },
 
     refreshPanelDimensions: function() {
-      console.warn('refreshPanelDimensions');
       if (this.config.autoWidth) {
         // Set .ibm-ribbon-pane width  - this.pagesContainer
         // Set .ibm-columns widths     - this.panelContainer
         // Set .ibm-columns children widths      - this.pages.children()
         // Set .ibm-ribbon-section left property - this.scrollContainer
 
-
         var w = $(window).width();
         this.panelWidth = w;
         this.pagesContainer.width(w > 1030 ? w : 1030);
         this.panelContainer.width(w + 30 > 1030 ? w + 30 : 1030);
-        this.pages.children().width(w > 1030 ? w : 1030);
+        // this.pages.children().width(w > 1030 ? w : 1030);
 
-
-
-
-
-        
       } else {
         this.panelWidth = this.element.find(this.config.panelContainerSelector+":first").width();
       }
-      
 
       var heights = this.pages.map(function(i, el) { 
             return $(el).height(); 
           }),
           maxHeight = Math.max.apply(null, heights);
 
-      this.pagesContainer.height(maxHeight);
-
-
-      
-      
+      this.pagesContainer.height(maxHeight);      
     },
 
     /**
      * Animate to the selected page, toggle/refresh UI components. 
      * 
-     * @param  {[type]}   index    [description]
-     * @param  {Function} callback [description]
-     * @return {[type]}            [description]
+     * @param  {Integer}   index    [description]
+     * @param  {Boolean} [animation] [description]
+     * @param  {Function} [callback] [description]
      */
-    goToSlide: function(index, callback) {
-      var self = this,
-          newLeft;
+    goToSlide: function() {
+      var index, animate=true, callback, // Params; values taken from arguments array
+          self = this,
+          newLeft,
+          transitionMethod;
+
+      // Since there are a few ways of calling this method, process the arguments. 
+      index = arguments[0];
+
+      if (typeof(arguments[1]) == "function") {
+        callback = arguments[1];
+      } else if (typeof(arguments[1]) == "boolean") {
+        animate  = arguments[1];
+
+        if (arguments.length == 3) {
+          callback = arguments[2];
+        }
+      }
 
       this.currentSlideIndex = index;
       this.toggleArrowVisibility();
@@ -586,7 +589,13 @@
         }
       };
 
-      this.animateTo(newLeft, complete);
+      if (animate) {
+        transitionMethod = "animateTo";
+      } else {
+        transitionMethod = "jumpTo";
+      }
+
+      this[transitionMethod](newLeft, complete);
     },
 
     /**
@@ -669,6 +678,13 @@
       return -((this.panelWidth+20) * index);
     },
 
+    /**
+     * Animate to the selected slide and fire callbacks. 
+     * 
+     * @param  {[type]}   newLeft  [description]
+     * @param  {Function} callback [description]
+     * @return {[type]}            [description]
+     */
     animateTo: function(newLeft, callback) {
       if (this.useTransitions && this.transitionsEnabled()) {
         var eventName = IBM.Common.Util.transitionEndEventName();
@@ -677,6 +693,26 @@
       } else {
         this.scrollContainer.animate({"left": newLeft}, 1000, callback);
       }
+    },
+
+    /**
+     * Jump to the selected slide without animation and fire callbacks. 
+     * 
+     * @return {[type]} [description]
+     */
+    jumpTo: function(newLeft, callback) {
+      var self = this,
+          savedTransitionState = this.transitionsEnabled();
+
+      this.toggleTransitions(false);
+      this.scrollContainer.css({"left": newLeft});
+      
+      setTimeout(function() {
+        self.toggleTransitions(savedTransitionState);      
+      }, 25);
+      
+
+      if (callback) { callback(); }
     },
 
     /**
