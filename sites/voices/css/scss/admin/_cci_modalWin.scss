@@ -47,18 +47,19 @@
 
 			img {
 				float: left;
-				outline:1px solid #efefef;
+				// outline:1px solid #efefef;
 			}
 			p.ibm_cci-name {
 				font-size: 14px;
 				font-weight: bold;
 				padding:0;
 				margin-left: 40px;
-				line-height: 16px;
+				line-height: 12px;
 
 				span.ibm_cci-handle{
 					font-weight: normal;
 					display:block;
+					line-height: 24px;
 				}
 			}	
 		}
@@ -69,13 +70,14 @@
 
 			p.ibm_cci-modalLabels{
 				font-size: 14px;
+				padding: 5px 0 0 0;
 			}
 		}
 		.ibm-col-6-1.ibm_cci-selecClassLabel {
-			width: 110px;
+			width: 98px;
 		}
 		.ibm-col-6-1.ibm_cci-selecClasses {
-			width: 190px;
+			width: 200px;
 		}
 	
 	}

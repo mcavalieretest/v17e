@@ -194,7 +194,7 @@
 
 	h1#{$leadspace__modifier} {
 		// @include mysprite;
-		background: #333 url("../../i/ibm-voices-sprite.png") no-repeat;
+		background: #333 url("../i/ibm-voices-sprite.png") no-repeat;
 		text-indent:-999rem;
 		color: #fff;
 		background-position: 0 -94px;
@@ -261,7 +261,7 @@
 				display:block;
 				height:20px;
 				width: 20px;
-				background: #000 url('../../i/ibm-voices-sprite.png') no-repeat;
+				background: #000 url('../i/ibm-voices-sprite.png') no-repeat;
 				background-position: -139px -106px;
 				margin: 25px 24px;
 				opacity: 0.5;
@@ -274,7 +274,7 @@
 				display:block;
 				height:10px;
 				width: 20px;
-				background:url('../../i/ibm-voices-sprite.png') no-repeat;
+				background:url('../i/ibm-voices-sprite.png') no-repeat;
 				background-position: -139px -94px;
 				right: 25px;
 				visibility: hidden;

@@ -2,6 +2,10 @@ html, body, #ibm-pcon.ibm_cci-pcon {
   background: #333;
 }
 
+.ibm-columns .ibm-col-6-3.ibm_cci_cs-6-3 {
+    width:440px;
+} 
+
 #ibm-pcon .ibm-col-1-1.ibm_cci_divCenter {
   position: fixed;
   top: 50%;
@@ -56,17 +60,19 @@ html, body, #ibm-pcon.ibm_cci-pcon {
 
     .ibm_cci-accNameLabels {
       font-size: 14px;
-      text-align: justify;
+      // text-align: justify;
       direction:rtl;
       text-shadow: none;
       padding-bottom:0;
       margin-top:25px;
+      font-weight: bold;
       
       span.ibm_cci-fieldHint {
         display:inline-block;
         padding-top:10px;
         text-align: right;
-        font-size: 11px;
+        font-size: 12px;
+        font-weight: normal;
       }
     }
 
@@ -81,7 +87,7 @@ html, body, #ibm-pcon.ibm_cci-pcon {
      border: none;
      
       .ibm_cci-accNameLabels{
-        margin-top:25px;
+        margin-top:32px;
       }
   }
 
@@ -89,7 +95,7 @@ html, body, #ibm-pcon.ibm_cci-pcon {
     display:inline-block;
     font: normal normal 16px/16px "HelveticaNeue-Light", "Helvetica";
     padding:0;
-    margin:7px 10px 0;
+    margin:13px 10px 0;
     color: #ef4e38;
 }
 

@@ -77,6 +77,9 @@ p.ibm_cci-submitButt, p.ibm_cci-deleteButtGray {
     }
      
 }
+#ibm-pcon #ibm-content p.ibm_cci-addnewAcc{
+    margin-top: 21px;
+}
 #ibm-pcon #ibm-content p.ibm_cci-addnewAcc:hover, p.ibm_cci-submitButt:hover{
     background-color:#dd3e29;
 }
@@ -178,13 +181,13 @@ form.ibm_cci_classField{
         margin-left: 60px;
         margin-top: 0px;
         cursor: pointer;
-        opacity: 1;
+        opacity: 0.6;
         transition: opacity 0.5s;
         -webkit-transition: opacity 0.5s;
     }
 
     a.ibm_cci_closeAddAcc:hover{
-        opacity: 0.4;
+        opacity: 1;
     }
 }    
 
@@ -194,8 +197,9 @@ form {
 
     input.ibm_cci_classField {
         width:130px;
-        height:20px;
-        font-size:12px;
+        // height:20px;
+        height:25px;
+        font-size:14px;
         font-family:$default-font-family;
         font-weight: normal;
         text-indent: 5px;
@@ -278,13 +282,13 @@ form {
     width: 115px;
     height: 23px;
     opacity: 1;
-    font-size:12px;
+    font-size:14px;
     transition: background-color 0.3s;
     -webkit-transition: background-color 0.3s;
     // margin-top: 0;
 
     a {
-        padding: 0 40px;
+        padding: 0 35px;
     }
 
 }
@@ -310,10 +314,10 @@ form input.ibm_cci_classFieldButt{
         text-decoration: none;
         line-height: none;
         border: none;
-        background:#868686 url("../i/addNewClass.png") no-repeat 3px 3px;
+        background:#868686 url("../i/addNewClass.png") no-repeat 5px 5px;
         background-color: #868686;
-        width: 24px;
-        height:24px;
+        width: 28px;
+        height:28px;
         cursor: pointer;
         margin:0;
         vertical-align: bottom;
@@ -331,15 +335,17 @@ form input.ibm_cci_classFieldButt:hover {
 //     margin-left:0;
 // }
 
+.ibm-col-6-1.ibm_cci-select-style,
+.ibm-col-6-3.ibm_cci-select-style,
 .ibm-col-6-2.ibm_cci-select-style{
     border: 1px solid #ddd;
-    width: 160px;
+    width: 300px;
     height: 27px;
     border-radius: 3px;
     overflow: hidden;
     opacity: 1;
     transition: opacity 0.3s;
-    background: #fafafa url("../i/icon-select.png") no-repeat 90% 50%;
+    background: #fafafa url("../i/icon-select.png") no-repeat 97% 50%;
 
     select{
         padding: 5px 8px;
@@ -362,15 +368,23 @@ form input.ibm_cci_classFieldButt:hover {
     // }    
 }
 
+.ibm-col-6-1.ibm_cci-selecClasses.ibm_cci-select-style{
+    overflow: initial;
+}
+
+.ibm-col-6-1.ibm_cci-select-style{
+    width: 168px;
+}
+
 .ibm-col-6-2.ibm_cci-select-style:hover{
     opacity: 0.9;
-    background: #fafafa url("../i/icon-select-hover.png") no-repeat 90% 50%;
+    background: #fafafa url("../i/icon-select-hover.png") no-repeat 97% 50%;
 }
 
 p.ibm_cci-pagination, p.ibm_cci-prevNext {
     display:inline-block;
     padding:0!important;
-    margin-left: 130px;
+    margin-left: 270px;
     vertical-align: middle;
 
         img.ibm_cci_paginationLeftButt, img.ibm_cci_paginationRightButt{
@@ -440,7 +454,7 @@ input.ibm-cc-search--icon:hover{
 }
 
 .ibm-col-6-5 input.ibm_cci-settingsInput, .ibm-col-6-5 input.ibm_cci-autoTweetField  {
-        width:776px;
+        width:300px;
         height:40px;
         font-size:13px;
         font-family:$default-font-family;
@@ -454,7 +468,8 @@ input.ibm-cc-search--icon:hover{
         border-radius:3px;
         -moz-border-radius:3px;
         -webkit-border-radius:3px;
-        color:#787878;        
+        // color:#787878;
+        color:#000;        
 }
 
 // #ibm-pcon #ibm-content .ibm-col-6-3.ibm_cci_marginTop{
